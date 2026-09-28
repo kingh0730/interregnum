@@ -1,0 +1,13 @@
+# scratch and outputs: large binaries, regenerable
+/work/
+/renders/
+*.mp4
+*.mov
+*.wav
+*.blend1
+__pycache__/
+.venv/
+.DS_Store
+node_modules/
+# secrets never live in files, but just in case
+.env*
