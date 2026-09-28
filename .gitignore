@@ -11,3 +11,22 @@ __pycache__/
 node_modules/
 # secrets never live in files, but just in case
 .env*
+
+# media and models: never commit (public repo)
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.exr
+*.mp3
+*.m4a
+*.flac
+*.aiff
+*.blend
+*.vrm
+*.glb
+*.fbx
+tools/blender/models/
+
+# King's candid answers and notes: private, never public
+/bible/private/

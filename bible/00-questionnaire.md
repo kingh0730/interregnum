@@ -3,6 +3,9 @@
 Answer in any order, as briefly or as long as you like; gut reactions are as useful as essays. Skip anything
 that doesn't spark. Your answers shape the bible and the episode slate.
 
+**Write your answers in `bible/private/answers.md`** (gitignored). This repo is public, so candid answers,
+especially political ones, stay out of git. The committed bible will hold only the creative choices built on them.
+
 ## The generation
 1. **Whose generation?** Roughly which ages, and where: China, the US, the diaspora, everywhere? Whose eyes
    should the series mostly look through?

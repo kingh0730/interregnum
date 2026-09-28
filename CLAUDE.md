@@ -11,6 +11,7 @@ Seedance 2.5 and Suno), `docs/pipeline.md` (which tool for what) and `docs/histo
 - Codex and API usage costs King's quota or money: estimate before large batches, and test small first.
 - Disk is nearly full. Keep intermediates in `work/`, delete them when a shot is final, and never commit media.
 - API keys only come from environment variables.
+- The repo is public. King's questionnaire answers and candid views live in gitignored `bible/private/`; never quote them or attribute political opinions to him in committed files. Committed docs carry only the fictional creative choices.
 
 ## Shell gotchas (zsh is the login shell)
 - Arrays are 1-indexed, `$var[...]` is a subscript, and `$var:s...` is a modifier. Brace variables (`${D}`) or put multi-step scripts in bash files.
