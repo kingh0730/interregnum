@@ -20,4 +20,8 @@ Each episode is one "morbid symptom" of the interregnum, with its own visual lan
 
 ## Status
 
-Step 0: the repo is set up. Next: King answers `bible/00-questionnaire.md`, then the series bible and the episode slate get written.
+- [x] Step 0: repo set up; toolchain documented (`docs/pipeline.md`); strategy agreed (`docs/strategy.md`)
+- [ ] King answers `bible/00-questionnaire.md`
+- [ ] Series bible and episode slate (at max effort)
+- [ ] v1 story reels (no paid models)
+- [ ] v2 polish: Seedance 2.5 (needs an API key) + Suno (King runs it from cue sheets)

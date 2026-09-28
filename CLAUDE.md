@@ -1,7 +1,8 @@
 # INTERREGNUM: working notes for Claude
 
 An anthology of short films (see `README.md`). King is the showrunner; Claude writes, directs and runs the
-production toolchain. Read `docs/pipeline.md` before choosing a tool for a shot.
+production toolchain. Start with `README.md` (status), then `docs/strategy.md` (v1 story reel → v2 polish with
+Seedance 2.5 and Suno), `docs/pipeline.md` (which tool for what) and `docs/history.md` (what failed and why).
 
 ## Working agreements
 - Creative work (bible, stories, scripts, shot design) is done at max or xhigh effort; production plumbing at medium.
