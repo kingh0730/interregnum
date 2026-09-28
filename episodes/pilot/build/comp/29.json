@@ -1,0 +1,54 @@
+{
+ "dur": 5.0,
+ "fps": 24,
+ "out": "work/pilot/shots/29.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/keys/k01.png"
+  },
+  {
+   "src": "work/pilot/comp/c1/scanlines.png",
+   "fixed": true
+  },
+  {
+   "src": "work/pilot/js/j14_bug.png",
+   "fixed": true
+  }
+ ],
+ "camera": {
+  "from": [
+   0.5,
+   0.5,
+   1.0
+  ],
+  "to": [
+   0.5,
+   0.4966183574879227,
+   1.035
+  ],
+  "ease": "inout"
+ },
+ "grade": {
+  "exposure": 0,
+  "contrast": 1.0,
+  "sat": 0.9,
+  "lift": [
+   0.063,
+   0.094,
+   0.149
+  ],
+  "gain": [
+   0.98,
+   1.0,
+   1.02
+  ],
+  "bloom": 0.3,
+  "vignette": 0.15,
+  "grain": 0.015,
+  "chroma": 1
+ },
+ "light": {
+  "flicker": 0.03,
+  "flicker_hz": 0.3
+ }
+}

@@ -1,0 +1,224 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>s08_archive</title></head>
+<body>
+<script src="kit_s01_s20.js"></script>
+<script>
+// Shot 08 / J04 ARCHIVE. 9.0 s, opaque, inside the band. Warm captured months race past and stop at the last live
+// capture; a flat vitals line; then cold generated nights 001…212, ending on tonight's empty frame.
+const { C, F } = K;
+const ctx = K.canvas(true);
+const TW = 96, TH = 54, PITCH = 102, SY = 540, CX = 960;
+const NCAP = 492, NGEN = 212;
+
+// ---------- thumbnails (procedural crops of k01 / k02) ----------
+let SRC = [];
+const WARM = [], COLD = [];
+function makeThumb(img, r, cold) {
+  const c = K.off(TW, TH), x = c.getContext('2d');
+  const iw = img.naturalWidth, ih = img.naturalHeight;
+  const sc = 0.90 + 0.10 * r(), cw = iw * sc, ch = ih * sc;
+  const ox = (iw - cw) / 2 + (r() * 2 - 1) * 0.03 * iw, oy = (ih - ch) / 2 + (r() * 2 - 1) * 0.03 * ih;
+  x.save(); x.translate(TW / 2, TH / 2); x.rotate((r() * 2 - 1) * 0.02); x.translate(-TW / 2, -TH / 2);
+  x.filter = cold ? 'grayscale(0.5) brightness(1.2)' : 'grayscale(1) brightness(1.75) contrast(0.88)';
+  x.drawImage(img, ox, oy, cw, ch, -2, -2, TW + 4, TH + 4);
+  x.restore(); x.filter = 'none';
+  x.globalCompositeOperation = 'multiply';
+  if (cold) { x.globalAlpha = 0.6; x.fillStyle = C.cyan; x.fillRect(0, 0, TW, TH); x.globalAlpha = 1; }
+  else { x.fillStyle = '#B89A78'; x.fillRect(0, 0, TW, TH); }
+  x.globalCompositeOperation = 'source-over';
+  // brightness ±8 %
+  const b = (r() * 2 - 1) * 0.08;
+  x.fillStyle = b > 0 ? '#fff' : '#000'; x.globalAlpha = Math.abs(b) * (b > 0 ? 0.6 : 1); x.fillRect(0, 0, TW, TH); x.globalAlpha = 1;
+  if (!cold) { // age: faint horizontal scan wear
+    x.fillStyle = 'rgba(0,0,0,0.12)'; for (let yy = 0; yy < TH; yy += 3) x.fillRect(0, yy, TW, 1);
+  } else { // GEN tag
+    x.fillStyle = 'rgba(10,15,28,0.75)'; x.fillRect(3, TH - 15, 28, 12);
+    x.font = `10px ${F.mono}`; x.fillStyle = C.cyan; x.textBaseline = 'alphabetic'; x.fillText('GEN', 6, TH - 5.5);
+  }
+  x.strokeStyle = C.line; x.lineWidth = 1; x.strokeRect(0.5, 0.5, TW - 1, TH - 1);
+  return c;
+}
+window.ready = Promise.all([K.loadImage(K.K01_CANDS), K.loadImage(K.K02RAW_CANDS)]).then((rs) => {
+  SRC = rs.filter(Boolean).map((r) => r.img);
+  const r = K.rng(2024);
+  for (let i = 0; i < 40; i++) WARM.push(makeThumb(SRC[i % SRC.length], r, false));
+  for (let i = 0; i < 32; i++) COLD.push(makeThumb(SRC[(i + 1) % SRC.length], r, true));
+});
+const pick = (arr, i, s) => arr[Math.floor(K.hash(i, s) * arr.length)];
+
+// ---------- part A motion: distance d(t), 0 → DA at 4.6 s ----------
+const X1_START = 108;                              // thumb 1 starts at x 108
+const DA = X1_START - CX + (NCAP - 1) * PITCH;      // travel so that thumb 492 lands on x 960
+const velA = (t) => { // shape: smooth ramp 0–1.0, cruise, smooth ramp-down 3.0–4.6
+  if (t <= 0 || t >= 4.6) return 0;
+  const sm = (u) => u * u * (3 - 2 * u);
+  if (t < 1.0) return sm(t / 1.0);
+  if (t < 3.0) return 1;
+  return 1 - sm((t - 3.0) / 1.6);
+};
+const TAB = []; { let acc = 0; const dt = 1 / 960; for (let i = 0; i <= 4.6 * 960 + 1; i++) { TAB.push(acc); acc += velA(i * dt) * dt; } const tot = TAB[Math.round(4.6 * 960)]; for (let i = 0; i < TAB.length; i++) TAB[i] = (TAB[i] / tot) * DA; }
+const dA = (t) => { if (t <= 0) return 0; if (t >= 4.6) return DA; const f = t * 960, i = Math.floor(f); return K.lerp(TAB[i], TAB[i + 1], f - i); };
+// captured thumb i (1-based) x center given scroll offset in px (A) and slots (B)
+const capX = (i, dpx, pslots) => X1_START + (i - 1) * PITCH - dpx - pslots * PITCH;
+
+// ---------- part B motion: generated count G(t) and strip scroll p(t) (slots) ----------
+// rate 3/s → 150/s over 5.2–7.95 s: G(τ) = 3τ + 147·2.75/(k+1)·u^(k+1), u = τ/2.75, k chosen so G(7.95) = 212
+const KB = 404.25 / (212 - 8.25) - 1;
+const G = (t) => { if (t < 5.2) return 0; const tau = Math.min(t, 7.95) - 5.2, u = tau / 2.75; return 3 * tau + (147 * 2.75 / (KB + 1)) * Math.pow(u, KB + 1); };
+const pB = (t) => { const lead = 8 * (1 - K.easeInOutCubic(K.seg(t, 7.9, 8.2))); return Math.max(0, Math.min(212, G(t) - lead)); };
+window.S08_GEN_APPEAR = (g) => { let lo = 5.2, hi = 7.95; for (let k = 0; k < 40; k++) { const m = (lo + hi) / 2; (G(m) < g - 1 ? (lo = m) : (hi = m)); } return g === 1 ? 5.2 : hi; };
+
+// ---------- strip drawing (with shutter-accumulated motion blur) ----------
+const strip = K.off(1920, 200), sx = strip.getContext('2d');
+const acc = K.off(1920, 200), ax = acc.getContext('2d');
+const SY0 = SY - 100; // strip canvas top in frame coords
+
+function drawStripAt(x, t, dpx, ps, focusDim) {
+  // x: context, positions in strip canvas coords (y offset SY0)
+  const cy = SY - SY0;
+  // captured
+  const iFirst = Math.max(1, Math.floor((dpx + ps * PITCH - X1_START - 200) / PITCH));
+  for (let i = iFirst; i <= NCAP; i++) {
+    const cx = capX(i, dpx, ps);
+    if (cx < -60) continue; if (cx > 1980) break;
+    x.globalAlpha = (focusDim && i !== NCAP) ? 0.55 : 1;
+    x.drawImage(pick(WARM, i, 1), Math.round(cx - TW / 2), cy - TH / 2);
+    if ((i - 1) % 12 === 0) {
+      x.font = `26px ${F.cond}`; x.fillStyle = C.cream; x.globalAlpha *= 0.5; x.textBaseline = 'alphabetic';
+      x.fillText('YEAR ' + ((i - 1) / 12 + 1), Math.round(cx - TW / 2), cy - TH / 2 - 12);
+    }
+  }
+  x.globalAlpha = 1;
+  // generated
+  if (t >= 5.2) {
+    const shown = Math.min(NGEN, Math.floor(G(t) + 1e-9) + 1);
+    for (let g = 1; g <= shown; g++) {
+      let cx = CX + (g - ps) * PITCH;
+      if (cx < -60 || cx > 1980) continue;
+      if (g === NGEN) continue; // tonight is drawn separately (empty frame)
+      const tg = window.S08_GEN_APPEAR(g), e = K.easeOutCubic(K.seg(t, tg, tg + 3 / 24));
+      x.globalAlpha = e; cx += (1 - e) * 24;
+      x.drawImage(pick(COLD, g, 2), Math.round(cx - TW / 2), cy - TH / 2);
+    }
+    x.globalAlpha = 1;
+  }
+}
+
+function strips(t) {
+  // shutter: 180° (1/48 s), samples scale with speed
+  const pos = (tt) => [dA(Math.min(tt, 4.6)), tt >= 5.2 ? pB(tt) : 0];
+  const [d0, p0] = pos(t), [d1, p1] = pos(t + 1 / 48);
+  const move = Math.abs(d1 - d0) + Math.abs(p1 - p0) * PITCH;
+  const n = Math.max(1, Math.min(48, Math.ceil(move / 6)));
+  const focusDim = t >= 4.6 && t < 5.2 ? K.seg(t, 4.6, 4.75) > 0 : t >= 4.6;
+  if (n === 1) { sx.clearRect(0, 0, 1920, 200); drawStripAt(sx, t, d0, p0, focusDim); return strip; }
+  ax.clearRect(0, 0, 1920, 200);
+  ax.globalCompositeOperation = 'lighter';
+  for (let k = 0; k < n; k++) {
+    const tt = t + (k / n) * (1 / 48);
+    const [d, p] = pos(tt);
+    sx.clearRect(0, 0, 1920, 200); drawStripAt(sx, tt, d, p, focusDim);
+    ax.globalAlpha = 1 / n; ax.drawImage(strip, 0, 0);
+  }
+  ax.globalAlpha = 1; ax.globalCompositeOperation = 'source-over';
+  return acc;
+}
+
+function bracket(cx, cy, w, h, color, len = 12) {
+  ctx.save(); ctx.strokeStyle = color; ctx.lineWidth = 2; ctx.shadowColor = color; ctx.shadowBlur = 8;
+  const x0 = cx - w / 2, y0 = cy - h / 2, x1 = cx + w / 2, y1 = cy + h / 2;
+  ctx.beginPath();
+  ctx.moveTo(x0, y0 + len); ctx.lineTo(x0, y0); ctx.lineTo(x0 + len, y0);
+  ctx.moveTo(x1 - len, y0); ctx.lineTo(x1, y0); ctx.lineTo(x1, y0 + len);
+  ctx.moveTo(x1, y1 - len); ctx.lineTo(x1, y1); ctx.lineTo(x1 - len, y1);
+  ctx.moveTo(x0 + len, y1); ctx.lineTo(x0, y1); ctx.lineTo(x0, y1 - len);
+  ctx.stroke(); ctx.restore();
+}
+
+function counterNum(n) { const s = K.pad(n, 5); return s.slice(0, 2) + ',' + s.slice(2); }
+
+function vitals(t) {
+  if (t < 4.9) return;
+  const a = K.seg(t, 4.9, 4.9 + 3 / 24);
+  const X0 = 1440, Y0 = 760, W = 420, H = 140;
+  ctx.save(); ctx.globalAlpha = a;
+  ctx.fillStyle = C.panel; ctx.fillRect(X0, Y0, W, H);
+  ctx.restore();
+  ctx.save(); ctx.globalAlpha = a;
+  K.frameRect(ctx, X0, Y0, W, H, C.line);
+  K.text(ctx, 'VITALS · SUBJECT F', X0 + 20, Y0 + 30, { font: F.alt, weight: 'bold', size: 20, color: C.cyan, alpha: 0.7, track: 0.08 });
+  // ECG area 380×60
+  const EX = X0 + 20, EY = Y0 + 42, EW = 380, EH = 60, mid = EY + EH / 2;
+  ctx.fillStyle = C.line;
+  for (let gx = 0; gx <= EW; gx += 20) ctx.fillRect(EX + gx - ((t * 60) % 20), EY, 1, EH);
+  ctx.save(); ctx.beginPath(); ctx.rect(EX, EY, EW, EH); ctx.clip();
+  ctx.fillStyle = C.line; for (let gy = 0; gy <= EH; gy += 20) ctx.fillRect(EX, EY + gy, EW, 1);
+  // sweep draws the flat line on (0.8 s), then the trace scrolls left
+  const head = Math.min(EW, (t - 4.9) / 0.8 * EW), scroll = Math.max(0, (t - 5.7)) * 120;
+  ctx.strokeStyle = C.cyan; ctx.lineWidth = 1.5; ctx.shadowColor = C.cyan; ctx.shadowBlur = 6;
+  ctx.beginPath();
+  for (let px = 0; px <= head; px += 2) {
+    const k = Math.floor((px + scroll) / 2);
+    const n = (K.hash(k, 9) * 2 - 1) * 1.0;
+    px ? ctx.lineTo(EX + px, mid + n) : ctx.moveTo(EX + px, mid + n);
+  }
+  ctx.stroke();
+  if (head < EW) { ctx.fillStyle = C.core; ctx.beginPath(); ctx.arc(EX + head, mid, 2.5, 0, 7); ctx.fill(); }
+  ctx.restore();
+  K.text(ctx, 'NO SIGNAL SINCE 11 MAR · 04:12', X0 + 20, Y0 + H - 16, { font: F.mono, size: 20, color: C.red });
+  ctx.restore();
+}
+
+window.renderFrame = (t) => {
+  ctx.globalAlpha = 1; ctx.filter = 'none';
+  ctx.fillStyle = C.navy; ctx.fillRect(0, 0, 1920, 1080);
+  // header
+  K.text(ctx, 'ARCHIVE · SUBJECT F · THE EVENING ADDRESS', 60, 190, { font: F.alt, weight: 'bold', size: 24, color: C.cyan, alpha: 0.7, track: 0.06 });
+  K.text(ctx, K.hms(K.parseHMS('20:51:31') + Math.floor(t + 1e-6)), 1860, 194, { font: F.cond, weight: 'bold', size: 44, color: C.cream, align: 'right', track: 0.04 });
+  K.rule(ctx, 60, 204, 1860, C.line);
+  // strip guide rails
+  ctx.save(); ctx.fillStyle = C.line; ctx.fillRect(0, SY - TH / 2 - 44, 1920, 1); ctx.fillRect(0, SY + TH / 2 + 18, 1920, 1); ctx.restore();
+
+  ctx.drawImage(strips(t), 0, SY0);
+
+  // STOP: bracket and label on the last capture (they travel with it in part B)
+  if (t >= 4.6) {
+    const x = capX(NCAP, DA, t >= 5.2 ? pB(t) : 0);
+    if (x > -200) {
+      bracket(x, SY, TW + 16, TH + 16, C.cyan);
+      K.text(ctx, 'LAST LIVE CAPTURE · 10 MAR', x, SY - TH / 2 - 58, { font: F.cond, weight: 'bold', size: 34, color: C.cream, align: 'center', track: 0.06 });
+    }
+  }
+  // tonight: empty dashed frame
+  if (t >= 5.2 && G(t) >= NGEN - 1) {
+    const x = CX + (NGEN - pB(t)) * PITCH;
+    ctx.save(); ctx.strokeStyle = C.cream; ctx.lineWidth = 2; ctx.setLineDash([6, 5]);
+    ctx.strokeRect(Math.round(x - TW / 2) + 1, SY - TH / 2 + 1, TW - 2, TH - 2); ctx.restore();
+    if (t >= 8.2) {
+      bracket(x, SY, TW + 16, TH + 16, C.cream);
+      K.text(ctx, '212 · TONIGHT', x, SY - TH / 2 - 58, { font: F.cond, weight: 'bold', size: 34, color: C.cream, align: 'center', track: 0.06 });
+      if ((t - 8.2) % 1 < 0.5) { ctx.fillStyle = C.cream; ctx.fillRect(Math.round(x - 6), SY - 11, 12, 22); }
+    }
+  }
+
+  // counters
+  const progA = dA(Math.min(t, 4.6)) / DA;
+  const capN = Math.max(1, Math.round(1 + progA * (14763 - 1)));
+  K.text(ctx, 'CAPTURED', 60, 636, { font: F.alt, weight: 'bold', size: 22, color: C.cream, alpha: 0.6, track: 0.12 });
+  { // leading zeros dimmed, as on a mechanical counter
+    const str = counterNum(capN), lead = (str.match(/^[0,]*/)[0] || '').length;
+    const wl = lead ? K.measure(ctx, str.slice(0, lead), { font: F.mono, size: 40 }) : 0;
+    if (lead) K.text(ctx, str.slice(0, lead), 60, 690, { font: F.mono, size: 40, color: C.cream, alpha: 0.28 });
+    K.text(ctx, str.slice(lead), 60 + wl, 690, { font: F.mono, size: 40, color: C.cream });
+  }
+  if (t >= 5.2) {
+    const gN = Math.min(NGEN, Math.floor(G(t) + 1e-9) + 1);
+    K.text(ctx, 'GENERATED', 420, 636, { font: F.alt, weight: 'bold', size: 22, color: C.cyan, alpha: 0.7, track: 0.12 });
+    const gs = K.pad(gN, 3), gl = (gs.match(/^0*/)[0] || '').length, gw = gl ? K.measure(ctx, gs.slice(0, gl), { font: F.mono, size: 40 }) : 0;
+    if (gl) K.text(ctx, gs.slice(0, gl), 420, 690, { font: F.mono, size: 40, color: C.cyan, alpha: 0.35 });
+    K.text(ctx, gs.slice(gl), 420 + gw, 690, { font: F.mono, size: 40, color: C.cyan, glow: 8 });
+  }
+  vitals(t);
+};
+</script>
+</body></html>

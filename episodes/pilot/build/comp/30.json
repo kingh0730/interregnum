@@ -1,0 +1,73 @@
+{
+ "dur": 6.0,
+ "fps": 24,
+ "out": "work/pilot/shots/30.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/comp/s16_30/b30.mp4",
+   "par": 0.6
+  },
+  {
+   "src": "work/pilot/comp/s16_30/k17_fg.png",
+   "par": 1.0
+  }
+ ],
+ "camera": {
+  "from": [
+   0.5,
+   0.445,
+   1.0
+  ],
+  "to": [
+   0.5036153846153846,
+   0.4369230769230769,
+   1.04
+  ],
+  "ease": "inout"
+ },
+ "grade": {
+  "exposure": 0,
+  "contrast": 1.03,
+  "sat": 1.0,
+  "lift": [
+   0.03,
+   0.05,
+   0.07
+  ],
+  "gain": [
+   0.93,
+   1.0,
+   1.05
+  ],
+  "bloom": 0.6,
+  "vignette": 0.25,
+  "grain": 0.025
+ },
+ "letterbox": 2.39,
+ "particles": [
+  {
+   "kind": "rain",
+   "n": 700,
+   "seed": 30,
+   "par": 0.8,
+   "wind": [
+    0.1,
+    0.0
+   ],
+   "size": 0.6,
+   "opacity": 0.55
+  },
+  {
+   "kind": "rain",
+   "n": 70,
+   "seed": 31,
+   "par": 1.4,
+   "wind": [
+    0.14,
+    0.0
+   ],
+   "size": 1.5,
+   "opacity": 0.8
+  }
+ ]
+}

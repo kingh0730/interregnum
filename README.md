@@ -23,5 +23,5 @@ Each episode is one "morbid symptom" of the interregnum, with its own visual lan
 - [x] Step 0: repo set up; toolchain documented (`docs/pipeline.md`); strategy agreed (`docs/strategy.md`)
 - [ ] King answers `bible/00-questionnaire.md`
 - [ ] Series bible and episode slate (at max effort)
-- [ ] v1 story reels (no paid models)
+- [ ] v1 story reels (no paid models): **pilot *CONTINUITY* built**, awaiting King's review (`episodes/pilot/review.md`)
 - [ ] v2 polish: Seedance 2.5 (needs an API key) + Suno (King runs it from cue sheets)

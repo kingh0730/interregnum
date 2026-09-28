@@ -1,0 +1,126 @@
+<!doctype html>
+<!-- J09 `signoffs` — shot 21, 8.0 s, opaque world screen (content inside the 2.39 band). -->
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#0A0F1C;overflow:hidden}canvas{display:block}</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas>
+<script>
+const C = { navy:'#0A0F1C', panel:'#0D1426', line:'#1E2A44', cyan:'#5FE1E6', amber:'#F2A441', cream:'#E9E2D0' };
+const rgba = (h,a) => `rgba(${parseInt(h.slice(1,3),16)},${parseInt(h.slice(3,5),16)},${parseInt(h.slice(5,7),16)},${a})`;
+const clamp = (x,a=0,b=1) => Math.max(a, Math.min(b, x));
+const cv = document.getElementById('c'); let ctx = cv.getContext('2d');
+const F = '30px Menlo', F_TITLE = '20px Menlo';
+
+// ---- content ------------------------------------------------------------------------------------------
+const SPECIAL = { 23:'Close the window. The wind is sly.', 47:"Don't argue with the rain.", 61:'Old bread makes good soup.',
+                  88:'Leave a light on for whoever comes home late.', 119:'Call the ones you miss.' };
+const LINES = [];
+for (let n=1;n<=212;n++){
+  let txt = 'Sleep safely.', nana = false;
+  if (SPECIAL[n]) { txt = SPECIAL[n]; nana = true; }
+  if (n >= 150 && n <= 211) { txt = 'Eat something warm before you sleep.'; nana = true; }
+  if (n === 212) { txt = ''; }
+  LINES.push({ n, label: 'NIGHT ' + String(n).padStart(3,'0'), txt, nana });
+}
+
+// ---- window geometry ----------------------------------------------------------------------------------
+const WIN = { x0:360, x1:1560, y0:170, y1:910 }, TB = 44, LH = 44;
+const CT = WIN.y0 + TB;                   // content top 214
+const PAD = 44;                            // first line's top inset
+const REST = 198;                          // at rest the first visible line is index 198 (NIGHT 199)
+const lineMid = (i, s) => CT + PAD + (i - s)*LH + LH/2;
+
+// ---- scroll curve: ramp → ~70 lines/s → long ease-out, landing exactly on REST at 6.0 s -----------------
+const V = 70, TR = 0.25, P = 2.5;
+const TB_ = (REST - V*TR/2 + V*TR - V*6/(P+1)) / (V - V/(P+1));   // start of deceleration
+function scroll(t){
+  if (t <= 0) return 0;
+  if (t < TR){ const u=t/TR; return V*TR*(u*u*u - u*u*u*u/2); }  // smooth velocity ramp, ∫ over ramp = V*TR/2
+  const sR = V*TR/2;
+  if (t < TB_) return sR + V*(t - TR);
+  const T = 6 - TB_, u = clamp((t - TB_)/T);
+  return sR + V*(TB_ - TR) + V*T/(P+1)*(1 - Math.pow(1-u, P+1));
+}
+const vel = t => (scroll(t + 1/96) - scroll(t - 1/96)) * 48;     // lines per second
+
+// ---- drawing ------------------------------------------------------------------------------------------
+function txt(s, x, y, font, color, glow=0, glowColor=null){
+  ctx.font = font; ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+  if (glow){ ctx.shadowBlur = glow; ctx.shadowColor = glowColor || color; } else ctx.shadowBlur = 0;
+  ctx.fillStyle = color; ctx.fillText(s, x, y); ctx.shadowBlur = 0;
+}
+function drawContent(s){
+  const first = Math.max(0, Math.floor(s) - 1), last = Math.min(211, Math.floor(s) + 17);
+  for (let i=first;i<=last;i++){
+    const L = LINES[i], y = lineMid(i, s);
+    txt(L.label, 400, y, F, rgba(C.cyan, 0.50));
+    if (L.txt) {
+      if (L.nana) txt(L.txt, 640, y, F, C.amber, 6, rgba(C.amber, 0.55));
+      else txt(L.txt, 640, y, F, rgba(C.cyan, 0.55));
+    }
+  }
+}
+function drawWindow(t){
+  // window body
+  ctx.fillStyle = C.panel; ctx.fillRect(WIN.x0, WIN.y0, WIN.x1-WIN.x0, WIN.y1-WIN.y0);
+  // content (with shutter motion blur while fast)
+  ctx.save(); ctx.beginPath(); ctx.rect(WIN.x0+1, CT, WIN.x1-WIN.x0-2, WIN.y1-CT-1); ctx.clip();
+  const v = vel(t), n = v > 2 ? Math.min(24, Math.ceil(v*44*0.28/24/1.5) + 1) : 1;
+  if (n === 1) drawContent(scroll(t));
+  else {
+    // average n sub-frames across a 180° shutter
+    const off = window.__off || (window.__off = new OffscreenCanvas(1920, 1080)), o = off.getContext('2d');
+    const acc = window.__acc || (window.__acc = new OffscreenCanvas(1920, 1080)), a = acc.getContext('2d');
+    a.clearRect(0,0,1920,1080);
+    for (let k=0;k<n;k++){
+      const tk = t + (k/(n-1) - 0.5) * (0.28/24);
+      o.clearRect(0,0,1920,1080); o.fillStyle = C.panel; o.fillRect(WIN.x0, CT, WIN.x1-WIN.x0, WIN.y1-CT);
+      drawTo(o, scroll(tk));
+      a.globalAlpha = 1/(k+1); a.drawImage(off, 0, 0);
+    }
+    a.globalAlpha = 1; ctx.drawImage(acc, 0, 0);
+  }
+  // soft fade at the top and bottom edges of the text area
+  let g = ctx.createLinearGradient(0, CT, 0, CT + 52);
+  g.addColorStop(0, rgba(C.panel, 1)); g.addColorStop(0.55, rgba(C.panel, 0.85)); g.addColorStop(1, rgba(C.panel, 0));
+  ctx.fillStyle = g; ctx.fillRect(WIN.x0, CT, WIN.x1-WIN.x0, 52);
+  g = ctx.createLinearGradient(0, WIN.y1 - 24, 0, WIN.y1);
+  g.addColorStop(0, rgba(C.panel, 0)); g.addColorStop(1, rgba(C.panel, 1));
+  ctx.fillStyle = g; ctx.fillRect(WIN.x0, WIN.y1 - 24, WIN.x1-WIN.x0, 24);
+  ctx.restore();
+
+  // cursor after "NIGHT 212  " at the text column
+  const s = scroll(t), y = lineMid(211, s);
+  const blinkOn = t < 6.0 ? true : Math.floor((t - 6.0)/0.5) % 2 === 0;
+  if (blinkOn && y > CT + 10 && y < WIN.y1 - 10){
+    ctx.save(); ctx.fillStyle = C.cream; ctx.shadowBlur = 8; ctx.shadowColor = rgba(C.cream, 0.45);
+    ctx.fillRect(640, Math.round(y - 17), 16, 34); ctx.restore();
+  }
+
+  // scrollbar: a hairline track and a small thumb, right edge
+  const trackY0 = CT + 14, trackY1 = WIN.y1 - 14, visible = 14.5, total = 212;
+  const th = (trackY1 - trackY0) * visible/total, frac = clamp(s / REST);
+  const ty = trackY0 + (trackY1 - trackY0 - th) * frac;
+  ctx.fillStyle = rgba(C.cream, 0.10 + 0.12*clamp(v/40)); ctx.fillRect(WIN.x1 - 12, ty, 3, th);
+
+  // title bar
+  ctx.fillStyle = '#0B1122'; ctx.fillRect(WIN.x0, WIN.y0, WIN.x1-WIN.x0, TB);
+  ctx.fillStyle = C.line; ctx.fillRect(WIN.x0, WIN.y0 + TB - 1, WIN.x1-WIN.x0, 1);
+  for (let k=0;k<3;k++){ ctx.beginPath(); ctx.arc(WIN.x0 + 24 + k*22, WIN.y0 + TB/2, 6, 0, Math.PI*2); ctx.fillStyle = C.line; ctx.fill(); }
+  ctx.font = F_TITLE; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = rgba(C.cream, 0.60);
+  ctx.fillText('signoffs.txt', (WIN.x0 + WIN.x1)/2, WIN.y0 + TB/2 + 1); ctx.textAlign = 'left';
+  // border
+  ctx.strokeStyle = C.line; ctx.lineWidth = 1; ctx.strokeRect(WIN.x0 + 0.5, WIN.y0 + 0.5, WIN.x1-WIN.x0-1, WIN.y1-WIN.y0-1);
+}
+// drawContent against an arbitrary context (used for motion-blur sub-frames)
+function drawTo(c2, s){ const keep = ctx; ctxSwap(c2); drawContent(s); ctxSwap(keep); }
+function ctxSwap(c2){ ctx = c2; }
+
+window.renderFrame = (t) => {
+  ctx.fillStyle = C.navy; ctx.fillRect(0,0,1920,1080);
+  drawWindow(t);
+  const g = ctx.createRadialGradient(960, 540, 520, 960, 540, 1150);
+  g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(0,0,0,0.35)');
+  ctx.fillStyle = g; ctx.fillRect(0,0,1920,1080);
+};
+window.ready = Promise.all([F, F_TITLE].map(f => document.fonts.load(f, 'NIGHT 0123 abc')));
+</script></body></html>

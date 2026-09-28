@@ -1,0 +1,87 @@
+<!doctype html>
+<!-- J12 `phone` — shot 37, 3.0 s, opaque world screen. Ida's phone face-up on the desk: NANA · calling… -->
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#0A0F1C;overflow:hidden}canvas{display:block}</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas>
+<script>
+const C = { navy:'#0A0F1C', amber:'#F2A441', cream:'#E9E2D0' };
+const rgba = (h,a) => `rgba(${parseInt(h.slice(1,3),16)},${parseInt(h.slice(3,5),16)},${parseInt(h.slice(5,7),16)},${a})`;
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const F_NAME = "bold 120px 'DIN Condensed'", F_SUB = "500 28px 'Avenir Next'";
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);
+  t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}}
+
+// Phone: 520 wide, fitted to the band at y 150–930 (see note in the handoff), centred on x 960.
+const PH = { x:700, y:150, w:520, h:780, r:60 };
+const SC = { x:PH.x+14, y:PH.y+14, w:PH.w-28, h:PH.h-28, r:48 };
+
+// desk scratches: pre-generated once from a fixed seed
+const desk = new OffscreenCanvas(1920, 1080);
+(() => {
+  const d = desk.getContext('2d'), r = mulberry32(37);
+  d.fillStyle = C.navy; d.fillRect(0,0,1920,1080);
+  d.lineCap = 'round';
+  for (let i=0;i<420;i++){
+    const x = r()*1920, y = r()*1080, len = 20 + r()*260, ang = -0.35 + r()*0.25 + (r()<0.2 ? 1.2 : 0);
+    d.strokeStyle = `rgba(233,226,208,${0.015 + r()*0.025})`; d.lineWidth = 0.6 + r()*0.9;
+    d.beginPath(); d.moveTo(x, y); d.lineTo(x + Math.cos(ang)*len, y + Math.sin(ang)*len); d.stroke();
+  }
+  // very fine grain
+  const img = d.getImageData(0,0,1920,1080), px = img.data;
+  for (let i=0;i<px.length;i+=4){ const n = (r()-0.5)*5; px[i]+=n; px[i+1]+=n; px[i+2]+=n; }
+  d.putImageData(img, 0, 0);
+})();
+
+const vibrating = t => (t >= 0.1 && t < 0.6) || (t >= 1.6 && t < 2.1);
+
+window.renderFrame = (t) => {
+  // glow pulse 18–32 % at 1 Hz (peak on each ring)
+  const pulse = 0.5 - 0.5*Math.cos(2*Math.PI*(t - 0.1));
+  const glowA = 0.18 + 0.14*pulse;
+
+  ctx.drawImage(desk, 0, 0);
+  // warm spill on the desk, radius 500, 10 % (breathing with the screen glow)
+  let g = ctx.createRadialGradient(960, 540, 0, 960, 540, 500);
+  g.addColorStop(0, rgba(C.amber, 0.10*(0.75 + 0.5*pulse))); g.addColorStop(0.6, rgba(C.amber, 0.04*(0.75 + 0.5*pulse))); g.addColorStop(1, rgba(C.amber, 0));
+  ctx.fillStyle = g; ctx.fillRect(0,0,1920,1080);
+
+  // vibration: 1 px at 30 Hz, deterministic
+  let dx = 0, dy = 0;
+  if (vibrating(t)){ const k = Math.round(t*24); dx = [1,-1,0,1,-1,1][k%6]; dy = [0,1,-1,-1,1,0][k%6]; }
+  ctx.save(); ctx.translate(dx, dy);
+
+  // contact shadow
+  ctx.save(); ctx.shadowBlur = 40; ctx.shadowColor = 'rgba(0,0,0,0.7)'; ctx.shadowOffsetY = 10;
+  ctx.fillStyle = '#15161A'; ctx.beginPath(); ctx.roundRect(PH.x, PH.y, PH.w, PH.h, PH.r); ctx.fill(); ctx.restore();
+  // body and edge
+  ctx.fillStyle = '#15161A'; ctx.beginPath(); ctx.roundRect(PH.x, PH.y, PH.w, PH.h, PH.r); ctx.fill();
+  ctx.strokeStyle = '#2A2C33'; ctx.lineWidth = 2; ctx.beginPath(); ctx.roundRect(PH.x+1, PH.y+1, PH.w-2, PH.h-2, PH.r-1); ctx.stroke();
+
+  // screen
+  ctx.save(); ctx.beginPath(); ctx.roundRect(SC.x, SC.y, SC.w, SC.h, SC.r); ctx.clip();
+  ctx.fillStyle = '#120E0A'; ctx.fillRect(SC.x, SC.y, SC.w, SC.h);
+  g = ctx.createRadialGradient(960, 420, 0, 960, 420, 430);
+  g.addColorStop(0, rgba(C.amber, glowA)); g.addColorStop(0.5, rgba(C.amber, glowA*0.35)); g.addColorStop(1, rgba(C.amber, 0));
+  ctx.fillStyle = g; ctx.fillRect(SC.x, SC.y, SC.w, SC.h);
+
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.shadowBlur = 18; ctx.shadowColor = rgba(C.amber, 0.55);
+  ctx.font = F_NAME; ctx.letterSpacing = '4px'; ctx.fillStyle = C.amber; ctx.fillText('NANA', 960 + 2, 440 + 8);
+  ctx.letterSpacing = '0.5px'; ctx.shadowBlur = 8;
+  ctx.font = F_SUB; ctx.fillStyle = rgba(C.amber, 0.70); ctx.fillText('calling…', 960, 520);
+  ctx.shadowBlur = 0; ctx.letterSpacing = '0px';
+
+  // decline (dark grey) and accept (amber) circles, 96 px, no glyphs
+  ctx.fillStyle = '#2B2B2E'; ctx.beginPath(); ctx.arc(830, 800, 48, 0, Math.PI*2); ctx.fill();
+  ctx.save(); ctx.shadowBlur = 16 + 10*pulse; ctx.shadowColor = rgba(C.amber, 0.6);
+  ctx.fillStyle = C.amber; ctx.beginPath(); ctx.arc(1090, 800, 48, 0, Math.PI*2); ctx.fill(); ctx.restore();
+  ctx.restore();   // screen clip
+
+  ctx.restore();   // vibration
+
+  const v = ctx.createRadialGradient(960, 540, 480, 960, 540, 1150);
+  v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,0.45)');
+  ctx.fillStyle = v; ctx.fillRect(0,0,1920,1080);
+};
+window.ready = Promise.all([F_NAME, F_SUB].map(f => document.fonts.load(f, 'NANA calling…')));
+</script></body></html>

@@ -1,0 +1,28 @@
+{
+ "dur": 9.0,
+ "fps": 24,
+ "out": "work/pilot/shots/45.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/js/s45_titles.mp4"
+  }
+ ],
+ "grade": {
+  "exposure": 0,
+  "contrast": 1.0,
+  "sat": 1.0,
+  "lift": [
+   0,
+   0,
+   0
+  ],
+  "gain": [
+   1,
+   1,
+   1
+  ],
+  "bloom": 0.15,
+  "vignette": 0,
+  "grain": 0.014
+ }
+}

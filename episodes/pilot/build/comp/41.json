@@ -1,0 +1,42 @@
+{
+ "dur": 5.0,
+ "fps": 24,
+ "out": "work/pilot/shots/41.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/comp/c31_46/p41.mp4"
+  }
+ ],
+ "camera": {
+  "from": [
+   0.5,
+   0.5,
+   1.0
+  ],
+  "to": [
+   0.5038709677419355,
+   0.4967741935483871,
+   1.0333333333333334
+  ],
+  "ease": "inout"
+ },
+ "grade": {
+  "exposure": 0,
+  "contrast": 1.02,
+  "sat": 1.02,
+  "lift": [
+   0.03,
+   0.025,
+   0.035
+  ],
+  "gain": [
+   1.06,
+   1.0,
+   0.93
+  ],
+  "bloom": 0.55,
+  "vignette": 0.22,
+  "grain": 0.026
+ },
+ "letterbox": 2.39
+}

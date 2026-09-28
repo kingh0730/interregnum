@@ -20,3 +20,14 @@ and everything else stays in-house (see `strategy.md`).
 - The image model behind Codex's built-in `image_gen` isn't stated anywhere local; the API fallback defaults to `gpt-image-2`.
 - `~/.claude/settings.json` allows `Bash(codex exec:*)`; auto mode blocks Claude from changing its own permissions.
 - `~/.codex/config.toml` is now tracked in King's home dotfiles repo (only that file; auth and history stay ignored).
+
+## Pilot v1 overnight build (2026-09-29)
+- **Codex drifts to semi-photoreal 3D** even when the prompt asks for "hand-painted cel". A leading style block
+  ("Flat 2D illustration, cel-shaded … matte surfaces only … absolutely no 3D rendering look") fixed it on the first retake,
+  and every later prompt carries it (`episodes/pilot/build/style_prefix.txt`) plus the master style frame as a reference.
+- **Character sheets plus refs hold identity well** across 27 keyframes (3 faces).
+- **Codex cutout layers don't register with their source keyframe**: they get redrawn at a different scale or pose,
+  and sometimes with a different arrangement. Build parallax mattes from the plate itself (GrabCut plus inpainting) instead.
+- **Codex edits of a keyframe (e.g. eyes closed) change lines outside the edit.** Paste back only the edited region
+  with a feathered mask.
+- **Throughput:** about 1 min per image at medium effort, 5 in parallel. 39 images took roughly 15 min with no safety blocks.

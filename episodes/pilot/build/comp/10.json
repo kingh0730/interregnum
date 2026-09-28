@@ -1,0 +1,5 @@
+{"dur": 3.0, "fps": 24, "out": "work/pilot/shots/10.mp4",
+ "layers": [{"src": "work/pilot/comp/c1/10_base.mp4"}],
+ "camera": {"from": [0.5, 0.5, 1.0], "to": [0.5, 0.5, 1.02], "ease": "inout"},
+ "grade": {"exposure": 0, "contrast": 1.05, "sat": 1.0, "lift": [0.03, 0.04, 0.08], "gain": [0.96, 1.0, 1.04], "bloom": 0.45, "vignette": 0.25, "grain": 0.02, "chroma": 0},
+ "letterbox": 2.39}

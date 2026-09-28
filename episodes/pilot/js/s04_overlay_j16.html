@@ -1,0 +1,53 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>s04_overlay_j16</title></head>
+<body>
+<script src="kit_s01_s20.js"></script>
+<script src="mesh_k02.js"></script>
+<script>
+// Shot 04 FREEZE: J16 mesh + J02 labels. Transparent 1920×1080 overlay aligned to work/pilot/k02_frozen.png, 3.0 s.
+// ?bg=1 draws the frozen frame underneath (QA only).
+const { C, F } = K;
+const QA_BG = new URLSearchParams(location.search).get('bg') === '1';
+const ctx = K.canvas(false);
+let M = null, IMG = null;
+window.ready = K.loadImage(K.K02_CANDS).then((r) => { IMG = r; M = K.mesh(r && r.src); });
+
+// random pop-in order for the dots (seeded)
+const order = (() => { const n = window.MESH_K02.points.length, a = [...Array(n).keys()], r = K.rng(4211); for (let i = n - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } const rank = []; a.forEach((p, k) => (rank[p] = k)); return rank; })();
+
+window.renderFrame = (t) => {
+  ctx.clearRect(0, 0, 1920, 1080);
+  if (QA_BG && IMG) { ctx.save(); ctx.filter = 'saturate(0.4)'; ctx.drawImage(IMG.img, 0, 0, 1920, 1080); ctx.restore(); }
+  if (t < 0.2) return;
+  const n = M.pts.length;
+  // dots: each pops within 0.20–0.45 s in random order; a 2-frame bright flash at 5 px, then 4 px dots at 90 %
+  K.drawMesh(ctx, M, {
+    lineP: K.easeInOutCubic(K.seg(t, 0.45, 0.80)), lineA: 0.55, lineW: 1.5, dotA: 0.9, dotR: 2,
+    dotsVisible: (i) => { const t0 = 0.2 + (order[i] / n) * 0.25 - 1 / 48; return t >= t0 ? 1 : 0; },
+  });
+  // fresh-pop flash
+  ctx.save(); ctx.fillStyle = C.core;
+  M.pts.forEach((p, i) => { const t0 = 0.2 + (order[i] / n) * 0.25 - 1 / 48; if (t >= t0 && t < t0 + 2 / 24) { ctx.globalAlpha = 0.8; ctx.beginPath(); ctx.arc(p[0], p[1], 3.5, 0, 7); ctx.fill(); } });
+  ctx.restore();
+
+  // desk tag + timecode (on with the mesh)
+  K.text(ctx, 'NIGHT DESK 4', 60, 170, { font: F.mono, size: 20, color: C.cyan, alpha: 0.6, track: 0.08 });
+  const ff = t < 1.0 ? 14 : Math.min(23, 14 + Math.floor(((t - 1.0) / 0.6) * 9 + 1e-6));
+  K.text(ctx, 'CALIBRATION · REPLAY NIGHT 211 · 20:51:07:' + K.pad(ff, 2), 60, 900, { font: F.mono, size: 24, color: C.cyan, track: 0.02 });
+
+  // red DRIFT box around the ghost ear (ghost = ear region +6 px in x)
+  if (t >= 0.8) {
+    const [ex, ey, ew, eh] = M.earBox;
+    const pad = 10, x = Math.round(ex + 6 - pad), y = Math.round(ey - pad), w = ew + 2 * pad, h = eh + 2 * pad;
+    ctx.save();
+    ctx.strokeStyle = C.red; ctx.lineWidth = 2;
+    ctx.strokeRect(x, y, w, h);
+    ctx.beginPath(); ctx.moveTo(x - 13, y); ctx.lineTo(x, y); ctx.stroke(); // tick
+    ctx.restore();
+    const lab = 'L EAR · DRIFT +3.2 PX', lw = K.measure(ctx, lab, { font: F.alt, weight: 'bold', size: 22, track: 0.06 });
+    ctx.save(); ctx.fillStyle = 'rgba(10,15,28,0.78)'; ctx.fillRect(x - 1, y - 38, lw + 18, 30); ctx.restore();
+    K.text(ctx, lab, x + 8, y - 16, { font: F.alt, weight: 'bold', size: 22, color: C.red, track: 0.06 });
+  }
+};
+</script>
+</body></html>

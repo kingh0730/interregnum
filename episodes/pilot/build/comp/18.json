@@ -1,0 +1,42 @@
+{
+ "dur": 5.0,
+ "fps": 24,
+ "out": "work/pilot/shots/18.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/comp/s16_30/b18.mp4"
+  }
+ ],
+ "camera": {
+  "from": [
+   0.5,
+   0.445,
+   1.0
+  ],
+  "to": [
+   0.5002912621359223,
+   0.44106796116504854,
+   1.03
+  ],
+  "ease": "inout"
+ },
+ "grade": {
+  "exposure": 0,
+  "contrast": 1.02,
+  "sat": 1.02,
+  "lift": [
+   0.03,
+   0.025,
+   0.035
+  ],
+  "gain": [
+   1.04,
+   1.0,
+   0.96
+  ],
+  "bloom": 0.55,
+  "vignette": 0.22,
+  "grain": 0.02
+ },
+ "letterbox": 2.39
+}

@@ -1,0 +1,143 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>s06_suite</title></head>
+<body>
+<script src="kit_s01_s20.js"></script>
+<script src="mesh_k02.js"></script>
+<script src="env_voice.js"></script>
+<script>
+// Shot 06 / J03 SUITE: HOLD STILL. 7.0 s, opaque, everything inside the band y 138–942.
+const { C, F } = K;
+const ctx = K.canvas(true);
+let IMG = null, M = null;
+window.ready = K.loadImage(K.K02_CANDS).then((r) => { IMG = r; M = K.mesh(r && r.src); });
+
+const VX = 60, VY = 220, VW = 1120, VH = 630, VS = VW / 1920; // viewer maps the 1920×1080 frame
+const vx = (x) => VX + x * VS, vy = (y) => VY + y * VS;
+
+const ITEMS = [
+  ['L EAR — DRIFT +3.2 PX', 'LOCKED', 2.3],
+  ['MOLE, L CHEEK — POSITION', 'LOCKED', 3.0],
+  ['BLINK INTERVAL 4.1 S → 3.6 S', 'OK', 3.6],
+  ['SKIN TONE ΔE 2.8 → 0.4', 'OK', 4.2],
+  ['BREATH CYCLE', 'OK', 4.8],
+  ['VOICE WARMTH +2%', 'OK', 5.4],
+];
+
+function crosshair(x, y, ring) {
+  ctx.save();
+  ctx.strokeStyle = C.cream; ctx.lineWidth = 1.5; ctx.shadowColor = 'rgba(0,0,0,0.6)'; ctx.shadowBlur = 4;
+  ctx.beginPath();
+  ctx.moveTo(x - 12, y); ctx.lineTo(x - 4, y); ctx.moveTo(x + 4, y); ctx.lineTo(x + 12, y);
+  ctx.moveTo(x, y - 12); ctx.lineTo(x, y - 4); ctx.moveTo(x, y + 4); ctx.lineTo(x, y + 12);
+  ctx.stroke();
+  if (ring > 0) { ctx.globalAlpha = Math.min(1, ring * 1.5); ctx.beginPath(); ctx.arc(x, y, K.lerp(22, 9, ring), 0, Math.PI * 2); ctx.stroke(); }
+  ctx.restore();
+}
+
+function viewer(t) {
+  // frame + image (30 % desaturated)
+  ctx.save();
+  ctx.beginPath(); ctx.rect(VX, VY, VW, VH); ctx.clip();
+  ctx.filter = 'saturate(0.7)';
+  if (IMG) ctx.drawImage(IMG.img, VX, VY, VW, VH);
+  ctx.filter = 'none';
+  // mesh at 35 %
+  K.drawMesh(ctx, M, { scale: VS, ox: VX, oy: VY, lineA: 0.55 * 0.35, dotA: 0.9 * 0.35, lineW: 1.2, dotR: 1.6 });
+  // ghost ear: +6 px, 40 %, dragged home 1.1–2.2, fades 2.2–2.3
+  const [ex, ey, ew, eh] = M.earBox;
+  const drag = K.easeInOutCubic(K.seg(t, 1.1, 2.2));
+  const gdx = 6 * (1 - drag);
+  const ga = t < 2.2 ? 0.4 : 0.4 * (1 - K.seg(t, 2.2, 2.3));
+  if (IMG && ga > 0) {
+    ctx.globalAlpha = ga; ctx.filter = 'saturate(0.7)';
+    ctx.drawImage(IMG.img, ex, ey, ew, eh, vx(ex) + gdx, vy(ey), ew * VS, eh * VS);
+    ctx.filter = 'none'; ctx.globalAlpha = 1;
+  }
+  ctx.restore();
+  K.frameRect(ctx, VX, VY, VW, VH, C.line);
+  // corner registration marks inside the viewer
+  ctx.save(); ctx.strokeStyle = C.cyan; ctx.globalAlpha = 0.35; ctx.lineWidth = 1;
+  for (const [cx, cy, sx, sy] of [[VX + 14, VY + 14, 1, 1], [VX + VW - 14, VY + 14, -1, 1], [VX + 14, VY + VH - 14, 1, -1], [VX + VW - 14, VY + VH - 14, -1, -1]]) {
+    ctx.beginPath(); ctx.moveTo(cx, cy + 16 * sy); ctx.lineTo(cx, cy); ctx.lineTo(cx + 16 * sx, cy); ctx.stroke();
+  }
+  ctx.restore();
+  K.text(ctx, 'K02 · PUSH 1.04 · FROZEN', VX + 34, VY + VH - 24, { font: F.mono, size: 14, color: C.cyan, alpha: 0.45, track: 0.04 });
+
+  // the box: red DRIFT → cyan LOCKED
+  const locked = t >= 2.3;
+  const col = locked ? C.cyan : C.red;
+  const pad = 7;
+  const bx = Math.round(vx(ex) + gdx - pad), by = Math.round(vy(ey) - pad), bw = Math.round(ew * VS + 2 * pad), bh = Math.round(eh * VS + 2 * pad);
+  ctx.save(); ctx.strokeStyle = col; ctx.lineWidth = 2; ctx.strokeRect(bx, by, bw, bh);
+  ctx.beginPath(); ctx.moveTo(bx - 9, by); ctx.lineTo(bx, by); ctx.stroke(); ctx.restore();
+  const flash = locked ? 1 - K.seg(t, 2.3, 2.7) : 0;
+  if (flash > 0) { ctx.save(); ctx.fillStyle = C.cyan; ctx.globalAlpha = 0.18 * flash; ctx.fillRect(bx, by, bw, bh); ctx.restore(); }
+  const lab = locked ? 'L EAR · LOCKED' : 'L EAR · DRIFT +3.2 PX', lw = K.measure(ctx, lab, { font: F.alt, weight: 'bold', size: 18, track: 0.06 });
+  ctx.save(); ctx.fillStyle = 'rgba(10,15,28,0.8)'; ctx.fillRect(bx - 1, by - 31, lw + 14, 25); ctx.restore();
+  K.text(ctx, lab, bx + 6, by - 13, { font: F.alt, weight: 'bold', size: 18, color: col, track: 0.06 });
+  return [vx(ex) + ew * VS / 2 + gdx, vy(ey) + eh * VS / 2];
+}
+
+function corrections(t) {
+  const X0 = 1230, X1 = 1860, Y0 = 230, Y1 = 830;
+  ctx.save(); ctx.fillStyle = C.panel; ctx.fillRect(X0, Y0, X1 - X0, Y1 - Y0); ctx.restore();
+  K.frameRect(ctx, X0, Y0, X1 - X0, Y1 - Y0, C.line);
+  K.text(ctx, 'CORRECTIONS · CALIBRATION PASS', X0 + 30, Y0 + 44, { font: F.alt, weight: 'bold', size: 22, color: C.cyan, alpha: 0.7, track: 0.08 });
+  K.rule(ctx, X0 + 30, Y0 + 66, X1 - 30, C.line);
+  let resolved = 0;
+  ITEMS.forEach(([label, tag, tf], i) => {
+    const y = Y0 + 124 + i * 48;
+    const done = t >= tf;
+    if (done) resolved++;
+    const hl = done ? 1 - K.seg(t, tf, tf + 0.5) : 0;
+    if (hl > 0) { ctx.save(); ctx.fillStyle = C.cyan; ctx.globalAlpha = 0.10 * hl; ctx.fillRect(X0 + 1, y - 32, X1 - X0 - 2, 46); ctx.restore(); }
+    K.text(ctx, label, X0 + 30, y, { font: F.mono, size: 22, color: C.cream, alpha: done ? 0.62 : 0.95 });
+    K.text(ctx, done ? tag : 'OPEN', X1 - 30, y, { font: F.mono, size: 20, color: done ? C.cyan : C.red, align: 'right', track: 0.06, glow: done ? 8 * hl : 0 });
+  });
+  K.rule(ctx, X0 + 30, Y1 - 76, X1 - 30, C.line);
+  K.text(ctx, 'RESOLVED', X0 + 30, Y1 - 36, { font: F.alt, weight: 'bold', size: 18, color: C.cyan, alpha: 0.55, track: 0.12 });
+  K.text(ctx, resolved + ' / ' + ITEMS.length, X1 - 30, Y1 - 34, { font: F.mono, size: 22, color: C.cream, align: 'right' });
+}
+
+function timeline(t) {
+  const X0 = 60, X1 = 1860, Y0 = 870, Y1 = 930, MID = 900;
+  ctx.save();
+  ctx.fillStyle = C.line;
+  for (let x = X0, k = 0; x <= X1; x += 8, k++) ctx.fillRect(x, k % 8 === 0 ? Y0 : Y1 - 8, 1, k % 8 === 0 ? 10 : 8);
+  ctx.fillRect(X0, Y1, X1 - X0, 1);
+  // D04 envelope (shot 03 replay: the line sits at +3.0 s of the 7 s clip)
+  const E = window.ENV_VOICE.d04, a = X0 + (3.0 / 7) * (X1 - X0), b = a + (E.dur / 7) * (X1 - X0);
+  ctx.fillStyle = C.cyan; ctx.globalAlpha = 0.4;
+  ctx.beginPath(); ctx.moveTo(a, MID);
+  const n = Math.round(b - a);
+  const amp = (x) => { const i = Math.min(E.v.length - 1, Math.floor(((x - a) / (b - a)) * E.v.length)); return Math.pow(E.v[i], 0.7) * 20; };
+  for (let x = a; x <= b; x += 2) ctx.lineTo(x, MID - amp(x));
+  for (let x = b; x >= a; x -= 2) ctx.lineTo(x, MID + amp(x));
+  ctx.closePath(); ctx.fill();
+  ctx.globalAlpha = 0.5; ctx.fillRect(X0, MID, X1 - X0, 1);
+  ctx.restore();
+  K.text(ctx, 'D04', a, Y0 + 2, { font: F.mono, size: 12, color: C.cyan, alpha: 0.5, track: 0.1 });
+  // playhead
+  const px = Math.round(X0 + (X1 - X0) * K.clamp(t / 7));
+  ctx.save(); ctx.fillStyle = C.cream; ctx.fillRect(px, Y0 - 6, 1.5, Y1 - Y0 + 6);
+  ctx.beginPath(); ctx.moveTo(px - 5, Y0 - 8); ctx.lineTo(px + 6.5, Y0 - 8); ctx.lineTo(px + 0.75, Y0 - 1); ctx.closePath(); ctx.fill(); ctx.restore();
+}
+
+window.renderFrame = (t) => {
+  ctx.globalAlpha = 1; ctx.filter = 'none';
+  ctx.fillStyle = C.navy; ctx.fillRect(0, 0, 1920, 1080);
+  K.topBar(ctx, { t, clock0: K.parseHMS('20:51:22'), toAir0: 8 * 60 + 38 });
+  const [gx, gy] = viewer(t);
+  corrections(t);
+  timeline(t);
+  // cursor
+  let cx, cy, ring = 0;
+  const start = [1960, 640], rest = [1700, 404];
+  if (t < 0.3) { cx = -100; cy = -100; }
+  else if (t < 1.0) { const u = K.easeInOutCubic(K.seg(t, 0.3, 1.0)); cx = K.lerp(start[0], gx, u); cy = K.lerp(start[1], gy, u); }
+  else if (t < 2.5) { cx = gx; cy = gy; ring = t < 2.2 ? K.easeOutCubic(K.seg(t, 1.0, 1.1)) : 1 - K.seg(t, 2.2, 2.35); }
+  else { const u = K.easeInOutCubic(K.seg(t, 2.5, 3.0)); cx = K.lerp(gx, rest[0], u); cy = K.lerp(gy, rest[1], u); }
+  if (t >= 0.3) crosshair(cx, cy, ring);
+};
+</script>
+</body></html>

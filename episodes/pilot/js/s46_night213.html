@@ -1,0 +1,19 @@
+<!doctype html>
+<!-- Shot 46 (alt tail), 0.0–1.0 s: the NIGHT 213 card. Menlo 36 px #5FE1E6 centred on black, fading in over 0.2 s, holding. -->
+<html><head><meta charset="utf-8"><title>s46_night213</title>
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas>
+<script>
+const ctx = document.getElementById('c').getContext('2d');
+const F = '36px Menlo';
+window.renderFrame = (t) => {
+  ctx.fillStyle = '#000'; ctx.fillRect(0, 0, 1920, 1080);
+  const u = Math.min(1, Math.max(0, t / 0.2)), a = u * u * (3 - 2 * u);
+  ctx.font = F; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.letterSpacing = '6px';
+  ctx.globalAlpha = a; ctx.fillStyle = '#5FE1E6';
+  ctx.shadowBlur = 10; ctx.shadowColor = 'rgba(95,225,230,0.45)';
+  ctx.fillText('NIGHT 213', 960 + 3, 540);   // +3 recentres after the trailing letter-spacing
+  ctx.globalAlpha = 1; ctx.shadowBlur = 0;
+};
+window.ready = document.fonts.load(F, 'NIGHT 213');
+</script></body></html>

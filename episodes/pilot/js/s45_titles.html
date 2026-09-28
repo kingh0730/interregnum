@@ -1,0 +1,59 @@
+<!doctype html>
+<!-- J13 `titles` — shot 45, 9.0 s on black: the epigraph, then INTERREGNUM over a line of dawn rose. -->
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas>
+<script>
+const CREAM = '#E9E2D0', ROSE = '#F4C6C0';
+const rgba = (h,a) => `rgba(${parseInt(h.slice(1,3),16)},${parseInt(h.slice(3,5),16)},${parseInt(h.slice(5,7),16)},${a})`;
+const clamp = (x,a=0,b=1) => Math.max(a, Math.min(b, x));
+const ss = x => { x = clamp(x); return x*x*(3-2*x); };
+const easeInOutCubic = x => { x = clamp(x); return x<0.5 ? 4*x*x*x : 1-Math.pow(-2*x+2,3)/2; };
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const F_EPI = "italic 54px Baskerville", F_ATT = "28px Baskerville";
+const F_TITLE = "500 110px Futura", F_EP = "bold 28px 'DIN Alternate'";
+const EPI = 'The old is dying and the new cannot be born.';
+
+// y values are baselines (the rose line sits "70 px below the baseline" of INTERREGNUM)
+function tracked(str, font, track, cx, y, color, alpha){
+  ctx.font = font; ctx.letterSpacing = track + 'px'; ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
+  const w = ctx.measureText(str).width - track;          // drop the trailing tracking so it centres truly
+  ctx.globalAlpha = alpha; ctx.fillStyle = color; ctx.fillText(str, cx - w/2, y);
+  ctx.globalAlpha = 1; ctx.letterSpacing = '0px';
+}
+
+window.renderFrame = (t) => {
+  ctx.fillStyle = '#000'; ctx.fillRect(0,0,1920,1080);
+  const outA = 1 - ss((t - 8.4)/0.6);                   // 8.4–9.0 everything fades to black
+
+  // --- epigraph, word by word (every 0.25 s from 0.3 s, each fading in over 0.12 s) ---
+  const epiOut = 1 - ss((t - 4.3)/0.5);
+  if (t < 4.8){
+    ctx.font = F_EPI; ctx.textBaseline = 'alphabetic'; ctx.textAlign = 'left';
+    const words = EPI.split(' '), space = ctx.measureText(' ').width;
+    const total = ctx.measureText(EPI).width;
+    let x = 960 - total/2;
+    words.forEach((wd, i) => {
+      const a = clamp((t - (0.3 + i*0.25))/0.12);
+      if (a > 0){ ctx.globalAlpha = a*epiOut; ctx.fillStyle = CREAM; ctx.fillText(wd, x, 500); }
+      x += ctx.measureText(wd).width + space;
+    });
+    ctx.globalAlpha = 1;
+    const aa = ss((t - 2.8)/0.4) * 0.60 * epiOut;
+    if (aa > 0){ ctx.font = F_ATT; ctx.textAlign = 'center'; ctx.globalAlpha = aa; ctx.fillStyle = CREAM;
+      ctx.fillText('— Antonio Gramsci', 960, 580); ctx.globalAlpha = 1; ctx.textAlign = 'left'; }
+  }
+
+  // --- title card ---
+  if (t >= 5.0){
+    tracked('INTERREGNUM', F_TITLE, 110*0.6, 960, 520, CREAM, outA);
+    const p = easeInOutCubic((t - 5.1)/0.7);
+    if (p > 0){ const hw = 200*p;
+      ctx.globalAlpha = outA; ctx.fillStyle = ROSE; ctx.shadowBlur = 6; ctx.shadowColor = rgba(ROSE, 0.5);
+      ctx.fillRect(960 - hw, 590 - 1, 2*hw, 2); ctx.shadowBlur = 0; ctx.globalAlpha = 1; }
+    const ea = ss((t - 5.6)/0.4) * 0.60 * outA;
+    if (ea > 0) tracked('EPISODE ONE · CONTINUITY', F_EP, 28*0.4, 960, 640, CREAM, ea);
+  }
+};
+window.ready = Promise.all([F_EPI, F_ATT, F_TITLE, F_EP].map(f => document.fonts.load(f, 'The old INTERREGNUM — ·')));
+</script></body></html>

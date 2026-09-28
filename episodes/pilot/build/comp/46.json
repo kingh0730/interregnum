@@ -1,0 +1,30 @@
+{
+ "dur": 10.0,
+ "fps": 24,
+ "out": "work/pilot/shots/46.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/comp/c31_46/s46a.mp4",
+   "fixed": true,
+   "t0": 0.0,
+   "t1": 1.0
+  },
+  {
+   "src": "work/pilot/comp/c31_46/s46b.mp4",
+   "fixed": true,
+   "t0": 1.0,
+   "t1": 4.0
+  },
+  {
+   "src": "work/pilot/comp/c31_46/s46c.mp4",
+   "fixed": true,
+   "t0": 4.0,
+   "t1": 10.0
+  }
+ ],
+ "grade": {
+  "bloom": 0,
+  "vignette": 0,
+  "grain": 0
+ }
+}

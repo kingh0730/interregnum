@@ -1,0 +1,35 @@
+{
+ "dur": 8.0,
+ "fps": 24,
+ "out": "work/pilot/shots/24.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/js/s24_i.mp4",
+   "fixed": true
+  },
+  {
+   "src": "work/pilot/comp/s16_30/scan4.png",
+   "fixed": true,
+   "blend": "multiply"
+  }
+ ],
+ "grade": {
+  "exposure": 0,
+  "contrast": 1.03,
+  "sat": 1.0,
+  "lift": [
+   0.02,
+   0.025,
+   0.045
+  ],
+  "gain": [
+   0.99,
+   1.0,
+   1.03
+  ],
+  "bloom": 0.45,
+  "vignette": 0.25,
+  "grain": 0.02
+ },
+ "letterbox": 2.39
+}

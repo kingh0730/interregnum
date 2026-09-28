@@ -1,0 +1,28 @@
+{
+ "dur": 1.0,
+ "out": "work/pilot/comp/c31_46/s46a.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/js/s46_night213.mp4"
+  }
+ ],
+ "grade": {
+  "exposure": 0,
+  "contrast": 1.0,
+  "sat": 1.0,
+  "lift": [
+   0,
+   0,
+   0
+  ],
+  "gain": [
+   1,
+   1,
+   1
+  ],
+  "bloom": 0.15,
+  "vignette": 0,
+  "grain": 0.014
+ },
+ "fps": 24
+}

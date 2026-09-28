@@ -1,0 +1,50 @@
+{
+ "dur": 6.0,
+ "fps": 24,
+ "out": "work/pilot/shots/34.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/comp/c31_46/p34.mp4"
+  },
+  {
+   "src": "work/pilot/comp/c31_46/scanlines.png",
+   "fixed": true
+  },
+  {
+   "src": "work/pilot/js/s34_bug.mov",
+   "fixed": true
+  }
+ ],
+ "camera": {
+  "from": [
+   0.5,
+   0.4969230769230769,
+   1.04
+  ],
+  "to": [
+   0.5,
+   0.49547169811320757,
+   1.06
+  ],
+  "ease": "inout"
+ },
+ "grade": {
+  "exposure": 0,
+  "contrast": 0.95,
+  "sat": 0.92,
+  "lift": [
+   0.045,
+   0.06,
+   0.09
+  ],
+  "gain": [
+   1,
+   1,
+   1
+  ],
+  "bloom": 0.3,
+  "vignette": 0.15,
+  "grain": 0.015,
+  "chroma": 1
+ }
+}

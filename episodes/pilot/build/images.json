@@ -1,0 +1,681 @@
+[
+  {
+    "id": "ld1_hall",
+    "out": "assets/pilot/lookdev/ld1_hall.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. SUBJECT: a style frame for the film's main location, the Hall of a government broadcast ministry at night. A three-quarter view looking down a side aisle of an immense dark concrete hall shaped like the nave of a cathedral: massive square columns with brass pneumatic-tube pipes climbing them; long rows of operator desks draped in pale dust sheets; at the far end, a colossal flat wall of monitors (a grid of about 12 by 8 screens with thin black bezels), every screen a blank, evenly glowing pale cyan, throwing cold light and long shadows down the hall; above the monitor wall, a small rectangular signal-lamp box glowing dim red. In the middle distance one desk is uncovered and lit by two small monitors (blank glowing panels), with an empty chair and a small dented amber thermos flask on it. Cold light beams through haze, dust motes in the beams, the ceiling lost in darkness. Mood: vast, silent, sacred, lonely.",
+    "refs": [],
+    "alpha": false,
+    "deps": [],
+    "shots": [
+      2,
+      5,
+      7,
+      10,
+      11,
+      23,
+      27,
+      32,
+      35,
+      36
+    ]
+  },
+  {
+    "id": "ld2_city",
+    "out": "assets/pilot/lookdev/ld2_city.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. Use the attached image only as a reference for drawing style, line quality and palette, not for content. SUBJECT: a style frame for the City at night in heavy rain. An elevated view from a footbridge along a straight canal running between dense concrete residential tower blocks of one identical design, stacked into the distance. Their facades are strict grids of small square windows, and almost every window glows the same flat cold cyan-blue, as if lit by television screens; exactly one window glows warm amber. Tram wires and a few laundry lines cross the view; far off, a tram with glowing windows crosses a bridge; on a taller building, a huge blank billboard screen glows plain cyan. Wet surfaces reflect the cyan light in long streaks; fine slanted rain. Mood: a whole city waiting in front of the same screen.",
+    "refs": [
+      "assets/pilot/lookdev/ld1_hall.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld1_hall"
+    ],
+    "shots": [
+      15,
+      30
+    ]
+  },
+  {
+    "id": "ld3_apartment",
+    "out": "assets/pilot/lookdev/ld3_apartment.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. Use the attached image only as a reference for drawing style, line quality and palette, not for content. SUBJECT: a style frame for Nana's apartment at night, seen from the doorway, with nobody in the room. A small, tidy, old room: a worn armchair with a crocheted cover facing an old boxy television set on a lace-covered cabinet (its screen a blank, evenly glowing cyan panel); beside the armchair, a side table with a warm amber table lamp with a pleated fabric shade and an old cream-colored telephone with a rotary dial and a coiled cord; a small table with two teacups and an empty wooden chair; in the corner, a tiny two-ring stove with a small lidded pot; shelves with jars and a folded knitted blanket; a plain round wall clock with no numerals; a rain-streaked window showing cyan-lit tower blocks outside. The room is split between warm amber lamplight on the left and cold cyan television light on the right. Mood: warm, patient, a nightly ritual.",
+    "refs": [
+      "assets/pilot/lookdev/ld1_hall.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld1_hall"
+    ],
+    "shots": [
+      16,
+      18,
+      33,
+      39
+    ]
+  },
+  {
+    "id": "ld4_ida",
+    "out": "assets/pilot/lookdev/ld4_ida.png",
+    "prompt": "STYLE: a character model sheet for a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes). Plain flat warm-grey background, even neutral light with a faint cool cyan rim. Every view shows exactly the same person with identical proportions, hair, face and costume. Wide 16:9 landscape sheet. No text, labels, letters, numbers, logos or watermarks anywhere. Use the attached image only as a reference for drawing style and palette, not for content. CHARACTER: IDA: a woman of 27, slim, with a short blunt jaw-length black bob and straight-cut bangs just above her eyebrows, dark brown eyes with tired lower lids, straight dark brows, a small straight nose, a small silver hoop earring in her left ear, warm light-olive skin; she wears a charcoal-grey ribbed turtleneck sweater, a hand-knitted mustard-amber wool scarf worn loosely around her neck, and a thin grey lanyard with a blank white ID card. LAYOUT: top row, four full-body views of Ida standing with arms relaxed (front, three-quarter, side profile, back); bottom row, four head-and-shoulders close-ups of Ida with different expressions: (1) focused and tired, lit cyan from one side; (2) hesitant, eyes lifted; (3) stunned, eyes glistening; (4) eyes closed, crying and laughing at once. Her scarf is the only warm color on the sheet.",
+    "refs": [
+      "assets/pilot/lookdev/ld1_hall.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld1_hall"
+    ],
+    "shots": [
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      25,
+      27,
+      32,
+      36,
+      38,
+      42
+    ]
+  },
+  {
+    "id": "ld5_nana",
+    "out": "assets/pilot/lookdev/ld5_nana.png",
+    "prompt": "STYLE: a character model sheet for a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes). Plain flat warm-grey background, even neutral light with a faint cool cyan rim. Every view shows exactly the same person with identical proportions, hair, face and costume. Wide 16:9 landscape sheet. No text, labels, letters, numbers, logos or watermarks anywhere. Use the attached image only as a reference for drawing style and palette, not for content. CHARACTER: NANA: a small woman of 82 with silver-white hair in a low bun held by a dark wooden hairpin, a soft round face with deep smile lines, bright dark eyes behind thin round gold wire-rimmed glasses, warm light-brown skin, small pearl stud earrings; she wears a dark bottle-green knitted cardigan over a cream blouse with a tiny faded floral print. LAYOUT: top row, four full-body views of Nana standing, slightly stooped, hands folded (front, three-quarter, side profile, back); bottom row, four head-and-shoulders close-ups with different expressions: (1) attentive, watching something; (2) a small private smile; (3) tender, eyes glistening; (4) a soft laugh with eyes closed.",
+    "refs": [
+      "assets/pilot/lookdev/ld1_hall.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld1_hall"
+    ],
+    "shots": [
+      16,
+      18,
+      20,
+      33,
+      39
+    ]
+  },
+  {
+    "id": "ld6_father",
+    "out": "assets/pilot/lookdev/ld6_father.png",
+    "prompt": "STYLE: a character model sheet for a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes). Plain flat warm-grey background, even neutral light with a faint cool cyan rim. Every view shows exactly the same person with identical proportions, hair, face and costume. Wide 16:9 landscape sheet. No text, labels, letters, numbers, logos or watermarks anywhere. Use the attached image only as a reference for drawing style and palette, not for content. CHARACTER: THE FATHER: an elderly man of about 85 with a broad, heavy-boned face, thick silver-white hair combed straight back from a high forehead, heavy white eyebrows, a short neatly trimmed white beard, deep-set dark eyes with a gentle grandfatherly expression, a small dark mole high on his left cheekbone, weathered warm-tan skin; he wears a plain charcoal high-collared wool coat buttoned to the throat, with a small round silver pin on the left side of the collar. He is an invented character and must not resemble any real person. LAYOUT: top row, three head-and-shoulders views (front, looking straight at the viewer with a calm, warm half-smile; three-quarter; side profile); bottom row, a full-body front view standing upright with hands folded, a close-up with a neutral expression, and a close-up with the eyes gently closed as if peacefully asleep. The mole is on his left cheekbone in every view (on the right side of the image in the front views).",
+    "refs": [
+      "assets/pilot/lookdev/ld1_hall.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld1_hall"
+    ],
+    "shots": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "k01",
+    "out": "work/pilot/keys/k01.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow; subtle paper grain; realistic human proportions and face (not chibi, no oversized eyes). This image is itself a television broadcast picture: it fills the whole 16:9 frame edge to edge, with no TV set and no screen border. PALETTE: deep blue backdrop, cool pale-cyan rim light, soft neutral studio key light on the face; no other saturated colors. No text, letters, numbers, logos or watermarks anywhere. CHARACTER: THE FATHER: an elderly man of about 85 with a broad, heavy-boned face, thick silver-white hair combed straight back from a high forehead, heavy white eyebrows, a short neatly trimmed white beard, deep-set dark eyes with a gentle grandfatherly expression, a small dark mole high on his left cheekbone, weathered warm-tan skin; he wears a plain charcoal high-collared wool coat buttoned to the throat, with a small round silver pin on the left side of the collar. He is an invented character and must not resemble any real person. Match the attached character sheet exactly. SHOT: a medium close-up broadcast picture, framed from mid-chest up, perfectly centered and symmetrical, with his eyes on the upper-third line and generous headroom. He sits upright, square to the viewer, and looks directly into the lens with a calm, warm, grandfatherly half-smile; mouth closed, about to speak; shoulders relaxed; hands out of frame. Behind him is a smooth deep-blue studio backdrop with a soft circular pale-cyan halo of light centered behind his head, like a rising moon. Lighting: a soft frontal studio key from slightly left, a gentle cool cyan rim on his hair and shoulders, no harsh shadows. Mood: reassuring, timeless, faintly uncanny in its perfection.",
+    "refs": [
+      "assets/pilot/lookdev/ld6_father.png",
+      "assets/pilot/lookdev/ld1_hall.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld6_father",
+      "ld1_hall"
+    ],
+    "shots": [
+      2,
+      8,
+      29,
+      30,
+      46
+    ]
+  },
+  {
+    "id": "k02",
+    "out": "work/pilot/keys/k02.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow; subtle paper grain; realistic human proportions and face (not chibi, no oversized eyes). This image is itself a television broadcast picture: it fills the whole 16:9 frame edge to edge, with no TV set and no screen border. PALETTE: deep blue backdrop, cool pale-cyan rim light, soft neutral studio key light on the face; no other saturated colors. No text, letters, numbers, logos or watermarks anywhere. CHARACTER: THE FATHER: an elderly man of about 85 with a broad, heavy-boned face, thick silver-white hair combed straight back from a high forehead, heavy white eyebrows, a short neatly trimmed white beard, deep-set dark eyes with a gentle grandfatherly expression, a small dark mole high on his left cheekbone, weathered warm-tan skin; he wears a plain charcoal high-collared wool coat buttoned to the throat, with a small round silver pin on the left side of the collar. He is an invented character and must not resemble any real person. He is exactly the same man as in the attached images: same face, hair, beard, coat and pin. SHOT: a close-up broadcast picture, head and the top of the shoulders, perfectly centered, eyes level with the lens and looking straight into the viewer's eyes; a kind, patient expression, lips closed. The small dark mole high on his left cheekbone (on the right side of the image) is clearly visible. The soft circular pale-cyan halo is partly visible behind his head on the deep-blue backdrop. Lighting: a soft frontal key from the left and a cool cyan rim light. Leave a little space above his head. Both ears are visible.",
+    "refs": [
+      "assets/pilot/lookdev/ld6_father.png",
+      "work/pilot/keys/k01.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld6_father",
+      "k01"
+    ],
+    "shots": [
+      3,
+      4,
+      5,
+      6,
+      8,
+      12,
+      23,
+      31,
+      33,
+      34
+    ]
+  },
+  {
+    "id": "k03",
+    "out": "work/pilot/keys/k03.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. LOCATION: the Hall of a government broadcast ministry at night, drawn in the style of the attached style frame. An immense dark hall like the nave of a concrete cathedral, seen from high up at the back in perfect symmetrical one-point perspective. Rows of abandoned operator desks covered with pale dust sheets recede in straight lines toward the far wall. The entire far wall is one colossal, flat, frontal, rectangular wall of monitors (a grid of about 12 by 8 screens with thin black bezels), all glowing one plain, even, pale cyan with nothing on them. They throw cold light and long shadows down the hall through faint haze. Above the monitor wall, centered, is a small unlit red signal-lamp box. Brass pneumatic-tube pipes run up the concrete columns. CHARACTER: in the lower center of the frame, far away and small, a single desk lit by its own two small monitors, where a lone young woman sits with her back to us: a short blunt black bob, a charcoal sweater, and a mustard-amber scarf, which is the only warm color in the image (she is the woman on the attached character sheet). Dust motes hang in the light beams; the ceiling is lost in darkness. Mood: vast, silent, sacred, lonely.",
+    "refs": [
+      "assets/pilot/lookdev/ld1_hall.png",
+      "assets/pilot/lookdev/ld4_ida.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld1_hall",
+      "ld4_ida"
+    ],
+    "shots": [
+      5
+    ]
+  },
+  {
+    "id": "k03_fg_desks",
+    "out": "work/pilot/keys/k03_fg_desks.png",
+    "prompt": "Using the attached image, isolate only the two nearest rows of dust-sheeted desks at the far left and far right edges of the frame (the closest foreground desks), exactly as they appear, with the same position, scale, lighting and flat cel-painted style, on a genuinely transparent background. Everything else must be fully transparent. Keep the image the same size as the original.",
+    "refs": [
+      "work/pilot/keys/k03.png"
+    ],
+    "alpha": true,
+    "deps": [
+      "k03"
+    ],
+    "shots": [
+      5,
+      43
+    ]
+  },
+  {
+    "id": "k04",
+    "out": "work/pilot/keys/k04.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. CHARACTER: IDA: a woman of 27, slim, with a short blunt jaw-length black bob and straight-cut bangs just above her eyebrows, dark brown eyes with tired lower lids, straight dark brows, a small straight nose, a small silver hoop earring in her left ear, warm light-olive skin; she wears a charcoal-grey ribbed turtleneck sweater, a hand-knitted mustard-amber wool scarf worn loosely around her neck, and a thin grey lanyard with a blank white ID card. Match the attached character sheet exactly. SHOT: a medium close-up of Ida seated at her desk, seen in three-quarter view from her front-left. She faces screen-left toward a monitor just outside the left edge of the frame, whose cold cyan glow is the key light on her face. She holds a slim stylus raised near the left edge, as if about to touch the screen. Her expression is focused, precise, detached and very tired. On the desk beside her keyboard sits a small dented amber-colored thermos flask, unopened. Behind her, far out of focus, the giant cyan monitor wall of the dark hall (in the style of the attached location frame) dissolves into soft glowing blocks. Composition: her head on the right third, looking left into open space, with comfortable headroom; her amber scarf catches a little of the light.",
+    "refs": [
+      "assets/pilot/lookdev/ld4_ida.png",
+      "assets/pilot/lookdev/ld1_hall.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld4_ida",
+      "ld1_hall"
+    ],
+    "shots": [
+      7
+    ]
+  },
+  {
+    "id": "k05",
+    "out": "work/pilot/keys/k05.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. SHOT: an extreme close-up at desk height, in the same world and style as the attached location frame. A heavy old brass pneumatic-tube receiver is fixed to the edge of a dark, scratched metal desk. A curved brass pipe comes down from the top of the frame and ends in an open, empty, cup-shaped brass cradle, with nothing in it yet. The brass reflects cold cyan light from a monitor out of frame at the left. Behind: darkness with faint haze and the vague depth of a vast hall. Composition: the pipe mouth at upper center and the empty cradle at lower center, with clear space between them for an object to drop in.",
+    "refs": [
+      "assets/pilot/lookdev/ld1_hall.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld1_hall"
+    ],
+    "shots": [
+      10
+    ]
+  },
+  {
+    "id": "k05_capsule",
+    "out": "work/pilot/keys/k05_capsule.png",
+    "prompt": "STYLE: flat 2D cel-painted animation look with clean dark-navy ink contour lines, flat color shapes with one hard-edged shadow tone and subtle paper grain, matching the attached image. A single matte-black cylindrical pneumatic message capsule, about the length of a forearm, with rounded brass end caps and a band of red wax seal around its middle. It lies horizontally, seen from the same slightly-above angle as the attached image and lit by the same cold cyan light from the left. On a genuinely transparent background, with nothing else in the image. No text or markings.",
+    "refs": [
+      "work/pilot/keys/k05.png"
+    ],
+    "alpha": true,
+    "deps": [
+      "k05"
+    ],
+    "shots": [
+      10
+    ]
+  },
+  {
+    "id": "k06",
+    "out": "work/pilot/keys/k06.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. SHOT: an overhead view looking straight down at a dark, scratched metal desk. A young woman's two hands (slim fingers, the cuffs of a charcoal-grey ribbed sweater, as on the attached character sheet) hold open a narrow strip of cream paper. The paper is flat and faces the camera squarely, its ends curling slightly, and it is completely blank with no marks at all, only a faint paper texture. Beside it lies an opened matte-black message capsule with brass end caps and a broken red wax band. Cold cyan monitor light falls from the top of the frame; deep shadows. Composition: the paper strip centered horizontally, filling the middle 60% of the frame width.",
+    "refs": [
+      "assets/pilot/lookdev/ld4_ida.png",
+      "assets/pilot/lookdev/ld1_hall.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld4_ida",
+      "ld1_hall"
+    ],
+    "shots": [
+      11
+    ]
+  },
+  {
+    "id": "k07",
+    "out": "work/pilot/keys/k07.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. CHARACTER: IDA: a woman of 27, slim, with a short blunt jaw-length black bob and straight-cut bangs just above her eyebrows, dark brown eyes with tired lower lids, straight dark brows, a small straight nose, a small silver hoop earring in her left ear, warm light-olive skin; she wears a charcoal-grey ribbed turtleneck sweater, a hand-knitted mustard-amber wool scarf worn loosely around her neck, and a thin grey lanyard with a blank white ID card. She is exactly the same woman as in the attached images. SHOT: a close-up of Ida, frontal, from a slightly low angle. Her face is lit hard from below and in front by the cold cyan glow of a screen just beneath the camera. She stares past the lens at the screen, jaw set, brows slightly lowered: contempt and exhaustion. Her lips are just parted, as if about to speak. Tiny cyan reflections show in her eyes. Background: pure darkness with a few faint cyan bokeh shapes. Composition: face centered slightly left, eyes on the upper third, the amber scarf at the bottom edge.",
+    "refs": [
+      "assets/pilot/lookdev/ld4_ida.png",
+      "work/pilot/keys/k04.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld4_ida",
+      "k04"
+    ],
+    "shots": [
+      13
+    ]
+  },
+  {
+    "id": "k08",
+    "out": "work/pilot/keys/k08.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. LOCATION: the City at night, in the architecture and style of the attached style frame. A long-lens view across a dark canal toward a dense wall of identical concrete residential tower blocks stacked one behind another. Their facades are strict grids of hundreds of small square windows drawn as clean flat rectangles, and almost every window glows the same flat cold cyan-blue, as if lit by television screens. Exactly one window glows warm amber from a household lamp: it is in the nearest tower at the lower right, on the lower-right third point. Heavy rain falls in fine slanted streaks. Tram wires cut diagonally across the upper frame. The black canal reflects the cyan windows in long broken streaks. Low clouds glow faintly. At the far left, a taller distant building carries a huge blank billboard screen glowing plain cyan. Mood: a whole city waiting in front of the same screen; one warm light.",
+    "refs": [
+      "assets/pilot/lookdev/ld2_city.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld2_city"
+    ],
+    "shots": [
+      15,
+      44
+    ]
+  },
+  {
+    "id": "k08_fg_tower",
+    "out": "work/pilot/keys/k08_fg_tower.png",
+    "prompt": "Using the attached image, isolate only the nearest tower block at the right side of the frame (including the single warm amber window), exactly as it appears, with the same position, scale, lighting and flat cel-painted style, on a genuinely transparent background. Everything else must be fully transparent. Keep the image the same size as the original.",
+    "refs": [
+      "work/pilot/keys/k08.png"
+    ],
+    "alpha": true,
+    "deps": [
+      "k08"
+    ],
+    "shots": [
+      15,
+      44
+    ]
+  },
+  {
+    "id": "k09",
+    "out": "work/pilot/keys/k09.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. CHARACTER: NANA: a small woman of 82 with silver-white hair in a low bun held by a dark wooden hairpin, a soft round face with deep smile lines, bright dark eyes behind thin round gold wire-rimmed glasses, warm light-brown skin, small pearl stud earrings; she wears a dark bottle-green knitted cardigan over a cream blouse with a tiny faded floral print. She matches the attached character sheet. LOCATION: Nana's small apartment at night, as in the attached style frame. The room is seen from behind and slightly to the side of Nana, who sits in a worn armchair with her back three-quarters to us, small and still, facing an old boxy television set on a lace-covered cabinet at the right. The television screen is a blank, evenly glowing cyan panel. Between them, on a side table: a warm amber table lamp with a pleated fabric shade, and an old cream-colored telephone with a rotary dial and a coiled cord. A small table holds two teacups, one near her and one untouched in front of an empty wooden chair. In the far corner, a tiny two-ring stove with a small lidded pot. A rain-streaked window shows cyan-lit towers beyond, and there is a plain round wall clock with no numerals. The room is split between warm amber lamplight on the left and cold cyan television light on the right. Composition: Nana on the left third, the TV on the right third, the lamp between them. Mood: warm, patient, a nightly ritual.",
+    "refs": [
+      "assets/pilot/lookdev/ld3_apartment.png",
+      "assets/pilot/lookdev/ld5_nana.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld3_apartment",
+      "ld5_nana"
+    ],
+    "shots": [
+      16
+    ]
+  },
+  {
+    "id": "k09_fg_nana",
+    "out": "work/pilot/keys/k09_fg_nana.png",
+    "prompt": "Using the attached image, isolate only the elderly woman together with her armchair, exactly as they appear, with the same position, scale, lighting and flat cel-painted style, on a genuinely transparent background. Everything else must be fully transparent. Keep the image the same size as the original.",
+    "refs": [
+      "work/pilot/keys/k09.png"
+    ],
+    "alpha": true,
+    "deps": [
+      "k09"
+    ],
+    "shots": [
+      16
+    ]
+  },
+  {
+    "id": "k10",
+    "out": "work/pilot/keys/k10.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. CHARACTER: IDA: a woman of 27, slim, with a short blunt jaw-length black bob and straight-cut bangs just above her eyebrows, dark brown eyes with tired lower lids, straight dark brows, a small straight nose, a small silver hoop earring in her left ear, warm light-olive skin; she wears a charcoal-grey ribbed turtleneck sweater, a hand-knitted mustard-amber wool scarf worn loosely around her neck, and a thin grey lanyard with a blank white ID card. She is exactly the same woman as in the attached images. SHOT: a medium close-up of Ida at her desk in a dark hall. She has turned away from her monitors and faces screen-left, shoulders slightly hunched, holding a small slim dark phone to her ear on the side facing the camera. Her eyes are lowered, her expression private and soft, lips closed, about to speak. Cold cyan light from the monitors behind her rims her hair and shoulder; the side of her face toward camera is in soft shadow, with a faint warm glow from the phone. Behind her, the giant monitor wall is out-of-focus cyan blocks. The small amber thermos stands on the desk. Composition: Ida left of center, looking left, with headroom above.",
+    "refs": [
+      "assets/pilot/lookdev/ld4_ida.png",
+      "work/pilot/keys/k04.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld4_ida",
+      "k04"
+    ],
+    "shots": [
+      17
+    ]
+  },
+  {
+    "id": "k11",
+    "out": "work/pilot/keys/k11.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. CHARACTER: NANA: a small woman of 82 with silver-white hair in a low bun held by a dark wooden hairpin, a soft round face with deep smile lines, bright dark eyes behind thin round gold wire-rimmed glasses, warm light-brown skin, small pearl stud earrings; she wears a dark bottle-green knitted cardigan over a cream blouse with a tiny faded floral print. Match the attached character sheet exactly. SHOT: a close-up of Nana seated in her armchair (in the apartment of the attached style frame), holding an old cream-colored telephone handset to her ear on the side facing the camera. Her face is turned three-quarters toward screen-right, where the television is (off-frame). Her face is lit half by cold cyan television light from the right and half by warm amber lamplight from the left, the two colors meeting softly on her nose and cheeks. Her eyes are attentive behind her gold-rimmed glasses; her mouth is closed, about to speak. Behind her, the pleated lamp shade glows softly at the left. Composition: Nana right of center, looking right, eyes on the upper third.",
+    "refs": [
+      "assets/pilot/lookdev/ld5_nana.png",
+      "assets/pilot/lookdev/ld3_apartment.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld5_nana",
+      "ld3_apartment"
+    ],
+    "shots": [
+      18
+    ]
+  },
+  {
+    "id": "k12",
+    "out": "work/pilot/keys/k12.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. CHARACTER: IDA: a woman of 27, slim, with a short blunt jaw-length black bob and straight-cut bangs just above her eyebrows, dark brown eyes with tired lower lids, straight dark brows, a small straight nose, a small silver hoop earring in her left ear, warm light-olive skin; she wears a charcoal-grey ribbed turtleneck sweater, a hand-knitted mustard-amber wool scarf worn loosely around her neck, and a thin grey lanyard with a blank white ID card. She is exactly the same woman as in the attached images. SHOT: a close-up of Ida holding a small slim dark phone to her ear on the side facing the camera, her face three-quarters toward screen-left. She has lifted her eyes toward the offscreen monitors with a hesitant, pained look; her lips are slightly parted, about to ask a question. Cold cyan light comes from the left side, with a faint warm glow from the phone on her cheek. Background: dark, with soft cyan bokeh. Composition: face left of center, eyes on the upper third, the amber scarf at the bottom edge.",
+    "refs": [
+      "assets/pilot/lookdev/ld4_ida.png",
+      "work/pilot/keys/k10.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld4_ida",
+      "k10"
+    ],
+    "shots": [
+      19
+    ]
+  },
+  {
+    "id": "k13",
+    "out": "work/pilot/keys/k13.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. CHARACTER: NANA: a small woman of 82 with silver-white hair in a low bun held by a dark wooden hairpin, a soft round face with deep smile lines, bright dark eyes behind thin round gold wire-rimmed glasses, warm light-brown skin, small pearl stud earrings; she wears a dark bottle-green knitted cardigan over a cream blouse with a tiny faded floral print. She is exactly the same woman as in the attached images. SHOT: a closer close-up of Nana with the cream telephone handset at her ear on the side facing the camera, her face three-quarters toward screen-right and her eyes on the unseen television. A small private smile sits at the corner of her mouth: tender, knowing, a little amused. Her lips are closed, about to speak. Warm amber lamplight falls on the left side of her face and cold cyan television light on the right. Composition: her face fills the right half of the frame, eyes on the upper third.",
+    "refs": [
+      "assets/pilot/lookdev/ld5_nana.png",
+      "work/pilot/keys/k11.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld5_nana",
+      "k11"
+    ],
+    "shots": [
+      20
+    ]
+  },
+  {
+    "id": "k14",
+    "out": "work/pilot/keys/k14.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. LOCATION: the same vast dark concrete broadcast hall as in the attached images, with shrouded desks, brass pipes on the columns and haze. CHARACTER: a lone young woman seen from behind as a dark silhouette: a short blunt black bob, a charcoal sweater, and the edge of a mustard-amber scarf catching the light (the woman on the attached character sheet). SHOT: a low angle from just behind and below her as she stands at her desk. She is at the lower center of the frame with her head tilted up. She looks up at a colossal, flat monitor wall that fills most of the frame above her, seen in steep upward perspective, a grid of screens with thin black bezels all glowing one plain, even pale cyan with nothing on them. Above the wall, a small red signal-lamp box glows dim red. Haze and dust hang in the cold light. Composition: her head and shoulders at lower center, the giant wall above; strong vertical scale.",
+    "refs": [
+      "assets/pilot/lookdev/ld1_hall.png",
+      "assets/pilot/lookdev/ld4_ida.png",
+      "work/pilot/keys/k03.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld1_hall",
+      "ld4_ida",
+      "k03"
+    ],
+    "shots": [
+      23
+    ]
+  },
+  {
+    "id": "k14_fg_ida",
+    "out": "work/pilot/keys/k14_fg_ida.png",
+    "prompt": "Using the attached image, isolate only the woman's silhouette (head, shoulders and scarf) and the edge of her desk in the foreground, exactly as they appear, with the same position, scale, lighting and flat cel-painted style, on a genuinely transparent background. Everything else must be fully transparent. Keep the image the same size as the original.",
+    "refs": [
+      "work/pilot/keys/k14.png"
+    ],
+    "alpha": true,
+    "deps": [
+      "k14"
+    ],
+    "shots": [
+      23
+    ]
+  },
+  {
+    "id": "k15",
+    "out": "work/pilot/keys/k15.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. CHARACTER: IDA: a woman of 27 with a short blunt black bob and straight-cut bangs just above her eyebrows, dark brown eyes with tired lower lids, straight dark brows, a small straight nose and warm light-olive skin. She is exactly the same woman as in the attached images. SHOT: an extreme close-up of Ida's eyes and the bridge of her nose, framed from her eyebrows to just below her eyes and filling the frame width, with her straight black bangs at the top edge. Her eyes look slightly down toward a keyboard. They are wet and reflect tiny lines of glowing cyan light, and a single tear gathers on the lower lid of one eye but has not fallen. Cold cyan light comes from below; everything else falls into darkness.",
+    "refs": [
+      "assets/pilot/lookdev/ld4_ida.png",
+      "work/pilot/keys/k07.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld4_ida",
+      "k07"
+    ],
+    "shots": [
+      25
+    ]
+  },
+  {
+    "id": "k16",
+    "out": "work/pilot/keys/k16.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. SHOT: an extreme close-up of an old broadcast console in the dark hall of the attached style frame. A large square backlit key glowing dim signal red is set into a scratched dark metal panel, with no markings on it. A young woman's index finger (the cuff of a charcoal-grey ribbed sweater visible, as on the attached character sheet) hovers just above the key, not yet touching, its tip lit red from below. A thin cyan reflection from a screen off-frame shows on the fingernail. Everything else falls into darkness. Composition: the key slightly below center, the finger entering from the upper right.",
+    "refs": [
+      "assets/pilot/lookdev/ld1_hall.png",
+      "assets/pilot/lookdev/ld4_ida.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld1_hall",
+      "ld4_ida"
+    ],
+    "shots": [
+      27
+    ]
+  },
+  {
+    "id": "k17",
+    "out": "work/pilot/keys/k17.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. LOCATION: a street in the City of the attached style frame, at night in heavy rain. A wide view down a wet street: at the left, a stopped tram with glowing windows; in the foreground and middle ground, a crowd of about forty people, seen from behind and from the side as dark silhouettes, many holding umbrellas. They all stand perfectly still and look up at a gigantic screen on the facade of a tall building ahead. The screen is blank, glowing plain cyan with nothing on it. The wet street reflects the cyan light in long streaks, and rain slants through the light. Nobody's face is visible. Composition: the giant screen in the upper center, the crowd across the lower half. Mood: a whole city frozen, listening.",
+    "refs": [
+      "assets/pilot/lookdev/ld2_city.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld2_city"
+    ],
+    "shots": [
+      30
+    ]
+  },
+  {
+    "id": "k17_fg_crowd",
+    "out": "work/pilot/keys/k17_fg_crowd.png",
+    "prompt": "Using the attached image, isolate only the nearest foreground people with umbrellas (the closest silhouettes of the crowd), exactly as they appear, with the same position, scale, lighting and flat cel-painted style, on a genuinely transparent background. Everything else must be fully transparent. Keep the image the same size as the original.",
+    "refs": [
+      "work/pilot/keys/k17.png"
+    ],
+    "alpha": true,
+    "deps": [
+      "k17"
+    ],
+    "shots": [
+      30
+    ]
+  },
+  {
+    "id": "k18",
+    "out": "work/pilot/keys/k18.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. CHARACTER: IDA: a woman of 27, slim, with a short blunt jaw-length black bob and straight-cut bangs just above her eyebrows, dark brown eyes with tired lower lids, straight dark brows, a small straight nose, a small silver hoop earring in her left ear, warm light-olive skin; she wears a charcoal-grey ribbed turtleneck sweater, a hand-knitted mustard-amber wool scarf worn loosely around her neck, and a thin grey lanyard with a blank white ID card. She is exactly the same woman as in the attached images. SHOT: seen from high in front of her, as if from a giant wall of screens: Ida sits at her lone lit desk in the vast dark hall of the attached location frame. Her face is tilted up toward the camera and lit strongly by cold cyan light from above; her eyes are wide and wet, her lips closed. Her hands rest on the keyboard, and the small dented amber thermos stands on the desk. Around her in the darkness are rows of empty desks under pale dust sheets. Composition: Ida in the lower center, looking up just past the lens, with a lot of dark space around her.",
+    "refs": [
+      "assets/pilot/lookdev/ld4_ida.png",
+      "assets/pilot/lookdev/ld1_hall.png",
+      "work/pilot/keys/k04.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld4_ida",
+      "ld1_hall",
+      "k04"
+    ],
+    "shots": [
+      32
+    ]
+  },
+  {
+    "id": "k19",
+    "out": "work/pilot/keys/k19.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. CHARACTER: NANA: a small woman of 82 with silver-white hair in a low bun held by a dark wooden hairpin, a soft round face with deep smile lines, bright dark eyes behind thin round gold wire-rimmed glasses, warm light-brown skin, small pearl stud earrings; she wears a dark bottle-green knitted cardigan over a cream blouse with a tiny faded floral print. She is exactly the same woman as in the attached images. SHOT: a close-up of Nana seated in her armchair (in the apartment of the attached style frame), holding a small steaming white teacup in both hands near her chin. She faces almost straight toward the camera, which is placed just beside her television. Her face is lit by cold cyan television light, with the warm amber lamp glowing behind her shoulder. Her eyes glisten behind her gold-rimmed glasses; her mouth is closed, with the very beginning of a tender smile. Composition: face centered, eyes on the upper third, steam rising from the cup.",
+    "refs": [
+      "assets/pilot/lookdev/ld5_nana.png",
+      "assets/pilot/lookdev/ld3_apartment.png",
+      "work/pilot/keys/k11.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld5_nana",
+      "ld3_apartment",
+      "k11"
+    ],
+    "shots": [
+      33
+    ]
+  },
+  {
+    "id": "k20",
+    "out": "work/pilot/keys/k20.png",
+    "prompt": "STYLE (keep exactly): a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow; subtle paper grain; realistic proportions. This image is itself a television broadcast picture that fills the whole 16:9 frame. PALETTE: deep blue backdrop, cool pale-cyan rim light, soft neutral studio key light. No text, letters, numbers, logos or watermarks anywhere. EDIT the attached image: close the old man's eyes gently, as if he has peacefully fallen asleep. His eyelids are relaxed, the lashes down, his expression the same calm and kind one, and his mouth closed. Change nothing else at all: the same face, white hair, white beard, mole, charcoal high-collared coat and silver pin, and the same deep-blue backdrop and halo, lighting, framing, colors and line style, pixel-aligned with the original.",
+    "refs": [
+      "work/pilot/keys/k02.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "k02"
+    ],
+    "shots": [
+      34
+    ]
+  },
+  {
+    "id": "k21",
+    "out": "work/pilot/keys/k21.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. SHOT: an extreme close-up of an old rectangular broadcast signal-lamp box mounted high on a dark concrete wall, in the hall of the attached style frame. It has a riveted metal housing with a frosted red glass front, glowing bright signal red and completely blank, with no lettering. It casts a faint red halo into the surrounding haze. A faint cyan glow from far below touches the underside of the housing. Composition: the lamp centered, filling the middle third of the frame, the glass face square to the camera, dark wall around it.",
+    "refs": [
+      "assets/pilot/lookdev/ld1_hall.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld1_hall"
+    ],
+    "shots": [
+      35
+    ]
+  },
+  {
+    "id": "k22",
+    "out": "work/pilot/keys/k22.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. SHOT: a close-up on a dark, scratched metal desk in the hall of the attached style frame. A heavy old desk telephone in signal red, with its handset resting in the cradle and a thick coiled cord, has no markings. Beside it, a young woman's hand (the cuff of a charcoal-grey ribbed sweater, as on the attached character sheet) rests flat and still on the desk, not reaching for it. The cold cyan glow of a monitor from the upper left is dim. Darkness beyond. Composition: the red phone left of center, the hand at the right, with clear dark space between them.",
+    "refs": [
+      "assets/pilot/lookdev/ld1_hall.png",
+      "assets/pilot/lookdev/ld4_ida.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld1_hall",
+      "ld4_ida"
+    ],
+    "shots": [
+      36
+    ]
+  },
+  {
+    "id": "k23",
+    "out": "work/pilot/keys/k23.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. CHARACTER: IDA: a woman of 27, slim, with a short blunt jaw-length black bob and straight-cut bangs just above her eyebrows, dark brown eyes with tired lower lids, straight dark brows, a small straight nose, a small silver hoop earring in her left ear, warm light-olive skin; she wears a charcoal-grey ribbed turtleneck sweater, a hand-knitted mustard-amber wool scarf worn loosely around her neck, and a thin grey lanyard with a blank white ID card. She is exactly the same woman as in the attached images. SHOT: a close-up of Ida at her desk, holding a small slim dark phone to her ear on the side facing the camera, her face three-quarters toward screen-left. She looks stunned and hollow, her eyes glistening, lips parted, about to speak. A warm amber glow from the phone's screen lights her cheek; the cold cyan monitor light has dimmed to a faint rim on her hair. In the soft-focus foreground at the lower left is the corner of a heavy signal-red desk telephone (as in the attached image of the red phone). Composition: face left of center, eyes on the upper third, the amber scarf at the bottom edge.",
+    "refs": [
+      "assets/pilot/lookdev/ld4_ida.png",
+      "work/pilot/keys/k12.png",
+      "work/pilot/keys/k22.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld4_ida",
+      "k12",
+      "k22"
+    ],
+    "shots": [
+      38,
+      40
+    ]
+  },
+  {
+    "id": "k24",
+    "out": "work/pilot/keys/k24.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. CHARACTER: NANA: a small woman of 82 with silver-white hair in a low bun held by a dark wooden hairpin, a soft round face with deep smile lines, bright dark eyes behind thin round gold wire-rimmed glasses, warm light-brown skin, small pearl stud earrings; she wears a dark bottle-green knitted cardigan over a cream blouse with a tiny faded floral print. She is exactly the same woman as in the attached images. SHOT: a close-up of Nana in her armchair (in the apartment of the attached style frame), with the old cream-colored telephone handset at her ear on the side facing the camera and her face three-quarters toward screen-right. The television behind her is switched off, its screen dark grey. Her face is lit only by the warm amber table lamp. She is calm and tender, her eyes soft behind her glasses, the corners of her mouth lifted, lips closed, about to speak. Background: warm dark-brown shadows, the dark television and the rain-streaked window. Composition: face right of center, eyes on the upper third, with room above her head for a tighter reframe.",
+    "refs": [
+      "assets/pilot/lookdev/ld5_nana.png",
+      "assets/pilot/lookdev/ld3_apartment.png",
+      "work/pilot/keys/k11.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld5_nana",
+      "ld3_apartment",
+      "k11"
+    ],
+    "shots": [
+      39,
+      41
+    ]
+  },
+  {
+    "id": "k25",
+    "out": "work/pilot/keys/k25.png",
+    "prompt": "STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank, evenly glowing panel. CHARACTER: IDA: a woman of 27, slim, with a short blunt jaw-length black bob and straight-cut bangs just above her eyebrows, dark brown eyes with tired lower lids, straight dark brows, a small straight nose, a small silver hoop earring in her left ear, warm light-olive skin; she wears a charcoal-grey ribbed turtleneck sweater, a hand-knitted mustard-amber wool scarf worn loosely around her neck, and a thin grey lanyard with a blank white ID card. She is exactly the same woman as in the attached images. SHOT: a close-up of Ida with the small dark phone still at her ear on the side facing the camera, her face three-quarters toward screen-left. Her eyes are closed and one tear runs down her cheek; the beginning of a laugh breaks through the crying, a small open smile. The warm amber glow of the phone lights her cheek, and the cold cyan of the hall is only a faint rim on her hair. Background: dark. Composition: face left of center, eyes on the upper third, the amber scarf at the bottom edge.",
+    "refs": [
+      "assets/pilot/lookdev/ld4_ida.png",
+      "work/pilot/keys/k23.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "ld4_ida",
+      "k23"
+    ],
+    "shots": [
+      42
+    ]
+  },
+  {
+    "id": "k26",
+    "out": "work/pilot/keys/k26.png",
+    "prompt": "STYLE (keep exactly): a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; simplified graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and blue-black darkness; cold pale-cyan light only from screens; a small amber accent only where described; no other saturated colors. Wide 16:9; important content in the central horizontal band. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank glowing panel. EDIT the attached image: remove the lone woman completely. Her chair is now pushed back from the lit desk, turned slightly, and empty; the small amber thermos is gone from the desk. The giant monitor wall glows a dimmer, deeper blue, still blank. The small signal-lamp box above the wall stays unlit. Keep everything else exactly identical, pixel-aligned: the hall, the perspective, the dust-sheeted desks, the pipes, the columns, the haze, the framing, the colors and the line style.",
+    "refs": [
+      "work/pilot/keys/k03.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "k03"
+    ],
+    "shots": [
+      43
+    ]
+  },
+  {
+    "id": "k27",
+    "out": "work/pilot/keys/k27.png",
+    "prompt": "STYLE (keep exactly): a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around light sources; subtle paper grain; simplified graphic backgrounds with bold silhouettes. Wide 16:9; important content in the central horizontal band. No text, letters, numbers, logos or watermarks anywhere; every screen is a blank glowing panel. EDIT the attached image: the rain has stopped, and it is the first light before dawn. The sky above the towers shades from deep blue at the top to pale rose-pink and pale gold at the horizon, and the low clouds are touched with rose underneath. The canal is still and mirror-like, reflecting the sky and the windows. All the windows still glow cold cyan, except the one warm amber window at the lower right. The billboard at the far left is dark. Keep the buildings, the window grid, the tram wires and the framing exactly identical and pixel-aligned with the original.",
+    "refs": [
+      "work/pilot/keys/k08.png"
+    ],
+    "alpha": false,
+    "deps": [
+      "k08"
+    ],
+    "shots": [
+      44
+    ]
+  }
+]

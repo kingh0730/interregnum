@@ -1,0 +1,66 @@
+{
+ "dur": 6.0,
+ "fps": 24,
+ "out": "work/pilot/shots/43.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/comp/c31_46/p43_plate.png",
+   "par": 0.55
+  },
+  {
+   "src": "work/pilot/comp/c31_46/p43_fg.png",
+   "par": 1.0
+  }
+ ],
+ "camera": {
+  "from": [
+   0.5,
+   0.5157009345794392,
+   1.07
+  ],
+  "to": [
+   0.5,
+   0.5,
+   1.0
+  ],
+  "ease": "inout"
+ },
+ "grade": {
+  "exposure": -0.23446525363702297,
+  "contrast": 1.03,
+  "sat": 1.0,
+  "lift": [
+   0.03,
+   0.04,
+   0.075
+  ],
+  "gain": [
+   0.97,
+   1.0,
+   1.04
+  ],
+  "bloom": 0.5,
+  "vignette": 0.25,
+  "grain": 0.02
+ },
+ "letterbox": 2.39,
+ "particles": [
+  {
+   "kind": "dust",
+   "n": 120,
+   "seed": 43,
+   "par": 1.1,
+   "wind": [
+    0.002,
+    -0.002
+   ],
+   "color": [
+    0.75,
+    0.9,
+    1.0
+   ],
+   "opacity": 0.35,
+   "size": 0.7
+  }
+ ]
+}

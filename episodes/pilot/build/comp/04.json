@@ -1,0 +1,15 @@
+{"dur": 3.0, "fps": 24, "out": "work/pilot/shots/04.mp4",
+ "layers": [
+  {"src": "work/pilot/comp/c1/04_color.png", "fixed": true},
+  {"src": "work/pilot/comp/c1/04_desat.png", "fixed": true, "t0": 0.12, "fade_in": 0.3},
+  {"src": "work/pilot/comp/c1/04_g0.png", "fixed": true, "t0": 0.0, "t1": 0.04},
+  {"src": "work/pilot/comp/c1/04_g1.png", "fixed": true, "t0": 0.04, "t1": 0.08},
+  {"src": "work/pilot/comp/c1/04_g2.png", "fixed": true, "t0": 0.08, "t1": 0.12},
+  {"src": "work/pilot/comp/c1/scanlines.png", "fixed": true, "t1": 0.12},
+  {"src": "work/pilot/js/j14_bug.png", "fixed": true, "t1": 0.12},
+  {"src": "work/pilot/comp/c1/04_ghost.png", "fixed": true, "t0": 0.8},
+  {"src": "work/pilot/js/s04_overlay_j16.mov", "fixed": true},
+  {"src": "work/pilot/comp/c1/04_bars.mov", "fixed": true, "t0": 0.15}
+ ],
+ "grade": {"exposure": 0, "contrast": 1.08, "sat": 1.0, "lift": [0, 0, 0], "gain": [0.97, 1.0, 1.04],
+           "bloom": 0.35, "vignette": 0.25, "grain": 0.014, "chroma": 0}}

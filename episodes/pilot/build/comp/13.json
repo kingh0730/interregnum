@@ -1,0 +1,6 @@
+{"dur": 4.0, "fps": 24, "out": "work/pilot/shots/13.mp4",
+ "layers": [{"src": "work/pilot/keys/k07.png"}],
+ "camera": {"from": [0.5, 0.5, 1.0], "to": [0.4995, 0.4963, 1.025], "ease": "inout"},
+ "light": {"flicker": 0.01, "flicker_hz": 2.0},
+ "grade": {"exposure": 0, "contrast": 1.05, "sat": 1.0, "lift": [0.03, 0.04, 0.08], "gain": [0.96, 1.0, 1.04], "bloom": 0.45, "vignette": 0.25, "grain": 0.02, "chroma": 0},
+ "letterbox": 2.39}

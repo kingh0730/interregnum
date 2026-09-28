@@ -1,0 +1,33 @@
+{
+ "dur": 3.0,
+ "out": "work/pilot/comp/c31_46/s46b.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/js/s28_ident_fast.mp4"
+  },
+  {
+   "src": "work/pilot/comp/c31_46/scanlines.png",
+   "fixed": true
+  }
+ ],
+ "grade": {
+  "exposure": 0,
+  "contrast": 0.95,
+  "sat": 0.92,
+  "lift": [
+   0.045,
+   0.06,
+   0.09
+  ],
+  "gain": [
+   1,
+   1,
+   1
+  ],
+  "bloom": 0.3,
+  "vignette": 0.15,
+  "grain": 0.015,
+  "chroma": 1
+ },
+ "fps": 24
+}

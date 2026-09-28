@@ -1,0 +1,24 @@
+<!doctype html>
+<!--
+  Shot 35 `ON AIR` lettering mask (static, transparent). The full 1920×1080 frame stands for the lamp's glass face:
+  comp maps the frame's 4 corners onto the glass corners with a homography. The lettering is DIN Condensed Bold,
+  tracking 0.2 em, sized so the word block spans 60 % of the glass width, centred. White on transparent (use alpha
+  as the mask: +25 % luma and slightly orange when lit, barely darker when unlit).
+-->
+<html><head><meta charset="utf-8"><title>s35_onair_mask</title>
+<style>html,body{margin:0;background:transparent;overflow:hidden}canvas{display:block}</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas>
+<script>
+const ctx = document.getElementById('c').getContext('2d');
+const TXT = 'ON AIR', TARGET = 1920 * 0.60;
+function layout(size){ ctx.font = `bold ${size}px 'DIN Condensed'`; ctx.letterSpacing = (0.2*size) + 'px';
+  return ctx.measureText(TXT).width - 0.2*size; }
+window.renderFrame = () => {
+  ctx.clearRect(0, 0, 1920, 1080);
+  const size = 100 * TARGET / layout(100), w = layout(size);
+  ctx.textBaseline = 'alphabetic'; ctx.textAlign = 'left'; ctx.fillStyle = '#FFFFFF';
+  const m = ctx.measureText(TXT), capH = m.actualBoundingBoxAscent;
+  ctx.fillText(TXT, 960 - w/2, 540 + capH/2);
+};
+window.ready = document.fonts.load("bold 100px 'DIN Condensed'", 'ON AIR');
+</script></body></html>
