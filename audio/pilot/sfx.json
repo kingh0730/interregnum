@@ -1,0 +1,977 @@
+{
+  "version": "pilot sound plan v1, 2026-09-30",
+  "engine": "ElevenLabs sound effects v2 on fal: text, duration_seconds (0.5-22), loop; prompt_influence if the endpoint exposes it",
+  "conventions": "Times are absolute seconds in the 242 s main cut (242-252 is the alt tail). A placement with every repeats the sound from at to to on that interval. lvl is the target in the final master: LUFS short-term for loops and beds, peak dBFS for one-shots. lead is how many seconds the sound starts before the picture event or cut it belongs to (a J-cut); trail is how long it runs on after the cut (an L-cut). room names a treatment in mix_plan.md 3. gen false means built in numpy from electricity or from other recordings, never generated.",
+  "budget": "59 generated assets, one take each; up to 31 retakes inside the cap of 90. Longest asset 22 s; about 390 s of generated audio per pass.",
+  "sfx": [
+    {
+      "id": "BC01",
+      "name": "optical_track",
+      "gen": true,
+      "prompt": "The optical soundtrack of an old, worn black-and-white film print running on a projector: a continuous soft crackle, small dust pops and hiss, with a faint low flutter. No music, no voices, no projector motor.",
+      "duration": 8,
+      "loop": true,
+      "prompt_influence": 0.6,
+      "treatment": "Band-limit 90 Hz-7.5 kHz. Start each placement at a different offset in the loop (a different stretch of the print).",
+      "placements": [
+        {"at": 0.0, "to": 5.0, "shot": "01", "room": "OPTICAL", "lvl": -42, "lead": 0.2, "trail": 0.0, "note": "Starts on the black leader, before the first image: the film is heard before it is seen."},
+        {"at": 149.3, "to": 152.0, "shot": "28", "room": "OPTICAL", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": "Straight out of the digital black, with the splice pop."},
+        {"at": 243.0, "to": 246.0, "shot": "46", "room": "OPTICAL", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": "Alt tail."}
+      ]
+    },
+    {
+      "id": "BC02",
+      "name": "splice_pop",
+      "gen": true,
+      "prompt": "A single sharp pop of a tape splice passing through a film projector gate, with a tiny flutter after it, recorded close and dry.",
+      "duration": 0.6,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "Through OPTICAL.",
+      "placements": [
+        {"at": 0.2, "shot": "01", "room": "OPTICAL", "lvl": -20, "lead": 0.0, "trail": 0.0, "note": "The splice bump in the picture."},
+        {"at": 149.3, "shot": "28", "room": "OPTICAL", "lvl": -18, "lead": 0.0, "trail": 0.0, "note": "The join where the operator starts the film late; the first sound after the black."},
+        {"at": 243.0, "shot": "46", "room": "OPTICAL", "lvl": -20, "lead": 0.0, "trail": 0.0, "note": "Alt tail."}
+      ]
+    },
+    {
+      "id": "BC03",
+      "name": "sync_tear",
+      "gen": true,
+      "prompt": "An old television picture losing its sync: a harsh, short burst of electrical crackle and buzzing that stops dead, recorded from the set's own speaker.",
+      "duration": 0.5,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "treatment": "Keep 0.12 s: the length of the tear in the picture.",
+      "placements": [
+        {"at": 19.0, "shot": "04", "room": "BCAST", "lvl": -16, "lead": 0.0, "trail": 0.0, "note": "With the tape-stop (X02); the Father's broadcast tears."}
+      ]
+    },
+    {
+      "id": "BC04",
+      "name": "chime_strike",
+      "gen": true,
+      "prompt": "One single strike of a small tuned brass chime bar with a soft felt mallet: a clear, warm bell tone with a long clean decay. Recorded close and dry in a dead studio, no reverb, no other notes.",
+      "duration": 4,
+      "loop": false,
+      "prompt_influence": 0.8,
+      "treatment": "The Chime is a sampler: measure the strike's fundamental and repitch by resampling to each pitch below. Choose the take with the purest partials; it is the state's sacred sound.",
+      "placements": [
+        {"at": 0.5, "pitch": "A4", "shot": "01", "room": "OPTICAL", "lvl": -14, "lead": 0.0, "trail": 0.0, "note": "The spotlight finds the ring."},
+        {"at": 1.0, "pitch": "F#4", "shot": "01", "room": "OPTICAL", "lvl": -14, "lead": 0.0, "trail": 0.0, "note": "The wick catches."},
+        {"at": 1.5, "pitch": "D4", "shot": "01", "room": "OPTICAL", "lvl": -14, "lead": 0.0, "trail": 3.5, "note": "The flame stands; the D rings across the cut into the Father (L)."},
+        {"at": 50.3, "pitch": "D3", "shot": "09", "room": "DRY", "lvl": -18, "lead": 0.0, "trail": 0.0, "note": "One low toll under the title: the state names the episode. Natural decay, no reverb."},
+        {"at": 80.0, "pitch": "A4", "shot": "15", "room": "CITY_SETS", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "The standby interval signal from a thousand sets across the canal (mix_plan.md 3)."},
+        {"at": 80.5, "pitch": "F#4", "shot": "15", "room": "CITY_SETS", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 81.0, "pitch": "D4", "shot": "15", "room": "CITY_SETS", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "Smeared to 84.0, where the cut takes us inside one of the thousand windows."},
+        {"at": 149.3, "pitch": "A4", "shot": "28", "room": "OPTICAL_COLD", "lvl": -16, "lead": 0.0, "trail": 0.0, "note": "Fast and cold: 0.3 s apart."},
+        {"at": 149.6, "pitch": "F#4", "shot": "28", "room": "OPTICAL_COLD", "lvl": -16, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 149.9, "pitch": "D4", "shot": "28", "room": "OPTICAL_COLD", "lvl": -16, "lead": 0.0, "trail": 0.0, "note": "With M1's first chord, low-passed."},
+        {"at": 233.5, "pitch": "Bb4", "shot": "45", "room": "AIR", "lvl": -16, "lead": 0.0, "trail": 0.0, "note": "The Chime in the new key, and for the first time not through a broadcast chain: a bare bell in air."},
+        {"at": 234.0, "pitch": "G4", "shot": "45", "room": "AIR", "lvl": -16, "lead": 0.0, "trail": 0.0, "note": "The third note, E-flat at 234.5, is withheld. Nothing new sounds from 234.3 to 234.9."},
+        {"at": 243.3, "pitch": "A4", "shot": "46", "room": "OPTICAL", "lvl": -14, "lead": 0.0, "trail": 0.0, "note": "Alt tail: whole and warm, the old key."},
+        {"at": 243.8, "pitch": "F#4", "shot": "46", "room": "OPTICAL", "lvl": -14, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 244.3, "pitch": "D4", "shot": "46", "room": "OPTICAL", "lvl": -14, "lead": 0.0, "trail": 0.0, "note": ""}
+      ]
+    },
+    {
+      "id": "X01",
+      "name": "carrier",
+      "gen": false,
+      "prompt": "",
+      "duration": 0,
+      "loop": true,
+      "prompt_influence": 0,
+      "treatment": "Numpy: a clean analogue carrier hiss (white noise shaped by a gentle 12 kHz low-pass), mono, dead centre, and nothing else. The broadcast's only room tone: the machine's own sound.",
+      "placements": [
+        {"at": 5.0, "to": 19.0, "shot": "02-03", "room": "BCAST", "lvl": -54, "lead": 0.0, "trail": 0.0, "note": "Under the Father, the gaps between his words are carrier, not room."},
+        {"at": 152.0, "to": 157.0, "shot": "29", "room": "BCAST", "lvl": -54, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 163.0, "to": 168.0, "shot": "31", "room": "BCAST", "lvl": -54, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 180.0, "to": 186.0, "shot": "34", "room": "BCAST", "lvl": -50, "lead": 0.0, "trail": 0.0, "note": "Dead air: the only sound for six seconds. Hard in and hard out."},
+        {"at": 246.0, "to": 251.6, "shot": "46", "room": "BCAST", "lvl": -54, "lead": 0.0, "trail": 0.0, "note": "Alt tail."}
+      ]
+    },
+    {
+      "id": "X02",
+      "name": "tape_stop",
+      "gen": false,
+      "prompt": "",
+      "duration": 0.4,
+      "loop": false,
+      "prompt_influence": 0,
+      "treatment": "Numpy: the broadcast and hymn buses slow to a stop over 0.4 s, playback rate r(t) = 1 - (t/0.4)^2 phase-integrated (tools/audio/mix.py tapestop), then the signal gap: absolute zero to 20.0.",
+      "placements": [
+        {"at": 19.0, "to": 19.4, "shot": "04", "room": "BCAST", "lvl": 0, "lead": 0.0, "trail": 0.0, "note": "Ida stops last night's replay."}
+      ]
+    },
+    {
+      "id": "X03",
+      "name": "engine_winddown",
+      "gen": false,
+      "prompt": "",
+      "duration": 1.4,
+      "loop": false,
+      "prompt_influence": 0,
+      "treatment": "Numpy: slow the recorded Engine hum (H02) by resampling, rate 1.0 to 0.36 over 1.4 s (55 Hz to 20 Hz), gain to silence. The same hum we have heard all film, dying.",
+      "placements": [
+        {"at": 186.4, "to": 187.8, "shot": "35", "room": "HALL_FLOOR", "lvl": -34, "lead": 0.0, "trail": 0.0, "note": "On the ON AIR contactor. After this the Hall has no pitch."}
+      ]
+    },
+    {
+      "id": "X04",
+      "name": "tram_spindown",
+      "gen": false,
+      "prompt": "",
+      "duration": 0.8,
+      "loop": false,
+      "prompt_influence": 0,
+      "treatment": "Numpy: slow the tram's recorded idle (C04) by resampling, rate 1.0 to 0.3 over 0.8 s, gain to silence.",
+      "placements": [
+        {"at": 158.8, "to": 159.6, "shot": "30", "room": "STREET", "lvl": -32, "lead": 0.0, "trail": 0.0, "note": "After the contactor falls out (H31): the city's machines stop to listen."}
+      ]
+    },
+    {
+      "id": "X05",
+      "name": "engine_strain",
+      "gen": false,
+      "prompt": "",
+      "duration": 0,
+      "loop": false,
+      "prompt_influence": 0,
+      "treatment": "Numpy on H02: pitch and level automation of the Engine's hum, by resampling. Loop: glide up 100 cents (A to B-flat) and +6 dB over 66.3-70.4, cut at 70.4, back at A at 71.0. Countdown: +20 cents and +8 dB over 117-149 (the load of air); at 128.2 a sag of -50 cents and -6 dB in 0.15 s, recovering over 1.2 s (the Engine loses its prediction).",
+      "placements": [
+        {"at": 66.3, "to": 70.4, "shot": "12", "room": "HALL_FLOOR", "lvl": -32, "lead": 0.0, "trail": 0.0, "note": "The machine overspeeding under its own loop."},
+        {"at": 117.0, "to": 149.0, "shot": "22-27", "room": "HALL_FLOOR", "lvl": -32, "lead": 0.0, "trail": 0.0, "note": "The rising hum of the script (27). The sag at 128.2 is the needle's drop, felt in the building."}
+      ]
+    },
+    {
+      "id": "H01",
+      "name": "hall_air",
+      "gen": true,
+      "prompt": "Room tone of a vast, empty concrete hall at night, over a hundred metres long and thirty metres high: deep, still air and a faint, distant rumble of ventilation. No voices, no footsteps, no music. Heard from a desk in the middle of the hall.",
+      "duration": 22,
+      "loop": true,
+      "prompt_influence": 0.5,
+      "treatment": "Two takes crossfaded into one continuous 240 s bed, gated by the Hall spans below (never restarted). After 186.4 the still variant: low-pass 400 Hz and -6 dB (the ventilation has stopped).",
+      "placements": [
+        {"at": 20.0, "to": 77.0, "shot": "04-14", "room": "HALL_BED", "lvl": -38, "lead": 0.0, "trail": 0.0, "note": "Breathes in over 1.0 s after the signal gap, under the pull-back: the room arrives before the image has become a room. Muted 70.4-71.0."},
+        {"at": 90.0, "to": 94.0, "shot": "17", "room": "HALL_BED", "lvl": -40, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 99.0, "to": 103.0, "shot": "19", "room": "HALL_BED", "lvl": -40, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 109.0, "to": 149.0, "shot": "21-27", "room": "HALL_BED", "lvl": -38, "lead": 0.0, "trail": 0.0, "note": "Cut dead at 149.0."},
+        {"at": 168.0, "to": 174.0, "shot": "32", "room": "HALL_BED", "lvl": -36, "lead": 0.0, "trail": 0.0, "note": "The widest listening position: the Wall's view."},
+        {"at": 186.0, "to": 198.0, "shot": "35-38", "room": "HALL_BED", "lvl": -44, "lead": 0.0, "trail": 0.0, "note": "Still variant from 186.4: the building exhales."},
+        {"at": 202.0, "to": 205.0, "shot": "40", "room": "HALL_BED", "lvl": -44, "lead": 0.0, "trail": 0.0, "note": "Still variant."},
+        {"at": 210.0, "to": 223.0, "shot": "42-43", "room": "HALL_BED", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": "Still variant; 2 dB up in 43, the empty wide. Hard out at 223.0."},
+        {"at": 242.0, "to": 243.0, "shot": "46", "room": "HALL_BED", "lvl": -38, "lead": 0.0, "trail": 0.0, "note": "Alt tail: the running variant is back."}
+      ]
+    },
+    {
+      "id": "H02",
+      "name": "engine_hum",
+      "gen": true,
+      "prompt": "A large old electrical machine running in a vault beneath a concrete floor, heard through iron floor grilles: a steady, deep transformer hum with a soft mechanical rattle and slowly moving air.",
+      "duration": 15,
+      "loop": true,
+      "prompt_influence": 0.6,
+      "treatment": "Retune by resampling so the fundamental reads 55 Hz (A1) and the second harmonic 110 Hz (A2) is strong: the state's A must survive on a phone speaker. X03 and X05 automate it.",
+      "placements": [
+        {"at": 20.0, "to": 77.0, "shot": "04-14", "room": "HALL_FLOOR", "lvl": -40, "lead": 0.0, "trail": 0.0, "note": "Fades in over 1.5 s from 20.0. Strain 66.3-70.4 (X05), muted 70.4-71.0, back at A on 71.0."},
+        {"at": 90.0, "to": 94.0, "shot": "17", "room": "HALL_FLOOR", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 99.0, "to": 103.0, "shot": "19", "room": "HALL_FLOOR", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 109.0, "to": 149.0, "shot": "21-27", "room": "HALL_FLOOR", "lvl": -40, "lead": 0.0, "trail": 0.0, "note": "The load of air from 117.0 and the sag at 128.2 (X05). M3's strings double it on the same A."},
+        {"at": 168.0, "to": 174.0, "shot": "32", "room": "HALL_FLOOR", "lvl": -38, "lead": 0.0, "trail": 0.0, "note": "On air: the Engine at full."},
+        {"at": 186.0, "to": 186.4, "shot": "35", "room": "HALL_FLOOR", "lvl": -38, "lead": 0.0, "trail": 0.0, "note": "Still running for 0.4 s, then X03 winds it down."},
+        {"at": 242.0, "to": 243.0, "shot": "46", "room": "HALL_FLOOR", "lvl": -40, "lead": 0.0, "trail": 0.0, "note": "Alt tail: the A is back. That is the whole horror of the alt ending in one sound."}
+      ]
+    },
+    {
+      "id": "H03",
+      "name": "roof_rain",
+      "gen": true,
+      "prompt": "Heavy rain on a high concrete roof, heard from far below inside a vast hall: a soft, distant, muffled roar with no individual drops, steady and even.",
+      "duration": 20,
+      "loop": true,
+      "prompt_influence": 0.5,
+      "treatment": "One continuous bed, gated by the Hall spans. For the bridge at 76.0-77.0 automate +8 dB and open a low-pass from 1.5 to 5 kHz so the roof's rain becomes the canal's rain on the cut.",
+      "placements": [
+        {"at": 22.0, "to": 77.0, "shot": "05-14", "room": "HALL_BED", "lvl": -44, "lead": 1.0, "trail": 0.0, "note": "The rain bridge (J): 76.0-77.0 it swells and opens into C01. Muted 70.4-71.0."},
+        {"at": 90.0, "to": 94.0, "shot": "17", "room": "HALL_BED", "lvl": -46, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 99.0, "to": 103.0, "shot": "19", "room": "HALL_BED", "lvl": -46, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 109.0, "to": 149.0, "shot": "21-27", "room": "HALL_BED", "lvl": -46, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 168.0, "to": 174.0, "shot": "32", "room": "HALL_BED", "lvl": -44, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 186.0, "to": 198.0, "shot": "35-38", "room": "HALL_BED", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": "With the hum gone, the rain is the loudest thing in the building, and it is faint."},
+        {"at": 202.0, "to": 205.0, "shot": "40", "room": "HALL_BED", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 210.0, "to": 223.0, "shot": "42-43", "room": "HALL_BED", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": "Hard out at 223.0: at dawn the rain has stopped."}
+      ]
+    },
+    {
+      "id": "H04",
+      "name": "wall_tubes",
+      "gen": true,
+      "prompt": "A wall of ninety-six old television picture tubes switched on in a huge dark hall, heard from forty metres away: a faint high electrical whine and soft crackles of static.",
+      "duration": 12,
+      "loop": true,
+      "prompt_influence": 0.5,
+      "treatment": "Retune the whine's strongest partial to an A (A6 or A7). Low in level; its job is to make the Wall a physical object.",
+      "placements": [
+        {"at": 22.0, "to": 30.0, "shot": "05", "room": "HALL_BED", "lvl": -46, "lead": 0.0, "trail": 0.0, "note": "Rising 4 dB as the camera travels toward the Wall."},
+        {"at": 109.0, "to": 119.0, "shot": "21-22", "room": "DESK", "lvl": -48, "lead": 0.0, "trail": 0.0, "note": "The terminal's own tube, close."},
+        {"at": 119.0, "to": 149.0, "shot": "23-27", "room": "HALL_BED", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": "Rising to -36 by 149 with the Engine's load: the tubes going to full brightness for air."},
+        {"at": 168.0, "to": 174.0, "shot": "32", "room": "HALL_BED", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 186.0, "to": 186.5, "shot": "35", "room": "HALL_BED", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": "Cut by the collapse (H36)."},
+        {"at": 217.0, "to": 223.0, "shot": "43", "room": "HALL_BED", "lvl": -52, "lead": 0.0, "trail": 0.0, "note": "Standby: low-passed, the whine barely there, not breathing."}
+      ]
+    },
+    {
+      "id": "H05",
+      "name": "clock_step",
+      "gen": true,
+      "prompt": "One step of a huge electric slave clock: a hard solenoid clack and the metallic knock of a long steel second hand jumping forward. Recorded close and dry, no reverb.",
+      "duration": 1.2,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "Choose one take and use that exact step every second: the state's time never varies. HALL_FAR gives it the vault's 6 s tail and the slap off the Wall.",
+      "placements": [
+        {"at": 21.0, "to": 41.0, "every": 1.0, "shot": "04-07", "room": "HALL_FAR", "lvl": -24, "lead": 0.0, "trail": 0.0, "note": "The first tick is the first beat of the film's time."},
+        {"at": 42.0, "to": 49.0, "every": 1.0, "shot": "08", "room": "HALL_FAR", "lvl": -28, "lead": 0.0, "trail": 0.0, "note": "Quieter under the archive; it keeps going through the held breath at 45.6: the institution's time does not stop for a death."},
+        {"at": 50.0, "to": 53.0, "every": 1.0, "shot": "09", "room": "HALL_FAR", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "Drier under the title."},
+        {"at": 54.0, "to": 70.0, "every": 1.0, "shot": "10-12", "room": "HALL_FAR", "lvl": -24, "lead": 0.0, "trail": 0.0, "note": "The tick at 70.0 is the last before HALT."},
+        {"at": 71.0, "to": 76.0, "every": 1.0, "shot": "13-14", "room": "HALL_FAR", "lvl": -24, "lead": 0.0, "trail": 0.0, "note": "71.0 is the first sound after the digital black. 75.0 and 76.0 at -20: we are looking at the clock."},
+        {"at": 90.0, "to": 93.0, "every": 1.0, "shot": "17", "room": "HALL_FAR", "lvl": -28, "lead": 0.0, "trail": 0.0, "note": "Against Nana's limping clock in the handset."},
+        {"at": 99.0, "to": 102.0, "every": 1.0, "shot": "19", "room": "HALL_FAR", "lvl": -28, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 109.0, "to": 116.0, "every": 1.0, "shot": "21", "room": "HALL_FAR", "lvl": -28, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 117.0, "to": 148.0, "every": 1.0, "shot": "22-27", "room": "HALL_FAR", "lvl": -24, "lead": 0.0, "trail": 0.0, "note": "117.0 and 118.0 at -20. The master pulse (H07) under every step from 117.0. No tick at 149.0: the commit owns that frame."},
+        {"at": 168.0, "to": 173.0, "every": 1.0, "shot": "32", "room": "HALL_FAR", "lvl": -24, "lead": 0.0, "trail": 0.0, "note": "The last ticks we hear. It stops at 180.0 off screen; the audience meets the stop as an absence at 186.0."}
+      ]
+    },
+    {
+      "id": "H06",
+      "name": "clock_minute",
+      "gen": true,
+      "prompt": "The heavy clunk of a large clock's minute hand jumping forward one minute: a steel ratchet and lever, and a faint ring from the long steel hand. Recorded close and dry.",
+      "duration": 1.5,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "Layered under the second's step on the same frame.",
+      "placements": [
+        {"at": 75.0, "shot": "14", "room": "HALL_FAR", "lvl": -18, "lead": 0.0, "trail": 0.0, "note": "20:56, TO AIR 04:00."},
+        {"at": 117.0, "shot": "22", "room": "HALL_FAR", "lvl": -16, "lead": 0.0, "trail": 0.0, "note": "20:59. It cuts Nana's held E dead (M2 out at 117.0)."}
+      ]
+    },
+    {
+      "id": "H07",
+      "name": "pulse_relay",
+      "gen": true,
+      "prompt": "A deep, heavy relay thumping once inside a large steel cabinet under a floor: a low, felt thud with a short metallic knock on top.",
+      "duration": 0.8,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "treatment": "The broadcast master pulse made audible. Keep the knock (1-3 kHz) so it reads on small speakers; ramp the level over the countdown.",
+      "placements": [
+        {"at": 117.0, "to": 148.0, "every": 1.0, "shot": "22-27", "room": "HALL_FLOOR", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "Ramps from -30 to -18 peak by 148.0: the pulse that starts under everything and won't stop until the black."}
+      ]
+    },
+    {
+      "id": "H08",
+      "name": "flap_flip",
+      "gen": true,
+      "prompt": "A single split-flap display card flipping over and landing: a crisp papery-metal clack with a tiny bounce. Recorded close and dry.",
+      "duration": 0.5,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "Small desk repeater: as recorded. The Air Clock's big board: pitch down 5 semitones by resampling and HALL_FAR.",
+      "placements": [
+        {"at": 21.0, "shot": "04", "room": "DESK", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "08:48 to 08:47 with the first tick."},
+        {"at": 30.0, "to": 36.0, "every": 1.0, "shot": "06", "room": "DESK", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "08:38 to 08:32, under the relays."},
+        {"at": 76.0, "shot": "14", "room": "HALL_FAR", "lvl": -24, "lead": 0.0, "trail": 0.0, "note": "The big board: 04:00 to 03:59."},
+        {"at": 110.0, "to": 116.0, "every": 1.0, "shot": "21", "room": "DESK", "lvl": -34, "lead": 0.0, "trail": 0.0, "note": "01:07 to 01:01."},
+        {"at": 118.0, "shot": "22", "room": "HALL_FAR", "lvl": -20, "lead": 0.0, "trail": 0.0, "note": "The minutes card falls to its red 00: the heaviest flap in the film."},
+        {"at": 126.0, "to": 132.0, "every": 1.0, "shot": "24", "room": "DESK", "lvl": -34, "lead": 0.0, "trail": 0.0, "note": "00:52 to 00:46."},
+        {"at": 137.0, "to": 144.0, "every": 1.0, "shot": "26", "room": "DESK", "lvl": -34, "lead": 0.0, "trail": 0.0, "note": "00:31 to 00:24."}
+      ]
+    },
+    {
+      "id": "H09",
+      "name": "pen_click",
+      "gen": true,
+      "prompt": "A small, dry plastic click of a ring button on a slim pen, pressed once. Recorded very close, no reverb.",
+      "duration": 0.3,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "The light pen's ring button (replaces v1's mouse click).",
+      "placements": [
+        {"at": 20.6, "shot": "04", "room": "DESK", "lvl": -28, "lead": 0.0, "trail": 0.0, "note": "It stops the window burn: the first sound a hand makes in the film."},
+        {"at": 31.0, "shot": "06", "room": "DESK", "lvl": -28, "lead": 0.0, "trail": 0.0, "note": "The grab."},
+        {"at": 32.2, "shot": "06", "room": "DESK", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "The release."},
+        {"at": 38.5, "shot": "07", "room": "DESK", "lvl": -32, "lead": 0.0, "trail": 0.0, "note": "The two touches, off frame at the Proof."},
+        {"at": 39.7, "shot": "07", "room": "DESK", "lvl": -32, "lead": 0.0, "trail": 0.0, "note": ""}
+      ]
+    },
+    {
+      "id": "H10",
+      "name": "relay_clack",
+      "gen": true,
+      "prompt": "An old electromechanical relay switching once: a crisp metallic clack with a tiny spring ring. Recorded close and dry.",
+      "duration": 0.4,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "Vary pitch by +-1 semitone and level by +-2 dB between placements: six lamps, six relays.",
+      "placements": [
+        {"at": 32.3, "shot": "06", "room": "DESK", "lvl": -26, "lead": 0.0, "trail": 0.0, "note": "L EAR locked."},
+        {"at": 33.0, "shot": "06", "room": "DESK", "lvl": -27, "lead": 0.0, "trail": 0.0, "note": "MOLE."},
+        {"at": 33.6, "shot": "06", "room": "DESK", "lvl": -26, "lead": 0.0, "trail": 0.0, "note": "BLINK."},
+        {"at": 34.2, "shot": "06", "room": "DESK", "lvl": -28, "lead": 0.0, "trail": 0.0, "note": "SKIN."},
+        {"at": 34.8, "shot": "06", "room": "DESK", "lvl": -26, "lead": 0.0, "trail": 0.0, "note": "BREATH."},
+        {"at": 35.4, "shot": "06", "room": "DESK", "lvl": -27, "lead": 0.0, "trail": 0.0, "note": "VOICE WARMTH."},
+        {"at": 62.8, "shot": "11", "room": "DESK", "lvl": -28, "lead": 0.2, "trail": 0.0, "note": "The FREE lamp: she lets him speak, heard before we see the terminal (J)."},
+        {"at": 70.38, "shot": "12", "room": "DESK", "lvl": -18, "lead": 0.0, "trail": 0.0, "note": "HALT: the last sound before the digital black at 70.4."},
+        {"at": 128.2, "shot": "24", "room": "DESK", "lvl": -28, "lead": 0.0, "trail": 0.0, "note": "NO PREDICTION, with the needle's tick."},
+        {"at": 130.8, "shot": "24", "room": "DESK", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "VIEWING: the Committee is watching. The red phone follows at 131.0."},
+        {"at": 142.6, "shot": "26", "room": "DESK", "lvl": -26, "lead": 0.0, "trail": 0.0, "note": "SCRIPT LOCKED."},
+        {"at": 76.6, "shot": "14", "room": "HALL_PA", "lvl": -34, "lead": 0.0, "trail": 0.0, "note": "The horns close after Four minutes (with the hum's release)."},
+        {"at": 118.6, "shot": "22", "room": "HALL_PA", "lvl": -34, "lead": 0.0, "trail": 0.0, "note": "The horns close after One minute."},
+        {"at": 146.7, "shot": "27", "room": "HALL_PA", "lvl": -34, "lead": 0.0, "trail": 0.0, "note": "The horns close after Ten seconds."}
+      ]
+    },
+    {
+      "id": "H11",
+      "name": "archive_motor",
+      "gen": true,
+      "prompt": "A motorised film transport on a light table starting up and accelerating hard: a small electric motor whine rising in pitch, film racing over rollers with a fast fluttering rattle of sprocket holes. Recorded close.",
+      "duration": 5,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "treatment": "The whoosh of forty-one years is a machine, not a riser. Ease the level in over the first second.",
+      "placements": [
+        {"at": 40.9, "to": 45.6, "shot": "07-08", "room": "DESK", "lvl": -24, "lead": 0.1, "trail": 0.0, "note": "Starts just under the end of Ida's exhale; peaks at 44.5 and is cut by the brake."}
+      ]
+    },
+    {
+      "id": "H12",
+      "name": "archive_brake",
+      "gen": true,
+      "prompt": "A film transport braking to a dead stop: a hard solenoid brake thunk, the motor cutting out, the film snapping taut. Recorded close.",
+      "duration": 1.5,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "At 45.6 every other layer ducks 18 dB for 1.5 s (the held breath) except the clock and the scope.",
+      "placements": [
+        {"at": 45.6, "shot": "08", "room": "DESK", "lvl": -16, "lead": 0.0, "trail": 0.0, "note": "LAST LIVE CAPTURE. The replacement for v1's sub hit: a physical stop."}
+      ]
+    },
+    {
+      "id": "H13",
+      "name": "scope_whine",
+      "gen": true,
+      "prompt": "The faint, thin, steady whine of an old oscilloscope tube in a quiet room, recorded close, with nothing else.",
+      "duration": 6,
+      "loop": true,
+      "prompt_influence": 0.7,
+      "treatment": "Retune to A5 (880 Hz). The script's thin steady tone: the dead man's monitor still humming the state's note.",
+      "placements": [
+        {"at": 45.9, "to": 50.0, "shot": "08", "room": "DESK", "lvl": -36, "lead": 0.0, "trail": 0.0, "note": "Comes up with NO SIGNAL; fades 49.2-50.0 as the strip stops on the empty warm frame."}
+      ]
+    },
+    {
+      "id": "H14",
+      "name": "archive_run",
+      "gen": true,
+      "prompt": "A film transport restarting over a tape splice: a soft bump, then single frame clicks that speed up quickly into a buzz, then a clean stop with a small clunk. Recorded close.",
+      "duration": 4,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "treatment": "Fit the stop to 49.2 (time-stretch no more than 8 percent).",
+      "placements": [
+        {"at": 46.2, "to": 49.3, "shot": "08", "room": "DESK", "lvl": -28, "lead": 0.0, "trail": 0.0, "note": "The 212 generated nights passing the gate; the clunk at 49.2 is the empty frame of tonight."}
+      ]
+    },
+    {
+      "id": "H15",
+      "name": "title_beam",
+      "gen": true,
+      "prompt": "An electron beam drawing letters on a dark phosphor screen: a faint, crackling electrical sizzle tracing short strokes, then a soft high-voltage hum decaying slowly.",
+      "duration": 4,
+      "loop": false,
+      "prompt_influence": 0.5,
+      "treatment": "Low and close; the Chime's D3 toll at 50.3 sits on top.",
+      "placements": [
+        {"at": 50.3, "to": 54.0, "shot": "09", "room": "DRY", "lvl": -34, "lead": 0.0, "trail": 0.0, "note": "The word writing itself, then burning in."}
+      ]
+    },
+    {
+      "id": "H16",
+      "name": "pneumatic_travel",
+      "gen": true,
+      "prompt": "A message capsule rushing through a long brass pneumatic tube inside a building: a hollow, rumbling whoosh approaching from far away and getting closer, recorded from beside the pipe.",
+      "duration": 3.5,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "treatment": "Pan from high left (the gallery) to centre, and open a low-pass from 300 Hz to 4 kHz as it arrives.",
+      "placements": [
+        {"at": 52.4, "to": 55.35, "shot": "09-10", "room": "HALL_FAR to DESK", "lvl": -22, "lead": 1.6, "trail": 0.0, "note": "The Committee's message is heard travelling through the building under the title, before we see the cup (J)."}
+      ]
+    },
+    {
+      "id": "H17",
+      "name": "capsule_impact",
+      "gen": true,
+      "prompt": "A heavy steel capsule slamming into a cast-brass receiving cup on a spring stop: a deep, hollow whump and a metallic clank, then a sharp hiss of released air. Recorded close.",
+      "duration": 2.5,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "The loudest hard effect in the first half. Send 20 percent to HALL_FAR for the vault's answer.",
+      "placements": [
+        {"at": 55.35, "shot": "10", "room": "DESK", "lvl": -10, "lead": 0.0, "trail": 0.0, "note": "On the impact frame."}
+      ]
+    },
+    {
+      "id": "H18",
+      "name": "seal_crack",
+      "gen": true,
+      "prompt": "A band of hard red lacquer cracking between strong fingers, then a knurled metal end cap twisting off a steel tube. Recorded close and dry.",
+      "duration": 1.2,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "The opening happens in the cut.",
+      "placements": [
+        {"at": 56.3, "to": 57.3, "shot": "10-11", "room": "DESK", "lvl": -26, "lead": 0.7, "trail": 0.3, "note": "She breaks the seal before we see the opened capsule (J into 11)."}
+      ]
+    },
+    {
+      "id": "H19",
+      "name": "onionskin",
+      "gen": true,
+      "prompt": "Thin onionskin carbon paper being unrolled and held flat by two hands: a crisp, delicate, dry crackle. Recorded close.",
+      "duration": 1.5,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "Higher and drier than v1's slip.",
+      "placements": [
+        {"at": 57.0, "to": 58.2, "shot": "11", "room": "DESK", "lvl": -28, "lead": 0.0, "trail": 0.0, "note": "Then the Hall alone while we read."}
+      ]
+    },
+    {
+      "id": "H20",
+      "name": "teleprinter",
+      "gen": true,
+      "prompt": "An old upper-case teleprinter printing very fast: hammering type bars, the platen ratcheting and the paper feeding. Recorded close.",
+      "duration": 4,
+      "loop": true,
+      "prompt_influence": 0.6,
+      "treatment": "Pan +0.4 (foreground right). Rising 6 dB to the choir's density. Cut dead at 70.4, mid-word.",
+      "placements": [
+        {"at": 69.0, "to": 70.4, "shot": "12", "room": "DESK", "lvl": -24, "lead": 0.0, "trail": 0.0, "note": "The loop made physical: I AM WELL hammered onto paper."}
+      ]
+    },
+    {
+      "id": "H21",
+      "name": "scroll_relay",
+      "gen": true,
+      "prompt": "The rapid dry clicking of an old terminal's line-feed relay: many clicks in quick succession, then slowing down and stopping. Recorded close.",
+      "duration": 6,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "treatment": "Slice single clicks and place them on the JS scroll's line jumps where the rate is slow.",
+      "placements": [
+        {"at": 63.3, "to": 66.5, "shot": "12", "room": "DESK", "lvl": -34, "lead": 0.0, "trail": 0.0, "note": "Sparse: one click per line jump of the Engine's text."},
+        {"at": 109.0, "to": 115.0, "shot": "21", "room": "DESK", "lvl": -36, "lead": 0.0, "trail": 0.0, "note": "Fast through the cold runs, thinning as the scroll slows through the amber block; the only effect under M2."}
+      ]
+    },
+    {
+      "id": "H22",
+      "name": "keys",
+      "gen": true,
+      "prompt": "Slow, deliberate typing on an old, heavy keyboard with deep sculpted keys: individual soft, deep thocks, one at a time with pauses between. Recorded close.",
+      "duration": 8,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "treatment": "Slice every stroke; place on the JS keystroke logs (work/pilot/js/keys_24.json, keys_26.json) with +-2 dB and +-3 percent pitch jitter. Times below are the spec's, for when the logs are missing.",
+      "placements": [
+        {"at": 125.6, "shot": "24", "room": "DESK", "lvl": -28, "lead": 0.0, "trail": 0.0, "note": "I."},
+        {"at": 127.8, "shot": "24", "room": "DESK", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "The space."},
+        {"at": 128.0, "to": 128.45, "every": 0.15, "shot": "24", "room": "DESK", "lvl": -28, "lead": 0.0, "trail": 0.0, "note": "d, i, e, d: the machine's heart stops on the first d."},
+        {"at": 128.8, "to": 130.6, "every": 0.12, "shot": "24", "room": "DESK", "lvl": -28, "lead": 0.0, "trail": 0.0, "note": "in the spring. (15 strokes)"},
+        {"at": 133.1, "to": 135.8, "every": 0.17, "shot": "25", "room": "DESK", "lvl": -38, "lead": 0.0, "trail": 0.0, "note": "Muffled, irregular: she types the next two lines while we watch her eyes."},
+        {"at": 137.0, "to": 137.45, "every": 0.22, "shot": "26", "room": "DESK", "lvl": -28, "lead": 0.0, "trail": 0.0, "note": "E, a, t."},
+        {"at": 140.8, "to": 142.2, "every": 0.11, "shot": "26", "room": "DESK", "lvl": -29, "lead": 0.0, "trail": 0.0, "note": "[EYES CLOSE]"}
+      ]
+    },
+    {
+      "id": "H23",
+      "name": "heavy_key",
+      "gen": true,
+      "prompt": "A large, square key on an old console pressed down hard: one deep, solid thock with a spring return. Recorded close and dry.",
+      "duration": 0.6,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "Keep only the first 80 ms for the commit.",
+      "placements": [
+        {"at": 140.0, "shot": "26", "room": "DESK", "lvl": -22, "lead": 0.0, "trail": 0.0, "note": "TAB: the line is hers."},
+        {"at": 149.0, "shot": "27-28", "room": "DRY", "lvl": -14, "lead": 0.0, "trail": 0.08, "note": "The commit key, on the first frame of black: the press we are not shown. Everything else is already silent; digital black from 149.08 to 149.3."}
+      ]
+    },
+    {
+      "id": "H24",
+      "name": "needle_tick",
+      "gen": true,
+      "prompt": "A tiny meter needle falling onto its metal stop pin: one minute metallic tick. Recorded very close.",
+      "duration": 0.3,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "With the relay (H10) and the Engine's sag (X05) on the same frame.",
+      "placements": [
+        {"at": 128.2, "shot": "24", "room": "DESK", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "NO PREDICTION."}
+      ]
+    },
+    {
+      "id": "H25",
+      "name": "red_bell",
+      "gen": true,
+      "prompt": "A heavy old telephone cast in hard plastic with a deep, harsh, loud double bell ringing for just over one second, its handset rattling in the cradle. Recorded close and dry.",
+      "duration": 1.6,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "Trim each ring to 1.2 s. Retune its strongest partial to G-sharp, a tritone from home. Its loudness follows Ida's attention, not its distance (it never leaves her desk).",
+      "placements": [
+        {"at": 131.0, "to": 146.0, "every": 3.0, "shot": "24-27", "room": "ATTENTION", "lvl": -26, "lead": 0.0, "trail": 0.0, "note": "She does not look up: low-passed at 2.5 kHz, pushed back, rising to -22 by 146.0."},
+        {"at": 170.0, "to": 173.0, "every": 3.0, "shot": "32", "room": "HALL_FAR", "lvl": -26, "lead": 0.0, "trail": 0.0, "note": "Rings on under the Father's voice from the horns."},
+        {"at": 188.0, "to": 191.0, "every": 3.0, "shot": "36", "room": "DESK", "lvl": -12, "lead": 0.0, "trail": 0.0, "note": "Close and dry, loud in the new silence: the loudest bell in the film."},
+        {"at": 194.0, "shot": "37", "room": "HALL_FAR", "lvl": -20, "lead": 0.0, "trail": 0.0, "note": "Behind the House Line: two phones, two lights."},
+        {"at": 197.0, "shot": "38", "room": "DESK", "lvl": -18, "lead": 0.0, "trail": 0.0, "note": "Into the space after Nana."},
+        {"at": 203.0, "shot": "40", "room": "ATTENTION", "lvl": -26, "lead": 0.0, "trail": 0.0, "note": "She has turned away from it."},
+        {"at": 212.0, "to": 215.0, "every": 3.0, "shot": "42", "room": "ATTENTION", "lvl": -32, "lead": 0.0, "trail": 0.0, "note": "Fading from attention under Come home."},
+        {"at": 218.0, "to": 221.0, "every": 3.0, "shot": "43", "room": "HALL_FAR", "lvl": -36, "lead": 0.0, "trail": 0.0, "note": "Very far, huge tail: ringing for no one. Nothing after 223."}
+      ]
+    },
+    {
+      "id": "H26",
+      "name": "house_bell",
+      "gen": true,
+      "prompt": "An old bakelite desk telephone's small, bright bell ringing one short double ring: two quick bursts from a little electric clapper, softer and higher than an office phone. Recorded close and dry.",
+      "duration": 1.4,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "The civilian bell: one take used for Nana's cream set and Ida's grey set (the same state model). Cadence 0.4 s on, 0.2 s off, 0.4 s on, 1.0 s off. Retune its strongest partial to F.",
+      "placements": [
+        {"at": 87.5, "shot": "16", "room": "FLAT", "lvl": -18, "lead": 0.0, "trail": 0.0, "note": "Ida calling. The bell of home, heard first in home."},
+        {"at": 89.5, "shot": "16", "room": "FLAT", "lvl": -18, "lead": 0.0, "trail": 0.0, "note": "Cut at 89.9 by her lift: only the first burst sounds."},
+        {"at": 191.6, "shot": "36-37", "room": "DESK", "lvl": -20, "lead": 0.4, "trail": 0.0, "note": "Nana calling: her bell in the Hall before we see the card (J)."},
+        {"at": 193.6, "shot": "37", "room": "DESK", "lvl": -18, "lead": 0.0, "trail": 0.0, "note": "Picture note: J12's call lamp should follow the double rings, lit 191.6-192.6 and 193.6-194.6."}
+      ]
+    },
+    {
+      "id": "H27",
+      "name": "handset_lift",
+      "gen": true,
+      "prompt": "An old telephone handset lifted off its cradle: the click of the hook switch and a faint ting from the bell inside. Recorded close.",
+      "duration": 0.6,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "The line opens with it (H29).",
+      "placements": [
+        {"at": 89.9, "shot": "16", "room": "FLAT", "lvl": -24, "lead": 0.0, "trail": 0.0, "note": "Nana answers; she knows who it is and says nothing."},
+        {"at": 195.0, "shot": "37-38", "room": "DESK", "lvl": -24, "lead": 0.0, "trail": 0.0, "note": "Ida answers the grey phone, not the red one, on the cut."}
+      ]
+    },
+    {
+      "id": "H28",
+      "name": "handset_down",
+      "gen": true,
+      "prompt": "An old telephone handset set back in its cradle: a hollow bakelite clunk and a faint ting from the bell. Recorded close.",
+      "duration": 0.8,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "The line hiss stops with it.",
+      "placements": [
+        {"at": 109.4, "shot": "20-21", "room": "DESK", "lvl": -26, "lead": 0.0, "trail": 0.4, "note": "Ida hangs up over the terminal (L): the call is over before the scroll begins."}
+      ]
+    },
+    {
+      "id": "H29",
+      "name": "phone_line",
+      "gen": true,
+      "prompt": "The open line of an old analogue telephone call heard through the earpiece: a soft hiss and faint crackle, nobody speaking.",
+      "duration": 10,
+      "loop": true,
+      "prompt_influence": 0.5,
+      "treatment": "Carries the far room: Nana's clock (N03), rain (N02) and simmer (N05) are mixed into the line through the PHONE band.",
+      "placements": [
+        {"at": 89.9, "to": 109.4, "shot": "16-21", "room": "LINE_SPILL", "lvl": -50, "lead": 0.0, "trail": 0.4, "note": "In Ida's shots with Nana's room inside it; in Nana's shots only the hiss, lower (-54)."},
+        {"at": 195.0, "to": 217.0, "shot": "38-42", "room": "LINE_SPILL", "lvl": -50, "lead": 0.0, "trail": 0.0, "note": "Her clock in the handset is the only clock left in the Hall."}
+      ]
+    },
+    {
+      "id": "H30",
+      "name": "chair_back",
+      "gen": true,
+      "prompt": "A heavy steel office chair pushed back on a hard stone floor as someone stands up: a short scrape and a knock. Recorded close and dry.",
+      "duration": 1.5,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "Heard from the Air Clock's end of the axis: far, with the vault's tail.",
+      "placements": [
+        {"at": 118.2, "shot": "22-23", "room": "HALL_FAR", "lvl": -26, "lead": 0.8, "trail": 0.0, "note": "She stands before we see her standing (J into 23)."}
+      ]
+    },
+    {
+      "id": "H31",
+      "name": "contactor",
+      "gen": true,
+      "prompt": "A large electrical contactor opening: one heavy, deep clack of steel and copper, then the faint tick of something cooling. Recorded close and dry.",
+      "duration": 1.5,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "Two perspectives, two rooms.",
+      "placements": [
+        {"at": 158.8, "shot": "30", "room": "STREET", "lvl": -24, "lead": 0.0, "trail": 0.0, "note": "The tram's power falls out after I died in the spring; X04 spins its whine down."},
+        {"at": 186.4, "shot": "35", "room": "HALL_FAR", "lvl": -18, "lead": 0.0, "trail": 0.0, "note": "ON AIR off, high on the apse wall. X03 winds the Engine down with it."}
+      ]
+    },
+    {
+      "id": "H32",
+      "name": "cord_grip",
+      "gen": true,
+      "prompt": "A hand slowly closing around a coiled rubber telephone cord on a steel desk: a soft squeak and rub. Recorded very close.",
+      "duration": 1.5,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "Her whole performance in 40.",
+      "placements": [
+        {"at": 203.6, "shot": "40", "room": "DESK", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "After How long?, while she waits."}
+      ]
+    },
+    {
+      "id": "H33",
+      "name": "thermos",
+      "gen": true,
+      "prompt": "An enamel thermos cap unscrewed and lifted off: a soft, gritty scrape of enamel on a steel thread, a small pop, then a faint hiss of steam. Recorded close.",
+      "duration": 2.5,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "Align the pop to 215.1; the piano's D has landed at 214.4, the laugh follows at 215.15.",
+      "placements": [
+        {"at": 214.5, "to": 215.6, "shot": "42", "room": "DESK", "lvl": -24, "lead": 0.0, "trail": 0.0, "note": "The soup is still warm, and her hands say so."}
+      ]
+    },
+    {
+      "id": "H34",
+      "name": "far_door",
+      "gen": true,
+      "prompt": "A heavy steel door closing far away in a vast concrete hall: a deep, soft boom and a long echo dying away.",
+      "duration": 5,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "treatment": "Keep it soft: a departure, not an event.",
+      "placements": [
+        {"at": 217.3, "shot": "43", "room": "HALL_FAR", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "She has gone home: the one sound of her leaving, heard over the empty desk."}
+      ]
+    },
+    {
+      "id": "H35",
+      "name": "drum_click",
+      "gen": true,
+      "prompt": "A mechanical drum counter rolling on by one number: a small dry click and a short soft whirr. Recorded close.",
+      "duration": 0.5,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "Alt tail only.",
+      "placements": [
+        {"at": 242.5, "shot": "46", "room": "DESK", "lvl": -24, "lead": 0.0, "trail": 0.0, "note": "212 to 213: continuation as a sound."}
+      ]
+    },
+    {
+      "id": "H36",
+      "name": "wall_down",
+      "gen": true,
+      "prompt": "A wall of many old television tubes switched down to standby at once in a huge hall: a soft, collapsing electrical whump and a scatter of small crackles fading away.",
+      "duration": 3,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "treatment": "Under the contactor; after it the Wall is silent.",
+      "placements": [
+        {"at": 186.5, "to": 188.0, "shot": "35", "room": "HALL_FAR", "lvl": -28, "lead": 0.0, "trail": 0.0, "note": "The machine's light goes to standby with the lamp."}
+      ]
+    },
+    {
+      "id": "H37",
+      "name": "pa_open",
+      "gen": true,
+      "prompt": "A large, old public-address system switching on in a vast concrete hall: a low thump through horn loudspeakers and a brief rising amplifier hum, no voice.",
+      "duration": 1.2,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "treatment": "Through HALL_PA without the tape stage. The hum holds under the voice and releases with the close (H10).",
+      "placements": [
+        {"at": 74.85, "shot": "13-14", "room": "HALL_PA", "lvl": -30, "lead": 0.15, "trail": 0.0, "note": "The state draws breath under Ida's close-up (J)."},
+        {"at": 116.85, "shot": "21-22", "room": "HALL_PA", "lvl": -30, "lead": 0.15, "trail": 0.0, "note": "Over Nana's held E."},
+        {"at": 144.85, "shot": "26-27", "room": "HALL_PA", "lvl": -30, "lead": 0.15, "trail": 0.0, "note": "Under SCRIPT LOCKED's hold."}
+      ]
+    },
+    {
+      "id": "C01",
+      "name": "city_rain",
+      "gen": true,
+      "prompt": "Heavy rain over a city at night, heard from high up across a wide canal: a wide, steady wash of rain falling on water and concrete far away. No traffic, no voices, no thunder.",
+      "duration": 20,
+      "loop": true,
+      "prompt_influence": 0.5,
+      "treatment": "Wide stereo. At 84.0 it hands over to the rain on Nana's window (N02): the same rain from inside.",
+      "placements": [
+        {"at": 76.0, "to": 84.0, "shot": "14-15", "room": "CANAL", "lvl": -30, "lead": 1.0, "trail": 0.0, "note": "Enters inside the roof-rain bridge (H03) and is full on the cut at 77.0."}
+      ]
+    },
+    {
+      "id": "C02",
+      "name": "canal",
+      "gen": true,
+      "prompt": "Dark canal water lapping gently against a concrete embankment and iron mooring rings, close to the water, calm.",
+      "duration": 12,
+      "loop": true,
+      "prompt_influence": 0.5,
+      "treatment": "Low; at dawn low-passed further: the water at rest.",
+      "placements": [
+        {"at": 77.0, "to": 84.0, "shot": "15", "room": "CANAL", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 223.0, "to": 236.0, "shot": "44-45", "room": "CANAL", "lvl": -46, "lead": 0.0, "trail": 3.0, "note": "Still; fades under the card (L)."}
+      ]
+    },
+    {
+      "id": "C03",
+      "name": "tram_bell_far",
+      "gen": true,
+      "prompt": "A tram's small warning bell rung twice, far away across a rainy city at night.",
+      "duration": 2.5,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "treatment": "Align the two strikes to 79.0 and 79.6.",
+      "placements": [
+        {"at": 79.0, "shot": "15", "room": "CANAL", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "The city's one moving machine, before the thousand sets chime."}
+      ]
+    },
+    {
+      "id": "C04",
+      "name": "tram_idle",
+      "gen": true,
+      "prompt": "An old electric tram standing still at night in the rain, heard from twenty metres away: its motor-generator humming and whining steadily, rain drumming on its metal roof.",
+      "duration": 8,
+      "loop": true,
+      "prompt_influence": 0.6,
+      "treatment": "Retune the whine's strongest partial to an A (the state's pitch in the street). Dies at 158.8 (H31, X04).",
+      "placements": [
+        {"at": 157.0, "to": 158.8, "shot": "30", "room": "STREET", "lvl": -32, "lead": 0.0, "trail": 0.0, "note": "Under the first words of I died in the spring, then gone."}
+      ]
+    },
+    {
+      "id": "C05",
+      "name": "street_crowd_rain",
+      "gen": true,
+      "prompt": "A large crowd standing silently in heavy rain in a city street at night: rain drumming on dozens of umbrellas, splashes on wet cobbles, water running in the gutter. Nobody speaks, nobody moves.",
+      "duration": 12,
+      "loop": true,
+      "prompt_influence": 0.6,
+      "treatment": "Reject any take with a voice or a cough. After the tram dies this is the whole scene: a crowd's silence made of rain.",
+      "placements": [
+        {"at": 157.0, "to": 163.0, "shot": "30", "room": "STREET", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "Hard out at 163.0 into the broadcast: the rain does not cross into the television."}
+      ]
+    },
+    {
+      "id": "C06",
+      "name": "dawn_drips",
+      "gen": true,
+      "prompt": "Water dripping from gutters, railings and ledges after rain at first light: sparse single drops falling into puddles and onto metal, a quiet, still city.",
+      "duration": 12,
+      "loop": true,
+      "prompt_influence": 0.6,
+      "treatment": "Slice a few close single drips and place one every 1.5 s from 223.8, on the railing's carved drops in the foreground.",
+      "placements": [
+        {"at": 223.0, "to": 236.0, "shot": "44-45", "room": "DAWN", "lvl": -40, "lead": 0.0, "trail": 3.0, "note": "The first sound after the rain: the cut to dawn is the rain stopping."},
+        {"at": 223.8, "to": 232.8, "every": 1.5, "shot": "44", "room": "DAWN", "lvl": -34, "lead": 0.0, "trail": 0.0, "note": "Single close drips from the railing."}
+      ]
+    },
+    {
+      "id": "C07",
+      "name": "dawn_birds",
+      "gen": true,
+      "prompt": "A few small birds beginning to call at first light in a quiet city, sparse and distant, heard across still water.",
+      "duration": 10,
+      "loop": false,
+      "prompt_influence": 0.5,
+      "treatment": "Keep it sparse: no dawn chorus.",
+      "placements": [
+        {"at": 226.8, "to": 234.0, "shot": "44-45", "room": "CANAL", "lvl": -40, "lead": 0.0, "trail": 1.0, "note": ""}
+      ]
+    },
+    {
+      "id": "C08",
+      "name": "dawn_tram",
+      "gen": true,
+      "prompt": "Far away at dawn, a tram's bell rung once and its wheels beginning to roll on the rails.",
+      "duration": 4,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "treatment": "The same bell as C03 if the takes allow.",
+      "placements": [
+        {"at": 229.3, "shot": "44", "room": "CANAL", "lvl": -36, "lead": 0.0, "trail": 0.0, "note": "The tram that stopped for the Address runs again."}
+      ]
+    },
+    {
+      "id": "C09",
+      "name": "dawn_windows",
+      "gen": true,
+      "prompt": "Across a quiet courtyard at dawn, old steel-framed windows being opened one after another at a distance: latches, soft creaks, a pane knocking against its frame.",
+      "duration": 8,
+      "loop": false,
+      "prompt_influence": 0.6,
+      "treatment": "The first latch lands just after the first windows switch near Nana's (about 224.4). No sound per window.",
+      "placements": [
+        {"at": 224.2, "to": 232.0, "shot": "44", "room": "CANAL", "lvl": -38, "lead": 0.0, "trail": 0.0, "note": "Windows open, so voices can come out: the walla has a cause."}
+      ]
+    },
+    {
+      "id": "C10",
+      "name": "dawn_walla_bed",
+      "gen": true,
+      "prompt": "A city waking at dawn heard across still water: many quiet, overlapping conversations drifting out of open windows, unintelligible, calm. No shouting, no laughter, no music, no traffic.",
+      "duration": 14,
+      "loop": true,
+      "prompt_influence": 0.5,
+      "treatment": "Low-pass 1.8 kHz; under the TTS walla (dialogue.json W01-W10).",
+      "placements": [
+        {"at": 224.0, "to": 236.0, "shot": "44-45", "room": "WINDOW", "lvl": -44, "lead": 0.0, "trail": 3.0, "note": "Rises to -30 by 232.0 as the wave spreads; fades 233-236 under the epigraph (L)."}
+      ]
+    },
+    {
+      "id": "C11",
+      "name": "dawn_air",
+      "gen": true,
+      "prompt": "The still air of a city at first light after rain, heard from high across a canal: a very faint, distant hum of a city waking, very quiet.",
+      "duration": 12,
+      "loop": true,
+      "prompt_influence": 0.5,
+      "treatment": "The floor that replaces the rain; never silence.",
+      "placements": [
+        {"at": 223.0, "to": 236.0, "shot": "44-45", "room": "DAWN", "lvl": -46, "lead": 0.0, "trail": 3.0, "note": ""}
+      ]
+    },
+    {
+      "id": "N01",
+      "name": "flat_tone",
+      "gen": true,
+      "prompt": "The room tone of a small, old one-room flat at night high up in a concrete tower: quiet, close and still, with a faint hum of the building.",
+      "duration": 15,
+      "loop": true,
+      "prompt_influence": 0.5,
+      "treatment": "One continuous bed gated by Nana's shots; also sent down the line (LINE_SPILL) in Ida's call shots.",
+      "placements": [
+        {"at": 83.0, "to": 90.0, "shot": "15-16", "room": "FLAT", "lvl": -44, "lead": 1.0, "trail": 0.0, "note": "Leaks into the last second of the city shot from the warm window, as if we lean into it (J)."},
+        {"at": 94.0, "to": 99.0, "shot": "18", "room": "FLAT", "lvl": -44, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 103.0, "to": 109.0, "shot": "20", "room": "FLAT", "lvl": -44, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 174.0, "to": 180.0, "shot": "33", "room": "FLAT", "lvl": -44, "lead": 0.0, "trail": 0.0, "note": "Hard out at 180.0 into the dead air."},
+        {"at": 198.0, "to": 202.0, "shot": "39", "room": "FLAT", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": "No A in it now: the set is off. The room is warmer and emptier."},
+        {"at": 205.0, "to": 210.0, "shot": "41", "room": "FLAT", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": ""}
+      ]
+    },
+    {
+      "id": "N02",
+      "name": "window_rain",
+      "gen": true,
+      "prompt": "Rain running on the outer pane of an old steel-framed double window, heard from inside a small quiet room: soft ticks of drops and slow trickles on glass.",
+      "duration": 15,
+      "loop": true,
+      "prompt_influence": 0.6,
+      "treatment": "The city's rain from inside: it takes over from C01 on the cut at 84.0.",
+      "placements": [
+        {"at": 84.0, "to": 90.0, "shot": "16", "room": "FLAT", "lvl": -40, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 94.0, "to": 99.0, "shot": "18", "room": "FLAT", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 103.0, "to": 109.0, "shot": "20", "room": "FLAT", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 174.0, "to": 180.0, "shot": "33", "room": "FLAT", "lvl": -42, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 198.0, "to": 202.0, "shot": "39", "room": "FLAT", "lvl": -40, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 205.0, "to": 210.0, "shot": "41", "room": "FLAT", "lvl": -40, "lead": 0.0, "trail": 0.0, "note": ""}
+      ]
+    },
+    {
+      "id": "N03",
+      "name": "wood_clock",
+      "gen": true,
+      "prompt": "A small wooden pendulum wall clock ticking in a quiet room: a soft wooden tick and a slightly different tock, one beat per second. Recorded close, no other sound.",
+      "duration": 10,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "Slice one tick and one tock. Ticks on even seconds, tocks on odd seconds 0.06 s early: her clock is a little out of beat, and limps like a heartbeat. It never stops.",
+      "placements": [
+        {"at": 82.94, "shot": "15", "room": "FLAT", "lvl": -36, "lead": 1.06, "trail": 0.0, "note": "One tock from the warm window before we are inside (J)."},
+        {"at": 84.0, "to": 90.0, "every": 1.0, "shot": "16", "room": "FLAT", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "Tick and tock alternate; odd seconds 0.06 s early throughout."},
+        {"at": 90.0, "to": 94.0, "every": 1.0, "shot": "17", "room": "LINE_SPILL", "lvl": -48, "lead": 0.0, "trail": 0.0, "note": "Down the wire in the Hall, limping against the Air Clock."},
+        {"at": 94.0, "to": 99.0, "every": 1.0, "shot": "18", "room": "FLAT", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 99.0, "to": 103.0, "every": 1.0, "shot": "19", "room": "LINE_SPILL", "lvl": -48, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 103.0, "to": 109.0, "every": 1.0, "shot": "20", "room": "FLAT", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 174.0, "to": 179.0, "every": 1.0, "shot": "33", "room": "FLAT", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "Nothing at 180.0: the dead air is a cut out of her room too."},
+        {"at": 195.0, "to": 198.0, "every": 1.0, "shot": "38", "room": "LINE_SPILL", "lvl": -46, "lead": 0.0, "trail": 0.0, "note": "The only clock in the Hall now."},
+        {"at": 198.0, "to": 202.0, "every": 1.0, "shot": "39", "room": "FLAT", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": "Her time keeps going."},
+        {"at": 202.0, "to": 205.0, "every": 1.0, "shot": "40", "room": "LINE_SPILL", "lvl": -46, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 205.0, "to": 210.0, "every": 1.0, "shot": "41", "room": "FLAT", "lvl": -30, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 210.0, "to": 216.0, "every": 1.0, "shot": "42", "room": "LINE_SPILL", "lvl": -46, "lead": 0.0, "trail": 0.0, "note": "Behind Come home, in the same phone band as her voice. Ends with the call at 217.0."}
+      ]
+    },
+    {
+      "id": "N04",
+      "name": "tv_standby",
+      "gen": true,
+      "prompt": "An old valve television set switched on with no programme in a small quiet room: a faint low hum and a soft high-pitched whistle from the set, recorded from a metre away.",
+      "duration": 12,
+      "loop": true,
+      "prompt_influence": 0.6,
+      "treatment": "Retune the hum to 55/110 Hz (the state's A in her home). Modulate its level +-3 percent at 0.25 Hz, in phase with the standby card's breathing. Cut the whistle's level if it tires the ear.",
+      "placements": [
+        {"at": 84.0, "to": 90.0, "shot": "16", "room": "TV", "lvl": -46, "lead": 0.0, "trail": 0.0, "note": "The carrier's heartbeat."},
+        {"at": 94.0, "to": 99.0, "shot": "18", "room": "TV", "lvl": -48, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 103.0, "to": 109.0, "shot": "20", "room": "TV", "lvl": -48, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 174.0, "to": 180.0, "shot": "33", "room": "TV", "lvl": -48, "lead": 0.0, "trail": 0.0, "note": "On air: not breathing, under the Father's voice. Gone from 198: she has switched him off."}
+      ]
+    },
+    {
+      "id": "N05",
+      "name": "soup_simmer",
+      "gen": true,
+      "prompt": "A pot of soup simmering gently on a small gas stove across a quiet room: soft bubbling and the lid rattling faintly now and then.",
+      "duration": 12,
+      "loop": true,
+      "prompt_influence": 0.6,
+      "treatment": "Always faint. It runs all night in her shots, so The soup's still warm is simply true.",
+      "placements": [
+        {"at": 84.0, "to": 90.0, "shot": "16", "room": "FLAT", "lvl": -44, "lead": 0.0, "trail": 0.0, "note": "The stove is in frame."},
+        {"at": 94.0, "to": 99.0, "shot": "18", "room": "FLAT", "lvl": -50, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 103.0, "to": 109.0, "shot": "20", "room": "FLAT", "lvl": -50, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 174.0, "to": 180.0, "shot": "33", "room": "FLAT", "lvl": -50, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 198.0, "to": 202.0, "shot": "39", "room": "FLAT", "lvl": -48, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 205.0, "to": 210.0, "shot": "41", "room": "FLAT", "lvl": -48, "lead": 0.0, "trail": 0.0, "note": ""},
+        {"at": 211.0, "to": 216.0, "shot": "42", "room": "LINE_SPILL", "lvl": -58, "lead": 0.0, "trail": 0.0, "note": "Just audible behind her voice in the phone."}
+      ]
+    },
+    {
+      "id": "N06",
+      "name": "armchair",
+      "gen": true,
+      "prompt": "An old wooden armchair creaking softly as a small, light person turns in it. Recorded close in a quiet room.",
+      "duration": 1.5,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "Small.",
+      "placements": [
+        {"at": 88.6, "shot": "16", "room": "FLAT", "lvl": -32, "lead": 0.0, "trail": 0.0, "note": "She turns her head toward the ringing phone."}
+      ]
+    },
+    {
+      "id": "T01",
+      "name": "letterpress",
+      "gen": true,
+      "prompt": "A hand-operated letterpress making a single impression: one heavy, soft thump of iron and wood as paper is pressed against inked type, in a quiet print shop. Recorded close.",
+      "duration": 2,
+      "loop": false,
+      "prompt_influence": 0.7,
+      "treatment": "Keep the wood (200 Hz-2 kHz) so it reads on small speakers. It replaces v1's sub hit: the title is printed, by hand.",
+      "placements": [
+        {"at": 238.0, "shot": "45", "room": "AIR", "lvl": -16, "lead": 0.0, "trail": 0.0, "note": "INTERREGNUM, with M4's last chord: the film ends in relief."}
+      ]
+    }
+  ]
+}

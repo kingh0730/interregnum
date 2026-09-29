@@ -1,5 +1,8 @@
 # CONTINUITY: sound, temp score, dialogue, Suno cue sheet
 
+> **Superseded for the ElevenLabs pass** by `../../bible/sound/sound_bible.md` and, in this folder, `casting.md`,
+> `dialogue.json`, `score.md`, `score_cues.json`, `sfx.json` and `mix_plan.md`. Kept as the record of the v1 temp mix.
+
 Everything in the v1 soundtrack can be made with numpy (plus `say` and ffmpeg for the voices). Build it as stems,
 mix at the end, and keep all `.wav` in `work/pilot/audio/` (they are git-ignored). Times are **absolute seconds in
 the main cut** unless marked "shot +". Shot in-points are in `episodes/pilot/episode.md`.

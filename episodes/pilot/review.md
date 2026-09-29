@@ -68,3 +68,8 @@ Claude judged stills and audio metrics only. These need your eyes and ears:
   - `audio/main.json` is the mix, rendered with `tools/audio/mix.py`.
   - `edit_*.json` are the conforms, run with `tools/comp/assemble.py`.
 - **Paths:** the recipes point at `work/pilot/`. Copy them back there to re-run.
+
+## Picture changes requested by the sound plan (to do with the Seedance pass)
+- **Shot 31:** end the take segment just after "Tomorrow,". The rest of the line fills the Hall on the cut (`audio/pilot/mix_plan.md`).
+- **Shot 37:** the House Line call lamp follows the double-ring cadence: lit 191.6–192.6 and 193.6–194.6.
+- **Shot 12:** the terminal text follows the order of the spliced loop (`audio/pilot/dialogue.json`, D06).
