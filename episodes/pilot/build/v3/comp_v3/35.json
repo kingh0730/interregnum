@@ -1,0 +1,34 @@
+{
+ "dur": 2.0,
+ "fps": 24,
+ "out": "work/pilot/shots_v3/35.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/comp_v3/s31_45/p35_plate.mov"
+  },
+  {
+   "src": "work/pilot/comp_v3/s31_45/paper_20.png",
+   "fixed": true,
+   "blend": "multiply"
+  }
+ ],
+ "grade": {
+  "exposure": 0,
+  "contrast": 1.04,
+  "sat": 1.0,
+  "lift": [
+   0.03,
+   0.04,
+   0.065
+  ],
+  "gain": [
+   0.99,
+   1.0,
+   1.02
+  ],
+  "bloom": 0.15,
+  "vignette": 0.25,
+  "grain": 0
+ },
+ "letterbox": 2.39
+}

@@ -1,0 +1,47 @@
+{
+ "dur": 6.0,
+ "fps": 24,
+ "out": "work/pilot/shots_v3/32.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/comp_v3/s31_45/p32_plate.mov"
+  },
+  {
+   "src": "work/pilot/comp_v3/s31_45/paper_20.png",
+   "fixed": true,
+   "blend": "multiply"
+  }
+ ],
+ "grade": {
+  "exposure": 0,
+  "contrast": 1.04,
+  "sat": 1.0,
+  "lift": [
+   0.03,
+   0.04,
+   0.065
+  ],
+  "gain": [
+   0.99,
+   1.0,
+   1.02
+  ],
+  "bloom": 0.15,
+  "vignette": 0.25,
+  "grain": 0
+ },
+ "camera": {
+  "from": [
+   0.4915,
+   0.5034,
+   1.06
+  ],
+  "to": [
+   0.5,
+   0.5,
+   1.0
+  ],
+  "ease": "linear"
+ },
+ "letterbox": 2.39
+}

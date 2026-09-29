@@ -1,0 +1,29 @@
+{
+ "dur": 3,
+ "fps": 24,
+ "out": "work/pilot/shots_v3/04.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/comp_v3/04_pre.mp4"
+  },
+  {
+   "src": "work/pilot/comp_v3/paper_grain.png",
+   "blend": "multiply",
+   "fixed": true,
+   "t0": 0.15,
+   "fade_in": 0.3
+  }
+ ],
+ "grade": {
+  "contrast": 1.03,
+  "sat": 0.96,
+  "gain": [
+   0.98,
+   1.0,
+   1.02
+  ],
+  "bloom": 0,
+  "vignette": 0.15,
+  "grain": 0
+ }
+}

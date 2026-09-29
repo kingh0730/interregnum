@@ -1,0 +1,55 @@
+{
+ "dur": 5.0,
+ "fps": 24,
+ "out": "work/pilot/shots_v3/31.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/keys_v3/k02_father_cu.png"
+  },
+  {
+   "src": "work/pilot/js_v3/j14_bug_cc_31.mov",
+   "fixed": true
+  },
+  {
+   "src": "work/pilot/comp_v3/s31_45/pedestal.png",
+   "fixed": true,
+   "blend": "add"
+  },
+  {
+   "src": "work/pilot/comp_v3/s31_45/bc_overlay_120.mov",
+   "fixed": true
+  }
+ ],
+ "camera": {
+  "from": [
+   0.5,
+   0.5,
+   1.0
+  ],
+  "to": [
+   0.5,
+   0.4969,
+   1.04
+  ],
+  "ease": "linear"
+ },
+ "grade": {
+  "exposure": 0,
+  "contrast": 0.97,
+  "sat": 0.9,
+  "lift": [
+   0,
+   0,
+   0
+  ],
+  "gain": [
+   1,
+   1,
+   1
+  ],
+  "bloom": 0.2,
+  "vignette": 0.15,
+  "grain": 0,
+  "chroma": 1
+ }
+}

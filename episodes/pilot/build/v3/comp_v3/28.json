@@ -1,0 +1,19 @@
+{
+ "dur": 3.0,
+ "fps": 24,
+ "out": "work/pilot/shots_v3/28.mp4",
+ "grade": {
+  "exposure": 0.12,
+  "contrast": 1.0,
+  "sat": 1.0,
+  "bloom": 0,
+  "vignette": 0,
+  "grain": 0
+ },
+ "layers": [
+  {
+   "src": "work/pilot/js_v3/j01_lighting_fast.mp4",
+   "fixed": true
+  }
+ ]
+}

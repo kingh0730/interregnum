@@ -1,0 +1,24 @@
+{
+ "dur": 4,
+ "fps": 24,
+ "out": "work/pilot/shots_v3/09.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/js_v3/j05_title.mp4"
+  }
+ ],
+ "grade": {
+  "exposure": 0,
+  "contrast": 1.0,
+  "sat": 1.0,
+  "gain": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "bloom": 0,
+  "vignette": 0,
+  "grain": 0
+ },
+ "letterbox": 2.39
+}
