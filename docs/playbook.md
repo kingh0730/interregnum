@@ -50,6 +50,9 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
   - Then a max-effort judge compares the concepts against the research, picks or merges them, and writes
     `episode.md`.
   - Breadth beats depth at the concept stage; afterwards use draft-and-critique.
+- **Split big documents by chapter.** A full bilingual script for about 40 shots overran max's output limit 4 times
+  in one session. Write it as `script/partN.md` sessions chained in order, each reading the earlier parts, then join
+  them.
 - **Draft at xhigh, critique at max.** Write each deliverable in its own xhigh session. Then run a short max-effort
   critic session on the finished file: attack the hook, find the generic beats, test the ending, and rewrite the weak
   parts. The critic sees the whole piece, which a single long max draft never does, and it avoids the long silent
