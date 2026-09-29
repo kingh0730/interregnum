@@ -44,6 +44,10 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
   - stillness designed as a strength (the "PPT" note);
   - fiction only;
   - the deliverables: `episode.md`, `script.md`, `shots/NN/shot.md`, lookdev prompts and a cue sheet.
+- **Draft at xhigh, critique at max.** Write each deliverable in its own xhigh session. Then run a short max-effort
+  critic session on the finished file: attack the hook, find the generic beats, test the ending, and rewrite the weak
+  parts. The critic sees the whole piece, which a single long max draft never does, and it avoids the long silent
+  generations that drop connections.
 - **Write incrementally.** Tell every long max-effort session to write its deliverables one piece per response
   (`episode.md` as soon as the concept is set, then the script, then shots in batches of about 8). One giant final
   response can be lost to a single dropped connection: the mom episode's writer lost 65 minutes to `ECONNRESET`.
