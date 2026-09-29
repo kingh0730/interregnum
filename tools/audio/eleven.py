@@ -63,7 +63,7 @@ def run(kind, payload, out, est):
         sys.exit(f"no audio in response: {json.dumps(res)[:300]}")
     raw = out.with_suffix(".src" + Path(url.split("?")[0]).suffix)
     urllib.request.urlretrieve(url, raw)
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(raw), "-ar", "48000", str(out)], check=True)
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(raw), "-ar", "48000", "-c:a", "pcm_f32le", str(out)], check=True)  # float: mp3 overshoot must not clip
     raw.unlink()
     log.update(seconds=round(time.time() - t0, 1), seed=res.get("seed"))
     out.with_suffix(".json").write_text(json.dumps(log, indent=1))
