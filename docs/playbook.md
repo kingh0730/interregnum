@@ -44,6 +44,10 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
   - stillness designed as a strength (the "PPT" note);
   - fiction only;
   - the deliverables: `episode.md`, `script.md`, `shots/NN/shot.md`, lookdev prompts and a cue sheet.
+- **Write incrementally.** Tell every long max-effort session to write its deliverables one piece per response
+  (`episode.md` as soon as the concept is set, then the script, then shots in batches of about 8). One giant final
+  response can be lost to a single dropped connection: the mom episode's writer lost 65 minutes to `ECONNRESET`.
+  If it happens, resume with `claude -p --resume <session-id>` (the transcript filename) rather than starting over.
 - **Expect** 45–90 minutes with long silent stretches, which are normal for max effort.
   - **Monitor** the files and the session transcript under `~/.claude/projects/...`, not only the finish.
   - **Stuck** means 30 minutes with no transcript change.
