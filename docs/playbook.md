@@ -98,6 +98,8 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
   - **Cutout layers don't register with their keyframe.** Build mattes from the plate itself (GrabCut plus inpaint)
     instead of requesting cutouts.
   - **Edits of a keyframe re-render everything.** Paste back only the edited region, with a feathered mask.
+  - **Codex flatters age.** "100 years old" rendered as about 78. Describe ageing physically (hair density and scalp,
+    skin laxity and spots, sunken temples, hooded eyes, a narrower face, hands) and reference the previous age sheet.
   - **"Print" styles grow cream paper margins.** Frame past them in comp.
   - **Stray details,** such as a second mole: patch them locally with texture from the same hatching direction, sized
     to the defect. Verify at 4× zoom, then re-propagate to every consumer.
