@@ -5,7 +5,17 @@
 > of a banknote or stamp: fine, perfectly regular engraved lines, stipple and guilloche, with flawless registration.
 > He shares the film's ink-on-paper medium, while the machine precision still sets him apart from the hand-cut world.
 > The full rule text is in the `k01_father_mcu` prompt of `episodes/pilot/images_v3.json`, which is authoritative over
-> any "COPY RULE" wording still quoted in the shot files. Principle: a character may differ in *technique*, never in *medium*.
+> any "COPY RULE" wording still quoted in the shot files.
+>
+> **The medium rule (series-wide).** By default, a character differs from the world in *technique*, not *medium*.
+> A change of medium is allowed only when all three conditions hold:
+> 1. **Fully committed.** It is truly another medium (real photographic footage, archive video, live action, a
+>    different animation technique) and not a half step. The v3 Father failed because he was smoother than the
+>    woodcut but not a photograph: an uncanny valley of style that reads as a mistake.
+> 2. **Motivated.** The story explains it: another world, a machine's output, a memory, a document.
+> 3. **Set up or saved.** Either the audience learns the rule early (*Roger Rabbit*, *Spider-Verse*, *The Wizard of
+>    Oz*), or the break happens once, as a revelation it has earned (*Waltz with Bashir*'s final archive footage,
+>    *The Lego Movie*'s live-action turn).
 
 
 How INTERREGNUM is drawn. `production_design.md` defines what things are and `cinematography.md` how they're shot;
