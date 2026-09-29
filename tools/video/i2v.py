@@ -14,6 +14,7 @@ import json
 import os
 import sys
 import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -33,7 +34,18 @@ def audio_uri(path):
     return "data:audio/wav;base64," + base64.b64encode(Path(path).read_bytes()).decode()
 
 
-def call(url, key, payload=None):
+def call(url, key, payload=None, tries=6):
+    """POST (payload) or GET with retries on transient network errors (the queue is idempotent to poll)."""
+    for i in range(tries):
+        try:
+            return _call(url, key, payload)
+        except (urllib.error.URLError, ConnectionError, TimeoutError) as e:
+            if payload is not None or i == tries - 1:  # never re-submit a POST: it would bill twice
+                raise
+            time.sleep(5 * (i + 1))
+
+
+def _call(url, key, payload=None):
     req = urllib.request.Request(url, data=json.dumps(payload).encode() if payload is not None else None,
                                  headers={"Authorization": f"Key {key}", "Content-Type": "application/json"},
                                  method="POST" if payload is not None else "GET")
@@ -72,6 +84,12 @@ def main():
         payload["seed"] = a.seed
     print(f"submitting {a.model} {a.res} {a.dur}s  est ${est:.2f}", flush=True)
     sub = call(f"https://queue.fal.run/{a.model}", key, payload)
+    out = Path(a.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    # record the request id at once, so a result stranded by a network failure can be fetched later
+    out.with_suffix(".json").write_text(json.dumps({"request_id": sub.get("request_id"), "status_url": sub.get("status_url"),
+                                                    "response_url": sub.get("response_url"), "pending": True}, indent=1))
+    print("request", sub.get("request_id"), flush=True)
     t0 = time.time()
     while True:
         st = call(sub["status_url"], key)
@@ -83,8 +101,6 @@ def main():
             sys.exit(f"timeout; request {sub.get('request_id')}")
         time.sleep(10)
     res = call(sub["response_url"], key)
-    out = Path(a.out)
-    out.parent.mkdir(parents=True, exist_ok=True)
     urllib.request.urlretrieve(res["video"]["url"], out)
     log = {k: v for k, v in payload.items() if not k.endswith(("image_url", "image_urls", "audio_urls"))}
     log.update(model=a.model, start=a.start, end=a.end, ref_audio=a.ref_audio, seed=res.get("seed"), request_id=sub.get("request_id"),
