@@ -30,3 +30,6 @@ tools/blender/models/
 
 # King's candid answers and notes: private, never public
 /bible/private/
+
+# private projects (e.g. episodes made for family): never public; own local git repo inside
+/private/
