@@ -173,6 +173,8 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
   - Never `pgrep -f <name>` when `<name>` appears in the waiting loop itself; wait on a PID or an output file.
   - Monitor scripts run under `bash -c` with `shopt -s nullglob` (zsh aborts on empty globs).
   - `find` here is `bfs` and rejects relative `-newermt`; use `stat -f %m`.
+  - Under `nullglob`, never pass a glob to `ls`: an empty match makes it list the current directory. Count matches
+    with a bash array instead: `d=(shots/*/); ${#d[@]}`.
 - **Tool gotchas:**
   - Never give a payload file the same name as the runner's log (`<prefix>.json`); `tools/fal_run.py` now refuses it.
     Pass long payloads as files, not inline arguments.
