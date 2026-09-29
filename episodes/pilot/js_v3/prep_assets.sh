@@ -16,5 +16,7 @@ emb() { # name src filter
 C43='crop=ih*4/3:ih:(iw-ih*4/3)/2:0'
 emb p01    "$(pick work/pilot/keys_v3/p01_lighting.png)"                               "$C43,scale=1440:1080"
 emb k02    "$(pick work/pilot/v3/f04_frozen.png work/pilot/keys_v3/k02_father_cu.png work/pilot/keys/k02.png)" "$C43,scale=1440:1080"
+# k02p: the Proof/Wall variant with the cream disc toned down (run uv run work/pilot/comp_v3/tone_disc.py first)
+emb k02p   "$(pick work/pilot/v3/k02_proof.png)"                                  "$C43,scale=1440:1080"
 emb k01    "$(pick work/pilot/keys_v3/k01_father_mcu.png work/pilot/keys/k01.png)"     "$C43,scale=720:540"
 emb father "$(pick assets/pilot/lookdev_v3/father.png)"                                "scale=1672:-2"

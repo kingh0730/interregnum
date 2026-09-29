@@ -61,6 +61,7 @@ def push_affine(s, focus):
 
 
 PUSH03 = (1.04, (0.50, 0.42))
+K02P = "work/pilot/v3/k02_proof.png"   # k02 with the cream disc toned down for monitors (tone_disc.py)
 
 
 def father_shot(shot, key, s1, focus, n, stutter=None, freeze=None):
@@ -94,8 +95,9 @@ def father_shot(shot, key, s1, focus, n, stutter=None, freeze=None):
     fn.seq = True
     if shot == "03" and not SHEET:
         # 04's frozen picture is k02 unpushed (the frame the J16 mesh was placed on); 04's sync tear
-        # carries the picture from 03's final 1.04 push back to 1.00, so the cut does not jump.
-        save(CV / "f04_frozen.png", father_pic(src, 1.0, focus))
+        # carries the picture from 03's final 1.04 push back to 1.00, so the cut does not jump. f04_frozen feeds
+        # the 05 Wall insert, so it is the Proof variant (cream disc toned down, tone_disc.py).
+        save(CV / "f04_frozen.png", father_pic(load(K02P), 1.0, focus))
     run(shot, n, fn, f"{shot}_pre.mp4")
 
 
@@ -110,7 +112,7 @@ def s03():
 # ------------------------------------------------------------------ p04: the Proof (04, 06)
 Q04 = [[361.0, 196.7], [947.2, 267.2], [989.5, 714.2], [379.5, 717.0]]    # glass quad, plate space
 TIP0 = np.float32([930, 537])                                             # the pen tip in p04
-RING = np.float32([1209, 557])                                            # J03's pen circle, texture space
+RING = np.float32([1227.5, 574.5])    # J03's pen circle, texture space (measured on the engraved-k02 J03; smooth k02: 1209, 557)
 LAMPS04 = [[1252 + 3 * i, 354 + 56 * i, 52, 38] for i in range(6)]      # x, y, w, h (5 and 6 extrapolated)
 FLAPS04 = [[1205, 230], [1347, 230], [1347, 312], [1205, 312]]            # the four-card window unit
 HOOD_PLATE = [[572, 739], [768, 739], [768, 775], [572, 775]]
@@ -388,9 +390,9 @@ def _glass_dust():
         rr = r.uniform(1, 3)
         cv2.circle(dk if r.random() < .5 else lt, (int(x * 4), int(y * 4)), int(rr * 4), float(r.uniform(.2, .6)), -1, cv2.LINE_AA, shift=2)
     # the light-pen smear over the ear
-    cv2.ellipse(lt, (1209, 557), (60, 34), -35, 0, 360, 0.35, -1, cv2.LINE_AA)
+    cv2.ellipse(lt, (int(round(RING[0])), int(round(RING[1]))), (60, 34), -35, 0, 360, 0.35, -1, cv2.LINE_AA)
     lt = cv2.GaussianBlur(lt, (0, 0), 1.0)
-    lt[400:720, 1100:1320] = cv2.GaussianBlur(lt[400:720, 1100:1320], (0, 0), 9)
+    lt[400:740, 1100:1340] = cv2.GaussianBlur(lt[400:740, 1100:1340], (0, 0), 9)
     return np.dstack([cv2.GaussianBlur(dk, (0, 0), .8) * .35, lt * .5])
 
 
@@ -407,7 +409,8 @@ def monitor_matte():
 
 def s04():
     src = load(KEYS / "k02_father_cu.png")
-    frozen = father_pic(src, 1.0, PUSH03[1])
+    frozen = father_pic(src, 1.0, PUSH03[1])                  # the broadcast picture (as 03 left it)
+    frozen_p = father_pic(load(K02P), 1.0, PUSH03[1])         # the Proof variant: the disc tones down as it becomes the tube
     bug = VReader(JS / "j14_bug_cc_03.mov").get(167).copy()
     ov = VReader(JS / "j16_proof_overlay_04.mov")
     lamps = VReader(JS / "j03_lamps_04.mov")
@@ -446,7 +449,7 @@ def s04():
         C = sim(z, F)
         Cm = sim(zm, F)
         des = 0.4 * ease_inout_cubic((t - 0.15) / 1.85)
-        pic = desat(frozen, des)
+        pic = desat(frozen * (1 - u) + frozen_p * u, des)
         pic = over(pic, premul(ovf[:, PX0:PX0 + PW]))
         eff = zm * 598 / 1440
         tex, gm = tube04(pic, u, i, blur_sig=max(0, 0.45 / eff - 0.45))

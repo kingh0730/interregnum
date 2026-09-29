@@ -26,7 +26,8 @@ const out = K.stage(opaque ? '#000' : 'transparent'), octx = out.getContext('2d'
 const W = 1920, H = 1080, F = 1 / 24, PX = 240;
 const M = window.MESH;
 let PIC = null;
-window.ready = (async () => { PIC = await K.asset('k02'); })();
+// k02p: k02 with its cream disc toned down for the Proof's tube (work/pilot/comp_v3/tone_disc.py)
+window.ready = (async () => { PIC = await K.asset('k02p'); })();
 
 // an offscreen layer in picture space: draw strokes into it, then put it with a blurred glow copy underneath
 const _gl = K.canvas(1440, 1080), _glc = _gl.getContext('2d');

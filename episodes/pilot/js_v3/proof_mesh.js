@@ -7,10 +7,15 @@
 'use strict';
 // anchors in the ORIGINAL k02 pixels (1672 × 941); converted to picture space below
 const SRC = { w: 1672, h: 941 };
+// Re-fitted 2026-09-29 to the steel-engraved k02 (the smooth k02 is k02_father_cu_smooth.png): the engraved face sits
+// ~10 px lower and 4.4 % larger (eyes 732/945 at y 382 vs 728/932 at 372), so the smooth-k02 anchors were mapped by
+// that similarity and the chin and mole placed by eye. Smooth-k02 anchors: eyeL 728,372 eyeR 932,372 brows 712/948,312
+// noseTop 830,380 noseTip 828,468 mouth 822,560 chin 822,800 ears 535,480/1112,478 hair 830,175 mole 1018,440
+// cheeks 640/1010,470 face 572/1085,420.
 const A0 = {
-  eyeL: [728, 372], eyeR: [932, 372], browL: [712, 312], browR: [948, 312], noseTop: [830, 380], noseTip: [828, 468],
-  mouth: [822, 560], chin: [822, 800], earL: [535, 480], earR: [1112, 478], hair: [830, 175], mole: [1018, 440],
-  cheekL: [640, 470], cheekR: [1010, 470], faceL: [572, 420], faceR: [1085, 420],
+  eyeL: [732, 382], eyeR: [945, 382], browL: [715, 319], browR: [962, 319], noseTop: [838, 390], noseTip: [836, 482],
+  mouth: [830, 578], chin: [830, 820], earL: [531, 495], earR: [1133, 493], hair: [838, 176], mole: [1023, 453],
+  cheekL: [640, 484], cheekR: [1026, 484], faceL: [569, 432], faceR: [1105, 432],
 };
 const sc = 1080 / SRC.h, ox = (SRC.w - SRC.h * 4 / 3) / 2;
 const P = ([x, y]) => [(x - ox) * sc, y * sc];

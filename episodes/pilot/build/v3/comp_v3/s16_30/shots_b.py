@@ -234,8 +234,8 @@ def shot23():
             full[y0:745, x0:1345] = (lab == ids[k]).astype(np.float32)
             full = cv2.dilate(full, np.ones((3, 3), np.uint8))
             tiles.append((r, c, full))
-    # the picture: k02 clean, cropped 2:1, one tile of it per tube
-    k02 = key("k02_father_cu")[20:856]
+    # the picture: k02 clean (its cream disc toned down: work/pilot/comp_v3/tone_disc.py), cropped 2:1, one tile per tube
+    k02 = (cv2.imread(str(R / "work/pilot/v3/k02_proof.png")).astype(np.float32) / 255.0)[20:856]
     TW, TH = 160, 120
     pic = cv2.resize(k02, (12 * TW, 8 * TH), interpolation=cv2.INTER_AREA)
     rng = np.random.default_rng(23)
