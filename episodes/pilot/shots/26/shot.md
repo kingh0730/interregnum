@@ -1,40 +1,42 @@
 # Shot 26 — "EAT …"
 
-**Duration:** 9 s (2:16–2:25; abs 136.0–145.0)  **Tool:** JS (world screen)  **Camera:** none (screen insert)
+**Duration:** 9 s (2:16–2:25; abs 136.0–145.0)  **Tool:** Codex plate p21 (the 1.25× crop, as 24) + JS (range 2) +
+comp  **Camera:** identical to 24: one continuous page; locked
 
-**Action:** Two more lines are on the page now: *I'm sorry I stayed so long. / Tomorrow, you'll have to talk to each
-other.* She types "Eat", and for the first time the machine completes something new, **in amber**: *something warm
-before you sleep.* PREDICTION 0.97. After 62 nights of her typing it, it has learned the one new thing she ever taught
-it: a grandmother's phrase. She looks at it, then presses TAB and it is committed. One more line, a stage direction:
-*[EYES CLOSE]*. SCRIPT LOCKED · 6 LINES. The phone keeps ringing. **This is the grace note of the AI theme:** the
-only future the machine learned came from love.
+**Action:** Four lines stand on the glass: the cold template, then three in her amber. I died in the spring. I'm sorry
+I stayed so long. Tomorrow, you'll have to talk to each other. She types "Eat", and for the first time the ghost
+arrives **warm**: something warm before you sleep, in amber at half intensity. The Engine is offering the one phrase
+it learned only from her keystrokes, so it comes in her colour: **the first warm thing the machine has ever produced.**
+The needle climbs to 0.97. She holds it for a long moment, then TAB, and the ghost fills to full amber, left to right:
+the line is hers. One more line, a command in inverse video: [EYES CLOSE]. SCRIPT LOCKED lights cold, and the cursor
+goes out. The VIEWING lamp blinks throughout; the red phone rings on. **The grace note of the AI theme:** the only
+future the machine learned came from love.
 
-**Build:** JS **J10 `script`** (the same page as shot 24), range 2, 9.0 s. Keystroke timestamps go to
-`work/pilot/js/keys_26.json`. Comp: `letterbox(2.39)`, monitor feel, `grade(HALL)`.
+**Build:**
+- Plate **p21**, the same 1.25× crop as 24; no new generation.
+- JS **J10 v3**, range 2 (the same page as 24). Keystroke timestamps go to `work/pilot/js/keys_26.json`.
+- Comp as 24, including her reflection in the glass.
+- `letterbox(2.39)`, `grade(HALL)`.
 
-**Keyframe prompt:** none (JS only).
-**Refs:** none.
+**Keyframe prompt:** reuses **p21** (full prompt in `shots/21/shot.md`); no new generation.
+**Refs:** none (no generation; the plate is `work/pilot/keys_v3/p21_terminal.png`).
 **Layers:** none.
 
-**JS spec (J10, range 2; same layout, fonts and colors as shot 24):**
-- **0.0: the state.**
-  - Line 1 (template, 40 %): `Good evening, my children.`
-  - Line 2: `I died in the spring.`
-  - Line 3: `I'm sorry I stayed so long.`
-  - Line 4: `Tomorrow, you'll have to talk to each other.`
-  - The cursor is at the start of line 5.
-  - `TO AIR 00:32` (red) counts down to `00:23`, and `● COMMITTEE — VIEWING` keeps blinking.
-- **Timeline:**
-  - 1.00–1.45: types `E`, `a`, `t`.
-  - **1.7: amber ghost text** ` something warm before you sleep.` in **`#F2A441` at 55 %** with a soft 8 px amber
-    glow. It breathes 45–65 % at 0.5 Hz. The tag below reads `PREDICTION 0.97`, also in amber.
-  - 1.7–4.0: hold (reading time; the most important 2.3 seconds on this screen).
-  - **4.0: TAB.** The ghost commits and becomes solid `#E9E2D0`. A 0.3 s amber flash sweeps left to right along the line.
-  - 4.8–6.2: new line 6: types `[EYES CLOSE]` (0.11 s per character). The brackets and text are `#5FE1E6` (the
-    stage-direction style).
-  - 6.6: a status line at the bottom of the field: `SCRIPT LOCKED · 6 LINES` in DIN Alternate 24 px `#5FE1E6`. The
-    cursor disappears, and the field border goes from `#1E2A44` to `#5FE1E6` at 60 %.
-  - 6.6–9.0: hold.
+**JS spec (J10 v3, range 2; the device, layers and artefacts as in shot 24):**
+- **0.0, the state:** row 1 the template (cold, 60 %, locked); rows 2–4 warm: I died in the spring. / I'm sorry I stayed
+  so long. / Tomorrow, you'll have to talk to each other. The cursor at the start of row 5. The repeater reads TO AIR
+  00:32 and counts down to 00:24; VIEWING blinks at 1 Hz throughout.
+- **1.00–1.45:** she types E, a, t (warm).
+- **1.7: the warm ghost.** " something warm before you sleep." in the **warm layer at half intensity**, in the ghost
+  layer after the cursor, breathing 45–60 % at 0.5 Hz. The needle climbs to 0.97.
+- **1.7–4.0:** hold: the reading time, the most important 2.3 seconds on this screen.
+- **4.0: TAB.** The ghost fills to full-intensity warm, left to right over 0.3 s (the beam rewriting it at low
+  voltage).
+- **4.8–6.2:** row 6: she types [EYES CLOSE] in **inverse video**, dark letters on a warm block that builds character by
+  character (0.11 s each): the terminal's way of marking a command.
+- **6.6:** SCRIPT LOCKED (the cold legend lamp) lights; the cursor goes out.
+- **6.6–9.0:** hold.
+- v1 turned the committed ghost cream. Now it stays warm: by the Operator Rule the line is hers.
 
 **Sound:**
 - Keystrokes on the timestamps.
@@ -44,5 +46,6 @@ only future the machine learned came from love.
 - PULSE and RISER rising; the hall clock.
 - No dialogue.
 
-**Motion prompt:** n/a (JS in v2).
+**Motion prompt:** n/a (plate, JS and comp).
+
 **Takes:** —

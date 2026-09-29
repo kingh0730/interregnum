@@ -1,47 +1,54 @@
 # Shot 42 — COME HOME
 
-**Duration:** 7 s (3:30–3:37; abs 210.0–217.0)  **Tool:** Codex keyframe + comp  **Camera:** CU, Ida facing
-screen-left; slow push-in 1.00→1.04 on her eyes
+**Duration:** 7 s (3:30–3:37; abs 210.0–217.0)  **Tool:** Codex k25 + a silent Seedance take (v2) or comp (v1)
+**Camera:** close-up at 40's size, 85 mm, 10 cm above her eye line; locked-off. **For the first time, Ida has lead
+room:** the frame opens in front of her when she stops carrying it alone.
 
-**Action:** Ida's face breaks: her eyes close, a tear falls, and a laugh comes through the crying. Two hundred and
-twelve nights of carrying it alone, and she never had to. From the phone, Nana: "Come home. The soup's still warm."
-The cyan on her hair fades as the monitors go dark, until only the phone's amber is left on her face. Nana's theme
-plays whole for the first time and resolves just after "warm". **Start pose (v2):** eyes closed, the tear on her
-cheek, the laugh beginning.
+**Action:** Nana, on the line: "Come home. The soup's still warm." Ida is leaning over the desk with the handset held
+between her ear and her shoulder, both hands around the small dented amber thermos that has stood unopened since shot
+07. After the line, her hands unscrew the cap and lift it off, and a thin ribbon of steam rises into the dark space in
+front of her face, into the cold light. The soup is still warm, and her hands say so. Her face stays composed: **the
+laugh is heard, not seen** (a breath turning into a small laugh, in the mix). Nana's theme plays whole for the first
+time and resolves as the cap comes off. Around her the Wall has dropped to standby; the cold is fading from her hair,
+and the call lamp's amber is the light on her face. **Start pose:** the handset between ear and shoulder, both hands
+around the closed thermos, eyes open and resting on it, mouth closed.
 
 **Build:**
-- Codex **k25**:
-  `tools/imagegen/gen.sh assets/pilot/keyframes/k25_ida_tears.png "<prompt>" assets/pilot/lookdev/ld4_ida.png assets/pilot/keyframes/k23_ida_answers.png`
-- Comp:
-  - `push(1.00→1.04, focus=eyes)`.
-  - **Light change:** the cyan rim fades by 60 % over 1.0–6.0 s (use the cyan-lit mask) while the amber holds. Shift
-    the grade from HALL to warm across the shot.
-  - **Tear glint (optional, subtle):** a small specular highlight (6 px, `#FFFFFF` at 60 %) slides 50 px down the
-    tear track over 1.5–4.5 s (easeIn). Check the stills: if it reads as a sticker, drop it.
-  - `letterbox(2.39)`.
+- Codex **k25**. This is the accepted thermos beat, folded into the shot's own 7 s: no shot is added.
+- **v2:** a 7 s silent take (`--no-audio`). Nana's line is the second line of shot 41's take, through the PHONE chain;
+  Ida's breath and laugh are sound effects.
+- **v1 fallback:** locked-off. The cold rim fades by 60 % over 1.0–6.0 s (cyan-lit mask) while the amber holds, and the
+  grade shifts from HALL toward warm across the shot. Without the take the cap can't come off: from 4.5 s let a thin
+  wisp of steam escape at the cap's thread instead, as pale cut ribbons.
+- v1's tear glint is gone: no tears in RELIEF, and no highlights.
+- `letterbox(2.39)`.
 
-**Keyframe prompt (k25):**
-> STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident
-> dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around
-> light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified
-> graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and
-> blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps
-> and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light
-> source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central
-> horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers,
-> logos or watermarks anywhere; every screen is a blank, evenly glowing panel.
-> CHARACTER: IDA: a woman of 27, slim, with a short blunt jaw-length black bob and straight-cut bangs just above her
-> eyebrows, dark brown eyes with tired lower lids, straight dark brows, a small straight nose, a small silver hoop
-> earring in her left ear, warm light-olive skin; she wears a charcoal-grey ribbed turtleneck sweater, a hand-knitted
-> mustard-amber wool scarf worn loosely around her neck, and a thin grey lanyard with a blank white ID card. She is
-> exactly the same woman as in the attached images.
-> SHOT: a close-up of Ida with the small dark phone still at her ear on the side facing the camera, her face
-> three-quarters toward screen-left. Her eyes are closed and one tear runs down her cheek; the beginning of a laugh
-> breaks through the crying, a small open smile. The warm amber glow of the phone lights her cheek, and the cold cyan
-> of the hall is only a faint rim on her hair. Background: dark. Composition: face left of center, eyes on the upper
-> third, the amber scarf at the bottom edge.
+**Keyframe prompt (`k25_ida_home`):**
+> STYLE (RELIEF): a frame from an animated film printed by hand as a colour woodcut and linocut on warm cream paper. A
+> carved blue-black key block holds the image; large areas stay solid black, with faint wood grain. Every surface (skin,
+> cloth, hair, concrete, metal, glass, floor) is matte printed ink: no reflections, no sheen, no specular highlights, no
+> smooth gradients. Light is a shape cut out of the black with crisp, slightly irregular knife edges. Middle tones
+> everywhere, on walls, floors and machines as on faces, are parallel gouge strokes that follow the form. Colour is flat
+> spot ink, never blended, with paper grain showing through: pale cold cyan where screens light things, amber where lamps
+> light things, signal red only on red objects. Slight misregistration; no drawn outlines. Only screen light is soft.
+> Faces are a few carved planes, calm; eyes are small dark shapes without highlights. Avoid: anime, airbrush, digital
+> painting, 3D render, photorealism, lens flare, bokeh, neon, glossy or wet floors.
+> FRAME: wide 16:9; keep everything important inside the central horizontal band, because the top and bottom 13% will
+> be cropped to 2.39:1. No text, letters, numbers or logos anywhere; every screen is blank and evenly glowing.
+> IDA (the woman on the attached sheet): 27, slim; a blunt black bob cut straight at the jaw, with straight bangs above
+> her brows; straight dark brows; a small straight nose; warm light-olive skin; a small silver hoop in her left ear; a
+> charcoal ribbed turtleneck and a hand-knitted mustard-amber scarf, the only warm colour on her.
+> SHOT: a close-up of Ida at her desk in the dark hall, seen with an 85 mm lens 10 cm above her eye line, three-quarters
+> toward screen-left, with open space in front of her face. She leans forward over the desk and holds the heavy grey
+> handset of the desk telephone between her far ear and her shoulder, its coiled cord running down across her chest.
+> Both her hands rest around a small dented amber enamel thermos standing on the desk in front of her, chipped to black
+> iron at the rim, its cap still on. Her face is composed, her eyes open and resting on the thermos, her mouth closed. A
+> small amber lamp on the telephone below the frame lights her cheek, her hands and the thermos from below as warm cut
+> shapes; the cold pale cyan of the hall is only a faint rim on the back of her hair. Composition: her face on the right
+> third, looking left into the open dark space; the thermos and her hands at the lower left of centre; above them, open
+> dark space.
 
-**Refs:** `assets/pilot/lookdev/ld4_ida.png`, `assets/pilot/keyframes/k23_ida_answers.png`.
+**Refs:** `assets/pilot/lookdev_v3/ida.png`, `assets/pilot/lookdev_v3/hall.png`.
 **Layers:** none.
 **JS spec:** none.
 
@@ -54,9 +61,15 @@ cheek, the laugh beginning.
 - The red phone at abs 212.0 and 215.0, far off (−18 dB), fading from attention.
 - **No ducking of the D4 resolution.**
 
-**Motion prompt (v2):** Flat 2D cel-painted style. Close-up: Ida, a small phone at her ear, closes her eyes; a tear
-runs down her cheek and a laugh breaks through the crying. From the phone, a warm old voice: "Come home. The soup's
-still warm." Static camera, slow push-in. A quiet hall, a faint telephone. No music. (Supply the rendered Nana voice
-track as the audio, since she is off-screen.)
+*v3 sound note:* add the thermos cap turning on its thread (a soft enamel-on-steel scrape) at about shot +4.5–5.2, and
+the faint breath of the steam after it. The laugh at 215.0 then lands as the cap comes off, just after the D4.
+
+**Motion prompt (v2, Seedance: start `work/pilot/keys_v3/k25_ida_home.png`, 7 s, `--no-audio`):** Colour woodcut print
+animation; keep the first frame's exact carved shapes, flat inks and designs. Close-up, 85 mm, slightly above her eye
+line: a young woman leans over a desk in a dark hall, a grey telephone handset held between her ear and her shoulder,
+both hands around a small amber thermos in front of her, her eyes resting on it. For four seconds she does not move;
+she is listening. Then her hands slowly unscrew the thermos cap and lift it off, and a thin ribbon of steam rises from
+the thermos into the dark space in front of her face. Her head does not move. Understated performance: her face stays
+soft and composed; only her hands move. Locked-off camera. No sound.
 
 **Takes:** —

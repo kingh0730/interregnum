@@ -1,44 +1,46 @@
 # Shot 20 — "FOR THE ENDING."
 
-**Duration:** 6 s (1:43–1:49; abs 103.0–109.0)  **Tool:** Codex keyframe + comp  **Camera:** a closer CU of Nana
-facing screen-right; push-in 1.00→1.035
+**Duration:** 6 s (1:43–1:49; abs 103.0–109.0)  **Tool:** Codex k13 + a Seedance take with dialogue (v2) or comp (v1)
+**Camera:** a closer close-up of Nana, the scene's tightest size, saved for the line that turns it: 50 mm, level with
+her eyes; locked-off; lead room to the right
 
-**Action:** Nana smiles privately, eyes on the screen: "For the ending." A beat. Then, tender and firm, what she says
-every night: "Eat something warm, love." The audience hears the Father's line from the cold open in her mouth, and
-the connection clicks. On second viewing, "For the ending" means *I watch for your line*. It is also what makes Ida
-decide: the Father needs an ending. **Start pose (v2):** handset at her ear, a small smile, lips closed, about to
-speak.
+**Action:** Nana, eyes on the screen: "For the ending." A beat. Then what she says every night: "Eat something warm,
+love." The audience hears the Father's line from the cold open in her mouth, and the connection clicks. On a second
+viewing, "For the ending" means *I watch for your line*. It is also what makes Ida decide: the Father needs an ending.
+Her face does almost nothing; the words do it. **Start pose:** the handset at her ear, the corners of her mouth lifted
+very slightly, lips closed, about to speak.
 
 **Build:**
-- Codex **k13**:
-  `tools/imagegen/gen.sh assets/pilot/keyframes/k13_nana_smile_cu.png "<prompt>" assets/pilot/lookdev/ld5_nana.png assets/pilot/keyframes/k11_nana_phone_cu.png`
-- Comp:
-  - `push(1.00→1.035, focus=her eyes)`.
-  - `flicker(mask=cyan_lit, driver=J15 luma, 4 %)`.
-  - `rainshadow` at 3 %.
-  - `letterbox(2.39)`, `grade(HOME)`.
+- Codex **k13**.
+- **v2:** a 6 s take with both lines (audio on).
+- **v1 fallback:** locked-off; `flicker(mask=cyan_lit, driver=J15 luma, 4 %)`. No push, no rainshadow.
+- `letterbox(2.39)`, `grade(HOME)`.
 
-**Keyframe prompt (k13):**
-> STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident
-> dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around
-> light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified
-> graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and
-> blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps
-> and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light
-> source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central
-> horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers,
-> logos or watermarks anywhere; every screen is a blank, evenly glowing panel.
-> CHARACTER: NANA: a small woman of 82 with silver-white hair in a low bun held by a dark wooden hairpin, a soft round
-> face with deep smile lines, bright dark eyes behind thin round gold wire-rimmed glasses, warm light-brown skin,
-> small pearl stud earrings; she wears a dark bottle-green knitted cardigan over a cream blouse with a tiny faded
-> floral print. She is exactly the same woman as in the attached images.
-> SHOT: a closer close-up of Nana with the cream telephone handset at her ear on the side facing the camera, her
-> face three-quarters toward screen-right and her eyes on the unseen television. A small private smile sits at the
-> corner of her mouth: tender, knowing, a little amused. Her lips are closed, about to speak. Warm amber lamplight
-> falls on the left side of her face and cold cyan television light on the right. Composition: her face fills the
-> right half of the frame, eyes on the upper third.
+**Keyframe prompt (`k13_nana_ending`):**
+> STYLE (RELIEF): a frame from an animated film printed by hand as a colour woodcut and linocut on warm cream paper. A
+> carved blue-black key block holds the image; large areas stay solid black, with faint wood grain. Every surface (skin,
+> cloth, hair, concrete, metal, glass, floor) is matte printed ink: no reflections, no sheen, no specular highlights, no
+> smooth gradients. Light is a shape cut out of the black with crisp, slightly irregular knife edges. Middle tones
+> everywhere, on walls, floors and machines as on faces, are parallel gouge strokes that follow the form. Colour is flat
+> spot ink, never blended, with paper grain showing through: pale cold cyan where screens light things, amber where lamps
+> light things, signal red only on red objects. Slight misregistration; no drawn outlines. Only screen light is soft.
+> Faces are a few carved planes, calm; eyes are small dark shapes without highlights. Avoid: anime, airbrush, digital
+> painting, 3D render, photorealism, lens flare, bokeh, neon, glossy or wet floors.
+> FRAME: wide 16:9; keep everything important inside the central horizontal band, because the top and bottom 13% will
+> be cropped to 2.39:1. No text, letters, numbers or logos anywhere; every screen is blank and evenly glowing.
+> NANA (the woman on the attached sheet): 82, small; silver-white hair in a low bun held with a dark wooden pin; a soft
+> round face with deep lines; small dark eyes behind thin round gold wire glasses; warm brown skin; small pearl
+> earrings; a dark bottle-green hand-knitted cardigan, near-black in shadow, over a cream blouse with a small lace
+> collar.
+> SHOT: a closer close-up of Nana at night, seen with a 50 mm lens level with her eyes: her face and the top of her
+> shoulders, turned three-quarters toward screen-right, her eyes resting on a television out of frame at the right. The
+> cream handset of her telephone is at her far ear, held in her left hand. The corners of her mouth are lifted very
+> slightly; her lips are closed. Amber lamplight from the left and cold pale cyan television light from the right meet
+> along the ridge of her nose, never mixed. Behind her, the dark room and a sliver of the scorched lampshade at the left
+> edge. Composition: her face on the left half, with open space in front of her toward the right; her eyes on the upper
+> third.
 
-**Refs:** `assets/pilot/lookdev/ld5_nana.png`, `assets/pilot/keyframes/k11_nana_phone_cu.png`.
+**Refs:** `assets/pilot/lookdev_v3/nana.png`, `assets/pilot/lookdev_v3/flat.png`.
 **Layers:** none.
 **JS spec:** none.
 
@@ -48,8 +50,13 @@ speak.
 - **NANA** (`Moira`, 145): **"Eat something warm, love."** at +3.2 (abs 106.2).
 - Room tone; rain; Nana's clock; phone-line hiss; warm PAD (Dm).
 
-**Motion prompt (v2):** Flat 2D cel-painted style. Close-up: the elderly woman, handset at her ear and eyes on the
-blue television, smiles privately and says: "For the ending." After a pause, tender and firm: "Eat something warm,
-love." Static camera, very slow push-in. Rain, a clock ticking. No music.
+**Motion prompt (v2, Seedance: start `work/pilot/keys_v3/k13_nana_ending.png`, 6 s, audio on):** Colour woodcut print
+animation; keep the first frame's exact carved shapes, flat inks and designs. A close-up, 50 mm, at her eye level: an
+old woman holds a cream telephone handset to her ear, her eyes on a television off-screen at the right, lit by its
+cold light on one side and by a lamp's amber on the other. Her head does not move. She says simply, at an easy pace:
+"For the ending." She pauses for two seconds, her eyes still on the television. Then she says quietly and firmly: "Eat
+something warm, love." After the line she is still. She speaks in an old woman's gentle, slightly thin, warm voice with
+a neutral General American accent. Understated performance: her face stays composed; only her lips move. Locked-off
+camera. Rain on the window, a wooden clock ticking. No music.
 
 **Takes:** —

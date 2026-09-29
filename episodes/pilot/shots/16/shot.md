@@ -1,60 +1,72 @@
 # Shot 16 — NANA'S ROOM
 
-**Duration:** 6 s (1:24–1:30; abs 84.0–90.0)  **Tool:** Codex keyframe + cutout layer + comp + TV insert  **Camera:**
-wide, from behind and beside Nana; slow push-in 1.00→1.04 toward her, parallax
+**Duration:** 6 s (1:24–1:30; abs 84.0–90.0)  **Tool:** Codex k09 + the State Receiver insert, then a silent Seedance
+take (v2) or comp (v1)
+**Camera:** 32 mm at seated eye height (1.1 m), the low ceiling in frame (a guest's eye); locked
 
-**Action:** Inside the warm window. Nana sits small in a worn armchair before an old television showing the stand-by
-Lamp. There are two teacups, hers and one in front of the empty chair; soup on a two-ring stove; rain running down
-the glass. A nightly ritual of waiting. The cream telephone rings. **Start pose (v2):** Nana facing the TV, back
-three-quarters to camera; on the ring, she turns her head toward the phone.
+**Action:** Inside the warm window, a room with a lid: after the Hall's vault lost in darkness, a low ceiling. Nana sits
+small in a worn armchair, facing the television in its niche in the wall unit like an icon in a shrine. It shows the
+standby card: the Lamp, breathing. On the table, two cups: her thick chipped mug, and the one good cup, poured and
+untouched, in front of the empty chair. The amber pot on the stove. Rain on the outer pane, the wooden clock. The cream
+telephone beside her rings, and on the second ring she turns her head toward it. **Start pose:** Nana facing the
+television, her back three-quarters to us.
 
 **Build:**
-- Codex **k09**:
-  `tools/imagegen/gen.sh assets/pilot/keyframes/k09_nana_room.png "<prompt>" assets/pilot/lookdev/ld3_apartment.png assets/pilot/lookdev/ld5_nana.png`
-- Codex layer **k09_fg_nana** (`ALPHA=1`, attach k09).
-- Comp:
-  - `insert(J15 stand-by, target=auto)` into the TV screen, with a small CRT curvature (barrel distortion 3 %) and
-    scanlines.
-  - `flicker(mask=cyan_lit, driver=insert_luma, 4 %)`. The lamp stays steady.
-  - `steam(pot lid)` and `steam(the full teacup)`: slow, warm-lit, fading at 60 px height.
-  - `drops(window region)` with runs, plus `rainshadow` on the wall under the window at 4 %.
-  - `push(1.00→1.04, focus=Nana's head)`, with `parallax(k09_fg_nana=1.0, plate=0.7)`.
-  - **Phone ring:** `jitter(mask=the cream phone's handset, 1 px, 25 Hz)` during rings 3.5–3.9 and 4.1–4.5, and
-    again 5.5–5.9.
-  - `letterbox(2.39)`, `grade(HOME)`.
+- Codex **k09**.
+- **The State Receiver insert** (both versions): J15 v3, the standby card, into the screen quad (`insert(auto)`: the
+  largest flat cyan region), through the set's curvature, scanlines and burn-in. Save as `work/pilot/v3/k09_tv.png`,
+  the comp plate and the Seedance start frame.
+- **v2:** a 6 s silent take: steam, rain, and her head turning on the ring. Re-insert the card if the model changes it
+  (the camera is locked, so the screen quad is static).
+- **v1 fallback:** `flicker(mask=cyan_lit, driver=insert_luma, 4 %)` with the lamp steady; `steam(pot lid)` and
+  `steam(porcelain cup)` as a few pale cut ribbons drifting up and fading at 60 px, not soft smoke; `drops(window)` as
+  carved beads and runs on the outer pane; the ring as `jitter(mask=the cream handset, 1 px, 25 Hz)` over 3.5–3.9,
+  4.1–4.5 and 5.5–5.9 (the handset is one flat cream shape, so its mask is trivial). No move, so no parallax layer.
+- `letterbox(2.39)`, `grade(HOME)`.
 
-**Keyframe prompt (k09):**
-> STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident
-> dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around
-> light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified
-> graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and
-> blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps
-> and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light
-> source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central
-> horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers,
-> logos or watermarks anywhere; every screen is a blank, evenly glowing panel.
-> CHARACTER: NANA: a small woman of 82 with silver-white hair in a low bun held by a dark wooden hairpin, a soft round
-> face with deep smile lines, bright dark eyes behind thin round gold wire-rimmed glasses, warm light-brown skin,
-> small pearl stud earrings; she wears a dark bottle-green knitted cardigan over a cream blouse with a tiny faded
-> floral print. She matches the attached character sheet.
-> LOCATION: Nana's small apartment at night, as in the attached style frame. The room is seen from behind and
-> slightly to the side of Nana, who sits in a worn armchair with her back three-quarters to us, small and still,
-> facing an old boxy television set on a lace-covered cabinet at the right. The television screen is a blank, evenly
-> glowing cyan panel. Between them, on a side table: a warm amber table lamp with a pleated fabric shade, and an old
-> cream-colored telephone with a rotary dial and a coiled cord. A small table holds two teacups, one near her and one
-> untouched in front of an empty wooden chair. In the far corner, a tiny two-ring stove with a small lidded pot. A
-> rain-streaked window shows cyan-lit towers beyond, and there is a plain round wall clock with no numerals. The room
-> is split between warm amber lamplight on the left and cold cyan television light on the right. Composition: Nana on
-> the left third, the TV on the right third, the lamp between them. Mood: warm, patient, a nightly ritual.
+**Keyframe prompt (`k09_nana_room`):**
+> STYLE (RELIEF): a frame from an animated film printed by hand as a colour woodcut and linocut on warm cream paper. A
+> carved blue-black key block holds the image; large areas stay solid black, with faint wood grain. Every surface (skin,
+> cloth, hair, concrete, metal, glass, floor) is matte printed ink: no reflections, no sheen, no specular highlights, no
+> smooth gradients. Light is a shape cut out of the black with crisp, slightly irregular knife edges. Middle tones
+> everywhere, on walls, floors and machines as on faces, are parallel gouge strokes that follow the form. Colour is flat
+> spot ink, never blended, with paper grain showing through: pale cold cyan where screens light things, amber where lamps
+> light things, signal red only on red objects. Slight misregistration; no drawn outlines. Only screen light is soft.
+> Faces are a few carved planes, calm; eyes are small dark shapes without highlights. Avoid: anime, airbrush, digital
+> painting, 3D render, photorealism, lens flare, bokeh, neon, glossy or wet floors.
+> FRAME: wide 16:9; keep everything important inside the central horizontal band, because the top and bottom 13% will
+> be cropped to 2.39:1. No text, letters, numbers or logos anywhere; every screen is blank and evenly glowing.
+> NANA (the woman on the attached sheet): 82, small; silver-white hair in a low bun held with a dark wooden pin; a soft
+> round face with deep lines; small dark eyes behind thin round gold wire glasses; warm brown skin; small pearl
+> earrings; a dark bottle-green hand-knitted cardigan, near-black in shadow, over a cream blouse with a small lace
+> collar.
+> SHOT: Nana's one-room flat at night, seen with a 32 mm lens at seated eye height from behind her and a little to her
+> left, the low ceiling in the top of the frame. Nana sits small and still in a low armchair with pale worn wooden arms
+> and a crocheted cover over its back, her back three-quarters to us, facing a television at the right. The television
+> sits in a niche built into a plywood wall unit, like an icon in a shrine: a grey enamel set with one round knob and a
+> curved glass screen glowing blank, even pale cyan, a crocheted doily and a small plant in a tin on top. Beside her
+> armchair, on a side table, a table lamp with a turned-wood base and a pleated parchment shade scorched brown on one
+> side throws a crisp arc of amber light up the wall and a hot ring on the ceiling; a cream bakelite rotary telephone
+> sits on a crocheted mat. On a small table in front of an empty wooden chair: a thick chipped mug, and one fine
+> porcelain cup and saucer, poured and untouched. In the back corner, a two-ring enamel stove with an amber enamel pot.
+> On the back wall, faded wallpaper of small leaves with a pale, unfaded rectangle where a picture once hung, and a
+> plain wooden wall clock with a pendulum. A steel-framed window at the back shows rain on the outer pane and the cold
+> glow of other towers. Two lights only: amber from the lamp at the left, cold pale cyan from the television at the
+> right. Composition: Nana on the left third, the television on the right third, the lamp between them.
 
-**Refs:** `assets/pilot/lookdev/ld3_apartment.png`, `assets/pilot/lookdev/ld5_nana.png`.
+**Refs:** `assets/pilot/lookdev_v3/flat.png`, `assets/pilot/lookdev_v3/nana.png`.
+**Layers:** none. v1's `k09_fg_nana` is cut: the shot no longer moves.
 
-**Layers:** `assets/pilot/layers/k09_fg_nana.png` (`ALPHA=1`, attach k09). Prompt:
-> Using the attached image, isolate only the elderly woman together with her armchair, exactly as they appear, with
-> the same position, scale, lighting and flat cel-painted style, on a genuinely transparent background. Everything
-> else must be fully transparent. Keep the image the same size as the original.
-
-**JS spec:** **J15 stand-by** on the TV.
+**JS spec (J15 v3 · the standby card on a State Receiver):**
+- **Device:** a card hand-painted in Year One, a white Lamp brushed onto blue gouache, filmed with a slight vignette and
+  broadcast between programmes (`production_design.md` §7). It is a film of a card, not a graphic.
+- **The card:** blue gouache from `#123A5E` to `#1C4A70` with visible brush marks; the Lamp (ring, pointed-arch flame,
+  base, in §5's proportions) painted with a flat brush in white `#EEF2F0`, with dry-brush breaks, 1–2 px edge noise and
+  a slight lean. It **breathes** ±3 % at 0.25 Hz: the carrier's heartbeat, so the nation knows the channel is alive.
+- **Through the set:** barrel k1 0.05, rounded corners, scanlines, 1 px misconvergence at the corners, a hum bar (−8 %)
+  rolling up every 5–9 s, bloom, and the Father's face burned into the tube as a ghost at 4 % (from k02).
+- The same card appears on every window's set in 15 and 44 (as a breathing light, not an image) and, dimmed and still,
+  on the Wall in 43.
 
 **Sound:**
 - Room tone; rain on the glass; **Nana's wooden clock** ticks every whole second (tick/tock).
@@ -63,9 +75,12 @@ three-quarters to camera; on the ring, she turns her head toward the phone.
   89.9).
 - Warm PAD (F) continues at −30 dB.
 
-**Motion prompt (v2):** Flat 2D cel-painted style. A small warm apartment at night. An elderly woman sits in an
-armchair, back three-quarters to camera, facing an old television glowing blue. Steam rises from a pot and a teacup,
-and rain runs down the window. The old telephone beside her rings; she turns her head slightly toward it. Slow
-push-in. Rain, a clock ticking, a telephone bell. No music.
+**Motion prompt (v2, Seedance: start `work/pilot/v3/k09_tv.png`, 6 s, `--no-audio`):** Colour woodcut print animation;
+keep the first frame's exact carved shapes, flat inks and designs. A wide view of a small room at night from seated eye
+height, the low ceiling in frame: an old woman sits in an armchair with her back three-quarters to us, facing a
+television glowing blue in a wall unit; a lamp with a pleated shade glows amber beside her, and a cream telephone sits
+on the side table. Steam rises slowly from a pot on the stove and from a cup on the table; rain runs down the window.
+For three seconds she does not move. Then the telephone's handset rattles slightly in its cradle as it rings, and she
+slowly turns her head toward it, and stops. Understated performance: only her head turns. Locked-off camera. No sound.
 
 **Takes:** —

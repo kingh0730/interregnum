@@ -1,49 +1,57 @@
-# Shot 06 — HOLD STILL (the Continuity Suite)
+# Shot 06 — HOLD STILL
 
-**Duration:** 7 s (0:30–0:37; abs 30.0–37.0)  **Tool:** JS (world screen, letterboxed)  **Camera:** none (insert of
-her monitor filling the frame)
+**Duration:** 7 s (0:30–0:37; abs 30.0–37.0)  **Tool:** Codex plate p04 (from 04) + JS (the Proof's picture, the lamp
+legends, the flaps) + comp. The pen moves on a plate matte (v1) or in a silent Seedance take (v2).
+**Camera:** locked, on the framing 04 ended on: an insert at the operator's eye line
 
-**Action:** Ida's screen. Her crosshair finds the ghost ear, grabs it and drags it home ("Hold still."); the red
-box turns cyan: LOCKED. A checklist of tiny corrections ticks through, some absurd (MOLE POSITION, VOICE WARMTH +2%).
-The clock counts down to air. This shot shows her craft and her detachment, and is a quiet joke about drift (our
-own pipeline's problem).
+**Action:** Back at the glass. Her pen hovers over the ghost ear. The ring button clicks and the overlay circles the
+tip; she drags a few millimetres and the ghost slides home. "Hold still." The flag redraws in cold strokes: L EAR ·
+LOCKED. Down the column, the red lamps clack over to cold white one by one: MOLE · L CHEEK, BLINK INTERVAL, SKIN TONE,
+BREATH CYCLE, VOICE WARMTH. The flaps above them clack toward air each second. She touches his face through glass;
+the gesture replaces v1's mouse cursor. It shows her craft and her detachment, and it is a quiet joke about drift (our
+own pipeline's problem). "Hold still" is said to a face she is touching.
 
-**Build:** JS piece **J03 `suite`**, 7.0 s. It uses `work/pilot/k02_frozen.png` and `mesh_k02.json`. Comp:
-`letterbox(2.39)`, a subtle monitor feel (0.5 px chroma, soft 10 % glow on bright UI), `grade(HALL)`, grain 2 %.
+**Build:**
+- **Plate:** p04, the framing 04 ended on. After the wide of 05, we return to the work.
+- **Picture:** JS **J03 v3** (below), inserted into the tube quad with the tube artefacts, as in 04.
+- **The pen, v1:** a matte of the hand and pen cut from p04 (GrabCut; no Codex cutout), translated −6 px in x over
+  1.1–2.2 s (easeInOutCubic) and lifted at 2.2 (2 px up, scale 0.98). Its shadow on the glass is the same matte,
+  darkened, blurred 6 px and offset 5 px down and right: the picture sits a centimetre behind the glass, so the tip,
+  its shadow and the picture are three layers. The shadow reaches the ghost ear (0.3–1.0 s) before the tip does.
+- **The pen, v2:** a 5 s silent Seedance take from p04 with the picture comped in (`work/pilot/v3/p04_picture.png`).
+  Track the pen tip in the take and drive the ghost's offset from its measured movement, so hand and picture agree.
+  Test both routes; keep the stiller one.
+- **Lamps:** each lamp is a flat red ink shape in the plate, which gives a trivial mask. On its switch: a 2-frame dip,
+  then cold white `#DDFBFA` with its legend re-lit.
+- `letterbox(2.39)`, `grade(HALL)`, grain 2 %.
 
-**Keyframe prompt:** none (JS only; the image asset is k02).
-**Refs:** `assets/pilot/keyframes/k02_father_cu.png` (inside the UI).
+**Keyframe prompt:** reuses **p04** (full prompt in `shots/04/shot.md`); no new generation.
+**Refs:** none (no generation; the plate is `work/pilot/keys_v3/p04_proof.png`).
 **Layers:** none.
 
-**JS spec (J03, 1920×1080, everything inside the band y 138–942, background `#0A0F1C`):**
-- **Top bar** (y 150–200, 1 px `#1E2A44` rule under it):
-  - Left: `MINISTRY OF CONTINUITY — NIGHT DESK 4`, DIN Alternate Bold 24 px, `#5FE1E6` at 70 %.
-  - Center: `SUBJECT F`, DIN Condensed Bold 30 px, `#E9E2D0`.
-  - Right: clock `20:51:22`, DIN Condensed Bold 44 px `#E9E2D0`, ticking every whole second of film time
-    (20:51:22 → 20:51:28). Below it, `TO AIR 08:38` in DIN Alternate 24 px `#5FE1E6`, counting down.
-- **Viewer** (x 60–1180, y 220–850, 1 px `#1E2A44` frame): the k02 frozen frame (30 % desaturated) with the J16 mesh at
-  35 %. The ghost ear double is at +6 px x and 40 %, and the red box is labelled `L EAR · DRIFT +3.2 PX`.
-- **Cursor:** a 24 px crosshair, `#E9E2D0`.
-  - 0.3–1.0 s: enters from the right and eases to the ghost ear.
-  - 1.0–1.1 s: "grab" (a small ring closes around it).
-  - 1.1–2.2 s: drags the ghost −6 px in x (easeInOutCubic).
-  - 2.2 s: release. The ghost fades 40 % → 0 over 0.1 s.
-  - 2.3 s: the box turns `#5FE1E6` and its label becomes `L EAR · LOCKED`.
-  - The cursor then drifts to the corrections panel (2.5–3.0 s).
-- **Corrections panel** (x 1230–1860, y 230–830):
-  - Title: `CORRECTIONS · CALIBRATION PASS`, DIN Alternate 22 px `#5FE1E6` at 70 %.
-  - Items: Menlo 22 px `#E9E2D0`, 48 px line height. Each has a right-aligned status tag that flips from red `OPEN`
-    (`#E0412F`) to cyan `LOCKED`/`OK` at the times shown:
-    1. `L EAR — DRIFT +3.2 PX` → `LOCKED` at 2.3
-    2. `MOLE, L CHEEK — POSITION` → `LOCKED` at 3.0
-    3. `BLINK INTERVAL 4.1 S → 3.6 S` → `OK` at 3.6
-    4. `SKIN TONE ΔE 2.8 → 0.4` → `OK` at 4.2
-    5. `BREATH CYCLE` → `OK` at 4.8
-    6. `VOICE WARMTH +2%` → `OK` at 5.4
-- **Bottom strip** (y 870–930): a timeline with frame ticks every 8 px and a `#E9E2D0` playhead scrubbing left→right
-  (x 60→1860 over 7 s). The waveform of D04 ("Eat something warm before you sleep.") is drawn as a `#5FE1E6` 40 %
-  filled envelope from the rendered audio file.
-- Hold to 7.0 s.
+**JS spec (J03 v3 · the Proof, the column of legend lamps and the flap repeater):**
+- **The picture** (picture space 1440×1080, into the tube quad): `f04_frozen.png` at 30 % desaturation, with the J16 v3
+  mesh at 35 %, the ghost ear (+6 px, 40 %) and the red drift flag, as they stood at the end of 04.
+- **1.0 s:** the ring button clicks, and the overlay draws a small circle around the tip's screen position (Stroke
+  Hand, 6 facets, cold, drawn in 3 frames).
+- **1.1–2.2 s:** the ghost follows the pen −6 px, then fades 40 % → 0 at 2.2 (over 0.1 s).
+- **2.3 s:** the flag redraws in cold strokes (`#5FE1E6`) as L EAR · LOCKED, stroke by stroke over 5 frames.
+- **The column:** six rectangular legend lamps. Each legend is engraved into the lens and filled black, so it reads
+  dark on the lit colour, and each new legend sits over the ghost of an older, paint-filled one (VOICE WARMTH over
+  AUDIO GAIN). Engraved State Capitals, module 3 px, laid onto the lamp masks by homography. OPEN is red; locked is
+  cold white.
+  1. L EAR · DRIFT → cold at 2.3
+  2. MOLE · L CHEEK → cold at 3.0
+  3. BLINK INTERVAL → cold at 3.6
+  4. SKIN TONE → cold at 4.2
+  5. BREATH CYCLE → cold at 4.8
+  6. VOICE WARMTH → cold at 5.4
+- **The flap repeater:** four split-flap cards in Flap numerals (condensed square numerals with rounded corners, cream
+  `#E8DDC4` on black, split by the hinge line) reading TO AIR 08:38 → 08:31, one flip per whole second. In each flip
+  the top half falls in 3 frames and the bottom lands with a 1-frame bounce, on the tick.
+- **Tube artefacts:** as in 04: scanlines, bloom and halation, misconvergence, dust, the smear at the ear, and the 8 %
+  reflection of her head and the Wall.
+- **Removed:** v1's top bar, SUBJECT F header, timeline and waveform strip. The voice is heard, not graphed.
 
 **Sound:**
 - **IDA (V.O.)** (`Samantha`, 150, VO-MURMUR: close, dry, under her breath): **"Hold still."** at shot +1.0 (abs
@@ -52,5 +60,14 @@ own pipeline's problem).
 - UI blips (−30 dB) at each flip: 2.3, 3.0, 3.6, 4.2, 4.8, 5.4 (abs 32.3 …).
 - Hall clock every second. DRONE continues.
 
-**Motion prompt:** n/a (JS in v2).
+*v3 sound note:* the stylus clicks are the light pen's ring button, and the UI blips become relay clacks, at the same
+times.
+
+**Motion prompt (v2, optional, Seedance: start `work/pilot/v3/p04_picture.png`, 5 s, `--no-audio`):** Colour woodcut
+print animation; keep the first frame's exact carved shapes, flat inks and designs. A macro insert at an operator's
+desk: a hooded monitor shows an old man's still face, and a woman's hand holds a slim pen on a coiled cable a
+centimetre from the glass. The face on the monitor does not change, and nothing else in the frame moves. After one
+second her hand moves the pen a few millimetres to the left, holds it there, then lifts it slightly away from the
+glass. Understated movement: only her hand and the pen move. Locked-off camera. No sound.
+
 **Takes:** —

@@ -1,44 +1,47 @@
 # Shot 33 — NANA LISTENS
 
-**Duration:** 6 s (2:54–3:00; abs 174.0–180.0)  **Tool:** Codex keyframe + comp  **Camera:** CU, near-frontal (the
-camera sits beside the TV); push-in 1.00→1.04, very slow
+**Duration:** 6 s (2:54–3:00; abs 174.0–180.0)  **Tool:** Codex k19 + a silent Seedance take (v2) or comp (v1)
+**Camera:** close-up, 50 mm at her eye level, from beside the television (she faces it, so she faces us, just past the
+lens); locked-off
 
-**Action:** Nana holds her tea under her chin, the TV's light on her face. From the small speaker: "Eat something
-warm before you sleep." The line she has waited up for all night, and her own words. Her eyes glisten and the corners
-of her mouth lift, just barely. Three notes of her theme begin, and then the dead air cuts them off. **Start pose
-(v2):** holding the steaming cup near her chin, mouth closed, the beginning of a smile.
+**Action:** Nana holds her mug under her chin, the television's light full on her face. From its small speaker: "Eat
+something warm before you sleep." It is the line she has waited up for all night, and it is her own. The corners of
+her mouth lift, very slightly; that is all. Three notes of her theme begin, and then the dead air cuts them off.
+**Start pose:** the steaming mug under her chin, eyes on the television, mouth closed.
 
 **Build:**
-- Codex **k19**:
-  `tools/imagegen/gen.sh assets/pilot/keyframes/k19_nana_listens.png "<prompt>" assets/pilot/lookdev/ld5_nana.png assets/pilot/lookdev/ld3_apartment.png assets/pilot/keyframes/k11_nana_phone_cu.png`
-- Comp:
-  - `push(1.00→1.04, focus=her eyes)`.
-  - `flicker(mask=cyan_lit, driver=k02 broadcast luma + noise(0.4 Hz) 3 %)`.
-  - `steam(the cup)`: slow, warm-lit.
-  - `rainshadow` at 3 %.
-  - `letterbox(2.39)`, `grade(HOME)`.
+- Codex **k19**.
+- **v2:** a 6 s silent take: steam, and after the line the corners of her mouth lift. The Father's line comes from the
+  address take's audio (TV chain).
+- **v1 fallback:** locked-off; `flicker(mask=cyan_lit, driver=the broadcast's luma + noise(0.4 Hz), 3 %)`;
+  `steam(the mug)` as a pale cut ribbon rising slowly. No push, no rainshadow.
+- `letterbox(2.39)`, `grade(HOME)`.
 
-**Keyframe prompt (k19):**
-> STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident
-> dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around
-> light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified
-> graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and
-> blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps
-> and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light
-> source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central
-> horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers,
-> logos or watermarks anywhere; every screen is a blank, evenly glowing panel.
-> CHARACTER: NANA: a small woman of 82 with silver-white hair in a low bun held by a dark wooden hairpin, a soft round
-> face with deep smile lines, bright dark eyes behind thin round gold wire-rimmed glasses, warm light-brown skin,
-> small pearl stud earrings; she wears a dark bottle-green knitted cardigan over a cream blouse with a tiny faded
-> floral print. She is exactly the same woman as in the attached images.
-> SHOT: a close-up of Nana seated in her armchair (in the apartment of the attached style frame), holding a small
-> steaming white teacup in both hands near her chin. She faces almost straight toward the camera, which is placed just
-> beside her television. Her face is lit by cold cyan television light, with the warm amber lamp glowing behind her
-> shoulder. Her eyes glisten behind her gold-rimmed glasses; her mouth is closed, with the very beginning of a tender
-> smile. Composition: face centered, eyes on the upper third, steam rising from the cup.
+**Keyframe prompt (`k19_nana_listens`):**
+> STYLE (RELIEF): a frame from an animated film printed by hand as a colour woodcut and linocut on warm cream paper. A
+> carved blue-black key block holds the image; large areas stay solid black, with faint wood grain. Every surface (skin,
+> cloth, hair, concrete, metal, glass, floor) is matte printed ink: no reflections, no sheen, no specular highlights, no
+> smooth gradients. Light is a shape cut out of the black with crisp, slightly irregular knife edges. Middle tones
+> everywhere, on walls, floors and machines as on faces, are parallel gouge strokes that follow the form. Colour is flat
+> spot ink, never blended, with paper grain showing through: pale cold cyan where screens light things, amber where lamps
+> light things, signal red only on red objects. Slight misregistration; no drawn outlines. Only screen light is soft.
+> Faces are a few carved planes, calm; eyes are small dark shapes without highlights. Avoid: anime, airbrush, digital
+> painting, 3D render, photorealism, lens flare, bokeh, neon, glossy or wet floors.
+> FRAME: wide 16:9; keep everything important inside the central horizontal band, because the top and bottom 13% will
+> be cropped to 2.39:1. No text, letters, numbers or logos anywhere; every screen is blank and evenly glowing.
+> NANA (the woman on the attached sheet): 82, small; silver-white hair in a low bun held with a dark wooden pin; a soft
+> round face with deep lines; small dark eyes behind thin round gold wire glasses; warm brown skin; small pearl
+> earrings; a dark bottle-green hand-knitted cardigan, near-black in shadow, over a cream blouse with a small lace
+> collar.
+> SHOT: a close-up of Nana in her armchair at night, seen with a 50 mm lens at her eye level from beside her
+> television: she faces almost toward the camera, her eyes resting on the screen just to the right of the lens. She
+> holds her thick chipped mug in both hands just under her chin, and a thin ribbon of steam rises from it as a pale cut
+> shape. The cold pale cyan light of the television falls full on her face and hands from the front as crisp cut
+> planes; behind her shoulder at the left, the pleated lampshade glows amber and cuts an amber rim along her hair and
+> one cheek. Her face is calm and still, mouth closed. Composition: her face left of centre, her eyes on the upper
+> third, the dark room behind her.
 
-**Refs:** `assets/pilot/lookdev/ld5_nana.png`, `assets/pilot/lookdev/ld3_apartment.png`, `assets/pilot/keyframes/k11_nana_phone_cu.png`.
+**Refs:** `assets/pilot/lookdev_v3/nana.png`, `assets/pilot/lookdev_v3/flat.png`.
 **Layers:** none.
 **JS spec:** none.
 
@@ -49,9 +52,11 @@ of her mouth lift, just barely. Three notes of her theme begin, and then the dea
 - Score: a warm PAD F(add9) at −38 dB from 176.0. Theme **A4 177.6, F4 178.4, G4 179.2**, then cut at 180.0 (the dead
   air). No phone here.
 
-**Motion prompt (v2):** Flat 2D cel-painted style. Close-up: an elderly woman holds a steaming teacup near her chin,
-facing the television, her face lit by its cold blue light, with warm lamplight behind her. The TV voice says: "Eat
-something warm before you sleep." Her eyes glisten, and the corners of her mouth lift into a small, knowing smile.
-Static camera. Rain on the window, a TV speaker. No music.
+**Motion prompt (v2, Seedance: start `work/pilot/keys_v3/k19_nana_listens.png`, 6 s, `--no-audio`):** Colour woodcut
+print animation; keep the first frame's exact carved shapes, flat inks and designs. Close-up at her eye level from
+beside a television: an old woman holds a mug under her chin in both hands, her face lit by the television's cold
+light, a lamp glowing amber behind her. A thin ribbon of steam rises from the mug. For three seconds she does not move,
+her eyes on the television. Then the corners of her mouth lift very slightly, and she stays that way. Understated
+performance: her face stays composed; only the corners of her mouth move. Locked-off camera. No sound.
 
 **Takes:** —

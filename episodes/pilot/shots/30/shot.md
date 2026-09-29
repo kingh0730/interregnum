@@ -1,52 +1,55 @@
 # Shot 30 — THE STREET
 
-**Duration:** 6 s (2:37–2:43; abs 157.0–163.0)  **Tool:** Codex keyframe + cutout layer + comp + facade-screen insert
-**Camera:** wide street; push-in 1.00→1.04 toward the giant screen, with parallax
+**Duration:** 6 s (2:37–2:43; abs 157.0–163.0)  **Tool:** Codex k17 + the Public Receiver insert (from the address
+take), then a silent Seedance take (v2) or comp (v1)
+**Camera:** 35 mm at head height (1.5 m), inside the crowd, umbrellas in the foreground (the crowd's eye); locked
 
-**Action:** A tram stopped mid-street in the rain. A crowd under umbrellas, faces lifted to the giant screen on a
-building, where the Father speaks: "I died in the spring." The words echo off the buildings. The tram's hum cuts out
-and there is only rain. Nobody moves: the stillness of a whole city in shock. **Start pose (v2):** a crowd standing
-still, looking up.
+**Action:** A tram stopped mid-street in the rain. A crowd under umbrellas faces the Public Receiver, a great
+rear-projection screen set into the district's civic building like an altarpiece. On it the Father says: "I died in
+the spring." The words echo off the buildings. The tram's hum cuts out, and there is only rain moving through the
+projector's beam. Nobody moves: a whole city holding still.
+**Start pose:** a crowd standing still, facing the screen.
 
 **Build:**
-- Codex **k17** (the screen is blank):
-  `tools/imagegen/gen.sh assets/pilot/keyframes/k17_street_crowd.png "<prompt>" assets/pilot/lookdev/ld2_city.png`
-- Codex layer **k17_fg_crowd** (`ALPHA=1`, attach k17).
-- Comp:
-  - `insert(src=k01 with broadcast() treatment and the J14 bug, target=auto)` into the facade screen, plus strong
-    bloom and a cyan light spill on the wet street (add luminance along the reflection streaks, driven by the inserted
-    frame's luma).
-  - `rain(layers=2)` plus ground splashes (tiny particles at street level).
-  - The tram windows glow steadily.
-  - `push(1.00→1.04, focus=screen)`, with `parallax(k17_fg_crowd=1.0, plate=0.6)`.
-  - `letterbox(2.39)`, `grade(CITY)`.
+- Codex **k17**: the screen is blank.
+- **The Public Receiver insert** (`production_design.md` §8): v2, the address take's frames for the line (its segment
+  around "I died in the spring.", in sync with the audio); v1, k01. Through the projection look: soft focus, a hot spot
+  at the centre, dark corners, scanlines visible at this scale, the J14 bug inside the picture, and a cold spill on the
+  umbrellas and the wet street driven by the inserted picture's luma. Rain streaks cross the beam in front of the
+  screen. Save the first frame as `work/pilot/v3/k17_screen.png`, the Seedance start frame.
+- **v2:** a 6 s silent take for the rain. The camera is locked, so the screen quad is static: re-insert the picture on
+  every frame.
+- **v1 fallback:** `rain(layers=2)` as carved cut lines whose alpha follows the beam's luminance, small splashes at
+  street level, the tram's windows steady.
+- The camera is locked; v1's push and parallax layer are gone. `letterbox(2.39)`, `grade(CITY)`.
 
-**Keyframe prompt (k17):**
-> STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident
-> dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around
-> light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified
-> graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and
-> blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps
-> and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light
-> source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central
-> horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers,
-> logos or watermarks anywhere; every screen is a blank, evenly glowing panel.
-> LOCATION: a street in the City of the attached style frame, at night in heavy rain. A wide view down a wet street:
-> at the left, a stopped tram with glowing windows; in the foreground and middle ground, a crowd of about forty
-> people, seen from behind and from the side as dark silhouettes, many holding umbrellas. They all stand perfectly
-> still and look up at a gigantic screen on the facade of a tall building ahead. The screen is blank, glowing plain
-> cyan with nothing on it. The wet street reflects the cyan light in long streaks, and rain slants through the light.
-> Nobody's face is visible. Composition: the giant screen in the upper center, the crowd across the lower half.
-> Mood: a whole city frozen, listening.
+**Keyframe prompt (`k17_street`):**
+> STYLE (RELIEF): a frame from an animated film printed by hand as a colour woodcut and linocut on warm cream paper. A
+> carved blue-black key block holds the image; large areas stay solid black, with faint wood grain. Every surface (skin,
+> cloth, hair, concrete, metal, glass, floor) is matte printed ink: no reflections, no sheen, no specular highlights, no
+> smooth gradients. Light is a shape cut out of the black with crisp, slightly irregular knife edges. Middle tones
+> everywhere, on walls, floors and machines as on faces, are parallel gouge strokes that follow the form. Colour is flat
+> spot ink, never blended, with paper grain showing through: pale cold cyan where screens light things, amber where lamps
+> light things, signal red only on red objects. Slight misregistration; no drawn outlines. Only screen light is soft.
+> Faces are a few carved planes, calm; eyes are small dark shapes without highlights. Avoid: anime, airbrush, digital
+> painting, 3D render, photorealism, lens flare, bokeh, neon, glossy or wet floors.
+> FRAME: wide 16:9; keep everything important inside the central horizontal band, because the top and bottom 13% will
+> be cropped to 2.39:1. No text, letters, numbers or logos anywhere; every screen is blank and evenly glowing.
+> SHOT: a street at night in rain, seen with a 35 mm lens from inside a crowd at head height. In the near foreground, the
+> black domes of umbrellas and the backs of heads and shoulders crowd the lower third of the frame as solid black shapes
+> cut by thin cold rims. Beyond them, forty or more people stand perfectly still under umbrellas, all facing away from
+> us toward the end of the street, their faces lifted and unseen. At the end of the street, set into a board-formed
+> concrete civic building under a heavy pediment with a round bronze emblem above it, a huge rear-projection screen
+> glows blank, even pale cyan: the only strong light, which falls on the tops of the umbrellas and on the street as long
+> cut shapes of cold ink. At the left, a single tram car stands stopped mid-street: a rounded nose with one round
+> headlamp, a ribbed body in dull cream and grey, a trolley pole to the overhead wires, its windows lit cold. Rain falls
+> as fine slanted cut lines, visible only where it crosses the screen's beam. Mercury street lamps on concrete posts
+> give a thin blue-green light; there is no orange light anywhere. Composition: the glowing screen in the upper centre,
+> the crowd across the lower half; no face is visible.
 
-**Refs:** `assets/pilot/lookdev/ld2_city.png`.
-
-**Layers:** `assets/pilot/layers/k17_fg_crowd.png` (`ALPHA=1`, attach k17). Prompt:
-> Using the attached image, isolate only the nearest foreground people with umbrellas (the closest silhouettes of the
-> crowd), exactly as they appear, with the same position, scale, lighting and flat cel-painted style, on a genuinely
-> transparent background. Everything else must be fully transparent. Keep the image the same size as the original.
-
-**JS spec:** the J14 bug inside the inserted screen image.
+**Refs:** `assets/pilot/lookdev_v3/city.png`.
+**Layers:** none. v1's `k17_fg_crowd` is cut: the shot no longer moves.
+**JS spec:** the J14 bug inside the inserted picture (shot 02).
 
 **Sound:**
 - City rain and street splashes; the tram idle hum from 0.0 to **1.8 (abs 158.8), then cut dead**.
@@ -55,10 +58,10 @@ still, looking up.
 - After the line: only rain.
 - No music, no clock, no phone.
 
-**Motion prompt (v2):** Flat 2D cel-painted style. A rainy street at night: a stopped tram and a crowd of
-silhouetted people with umbrellas standing still, all looking up at a giant screen on a building where an old man
-speaks: "I died in the spring." Rain streaks through the cold light, and nobody moves. Slow push-in toward the
-screen. Rain, the voice echoing off buildings, a tram's hum cutting out. No music. (In v2, re-insert the k01 frame
-into the screen in comp.)
+**Motion prompt (v2, Seedance: start `work/pilot/v3/k17_screen.png`, 6 s, `--no-audio`):** Colour woodcut print
+animation; keep the first frame's exact carved shapes, flat inks and designs. A wet street at night seen from inside a
+crowd at head height: people under umbrellas stand facing a huge glowing screen on a building at the end of the street,
+and a tram is stopped at the left. Nobody moves; the umbrellas and the tram stay still. Rain falls through the cold
+light of the screen in fine slanted lines, and drops splash on the street. Locked-off camera. No sound.
 
 **Takes:** —

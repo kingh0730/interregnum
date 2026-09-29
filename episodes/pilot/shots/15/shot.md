@@ -1,60 +1,56 @@
 # Shot 15 — THE CITY
 
-**Duration:** 7 s (1:17–1:24; abs 77.0–84.0)  **Tool:** Codex keyframe + cutout layer + comp + screen insert
-**Camera:** long lens across the canal. It trucks left 3 % while pushing 1.00→1.06, and ends centered on the one
-amber window. Parallax.
+**Duration:** 7 s (1:17–1:24; abs 77.0–84.0)  **Tool:** Codex k08 + comp (window breathing, rain, water, beacon); an
+optional silent Seedance take for the rain and the water
+**Camera:** 300 mm from across the canal, 40 m up at the height of Nana's floor (a neighbour's eye); locked
 
-**Action:** The city in rain. Across a black canal, towers stacked into the distance with hundreds of windows, and
-nearly every one glows the same cold blue: every television shows the stand-by Lamp and waits for him. The windows
-breathe together, in sync. One window is warm. We drift toward it. **This composition is reused at dawn (shot 44)**,
-where the warmth spreads from this window across the city. **Start pose (v2):** static city in the rain.
+**Action:** The city in rain. Across a black canal the towers are compressed into one wall, and hundreds of windows
+glow the same cold blue: every television shows the standby card and waits for him. The windows breathe together, in
+time with the card. One window is warm, on the camera's own horizon line, and the frame holds still with the city so
+that we find it ourselves. Far off, a red beacon blinks on the Transmitter. **This composition returns at dawn (shot
+44)**, when the warmth spreads from this window across the city. **Start pose:** the city in the rain.
 
 **Build:**
-- Codex **k08**:
-  `tools/imagegen/gen.sh assets/pilot/keyframes/k08_city_night.png "<prompt>" assets/pilot/lookdev/ld2_city.png`
-- Codex layer **k08_fg_tower** (`ALPHA=1`, attach k08).
-- **Acceptance:** the windows must be clean, flat, separable rectangles (they are masked in shot 44), and there must
-  be exactly one amber window, at about the lower-right third point.
-- Comp:
-  - **Window mask:** HSV threshold on the flat cyan (hue about 180–195°, high value) → connected components. Save it
-    to `work/pilot/k08_windows.npz` for shot 44.
-  - All cyan windows breathe together: ±6 % luma at 0.25 Hz, in phase with the J15 stand-by breathing on the TVs.
-  - The amber window stays steady with a soft warm glow.
-  - `insert(J15 stand-by, target=the blank billboard at far left)`, plus bloom.
-  - `truck(−3 %, 0)` combined with `push(1.00→1.06)`, with the focus ending on the amber window (easeInOutSine), and
-    `parallax(k08_fg_tower=1.0, plate=0.4)`.
-  - `rain(layers=2)`: far layer fine and dense at a 20° slant; near layer long, sparse streaks.
-  - Canal: animated ripple displacement on the reflections (subtle noise flow).
-  - `letterbox(2.39)`, `grade(CITY)`.
+- Codex **k08**. **Acceptance:** every window is a separate cut shape bounded by dark mullions (they are masked for
+  shot 44), and there is exactly one amber window, on the horizon line at the right third.
+- **Window mask:** luminance blobs on the facade grid, not a hue threshold (`production_design.md` §8), then
+  connected components. Save to `work/pilot/v3/k08_windows.npz` for shot 44.
+- **Comp (primary):** all cyan windows breathe together, ±6 % luma at 0.25 Hz, in phase with the standby card's
+  breathing on the televisions; the amber window stays steady. `rain(layers=2)` drawn as carved cut lines, pale and
+  thin, visible only where they cross light (multiply the rain's alpha by the plate's luminance). The canal's cyan cuts
+  shift slowly sideways (a subtle horizontal displacement). The Transmitter's beacon blinks red every 2 s (0.3 s on).
+- **v2 (optional):** a 7 s silent take for the rain and the water; the breathing and the beacon go on top in comp.
+- The camera is locked: v1's truck and push are gone. `letterbox(2.39)`, `grade(CITY)`.
 
-**Keyframe prompt (k08):**
-> STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident
-> dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around
-> light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified
-> graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and
-> blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps
-> and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light
-> source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central
-> horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers,
-> logos or watermarks anywhere; every screen is a blank, evenly glowing panel.
-> LOCATION: the City at night, in the architecture and style of the attached style frame. A long-lens view across a
-> dark canal toward a dense wall of identical concrete residential tower blocks stacked one behind another. Their
-> facades are strict grids of hundreds of small square windows drawn as clean flat rectangles, and almost every window
-> glows the same flat cold cyan-blue, as if lit by television screens. Exactly one window glows warm amber from a
-> household lamp: it is in the nearest tower at the lower right, on the lower-right third point. Heavy rain falls in
-> fine slanted streaks. Tram wires cut diagonally across the upper frame. The black canal reflects the cyan windows in
-> long broken streaks. Low clouds glow faintly. At the far left, a taller distant building carries a huge blank
-> billboard screen glowing plain cyan. Mood: a whole city waiting in front of the same screen; one warm light.
+**Keyframe prompt (`k08_city_night`):**
+> STYLE (RELIEF): a frame from an animated film printed by hand as a colour woodcut and linocut on warm cream paper. A
+> carved blue-black key block holds the image; large areas stay solid black, with faint wood grain. Every surface (skin,
+> cloth, hair, concrete, metal, glass, floor) is matte printed ink: no reflections, no sheen, no specular highlights, no
+> smooth gradients. Light is a shape cut out of the black with crisp, slightly irregular knife edges. Middle tones
+> everywhere, on walls, floors and machines as on faces, are parallel gouge strokes that follow the form. Colour is flat
+> spot ink, never blended, with paper grain showing through: pale cold cyan where screens light things, amber where lamps
+> light things, signal red only on red objects. Slight misregistration; no drawn outlines. Only screen light is soft.
+> Faces are a few carved planes, calm; eyes are small dark shapes without highlights. Avoid: anime, airbrush, digital
+> painting, 3D render, photorealism, lens flare, bokeh, neon, glossy or wet floors.
+> FRAME: wide 16:9; keep everything important inside the central horizontal band, because the top and bottom 13% will
+> be cropped to 2.39:1. No text, letters, numbers or logos anywhere; every screen is blank and evenly glowing.
+> SHOT: the City at night in heavy rain, seen with an extreme long lens (300 mm) from across a canal, 40 metres up at the
+> height of the fourteenth floor, so the towers are compressed into one wall. Identical sixteen-storey slab towers of
+> board-formed concrete, carved with horizontal bands, stand stacked one behind another up to the top of the band; each
+> slab ends in a rounded stair tower with a vertical slot of glass blocks glowing cold. Their facades are strict grids
+> of hundreds of small windows, each a separate cut shape bounded by dark mullions; almost every window glows the same
+> cold pale cyan from a television inside, brightest at the sill, with a curtain edge or a plant's silhouette in a few.
+> Exactly one window glows warm amber from a lamp: in the nearest tower, on the camera's horizon line, at the right
+> third of the frame. Residents' repairs: glazed-in balconies with mismatched frames, a pane painted over, laundry
+> lines. Rain falls as fine slanted cut lines, visible only where it crosses light. Along the foot of the frame, a
+> concrete embankment with an iron railing and solid black canal water, broken by short horizontal cuts of cyan beneath
+> the lit windows. Far off between two towers, a thin lattice mast carries one small red lamp. Mercury street lamps on
+> concrete posts along the embankment give a cold blue-green light; there is no orange light anywhere. At least half of
+> the image is solid black.
 
-**Refs:** `assets/pilot/lookdev/ld2_city.png`.
-
-**Layers:** `assets/pilot/layers/k08_fg_tower.png` (`ALPHA=1`, attach k08). Prompt:
-> Using the attached image, isolate only the nearest tower block at the right side of the frame (including the
-> single warm amber window), exactly as it appears, with the same position, scale, lighting and flat cel-painted
-> style, on a genuinely transparent background. Everything else must be fully transparent. Keep the image the same
-> size as the original.
-
-**JS spec:** uses **J15 stand-by** (the breathing emblem on a blue gradient, no text) for the billboard.
+**Refs:** `assets/pilot/lookdev_v3/city.png`.
+**Layers:** none. v1's `k08_fg_tower` is cut: the camera no longer moves here, and 44 cuts its matte from the plate.
+**JS spec:** J15 v3, the standby card, drives the breathing (its luminance curve); it is not inserted here.
 
 **Sound:**
 - City rain in wide stereo; canal lapping.
@@ -64,9 +60,10 @@ where the warmth spreads from this window across the city. **Start pose (v2):** 
 - Score 1M3: the warm PAD (F) fades in from +5.0 (abs 82.0).
 - No hall clock.
 
-**Motion prompt (v2):** Flat 2D cel-painted style. A long-lens night view across a canal to tower blocks in heavy
-rain. Hundreds of windows glow the same cold blue and one window glows warm amber. Rain streaks, ripples run on the
-canal, and the blue windows pulse faintly in unison. Very slow drift left and push toward the amber window. Rain, a
-distant tram bell, a faint chime echoing from many televisions. No music.
+**Motion prompt (v2, optional, Seedance: start `work/pilot/keys_v3/k08_city_night.png`, 7 s, `--no-audio`):** Colour
+woodcut print animation; keep the first frame's exact carved shapes, flat inks and designs. An extreme long-lens night
+view across a canal to a wall of identical tower blocks in heavy rain. Hundreds of windows glow the same cold blue, and
+one window glows warm amber. The buildings and every window stay exactly as they are. Rain falls in fine slanted lines,
+and the short cuts of light on the black canal break and shift slowly. Locked-off camera. No sound.
 
 **Takes:** —

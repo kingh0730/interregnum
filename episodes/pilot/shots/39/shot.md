@@ -1,45 +1,50 @@
 # Shot 39 — "I KNOW, LOVE."
 
-**Duration:** 4 s (3:18–3:22; abs 198.0–202.0)  **Tool:** Codex keyframe + comp  **Camera:** CU, Nana facing
-screen-right; push-in 1.00→1.03
+**Duration:** 4 s (3:18–3:22; abs 198.0–202.0)  **Tool:** Codex k24 + a Seedance take with dialogue (v2) or comp (v1)
+**Camera:** close-up, 50 mm, level with her eyes; locked-off. Nana faces screen-right with lead room.
 
-**Action:** Nana's television is dark now, and only the lamp lights her: the cyan has left her face for good. She is
-calm and not surprised. "I know, love." The line lands like a key turning. **Start pose (v2):** handset at her ear,
-lamp-lit, the corners of her mouth lifted, lips closed.
+**Action:** Nana's television is off now, and only the lamp lights her: the cold has left her face for good. At the edge
+of the frame, the set's dark glass holds a faint ghost of the Lamp, burned in by 41 years. She is calm and not
+surprised. "I know, love." The line lands like a key turning. **Start pose:** the handset at her ear, lamp-lit, the
+corners of her mouth lifted very slightly, lips closed.
 
 **Build:**
-- Codex **k24**:
-  `tools/imagegen/gen.sh assets/pilot/keyframes/k24_nana_amber.png "<prompt>" assets/pilot/lookdev/ld5_nana.png assets/pilot/lookdev/ld3_apartment.png assets/pilot/keyframes/k11_nana_phone_cu.png`
-- Comp:
-  - `push(1.00→1.03, focus=eyes)`.
-  - The lamp is steady, with a 1 % warm flicker (filament).
-  - `rainshadow` at 3 %. There is no TV flicker (the set is off).
-  - `letterbox(2.39)`, `grade(HOME)` biased warm, with no cyan anywhere on her.
+- Codex **k24**.
+- **The dark set:** comp lays the burned-in ghost on the television's dark glass at the right edge: the standby card's
+  Lamp at 5 % and his face at 3 %, visible over the dark (`production_design.md` §4, burn-in).
+- **v2:** a 4 s take with the line (audio on); the ghost goes on top in comp (the camera is locked).
+- **v1 fallback:** locked-off; the lamp steady, with a 1 % warm filament flicker. No television flicker (the set is
+  off); no rainshadow.
+- `letterbox(2.39)`, `grade(HOME)` biased warm, with no cold anywhere on her.
 
-**Keyframe prompt (k24):**
-> STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident
-> dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around
-> light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified
-> graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and
-> blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps
-> and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light
-> source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central
-> horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers,
-> logos or watermarks anywhere; every screen is a blank, evenly glowing panel.
-> CHARACTER: NANA: a small woman of 82 with silver-white hair in a low bun held by a dark wooden hairpin, a soft round
-> face with deep smile lines, bright dark eyes behind thin round gold wire-rimmed glasses, warm light-brown skin,
-> small pearl stud earrings; she wears a dark bottle-green knitted cardigan over a cream blouse with a tiny faded
-> floral print. She is exactly the same woman as in the attached images.
-> SHOT: a close-up of Nana in her armchair (in the apartment of the attached style frame), with the old cream-colored
-> telephone handset at her ear on the side facing the camera and her face three-quarters toward screen-right. The
-> television behind her is switched off, its screen dark grey. Her face is lit only by the warm amber table lamp. She
-> is calm and tender, her eyes soft behind her glasses, the corners of her mouth lifted, lips closed, about to speak.
-> Background: warm dark-brown shadows, the dark television and the rain-streaked window. Composition: face right of
-> center, eyes on the upper third, with room above her head for a tighter reframe.
+**Keyframe prompt (`k24_nana_know`):**
+> STYLE (RELIEF): a frame from an animated film printed by hand as a colour woodcut and linocut on warm cream paper. A
+> carved blue-black key block holds the image; large areas stay solid black, with faint wood grain. Every surface (skin,
+> cloth, hair, concrete, metal, glass, floor) is matte printed ink: no reflections, no sheen, no specular highlights, no
+> smooth gradients. Light is a shape cut out of the black with crisp, slightly irregular knife edges. Middle tones
+> everywhere, on walls, floors and machines as on faces, are parallel gouge strokes that follow the form. Colour is flat
+> spot ink, never blended, with paper grain showing through: pale cold cyan where screens light things, amber where lamps
+> light things, signal red only on red objects. Slight misregistration; no drawn outlines. Only screen light is soft.
+> Faces are a few carved planes, calm; eyes are small dark shapes without highlights. Avoid: anime, airbrush, digital
+> painting, 3D render, photorealism, lens flare, bokeh, neon, glossy or wet floors.
+> FRAME: wide 16:9; keep everything important inside the central horizontal band, because the top and bottom 13% will
+> be cropped to 2.39:1. No text, letters, numbers or logos anywhere; every screen is blank and evenly glowing.
+> NANA (the woman on the attached sheet): 82, small; silver-white hair in a low bun held with a dark wooden pin; a soft
+> round face with deep lines; small dark eyes behind thin round gold wire glasses; warm brown skin; small pearl
+> earrings; a dark bottle-green hand-knitted cardigan, near-black in shadow, over a cream blouse with a small lace
+> collar.
+> SHOT: a close-up of Nana in her armchair at night, seen with a 50 mm lens level with her eyes: her face turned
+> three-quarters toward screen-right. She holds the cream handset of her telephone to her far ear with her left hand,
+> and its coiled cord hangs down across her cardigan. The television in front of her is switched off: at the right edge
+> of the frame, the dark curved glass of its screen in the grey cabinet, unlit. She is lit only by the table lamp at the
+> left: amber cut planes on her face, hair and hands, the rest in black, and no cold light anywhere on her. Her face is
+> calm and still, the corners of her mouth lifted very slightly, lips closed. Behind her at the left, the scorched
+> pleated lampshade and its crisp arc of amber on the leaf wallpaper. Composition: her face on the left third with open
+> dark space in front of her toward the right; her eyes on the upper third.
 
-**Refs:** `assets/pilot/lookdev/ld5_nana.png`, `assets/pilot/lookdev/ld3_apartment.png`, `assets/pilot/keyframes/k11_nana_phone_cu.png`.
+**Refs:** `assets/pilot/lookdev_v3/nana.png`, `assets/pilot/lookdev_v3/flat.png`.
 **Layers:** none.
-**JS spec:** none.
+**JS spec:** none (the burned-in ghost reuses the J15 card and k02).
 
 **Sound:**
 - **NANA** (`Moira`, 145, NANA chain): **"I know, love."** at shot +0.6 (abs 198.6).
@@ -47,8 +52,12 @@ lamp-lit, the corners of her mouth lifted, lips closed.
 - Phone-line hiss.
 - Score 1M6: the warm PAD (F) enters at +1.5 (abs 199.5), −30 dB.
 
-**Motion prompt (v2):** Flat 2D cel-painted style. Close-up: an elderly woman lit only by a warm lamp holds an old
-telephone handset to her ear; the television behind her is dark. Calm and tender, she says: "I know, love." A small
-smile. Static camera. Rain on the window, a clock ticking. No music.
+**Motion prompt (v2, Seedance: start `work/pilot/keys_v3/k24_nana_know.png`, 4 s, audio on):** Colour woodcut print
+animation; keep the first frame's exact carved shapes, flat inks and designs. Close-up, 50 mm, at her eye level: an old
+woman in an armchair, lit only by a lamp's amber light, holds a cream telephone handset to her ear, facing right toward
+a switched-off television. Her head does not move. After half a second she says quietly, at an easy pace: "I know,
+love." Then she is still, listening. She speaks in an old woman's gentle, slightly thin, warm voice with a neutral
+General American accent. Understated performance: her face stays composed; only her lips move. Locked-off camera. Rain
+on the window, a wooden clock ticking. No music.
 
 **Takes:** —

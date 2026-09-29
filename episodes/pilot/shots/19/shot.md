@@ -1,40 +1,41 @@
 # Shot 19 — THE QUESTION
 
-**Duration:** 4 s (1:39–1:43; abs 99.0–103.0)  **Tool:** Codex keyframe + comp  **Camera:** CU, Ida facing screen-left;
-push-in 1.00→1.03
+**Duration:** 4 s (1:39–1:43; abs 99.0–103.0)  **Tool:** Codex k12 + a Seedance take with dialogue (v2) or comp (v1)
+**Camera:** close-up, one size tighter than 17: 85 mm, 10 cm above her eye line; locked-off. Short-sided.
 
-**Action:** Ida lifts her eyes toward the face she makes every night and asks the question she's been carrying: "Why
-do you still watch him?" It's guilt, frustration and love at once. **Start pose (v2):** phone at her ear, eyes lifted
-toward the off-screen monitors, lips slightly parted.
+**Action:** Ida lifts her eyes toward the face she makes every night, high and far away on the Wall, and asks the
+question she has been carrying: "Why do you still watch him?" The eyes move; nothing else does. **Start pose:** the
+handset at her ear, eyes lowered, mouth closed.
 
 **Build:**
-- Codex **k12**:
-  `tools/imagegen/gen.sh assets/pilot/keyframes/k12_ida_phone_cu.png "<prompt>" assets/pilot/lookdev/ld4_ida.png assets/pilot/keyframes/k10_ida_phone_mcu.png`
-- Comp: `push(1.00→1.03, focus=eyes)`, `flicker(mask=cyan_lit, driver=noise(0.5 Hz), 2 %)`, `letterbox(2.39)`,
-  `grade(HALL)`.
+- Codex **k12**.
+- **v2:** a 4 s take with the line (audio on).
+- **v1 fallback:** locked-off; `flicker(mask=cyan_lit, driver=noise(0.5 Hz), 2 %)`. No push.
+- `letterbox(2.39)`, `grade(HALL)`.
 
-**Keyframe prompt (k12):**
-> STYLE: a single frame from a premium adult 2D animated film. Hand-painted cel-animation look: clean, confident
-> dark-navy ink contour lines; flat color shapes with one hard-edged shadow tone; soft airbrushed glow only around
-> light sources; subtle paper grain; realistic human proportions and faces (not chibi, no oversized eyes); simplified
-> graphic backgrounds with bold silhouettes and large areas of dark negative space. PALETTE: deep ink-navy and
-> blue-black darkness; cold pale-cyan light comes only from screens; warm amber light comes only from household lamps
-> and warm objects; signal red only where described; no other saturated colors. LIGHT: one strong motivated light
-> source, deep shadows, light haze. FRAME: wide 16:9 landscape; keep every important element inside the central
-> horizontal band, because the top and bottom 13% will be cropped to a 2.39:1 letterbox. No text, letters, numbers,
-> logos or watermarks anywhere; every screen is a blank, evenly glowing panel.
-> CHARACTER: IDA: a woman of 27, slim, with a short blunt jaw-length black bob and straight-cut bangs just above her
-> eyebrows, dark brown eyes with tired lower lids, straight dark brows, a small straight nose, a small silver hoop
-> earring in her left ear, warm light-olive skin; she wears a charcoal-grey ribbed turtleneck sweater, a hand-knitted
-> mustard-amber wool scarf worn loosely around her neck, and a thin grey lanyard with a blank white ID card. She is
-> exactly the same woman as in the attached images.
-> SHOT: a close-up of Ida holding a small slim dark phone to her ear on the side facing the camera, her face
-> three-quarters toward screen-left. She has lifted her eyes toward the offscreen monitors with a hesitant, pained
-> look; her lips are slightly parted, about to ask a question. Cold cyan light comes from the left side, with a faint
-> warm glow from the phone on her cheek. Background: dark, with soft cyan bokeh. Composition: face left of center,
-> eyes on the upper third, the amber scarf at the bottom edge.
+**Keyframe prompt (`k12_ida_question`):**
+> STYLE (RELIEF): a frame from an animated film printed by hand as a colour woodcut and linocut on warm cream paper. A
+> carved blue-black key block holds the image; large areas stay solid black, with faint wood grain. Every surface (skin,
+> cloth, hair, concrete, metal, glass, floor) is matte printed ink: no reflections, no sheen, no specular highlights, no
+> smooth gradients. Light is a shape cut out of the black with crisp, slightly irregular knife edges. Middle tones
+> everywhere, on walls, floors and machines as on faces, are parallel gouge strokes that follow the form. Colour is flat
+> spot ink, never blended, with paper grain showing through: pale cold cyan where screens light things, amber where lamps
+> light things, signal red only on red objects. Slight misregistration; no drawn outlines. Only screen light is soft.
+> Faces are a few carved planes, calm; eyes are small dark shapes without highlights. Avoid: anime, airbrush, digital
+> painting, 3D render, photorealism, lens flare, bokeh, neon, glossy or wet floors.
+> FRAME: wide 16:9; keep everything important inside the central horizontal band, because the top and bottom 13% will
+> be cropped to 2.39:1. No text, letters, numbers or logos anywhere; every screen is blank and evenly glowing.
+> IDA (the woman on the attached sheet): 27, slim; a blunt black bob cut straight at the jaw, with straight bangs above
+> her brows; straight dark brows; a small straight nose; warm light-olive skin; a small silver hoop in her left ear; a
+> charcoal ribbed turtleneck and a hand-knitted mustard-amber scarf, the only warm colour on her.
+> SHOT: a close-up of Ida in the dark hall, seen with an 85 mm lens 10 cm above her eye line: her head and shoulders,
+> three-quarters toward screen-left. The heavy grey handset of a desk telephone is at her far ear, held in her right
+> hand, and its coiled cord runs down across her chest. Her eyes are lowered, her face composed, mouth closed. The cold
+> pale cyan light of the great wall of screens far away at the left cuts her face as crisp planes, and a thin cold rim
+> runs along the back of her hair. Composition: her face on the left third, turned toward the near edge of the frame,
+> with dark space behind her head at the right; her amber scarf at the bottom edge.
 
-**Refs:** `assets/pilot/lookdev/ld4_ida.png`, `assets/pilot/keyframes/k10_ida_phone_mcu.png`.
+**Refs:** `assets/pilot/lookdev_v3/ida.png`, `assets/pilot/lookdev_v3/hall.png`.
 **Layers:** none.
 **JS spec:** none.
 
@@ -43,8 +44,12 @@ toward the off-screen monitors, lips slightly parted.
 - Phone-line hiss; hall tone; the hall clock at −4 dB; warm PAD (Dm from 100.0).
 - **PLUCK A4** (Nana's theme, note 1) at +3.6 (abs 102.6): the question hangs.
 
-**Motion prompt (v2):** Flat 2D cel-painted style. Close-up: Ida, phone at her ear, lifts her eyes toward the
-off-screen monitors and asks, hesitantly: "Why do you still watch him?" She swallows after the line. Static camera.
-Hall hum. No music.
+**Motion prompt (v2, Seedance: start `work/pilot/keys_v3/k12_ida_question.png`, 4 s, audio on):** Colour woodcut print
+animation; keep the first frame's exact carved shapes, flat inks and designs. Close-up, 85 mm, slightly above her eye
+line: a young woman in a dark hall holds a grey telephone handset to her ear, facing left, lit cold from the left, her
+eyes lowered. Her head does not move. She lifts her eyes toward something high and far away at the left, and as they
+settle she says quietly, at a slow pace: "Why do you still watch him?" Then she keeps her eyes there without moving.
+She speaks in a young woman's low, soft, tired voice with a neutral General American accent. Understated performance:
+her face stays composed; only her eyes and lips move. Locked-off camera. The low hum of a large hall. No music.
 
 **Takes:** —
