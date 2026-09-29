@@ -1,0 +1,47 @@
+<!doctype html>
+<!--
+  Desk flap repeater (TO AIR), production_design.md §4: four small split-flap cards on top of the Corrections panel
+  (shots 04, 06) and on the Script Terminal's housing (21, 24, 26), repeating the Air Clock's countdown.
+  TRANSPARENT texture for comp's homography onto the plate's four windows. ?shot=04|06|21|24|26 picks the preset;
+  ?from=MMSS&to=MMSS&first=S&red00=0|1 override it. ?preview=1 adds a housing to QA it as an object.
+  Flips happen on whole seconds (the film's 60 BPM tick); each flip starts on its tick (top half falls in frames
+  0–1, the bottom lands on frame 2, frame 3 bounces). Presets (first flip time → last value on screen):
+    04: 08:48 at rest; one flip at 2.0 → 08:47 (3 s)
+    06: 08:39 → 08:38 flips at 0.0 (on the cut), then 1.0 … 6.0 → 08:31 from 6.0 to 7.0 (7 s)
+    21: 01:08 at rest; flips at 1.0 … 7.0 → 01:01 (8 s)
+    24: 00:53 at rest; flips at 1.0 … 7.0 → 00:46 (8 s); minutes on the red 00 flap since shot 22
+    26: 00:32 at rest; flips at 1.0 … 8.0 → 00:24 (9 s); red 00
+  Atlas (1920×1080): cards 340×420 at x = 200, 560 | 1020, 1380 (y 330–750); pairs 20 px apart, 120 px between
+  the pairs with the painted colon at x 960. Window order left to right = M M S S.
+  Render: node tools/web/render.mjs episodes/pilot/js_v3/j_flaps.html?shot=06 work/pilot/js_v3/j_flaps_06.mov 7 24
+  (render.mjs takes the page path; pass the query via a copy or the RUN note in the report.)
+-->
+<html><head><meta charset="utf-8"><title>Flap repeater</title></head><body>
+<script src="kit.js"></script>
+<script src="flapcard.js"></script>
+<script>
+const PRESETS = {
+  '04': { from: '0848', to: '0847', first: 2, red00: 0 },
+  '06': { from: '0839', to: '0831', first: 0, red00: 0 },
+  '21': { from: '0108', to: '0101', first: 1, red00: 0 },
+  '24': { from: '0053', to: '0046', first: 1, red00: 1 },
+  '26': { from: '0032', to: '0024', first: 1, red00: 1 },
+};
+const P = Object.assign({}, PRESETS[K.param('shot', '06')] || PRESETS['06']);
+for (const k of ['from', 'to']) { const v = K.param(k, ''); if (v) P[k] = v; }
+P.first = K.param('first', P.first); P.red00 = K.param('red00', P.red00);
+const sec = s => Number(s.slice(0, 2)) * 60 + Number(s.slice(2));
+const cd = FL.countdown(sec(P.from), sec(P.to), P.first);
+const preview = K.param('preview', 0);
+const cv = K.stage(preview ? '#101214' : 'transparent'), c = cv.getContext('2d');
+const W = 340, H = 420, X = 200, Y = 330, GAP = 20, MID = 120;
+window.REGIONS = { cards: [[200, 330, 340, 420], [560, 330, 340, 420], [1020, 330, 340, 420], [1380, 330, 340, 420]], colon: [900, 330, 120, 420] };
+window.renderFrame = t => {
+  c.clearRect(0, 0, 1920, 1080);
+  if (preview) { // a Ministry-grey housing, to judge it as an object
+    c.fillStyle = '#2b3036'; c.fillRect(120, 250, 1680, 580);
+    c.fillStyle = '#0a0a0a'; c.fillRect(165, 305, 745, 470); c.fillRect(1005, 305, 745, 470);
+  }
+  FL.unit(c, cd, t, X, Y, W, H, GAP, MID, { red00: P.red00 });
+};
+</script></body></html>

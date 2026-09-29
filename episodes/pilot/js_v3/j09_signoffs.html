@@ -1,0 +1,124 @@
+<!doctype html>
+<!--
+  J09 v3 · shot 21 · SIGN-OFFS · DESK 4 (8.0 s). The Script Terminal's two-layer tube; the Operator Rule colours every
+  character by who answers for it: the Engine's lines cold, everything that came through her keyboard warm.
+  SCREEN TEXTURE, opaque .mp4: the tube face is the 4:3 rect x 240–1680 × y 0–1080, with curvature, scanlines on the dot
+  rows, bloom + halation, faint raster breathing, burn-in of the usual header, dust and glare baked in. Comp maps the
+  rect into p21's tube quad and adds the 6 % reflection of her hands and face + the grade (it should not add its own
+  tube pass; ?crt=0 gives the flat phosphor picture if it wants to). No misconvergence: the tube is monochrome.
+  window.AMBER(t) returns the warm layer's mean luminance in the lower third of the glass (for the fingertip spill).
+  Scroll: 001 → rest in 6.0 s. Up to ~70 lines/s through the cold runs, easing to ~8 lines/s as each warm line crosses
+  the middle row; from 3.5 s it eases out through the warm block; below ~12 lines/s the scroll becomes one-row jumps
+  with a 1 px bounce. Cold streaks vanish at once (60 ms), warm streaks linger (400 ms).
+  Render: node tools/web/render.mjs episodes/pilot/js_v3/j09_signoffs.html work/pilot/js_v3/j09_signoffs.mp4 8 24
+-->
+<html><head><meta charset="utf-8"><title>J09 Sign-offs</title></head><body>
+<script src="kit.js"></script>
+<script>
+const CRTON = K.param('crt', 1) === 1;
+const out = K.stage('#000'), octx = out.getContext('2d');
+const W = 1920, H = 1080, F = 1 / 24, T_REST = 6.0, WIN = 11, MID = 5;
+const term = new K.Term();
+
+// ── the list: NIGHT 001 … 212; sign-offs from column 12 (index 11)
+const WARM = { 23: 'Close the window. The wind is sly.', 47: "Don't argue with the rain.", 61: 'Old bread makes good soup.',
+  88: 'Leave a light on for whoever comes home late.', 119: 'Call the ones you miss.' };
+const LINES = []; // {num, cold, warm}
+for (let n = 1; n <= 212; n++) {
+  const num = 'NIGHT ' + String(n).padStart(3, '0');
+  let text = 'Sleep safely.', warm = false;
+  if (WARM[n]) { text = WARM[n]; warm = true; }
+  if (n >= 150 && n <= 211) { text = 'Eat something warm before you sleep.'; warm = true; }
+  if (n === 212) { LINES.push({ num, text: '', warm: true, last: true }); break; }
+  const rows = K.wrap(text, 48 - 11);
+  rows.forEach((r, k) => LINES.push({ num: k ? '' : num, text: r, warm }));
+}
+const idxOf = n => LINES.findIndex(L => L.num === 'NIGHT ' + String(n).padStart(3, '0'));
+const P_END = idxOf(212) - (WIN - 1);            // at rest the window shows NIGHT 202 … 212
+const P_BLOCK = idxOf(150) - MID;                // NIGHT 150 crosses the middle row at 3.5 s
+const WARM_IDX = [23, 47, 61, 88, 119].map(idxOf);
+
+// rows: every line pre-drawn once per layer (one small canvas a row), so each persistence sample is a few blits
+const STRIP_W = 48 * term.cw + 8, CH = term.ch;
+const rowsCv = { cold: [], warm: [] };
+{
+  const tc = new K.Term({ rect: [0, 0, 48 * term.cw, 12 * CH] }); tc.x0 = 0; tc.y0 = 0;
+  LINES.forEach((L, i) => {
+    const c = K.canvas(STRIP_W, CH), w = K.canvas(STRIP_W, CH), cc = c.getContext('2d'), wc = w.getContext('2d');
+    if (L.num) tc.text(cc, 'cold', L.num, 0, 0, .5);                    // the night numbers: cold at half intensity
+    if (L.text) tc.text(L.warm ? wc : cc, L.warm ? 'warm' : 'cold', L.text, 11, 0, 1);
+    rowsCv.cold.push(c); rowsCv.warm.push(L.warm ? w : null);
+  });
+}
+// ── scroll position p(t): top line of the 11-row window
+const speedAt = p => { // lines/s as a function of position during the run-in
+  let g = 1; for (const w of WARM_IDX) { const d = Math.abs(p - (w - MID)); g = Math.min(g, K.smooth(.5, 4.5, d)); }
+  return 8 + (VMAX - 8) * g;
+};
+let VMAX = 70;
+const TABLE = []; // [t, p] for 0 … 3.5
+function build() {
+  // bisect VMAX so the run-in reaches P_BLOCK at exactly 3.5 s (with a 0.25 s spin-up from rest)
+  const run = (vm) => { VMAX = vm; let p = 0, t = 0; const dt = .0005, tab = [[0, 0]];
+    while (p < P_BLOCK && t < 10) { const ramp = K.smooth(0, .25, t) * .95 + .05; p += speedAt(p) * ramp * dt; t += dt; tab.push([t, p]); }
+    return { t, tab }; };
+  let lo = 20, hi = 400; for (let k = 0; k < 40; k++) { const mid = (lo + hi) / 2; if (run(mid).t > 3.5) lo = mid; else hi = mid; }
+  const r = run(hi); r.tab.forEach(x => TABLE.push(x)); VMAX = hi;
+}
+build();
+function pos(t) {
+  if (t <= 0) return 0;
+  if (t < 3.5) { // lookup
+    let lo = 0, hi = TABLE.length - 1; while (hi - lo > 1) { const m = (lo + hi) >> 1; if (TABLE[m][0] < t) lo = m; else hi = m; }
+    const [t0, p0] = TABLE[lo], [t1, p1] = TABLE[hi]; return Math.min(P_BLOCK, p0 + (p1 - p0) * (t - t0) / Math.max(1e-9, t1 - t0));
+  }
+  const u = K.clamp((t - 3.5) / (T_REST - 3.5)); return P_BLOCK + (P_END - P_BLOCK) * (1 - Math.pow(1 - u, 3));
+}
+// displayed position: continuous when fast, one-row jumps with a 1 px bounce when slow
+function shown(t) {
+  const p = pos(t), v = (pos(t + .01) - pos(t - .01)) / .02;
+  const q = K.smooth(9, 14, v); // 1 = continuous, 0 = discrete
+  const pf = Math.floor(p + 1e-6), since = (p - pf) / Math.max(v, 1e-3); // seconds since the last whole-row jump
+  const bounce = since < F ? -1 : 0;
+  return { y: K.lerp(pf * CH - bounce, p * CH, q) };
+}
+const WIN_Y = term.y0 + CH, WIN_H = WIN * CH;
+function drawLayer(c, layer, t) {
+  const sy = shown(t).y, i0 = Math.floor(sy / CH);
+  c.save(); c.beginPath(); c.rect(term.x0 - 4, WIN_Y, STRIP_W + 8, WIN_H); c.clip();
+  for (let i = i0; i <= i0 + WIN; i++) { const cv = rowsCv[layer][i]; if (cv) c.drawImage(cv, term.x0, WIN_Y + i * CH - sy); }
+  c.restore();
+}
+
+// ── the tube
+const src = K.canvas(W, H), sc = src.getContext('2d');
+const lay = { cold: K.canvas(W, H), warm: K.canvas(W, H) };
+const crt = term.crt({ dustSeed: 21, k1: .05 });
+const burn = K.canvas(W, H); term.text(burn.getContext('2d'), 'cold', 'SCRIPT · NIGHT', 0, 0); crt.setBurn(burn);
+function tubeSrc(t) {
+  for (const k of ['cold', 'warm']) {
+    const c = lay[k].getContext('2d'); c.fillStyle = '#000'; c.fillRect(0, 0, W, H);
+    const tau = K.PERSIST[k];
+    K.persist(c, (cc, tt) => drawLayer(cc, k, Math.min(tt, T_REST)), t, tau, { step: .0015, t0: -1 });
+  }
+  sc.fillStyle = '#000'; sc.fillRect(0, 0, W, H);
+  sc.globalCompositeOperation = 'lighter'; sc.drawImage(lay.cold, 0, 0); sc.drawImage(lay.warm, 0, 0); sc.globalCompositeOperation = 'source-over';
+  // header: typed by her, so warm
+  term.text(sc, 'warm', 'SIGN-OFFS · DESK 4', 0, 0);
+  // the block cursor after NIGHT 212, blinking on the tick once the list rests (warm layer: it fades, not snaps)
+  if (t >= T_REST - .2) {
+    const rowOf212 = (idxOf(212) * CH - shown(t).y) / CH + 1;
+    const lv = K.filament(t, [[0, .5], [1, 1.5], [2, 2.5], [3, 3.5], [4, 4.5], [5, 5.5], [6, 6.5], [7, 7.5]].map(([a, b]) => [a, b]), .01, K.PERSIST.warm * 2.3);
+    term.text(sc, 'warm', '█', 11, rowOf212, lv);
+  }
+}
+window.AMBER = t => { tubeSrc(t); const d = lay.warm.getContext('2d').getImageData(term.x0, 720, 48 * term.cw, 300).data; let s = 0; for (let i = 0; i < d.length; i += 16) s += d[i] + d[i + 1]; return s / (d.length / 16) / 510; };
+window.renderFrame = t => {
+  tubeSrc(t);
+  if (!CRTON) { octx.clearRect(0, 0, W, H); octx.drawImage(src, 0, 0); return; }
+  const warmth = K.smooth(3.5, 6, t);
+  crt.render(src, { breathe: .002 * (1 + K.noise1(t * 5, 2)) * (.4 + .6 * warmth), flicker: .01 * K.noise1(t * 24, 9),
+    humY: K.hum(t, 7.3, 2.2), humDepth: .03, burnAmt: .03 });
+  octx.clearRect(0, 0, W, H); octx.drawImage(crt.canvas, 0, 0);
+};
+</script></body></html>

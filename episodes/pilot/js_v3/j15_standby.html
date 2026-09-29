@@ -1,0 +1,159 @@
+<!doctype html>
+<!--
+  J15 v3 · the standby card: a card hand-painted in Year One (a white Lamp brushed onto blue gouache), filmed with a
+  slight vignette and broadcast between programmes. It breathes ±3 % at 0.25 Hz: the carrier's heartbeat.
+  The breathing phase runs on ABSOLUTE film time (shot in-point + t), so every set in 15, 16, 18 and 20 breathes
+  together; work/pilot/js_v3/j15_luma.json carries the same curve for comp's flicker drivers.
+  Modes (?mode=):
+    set    shot 16 (abs 84.0), 6 s, opaque .mp4 SCREEN TEXTURE for the State Receiver: the 4:3 face is the rect
+           x 240–1680 (1440×1080), through the tube: barrel k1 0.05, rounded corners, scanlines, 1 px misconvergence
+           at the corners, a hum bar rolling up every 7 s, bloom, and the Father's face (k02) burned in at ~4 %.
+           Comp: homography into k09's screen quad only (no second tube pass).
+    wall   shot 43, 6 s, flat 4:3 picture (x 240–1680) with NO tube: at 50 % and not breathing (the broadcast is
+           over), over k02's burned-in ghost at 5 %. Comp inserts it tile by tile with the per-tube artefacts.
+    ghost  shot 39, one frame: the switched-off set's dark glass holding the burn-in (the Lamp at 5 %, his face at
+           3 %), as a screen texture through the same tube.
+  ?abs= overrides the absolute in-point used for the breathing phase.
+-->
+<html><head><meta charset="utf-8"><title>J15 standby card</title></head><body>
+<script src="kit.js"></script>
+<script>
+const MODE = K.param('mode', 'set');
+const ABS = K.param('abs', MODE === 'set' ? 84.0 : 0);
+const out = K.stage('#000'), octx = out.getContext('2d');
+const PW = 1440, PH = 1080;
+const card = K.canvas(PW, PH), cc = card.getContext('2d');
+const ghost = K.canvas(PW, PH), gc = ghost.getContext('2d');
+const src = K.canvas(PW, PH), sc = src.getContext('2d');
+let crt, grain;
+const breathe = tAbs => 1 + .03 * Math.sin(2 * Math.PI * .25 * tAbs);
+
+function paintCard() {
+  const rnd = K.rng(1941);
+  // blue gouache: the ground, laid in broad, uneven strokes
+  const g = cc.createLinearGradient(0, 0, 0, PH); g.addColorStop(0, '#123A5E'); g.addColorStop(1, '#1C4A70');
+  cc.fillStyle = g; cc.fillRect(0, 0, PW, PH);
+  for (let k = 0; k < 260; k++) {
+    const x = rnd() * PW * 1.2 - PW * .1, y = rnd() * PH, len = 180 + rnd() * 420, w = 30 + rnd() * 70, a = -.25 + rnd() * .5;
+    const light = rnd() < .5; cc.save(); cc.translate(x, y); cc.rotate(a);
+    // a brush stroke: parallel bristle streaks, paint thinning toward the end
+    for (let b = 0; b < 14; b++) {
+      const off = (b / 13 - .5) * w; cc.lineWidth = w / 10;
+      cc.strokeStyle = light ? `rgba(46,96,140,${.05 + rnd() * .07})` : `rgba(8,30,52,${.05 + rnd() * .08})`;
+      cc.beginPath(); cc.moveTo(0, off);
+      const L = len * (.6 + rnd() * .4);
+      for (let u = 0; u <= L; u += 20) cc.lineTo(u, off + K.noise1(u * .01 + b, k) * 3);
+      cc.stroke();
+    }
+    cc.restore();
+  }
+  // paper tooth under the paint
+  const tooth = K.noiseCanvas(PW / 2, PH / 2, 7, { octaves: [[1, 1], [2, .5]] });
+  cc.globalCompositeOperation = 'overlay'; cc.globalAlpha = .12; cc.drawImage(tooth, 0, 0, PW, PH);
+  cc.globalCompositeOperation = 'source-over'; cc.globalAlpha = 1;
+
+  // the Lamp, painted with a flat brush, leaning a little
+  const L = K.canvas(PW, PH), lc = L.getContext('2d');
+  const cx = PW / 2, cy = PH / 2 - 20, s = 1.55, P = K.lampPaths(cx, cy, s), G = K.lampGeom;
+  lc.save(); lc.translate(cx, cy); lc.rotate(1.2 * Math.PI / 180); lc.translate(-cx, -cy);
+  const WHITE = [238, 242, 240];
+  const bristle = (pts, width, n, seed) => { // one brush stroke along a polyline
+    const r = K.rng(seed);
+    for (let b = 0; b < n; b++) {
+      const off = (b / (n - 1) - .5) * width, edge = b === 0 || b === n - 1;
+      lc.lineWidth = width / n * 1.9; lc.lineCap = 'round';
+      for (let i = 1; i < pts.length; i++) {
+        const u = i / pts.length, [ax, ay] = pts[i - 1], [bx, by] = pts[i], l = Math.hypot(bx - ax, by - ay) || 1;
+        const nx = -(by - ay) / l, ny = (bx - ax) / l, wob = K.noise1(i * .12 + b * 2.3, seed) * (edge ? 2 : .6);
+        let a = .82 + .18 * K.noise1(i * .07 + b, seed + 1);
+        if (K.noise1(i * .3 + b * 5.1, seed + 7) + u * .8 - .75 > .3) a *= .1;   // dry-brush skips toward the end
+        if (a < .08) continue;
+        lc.strokeStyle = `rgba(${WHITE},${a})`;
+        lc.beginPath(); lc.moveTo(ax + nx * (off + wob), ay + ny * (off + wob)); lc.lineTo(bx + nx * (off + wob), by + ny * (off + wob)); lc.stroke();
+      }
+    }
+  };
+  // the ring: three overlapping arcs of the brush
+  const rMid = (G.ring - G.ringW / 2) * s, rw = G.ringW * s * 1.05;
+  [[-2.1, 1.9, 11], [1.5, 4.9, 12], [4.4, 7.0, 13]].forEach(([a0, a1, sd]) => {
+    const pts = []; for (let a = a0; a <= a1; a += .01) pts.push([cx + Math.cos(a) * rMid, cy + Math.sin(a) * rMid]);
+    bristle(pts, rw, 12, sd);
+  });
+  // the base: one horizontal pull
+  const by = cy + (G.baseY + G.baseH / 2) * s;
+  bristle(Array.from({ length: 120 }, (_, i) => [cx - G.baseW / 2 * s + i * G.baseW * s / 119, by]), G.baseH * s * 1.05, 12, 21);
+  // the flame: filled by vertical pulls inside its shape, then its edge dragged once around
+  lc.save(); lc.clip(P.flame);
+  const fw = G.flameW * s, top = P.sy - (G.flameH - G.flameW / 2) * s, bot = P.sy + G.flameW / 2 * s;
+  for (let k = 0; k < 5; k++) { // pulls up from the foot, each a little drier than the last
+    const x = cx - fw / 2 + (k + .5) * fw / 5;
+    bristle(Array.from({ length: 80 }, (_, i) => [x + K.noise1(i * .05, k) * 2, bot + 4 - i * (bot - top + 8) / 79]), fw / 5 * 1.08, 8, 30 + k);
+  }
+  lc.restore();
+  lc.restore();
+  // edge noise: jitter the painted shape by 1–2 px
+  const d = lc.getImageData(0, 0, PW, PH), o = lc.createImageData(PW, PH);
+  for (let y = 1; y < PH - 2; y++) for (let x = 1; x < PW - 2; x++) {
+    const dx = Math.round(K.noise1(x * .08 + y * .013, 5) * 1.6), dy = Math.round(K.noise1(y * .08 + x * .011, 6) * 1.6);
+    const i = (y * PW + x) * 4, j = ((y + dy) * PW + x + dx) * 4;
+    o.data[i] = d.data[j]; o.data[i + 1] = d.data[j + 1]; o.data[i + 2] = d.data[j + 2]; o.data[i + 3] = d.data[j + 3];
+  }
+  lc.putImageData(o, 0, 0);
+  cc.drawImage(L, 0, 0);
+  // filmed: a slight vignette of the Year One camera
+  const v = cc.createRadialGradient(PW / 2, PH / 2, PH * .35, PW / 2, PH / 2, PH * .95);
+  v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,.38)');
+  cc.fillStyle = v; cc.fillRect(0, 0, PW, PH);
+}
+
+window.ready = (async () => {
+  paintCard();
+  const k02 = await K.asset('k02');
+  gc.filter = 'grayscale(1) blur(2px)'; gc.drawImage(k02, 0, 0, PW, PH); gc.filter = 'none';
+  grain = K.noiseCanvas(360, 270, 29, { octaves: [[1, 1]] });
+  if (MODE !== 'wall') {
+    crt = new K.CRT({ rect: [240, 0, PW, PH], k1: .05, corner: .07, vig: .25, scanN: 288, scanDepth: .34, conv: 1,
+      bloom: .25, halo: .06, exposure: 1.0, hot: .3, glare: .03, outside: 'black', dustSeed: 16 });
+    if (MODE === 'set') {
+      const b = K.canvas(PW, PH), bc = b.getContext('2d'); bc.globalAlpha = .9; bc.drawImage(ghost, 0, 0); crt.setBurn(b);
+    }
+  }
+})();
+
+function filmGrain(ctx, t, amt) { // the card is a film: a little moving grain
+  const r = K.rng(900 + Math.round(t * 24));
+  ctx.save(); ctx.globalCompositeOperation = 'overlay'; ctx.globalAlpha = amt;
+  ctx.drawImage(grain, -r() * 60, -r() * 60, PW + 120, PH + 120); ctx.restore();
+}
+
+window.renderFrame = t => {
+  octx.fillStyle = '#000'; octx.fillRect(0, 0, 1920, 1080);
+  if (MODE === 'wall') {
+    sc.fillStyle = '#000'; sc.fillRect(0, 0, PW, PH);
+    sc.globalAlpha = .5; sc.drawImage(card, 0, 0); sc.globalAlpha = 1;
+    filmGrain(sc, t, .1);
+    sc.globalCompositeOperation = 'lighter'; sc.globalAlpha = .05; sc.drawImage(ghost, 0, 0);
+    sc.globalAlpha = 1; sc.globalCompositeOperation = 'source-over';
+    octx.drawImage(src, 240, 0); return;
+  }
+  if (MODE === 'ghost') {
+    sc.fillStyle = '#000'; sc.fillRect(0, 0, PW, PH);
+    const L = K.canvas(PW, PH), lc = L.getContext('2d'); lc.drawImage(card, 0, 0);
+    lc.globalCompositeOperation = 'multiply'; lc.fillStyle = '#9aa'; lc.fillRect(0, 0, PW, PH);
+    sc.globalCompositeOperation = 'lighter';
+    // the Lamp alone (the card's white), at 5 %; his face at 3 %
+    const m = K.canvas(PW, PH), mc = m.getContext('2d'); mc.drawImage(card, 0, 0);
+    const id = mc.getImageData(0, 0, PW, PH); for (let i = 0; i < id.data.length; i += 4) { const w = K.smooth(140, 220, id.data[i]); id.data[i] = id.data[i + 1] = id.data[i + 2] = 255 * w; }
+    mc.putImageData(id, 0, 0);
+    sc.globalAlpha = .05; sc.drawImage(m, 0, 0); sc.globalAlpha = .03; sc.drawImage(ghost, 0, 0);
+    sc.globalAlpha = 1; sc.globalCompositeOperation = 'source-over';
+    crt.render(src, { gain: .7, bloom: .3 });
+    octx.drawImage(crt.canvas, 0, 0); return;
+  }
+  // set
+  sc.drawImage(card, 0, 0); filmGrain(sc, t, .08);
+  const tAbs = ABS + t;
+  crt.render(src, { gain: breathe(tAbs), humY: K.hum(tAbs, 7), humDepth: .08, burnAmt: .045, breathe: .002 * Math.sin(2 * Math.PI * .25 * tAbs) });
+  octx.drawImage(crt.canvas, 0, 0);
+};
+</script></body></html>

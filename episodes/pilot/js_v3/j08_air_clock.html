@@ -1,0 +1,85 @@
+<!doctype html>
+<!--
+  J08 v3 · shots 14 and 22 · the Air Clock and its TO AIR board (production_design.md §4). 2.0 s each.
+  ?shot=14 → time 20:56, TO AIR 04:00 → 03:59 at 1.0.   ?shot=22 → 20:59, 01:00 → 00:59 at 1.0 (the red-printed 00).
+  TRANSPARENT atlas for comp (1920×1080):
+    hands  : face-space square x 40–1040, y 40–1040, centre (540, 540), face radius 480 px (the plate's cream face,
+             frontal; comp maps it onto the face ellipse by homography). Hands only, flat black ink, carved edge.
+    board  : four flap cards 170×190 at x 1082, 1266 | 1510, 1694 (y 300–490), M M : S S; painted colon at x 1437.
+    plate  : the TO AIR engraved plate, x 1330–1630, y 560–626 (cream fill chipped from the A).
+  ?preview=1 draws the cream enamel face, baton marks and the board housing, to judge it as an object.
+  The second hand steps on each whole second (a 2-frame move, 1-frame overshoot, settle); the minute hand would jump
+  on the minute (not inside these 2 s: 20:56:00 and 20:59:00 fall on frame 0, where the hand already stands).
+  Flaps: each flip starts on the tick; top half falls over frames 0–1, the bottom lands on frame 2, 1-frame bounce.
+  Render: node tools/web/render.mjs "episodes/pilot/js_v3/j08_air_clock.html?shot=14" work/pilot/js_v3/j08_air_clock_14.mov 2 24
+-->
+<html><head><meta charset="utf-8"><title>J08 Air Clock</title></head><body>
+<script src="kit.js"></script>
+<script src="flapcard.js"></script>
+<script>
+const SHOT = K.param('shot', '14'), preview = K.param('preview', 0);
+const S = SHOT === '22' ? { hh: 20, mm: 59, from: 60, red00: 1 } : { hh: 20, mm: 56, from: 240, red00: 0 };
+const cd = FL.countdown(S.from, S.from - 1, 1.0);
+const cv = K.stage(preview ? '#15191c' : 'transparent'), c = cv.getContext('2d');
+const CX = 540, CY = 540, R = 480, F = 1 / 24;
+window.REGIONS = { hands: [40, 40, 1000, 1000], cards: [[1082, 300, 170, 190], [1266, 300, 170, 190], [1510, 300, 170, 190], [1694, 300, 170, 190]], plate: [1330, 560, 300, 66] };
+
+// ── hands: flat ink shapes with a slightly irregular carved edge (static per hand) ──
+function carved(pts, seed, amp = .9) {
+  const rnd = K.rng(seed), out = [];
+  for (let i = 0; i < pts.length; i++) {
+    const a = pts[i], b = pts[(i + 1) % pts.length], L = Math.hypot(b[0] - a[0], b[1] - a[1]), n = Math.max(1, Math.round(L / 14));
+    const nx = -(b[1] - a[1]) / (L || 1), ny = (b[0] - a[0]) / (L || 1);
+    for (let k = 0; k < n; k++) { const u = k / n, j = (rnd() - .5) * 2 * amp; out.push([a[0] + (b[0] - a[0]) * u + nx * j, a[1] + (b[1] - a[1]) * u + ny * j]); }
+  }
+  return out;
+}
+// shapes in hand space: y negative toward the tip; units px
+const HOUR = carved([[-20, 70], [-15, -250], [0, -262], [15, -250], [20, 70]], 11);
+const MIN = carved([[-15, 80], [-10, -395], [0, -405], [10, -395], [15, 80]], 12);
+const SEC = carved([[-3.5, 110], [-2.5, -425], [2.5, -425], [3.5, 110]], 13, .5);
+function hand(shape, ang, extra) {
+  c.save(); c.translate(CX, CY); c.rotate(ang); c.fillStyle = '#0d0d0f'; c.beginPath();
+  shape.forEach(([x, y], i) => i ? c.lineTo(x, y) : c.moveTo(x, y)); c.closePath(); c.fill();
+  if (extra) extra(); c.restore();
+}
+// slave-clock step: previous second → this one: frame 0 at 55 %, frame 1 at 112 % (overshoot), frame 2 at 97 %, then 100 %
+function stepPos(t) {
+  const n = Math.floor(t + 1e-6), f = K.frame(t - n);
+  const k = f === 0 ? .55 : f === 1 ? 1.12 : f === 2 ? .97 : 1;
+  return n - 1 + k; // seconds past the minute (shot starts on :00 stepping in)
+}
+function drawFace() {
+  const g = c.createRadialGradient(CX - 120, CY - 160, 40, CX, CY, R);
+  g.addColorStop(0, '#EDE3C9'); g.addColorStop(1, '#D8CBAA');
+  c.fillStyle = '#1b1c1d'; c.beginPath(); c.arc(CX, CY, R + 26, 0, 7); c.fill();
+  c.fillStyle = g; c.beginPath(); c.arc(CX, CY, R, 0, 7); c.fill();
+  c.fillStyle = '#111';
+  for (let i = 0; i < 12; i++) { c.save(); c.translate(CX, CY); c.rotate(i * Math.PI / 6); c.fillRect(-9, -R * .95, 18, R * .2); c.restore(); }
+}
+function drawBoardHousing() {
+  c.fillStyle = '#23272a'; c.fillRect(1050, 268, 846, 380);
+  c.fillStyle = '#070707'; c.fillRect(1068, 286, 382, 218); c.fillRect(1496, 286, 382, 218);
+}
+function drawPlate() {
+  const [x, y, w, h] = window.REGIONS.plate;
+  // worn nickel plate, four screws
+  const g = c.createLinearGradient(x, y, x, y + h); g.addColorStop(0, '#8d8d86'); g.addColorStop(1, '#5d5e59');
+  c.fillStyle = g; c.beginPath(); c.roundRect(x, y, w, h, 4); c.fill();
+  if (!window._pn) window._pn = K.noiseCanvas(300, 66, 21, { octaves: [[1, 1], [6, .7]] });
+  c.save(); c.globalAlpha = .35; c.globalCompositeOperation = 'multiply'; c.drawImage(window._pn, x, y, w, h); c.restore();
+  c.fillStyle = '#2a2a28'; for (const [sx, sy] of [[x + 12, y + 12], [x + w - 12, y + 12], [x + 12, y + h - 12], [x + w - 12, y + h - 12]]) { c.beginPath(); c.arc(sx, sy, 5, 0, 7); c.fill(); }
+  const m = 6.4, tw = K.capsLayout('TO AIR').width * m;
+  K.capsEngraved(c, 'TO AIR', x + w / 2 - tw / 2, y + (h - 6 * m) / 2, m, { chip: ['A'], seed: 5, fill: K.C.cream });
+}
+window.renderFrame = t => {
+  c.clearRect(0, 0, 1920, 1080);
+  if (preview) { drawFace(); drawBoardHousing(); }
+  const hourA = ((S.hh % 12) + S.mm / 60) / 12 * Math.PI * 2, minA = S.mm / 60 * Math.PI * 2;
+  const secA = stepPos(t) / 60 * Math.PI * 2;
+  hand(HOUR, hourA); hand(MIN, minA);
+  hand(SEC, secA, () => { c.beginPath(); c.arc(0, 88, 24, 0, 7); c.fill(); c.beginPath(); c.arc(0, 0, 16, 0, 7); c.fill(); });
+  FL.unit(c, cd, t, 1082, 300, 170, 190, 14, 90, { red00: S.red00 });
+  drawPlate();
+};
+</script></body></html>

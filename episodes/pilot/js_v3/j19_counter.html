@@ -1,0 +1,58 @@
+<!doctype html>
+<!--
+  J19 · shot 46, 0.0–1.0 s · NIGHT 213: the GENERATED drum counter on the dark desk, lit only by the Wall's cold standby
+  glow. At 0.5 s the units drum rolls 2 → 3 (4 frames, then a 1-frame settle). No carry. Replaces v1's "NIGHT 213" card.
+  Frame: the counter close-up, frontal, filling the frame (opaque .mp4). Comp maps it into p08's counter (cropped 1.8×),
+  or uses it as the insert directly; grain and softness in comp.
+  Regions: window [600, 300, 720, 300] (the three drums), plate [760, 700, 400, 60].
+  Render: node tools/web/render.mjs episodes/pilot/js_v3/j19_counter.html work/pilot/js_v3/j19_counter.mp4 1 24
+-->
+<html><head><meta charset="utf-8"><title>J19 Counter</title></head><body>
+<script src="kit.js"></script>
+<script>
+const out = K.stage('#000'), o = out.getContext('2d');
+window.REGIONS = { window: [600, 300, 720, 300], plate: [760, 700, 400, 60] };
+const F = 1 / 24;
+function drum(c, x, y, w, h, v) { // as J04's drum: numerals small enough that neighbours only peek
+  c.save(); c.beginPath(); c.rect(x, y, w, h); c.clip(); c.fillStyle = '#0b0b0c'; c.fillRect(x, y, w, h);
+  const Rr = h * .66, step = Math.PI / 4.4, base = Math.floor(v), m = h * .072;
+  for (let d = base - 2; d <= base + 2; d++) {
+    const a = (d - v) * step; if (Math.abs(a) > Math.PI / 2) continue;
+    c.save(); c.translate(x + w / 2, y + h / 2 + Math.sin(a) * Rr); c.scale(1, Math.cos(a));
+    K.capsFill(c, String(((d % 10) + 10) % 10), 0, -3 * m, m, { align: 'center', color: '#ECE8DC', weight: 1.15 }); c.restore();
+  }
+  const g = c.createLinearGradient(x, y, x, y + h);
+  g.addColorStop(0, 'rgba(0,0,0,.95)'); g.addColorStop(.26, 'rgba(0,0,0,.25)'); g.addColorStop(.5, 'rgba(255,255,255,.035)');
+  g.addColorStop(.74, 'rgba(0,0,0,.25)'); g.addColorStop(1, 'rgba(0,0,0,.95)'); c.fillStyle = g; c.fillRect(x, y, w, h);
+  c.restore();
+}
+// units drum: 2 → 3 over 4 frames from 0.5 (ease), 1-frame overshoot, then settled
+function units(t) {
+  const u = (t - .5) / (4 * F);
+  if (u <= 0) return 2; if (u < 1) return 2 + K.ease.inOutSine(u) * 1.06;
+  if (u < 1.25) return 3.06 - .06 * (u - 1) / .25; return 3;
+}
+let GRIME = null, SCENE = K.canvas(1920, 1080);
+window.renderFrame = t => {
+  if (!GRIME) GRIME = K.noiseCanvas(480, 270, 71, { octaves: [[2, 1], [12, .7], [45, .6]] });
+  const c = SCENE.getContext('2d');
+  c.fillStyle = '#343b42'; c.fillRect(0, 0, 1920, 1080);                                  // Ministry grey enamel
+  c.globalAlpha = .3; c.globalCompositeOperation = 'multiply'; c.drawImage(GRIME, 0, 0, 1920, 1080); c.globalCompositeOperation = 'source-over'; c.globalAlpha = 1;
+  const [wx, wy, ww, wh] = window.REGIONS.window, dw = 216, gap = 36;
+  c.fillStyle = '#1b1f23'; c.fillRect(wx - 44, wy - 40, ww + 88, wh + 80);                   // the steel frame
+  c.fillStyle = 'rgba(255,255,255,.07)'; c.fillRect(wx - 44, wy - 40, ww + 88, 4);
+  for (const [sx, sy] of [[wx - 26, wy - 22], [wx + ww + 26, wy - 22], [wx - 26, wy + wh + 22], [wx + ww + 26, wy + wh + 22]]) { c.fillStyle = '#121416'; c.beginPath(); c.arc(sx, sy, 8, 0, 7); c.fill(); c.strokeStyle = 'rgba(255,255,255,.1)'; c.beginPath(); c.moveTo(sx - 6, sy); c.lineTo(sx + 6, sy); c.stroke(); }
+  [2, 1, units(t)].forEach((v, k) => drum(c, wx + k * (dw + gap), wy, dw, wh, v));
+  c.fillStyle = '#0d0f11'; for (let k = 1; k < 3; k++) c.fillRect(wx + k * (dw + gap) - gap, wy, gap, wh);
+  const [px, py, pw, ph] = window.REGIONS.plate;
+  c.fillStyle = '#22272c'; c.beginPath(); c.roundRect(px, py, pw, ph, 4); c.fill(); c.strokeStyle = 'rgba(255,255,255,.12)'; c.lineWidth = 1.5; c.stroke();
+  K.capsEngraved(c, 'GENERATED', px + pw / 2, py + (ph - 30) / 2, 5, { align: 'center', seed: 6, chipRate: .2 });
+  // lit only by the Wall's standby glow, from above and far away: dim, cold, falling off downward
+  o.fillStyle = '#000'; o.fillRect(0, 0, 1920, 1080); o.drawImage(SCENE, 0, 0);
+  o.globalCompositeOperation = 'multiply';
+  const g = o.createLinearGradient(0, 0, 0, 1080); g.addColorStop(0, 'rgb(88,128,138)'); g.addColorStop(.55, 'rgb(50,76,86)'); g.addColorStop(1, 'rgb(14,20,26)');
+  o.fillStyle = g; o.fillRect(0, 0, 1920, 1080); o.globalCompositeOperation = 'source-over';
+  const sh = o.createLinearGradient(0, wy, 0, wy + wh); sh.addColorStop(0, 'rgba(120,200,210,0)'); sh.addColorStop(.18, 'rgba(120,200,210,.035)'); sh.addColorStop(.4, 'rgba(120,200,210,0)');
+  o.fillStyle = sh; o.fillRect(wx, wy, ww, wh);                                              // the glass's cold sheen
+};
+</script></body></html>

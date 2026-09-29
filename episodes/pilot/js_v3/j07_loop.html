@@ -1,0 +1,167 @@
+<!doctype html>
+<!--
+  J07 v3 · shot 12 · THE LOOP (8.0 s). The Script Terminal running free, and the Log Printer.
+  Three parts (URL ?part=…), all in-room textures for comp (plate p12):
+    tube   (default) SCREEN TEXTURE, opaque .mp4. The tube face is the 4:3 rect x 240–1680 × y 0–1080 with its physical
+           artefacts baked in (curvature, scanlines on the dot rows, bloom + halation, raster breathing, hum bar, burn-in,
+           dust, glare). Comp maps that rect into p12's tube quad by homography and adds only the room reflection + grade.
+           ?crt=0 gives the flat phosphor picture without the tube (if comp prefers its own tube pass).
+    panel  TRANSPARENT .mov atlas: the prediction meter (x 80–880, y 80–620) and the legend lamps FREE (x 80–430,
+           y 700–830) and HALT (x 530–880, y 700–830). window.NEEDLE / window.LAMPS give per-frame values for comp to
+           redraw the plate's own needle and light its own lamp masks instead.
+    paper  TRANSPARENT .mov: the fanfold log paper (x 560–1360, full height; the platen line at y 930), advancing as the
+           teleprinter hammers the Father's words in upper case. Comp maps it into p12's paper mask (mesh warp at the fold).
+  Timing: the Engine's words land on D06's phrase onsets (measured from vo_v2/D06.wav, placed at shot +0.3), then
+  "I am well." on the D07 choir onsets (every 0.33 s at +3.5, accelerating to every 0.07 s by +7.0). 7.4: HALT.
+  Render: node tools/web/render.mjs 'episodes/pilot/js_v3/j07_loop.html' work/pilot/js_v3/j07_loop_tube.mp4 8 24
+          (…?part=panel → j07_loop_panel.mov, …?part=paper → j07_loop_paper.mov)
+-->
+<html><head><meta charset="utf-8"><title>J07 The Loop</title></head><body>
+<script src="kit.js"></script>
+<script>
+const PART = K.param('part', 'tube'), CRTON = K.param('crt', 1) === 1;
+const out = K.stage(PART === 'tube' ? '#000' : 'transparent'), octx = out.getContext('2d');
+const W = 1920, H = 1080, F = 1 / 24, T_HALT = 7.4;
+
+// ── the Engine's words
+const WORDS = [];
+[['Good', .30], ['evening,', .50], ['my', .93], ['children.', 1.10], ['The', 1.96], ['harvest', 2.12], ['is', 2.50], ['in.', 2.68]]
+  .forEach(([w, t]) => WORDS.push({ w, t }));
+const LOOP = [];
+for (let t = 3.5; t < T_HALT; ) {
+  LOOP.push(t);
+  const iv = t < 7.0 ? .33 * Math.pow(.07 / .33, (t - 3.5) / 3.5) : .07;
+  ['I', 'am', 'well.'].forEach((w, k) => WORDS.push({ w, t: t + k * Math.min(iv, .33) * .28 }));
+  t += iv;
+}
+const textAt = t => WORDS.filter(x => x.t <= t && x.t < T_HALT).map(x => x.w).join(' ');
+
+// ── the tube picture
+const term = new K.Term();
+const src = K.canvas(W, H), sc = src.getContext('2d');
+const crt = term.crt({ dustSeed: 12 });
+const burn = K.canvas(W, H); term.text(burn.getContext('2d'), 'cold', 'SCRIPT · NIGHT', 0, 0); crt.setBurn(burn); // the tube's usual header, burned in over 41 years
+const ROWS = 12;
+// A glass teletype: output lands on the bottom row and the screen scrolls up a row at a time. Before 5 s each scroll is
+// a one-row jump with a 1 px bounce; after it the jumps slide at constant speed (0.26 s a row), and with the phosphor's persistence and the
+// camera's shutter the rows smear into bright bands.
+const LINES_AFTER = WORDS.map((_, i) => K.wrap(WORDS.slice(0, i + 1).map(x => x.w).join(' '), 48).length);
+const JUMPS = WORDS.filter((w, i) => i > 0 && LINES_AFTER[i] > LINES_AFTER[i - 1] && w.t < T_HALT).map(w => w.t);
+// What the Engine logged earlier tonight (cold, its own): the corrections locked in shot 06, the order, the free run.
+const PREFILL = ['CALIBRATION   REPLAY 211            20:51:07', '  L EAR \u00b7 DRIFT            LOCKED', '  MOLE \u00b7 L CHEEK           LOCKED',
+  '  BLINK INTERVAL           LOCKED', '  SKIN TONE                LOCKED', '  BREATH CYCLE             LOCKED', '  VOICE WARMTH             LOCKED',
+  'SCRIPT \u00b7 NIGHT 212         NO TEXT', 'FREE RUN                            20:56:31', ''];
+function view(t) {
+  const lines = PREFILL.concat(K.wrap(textAt(t), 48));
+  let offset = 0, bounce = 0;
+  const slide = K.smooth(4.6, 5.4, t);
+  for (const tj of JUMPS) {
+    if (tj > t) break;
+    const d = t - tj;
+    if (d < .26) offset += slide * (1 - d / .26); // smooth scroll: constant speed, one row in 0.26 s
+    if (d < F) bounce -= (1 - slide);
+  }
+  return { lines, offset, bounce };
+}
+function rowY(V, i) { return (ROWS - 1) - (V.lines.length - 1 - i) + V.offset; } // fractional row of line i
+function drawText(c, t) {
+  const V = view(t);
+  c.save(); c.beginPath(); c.rect(term.x0 - 10, term.y0 - 2, 48 * term.cw + 20, ROWS * term.ch + 4); c.clip();
+  for (let i = Math.max(0, V.lines.length - ROWS - 2); i < V.lines.length; i++) {
+    const r = rowY(V, i); if (r < -1 || r > ROWS) continue;
+    term.text(c, 'cold', V.lines[i], 0, 0, 1, r * term.ch + V.bounce);
+  }
+  c.restore();
+}
+function drawCursor(c, t) { // the Engine's cursor: after the last word; drawn at the present instant only
+  const V = view(t), last = V.lines[V.lines.length - 1], col = last.length + 1;
+  if (col >= 48) return;
+  const on = t >= .3 || (t % 1) < .5;
+  c.save(); c.beginPath(); c.rect(term.x0 - 10, term.y0 - 2, 48 * term.cw + 20, ROWS * term.ch + 4); c.clip();
+  if (on) term.text(c, 'cold', '\u2588', col, 0, .85, rowY(V, V.lines.length - 1) * term.ch + V.bounce);
+  c.restore();
+}
+function tubeFrame(t) {
+  sc.fillStyle = '#000'; sc.fillRect(0, 0, W, H);
+  K.persist(sc, (c, tt) => drawText(c, Math.min(tt, T_HALT - 1e-4)), t, K.PERSIST.cold, { step: .003, t0: 0 });
+  drawCursor(sc, Math.min(t, T_HALT - 1e-4));
+  if (!CRTON) { octx.clearRect(0, 0, W, H); octx.drawImage(src, 0, 0); return; }
+  const bright = 1 + .12 * K.smooth(4.8, 7.2, t);
+  const standby = t < T_HALT ? 1 : K.lerp(1, .3, K.clamp((t - T_HALT) / (2 * F)));
+  const breathe = .005 * K.smooth(4.6, 6.6, t) * (t < T_HALT ? 1 : .2) * (.8 + .2 * K.noise1(t * 7, 3));
+  crt.render(src, { gain: bright * standby, breathe, humY: K.hum(t, 6, 1.7), humDepth: .08,
+    flicker: .012 * K.noise1(t * 24, 5) + (t > 5 && t < T_HALT ? .02 * K.noise1(t * 50, 6) : 0), burnAmt: .035 });
+  octx.clearRect(0, 0, W, H); octx.drawImage(crt.canvas, 0, 0);
+}
+
+// ── the panel: meter and lamps
+const NEEDLE_EV = [[.3, .99, 'rise']];
+const needleAt = t => {
+  let v = K.needle(t, NEEDLE_EV, 0);
+  const shiver = t >= 3.5 ? (.5 * Math.PI / 180) * Math.sin(2 * Math.PI * 6 * t + 1.3 * K.noise1(t * 3, 2)) : 0;
+  return { v, shiver };
+};
+const FREE_WINS = []; for (let k = 0; k < 8; k++) FREE_WINS.push([.3 + k, .8 + k]);
+const lampsAt = t => ({ FREE: K.filament(t, FREE_WINS),
+  HALT: t >= T_HALT ? K.filament(t, [[T_HALT, 99]]) : 0 });
+window.NEEDLE = t => needleAt(t); window.LAMPS = lampsAt;
+function panelFrame(t) {
+  octx.clearRect(0, 0, W, H);
+  const N = needleAt(t);
+  K.meter(octx, 80, 80, 800, 540, N.v, { shiver: N.shiver });
+  const L = lampsAt(t);
+  K.legendLamp(octx, 80, 700, 350, 130, 'FREE', { color: 'red', level: L.FREE });
+  K.legendLamp(octx, 530, 700, 350, 130, 'HALT', { color: 'red', level: L.HALT, ghost: 'STOP' });
+}
+
+// ── the paper: an upper-case teleprinter, 10-pitch monoline, blue-black ribbon
+const PCOLS = 40, PITCH = 18, LINE = 34, PX = 600, PLATEN = 930;
+const PRE = ['NIGHT 211   21:00:00', '', 'GOOD EVENING, MY CHILDREN. THE HARVEST IS', ' IN. THE SEA IS CALM. I AM WELL. EAT SOMET', 'HING WARM BEFORE YOU SLEEP.', '', 'END NIGHT 211   21:04:12', '', '', 'NIGHT 212   FREE RUN   20:52:40', ''];
+const STREAM = 'GOOD EVENING, MY CHILDREN. THE HARVEST IS IN. ' + 'I AM WELL. '.repeat(20);
+const RATE = (46 + 11 * 10 + 7) / (T_HALT - .4); // so the hammers stop on "I AM WE" at 7.4
+const printedAt = t => Math.max(0, Math.min(Math.floor((Math.min(t, T_HALT - 1e-4) - .4) * RATE) + 1, STREAM.length));
+const paperTex = (() => { const n = K.noiseCanvas(400, 540, 77, { octaves: [[2, 1], [9, .8], [40, .5]] }); return n; })();
+const fibre = K.noiseCanvas(256, 256, 78, { octaves: [[1, 1]] });
+function strike(c, ch, x, y, k) { // one type-bar strike; density and a half-struck fault vary per character, fixed
+  if (ch === ' ') return;
+  const r = K.rng(k * 7919 + 13), dens = .72 + r() * .28, half = r() < .05 ? (r() < .5 ? 'top' : 'bot') : null;
+  const m = 3.6; x += (r() - .5) * 1.2; y += (r() - .5) * 1.4; // type-bar play
+  c.save();
+  if (half) { c.beginPath(); c.rect(x - 2, half === 'top' ? y + 3 * m : y - 5, PITCH + 4, 30); c.clip(); }
+  K.capsPath(c, ch, x + PITCH / 2, y, m, { align: 'center', facets: 6, sx: .78 });
+  c.lineWidth = 2.1; c.lineCap = 'round'; c.lineJoin = 'round'; c.strokeStyle = `rgba(30,36,51,${dens})`; c.stroke();
+  c.restore();
+  if (half) { c.save(); K.capsPath(c, ch, x + PITCH / 2, y, m, { align: 'center', facets: 6, sx: .78 }); c.lineWidth = 2; c.strokeStyle = 'rgba(30,36,51,.18)'; c.stroke(); c.restore(); }
+}
+function paperFrame(t) {
+  octx.clearRect(0, 0, W, H);
+  const n = t >= .4 ? printedAt(t) : 0, line = Math.floor(Math.max(0, n - 1) / PCOLS);
+  // line feed: the paper jumps one line in 2 frames as the carriage returns
+  const tLF = line > 0 ? .4 + (line * PCOLS) / RATE : -9, lf = K.ease.outCubic(K.clamp((t - tLF) / (2 * F)));
+  const adv = line > 0 ? line - 1 + lf : 0, scroll = adv * LINE;
+  const c = octx; c.save(); c.beginPath(); c.rect(PX - 40, 0, 800, H); c.clip();
+  // the sheet: cream, fibre, a faint fold perforation, tractor holes on both edges (every 3 lines)
+  const y0 = PLATEN - scroll - 60 * LINE;
+  c.fillStyle = K.C.paper; c.fillRect(PX - 40, 0, 800, H);
+  c.globalAlpha = .18; c.globalCompositeOperation = 'multiply'; c.drawImage(paperTex, PX - 40, -((scroll * .5) % 540) - 540, 800, 1080 * 2); c.globalCompositeOperation = 'source-over'; c.globalAlpha = 1;
+  for (let k = -80; k < 80; k++) {
+    const y = PLATEN - scroll + k * LINE * 3 + 12; if (y < -30 || y > H + 30) continue;
+    for (const hx of [PX - 18, PX + 740]) { c.fillStyle = '#0c0c0c'; c.beginPath(); c.arc(hx, y, 7, 0, 7); c.fill(); c.strokeStyle = 'rgba(120,100,70,.5)'; c.lineWidth = 1.5; c.stroke(); }
+  }
+  c.strokeStyle = 'rgba(80,70,50,.35)'; c.setLineDash([4, 5]);
+  for (const x of [PX, PX + 722]) { c.beginPath(); c.moveTo(x, 0); c.lineTo(x, H); c.stroke(); }
+  const fold = PLATEN - scroll - 22 * LINE + 8; c.beginPath(); c.moveTo(PX - 40, fold); c.lineTo(PX + 760, fold); c.stroke(); c.setLineDash([]);
+  // the type
+  PRE.forEach((L, k) => { for (let j = 0; j < L.length; j++) strike(c, L[j], PX + 20 + j * PITCH, PLATEN - 26 - (adv + PRE.length - k) * LINE, 500 + k * 50 + j); });
+  for (let i = 0; i < n; i++) {
+    const row = Math.floor(i / PCOLS), col = i % PCOLS;
+    strike(c, STREAM[i], PX + 20 + col * PITCH, PLATEN - 26 - (adv - row) * LINE, i);
+  }
+  // shadow of the platen and ribbon guide across the print line (the paper disappears into the machine below it)
+  const g = c.createLinearGradient(0, PLATEN + 4, 0, PLATEN + 60); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(0,0,0,.85)');
+  c.fillStyle = g; c.fillRect(PX - 40, PLATEN + 4, 800, 60); c.fillStyle = 'rgba(0,0,0,.9)'; c.fillRect(PX - 40, PLATEN + 60, 800, H);
+  c.restore();
+}
+
+window.renderFrame = t => { if (PART === 'panel') panelFrame(t); else if (PART === 'paper') paperFrame(t); else tubeFrame(t); };
+</script></body></html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<!--
+  The Proof (colour monitor + stroke overlay), shots 04 and 06. J16 v3 stroke overlay, J02 v3 drift flag, J18 window
+  burn, J20 hood plate (04); J03 v3 picture + legend-lamp column (06). The mesh is proof_mesh.js.
+  Picture space is 1440×1080, placed in the master at x 240–1680 (the 4:3 window).
+    ?shot=04               (default) TRANSPARENT OVERLAY .mov, 3.0 s: beads 0.20–0.45 in beam order, strokes 0.45–0.80,
+                           ghost ear (+6 px, 40 %: a patch of the picture) and the red flag at 0.80, the window burn
+                           1.0–1.6. Flat in picture space: comp bends it with the tube (k1 0.05) and adds the tube
+                           artefacts. t = 3.0 is saved as work/pilot/v3/f04_mesh_state.png (05 and 06 reuse it).
+    ?shot=06&part=tube     SCREEN TEXTURE .mp4, 7.0 s: the picture at 30 % desaturation, mesh at 35 %, ghost + flag as
+                           04 ended; 1.0 the ring-button circle; 1.1–2.2 the ghost slides home −6 px and fades; 2.3 the
+                           flag redraws cold as L EAR · LOCKED. Colour tube: curvature, rounded corners, scanlines,
+                           misconvergence growing to the corners, bloom + halation, dust, the light-pen smear at the ear.
+                           Comp adds the 8 % reflection of her head and the Wall. ?crt=0 = flat picture.
+    ?shot=04|06&part=lamps TRANSPARENT atlas .mov of the six legend lamps (x 100–700, y 60 + 150·i, 600×120 each);
+                           04 all OPEN (red); 06 switching red → cold at 2.3, 3.0, 3.6, 4.2, 4.8, 5.4.
+    ?part=plate            the hood plate PROOF · DESK 4 (still; x 560–1360, y 470–610).
+-->
+<html><head><meta charset="utf-8"><title>J16 The Proof</title></head><body>
+<script src="kit.js"></script>
+<script src="proof_mesh.js"></script>
+<script>
+const SHOT = K.param('shot', '04'), PART = K.param('part', SHOT === '06' ? 'tube' : 'overlay'), CRTON = K.param('crt', 1) === 1;
+const opaque = PART === 'tube';
+const out = K.stage(opaque ? '#000' : 'transparent'), octx = out.getContext('2d');
+const W = 1920, H = 1080, F = 1 / 24, PX = 240;
+const M = window.MESH;
+let PIC = null;
+window.ready = (async () => { PIC = await K.asset('k02'); })();
+
+// an offscreen layer in picture space: draw strokes into it, then put it with a blurred glow copy underneath
+const _gl = K.canvas(1440, 1080), _glc = _gl.getContext('2d');
+function glowLayer() { _glc.setTransform(1, 0, 0, 1, 0, 0); _glc.clearRect(0, 0, 1440, 1080);
+  return { c: _glc, put(c, blur, k) { c.save(); c.globalCompositeOperation = 'lighter'; c.filter = `blur(${blur}px)`; c.globalAlpha = .6 * k; c.drawImage(_gl, 0, 0); c.filter = 'none'; c.globalAlpha = 1; c.drawImage(_gl, 0, 0); c.restore(); } }; }
+// ── the stroke overlay (J16), drawn into picture space at (PX, 0)
+const beadT = new Map(M.order.map((i, k) => [i, .20 + .25 * k / (M.order.length - 1)]));
+const STROKES = K.beamSchedule(M.EDGES.map(([a, b]) => [M.pts[a], M.pts[b]]), .45, .80, { blank: .05, ref: 60 });
+function mesh(c, t, alpha = 1) {
+  c.save(); c.translate(PX, 0);
+  const lit = STROKES.filter(s => s.tb <= t).length;
+  const fl = lit > 200 ? 1 + .03 * Math.sin(t * 2 * Math.PI * 30) : 1;
+  const a = .6 * alpha * fl;
+  // the strokes on their own layer, then a soft phosphor glow of that layer under them
+  const L = glowLayer(); K.beamDraw(L.c, STROKES, t, { color: K.C.cold, width: 1.2, alpha: a, hooks: false, beads: false, ref: 60, head: K.C.coldCore, comp: 'lighter' });
+  L.put(c, 2.5, .9);
+  // beads: 3 px, core #DDFBFA with #5FE1E6 bloom, at 1.6× stroke brightness, lit in beam order
+  for (const [i, tb] of beadT) {
+    if (t < tb) continue;
+    const [x, y] = M.pts[i], fresh = Math.exp(-(t - tb) / .08);
+    c.globalAlpha = K.clamp(alpha * fl * (.75 + .25 * fresh)); c.globalCompositeOperation = 'lighter';
+    c.fillStyle = K.rgba(K.C.cold, .45); c.beginPath(); c.arc(x, y, 4.5 + 3 * fresh, 0, 7); c.fill();
+    c.fillStyle = K.C.coldCore; c.beginPath(); c.arc(x, y, 1.5, 0, 7); c.fill();
+  }
+  c.restore();
+}
+// ── the ghost ear: the ear doubled at +dx, alpha a (a patch of the picture, feathered)
+const earPatch = (() => { let cv = null; return () => {
+  if (cv || !PIC) return cv; const E = M.EAR, w = Math.ceil(E.w * 1.5), h = Math.ceil(E.h * 1.3);
+  cv = K.canvas(w, h); const c = cv.getContext('2d');
+  c.drawImage(PIC, E.x - w / 2, E.y - h / 2, w, h, 0, 0, w, h);
+  c.globalCompositeOperation = 'destination-in';
+  const g = c.createRadialGradient(w / 2, h / 2, Math.min(w, h) * .2, w / 2, h / 2, Math.min(w, h) * .55);
+  g.addColorStop(0, '#000'); g.addColorStop(1, 'rgba(0,0,0,0)'); c.fillStyle = g; c.save(); c.translate(w / 2, h / 2); c.scale(1, h / w); c.translate(-w / 2, -h / 2); c.fillRect(0, -h, w, h * 3); c.restore();
+  return cv; }; })();
+function ghostEar(c, dx, a) {
+  const p = earPatch(); if (!p || a <= 0) return;
+  c.save(); c.globalAlpha = a; c.drawImage(p, PX + M.EAR.x - p.width / 2 + dx, M.EAR.y - p.height / 2); c.restore();
+}
+// ── the drift flag: a red stroke box with a corner tick (drawn on in 4 frames) + its label in Stroke Hand (5 frames)
+const BOX = { x: M.EAR.x - M.EAR.w * .62, y: M.EAR.y - M.EAR.h * .58, w: M.EAR.w * 1.35, h: M.EAR.h * 1.16 };
+function boxPath(t0) {
+  const { x, y, w, h } = BOX, tick = 14;
+  return K.beamSchedule([[[x, y], [x + w, y], [x + w, y + h], [x, y + h], [x, y]], [[x - tick, y - tick], [x + 2, y + 2]]], t0, t0 + 4 * F, { blank: .02 });
+}
+function labelPath(text, t0) {
+  const m = 22 / 6, S = K.capsStrokes(text, BOX.x + BOX.w, BOX.y - 22 - 16, m, { align: 'right', facets: 4 });
+  return K.beamSchedule(S.strokes.map(s => s.pts), t0, t0 + 5 * F, { blank: .1, ref: 20 });
+}
+const FLAG_RED = { box: boxPath(.80), label: labelPath('L EAR · DRIFT +3.2 PX', .80) };
+const FLAG_COLD = { box: boxPath(2.3), label: labelPath('L EAR · LOCKED', 2.3) };
+function flag(c, t, F_, color, dx, alpha = 1, erase = null, over = false) {
+  if (alpha <= 0.001) return;
+  c.save(); c.translate(PX + dx, 0);
+  const lv = age => age < 0 ? 0 : .85 + .15 * Math.exp(-age / .1);
+  const L = glowLayer();
+  for (const [sch, w] of [[F_.box, 1.5], [F_.label, 1.6]]) K.beamDraw(L.c, sch, t, { color, width: w * 1.3, alpha, level: lv, bead: 2.2, beadAlpha: .9, comp: 'lighter', head: color });
+  if (over) { c.save(); c.globalCompositeOperation = 'source-over'; c.drawImage(_gl, 0, 0); c.restore(); }
+  L.put(c, 2, over ? .6 : 1);
+  c.restore();
+}
+// ── the window burn (J18): REPLAY 211 · 20:51:07:FF in Caption Mosaic, block 4 px, keyed white with a 1-block black edge
+function windowBurn(c, t) {
+  if (t < 1.0) return;
+  const fr = Math.min(23, 14 + Math.floor((Math.min(t, 1.6) - 1.0) / .6 * 9 + 1e-6));
+  const G = K.cmGrid('REPLAY 211 · 20:51:07:' + String(fr).padStart(2, '0'));
+  const b = 4, x = PX + 720 - G.W * b / 2, y = 1080 - 58 - G.H * b;
+  K.blocks(c, G.g, x, y, b, { colors: [[2, 'rgba(0,0,0,.92)'], [1, '#F4F4EE']], gap: .6, rad: 1 });
+}
+
+// ── shot 04: the overlay
+function overlay04(t) {
+  octx.clearRect(0, 0, W, H);
+  if (t >= .80) ghostEar(octx, 6, .40);
+  mesh(octx, t);
+  if (t >= .80) flag(octx, t, FLAG_RED, K.C.red, 1);
+  windowBurn(octx, t);
+}
+
+// ── shot 06: the Proof's face as a screen texture
+const src = K.canvas(W, H), sc = src.getContext('2d');
+const crt = new K.CRT({ rect: [PX, 0, 1440, 1080], k1: .05, corner: .08, vig: .25, scanN: 575, scanDepth: .3, conv: 1.6,
+  bloom: .22, halo: .05, exposure: 1.7, hot: 0, glare: .02, dustSeed: 6, smear: [PX + M.EAR.x + 20, M.EAR.y + 10, 90], dustAmt: .25 });
+const penTip = [M.EAR.x + 2, M.EAR.y + 8]; // where the tip touches: on the ghost ear
+function tube06(t) {
+  sc.fillStyle = '#000'; sc.fillRect(0, 0, W, H);
+  if (PIC) { sc.save(); sc.filter = 'saturate(0.7)'; sc.drawImage(PIC, PX, 0, 1440, 1080); sc.restore(); }
+  // the ghost follows the pen 1.1–2.2 (−6 px, easeInOutCubic), then fades 40 % → 0 over 0.1 s at 2.2
+  const k = K.ease.inOutCubic(K.clamp((t - 1.1) / 1.1)), ga = t < 2.2 ? .4 : .4 * (1 - K.clamp((t - 2.2) / .1));
+  ghostEar(sc, 6 - 6 * k, ga);
+  // the mesh at 35 % (its state at the end of 04)
+  mesh(sc, 3.0, .35 / .6);
+  // the flag: red until 2.3, then the cold relabel writes over it stroke by stroke
+  if (t < 2.3) flag(sc, 3.0, FLAG_RED, K.C.red, 1, 1, null, true);
+  else { flag(sc, 3.0, FLAG_RED, K.C.red, 1, K.clamp(1 - (t - 2.3) / (5 * F)), null, true); flag(sc, t, FLAG_COLD, K.C.cold, 0, 1, null, true); }
+  // 1.0: the ring button: a small circle around the tip, Stroke Hand (6 facets), cold, drawn in 3 frames
+  if (t >= 1.0) {
+    const r = 18, pts = Array.from({ length: 7 }, (_, i) => [penTip[0] + Math.cos(i / 6 * Math.PI * 2 - 1.2) * r, penTip[1] + Math.sin(i / 6 * Math.PI * 2 - 1.2) * r]);
+    const dx = -6 * k; sc.save(); sc.translate(PX + dx, 0);
+    K.beamDraw(sc, K.beamSchedule([pts], 1.0, 1.0 + 3 * F), t, { color: K.C.cold, width: 1.6, alpha: .9, bead: 1.8, comp: 'lighter', head: '#fff' });
+    sc.restore();
+  }
+  if (!CRTON) { octx.clearRect(0, 0, W, H); octx.drawImage(src, 0, 0); return; }
+  crt.render(src, { flicker: .008 * K.noise1(t * 24, 1), humY: K.hum(t, 6.4, 1), humDepth: .03, breathe: 0 });
+  octx.clearRect(0, 0, W, H); octx.drawImage(crt.canvas, 0, 0);
+}
+
+// ── the legend-lamp column (J03): each new legend engraved over the ghost of an older, paint-filled one
+const LAMPS = [['L EAR · DRIFT', 'H SYNC', 2.3], ['MOLE · L CHEEK', 'V HOLD', 3.0], ['BLINK INTERVAL', 'FRAME RATE', 3.6],
+  ['SKIN TONE', 'CHROMA', 4.2], ['BREATH CYCLE', 'CONTRAST', 4.8], ['VOICE WARMTH', 'AUDIO GAIN', 5.4]];
+const LEG_M = Math.min(...LAMPS.map(([l]) => 600 * .84 / K.capsLayout(l).width), 120 / 8.5); // one engraving size for the column
+window.LAMPSTATE = t => LAMPS.map(([, , ts]) => SHOT === '06' ? K.lampSwitch(t, ts, 'red', 'cold') : { color: 'red', level: 1 });
+function lamps(t) {
+  octx.clearRect(0, 0, W, H);
+  LAMPS.forEach(([leg, old], i) => {
+    const s = window.LAMPSTATE(t)[i];
+    K.legendLamp(octx, 100, 60 + 150 * i, 600, 120, leg, { color: s.color, level: s.level, ghost: old, module: LEG_M });
+  });
+}
+function plate() {
+  octx.clearRect(0, 0, W, H);
+  const x = 560, y = 470, w = 800, h = 140;
+  const g = octx.createLinearGradient(0, y, 0, y + h); g.addColorStop(0, '#5a6068'); g.addColorStop(1, '#3a4046');
+  octx.fillStyle = g; octx.beginPath(); octx.roundRect(x, y, w, h, 10); octx.fill();
+  const n = K.noiseCanvas(400, 70, 5, { octaves: [[1, 1], [4, .5]] }); octx.save(); octx.globalAlpha = .18; octx.globalCompositeOperation = 'overlay'; octx.drawImage(n, x, y, w, h); octx.restore();
+  for (const [sx, sy] of [[x + 26, y + h / 2], [x + w - 26, y + h / 2]]) { octx.fillStyle = '#23272b'; octx.beginPath(); octx.arc(sx, sy, 11, 0, 7); octx.fill(); octx.strokeStyle = '#6a7078'; octx.lineWidth = 2; octx.beginPath(); octx.moveTo(sx - 8, sy - 3); octx.lineTo(sx + 8, sy + 3); octx.stroke(); }
+  K.capsEngraved(octx, 'PROOF · DESK 4', x + w / 2, y + (h - 6 * 10) / 2, 10, { align: 'center', chip: ['R', '4'], seed: 3 });
+}
+window.renderFrame = t => {
+  if (PART === 'lamps') lamps(t); else if (PART === 'plate') plate(); else if (PART === 'tube') tube06(t); else overlay04(t);
+};
+</script></body></html>

@@ -1,0 +1,137 @@
+<!doctype html>
+<!--
+  J10 v3 · shots 24 ("I …", 8.0 s) and 26 ("EAT …", 9.0 s): one page, two ranges (?range=24 | 26).
+  The Script Terminal's two-layer tube and the Operator Rule: the Ministry's template and every prediction are cold,
+  anything that came through her keyboard is warm; the Engine's ghost predictions sit in their own layer after the
+  cursor at half intensity. In 26 the ghost arrives WARM: the phrase it learned only from her keystrokes.
+  Parts (?part=…), in-room textures for comp (plate p21, the 1.25× crop):
+    tube   (default) SCREEN TEXTURE, opaque .mp4: tube face = 4:3 rect x 240–1680 × y 0–1080, artefacts baked in
+           (curvature, dot-row scanlines, bloom + halation, persistence of each layer, burn-in of the template row,
+           dust, glare). Comp adds her reflection (8–10 %) and the grade. ?crt=0 = flat phosphor picture.
+    panel  TRANSPARENT .mov atlas: prediction meter x 80–880 × y 80–620; NO PREDICTION lamp x 80–600 × y 700–820;
+           SCRIPT LOCKED lamp x 80–600 × y 860–980; VIEWING jewel centred (1160, 330), r 110 (bezel r 145).
+           work/pilot/js_v3/j10_panel_NN.json has per-frame needle and lamp levels for comp to drive the plate's own.
+  Keystrokes: the frame-exact times in work/pilot/js/keys_24.json and keys_26.json (the sound is cut to them).
+  Render: node tools/web/render.mjs 'episodes/pilot/js_v3/j10_terminal.html?range=24' work/pilot/js_v3/j10_terminal_24.mp4 8 24
+-->
+<html><head><meta charset="utf-8"><title>J10 Script Terminal</title></head><body>
+<script src="kit.js"></script>
+<script>
+const RANGE = K.param('range', 24), PART = K.param('part', 'tube'), CRTON = K.param('crt', 1) === 1;
+const out = K.stage(PART === 'tube' ? '#000' : 'transparent'), octx = out.getContext('2d');
+const W = 1920, H = 1080, F = 1 / 24;
+const TEMPLATE = '\u0001 Good evening, my children.';
+
+// keystrokes (from keys_24.json / keys_26.json)
+const KEYS = RANGE === 24
+  ? [[0.5833, 'I'], [2.7917, ' '], [3, 'd'], [3.1667, 'i'], [3.2917, 'e'], [3.4583, 'd'], [3.7917, ' '], [3.9167, 'i'], [4.125, 'n'], [4.25, ' '], [4.375, 't'], [4.5417, 'h'], [4.625, 'e'], [4.7917, ' '], [4.9167, 's'], [5, 'p'], [5.125, 'r'], [5.25, 'i'], [5.375, 'n'], [5.4583, 'g'], [5.5833, '.']]
+  : [[1, 'E'], [1.2083, 'a'], [1.4583, 't'], [4, 'TAB'], [4.5, 'ENTER'], [4.7917, '['], [4.9167, 'E'], [5, 'Y'], [5.125, 'E'], [5.25, 'S'], [5.3333, ' '], [5.4583, 'C'], [5.5833, 'L'], [5.6667, 'O'], [5.7917, 'S'], [5.9167, 'E'], [6, ']']];
+window.KEYS = KEYS;
+const GHOST26 = ' something warm before you sleep.';
+const lastKeyBefore = t => { let k = -9; for (const [tk] of KEYS) if (tk <= t) k = tk; return k; };
+
+// ── state at time t
+function state(t) {
+  const S = { rows: [], cursor: null, ghost: null, inv: null };
+  if (RANGE === 24) {
+    const typed = KEYS.filter(([tk]) => tk <= t).map(([, k]) => k).join('');
+    S.rows[1] = typed; S.cursor = [typed.length, 1];
+    if (t >= .9 && t < 3.2) {
+      let g = typed.length <= 1 ? ' am well.' : 'am well.';
+      let a = .5 + .05 * Math.sin(2 * Math.PI * .5 * (t - .9));
+      if (t >= 3.0) { // at the d the prediction stutters, breaks and dies
+        const f = Math.floor((t - 3.0) / F);
+        if (f === 0) a = 0; else if (f === 1) a = .55;
+        else { g = 'am we—'; a = .5 * (1 - K.clamp((t - 3.083) / (3.2 - 3.083))) * (f % 2 ? 1 : .7); }
+      }
+      S.ghost = { text: g, col: typed.length + (g[0] === ' ' ? 0 : 1), row: 1, layer: 'cold', a };
+    }
+  } else {
+    S.rows[1] = 'I died in the spring.'; S.rows[2] = "I'm sorry I stayed so long."; S.rows[3] = 'Tomorrow, you\'ll have to talk to each other.';
+    const typed = KEYS.filter(([tk, k]) => tk <= t && tk < 4 && k.length === 1).map(([, k]) => k).join('');
+    S.rows[4] = typed; S.cursor = [typed.length, 4];
+    if (t >= 1.7) {
+      const breathe = .525 + .075 * Math.sin(2 * Math.PI * .5 * (t - 1.7));
+      S.ghost = { text: GHOST26, col: typed.length, row: 4, layer: 'warm', a: breathe, fill: t >= 4 ? K.clamp((t - 4) / .3) : 0 };
+      if (t >= 4.3) S.cursor = [typed.length + GHOST26.length, 4];   // the cursor jumps to the line's end once the fill is done
+      else if (t >= 4) S.cursor = null;
+    }
+    if (t >= 4.5) { // ENTER: row 6 (index 5), the stage direction in inverse video
+      const inv = KEYS.filter(([tk, k]) => tk <= t && tk > 4.5 && k.length === 1).map(([, k]) => k).join('');
+      S.inv = { text: '[EYES CLOSE]', n: inv.length, row: 5 }; S.cursor = [inv.length, 5];
+    }
+    if (t >= 6.6) S.cursor = null; // SCRIPT LOCKED: the cursor goes out
+  }
+  return S;
+}
+function cursorOn(t) {
+  if (t - lastKeyBefore(t) < .5) return 1;          // held solid while she types
+  return (t % 1) < .5 ? 1 : 0;                      // then blinks on the film's tick
+}
+
+// ── the tube
+const term = new K.Term();
+const src = K.canvas(W, H), sc = src.getContext('2d');
+const lay = { cold: K.canvas(W, H), warm: K.canvas(W, H) };
+const crt = term.crt({ dustSeed: 24, k1: .055 });
+const burn = K.canvas(W, H); term.text(burn.getContext('2d'), 'cold', TEMPLATE, 0, 0, .6); crt.setBurn(burn);
+function drawWarm(c, t) {
+  const S = state(t);
+  for (let r = 1; r < 6; r++) if (S.rows[r] && !(RANGE === 26 && r === 4 && t >= 4)) term.text(c, 'warm', S.rows[r], 0, r);
+  if (S.ghost && S.ghost.layer === 'warm') {
+    const G = S.ghost, n = G.text.length, full = Math.floor(n * (G.fill || 0));
+    if (RANGE === 26 && r4committed(t)) {
+      term.text(c, 'warm', S.rows[4] + G.text.slice(0, full), 0, 4);         // her line, now committed
+      term.text(c, 'warm', G.text.slice(full), S.rows[4].length + full, 4, G.a); // the rest still a ghost
+    } else term.text(c, 'warm', G.text, G.col, G.row, G.a);
+  } else if (RANGE === 26 && t >= 4) term.text(c, 'warm', S.rows[4], 0, 4);
+  if (S.inv && S.inv.n > 0) term.inverse(c, 'warm', S.inv.text, 0, S.inv.row, S.inv.n);
+}
+// the cursor is drawn at the present instant (a short fade when it blinks off), so it doesn't smear as it moves
+function drawCursor(c, t) {
+  const S = state(t); if (!S.cursor) return;
+  const on = cursorOn(t), was = cursorOn(t - F), lv = on ? 1 : (was ? .45 : 0);
+  if (lv) term.cursor(c, 'warm', S.cursor[0], S.cursor[1], .92 * lv);
+}
+const r4committed = t => RANGE === 26 && t >= 4;
+function drawCold(c, t) {
+  term.text(c, 'cold', TEMPLATE, 0, 0, .6);               // the Ministry's template: cold, dim, locked
+  const S = state(t);
+  if (S.ghost && S.ghost.layer === 'cold') term.text(c, 'cold', S.ghost.text, S.ghost.col, S.ghost.row, S.ghost.a);
+}
+function tubeFrame(t) {
+  for (const k of ['cold', 'warm']) {
+    const c = lay[k].getContext('2d'); c.fillStyle = '#000'; c.fillRect(0, 0, W, H);
+    K.persist(c, k === 'cold' ? drawCold : drawWarm, t, K.PERSIST[k], { step: k === 'cold' ? .006 : .012, t0: -2 });
+  }
+  sc.fillStyle = '#000'; sc.fillRect(0, 0, W, H);
+  sc.globalCompositeOperation = 'lighter'; sc.drawImage(lay.cold, 0, 0); sc.drawImage(lay.warm, 0, 0); sc.globalCompositeOperation = 'source-over';
+  drawCursor(sc, t);
+  if (!CRTON) { octx.clearRect(0, 0, W, H); octx.drawImage(src, 0, 0); return; }
+  crt.render(src, { breathe: .0015 * (1 + K.noise1(t * 4, 7)), flicker: .01 * K.noise1(t * 24, 3), humY: K.hum(t, 8.1, 3), humDepth: .025, burnAmt: .045 });
+  octx.clearRect(0, 0, W, H); octx.drawImage(crt.canvas, 0, 0);
+}
+
+// ── the panel: needle and lamps
+const NEEDLE_EV = RANGE === 24 ? [[.9, .99, 'rise'], [3.2, 0, 'drop']] : [[1.7, .97, 'rise']];
+const VIEW_OFFSET = RANGE === 24 ? 0 : 11;               // 26 starts 11 s after 24 (24: 8 s, 25: 3 s): the blink keeps phase
+const viewWins = []; for (let k = 0; k < 30; k++) viewWins.push([5.8 + k - VIEW_OFFSET, 6.3 + k - VIEW_OFFSET]);
+function panelState(t) {
+  const needle = K.needle(t, NEEDLE_EV, 0);
+  const nopred = RANGE === 24 ? (t >= 3.2 ? K.filament(t, [[3.2, 99]]) : 0) : K.filament(t, [[-9, 1.7]]);
+  const locked = RANGE === 26 && t >= 6.6 ? K.filament(t, [[6.6, 99]]) : 0;
+  const viewing = RANGE === 24 && t < 5.8 ? 0 : K.filament(t, viewWins.filter(([a]) => a > -1 || RANGE === 26));
+  return { needle, nopred, locked, viewing };
+}
+window.PANEL = panelState;
+function panelFrame(t) {
+  octx.clearRect(0, 0, W, H);
+  const P = panelState(t);
+  K.meter(octx, 80, 80, 800, 540, P.needle);
+  K.legendLamp(octx, 80, 700, 520, 120, 'NO PREDICTION', { color: 'red', level: P.nopred, ghost: 'NO CARRIER' });
+  K.legendLamp(octx, 80, 860, 520, 120, 'SCRIPT LOCKED', { color: 'cold', level: P.locked, ghost: 'TAPE LOCKED' });
+  K.jewelLamp(octx, 1160, 330, 110, { color: 'red', level: P.viewing });
+  K.capsEngraved(octx, 'VIEWING', 1160, 490, 7, { align: 'center', seed: 4 });
+}
+window.renderFrame = t => { if (PART === 'panel') panelFrame(t); else tubeFrame(t); };
+</script></body></html>

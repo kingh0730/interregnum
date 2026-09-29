@@ -1,0 +1,78 @@
+<!doctype html>
+<!--
+  J14 v3 (the broadcast bug) + J17 v3 (closed captions): the caption generator keyed into the 4:3 picture.
+  TRANSPARENT overlay in master coordinates (1920×1080; the picture is x 240–1680). Comp keys it into the picture
+  BEFORE broadcast(), so it is cropped, scanlined and bloomed with the signal. Render as .mov (ProRes 4444).
+    ?shot=02 (7 s) 03 (7 s) 29 (5 s) 31 (5 s) 34 (6 s; LIVE blinks out at 5.6, the Mosaic Lamp stays)
+    ?shot=46 (5.6 s: the Father segment of shot 46, shot time 4.0–9.6; captions from work/pilot/alt_subs.json)
+  Mosaic Lamp: 8 × 8 soft-cornered blocks (7 px + 1 px gap, 63 px), top-left at (304, 56). LIVE: Caption Mosaic,
+  block 4 px (cap height 28), right edge x 1616, baseline y 1024. Both white #F4F4EE keyed with a 1-block black edge,
+  the whole key at 70 %. Captions: Caption Mosaic, block 5 px, white letters on black cells, centred on y 950.
+  Caption times are the voiced onsets of work/pilot/subs_v2.json (v2 conform) mapped to each shot's in-point;
+  re-time them to the v3 takes' onsets when those exist (edit CC below).
+  The key is band-limited horizontally (a little video softness), not a crisp web overlay.
+-->
+<html><head><meta charset="utf-8"><title>J14 bug and captions</title></head><body>
+<script src="kit.js"></script>
+<script>
+const SHOT = K.param('shot', '02');
+const out = K.stage(), o = out.getContext('2d');
+const lay = K.canvas(1920, 1080), c = lay.getContext('2d');
+const bugL = K.canvas(1920, 1080), bc = bugL.getContext('2d');
+// captions, shot-relative seconds [start, end, text]
+const CC = {
+  '02': [[0.60, 2.11, 'Good evening, my children.'], [3.44, 7.00, 'The harvest is in. The sea is calm.']],
+  '03': [[0.00, 0.05, 'The harvest is in. The sea is calm.'], [1.00, 2.01, 'I am well.'], [4.52, 6.65, 'Eat something warm before you sleep.']],
+  '29': [[1.30, 2.69, 'Good evening, my children.']],
+  '31': [[0.88, 2.85, "I'm sorry I stayed so long."]],
+  '34': [],
+  '46': [[0.80, 3.06, 'Good evening, my children.'], [3.60, 4.73, 'I am well.']],
+}[SHOT] || [];
+const LIVE_OFF = SHOT === '34' ? 5.6 : Infinity;
+const WHITE = '#F4F4EE';
+// A clearer 8 × 8 lamp than the kit's (ring, a 2-block flame, a gap, the base bar); still the crudest copy.
+const MOSAIC = ['..####..', '.#.##.#.', '#..##..#', '#..##..#', '#......#', '#.####.#', '.#....#.', '..####..'];
+const lampGrid = MOSAIC.map(r => [...r].map(x => x === '#' ? 1 : 0));
+// add the keyer's 1-block black edge around the lamp
+function edged(g) {
+  const H = g.length + 2, W = g[0].length + 2, e = Array.from({ length: H }, () => new Array(W).fill(0));
+  for (let y = 0; y < g.length; y++) for (let x = 0; x < g[0].length; x++) if (g[y][x])
+    for (let dy = 0; dy <= 2; dy++) for (let dx = 0; dx <= 2; dx++) if (!e[y + dy][x + dx]) e[y + dy][x + dx] = 2;
+  for (let y = 0; y < g.length; y++) for (let x = 0; x < g[0].length; x++) if (g[y][x]) e[y + 1][x + 1] = 1;
+  return e;
+}
+const LAMP = edged(lampGrid);
+function drawKey(t) {
+  c.clearRect(0, 0, 1920, 1080);
+  // the bug: drawn opaque on its own layer, then keyed in once at 70 %
+  const b0 = c; { const c = bc; c.clearRect(0, 0, 1920, 1080);
+  K.blocks(c, LAMP, 304 - 8, 56 - 8, 8, { gap: 0, rad: 2.5, colors: [[2, '#000'], [1, '#000']] });
+  K.blocks(c, LAMP, 304 - 8, 56 - 8, 8, { gap: 1, rad: 2, colors: [[1, WHITE]] });
+  if (t < LIVE_OFF) {
+    const g = K.cmGrid('LIVE'); // grid includes a 1-block margin on every side
+    const b = 4, w = g.W * b, x = 1616 + b - w, y = 1024 - 8 * b; // letter rows 1..7, baseline at y 1024
+    K.blocks(c, g.g, x, y, b, { gap: 0, rad: 1.2, colors: [[2, '#000'], [1, '#000']] });
+    K.blocks(c, g.g, x, y, b, { gap: .7, rad: 1, colors: [[1, WHITE]] });
+  }
+  }
+  c.globalAlpha = .7; c.drawImage(bugL, 0, 0); c.globalAlpha = 1;
+  // closed captions: white letters on black cells
+  for (const [a, e, text] of CC) {
+    if (t < a || t >= e) continue;
+    const g = K.cmGrid(text.toUpperCase(), { cells: true }), b = 5;
+    const x = 960 - g.W * b / 2, y = 950 - g.H * b / 2;
+    // every character cell (spaces too) is a solid black block: one strip, as the generator paints it
+    c.fillStyle = '#000'; c.fillRect(x, y, g.W * b, g.H * b);
+    K.blocks(c, g.g, x, y, b, { gap: 1, rad: 1.5, colors: [[1, WHITE]] });
+  }
+}
+window.renderFrame = t => {
+  drawKey(t);
+  // video bandwidth: a little horizontal smear, no vertical
+  o.clearRect(0, 0, 1920, 1080);
+  o.globalCompositeOperation = 'lighter';
+  o.globalAlpha = .5; o.drawImage(lay, 0, 0);
+  o.globalAlpha = .25; o.drawImage(lay, -.8, 0); o.drawImage(lay, .8, 0);
+  o.globalAlpha = 1; o.globalCompositeOperation = 'source-over';
+};
+</script></body></html>
