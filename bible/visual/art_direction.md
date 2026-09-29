@@ -1,5 +1,13 @@
 # Art direction: three candidates
 
+> **Revision (2026-09-29): the Copy Rule is replaced by the Engraving Rule.** In the v3 reel the smooth, tonal Father
+> read as a style inconsistency, not as the machine's image. The Father is now a steel-engraved portrait in the manner
+> of a banknote or stamp: fine, perfectly regular engraved lines, stipple and guilloche, with flawless registration.
+> He shares the film's ink-on-paper medium, while the machine precision still sets him apart from the hand-cut world.
+> The full rule text is in the `k01_father_mcu` prompt of `episodes/pilot/images_v3.json`, which is authoritative over
+> any "COPY RULE" wording still quoted in the shot files. Principle: a character may differ in *technique*, never in *medium*.
+
+
 How INTERREGNUM is drawn. `production_design.md` defines what things are and `cinematography.md` how they're shot;
 this file defines the medium. There are three candidate directions, each with a ready-to-run Codex style block,
 followed by a recommendation. `test_frames.md` holds the six test prompts that let the showrunner compare them.
