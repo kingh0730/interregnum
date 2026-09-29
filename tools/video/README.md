@@ -19,6 +19,6 @@ Animates keyframes (image-to-video) for anything that has to move like drawn or 
 - **Unwanted audio:** a no-dialogue take may carry a spoken phrase. For non-dialogue shots use `--no-audio` and keep our sound design.
 - **Story effects:** a "windows switch to amber" prompt gave one gimmick take (a glowing dome) and one good take (patchy
   window-by-window spread). Generate 2 takes of any effect-driven shot; sky or colour changes are left to the grade.
-- **Recipe:** the shot's motion prompt as written, 2 drafts at 480p, the winner re-rendered at 720p with its seed.
+- **Recipe:** the shot's motion prompt as written, 2 drafts at 480p, the winner re-rendered at 720p with its seed (whether a seed reproduces across resolutions is untested).
 
 **Prompting notes (to fill in during the bake-off):** camera language, acting verbs, which negatives help, max useful duration.
