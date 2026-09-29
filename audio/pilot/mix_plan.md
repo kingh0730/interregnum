@@ -109,18 +109,22 @@ script's order), and only "I am well." from 68.0.
 |---|---|---|---|---|---|---|
 | Cold open | 0.0–19.4 | inside the television, mono | Father −17 (BCAST) | optical crackle −42 (0–5), carrier −54 | M1 −30 under the voice, −24 at the swell's top (4.8) | the Chime on the lamp; the 9.2 stutter tick at −36; the hymn caught on its A by the tape-stop |
 | Freeze | 19.0–22.0 | the stop, then Desk 4 | — | signal gap 19.4–20.0, then the Hall breathes in | — | tear 19.0; pen click 20.6; the first tick 21.0 |
-| Night desk | 22.0–54.0 | the institution's eye, then the desk | D05 −21 | Hall air −38, hum −40, roof rain −44, tubes −46 | none | relays in 06; the exhale 40.1; the brake and the held breath 45.6; the scope's A; the D3 toll 50.3 |
+| Night desk | 22.0–54.0 | the institution's eye, then the desk | D05 −21 | Hall air −34, hum −36, roof rain −40, tubes −42 | none | relays in 06; the exhale 40.1; the brake and the held breath 45.6; the scope's A; the D3 toll 50.3 |
 | No agreement | 54.0–77.0 | Desk 4 | D08 −18; PA −19 | Hall | none | the capsule's approach (J) and impact; the loop's rise to −9; digital black; the clock back at 71.0 |
-| The warm window | 77.0–109.4 | across the canal; a guest in the flat; Ida's desk | Ida −18, Nana −17 | city rain −30, canal −42; flat tone −44, window rain −40, TV −46 breathing, simmer; in Ida's shots the line spill with Nana's clock at −48 | none | the thousand-sets chime; her clock's limp; the bell of home; the lift; two clocks through one wire |
-| Sign-offs | 109.0–117.0 | Desk 4 | — | Hall −40 | M2 −24 | the hang-up (L); the scroll relay thinning; the E held and killed at 117.0 |
-| Night 212 | 117.0–149.0 | the axis and the desk | PA −19 | Hall, the Engine's load rising 8 dB | M3 from −40 to −12 | the minute clunk; the pulse; the chair (J); keys; the sag and the needle at 128.2; the red phone pushed back by her attention; the amber A at 137.7 (−20, dry, close); the commit key alone at 149.0 |
-| The Address | 149.3–180.0 | the television; the street; the Hall; Nana's TV | Father −17, −19, −15, −22 by room | carrier −54; street rain −30; Hall; flat | the fast ident's chord only; M2's A–F–G from 177.5 | no hymn; the tram's death at 158.8; the perspective cut at 168.0; the same sign-off as the cold open, sample for sample |
+| The warm window | 77.0–109.4 | across the canal; a guest in the flat; Ida's desk | Ida −18, Nana −17 | city rain −26, canal −38; flat tone −40, window rain −36, TV −42 breathing, simmer; in Ida's shots the line spill with Nana's clock at −48 | none | the thousand-sets chime; her clock's limp; the bell of home; the lift; two clocks through one wire |
+| Sign-offs | 109.0–117.0 | Desk 4 | — | Hall −36 | M2 −26 | the hang-up (L); the scroll relay thinning; the E held and killed at 117.0 |
+| Night 212 | 117.0–149.0 | the axis and the desk | PA −19 | Hall, the Engine's load rising 8 dB | M3 from −42 to −14 | the minute clunk; the pulse; the chair (J); keys; the sag and the needle at 128.2; the red phone pushed back by her attention; the amber A at 137.7 (−20, dry, close); the commit key alone at 149.0 |
+| The Address | 149.3–180.0 | the television; the street; the Hall; Nana's TV | Father −17, −19, −15, −22 by room | carrier −54; street rain −26; Hall; flat | the fast ident's chord only; M2's A–F–G from 177.5 | no hymn; the tram's death at 158.8; the perspective cut at 168.0; the same sign-off as the cold open, sample for sample |
 | Dead air | 180.0–186.0 | the dead broadcast | — | carrier −50 | — | six seconds of nothing else |
-| Come home | 186.0–217.0 | Desk 4 and the flat | Ida −18, Nana −17, D26 −17 | Hall still −44, roof rain −42; line spill with her clock at −46; flat without the TV | M4 from 210.0, piano −24 under the voice | ON AIR and the wind-down; the red phone at −12, close; the bell of home in the Hall (J); her clock the only clock; the cord; the D on "warm"; the cap, the pop, the laugh |
-| Empty hall | 217.0–223.0 | the institution again | — | Hall still −40, tubes on standby −52 | M4 B♭ −30 | the door; the red phone for no one |
-| First light | 223.0–233.0 | the neighbour across the canal | walla −44 rising to −30; W01, W02 −24 | no rain: dawn air −46, drips −40, canal −46 | M4 −20 rising to −14 at 231.0 | the rain's absence on the cut; windows opening; the two lines |
-| Titles | 233.0–242.0 | the film's own voice | — | everything fades 233–236 | M4 −28, the last chord −22 | the Chime B♭4, G4 and the empty 234.5; the letterpress at 238.0; silence from 241.6 |
+| Come home | 186.0–217.0 | Desk 4 and the flat | Ida −18, Nana −17, D26 −17 | Hall still −40, roof rain −38; line spill with her clock at −46; flat without the TV | M4 from 210.0, piano −26 under the voice | ON AIR and the wind-down; the red phone at −12, close; the bell of home in the Hall (J); her clock the only clock; the cord; the D on "warm"; the cap, the pop, the laugh |
+| Empty hall | 217.0–223.0 | the institution again | — | Hall still −36, tubes on standby −48 | M4 B♭ −32 | the door; the red phone for no one |
+| First light | 223.0–233.0 | the neighbour across the canal | walla −40 rising to −26; W01, W02 −24 | no rain: dawn air −42, drips −36, canal −42 | M4 −22 rising to −16 at 231.0 | the rain's absence on the cut; windows opening; the two lines |
+| Titles | 233.0–242.0 | the film's own voice | — | everything fades 233–236 | M4 −30, the last chord −24 | the Chime B♭4, G4 and the empty 234.5; the letterpress at 238.0; silence from 241.6 |
 | Alt tail | 242.0–252.0 | the dark desk, then the television | Father −17 | the Engine's A is back | M1 from 243.8 | the drum click; the old key, whole |
+
+**v4 rebalance (2026-09-30):** beds +4 dB and the living's music (M2, M3, M4) −2 dB against the first table, so the loudness range lands inside 12–16 LU for streaming and laptop playback; the broadcast (carrier, M1) and the dialogue targets, the optical crackle and the clocks are unchanged; the walla murmur moves with the beds. Bed `lvl` values in `sfx.json` are the pre-rebalance numbers; the mix adds 4 dB.
+
+**Integrated target (v4, 2026-09-30): about −18 LUFS (−17.5 to −18.5), not −16.** Dynamics over loudness: the one master gain is the largest that keeps the limiter at 2 dB or less everywhere except the last 0.5 s before HALT and before the commit, and integrated loudness lands where that puts it (v4: −17.7 LUFS). YouTube turns loud masters down but never turns quiet ones up, and limiting underplayed dialogue destroys the performance. Dialogue stays on the table's targets; true peak ≤ −1.0 dBTP and LRA ≤ 16 LU still hold.
 
 ## 7. J and L cuts
 
@@ -175,7 +179,7 @@ Hard cuts, on purpose only: 19.0 (tape-stop), 70.4 (HALT), 117.0 (the E killed b
 
 ## 9. QA before handoff
 
-- Loudness: I −16 ±0.5 LUFS, true peak ≤ −1.0 dBTP, LRA 12–16 LU (`ebur128`). Report bus peaks.
+- Loudness: I about −18 LUFS as set by the limiter rule in §6 (was −16 ±0.5), true peak ≤ −1.0 dBTP, LRA 12–16 LU (`ebur128`). Report bus peaks.
 - Dialogue: every D line's short-term loudness inside its target ±2 LU; D26 no quieter than D25.
 - Sync: each voiced onset within 40 ms of `dialogue.json`; the Chime's notes on their frames; D20's pause straddles
   168.0; the D of M4 at 214.4 ±0.1.

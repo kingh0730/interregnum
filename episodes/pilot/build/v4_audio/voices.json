@@ -1,0 +1,32 @@
+{
+ "NANA": {
+  "voice_id": "dg27efO2fewIan95FhbU",
+  "from": "NANA_r1_2.mp3",
+  "metrics": {
+   "f0": 155.3,
+   "f0_spread_st": 6.43,
+   "jitter_pct": 0.92,
+   "level_spread_db": 11.6
+  }
+ },
+ "IDA": {
+  "voice_id": "Xb6xiGvquVRUH7EO8akS",
+  "from": "IDA_r0_2.mp3",
+  "metrics": {
+   "f0": 183.9,
+   "f0_spread_st": 2.86,
+   "jitter_pct": 1.11,
+   "level_spread_db": 13.3
+  }
+ },
+ "FATHER": {
+  "voice_id": "5BfHp1WCEBtZ9YKdEus7",
+  "from": "FATHER_r1_1.mp3",
+  "metrics": {
+   "f0": 121.2,
+   "f0_spread_st": 8.57,
+   "jitter_pct": 0.81,
+   "level_spread_db": 8.0
+  }
+ }
+}

@@ -1,0 +1,1074 @@
+{
+ "T01": {
+  "speaker": "FATHER",
+  "voice_id": "5BfHp1WCEBtZ9YKdEus7",
+  "settings": {
+   "stability": 0.85,
+   "similarity_boost": 0.9,
+   "speed": 0.92
+  },
+  "best": {
+   "file": "T01_4103.mp3",
+   "seed": 4103,
+   "text_match": 1.0,
+   "transcript": "Good evening, my children.\nThe harvest is in.\nThe sea is calm.\nI am well.\nEat something warm before you sleep.",
+   "f0": 128.5,
+   "f0_spread_st": 17.84,
+   "jitter_pct": 1.51,
+   "level_spread_db": 8.5,
+   "score": -20.39
+  },
+  "candidates": [
+   {
+    "file": "T01_4103.mp3",
+    "seed": 4103,
+    "text_match": 1.0,
+    "transcript": "Good evening, my children.\nThe harvest is in.\nThe sea is calm.\nI am well.\nEat something warm before you sleep.",
+    "f0": 128.5,
+    "f0_spread_st": 17.84,
+    "jitter_pct": 1.51,
+    "level_spread_db": 8.5,
+    "score": -20.39
+   },
+   {
+    "file": "T01_4101.mp3",
+    "seed": 4101,
+    "text_match": 1.0,
+    "transcript": "Good evening, my children.\nThe harvest is in.\nThe sea is calm.\nI am well.\nEat something warm before you sleep.",
+    "f0": 148.1,
+    "f0_spread_st": 18.1,
+    "jitter_pct": 1.4,
+    "level_spread_db": 8.1,
+    "score": -20.53
+   },
+   {
+    "file": "T01_4102.mp3",
+    "seed": 4102,
+    "text_match": 1.0,
+    "transcript": "Good evening, my children.\nThe harvest is in.\nThe sea is calm.\nI am well.\nEat something warm before you sleep.",
+    "f0": 138.5,
+    "f0_spread_st": 18.81,
+    "jitter_pct": 1.47,
+    "level_spread_db": 9.0,
+    "score": -21.51
+   }
+  ]
+ },
+ "T02": {
+  "speaker": "FATHER",
+  "voice_id": "5BfHp1WCEBtZ9YKdEus7",
+  "settings": {
+   "stability": 0.85,
+   "similarity_boost": 0.9,
+   "speed": 0.92
+  },
+  "best": {
+   "file": "T02_4102.mp3",
+   "seed": 4102,
+   "text_match": 1.0,
+   "transcript": "Sleep safely. I am watching over you.",
+   "f0": 121.2,
+   "f0_spread_st": 13.09,
+   "jitter_pct": 0.8,
+   "level_spread_db": 13.7,
+   "score": -17.2
+  },
+  "candidates": [
+   {
+    "file": "T02_4102.mp3",
+    "seed": 4102,
+    "text_match": 1.0,
+    "transcript": "Sleep safely. I am watching over you.",
+    "f0": 121.2,
+    "f0_spread_st": 13.09,
+    "jitter_pct": 0.8,
+    "level_spread_db": 13.7,
+    "score": -17.2
+   },
+   {
+    "file": "T02_4103.mp3",
+    "seed": 4103,
+    "text_match": 1.0,
+    "transcript": "Sleep safely. I am watching over you.",
+    "f0": 121.2,
+    "f0_spread_st": 15.51,
+    "jitter_pct": 1.13,
+    "level_spread_db": 14.2,
+    "score": -19.77
+   },
+   {
+    "file": "T02_4101.mp3",
+    "seed": 4101,
+    "text_match": 1.0,
+    "transcript": "Sleep safely. I am watching over you.",
+    "f0": 124.0,
+    "f0_spread_st": 17.7,
+    "jitter_pct": 0.8,
+    "level_spread_db": 12.5,
+    "score": -21.45
+   }
+  ]
+ },
+ "T03": {
+  "speaker": "FATHER",
+  "voice_id": "5BfHp1WCEBtZ9YKdEus7",
+  "settings": {
+   "stability": 0.85,
+   "similarity_boost": 0.9,
+   "speed": 0.92
+  },
+  "best": {
+   "file": "T03_4102.mp3",
+   "seed": 4102,
+   "text_match": 1.0,
+   "transcript": "I died in the spring.\nI'm sorry I stayed so long.\nTomorrow, you'll have to talk to each other.",
+   "f0": 118.1,
+   "f0_spread_st": 9.54,
+   "jitter_pct": 0.97,
+   "level_spread_db": 8.7,
+   "score": -12.15
+  },
+  "candidates": [
+   {
+    "file": "T03_4102.mp3",
+    "seed": 4102,
+    "text_match": 1.0,
+    "transcript": "I died in the spring.\nI'm sorry I stayed so long.\nTomorrow, you'll have to talk to each other.",
+    "f0": 118.1,
+    "f0_spread_st": 9.54,
+    "jitter_pct": 0.97,
+    "level_spread_db": 8.7,
+    "score": -12.15
+   },
+   {
+    "file": "T03_4103.mp3",
+    "seed": 4103,
+    "text_match": 1.0,
+    "transcript": "I died in the spring.\nI'm sorry I stayed so long.\nTomorrow you'll have to talk to each other.",
+    "f0": 113.5,
+    "f0_spread_st": 10.37,
+    "jitter_pct": 1.25,
+    "level_spread_db": 9.1,
+    "score": -13.1
+   },
+   {
+    "file": "T03_4101.mp3",
+    "seed": 4101,
+    "text_match": 1.0,
+    "transcript": "I died in the spring.\nI'm sorry I stayed so long.\nTomorrow you'll have to talk to each other.",
+    "f0": 119.4,
+    "f0_spread_st": 11.46,
+    "jitter_pct": 1.27,
+    "level_spread_db": 9.7,
+    "score": -14.37
+   }
+  ]
+ },
+ "T04": {
+  "speaker": "IDA",
+  "voice_id": "Xb6xiGvquVRUH7EO8akS",
+  "settings": {
+   "stability": 0.65,
+   "similarity_boost": 0.8,
+   "speed": 0.95
+  },
+  "best": {
+   "file": "T04_2701.mp3",
+   "seed": 2701,
+   "text_match": 1.0,
+   "transcript": "Hold still.",
+   "score": -128.7
+  },
+  "candidates": [
+   {
+    "file": "T04_2701.mp3",
+    "seed": 2701,
+    "text_match": 1.0,
+    "transcript": "Hold still.",
+    "score": -128.7
+   },
+   {
+    "file": "T04_2702.mp3",
+    "seed": 2702,
+    "text_match": 1.0,
+    "transcript": "Hold still.",
+    "score": -128.7
+   },
+   {
+    "file": "T04_2703.mp3",
+    "seed": 2703,
+    "text_match": 1.0,
+    "transcript": "Hold still.",
+    "score": -128.7
+   }
+  ]
+ },
+ "T05": {
+  "speaker": "IDA",
+  "voice_id": "Xb6xiGvquVRUH7EO8akS",
+  "settings": {
+   "stability": 0.65,
+   "similarity_boost": 0.8,
+   "speed": 0.95
+  },
+  "best": {
+   "file": "T05_2702.mp3",
+   "seed": 2702,
+   "text_match": 1.0,
+   "transcript": "No, you're not.",
+   "f0": 209.2,
+   "f0_spread_st": 5.26,
+   "jitter_pct": 1.3,
+   "level_spread_db": 17.0,
+   "score": -10.36
+  },
+  "candidates": [
+   {
+    "file": "T05_2702.mp3",
+    "seed": 2702,
+    "text_match": 1.0,
+    "transcript": "No, you're not.",
+    "f0": 209.2,
+    "f0_spread_st": 5.26,
+    "jitter_pct": 1.3,
+    "level_spread_db": 17.0,
+    "score": -10.36
+   },
+   {
+    "file": "T05_2701.mp3",
+    "seed": 2701,
+    "text_match": 1.0,
+    "transcript": "No, you're not.",
+    "score": -128.7
+   },
+   {
+    "file": "T05_2703.mp3",
+    "seed": 2703,
+    "text_match": 1.0,
+    "transcript": "No, you're not.",
+    "score": -128.7
+   }
+  ]
+ },
+ "T06": {
+  "speaker": "IDA",
+  "voice_id": "Xb6xiGvquVRUH7EO8akS",
+  "settings": {
+   "stability": 0.65,
+   "similarity_boost": 0.8,
+   "speed": 0.95
+  },
+  "best": {
+   "file": "T06_2701.mp3",
+   "seed": 2701,
+   "text_match": 1.0,
+   "transcript": "Nana, don't wait up tonight.\nWhy do you still watch him?",
+   "f0": 202.5,
+   "f0_spread_st": 5.05,
+   "jitter_pct": 1.23,
+   "level_spread_db": 14.0,
+   "score": -9.25
+  },
+  "candidates": [
+   {
+    "file": "T06_2701.mp3",
+    "seed": 2701,
+    "text_match": 1.0,
+    "transcript": "Nana, don't wait up tonight.\nWhy do you still watch him?",
+    "f0": 202.5,
+    "f0_spread_st": 5.05,
+    "jitter_pct": 1.23,
+    "level_spread_db": 14.0,
+    "score": -9.25
+   },
+   {
+    "file": "T06_2703.mp3",
+    "seed": 2703,
+    "text_match": 1.0,
+    "transcript": "Nana, don't wait up tonight. Why do you still watch him?",
+    "f0": 213.3,
+    "f0_spread_st": 4.77,
+    "jitter_pct": 1.22,
+    "level_spread_db": 15.0,
+    "score": -9.27
+   },
+   {
+    "file": "T06_2702.mp3",
+    "seed": 2702,
+    "text_match": 0.87,
+    "transcript": "No, no. Don't wait up tonight. Why do you still watch him?",
+    "f0": 205.1,
+    "f0_spread_st": 4.52,
+    "jitter_pct": 1.2,
+    "level_spread_db": 16.0,
+    "score": -9.32
+   }
+  ]
+ },
+ "T07": {
+  "speaker": "IDA",
+  "voice_id": "Xb6xiGvquVRUH7EO8akS",
+  "settings": {
+   "stability": 0.65,
+   "similarity_boost": 0.8,
+   "speed": 0.95
+  },
+  "best": {
+   "file": "T07_2702.mp3",
+   "seed": 2702,
+   "text_match": 1.0,
+   "transcript": "Nana, I...\nHow long?",
+   "f0": 210.5,
+   "f0_spread_st": 7.56,
+   "jitter_pct": 1.23,
+   "level_spread_db": 17.7,
+   "score": -12.87
+  },
+  "candidates": [
+   {
+    "file": "T07_2702.mp3",
+    "seed": 2702,
+    "text_match": 1.0,
+    "transcript": "Nana, I...\nHow long?",
+    "f0": 210.5,
+    "f0_spread_st": 7.56,
+    "jitter_pct": 1.23,
+    "level_spread_db": 17.7,
+    "score": -12.87
+   },
+   {
+    "file": "T07_2701.mp3",
+    "seed": 2701,
+    "text_match": 1.0,
+    "transcript": "Nana, I...how long?",
+    "f0": 213.3,
+    "f0_spread_st": 10.64,
+    "jitter_pct": 1.2,
+    "level_spread_db": 19.0,
+    "score": -16.34
+   },
+   {
+    "file": "T07_2703.mp3",
+    "seed": 2703,
+    "text_match": 1.0,
+    "transcript": "Nana, I...how long?",
+    "f0": 216.2,
+    "f0_spread_st": 10.81,
+    "jitter_pct": 1.18,
+    "level_spread_db": 19.7,
+    "score": -16.72
+   }
+  ]
+ },
+ "T08": {
+  "speaker": "NANA",
+  "voice_id": "dg27efO2fewIan95FhbU",
+  "settings": {
+   "stability": 0.6,
+   "similarity_boost": 0.85,
+   "speed": 0.92
+  },
+  "best": {
+   "file": "T08_8204.mp3",
+   "seed": 8204,
+   "text_match": 1.0,
+   "transcript": "I always wait up.\nHe's on soon.\nFor the ending.\nEat something warm, love.",
+   "f0": 170.2,
+   "f0_spread_st": 11.86,
+   "jitter_pct": 1.25,
+   "level_spread_db": 12.9,
+   "score": -15.73
+  },
+  "candidates": [
+   {
+    "file": "T08_8204.mp3",
+    "seed": 8204,
+    "text_match": 1.0,
+    "transcript": "I always wait up.\nHe's on soon.\nFor the ending.\nEat something warm, love.",
+    "f0": 170.2,
+    "f0_spread_st": 11.86,
+    "jitter_pct": 1.25,
+    "level_spread_db": 12.9,
+    "score": -15.73
+   },
+   {
+    "file": "T08_8203.mp3",
+    "seed": 8203,
+    "text_match": 1.0,
+    "transcript": "I always wait up.\nHe's on soon for the ending.\nEat something warm, love.",
+    "f0": 166.7,
+    "f0_spread_st": 12.45,
+    "jitter_pct": 1.14,
+    "level_spread_db": 11.7,
+    "score": -15.96
+   },
+   {
+    "file": "T08_8202.mp3",
+    "seed": 8202,
+    "text_match": 1.0,
+    "transcript": "I always wait up.\nHe's on soon.\nFor the ending.\nEat something warm, love.",
+    "f0": 160.0,
+    "f0_spread_st": 17.29,
+    "jitter_pct": 1.32,
+    "level_spread_db": 13.5,
+    "score": -21.34
+   }
+  ]
+ },
+ "T09": {
+  "speaker": "NANA",
+  "voice_id": "dg27efO2fewIan95FhbU",
+  "settings": {
+   "stability": 0.6,
+   "similarity_boost": 0.85,
+   "speed": 0.92
+  },
+  "best": {
+   "file": "T09_8203.mp3",
+   "seed": 8203,
+   "text_match": 1.0,
+   "transcript": "I know, love.\nSince he started telling me to eat, come home. The soup's still warm.",
+   "f0": 177.8,
+   "f0_spread_st": 10.23,
+   "jitter_pct": 1.32,
+   "level_spread_db": 13.7,
+   "score": -14.34
+  },
+  "candidates": [
+   {
+    "file": "T09_8203.mp3",
+    "seed": 8203,
+    "text_match": 1.0,
+    "transcript": "I know, love.\nSince he started telling me to eat, come home. The soup's still warm.",
+    "f0": 177.8,
+    "f0_spread_st": 10.23,
+    "jitter_pct": 1.32,
+    "level_spread_db": 13.7,
+    "score": -14.34
+   },
+   {
+    "file": "T09_8202.mp3",
+    "seed": 8202,
+    "text_match": 0.97,
+    "transcript": "I know, love.\nSigh...\nSince he started telling me to eat...\nCome home.\nThe soup's still warm.",
+    "f0": 183.9,
+    "f0_spread_st": 10.31,
+    "jitter_pct": 1.26,
+    "level_spread_db": 16.3,
+    "score": -15.2
+   },
+   {
+    "file": "T09_8204.mp3",
+    "seed": 8204,
+    "text_match": 1.0,
+    "transcript": "I know, love.\nSince he started telling me to eat,\ncome home.\nThe soup's still warm.",
+    "f0": 180.8,
+    "f0_spread_st": 15.3,
+    "jitter_pct": 1.22,
+    "level_spread_db": 14.5,
+    "score": -19.65
+   }
+  ]
+ },
+ "T10": {
+  "speaker": "PA",
+  "voice_id": "EXAVITQu4vr4xnSDxMaL",
+  "settings": {
+   "stability": 0.9,
+   "similarity_boost": 0.85,
+   "speed": 0.9
+  },
+  "best": {
+   "file": "T10_1003.mp3",
+   "seed": 1003,
+   "text_match": 1.0,
+   "transcript": "four minutes, one minute, ten seconds.",
+   "f0": 238.8,
+   "f0_spread_st": 8.68,
+   "jitter_pct": 1.56,
+   "level_spread_db": 11.5,
+   "score": -12.13
+  },
+  "candidates": [
+   {
+    "file": "T10_1003.mp3",
+    "seed": 1003,
+    "text_match": 1.0,
+    "transcript": "four minutes, one minute, ten seconds.",
+    "f0": 238.8,
+    "f0_spread_st": 8.68,
+    "jitter_pct": 1.56,
+    "level_spread_db": 11.5,
+    "score": -12.13
+   },
+   {
+    "file": "T10_1001.mp3",
+    "seed": 1001,
+    "text_match": 1.0,
+    "transcript": "Four minutes.\nOne minute.\nTen seconds.",
+    "f0": 235.3,
+    "f0_spread_st": 8.84,
+    "jitter_pct": 1.56,
+    "level_spread_db": 12.5,
+    "score": -12.59
+   },
+   {
+    "file": "T10_1002.mp3",
+    "seed": 1002,
+    "text_match": 1.0,
+    "transcript": "four minutes, one minute, ten seconds.",
+    "f0": 235.3,
+    "f0_spread_st": 8.78,
+    "jitter_pct": 1.61,
+    "level_spread_db": 12.9,
+    "score": -12.65
+   }
+  ]
+ },
+ "W03": {
+  "speaker": "CITY",
+  "voice_id": "cjVigY5qzO86Huf0OWal",
+  "settings": {
+   "stability": 0.55,
+   "similarity_boost": 0.75,
+   "speed": 1.0
+  },
+  "best": {
+   "file": "W03_3002.mp3",
+   "seed": 3002,
+   "text_match": 1.0,
+   "transcript": "Are you awake?\nDid you see it?",
+   "f0": 147.5,
+   "f0_spread_st": 11.88,
+   "jitter_pct": 3.89,
+   "level_spread_db": 6.0,
+   "score": -13.68
+  },
+  "candidates": [
+   {
+    "file": "W03_3002.mp3",
+    "seed": 3002,
+    "text_match": 1.0,
+    "transcript": "Are you awake?\nDid you see it?",
+    "f0": 147.5,
+    "f0_spread_st": 11.88,
+    "jitter_pct": 3.89,
+    "level_spread_db": 6.0,
+    "score": -13.68
+   },
+   {
+    "file": "W03_3003.mp3",
+    "seed": 3003,
+    "text_match": 1.0,
+    "transcript": "Are you awake?\nDid you see it?",
+    "f0": 160.0,
+    "f0_spread_st": 12.36,
+    "jitter_pct": 3.17,
+    "level_spread_db": 5.0,
+    "score": -13.86
+   },
+   {
+    "file": "W03_3001.mp3",
+    "seed": 3001,
+    "text_match": 1.0,
+    "transcript": "Are you awake?\nDid you see it?",
+    "f0": 153.1,
+    "f0_spread_st": 13.15,
+    "jitter_pct": 3.12,
+    "level_spread_db": 4.5,
+    "score": -14.5
+   }
+  ]
+ },
+ "W04": {
+  "speaker": "CITY",
+  "voice_id": "iP95p4xoKVk53GoZ742B",
+  "settings": {
+   "stability": 0.55,
+   "similarity_boost": 0.75,
+   "speed": 1.0
+  },
+  "best": {
+   "file": "W04_3001.mp3",
+   "seed": 3001,
+   "text_match": 1.0,
+   "transcript": "Come over. I'll put the kettle on.",
+   "f0": 200.0,
+   "f0_spread_st": 4.61,
+   "jitter_pct": 1.27,
+   "level_spread_db": 16.9,
+   "score": -9.68
+  },
+  "candidates": [
+   {
+    "file": "W04_3001.mp3",
+    "seed": 3001,
+    "text_match": 1.0,
+    "transcript": "Come over. I'll put the kettle on.",
+    "f0": 200.0,
+    "f0_spread_st": 4.61,
+    "jitter_pct": 1.27,
+    "level_spread_db": 16.9,
+    "score": -9.68
+   },
+   {
+    "file": "W04_3002.mp3",
+    "seed": 3002,
+    "text_match": 1.0,
+    "transcript": "Come over. I'll put the kettle on.",
+    "f0": 200.0,
+    "f0_spread_st": 7.88,
+    "jitter_pct": 1.27,
+    "level_spread_db": 14.7,
+    "score": -12.29
+   },
+   {
+    "file": "W04_3003.mp3",
+    "seed": 3003,
+    "text_match": 1.0,
+    "transcript": "Come over.\nI'll put the kettle on.",
+    "f0": 195.1,
+    "f0_spread_st": 8.15,
+    "jitter_pct": 1.12,
+    "level_spread_db": 18.2,
+    "score": -13.61
+   }
+  ]
+ },
+ "W05": {
+  "speaker": "CITY",
+  "voice_id": "bIHbv24MWmeRgasZH58o",
+  "settings": {
+   "stability": 0.55,
+   "similarity_boost": 0.75,
+   "speed": 1.0
+  },
+  "best": {
+   "file": "W05_3002.mp3",
+   "seed": 3002,
+   "text_match": 1.0,
+   "transcript": "Have you eaten?\nCome up, then.",
+   "f0": 164.9,
+   "f0_spread_st": 16.07,
+   "jitter_pct": 2.13,
+   "level_spread_db": 14.4,
+   "score": -20.39
+  },
+  "candidates": [
+   {
+    "file": "W05_3002.mp3",
+    "seed": 3002,
+    "text_match": 1.0,
+    "transcript": "Have you eaten?\nCome up, then.",
+    "f0": 164.9,
+    "f0_spread_st": 16.07,
+    "jitter_pct": 2.13,
+    "level_spread_db": 14.4,
+    "score": -20.39
+   },
+   {
+    "file": "W05_3001.mp3",
+    "seed": 3001,
+    "text_match": 1.0,
+    "transcript": "Have you eaten?\nCome up then.",
+    "f0": 111.9,
+    "f0_spread_st": 16.66,
+    "jitter_pct": 1.67,
+    "level_spread_db": 16.4,
+    "score": -21.58
+   },
+   {
+    "file": "W05_3003.mp3",
+    "seed": 3003,
+    "text_match": 1.0,
+    "transcript": "Have you eaten? Come up then.",
+    "f0": 170.2,
+    "f0_spread_st": 17.91,
+    "jitter_pct": 1.91,
+    "level_spread_db": 17.4,
+    "score": -23.13
+   }
+  ]
+ },
+ "W06": {
+  "speaker": "CITY",
+  "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+  "settings": {
+   "stability": 0.55,
+   "similarity_boost": 0.75,
+   "speed": 1.0
+  },
+  "best": {
+   "file": "W06_3002.mp3",
+   "seed": 3002,
+   "text_match": 1.0,
+   "transcript": "Open the window. Listen.",
+   "f0": 142.9,
+   "f0_spread_st": 10.21,
+   "jitter_pct": 1.72,
+   "level_spread_db": 12.3,
+   "score": -13.9
+  },
+  "candidates": [
+   {
+    "file": "W06_3002.mp3",
+    "seed": 3002,
+    "text_match": 1.0,
+    "transcript": "Open the window. Listen.",
+    "f0": 142.9,
+    "f0_spread_st": 10.21,
+    "jitter_pct": 1.72,
+    "level_spread_db": 12.3,
+    "score": -13.9
+   },
+   {
+    "file": "W06_3001.mp3",
+    "seed": 3001,
+    "text_match": 1.0,
+    "transcript": "Open the window.\nListen.",
+    "f0": 149.5,
+    "f0_spread_st": 11.82,
+    "jitter_pct": 1.19,
+    "level_spread_db": 10.5,
+    "score": -14.97
+   },
+   {
+    "file": "W06_3003.mp3",
+    "seed": 3003,
+    "text_match": 1.0,
+    "transcript": "Open the window.\nListen.",
+    "f0": 149.5,
+    "f0_spread_st": 19.49,
+    "jitter_pct": 1.45,
+    "level_spread_db": 10.3,
+    "score": -22.58
+   }
+  ]
+ },
+ "W07": {
+  "speaker": "CITY",
+  "voice_id": "FGY2WhTYpPnrIDTdsKH5",
+  "settings": {
+   "stability": 0.55,
+   "similarity_boost": 0.75,
+   "speed": 1.0
+  },
+  "best": {
+   "file": "W07_3002.mp3",
+   "seed": 3002,
+   "text_match": 1.0,
+   "transcript": "Are you there?\nYes, I'm here.",
+   "f0": 213.3,
+   "f0_spread_st": 6.92,
+   "jitter_pct": 1.4,
+   "level_spread_db": 12.0,
+   "score": -10.52
+  },
+  "candidates": [
+   {
+    "file": "W07_3002.mp3",
+    "seed": 3002,
+    "text_match": 1.0,
+    "transcript": "Are you there?\nYes, I'm here.",
+    "f0": 213.3,
+    "f0_spread_st": 6.92,
+    "jitter_pct": 1.4,
+    "level_spread_db": 12.0,
+    "score": -10.52
+   },
+   {
+    "file": "W07_3003.mp3",
+    "seed": 3003,
+    "text_match": 1.0,
+    "transcript": "Are you there?\nYes, I'm here.",
+    "f0": 200.0,
+    "f0_spread_st": 7.46,
+    "jitter_pct": 1.35,
+    "level_spread_db": 10.8,
+    "score": -10.7
+   },
+   {
+    "file": "W07_3001.mp3",
+    "seed": 3001,
+    "text_match": 1.0,
+    "transcript": "Are you there?\nYes, I'm here.",
+    "f0": 210.5,
+    "f0_spread_st": 7.39,
+    "jitter_pct": 1.33,
+    "level_spread_db": 12.2,
+    "score": -11.05
+   }
+  ]
+ },
+ "W08": {
+  "speaker": "CITY",
+  "voice_id": "9BWtsMINqrJLrRacOk9x",
+  "settings": {
+   "stability": 0.55,
+   "similarity_boost": 0.75,
+   "speed": 1.0
+  },
+  "best": {
+   "file": "W08_3001.mp3",
+   "seed": 3001,
+   "text_match": 1.0,
+   "transcript": "Call your mother.\nLet's talk.",
+   "f0": 233.6,
+   "f0_spread_st": 12.84,
+   "jitter_pct": 1.67,
+   "level_spread_db": 15.1,
+   "score": -17.37
+  },
+  "candidates": [
+   {
+    "file": "W08_3001.mp3",
+    "seed": 3001,
+    "text_match": 1.0,
+    "transcript": "Call your mother.\nLet's talk.",
+    "f0": 233.6,
+    "f0_spread_st": 12.84,
+    "jitter_pct": 1.67,
+    "level_spread_db": 15.1,
+    "score": -17.37
+   },
+   {
+    "file": "W08_3002.mp3",
+    "seed": 3002,
+    "text_match": 1.0,
+    "transcript": "Call your mother.\nLet's talk.",
+    "f0": 228.6,
+    "f0_spread_st": 13.04,
+    "jitter_pct": 1.69,
+    "level_spread_db": 15.0,
+    "score": -17.54
+   },
+   {
+    "file": "W08_3003.mp3",
+    "seed": 3003,
+    "text_match": 1.0,
+    "transcript": "Call your mother.\nLet's talk.",
+    "f0": 225.4,
+    "f0_spread_st": 13.43,
+    "jitter_pct": 1.64,
+    "level_spread_db": 16.1,
+    "score": -18.26
+   }
+  ]
+ },
+ "W09": {
+  "speaker": "CITY",
+  "voice_id": "cjVigY5qzO86Huf0OWal",
+  "settings": {
+   "stability": 0.55,
+   "similarity_boost": 0.75,
+   "speed": 1.0
+  },
+  "best": {
+   "file": "W09_3001.mp3",
+   "seed": 3001,
+   "text_match": 1.0,
+   "transcript": "I can't sleep. Me neither.",
+   "f0": 126.0,
+   "f0_spread_st": 8.55,
+   "jitter_pct": 1.03,
+   "level_spread_db": 10.6,
+   "score": -11.73
+  },
+  "candidates": [
+   {
+    "file": "W09_3001.mp3",
+    "seed": 3001,
+    "text_match": 1.0,
+    "transcript": "I can't sleep. Me neither.",
+    "f0": 126.0,
+    "f0_spread_st": 8.55,
+    "jitter_pct": 1.03,
+    "level_spread_db": 10.6,
+    "score": -11.73
+   },
+   {
+    "file": "W09_3003.mp3",
+    "seed": 3003,
+    "text_match": 1.0,
+    "transcript": "I can't sleep. Me neither.",
+    "f0": 128.0,
+    "f0_spread_st": 9.8,
+    "jitter_pct": 1.21,
+    "level_spread_db": 10.6,
+    "score": -12.98
+   },
+   {
+    "file": "W09_3002.mp3",
+    "seed": 3002,
+    "text_match": 1.0,
+    "transcript": "I can't sleep. Me neither.",
+    "f0": 131.1,
+    "f0_spread_st": 9.89,
+    "jitter_pct": 1.56,
+    "level_spread_db": 11.5,
+    "score": -13.34
+   }
+  ]
+ },
+ "W01": {
+  "speaker": "CITY",
+  "voice_id": "cgSgspJ2msm6clMCkdW9",
+  "settings": {
+   "stability": 0.55,
+   "similarity_boost": 0.75,
+   "speed": 1.0
+  },
+  "best": {
+   "file": "W01_3003.mp3",
+   "seed": 3003,
+   "text_match": 1.0,
+   "transcript": "What happens now?",
+   "f0": 192.8,
+   "f0_spread_st": 2.93,
+   "jitter_pct": 1.12,
+   "level_spread_db": 6.6,
+   "score": -4.91
+  },
+  "candidates": [
+   {
+    "file": "W01_3003.mp3",
+    "seed": 3003,
+    "text_match": 1.0,
+    "transcript": "What happens now?",
+    "f0": 192.8,
+    "f0_spread_st": 2.93,
+    "jitter_pct": 1.12,
+    "level_spread_db": 6.6,
+    "score": -4.91
+   },
+   {
+    "file": "W01_3001.mp3",
+    "seed": 3001,
+    "text_match": 1.0,
+    "transcript": "What happens now?",
+    "f0": 195.1,
+    "f0_spread_st": 2.67,
+    "jitter_pct": 1.19,
+    "level_spread_db": 9.5,
+    "score": -5.52
+   },
+   {
+    "file": "W01_3002.mp3",
+    "seed": 3002,
+    "text_match": 1.0,
+    "transcript": "What happens now?",
+    "score": -128.7
+   }
+  ]
+ },
+ "W02": {
+  "speaker": "CITY",
+  "voice_id": "CwhRBWXzGAHq8TQ4Fs17",
+  "settings": {
+   "stability": 0.55,
+   "similarity_boost": 0.75,
+   "speed": 1.0
+  },
+  "best": {
+   "file": "W02_3001.mp3",
+   "seed": 3001,
+   "text_match": 1.0,
+   "transcript": "I don't know.",
+   "f0": 95.8,
+   "f0_spread_st": 8.06,
+   "jitter_pct": 2.5,
+   "level_spread_db": 7.5,
+   "score": -10.31
+  },
+  "candidates": [
+   {
+    "file": "W02_3001.mp3",
+    "seed": 3001,
+    "text_match": 1.0,
+    "transcript": "I don't know.",
+    "f0": 95.8,
+    "f0_spread_st": 8.06,
+    "jitter_pct": 2.5,
+    "level_spread_db": 7.5,
+    "score": -10.31
+   },
+   {
+    "file": "W02_3003.mp3",
+    "seed": 3003,
+    "text_match": 1.0,
+    "transcript": "I don't know.",
+    "f0": 94.7,
+    "f0_spread_st": 7.92,
+    "jitter_pct": 1.53,
+    "level_spread_db": 9.0,
+    "score": -10.62
+   },
+   {
+    "file": "W02_3002.mp3",
+    "seed": 3002,
+    "text_match": 1.0,
+    "transcript": "I don't know.",
+    "f0": 101.3,
+    "f0_spread_st": 9.9,
+    "jitter_pct": 3.11,
+    "level_spread_db": 9.9,
+    "score": -12.87
+   }
+  ]
+ },
+ "W10": {
+  "speaker": "CITY",
+  "voice_id": "CwhRBWXzGAHq8TQ4Fs17",
+  "settings": {
+   "stability": 0.55,
+   "similarity_boost": 0.75,
+   "speed": 1.0
+  },
+  "best": {
+   "file": "W10_3003.mp3",
+   "seed": 3003,
+   "text_match": 1.0,
+   "transcript": "Put the kettle on.\nStay a while.",
+   "f0": 258.1,
+   "f0_spread_st": 31.82,
+   "jitter_pct": 0.78,
+   "level_spread_db": 17.3,
+   "score": -37.01
+  },
+  "candidates": [
+   {
+    "file": "W10_3003.mp3",
+    "seed": 3003,
+    "text_match": 1.0,
+    "transcript": "Put the kettle on.\nStay a while.",
+    "f0": 258.1,
+    "f0_spread_st": 31.82,
+    "jitter_pct": 0.78,
+    "level_spread_db": 17.3,
+    "score": -37.01
+   },
+   {
+    "file": "W10_3002.mp3",
+    "seed": 3002,
+    "text_match": 1.0,
+    "transcript": "Put the kettle on.\nStay a while.",
+    "f0": 115.9,
+    "f0_spread_st": 31.82,
+    "jitter_pct": 0.92,
+    "level_spread_db": 17.8,
+    "score": -37.16
+   },
+   {
+    "file": "W10_3001.mp3",
+    "seed": 3001,
+    "text_match": 1.0,
+    "transcript": "Put the kettle on.\nStay a while.",
+    "f0": 120.3,
+    "f0_spread_st": 33.0,
+    "jitter_pct": 1.33,
+    "level_spread_db": 15.8,
+    "score": -37.74
+   }
+  ]
+ }
+}
