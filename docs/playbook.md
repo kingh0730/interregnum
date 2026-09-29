@@ -191,6 +191,8 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
     a session's PID, anchor on the binary's path: `pgrep -f '^/Users/kingh0730/.local/bin/claude -p --effort xhigh'`
     (a monitor's own `bash -c ...` line can't match `^`). This bit three times on the mom episode.
   - Success is "the deliverable exists", never "the output log is non-empty" (a crash writes its error there).
+  - Session transcripts are filed by working directory: a `claude -p` started in `private/<p>/` writes to
+    `~/.claude/projects/-Users-kingh0730-repos-interregnum-private-<p>/`, not the repo's folder. Watch the right one.
   - Long max-effort writing sessions can loop on "Output token limit hit" and drop on proxy idle timeouts
     (`ECONNRESET`). Prefer xhigh and one deliverable per session; if a session hits the output limit repeatedly with
     no file written, stop it and split the work.
