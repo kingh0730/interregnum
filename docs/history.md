@@ -45,3 +45,30 @@ and everything else stays in-house (see `strategy.md`).
 - **Whisper start times run early,** by up to 1.6 s on a short line under a ringing bell. Time subtitles from voiced
   onsets (voice-band energy + periodicity) instead.
 - **Don't add a sky grade on top of a Seedance dawn:** the model already does it, and a second one just hazes the image.
+
+## Blender-guided rotoscoping tests (in `~/repos/yue/outputs/anime_clip/`, 2026-09-29)
+King's verdicts after v4: v3's drawings were "actually pretty good"; they flicker too, but less visibly because the head moved less, and the weirdness was mostly
+the head's unnatural motion path. v5 (camera projection of a painting) is not usable: the layers are hard to get
+right and cut through objects. v6 (a drawn face on the 3D head) is "creepy". v7 (a Blender layout frame as a
+reference for a Codex keyframe) "looks good".
+- **v8 (v7 + v3):** Blender supplies the head-turn motion, and Codex draws every pose over its layout frame with two
+  approved drawings as references. Variants: drawn on twos, drawn on ones, optical-flow in-betweens.
+- **v9:** a full-body paper-airplane throw (IK arm in Blender), 21 Codex drawings on anime timing, and a composited
+  plane after release.
+- **Mechanics that worked:** draw the two hold poses first as style anchors; register drawings to a smoothed path of
+  their own torso position (the layout's silhouette is unreliable); throws need the flight direction set by the
+  camera's vanishing point, not the body's forward vector. Safety false positives: about 1 in 10, and usually pass on a plain retry.
+- **King's verdict:** v8 flickers (every drawing reinterprets the character), and v9 "looks really bad, bad physics,
+  and flickers" (hand-keyed IK motion has no weight).
+- **v10–v13 (EbSynth):** Blender renders the motion, Codex paints 3–7 keyframes over it, and EbSynth (built locally,
+  `~/.local/share/ebsynth`) propagates them. v11–v13 used a stand-in of our girl (procedural bob, navy uniform, scarf
+  wrap). Flicker dropped from 4.6–7.0 (v8) to about 3.2–4.0, but frames between keyframes smear wherever the pose
+  changes a lot, because patch synthesis cannot invent new views. Keyframes made as a chain of Codex edits agree
+  better with each other, but that only cut flicker about 5%. Deflickering v8 with optical flow cut it only 7–12%.
+- **Conclusion (agreed with King):** local character animation is at diminishing returns. The missing capability is
+  inventing in-between views that stay consistent over time, which is what video models do. **Character motion goes to
+  Seedance.** Standard inputs are Codex character sheets and Codex keyframes as start frames. Blender layouts are used
+  only when a shot needs exact staging (a specific camera move, eyelines, a complex action), and Blender is also used
+  for non-character 3D. No EbSynth, rotoscoping, deflickering or procedural character modelling in production.
+- **Engineering notes:** OpenCV's DIS optical-flow object is not thread-safe (use one per thread; sharing it corrupted
+  the heap), and parallel jobs must not rewrite shared input files that another process is reading.
