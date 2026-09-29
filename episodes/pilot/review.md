@@ -23,12 +23,16 @@ Claude judged stills and audio metrics only. These need your eyes and ears:
 - **40:** a 1.28× digital punch-in that's visibly softer.
 - **30, 43:** soft inpainted edges may show behind the parallax layers.
 
-## Decisions for you
-1. **Main ending or alt ending (46)?**
-2. **Does the angle work as the series opener?** `episode.md` has a table of which questionnaire answers would change
-   what, including the company-set variant if the dead-leader premise is a red line.
-3. **Is the look right?** It's flat 2D cel with navy ink, cyan screens and amber lamps. Codex drifts toward 3D renders
-   unless it's pushed, so the style lead lives in `build/style_prefix.txt`.
+## Director's decisions
+1. **Ending:** the main (bittersweet-hopeful) ending is the cut. The alt tail (46) is cynical in a way the rest of the
+   film doesn't earn: it undoes the one act of courage the story is about. It stays on disk as a curiosity only.
+2. **Opener:** CONTINUITY is the series opener. It states the series' title as a literal premise, and it covers AI,
+   leaders and family in one small room. If your questionnaire answers draw a red line, `episode.md` has the relocation
+   plan, and the structure survives it.
+3. **Look:** flat 2D cel with navy ink, cyan screens and amber lamps. It hides Codex drift, and it gives Seedance clean
+   start frames.
+4. **v2:** Seedance replaces every keyframe shot that has a face in it. The bake-off (`work/pilot/v2/`) decides the
+   prompting recipe.
 
 ## Rebuilding
 - **Recipes:** they're in `build/`.
