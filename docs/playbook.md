@@ -44,6 +44,12 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
   - stillness designed as a strength (the "PPT" note);
   - fiction only;
   - the deliverables: `episode.md`, `script.md`, `shots/NN/shot.md`, lookdev prompts and a cue sheet.
+- **Concept stage: go broad, grounded in evidence.**
+  - Run 3 parallel concept sessions (xhigh), each forced into a different shape, while a research subagent gathers
+    virality evidence for the platform and audience, plus credible, sourced forecasts for the subject.
+  - Then a max-effort judge compares the concepts against the research, picks or merges them, and writes
+    `episode.md`.
+  - Breadth beats depth at the concept stage; afterwards use draft-and-critique.
 - **Draft at xhigh, critique at max.** Write each deliverable in its own xhigh session. Then run a short max-effort
   critic session on the finished file: attack the hook, find the generic beats, test the ending, and rewrite the weak
   parts. The critic sees the whole piece, which a single long max draft never does, and it avoids the long silent
