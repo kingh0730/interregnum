@@ -174,7 +174,13 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
 - **Watch long jobs yourself.** Check output timestamps and running processes; King shouldn't have to ask "is anything
   stuck?".
 - **Waiting on jobs:**
-  - Never `pgrep -f <name>` when `<name>` appears in the waiting loop itself; wait on a PID or an output file.
+  - Never `pgrep -f <name>` when `<name>` appears in the waiting loop itself; wait on a PID or an output file. To find
+    a session's PID, anchor on the binary's path: `pgrep -f '^/Users/kingh0730/.local/bin/claude -p --effort xhigh'`
+    (a monitor's own `bash -c ...` line can't match `^`). This bit three times on the mom episode.
+  - Success is "the deliverable exists", never "the output log is non-empty" (a crash writes its error there).
+  - Long max-effort writing sessions can loop on "Output token limit hit" and drop on proxy idle timeouts
+    (`ECONNRESET`). Prefer xhigh and one deliverable per session; if a session hits the output limit repeatedly with
+    no file written, stop it and split the work.
   - Monitor scripts run under `bash -c` with `shopt -s nullglob` (zsh aborts on empty globs).
   - `find` here is `bfs` and rejects relative `-newermt`; use `stat -f %m`.
   - Under `nullglob`, never pass a glob to `ls`: an empty match makes it list the current directory. Count matches
