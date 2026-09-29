@@ -8,8 +8,12 @@ disagree, this document wins; update it when you learn something.
 only for what Claude can't do: **watch motion, listen to sound, spend money or provide keys and accounts**, and make
 showrunner decisions about his own life or the release (privacy, platform). Never hand King a menu of artistic options.
 
-**Output of a full run:** `renders/<ep>/<ep>_v3_sound.mp4`, a stills-and-hardware story reel with its final
-sound, then (after a fal top-up) the Seedance motion pass.
+**Default scope: stop before Seedance.** A run makes everything through stage 6 (a story reel with its final sound).
+Stage 7 (Seedance) is the expensive step: start it only when King gives the go-ahead after a cost estimate.
+
+**Private projects:** anything made for King's family or that he marks private lives in `private/<project>/`. The
+public repo ignores it, and it has its own local git repo that is never pushed. The shared tools are used from
+`../../tools`.
 
 ---
 
