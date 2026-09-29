@@ -1,0 +1,60 @@
+{
+ "dur": 4.0,
+ "fps": 24,
+ "out": "work/pilot/shots_v2/07.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/comp_v2/src/07.mp4"
+  }
+ ],
+ "camera": {
+  "from": [
+   0.5,
+   0.5,
+   1.0
+  ],
+  "to": [
+   0.5,
+   0.5,
+   1.0
+  ]
+ },
+ "grade": {
+  "exposure": 0,
+  "contrast": 1.05,
+  "sat": 1.0,
+  "lift": [
+   0.03,
+   0.04,
+   0.08
+  ],
+  "gain": [
+   0.96,
+   1.0,
+   1.04
+  ],
+  "bloom": 0.45,
+  "vignette": 0.25,
+  "grain": 0.02,
+  "chroma": 0
+ },
+ "letterbox": 2.39,
+ "particles": [
+  {
+   "kind": "motes",
+   "n": 20,
+   "seed": 7,
+   "par": 1.2,
+   "wind": [
+    -0.006,
+    -0.004
+   ],
+   "opacity": 0.6,
+   "color": [
+    0.8,
+    0.95,
+    1.0
+   ]
+  }
+ ]
+}

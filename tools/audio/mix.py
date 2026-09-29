@@ -26,6 +26,9 @@ Common event keys (applied in this order):
   reverb (0..1 wet) + rt60 (s) + predelay (s) + rcut (Hz), glide [t0, t1, semitones], auto [[t, dB], ...] gain keyframes,
   spans [[t0, t1(, dB)], ...] gate, bus, noduck, nomute, use (preset name).
   say only: id (reported and subtitled), sub (subtitle text, or false), sub_end, italic, keep (s), overrun_ok.
+  file: path; af / af_post (ffmpeg chains, in that order); norm (true or target dBFS: level like a say line);
+        trim (true: cut leading/trailing silence); id / text / sub / sub_start / sub_end / italic as for say lines.
+  loop: text (say) or path (a file, silence-trimmed), plus af / af_post as for file.
   An event without "type" or "use" (e.g. {"//": "1M2 Night Desk"}) is a comment.
   Times in auto / glide / spans / seq / times / accent are absolute timeline seconds; "at" is the event start.
 """
@@ -194,6 +197,19 @@ def say_chain(e):
     return render_say(e.get("voice", "Samantha"), e.get("rate"), e["text"], af or None)
 
 
+def trim_silence(x, floor=-45):
+    loud = np.nonzero(np.abs(x) > np.abs(x).max() * db(floor))[0]
+    return x[max(0, loud[0] - int(0.005 * SR)):min(len(x), loud[-1] + int(0.03 * SR))]
+
+
+def load_file(e):
+    """Audio file -> 48 kHz mono float, through the event's af / af_post chain."""
+    af = ",".join(a for a in (e.get("af"), e.get("af_post")) if a)
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(ROOT / e["path"])] + (["-af", af] if af else []) +
+                         ["-f", "f32le", "-ac", "1", "-ar", str(SR), "-"], capture_output=True, check=True).stdout
+    return np.frombuffer(raw, np.float32).astype(np.float64)
+
+
 def g_say(e):
     x = say_chain(e)
     fx = e.get("fx", "none")  # legacy quick effects
@@ -215,7 +231,7 @@ def g_say(e):
 
 def g_loop(e):
     """The Loop choir: copies of one say line on accelerating onsets, detuned, panned, darkening, rising `rise` dB."""
-    one = speech_norm(say_chain(e))
+    one = speech_norm(trim_silence(load_file(e)) if e.get("path") else say_chain(e))
     dur = e["to"] - e["at"]
     g0, g1 = e.get("gap", [0.33, 0.07])
     ons, t = [], 0.0
@@ -717,9 +733,13 @@ def g_tick(e):
 
 
 def g_file(e):
-    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(ROOT / e["path"]), "-f", "f32le", "-ac", "1", "-ar", str(SR), "-"],
-                         capture_output=True, check=True).stdout
-    return np.frombuffer(raw, np.float32).astype(np.float64)
+    x = load_file(e)
+    if e.get("trim"):
+        x = trim_silence(x)
+    e["_dur"] = len(x) / SR
+    if e.get("norm"):  # dialogue from a file, levelled exactly like a say line
+        x = speech_norm(x, -20.0 if e["norm"] is True else e["norm"])
+    return x
 
 
 GEN = {k[2:]: v for k, v in globals().items() if k.startswith("g_")}
@@ -908,7 +928,7 @@ def main():
             bus = e.get("bus", busmap.get(e["type"], "fx"))
             pair = buses.setdefault(bus, [np.zeros((N, 2)), np.zeros((N, 2))])
             place(pair[1 if e.get("noduck") else 0], x, s)
-            if e["type"] == "say":
+            if e["type"] == "say" or (e["type"] == "file" and e.get("id")):
                 lines.append(e)
     duck = spec.get("duck", {"key": "dx", "mx": -4})
     if duck.get("key") in buses:
@@ -948,9 +968,9 @@ def main():
         flag = "" if end <= nxt else f"  OVERRUN by {end - nxt:.2f} s" + (" (cut by design)" if e.get("overrun_ok") else "")
         if e.get("id"):
             print(f"  {e['id']:4} {e['at']:7.2f} +{e['_dur']:.2f} -> {end:7.2f}  shot ends {nxt:6.1f}  "
-                  f"margin {nxt - end:+.2f}{flag}  {e.get('voice')} {e.get('rate')}  {e['text'][:40]}")
+                  f"margin {nxt - end:+.2f}{flag}  {Path(e['path']).name if e['type'] == 'file' else f"{e.get('voice')} {e.get('rate')}"}  {e['text'][:40]}")
         if e.get("sub", True) is not False and e.get("id"):
-            subs.append({"start": round(e["at"], 2), "end": round(e.get("sub_end", end + 0.3), 2),
+            subs.append({"start": round(e.get("sub_start", e["at"]), 2), "end": round(e.get("sub_end", end + 0.3), 2),
                          "text": e.get("sub", e["text"]), **({"italic": True} if e.get("italic") else {})})
     for a, b in zip(subs, subs[1:]):
         a["end"] = round(min(a["end"], b["start"] - 0.05), 2)

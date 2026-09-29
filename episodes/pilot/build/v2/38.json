@@ -1,0 +1,41 @@
+{
+ "dur": 3.0,
+ "fps": 24,
+ "out": "work/pilot/shots_v2/38.mp4",
+ "layers": [
+  {
+   "src": "work/pilot/comp_v2/src/38.mp4"
+  }
+ ],
+ "camera": {
+  "from": [
+   0.5,
+   0.5,
+   1.0
+  ],
+  "to": [
+   0.5,
+   0.5,
+   1.0
+  ]
+ },
+ "grade": {
+  "exposure": 0,
+  "contrast": 1.03,
+  "sat": 1.0,
+  "lift": [
+   0.03,
+   0.04,
+   0.075
+  ],
+  "gain": [
+   1.0,
+   1.0,
+   1.02
+  ],
+  "bloom": 0.5,
+  "vignette": 0.25,
+  "grain": 0.02
+ },
+ "letterbox": 2.39
+}

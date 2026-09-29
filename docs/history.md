@@ -31,3 +31,17 @@ and everything else stays in-house (see `strategy.md`).
 - **Codex edits of a keyframe (e.g. eyes closed) change lines outside the edit.** Paste back only the edited region
   with a feathered mask.
 - **Throughput:** about 1 min per image at medium effort, 5 in parallel. 39 images took roughly 15 min with no safety blocks.
+
+## Pilot v2 with Seedance (2026-09-29)
+- **Bake-off verdict (King):** the motion looks good, with small imperfections that are unavoidable. The voice was
+  consistent across shots but the accent drifted, so every prompt now carries a fixed per-character voice line (the
+  "voice bible" in `episodes/pilot/v2_jobs.json`).
+- **Off-screen lines come from the same take as the character's on-screen lines.** The Father's whole final address is
+  one 22 s take, cut across shots 29–34. Nana's two call-back lines are one take. This makes voice consistency hold by construction.
+- **fal polling can drop on a flaky network after the job is billed.** `i2v.py` now saves the request id at submit
+  and retries GETs; stranded results can be recovered through the request-history API
+  (`GET https://api.fal.ai/v1/models/requests/by-endpoint?endpoint_id=…`, then fetch
+  `https://queue.fal.run/bytedance/seedance-2.5/requests/<id>`).
+- **Whisper start times run early,** by up to 1.6 s on a short line under a ringing bell. Time subtitles from voiced
+  onsets (voice-band energy + periodicity) instead.
+- **Don't add a sky grade on top of a Seedance dawn:** the model already does it, and a second one just hazes the image.
