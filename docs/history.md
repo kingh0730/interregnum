@@ -101,3 +101,11 @@ that came out of them is "Luma unless it truly can't" (playbook §2b).
 - **Genres (G):** Luma led or tied in nature, animal, space interior, SEM, underwater, night and fights. FLUX.2 and
   Krea 2 tangled limbs in a fight. Nano sometimes ignored instructions. Seedream refused an SEM bee (a false positive).
 - **Cost:** about $6.50 of fal credit in all; Luma is about 0.3¢ an image, Nano 15¢.
+- **Challenger screen (H, `work/imgtest7/`):** fal lists about 200 active text-to-image endpoints; Luma was a lucky
+  wildcard among the ~10 families first tested. Four newer challengers, 2 prompts each, judged blind against Luma (Luma
+  was only partly blind, since its frames had been seen before):
+  - Dinner: Luma ≈ Recraft V4.1 Pro > Grok Imagine 2 > Meta Muse > Qwen-Image 3.
+  - Gouache: Meta Muse > Luma ≈ Recraft > Grok > Qwen.
+  - Nothing beat Luma overall. Recraft (21¢) is the closest all-rounder; Muse (1¢) made the most distinctive bold
+    painting. First to try when Luma truly can't: Recraft, or Muse for bold painted looks. Re-screen new model families
+    every couple of months by listing the fal catalogue by API, not from memory.
