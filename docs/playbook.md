@@ -154,6 +154,13 @@ King's note on episodes 1–2: frames looked "oily", "crowded" and "very AI-gene
   | Chinese signage and titles | Any (all six got 明天见面 right); Luma the most filmic | Codex slips into traditional forms |
   | Clay / stop-motion | Luma (reads as a real miniature set); Krea 2 | Name the setting as Chinese or everything drifts to Europe |
 
+- **Genres (Test G, 2026-09-30, `work/imgtest6/`, 8 genres × 6 models):** Luma was first or joint-first in nature,
+  animals, space interiors, microscopy (SEM), underwater and night, and among the best for fights; no Luma failures.
+  - **Fights and fast bodies:** Luma, Nano or Seedream. FLUX.2 and Krea 2 tangle limbs.
+  - **Minimal sci-fi scale** (a space elevator over the sea): Seedream and Nano were the most striking; all six understood it.
+  - **Nano quirks:** sometimes ignores instructions (an astronaut awake when asked asleep; blue hour instead of night).
+    Seedream refused an SEM bee's eye (a false positive).
+
 - **Finish every still with `tools/imagegen/film_finish.py`.** It tames specular highlights, lifts the blacks, applies
   a gentle curve, halation and real grain. It removes the wet sheen from skin and makes frames from different models
   sit together. It will not rescue a stock-photo composition or Codex gloss; fix those in the prompt or the model.
