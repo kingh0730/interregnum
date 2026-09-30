@@ -40,8 +40,13 @@ def norm_chars(t):
     return re.findall(r"[一-鿿]", t) if voice_design.LANG == "zh" else re.sub(r"[^a-z' ]", " ", t.lower()).split()
 
 
-def tts(text, voice_id, settings, seed, out, key):
+def tts(text, voice_id, settings, seed, out, key, prev=None, nxt=None):
     body = {"text": text, "model_id": "eleven_v4", "seed": seed, "voice_settings": settings}
+    # request stitching: neighbouring lines as context keep one train of thought and a steady accent (v4 accepts them)
+    if prev:
+        body["previous_text"] = prev
+    if nxt:
+        body["next_text"] = nxt
     for attempt in range(6):
         req = urllib.request.Request(f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}?output_format=mp3_44100_128",
                                      data=json.dumps(body).encode(), method="POST",
@@ -89,7 +94,10 @@ def main():
     selp = out / "selection.json"
     sel = json.loads(selp.read_text()) if selp.exists() else {}
     only = set(a.only.split(",")) if a.only else None
-    for t in d["takes"]:
+    plain = [re.sub(r"\[[^\]]*\]", "", x["text"]).strip() for x in d["takes"]]
+    for ti, t in enumerate(d["takes"]):
+        prev = t.get("previous_text", plain[ti - 1] if ti > 0 else None)
+        nxt = t.get("next_text", plain[ti + 1] if ti + 1 < len(plain) else None)
         if only and t["id"] not in only and t["speaker"] not in only:
             continue
         spk = t["speaker"]
@@ -109,7 +117,7 @@ def main():
         for k in range(a.seeds):
             seed = seed0 + k
             f = out / f"{t['id']}_{seed}.mp3"
-            if not f.exists() and not tts(text, vid, settings, seed, f, key):
+            if not f.exists() and not tts(text, vid, settings, seed, f, key, prev or None, nxt or None):
                 continue
             m = analyse(f) or {}
             tr = transcript(f) if ref else ""
