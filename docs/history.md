@@ -109,3 +109,12 @@ that came out of them is "Luma unless it truly can't" (playbook §2b).
   - Nothing beat Luma overall. Recraft (21¢) is the closest all-rounder; Muse (1¢) made the most distinctive bold
     painting. First to try when Luma truly can't: Recraft, or Muse for bold painted looks. Re-screen new model families
     every couple of months by listing the fal catalogue by API, not from memory.
+- **Challenger screen, round 2 (`work/imgtest7/blind2_*`, key in `.key2.json`):** 16 prompts (hall, metro, 6 styles,
+  8 genres) × fresh Luma + 4 challengers, one image each, ranked fully blind by Claude.
+  - Points (5 for 1st … 1 for 5th): Grok Imagine 2: 57 (5 firsts); Meta Muse: 54 (5); Qwen-Image 3: 51 (4); Luma: 43 (2);
+    Recraft V4.1 Pro: 35 (0).
+  - This reverses round 1 for Qwen and Recraft, so single samples are noisy.
+  - Blind, Claude ranked Luma lower than when its outputs were labelled. Several fresh Luma frames looked like amateur
+    flash snapshots.
+  - Claude's blind taste favours clean cinematic frames; King's favours Luma's filmic restraint. Settle the default with
+    King's own blind picks, not Claude's.
