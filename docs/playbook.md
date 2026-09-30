@@ -135,6 +135,14 @@ forward; the evidence from the 2026-09-30 tests is in `docs/history.md`.
   each character's age as "looking their age" with a clear, even complexion, add an age-and-skin lock to every edit
   ("keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines"),
   and retake any face that drifts.
+- **Luma edit ages faces (v2c, 2026-10-01).** Each edit adds skin texture, so edits of edits (sheets, then keyframes
+  from sheets) compound into crepey, spotted faces. So:
+  - keyframes reference the base portrait, not the sheets, when faces are older;
+  - make an aged version of a character (60 → 80) with t2i plus the younger base in `reference_image_urls`, not an
+    ageing edit;
+  - an ageing edit needs its own lock ("age her only as described"), since "keep the exact age" contradicts it.
+- **Luma's queue sometimes hangs** a request IN_PROGRESS for 20+ minutes while fresh ones finish in about 2;
+  `luma_batch.py` resubmits after 7 minutes.
 - **Judge honestly:**
   - look at full frames, never centre-cropped grids;
   - look at faces at 100% and at 1080p;
