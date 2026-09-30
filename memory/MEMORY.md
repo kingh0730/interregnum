@@ -1,5 +1,5 @@
 - [Director owns creative calls](director-owns-creative-calls.md) — decide art/tech myself; ask King only for what I cannot do (watching motion, paying, his accounts)
-- [fal paused](fal-paused.md) — no Seedance until King resumes; images + ElevenLabs audio on fal allowed; ~$90 credit (topped up 2026-09-30), shared by parallel sessions
+- [fal paused](fal-paused.md) — no Seedance until King resumes; images + ElevenLabs audio on fal allowed; ~$130 credit (2026-10-01), shared by parallel sessions
 - [Headless session tools](headless-session-tools.md) — launch `claude -p` in auto mode with a paid/publish deny-list; the old allowlist blocked interpreters
 - [Watch delegated jobs](watch-delegated-jobs.md) — check long subagents/bg jobs for stalls myself; never pgrep -f a name in the waiting command; stop a stage's watchers when it completes
 - [Audio decisions](audio-decisions.md) — I cast & pick audio myself; final voices only via Starter key; underplay voices (Kuleshov); Nana must sound 82
