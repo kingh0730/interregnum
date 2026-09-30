@@ -8,7 +8,7 @@ Manifest: a JSON list of {"id", "out", "mode": "t2i"|"edit", "prompt", "base": i
 Edits chain to the fal CDN URLs of earlier results, so no local file is ever uploaded.
 Paths in "out" are relative to --root (default: the manifest's directory's parent).
 Resumable: an image whose out file and fal URL both exist is skipped. URLs are kept in <manifest>.urls.json.
-Each request's full log is kept in <root>/work/luma_log/<id>.json (fal_run never re-POSTs, so a lost poll can be
+Each request's full log is kept in <manifest dir>/luma_log/<id>.json (per manifest, so parallel episodes never collide; (fal_run never re-POSTs, so a lost poll can be
 recovered from the request id there).
 """
 import argparse
@@ -58,7 +58,7 @@ def main():
     redo = set(filter(None, a.redo.split(",")))
     for r in redo:
         urls.pop(r, None)
-    logdir = root / "work" / "luma_log"
+    logdir = man_path.parent / "luma_log"
     logdir.mkdir(parents=True, exist_ok=True)
     lock = threading.Lock()
     failed = set()
