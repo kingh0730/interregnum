@@ -21,6 +21,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 TOOLS = Path(__file__).resolve().parents[1]
+TIMEOUT = 420
 EP = {"t2i": "luma/agent/uni-1/v1/max", "edit": "luma/agent/uni-1/v1/max/edit"}
 
 
@@ -76,9 +77,15 @@ def main():
         pfile = logdir / f"{i}.payload.json"
         pfile.write_text(json.dumps(payload, ensure_ascii=False))
         prefix = logdir / i
-        for attempt in range(2):
-            r = subprocess.run(["uv", "run", str(TOOLS / "fal_run.py"), EP[it["mode"]], str(pfile), str(prefix)],
-                               capture_output=True, text=True)
+        for attempt in range(3):
+            # Luma's queue sometimes leaves a request IN_PROGRESS for 20+ minutes while fresh ones finish in about 2,
+            # so a request that takes longer than TIMEOUT is abandoned and resubmitted (costs about 0.3 cents).
+            try:
+                r = subprocess.run(["uv", "run", str(TOOLS / "fal_run.py"), EP[it["mode"]], str(pfile), str(prefix)],
+                                   capture_output=True, text=True, timeout=TIMEOUT)
+            except subprocess.TimeoutExpired:
+                print(f"timeout {i} (attempt {attempt + 1}); resubmitting", flush=True)
+                continue
             res = logdir / f"{i}.json"
             url = first_image_url(json.loads(res.read_text()).get("response")) if res.exists() else None
             got = [p for p in logdir.glob(f"{i}.*") if p.suffix.lower() in (".png", ".jpg", ".jpeg", ".webp")] + \
