@@ -70,6 +70,18 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
 - **QA:** a single subagent extracts a machine-readable image manifest (id, out, prompt, refs, alpha, deps, shots) and
   checks that every prompt matches its `shot.md` word for word.
 
+### Pacing (King, 2026-09-30: "our first two films have constant pacing")
+Both films measured as varied cut lengths (pilot median 6 s, range 2–35 s; mom film median 4 s, mostly 3–5 s), but they
+felt like one tempo. Movement inside shots, narration cadence, sound density and intensity all stayed level.
+- **Tempo map in the script:** write a section-by-section tempo map before any images. Include at least one deliberate
+  acceleration, one hard stop, and one stretch of held stillness or silence.
+- **Four dials:** set all four per section, not just cutting: cut length, movement inside the shot, sound and voice
+  density, emotional intensity.
+- **Contrast makes speed:** a burst only reads fast after stillness, and silence only lands after noise.
+- **Time as form:** slow motion, freezes, repetition or reversal can be the episode's formal invention (see the
+  anti-cliché rule).
+- **QA:** measure cut lengths from the render (`ffmpeg` `select='gt(scene,0.3)'`) and check them against the tempo map.
+
 ## 2. Visual bible and art direction (max effort, then tests)
 - **Bible:** a max-effort session writes `bible/visual/` for the episode: production design (the world as objects,
   with every screen as physical hardware), three distinct art directions each with a 130–170-word Codex style block,
