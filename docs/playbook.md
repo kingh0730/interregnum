@@ -283,6 +283,10 @@ the stock, polished result, the audio version of the AI look. So describe the re
   - **Graphics:** overlays must be re-tracked to the moving plates anyway; that pass is where alignment and motion
     design are brought up to film level.
   - **Sound:** the final pass (clipped onsets, cut-offs, timing), since motion and lip-sync shift the timing.
+- **Default video model: MiniMax H3 Max, for everything** (King, 2026-10-01): `minimax/h3-max/image-to-video` for
+  motion (start and end frame; about $0.025/s) and `minimax/h3-max/lip-sync/image-to-video` for every spoken line (our
+  voice take; $0.05/s). One family keeps motion, skin and light consistent from shot to shot; mixing models reads as
+  drift. Switch per shot (Luma Ray 3.2 first) only when H3 Max truly can't do it. Discard its audio track.
 - **Video-model test (2026-10-01, v2c):**
   - **Seedance 2.5 refuses photoreal human stills** ("may contain likenesses of real people"; partner validation),
     even though every face is AI-generated. Don't work around it. Seedance is out for photoreal people.
