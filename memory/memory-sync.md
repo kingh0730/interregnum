@@ -22,6 +22,8 @@ repo's copies identical. It runs at `SessionStart` and `Stop` from the tracked `
   everybody has moms").
 - The public `memory/MEMORY.md` drops index lines that link `private-*` files. It merges line-union
   (`.gitattributes`).
+- `scripts/check-memory-index.sh` (also from knf) flags orphan files and dangling index lines on both sides, and any
+  private name in the public index. Run it after adding or deleting a memory.
 - After editing memory through Bash, run `bash scripts/sync-memory.sh` by hand if the repo copy must be current that
   turn; otherwise the Stop hook does it.
 

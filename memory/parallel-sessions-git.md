@@ -20,5 +20,7 @@ also sweeps up their unstaged edits. Either one would publish someone else's hal
 - In a private project's own repo, commit only my own episode folder.
 - Coordinate shared resources (fal credit, ElevenLabs voice slots and deletion, shared tool files) by SendMessage.
 - Give each episode its own voice prefix, e.g. "v2c_".
+- **Kill only by PID, never `pkill -f <pattern>`.** On 2026-09-30, `pkill -f "fal_run.py luma…"` also killed the v3
+  episode's in-flight Luma requests. Record the PIDs of the jobs I start and kill those.
 
 Related: [[watch-delegated-jobs]].
