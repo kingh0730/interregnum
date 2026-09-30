@@ -270,7 +270,7 @@ the stock, polished result, the audio version of the AI look. So describe the re
 - **Subtitles:** time them from voiced onsets (voice-band energy plus periodicity), never from Whisper's start times,
   which run early. Match subtitles to lines by ID and time, never by text (lines repeat).
 
-## 7. Motion: Seedance 2.5 (fal; needs budget)
+## 7. Motion (default MiniMax H3 Max; fal; needs King's go)
 **What to fix before Seedance, and what after** (King, 2026-10-01). Seedance animates the start frame and nothing else.
 - **Before:** only what the viewer will see and Seedance won't change by itself (a wrong face, a wrong setting or
   composition), plus the edit (shot lengths and order; seconds are billed). Flaws the shot's own action resolves (a
@@ -359,6 +359,21 @@ the stock, polished result, the audio version of the AI look. So describe the re
 - **Money safety:** `i2v.py` saves the request id at submit, and polls retry without ever re-submitting. Stranded
   results can be recovered through `GET https://api.fal.ai/v1/models/requests/by-endpoint?endpoint_id=…` and then
   `https://queue.fal.run/<app>/requests/<id>`.
+
+## 7b. Final finishing pass (after motion; every episode)
+Every stage can introduce flaws (stills, graphics, voices, video models), so the last stage fixes anything from any of
+them, on the assembled film, in this order:
+1. **Re-edit to the real motion:** re-set cut points from what actually happens in each clip, not from the stills
+   plan.
+2. **Repair or replace:** trim around artefacts, paint out small glitches, retake what can't be hidden. Run the face
+   check and the landmark mouth check on every clip.
+3. **Unify the look:** film finish and grade over all the video, so takes and models sit together.
+4. **Re-track the graphics** to the moving plates; this is where alignment and motion design reach film level.
+5. **Sync:** dialogue to the lip-synced mouths, and hits to the stamps and actions.
+6. **Final mix:** fix cut-off and clipped lines; balance voice, music, SFX and any usable model motion sound.
+7. **Re-time the subtitles** from the final voice onsets.
+8. **QA the whole film:** cut lengths against the tempo map, loudness, the silence, faces, text, mouths.
+9. **King's review, then one fix loop** on what he flags.
 
 ## 8. Operating rules (learned on the pilot)
 - **Watch long jobs yourself.** Check output timestamps and running processes; King shouldn't have to ask "is anything
