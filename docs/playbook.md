@@ -292,6 +292,14 @@ the stock, polished result, the audio version of the AI look. So describe the re
     - **D, stillness sections:** cheap near-still takes (breathing, light, steam), never frozen frames between
       moving shots, which read as a glitch or "PPT". Stillness comes from the content, not a freeze.
   - **i2v is the default** (frame 0 is the approved still); reference mode only to restage a still that's wrong.
+  - **Pin key beats with an end frame:** i2v takes `end_image_url`. Make the pose the beat must land on as a Luma still
+    (the hand over the mouth), or match the next shot's start frame for continuity.
+  - **Facts (fal schema, 2026-10-01):**
+    - clip length 4–30 s, or auto;
+    - 480p, 720p or 1080p (test motion at 480p);
+    - generate_audio on or off;
+    - ref mode takes up to 10 images, videos and audio, named `@Image1`, `@Video1`, `@Audio1` in the prompt (fix
+      i2v.py's `[Image1]` wording before using it).
   - **A stills-reel clip is a poor video reference:** it carries framing, which the still already gives, and
     stillness. Video refs are for real performance or camera motion.
   - **Text and graphics never go into Seedance.** Composite them afterwards, tracked to the motion.
