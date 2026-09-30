@@ -3,7 +3,7 @@
 usage: uv run tools/imagegen/luma_batch.py <images.json> [--root DIR] [--jobs 6] [--only id1,id2] [--redo id1,id2]
 
 Manifest: a JSON list of {"id", "out", "mode": "t2i"|"edit", "prompt", "base": id|null, "refs": [ids], "deps": [ids]}.
-- t2i  -> luma/agent/uni-1/v1/max       {prompt, aspect_ratio: 16:9}
+- t2i  -> luma/agent/uni-1/v1/max       {prompt, aspect_ratio: 16:9, reference_image_urls if refs}
 - edit -> luma/agent/uni-1/v1/max/edit  {prompt, image_url: <base's fal URL>, reference_image_urls: [<refs' fal URLs>]}
 Edits chain to the fal CDN URLs of earlier results, so no local file is ever uploaded.
 Paths in "out" are relative to --root (default: the manifest's directory's parent).
@@ -74,6 +74,8 @@ def main():
                        "reference_image_urls": [urls[r] for r in it.get("refs", []) if r in urls] or [urls[it["base"]]]}
         else:
             payload = {"prompt": it["prompt"], "aspect_ratio": it.get("aspect", "16:9")}
+            if it.get("refs"):  # t2i with references: identity without edit mode's re-sharpening
+                payload["reference_image_urls"] = [urls[r] for r in it["refs"] if r in urls]
         pfile = logdir / f"{i}.payload.json"
         pfile.write_text(json.dumps(payload, ensure_ascii=False))
         prefix = logdir / i
