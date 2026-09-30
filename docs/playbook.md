@@ -34,8 +34,11 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
   fiction with no real people, brands or countries.
 
 ## 1. Script and shot list (a max-effort writer session)
-- **How:** a separate headless session:
-  `claude -p --effort max --permission-mode acceptEdits --allowedTools "Read,Write,Edit,Glob,Grep,Bash(ls:*)" < brief.md`.
+- **How:** a separate headless session in auto mode, with a deny-list for paid and publishing actions:
+  `claude -p --effort max --permission-mode auto --disallowedTools "Bash(git push:*)" "Bash(codex:*)" "Bash(*imagegen*)" "Bash(*i2v.py*)" "Bash(*run_jobs.py*)" "Bash(*eleven.py*)" "Bash(*fal_run.py*)" < brief.md`.
+  Auto mode lets the session run `uv run` and `python3` to validate its own output and search the web. The earlier
+  acceptEdits-plus-allowlist launch silently refused every interpreter: sessions couldn't validate JSON or check sources.
+  Test auto mode on one short headless session before relying on it.
   Run it in the background and log to `work/logs/`.
 - **Brief:** the pilot's writer brief is the template (it produced `episodes/pilot/*`). It must cover:
   - runtime of 3–5 minutes, shots of 2–10 s, 3 recurring faces or fewer;
