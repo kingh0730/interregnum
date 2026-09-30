@@ -168,6 +168,23 @@ The default model is Luma (§2b). The Codex notes below apply when a shot uses C
 **Sound plan:** a max-effort session writes the sound bible, `casting.md`, `dialogue.json`, `score.md` and
 `score_cues.json`, `sfx.json` and `mix_plan.md`. Validate every JSON file with a real parser.
 
+**Prompting principles (adopted by reasoning from the image work, 2026-09-30).** Genre and quality adjectives pull toward
+the stock, polished result, the audio version of the AI look. So describe the real source instead:
+- **Voice design:** describe a documentary subject, not a performance: age, hometown, body, habits, "an ordinary
+  person, not a trained voice". Avoid "warm, expressive, emotional".
+- **Accent:** always name it ("Mandarin with a light Sichuan accent, as spoken by someone from Chengdu"). An unnamed
+  accent drifts between lines.
+- **Dialogue text:** write for the mouth: short clauses, fillers (嗯, 那个), false starts, punctuation as timing.
+  Literary, emotionally loaded lines get acted; plain lines get spoken.
+- **Continuity:** pass the neighbouring lines as context (ElevenLabs request stitching, `previous_text`/`next_text`, if
+  v4 supports it; check first) so a speech reads as one train of thought.
+- **Music:** name the instruments, room and recording ("one upright piano with felt dampers in a small room, one close
+  mic, the player hesitates between phrases"), not genre or mood ("cinematic, emotional, epic"). Fewer instruments
+  is audio's negative space.
+- **SFX:** name the source and where the mic is ("a steel wok on a gas flame, heard from across a small tiled
+  kitchen"), not "realistic".
+- **Judging:** King judges audio in the finished cut, not in isolated A/Bs. Fix what bothers him there.
+
 **Voices** (ElevenLabs direct API, Starter key):
 - **Design, don't pick stock:** `tools/audio/voice_design.py spec.json outdir --rounds 2 --save`. The descriptions come
   from `casting.md`.
