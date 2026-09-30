@@ -405,7 +405,7 @@ bilateral symmetry and smooth tonal gradients (the only gradients in a direction
 has no texture, and his stillness is a little too perfect. The polished, even-lit default of an image model, the very
 thing the note objected to, now belongs to him alone. It is how the Apparatus sees a man. Everything alive is
 textured, imperfect and made by hand. When the film cuts from the world to his face, the audience should feel the
-change of material before they understand it (`art_direction.md`, series rules).
+change of material before they understand it (`../../../bible/visual.md` §2).
 
 ### The studio he imitates
 The generated picture copies the real studio of Year One: a deep blue cyclorama, with a **large round diffuser lamp**

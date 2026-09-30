@@ -8,15 +8,15 @@ model's default: polished, rain-soaked, softly lit anime. The acting: the expres
 prompts asked for emotions (stunned, glistening eyes, a laugh through tears), and Seedance played them louder.
 
 **What changed.** The story, the dialogue, the 45 shots and the 242 s timeline stand.
-- **The medium is RELIEF, a colour woodcut** (`bible/visual/art_direction.md`): carved blacks, flat inks, gouge-stroke
+- **The medium is RELIEF, a colour woodcut** (`episodes/pilot/bible/art_direction.md`): carved blacks, flat inks, gouge-stroke
   half-tones everywhere, and nothing that reflects or shades smoothly. Only the Father is smooth: the machine's copy of
   a man, the one image with the model's default polish (the Copy Rule).
-- **Every screen is a machine** (`bible/visual/production_design.md`): tubes, flaps, a needle, legend lamps, film,
+- **Every screen is a machine** (`episodes/pilot/bible/production_design.md`): tubes, flaps, a needle, legend lamps, film,
   carbon paper and handwriting, in the state's own alphabets. The broadcast is a 4:3 picture, and shot 04 pulls out of
   it to a monitor at Ida's desk. The smartphone is now the grey House Line with an amber call lamp and a card
   pencilled NANA; `signoffs.txt` is SIGN-OFFS · DESK 4; the wax seal is a red rubber stamp on a carbon copy; and in
   42 she opens the thermos.
-- **Behaviour, not emotion** (`bible/visual/cinematography.md` §8): neutral start frames, one small action per shot,
+- **Behaviour, not emotion** (`bible/visual.md` §6): neutral start frames, one small action per shot,
   dialogue with volume and pace only, and the laugh in 42 heard, not seen. The camera is locked unless the story
   moves, and every setup has a lens, a height and an owner.
 - **New lookdev and keyframes:** 43 Codex images (`images_v3.json`, `assets/pilot/lookdev.md`), no cutout layers. The

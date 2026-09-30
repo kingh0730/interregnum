@@ -18,8 +18,9 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
 ---
 
 ## 0. Before starting
-- **Read** `CLAUDE.md`, `README.md`, `docs/strategy.md`, `docs/history.md`, `bible/taste.md`, `bible/visual/*`,
-  `bible/sound/*` and this file.
+- **Read** `CLAUDE.md`, `README.md`, `docs/strategy.md`, `docs/history.md`, `bible/taste.md`, the series rules
+  `bible/visual.md` and `bible/sound.md`, and this file. Other episodes' bibles (`episodes/pilot/bible/`) are
+  worked examples, not rules: their choices belong to their films.
 - **Budget:**
   - **Codex:** about 45 images per episode; this draws on King's quota.
   - **fal:** Seedance is about $0.47 per second at 720p and is the expensive stage; the audio models together cost
@@ -80,15 +81,20 @@ felt like one tempo. Movement inside shots, narration cadence, sound density and
 - **Four dials:** set all four per section, not just cutting: cut length, movement inside the shot, sound and voice
   density, emotional intensity.
 - **Contrast makes speed:** a burst only reads fast after stillness, and silence only lands after noise.
+- **No constant dial, in any art aspect** (King, 2026-09-30): camera movement, palette, shot size, sound and
+  performance all balance familiarity (a home register the audience learns), variety (sections differ) and surprise
+  (a rare break the film has not taught us to expect). Use departures and surprises sparingly: overusing them is
+  worse than constancy. Series rules: `bible/visual.md` §1 and §5.
 - **Time as form:** slow motion, freezes, repetition or reversal can be the episode's formal invention (see
   `bible/taste.md` §2).
 - **QA:** measure cut lengths from the render (`ffmpeg` `select='gt(scene,0.3)'`) and check them against the tempo map.
 
 ## 2. Visual bible and art direction (max effort, then tests)
-- **Bible:** a max-effort session writes `bible/visual/` for the episode: production design (the world as objects,
+- **Bible:** a max-effort session writes the episode's own bible in `<episode>/bible/`, under the series rules in
+  `bible/visual.md`: production design (the world as objects,
   with every screen as physical hardware), three distinct art directions each with a 130–170-word Codex style block,
-  cinematography (lens and height, composition, the permitted camera moves, and the acting rule) and test-frame
-  prompts.
+  cinematography (whose eye, lens and height, composition, the camera's home register and moves, and how the
+  series acting rule applies) and test-frame prompts.
 - **Tests:** 2 frames per direction, 6 in all, with **no refs** (old refs pull the old look back). Pick one direction
   and state why.
 - **Rules learned the hard way:**
@@ -178,8 +184,8 @@ The default model is Luma (§2b). The Codex notes below apply when a shot uses C
   `/System/Library/AssetsV2/…/PingFang.ttc`). Chinese on line 1, English smaller on line 2.
 - **Captions:** broadcast shots use in-world captions instead of burned subtitles, never both.
 
-## 6. Sound (see `bible/sound/` and `audio/pilot/*`)
-**Sound plan:** a max-effort session writes the sound bible, `casting.md`, `dialogue.json`, `score.md` and
+## 6. Sound (see `bible/sound.md`, `episodes/pilot/bible/sound.md` and `audio/pilot/*`)
+**Sound plan:** a max-effort session writes the episode's sound bible (`<episode>/bible/sound.md`), `casting.md`, `dialogue.json`, `score.md` and
 `score_cues.json`, `sfx.json` and `mix_plan.md`. Validate every JSON file with a real parser.
 
 **Prompting principles (adopted by reasoning from the image work, 2026-09-30).** Genre and quality adjectives pull toward

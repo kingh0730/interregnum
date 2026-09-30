@@ -7,27 +7,19 @@
 > The full rule text is in the `k01_father_mcu` prompt of `episodes/pilot/images_v3.json`, which is authoritative over
 > any "COPY RULE" wording still quoted in the shot files.
 >
-> **The medium rule (series-wide).** By default, a character differs from the world in *technique*, not *medium*.
-> A change of medium is allowed only when all three conditions hold:
-> 1. **Fully committed.** It is truly another medium (real photographic footage, archive video, live action, a
->    different animation technique) and not a half step. The v3 Father failed because he was smoother than the
->    woodcut but not a photograph: an uncanny valley of style that reads as a mistake.
-> 2. **Motivated.** The story explains it: another world, a machine's output, a memory, a document.
-> 3. **Set up or saved.** Either the audience learns the rule early (*Roger Rabbit*, *Spider-Verse*, *The Wizard of
->    Oz*), or the break happens once, as a revelation it has earned (*Waltz with Bashir*'s final archive footage,
->    *The Lego Movie*'s live-action turn).
+> **The medium rule** is a series rule now: `../../../bible/visual.md` §2.
 
 
-How INTERREGNUM is drawn. `production_design.md` defines what things are and `cinematography.md` how they're shot;
+How the pilot is drawn. `production_design.md` defines what things are and `cinematography.md` how they're shot;
 this file defines the medium. There are three candidate directions, each with a ready-to-run Codex style block,
 followed by a recommendation. `test_frames.md` holds the six test prompts that let the showrunner compare them.
 
-The series may change medium per episode, as *Love, Death & Robots* does. The pilot's direction sets the house
-standard: whichever medium an episode uses, the series rules below hold.
+The series may change medium per episode, as *Love, Death & Robots* does. The rules every episode holds are in
+`../../../bible/visual.md`; the rules below are how the pilot applied them, plus its own choices.
 
 ---
 
-## Series rules (every direction, every episode)
+## The pilot's image rules (every direction)
 1. **The Copy Rule.** In the pilot, the generated man is the only frictionless image: even soft light, perfect
    symmetry, smooth gradients, skin without texture. The model's default polish is quarantined in the one thing that
    is generated. Everything alive is made by hand and shows it. Each later episode names its own "copy", the image that
@@ -262,7 +254,7 @@ to slide back into the look he objected to.
 photoreal patriarch invites resemblance to real people, which the public-repo guardrail forbids.
 
 **The decision is the showrunner's, on the evidence of `test_frames.md`.** If he prefers another direction on seeing
-the frames, every other file in `bible/visual/` holds for it: the production design, the camera and the acting rules
+the frames, every other file in this folder holds for it: the production design, the camera and the acting rules
 don't depend on the medium.
 
 ### After the pick

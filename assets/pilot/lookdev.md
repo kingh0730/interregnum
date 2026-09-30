@@ -1,6 +1,6 @@
 # Pilot lookdev v3: CONTINUITY in RELIEF
 
-Six look-development images in the RELIEF direction (`bible/visual/art_direction.md` §B): three character sheets and
+Six look-development images in the RELIEF direction (`episodes/pilot/bible/art_direction.md` §B): three character sheets and
 three locations. They are the only refs a v3 keyframe may attach (**Refs:** in each `episodes/pilot/shots/NN/shot.md`).
 Edits attach only the keyframe they edit. Every prompt below is complete and standalone, and the runnable copy of all
 43 v3 images is `episodes/pilot/images_v3.json`.

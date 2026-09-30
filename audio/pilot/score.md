@@ -2,7 +2,7 @@
 
 Four cues, 96 seconds of generated music in a 242-second film, and most of that music is either inside a television
 or saved for the last half minute. The ready-to-send requests are in `score_cues.json`; the rules behind them are in
-`../../bible/sound/sound_bible.md` §2 and §5. Times are absolute seconds in the main cut.
+`../../episodes/pilot/bible/sound.md` §2 and §5. Times are absolute seconds in the main cut.
 
 ## The idea
 

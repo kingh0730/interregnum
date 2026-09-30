@@ -1,6 +1,9 @@
-# Cinematography: the camera language
+# Cinematography: the pilot's camera language
 
-How INTERREGNUM is shot: where the camera stands, which lens, how it frames and lights, when it moves, and how
+The series-wide camera and acting rules are in `../../../bible/visual.md`. This file is how the pilot applies them,
+plus the pilot's own choices. Where it repeats a series rule, the series file wins.
+
+How the pilot is shot: where the camera stands, which lens, how it frames and lights, when it moves, and how
 actors in a video model are directed. It applies to all three art directions (`art_direction.md`) and uses the
 hardware of `production_design.md`. The rules replace the "lens language" and "camera moves" notes in
 `episodes/pilot/episode.md`.
@@ -96,6 +99,9 @@ column gives the phrase to put in the prompt.
 
 ## 6. When the camera moves
 
+These are the pilot's choices: its home register is stillness. The series rule they sit under (familiarity,
+variety and surprise, used sparingly) is `../../../bible/visual.md` §1 and §5.
+
 In v1 nearly every still got a 2–10 % push, so every shot drifted and no single move meant anything. In v2 the
 motion lives inside the frame, so the camera can stop.
 
@@ -155,19 +161,8 @@ back as a soap-opera close-up. The emotion has to come from what surrounds the f
 sound, the light and the objects.
 
 ### The rules
-1. **Write behaviour, never emotion.** Never use: stunned, hollow, glistening, trembling, tears, crying, laughing
-   through tears, overwhelmed, barely able to speak, contempt, defiance. Replace each with what the body does: where
-   the eyes rest, what the hands do, one breath.
-2. **Stillness is an action.** Say what doesn't move: "Her head does not move." "Her hands stay on the desk."
-3. **One small action per shot, and late.** Hold one to two seconds of stillness, make one small movement (a hand
-   closes on the cord, the eyes lower, a breath), then return to stillness.
-4. **Dialogue gets volume and pace, nothing else:** "She says quietly, lips barely moving: '…'"
-5. **The start frame is the first frame of the performance.** Write keyframes neutral: a composed face, the mouth
-   closed or on the first syllable, the eyes on an object. An emotional keyframe forces an emotional clip.
-6. **The sound carries what the face doesn't.** The laugh in 42 is in the mix. The face only lets it happen.
-7. **End every prompt with the performance line:** "Understated performance: her face stays composed; only the
-   described movements happen." Then "Locked-off camera."
-8. **Choose the stiller take.** Generate two. If both overact, trim the clip and cut before the gesture.
+Rules 1–8 are series rules now: `../../../bible/visual.md` §6. The pilot adds one:
+
 9. **The Father is already right.** "Minimal head movement, one slow blink, an almost unnaturally smooth stillness"
    is the Copy Rule in motion. Keep it.
 
@@ -179,9 +174,7 @@ A clip inherits its look from the start frame, so a motion prompt carries one sh
   Hold the result on twos in comp.
 
 ### The motion-prompt template
-`[style line]. [Shot size, lens, angle, composition]. [Who, where, holding what]. [What stays still]. [One action,
-with its timing: "after two seconds…"]. [Dialogue, with volume and pace]. [Performance line]. [Camera]. [Diegetic
-sound only; no music.]`
+The template is in `../../../bible/visual.md` §6.
 
 ### Three rewrites
 The pilot's staging changes too: Ida now holds the grey House Line handset, whose cord runs back to the desk

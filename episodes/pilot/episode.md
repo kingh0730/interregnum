@@ -9,7 +9,7 @@ script four minutes before air. She must decide what the dead man says, while he
 **Visual language:** RELIEF, a colour woodcut and linocut. Every light is a shape cut out of the dark by a hand, and
 the one uncarved image is the Father: the machine's smooth copy of a man (the Copy Rule). Cold phosphor is the
 Father's light and amber is the living hand's. Red is the Committee's, and **dawn rose** is printed only at the end.
-The world is letterboxed 2.39:1; the broadcast is a 4:3 picture. Full spec below and in `../../bible/visual/`.
+The world is letterboxed 2.39:1; the broadcast is a 4:3 picture. Full spec below and in `episodes/pilot/bible/`.
 **Tools (v3):** 43 Codex images: 6 lookdev, 25 keyframes, 5 keyframe edits and 7 hardware plates, with no cutout
 layers (`images_v3.json`). JS renders what every device shows (tubes, flaps, film, meters, paper), Python comp puts it
 into the hardware and builds the v1-style fallback of every shot, and the sound design and scratch voices of v1 stay.
@@ -18,7 +18,7 @@ replaces 6 cues (`audio/pilot/cues.md`).
 
 Companion files: `script.md` (screenplay with timings), `shots/NN/shot.md` (build specs), `images_v3.json` (every v3
 Codex prompt, runnable), `../../assets/pilot/lookdev.md` (the lookdev and the RELIEF block),
-`../../bible/visual/` (production design, art direction, cinematography), `../../audio/pilot/cues.md` (score, SFX,
+`episodes/pilot/bible/` (production design, art direction, cinematography), `../../audio/pilot/cues.md` (score, SFX,
 dialogue, Suno). `review.md` opens with the v3 redesign note.
 
 ---
@@ -78,7 +78,7 @@ functionary's conscience.
 | Q9 which love | Grandparent and grandchild bridged by a phrase | Nana can become a mother or father without any other change. |
 | Q12 dislikes | One short final address, no speeches | If King dislikes twists, drop shot 46. If he dislikes quotes on screen, cut the epigraph and keep only INTERREGNUM. |
 | Q15 language | English, with burned-in subtitles for the review cut | For Mandarin, the scratch voices become Tingting/Meijia/Sinji. Seedance speaks Chinese, and the text screens need a translation pass. |
-| Q16 look | RELIEF, the colour woodcut (chosen in v3; `bible/visual/art_direction.md`): flat inks hide Codex drift, hold in Seedance and make screens, windows and phones trivial to mask | A photoreal or 3D pilot means more drift risk and a new lookdev pass. |
+| Q16 look | RELIEF, the colour woodcut (chosen in v3; `episodes/pilot/bible/art_direction.md`): flat inks hide Codex drift, hold in Seedance and make screens, windows and phones trivial to mask | A photoreal or 3D pilot means more drift risk and a new lookdev pass. |
 | Q18 audience / platform | A public YouTube-style release | For **Bilibili**, a dead-leader premise is sensitive however fictional, so use the company variant above. |
 
 ## Cast (3 faces, all recurring; every keyframe attaches their sheet)
@@ -187,7 +187,7 @@ plus the generated loop and 3 PA calls. The full list with timings and voices is
 
 ## Visual language v3: RELIEF (the look every image must hold)
 
-The specs live in `bible/visual/`: `art_direction.md` (the medium), `production_design.md` (what things are) and
+The specs live in `episodes/pilot/bible/` (this episode's bible, under the series rules in `bible/visual.md`): `art_direction.md` (the medium), `production_design.md` (what things are) and
 `cinematography.md` (how they're shot). This is the summary the pilot works from.
 
 - **Medium:** a colour woodcut and linocut, printed by hand. A carved blue-black key block holds the image; light is a

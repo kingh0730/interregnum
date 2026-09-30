@@ -2,7 +2,7 @@
 
 How the pilot's sound is assembled: the buses, the rooms (convolution we build in numpy), the voice chains, the loop,
 the level and perspective plan per scene, every J/L cut and every silence. Rules are in
-`../../bible/sound/sound_bible.md`; sources in `dialogue.json`, `sfx.json` and `score_cues.json`. Times are absolute
+`../../episodes/pilot/bible/sound.md`; sources in `dialogue.json`, `sfx.json` and `score_cues.json`. Times are absolute
 seconds in the 242 s main cut; 48 kHz, 32-bit float while working, 24-bit for delivery.
 
 ## 1. Buses

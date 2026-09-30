@@ -10,8 +10,8 @@ Each episode is one "morbid symptom" of the interregnum, with its own visual lan
 
 | Path | What lives there |
 |---|---|
-| `bible/` | Series bible: premise, themes, influences, the fictional world(s), the questionnaire for King |
-| `episodes/` | One folder per episode (copy `_template/`): story, script, shot list, and per-shot folders |
+| `bible/` | Series bible: premise, themes, influences, taste, the series visual and sound rules (`visual.md`, `sound.md`), the questionnaire for King |
+| `episodes/` | One folder per episode (copy `_template/`): story, script, shot list, the episode's own bible (`bible/`: art direction, production design, cinematography, sound) and per-shot folders |
 | `assets/` | Reusable look development: character sheets, locations, props, style frames |
 | `audio/` | Music, sound effects, voice |
 | `tools/` | The production toolchain, one folder per tool (see `docs/pipeline.md`) |

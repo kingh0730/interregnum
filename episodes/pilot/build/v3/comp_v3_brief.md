@@ -2,8 +2,8 @@
 
 Repo /Users/kingh0730/repos/interregnum. Read these first:
 - `CLAUDE.md`
-- `bible/visual/art_direction.md` (RELIEF), `bible/visual/cinematography.md` (the camera-move rules: most shots are
-  locked off; only the eight permitted moves exist) and `bible/visual/production_design.md`
+- `episodes/pilot/bible/art_direction.md` (RELIEF), `episodes/pilot/bible/cinematography.md` (the camera-move rules: most shots are
+  locked off; only the eight permitted moves exist) and `episodes/pilot/bible/production_design.md`
 - `episodes/pilot/episode.md`, and each of YOUR shots' `episodes/pilot/shots/NN/shot.md` (Build, JS spec, Duration)
 - `tools/comp/reel.py`
 

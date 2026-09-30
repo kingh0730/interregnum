@@ -1,7 +1,7 @@
 // INTERREGNUM · CONTINUITY · v3 screen kit
 // One family for every in-world screen: the state's letters (built here, never from a font), the Lamp, the tube
 // (a WebGL CRT post-process), and the mechanical readouts (flaps, drums, needles, legend lamps, hands on paper).
-// Authority: bible/visual/production_design.md §4 (hardware, artefacts) and §5 (letters, the Lamp).
+// Authority: episodes/pilot/bible/production_design.md §4 (hardware, artefacts) and §5 (letters, the Lamp).
 // Deterministic: nothing here reads the clock; all randomness is seeded.
 (function () {
 'use strict';

@@ -1,7 +1,7 @@
 # CONTINUITY: casting (voices)
 
 Four speaking parts and a city. Every voice is cast once, recorded dry, and placed in its rooms by the mix
-(`../../bible/sound/sound_bible.md` §3–§4, `mix_plan.md` §3). The lines, tags and timings are in `dialogue.json`.
+(`../../episodes/pilot/bible/sound.md` §3–§4, `mix_plan.md` §3). The lines, tags and timings are in `dialogue.json`.
 
 ## How to audition (for whoever runs the takes)
 
