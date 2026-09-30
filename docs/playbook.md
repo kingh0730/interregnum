@@ -127,14 +127,8 @@ forward; the evidence from the 2026-09-30 tests is in `docs/history.md`.
   - give it a Luma-made reference sheet (front, three-quarter, profile, one expression) in `reference_image_urls`;
   - pad the base reference image to 16:9 as `image_url` (Luma edit's output follows the base image's shape);
   - put the scene in the prompt.
-- **Hero props and references:** both Luma endpoints take `reference_image_urls` (t2i up to 9, edit up to 8; fal's
-  schema). Until commit `03a4bda`, `tools/imagegen/luma_batch.py` dropped `refs` on t2i entries, so a recurring prop
-  (the v3 episode's red flower) drifted in shape and material between shots. Now t2i sends them, so list the prop's
-  reference image in `refs` on every shot that shows it, including character edits. Also tried 2026-10-01, before that
-  fix: making a shot an edit of the prop's reference image ("Fill the whole frame with a new photograph. The [prop]
-  from the reference image appears in it unchanged… Everything else is a new scene:"). On two close shots, one matched
-  closely and the other came closer but took on the scene's warm tint. Which of the two methods holds a prop better is
-  untested.
+- **Recurring props:** list the prop's reference image in `refs` on every shot that shows it, including character
+  edits. Both Luma endpoints take `reference_image_urls` (t2i up to 9, edit up to 8).
 - **Faces: average, never scary** (King, 2026-09-30). Ordinary, unglamorous, average-looking faces are right; most
   people aren't pretty. But no deep creases, heavy spots or blotches, weathered or gaunt skin, or faces that read
   older than written, unless a shot calls for it on purpose. Luma drifts this way, especially in edit sheets. So state
