@@ -72,3 +72,32 @@ reference for a Codex keyframe) "looks good".
   for non-character 3D. No EbSynth, rotoscoping, deflickering or procedural character modelling in production.
 - **Engineering notes:** OpenCV's DIS optical-flow object is not thread-safe (use one per thread; sharing it corrupted
   the heap), and parallel jobs must not rewrite shared input files that another process is reading.
+
+## Image-model tests (2026-09-30, `work/imgtest*`)
+King found the first two episodes' images "oily", "crowded" and "very AI-generated". Tests A–G compared prompt styles
+and about 10 models. Each finding rests on one or a few images, so treat them as evidence, not rules. The general rule
+that came out of them is "Luma unless it truly can't" (playbook §2b).
+
+- **Prompts (A, D):** prop lists gave crowded stock frames on every model. Photographer's briefs fixed most of it. One
+  razor-sharp subject with a blurred world is itself a tell; deep focus read more real. "Snapshot" produced a fake date
+  stamp (Nano) and a printed border with gibberish text (Luma).
+- **Models, photoreal (A, D):**
+  - best: Luma ≈ FLUX.2 Pro;
+  - then Seedream 5 Pro and Krea 2;
+  - Nano Banana Pro: the most documentary-real, less elegant;
+  - GPT Image 2.5 and Codex: glossy stock;
+  - FLUX.1 Krea [dev]: centred grins and vignettes;
+  - Z-Image Turbo: real but plain at about 1¢.
+
+  Models without an explicit ethnicity and setting drifted Western.
+- **Identity (B, E):**
+  - My first verdict that Luma edit "crops badly" was wrong: my QA grid had centre-cropped its portrait outputs.
+  - Luma-editing a Luma plate re-sharpened skin into crunch.
+  - Nano face swaps matched the ref best frame by frame, but King saw that cutting between Luma and Nano frames made
+    the drift "way way more".
+- **Finish (C):** `film_finish.py` removed wet sheen and unified models; it didn't fix Codex gloss.
+- **Styles (F):** Luma led painting, 2D animation, clay and signage; it failed one woodcut (FLUX.2 and Nano were good).
+  All six models wrote 明天见面 correctly; for brush characters on paper, only Nano and Codex wrote real ones.
+- **Genres (G):** Luma led or tied in nature, animal, space interior, SEM, underwater, night and fights. FLUX.2 and
+  Krea 2 tangled limbs in a fight. Nano sometimes ignored instructions. Seedream refused an SEM bee (a false positive).
+- **Cost:** about $6.50 of fal credit in all; Luma is about 0.3¢ an image, Nano 15¢.

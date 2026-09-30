@@ -87,89 +87,36 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
     UI fonts are banned.
   - **Faces:** calm and underplayed in the stills too; emotion comes from staging and cutting (Kuleshov).
 
-## 2b. Image technique: elegant, not "AI" (tests of 2026-09-30, `work/imgtest*`)
-King's note on episodes 1–2: frames looked "oily", "crowded" and "very AI-generated, not elegant". A/B tests over 3 scenes
-× 3 prompt styles × 6 models, plus identity and finishing tests, found:
-- **The prompt matters most.** A prop list ("twelve tables, a clock, a vending machine, towels...") gives a crowded
-  stock-photo frame on every model. Write a **photographer's brief** instead:
-  - where the camera stands (height, lens);
-  - one sharp subject that the eye lands on first;
-  - everything else soft, partial or small: backs, shoulders, hands at the edge;
-  - one named light source, with areas left to fall into dark;
-  - empty space ("plenty of calm floor");
-  - "colour film photograph, candid, unposed".
+## 2b. Image technique: elegant, not "AI"
+**Use Luma Uni-1 max (`luma/agent/uni-1/v1/max`, edit at `/max/edit`) for every image unless Luma truly can't do a
+shot.** "Truly can't" means that after two honest attempts with a rewritten brief, it still fails at something the shot
+needs. Only then test a few other models on that one shot and use the winner for it. Don't carry per-style routing rules
+forward; the evidence from the 2026-09-30 tests is in `docs/history.md`.
 
-  Complexity is fine when it has a hierarchy ("the table is full but the frame is not busy").
-- **Beware the subject-isolation tell.** Test D (2026-09-30, `work/imgtest3/`) found that one razor-sharp subject with
-  everything else blurred is itself a giveaway ("obvious subject, strange depth"). Deep focus with a readable
-  background reads more real. Get the hierarchy from position, scale and light instead of blur, and use shallow focus
-  only when the shot calls for it.
-- **Never write "snapshot", "print" or similar.** Models take them literally: Nano stamped a fake date on a frame, and
-  Luma added a printed border with gibberish text. Describe the camera and lens instead.
-- **Keep the brief short and don't pile on texture words.** Grain, pores, worn and lived-in make the surface oily. A
-  one-line guard helps a little: "ordinary people with matte skin and uneven features; nothing glossy, polished or
-  symmetrical; no HDR, no over-sharpening". Never write a paragraph of them.
-- **State each person's ethnicity and setting.** Seedream made a Chinese metro passenger Western; FLUX.2 edit moved a
-  Chengdu woman to an American suburb in a denim jacket.
-- **Model routing for photoreal work (fal):**
+- **Prompts are short photographer's briefs**, not prop lists:
+  - where the camera stands and which lens;
+  - the one thing the eye lands on first, set apart by position, scale and light (use blur only when the shot calls
+    for it);
+  - one named light source;
+  - the setting and each person's ethnicity, stated explicitly.
 
-  | Job | Model | Why |
-  |---|---|---|
-  | Settings, hero and establishing frames | Luma Uni-1 max; FLUX.2 Pro | Most film-like and elegant |
-  | Second choice for those | Seedream 5 Pro; Krea 2 | Good, slightly more digital |
-  | Documentary realism (reportage, busy real places) | Nano Banana Pro t2i, 2K ($0.15) | The most convincingly real at 100%; less elegant than Luma, and it can drift to staged stock or Western interiors |
-  | Cheap drafts and blocking | Z-Image Turbo (~1¢; set the size explicitly, the default is 1024×576) | Real-looking but plain; ignores instructions like "nearly empty" |
-  | Recurring characters (identity from a ref) | **Luma edit from a padded 16:9 ref** (same model as everything else) | Switching models between shots reads as more drift than any single model's drift |
-  | Avoid for photoreal | GPT Image 2.5 (clean stock); Codex (glossy even with good prompts); FLUX.1 Krea [dev] (centred subjects, grins to camera, heavy vignette, waxy faces); Luma t2i with refs (the face drifts; use edit) | |
+  Complexity is fine when it has a hierarchy. Don't pile on texture words (grain, pores, worn), and avoid words a model
+  can take literally as an object ("snapshot", "print").
+- **Characters:** one model per character within a sequence; cutting between models reads as the face changing. With
+  Luma:
+  - give it a Luma-made reference sheet (front, three-quarter, profile, one expression) in `reference_image_urls`;
+  - pad the base reference image to 16:9 as `image_url` (Luma edit's output follows the base image's shape);
+  - put the scene in the prompt.
+- **Judge honestly:**
+  - look at full frames, never centre-cropped grids;
+  - look at faces at 100% and at 1080p;
+  - judge identity shot-to-shot in sequence, not against the reference.
 
-  - **One model per character look within a sequence.** In Test E (2026-09-30, `work/imgtest4/`), Nano Banana Pro face
-    swaps matched the reference best frame by frame. But King, watching the sequence, found that cutting between Luma and
-    Nano frames made the drift "way way more": each model renders skin, light and texture differently, so the face
-    changes between shots. Judge identity shot-to-shot in sequence, not frame-to-reference. Different models are fine
-    for different styles or sequences (a woodcut interlude, graphics, a dream) when another model does that style better.
-  - **Character method:** Luma edit with the ref **padded to 16:9** as `image_url` and the scene in the prompt ("Fill the
-    whole frame; no grey borders"). Luma edit has no aspect-ratio setting; the output follows the base image. About
-    0.3¢ an image. Harsh light (noon sun, TV glow) ages faces in close-ups; King saw no identity drift across the
-    sequence, so only act on drift you can see in sequence.
-  - **Standard character refs:** before keyframes, make each recurring character a small Luma-made sheet (front,
-    three-quarter, profile, plus one strong expression) and pass all of them in `reference_image_urls`. Several angles
-    pin the face better than one portrait.
-  - **Never Luma-edit a Luma plate.** It re-sharpens already-textured skin into crunchy, blotchy "oily" faces; it only
-      shows at 100%.
-  - **Judge faces at 100% and at delivery size (1080p).** Defects hidden at contact-sheet size decide the verdict.
-  - **QA grids must never centre-crop mixed aspect ratios.** A 16:9 crop of Luma's portrait frames once made them look
-    broken ("an arm, the top of a head"), and I wrongly blamed the model. Letterbox each cell instead, and check any
-    failure against the full image.
+  Would a good photographer have taken this frame? If not, rewrite the brief.
+- **Finish:** `tools/imagegen/film_finish.py` evens out sheen and ties stills together. It can't rescue a bad frame.
 
-  Codex stays right for stylised looks (woodcut, ink) where its style block controls the surface.
-- **Styles beyond photoreal (Test F, 2026-09-30, `work/imgtest5/`, 7 styles × 6 models):**
-
-  | Style | Use | Notes |
-  |---|---|---|
-  | Painting (gouache and similar) | Luma; Krea 2 for bolder graphic flat colour | Codex goes busy storybook |
-  | Hand-drawn 2D animation | Luma; Seedream (clean, correct signage); Krea 2 (comic acting) | |
-  | Woodcut / printmaking | FLUX.2 Pro; Nano Banana Pro | **Luma fails** (all texture, no subject) |
-  | Near-future photoreal | Nano Banana Pro; Luma | Low-key futures came out believable on all models |
-  | Still life with written characters | Luma for composition; Nano or Codex if a real character must be legible | Seedream, FLUX and Krea invent pseudo-characters |
-  | Chinese signage and titles | Any (all six got 明天见面 right); Luma the most filmic | Codex slips into traditional forms |
-  | Clay / stop-motion | Luma (reads as a real miniature set); Krea 2 | Name the setting as Chinese or everything drifts to Europe |
-
-- **Genres (Test G, 2026-09-30, `work/imgtest6/`, 8 genres × 6 models):** Luma was first or joint-first in nature,
-  animals, space interiors, microscopy (SEM), underwater and night, and among the best for fights; no Luma failures.
-  - **Fights and fast bodies:** Luma, Nano or Seedream. FLUX.2 and Krea 2 tangle limbs.
-  - **Minimal sci-fi scale** (a space elevator over the sea): Seedream and Nano were the most striking; all six understood it.
-  - **Nano quirks:** sometimes ignores instructions (an astronaut awake when asked asleep; blue hour instead of night).
-    Seedream refused an SEM bee's eye (a false positive).
-
-- **Finish every still with `tools/imagegen/film_finish.py`.** It tames specular highlights, lifts the blacks, applies
-  a gentle curve, halation and real grain. It removes the wet sheen from skin and makes frames from different models
-  sit together. It will not rescue a stock-photo composition or Codex gloss; fix those in the prompt or the model.
-  Default strength is 1.0.
-- **Judge for elegance, not just photorealism.** Look at a 100% crop of the face: is the skin wet or plastic? Are there
-  more than about 3 things competing for the eye? Would a good photographer have taken this frame? If not, rewrite
-  the brief. Don't reroll.
-
-## 3. Lookdev and keyframes (Codex)
+## 3. Lookdev and keyframes
+The default model is Luma (§2b). The Codex notes below apply when a shot uses Codex.
 - **Tools:** `tools/imagegen/gen.sh` for one image; `tools/imagegen/batch.py <manifest> --jobs 5` for many (it
   respects dependencies and retries safety false positives neutrally).
 - **Order:**
