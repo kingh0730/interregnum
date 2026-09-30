@@ -271,6 +271,15 @@ the stock, polished result, the audio version of the AI look. So describe the re
   which run early. Match subtitles to lines by ID and time, never by text (lines repeat).
 
 ## 7. Motion: Seedance 2.5 (fal; needs budget)
+**What to fix before Seedance, and what after** (King, 2026-10-01). Seedance animates the start frame and nothing else.
+- **Before:** everything inside the start frames (faces, composition, props in the wrong state, stray hands) and
+  the edit (shot lengths and order). A flaw in a still becomes a flaw in a paid clip, and seconds are billed.
+- **After:**
+  - **Graphics:** overlays must be re-tracked to the moving plates anyway; that pass is where alignment and motion
+    design are brought up to film level.
+  - **Sound:** the final pass (clipped onsets, cut-offs, timing), since motion and lip-sync shift the timing.
+- **Seedance's job:** the action a still can't show, not polish.
+
 - **Tools:** `tools/video/i2v.py` for one take; `tools/video/run_jobs.py jobs.json outdir` for many. Take the job list
   format and voice bible from `episodes/pilot/v2_jobs.json`.
 - **Acting:** motion prompts describe behaviour, not emotion (see the cinematography bible). Performance-reference
