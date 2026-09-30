@@ -15,5 +15,9 @@ Use an absolute path only for files outside the repo (e.g. the scratchpad).
 **Why:** King (2026-09-30): "always give me complete paths to files so i can click", then clarified: "i meant complete
 relative paths to working dir", so not absolute paths. He opens files by clicking them in the terminal.
 
+**Slip (2026-09-30):** I named a folder once ("All paths are in `private/mom-future/v3/work/keys/`") and then gave bare filenames in the list.
+King: "didn't i tell you to always give full relative paths?" A shared folder is no excuse: every file gets its own
+full path, even in a long list.
+
 **How to apply:** every file mention in a reply to King, one complete relative path per file, always wrapped in
 backticks (King wants them coloured: "i want color there").
