@@ -278,7 +278,12 @@ the stock, polished result, the audio version of the AI look. So describe the re
   - **Graphics:** overlays must be re-tracked to the moving plates anyway; that pass is where alignment and motion
     design are brought up to film level.
   - **Sound:** the final pass (clipped onsets, cut-offs, timing), since motion and lip-sync shift the timing.
-- **Seedance's job:** the action a still can't show, not polish.
+- **Seedance's job:** the action a still can't show, not polish. It also has two sound jobs:
+  - **on-screen dialogue:** our ElevenLabs take goes in as `--ref-audio`, and Seedance lip-syncs the performance to it;
+  - **motion sound** (splashes, steps, slams): keep its audio as a stem, and use it when it syncs better than the
+    library sound.
+
+  Music, ambience and the final mix stay ours.
 
 - **Tools:** `tools/video/i2v.py` for one take; `tools/video/run_jobs.py jobs.json outdir` for many. Take the job list
   format and voice bible from `episodes/pilot/v2_jobs.json`.
