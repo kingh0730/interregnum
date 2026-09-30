@@ -3,7 +3,7 @@
 An anthology of short films (see `README.md`). King is the showrunner; Claude writes, directs and runs the
 production toolchain. Start with `README.md` (status) and `docs/playbook.md` (how an episode is made, end to end,
 with every lesson from the pilot; the `make-episode` skill follows it), then `docs/strategy.md` (v1 story reel → v2 polish with
-Seedance 2.5 and Suno), `docs/pipeline.md` (which tool for what) and `docs/history.md` (what failed and why).
+Seedance 2.5 and Suno; the motion model is now MiniMax H3 Max, see the playbook §7), `docs/pipeline.md` (which tool for what) and `docs/history.md` (what failed and why).
 
 ## Working agreements
 - Reasoning effort: while King is at the keyboard (assume so unless he says he is away), everything runs at the default, with no `--effort` flag. When he is away, checking work (critics, reviews, hunting bugs, flaws and mistakes, small pure improvements) runs at `--effort max`, and everything else stays at the default until clear evidence says higher effort adds a lot.

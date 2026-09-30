@@ -1,6 +1,6 @@
 ---
 name: make-episode
-description: Make an INTERREGNUM episode from a blank page to a finished story reel with final sound (script, visual bible, Codex keyframes, hardware screens, compositing, designed voices, score, SFX, mix), then the Seedance motion pass. Use when asked to make, pilot, or produce an episode.
+description: Make an INTERREGNUM episode from a blank page to a finished story reel with final sound (script, visual bible, Luma keyframes, hardware screens, compositing, designed voices, score, SFX, mix), then the motion pass (MiniMax H3 Max) and the final finishing pass. Use when asked to make, pilot, or produce an episode.
 ---
 
 Follow `docs/playbook.md` exactly, stage by stage (0–8). You are the director: make every creative and technical call

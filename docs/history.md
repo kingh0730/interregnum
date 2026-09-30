@@ -119,3 +119,13 @@ that came out of them is "Luma unless it truly can't" (playbook §2b).
   - Claude's blind taste favours clean cinematic frames; King's favours Luma's filmic restraint. Settle the default with
     King's own blind picks, not Claude's.
 - **Decision:** King chose Luma as the default regardless of the round-2 scores: "it's just luma for me. settled."
+
+## Video-model test (2026-10-01, v2c *The Exception*)
+- Three test shots (key beat 47 with an end frame, action 27, dialogue 04): Seedance 2.5 (i2v and ref), Luma Ray 3.2,
+  MiniMax H3 Max, and MiniMax H3 Max lip-sync.
+- **Seedance 2.5 refused all four jobs:** "may contain likenesses of real people" (partner validation), on generated
+  faces.
+- Ray made 47 and refused 27 once (content checker). MiniMax made 47 and 27, and its lip-sync made 04 with our voice.
+- **MiniMax invented dialogue on 27,** because the prompt said she "says one short line" and there was no audio to
+  follow. Hence the rules that motion prompts never mention speech and that model audio is discarded.
+- King chose MiniMax H3 Max as the single video family (motion plus lip-sync).

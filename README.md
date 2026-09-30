@@ -24,4 +24,4 @@ Each episode is one "morbid symptom" of the interregnum, with its own visual lan
 - [ ] King answers `bible/00-questionnaire.md`
 - [ ] Series bible and episode slate (at max effort)
 - [ ] v1 story reels (no paid models): **pilot *CONTINUITY* built**, awaiting King's review (`episodes/pilot/review.md`)
-- [ ] v2 polish: Seedance 2.5 (needs an API key) + Suno (King runs it from cue sheets)
+- [ ] v2 polish: motion (MiniMax H3 Max; Seedance refuses photoreal faces) + the final finishing pass (playbook §7–7b)

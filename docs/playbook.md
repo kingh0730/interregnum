@@ -8,8 +8,8 @@ disagree, this document wins; update it when you learn something.
 only for what Claude can't do: **watch motion, listen to sound, spend money or provide keys and accounts**, and make
 showrunner decisions about his own life or the release (privacy, platform). Never hand King a menu of artistic options.
 
-**Default scope: stop before Seedance.** A run makes everything through stage 6 (a story reel with its final sound).
-Stage 7 (Seedance) is the expensive step: start it only when King gives the go-ahead after a cost estimate.
+**Default scope: stop before motion.** A run makes everything through stage 6 (a story reel with its final sound).
+Stage 7 (motion) and 7b (the final finishing pass) start only when King gives the go-ahead after a cost estimate.
 
 **Private projects:** anything made for King's family or that he marks private lives in `private/<project>/`. The
 public repo ignores it, and it has its own local git repo that is never pushed. The shared tools are used from
@@ -22,9 +22,9 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
   `bible/visual.md` and `bible/sound.md`, and this file. Other episodes' bibles (`episodes/pilot/bible/`) are
   worked examples, not rules: their choices belong to their films.
 - **Budget:**
-  - **Codex:** about 45 images per episode; this draws on King's quota.
-  - **fal:** Seedance is about $0.47 per second at 720p and is the expensive stage; the audio models together cost
-    about $4 per episode.
+  - **fal:** images (Luma, about 0.3¢ each), music and SFX (about $4 per episode) and motion (MiniMax H3 Max, about
+    $0.025/s, and its lip-sync, $0.05/s: roughly $5–15 per episode). The balance is shared by parallel sessions.
+  - **Codex:** only for stylised looks it does best; it draws on King's quota.
   - **ElevenLabs:** the Starter account (about 40,000 characters a month), which covers an episode's dialogue several
     times over.
   - Estimate before any batch, test one item first, and tell King the cost when it crosses about $10.
@@ -32,7 +32,8 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
   (everything that ships), and `ELEVENLABS_API_KEY` (an old free account for tests only; it has no commercial
   licence). Never put a key in a repo file.
 - **Privacy:** the repo is public. King's candid views stay in the gitignored `bible/private/`, and every episode is
-  fiction with no real people, brands or countries.
+  fiction with no real people or named countries in conflict. Real brands may appear as background texture (King,
+  2026-10-01), but never as the target of the film's satire or joke; keep those institutions unbranded.
 
 ## 1. Script and shot list (a headless writer session; effort per CLAUDE.md)
 - **How:** a separate headless session in auto mode, with a deny-list for paid and publishing actions:
@@ -92,14 +93,14 @@ felt like one tempo. Movement inside shots, narration cadence, sound density and
 ## 2. Visual bible and art direction (a writer session, then tests)
 - **Bible:** a session writes the episode's own bible in `<episode>/bible/`, under the series rules in
   `bible/visual.md`: production design (the world as objects,
-  with every screen as physical hardware), three distinct art directions each with a 130–170-word Codex style block,
+  with every screen as physical hardware), three distinct art directions each with a short style block for the image model (Luma by default, §2b),
   cinematography (whose eye, lens and height, composition, the camera's home register and moves, and how the
   series acting rule applies) and test-frame prompts.
 - **Tests:** 2 frames per direction, 6 in all, with **no refs** (old refs pull the old look back). Pick one direction
   and state why.
 - **Rules learned the hard way:**
-  - **Codex drifts to semi-photoreal 3D** unless the style block says so explicitly: matte ink, no reflections, no
-    gradients, "avoid 3D render".
+  - **Codex drifts to semi-photoreal 3D** (when a stylised look uses Codex) unless the style block says so
+    explicitly: matte ink, no reflections, no gradients, "avoid 3D render".
   - **Medium rule:** a character may differ in *technique*, not *medium*. Change the medium only if the change is
     fully committed, motivated, and either set up early or saved for a single earned revelation. The half-smooth Father
     failed; the engraved Father works.
@@ -122,25 +123,30 @@ forward; the evidence from the 2026-09-30 tests is in `docs/history.md`.
 
   Complexity is fine when it has a hierarchy. Don't pile on texture words (grain, pores, worn), and avoid words a model
   can take literally as an object ("snapshot", "print").
-- **Characters:** one model per character within a sequence; cutting between models reads as the face changing. With
-  Luma:
-  - give it a Luma-made reference sheet (front, three-quarter, profile, one expression) in `reference_image_urls`;
-  - pad the base reference image to 16:9 as `image_url` (Luma edit's output follows the base image's shape);
-  - put the scene in the prompt.
+- **Characters and faces: one method.**
+  - **Look:** average, never scary (King, 2026-09-30). Ordinary, unglamorous faces are right, but no deep creases,
+    heavy spots or blotches, weathered or gaunt skin, or faces that read older than written, unless a shot calls for
+    it on purpose. Write each character as "looks her age, with a clear, even complexion". Never write texture or
+    ageing details ("deep laugh lines", "age spots", "sunken temples").
+  - **One model per character within a sequence;** cutting between models reads as the face changing.
+  - **Base portrait:** a Luma t2i head-and-shoulders on a plain wall, 16:9, and judged at 100% before anything is
+    built on it.
+  - **Sheets** (three-quarter, profile, one expression) are Luma edits of the base, used to check the character and
+    as extra references for younger faces.
+  - **Why the base matters:** Luma edit adds skin texture every time, and edits of edits compound into crepey,
+    spotted faces.
+  - **Keyframes:** Luma edit with `image_url` = the base (padded to 16:9 if it isn't), `reference_image_urls` = the
+    base plus the sheets for young faces, or **the base only for older faces**; the scene goes in the prompt
+    ("Fill the whole frame"). Every edit ends with the skin lock: "Keep the exact age and clear, even skin from the
+    reference: add no blemishes, spots, weathering or extra lines."
+  - **An aged version** of a character (60 → 80) is a Luma **t2i** with the younger base in
+    `reference_image_urls` and the ageing described plainly ("soft and even for her age"), never an ageing edit.
+    Only a small ageing done by edit (28 → 48) uses the ageing lock, "Age her only as described here, and keep a
+    clear, even complexion", instead of the skin lock.
+  - **Retake any face that drifts.** `tools/imagegen/luma_batch.py` runs a manifest; a generator script like
+    `private/mom-future/v2c/work/make_images_json.py` can add the locks automatically.
 - **Recurring props:** list the prop's reference image in `refs` on every shot that shows it, including character
   edits. Both Luma endpoints take `reference_image_urls` (t2i up to 9, edit up to 8).
-- **Faces: average, never scary** (King, 2026-09-30). Ordinary, unglamorous, average-looking faces are right; most
-  people aren't pretty. But no deep creases, heavy spots or blotches, weathered or gaunt skin, or faces that read
-  older than written, unless a shot calls for it on purpose. Luma drifts this way, especially in edit sheets. So state
-  each character's age as "looking their age" with a clear, even complexion, add an age-and-skin lock to every edit
-  ("keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines"),
-  and retake any face that drifts.
-- **Luma edit ages faces (v2c, 2026-10-01).** Each edit adds skin texture, so edits of edits (sheets, then keyframes
-  from sheets) compound into crepey, spotted faces. So:
-  - keyframes reference the base portrait, not the sheets, when faces are older;
-  - make an aged version of a character (60 → 80) with t2i plus the younger base in `reference_image_urls`, not an
-    ageing edit;
-  - an ageing edit needs its own lock ("age her only as described"), since "keep the exact age" contradicts it.
 - **Luma's queue sometimes hangs** a request IN_PROGRESS for 20+ minutes while fresh ones finish in about 2;
   `luma_batch.py` resubmits after 7 minutes.
 - **Judge honestly:**
@@ -152,9 +158,9 @@ forward; the evidence from the 2026-09-30 tests is in `docs/history.md`.
 - **Finish:** `tools/imagegen/film_finish.py` evens out sheen and ties stills together. It can't rescue a bad frame.
 
 ## 3. Lookdev and keyframes
-The default model is Luma (§2b). The Codex notes below apply when a shot uses Codex.
-- **Tools:** `tools/imagegen/gen.sh` for one image; `tools/imagegen/batch.py <manifest> --jobs 5` for many (it
-  respects dependencies and retries safety false positives neutrally).
+The default model is Luma (§2b): `tools/imagegen/luma_batch.py <images.json> --jobs 8` runs a manifest (t2i or edit,
+in dependency order, resumable, resubmitting stuck requests). For Codex looks: `tools/imagegen/gen.sh` for one image,
+`tools/imagegen/batch.py <manifest> --jobs 5` for many. The Codex notes below apply only when a shot uses Codex.
 - **Order:**
   1. The master style frame alone, then judge it.
   2. The other lookdev: character sheets and locations.
@@ -168,8 +174,8 @@ The default model is Luma (§2b). The Codex notes below apply when a shot uses C
   - **Edits of a keyframe re-render everything.** Paste back only the edited region, with a feathered mask.
   - **One image keeps failing with "network errors"** while others succeed: the prompt is usually too long (for
     example 4,900 characters). Cut it to about 3,000 by attaching the approved test frame as a composition reference.
-  - **Codex flatters age.** "100 years old" rendered as about 78. Describe ageing physically (hair density and scalp,
-    skin laxity and spots, sunken temples, hooded eyes, a narrower face, hands) and reference the previous age sheet.
+  - **Codex flatters age.** "100 years old" rendered as about 78. Describe ageing through hair, posture, a narrower
+    face and hands, and reference the previous age sheet, without scary skin detail (§2b).
   - **"Print" styles grow cream paper margins.** Frame past them in comp.
   - **Stray details,** such as a second mole: patch them locally with texture from the same hatching direction, sized
     to the defect. Verify at 4× zoom, then re-propagate to every consumer.
@@ -271,93 +277,62 @@ the stock, polished result, the audio version of the AI look. So describe the re
   which run early. Match subtitles to lines by ID and time, never by text (lines repeat).
 
 ## 7. Motion (default MiniMax H3 Max; fal; needs King's go)
-**What to fix before Seedance, and what after** (King, 2026-10-01). Seedance animates the start frame and nothing else.
-- **Before:** only what the viewer will see and Seedance won't change by itself (a wrong face, a wrong setting or
-  composition), plus the edit (shot lengths and order; seconds are billed). Flaws the shot's own action resolves (a
-  hand that lifts, a book that opens) can be left to Seedance. Three ways to use its freedom:
-  - image-to-video locks frame 0 but changes things through motion;
-  - reference-to-video treats images as references and can restage the shot (more drift from our framing; test it
-    first);
-  - trimming the clip's head hides a bad opening, at the cost of paid seconds.
-- **After:**
-  - **Graphics:** overlays must be re-tracked to the moving plates anyway; that pass is where alignment and motion
-    design are brought up to film level.
-  - **Sound:** the final pass (clipped onsets, cut-offs, timing), since motion and lip-sync shift the timing.
-- **Default video model: MiniMax H3 Max, for everything** (King, 2026-10-01): `minimax/h3-max/image-to-video` for
-  motion (start and end frame; about $0.025/s) and `minimax/h3-max/lip-sync/image-to-video` for every spoken line (our
-  voice take; $0.05/s). One family keeps motion, skin and light consistent from shot to shot; mixing models reads as
-  drift. Switch per shot (Luma Ray 3.2 first) only when H3 Max truly can't do it. Discard its audio track.
-- **H3 Max strategy (supersedes the Seedance-era details below where they conflict):**
-  - **Grouping:** clips run 5–15 s, so each continuous take covers several short shots of one scene.
-  - **Complex key beats:** there's no mid-shot keyframe, so split at the pose. For example, start → hand over the
-    mouth, then that frame → the smile; each clip is pinned by its start and end frames.
-  - **Dialogue with action:** the lip-sync variant has no prompt. Test `target_audio_url` on the normal model first,
-    since it may give directable action plus lip-sync together; otherwise split the line (lip-sync) from the action
-    (H3 Max).
-  - **Camera moves:** use `minimax/h3-max/camera-controls` (keyframed camera paths, scene frozen) for the film's
-    few deliberate moves.
-  - **Takes:** two takes per important shot, and pick the better one (they cost pennies).
-- **Video-model test (2026-10-01, v2c):**
-  - **Seedance 2.5 refuses photoreal human stills** ("may contain likenesses of real people"; partner validation),
-    even though every face is AI-generated. Don't work around it. Seedance is out for photoreal people.
-  - Luma Ray 3.2 ($0.03/s, no audio, keyframe pinning) and MiniMax H3 Max ($0.025/s) accept them. MiniMax H3 Max
-    lip-sync ($0.05/s) takes only an image and our audio, with no prompt.
-  - **Speech only ever comes from our audio** (King: models "invent dialogue out of thin air"):
-    - pure dialogue shots use MiniMax lip-sync;
-    - action shots use Ray, with "mouth closed, not speaking" in the prompt. Having no audio doesn't stop a model
-      from animating silent talking, so pin closed-mouth keyframes where possible, and QA every non-dialogue clip
-      with a face-landmark mouth check (flag speech-like open/close rhythm); retake or trim what's flagged;
-    - shots with both action and a line are split: lip-sync on the line, cut to Ray for the action.
-    - **Motion prompts never mention speech** ("says a line", "shouts"): with no audio to follow, the model invents
-      the words (MiniMax did on shot 27). Describe the action only, plus "mouth closed, not speaking".
-    - **Discard any audio a video model returns** (MiniMax H3 Max adds its own track); the mix is always ours.
-  - The tiered strategy below was written for Seedance; apply its tiers with these models.
-- **Strategy (reasoned 2026-10-01):**
-  - **Triage shots by what the motion is for:**
-    - **A, story beats** carried by acting: i2v, plus a real performance clip where King can give one, plus a
-      behaviour-only prompt; 2–3 takes.
-    - **B, on-screen dialogue:** i2v with the voice take as ref audio for lip-sync.
-    - **C, action and places:** i2v with a plain behaviour prompt; keep Seedance's motion sound as a stem.
-    - **D, stillness sections:** cheap near-still takes (breathing, light, steam), never frozen frames between
-      moving shots, which read as a glitch or "PPT". Stillness comes from the content, not a freeze.
-  - **i2v is the default** (frame 0 is the approved still); reference mode only to restage a still that's wrong.
-  - **Pin key beats with an end frame:** i2v takes `end_image_url`. Make the pose the beat must land on as a Luma still
-    (the hand over the mouth), or match the next shot's start frame for continuity.
-  - **Facts (fal schema, 2026-10-01):**
-    - clip length 4–30 s, or auto;
-    - 480p, 720p or 1080p (test motion at 480p);
-    - generate_audio on or off;
-    - ref mode takes up to 10 images, videos and audio, named `@Image1`, `@Video1`, `@Audio1` in the prompt (fix
-      i2v.py's `[Image1]` wording before using it).
-  - **A stills-reel clip is a poor video reference:** it carries framing, which the still already gives, and
-    stillness. Video refs are for real performance or camera motion.
-  - **Text and graphics never go into Seedance.** Composite them afterwards, tracked to the motion.
-  - **Group short shots:** consecutive shots of one scene go in one continuous take, cut in the edit. Check
-    Seedance's minimum clip length and multi-shot support first; paying for 5 s to use 1.5 s wastes most of it.
-  - **Review:** Claude screens every clip's frames (identity, hands, ageing, props) and retakes; King watches one
-    assembled motion cut.
-  - **Test first:** the key beat, one lip-sync shot and one action shot, plus a control take of the key beat with
-    the stills-reel reference. That measures real cost with refs and tests the assumptions. If the key beat fails,
-    compare other fal video models on that one shot before more retakes (Seedance is the default, not dogma).
-- **Seedance's job:** the action a still can't show, not polish. It also has two sound jobs:
-  - **on-screen dialogue:** our ElevenLabs take goes in as `--ref-audio`, and Seedance lip-syncs the performance to it;
-  - **motion sound** (splashes, steps, slams): keep its audio as a stem, and use it when it syncs better than the
-    library sound.
+**Models** (tested 2026-10-01; evidence in `docs/history.md`):
+- **Default: MiniMax H3 Max for everything** (King's call). One family keeps motion, skin and light consistent from
+  shot to shot, and mixing models reads as drift.
+  - **Motion:** `minimax/h3-max/image-to-video`, about $0.025/s. Start frame, optional end frame, 5–15 s, 480P, 768P
+    or 1080P; `prompt_expansion_mode: "disabled"` keeps prompts literal.
+  - **Speech:** `minimax/h3-max/lip-sync/image-to-video`, $0.05/s. Image plus our audio, no prompt.
+  - **Camera moves:** `minimax/h3-max/camera-controls` (keyframed camera paths, scene frozen).
+  - **Restaging a still that's wrong:** `minimax/h3-max/reference-to-video` (images, videos and audio as refs).
+- **Fallback per shot only,** when H3 Max truly can't: Luma Ray 3.2 (`luma/agent/ray/v3.2/image-to-video`,
+  $0.03/s, no audio, keyframes pinned anywhere in the clip), then a quick comparison on that one shot.
+- **Seedance 2.5 refuses photoreal human stills** ("likenesses of real people"), even though every face is
+  generated. Don't work around it. It stays an option only for stylised looks without photoreal faces.
+- **Tools:** `tools/fal_run.py <endpoint> <payload.json> <out>` for one clip; it never re-POSTs and it saves the
+  request id. There's no H3 Max batch tool yet: write one on the first full run, following
+  `tools/imagegen/luma_batch.py`. `tools/video/i2v.py` and `run_jobs.py` are Seedance-only.
 
-  Music, ambience and the final mix stay ours.
+**Speech only ever comes from our audio** (King: models "invent dialogue out of thin air").
+- **Pure dialogue shots:** lip-sync with our voice take.
+- **Motion prompts never mention speech** ("says a line", "shouts"): with no audio to follow, the model invents the
+  words. Describe the action only, plus "mouth closed, not speaking".
+- **Shots with both action and a line:** first test `target_audio_url` on the normal H3 Max model (it may give
+  directable action plus lip-sync together). Otherwise split the line (lip-sync) from the action (H3 Max) in the edit.
+- **Discard every audio track a video model returns;** the mix is always ours (§6, §7b).
+- **Silent fake-talking:** a model can animate talking with no audio at all. QA every non-dialogue clip with a
+  face-landmark mouth check (flag speech-like open and close rhythm), and retake or trim what's flagged.
 
-- **Tools:** `tools/video/i2v.py` for one take; `tools/video/run_jobs.py jobs.json outdir` for many. Take the job list
-  format and voice bible from `episodes/pilot/v2_jobs.json`.
-- **Acting:** motion prompts describe behaviour, not emotion (see the cinematography bible). Performance-reference
-  video (reference-to-video `video_urls`) is the strongest lever: ask King for short phone clips of underplayed beats.
-- **Consistency:** voice consistency comes from generating each character's off-screen lines in the same take as their
-  on-screen ones. Once the designed voices exist, prefer audio-driven lip-sync or the voice changer, so the cast voices
-  stay.
-- **Continuity:** generate a scene's consecutive broadcast or dialogue shots as **one continuous take** and cut it, to
-  avoid pose jumps at the cuts.
-- **Audio:** non-dialogue shots use `--no-audio`.
-- **Money safety:** `i2v.py` saves the request id at submit, and polls retry without ever re-submitting. Stranded
-  results can be recovered through `GET https://api.fal.ai/v1/models/requests/by-endpoint?endpoint_id=…` and then
+**What to fix before motion, and what after.**
+- **Before:** only what the viewer will see and the motion won't change by itself (a wrong face, setting or
+  composition), plus the edit (shot lengths and order). Flaws the shot's own action resolves (a hand that lifts, a
+  book that opens) can be left to the motion, or trimmed off the clip's head.
+- **After (§7b):** graphics re-tracked to the moving plates, the sound pass and every other polish.
+
+**Strategy.**
+- **Triage shots by what the motion is for:**
+  - **A, story beats carried by acting:** image-to-video with an end frame pinning the pose the beat must land on
+    (make it as a Luma still), a behaviour-only prompt, 2–3 takes, and a real performance clip from King as a
+    reference where he can give one. Complex beats are split at the pose: start → the pose, then the pose → the end.
+  - **B, dialogue:** lip-sync (above).
+  - **C, action and places:** image-to-video with a plain behaviour prompt, 1–2 takes.
+  - **D, stillness sections:** near-still takes (breathing, light, steam). Never frozen frames between moving shots,
+    which read as a glitch or "PPT"; stillness comes from the content, not a freeze.
+- **Image-to-video from the approved still is the default;** reference mode only to restage a still that's wrong.
+- **Group short shots:** consecutive shots of one scene go in one continuous take (5–15 s) and are cut in the edit.
+  Chain takes for continuity: the last frame of one clip starts the next.
+- **Acting:** prompts describe behaviour, never emotion (see the series visual rules); faces underplay.
+- **Text and graphics never go into the video model;** it mangles writing. Composite them afterwards, tracked to the
+  motion.
+- **A stills-reel clip is a poor video reference:** it carries framing, which the still already gives, and stillness.
+  Video references are for real performance or camera motion.
+- **Test first on every new episode or model:** the key beat, one dialogue shot and one action shot, at a low
+  resolution, and settle open questions (for H3 Max: `target_audio_url`, prompt expansion on or off, 768P against
+  1080P) before the full batch.
+- **Review:** Claude screens every clip's frames (identity, hands, ageing, props, mouths) and retakes; King watches one
+  assembled motion cut.
+- **Money safety:** `fal_run.py` saves the request id at submit and never re-submits. Stranded results can be
+  recovered through `GET https://api.fal.ai/v1/models/requests/by-endpoint?endpoint_id=…` and then
   `https://queue.fal.run/<app>/requests/<id>`.
 
 ## 7b. Final finishing pass (after motion; every episode)
