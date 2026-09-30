@@ -290,7 +290,9 @@ the stock, polished result, the audio version of the AI look. So describe the re
     lip-sync ($0.05/s) takes only an image and our audio, with no prompt.
   - **Speech only ever comes from our audio** (King: models "invent dialogue out of thin air"):
     - pure dialogue shots use MiniMax lip-sync;
-    - action shots use Ray (it has no audio), with "mouth closed, not speaking" in the prompt; retake any that talk;
+    - action shots use Ray, with "mouth closed, not speaking" in the prompt. Having no audio doesn't stop a model
+      from animating silent talking, so pin closed-mouth keyframes where possible, and QA every non-dialogue clip
+      with a face-landmark mouth check (flag speech-like open/close rhythm); retake or trim what's flagged;
     - shots with both action and a line are split: lip-sync on the line, cut to Ray for the action.
     - **Motion prompts never mention speech** ("says a line", "shouts"): with no audio to follow, the model invents
       the words (MiniMax did on shot 27). Describe the action only, plus "mouth closed, not speaking".
