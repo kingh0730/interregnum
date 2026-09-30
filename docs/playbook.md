@@ -283,6 +283,16 @@ the stock, polished result, the audio version of the AI look. So describe the re
   - **Graphics:** overlays must be re-tracked to the moving plates anyway; that pass is where alignment and motion
     design are brought up to film level.
   - **Sound:** the final pass (clipped onsets, cut-offs, timing), since motion and lip-sync shift the timing.
+- **Video-model test (2026-10-01, v2c):**
+  - **Seedance 2.5 refuses photoreal human stills** ("may contain likenesses of real people"; partner validation),
+    even though every face is AI-generated. Don't work around it. Seedance is out for photoreal people.
+  - Luma Ray 3.2 ($0.03/s, no audio, keyframe pinning) and MiniMax H3 Max ($0.025/s) accept them. MiniMax H3 Max
+    lip-sync ($0.05/s) takes only an image and our audio, with no prompt.
+  - **Speech only ever comes from our audio** (King: models "invent dialogue out of thin air"):
+    - pure dialogue shots use MiniMax lip-sync;
+    - action shots use Ray (it has no audio), with "mouth closed, not speaking" in the prompt; retake any that talk;
+    - shots with both action and a line are split: lip-sync on the line, cut to Ray for the action.
+  - The tiered strategy below was written for Seedance; apply its tiers with these models.
 - **Strategy (reasoned 2026-10-01):**
   - **Triage shots by what the motion is for:**
     - **A, story beats** carried by acting: i2v, plus a real performance clip where King can give one, plus a
