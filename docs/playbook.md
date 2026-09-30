@@ -126,6 +126,10 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
   - Broadcast shots are 4:3 pillarboxed; the world is 2.39 letterbox.
   - Frame counts must match the timeline exactly.
 - **QA:** a mid-frame contact sheet of every shot, checked for grade continuity across the compositors' ranges.
+- **Conform overlays with ffmpeg,** never `reel.py`: it always re-applies its highlight roll-off and gamma, so
+  finished shots passed through it again lose about 13 % of their highlights. Use `overlay` with `eof_action=pass`.
+- **Chinese subtitles:** `assemble.py` takes `"font": [PingFang.ttc path, 7, 46]` (PingFang SC Medium lives under
+  `/System/Library/AssetsV2/…/PingFang.ttc`). Chinese on line 1, English smaller on line 2.
 - **Captions:** broadcast shots use in-world captions instead of burned subtitles, never both.
 
 ## 6. Sound (see `bible/sound/` and `audio/pilot/*`)
