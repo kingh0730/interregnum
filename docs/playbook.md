@@ -34,9 +34,9 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
 - **Privacy:** the repo is public. King's candid views stay in the gitignored `bible/private/`, and every episode is
   fiction with no real people, brands or countries.
 
-## 1. Script and shot list (a max-effort writer session)
+## 1. Script and shot list (a headless writer session; effort per CLAUDE.md)
 - **How:** a separate headless session in auto mode, with a deny-list for paid and publishing actions:
-  `claude -p --effort max --permission-mode auto --disallowedTools "Bash(git push:*)" "Bash(codex:*)" "Bash(*imagegen*)" "Bash(*i2v.py*)" "Bash(*run_jobs.py*)" "Bash(*eleven.py*)" "Bash(*fal_run.py*)" < brief.md`.
+  `claude -p --permission-mode auto --disallowedTools "Bash(git push:*)" "Bash(codex:*)" "Bash(*imagegen*)" "Bash(*i2v.py*)" "Bash(*run_jobs.py*)" "Bash(*eleven.py*)" "Bash(*fal_run.py*)" < brief.md`.
   Auto mode lets the session run `uv run` and `python3` to validate its own output and search the web. The earlier
   acceptEdits-plus-allowlist launch silently refused every interpreter: sessions couldn't validate JSON or check sources.
   Test auto mode on one short headless session before relying on it.
@@ -49,9 +49,9 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
   - fiction only;
   - the deliverables: `episode.md`, `script.md`, `shots/NN/shot.md`, lookdev prompts and a cue sheet.
 - **Concept stage: go broad, grounded in evidence.**
-  - Run 3 parallel concept sessions (xhigh), each forced into a different shape, while a research subagent gathers
+  - Run 3 parallel concept sessions, each forced into a different shape, while a research subagent gathers
     virality evidence for the platform and audience, plus credible, sourced forecasts for the subject.
-  - Then a max-effort judge compares the concepts against the research, picks or merges them, and writes
+  - Then a judge compares the concepts against the research, picks or merges them, and writes
     `episode.md`.
   - **Taste filter:** every concept answers the questions in `bible/taste.md` §5, and the judge scores it with that
     rubric. A banned take from §3 at the core fails outright.
@@ -59,15 +59,15 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
 - **Split big documents by chapter.** A full bilingual script for about 40 shots overran max's output limit 4 times
   in one session. Write it as `script/partN.md` sessions chained in order, each reading the earlier parts, then join
   them.
-- **Draft at xhigh, critique at max.** Write each deliverable in its own xhigh session. Then run a short max-effort
+- **Draft, then critique.** Write each deliverable in its own session. Then run a short
   critic session on the finished file: attack the hook, find the generic beats, test the ending, and rewrite the weak
   parts. The critic sees the whole piece, which a single long max draft never does, and it avoids the long silent
   generations that drop connections.
-- **Write incrementally.** Tell every long max-effort session to write its deliverables one piece per response
+- **Write incrementally.** Tell every long writing session to write its deliverables one piece per response
   (`episode.md` as soon as the concept is set, then the script, then shots in batches of about 8). One giant final
   response can be lost to a single dropped connection: the mom episode's writer lost 65 minutes to `ECONNRESET`.
   If it happens, resume with `claude -p --resume <session-id>` (the transcript filename) rather than starting over.
-- **Expect** 45–90 minutes with long silent stretches, which are normal for max effort.
+- **Expect** 45–90 minutes with long silent stretches, which are normal for long writing sessions.
   - **Monitor** the files and the session transcript under `~/.claude/projects/...`, not only the finish.
   - **Stuck** means 30 minutes with no transcript change.
 - **QA:** a single subagent extracts a machine-readable image manifest (id, out, prompt, refs, alpha, deps, shots) and
@@ -89,8 +89,8 @@ felt like one tempo. Movement inside shots, narration cadence, sound density and
   `bible/taste.md` §2).
 - **QA:** measure cut lengths from the render (`ffmpeg` `select='gt(scene,0.3)'`) and check them against the tempo map.
 
-## 2. Visual bible and art direction (max effort, then tests)
-- **Bible:** a max-effort session writes the episode's own bible in `<episode>/bible/`, under the series rules in
+## 2. Visual bible and art direction (a writer session, then tests)
+- **Bible:** a session writes the episode's own bible in `<episode>/bible/`, under the series rules in
   `bible/visual.md`: production design (the world as objects,
   with every screen as physical hardware), three distinct art directions each with a 130–170-word Codex style block,
   cinematography (whose eye, lens and height, composition, the camera's home register and moves, and how the
@@ -185,7 +185,7 @@ The default model is Luma (§2b). The Codex notes below apply when a shot uses C
 - **Captions:** broadcast shots use in-world captions instead of burned subtitles, never both.
 
 ## 6. Sound (see `bible/sound.md`, `episodes/pilot/bible/sound.md` and `audio/pilot/*`)
-**Sound plan:** a max-effort session writes the episode's sound bible (`<episode>/bible/sound.md`), `casting.md`, `dialogue.json`, `score.md` and
+**Sound plan:** a session writes the episode's sound bible (`<episode>/bible/sound.md`), `casting.md`, `dialogue.json`, `score.md` and
 `score_cues.json`, `sfx.json` and `mix_plan.md`. Validate every JSON file with a real parser.
 
 **Prompting principles (adopted by reasoning from the image work, 2026-09-30).** Genre and quality adjectives pull toward
@@ -274,13 +274,13 @@ the stock, polished result, the audio version of the AI look. So describe the re
   stuck?".
 - **Waiting on jobs:**
   - Never `pgrep -f <name>` when `<name>` appears in the waiting loop itself; wait on a PID or an output file. To find
-    a session's PID, anchor on the binary's path: `pgrep -f '^/Users/kingh0730/.local/bin/claude -p --effort xhigh'`
+    a session's PID, anchor on the binary's path: `pgrep -f '^/Users/kingh0730/.local/bin/claude -p'`
     (a monitor's own `bash -c ...` line can't match `^`). This bit three times on the mom episode.
   - Success is "the deliverable exists", never "the output log is non-empty" (a crash writes its error there).
   - Session transcripts are filed by working directory: a `claude -p` started in `private/<p>/` writes to
     `~/.claude/projects/-Users-kingh0730-repos-interregnum-private-<p>/`, not the repo's folder. Watch the right one.
-  - Long max-effort writing sessions can loop on "Output token limit hit" and drop on proxy idle timeouts
-    (`ECONNRESET`). Prefer xhigh and one deliverable per session; if a session hits the output limit repeatedly with
+  - Long writing sessions can loop on "Output token limit hit" and drop on proxy idle timeouts
+    (`ECONNRESET`). Prefer one deliverable per session; if a session hits the output limit repeatedly with
     no file written, stop it and split the work.
   - Monitor scripts run under `bash -c` with `shopt -s nullglob` (zsh aborts on empty globs).
   - `find` here is `bfs` and rejects relative `-newermt`; use `stat -f %m`.

@@ -6,7 +6,7 @@ with every lesson from the pilot; the `make-episode` skill follows it), then `do
 Seedance 2.5 and Suno), `docs/pipeline.md` (which tool for what) and `docs/history.md` (what failed and why).
 
 ## Working agreements
-- Creative work (bible, stories, scripts, shot design) is done at max or xhigh effort; production plumbing at medium.
+- Creative work (bible, stories, scripts, shot design) runs at default reasoning effort (no `--effort` flag) while King is at the keyboard. When he says he is away, use max only if higher effort has proved to add real quality; otherwise use the default.
 - Claude cannot watch video. Judge stills and frame metrics, and say plainly when motion needs King's eyes. Don't claim a clip "works" from metrics alone: in v3 the metrics improved while the motion got worse.
 - Codex runs through `tools/imagegen/gen.sh`: medium effort, stdin closed, and exit code 2 means a safety-filter false positive, so reword and retry.
 - Codex and API usage costs King's quota or money: estimate before large batches, and test small first.

@@ -1,0 +1,12 @@
+- [Director owns creative calls](director-owns-creative-calls.md) — decide art/tech myself; ask King only for what I cannot do (watching motion, paying, his accounts)
+- [fal paused](fal-paused.md) — no Seedance until King resumes; images + ElevenLabs audio on fal allowed; ~$90 credit (topped up 2026-09-30), shared by parallel sessions
+- [Headless session tools](headless-session-tools.md) — launch `claude -p` in auto mode with a paid/publish deny-list; the old allowlist blocked interpreters
+- [Watch delegated jobs](watch-delegated-jobs.md) — check long subagents/bg jobs for stalls myself; never pgrep -f a name in the waiting command; stop a stage's watchers when it completes
+- [Audio decisions](audio-decisions.md) — I cast & pick audio myself; final voices only via Starter key; underplay voices (Kuleshov); Nana must sound 82
+- [Episode defaults](episode-defaults.md) — every episode stops before Seedance by default
+- [Taste notes](taste-notes.md) — images oily/crowded (Luma settled); art cliché (ban the obvious, formal invention; loved works in bible/brief.md); vary pacing (tempo map); no constant dial, but surprises and big moves used sparingly
+- [Full file paths](full-file-paths.md) — every file as a complete repo-relative path in backticks (coloured, clickable); no bare names or globs
+- [Don't over-test](dont-over-test.md) — adopt ideas that are clearly sound by reasoning; test only genuine uncertainties that change decisions
+- [Reasoning effort](reasoning-effort.md) — default effort when King is here; max only when he says he is away AND higher effort proved worth it
+- [Parallel sessions & git](parallel-sessions-git.md) — other sessions share the repo: commit with `git commit -m … -- <paths>` only; coordinate fal/ElevenLabs
+- [Memory sync](memory-sync.md) — scripts/sync-memory.sh mirrors memory; private-* files go to gitignored bible/private/memory, the rest are PUBLIC in memory/
