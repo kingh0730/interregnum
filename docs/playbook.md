@@ -289,15 +289,19 @@ the stock, polished result, the audio version of the AI look. So describe the re
       behaviour-only prompt; 2–3 takes.
     - **B, on-screen dialogue:** i2v with the voice take as ref audio for lip-sync.
     - **C, action and places:** i2v with a plain behaviour prompt; keep Seedance's motion sound as a stem.
-    - **D, stillness sections:** leave as stills, since moving everything makes motion the new constant dial.
+    - **D, stillness sections:** cheap near-still takes (breathing, light, steam), never frozen frames between
+      moving shots, which read as a glitch or "PPT". Stillness comes from the content, not a freeze.
   - **i2v is the default** (frame 0 is the approved still); reference mode only to restage a still that's wrong.
   - **A stills-reel clip is a poor video reference:** it carries framing, which the still already gives, and
     stillness. Video refs are for real performance or camera motion.
   - **Text and graphics never go into Seedance.** Composite them afterwards, tracked to the motion.
-  - **One continuous take** for shots that share a plate.
+  - **Group short shots:** consecutive shots of one scene go in one continuous take, cut in the edit. Check
+    Seedance's minimum clip length and multi-shot support first; paying for 5 s to use 1.5 s wastes most of it.
   - **Review:** Claude screens every clip's frames (identity, hands, ageing, props) and retakes; King watches one
     assembled motion cut.
-  - **Test first:** 3 shots (the key beat, one lip-sync shot, one action shot) to measure real cost with refs.
+  - **Test first:** the key beat, one lip-sync shot and one action shot, plus a control take of the key beat with
+    the stills-reel reference. That measures real cost with refs and tests the assumptions. If the key beat fails,
+    compare other fal video models on that one shot before more retakes (Seedance is the default, not dogma).
 - **Seedance's job:** the action a still can't show, not polish. It also has two sound jobs:
   - **on-screen dialogue:** our ElevenLabs take goes in as `--ref-audio`, and Seedance lip-syncs the performance to it;
   - **motion sound** (splashes, steps, slams): keep its audio as a stem, and use it when it syncs better than the
