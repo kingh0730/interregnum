@@ -122,10 +122,11 @@ King's note on episodes 1–2: frames looked "oily", "crowded" and "very AI-gene
   | Recurring characters (identity from a ref) | **Luma edit from a padded 16:9 ref** (same model as everything else) | Switching models between shots reads as more drift than any single model's drift |
   | Avoid for photoreal | GPT Image 2.5 (clean stock); Codex (glossy even with good prompts); FLUX.1 Krea [dev] (centred subjects, grins to camera, heavy vignette, waxy faces); Luma t2i with refs (the face drifts; use edit) | |
 
-  - **One model per film, especially for characters.** In Test E (2026-09-30, `work/imgtest4/`), Nano Banana Pro face
+  - **One model per character look within a sequence.** In Test E (2026-09-30, `work/imgtest4/`), Nano Banana Pro face
     swaps matched the reference best frame by frame. But King, watching the sequence, found that cutting between Luma and
     Nano frames made the drift "way way more": each model renders skin, light and texture differently, so the face
-    changes between shots. Judge identity shot-to-shot in sequence, not frame-to-reference.
+    changes between shots. Judge identity shot-to-shot in sequence, not frame-to-reference. Different models are fine
+    for different styles or sequences (a woodcut interlude, graphics, a dream) when another model does that style better.
   - **Character method:** Luma edit with the ref **padded to 16:9** as `image_url` and the scene in the prompt ("Fill the
     whole frame; no grey borders"). Luma edit has no aspect-ratio setting; the output follows the base image. About
     0.3¢ an image. Harsh light (noon sun, TV glow) ages faces in close-ups; King saw no identity drift across the
@@ -141,6 +142,18 @@ King's note on episodes 1–2: frames looked "oily", "crowded" and "very AI-gene
     failure against the full image.
 
   Codex stays right for stylised looks (woodcut, ink) where its style block controls the surface.
+- **Styles beyond photoreal (Test F, 2026-09-30, `work/imgtest5/`, 7 styles × 6 models):**
+
+  | Style | Use | Notes |
+  |---|---|---|
+  | Painting (gouache and similar) | Luma; Krea 2 for bolder graphic flat colour | Codex goes busy storybook |
+  | Hand-drawn 2D animation | Luma; Seedream (clean, correct signage); Krea 2 (comic acting) | |
+  | Woodcut / printmaking | FLUX.2 Pro; Nano Banana Pro | **Luma fails** (all texture, no subject) |
+  | Near-future photoreal | Nano Banana Pro; Luma | Low-key futures came out believable on all models |
+  | Still life with written characters | Luma for composition; Nano or Codex if a real character must be legible | Seedream, FLUX and Krea invent pseudo-characters |
+  | Chinese signage and titles | Any (all six got 明天见面 right); Luma the most filmic | Codex slips into traditional forms |
+  | Clay / stop-motion | Luma (reads as a real miniature set); Krea 2 | Name the setting as Chinese or everything drifts to Europe |
+
 - **Finish every still with `tools/imagegen/film_finish.py`.** It tames specular highlights, lifts the blacks, applies
   a gentle curve, halation and real grain. It removes the wet sheen from skin and makes frames from different models
   sit together. It will not rescue a stock-photo composition or Codex gloss; fix those in the prompt or the model.
