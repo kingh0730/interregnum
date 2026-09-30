@@ -143,6 +143,15 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
   - **Anti over-acting:** behaviour tags only, such as `[pause]` and `[quietly]`, and higher stability for the living
     characters.
   - **Tags:** long descriptive tags make v4 loop or read the tag aloud, so use short standard ones.
+- **Mandarin:** run the tools with `--lang zh`. The transcript check compares Han characters with digits and 幺
+  normalised, and converts Whisper's traditional characters to simplified first (otherwise correct takes score as
+  mismatches). A mumbled register can fail every seed on one misheard word; the selector then takes the best match
+  first, and the subtitle carries the line.
+- **Voice slots:** with a full account, run designed roles through one slot in turn: design and save, perform every
+  take, delete the voice, move on. Record the design description and generated id in `voices.json` in case a retake
+  is needed.
+- **Child voices:** ElevenLabs refuses Voice Design for children (a safety policy; don't work around it). Cast a young
+  adult woman with a small, light, high voice, described honestly as an adult.
 - **Free-tier limits:** it can't design voices, use library voices or output 192 kbps. Everything that ships comes from
   the Starter account.
 
