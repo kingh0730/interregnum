@@ -143,9 +143,10 @@ forward; the evidence from the 2026-09-30 tests is in `docs/history.md`.
     `reference_image_urls` and the ageing described plainly ("soft and even for her age"), never an ageing edit.
     Only a small ageing done by edit (28 → 48) uses the ageing lock, "Age her only as described here, and keep a
     clear, even complexion", instead of the skin lock.
-  - **Light close-ups softly.** Low, warm, raking side light ages a close-up face more than any method choice; a
-    2026-10-01 test found edit and t2i+ref equal on skin and identity. Use soft frontal or window light on faces we
-    want gentle, and hard side light only on purpose.
+  - **Name the skin inside the character description, not only in the lock** (2026-10-01): "Her skin is smooth and
+    clear, with an even tone and no freckles, moles or dark spots." Luma magnifies faint freckles in a base into heavy
+    spots at close-up scale; the trailing lock and softer light alone didn't stop it, but this sentence did. Soft light
+    on close-ups still helps. Edit and t2i+ref tested equal.
   - **Retake any face that drifts.** `tools/imagegen/luma_batch.py` runs a manifest; a generator script like
     `private/mom-future/v2c/work/make_images_json.py` can add the locks automatically.
 - **Recurring props:** list the prop's reference image in `refs` on every shot that shows it, including character
