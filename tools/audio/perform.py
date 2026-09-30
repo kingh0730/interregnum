@@ -20,6 +20,7 @@ import urllib.request
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
+import voice_design  # noqa: E402
 from voice_design import analyse, transcript, words  # noqa: E402
 
 STOCK = {"Sarah": "EXAVITQu4vr4xnSDxMaL", "Matilda": "XrExE9yKIg1WjnnlVkGX", "Jessica": "cgSgspJ2msm6clMCkdW9",
@@ -62,7 +63,9 @@ def main():
     ap.add_argument("outdir")
     ap.add_argument("--seeds", type=int, default=3)
     ap.add_argument("--only")
+    ap.add_argument("--lang", default="en")
     a = ap.parse_args()
+    voice_design.LANG = a.lang
     key = os.environ.get("ELEVENLABS_API_KEY_STARTER") or sys.exit("ELEVENLABS_API_KEY_STARTER not set")
     d = json.loads(Path(a.dialogue).read_text())
     cast = json.loads(Path(a.voices).read_text())

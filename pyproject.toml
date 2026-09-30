@@ -5,6 +5,7 @@ description = "Production tools for the INTERREGNUM anthology"
 requires-python = ">=3.12"
 dependencies = [
     "numpy",
+    "opencc-python-reimplemented>=0.1.7",
     "opencv-python-headless",
     "pillow",
 ]

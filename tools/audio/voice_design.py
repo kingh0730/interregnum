@@ -59,16 +59,26 @@ def analyse(path):
             "jitter_pct": round(float(jitter), 2), "level_spread_db": round(float(np.percentile(lv, 90) - np.percentile(lv, 10)), 1)}
 
 
+LANG = "en"  # set to "zh" for Mandarin (words() then compares Han characters)
+
+
 def transcript(path):
     out = Path("/tmp/claude-501/vd_wh")
     subprocess.run(["uvx", "--from", "mlx-whisper", "mlx_whisper", str(path), "--model", "mlx-community/whisper-small-mlx",
-                    "--language", "en", "--output-dir", str(out), "--output-format", "txt"], capture_output=True)
+                    "--language", LANG, "--output-dir", str(out), "--output-format", "txt"], capture_output=True)
     f = out / (Path(path).stem + ".txt")
-    return f.read_text().strip() if f.exists() else ""
+    t = f.read_text().strip() if f.exists() else ""
+    if LANG == "zh":  # Whisper often answers in traditional characters: compare in simplified
+        from opencc import OpenCC
+        t = OpenCC("t2s").convert(t)
+    return t
 
 
 def words(t):
-    return re.sub(r"[^a-z' ]", " ", re.sub(r"\[[^\]]*\]", " ", t.lower())).split()
+    t = re.sub(r"\[[^\]]*\]", " ", t.lower())
+    if LANG == "zh":  # compare Han characters one by one; punctuation, spaces and latin are ignored
+        return re.findall(r"[\u4e00-\u9fff]", t)
+    return re.sub(r"[^a-z' ]", " ", t).split()
 
 
 def main():
@@ -77,7 +87,10 @@ def main():
     ap.add_argument("outdir")
     ap.add_argument("--rounds", type=int, default=1)
     ap.add_argument("--save", action="store_true")
+    ap.add_argument("--lang", default="en")
     a = ap.parse_args()
+    global LANG
+    LANG = a.lang
     key = os.environ.get("ELEVENLABS_API_KEY_STARTER") or sys.exit("ELEVENLABS_API_KEY_STARTER not set")
     spec = json.loads(Path(a.spec).read_text())
     out = Path(a.outdir)
@@ -118,7 +131,7 @@ def main():
         for c in cands[1:]:
             print(f"   {Path(c['file']).name}: score {c['score']} f0 {c.get('f0')} spread {c.get('f0_spread_st')} jitter {c.get('jitter_pct')} match {c['text_match']}")
         if a.save and best["score"] > -1e8:
-            saved = post("/text-to-voice", {"voice_name": f"INTERREGNUM {role}", "voice_description": s["description"],
+            saved = post("/text-to-voice", {"voice_name": os.environ.get("VOICE_PREFIX", "INTERREGNUM") + " " + role, "voice_description": s["description"],
                                              "generated_voice_id": best["generated_voice_id"]}, key)
             voices[role] = {"voice_id": saved["voice_id"], "from": Path(best["file"]).name, "metrics": {k: best.get(k) for k in
                             ("f0", "f0_spread_st", "jitter_pct", "level_spread_db")}}
