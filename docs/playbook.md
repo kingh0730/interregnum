@@ -100,6 +100,12 @@ King's note on episodes 1–2: frames looked "oily", "crowded" and "very AI-gene
   - "colour film photograph, candid, unposed".
 
   Complexity is fine when it has a hierarchy ("the table is full but the frame is not busy").
+- **Beware the subject-isolation tell.** Test D (2026-09-30, `work/imgtest3/`) found that one razor-sharp subject with
+  everything else blurred is itself a giveaway ("obvious subject, strange depth"). Deep focus with a readable
+  background reads more real. Get the hierarchy from position, scale and light instead of blur, and use shallow focus
+  only when the shot calls for it.
+- **Never write "snapshot", "print" or similar.** Models take them literally: Nano stamped a fake date on a frame, and
+  Luma added a printed border with gibberish text. Describe the camera and lens instead.
 - **Keep the brief short and don't pile on texture words.** Grain, pores, worn and lived-in make the surface oily. A
   one-line guard helps a little: "ordinary people with matte skin and uneven features; nothing glossy, polished or
   symmetrical; no HDR, no over-sharpening". Never write a paragraph of them.
@@ -111,8 +117,10 @@ King's note on episodes 1–2: frames looked "oily", "crowded" and "very AI-gene
   |---|---|---|
   | Settings, hero and establishing frames | Luma Uni-1 max; FLUX.2 Pro | Most film-like and elegant |
   | Second choice for those | Seedream 5 Pro; Krea 2 | Good, slightly more digital |
+  | Documentary realism (reportage, busy real places) | Nano Banana Pro t2i, 2K ($0.15) | The most convincingly real at 100%; less elegant than Luma, and it can drift to staged stock or Western interiors |
+  | Cheap drafts and blocking | Z-Image Turbo (~1¢; set the size explicitly, the default is 1024×576) | Real-looking but plain; ignores instructions like "nearly empty" |
   | Recurring characters (identity from a ref) | **Luma Uni-1 max edit** (first); Seedream 5 Pro edit; Nano Banana Pro edit | Luma edit holds the face and keeps the film look and energy |
-  | Avoid for photoreal | GPT Image 2.5 (clean stock); Codex (glossy even with good prompts); Luma t2i with refs (the face drifts; use edit) | |
+  | Avoid for photoreal | GPT Image 2.5 (clean stock); Codex (glossy even with good prompts); FLUX.1 Krea [dev] (centred subjects, grins to camera, heavy vignette, waxy faces); Luma t2i with refs (the face drifts; use edit) | |
 
   - **Luma edit's output takes the reference's aspect ratio.** A portrait ref gives portrait frames, so use a 16:9 ref
     or ask for 16:9.
