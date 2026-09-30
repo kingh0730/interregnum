@@ -117,7 +117,10 @@ def main():
             spread = m.get("f0_spread_st", 0 if not ref else 99) + 0.3 * m.get("level_spread_db", 0 if not ref else 99)
             score = (spread if widest else -spread) - (0 if acc >= 0.85 else 1000)
             cands.append({"file": f.name, "seed": seed, "text_match": round(acc, 3), "transcript": tr, **m, "score": round(score, 2)})
-        cands.sort(key=lambda c: -c["score"])
+        passing = [c for c in cands if c["text_match"] >= 0.85]
+        # if no take passes the transcript check, the best match wins first (then flatness): mumbled registers
+        # can fail everywhere on one misheard word, and a wrong word matters more than a flat read
+        cands.sort(key=lambda c: -c["score"]) if passing else cands.sort(key=lambda c: (-c["text_match"], -c["score"]))
         sel[t["id"]] = {"speaker": spk, "register": t.get("register"), "voice_id": vid, "settings": settings,
                         "select": "widest" if widest else "flattest", "best": cands[0] if cands else None, "candidates": cands}
         selp.write_text(json.dumps(sel, indent=1, ensure_ascii=False))
