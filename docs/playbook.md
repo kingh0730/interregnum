@@ -292,6 +292,9 @@ the stock, polished result, the audio version of the AI look. So describe the re
     - pure dialogue shots use MiniMax lip-sync;
     - action shots use Ray (it has no audio), with "mouth closed, not speaking" in the prompt; retake any that talk;
     - shots with both action and a line are split: lip-sync on the line, cut to Ray for the action.
+    - **Motion prompts never mention speech** ("says a line", "shouts"): with no audio to follow, the model invents
+      the words (MiniMax did on shot 27). Describe the action only, plus "mouth closed, not speaking".
+    - **Discard any audio a video model returns** (MiniMax H3 Max adds its own track); the mix is always ours.
   - The tiered strategy below was written for Seedance; apply its tiers with these models.
 - **Strategy (reasoned 2026-10-01):**
   - **Triage shots by what the motion is for:**
