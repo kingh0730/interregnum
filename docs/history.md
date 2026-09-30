@@ -118,3 +118,4 @@ that came out of them is "Luma unless it truly can't" (playbook §2b).
     flash snapshots.
   - Claude's blind taste favours clean cinematic frames; King's favours Luma's filmic restraint. Settle the default with
     King's own blind picks, not Claude's.
+- **Decision:** King chose Luma as the default regardless of the round-2 scores: "it's just luma for me. settled."
