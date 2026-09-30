@@ -39,7 +39,7 @@ def media_urls(x):
         for v in x:
             yield from media_urls(v)
     elif isinstance(x, str) and x.startswith("http") and any(
-            x.split("?")[0].lower().endswith(e) for e in (".mp3", ".wav", ".flac", ".ogg", ".m4a", ".aac", ".mp4", ".mov", ".webm")):
+            x.split("?")[0].lower().endswith(e) for e in (".mp3", ".wav", ".flac", ".ogg", ".m4a", ".aac", ".mp4", ".mov", ".webm", ".png", ".jpg", ".jpeg", ".webp")):
         yield x
 
 

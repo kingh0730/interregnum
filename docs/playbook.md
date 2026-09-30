@@ -87,6 +87,42 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
     UI fonts are banned.
   - **Faces:** calm and underplayed in the stills too; emotion comes from staging and cutting (Kuleshov).
 
+## 2b. Image technique: elegant, not "AI" (tests of 2026-09-30, `work/imgtest*`)
+King's note on episodes 1–2: frames looked "oily", "crowded" and "very AI-generated, not elegant". A/B tests over 3 scenes
+× 3 prompt styles × 6 models, plus identity and finishing tests, found:
+- **The prompt matters most.** A prop list ("twelve tables, a clock, a vending machine, towels...") gives a crowded
+  stock-photo frame on every model. Write a **photographer's brief** instead:
+  - where the camera stands (height, lens);
+  - one sharp subject that the eye lands on first;
+  - everything else soft, partial or small: backs, shoulders, hands at the edge;
+  - one named light source, with areas left to fall into dark;
+  - empty space ("plenty of calm floor");
+  - "colour film photograph, candid, unposed".
+
+  Complexity is fine when it has a hierarchy ("the table is full but the frame is not busy").
+- **Keep the brief short and don't pile on texture words.** Grain, pores, worn and lived-in make the surface oily. A
+  one-line guard helps a little: "ordinary people with matte skin and uneven features; nothing glossy, polished or
+  symmetrical; no HDR, no over-sharpening". Never write a paragraph of them.
+- **State each person's ethnicity and setting.** Seedream made a Chinese metro passenger Western; FLUX.2 edit moved a
+  Chengdu woman to an American suburb in a denim jacket.
+- **Model routing for photoreal work (fal):**
+
+  | Job | Model | Why |
+  |---|---|---|
+  | Settings, hero and establishing frames | Luma Uni-1 max; FLUX.2 Pro | Most film-like and elegant |
+  | Second choice for those | Seedream 5 Pro; Krea 2 | Good, slightly more digital |
+  | Recurring characters (identity from a ref) | Seedream 5 Pro edit (first); Nano Banana Pro edit | Hold the face and stay natural |
+  | Avoid for photoreal | GPT Image 2.5 (clean stock); Codex (glossy even with good prompts); Luma edit (broken crops: an arm, the top of a head); Luma t2i with refs (loses identity) | |
+
+  Codex stays right for stylised looks (woodcut, ink) where its style block controls the surface.
+- **Finish every still with `tools/imagegen/film_finish.py`.** It tames specular highlights, lifts the blacks, applies
+  a gentle curve, halation and real grain. It removes the wet sheen from skin and makes frames from different models
+  sit together. It will not rescue a stock-photo composition or Codex gloss; fix those in the prompt or the model.
+  Default strength is 1.0.
+- **Judge for elegance, not just photorealism.** Look at a 100% crop of the face: is the skin wet or plastic? Are there
+  more than about 3 things competing for the eye? Would a good photographer have taken this frame? If not, rewrite
+  the brief. Don't reroll.
+
 ## 3. Lookdev and keyframes (Codex)
 - **Tools:** `tools/imagegen/gen.sh` for one image; `tools/imagegen/batch.py <manifest> --jobs 5` for many (it
   respects dependencies and retries safety false positives neutrally).
