@@ -59,8 +59,8 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
 - **Split big documents by chapter.** A full bilingual script for about 40 shots overran max's output limit 4 times
   in one session. Write it as `script/partN.md` sessions chained in order, each reading the earlier parts, then join
   them.
-- **Draft, then critique.** Write each deliverable in its own session. Then run a short
-  critic session on the finished file: attack the hook, find the generic beats, test the ending, and rewrite the weak
+- **Draft, then critique.** Write each deliverable in its own session (default effort). Then run a short
+  critic session (max effort only when King is away; see CLAUDE.md) on the finished file: attack the hook, find the generic beats, test the ending, and rewrite the weak
   parts. The critic sees the whole piece, which a single long max draft never does, and it avoids the long silent
   generations that drop connections.
 - **Write incrementally.** Tell every long writing session to write its deliverables one piece per response
