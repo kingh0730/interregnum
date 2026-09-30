@@ -36,7 +36,10 @@ def main():
     lst = out.with_suffix(".concat.txt")
     lst.write_text("".join(f"file '{P(s)}'\n" for s in spec["shots"]))
     subs = spec.get("subs", [])
-    font = ImageFont.truetype("/System/Library/Fonts/Avenir Next.ttc", 44, index=5)  # Medium
+    # "font": [path, index, size]; default Avenir Next Medium. Chinese needs a CJK face, e.g. ["/System/Library/Fonts/PingFang.ttc", 2, 46]
+    fp, fi, fs = spec.get("font", ["/System/Library/Fonts/Avenir Next.ttc", 5, 44])
+    font = ImageFont.truetype(fp, fs, index=fi)
+    small = ImageFont.truetype(fp, int(fs * 0.72), index=fi)  # second line (e.g. the English under the Chinese)
 
     dec = subprocess.Popen(["ffmpeg", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst),
                             "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
@@ -61,9 +64,10 @@ def main():
                 d = ImageDraw.Draw(layer)
                 lines = key.split("\n")
                 y = H - 110 - 56 * (len(lines) - 1)
-                for ln in lines:
-                    w = d.textlength(ln, font=font)
-                    d.text(((W - w) / 2, y), ln, font=font, fill=(255, 255, 255, 240),
+                for li, ln in enumerate(lines):
+                    f = font if (li == 0 or not spec.get("font")) else small
+                    w = d.textlength(ln, font=f)
+                    d.text(((W - w) / 2, y), ln, font=f, fill=(255, 255, 255, 240),
                            stroke_width=3, stroke_fill=(0, 0, 0, 200))
                     y += 56
                 cache[key] = layer
