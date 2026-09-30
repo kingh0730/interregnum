@@ -129,8 +129,10 @@ King's note on episodes 1–2: frames looked "oily", "crowded" and "very AI-gene
   - **Character method:** Luma edit with the ref **padded to 16:9** as `image_url` and the scene in the prompt ("Fill the
     whole frame; no grey borders"). Luma edit has no aspect-ratio setting; the output follows the base image. About
     0.3¢ an image. Harsh light (noon sun, TV glow) ages faces in close-ups; King saw no identity drift across the
-    sequence, so only act on drift you can see in sequence. If it ever appears, try several Luma-made refs (front,
-    three-quarter, profile) in `reference_image_urls`.
+    sequence, so only act on drift you can see in sequence.
+  - **Standard character refs:** before keyframes, make each recurring character a small Luma-made sheet (front,
+    three-quarter, profile, plus one strong expression) and pass all of them in `reference_image_urls`. Several angles
+    pin the face better than one portrait.
   - **Never Luma-edit a Luma plate.** It re-sharpens already-textured skin into crunchy, blotchy "oily" faces; it only
       shows at 100%.
   - **Judge faces at 100% and at delivery size (1080p).** Defects hidden at contact-sheet size decide the verdict.
