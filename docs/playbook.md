@@ -287,6 +287,16 @@ the stock, polished result, the audio version of the AI look. So describe the re
   motion (start and end frame; about $0.025/s) and `minimax/h3-max/lip-sync/image-to-video` for every spoken line (our
   voice take; $0.05/s). One family keeps motion, skin and light consistent from shot to shot; mixing models reads as
   drift. Switch per shot (Luma Ray 3.2 first) only when H3 Max truly can't do it. Discard its audio track.
+- **H3 Max strategy (supersedes the Seedance-era details below where they conflict):**
+  - **Grouping:** clips run 5–15 s, so each continuous take covers several short shots of one scene.
+  - **Complex key beats:** there's no mid-shot keyframe, so split at the pose. For example, start → hand over the
+    mouth, then that frame → the smile; each clip is pinned by its start and end frames.
+  - **Dialogue with action:** the lip-sync variant has no prompt. Test `target_audio_url` on the normal model first,
+    since it may give directable action plus lip-sync together; otherwise split the line (lip-sync) from the action
+    (H3 Max).
+  - **Camera moves:** use `minimax/h3-max/camera-controls` (keyframed camera paths, scene frozen) for the film's
+    few deliberate moves.
+  - **Takes:** two takes per important shot, and pick the better one (they cost pennies).
 - **Video-model test (2026-10-01, v2c):**
   - **Seedance 2.5 refuses photoreal human stills** ("may contain likenesses of real people"; partner validation),
     even though every face is AI-generated. Don't work around it. Seedance is out for photoreal people.
