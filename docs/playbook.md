@@ -111,8 +111,14 @@ King's note on episodes 1–2: frames looked "oily", "crowded" and "very AI-gene
   |---|---|---|
   | Settings, hero and establishing frames | Luma Uni-1 max; FLUX.2 Pro | Most film-like and elegant |
   | Second choice for those | Seedream 5 Pro; Krea 2 | Good, slightly more digital |
-  | Recurring characters (identity from a ref) | Seedream 5 Pro edit (first); Nano Banana Pro edit | Hold the face and stay natural |
-  | Avoid for photoreal | GPT Image 2.5 (clean stock); Codex (glossy even with good prompts); Luma edit (broken crops: an arm, the top of a head); Luma t2i with refs (loses identity) | |
+  | Recurring characters (identity from a ref) | **Luma Uni-1 max edit** (first); Seedream 5 Pro edit; Nano Banana Pro edit | Luma edit holds the face and keeps the film look and energy |
+  | Avoid for photoreal | GPT Image 2.5 (clean stock); Codex (glossy even with good prompts); Luma t2i with refs (the face drifts; use edit) | |
+
+  - **Luma edit's output takes the reference's aspect ratio.** A portrait ref gives portrait frames, so use a 16:9 ref
+    or ask for 16:9.
+  - **QA grids must never centre-crop mixed aspect ratios.** A 16:9 crop of Luma's portrait frames once made them look
+    broken ("an arm, the top of a head"), and I wrongly blamed the model. Letterbox each cell instead, and check any
+    failure against the full image.
 
   Codex stays right for stylised looks (woodcut, ink) where its style block controls the surface.
 - **Finish every still with `tools/imagegen/film_finish.py`.** It tames specular highlights, lifts the blacks, applies
