@@ -272,8 +272,13 @@ the stock, polished result, the audio version of the AI look. So describe the re
 
 ## 7. Motion: Seedance 2.5 (fal; needs budget)
 **What to fix before Seedance, and what after** (King, 2026-10-01). Seedance animates the start frame and nothing else.
-- **Before:** everything inside the start frames (faces, composition, props in the wrong state, stray hands) and
-  the edit (shot lengths and order). A flaw in a still becomes a flaw in a paid clip, and seconds are billed.
+- **Before:** only what the viewer will see and Seedance won't change by itself (a wrong face, a wrong setting or
+  composition), plus the edit (shot lengths and order; seconds are billed). Flaws the shot's own action resolves (a
+  hand that lifts, a book that opens) can be left to Seedance. Three ways to use its freedom:
+  - image-to-video locks frame 0 but changes things through motion;
+  - reference-to-video treats images as references and can restage the shot (more drift from our framing; test it
+    first);
+  - trimming the clip's head hides a bad opening, at the cost of paid seconds.
 - **After:**
   - **Graphics:** overlays must be re-tracked to the moving plates anyway; that pass is where alignment and motion
     design are brought up to film level.
