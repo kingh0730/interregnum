@@ -283,6 +283,19 @@ the stock, polished result, the audio version of the AI look. So describe the re
   - **Graphics:** overlays must be re-tracked to the moving plates anyway; that pass is where alignment and motion
     design are brought up to film level.
   - **Sound:** the final pass (clipped onsets, cut-offs, timing), since motion and lip-sync shift the timing.
+- **Strategy: feed Seedance our reel** (King's idea, 2026-10-01). A reference-to-video package per shot:
+  - `[Video1]`: our stills-reel clip of the shot, for framing, timing and rhythm;
+  - `[Image1]`: the clean still, for identity and look;
+  - `[Audio1]`: the voice take, on dialogue shots, for lip-sync;
+  - a prompt listing what to keep and what to fix.
+
+  Two rules:
+  - **no text or graphics in anything Seedance sees:** it mangles writing, so references are clean plates, and
+    graphics are composited afterwards, tracked to the motion;
+  - **key acting beats get a real performance reference** (a 5 s phone clip from King), since a stills reel only
+    teaches stillness.
+
+  Roll out with a 3-shot test (the key beat, one dialogue shot, one action shot) before the full batch.
 - **Seedance's job:** the action a still can't show, not polish. It also has two sound jobs:
   - **on-screen dialogue:** our ElevenLabs take goes in as `--ref-audio`, and Seedance lip-syncs the performance to it;
   - **motion sound** (splashes, steps, slams): keep its audio as a stem, and use it when it syncs better than the
