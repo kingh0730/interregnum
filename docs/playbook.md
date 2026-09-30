@@ -119,19 +119,18 @@ King's note on episodes 1–2: frames looked "oily", "crowded" and "very AI-gene
   | Second choice for those | Seedream 5 Pro; Krea 2 | Good, slightly more digital |
   | Documentary realism (reportage, busy real places) | Nano Banana Pro t2i, 2K ($0.15) | The most convincingly real at 100%; less elegant than Luma, and it can drift to staged stock or Western interiors |
   | Cheap drafts and blocking | Z-Image Turbo (~1¢; set the size explicitly, the default is 1024×576) | Real-looking but plain; ignores instructions like "nearly empty" |
-  | Recurring characters (identity from a ref) | **Plate + Nano swap** (below); Luma edit from a padded ref for wides and mediums | Nano holds the face best with clean skin; Luma drifts older in close-ups |
+  | Recurring characters (identity from a ref) | **Luma edit from a padded 16:9 ref** (same model as everything else) | Switching models between shots reads as more drift than any single model's drift |
   | Avoid for photoreal | GPT Image 2.5 (clean stock); Codex (glossy even with good prompts); FLUX.1 Krea [dev] (centred subjects, grins to camera, heavy vignette, waxy faces); Luma t2i with refs (the face drifts; use edit) | |
 
-  - **Character method (Test E, 2026-09-30, `work/imgtest4/`):**
-    1. **Plate:** Luma t2i composes the 16:9 shot, with a stand-in described like the character (age, hair, clothes).
-    2. **Swap:** Nano Banana Pro edit with `image_urls: [plate, character ref]`: "Edit the first image: replace the
-       face and hair of the woman … with those of the woman in the second image … keep the first image's composition,
-       … exactly; do not return the second image." Without that last clause Nano once returned the ref portrait.
-    3. **Cheap alternative for wides and mediums** (about 0.3¢ instead of 15¢): Luma edit with the ref **padded to
-       16:9** as `image_url` and the scene in the prompt ("Fill the whole frame; no grey borders"). Luma edit has no
-       aspect-ratio setting and its output follows the base image, so an unpadded portrait ref gives portrait frames.
-       Its close-ups drift older and get heavy skin texture.
-    - **Never Luma-edit a Luma plate.** It re-sharpens already-textured skin into crunchy, blotchy "oily" faces; it only
+  - **One model per film, especially for characters.** In Test E (2026-09-30, `work/imgtest4/`), Nano Banana Pro face
+    swaps matched the reference best frame by frame. But King, watching the sequence, found that cutting between Luma and
+    Nano frames made the drift "way way more": each model renders skin, light and texture differently, so the face
+    changes between shots. Judge identity shot-to-shot in sequence, not frame-to-reference.
+  - **Character method:** Luma edit with the ref **padded to 16:9** as `image_url` and the scene in the prompt ("Fill the
+    whole frame; no grey borders"). Luma edit has no aspect-ratio setting; the output follows the base image. About
+    0.3¢ an image. Known weakness: close-ups drift older and heavier-textured. Next fix to test: several refs (front,
+    three-quarter, profile, all made by Luma) in `reference_image_urls`.
+  - **Never Luma-edit a Luma plate.** It re-sharpens already-textured skin into crunchy, blotchy "oily" faces; it only
       shows at 100%.
   - **Judge faces at 100% and at delivery size (1080p).** Defects hidden at contact-sheet size decide the verdict.
   - **QA grids must never centre-crop mixed aspect ratios.** A 16:9 crop of Luma's portrait frames once made them look
