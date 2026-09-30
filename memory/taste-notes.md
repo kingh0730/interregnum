@@ -51,4 +51,11 @@ balancing surprise, varieties, familiarity is key." Said about the pilot's locke
 - **But sparingly** (King, same day): "it's also super super bad to overuse something, like over using surprises, big
   camera movements and stuff." The home register dominates; one or two surprises per film; when in doubt, cut a move.
 
+**5. Faces: average, never scary (2026-09-30):** "i'm good with 'not pretty', most humans are not pretty, quite average
+looking, perfectly normal, but i'm not ok with 'looking scary' like these deep creases, heavy spots and stuff (unless
+it's intentional, like a man without one arm or something)."
+- **Why:** Luma's first mother read about 70 instead of 58, and the son's edit sheets drifted into weathered, spotted,
+  gaunt skin.
+- **How to apply:** judge every face for "scary" and retake it. The prompt method is in docs/playbook.md §2b, "Faces".
+
 Related: [[director-owns-creative-calls]], [[episode-defaults]].

@@ -127,6 +127,12 @@ forward; the evidence from the 2026-09-30 tests is in `docs/history.md`.
   - give it a Luma-made reference sheet (front, three-quarter, profile, one expression) in `reference_image_urls`;
   - pad the base reference image to 16:9 as `image_url` (Luma edit's output follows the base image's shape);
   - put the scene in the prompt.
+- **Faces: average, never scary** (King, 2026-09-30). Ordinary, unglamorous, average-looking faces are right; most
+  people aren't pretty. But no deep creases, heavy spots or blotches, weathered or gaunt skin, or faces that read
+  older than written, unless a shot calls for it on purpose. Luma drifts this way, especially in edit sheets. So state
+  each character's age as "looking their age" with a clear, even complexion, add an age-and-skin lock to every edit
+  ("keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines"),
+  and retake any face that drifts.
 - **Judge honestly:**
   - look at full frames, never centre-cropped grids;
   - look at faces at 100% and at 1080p;

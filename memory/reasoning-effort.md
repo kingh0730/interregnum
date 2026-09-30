@@ -27,6 +27,11 @@ King's rule (2026-09-30), for this session and for every headless session I laun
   document.
 - Checking is where extra thinking plausibly pays: it catches errors. So King agreed to max there only.
 
+**Open question, to test later, not now (King, 2026-09-30):** does max help creative work (concepts, scripts)? It
+stays at default until tested. Planned method: when King is away during a concept round, run one pitcher at max
+next to a default-effort twin with the same angle, and let the judge score them blind as usual. Decide after several
+rounds, never after one. Never run it while King is present. The next time he says he is away before a concept round, propose it in one line before he goes.
+
 **How to apply:** before every launch, ask whether King said he is away. If not, pass no effort flag. If he is away, give critics and reviewers `--effort max` and everything else no flag. Revisit
 only when clear new evidence arrives, not after a single comparison.
 

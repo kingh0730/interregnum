@@ -4,10 +4,10 @@
 - [Watch delegated jobs](watch-delegated-jobs.md) — check long subagents/bg jobs for stalls myself; never pgrep -f a name in the waiting command; stop a stage's watchers when it completes
 - [Audio decisions](audio-decisions.md) — I cast & pick audio myself; final voices only via Starter key; underplay voices (Kuleshov); Nana must sound 82
 - [Episode defaults](episode-defaults.md) — every episode stops before Seedance by default
-- [Taste notes](taste-notes.md) — images oily/crowded (Luma settled); art cliché (ban the obvious, formal invention; loved works in bible/brief.md); vary pacing (tempo map); no constant dial, but surprises and big moves used sparingly
+- [Taste notes](taste-notes.md) — images oily/crowded (Luma settled); art cliché (ban the obvious, formal invention; loved works in bible/brief.md); vary pacing (tempo map); no constant dial, but surprises and big moves used sparingly; faces average, never scary (no deep creases or heavy spots)
 - [Full file paths](full-file-paths.md) — every file as a complete repo-relative path in backticks (coloured, clickable); no bare names or globs
 - [Don't over-test](dont-over-test.md) — adopt ideas that are clearly sound by reasoning; test only genuine uncertainties that change decisions
-- [Reasoning effort](reasoning-effort.md) — King present → default for everything; King away → max for checking (critics, reviews, bug hunts, pure improvements), default otherwise
+- [Reasoning effort](reasoning-effort.md) — King present → default for everything; King away → max for checking (critics, reviews, bug hunts, pure improvements), default otherwise; max for creative work is an open question to test later (when King is away), not now
 - [Parallel sessions & git](parallel-sessions-git.md) — other sessions share the repo: commit with `git commit -m … -- <paths>` only; coordinate fal/ElevenLabs
 - [Memory sync](memory-sync.md) — scripts/sync-memory.sh mirrors memory; private-* files go to gitignored bible/private/memory, the rest are PUBLIC in memory/
 - [Pure improvement](pure-improvement.md) — code/tools/docs/memory/reviews, not creative drafts: every change must dominate what it replaces on every input; verify at primary source; no unscoped absolutes; drop speculative findings
