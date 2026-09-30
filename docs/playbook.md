@@ -18,8 +18,8 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
 ---
 
 ## 0. Before starting
-- **Read** `CLAUDE.md`, `README.md`, `docs/strategy.md`, `docs/history.md`, `bible/visual/*`, `bible/sound/*` and this
-  file.
+- **Read** `CLAUDE.md`, `README.md`, `docs/strategy.md`, `docs/history.md`, `bible/taste.md`, `bible/visual/*`,
+  `bible/sound/*` and this file.
 - **Budget:**
   - **Codex:** about 45 images per episode; this draws on King's quota.
   - **fal:** Seedance is about $0.47 per second at 720p and is the expensive stage; the audio models together cost
@@ -52,6 +52,8 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
     virality evidence for the platform and audience, plus credible, sourced forecasts for the subject.
   - Then a max-effort judge compares the concepts against the research, picks or merges them, and writes
     `episode.md`.
+  - **Taste filter:** every concept answers the questions in `bible/taste.md` §5, and the judge scores it with that
+    rubric. A banned take from §3 at the core fails outright.
   - Breadth beats depth at the concept stage; afterwards use draft-and-critique.
 - **Split big documents by chapter.** A full bilingual script for about 40 shots overran max's output limit 4 times
   in one session. Write it as `script/partN.md` sessions chained in order, each reading the earlier parts, then join
@@ -78,8 +80,8 @@ felt like one tempo. Movement inside shots, narration cadence, sound density and
 - **Four dials:** set all four per section, not just cutting: cut length, movement inside the shot, sound and voice
   density, emotional intensity.
 - **Contrast makes speed:** a burst only reads fast after stillness, and silence only lands after noise.
-- **Time as form:** slow motion, freezes, repetition or reversal can be the episode's formal invention (see the
-  anti-cliché rule).
+- **Time as form:** slow motion, freezes, repetition or reversal can be the episode's formal invention (see
+  `bible/taste.md` §2).
 - **QA:** measure cut lengths from the render (`ffmpeg` `select='gt(scene,0.3)'`) and check them against the tempo map.
 
 ## 2. Visual bible and art direction (max effort, then tests)
