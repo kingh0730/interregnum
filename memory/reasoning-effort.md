@@ -67,6 +67,14 @@ pairs twice, reversing presentation order and hiding the writing effort.
 - Results: `work/astra_effort_v2/results.txt`; preregistered design: `work/astra_effort_v2/protocol.md`;
   raw drafts, judgments, timing, usage, and audit are preserved in that directory.
 
+## Deferred research-effort experiment (2026-10-02)
+
+King wants to test the effect of reasoning effort on research later. Do not start the experiment now or change
+our effort policy. The existing controlled creative experiment used supplied fictional facts, not open-web
+research, so it does not establish a research benefit. A future test should distinguish information gathering
+from evidence evaluation, synthesis and verification, and assess factual/source accuracy as well as time and cost.
+Higher effort helping difficult synthesis more than routine lookup remains a hypothesis to test.
+
 **How to apply:** before every launch, check whether King explicitly said he is away and has not indicated his
 return. If present or unspecified, use default effort for everything. If away, use max for creative development
 and checking, and default for routine execution. No repeated confirmation is needed after he announces absence.
