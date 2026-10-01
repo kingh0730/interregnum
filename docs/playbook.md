@@ -164,6 +164,11 @@ fixed fallback model. This exception does not require two further Luma attempts.
 reference for Luma scene generation, checking identity, makeup, age and skin texture on each result. The initial
 reference test was promising, but consistency across multiple angles and scenes is not yet established.
 
+**Non-face beauty preference (King, 2026-10-02):** keep Luma as the default for beautiful environments,
+cityscapes, objects and other non-face subjects. After the city and futuristic-city comparisons, King preferred
+Luma for non-face beauty despite the assistant favoring Codex's more polished results. Follow King's preference;
+the Codex-first beauty exception above is for base faces, not a general rule for anything described as beautiful.
+
 - **Prompts are short photographer's briefs**, not prop lists:
   - where the camera stands and which lens;
   - the one thing the eye lands on first, set apart by position, scale and light (use blur only when the shot calls

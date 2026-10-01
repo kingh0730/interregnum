@@ -182,3 +182,13 @@ that came out of them is "Luma unless it truly can't" (playbook §2b).
 - Local test artifacts: `work/beauty-natural-comparison/comparison.jpg`,
   `work/beauty-model-comparison/comparison.jpg`, `work/beauty-chinese-makeup-comparison/comparison.jpg`,
   and `work/luma-beauty-reference-test/cafe.png` (media is untracked).
+
+## Non-face beauty preference (2026-10-02)
+- Compared Luma and Codex on the same two briefs: a Singapore riverfront at blue hour and a beautiful futuristic
+  tropical waterfront city. One image per model per brief; native resolutions differed.
+- The assistant favored Codex's visual allure. King preferred Luma for beautiful non-face subjects. This is an
+  explicit creative preference, not evidence of universal model superiority, and it governs the production default.
+- Keep Luma for beautiful environments and other non-face subjects. Retain Codex-first only for beauty-focused
+  base portraits, then use approved faces as references for Luma scenes.
+- Local comparisons: `work/city-luma-codex-test/comparison.jpg` and
+  `work/future-city-luma-codex-test/comparison.jpg` (media is untracked).
