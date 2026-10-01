@@ -1,0 +1,44 @@
+[
+  {
+    "id": "lin_base",
+    "mode": "t2i",
+    "out": "episodes/first-day/assets/characters/lin_base.png",
+    "prompt": "Externally generated original adult Chinese woman portrait. Codex built-in image generation. Do not regenerate this approved reference.",
+    "refs": [],
+    "deps": []
+  },
+  {
+    "id": "yu_base",
+    "mode": "t2i",
+    "out": "episodes/first-day/assets/characters/yu_base.png",
+    "prompt": "Externally generated original adult Chinese man portrait. Codex built-in image generation. Do not regenerate this approved reference.",
+    "refs": [],
+    "deps": []
+  },
+  {
+    "id": "lin_sheet",
+    "mode": "edit",
+    "base": "lin_base",
+    "refs": [
+      "lin_base"
+    ],
+    "deps": [
+      "lin_base"
+    ],
+    "out": "episodes/first-day/assets/characters/lin_sheet.png",
+    "prompt": "Three-panel photographic character continuity sheet of the EXACT SAME original 25-year-old adult Chinese woman with a chin-length black bob and a tiny silver left-ear cuff, wearing the ivory high-neck top in the reference. Each panel is head-and-shoulders with clear separation, uniform plain warm-grey wall and soft daylight. LEFT panel front three-quarter with lips closed; MIDDLE panel true side profile facing right; RIGHT panel almost frontal with one small attentive eyebrow change, mouth still closed. Match facial proportions, nose, jaw, hair length and age precisely in all three views. Beautiful real human skin, smooth and clear with even tone and no freckles or dark spots. No extra people, no text, no panel labels. Keep exact age and clear even skin from reference: add no blemishes, spots, weathering or extra lines. Landscape16:9."
+  },
+  {
+    "id": "yu_sheet",
+    "mode": "edit",
+    "base": "yu_base",
+    "refs": [
+      "yu_base"
+    ],
+    "deps": [
+      "yu_base"
+    ],
+    "out": "episodes/first-day/assets/characters/yu_sheet.png",
+    "prompt": "Three-panel photographic character continuity sheet of the EXACT SAME original 27-year-old adult Chinese man with loose short black hair and a clean-shaven face, wearing the ink-blue collarless jacket over grey shirt in the reference. Each panel is head-and-shoulders with clear separation, uniform plain warm-grey wall and soft daylight. LEFT panel front three-quarter with lips closed; MIDDLE panel true side profile facing right; RIGHT panel almost frontal with one small attentive eyebrow change, mouth still closed. Match facial proportions, nose, jaw, hair length and age precisely in all three views. Beautiful real human skin, smooth and clear with even tone and no freckles or dark spots. No extra people, no text, no panel labels. Keep exact age and clear even skin from reference: add no blemishes, spots, weathering or extra lines. Landscape16:9."
+  }
+]

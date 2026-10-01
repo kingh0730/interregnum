@@ -1,0 +1,19 @@
+{
+  "tool": "Codex built-in image generation",
+  "scene_model": "Luma Uni-1 Max edit; portraits are identity references only",
+  "assets": [
+    {
+      "id": "lin_base",
+      "path": "episodes/first-day/assets/characters/lin_base.png",
+      "brief": "Original exceptionally beautiful adult Chinese woman age25, calm dark almond eyes, straight chin-length black bob tucked behind one ear, subtle modern Chinese editorial makeup, closed satin-rose lips, tiny silver left-ear cuff, clear even skin, ivory sleeveless high-neck top; plain warm-grey wall,85mm three-quarter photographic portrait, single northwindow left,16:9.",
+      "sha256": "e480b13f300bc132246f098aa5b094ffc4e70b0354a9f0bb63c5e5ee1bf5a6df"
+    },
+    {
+      "id": "yu_base",
+      "path": "episodes/first-day/assets/characters/yu_base.png",
+      "brief": "Original exceptionally handsome adult Chinese man age27, loose short black hair, clean-shaven, calm dark eyes, clear even skin, ink-blue collarless jacket over grey shirt; plain warm-grey wall,85mm nearlyfrontal three-quarter photographic portrait, single northwindow right,16:9.",
+      "sha256": "418784e4ea91caf291884d24485df264a78fbef8b3adce5bc01d341bd5bcf91a"
+    }
+  ],
+  "notes": "No actor depicts the recording artist. Descriptive briefs are retained; generated base images are the exact identity authority. Model behind built-in image tool not asserted."
+}

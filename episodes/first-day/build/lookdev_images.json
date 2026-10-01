@@ -1,0 +1,50 @@
+[
+  {
+    "id": "test_porcelain_world",
+    "mode": "t2i",
+    "out": "episodes/first-day/assets/lookdev/test_porcelain_world.png",
+    "prompt": "Cinematic large-format photographic still. An extraordinarily elegant future public square of pearl-white ceramic terraces, slender brushed titanium ribs and cobalt glass. Clear pale afternoon sunlight enters from the upper left and makes precise shadow shapes. A single apricot-copper service rail accents the cool stone. Monumental contemporary architecture with real structural joints, superb expensive fabrication, spacious and inhabited rather than sterile. No ornate historical architecture, no temple, no floating holograms, no text, no haze, no wet neon alley, no video game render. 24mm lens, camera at human eye height from the edge of a covered colonnade. A generous oval public floor fills the lower half; stepped buildings rise on either side framing open sky and a blue horizon. One East Asian adult couple occupies only six percent of frame height in the right third. Complete full bodies, a dark foreground structural edge at far left, a clear path across the space. Eye lands on the magnificent sweep of the architecture, not a profusion of small details. Landscape 16:9.",
+    "refs": [],
+    "deps": []
+  },
+  {
+    "id": "test_porcelain_body",
+    "mode": "t2i",
+    "out": "episodes/first-day/assets/lookdev/test_porcelain_body.png",
+    "prompt": "Cinematic large-format photographic still. An extraordinarily elegant future public square of pearl-white ceramic terraces, slender brushed titanium ribs and cobalt glass. Clear pale afternoon sunlight enters from the upper left and makes precise shadow shapes. A single apricot-copper service rail accents the cool stone. Monumental contemporary architecture with real structural joints, superb expensive fabrication, spacious and inhabited rather than sterile. No ornate historical architecture, no temple, no floating holograms, no text, no haze, no wet neon alley, no video game render. 35mm lens at 1.1 metre camera height, full-body two-shot of a beautiful adult East Asian Chinese woman in her mid twenties wearing an ivory high-neck sleeveless tailored top, pearl straight trousers and flat white dance shoes, and a handsome adult East Asian Chinese man in his late twenties wearing an ink-blue collarless suit and flat dark shoes. Both in relaxed anticipatory dance positions, separate hands and arms, feet visible, mouths closed. They stand offset in the left and right thirds of this square, with the buildings and sky in deep focus. A low polished rail anchors foreground. Photographic skin, clear even complexions; subtle anime influence only in the graphic silhouettes and framing. Landscape 16:9.",
+    "refs": [],
+    "deps": []
+  },
+  {
+    "id": "test_prism_world",
+    "mode": "t2i",
+    "out": "episodes/first-day/assets/lookdev/test_prism_world.png",
+    "prompt": "Cinematic large-format photographic still. An extraordinarily elegant future public square of clear dichroic structural glass, faceted dark titanium and enormous pale granite terraces. Low western sunlight refracts a restrained violet band on the real floor, with open blue sky beyond. Monumental crystalline modern architecture, exceptionally luxurious but physically fabricated, spacious negative space. No historical architecture, no temple, no floating holograms, no text, no haze, no video game render. 24mm lens, camera at human eye height from the edge of a covered colonnade. A generous oval public floor fills the lower half; stepped buildings rise on either side framing open sky and a blue horizon. One East Asian adult couple occupies only six percent of frame height in the right third. Complete full bodies, a dark foreground structural edge at far left, a clear path across the space. Eye lands on the magnificent sweep of the architecture, not a profusion of small details. Landscape 16:9.",
+    "refs": [],
+    "deps": []
+  },
+  {
+    "id": "test_prism_body",
+    "mode": "t2i",
+    "out": "episodes/first-day/assets/lookdev/test_prism_body.png",
+    "prompt": "Cinematic large-format photographic still. An extraordinarily elegant future public square of clear dichroic structural glass, faceted dark titanium and enormous pale granite terraces. Low western sunlight refracts a restrained violet band on the real floor, with open blue sky beyond. Monumental crystalline modern architecture, exceptionally luxurious but physically fabricated, spacious negative space. No historical architecture, no temple, no floating holograms, no text, no haze, no video game render. 35mm lens at 1.1 metre camera height, full-body two-shot of a beautiful adult East Asian Chinese woman in her mid twenties wearing an ivory high-neck sleeveless tailored top, pearl straight trousers and flat white dance shoes, and a handsome adult East Asian Chinese man in his late twenties wearing an ink-blue collarless suit and flat dark shoes. Both in relaxed anticipatory dance positions, separate hands and arms, feet visible, mouths closed. They stand offset in the left and right thirds of this square, with the buildings and sky in deep focus. A low polished rail anchors foreground. Photographic skin, clear even complexions; subtle anime influence only in the graphic silhouettes and framing. Landscape 16:9.",
+    "refs": [],
+    "deps": []
+  },
+  {
+    "id": "test_nocturne_world",
+    "mode": "t2i",
+    "out": "episodes/first-day/assets/lookdev/test_nocturne_world.png",
+    "prompt": "Cinematic large-format photographic still. An extraordinarily elegant future public square of black basalt terraces, silver tensile ribs and luminous translucent white ceramic walls. One immense coral-red architectural light surface is the main source at indigo twilight. Radically modern, luxurious precision construction, dry stone and quiet reflections. No historical architecture, no temple, no floating holograms, no text, no rain, no fog, no video game render. 24mm lens, camera at human eye height from the edge of a covered colonnade. A generous oval public floor fills the lower half; stepped buildings rise on either side framing open sky and a blue horizon. One East Asian adult couple occupies only six percent of frame height in the right third. Complete full bodies, a dark foreground structural edge at far left, a clear path across the space. Eye lands on the magnificent sweep of the architecture, not a profusion of small details. Landscape 16:9.",
+    "refs": [],
+    "deps": []
+  },
+  {
+    "id": "test_nocturne_body",
+    "mode": "t2i",
+    "out": "episodes/first-day/assets/lookdev/test_nocturne_body.png",
+    "prompt": "Cinematic large-format photographic still. An extraordinarily elegant future public square of black basalt terraces, silver tensile ribs and luminous translucent white ceramic walls. One immense coral-red architectural light surface is the main source at indigo twilight. Radically modern, luxurious precision construction, dry stone and quiet reflections. No historical architecture, no temple, no floating holograms, no text, no rain, no fog, no video game render. 35mm lens at 1.1 metre camera height, full-body two-shot of a beautiful adult East Asian Chinese woman in her mid twenties wearing an ivory high-neck sleeveless tailored top, pearl straight trousers and flat white dance shoes, and a handsome adult East Asian Chinese man in his late twenties wearing an ink-blue collarless suit and flat dark shoes. Both in relaxed anticipatory dance positions, separate hands and arms, feet visible, mouths closed. They stand offset in the left and right thirds of this square, with the buildings and sky in deep focus. A low polished rail anchors foreground. Photographic skin, clear even complexions; subtle anime influence only in the graphic silhouettes and framing. Landscape 16:9.",
+    "refs": [],
+    "deps": []
+  }
+]

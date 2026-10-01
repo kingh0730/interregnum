@@ -10,7 +10,7 @@ The attraction is an impossible-looking duet that gradually becomes a real relat
 
 **Lin**, 25, is a Chinese woman with a precise bob and an ivory high-neck outfit. **Yu**, 27, is a Chinese man with tousled hair and an ink-coloured jacket. Preserve the approved original faces and costume identities. They are attractive adults with physical confidence and small social hesitations. Lin initiates a game of copied steps; Yu's reply is slightly too elaborate. They notice each other's unperformed gestures between the dancing.
 
-Only three full locations recur: Lin's travelling gallery, Yu's travelling gallery, and the fixed transfer island between their routes. Make the galleries unmistakably different through one architectural landmark each, while retaining the same ceramic, metal and sea-glass vocabulary. The island's bench, paired docking mouths and low canopy must recur in compatible positions. It is a public waiting place, connected to the shore, not an isolated survival platform.
+Only three full locations recur: Lin's travelling gallery, Yu's travelling gallery, and the fixed transfer island between their routes. Make the galleries unmistakably different through one architectural landmark each, while retaining the same ceramic, metal and sea-glass vocabulary. The island's bench, paired docking mouths and three silver ribs must recur in compatible positions. It is a public waiting place, connected to the shore, not an isolated survival platform.
 
 **The rule is ordinary and visible:** their galleries arrive at the same island at different times. Staying aboard keeps taking them past one another. Waiting ashore would let them meet, but requires someone to make the invitation without knowing whether the other will accept. A brief alignment permits eye contact across the water; all actual crossings occur through a stationary, level docking connection. Never leap between moving floors.
 
@@ -40,7 +40,7 @@ The galleries make their last local passes before continuing along the waterfron
 
 The internal term **借拍**, a borrowed beat, names the edit that lends one person's unfinished gesture to another. The last third stops borrowing: the cut disappears where the viewer expects it. This is the film's formal invention; the machinery supplies opportunities, never a philosophical lecture.
 
-Photoreal people inhabit a luminous, elegant coastal future. Opal ceramic carries public calm; ink clothing and cable shadows give definition; sea blue opens space; a restrained coral docking lamp marks a threshold. Light comes from the low east-side sun, reflected water and visible fixtures. Cyberpunk appears in functional seams and actuators; anime contributes strong silhouettes and pose timing. Neither becomes a style filter. The only frictionless **copy** is the miniature demonstration model. Living faces, furniture and architecture retain believable material and construction.
+Photoreal people inhabit a luminous, elegant coastal future. Opal ceramic carries public calm; ink clothing and cable shadows give definition; sea blue opens space; a restrained coral docking lamp marks a threshold. Light comes from the east-side sun, reflected water and visible fixtures. Cyberpunk appears in functional seams and actuators; anime contributes strong silhouettes and pose timing. Neither becomes a style filter. The only frictionless **copy** is the miniature demonstration model. Living faces, furniture and architecture retain believable material and construction.
 
 The camera's home is partner-height lateral observation, chiefly 35/50 mm. Use still frames for hesitation, closer object views for reactions, one elevated geography reveal and one sustained final duet. Avoid constant orbiting, micro-pushes, outfit changes and skyline tourism.
 
@@ -52,7 +52,7 @@ The camera's home is partner-height lateral observation, chiefly 35/50 mm. Use s
 | Chorus two / echoes | 1–3 s with spatial holds | Urgent replies; one overhead | Original chorus and echoes | Anticipation |
 | 2:44–2:59.13 | Two long holds | Lin still; her gallery departs | Original instrumental intact | Exposed waiting |
 | Final build / chorus | 1–3 s around 7–10 s proof shots | Crossing, then genuine duet | Original vocal return and chorus | Release |
-| Coda | 3–7 s; final hold | Walking resolves to sitting | Complete original outro | Ease |
+| Coda | 3–7 s; final hold | Walking resolves to standing | Complete original outro | Ease |
 
 ## Evidence and acceptance
 
