@@ -1,5 +1,9 @@
 # Production archives
 
+Archives preserve production history and reproducibility. They are not gold standards for future episodes:
+models and the pipeline evolve. Use their examples and lessons critically, following the current playbook's
+guidance on evaluating methods for each new production.
+
 ## Pilot: CONTINUITY
 
 Archived on 2026-10-02 in the owner's iCloud Drive at `interregnum-archives/pilot/`.

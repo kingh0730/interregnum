@@ -1,8 +1,22 @@
 # Episode playbook: blank page to finished reel
 
-This is how the pilot *CONTINUITY* was made. Follow it for every episode. Each stage lists its tool, the brief or
-input it needs, the QA check that proves it worked, and its known failure modes. Where this document and memory
-disagree, this document wins; update it when you learn something.
+This is the evolving production playbook, informed by the pilot *CONTINUITY* and later work. Each stage lists
+its tools, required inputs, QA checks, and observed failure modes. Where this document and memory disagree,
+this document wins; update it when you learn something.
+
+**Older episodes are historical examples, not gold standards.** Their results reflect the models, pipeline,
+and constraints of their production dates. Preserve useful lessons and source material, but do not treat their
+quality as a ceiling or copy their model choices, prompts, and workarounds by default. Judge a new episode
+against its own goals and the current series taste and quality requirements.
+
+**Re-evaluate technical defaults when planning a new production.** Model recommendations and failure reports
+below record the evidence available when written; they are not permanent rankings. Check current primary
+documentation for relevant capabilities and availability, and use a small representative comparison when
+uncertainty would change the production choice. A newer model is not automatically better. Retain established
+methods where the evidence still supports them, and record the reason and date when replacing a default.
+This does not override budget approvals, paused services, privacy rules, or other explicit user constraints.
+When restoring an old episode, preserve its original assets and setup for reproducibility; choose methods
+for a new episode separately.
 
 **Roles.** Claude is the director: every creative and technical call is Claude's to make and state. King is asked
 only for what Claude can't do: **watch motion, listen to sound, spend money or provide keys and accounts**, and make
@@ -112,10 +126,14 @@ felt like one tempo. Movement inside shots, narration cadence, sound density and
   - **Faces:** calm and underplayed in the stills too; emotion comes from staging and cutting (Kuleshov).
 
 ## 2b. Image technique: elegant, not "AI"
-**Use Luma Uni-1 max (`luma/agent/uni-1/v1/max`, edit at `/max/edit`) for every image unless Luma truly can't do a
-shot.** "Truly can't" means that after two honest attempts with a rewritten brief, it still fails at something the shot
-needs. Only then test a few other models on that one shot and use the winner for it. Don't carry per-style routing rules
-forward; the evidence from the 2026-09-30 tests is in `docs/history.md`.
+**Use Luma Uni-1 max (`luma/agent/uni-1/v1/max`, edit at `/max/edit`) as the default for images.**
+The supporting evidence from the 2026-09-30 tests is in `docs/history.md`. Credible new evidence of a better fit
+for the planned production can warrant a small representative comparison under the reassessment guidance above;
+Luma need not fail first. Keep Luma as the default unless the comparison supports changing it, and record why.
+
+For troubleshooting an individual shot, make two honest Luma attempts with a rewritten brief. If it still fails
+at something the shot needs, test a few alternatives on that shot and use the winner for it. A shot-specific
+exception does not by itself establish a new default or a general per-style routing rule.
 
 - **Prompts are short photographer's briefs**, not prop lists:
   - where the camera stands and which lens;
