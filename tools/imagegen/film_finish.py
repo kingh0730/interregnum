@@ -15,7 +15,9 @@ import cv2
 import numpy as np
 
 
-def finish(img, s=1.0, seed=7):
+def finish(img, s=1.0, seed=7, legacy_luminance=False):
+    # OpenCV supplies BGR. Keep an explicit opt-in for matching already finished footage.
+    weights = np.array([0.299, 0.587, 0.114] if legacy_luminance else [0.114, 0.587, 0.299], np.float32)
     x = img.astype(np.float32) / 255.0
     # 1. de-oil: reduce mid-frequency detail (band between 1.5 px and 6 px blurs)
     b1 = cv2.GaussianBlur(x, (0, 0), 1.5)
@@ -24,7 +26,7 @@ def finish(img, s=1.0, seed=7):
     smooth = cv2.bilateralFilter((x * 255).astype(np.uint8), 7, 25, 7).astype(np.float32) / 255.0
     x = x * (1 - 0.35 * s) + smooth * (0.35 * s) - mid * 0.15 * s
     # 2. specular tame: soft shoulder on luminance
-    lum = x @ np.array([0.299, 0.587, 0.114], np.float32)
+    lum = x @ weights
     knee = 0.78
     over = np.clip(lum - knee, 0, None)
     newl = np.where(lum > knee, knee + over / (1 + over * 3.0 * s), lum)
@@ -33,7 +35,7 @@ def finish(img, s=1.0, seed=7):
     x = 0.035 * s + x * (1 - 0.05 * s)
     x = np.clip(x, 0, 1)
     x = x + 0.06 * s * np.sin(np.pi * x) * (x - 0.5)  # a mild S around the midtones
-    lum = (x @ np.array([0.299, 0.587, 0.114], np.float32))[..., None]
+    lum = (x @ weights)[..., None]
     ext = np.abs(lum - 0.5) * 2
     x = lum + (x - lum) * (1 - 0.18 * s * ext)
     # 4. halation: warm glow from the brightest areas only
@@ -54,7 +56,8 @@ if __name__ == "__main__":
     ap.add_argument("inp")
     ap.add_argument("out")
     ap.add_argument("--strength", type=float, default=1.0)
+    ap.add_argument("--legacy-luminance", action="store_true", help="match the original BGR-weighting look")
     a = ap.parse_args()
     im = cv2.imread(a.inp, cv2.IMREAD_COLOR)
-    cv2.imwrite(a.out, finish(im, a.strength))
+    cv2.imwrite(a.out, finish(im, a.strength, legacy_luminance=a.legacy_luminance))
     print(a.out)

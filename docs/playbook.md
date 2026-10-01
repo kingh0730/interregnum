@@ -151,8 +151,19 @@ forward; the evidence from the 2026-09-30 tests is in `docs/history.md`.
     `private/mom-future/v2c/work/make_images_json.py` can add the locks automatically.
 - **Recurring props:** list the prop's reference image in `refs` on every shot that shows it, including character
   edits. Both Luma endpoints take `reference_image_urls` (t2i up to 9, edit up to 8).
-- **Luma's queue sometimes hangs** a request IN_PROGRESS for 20+ minutes while fresh ones finish in about 2;
-  `luma_batch.py` resubmits after 7 minutes.
+- **Luma's queue sometimes hangs** a request IN_PROGRESS for 20+ minutes while fresh ones finish in about 2.
+  After a 7-minute client timeout, `luma_batch.py` resumes the same logged request; it does not submit a replacement.
+  Keep the log even if polling or downloading fails: a client timeout does not establish that generation failed.
+- **Recover existing requests without another generation:** rerun
+  `uv run tools/imagegen/luma_batch.py <images.json> --only <id>` or
+  `uv run tools/video/h3_batch.py <motion.json> --only <id>` with the original `--root`, if supplied.
+  H3 starts a fresh polling window on that same request; `--timeout` controls that window.
+  For a standalone fal request, use
+  `uv run tools/fal_run.py <endpoint> <original-payload.json> <original-out-prefix> --resume`.
+  Do not use `--redo` for recovery. An ambiguous submission or legacy fal log without polling URLs needs manual
+  request recovery; do not delete the log to force another POST. Record the service-provided status/response URLs
+  and request ID in the existing log when recovered, clear `submission_pending` only after that recovery, then
+  resume. If no request ID was returned, reconcile the request with the service before authorizing a replacement.
 - **Judge honestly:**
   - look at full frames, never centre-cropped grids;
   - look at faces at 100% and at 1080p;
@@ -163,7 +174,7 @@ forward; the evidence from the 2026-09-30 tests is in `docs/history.md`.
 
 ## 3. Lookdev and keyframes
 The default model is Luma (§2b): `tools/imagegen/luma_batch.py <images.json> --jobs 8` runs a manifest (t2i or edit,
-in dependency order, resumable, resubmitting stuck requests). For Codex looks: `tools/imagegen/gen.sh` for one image,
+in dependency order, resuming logged requests without automatic replacement). For Codex looks: `tools/imagegen/gen.sh` for one image,
 `tools/imagegen/batch.py <manifest> --jobs 5` for many. The Codex notes below apply only when a shot uses Codex.
 - **Order:**
   1. The master style frame alone, then judge it.

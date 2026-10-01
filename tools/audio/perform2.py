@@ -12,6 +12,7 @@ usage: uv run tools/audio/perform2.py <dialogue.json> <voices.json> <outdir> [--
 import argparse
 import difflib
 import json
+import math
 import os
 import re
 import sys
@@ -122,13 +123,24 @@ def main():
             m = analyse(f) or {}
             tr = transcript(f) if ref else ""
             acc = difflib.SequenceMatcher(None, ref, norm_chars(tr)).ratio() if ref else 1.0
-            spread = m.get("f0_spread_st", 0 if not ref else 99) + 0.3 * m.get("level_spread_db", 0 if not ref else 99)
+            measured = all(isinstance(m.get(k), (int, float)) and math.isfinite(m[k])
+                           for k in ("f0_spread_st", "level_spread_db"))
+            spread = m["f0_spread_st"] + 0.3 * m["level_spread_db"] if measured else (0 if not ref else 128.7)
             score = (spread if widest else -spread) - (0 if acc >= 0.85 else 1000)
-            cands.append({"file": f.name, "seed": seed, "text_match": round(acc, 3), "transcript": tr, **m, "score": round(score, 2)})
+            cands.append({"file": f.name, "seed": seed, "text_match": round(acc, 3), "transcript": tr, **m,
+                          "measured": measured, "score": round(score, 2) if measured or not widest or not ref else None})
         passing = [c for c in cands if c["text_match"] >= 0.85]
-        # if no take passes the transcript check, the best match wins first (then flatness): mumbled registers
-        # can fail everywhere on one misheard word, and a wrong word matters more than a flat read
-        cands.sort(key=lambda c: -c["score"]) if passing else cands.sort(key=lambda c: (-c["text_match"], -c["score"]))
+        # Missing measurements do not compete for spread. Keep transcript correctness first,
+        # and retain unmeasured takes as a fallback (including intentionally unvoiced takes).
+        if widest and ref:
+            if passing:
+                cands.sort(key=lambda c: (c["text_match"] < 0.85, not c["measured"],
+                                          -(c["score"] if c["score"] is not None else 0)))
+            else:
+                cands.sort(key=lambda c: (-c["text_match"], not c["measured"],
+                                          -(c["score"] if c["score"] is not None else 0)))
+        else:
+            cands.sort(key=lambda c: -c["score"]) if passing else cands.sort(key=lambda c: (-c["text_match"], -c["score"]))
         sel[t["id"]] = {"speaker": spk, "register": t.get("register"), "voice_id": vid, "settings": settings,
                         "select": "widest" if widest else "flattest", "best": cands[0] if cands else None, "candidates": cands}
         selp.write_text(json.dumps(sel, indent=1, ensure_ascii=False))

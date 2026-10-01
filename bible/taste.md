@@ -31,8 +31,9 @@ scaffold is old on purpose. And many were attacked at release for the very choic
 ### Nolan, Villeneuve and other time machines
 
 **Interstellar (2014).** *New:* relativity as a parent–child melodrama. An hour on Miller's planet costs seven years at
-home, and Cooper then watches 23 years of his children's messages in one sitting. The black hole was computed, not
-designed: Kip Thorne's equations, rendered by DNEG, became a physics paper ([arXiv](https://arxiv.org/abs/1502.03808)).
+home, and Cooper then watches 23 years of his children's messages in one sitting. The black hole's lensing was
+computed with DNEG's renderer, developed with Kip Thorne; the filmmakers simplified its spin and light effects for
+readability. The work became a physics paper ([arXiv](https://arxiv.org/abs/1502.03808)).
 *Reused:* *2001*, the farmer-pilot Western, a haunted bookshelf. *Material:* real Dust Bowl survivors from Ken Burns's
 documentary open the film, so testimony about a past catastrophe plays as oral history of a future one
 ([Collider](https://collider.com/christopher-nolan-interstellar-ken-burns-dust-bowl-documentary/)). *Time:* the launch
@@ -154,7 +155,8 @@ the Thirty-Six Stratagems, so an origin myth becomes a heist comedy. *Reused:* t
 ensemble, the post-*Ne Zha* myth-remix wave. *Material:* Penglai drawn from a Qing jewelled bonsai in the Palace Museum;
 the wish-ribbon tree modelled on Mount Qingcheng's ancient ginkgo; a Sichuan hotpot dinner
 ([Red Star News](https://static.cdsb.com/micropub/Articles/202607/2afc22a34c3fe09b329e5f9721694308.html)). *Time:*
-reversal on reversal for 144 minutes; the complaint was "a bloated runtime and uneven pacing"
+reversal on reversal for roughly 2 hours 25 minutes ([TGV lists 145 minutes](https://www.tgv.com.my/movie/all-wishes-come-true));
+the complaint was "a bloated runtime and uneven pacing"
 ([Rotten Tomatoes](https://www.rottentomatoes.com/m/all_wishes_come_true)).
 
 **Lord of Mysteries (novel 2018–20; game trailers 2024–26).** *New:* power by acting. Beyonders drink potions named for
@@ -253,7 +255,8 @@ the guilt falls on the adults who lied to a child; the zero-g Battle Room teache
 drew on Civil War command histories read as a boy; italic adult voices open each chapter to hide the twist. *Ready
 Player One:* nostalgia is the mechanic (a dead billionaire's will makes his 1980s canon the road to power), and the
 novel hid a real Easter egg that readers hunted for a DeLorean. Its seed is labour history: an Atari programmer hid his
-name in *Adventure* in 1980 because he "was pissed off" at $22K a year with "no royalties"
+name in *Adventure* in 1979, discovered the following year ([Robinett's account](https://nodontdie.com/interviews/warren-robinett)),
+because he "was pissed off" at $22K a year with "no royalties"
 ([Wired](https://www.wired.com/2015/03/warren-robinett-adventure/)). By 2018 the references were the complaint:
 "bombarded with images, bored by the lack of an interesting story"
 ([TheWrap](https://www.thewrap.com/ready-player-one-film-review-steven-spielberg/)). A reference is not an invention.
@@ -270,8 +273,8 @@ prints his book's ISBN); a Norwegian landscape hotel. *Time:* a one-week clock; 
 burst of tempo, the drilled disco dance.
 
 **Alita: Battle Angel (2019).** *New:* a manga face made photoreal, acting opposite live actors. When the first
-trailer's oversized eyes were mocked, Cameron made them bigger, not smaller
-([Yahoo](https://www.yahoo.com/entertainment/eye-popping-secrets-alita-battle-angel-including-james-cameron-wanted-big-eyes-210836310.html)).
+trailer's oversized eyes were mocked, Cameron requested larger irises and pupils, reducing the visible whites
+([Weta's Eric Saindon](https://www.fxguide.com/fxfeatured/weta-digitals-remarkable-face-pipeline-alita-battle-angel/)).
 *Reused:* Pinocchio, Frankenstein, *Rollerball*, the doomed teen romance. *Material:* pro aggressive inline skaters for
 street Motorball; Panama City, Havana and Guanajuato's tunnels for Iron City ([SYFY
 Wire](https://www.syfy.com/syfy-wire/why-alita-battle-angel-moved-from-japan-to-latin-america-and-used-so-many-3d-printers)).
@@ -355,8 +358,8 @@ pause in between actually helps" ([RBMA](https://daily.redbullmusicacademy.com/2
 Valley:* a *Harvest Moon* in which every system feeds another, the villain is a corporation, and the moral choice is a
 mechanic (restore the community centre with gifts, or buy the same upgrades from JojaMart). The opening echoes Eric
 Barone's own life (a graduate who didn't want a cubicle and worked as a theatre usher): you read your dead grandfather's
-letter at a Joja cubicle and quit. A day lasts about 14 real minutes, a season exactly 28 days, and festivals stop the
-clock.
+letter at a Joja cubicle and quit. A day lasts about 14 real minutes, a season exactly 28 days, and some festivals stop
+the clock; the Night Market allows time to pass ([developer's changelog](https://www.stardewvalley.net/stardew-valley-1-4-update-full-changelog/)).
 
 ## 2. Principles
 
@@ -411,7 +414,7 @@ Distilled from §1. Each is a question the concept must answer, with the works t
    just cut length.
 
 10. **Make at least one choice someone will complain about.** Freshness shows up at release as a complaint about a
-    deliberate choice: the eyes made bigger (*Alita*), the "selfish" ending (*Weathering with You*), the literal
+    deliberate choice: the manga-sized eyes (*Alita*), the "selfish" ending (*Weathering with You*), the literal
     lyric (*Last Christmas*), the length (*Blade Runner 2049*), the buried dialogue (*Tenet*). A concept nobody could
     object to is the median. The complaint must be about a choice, never about carelessness.
 

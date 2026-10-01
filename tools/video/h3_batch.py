@@ -1,4 +1,4 @@
-"""Run a MiniMax H3 Max (or any fal video endpoint) motion manifest: parallel, resumable, never billing twice.
+"""Run a MiniMax H3 Max (or any fal video endpoint) motion manifest: parallel and resumable without automatic paid resubmission.
 
 usage: uv run tools/video/h3_batch.py <motion_plan.json> [--root DIR] [--jobs 4] [--only id1,id2] [--redo id1,id2]
                                      [--dry-run] [--timeout 900]
@@ -22,8 +22,8 @@ Price per second comes from the fal pricing API (lipsync bills the audio's lengt
 Money safety:
 - The request id, status and response URLs are written to <manifest dir>/h3_log/<id>.json the moment fal accepts the
   POST, before any polling. A re-run polls that request instead of POSTing again.
-- A request still IN_QUEUE/IN_PROGRESS after --timeout seconds is cancelled (best effort) and resubmitted once per
-  attempt; a COMPLETED request is only ever fetched, never re-POSTed.
+- Requests exceeding --timeout are retained for a later run; polling/download failures never trigger replacement.
+- An ambiguous submission is retained for manual recovery rather than automatically POSTed again.
 - --redo moves the old output to <out>.takeN.mp4 (so earlier takes stay comparable) and starts a new request.
 Every submitted request is appended to <manifest dir>/h3_log/ledger.jsonl with its billable seconds and price.
 """
@@ -215,6 +215,9 @@ def main():
         i = j["id"]
         lp = logdir / f"{i}.json"
         log = json.loads(lp.read_text()) if lp.exists() else {}
+        if i in redo and log and not log.get("done"):
+            print(f"FAIL {i}: unresolved request; resume/recover it before requesting a redo", flush=True)
+            return False
         if i in redo and log.get("request_id"):
             hist = logdir / f"{i}.history.jsonl"
             with open(hist, "a") as f:
@@ -226,10 +229,16 @@ def main():
                     n += 1
                 o.rename(o.with_name(f"{o.stem}.take{n}.mp4"))
             log = {}
+        if log.get("submission_pending"):
+            print(f"FAIL {i}: previous submission unresolved; recover manually before another POST", flush=True)
+            return False
+        poll_start = time.time()
         for attempt in range(3):
             try:
                 if not log.get("request_id"):
                     ep, p = build(j)
+                    log = {"id": i, "endpoint": ep, "payload": clean(p), "submission_pending": True}
+                    lp.write_text(json.dumps(log, indent=1, ensure_ascii=False))
                     sub = http(f"https://queue.fal.run/{ep}", key, p)
                     log = {"id": i, "endpoint": ep, "request_id": sub["request_id"], "status_url": sub["status_url"],
                            "response_url": sub["response_url"], "cancel_url": sub.get("cancel_url"),
@@ -251,36 +260,19 @@ def main():
                         return True
                     if s not in ("IN_QUEUE", "IN_PROGRESS"):
                         raise RuntimeError(f"status {st}")
-                    if time.time() - log["submitted"] > a.timeout:
-                        print(f"stuck {i} ({s} after {a.timeout} s); cancelling and resubmitting", flush=True)
-                        if log.get("cancel_url"):
-                            try:
-                                http(log["cancel_url"], key, method="PUT")
-                            except Exception:
-                                pass
-                        with open(logdir / f"{i}.history.jsonl", "a") as f:
-                            f.write(json.dumps(dict(log, abandoned=time.time())) + "\n")
-                        log = {}
-                        break
+                    if time.time() - poll_start > a.timeout:
+                        print(f"pending {i} ({s} after {a.timeout} s); retained for next run", flush=True)
+                        return False
                     time.sleep(6)
             except Exception as e:  # noqa: BLE001 (a bad input must fail this job, not the batch)
                 msg = f"{type(e).__name__}: {e}"
                 print(f"err  {i} (attempt {attempt + 1}): {msg[:400]}", flush=True)
-                failed_request = log.get("response_url", "\0") in msg and "HTTP 4" in msg
-                if log.get("request_id") and not failed_request:
-                    # a COMPLETED request whose result we failed to read is retried by fetching, never by POSTing
-                    try:
-                        if http(log["status_url"], key).get("status") == "COMPLETED":
-                            continue
-                    except Exception:
-                        pass
-                # (a request that completed with an error, e.g. 422 on its result, is archived: fal does not bill it)
-                    with open(logdir / f"{i}.history.jsonl", "a") as f:
-                        f.write(json.dumps(dict(log, error=msg[:1000])) + "\n")
-                    log = {}
-                    lp.unlink(missing_ok=True)
+                if not log.get("request_id"):
+                    # The POST may have reached the service even though its response was lost.
+                    break
                 if "HTTP 4" in msg and "HTTP 429" not in msg:
-                    break  # a validation or safety refusal will not change on retry
+                    break
+                # Retry only polling/fetching this same request. Keep its log even on failure.
         print(f"FAIL {i}", flush=True)
         return False
 

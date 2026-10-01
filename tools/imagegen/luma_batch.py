@@ -8,8 +8,9 @@ Manifest: a JSON list of {"id", "out", "mode": "t2i"|"edit", "prompt", "base": i
 Edits chain to the fal CDN URLs of earlier results, so no local file is ever uploaded.
 Paths in "out" are relative to --root (default: the manifest's directory's parent).
 Resumable: an image whose out file and fal URL both exist is skipped. URLs are kept in <manifest>.urls.json.
-Each request's full log is kept in <manifest dir>/luma_log/<id>.json (per manifest, so parallel episodes never collide; (fal_run never re-POSTs, so a lost poll can be
-recovered from the request id there).
+Each request's full log is kept in <manifest dir>/luma_log/<id>.json. Timeouts and download failures resume that
+request without another POST. Use distinct manifest directories for batches with overlapping IDs.
+Legacy logs missing polling URLs and ambiguous submissions require manual recovery.
 """
 import argparse
 import json
@@ -17,6 +18,7 @@ import shutil
 import subprocess
 import sys
 import threading
+import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -79,29 +81,35 @@ def main():
         pfile = logdir / f"{i}.payload.json"
         pfile.write_text(json.dumps(payload, ensure_ascii=False))
         prefix = logdir / i
+        if i in redo and prefix.with_suffix(".json").exists():
+            old = json.loads(prefix.with_suffix(".json").read_text())
+            if not old.get("response"):
+                print(f"FAIL {i}: unresolved request; recover it before requesting a redo", flush=True)
+                return False
+            with open(logdir / f"{i}.history.jsonl", "a") as history:
+                history.write(json.dumps(old) + "\n")
+            prefix.with_suffix(".json").unlink()
         for attempt in range(3):
-            # Luma's queue sometimes leaves a request IN_PROGRESS for 20+ minutes while fresh ones finish in about 2,
-            # so a request that takes longer than TIMEOUT is abandoned and resubmitted (costs about 0.3 cents).
+            # --resume reuses the accepted request even after timeout or download failure.
             try:
-                r = subprocess.run(["uv", "run", str(TOOLS / "fal_run.py"), EP[it["mode"]], str(pfile), str(prefix)],
-                                   capture_output=True, text=True, timeout=TIMEOUT)
+                r = subprocess.run(["uv", "run", str(TOOLS / "fal_run.py"), EP[it["mode"]], str(pfile), str(prefix),
+                                    "--resume"], capture_output=True, text=True, timeout=TIMEOUT)
             except subprocess.TimeoutExpired:
-                print(f"timeout {i} (attempt {attempt + 1}); resubmitting", flush=True)
+                print(f"timeout {i} (attempt {attempt + 1}); retaining request for resume", flush=True)
                 continue
             res = logdir / f"{i}.json"
             url = first_image_url(json.loads(res.read_text()).get("response")) if res.exists() else None
-            got = [p for p in logdir.glob(f"{i}.*") if p.suffix.lower() in (".png", ".jpg", ".jpeg", ".webp")] + \
-                  [p for p in logdir.glob(f"{i}_*") if p.suffix.lower() in (".png", ".jpg", ".jpeg", ".webp")]
-            if r.returncode == 0 and url and got:
+            got = prefix.parent / (prefix.name + Path(url.split("?")[0]).suffix) if url else None
+            if r.returncode == 0 and url and got and got.exists():
                 out = root / it["out"]
                 out.parent.mkdir(parents=True, exist_ok=True)
-                shutil.copyfile(got[0], out)
+                shutil.copyfile(got, out)
                 with lock:
                     urls[i] = url
                     urls_path.write_text(json.dumps(urls, indent=1))
                 print(f"ok   {i}", flush=True)
                 return True
-            print(f"retry {i} (attempt {attempt + 1}): {(r.stderr or r.stdout)[-300:]}", flush=True)
+            print(f"resume {i} (attempt {attempt + 1}): {(r.stderr or r.stdout)[-300:]}", flush=True)
         print(f"FAIL {i}", flush=True)
         return False
 
@@ -123,7 +131,7 @@ def main():
                 break
             fin = next(iter(f for f in pending.values() if f.done()), None)
             if fin is None:
-                import time; time.sleep(1); continue
+                time.sleep(1); continue
             k = next(k for k, f in pending.items() if f is fin)
             pending.pop(k)
             (done if fin.result() else failed).add(k)
