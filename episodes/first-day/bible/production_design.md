@@ -1,6 +1,6 @@
 # 第一天 — production design
 
-Authority: `episodes/first-day/build/director_lock.md`. Material/light choice remains provisional until the director compares the six look tests. **A, B and I below are fixed story spaces**, not independent visual inventions in every prompt.
+Authority: `episodes/first-day/build/director_lock.md`. Porcelain materials and the revised maritime references are approved; the source-frame record is in the test-frame review. **A, B and I below are fixed story spaces**, not independent visual inventions in every prompt.
 
 ## A place to wait
 
@@ -29,7 +29,7 @@ Lin enters I from screen left; Yu enters from screen right.
 | B — Yu's gallery | Blue-grey floor, slim dark titanium arch, clear blue sea rail, dark bench | Arch and bench inland; one vertical coral inset identifies reverse views; guide mechanism below deck |
 | I — fixed island | Oval pearl floor, three silver ribs on its north side, broad open centre | Two flanking docks; permanent inland path; south sea rail; a low bench kept outside the dance area |
 
-The final material choice may shift finish and source light but must retain these shape/value distinctions. A should be recognizable without Lin; B without Yu; I without either. Do not use colour alone to communicate occupancy or safety.
+The approved porcelain material family retains these shape/value distinctions; local camera angles preserve their approved source light. A should be recognizable without Lin; B without Yu; I without either. Do not use colour alone to communicate occupancy or safety.
 
 ## Docking states
 

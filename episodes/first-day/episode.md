@@ -26,7 +26,7 @@ The galleries make their last local passes before continuing along the waterfron
 
 **1:33.68–2:06.90 — The people inside the clothes.** Leave the dance. Yu presses down his wind-tossed hair; it rises again. Lin puts her shoes neatly together while seated, then adjusts their angle toward the approaching gallery. Each sits at a different bench facing the same sea. One notices that the other has kept looking back. These are complete small scenes with causes and responses, not landscape interludes. The sea is something they are beginning to share.
 
-**2:06.90–2:44 — Almost.** The second dance repeats the phrase with greater urgency and less polish. Yu reaches his docking threshold as Lin's gallery moves away. He starts to offer the palm, then withdraws it and stays aboard. Repeat enough of the earlier framing that the audience recognizes the mistake. A single elevated view clarifies the two offset arrivals and the island that could connect them. The boarding ribbon begins to retract. There will not be endless repetitions of this evening.
+**2:06.90–2:44 — Almost.** The second dance repeats the phrase with greater urgency and less polish. Yu reaches his docking threshold as Lin's gallery moves away. He starts to offer the palm, then withdraws it and stays aboard. Repeat enough of the earlier framing that the audience recognizes the mistake. A single elevated view clarifies the two offset arrivals and the island that could connect them. The boarding ribbon begins to retract. There will not be endless repetitions of this encounter.
 
 **2:40–2:44 — She steps ashore.** Lin crosses the stationary level dock onto the island and stops.
 
@@ -34,13 +34,13 @@ The galleries make their last local passes before continuing along the waterfron
 
 **2:59.13–3:43.06 — He answers.** Yu's gallery arrives. Lin opens her palm from solid ground. Show him see her, cross the level threshold, and occupy the empty space. Make this causal chain explicit before celebrating it. The last chorus completes their familiar phrase in a shared wide shot. Preserve at least one sustained phrase with visible feet, honest contact and a modest partner turn. Interleave quicker details and playful footwork with that proof of togetherness. They need not suddenly become acrobats.
 
-**3:43.06–4:13.96 — An evening begins.** Their dance resolves into walking and standing together at the sea rail. The two galleries continue beyond them. Repeat the opening ankle composition, now with both pairs of shoes resting on the same floor. End with the standing pair and their shared view; no kiss is needed to certify the connection. Keep the complete musical tail.
+**3:43.06–4:13.96 — Time together begins.** Their dance resolves into walking and standing together at the sea rail. The two galleries continue beyond them. Repeat the opening ankle composition, now with both pairs of shoes resting on the same floor. End with the standing pair and their shared view; no kiss is needed to certify the connection. Keep the complete musical tail.
 
 ## Form, beauty and tempo
 
 The internal term **借拍**, a borrowed beat, names the edit that lends one person's unfinished gesture to another. The last third stops borrowing: the cut disappears where the viewer expects it. This is the film's formal invention; the machinery supplies opportunities, never a philosophical lecture.
 
-Photoreal people inhabit a luminous, elegant coastal future. Opal ceramic carries public calm; ink clothing and cable shadows give definition; sea blue opens space; a restrained coral docking lamp marks a threshold. Light comes from the east-side sun, reflected water and visible fixtures. Cyberpunk appears in functional seams and actuators; anime contributes strong silhouettes and pose timing. Neither becomes a style filter. The only frictionless **copy** is the miniature demonstration model. Living faces, furniture and architecture retain believable material and construction.
+Photoreal people inhabit a luminous, elegant coastal future. Opal ceramic carries public calm; ink clothing and cable shadows give definition; sea blue opens space; a restrained coral docking lamp marks a threshold. Light comes from one continuous period of bright coastal daylight, reflected water and visible fixtures; each local view preserves its approved source direction. Cyberpunk appears in functional seams and actuators; anime contributes strong silhouettes and pose timing. Neither becomes a style filter. The only frictionless **copy** is the miniature demonstration model. Living faces, furniture and architecture retain believable material and construction.
 
 The camera's home is partner-height lateral observation, chiefly 35/50 mm. Use still frames for hesitation, closer object views for reactions, one elevated geography reveal and one sustained final duet. Avoid constant orbiting, micro-pushes, outfit changes and skyline tourism.
 

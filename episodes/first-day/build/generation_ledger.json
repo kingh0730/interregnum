@@ -1,0 +1,1257 @@
+{
+  "schema_version": 3,
+  "episode": "first-day",
+  "scope": "Local work/first-day/**/luma_log/*.json and *.history.jsonl, with saved qa terminal-error receipts; accepted request IDs only; no API queries.",
+  "requests": [
+    {
+      "id": "01a0f908-5184-7f22-814c-0368fc529238",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "batch": "lookdev",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f90b-a6bb-7fc1-991c-0ccb91a263f1",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "batch": "lookdev",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f90b-a6be-7a13-adac-47c08bfb2377",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "batch": "lookdev",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f90b-a743-76c1-8f1f-7b93b792fce7",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "batch": "lookdev",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f90b-a744-7640-a9d7-354d39dcf96b",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "batch": "lookdev",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f90b-a744-7b83-9db4-92e00ad60017",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "batch": "lookdev",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f918-05ad-7462-85fe-153b8199e224",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "references",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f918-05ad-7800-9b43-cf58783bf32e",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "batch": "references",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f918-05ad-7b63-8f61-8dc8fdafc0f7",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "references",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f91f-6710-7033-a0da-53f98a59cb46",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "batch": "references",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f91f-6714-7a01-80af-8bc3000168d0",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "references",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f926-b86e-7770-a058-4ebe96e94034",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "references",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f926-b870-7bd2-a999-650cc1d99687",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "references",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f926-b880-7972-810e-17869654f7d7",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "references",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f926-b8c3-7531-bd9e-8c4e753d3bbc",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "batch": "references",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f926-b8c7-7f91-8782-22362cd2a4de",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "batch": "references",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f926-bcca-7253-b2d3-eb571b7c3286",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "sheets",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f926-bd35-73a1-800c-1459441bb097",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "sheets",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f939-d725-7443-b10a-a1bc120b7c6f",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "references",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f939-d72b-7f72-b4b6-7dde5aea2e45",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "references",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f93d-d7ea-72a0-87cc-d52d31047708",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "scene-test",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f93d-d7f3-7a30-b429-282daa2b7bd5",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "references",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f941-8fb8-75b2-a2c9-f3af11d95119",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f941-9017-7ba3-b636-c189559a5368",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f943-cd4f-7452-8b9b-0faf74546a75",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "batch": "scene-test",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f945-ecb3-7521-a161-1ffbc549089b",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f945-ecc8-7fa3-90bc-433a540c3e03",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f947-f646-7dd3-b1b7-e51d2a626d81",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "scene-test",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f957-ae4a-7253-85f1-c4a0dc05a1cc",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f957-ae52-7541-bc29-e610dfd1cb7e",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "error_response_recorded"
+    },
+    {
+      "id": "01a0f957-ae70-7263-8226-14193d998ab5",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f957-ae9c-7ad1-9774-d8779896f302",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f957-aea4-7463-8e27-4531448972d6",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f957-aecd-7e01-9980-d8661596eee4",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f957-aed7-7f71-aff5-6f57ab270607",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f957-aeea-7dc3-a781-570fde2e8635",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95a-4d2c-7631-b367-08abb8900021",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95a-a57e-7cf1-99c2-08870c5391f3",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95a-b00b-7c32-8b2e-ba8683413f91",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95a-ba71-7601-b2b3-d3b17aad4cad",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95c-9533-71d1-836b-88c3a3d31eeb",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95c-b051-75a3-a07e-be05ff9738fe",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95c-b149-7830-99d8-dc2f53598fb8",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95c-b475-76e3-8e8f-79c2b2105904",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95c-bc83-72b0-82ec-0b706b9af28b",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95c-c52f-7320-b6bd-eee78688226e",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95c-d09d-7c30-b70e-36b1419c4c90",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95d-625a-7492-aa17-3aa5e7c231a4",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95e-910d-7de2-9f26-e2a0e691dc4b",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95e-b1cb-7800-ba77-8ce5f6dbcfce",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95e-c78e-7563-a2ab-e13e1f749f1d",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95e-da21-76c3-9c44-5ffdd7673162",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95e-e21d-7673-af0b-403821f8d219",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95f-0bf1-7510-9e3c-3b21229acbe5",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95f-1992-71a0-a66f-819efe774207",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f95f-19ab-7173-8b76-35f3cf529b7a",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f960-0989-7963-ae3c-468b557f8009",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "recovery01",
+      "response_status": "pending_or_unresolved_no_response"
+    },
+    {
+      "id": "01a0f960-2a4d-7d51-a3a1-36979751d54b",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f960-a877-7920-89b1-7b1381d9c9a8",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f960-ae03-75a3-afcc-080dbb41934f",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f960-de2c-7de2-a298-941b7757ea6e",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f960-debd-7e52-9b6c-a9984973a1c5",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f960-e04a-74a3-99cb-5441af060577",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f960-e32e-7362-9204-3bc55dd0530f",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f961-eca5-7553-a0be-4aea15859520",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f962-16df-7891-87c0-a94fb6910ea5",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f962-9e95-7ef1-9654-7729a9016ba3",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f962-c91d-76d0-9b07-784b82a78203",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f962-e422-75f3-9192-45e429eac8d6",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f962-e6d8-7e72-b759-6f53bf42af5b",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f963-3420-75c3-9e29-2f9c908016ac",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f963-4844-7741-b68f-5c3b8008ae66",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f964-2492-74c1-8fe6-c6296cf4ff11",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f964-986f-7462-bac8-b0a618d12170",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f964-b2eb-7872-8fa1-80d1fa84cf0d",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f964-e4a5-7411-b653-4696163c3205",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f965-27b9-7b92-9162-f0e3fd00f97b",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f965-5b20-7443-9e23-b5880b0e01b4",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f965-7df5-7653-8963-af1eb860f9e2",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f966-2373-7500-9454-cbec84dfbb62",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    },
+    {
+      "id": "01a0f966-9747-76e2-ad72-bc4bfdad5581",
+      "endpoint": "luma/agent/uni-1/v1/max/edit",
+      "batch": "keyframes",
+      "response_status": "completed_image_response"
+    }
+  ],
+  "counts": {
+    "accepted_id_record_occurrences": 81,
+    "distinct_accepted_request_ids": 81,
+    "duplicate_accepted_id_records_not_double_counted": 0,
+    "excluded_sidecar_files": 150,
+    "scanned_record_files": 79,
+    "terminal_error_receipt_pairs": 1
+  },
+  "response_status_counts": {
+    "completed_image_response": 79,
+    "error_response_recorded": 1,
+    "pending_or_unresolved_no_response": 1
+  },
+  "estimates": [
+    {
+      "rate_basis": "authenticated_rate_supplied_for_this_production",
+      "usd_per_assumed_image": 0.003,
+      "assumed_image_count": 81,
+      "estimated_usd": 0.243,
+      "is_billed_cost": false
+    },
+    {
+      "rate_basis": "public_rate_supplied_for_this_production",
+      "usd_per_assumed_image": 0.102,
+      "assumed_image_count": 81,
+      "estimated_usd": 8.262,
+      "is_billed_cost": false
+    }
+  ],
+  "estimate_basis": "One image assumed per distinct accepted request, including pending/unresolved and any error responses. These are arithmetic scenarios at supplied rates, not billed cost or confirmed charges. Same-ID polling/recovery records count once; new IDs for retakes count separately.",
+  "director_observations_not_provider_receipts": [
+    {
+      "request_id": "01a0f960-0989-7963-ae3c-468b557f8009",
+      "batch": "recovery01",
+      "observation": "The director observed terminal HTTP 422 on the recovery request and subsequent same-ID response retrievals. The provider response was visible in tool output but was not saved as a local receipt; the local-evidence status therefore remains pending_or_unresolved_no_response. No active provider request or billing outcome is inferred."
+    }
+  ],
+  "status_limits": "completed_image_response means a local response contains images, not that pixels passed QA. pending_or_unresolved_no_response is local evidence only: the provider may have completed or failed after the last saved record. Pre-submission records without an accepted ID cannot be enumerated as accepted paid requests.",
+  "builtin_generations": {
+    "recorded_generation_output_count": 36,
+    "counts_by_kind": {
+      "base_portrait": 2,
+      "targeted_scene_edit": 34
+    },
+    "records": [
+      {
+        "output_sha256": "016d8a9f00fb4b406a64dbf863f821551efbd13882d4043e38c076cf2026881d",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k12"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k12",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k12",
+            "provenance_file": "episodes/first-day/build/repair_batch01.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "097367ed5062dea26ed2369167fffb040e93bd81d96b14064785d920ef72eee6",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k43",
+          "k43_v1"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k43",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k43_v1",
+            "provenance_file": "episodes/first-day/build/repair_batch04.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "0a0c8c5576af8d2d5406804d551735e962b19092673387f585181e197d37a04d",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k07"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k07",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k07",
+            "provenance_file": "episodes/first-day/build/repair_batch01.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "0b8b181556e1bfa4213841a167eca8e6d3f24755b6c008566765307587c681b4",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k49",
+          "k49_v1"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k49",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k49_v1",
+            "provenance_file": "episodes/first-day/build/repair_batch04.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "0c09fcf1ac0fbfe771d7bdd023ca2564eac2ffff32e5b02b41bb0762f4d01d94",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k52_v4"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k52_v4",
+            "provenance_file": "episodes/first-day/build/repair_batch04.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "0cf8a672c36b093e7d9edbd4e8385aa2b7c90957c095830fc8eed75912adaf8c",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k55",
+          "k55_v1"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k55",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k55_v1",
+            "provenance_file": "episodes/first-day/build/repair_batch04.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "18a2615daa9c19627c50ea89247ae6a3a52caddfda45d2c11fa63ad3c119fe82",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k37"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k37",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k37",
+            "provenance_file": "episodes/first-day/build/repair_batch05.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "3107434dce7dc9c20f708d311cd91f98ec85cf5c672915c1f08a7b5906881bcc",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k35"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k35",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k35",
+            "provenance_file": "episodes/first-day/build/repair_batch05.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "3a701a5755828cd5c2dd74a09bd64611f587a69b46d1d45bbe313572e2cc2631",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k37"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k37",
+            "provenance_file": "episodes/first-day/build/repair_batch05.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "418784e4ea91caf291884d24485df264a78fbef8b3adce5bc01d341bd5bcf91a",
+        "kind": "base_portrait",
+        "asset_ids": [
+          "yu_base"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "yu_base",
+            "provenance_file": "episodes/first-day/build/portrait_provenance.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "437ecca16369e4ab3db7279da970de2ffa1c98b409a220534db9984e2f777949",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k52_v3"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k52_v3",
+            "provenance_file": "episodes/first-day/build/repair_batch04.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "58ce1b48470bc8aeeae97c9ea84e832953c94f4542670bb0427a6078e173d95e",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k29"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k29",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k29",
+            "provenance_file": "episodes/first-day/build/repair_batch03.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "6150e47860b1f49f6980558d4b36aff960b736453a45e2dee6378e7a9a35c23e",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k51",
+          "k51_v1"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k51",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k51_v1",
+            "provenance_file": "episodes/first-day/build/repair_batch04.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "67e5521ce1d96e72a83d6437fb9d76b026507e70d90deba3106c53f14a6f50ff",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k10"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k10",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "69cdbaab585b9e1718c40df2e9eba9e21c3c5fb5731a2462fc778e1eacefb9c4",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k16"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k16",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k16",
+            "provenance_file": "episodes/first-day/build/repair_batch05.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "6e5c955443a9e7978cefb64c2e95f443dcbc7e961dc92cb533c80b09bf78b14a",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k08"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k08",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k08",
+            "provenance_file": "episodes/first-day/build/repair_batch01.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "780dfd4b8f41f84d7ca2e522ef9b7a03b0082683727ccb87f2606c7e10cb61cb",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k40"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k40",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k40",
+            "provenance_file": "episodes/first-day/build/repair_batch05.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "845b59c61bb8b890f61162c634f62759b67ab494bb43772ed5cddfc5786cf11a",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k48",
+          "k48_v1"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k48",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k48_v1",
+            "provenance_file": "episodes/first-day/build/repair_batch04.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "8dee2b864396123b199491f268515fc0845623bde950e107384f999af73dbbfc",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k24"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k24",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k24",
+            "provenance_file": "episodes/first-day/build/repair_batch03.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "956c8e872596261f5b145da1fc9f3b0010b8f94924d1d1f8658811221061dec6",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k42"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k42",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "a3b30d7a5a9d181a07f96fc83ab0a435f2d866a4f0c12fabdb96760dfbb185f5",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k23"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k23",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k23",
+            "provenance_file": "episodes/first-day/build/repair_batch03.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "a8784f2559956d3aed8db563a9a8bdbf3c75ad3e9f26a539585da97aab353a0f",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k11"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k11",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k11",
+            "provenance_file": "episodes/first-day/build/repair_batch02.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "aa4535efe0c778ff4252178c2545ad4721378706ede9def34d788e2a0c77f3e9",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k27"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k27",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k27",
+            "provenance_file": "episodes/first-day/build/repair_batch03.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "adff946319e2be05ef6dd832d6ec647550d871ee904f59b6adc5e5322c466374",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k41"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k41",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k41",
+            "provenance_file": "episodes/first-day/build/repair_batch05.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "b27faa5564d96f818dc568df47dad8551c4129c53340e9259596b26ac0c55fa4",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k47",
+          "k47_v1"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k47",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k47_v1",
+            "provenance_file": "episodes/first-day/build/repair_batch04.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "b3a917b481f6973cc5ab4d2f7cea37c898f88cf9d25c252d262f5b6d7cc39247",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k28"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k28",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k28",
+            "provenance_file": "episodes/first-day/build/repair_batch03.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "bdfbdafee76f53973316202a7dffb3b55a8b80c6acc225723cb31a0681a7f863",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k44",
+          "k44_v1"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k44",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k44_v1",
+            "provenance_file": "episodes/first-day/build/repair_batch04.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "bfa4c2a0046b740dc90c2b96daf33611e6029c5371767f654ceaa9f03633d340",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k14"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k14",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k14",
+            "provenance_file": "episodes/first-day/build/repair_batch02.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "c67b06fff75dc72054b82249f0d9a3dd4ddbe93038389356a8c70ed8dc210c14",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k52_v2"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k52_v2",
+            "provenance_file": "episodes/first-day/build/repair_batch04.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "ceb4e492bbd39642511acb1c7744985fa31141b80e4bb0902d07c5e786da6fa3",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k53",
+          "k53_v1"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k53",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k53_v1",
+            "provenance_file": "episodes/first-day/build/repair_batch04.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "d3a7780fae85bbca3fde37eb8823f8fcc3be8bb345ebadfead90cdbcc5403240",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k38"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k38",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k38",
+            "provenance_file": "episodes/first-day/build/repair_batch05.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "d3f3344799be5a44ced5c2e7ddcc0a23ecd99e8b3beaa9abc3c355f8e68423dd",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k25"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k25",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k25",
+            "provenance_file": "episodes/first-day/build/repair_batch05.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "d48ac2d5031a42589f79517c84f28ecc1859d3c12beeaf09a94572173437e2d7",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k09"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k09",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k09",
+            "provenance_file": "episodes/first-day/build/repair_batch02.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "e480b13f300bc132246f098aa5b094ffc4e70b0354a9f0bb63c5e5ee1bf5a6df",
+        "kind": "base_portrait",
+        "asset_ids": [
+          "lin_base"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "lin_base",
+            "provenance_file": "episodes/first-day/build/portrait_provenance.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "e9dcfa9a588fdb2363831e276d88db42bd93be10e3f8a24bd0c0689d72cf781d",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k17"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k17",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k17",
+            "provenance_file": "episodes/first-day/build/repair_batch05.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      },
+      {
+        "output_sha256": "fafdf11ffe51a16c849474152d1b958d63890e3b4d4b96e6a92c82ed17415fca",
+        "kind": "targeted_scene_edit",
+        "asset_ids": [
+          "k52",
+          "k52_v1"
+        ],
+        "provenance_records": [
+          {
+            "asset_id": "k52",
+            "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          },
+          {
+            "asset_id": "k52_v1",
+            "provenance_file": "episodes/first-day/build/repair_batch04.json",
+            "recorded_asset_integrity": "matches_recorded_output"
+          }
+        ],
+        "preserved_output_verified": true
+      }
+    ],
+    "intentional_copies_excluded_from_generation_count": [
+      {
+        "asset_id": "k36",
+        "output_sha256": "69cdbaab585b9e1718c40df2e9eba9e21c3c5fb5731a2462fc778e1eacefb9c4",
+        "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+        "alias_of": "k16",
+        "counted_as_generation": false
+      },
+      {
+        "asset_id": "k39",
+        "output_sha256": "7d0dac9ae5280b9e9330e40e69e9958f02bae0847405b0a6a4ac63a1400cce9a",
+        "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+        "alias_of": "k33",
+        "counted_as_generation": false
+      },
+      {
+        "asset_id": "k54",
+        "output_sha256": "fafdf11ffe51a16c849474152d1b958d63890e3b4d4b96e6a92c82ed17415fca",
+        "provenance_file": "episodes/first-day/build/builtin_image_edits.json",
+        "alias_of": "k52",
+        "counted_as_generation": false
+      }
+    ],
+    "diagnostics": [],
+    "workflow": "subscription built-in image generation",
+    "usage_or_cost": "unknown; tool did not expose usage or price; separate from fal estimates",
+    "limits": "Counts are distinct recorded generation output SHA-256 values across portrait, central edit and repair-batch provenance, including preserved intermediate outputs. Aliases explicitly marked new_generation=false are excluded. Multiple records of the same bytes count once. This is not a count of billing events, calls or quota usage. Additional unrecorded requests cannot be inferred. File-hash agreement does not itself approve pixels."
+  },
+  "privacy": "Per-request fields are restricted to id, endpoint, batch and response_status. Payloads, response contents, CDN URLs, status URLs, response URLs and keys are excluded."
+}

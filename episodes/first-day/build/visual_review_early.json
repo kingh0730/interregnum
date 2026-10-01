@@ -1,0 +1,742 @@
+{
+  "schema_version": 2,
+  "episode": "first-day",
+  "reviewer": "production_plan visual reviewer",
+  "scope": "k01-k18 complete-source-pixel review against original faces, approved local references, and early edit-order matches; adopted repairs rechecked and prior findings retained in history",
+  "status": "complete_for_current_early_stills; motion_and_subtitle_playback_pending",
+  "reference_assets": [
+    "episodes/first-day/assets/characters/lin_base.png",
+    "episodes/first-day/assets/characters/yu_base.png",
+    "episodes/first-day/assets/references/loc_a.png",
+    "episodes/first-day/assets/references/loc_b.png",
+    "episodes/first-day/assets/references/loc_i.png",
+    "episodes/first-day/assets/references/yu_costume.png",
+    "episodes/first-day/assets/keyframes/k10.png"
+  ],
+  "summary": {
+    "reviewed": 18,
+    "pass_or_pass_with_notes": 18,
+    "failed": 0,
+    "pending": 0,
+    "priority_repairs": []
+  },
+  "limits": [
+    "Still review does not verify dance, heel-touch timing, partner contact, travel, dock mechanics, beat synchronization, or lip movement.",
+    "Exact facial fidelity is not certified at distant body/geography scale; no overt age/skin horror or gross anatomy failure was observed in this subset.",
+    "Floor-margin findings describe the source composition; actual lyric text collision must also be checked in the rendered subtitled reel."
+  ],
+  "frames": [
+    {
+      "keyframe_id": "k01",
+      "status": "pass_with_notes",
+      "asset": "episodes/first-day/assets/keyframes/k01.png",
+      "reviewed_at_utc": "2026-10-01T21:34:55.659007+00:00",
+      "observed": [
+        "Both ivory shoes are complete, separated and plausibly supported; the low crop is intentional. A arch and skyline remain consistent."
+      ],
+      "findings": [
+        "The still is a neutral foot preparation; it does not establish the heel-touch timing or weight transfer."
+      ],
+      "shots": [
+        "01",
+        "08",
+        "21",
+        "59"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": null,
+      "motion_verified": false,
+      "sha256": "9169058eb8666855fecf1fe919b5d64ebd0402a785582c692a756e01b95401e1",
+      "source_dimensions": [
+        2784,
+        1504
+      ]
+    },
+    {
+      "keyframe_id": "k02",
+      "status": "pass_with_notes",
+      "asset": "episodes/first-day/assets/keyframes/k02.png",
+      "reviewed_at_utc": "2026-10-01T21:34:55.663596+00:00",
+      "observed": [
+        "Both dark shoes are complete, with one support foot and the other heel raised; B materials, arch and lamp remain recognizable."
+      ],
+      "findings": [
+        "The free shoe is toe-down rather than an explicit toe-up heel extension. It is a plausible preparation, but the actual heel-touch must be verified in motion."
+      ],
+      "shots": [
+        "02",
+        "09",
+        "22",
+        "60"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": null,
+      "motion_verified": false,
+      "sha256": "a745e3c87220cf71fefecbf47a1f0d407d4006868d64a1e71a9480cda5680f7a",
+      "source_dimensions": [
+        2784,
+        1504
+      ]
+    },
+    {
+      "keyframe_id": "k03",
+      "status": "pass_with_notes",
+      "asset": "episodes/first-day/assets/keyframes/k03.png",
+      "reviewed_at_utc": "2026-10-01T21:34:55.668499+00:00",
+      "observed": [
+        "Correct rightward attention, recognizable Lin, right arm originating at the correct shoulder and hand fully visible. A skyline/arch relation is retained."
+      ],
+      "findings": [
+        "Lips are slightly parted with a narrow visible tooth gap; no exaggerated sung expression. Close-mouth correction is desirable if this frame is revised."
+      ],
+      "shots": [
+        "03",
+        "25",
+        "63"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": "work/first-day/qa/early/k03_face.png",
+      "motion_verified": false,
+      "sha256": "b4a78dd5fb7d3eae6e0bf514aa518d6f72558e00e8af9b9adc677ae0af46c542",
+      "source_dimensions": [
+        2784,
+        1504
+      ]
+    },
+    {
+      "keyframe_id": "k04",
+      "status": "pass_with_notes",
+      "asset": "episodes/first-day/assets/keyframes/k04.png",
+      "reviewed_at_utc": "2026-10-01T22:23:04.244508+00:00",
+      "observed": [
+        "Recognizable Yu in the approved B view. The complete lowered hand toward screen left is visible, separated from the body, with room to open inward."
+      ],
+      "findings": [
+        "The other low hand reaches the bottom crop, but it is not the required offered hand. Director now locks inward screen direction and preserves the visible offered arm within each shot, rather than one anatomical arm across all phrases."
+      ],
+      "shots": [
+        "04",
+        "26",
+        "64"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": "work/first-day/qa/early/k04_face.png",
+      "motion_verified": false,
+      "sha256": "69bff860ac1846027bad29e44e142d3570dd5feb936de6fc0881037222dbc225",
+      "source_dimensions": [
+        2784,
+        1504
+      ],
+      "review_history": [
+        {
+          "keyframe_id": "k04",
+          "status": "fail",
+          "asset": "episodes/first-day/assets/keyframes/k04.png",
+          "reviewed_at_utc": "2026-10-01T21:34:55.673573+00:00",
+          "observed": [
+            "Recognizable Yu and correct B material family; face is composed."
+          ],
+          "findings": [
+            "The required left hand is cut by the lower frame edge. The fully visible lowered hand is his right, so the opening hand-match has the wrong readable limb."
+          ],
+          "shots": [
+            "04",
+            "26",
+            "64"
+          ],
+          "full_frame_inspected": true,
+          "supplemental_face_crop": "work/first-day/qa/early/k04_face.png",
+          "motion_verified": false,
+          "sha256": "69bff860ac1846027bad29e44e142d3570dd5feb936de6fc0881037222dbc225",
+          "source_dimensions": [
+            2784,
+            1504
+          ],
+          "hand_assignment_finding": "conditional_on_current_written_anatomical_lock; awaiting_director_choice"
+        }
+      ]
+    },
+    {
+      "keyframe_id": "k05",
+      "status": "pass_with_notes",
+      "asset": "episodes/first-day/assets/keyframes/k05.png",
+      "reviewed_at_utc": "2026-10-01T21:34:55.677327+00:00",
+      "observed": [
+        "Two distant people remain on distinct side decks; the entire large central island is empty. Three ribs, fixed public path, guardrails and supporting structure are readable."
+      ],
+      "findings": [
+        "The side decks are close to the island and narrow gaps are subtle; actual movement and precise dock separation remain unverified."
+      ],
+      "shots": [
+        "05"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": null,
+      "motion_verified": false,
+      "sha256": "ec1b22d84a5678256cef6801556cb7446f55904bd040f7bb56e1f5530d2cc034",
+      "source_dimensions": [
+        2784,
+        1504
+      ]
+    },
+    {
+      "keyframe_id": "k06",
+      "status": "pass",
+      "asset": "episodes/first-day/assets/keyframes/k06.png",
+      "reviewed_at_utc": "2026-10-01T21:34:55.686712+00:00",
+      "observed": [
+        "Recognizable Lin with restrained face, left-ear jewelry and rightward gaze. The approved skyline-left/arch-right A angle is retained. Medium crop is intentional."
+      ],
+      "findings": [],
+      "shots": [
+        "06",
+        "10",
+        "15"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": "work/first-day/qa/early/k06_face.png",
+      "motion_verified": false,
+      "sha256": "c3de206ba7b6a74d11410f5317513af1615afc22bf2d4fab5d7ea4e5700c0929",
+      "source_dimensions": [
+        2784,
+        1504
+      ]
+    },
+    {
+      "keyframe_id": "k07",
+      "status": "pass",
+      "asset": "episodes/first-day/assets/keyframes/k07.png",
+      "reviewed_at_utc": "2026-10-01T22:23:04.244508+00:00",
+      "observed": [
+        "Corrected Yu watches screen left. Fingertips rest at the opposite sleeve cuff in a plausible preparation; both hands remain fully in frame. Identity, wardrobe and B background are coherent."
+      ],
+      "findings": [],
+      "shots": [
+        "07"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": null,
+      "motion_verified": false,
+      "sha256": "0a0c8c5576af8d2d5406804d551735e962b19092673387f585181e197d37a04d",
+      "source_dimensions": [
+        1706,
+        922
+      ],
+      "review_history": [
+        {
+          "keyframe_id": "k07",
+          "status": "fail",
+          "asset": "episodes/first-day/assets/keyframes/k07.png",
+          "reviewed_at_utc": "2026-10-01T21:34:55.690870+00:00",
+          "observed": [
+            "Yu identity remains close to the original and the B background is coherent."
+          ],
+          "findings": [
+            "Yu presents his nose toward screen right and his eyes near camera, rather than attending toward Lin at screen left.",
+            "Both hands clasp one another instead of the specified fingertips-at-opposite-cuff preparation."
+          ],
+          "shots": [
+            "07"
+          ],
+          "full_frame_inspected": true,
+          "supplemental_face_crop": "work/first-day/qa/early/k07_face.png",
+          "motion_verified": false,
+          "sha256": "243f78384e7bdd821201aaa31e28a43ed2d7425d136155141fb071a99ac12195",
+          "source_dimensions": [
+            2784,
+            1504
+          ]
+        }
+      ],
+      "reviewed_candidate": "episodes/first-day/assets/repairs/k07.png"
+    },
+    {
+      "keyframe_id": "k08",
+      "status": "pass_with_notes",
+      "asset": "episodes/first-day/assets/keyframes/k08.png",
+      "reviewed_at_utc": "2026-10-01T22:23:04.244508+00:00",
+      "observed": [
+        "Lin remains recognizable, with clear index finger and droplet. The rail now reads as the gallery perimeter: blue water lies beyond it, rather than a second patch of interior dance floor."
+      ],
+      "findings": [
+        "The droplet is unusually spherical and visually stylized; it remains a readable small observational beat rather than a story or anatomy defect."
+      ],
+      "shots": [
+        "11"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": null,
+      "motion_verified": false,
+      "sha256": "6e5c955443a9e7978cefb64c2e95f443dcbc7e961dc92cb533c80b09bf78b14a",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "review_history": [
+        {
+          "keyframe_id": "k08",
+          "status": "fail",
+          "asset": "episodes/first-day/assets/keyframes/k08.png",
+          "reviewed_at_utc": "2026-10-01T21:34:55.695026+00:00",
+          "observed": [
+            "Recognizable Lin, clear finger/droplet detail, restrained downward attention."
+          ],
+          "findings": [
+            "A new diagonal glass rail crosses the previously open interior dance floor. Pearl floor remains visible on both sides; this does not read as the existing perimeter rail beside water. It conflicts with k10, k06 and loc_a."
+          ],
+          "shots": [
+            "11"
+          ],
+          "full_frame_inspected": true,
+          "supplemental_face_crop": "work/first-day/qa/early/k08_face.png",
+          "motion_verified": false,
+          "sha256": "d5bb1b92c02ce68ad14122f1dd438583abaa373d8fe10061ecc57ccd672c61cd",
+          "source_dimensions": [
+            2784,
+            1504
+          ]
+        }
+      ],
+      "reviewed_candidate": "episodes/first-day/assets/repairs/k08.png"
+    },
+    {
+      "keyframe_id": "k09",
+      "status": "pass",
+      "asset": "episodes/first-day/assets/keyframes/k09.png",
+      "reviewed_at_utc": "2026-10-01T22:23:04.244508+00:00",
+      "observed": [
+        "Yu retains the corrected leftward gaze and wardrobe. One complete hand is poised near wind-raised hair without touching, and the other remains low in frame; the B background matches the cuff beat."
+      ],
+      "findings": [],
+      "shots": [
+        "12",
+        "48"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": null,
+      "motion_verified": false,
+      "review_history": [
+        {
+          "keyframe_id": "k09",
+          "status": "pending_generation",
+          "asset": "episodes/first-day/assets/keyframes/k09.png",
+          "reviewed_at_utc": "2026-10-01T21:34:55.699200+00:00",
+          "observed": [],
+          "findings": [
+            "No final asset available at this review; root reported a rejected request and is handling recovery."
+          ],
+          "shots": [
+            "12",
+            "48"
+          ],
+          "full_frame_inspected": false,
+          "supplemental_face_crop": null,
+          "motion_verified": false
+        }
+      ],
+      "sha256": "d48ac2d5031a42589f79517c84f28ecc1859d3c12beeaf09a94572173437e2d7",
+      "source_dimensions": [
+        1706,
+        922
+      ],
+      "reviewed_candidate": "episodes/first-day/assets/repairs/k09.png"
+    },
+    {
+      "keyframe_id": "k10",
+      "status": "pass",
+      "asset": "episodes/first-day/assets/keyframes/k10.png",
+      "reviewed_at_utc": "2026-10-01T21:34:55.699255+00:00",
+      "observed": [
+        "Approved complete Lin wide: generous clear floor below both shoes, rightward attention, correct ivory silhouette, skyline left and arch right."
+      ],
+      "findings": [
+        "The still supports the intended neutral beginning; a complete phrase is not verified."
+      ],
+      "shots": [
+        "13",
+        "50"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": null,
+      "motion_verified": false,
+      "sha256": "67e5521ce1d96e72a83d6437fb9d76b026507e70d90deba3106c53f14a6f50ff",
+      "source_dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "keyframe_id": "k11",
+      "status": "pass",
+      "asset": "episodes/first-day/assets/keyframes/k11.png",
+      "reviewed_at_utc": "2026-10-01T22:23:04.244508+00:00",
+      "observed": [
+        "The wider B view preserves Yu's identity, leftward attention and neutral grounded preparation. Head, hands and both shoes are complete, with roughly a quarter-frame of clear floor below the soles."
+      ],
+      "findings": [],
+      "shots": [
+        "14",
+        "49"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": null,
+      "motion_verified": false,
+      "sha256": "a8784f2559956d3aed8db563a9a8bdbf3c75ad3e9f26a539585da97aab353a0f",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "review_history": [
+        {
+          "keyframe_id": "k11",
+          "status": "fail",
+          "asset": "episodes/first-day/assets/keyframes/k11.png",
+          "reviewed_at_utc": "2026-10-01T21:34:55.701717+00:00",
+          "observed": [
+            "Complete Yu body, recognizable face, correct leftward attention and B architecture."
+          ],
+          "findings": [
+            "Figure is much larger than the prescribed wide master, with soles around 93 percent of picture height. There is only a narrow floor strip below the feet, failing the required generous dance/subtitle margin."
+          ],
+          "shots": [
+            "14",
+            "49"
+          ],
+          "full_frame_inspected": true,
+          "supplemental_face_crop": "work/first-day/qa/early/k11_face.png",
+          "motion_verified": false,
+          "sha256": "91c1c8c6e5532c086334b2e6a5d8c23fd865371cc8c9609156ae8e7901fd72b2",
+          "source_dimensions": [
+            2784,
+            1504
+          ]
+        }
+      ],
+      "reviewed_candidate": "episodes/first-day/assets/repairs/k11.png"
+    },
+    {
+      "keyframe_id": "k12",
+      "status": "pass",
+      "asset": "episodes/first-day/assets/keyframes/k12.png",
+      "reviewed_at_utc": "2026-10-01T22:23:04.244508+00:00",
+      "observed": [
+        "The corrected A composition contains Lin's complete head, arms, trouser legs and both shoes, separated and plausibly supported. Approximately a fifth of the frame remains clear floor below her; the neutral pose can begin the quarter turn."
+      ],
+      "findings": [],
+      "shots": [
+        "23",
+        "36",
+        "61"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": null,
+      "motion_verified": false,
+      "sha256": "016d8a9f00fb4b406a64dbf863f821551efbd13882d4043e38c076cf2026881d",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "review_history": [
+        {
+          "keyframe_id": "k12",
+          "status": "fail",
+          "asset": "episodes/first-day/assets/keyframes/k12.png",
+          "reviewed_at_utc": "2026-10-01T21:34:55.706151+00:00",
+          "observed": [
+            "A landmarks and Lin identity are recognizable."
+          ],
+          "findings": [
+            "The image crops Lin around the lower shins: both shoes are completely outside the frame. This cannot serve the planned complete-body quarter-turn start."
+          ],
+          "shots": [
+            "23",
+            "36",
+            "61"
+          ],
+          "full_frame_inspected": true,
+          "supplemental_face_crop": null,
+          "motion_verified": false,
+          "sha256": "0ed11d0ba109491f5ce5834ff127066ec2e53ff430b5aebd7c0acc1ad503110e",
+          "source_dimensions": [
+            2784,
+            1504
+          ]
+        }
+      ],
+      "reviewed_candidate": "episodes/first-day/assets/repairs/k12.png"
+    },
+    {
+      "keyframe_id": "k13",
+      "status": "pass_with_notes",
+      "asset": "episodes/first-day/assets/keyframes/k13.png",
+      "reviewed_at_utc": "2026-10-01T21:34:55.710489+00:00",
+      "observed": [
+        "Full Yu, four clear surrounding floor margins, both supported shoes and existing B arch/bench/lamp. The stance can begin a quarter turn."
+      ],
+      "findings": [
+        "Face is small and frontal; exact identity and the eventual leftward turn require later review. Do not claim a still demonstrates the turn."
+      ],
+      "shots": [
+        "24",
+        "37",
+        "62"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": "work/first-day/qa/early/k13_face.png",
+      "motion_verified": false,
+      "sha256": "14bbb7e7f2c531247edaa4de842d866e67c0ca011f882ac5b3c31aa1d533e482",
+      "source_dimensions": [
+        2784,
+        1504
+      ]
+    },
+    {
+      "keyframe_id": "k14",
+      "status": "pass",
+      "asset": "episodes/first-day/assets/keyframes/k14.png",
+      "reviewed_at_utc": "2026-10-01T22:23:04.244508+00:00",
+      "observed": [
+        "Wider A framing preserves Lin's same raised inward hand and rightward attention. Complete head and shoes have ample clear floor below; hand remains separated from torso and face."
+      ],
+      "findings": [],
+      "shots": [
+        "18",
+        "31",
+        "54"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": null,
+      "motion_verified": false,
+      "sha256": "bfa4c2a0046b740dc90c2b96daf33611e6029c5371767f654ceaa9f03633d340",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "review_history": [
+        {
+          "keyframe_id": "k14",
+          "status": "fail",
+          "asset": "episodes/first-day/assets/keyframes/k14.png",
+          "reviewed_at_utc": "2026-10-01T21:34:55.714387+00:00",
+          "observed": [
+            "Both shoes are complete, Lin looks right, and the A environment retains its established landmarks."
+          ],
+          "findings": [
+            "The offered arm originates at her anatomical left shoulder while her right arm hangs; the locked phrase calls for her right hand.",
+            "Soles lie near 95 percent of picture height, leaving little clear floor under the complete figure and failing the required wide dance margin."
+          ],
+          "shots": [
+            "18",
+            "31",
+            "54"
+          ],
+          "full_frame_inspected": true,
+          "supplemental_face_crop": "work/first-day/qa/early/k14_face.png",
+          "motion_verified": false,
+          "sha256": "618fba56c1432338811c5e8a07d44928f2486862e59cc1ae8c32957c56f83a9b",
+          "source_dimensions": [
+            2784,
+            1504
+          ],
+          "hand_assignment_finding": "conditional_on_current_written_anatomical_lock; awaiting_director_choice"
+        }
+      ],
+      "reviewed_candidate": "episodes/first-day/assets/repairs/k14.png"
+    },
+    {
+      "keyframe_id": "k15",
+      "status": "pass_with_notes",
+      "asset": "episodes/first-day/assets/keyframes/k15.png",
+      "reviewed_at_utc": "2026-10-01T22:23:04.244508+00:00",
+      "observed": [
+        "Yu's full body and both shoes are complete with floor below. The visible offered palm points inward toward screen left and is clear of torso; B materials and wardrobe remain consistent."
+      ],
+      "findings": [
+        "The chosen arm differs from the original arbitrary anatomical assignment. This is permitted by the director's inward-palm decision; future motion must preserve the offered arm seen here throughout this shot."
+      ],
+      "shots": [
+        "32",
+        "53"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": "work/first-day/qa/early/k15_face.png",
+      "motion_verified": false,
+      "sha256": "af62ddaeb067c7e4f429459b59501caf50b1769c3039277dd7232eedf3d8963f",
+      "source_dimensions": [
+        2784,
+        1504
+      ],
+      "review_history": [
+        {
+          "keyframe_id": "k15",
+          "status": "fail",
+          "asset": "episodes/first-day/assets/keyframes/k15.png",
+          "reviewed_at_utc": "2026-10-01T21:34:55.720756+00:00",
+          "observed": [
+            "Complete Yu and shoes with adequate clear floor; B set, outfit and youthful face remain readable."
+          ],
+          "findings": [
+            "The palm offered toward screen left originates at Yu's anatomical right shoulder; his left arm hangs at his side. The locked answer requires his left palm."
+          ],
+          "shots": [
+            "32",
+            "53"
+          ],
+          "full_frame_inspected": true,
+          "supplemental_face_crop": "work/first-day/qa/early/k15_face.png",
+          "motion_verified": false,
+          "sha256": "af62ddaeb067c7e4f429459b59501caf50b1769c3039277dd7232eedf3d8963f",
+          "source_dimensions": [
+            2784,
+            1504
+          ],
+          "hand_assignment_finding": "conditional_on_current_written_anatomical_lock; awaiting_director_choice"
+        }
+      ]
+    },
+    {
+      "keyframe_id": "k16",
+      "status": "pass_with_notes",
+      "asset": "episodes/first-day/assets/keyframes/k16.png",
+      "reviewed_at_utc": "2026-10-01T22:23:04.244508+00:00",
+      "observed": [
+        "Repaired wide dock view places both of Lin's shoes wholly on the separate A deck at left. A complete railed level bridge crosses visible water to an empty three-rib I at right; no premature island occupancy."
+      ],
+      "findings": [
+        "The visible span requires a natural multi-step walk in the later crossing reuse. Still pixels do not prove dock movement, crossing duration or a safe completed landing."
+      ],
+      "shots": [
+        "38",
+        "68"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": null,
+      "motion_verified": false,
+      "sha256": "69cdbaab585b9e1718c40df2e9eba9e21c3c5fb5731a2462fc778e1eacefb9c4",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "review_history": [
+        {
+          "keyframe_id": "k16",
+          "status": "fail",
+          "asset": "episodes/first-day/assets/keyframes/k16.png",
+          "reviewed_at_utc": "2026-10-01T21:34:55.724396+00:00",
+          "observed": [
+            "Lin is complete and small enough; I ribs and distant dark B arch are visible."
+          ],
+          "findings": [
+            "The shot replaces A with one continuous pearl floor leading under I's ribs. A's ivory arch and identifiable separate deck/dock are absent, so Lin reads as already on I.",
+            "The required level bridge, open gate and both shoes distinctly behind A's seam are not visible. This breaks the first hesitation and pre-160-second empty-island rule."
+          ],
+          "shots": [
+            "38",
+            "68"
+          ],
+          "full_frame_inspected": true,
+          "supplemental_face_crop": "work/first-day/qa/early/k16_face.png",
+          "motion_verified": false,
+          "sha256": "491ca4928146907e1dfb2541b69e69678d3d2705675f7915422cc5f92af4975f",
+          "source_dimensions": [
+            2784,
+            1504
+          ]
+        }
+      ],
+      "reviewed_candidate": "episodes/first-day/assets/repairs/k16.png"
+    },
+    {
+      "keyframe_id": "k17",
+      "status": "pass_with_notes",
+      "asset": "episodes/first-day/assets/keyframes/k17.png",
+      "reviewed_at_utc": "2026-10-01T22:23:04.244508+00:00",
+      "observed": [
+        "Yu stands wholly on dark blue-grey B at right, with full body and shoes visible. A separate level bridge across water reaches empty pearl I at left; supported deck bodies and the dark B arch are readable."
+      ],
+      "findings": [
+        "The bridge span requires several natural steps. This hesitation frame establishes starting occupancy only; actual crossing, mechanics and timing remain unverified."
+      ],
+      "shots": [
+        "55"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": null,
+      "motion_verified": false,
+      "sha256": "e9dcfa9a588fdb2363831e276d88db42bd93be10e3f8a24bd0c0689d72cf781d",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "review_history": [
+        {
+          "keyframe_id": "k17",
+          "status": "fail",
+          "asset": "episodes/first-day/assets/keyframes/k17.png",
+          "reviewed_at_utc": "2026-10-01T21:34:55.728920+00:00",
+          "observed": [
+            "Yu is complete, right of frame, with dark B arch behind and island ribs on the left."
+          ],
+          "findings": [
+            "B's blue-grey floor has become the island's pearl floor, continuous across the entire view. Distinct B/I surfaces and the level transfer connection are not readable.",
+            "A low horizontal barrier/track sits across the foreground rather than a clearly open right dock gate. The image cannot establish Yu remaining wholly aboard B before the crossing."
+          ],
+          "shots": [
+            "55"
+          ],
+          "full_frame_inspected": true,
+          "supplemental_face_crop": "work/first-day/qa/early/k17_face.png",
+          "motion_verified": false,
+          "sha256": "9f882686629e7adf6cfa38a4c80f65d8298258be53e9aa4fd0bc6ef08e3a1359",
+          "source_dimensions": [
+            2784,
+            1504
+          ]
+        }
+      ],
+      "reviewed_candidate": "episodes/first-day/assets/repairs/k17.png"
+    },
+    {
+      "keyframe_id": "k18",
+      "status": "pass",
+      "asset": "episodes/first-day/assets/keyframes/k18.png",
+      "reviewed_at_utc": "2026-10-01T21:34:55.733602+00:00",
+      "observed": [
+        "Intentional lower-body crop retains both complete shoes, clear space below and plausible support on one foot; A landmarks remain coherent."
+      ],
+      "findings": [
+        "One free foot is lifted forward; this can precede a backward step. The still does not verify retreat direction or grounded weight transfer."
+      ],
+      "shots": [
+        "27",
+        "52"
+      ],
+      "full_frame_inspected": true,
+      "supplemental_face_crop": null,
+      "motion_verified": false,
+      "sha256": "9a77a341e5920b09c79fc2f80b5f46bb6c8054c5b735ede311a5e6852652084d",
+      "source_dimensions": [
+        2784,
+        1504
+      ]
+    }
+  ],
+  "director_decisions_pending": [
+    {
+      "issue": "anatomical_hand_assignment",
+      "affected_keys": [
+        "k03",
+        "k04",
+        "k14",
+        "k15",
+        "k42"
+      ],
+      "note": "k14 offers Lin's viewer-right shoulder arm; k42 raises her viewer-left shoulder arm. k15 and k42 raise Yu's viewer-left shoulder arm. These are pose-continuity observations, not malformed anatomy. A director decision to use an inward-palm motif without one fixed anatomical side could resolve the k04/k15 written-hand mismatch; k14 still has insufficient lower floor margin."
+    }
+  ],
+  "director_decisions": [
+    "Inward offered palm: Lin toward screen right, Yu toward screen left. Preserve the arm visible at the start through each offer/contact; one anatomical arm is not locked across independent phrase variants.",
+    "Actual local approved composition governs camera angle, topology and source-light direction; story screen direction and occupancy remain locked."
+  ],
+  "completed_at_utc": "2026-10-01T22:23:04.244508+00:00"
+}

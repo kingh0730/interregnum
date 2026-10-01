@@ -39,7 +39,7 @@ One large source makes the light legible. Screen direction is set by the approve
 | 164–179.13 | Two sustained holds | Lin and camera still; gallery departure provides the only large motion | Original instrumental uninterrupted | Wait without assurance |
 | 179.13–191.05 | 2–4 s cause-and-response chain | See, dock, cross; minimal camera | Complete vocal return | Answer the invitation |
 | 191.05–223.06 | Retain a 7–10 s real two-shot, then bursts around further complete phrases | Real shared-floor turn; one later rising reveal | Complete final chorus | Become a pair |
-| 223.06–253.96 | A few lively echoes resolve into 3–7 s holds | Walk, stop, face the sea | Complete coda and tail | Begin the evening |
+| 223.06–253.96 | A few lively echoes resolve into 3–7 s holds | Walk, stop, face the sea | Complete coda and tail | Begin time together |
 
 The sound-density contrast comes from the supplied performance itself; added effects are not needed to force the table. No silence, stretching or cuts in the master recording. The lyric timestamp gap is not evidence that the audio becomes quiet.
 

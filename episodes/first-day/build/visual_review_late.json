@@ -1,0 +1,346 @@
+{
+  "review": "First Day late first-pass visual QA",
+  "reviewer": "visual_review",
+  "reviewed_at": "2026-10-01T21:51:09.168561+00:00",
+  "scope": "k37–k55, including k55 before k42 in edit order",
+  "method": "Complete actual frames inspected, then unscaled native face/hand/foot crops; compared original portrait authorities, approved I local master, k42 wide master and adjacent timeline states. No playback or motion approval.",
+  "refs": [
+    "episodes/first-day/assets/characters/lin_base.png",
+    "episodes/first-day/assets/characters/yu_base.png",
+    "episodes/first-day/assets/references/loc_i.png"
+  ],
+  "edit_order_first_occurrence": [
+    "k37",
+    "k38",
+    "k39",
+    "k40",
+    "k41",
+    "k55",
+    "k42",
+    "k44",
+    "k45",
+    "k46",
+    "k47",
+    "k48",
+    "k43",
+    "k49",
+    "k50",
+    "k51",
+    "k52",
+    "k53",
+    "k54"
+  ],
+  "frames": [
+    {
+      "id": "k37",
+      "path": "episodes/first-day/assets/keyframes/k37.png",
+      "sha256": "23aa3286177ab9431cc8e0a7e417d8181840d199d5db305e89eab50a2647305b",
+      "status": "reject",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k37_details.png",
+      "findings": [
+        "Lin is on pearl I, but the left background touring deck has a dark arch and blue body: B occupies the A side while the left viaduct viewpoint remains unchanged.",
+        "Lin nearly fills frame height; complete shoe soles crowd the bottom edge.",
+        "Face remains recognizable; hands and shoes have no obvious fused/extra-part defect."
+      ],
+      "required_action": "Restore small empty ivory A behind the left dock and generous full-body floor clearance.",
+      "motion_approved": false
+    },
+    {
+      "id": "k38",
+      "path": "episodes/first-day/assets/keyframes/k38.png",
+      "sha256": "71ac13ec115911de229ff013c1579fe00db9f06f2ef7895fc661a0a313a60cc7",
+      "status": "reject",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k38_details.png",
+      "findings": [
+        "The large three-rib island appears behind Lin across a gap while Lin occupies a separate foreground floor, reversing the required stay-on-I/departing-A fact.",
+        "The background ivory arch is combined with the island ribs rather than identifying a separate small A.",
+        "Lin identity and garment silhouette remain usable; feet are complete but lower clearance is small."
+      ],
+      "required_action": "Keep Lin visibly on the continuous fixed I foreground, with only the small ivory A behind its closed left dock.",
+      "motion_approved": false
+    },
+    {
+      "id": "k39",
+      "path": "episodes/first-day/assets/keyframes/k39.png",
+      "sha256": "92e9b426d043587f13d2347eda91c5868f1b88efa46b19fa0097a5b515cfea0b",
+      "status": "reject",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k39_details.png",
+      "findings": [
+        "Yu stands on a pearl foreground floor with a raised continuous curb/step to the island; no distinct blue B, water gap or valid level connection establishes him still aboard B.",
+        "Lin is visible on I and Yu looks left, but the physical relationship fails the intended pre-crossing state.",
+        "Yu is recognizable; hands and shoes are intact; feet crowd bottom edge."
+      ],
+      "required_action": "Rebuild from B viewpoint with Yu aboard the dark/blue floor and I visibly separate at left; prefer torso reaction framing over forcing full body.",
+      "motion_approved": false
+    },
+    {
+      "id": "k40",
+      "path": "episodes/first-day/assets/keyframes/k40.png",
+      "sha256": "50f795d3fea551f518dd0d4e152889b7f9e273191f5dd5cc5728e7723fbccf77",
+      "status": "reject",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k40_details.png",
+      "findings": [
+        "Lin is on I, but a huge B-style dark arch and bench are grafted onto its foreground while a second B touring deck remains at right rear.",
+        "The duplicated set is incompatible with adjacent island shots.",
+        "Lin identity/anatomy are usable but the stance is generic anticipation, not heel-transfer evidence."
+      ],
+      "required_action": "Retain I only, with one small right background B; delete foreground B arch/bench.",
+      "motion_approved": false
+    },
+    {
+      "id": "k41",
+      "path": "episodes/first-day/assets/keyframes/k41.png",
+      "sha256": "6a8960077fd1706db43dd20afce3c4544578b3a7a407ac35f992eb77e3dc34b2",
+      "status": "reject",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k41_details.png",
+      "findings": [
+        "Both people occupy one unbroken floor under the B arch; no visible bridge, seam or water gap separates Lin on I from Yu on B.",
+        "The island ribs disappear, making Lin appear already aboard B.",
+        "Faces remain recognizable; full shoes visible but modest floor margin."
+      ],
+      "required_action": "Establish two separate floors with one open level bridge, Yu wholly on B and Lin wholly on I.",
+      "motion_approved": false
+    },
+    {
+      "id": "k55",
+      "path": "episodes/first-day/assets/keyframes/k55.png",
+      "sha256": "be3ff0d11237eefcda2c7d3d596062be7adfa38770b70992bbb1d6da9db0fe25",
+      "status": "reject",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k55_details.png",
+      "findings": [
+        "Both people stand on B blue floor beneath the dark arch; this contradicts the required completed arrival on I and cuts to a new location in k42.",
+        "Lin/Yu order and separated hands are correct; identities recognizable.",
+        "Feet are complete but close to bottom."
+      ],
+      "required_action": "Use the approved k42 island geometry, arms lowered and hands apart; show B only beyond the right dock.",
+      "motion_approved": false
+    },
+    {
+      "id": "k42",
+      "path": "episodes/first-day/assets/keyframes/k42.png",
+      "sha256": "956c8e872596261f5b145da1fc9f3b0010b8f94924d1d1f8658811221061dec6",
+      "status": "pass",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k42_details.png",
+      "findings": [
+        "Approved wide framing is preserved in the current file: both complete bodies, deep floor margin, I ribs/bench/sea and separate raised palms.",
+        "Faces recognizable at small scale, both costumes intact, no obvious anatomy defect.",
+        "This is anticipation; it does not prove contact, turn, synchronization or weight transfer."
+      ],
+      "required_action": "Use as common-floor start-frame authority; motion must be judged separately.",
+      "motion_approved": false
+    },
+    {
+      "id": "k43",
+      "path": "episodes/first-day/assets/keyframes/k43.png",
+      "sha256": "86b1ce06794a8f88a1343ccbeca6cb01ced1b9e433a0bfea08027768ef46038b",
+      "status": "revise",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k43_details.png",
+      "findings": [
+        "Island geometry and left/right cast order remain consistent, and a light hand connection is visible.",
+        "The frame has tightened substantially from k42: four shoes remain visible but only a small floor margin remains; room for a shared stepping phrase is poor.",
+        "Contact crop has distinct wrists and plausible overlapping fingers; no confident fused-digit finding.",
+        "Front-facing pose uses adjacent inner hands, apparently Lin left/Yu right, unlike the explicitly named right-to-left plan."
+      ],
+      "required_action": "Widen from the approved duet composition; align the choreography hand convention with the actual supplied start frame.",
+      "motion_approved": false
+    },
+    {
+      "id": "k44",
+      "path": "episodes/first-day/assets/keyframes/k44.png",
+      "sha256": "eeff34f28a91a6a8f36e6da037cc9752289bd8375535bfc5b3144861e9f5a418",
+      "status": "revise",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k44_details.png",
+      "findings": [
+        "Correct island and pair order; both are supported on one floor.",
+        "Lin shoes nearly touch the bottom edge, failing the approved dance-master floor margin.",
+        "Hand clasp appears interlaced rather than the intended simple uncrossed connection; hands need motion-specific review.",
+        "Faces recognizable, no new obvious age failure."
+      ],
+      "required_action": "Restore wider framing and a simple light hand connection; do not certify a completed turn from this pose.",
+      "motion_approved": false
+    },
+    {
+      "id": "k45",
+      "path": "episodes/first-day/assets/keyframes/k45.png",
+      "sha256": "9cd0dffa685f25ccb0b5818ec6fb4c119af73831f16a14faa29f6bf2cf23b25d",
+      "status": "pass",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k45_details.png",
+      "findings": [
+        "Four complete shoes on one continuous pearl floor, ivory left and ink right; clear physical support and no crossed shins.",
+        "Yu footwear texture varies from the smooth original wardrobe reference and early B shots to a textured shoe, but silhouette/colour stay close."
+      ],
+      "required_action": "Usable foot insert; keep footwear consistent in any retake and motion.",
+      "motion_approved": false
+    },
+    {
+      "id": "k46",
+      "path": "episodes/first-day/assets/keyframes/k46.png",
+      "sha256": "0b2e3f4608b3ae1678a77d33bae654c47836084e0a6e515be61ffe1e3d81a160",
+      "status": "pass_with_caveat",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k46_details.png",
+      "findings": [
+        "Two separate wrists and plausible five-digit hands, with fingertips lightly overlapping; no clear fused-finger defect in native crop.",
+        "The pose is more intricate than a flat palm rest, and several fingers overlap visually; motion may destabilize it.",
+        "Pearl floor/ribs and costume edges keep shared-island identity."
+      ],
+      "required_action": "Usable still insert; test contact carefully in motion and simplify if it fuses.",
+      "motion_approved": false
+    },
+    {
+      "id": "k47",
+      "path": "episodes/first-day/assets/keyframes/k47.png",
+      "sha256": "3442bca39fcba5ec3b58fe56cb0a15ccdbf8ada61179ae0ad40a00bc4b0f95fb",
+      "status": "reject",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k47_details.png",
+      "findings": [
+        "Lin is recognizable and looks right, but Yu face is large and directly near-camera rather than being only the planned shoulder edge.",
+        "The extreme two-face crop reads like a close wide-angle selfie and competes with Lin reaction.",
+        "Yu skin/neck are substantially coarser and more lined than the approved original portrait; Lin also has stronger texture."
+      ],
+      "required_action": "Make an 85 mm reaction of Lin with only Yu shoulder at right edge, conditioning on original face and preserving composed skin.",
+      "motion_approved": false
+    },
+    {
+      "id": "k48",
+      "path": "episodes/first-day/assets/keyframes/k48.png",
+      "sha256": "818cb0cbd0a2eb885416ad2307cc3b5626f9ea394f7dbd79bbbdd7507f39e1c9",
+      "status": "reject",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k48_details.png",
+      "findings": [
+        "Yu is at left and Lin at right, reversing the sequence pair order.",
+        "Lin is the sharply focused dominant face while Yu is soft and cropped; both gaze near-camera, not the intended Yu-to-Lin reaction.",
+        "Identities are recognizable and Lin cuff is visible, but this does not satisfy the shot action or composition."
+      ],
+      "required_action": "Rebuild Yu right-third reaction, only Lin shoulder at left, Yu eyes toward Lin.",
+      "motion_approved": false
+    },
+    {
+      "id": "k49",
+      "path": "episodes/first-day/assets/keyframes/k49.png",
+      "sha256": "90ca6c6d81a15d74c2159f107099590d8e017745899cf72dd49d7e4261e4c799",
+      "status": "revise",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k49_details.png",
+      "findings": [
+        "Both characters are separate on I, correct order and compatible set.",
+        "Framing tightens versus k42; Lin shoes sit near bottom, reducing space for playful side steps.",
+        "Faces, hands and shoes remain readable; no overt extra/fused parts."
+      ],
+      "required_action": "Use wider approved duet figure scale and deeper floor margin.",
+      "motion_approved": false
+    },
+    {
+      "id": "k50",
+      "path": "episodes/first-day/assets/keyframes/k50.png",
+      "sha256": "3e9b33c564741c7e82302e36934c284c45806df80d60e550e31f24b35ae33446",
+      "status": "pass_with_caveat",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k50_details.png",
+      "findings": [
+        "Both complete figures are together on I; three ribs, public approach, separate floor rim and water are clear.",
+        "Elevated view is compatible with the general world master, but departing side galleries are outside crop; their emptiness and movement are not visible.",
+        "Small figures are recognizable by costume and hair; exact facial fidelity cannot be certified at this scale."
+      ],
+      "required_action": "Usable together-on-I geography proof; remove any claim that the still proves departing empty galleries or revise if that detail is required on screen.",
+      "motion_approved": false
+    },
+    {
+      "id": "k51",
+      "path": "episodes/first-day/assets/keyframes/k51.png",
+      "sha256": "c4efcb6d3beb2ad0d0dfb51916d3d460a51aad9caf00a8a347246a6560c7f61f",
+      "status": "reject",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k51_details.png",
+      "findings": [
+        "Pair walks toward camera while sea rail remains behind, opposing the specified walk toward the sea.",
+        "Correct I and left/right order, intact complete feet, but lower clearance is small.",
+        "Faces recognizable and hands relaxed."
+      ],
+      "required_action": "Face pair toward the actual existing rail with a readable route, preserving wide figure scale.",
+      "motion_approved": false
+    },
+    {
+      "id": "k52",
+      "path": "episodes/first-day/assets/keyframes/k52.png",
+      "sha256": "05502fd4f5c88e73858d48b508d72730151cd0dfe154bed8867aead5ff9b05c2",
+      "status": "reject",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k52_details.png",
+      "findings": [
+        "Both face screen left in mid-floor while the sea remains behind; they are not visibly settled at the sea rail.",
+        "Shoes lie extremely close to bottom and the frame is much tighter than approved k42.",
+        "Hands separate and normal; posture is standing, not sitting."
+      ],
+      "required_action": "Place them at the rail in a consistent three-quarter rear/side sea-facing orientation with full shoes and floor margin.",
+      "motion_approved": false
+    },
+    {
+      "id": "k53",
+      "path": "episodes/first-day/assets/keyframes/k53.png",
+      "sha256": "0f3c736dacc60d08e39d5326bed00f05bafc77b1d8513db8c27d7339116ac247",
+      "status": "revise",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k53_details.png",
+      "findings": [
+        "Four shoes are intact and grounded on continuous pearl floor, but ivory shoes point toward the dark pair while dark shoes face front/left: it reads as facing each other rather than resting side by side toward the same sea.",
+        "This does not continue k52 orientation and would interrupt a settled sea-facing coda."
+      ],
+      "required_action": "Reorient both pairs to the same sea-facing direction, ivory left and dark right, preserving the shared-floor resting detail.",
+      "motion_approved": false
+    },
+    {
+      "id": "k54",
+      "path": "episodes/first-day/assets/keyframes/k54.png",
+      "sha256": "8ee0c26d9a5e591b8d53568cc438b9b5b0d7a17649ac5fb546f178beb1811db7",
+      "status": "revise",
+      "full_frame_inspected": true,
+      "native_detail_inspected": true,
+      "detail_sheet": "work/first-day/qa-late/k54_details.png",
+      "findings": [
+        "Both stand at the sea rail, complete bodies, generous setting and quiet ending; no sitting.",
+        "Yu is left and Lin right, reversing established order and the stated final tableau.",
+        "Side galleries remain near docks; no departure is established.",
+        "Faces are rear views and cannot certify portrait identity; hair/costume/body counts are consistent."
+      ],
+      "required_action": "Keep Lin left and Yu right at the same rail. Match whichever departing/docked state is approved in preceding shots.",
+      "motion_approved": false
+    }
+  ],
+  "summary": {
+    "pass": 2,
+    "pass_with_caveat": 2,
+    "reject": 10,
+    "revise": 5
+  }
+}

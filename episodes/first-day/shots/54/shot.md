@@ -3,25 +3,25 @@
 - Edit: **02:18:07–02:19:11**, end-exclusive frames 3319–3347, 1.167 s at 24 fps.
 - Kind: dance. Purpose: Lin's palm passes him on the other gallery.
 - Source keyframe: `episodes/first-day/assets/keyframes/k14.png` (k14); shared source reuse is intentional where the phrase recurs.
-- Image composition base: `k10`. Scene model: luma/agent/uni-1/v1/max/edit.
-- Identity/location references: `lin_base`.
-- Character-sheet coverage: Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.
+- Image composition base: `external approved asset; see recorded recipe`. Scene model: Codex built-in image_gen; exact underlying model not exposed.
+- Identity/location references: .
+- Character-sheet coverage: External approved image recipe records its identity and composition inputs; original portraits remain face authorities.
 - Camera owner: companion view within the approved setting; geography shots retain their established elevated oblique angle. Planned camera: Locked companion camera.
 - Pre-motion treatment: hard cut; held startframe in pre-motion reel. No synthetic footwork, camera pan, zoom or pose interpolation.
-- Visible action: Lin allows the offered right palm to register, then takes one modest backward dance step and settles; no dock crossing.
+- Visible action: Lin allows the inward offered palm to register, then takes one modest backward dance step and settles; no dock crossing.
 - Relationship to other event: Lin's palm passes him on the other gallery.
 - Light: preserve the approved composition/local reference's daylight direction and shadows; the oblique A view is not the common south-facing angle.
 - Audio: uninterrupted locked source song; no new voice and no model-returned audio.
 
 ## Exact image prompt
 
-Keep the approved base's exact wide framing, figure scale, floor margins and wardrobe. Change only Lin's pose as follows. She looks toward screen right, never left. Her right hand is offered at waist height toward screen right; feet are apart and securely supported before the familiar retreat. She remains far inside A's rails. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.
+Reframe this exact cinematic photograph WIDER, changing only camera distance and the newly visible surrounding floor. Preserve this exact woman's face, bob, ivory sleeveless high-neck top, pleated wide ivory trousers, white flat shoes, rightward gaze and EXACT present pose: the same hand stays offered toward screen right and the other arm remains lowered. Keep her left of centre. Pull back until her complete head-to-shoe height is about half the canvas: head around 24 percent down and both complete shoe soles at or ABOVE 76 percent down. The bottom 24 percent must be uninterrupted EMPTY PEARL FLOOR beneath BOTH shoes. Preserve the exact A-gallery city on the left, narrow ivory arch on the right, far-left bench, curved glass rail, sea, daylight and perspective. Extend the environment naturally without border, inset, extra people or objects. Do not swap hands or alter the gesture, identity or costume. Elegant physical photograph, landscape 16:9, no text or panels.
 
 ## Future motion job
 
-`m14` in `episodes/first-day/build/motion_plan.json`; image `episodes/first-day/assets/keyframes/k14.png`; 5 s, 768P, H3 Max, prompt expansion disabled. Category C. End pose: none required.
+`m14` in `episodes/first-day/build/motion_plan.json`; image `episodes/first-day/assets/keyframes/k14.png`; 5 s, 768P, H3 Max, prompt expansion disabled. Category C. Final-frame conditioning: none. Landing QA reference: see required action.
 
-Photoreal cinematic image in the established porcelain maritime future. 35 mm, 1.2 m high, full-body Lin left third, right palm and face separated in silhouette. Lin allows the offered right palm to register, then takes one modest backward dance step and settles; no dock crossing. Preserve the supplied identities, age, costumes, supported architecture and closed/open dock state. Understated facial performance: mouths closed; only the described body movements happen. Locked companion camera. No generated text or lip movements. Diegetic sound only; no music. Return audio will be discarded.
+Photoreal cinematic image in the established porcelain maritime future. 35 mm, 1.2 m high, full-body Lin left third, inward palm and face separated in silhouette. Lin allows the inward offered palm to register, then takes one modest backward dance step and settles; no dock crossing. Use the same offered arm visible in the starting frame throughout this shot; never switch hands during the gesture or contact. The invitation travels inward: Lin toward screen right and Yu toward screen left.  Preserve the supplied identities, age, costumes, supported architecture and closed/open dock state. Understated facial performance: mouths closed; only the described body movements happen. Locked companion camera. No generated text or lip movements. Diegetic sound only; no music. Return audio will be discarded.
 
 Planned source trim: 1.200–2.367 s. This is provisional. Locate the actual action before choosing the trim; a late usable event may require a new edit rather than cutting it away.
 
@@ -32,5 +32,6 @@ Planned source trim: 1.200–2.367 s. This is provisional. Locate the actual act
 - Full-take action/order/contact/weight verified: **no**.
 - Final cut retains the complete required event: **not checked**.
 - Check faces, mouth closure, feet, hand anatomy, costume, support, dock state, screen direction, sunlight and neighboring-shot geography.
+- Preserve the starting frame's offered arm throughout each gesture and contact; adjacent views of one sustained contact must agree. Lin's invitation points screen right, Yu's screen left.
 - Check Lin remains aboard before frame 3840, is fully on I by frame 3936, and never returns to A. Yu crosses only in the 4300–4586 answer section. Both end standing sea-facing.
 - Motion, lyric synchronization and musical timing require playback review. The stills reel supplies no motion-quality pass.

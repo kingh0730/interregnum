@@ -30,7 +30,7 @@ def digest(path: Path) -> str:
 def audit() -> dict:
     names = ("keyframes.json", "timeline.json", "motion_plan.json", "references.json",
              "character_sheets.json", "audio_plan.json", "lyrics.json", "make_plan.py",
-             "builtin_image_edits.json")
+             "builtin_image_edits.json", "approved_image_overrides.json")
     hashes = {str((BUILD / n).relative_to(ROOT)): digest(BUILD / n) for n in names}
     load = lambda name: json.loads((BUILD / name).read_text(encoding="utf-8"))
     keys, timeline, motion = load("keyframes.json"), load("timeline.json"), load("motion_plan.json")
@@ -154,6 +154,20 @@ def audit() -> dict:
               f"Motion input disagrees with key: {job['id']}")
         check(set(job.get("reference_ids", [])) <= namespace.keys(),
               f"Unknown motion reference ID: {job['id']}")
+        for path_field, id_field in (("end_image", "end_image_key"),
+                                     ("end_pose_reference", "end_pose_reference_key")):
+            if job.get(path_field):
+                target = by_key.get(job.get(id_field))
+                check(target is not None and job[path_field] == target["out"],
+                      f"Motion ending reference disagrees with key: {job['id']}/{path_field}")
+        if job.get("end_pose_reference"):
+            check(not job.get("end_image"), f"QA-only landing reference also used as end image: {job['id']}")
+            check("QA reference only" in job.get("end_pose_use", ""),
+                  f"Landing reference use is not explicit: {job['id']}")
+    for mid, landing in (("m36", "k37"), ("m41", "k55")):
+        job = by_motion.get(mid, {})
+        check(job.get("duration") == 10 and job.get("end_pose_reference_key") == landing
+              and not job.get("end_image"), f"Crossing QA-only endpoint or duration differs: {mid}")
     primary = sum(j["duration"] for j in by_motion.values())
     with_takes = sum(j["duration"] * j["planned_takes"] for j in by_motion.values())
     check(primary == motion["estimated_primary_seconds"], "Primary motion seconds total differs")

@@ -19,9 +19,9 @@ Low close detail on B's blue-grey floor: only Yu's ink trouser legs and dark fla
 
 ## Future motion job
 
-`m02` in `episodes/first-day/build/motion_plan.json`; image `episodes/first-day/assets/keyframes/k02.png`; 5 s, 768P, H3 Max, prompt expansion disabled. Category C. End pose: none required.
+`m02` in `episodes/first-day/build/motion_plan.json`; image `episodes/first-day/assets/keyframes/k02.png`; 5 s, 768P, H3 Max, prompt expansion disabled. Category C. Final-frame conditioning: none. Landing QA reference: see required action.
 
-Photoreal cinematic image in the established porcelain maritime future. 85 mm, camera 0.25 m high looking south along B's floor; dark shoe right of centre. Yu answers with one grounded heel touch, weight transfer and settled feet. Preserve the supplied identities, age, costumes, supported architecture and closed/open dock state. Understated facial performance: mouths closed; only the described body movements happen. Locked companion camera. No generated text or lip movements. Diegetic sound only; no music. Return audio will be discarded.
+Photoreal cinematic image in the established porcelain maritime future. 85 mm, camera 0.25 m high looking south along B's floor; dark shoe right of centre. Yu answers with one grounded heel touch, weight transfer and settled feet.  Preserve the supplied identities, age, costumes, supported architecture and closed/open dock state. Understated facial performance: mouths closed; only the described body movements happen. Locked companion camera. No generated text or lip movements. Diegetic sound only; no music. Return audio will be discarded.
 
 Planned source trim: 0.850–2.892 s. This is provisional. Locate the actual action before choosing the trim; a late usable event may require a new edit rather than cutting it away.
 
@@ -32,5 +32,6 @@ Planned source trim: 0.850–2.892 s. This is provisional. Locate the actual act
 - Full-take action/order/contact/weight verified: **no**.
 - Final cut retains the complete required event: **not checked**.
 - Check faces, mouth closure, feet, hand anatomy, costume, support, dock state, screen direction, sunlight and neighboring-shot geography.
+- Preserve the starting frame's offered arm throughout each gesture and contact; adjacent views of one sustained contact must agree. Lin's invitation points screen right, Yu's screen left.
 - Check Lin remains aboard before frame 3840, is fully on I by frame 3936, and never returns to A. Yu crosses only in the 4300–4586 answer section. Both end standing sea-facing.
 - Motion, lyric synchronization and musical timing require playback review. The stills reel supplies no motion-quality pass.

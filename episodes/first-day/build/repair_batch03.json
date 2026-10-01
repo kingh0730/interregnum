@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "batch": "repair_batch03",
+  "tool": "image_gen.imagegen",
+  "model": "not exposed by tool response",
+  "billing": "Five built-in image edit calls completed; cost and quota usage not exposed by tool.",
+  "limits": "Still composition repairs only; no motion or listening approval. Canonical files are preserved for director adoption.",
+  "edits": [
+    {
+      "id": "k23",
+      "status": "generated; targeted repair passes self-review; independent director adoption pending",
+      "out": "episodes/first-day/assets/repairs/k23.png",
+      "inputs": [
+        {
+          "path": "episodes/first-day/assets/keyframes/k33.png",
+          "role": "edit target with approved leftward eyeline and B setting",
+          "sha256": "7d0dac9ae5280b9e9330e40e69e9958f02bae0847405b0a6a4ac63a1400cce9a"
+        },
+        {
+          "path": "episodes/first-day/assets/characters/yu_base.png",
+          "role": "original youthful identity",
+          "sha256": "418784e4ea91caf291884d24485df264a78fbef8b3adce5bc01d341bd5bcf91a"
+        },
+        {
+          "path": "episodes/first-day/assets/references/yu_costume.png",
+          "role": "collarless costume authority",
+          "sha256": "55e1d1ab6154349e3a4974fa6871a032f81378e851700233af73360e8fa76200"
+        }
+      ],
+      "prompt": "Use case: identity-preserve. Reframe the FIRST photograph into an elegant close portrait: Yu's head and upper torso on the RIGHT third, ample looking space to the LEFT. His nose and eyes point LEFT, right cheek visible, mouth closed. Preserve the original 27-year-old Chinese man's exact identity and clear, even youthful complexion from the SECOND image. Preserve the FIRST image's local B setting: blue-grey deck, blue glass rail, dark titanium arch and sea in natural daylight. His ink-blue jacket is exactly the THIRD costume reference: collarless open neckline, grey shirt, a fine silver seam at the shoulder. No folded lapel, raised collar or new buttons. Keep his hair and restrained expression. Single natural photographic film still, 16:9 landscape, no text or border.",
+      "transparent_background": false,
+      "output_sha256": "a3b30d7a5a9d181a07f96fc83ab0a435f2d866a4f0c12fabdb96760dfbb185f5",
+      "review": "Pass: leftward eyeline, clear youthful skin, correct collarless jacket and B setting.",
+      "motion_quality_verified": false
+    },
+    {
+      "id": "k24",
+      "status": "generated; targeted repair passes self-review; independent director adoption pending",
+      "out": "episodes/first-day/assets/repairs/k24.png",
+      "inputs": [
+        {
+          "path": "episodes/first-day/assets/keyframes/k24.png",
+          "role": "edit target; preserve poses and occupancy",
+          "sha256": "12d6d45fcaf0dfa2d872d295c819d9e6cfc0a9ade7d76acb0c08354f7459679f"
+        },
+        {
+          "path": "episodes/first-day/assets/keyframes/k05.png",
+          "role": "clean daylight, color and architecture authority",
+          "sha256": "ec1b22d84a5678256cef6801556cb7446f55904bd040f7bb56e1f5530d2cc034"
+        }
+      ],
+      "prompt": "Use case: lighting-weather. Repair only the photographic finish and lighting of the FIRST image to match the SECOND image's clean clear blue daylight exactly. Preserve the FIRST image's composition and small figures: ivory-clad Lin alone on the small left deck, ink-blue Yu alone on the small right deck, both with low open arms, and the large three-rib central island COMPLETELY EMPTY. Retain the exact futuristic skyline, supported platforms, glass rails and fixed access bridge. Remove the grainy teal/sepia cast; use the SECOND image's natural blue water, pale pearl floor and neutral silver. Restore the sea glint and cast-shadow direction from the SECOND image, with the strongest glint toward screen LEFT. No other scene changes, no extra people, no new structures or text. Single photoreal 16:9 landscape film still, no frame.",
+      "transparent_background": false,
+      "output_sha256": "8dee2b864396123b199491f268515fc0845623bde950e107384f999af73dbbfc",
+      "review": "Pass: clean blue daylight and left-side sea glint restored; apart figures and empty island retained.",
+      "motion_quality_verified": false
+    },
+    {
+      "id": "k27",
+      "status": "generated; targeted repair passes self-review; independent director adoption pending",
+      "out": "episodes/first-day/assets/repairs/k27.png",
+      "inputs": [
+        {
+          "path": "episodes/first-day/assets/keyframes/k27.png",
+          "role": "edit target",
+          "sha256": "99467e462bf2fca4c04346668daf938cc83124486f0768361b68a578ea9753bd"
+        },
+        {
+          "path": "episodes/first-day/assets/keyframes/k30.png",
+          "role": "reference for the same bench without a spare garment",
+          "sha256": "864aeec86240f61aa2ef51c44b6705662e6533161c2a5586f23ba5bb4a9b6289"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit. In the FIRST photograph, remove the separate folded spare jacket lying on the bench to the RIGHT of the seated man. Replace only that spare garment with the existing empty dark bench surface, as in the SECOND reference. The man must remain wearing his original ink-blue collarless jacket over the grey shirt. Keep one very small naturally attached worn-jacket hem corner beside his right thigh, not another garment. Preserve his exact face, seated position, hands, complete legs and shoes, framing, dark arch, coral inset, blue-grey floor, sea, light and every other object. Single clean photographic 16:9 landscape still; no new clothes, people, objects, text or borders.",
+      "transparent_background": false,
+      "output_sha256": "aa4535efe0c778ff4252178c2545ad4721378706ede9def34d788e2a0c77f3e9",
+      "review": "Pass: spare garment removed; seated pose, worn jacket, complete shoes and B setting retained.",
+      "motion_quality_verified": false
+    },
+    {
+      "id": "k28",
+      "status": "generated; targeted repair passes self-review; independent director adoption pending",
+      "out": "episodes/first-day/assets/repairs/k28.png",
+      "inputs": [
+        {
+          "path": "episodes/first-day/assets/keyframes/k28.png",
+          "role": "edit target",
+          "sha256": "0766dbaddd169f72d2cfa2e06a905cab2f315e201d5992bba39b64856be2fdf5"
+        },
+        {
+          "path": "episodes/first-day/assets/characters/lin_base.png",
+          "role": "original identity",
+          "sha256": "e480b13f300bc132246f098aa5b094ffc4e70b0354a9f0bb63c5e5ee1bf5a6df"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit. Correct the FIRST photo into a coherent wider seated view. Keep Lin seated on the existing foreground curved ivory bench, but REMOVE the extra distant ivory bench at far left, replacing it with matching empty pearl floor. There must be only ONE bench. Pull the camera back, preserving the perspective and surroundings naturally, so her entire head, hands, legs and both white shoes are visible and the bottom 20 percent is clear uninterrupted floor BELOW her soles. Keep Lin at the left third, chin gently lowered and eyes looking at her shoes, quiet closed-mouth expression. Preserve her exact original Chinese identity from the SECOND image, black bob, sleeveless ivory high-neck top and fine pleated ivory trousers. Preserve the same left skyline, right ivory arch, cobalt glass rail, sea and photographic daylight. One beautiful natural 16:9 landscape film still, no text, borders, duplicate people or extra furniture.",
+      "transparent_background": false,
+      "output_sha256": "b3a917b481f6973cc5ab4d2f7cea37c898f88cf9d25c252d262f5b6d7cc39247",
+      "review": "Pass for quiet seated shot: one foreground bench, downward gaze and complete feet; clear floor occupies about 15 percent below the soles.",
+      "motion_quality_verified": false
+    },
+    {
+      "id": "k29",
+      "status": "generated; targeted repair passes self-review; independent director adoption pending",
+      "out": "episodes/first-day/assets/repairs/k29.png",
+      "inputs": [
+        {
+          "path": "episodes/first-day/assets/keyframes/k29.png",
+          "role": "edit target",
+          "sha256": "ed511b441537ef3469281d1fab9436986684d999e0e6ba51ba53053adf87406c"
+        },
+        {
+          "path": "episodes/first-day/assets/characters/lin_base.png",
+          "role": "original identity",
+          "sha256": "e480b13f300bc132246f098aa5b094ffc4e70b0354a9f0bb63c5e5ee1bf5a6df"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit. Correct the FIRST photo into a coherent wider seated view. Keep Lin on the existing foreground curved ivory bench, but REMOVE the extra distant ivory bench at far left, replacing it with matching empty pearl floor. Exactly ONE bench. Turn only her head and quiet gaze toward screen RIGHT, looking out over the sea, never toward the camera; show her left cheek in a gentle three-quarter profile, lips closed. Her hands rest separately on the bench beside her, both feet settled together. Pull the camera back so all of her and both complete white shoes remain visible, with the bottom 20 percent clear pearl floor BELOW her soles. Preserve her exact Chinese identity from the SECOND image, black bob, sleeveless ivory high-neck top, fine pleated ivory trousers, same bench and local architecture, skyline LEFT and ivory arch RIGHT, natural daylight, blue sea and glass rail. Single natural photographic 16:9 landscape still, no text, borders or additional objects.",
+      "transparent_background": false,
+      "output_sha256": "58ce1b48470bc8aeeae97c9ea84e832953c94f4542670bb0427a6078e173d95e",
+      "review": "Pass for quiet seated shot with export check: one foreground bench and rightward sea gaze; complete feet with about 8–9 percent lower margin, tighter than the requested 20 percent. Feet are far left of centered captions.",
+      "motion_quality_verified": false
+    }
+  ]
+}

@@ -263,6 +263,13 @@ in dependency order, resuming logged requests without automatic replacement). Fo
   reference. Check faces, clothing, room layout, background landmarks, props, lighting and people's positions across
   cuts. Fix incompatible frames before animating them and record the comparison in the episode review notes.
   An individually plausible frame, including one inherited from an earlier cut, is not proof of scene continuity.
+- **Dance and crossings (First Day, 2026-10-02):** test the actual full-body dance composition and a source-to-destination
+  crossing before batching their variants. Several location references can collapse separate floors into one plausible
+  set. Require both platform outlines, the bridge and visible water/gap in the approved geography plate; derive later
+  dock states from that plate. Leave deliberate floor beneath complete shoes for movement and subtitles. A landing
+  still from another camera position is a QA reference, not automatically valid end-frame conditioning for a locked
+  crossing shot. Inspect the final motion for complete traversal, contact and release; a beautiful still proves none
+  of those actions. When a targeted repair replaces an input, retain its original bytes and exact recipe/hash provenance.
 
 ## 4. Screens and graphics (JS)
 - **Tool:** `tools/web/render.mjs <page> <out.mp4|.mov> <seconds> 24`. Each page exposes `window.renderFrame(t)` and

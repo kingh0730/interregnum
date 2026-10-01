@@ -19,9 +19,9 @@ Reframe downward from the approved duet into the described four-shoe detail. Exc
 
 ## Future motion job
 
-`m45` in `episodes/first-day/build/motion_plan.json`; image `episodes/first-day/assets/keyframes/k45.png`; 5 s, 768P, H3 Max, prompt expansion disabled. Category C. End pose: none required.
+`m45` in `episodes/first-day/build/motion_plan.json`; image `episodes/first-day/assets/keyframes/k45.png`; 5 s, 768P, H3 Max, prompt expansion disabled. Category C. Final-frame conditioning: none. Landing QA reference: see required action.
 
-Photoreal cinematic image in the established porcelain maritime future. 65 mm, 0.45 m high from north, four shoes and knees across one pearl-stone floor. Their four feet make one compact answering side-step pattern on the same stable floor, ending side by side. Preserve the supplied identities, age, costumes, supported architecture and closed/open dock state. Understated facial performance: mouths closed; only the described body movements happen. Locked companion camera. No generated text or lip movements. Diegetic sound only; no music. Return audio will be discarded.
+Photoreal cinematic image in the established porcelain maritime future. 65 mm, 0.45 m high from north, four shoes and knees across one pearl-stone floor. Their four feet make one compact answering side-step pattern on the same stable floor, ending side by side.  Preserve the supplied identities, age, costumes, supported architecture and closed/open dock state. Understated facial performance: mouths closed; only the described body movements happen. Locked companion camera. No generated text or lip movements. Diegetic sound only; no music. Return audio will be discarded.
 
 Planned source trim: 1.200–2.700 s. This is provisional. Locate the actual action before choosing the trim; a late usable event may require a new edit rather than cutting it away.
 
@@ -32,5 +32,6 @@ Planned source trim: 1.200–2.700 s. This is provisional. Locate the actual act
 - Full-take action/order/contact/weight verified: **no**.
 - Final cut retains the complete required event: **not checked**.
 - Check faces, mouth closure, feet, hand anatomy, costume, support, dock state, screen direction, sunlight and neighboring-shot geography.
+- Preserve the starting frame's offered arm throughout each gesture and contact; adjacent views of one sustained contact must agree. Lin's invitation points screen right, Yu's screen left.
 - Check Lin remains aboard before frame 3840, is fully on I by frame 3936, and never returns to A. Yu crosses only in the 4300–4586 answer section. Both end standing sea-facing.
 - Motion, lyric synchronization and musical timing require playback review. The stills reel supplies no motion-quality pass.

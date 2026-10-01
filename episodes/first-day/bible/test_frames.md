@@ -49,6 +49,51 @@ The latest repaired `episodes/first-day/assets/references/loc_a.png` was inspect
 
 ## Frame approval
 
+### Scene-reference tests: k10
+
+The two rejected versions are preserved separately and were both inspected at native full-frame resolution against the original Lin portrait. Both keep Lin recognizable through her bob, facial proportions and closed-mouth restraint. At these relatively small face scales there is no obvious new age/skin failure; they do not prove exact facial fidelity. The ivory silhouette is elegant, although the tops are more wrinkled and the costume's silver seam less readable than in its reference.
+
+| Preserved test | Actual result / disposition |
+|---|---|
+| `episodes/first-day/assets/lookdev/k10_rejected_tight.png` — portrait-base edit | Complete shoes but too little lower clearance; Lin looks left away from partner space; skyline is on the right rather than the approved A angle's left. The relaxed stance does not clearly anticipate the heel touch. Rejected. |
+| `episodes/first-day/assets/lookdev/k10_rejected_t2i.png` — reference-conditioned t2i | Restores skyline left and ivory arch right. Still too tightly framed and still looking left. The free shoe at screen right points down onto its toe rather than showing a heel touch; trouser hems bunch around both shoes. Rejected. |
+
+The third test, `episodes/first-day/assets/keyframes/k10.png` at modification time 05:06:08 on 2026-10-02, uses A's local image as the edit base with the original Lin portrait as face reference. It fixes rightward attention and preserves the local set arrangement. It still fails dance framing: the body occupies roughly seventy percent of the picture height, soles remain near the bottom edge, and the free foot points onto its toe. The trousers also become plain and slightly flared rather than the approved pleated silhouette, and the mouth is slightly open. Lin is recognizable at this scale without an obvious skin-age failure. The image could support a looking-right story beat after appropriate reframing, but it does not establish the intended heel-touch.
+
+Do not mirror a picture to fix gaze: that would reverse the cuff and set. Subsequent tests should preserve the third take's successful head direction and location while actually supplying floor below the complete shoes and a readable grounded pose. Compare actual results to these observed shortcomings, not merely revised prompts.
+
+### Wider scene-reference tests: k10, k42 and k05
+
+The wider builtin-image candidates ending `exec-6f7bebfb-abe1-469b-a0f7-c131ce656be0.png` (k10) and `exec-7c9bb029-328e-4ae8-9d4d-20cbf5aa0a76.png` (k42) were inspected against the original portraits and local masters before copying into the production keyframe paths. Their provenance belongs in the generation record; the observations here refer to those specific candidates.
+
+**k10 passes composition as a start-frame anticipation.** Lin has generous floor below complete shoes, open travel space to her right, and the intended rightward attention. The ivory arch, left skyline, left bench and source-light direction agree with A's approved local angle. Her face remains recognizable at the wide scale without an obvious age/skin failure, though this small profile cannot certify exact portrait fidelity. The free shoe still reads toe-led rather than a completed heel touch. Do not describe the held picture as proving that choreography; the motion take must supply the weight transfer.
+
+**k42 passes composition as the shared-floor duet start.** Both people stand fully visible on I, facing one another with separate raised palms. There is ample lower clearance and room for the planned modest partner turn. The pearl floor, left bench, three silver rib assemblies and sea agree with the island master; the outside deck arches sit beyond the crop. At this scale the original identities are recognizable, wardrobe is consistent and no new coarse skin or obvious extra/merged limb defect is visible. This approves the common-floor and anticipation state, not hand contact, synchronization or a completed turn.
+
+The revised Luma `episodes/first-day/assets/keyframes/k05.png` was inspected at full frame. It visibly places Lin on the ivory left touring deck and Yu on the blue right touring deck; the large central island is empty and has three rib assemblies. Separate floor rims and perimeter rails distinguish the three spaces, and the broad public approach remains visible. **It passes the apart/empty-island story fact.** Side floors sit very close to I, and rails obscure the exact transfer openings, so this picture alone does not establish a passing versus docked state or prove deck movement. Later crossing views must show their level connection explicitly. The side arches extend out of frame; this crop does not establish their colour or full outline.
+
+### Late-sequence first pass and targeted repairs
+
+The first bulk late-sequence review inspected k37–k55 as actual complete images and native detail crops in edit order, with k55 before k42. The SHA-bound findings are in `episodes/first-day/build/visual_review_late.json`. Several individually polished pictures failed story geography: swapped side galleries, a departing island instead of departing A, duplicated B architecture, or both people placed aboard B when the story required I. These are substantive retake findings; attractive faces do not make them acceptable continuity.
+
+The targeted builtin repair candidates and exact provenance are in `episodes/first-day/build/repair_batch04.json`, saved non-destructively under `episodes/first-day/assets/repairs/`. The k43, k44 and k49 repairs use k42 as the sole environment/framing authority and the earlier picture only as a pose guide. They restore complete bodies with deep floor margins. k55 lowers the arms on the same island plate for the arrival pause. k47 and k48 replace the two-face/selfie-like crops with matching reactions: Lin at left looks right and Yu at right looks left, with only the opposite person's blurred shoulder/hair at the foreground edge. Original face portraits remain the identity authorities.
+
+The repaired k51 now walks away toward the existing sea rail. Repaired k52 stands at that rail facing the water, Lin left and Yu right; it can be deliberately reused as k54's final tableau without asserting a new pose. Repaired k53 shows four resting shoes from behind in the same direction, matching the coda. All nine candidates were inspected full-frame and with native face/hand/foot detail where applicable. Their small-scale hand contacts still need motion review, and peripheral docked decks in the coda do not themselves prove departure. The director independently approved all nine v1 repairs, and their exact hashes were adopted into the canonical frame set. The settled k52 v1 tableau is also used deliberately for k54.
+
+### Final canonical still acceptance
+
+`episodes/first-day/build/visual_review_final.json` binds every one of the **55 canonical keyframe slots** to its current SHA-256 and reviewed/adopted evidence. There are **52 distinct image hashes**: k36 deliberately reuses k16's pre-crossing position, k39 reuses k33's on-B reaction, and k54 reuses k52's settled sea-facing tableau. The final report combines the actual-pixel early/middle reviews, the late full-frame/native-detail review, repair reviews and the director's independent adoption decisions. It preserves the separate historical reports instead of treating their rejected first-pass images as current failures.
+
+The final geography repairs were inspected again after adoption. In k37 Lin is wholly on fixed I, empty ivory A is behind left and Yu remains aboard dark B at right. k38 leaves her on the same island while A becomes distant behind a closed departure barrier. k40 offers her palm into the island's empty right space without the duplicated B architecture. k41 separates Yu's blue B floor from Lin's pearl I floor with a visible level, glass-guarded bridge over water. Together with k55 and k42, these pictures now communicate the intended occupancy changes. They do not demonstrate a continuous crossing, completed landing or mechanical motion.
+
+Three later coda removal variants were retained in the recipe history but rejected: they either removed the permanent viaduct or made the sea visibly painterly. The final choice remains the approved **k52 v1**, also used for k54. Partial peripheral galleries remain visible in that ending picture. The held coda establishes the pair standing together at the rail; their departing rides are a future-motion target, not a fact proved by that still. This does not undo the earlier k37/k38 separation-and-staying story state.
+
+Current limitations are specific. k10 and related preparations do not prove a heel touch or complete phrase. Small clasps and the hand insert still need close motion inspection for finger separation, weight and stable contact. Crossing spans require several natural steps and action-duration checks. Tiny geography figures establish costume and occupancy rather than portrait-scale identity. Footwear texture and fine garment folds vary mildly between retained frames and need motion continuity checks. Keep the actual offered arm consistent within each supplied shot; the director locks inward screen direction rather than an arbitrary anatomical side across all differently angled poses.
+
+**This is still-keyframe acceptance only.** At the time of this report the reviewer has not inspected baked Chinese subtitles or a finished export. Check captions against shoes and gestures in the rendered reel, especially the tighter seated/story frames k29, k32, k37 and k40. Performance, deck movement, action timing, lip restraint, listening and final rendered-overlay clearance remain separate checks; no motion approval is implied.
+
+### Checks for each delivered frame
+
 | Check | Pass evidence |
 |---|---|
 | Ambition | The world reads as a striking future place from its massing and function, without relying on a caption or coloured strip lights. |
@@ -68,3 +113,7 @@ Inspect complete frames at fit size first, then faces/hands/feet at full resolut
 Still approval cannot establish a heel transfer, rotation, crossing, hand contact, synchronized phrase or convincing gallery motion. The current reel demonstrates compositions and story states through held frames and selected pose changes. It should be labelled accordingly.
 
 For future motion, the first useful test is the final simple partner turn in full-body view. Verify feet remain on the same floor, hands meet without fusing, weight changes plausibly, face identities hold and the action completes inside the selected cut. Next verify one dock crossing with established level surfaces. Record action timestamps from full takes and recheck the final render. Metrics and sampled frames supplement playback; they do not replace it.
+
+## Subsequent rendered-export check
+
+The director subsequently inspected nine native decoded export frames, including the tighter k29/k32/k37/k40 compositions, the shared dance master, title and credits. Captions are legible and leave the complete shoes and key gestures visible. All 377 sampled shot midpoints and lyric/title on/off boundaries match their expected composition within encoding tolerance. `build/export_frame_review.json` binds this check to the actual Chinese MP4 hash; `build/export_audit.json` records independent audio and full-decode checks. This resolves the selected baked-overlay checks above without implying listening or motion approval.

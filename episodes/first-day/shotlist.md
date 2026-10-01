@@ -8,7 +8,7 @@ First final-chorus duet: shot 77, 7.917 s uninterrupted. Contact and grounded tu
 
 Lin crosses at 160–164 s. Bodies and camera stop from 164 to 179.167 s (first frame at or after 179.13). Yu's answer/crossing finishes by 191.083 s (first frame at or after 191.05). Both remain on I through the final dance and standing sea-facing coda.
 
-Original portraits remain face authorities; approved compositions and A/B/I masters govern framing, costume and local daylight. Luma remains the scene default; k10 and k42 use documented built-in reframing exceptions after repeated cropped dance masters. Chorus refrains reuse source setups intentionally; no generic skyline filler or synthetic motion is introduced.
+Original portraits remain face authorities; approved compositions and A/B/I masters govern framing, costume and local daylight. Luma remains the scene default; documented per-shot built-in repairs resolve observed framing, gaze, contact and geography defects. Exact external recipes and inherited reference reuse are recorded in the approved override manifest. Chorus refrains reuse source setups intentionally; no generic skyline filler or synthetic motion is introduced.
 
 | Shot | In–out timecode | Seconds | Key | Kind | Editorial purpose |
 |---|---|---:|---|---|---|
@@ -74,8 +74,8 @@ Original portraits remain face authorities; approved compositions and A/B/I mast
 | 60 | 02:27:14–02:28:10 | 0.833 | k02 | dance | Dark heel repeats it. |
 | 61 | 02:28:10–02:29:14 | 1.167 | k12 | dance | Quarter-turn A, clear feet. |
 | 62 | 02:29:14–02:30:18 | 1.167 | k13 | dance | Quarter-turn B, equal direction. |
-| 63 | 02:30:18–02:31:12 | 0.750 | k03 | dance | Open right palm A. |
-| 64 | 02:31:12–02:32:06 | 0.750 | k04 | dance | Open left palm B. |
+| 63 | 02:30:18–02:31:12 | 0.750 | k03 | dance | Open inward palm toward screen right on A. |
+| 64 | 02:31:12–02:32:06 | 0.750 | k04 | dance | Open inward palm toward screen left on B. |
 | 65 | 02:32:06–02:34:01 | 1.792 | k20 | dance | Lin gives the last separate lateral answer. |
 | 66 | 02:34:01–02:35:20 | 1.792 | k21 | dance | Yu replies without advancing to a dock. |
 | 67 | 02:35:20–02:38:12 | 2.667 | k35 | geography | Single elevated view explains the offset arrivals and empty island. |
@@ -84,14 +84,14 @@ Original portraits remain face authorities; approved compositions and A/B/I mast
 | 70 | 02:42:07–02:44:00 | 1.708 | k37 | story | By 164 seconds both of Lin's feet have landed on I, with no retreat. |
 | 71 | 02:44:00–02:51:14 | 7.583 | k38 | stillness | Hard stop: Lin and camera stay on I while empty A leaves behind its closed gate. |
 | 72 | 02:51:14–02:59:04 | 7.583 | k39 | stillness | Yu and camera stay still; his sight of the empty space beside Lin supplies the answer's cause. |
-| 73 | 02:59:04–03:02:04 | 3.000 | k40 | dance | Heel, quarter turn, palm: Lin deliberately omits the backward step. |
+| 73 | 02:59:04–03:02:04 | 3.000 | k40 | dance | Lin takes a gentle step toward Yu and holds her offered palm; the familiar retreat never comes. |
 | 74 | 03:02:04–03:03:23 | 1.792 | k39 | story | Yu sees the invitation from B; do not cut directly from a hand to an unexplained arrival. |
 | 75 | 03:03:23–03:07:16 | 3.708 | k41 | story | Yu crosses once from stopped B through the right level dock. |
 | 76 | 03:07:16–03:11:02 | 3.417 | k55 | story | Both are now wholly on I; separate hands establish the moment before real contact. |
-| 77 | 03:11:02–03:19:00 | 7.917 | k42 | dance | First uninterrupted proof: complete familiar phrase, real hand contact, modest shared turn, four feet visible. |
-| 78 | 03:19:00–03:20:06 | 1.250 | k44 | dance | Balanced landing is the consequence of that shared turn. |
+| 77 | 03:11:02–03:19:00 | 7.917 | k42 | dance | Intended first uninterrupted complete shared phrase: contact, modest turn, four feet visible, then release before the cut. |
+| 78 | 03:19:00–03:20:06 | 1.250 | k44 | dance | A later balanced shared pose after the first phrase's release; this begins a new connection, not continuous contact across the cut. |
 | 79 | 03:20:06–03:21:02 | 0.833 | k45 | dance | Four feet now answer on one floor. |
-| 80 | 03:21:02–03:21:22 | 0.833 | k46 | dance | One unambiguous right-to-left hand connection. |
+| 80 | 03:21:02–03:21:22 | 0.833 | k46 | dance | One unambiguous inward hand connection. |
 | 81 | 03:21:22–03:22:23 | 1.042 | k47 | story | Lin looks beside her instead of across water. |
 | 82 | 03:22:23–03:24:00 | 1.042 | k48 | story | Yu answers at the same physical distance. |
 | 83 | 03:24:00–03:26:03 | 2.125 | k43 | dance | Another complete short partnered phrase keeps contact modest. |

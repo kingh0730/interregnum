@@ -19,9 +19,9 @@ Open the approved duet view into the described wider geography, keeping both peo
 
 ## Future motion job
 
-`m50` in `episodes/first-day/build/motion_plan.json`; image `episodes/first-day/assets/keyframes/k50.png`; 7 s, 768P, H3 Max, prompt expansion disabled. Category C. End pose: none required.
+`m50` in `episodes/first-day/build/motion_plan.json`; image `episodes/first-day/assets/keyframes/k50.png`; 7 s, 768P, H3 Max, prompt expansion disabled. Category C. Final-frame conditioning: none. Landing QA reference: see required action.
 
-Photoreal cinematic image in the established porcelain maritime future. 28 mm, 1.8 m high from north, full pair small but readable on I beneath the three silver ribs. The pair stays together on I as the empty galleries continue; the camera rises once to reveal the bay and their supported guide routes. Preserve the supplied identities, age, costumes, supported architecture and closed/open dock state. Understated facial performance: mouths closed; only the described body movements happen. One motivated slow rise from 1.8 to 4 metres; no orbit or simultaneous zoom. No generated text or lip movements. Diegetic sound only; no music. Return audio will be discarded.
+Photoreal cinematic image in the established porcelain maritime future. 28 mm, 1.8 m high from north, full pair small but readable on I beneath the three silver ribs. The pair stays together on I as the empty galleries continue; the camera rises once to reveal the bay and their supported guide routes.  Preserve the supplied identities, age, costumes, supported architecture and closed/open dock state. Understated facial performance: mouths closed; only the described body movements happen. One motivated slow rise from 1.8 to 4 metres; no orbit or simultaneous zoom. No generated text or lip movements. Diegetic sound only; no music. Return audio will be discarded.
 
 Planned source trim: 0.500–5.750 s. This is provisional. Locate the actual action before choosing the trim; a late usable event may require a new edit rather than cutting it away.
 
@@ -32,5 +32,6 @@ Planned source trim: 0.500–5.750 s. This is provisional. Locate the actual act
 - Full-take action/order/contact/weight verified: **no**.
 - Final cut retains the complete required event: **not checked**.
 - Check faces, mouth closure, feet, hand anatomy, costume, support, dock state, screen direction, sunlight and neighboring-shot geography.
+- Preserve the starting frame's offered arm throughout each gesture and contact; adjacent views of one sustained contact must agree. Lin's invitation points screen right, Yu's screen left.
 - Check Lin remains aboard before frame 3840, is fully on I by frame 3936, and never returns to A. Yu crosses only in the 4300–4586 answer section. Both end standing sea-facing.
 - Motion, lyric synchronization and musical timing require playback review. The stills reel supplies no motion-quality pass.

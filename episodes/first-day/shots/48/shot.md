@@ -3,9 +3,9 @@
 - Edit: **02:03:22–02:06:22**, end-exclusive frames 2974–3046, 3.000 s at 24 fps.
 - Kind: story. Purpose: The imperfect hair returns as a personal detail, not another display phrase.
 - Source keyframe: `episodes/first-day/assets/keyframes/k09.png` (k09); shared source reuse is intentional where the phrase recurs.
-- Image composition base: `loc_b`. Scene model: luma/agent/uni-1/v1/max/edit.
-- Identity/location references: `yu_base`, `yu_costume`.
-- Character-sheet coverage: Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.
+- Image composition base: `external approved asset; see recorded recipe`. Scene model: Codex built-in image_gen; exact underlying model not exposed.
+- Identity/location references: .
+- Character-sheet coverage: External approved image recipe records its identity and composition inputs; original portraits remain face authorities.
 - Camera owner: companion view within the approved setting; geography shots retain their established elevated oblique angle. Planned camera: Locked companion camera.
 - Pre-motion treatment: hard cut; held startframe in pre-motion reel. No synthetic footwork, camera pan, zoom or pose interpolation.
 - Visible action: Yu smooths his hair once; the same mild sea breeze lifts it again after his hand drops.
@@ -15,13 +15,13 @@
 
 ## Exact image prompt
 
-One Yu at the right third of the approved B scene, in the described torso-and-hand framing. His attention is toward screen left. Preserve the local dark arch and coral inset; do not enlarge him into a foreground head crop. 50 mm, 1.4 m high, Yu right third against the open sea and B's dark structural edge. His loose hair has one small wind-raised section; one hand remains below his shoulder before touching it. Yu is the referenced 27-year-old Chinese man, loose short black hair, clean-shaven, ink-blue collarless jacket over grey shirt, ink trousers and dark flat shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.
+Edit this cinematic photograph, keeping the exact same young Chinese man, face, loose black hair, ink-blue collarless jacket, grey shirt and coastal B gallery. Change only his gesture: release the cuff and raise one relaxed hand to shoulder height, fingers separate, poised just before he smooths a small wind-lifted section of hair. The hand has not reached or covered his face or hair yet. The other hand stays low near his waist and fully visible. Keep his head and eyes turned toward SCREEN LEFT, composed face and closed lips. Medium framing from hips to above the complete head, both entire hands in the picture with breathing room. Preserve the existing dark arch, coral inset, bench, blue-grey floor, sea horizon, skyline, soft daylight and photographic finish. Do not add another person or change his identity or costume. Single landscape 16:9 photograph, no text, borders or panels.
 
 ## Future motion job
 
-`m09` in `episodes/first-day/build/motion_plan.json`; image `episodes/first-day/assets/keyframes/k09.png`; 5 s, 768P, H3 Max, prompt expansion disabled. Category C. End pose: none required.
+`m09` in `episodes/first-day/build/motion_plan.json`; image `episodes/first-day/assets/keyframes/k09.png`; 5 s, 768P, H3 Max, prompt expansion disabled. Category C. Final-frame conditioning: none. Landing QA reference: see required action.
 
-Photoreal cinematic image in the established porcelain maritime future. 50 mm, 1.4 m high, Yu right third against the open sea and B's dark structural edge. Yu smooths his hair once; the same mild sea breeze lifts it again after his hand drops. Preserve the supplied identities, age, costumes, supported architecture and closed/open dock state. Understated facial performance: mouths closed; only the described body movements happen. Locked companion camera. No generated text or lip movements. Diegetic sound only; no music. Return audio will be discarded.
+Photoreal cinematic image in the established porcelain maritime future. 50 mm, 1.4 m high, Yu right third against the open sea and B's dark structural edge. Yu smooths his hair once; the same mild sea breeze lifts it again after his hand drops.  Preserve the supplied identities, age, costumes, supported architecture and closed/open dock state. Understated facial performance: mouths closed; only the described body movements happen. Locked companion camera. No generated text or lip movements. Diegetic sound only; no music. Return audio will be discarded.
 
 Planned source trim: 0.850–3.850 s. This is provisional. Locate the actual action before choosing the trim; a late usable event may require a new edit rather than cutting it away.
 
@@ -32,5 +32,6 @@ Planned source trim: 0.850–3.850 s. This is provisional. Locate the actual act
 - Full-take action/order/contact/weight verified: **no**.
 - Final cut retains the complete required event: **not checked**.
 - Check faces, mouth closure, feet, hand anatomy, costume, support, dock state, screen direction, sunlight and neighboring-shot geography.
+- Preserve the starting frame's offered arm throughout each gesture and contact; adjacent views of one sustained contact must agree. Lin's invitation points screen right, Yu's screen left.
 - Check Lin remains aboard before frame 3840, is fully on I by frame 3936, and never returns to A. Yu crosses only in the 4300–4586 answer section. Both end standing sea-facing.
 - Motion, lyric synchronization and musical timing require playback review. The stills reel supplies no motion-quality pass.

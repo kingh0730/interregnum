@@ -39,12 +39,12 @@ key(1,"lin","a","85 mm, camera 0.25 m high looking south along A's floor; ivory 
 key(2,"yu","b","85 mm, camera 0.25 m high looking south along B's floor; dark shoe right of centre.",
     "Yu's supporting dark shoe is flat; the free left heel is prepared to land. Separated trouser hems; blue-grey floor and dark arch establish B.",
     "Yu answers with one grounded heel touch, weight transfer and settled feet.")
-key(3,"lin","a","65 mm, chest-height 1.3 m, Lin left third with face and right hand clearly separated.",
-    "Her right hand rests low beside her waist, palm angled toward screen right, poised to open. The cobalt rail is behind, never crossing wrist or face.",
-    "Lin raises and opens her right palm toward screen right in one small invitation; her head remains level.")
-key(4,"yu","b","65 mm, chest-height 1.3 m, Yu right third, clear face and left hand.",
-    "His left hand is low and separate from his torso, ready to answer toward screen left. The slim dark arch remains visible at the frame edge.",
-    "Yu opens his left palm toward screen left, gives one slightly too-early wrist settle, then lowers it.")
+key(3,"lin","a","65 mm, chest-height 1.3 m, Lin left third with face and offered hand clearly separated.",
+    "Her offered hand rests low beside her waist, palm angled toward screen right, poised to open. The cobalt rail is behind, never crossing wrist or face.",
+    "Lin raises and opens her inward palm toward screen right in one small invitation; her head remains level.")
+key(4,"yu","b","65 mm, chest-height 1.3 m, Yu right third, clear face and answering hand.",
+    "His answering hand is low and separate from his torso, ready to answer toward screen left. The slim dark arch remains visible at the frame edge.",
+    "Yu opens his inward palm toward screen left, gives one slightly too-early wrist settle, then lowers it.")
 key(5,"both","i","Preserve the approved elevated oblique view across the bay, with all three separate spaces readable and distant human scale.",
     "Lin is on A at far left and Yu on B at far right, water gaps between both galleries and empty I. I has three silver ribs and its north public path. Rails, pylons and closed dock gates show support; nobody stands on I.",
     "A and B glide slowly on their separate visible guides past the fixed empty island; both people stay on their own decks.",seconds=6,
@@ -55,36 +55,36 @@ key(6,"lin","a","50 mm, 1.4 m high, Lin left third, medium portrait with A's nar
 key(7,"yu","b","50 mm, 1.4 m high, Yu right third, waist-up with dark arch behind.",
     "He watches screen left with fingertips resting against his opposite sleeve cuff; the jacket remains unbuttoned and identical to reference.",
     "Yu straightens the sleeve cuff once, releases it and notices Lin across the water.")
-key(8,"lin","a","50 mm, 1.2 m high, Lin left third beside A's cobalt glass rail; medium-full composition.",
+key(8,"lin","a","Preserve the approved close observational view: Lin's face at left and complete pointing hand near centre, a small droplet on A's perimeter rail and open sea directly beyond it.",
     "One rain droplet lies on the dry rail cap. Her index finger stops a finger-width from it; her gaze rests on the droplet, body safely inside the rail.",
     "Lin lets her finger stop beside the droplet, then withdraws her hand and looks across to B.")
 key(9,"yu","b","50 mm, 1.4 m high, Yu right third against the open sea and B's dark structural edge.",
-    "His loose hair has one small wind-raised section; one hand remains below his shoulder before touching it.",
+    "His loose hair has one small wind-raised section; one complete hand is poised near it without contact, the other remains low and visible. His head and gaze point screen left.",
     "Yu smooths his hair once; the same mild sea breeze lifts it again after his hand drops.")
 key(10,"lin","a","35 mm, 1.15 m high, full-body Lin left third, generous empty floor toward screen right.",
     "Lin begins balanced with soft knees, left foot supporting and free right heel close to the floor. Arms are separated and low. Ivory arch inland and cobalt sea rail stay in their approved positions.",
-    "Lin performs one complete grounded phrase: right heel touch, quarter turn toward screen right, right palm opens, one small backward step, then settles fully on A.",seconds=7,benchmark=True)
+    "Lin performs one complete grounded phrase: right heel touch, quarter turn toward screen right, inward palm opens, one small backward step, then settles fully on A.",seconds=7,benchmark=True)
 key(11,"yu","b","35 mm, 1.15 m high, full-body Yu right third with travel space toward screen left.",
     "Yu begins balanced on his right foot, left heel prepared near the floor, arms low and separate. B's dark arch and coral inset remain fixed.",
-    "Yu answers with left heel touch, a quarter turn toward screen left, an open left palm, then a backward step a fraction early; he settles on B.",seconds=7)
+    "Yu answers with left heel touch, a quarter turn toward screen left, an open inward palm, then a backward step a fraction early; he settles on B.",seconds=7)
 key(12,"lin","a","50 mm, 1.15 m high, full-body Lin left of centre, shoes well above the lower title-safe area.",
-    "She is balanced just before a quarter turn: feet apart without crossed shins, right shoulder slightly leading, right hand low. A is the same approved set.",
-    "Lin makes one grounded quarter turn, lets her right palm travel through a clear short arc and finishes balanced.")
+    "She is balanced just before a quarter turn: feet apart without crossed shins, right shoulder slightly leading, offered hand low. A is the same approved set.",
+    "Lin makes one grounded quarter turn, lets her inward palm travel through a clear short arc and finishes balanced.")
 key(13,"yu","b","50 mm, 1.15 m high, full-body Yu right of centre, clear floor toward screen left.",
-    "He is balanced before the answering quarter turn, both feet supported and left arm separate from torso. Dark arch remains inland.",
-    "Yu makes one grounded quarter turn toward Lin and settles with his left palm open.")
-key(14,"lin","a","35 mm, 1.2 m high, full-body Lin left third, right palm and face separated in silhouette.",
-    "Her right hand is offered at waist height toward screen right; feet are apart and securely supported before the familiar retreat. She remains far inside A's rails.",
-    "Lin allows the offered right palm to register, then takes one modest backward dance step and settles; no dock crossing.")
-key(15,"yu","b","35 mm, 1.2 m high, full-body Yu right third, left hand clear against blue water.",
-    "His left palm begins open toward screen left, feet planted apart before a retreat; B's architecture is unchanged.",
-    "Yu opens the left palm fully and takes one slightly too-early backward dance step within B, then settles.")
-key(16,"lin","a","50 mm, 1.25 m high from north, full Lin at left docking threshold; empty I visible beyond right.",
-    "A is stopped beside the left island dock, bridge level and gate open. Lin's two shoes remain entirely on A, behind the seam; right palm low. Empty island and three ribs are readable.",
-    "Lin glances past the open level threshold toward departing B, begins to lift her right palm, then lowers it and stays entirely aboard A. Neither foot crosses the seam.",kind="A",seconds=7,extras=("loc_i","gate"))
-key(17,"yu","b","50 mm, 1.25 m high from north, full Yu at right docking threshold; empty I beyond screen left.",
-    "B is stationary at the right island dock, bridge level and gate open. Both of Yu's shoes remain on B behind the seam; he watches departing A rather than the clear floor.",
-    "Yu begins to offer his left palm, watches A departing, withdraws the hand and remains entirely aboard B; no foot crosses the seam.",kind="A",seconds=7,extras=("loc_i","gate"))
+    "He is balanced before the answering quarter turn, both feet supported and offered arm separate from torso. Dark arch remains inland.",
+    "Yu makes one grounded quarter turn toward Lin and settles with his inward palm open.")
+key(14,"lin","a","35 mm, 1.2 m high, full-body Lin left third, inward palm and face separated in silhouette.",
+    "Her inward palm is comfortably raised toward screen right; feet are apart and securely supported before the familiar retreat. She remains far inside A's rails.",
+    "Lin allows the inward offered palm to register, then takes one modest backward dance step and settles; no dock crossing.")
+key(15,"yu","b","35 mm, 1.2 m high, full-body Yu right third, answering hand clear against blue water.",
+    "His inward palm begins open toward screen left, feet planted apart before a retreat; B's architecture is unchanged.",
+    "Yu opens the inward palm fully and takes one slightly too-early backward dance step within B, then settles.")
+key(16,"lin","a","Preserve the approved wide oblique city-facing dock view: full Lin and A's ivory arch at screen left, empty I and three ribs at right, the complete level transfer bridge visible between separate supported decks.",
+    "A is stopped and its level bridge to I is open. Lin stands safely on A to the left of its entrance, both shoes wholly on A, arms low. Water remains visible below the bridge and between the separate deck bodies; I is empty.",
+    "Lin glances past the open level threshold toward departing B, begins to lift her inward palm, then lowers it and stays entirely aboard A. Neither foot crosses the seam.",kind="A",seconds=7,extras=("loc_i","gate"))
+key(17,"yu","b","Preserve the approved wide oblique city-facing dock view: full Yu and B's dark arch at screen right, empty I and three ribs at left, the entire level bridge and water below readable.",
+    "B is stopped at the open right island bridge. Both of Yu's shoes remain on the blue-grey B deck, safely to the right of the bridge entrance. His gaze points left toward departing A off screen; the pearl island across the bridge is empty.",
+    "Yu begins to offer his inward palm, watches A departing, withdraws the hand and remains entirely aboard B; no foot crosses the seam.",kind="A",seconds=7,extras=("loc_i","gate"))
 key(18,"lin","a","65 mm, 0.55 m high, Lin's lower full body left of centre; knees and both shoes clear.",
     "Her weight is forward and the free foot is ready for one short backward dance step on the uninterrupted floor of A, away from its dock.",
     "Lin takes one short grounded backward step, then brings her weight over both feet; no jump or sliding foot.")
@@ -107,8 +107,8 @@ key(23,"yu","b","85 mm, 1.45 m high, Yu's face and upper torso right third, dark
 key(24,"both","i","Preserve the approved k05 elevated oblique geography, wide across A, empty I and B, with the same distant human scale.",
     "Lin remains on A at left and Yu on B at right. Both prepare complementary low open arms; water separates their floors from empty I. Gates are closed on passing galleries.",
     "Both perform a small answering arm phrase on their own supported gallery floors while the galleries pass the empty fixed island.",seconds=6,extras=("loc_a","loc_b"))
-key(25,"lin","a","50 mm, 1.3 m high, Lin full at left and closed departure gate foreground edge, empty island receding right.",
-    "Lin has stayed on A. Both feet are on its floor, hand lowered. Closed gate and broken water gap prove the opportunity has passed; nobody occupies I.",
+key(25,"lin","a","The same approved oblique city-facing camera as k16: full Lin and ivory arch at screen left, empty three-rib I at right; the former bridge span is now an unmistakable water gap.",
+    "Lin has stayed on A with both feet on its pearl floor and hands low. The bridge is fully retracted, closed glass barriers with apricot safety strips guard both ends, and open water separates A from empty I.",
     "A glides away from the island after the gate is closed; Lin stays still aboard, following the empty island with her eyes.",kind="A",seconds=6,extras=("loc_i","gate"))
 key(26,"none","i","35 mm, 1.5 m high, fixed island's vacant central floor and sea beyond; three ribs at north edge.",
     "I is visibly empty, its public access path attached and both docks closed. One low bench sits outside the dance floor. The empty patch of pearl floor is the visual subject.",
@@ -129,50 +129,50 @@ key(31,"none","a","85 mm, 0.9 m high at tabletop eye level, the referenced small
     "The approved phase_model sits on A's fixed narrow console: a graded row of polished brass pendulums, each independently suspended, with unlabelled hardware. It is the only immaculate schematic object.",
     "The graded row of polished brass pendulums oscillates gently, each at its own differing period; no morphing, new pendulums or labels.",seconds=5,extras=("phase_model",))
 key(32,"lin","a","50 mm, 1.25 m high, full standing Lin left third beside A's ivory bench, dock direction open to right.",
-    "She has stood up; the right hand remains low, prepared for a very small invitation toward the island. Body and face stay composed.",
+    "She has stood up; the offered hand remains low, prepared for a very small invitation toward the island. Body and face stay composed.",
     "Lin makes the open-palm invitation smaller and more direct, indicating the island once, then leaves the hand low.",kind="A",seconds=6)
 key(33,"yu","b","50 mm, 1.3 m high, Yu right third, torso and lowered hand visible with the right dock in depth.",
-    "He has risen beside the dark bench and looks screen left toward Lin's new, smaller invitation. His left hand remains still.",
+    "He has risen beside the dark bench and looks screen left toward Lin's new, smaller invitation. His answering hand remains still.",
     "Yu notices Lin's small gesture and changes his gaze to the island while remaining in a stable full stance.",kind="A",seconds=5)
 key(34,"none","b","85 mm, 0.8 m high, brass boarding-ribbon housing beside B's closed glass gate, no people.",
     "The complete referenced gate hardware is on B's blue-grey floor. A short coral boarding ribbon remains visibly outside its brass spool; no text, clock or numbers.",
     "The short physical boarding ribbon retracts once into its brass housing while the closed glass gate remains stationary.",seconds=5,extras=("gate",))
-key(35,"both","i","Preserve the approved k05 elevated oblique geography and scale with all three decks, not a vertical drone map.",
-    "A with Lin is stopped at the left island dock; B with Yu approaches at right on its different guide. I is still empty. Its public path, supports and both separate gate states are unmistakable.",
+key(35,"both","i","Preserve the approved elevated oblique overview: small Lin on A at left, large empty three-rib I in the centre, small Yu on B at right; the fixed public path enters I from the foreground and supported circular guide rails remain visible.",
+    "A with Lin is stopped at the left dock, its complete railed bridge level and open to empty I. B with Yu remains separated at right by approximately four metres of open water, its bridge retracted and boarding barrier closed. No one is on I.",
     "The elevated companion view holds long enough to read the offset arrivals; A remains stopped, B approaches, and both people remain aboard.",seconds=5,extras=("loc_a","loc_b"))
-key(36,"lin","a","35 mm, 1.15 m high from north, full Lin left third at A's open dock, continuous bridge to I on the right.",
-    "A is stationary and level with I. Lin's two feet are still wholly on A before the seam, facing right toward the clear bridge; three silver ribs identify I. Gate fully open, handrail uninterrupted.",
-    "After a short preparation Lin walks across the stationary level left bridge once, in two ordinary steps, and stops with both feet fully on I. No retreat and no jump.",kind="A",seconds=5,end="k37",benchmark=True,extras=("loc_i","gate"))
-key(37,"lin","i","35 mm, 1.15 m high from north, full Lin left of centre on I, the level left bridge behind her.",
-    "Lin has completed the crossing: both ivory shoes wholly on fixed I beyond the seam, arms down, empty floor to her right. A remains stopped behind the open bridge; she is not straddling it.",
+key(36,"lin","a",KEYS["k16"]["camera"],
+    KEYS["k16"]["pose"],
+    "Lin walks purposefully from A across the entire stationary level left bridge and stops with both feet fully on I. Show every grounded step needed to cross the actual span naturally; allow a brisk four-to-five-step crossing only if the visible distance supports it. Never run, jump, slide or accelerate time. No retreat. The 160–164 second picture interval must retain the complete crossing and secure landing; confirm action fit from the generated take before selecting a trim.",kind="A",seconds=10,end="k37",benchmark=True,extras=("loc_i","gate"))
+key(37,"lin","i","Preserve the approved oblique sea-facing island coverage: full Lin left of centre with complete shoes and broad pearl floor, silver ribs behind, empty A at far left and Yu aboard distant B at far right.",
+    "Lin has completed the crossing: both ivory shoes wholly on fixed I, arms down, clear empty floor to her right. Empty A remains nearby at left; Yu still stands on the separate dark-arched B at right across water. She is not straddling a dock seam.",
     "Lin finishes the last ordinary crossing step, places both feet securely on I, and keeps her body there.",kind="A",seconds=5,extras=("loc_a","gate"))
-key(38,"lin","i","35 mm, 1.2 m high from north, full Lin left third on fixed I and a large empty right half.",
-    "Both feet are planted well inside I and arms rest. The left gate is now closed before empty A departs behind her; A's ivory arch remains recognizable. Three ribs and the solid island floor prove stable ground.",
+key(38,"lin","i","Hold the approved k37 island camera: full Lin left of centre, generous empty pearl floor to her right, silver ribs behind, empty ivory A receding far left and Yu still aboard distant dark B at right.",
+    "Both of Lin's feet are planted well inside I, arms at rest. The left gate is closed and the bridge retracted; empty A has begun departing across the water, its ivory arch still recognizable. Yu remains on separate B. Three ribs and uninterrupted pearl floor prove Lin's stable ground.",
     "Lin stays planted on I without gesturing. Empty A glides slowly away behind the already closed left gate; no person or camera follows it.",kind="A",seconds=10,extras=("loc_a","gate"))
-key(39,"yu","b","50 mm, 1.35 m high from north, Yu right third on B, island and waiting Lin's tiny ivory silhouette across left background.",
-    "Yu stands with both feet aboard B and his hands still, looking left at the empty space beside Lin on I. His face is the focal point; the distant figure is only Lin, never a third person.",
-    "Yu remains physically still as he notices Lin waiting on I; only his eyes settle on the space beside her.",kind="A",seconds=10,extras=("loc_i","lin_base"))
-key(40,"lin","i","50 mm, 1.2 m high, full Lin left third on fixed I; open empty floor to screen right.",
-    "Lin is balanced before her familiar phrase, right heel near the floor and right palm low. Her stopped stance on I and B's approaching right dock remain clear.",
-    "Lin touches her heel, makes the familiar quarter turn and opens her right palm, but omits the backward step. Both feet remain on I as she waits.",kind="A",seconds=7)
-key(41,"yu","b","35 mm, 1.15 m high from north, full Yu at screen right and open level bridge toward I at left.",
-    "B is stopped at the right dock with gate fully open; both of Yu's shoes are still on B before the seam. Lin stands on I left background, right hand offered; four arms remain visually separate.",
-    "Yu sees Lin's offered right hand, walks left across the stationary level bridge once and stops beside her on I, his left hand still separate before contact.",kind="A",seconds=8,end="k55",extras=("loc_i","lin_base","lin_costume","gate"))
+key(39,"yu","b","50 mm, 1.3 m high, the approved k33 medium reaction on B: Yu at right, face and lowered hands readable; open space to screen left.",
+    "Yu remains aboard B with hands lowered and gaze screen left toward Lin's off-screen island position. B's dark arch and coral inset identify his location. The preceding island view establishes whom he sees; do not add a distant person to this reaction frame.",
+    "Yu remains physically still; only his eyes settle toward Lin's off-screen position on I, established by the preceding island view.",kind="A",seconds=10)
+key(40,"lin","i","Preserve the approved full-body island composition: Lin left of centre, entire head and both shoes clear, inward palm readable against open sea at screen right; three silver ribs and generous pearl floor establish fixed I.",
+    "Lin stands balanced wholly on I with her inward palm already offered toward screen right and the other arm low. Her face follows the invitation toward Yu off screen; no second person occupies the island yet. The visible hand remains the same throughout the gesture.",
+    "With her inward palm already offered, Lin takes one gentle grounded step toward screen right and holds the invitation. She does not lower the hand, restart the full dance phrase or take the familiar backward step. Both feet settle on I as she waits for Yu.",kind="A",seconds=7)
+key(41,"yu","b","The approved k17 oblique city-facing dock angle: complete Yu and dark B arch at screen right, full Lin waiting on I at left, the entire level bridge crossing open water between them.",
+    "B is stopped with the right bridge level and open. Yu stands wholly on its blue-grey deck before the bridge entrance; Lin stands wholly on pearl I across the span with her inward hand offered toward screen right. Both bodies and four arms remain separate and readable.",
+    "Yu sees Lin's inward offered hand, walks naturally left across the entire stationary level bridge using the ordinary steps needed for its visible length, and stops beside her wholly on I. His answering hand stays separate before contact. No running, jumping, sliding or time acceleration; preserve the complete walk and secure landing in the selected interval.",kind="A",seconds=10,end="k55",extras=("loc_i","lin_base","lin_costume","gate"))
 key(42,"both","i","35 mm, 1.15 m high from north, uninterrupted full-body two-shot: Lin left, Yu right, four feet and both faces clear.",
-    "Both now stand wholly on I with a small space between them. Lin's right palm and Yu's left hand are visibly separate before the first contact, arms comfortably bent. Three ribs behind; B is docked at right, closed to further boarding.",
-    "The two share one complete grounded phrase: heel touch, quarter turn, Lin's right hand meets Yu's left once, a modest connected quarter turn, then balanced stillness together. Keep four feet, both faces and the joined hands visible throughout; no lifts or finger interlacing.",kind="A",seconds=10,end="k44",benchmark=True)
+    "Both now stand wholly on I with a small space between them. Lin's inward offered palm and Yu's answering hand are visibly separate before the first contact, arms comfortably bent. Three ribs behind; B is docked at right, closed to further boarding.",
+    "The two share one complete grounded phrase: heel touch, quarter turn, Lin's offered palm meets Yu's answering palm once, a modest connected quarter turn, then a balanced finish. Release the connection and lower both hands before the cut to the next phrase. Preserve each starting pose's offered arm throughout this phrase, with no hand switching. Keep four feet, both faces and the joined hands visible through contact and turn; no lifts or finger interlacing.",kind="A",seconds=10,benchmark=True)
 key(43,"both","i","50 mm, 1.2 m high from north, full-body Lin left and Yu right on one uninterrupted patch of I.",
-    "Lin's right hand and Yu's left connect gently at waist height, no interlaced fingers. Both stand with separate supported feet, preparing one small grounded shared turn; no arms near faces.",
-    "With one simple right-to-left hand connection they take two compact shared steps and settle on the same floor.",kind="A",seconds=7,end="k44")
+    "Lin's inward offered hand and Yu's answering hand connect gently at waist height, no interlaced fingers. Both stand with separate supported feet, preparing one small grounded shared turn; no arms near faces.",
+    "This is a later shared phrase after the first phrase has released. With the simple inward hand connection already visible in this starting pose, they take two compact shared steps and settle side by side with joined hands low on the same floor. Retain this exact connected pair of arms through the shot.",kind="A",seconds=7,end="k44")
 key(44,"both","i","35 mm, 1.15 m high from north, same full two-shot and scale as the anticipatory duet frame.",
-    "The modest shared turn has landed: Lin remains left and Yu right, both feet of each person fully supported, bodies angled slightly toward the sea, right-to-left hand connection relaxed at waist height. Exact I architecture and horizon.",
-    "After the shared turn both hold a balanced finish, then ease their joined hands down without changing places.",kind="A",seconds=6)
+    "The later shared phrase has landed: Lin remains left and Yu right, both feet of each person fully supported, bodies angled slightly toward the sea, their inward hands already joined low between them. Exact I architecture and horizon.",
+    "After the later shared phrase both hold a balanced finish with the same joined hands low, then release gently without changing places.",kind="A",seconds=6)
 key(45,"both","i","65 mm, 0.45 m high from north, four shoes and knees across one pearl-stone floor.",
     "Lin's ivory shoes occupy the left and Yu's dark shoes the right; all four have plausible support with a small shared dance gap. No crossed shins; no platform seam between them.",
     "Their four feet make one compact answering side-step pattern on the same stable floor, ending side by side.",seconds=5)
-key(46,"both","i","85 mm, 1.05 m high from north, Lin's right hand at left meets Yu's left at right, shoulders outside the crop.",
+key(46,"both","i","85 mm, 1.05 m high from north, Lin's offered hand at screen left meets Yu's answering hand at screen right, shoulders outside the crop.",
     "One simple light hand connection at waist height, distinct wrists and fingers with no interlacing; Lin's bare forearm and ivory top edge identify the left person, Yu's ink sleeve the right. Pearl floor and silver rib softly behind.",
-    "The single right-to-left hand connection gently opens and closes once as they adjust shared weight; preserve fingers and wrist anatomy.",kind="A",seconds=5)
+    "The single inward hand connection gently opens and closes once as they adjust shared weight; preserve fingers and wrist anatomy.",kind="A",seconds=5)
 key(47,"both","i","85 mm, 1.45 m high from north, Lin's face left third with Yu's ink shoulder at right edge.",
     "Lin looks toward the real person beside her rather than across water; composed mouth closed, bob and left cuff unchanged. The shared island ribs fix location.",
     "Lin looks at Yu beside her and then briefly follows their joined hand; her head and mouth remain quiet.")
@@ -185,21 +185,21 @@ key(49,"both","i","35 mm, 1.2 m high from north, complete pair left and right on
 key(50,"both","i","28 mm, 1.8 m high from north, full pair small but readable on I beneath the three silver ribs.",
     "Both stand on I after a shared phrase, hands lowered. Empty A and B depart on their visible guides; one spectacular open structural sweep frames the sea.",
     "The pair stays together on I as the empty galleries continue; the camera rises once to reveal the bay and their supported guide routes.",seconds=7,move="One motivated slow rise from 1.8 to 4 metres; no orbit or simultaneous zoom.",extras=("loc_a","loc_b"))
-key(51,"both","i","35 mm, 1.2 m high from north, full pair in the central floor moving toward the south sea rail.",
-    "Lin left and Yu right face the sea at a slight angle, ready to walk side by side; hands hang naturally and no dance pose remains. A clear pedestrian route leads to the rail.",
-    "They take three ordinary side-by-side steps toward the sea railing, then stop safely inside it; no bench or sitting.",seconds=7)
-key(52,"both","i","50 mm, 1.3 m high from north-northeast, full pair at the sea rail; three-quarter profiles retain natural faces.",
-    "Both stand upright near each other, Lin left and Yu right. His left hand rests low between them, fingers naturally relaxed before the palm opens; her right arm is relaxed. They face the same sea, feet planted.",
-    "During the first four seconds Yu opens his left palm once and Lin moves one small step beside him. By 4.5 seconds both have settled; they then stay standing sea-facing without another hand gesture or step for the remainder of the take.",seconds=10)
+key(51,"both","i","Preserve the approved wide island view behind the full pair: Lin left and Yu right walking toward the sea rail, complete feet and broad pearl floor clear between the silver ribs.",
+    "Lin and Yu are already taking an ordinary side-by-side step toward the sea, seen from behind; hands hang naturally and no dance pose remains. Their unobstructed pedestrian route continues to the rail.",
+    "They continue the ordinary side-by-side walk toward the sea railing and stop safely inside it, taking the natural number of steps required by the visible distance; no bench or sitting.",seconds=7)
+key(52,"both","i","Preserve the approved wide rear view: complete pair small at the sea rail between the silver ribs, Lin left and Yu right, generous pearl floor foreground and open sea behind them.",
+    "Both stand upright near each other at the rail, seen from behind, Lin left and Yu right. His answering hand rests low between them, fingers naturally relaxed before the palm opens; her free arm is relaxed. They face the same sea with both pairs of shoes planted.",
+    "During the first four seconds Yu opens his inward palm once and Lin moves one small step beside him. By 4.5 seconds both have settled; they then stay standing sea-facing without another hand gesture or step for the remainder of the take.",seconds=10)
 key(53,"both","i","85 mm, 0.25 m high from north, ivory and dark shoes together on the same uninterrupted pearl floor.",
     "Both pairs of shoes are at rest, ivory left and dark right, with a comfortable small gap; four feet fully supported. A thin cobalt reflection comes from the visible railing edge above.",
     "Both people settle their weight on the same floor and keep their shoes still; no dance restart.",kind="D",seconds=6)
-key(54,"both","i","28 mm, 1.6 m high from north, wide final tableau with the standing pair at the south rail and open sea filling the upper half.",
-    "Lin and Yu stand side by side, seen in quiet three-quarter rear profile, ivory left and ink right, full bodies and shoes clear. The three silver ribs in the foreground and empty departing galleries preserve the exact established world; no one sits.",
+key(54,"both","i",KEYS["k52"]["camera"],
+    "Lin and Yu remain side by side at the sea rail in the approved wide rear tableau, ivory left and ink right, complete bodies and shoes clear. The three silver ribs and glimpses of empty galleries at the edges preserve the established world; no one sits.",
     "They remain standing sea-facing, bodies quiet; the mild sea breeze moves only hair and a jacket edge while galleries continue in the distance.",kind="D",seconds=10,extras=("loc_a","loc_b"))
 key(55,"both","i","50 mm, 1.3 m high from north, full Lin at left and newly arrived Yu at right with open right dock behind.",
-    "Yu has just completed his crossing: both dark shoes wholly on I beyond the right seam; both ivory shoes already on I. Lin's right hand and Yu's left remain separate. B is stopped, bridge level and gate still open; this is arrival, before the first shared dance.",
-    "Yu finishes his final ordinary step onto I, stops at a natural distance from Lin, and leaves his left hand visibly separate before their first contact.",kind="A",seconds=5,extras=("loc_b","gate"))
+    "Yu has just completed his crossing: both dark shoes wholly on I and both ivory shoes already on I. They face one another at a comfortable distance, all hands low and separate. B is stopped beyond the right edge with the level bridge still open; this is arrival, before the first shared dance.",
+    "Yu finishes his final ordinary step onto I, stops at a natural distance from Lin, and leaves his answering hand visibly separate before their first contact.",kind="A",seconds=5,extras=("loc_b","gate"))
 
 
 def configure_image_recipes():
@@ -271,8 +271,8 @@ def configure_image_recipes():
           "Wide island view: add only Lin on the left third, complete head-to-shoe height at most half the image and bottom quarter clear floor. Yu is absent. Preserve I; the A reference governs only the left background deck and its specified dock state.")
     route([40], "loc_i", ["lin_base", "lin_costume", "loc_b"],
           "Wide island view: add only Lin on the left third, complete head-to-shoe height at most half the image and bottom quarter clear floor. Keep the right half empty beside her; Yu remains off this island. B is only the approaching right background gallery.")
-    route([39], "loc_b", ["yu_base", "yu_costume", "loc_i", "lin_base"],
-          "Yu stands still on B at screen right, looking left. Compose his face and torso clearly while showing distant I at left with only a tiny ivory-clad Lin; no third person. The island reference governs the background, not his floor.")
+    route([39], "k33", ["yu_base"],
+          "Preserve the approved k33 medium reaction exactly: Yu at screen right, hands lowered, head and gaze toward screen left. The island and Lin remain off screen, established by the preceding view; no new figure or geography is needed.", camera=False)
     route([41], "loc_i", ["yu_base", "yu_costume", "lin_base", "lin_costume", "loc_b"],
           "Wide level right-dock view: Yu stands wholly on B at screen right before its seam; Lin stands wholly on I at left. Both are small complete figures above a deep floor margin. B's reference governs the right gallery; preserve one clear open level bridge, not overlapping floors.")
 
@@ -289,7 +289,7 @@ def configure_image_recipes():
     route([45,53], "k42", [],
           "Reframe downward from the approved duet into the described four-shoe detail. Exclude heads, torsos and hands; retain ivory shoes at left, dark shoes at right on one continuous pearl floor.", face=False)
     route([46], "k42", [],
-          "Reframe the approved duet into a close waist-height hand detail, shoulders and faces outside the crop. Only Lin's bare right forearm from left and Yu's ink-sleeved left forearm from right form the specified light connection.", face=False)
+          "Reframe the approved duet into a close waist-height hand detail, shoulders and faces outside the crop. Only Lin's bare inward forearm from screen left and Yu's ink-sleeved inward forearm from screen right form the specified light connection.", face=False)
     route([47,48], "k42", ["lin_base", "yu_base"],
           "Reframe the approved duet into the described close face and partner-shoulder composition. Preserve the original identity references and the pair's left/right order; no full-body framing is requested.")
     if set(routes) | set(overrides) != KEYS.keys():
@@ -409,7 +409,7 @@ section("chorus_two",3840,[
  (23,1,"story","Yu watches A leave."),(22,1,"story","Lin sees his hesitation repeat hers."),
  (1,.8,"dance","Ivory heel answers the echoed lyric."),(2,.8,"dance","Dark heel repeats it."),
  (12,1.1,"dance","Quarter-turn A, clear feet."),(13,1.1,"dance","Quarter-turn B, equal direction."),
- (3,.7,"dance","Open right palm A."),(4,.7,"dance","Open left palm B."),
+ (3,.7,"dance","Open inward palm toward screen right on A."),(4,.7,"dance","Open inward palm toward screen left on B."),
  (20,1.7,"dance","Lin gives the last separate lateral answer."),(21,1.7,"dance","Yu replies without advancing to a dock."),
  (35,2.5,"geography","Single elevated view explains the offset arrivals and empty island."),
  (16,1.4,"story","At A's next stopped dock, Lin prepares; both shoes remain aboard until 160 seconds.")])
@@ -420,14 +420,14 @@ section("waiting",4300,[
  (38,7.58,"stillness","Hard stop: Lin and camera stay on I while empty A leaves behind its closed gate."),
  (39,7.58,"stillness","Yu and camera stay still; his sight of the empty space beside Lin supplies the answer's cause.")])
 section("yu_answers",4586,[
- (40,3,"dance","Heel, quarter turn, palm: Lin deliberately omits the backward step."),
+ (40,3,"dance","Lin takes a gentle step toward Yu and holds her offered palm; the familiar retreat never comes."),
  (39,1.8,"story","Yu sees the invitation from B; do not cut directly from a hand to an unexplained arrival."),
  (41,3.7,"story","Yu crosses once from stopped B through the right level dock."),
  (55,3.42,"story","Both are now wholly on I; separate hands establish the moment before real contact.")])
 section("final_chorus",5354,[
- (42,7.5,"dance","First uninterrupted proof: complete familiar phrase, real hand contact, modest shared turn, four feet visible."),
- (44,1.2,"dance","Balanced landing is the consequence of that shared turn."),
- (45,.8,"dance","Four feet now answer on one floor."),(46,.8,"dance","One unambiguous right-to-left hand connection."),
+ (42,7.5,"dance","Intended first uninterrupted complete shared phrase: contact, modest turn, four feet visible, then release before the cut."),
+ (44,1.2,"dance","A later balanced shared pose after the first phrase's release; this begins a new connection, not continuous contact across the cut."),
+ (45,.8,"dance","Four feet now answer on one floor."),(46,.8,"dance","One unambiguous inward hand connection."),
  (47,1,"story","Lin looks beside her instead of across water."),(48,1,"story","Yu answers at the same physical distance."),
  (43,2,"dance","Another complete short partnered phrase keeps contact modest."),
  (49,3,"dance","The small late step becomes a playful shared adjustment."),
@@ -533,7 +533,11 @@ def main():
         uses = [s for s in timeline if s["motion_job"] == identity]
         if not uses:
             continue
-        motion_prompt = ("Photoreal cinematic image in the established porcelain maritime future. " + source["camera"] + " " + source["action"] +
+        hand_phrase_keys = {"k03","k04","k10","k11","k12","k13","k14","k15","k16","k17",
+                            "k20","k21","k24","k32","k40","k41","k42","k43","k44","k46","k49","k52","k55"}
+        hand_lock = (" Use the same offered arm visible in the starting frame throughout this shot; never switch hands during the gesture or contact. "
+                     "The invitation travels inward: Lin toward screen right and Yu toward screen left. ") if key_id in hand_phrase_keys else " "
+        motion_prompt = ("Photoreal cinematic image in the established porcelain maritime future. " + source["camera"] + " " + source["action"] + hand_lock +
                          " Preserve the supplied identities, age, costumes, supported architecture and closed/open dock state. "
                          "Understated facial performance: mouths closed; only the described body movements happen. " + source["move"] +
                          " No generated text or lip movements. Diegetic sound only; no music. Return audio will be discarded.")
@@ -546,15 +550,26 @@ def main():
                             "source_onset_seconds":None,"source_completion_seconds":None,"full_take_verified":False,"final_cut_verified":False},
                "submission_status":"NOT SUBMITTED; motion stage requires approval after estimate"}
         if source["end"]:
-            job["end_image"] = f"episodes/first-day/assets/keyframes/{source['end']}.png"
-            job["end_image_key"] = source["end"]
+            if key_id in {"k36", "k41"}:
+                # Landing coverage uses a different camera; forcing it as the
+                # final generated frame would contradict the locked crossing view.
+                job["end_pose_reference"] = f"episodes/first-day/assets/keyframes/{source['end']}.png"
+                job["end_pose_reference_key"] = source["end"]
+                job["end_pose_use"] = "QA reference only: verify both feet fully on I; retain the crossing camera rather than conditioning a camera transition."
+            else:
+                job["end_image"] = f"episodes/first-day/assets/keyframes/{source['end']}.png"
+                job["end_image_key"] = source["end"]
         jobs.append(job)
     motion = {"defaults":{"endpoint":"i2v","resolution":"768P","prompt_expansion_mode":"disabled"},
               "stage":"prepared only; no requests submitted","root":"repository root; pass --root explicitly",
               "benchmark_ids":[j["id"] for j in jobs if j["benchmark"]],"fps":FPS,"planned_edit_frames":cursor,
               "estimated_primary_seconds":sum(j["duration"] for j in jobs),
-              "estimate_basis":"Use current primary pricing before approval. Historical H3 Max guide: $0.025/second; takes/retakes add spend.",
+              "estimate_basis":"H3 Max live pricing observed in the successful 53-job dry run on 2026-10-02: $0.03/second. Primary 334 seconds = $10.02; planned 440 seconds including takes = $13.20. Refresh pricing before any new submission; additional retakes add spend.",
+              "estimated_rate_usd_per_second":0.03,
+              "pricing_observed_date":"2026-10-02",
+              "estimated_primary_usd":round(sum(j["duration"] for j in jobs)*0.03,2),
               "estimated_seconds_with_planned_takes":sum(j["duration"]*j["planned_takes"] for j in jobs),
+              "estimated_usd_with_planned_takes":round(sum(j["duration"]*j["planned_takes"] for j in jobs)*0.03,2),
               "unused_model_audio":"discard every model-returned audio track; use the locked supplied-song master",
               "jobs":jobs}
     write_json(BUILD/"keyframes.json",images)
@@ -587,7 +602,7 @@ def main():
 
 ## Future motion job
 
-`{shot['motion_job']}` in `episodes/first-day/build/motion_plan.json`; image `{job['image']}`; {job['duration']} s, 768P, H3 Max, prompt expansion disabled. Category {job['category']}. End pose: {job.get('end_image','none required')}.
+`{shot['motion_job']}` in `episodes/first-day/build/motion_plan.json`; image `{job['image']}`; {job['duration']} s, 768P, H3 Max, prompt expansion disabled. Category {job['category']}. Final-frame conditioning: {job.get('end_image','none')}. Landing QA reference: {job.get('end_pose_reference','see required action')}{'; different camera, QA only' if job.get('end_pose_reference') else ''}.
 
 {job['prompt']}
 
@@ -600,6 +615,7 @@ Planned source trim: {shot['source_trim']['start']:.3f}–{shot['source_trim']['
 - Full-take action/order/contact/weight verified: **no**.
 - Final cut retains the complete required event: **not checked**.
 - Check faces, mouth closure, feet, hand anatomy, costume, support, dock state, screen direction, sunlight and neighboring-shot geography.
+- Preserve the starting frame's offered arm throughout each gesture and contact; adjacent views of one sustained contact must agree. Lin's invitation points screen right, Yu's screen left.
 - Check Lin remains aboard before frame 3840, is fully on I by frame 3936, and never returns to A. Yu crosses only in the 4300–4586 answer section. Both end standing sea-facing.
 - Motion, lyric synchronization and musical timing require playback review. The stills reel supplies no motion-quality pass.
 """
@@ -608,7 +624,7 @@ Planned source trim: {shot['source_trim']['start']:.3f}–{shot['source_trim']['
              f"Dance-designated screen time: {dance_frames/FPS:.3f} s ({dance_frames/cursor:.1%}). Pre-motion output holds photographs; these labels describe the intended eventual performance, not verified dance.\n\n"
              f"First final-chorus duet: shot {first_duet['id']}, {first_duet['duration']:.3f} s uninterrupted. Contact and grounded turn remain pending motion review.\n\n"
              "Lin crosses at 160–164 s. Bodies and camera stop from 164 to 179.167 s (first frame at or after 179.13). Yu's answer/crossing finishes by 191.083 s (first frame at or after 191.05). Both remain on I through the final dance and standing sea-facing coda.\n\n"
-             "Original portraits remain face authorities; approved compositions and A/B/I masters govern framing, costume and local daylight. Luma remains the scene default; k10 and k42 use documented built-in reframing exceptions after repeated cropped dance masters. Chorus refrains reuse source setups intentionally; no generic skyline filler or synthetic motion is introduced.\n\n"
+             "Original portraits remain face authorities; approved compositions and A/B/I masters govern framing, costume and local daylight. Luma remains the scene default; documented per-shot built-in repairs resolve observed framing, gaze, contact and geography defects. Exact external recipes and inherited reference reuse are recorded in the approved override manifest. Chorus refrains reuse source setups intentionally; no generic skyline filler or synthetic motion is introduced.\n\n"
              "| Shot | In–out timecode | Seconds | Key | Kind | Editorial purpose |\n|---|---|---:|---|---|---|\n")
     table = "".join(f"| {s['id']} | {timecode(s['start_frame'])}–{timecode(s['end_frame'])} | {s['duration']:.3f} | {s['keyframe_id']} | {s['kind']} | {s['purpose']} |\n" for s in timeline)
     (EP/"shotlist.md").write_text(intro+table)
