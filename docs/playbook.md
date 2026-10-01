@@ -139,8 +139,9 @@ forward; the evidence from the 2026-09-30 tests is in `docs/history.md`.
   - **Why the base matters:** Luma edit adds skin texture every time, and edits of edits compound into crepey,
     spotted faces.
   - **Keyframes:** Luma edit with `image_url` = the base (padded to 16:9 if it isn't), `reference_image_urls` = the
-    base plus the sheets for young faces, or **the base only for older faces**; the scene goes in the prompt
-    ("Fill the whole frame"). Every edit ends with the skin lock: "Keep the exact age and clear, even skin from the
+    base plus the sheets for young faces, or **the base only as the face reference for older faces**. Add the shared
+    location and recurring-prop references separately (§3); describe the shot within that established space rather
+    than asking for an independently invented setting. Every edit ends with the skin lock: "Keep the exact age and clear, even skin from the
     reference: add no blemishes, spots, weathering or extra lines."
   - **An aged version** of a character (60 → 80) is a Luma **t2i** with the younger base in
     `reference_image_urls` and the ageing described plainly ("soft and even for her age"), never an ageing edit.
@@ -184,6 +185,12 @@ in dependency order, resuming logged requests without automatic replacement). Fo
   2. The other lookdev: character sheets and locations.
   3. Judge the character sheets. The same person must appear in every view, and no face may read as a real person.
   4. All keyframes.
+- **Shared location references:** before building shots that share a setting, establish an approved location frame
+  (with additional views where needed) and record its asset ID in each relevant shot's image manifest `refs` and
+  `deps`. Character references alone do not establish the room. Describe the camera position, people and action
+  relative to the shared layout: doors, windows, counters, furniture and light sources. Different angles may reveal
+  different parts of the space; they must remain spatially compatible. Record intentional setting or lighting changes
+  in `shot.md` so review can distinguish them from drift.
 - **Speed and quality:** about 1 minute per image at 5 in parallel. Identity holds well from the character sheets plus
   refs.
 - **Known failures:**
@@ -198,6 +205,10 @@ in dependency order, resuming logged requests without automatic replacement). Fo
   - **Stray details,** such as a second mole: patch them locally with texture from the same hatching direction, sized
     to the defect. Verify at 4× zoom, then re-propagate to every consumer.
 - **QA:** contact sheets read with the Read tool: identity, style consistency, framing inside the 2.39 band.
+  Before motion generation, compare each scene's full starting frames together in edit order against its location
+  reference. Check faces, clothing, room layout, background landmarks, props, lighting and people's positions across
+  cuts. Fix incompatible frames before animating them and record the comparison in the episode review notes.
+  An individually plausible frame, including one inherited from an earlier cut, is not proof of scene continuity.
 
 ## 4. Screens and graphics (JS)
 - **Tool:** `tools/web/render.mjs <page> <out.mp4|.mov> <seconds> 24`. Each page exposes `window.renderFrame(t)` and
@@ -390,6 +401,10 @@ the stock, polished result, the audio version of the AI look. So describe the re
   1080P) before the full batch.
 - **Review:** Claude screens every clip's frames (identity, hands, ageing, props, mouths) and retakes; King watches one
   assembled motion cut.
+  For each new or regenerated take, compare the intended cut with its supplied frame, the scene's location reference
+  and neighboring shots. Inspect background landmarks through the cut, including areas revealed by camera movement;
+  a "locked camera" or preservation prompt is not evidence of compliance. Record mismatches and resolve them before
+  accepting the replacement. Preserving an inconsistent input faithfully still fails scene continuity.
 - **Money safety:** `fal_run.py` saves the request id at submit and never re-submits. Stranded results can be
   recovered through `GET https://api.fal.ai/v1/models/requests/by-endpoint?endpoint_id=…` and then
   `https://queue.fal.run/<app>/requests/<id>`.
@@ -411,6 +426,8 @@ them, on the assembled film, in this order:
 7. **Re-time the subtitles** from the final voice onsets.
 8. **QA the whole film:** cut lengths against the tempo map, loudness, the silence, faces, text, mouths, and every
    story-critical action in the final rendered cut. Confirm action, required repetition, order and relation to dialogue;
+   compare neighboring shots for compatible setting, background layout, lighting, faces, clothing and prop placement
+   after all crops, trims and replacements. Check against the intentional changes recorded in `shot.md`;
    unresolved playback checks remain explicit for King's review.
 9. **King's review, then one fix loop** on what he flags.
 
