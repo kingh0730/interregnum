@@ -22,6 +22,9 @@ Private productions may be archived outside this checkout. When a private projec
 `private/ARCHIVES.md` if available for its location and restoration instructions before regenerating assets.
 That local index and the archived project contents must remain outside public commits.
 
+The pilot's media and working outputs are archived outside this checkout; its tracked scripts, plans,
+and production notes remain here as examples. See `docs/archives.md` before rebuilding the pilot.
+
 ## Status
 
 - [x] Step 0: repo set up; toolchain documented (`docs/pipeline.md`); strategy agreed (`docs/strategy.md`)
