@@ -20,7 +20,14 @@ pacing and images, not motion.
 
 ## Contracts that make v2 a swap, not a redo
 - **Keyframes double as image-to-video start frames:** composition, headroom and the pose at the *start* of the action.
+- **Object lettering belongs in those start frames:** finish and verify text that must already exist on a surface
+  before motion, then animate it with the object. Preserve the approved faces and setting through image-to-video.
+  Subtitles and screen-space captions remain post-production graphics; surface-text repairs are handled per shot
+  after motion QA (current process: `docs/playbook.md` §4 and §7).
 - **Shot durations fit the model's clip lengths** (around 5–10 s; confirm in the bake-off).
+- **Planned edit lengths yield to the actual performance:** locate story-critical actions in each generated take,
+  then preserve them in the cut while maintaining dialogue sync and pacing. Verify the final rendered action, not
+  just the prompt or source take; revise or regenerate if the required beat is missing or unusable.
 - **Every `shot.md` carries its motion prompt and exact quoted dialogue**, so v2 is a batch job.
 - **Dialogue is written for lip-sync:** one clear speaker per shot, mouth visible, short lines that fit inside one
   clip. Write dialogue scenes as shot/reverse-shot, not crowded two-shots.

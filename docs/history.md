@@ -129,3 +129,24 @@ that came out of them is "Luma unless it truly can't" (playbook §2b).
 - **MiniMax invented dialogue on 27,** because the prompt said she "says one short line" and there was no audio to
   follow. Hence the rules that motion prompts never mention speech and that model audio is discarded.
 - King chose MiniMax H3 Max as the single video family (motion plus lip-sync).
+
+## Lettering through video generation (2026-10-01)
+- A post-generation tracked surface-text overlay jiggled in playback. King judged lettering supplied in the start
+  frame and animated by MiniMax H3 Max with the object clearly better.
+- Supplying a blank surface and prompting the model to add lettering made the text appear during the shot. King
+  rejected this for text that should already exist on the object.
+- Text-only scene generation was also tried, but cannot preserve the supplied faces, setting and composition as
+  required for these shots; it did not answer the intended test of an unlettered scene reference.
+- **Adopted workflow:** finish exact surface lettering in the approved start frame, then animate the complete image.
+  Keep screen-space captions in post. Check spelling, readability, attachment and appearance throughout the cut;
+  use tracked repairs only where necessary. This is a production default based on one surface-text comparison,
+  not a reliability claim for every model or shot.
+
+## Story-action verification (2026-10-01)
+- An audit found that an explicitly requested facial action appeared late and with different repetition in the
+  generated take, while the selected edit ended before the action. Prompt adherence and editing both contributed
+  to the missing story beat; checking lip-sync did not catch it.
+- **Lesson:** retain the overall generation pipeline, but verify essential actions twice: in the full take, recording
+  their timestamps, and in the final rendered cut. Adjust the edit for usable late action; revise or regenerate
+  missing or unusable action. Clear prompts do not guarantee action, timing or repetition, and more prompt detail
+  alone is not a demonstrated fix.

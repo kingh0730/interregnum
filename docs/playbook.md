@@ -202,6 +202,10 @@ in dependency order, resuming logged requests without automatic replacement). Fo
 - **Kit:** use a shared kit per episode (glyph tables, CRT pass, emblem), as in `episodes/pilot/js_v3/kit.js`.
 - **Outputs:** full-frame pictures, overlays (.mov with alpha), or screen textures for homography into keyframes.
 - **QA:** stills at key beats, read with Read. The text must be exact.
+- **Prepare object lettering before motion:** render or correct text attached to a prop or in-world surface, then
+  composite it into the approved image-to-video start frame with the intended perspective, lighting and occlusion.
+  Check spelling and readability before submitting that frame. Keep the clean plate and editable graphics as source
+  assets. Subtitles, titles and screen-space narrative captions stay separate for post-production. See §7 for motion QA.
 
 ## 5. Compositing the stills reel
 - **Tools:**
@@ -319,10 +323,11 @@ the stock, polished result, the audio version of the AI look. So describe the re
   face-landmark mouth check (flag speech-like open and close rhythm), and retake or trim what's flagged.
 
 **What to fix before motion, and what after.**
-- **Before:** only what the viewer will see and the motion won't change by itself (a wrong face, setting or
-  composition), plus the edit (shot lengths and order). Flaws the shot's own action resolves (a hand that lifts, a
+- **Before:** fix the visible face, setting and composition, and finish lettering that should already exist on objects
+  in the start frame (§4), plus the edit (shot lengths and order). Flaws the shot's own action resolves (a hand that lifts, a
   book that opens) can be left to the motion, or trimmed off the clip's head.
-- **After (§7b):** graphics re-tracked to the moving plates, the sound pass and every other polish.
+- **After (§7b):** screen-space graphics, any necessary surface-text repairs or changing displays, the sound pass and
+  every other polish. Do not automatically reapply lettering already present in the generated plate.
 
 **Strategy.**
 - **Triage shots by what the motion is for:**
@@ -337,11 +342,33 @@ the stock, polished result, the audio version of the AI look. So describe the re
 - **Group short shots:** consecutive shots of one scene go in one continuous take (5–15 s) and are cut in the edit.
   Chain takes for continuity: the last frame of one clip starts the next.
 - **Acting:** prompts describe behaviour, never emotion (see the series visual rules); faces underplay.
-- **Text on moving surfaces:** test lettering in the start frame and let the video model animate it with the object,
-  against a tracked composite. Do not assume either method wins: tracking can slide on generated geometry, while
-  generated lettering can change shape or readability. Check exact characters, attachment, occlusion and legibility
-  over the intended shot length, and review playback. Preserving supplied lettering is a separate test from spelling
-  it from a prompt. Keep subtitles and narrative captions in screen space.
+- **Story-critical actions must survive generation and the edit:** model output varies; a clear submitted prompt is
+  direction, not evidence that the action happened. For each essential beat, record in `shot.md` the visible action,
+  any required repetition, and its relation to dialogue or another event. Give that action priority in the prompt;
+  remove conflicting restraint instructions when the beat requires an emphatic gesture.
+  - **Check the full take:** inspect the actual submitted request, then locate the action's onset and completion in
+    the output. Record take timestamps and whether the required action, count and order are present. Sample brief
+    gestures densely enough to see their phases; sparse contact sheets and mouth-sync metrics alone cannot verify
+    them. Mark uncertain motion for King's playback review rather than claiming a pass.
+  - **Choose from the observed performance:** if the action is usable but late, adjust the cut or shot length while
+    preserving dialogue sync, continuity and pacing. If it is missing, wrong, or cannot fit the scene, revise the
+    direction or regenerate within the approved budget. Do not keep an incomplete beat just to match the planned
+    duration, and do not assume a longer or more detailed prompt alone will fix it.
+  - **Check the final cut separately:** verify the action remains visible after trimming, retiming and assembly,
+    with enough time for the audience to read it and with the intended relation to the dialogue. A good source take
+    does not establish that the edited shot works.
+- **Text on moving surfaces — default adopted 2026-10-01:** supply correct lettering in the approved start frame,
+  then let the video model animate the lettering and object together. Where the endpoint accepts a prompt, describe
+  the text as already printed on the surface and ask to preserve it through motion, lighting and occlusion.
+  - King's playback review preferred this to the tested post-generation tracked overlay, whose text jiggled.
+  - A blank surface plus a prompt to add lettering made text appear during the shot; do not use that approach for
+    lettering that must exist from the beginning. Text-only scene generation also gives up the supplied faces,
+    setting and composition, so it is not a substitute for image-to-video when continuity matters.
+  - Check exact characters, attachment, occlusion and legibility from the first frame through the intended cut;
+    review playback for jiggle, pop-in and changes in the lettering's appearance. One successful shot does not
+    guarantee reliable spelling or preservation on every surface, duration or model.
+  - If preservation fails, repair the frame or retake; use a tracked repair only when needed and verify it in playback.
+    Changing displays need their own timing and QA. Keep subtitles and narrative captions in screen space.
 - **A stills-reel clip is a poor video reference:** it carries framing, which the still already gives, and stillness.
   Video references are for real performance or camera motion.
 - **Test first on every new episode or model:** the key beat, one dialogue shot and one action shot, at a low
@@ -357,15 +384,19 @@ the stock, polished result, the audio version of the AI look. So describe the re
 Every stage can introduce flaws (stills, graphics, voices, video models), so the last stage fixes anything from any of
 them, on the assembled film, in this order:
 1. **Re-edit to the real motion:** re-set cut points from what actually happens in each clip, not from the stills
-   plan.
+   plan. Use the recorded story-action timestamps (§7) to preserve each essential beat from setup through completion;
+   recheck dialogue sync and pacing when extending or retiming a shot.
 2. **Repair or replace:** trim around artefacts, paint out small glitches, retake what can't be hidden. Run the face
    check and the landmark mouth check on every clip.
 3. **Unify the look:** film finish and grade over all the video, so takes and models sit together.
-4. **Re-track the graphics** to the moving plates; this is where alignment and motion design reach film level.
+4. **Finish the graphics:** check lettering already animated with objects; repair only where needed. Track any
+   remaining surface graphics or changing displays to the moving plates, and add screen-space graphics separately.
 5. **Sync:** dialogue to the lip-synced mouths, and hits to the stamps and actions.
 6. **Final mix:** fix cut-off and clipped lines; balance voice, music, SFX and any usable model motion sound.
 7. **Re-time the subtitles** from the final voice onsets.
-8. **QA the whole film:** cut lengths against the tempo map, loudness, the silence, faces, text, mouths.
+8. **QA the whole film:** cut lengths against the tempo map, loudness, the silence, faces, text, mouths, and every
+   story-critical action in the final rendered cut. Confirm action, required repetition, order and relation to dialogue;
+   unresolved playback checks remain explicit for King's review.
 9. **King's review, then one fix loop** on what he flags.
 
 ## 8. Operating rules (learned on the pilot)
