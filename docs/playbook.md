@@ -337,8 +337,11 @@ the stock, polished result, the audio version of the AI look. So describe the re
 - **Group short shots:** consecutive shots of one scene go in one continuous take (5–15 s) and are cut in the edit.
   Chain takes for continuity: the last frame of one clip starts the next.
 - **Acting:** prompts describe behaviour, never emotion (see the series visual rules); faces underplay.
-- **Text and graphics never go into the video model;** it mangles writing. Composite them afterwards, tracked to the
-  motion.
+- **Text on moving surfaces:** test lettering in the start frame and let the video model animate it with the object,
+  against a tracked composite. Do not assume either method wins: tracking can slide on generated geometry, while
+  generated lettering can change shape or readability. Check exact characters, attachment, occlusion and legibility
+  over the intended shot length, and review playback. Preserving supplied lettering is a separate test from spelling
+  it from a prompt. Keep subtitles and narrative captions in screen space.
 - **A stills-reel clip is a poor video reference:** it carries framing, which the still already gives, and stillness.
   Video references are for real performance or camera motion.
 - **Test first on every new episode or model:** the key beat, one dialogue shot and one action shot, at a low
