@@ -1,0 +1,156 @@
+[
+  {
+    "concept": "空一拍 / A Beat of Room",
+    "input": "work/first-day/concepts/space.md",
+    "selected": false,
+    "core_sentence": "Two people who reserve the same moving vacancy for their separate destinations must surrender both reservations to occupy a place together.",
+    "new_noun": "让格 / passing the vacancy",
+    "nearest_works": [
+      {"title": "Playtime", "year": 1967, "difference": "Architectural malfunction produces social pleasure there; here correctly working infrastructure exposes two competing invitations."},
+      {"title": "Neighbours", "year": 1952, "difference": "Shared territory causes violent possession there; here relinquishing a claim enables courtship.", "url": "https://www.nfb.ca/film/neighbours_voisins/"},
+      {"title": "Virtual Insanity", "year": 1996, "difference": "An important missed predecessor: moving-room choreography is established. The proposed vacancy exchange and mutual surrender provide the distinct story, not the moving buildings alone.", "url": "https://www.onepointfour.co/2022/02/08/keeping-the-virtual-insanity-party-alive/"}
+    ],
+    "formal_invention": "Call-and-response editing passes an empty architectural bay between the leads; repeated footwork changes from claiming to releasing to moving without controlling anything.",
+    "banned_touched": [
+      {"id": "CN-2", "role": "texture", "note": "Cyberpunk engineering is transformed into a bright coastal city with Chinese protagonists exercising agency."},
+      {"id": "MADE-1", "role": "texture", "note": "The spectacle montage is subordinated to one recurrent spatial exchange; it remains an execution risk."}
+    ],
+    "median_touched": [{"item": "Futuristic skyline courtship montage", "role": "texture", "note": "The date depends on an exchange rule, not scenic changes."}],
+    "material": [
+      {
+        "source": "The Shed, The Shed Moves: Behind the Scenes, staff transcript",
+        "url": "https://d36dm5l5awwtco.cloudfront.net/api/file/Q9WF9hfSiyi3S6xJBfHk?fit=max",
+        "details": ["Six non-powered bogie and rail assemblies", "The drive connection is on the roof", "Twelve drive motors", "180 horsepower total", "Crew inspect and lubricate the rack and tracks before movement"],
+        "qualification": "These details were independently verified from staff testimony. The concept's accelerated occupied pavilions remain fictional. The building page itself returned a queue screen."
+      }
+    ],
+    "tempo": {"acceleration": "First chorus, 58.79 seconds", "hard_stop": "Reservation junction after 151.27 seconds", "stillness": "The rooms leave while the pair stays", "clock": "The single vacancy moves along the rail lamps"},
+    "complaint": "They discard the most spectacular views for an empty square.",
+    "scores": {"core": 4, "form": 4, "banned": 4, "material": 4, "tempo": 4, "pull": 3},
+    "gate_holds": true,
+    "total": 23,
+    "verdict": "pass",
+    "notes": [
+      "Strong architectural comedy, but its competing reservations, destinations and newly usable vacancy need more explanation than the selected film.",
+      "The protagonist choice is legible in a pitch; the cancellation mechanics are less legible in pictures. Do not imply an empty bay is simultaneously an inaccessible gap and a finished public floor without establishing that state.",
+      "Do not add these mechanisms to the selected concept: that would increase exposition and continuity costs."
+    ],
+    "distance_audit": {
+      "date": "2026-10-02",
+      "queries": ["music video moving rooms Virtual Insanity", "site.bilibili.com 移动建筑 爱情", "sliding buildings romance film", "site.tvtropes.org moving buildings"],
+      "finding": "Moving structures and moving-room dances are established motifs. The search did not locate this exact vacancy-mediated date, which is limited negative evidence rather than proof of novelty.",
+      "peak_check": "Google Trends could not be retrieved; Baidu Index and Ocean Engine exposed no usable series. No peak, absence of a peak or trend forecast is asserted."
+    },
+    "judging_protocol": {
+      "rubric": "bible/taste.md section 5",
+      "thresholds": {"drop": "Gate fails, any criterion <=1, or total <18", "pass": "Gate holds, every criterion >=3, total >=22", "revise": "All other cases; one revision then fresh scoring"},
+      "calibration": [
+        {"concept": "Arrival, 2016 pitch", "scores": {"core": 5, "form": 5, "banned": 4, "material": 4, "tempo": 4, "pull": 4}, "total": 26, "verdict": "pass"},
+        {"concept": "CONTINUITY", "scores": {"core": 1, "form": 3, "banned": 0, "material": 1, "tempo": 1, "pull": 3}, "total": 9, "gate_holds": false, "verdict": "drop"}
+      ],
+      "judge_median_list": ["Android discovers love", "Dead partner returns as a hologram", "Neon rooftop dance", "Synchronized drone ballet", "Rebel dancer frees uniform citizens", "Algorithm finds a soulmate", "Romance is a simulation", "Two lovers chase through portals", "Costume changes replace a story", "Historical Chinese pageant", "Gravity disappears for a kiss", "Dance powers or saves the city", "Beautiful stranger turns out to be a robot", "Memory erasure repeats a first date", "A digital score separates lovers", "Endless skyline tourism", "Robot sacrifices itself", "Perfect dancers unite a cheering crowd", "World turns colourful when lovers touch", "Closing speech explains love"],
+      "median_limit": "This independent judge supplied a separate median list and read all three writers' exclusions. No additional fresh-model median session was run; concurrent production occupied the available slots.",
+      "search_limits": "English and Chinese open-web queries included YouTube/Bilibili and IMDb/Douban/Letterboxd/Short of the Week/TV Tropes domains. Several returned no useful matching result. This was a bounded web-index search, not an exhaustive native-platform search. No practitioner consultation or verified trend series was available.",
+      "audience_evidence": "Root agent owns research.md. This verdict makes no proven-virality or audience-retention prediction."
+    }
+  },
+  {
+    "concept": "借一步 / Borrow a Step",
+    "input": "work/first-day/concepts/time.md",
+    "selected": true,
+    "public_title": "AI SI - I — 第一天",
+    "core_sentence": "Two people carried past each other on separate moving floors can meet only when one stops matching the other's movements and waits for an answer.",
+    "new_noun": "借拍 / a borrowed beat",
+    "nearest_works": [
+      {"title": "Pas de deux", "year": 1968, "difference": "McLaren multiplies dancers through optical printing. Here edits initially construct a shared duet from separated bodies, then the ending withdraws the edit and proves their physical meeting.", "url": "https://collection.nfb.ca/film/pas_de_deux"},
+      {"title": "Virtual Insanity", "year": 1996, "difference": "Moving architecture already has a major music-video precedent. Here separate arrival times generate a waiting decision between two people rather than a solo spatial illusion.", "url": "https://www.onepointfour.co/2022/02/08/keeping-the-virtual-insanity-party-alive/"},
+      {"title": "Your Name", "year": 2016, "difference": "The familiar scaffold is lovers missing each other; our distance is visible, present-tense machinery with no lost memories, concealed time gap or disaster reversal."}
+    ],
+    "formal_invention": "An apparent duet is assembled by completing one person's gesture in the other's shot; the final partnership is made real by retaining both bodies through the moments where earlier sections cut away.",
+    "banned_touched": [
+      {"id": "MADE-1", "role": "texture", "note": "Fast dance cutting carries a repeated relational pattern; ordinary scenes, docking decisions and persistent geography prevent it becoming the core."},
+      {"id": "CN-2", "role": "texture", "note": "Futuristic coastal engineering belongs to Chinese people with agency, under clear daylight rather than borrowed neon-noir scenery."}
+    ],
+    "median_touched": [{"item": "Futuristic skyline courtship montage", "role": "texture", "note": "The repeated missed arrival and voluntary wait supply consequences beyond attractive surfaces."}],
+    "material": [
+      {
+        "source": "Harvard Natural Sciences Lecture Demonstrations, Pendulum Waves",
+        "url": "https://sciencedemonstrations.fas.harvard.edu/presentations/pendulum-waves",
+        "details": ["Fifteen uncoupled pendulums", "Progressively different lengths", "The longest makes 51 oscillations and the shortest 65 in a minute", "Opposed groups halfway through the cycle", "All return into phase at the one-minute boundary; an overhead view makes the pattern clear"],
+        "qualification": "Verified primary educational apparatus description. These details can appear in the miniature copy, but this is a well-circulated demonstration, not obscure practitioner testimony. Do not award Material 5 or treat metre-scale mechanics as validated at city scale."
+      }
+    ],
+    "tempo": {"acceleration": "First chorus at 58.79 seconds and renewed urgency at 126.90", "hard_stop": "Picture stops at approximately 164 seconds while the recording continues", "stillness": "Lin waits through her gallery's departure from 164 to 179.13", "clock": "Two visible offset arrival cycles and a retracting boarding ribbon; miniature phase apparatus optional"},
+    "complaint": "The decisive passage of a buoyant dance film is a person waiting, and the ending declines a kiss.",
+    "scores": {"core": 4, "form": 5, "banned": 4, "material": 3, "tempo": 5, "pull": 4},
+    "gate_holds": true,
+    "total": 25,
+    "verdict": "pass",
+    "notes": [
+      "Selected for the strongest relationship between the medium, the song's repeated choruses and the characters' change. Spectacle creates distance; the held two-shot resolves it.",
+      "The brief limits production to two travelling galleries and one fixed transfer island. Fifteen full-size galleries, additional projection systems and an outward-voyage subplot are unnecessary.",
+      "Clarify the repeated error as staying aboard when the other gallery passes, not a puzzle about mathematically incorrect dance steps. Lin waits ashore; Yu sees her and joins through a stationary docking connection.",
+      "Show the island early. Preserve eyelines and landmarks. Verify the decisive crossing and real shared-floor dance in the actual selected footage.",
+      "Retain the entire 253.96-second supplied recording. The hard stop is visual only. No narration, extra exposition, inserted audio silence or reordered song sections."
+    ],
+    "selection_type": "Single-concept selection with production clarifications; no borrowed mechanism from space or ritual",
+    "production_rescore": {"scores": {"core": 4, "form": 5, "banned": 4, "material": 3, "tempo": 5, "pull": 4}, "total": 25, "gate_holds": true, "verdict": "pass", "reason": "Rechecked the clarified version from scratch; simpler geography improves execution confidence without earning an unsupported novelty or material increase."},
+    "distance_audit": {
+      "date": "2026-10-02",
+      "queries": ["moving floors dance film", "dancers moving platforms short film", "dance passing platforms film", "site.youtube.com pendulum dance love", "悬浮 平台 错过 舞蹈 短片", "site.imdb.com moving platforms romance", "site.douban.com 移动 舞蹈 短片"],
+      "finding": "The judge added Virtual Insanity as a more pertinent predecessor than Tenet. No exact matching story surfaced in the bounded searches; originality remains a creative judgement, not an exhaustive factual claim.",
+      "peak_check": "No usable trend time series could be retrieved from Google Trends, Baidu Index or Ocean Engine. No virality forecast follows from the absence of search matches."
+    }
+  },
+  {
+    "concept": "第一步 / First Footfall",
+    "input": "work/first-day/concepts/ritual.md",
+    "selected": false,
+    "core_sentence": "When a community trades floating for standing, its finest airborne performer must choose between finishing a perfect solo and beginning an awkward grounded dance with a partner.",
+    "new_noun": "落地礼 / First Footfall",
+    "nearest_works": [
+      {"title": "2001: A Space Odyssey", "year": 1968, "difference": "Rotation establishes a technological world there; here changing weight would transform an intimate ritual."},
+      {"title": "WALL·E", "year": 2008, "difference": "Romantic flight is a reward there; here romance culminates in accepting shared weight."},
+      {"title": "Upside Down & Inside Out", "year": 2016, "difference": "The judge adds a direct music-video precedent for choreography under changing gravity. The mutual cleat-release ritual, rather than weightlessness itself, is this concept's distinct core.", "url": "https://okgo.net/2016/02/11/upside-down-inside-out/"}
+    ],
+    "formal_invention": "Repeated choreography and diminishing camera rolls change airborne virtuosity into the effort of standing together; the opening ankle assistance is reversed in the final voluntary release.",
+    "banned_touched": [
+      {"id": "CN-2", "role": "texture", "note": "Bright, practical habitat hardware replaces the passive neon megacity."},
+      {"id": "MADE-1", "role": "texture", "note": "Ceremonial spectacle is tethered to one partner exchange rather than a changing list of beautiful locations."}
+    ],
+    "median_touched": [{"item": "Gravity disappears for a kiss", "role": "texture", "note": "The gravity-romance association is inverted: the couple accepts weight and ends walking."}],
+    "material": [
+      {
+        "source": "NASA, MultiGravity Crew Seat for Human Exploration, pages 3–4 of the PDF",
+        "url": "https://ntrs.nasa.gov/api/citations/20230014002/downloads/MultiGravity%20Crew%20Seat%20for%20Human%20Exploration2.pdf",
+        "details": ["Skylab's triangular floor grid", "Triangular shoe cleats wedged by rotating the shoe", "Crew complained that locking and releasing took too long", "Station keeping loads the toes and tops of feet", "Fixed handrails and restraints become trip hazards in gravity"],
+        "qualification": "Independently verified in the primary technical report. Folding the rail, mutual ceremonial release and rapid social adaptation to spin gravity are fictional transformations."
+      },
+      {
+        "source": "NASA NIAC, Kilometer-Scale Space Structures from a Single Launch",
+        "url": "https://www.nasa.gov/general/kilometer-scale-space-structures-from-a-single-launch/",
+        "details": ["Large rotating habitat proposal"],
+        "qualification": "Supports an area of exploratory engineering work, not a forecast that this society or its spin-up ceremony will exist."
+      }
+    ],
+    "tempo": {"acceleration": "First aerial chorus", "hard_stop": "Both sit before 179.13 seconds", "stillness": "Mutual cleat release on the floor", "clock": "Shortening airborne travel and a settling calibration braid"},
+    "complaint": "Standing badly becomes more valuable than finishing the beautiful aerial performance.",
+    "scores": {"core": 4, "form": 4, "banned": 4, "material": 4, "tempo": 4, "pull": 4},
+    "gate_holds": true,
+    "total": 24,
+    "verdict": "pass",
+    "notes": [
+      "Best concrete source material and a memorable reciprocal object gesture. A strong separate film.",
+      "Not selected because a short joyful music film would need viewers to learn the gravity transition, former restraint use, social rite and performer's decision simultaneously.",
+      "The central change depends heavily on convincing continuous weight, contact and three-dimensional aerial performance; a still reel can illustrate it but cannot prove it.",
+      "Do not mix its cleat ceremony or orbital setting into Borrow a Step: either would create an additional explanation system."
+    ],
+    "distance_audit": {
+      "date": "2026-10-02",
+      "queries": ["first gravity dance film", "零重力 舞蹈 OK Go", "site.letterboxd.com gravity dance", "site.shortoftheweek.com gravity love", "site.ted.com OK Go How to find a wonderful idea zero gravity"],
+      "finding": "Weightless music-video choreography has clear precedent, confirmed by the band's own publication and creator talk. No identical cleat exchange rite surfaced. The rite is a fictional invention, not an undocumented real practice.",
+      "primary_precedent_source": "https://www.ted.com/talks/ok_go_how_to_find_a_wonderful_idea",
+      "peak_check": "Trend services yielded no usable series. Search coverage cannot establish novelty, market demand or virality."
+    }
+  }
+]
