@@ -8,6 +8,12 @@ v5–v7 Blender and Codex hybrids, v8–v9 Codex rotoscoping over Blender, v10�
 
 ## Which tool for what
 
+**Animation-method update (2026-10-02):** choose code, reusable image assets, image sequences, video models or a
+combination according to the episode's direction and shot needs (see `docs/playbook.md` §2). Pixel sprites,
+limited character animation, cutouts and procedural effects can be final production methods. The earlier survey's
+character-animation restrictions below describe failed experiments, not universal bans. Frame rate alone does
+not determine whether a video model is needed; timing, motion complexity and consistency matter.
+
 | Tool | Use it for | Don't use it for | Notes |
 |---|---|---|---|
 | **Claude** (writing/direction) | Bible, stories, scripts, shot lists, prompt design, edit decisions, QA via stills and frame metrics | Judging motion: Claude cannot watch video, only sampled frames. **King reviews all motion.** | Follow CLAUDE.md: default while King is present or unspecified; max for creative work and checking when explicitly away; default for routine production plumbing |
@@ -27,7 +33,8 @@ v5–v7 Blender and Codex hybrids, v8–v9 Codex rotoscoping over Blender, v10�
    Shots sharing a setting use shared location references in their image manifests, alongside character and prop
    references. Establish compatible room layout, background landmarks and lighting across camera angles.
 3. **Keyframes** (Luma; Codex for some stylised looks) → **finish object graphics in the start frame** (JS/compositing
-   as needed; verify text, clock readings and display states) → **motion** (video model, or Blender for 3D set pieces).
+   as needed; verify text, clock readings and display states) → **motion** (code, reusable artwork/image sequences,
+   Blender or a video model, according to the episode's visual direction and shot needs).
    For image-to-video, let the model animate supplied graphics with their objects. Use the approved scene frame to preserve faces, setting and
    composition; do not replace it with text-only generation. Add screen-space UI/graphics afterward.
    Before motion, compare the scene's starting frames together in edit order against its location reference; correct

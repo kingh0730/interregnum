@@ -125,6 +125,28 @@ felt like one tempo. Movement inside shots, narration cadence, sound density and
     UI fonts are banned.
   - **Faces:** calm and underplayed in the stills too; emotion comes from staging and cutting (Kuleshov).
 
+### Choose the animation method for the episode (2026-10-02)
+
+Code, image generation and video models are alternative or complementary production methods. Choose by the
+episode's visual direction and each shot's needs; no episode is required to use all of them. Limited animation
+can be the finished visual language, not merely a temporary story reel or a compromise before video generation.
+
+- **Code and reusable artwork:** consider pixel-art walk cycles, sprite poses, cutout rigs, replacement drawings,
+  layered foreground/background movement, particles, procedural effects, and controlled Blender animation.
+- **Image sequences:** a few consistent poses or photographs can convey an action with deliberate holds and cuts.
+  Prefer reusing approved assets where appropriate; independently generated frames can drift in identity,
+  proportions, clothing and texture, even when there are few frames.
+- **Video models:** remain useful for complex naturalistic movement and performance when explicitly constructing
+  the assets and motion would be impractical. H3 Max remains the default when choosing video generation (§7).
+- **Frame rate alone is not the boundary:** code can render smooth high-frame-rate motion; low-frame-rate sequences
+  still need good posing, timing, weight and continuity. Choose the method by what must move and how it should look.
+- Record the method in the episode's visual bible and shot plans. Hybrid sequences should preserve the intended
+  medium and continuity. Review the actual motion; a method's suitability does not establish a finished shot's quality.
+
+The earlier local character-animation failures in `docs/history.md` remain evidence about those experiments,
+not a blanket prohibition on authored character animation. This is an available direction for suitable episodes,
+not a replacement default for every production. Existing production-scope and budget approvals still apply.
+
 ## 2b. Image technique: elegant, not "AI"
 **Use Luma Uni-1 max (`luma/agent/uni-1/v1/max`, edit at `/max/edit`) as the default for images.**
 The supporting evidence from the 2026-09-30 tests is in `docs/history.md`. Credible new evidence of a better fit
@@ -330,7 +352,8 @@ the stock, polished result, the audio version of the AI look. So describe the re
 
 ## 7. Motion (default MiniMax H3 Max; fal; needs King's go)
 **Models** (tested 2026-10-01; evidence in `docs/history.md`):
-- **Default: MiniMax H3 Max for everything** (King's call). One family keeps motion, skin and light consistent from
+- **Default for video-generated motion and lip-sync: MiniMax H3 Max** (King's call). Choose whether to use video
+  generation under §2's animation-method guidance. One family keeps motion, skin and light consistent from
   shot to shot, and mixing models reads as drift.
   - **Motion:** `minimax/h3-max/image-to-video`, about $0.025/s. Start frame, optional end frame, 5–15 s, 480P, 768P
     or 1080P; `prompt_expansion_mode: "disabled"` keeps prompts literal.
