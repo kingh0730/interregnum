@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "episode": "first-day",
+  "status": "pass",
+  "audited_at_utc": "2026-10-01T22:41:31.070449+00:00",
+  "scope": "Independent technical inspection of completed clean and Chinese-subtitled held-image exports; no API calls.",
+  "errors": [],
+  "exports": {
+    "clean": {
+      "path": "renders/first-day/first_day_story_reel_clean.mp4",
+      "sha256": "40a5328a534949db12a0b09369aec3e30208ee9b41f97f23938365423f46c7d7",
+      "bytes": 88682461,
+      "video": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "nb_frames": "6096",
+        "nb_read_frames": "6096",
+        "start_time": "0.000000",
+        "duration": "254.000000"
+      },
+      "audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "sample_rate": "44100",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "time_base": "1/44100",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 11199636,
+        "duration": "253.960000",
+        "extradata_hash": "SHA256:03823224971f2d9dbb76d83a08f766351447f08b3739cd2fc36182f306ae3e02"
+      },
+      "decoded_audio_measurement": {
+        "integrated_lufs": -16.0,
+        "loudness_range_lu": 6.1,
+        "true_peak_dbtp": -7.2,
+        "method": "FFmpeg ebur128=peak=true on decoded delivery AAC, trimmed to the declared 11,199,636-sample program interval."
+      }
+    },
+    "zh": {
+      "path": "renders/first-day/first_day_story_reel_zh.mp4",
+      "sha256": "285506062db5358c3601a3618a9c2bd77ff537dcade06087f90f4cfe618f8248",
+      "bytes": 89065920,
+      "video": {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "nb_frames": "6096",
+        "nb_read_frames": "6096",
+        "start_time": "0.000000",
+        "duration": "254.000000"
+      },
+      "audio": {
+        "codec_name": "aac",
+        "profile": "LC",
+        "sample_rate": "44100",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "time_base": "1/44100",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 11199636,
+        "duration": "253.960000",
+        "extradata_hash": "SHA256:03823224971f2d9dbb76d83a08f766351447f08b3739cd2fc36182f306ae3e02"
+      },
+      "decoded_audio_measurement": {
+        "integrated_lufs": -16.0,
+        "loudness_range_lu": 6.1,
+        "true_peak_dbtp": -7.2,
+        "method": "FFmpeg ebur128=peak=true on decoded delivery AAC, trimmed to the declared 11,199,636-sample program interval."
+      }
+    }
+  },
+  "shared_audio": {
+    "aac_packet_count": 10939,
+    "packet_metadata_and_per_packet_sha256_equal": true,
+    "concatenated_aac_payload_sha256": "45e838c6d54c5ae62ddca69d4cb79cfa4160e96363612c28d31914abfe36ddf8",
+    "concatenated_aac_payload_sha256_equal": true,
+    "decoded_float32_pcm_sha256": "fc6ec20f39edc81f0f5832ef84e37409eaa54d08d829571b544bb7281b0da204",
+    "decoded_pcm_equal": true,
+    "first_packet": {
+      "pts": -1024,
+      "dts": -1024,
+      "duration": 1024,
+      "size": "607",
+      "data_hash": "SHA256:a982b82e62cd156f64a5820d6252419b766c52fb656606fe0bd905770bf7b363",
+      "side_data_list": [
+        {
+          "side_data_type": "Skip Samples",
+          "skip_samples": 1024,
+          "discard_padding": 0,
+          "skip_reason": 0,
+          "discard_reason": 0
+        }
+      ]
+    },
+    "last_packet": {
+      "pts": 11199488,
+      "dts": 11199488,
+      "duration": 148,
+      "size": "6",
+      "data_hash": "SHA256:8a487dc722403a9dffef435b459f5afa999401a7623878ad7ab41eeb8ea0609b"
+    }
+  },
+  "alignment": {
+    "reference": "work/first-day/audio/master.wav",
+    "reference_samples_per_channel": 11199636,
+    "reference_duration_seconds": 253.96,
+    "declared_delivery_program_samples_per_channel": 11199636,
+    "declared_delivery_program_duration_seconds": 253.96,
+    "raw_ffmpeg_decoded_aac_samples_per_channel": 11200512,
+    "raw_decoder_trailing_samples_beyond_program": 876,
+    "raw_decoder_trailing_seconds_beyond_program": 0.019863945578231294,
+    "window_checks": [
+      {
+        "reference_start_seconds": 1,
+        "window_seconds": 6,
+        "search_range_samples": [
+          -4410,
+          4410
+        ],
+        "best_lag_samples": 0,
+        "best_lag_seconds": 0.0,
+        "normalized_correlation": 0.999928285
+      },
+      {
+        "reference_start_seconds": 60,
+        "window_seconds": 6,
+        "search_range_samples": [
+          -4410,
+          4410
+        ],
+        "best_lag_samples": 0,
+        "best_lag_seconds": 0.0,
+        "normalized_correlation": 0.999336487
+      },
+      {
+        "reference_start_seconds": 120,
+        "window_seconds": 6,
+        "search_range_samples": [
+          -4410,
+          4410
+        ],
+        "best_lag_samples": 0,
+        "best_lag_seconds": 0.0,
+        "normalized_correlation": 0.99951089
+      },
+      {
+        "reference_start_seconds": 180,
+        "window_seconds": 6,
+        "search_range_samples": [
+          -4410,
+          4410
+        ],
+        "best_lag_samples": 0,
+        "best_lag_seconds": 0.0,
+        "normalized_correlation": 0.999440345
+      },
+      {
+        "reference_start_seconds": 246,
+        "window_seconds": 6,
+        "search_range_samples": [
+          -4410,
+          4410
+        ],
+        "best_lag_samples": 0,
+        "best_lag_seconds": 0.0,
+        "normalized_correlation": 0.999946611
+      }
+    ],
+    "boundary_checks": [
+      {
+        "region": "first_second",
+        "normalized_correlation_at_zero_lag": 0.999873647,
+        "rms_difference": 0.00034037970301800647
+      },
+      {
+        "region": "last_second",
+        "normalized_correlation_at_zero_lag": null,
+        "rms_difference": 0.0,
+        "exact_sample_equality": true,
+        "reference_peak_linear": 0.0,
+        "delivery_peak_linear": 0.0,
+        "interpretation": "Both last seconds are exactly silent. Correlation is mathematically undefined; exact sample equality verifies this preserved silent tail."
+      }
+    ],
+    "interpretation": "No sample shift detected at five tested windows, including near the beginning and end. Container audio starts at zero and retains the full declared source duration. AAC priming is signaled by initial negative-PTS packet skip data; raw decoded tail padding is reported separately from the declared program duration.",
+    "raw_decoder_trailing_padding_peak_linear": 0.0,
+    "raw_decoder_trailing_padding_is_exactly_silent": true
+  },
+  "sources": {
+    "audio": {
+      "path": "episodes/first-day/first-day.mp3",
+      "sha256": "7c9bbe50ab2f67a6fa1d3051bfa32bf1299533699231ae0bad2f418370ff7cb8",
+      "matches_original": true
+    },
+    "lyrics": {
+      "path": "episodes/first-day/first-day.lrc",
+      "sha256": "d92d9a1ce92207ace32ab297b3153f99ee8b49181bf5b3f35c4a5cb1f8389e99",
+      "matches_original": true
+    },
+    "master": {
+      "path": "work/first-day/audio/master.wav",
+      "sha256": "242752ff5479f48ba4ee1cda3e42fd5dc2345b163d43f16529d87ca6b812e4aa",
+      "matches_rendered_input": true
+    },
+    "subtitle_srt": {
+      "path": "renders/first-day/first_day_story_reel.zh.srt",
+      "sha256": "b90d17cd5ae46ccefdccfc2cd10c6a357c65b2e590ac1f8726212fcec9aec67e",
+      "byte_identical_to_approved_srt": false,
+      "all_77_cue_texts_and_times_match": true,
+      "formatting_difference": "Export adds one final newline; cue text and timestamps are unchanged."
+    },
+    "rendered_image_input_hashes_match_current": true,
+    "render_report": {
+      "path": "renders/first-day/first_day_story_reel.render_report.json",
+      "sha256": "0240c7a460dd5750b89fe9e2bc0b9f57f3523b737f9747174b8895813c8fdca4"
+    }
+  },
+  "methods": {
+    "frame_counts": "ffprobe -count_frames; decoded count, stream dimensions/rates/timing",
+    "audio_packet_identity": "ffprobe -show_packets -show_data_hash sha256; ordered metadata/side-data/data-hash comparison, plus ffmpeg stream-copy hash muxer",
+    "audio_signal": "ffmpeg native-rate stereo float32 decode; windowed normalized cross-correlation against unchanged PCM master within +/-4410 samples",
+    "loudness": "FFmpeg ebur128 with true-peak measurement on complete declared audio program"
+  },
+  "limitations": [
+    "No human listening, sung-word alignment or subjective music/pacing approval is claimed.",
+    "AAC delivery is lossy; its decoded samples need not equal the master. Packet and decoded-PCM identity claims compare the two delivery versions.",
+    "Windowed signal alignment detects technical offsets at sampled intervals; it does not establish lyric or dance synchronization.",
+    "Video duration is 254.000 seconds (6096 frames at24fps), 40ms longer than the253.960-second audio program because of frame rounding.",
+    "Raw AAC decoding can expose trailing codec padding beyond the container-declared program; it is separately quantified above.",
+    "Visual subtitle placement and frame quality are covered by the director export-frame review, not this technical audio/frame-count audit."
+  ]
+}

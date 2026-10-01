@@ -1,0 +1,40 @@
+{
+  "timeline": "episodes/first-day/build/timeline.json",
+  "audio": "work/first-day/audio/master.wav",
+  "lyrics": "episodes/first-day/build/lyrics.json",
+  "titles": [
+    {
+      "start_frame": 136,
+      "end_frame": 258,
+      "text": "AI SI - I\n第一天",
+      "position": "top",
+      "size": 58
+    },
+    {
+      "start_frame": 5904,
+      "end_frame": 6000,
+      "text": "第一天 · 孙燕姿\n词：阿信",
+      "position": "top",
+      "size": 36
+    },
+    {
+      "start_frame": 6000,
+      "end_frame": 6096,
+      "text": "曲：孙燕姿 / 五月天 / F.I.R.\n编曲：五月天 / F.I.R.",
+      "position": "top",
+      "size": 36
+    }
+  ],
+  "out_dir": "renders/first-day",
+  "work_dir": "work/first-day/reel-build",
+  "name": "first_day_story_reel",
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "font": {
+    "path": "/System/Library/Fonts/STHeiti Medium.ttc",
+    "index": 1,
+    "size": 38,
+    "bottom_margin": 72
+  }
+}

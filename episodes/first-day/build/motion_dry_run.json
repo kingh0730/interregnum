@@ -1,0 +1,17 @@
+{
+  "observed_at_utc": "2026-10-01 22:37:26 UTC",
+  "local_date": "2026-10-02",
+  "command": "uv run tools/video/h3_batch.py episodes/first-day/build/motion_plan.json --root . --dry-run",
+  "exit_code": 0,
+  "selected_jobs": 53,
+  "endpoint": "minimax/h3-max/image-to-video",
+  "primary_seconds": 334,
+  "observed_estimated_usd_per_second": 0.03,
+  "runner_estimated_primary_usd": 10.02,
+  "planned_take_seconds": 440,
+  "calculated_planned_take_usd": 13.2,
+  "evidence": "Runner printed 5-second jobs at $0.150, 10-second jobs at $0.300, and total estimated new spend $10.02. Its pricing GET replaced the $0.025 historical fallback.",
+  "generation_post_count": 0,
+  "limits": "Dry run reads pricing and local logs but does not submit motion or validate complete provider payloads. Prices must be refreshed before a future authorized submission. Extra planned takes are arithmetic here; this dry run lists one primary job per manifest entry.",
+  "local_lock_archive": "work/first-day/motion-dry-run-20261002/h3_log"
+}
