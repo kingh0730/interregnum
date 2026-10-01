@@ -24,3 +24,13 @@ also sweeps up their unstaged edits. Either one would publish someone else's hal
   episode's in-flight Luma requests. Record the PIDs of the jobs I start and kill those.
 
 Related: [[watch-delegated-jobs]].
+
+## Deferred production isolation (2026-10-01)
+
+Concurrent agents edited shared generation runners during a production. No resulting damage was confirmed,
+but the exact runner version was not pinned, leaving a reproducibility gap.
+
+King wants this issue remembered, with no implementation today. Candidate approach for a future production:
+a dedicated Git worktree at a recorded commit, deliberate imports of reviewed fixes, and separate media,
+manifests, outputs and request logs. Nested private repos need separate handling; a parent worktree does not
+copy them. This is a deferred idea, not authorization to create worktrees or reorganize existing productions.
