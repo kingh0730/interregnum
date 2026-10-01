@@ -22,6 +22,6 @@ Each episode is one "morbid symptom" of the interregnum, with its own visual lan
 
 - [x] Step 0: repo set up; toolchain documented (`docs/pipeline.md`); strategy agreed (`docs/strategy.md`)
 - [ ] King answers `bible/00-questionnaire.md`
-- [ ] Series bible and episode slate (at max effort)
+- [ ] Series bible and episode slate (default effort while King is present; max when explicitly away, per CLAUDE.md)
 - [ ] v1 story reels (no paid models): **pilot *CONTINUITY* built**, awaiting King's review (`episodes/pilot/review.md`)
 - [ ] v2 polish: motion (MiniMax H3 Max; Seedance refuses photoreal faces) + the final finishing pass (playbook §7–7b)

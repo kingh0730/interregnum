@@ -38,6 +38,8 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
 ## 1. Script and shot list (a headless writer session; effort per CLAUDE.md)
 - **How:** a separate headless session in auto mode, with a deny-list for paid and publishing actions:
   `claude -p --permission-mode auto --disallowedTools "Bash(git push:*)" "Bash(codex:*)" "Bash(*imagegen*)" "Bash(*i2v.py*)" "Bash(*run_jobs.py*)" "Bash(*eleven.py*)" "Bash(*fal_run.py*)" < brief.md`.
+  This command uses default effort. When King explicitly says he is away, add `--effort max` for writing, design,
+  and checking sessions, following CLAUDE.md; omit the override while he is present or unspecified.
   Auto mode lets the session run `uv run` and `python3` to validate its own output and search the web. The earlier
   acceptEdits-plus-allowlist launch silently refused every interpreter: sessions couldn't validate JSON or check sources.
   Test auto mode on one short headless session before relying on it.
@@ -60,8 +62,9 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
 - **Split big documents by chapter.** A full bilingual script for about 40 shots overran max's output limit 4 times
   in one session. Write it as `script/partN.md` sessions chained in order, each reading the earlier parts, then join
   them.
-- **Draft, then critique.** Write each deliverable in its own session (default effort). Then run a short
-  critic session (max effort only when King is away; see CLAUDE.md) on the finished file: attack the hook, find the generic beats, test the ending, and rewrite the weak
+- **Draft, then critique.** Write each deliverable in its own session. Use default effort for both drafting and
+  critique while King is present or his presence is unspecified; use max for both when he explicitly says he is away
+  (see CLAUDE.md). Then run a short critic session on the finished file: attack the hook, find the generic beats, test the ending, and rewrite the weak
   parts. The critic sees the whole piece, which a single long max draft never does, and it avoids the long silent
   generations that drop connections.
 - **Write incrementally.** Tell every long writing session to write its deliverables one piece per response

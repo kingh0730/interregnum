@@ -6,9 +6,9 @@ with every lesson from the pilot; the `make-episode` skill follows it), then `do
 Seedance 2.5 and Suno; the motion model is now MiniMax H3 Max, see the playbook §7), `docs/pipeline.md` (which tool for what) and `docs/history.md` (what failed and why).
 
 ## Working agreements
-- Reasoning effort: while King is at the keyboard (assume so unless he says he is away), everything runs at the default, with no `--effort` flag. When he is away, checking work (critics, reviews, hunting bugs, flaws and mistakes, small pure improvements) runs at `--effort max`, and everything else stays at the default until clear evidence says higher effort adds a lot.
+- Reasoning effort: while King is at the keyboard (assume so unless he says he is away), everything runs at the default, with no `--effort` flag. When he explicitly says he is away (e.g. going to sleep or going out), creative work (concepts, pitches, stories, scripts, design, art direction, and other creative development) and checking work (critics, reviews, hunting bugs, flaws and mistakes, small pure improvements) run at max reasoning effort; routine execution and production plumbing stay at the default. Apply the equivalent setting for the model/tool in use. Return to default for everything when he indicates he is back; do not infer absence from silence.
 - Claude cannot watch video. Judge stills and frame metrics, and say plainly when motion needs King's eyes. Don't claim a clip "works" from metrics alone: in v3 the metrics improved while the motion got worse.
-- Codex runs through `tools/imagegen/gen.sh`: medium effort, stdin closed, and exit code 2 means a safety-filter false positive, so reword and retry.
+- The Codex image-rendering helper `tools/imagegen/gen.sh` retains its existing medium preset for executing prepared image prompts; creative design and prompt development follow the presence rule above. Keep stdin closed, and exit code 2 means a safety-filter false positive, so reword and retry.
 - Codex and API usage costs King's quota or money: estimate before large batches, and test small first.
 - Disk is nearly full. Keep intermediates in `work/`, delete them when a shot is final, and never commit media.
 - API keys only come from environment variables.
