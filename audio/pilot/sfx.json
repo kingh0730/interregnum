@@ -970,7 +970,7 @@
       "prompt_influence": 0.7,
       "treatment": "Keep the wood (200 Hz-2 kHz) so it reads on small speakers. It replaces v1's sub hit: the title is printed, by hand.",
       "placements": [
-        {"at": 238.0, "shot": "45", "room": "AIR", "lvl": -16, "lead": 0.0, "trail": 0.0, "note": "INTERREGNUM, with M4's last chord: the film ends in relief."}
+        {"at": 238.0, "shot": "45", "room": "AIR", "lvl": -16, "lead": 0.0, "trail": 0.0, "note": "AI SI - I, with M4's last chord: the film ends in relief."}
       ]
     }
   ]

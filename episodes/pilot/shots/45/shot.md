@@ -5,7 +5,7 @@
 
 **Action:** A dark card, printed. A band of dawn-rose light rakes across it from the left, revealing the epigraph as
 it passes, like sunrise moving along a wall: *The old is dying and the new cannot be born.* Then the series title,
-**INTERREGNUM**, in the same rose light, which replaces v1's rose rule as the one rose element outside 44. The chime
+**AI SI - I**, in the same rose light, which replaces v1's rose rule as the one rose element outside 44. The chime
 returns in the new key, but only two notes; the third, the resolution, never comes. The film ends in relief: the
 titles are letterpress, relief printing with type.
 
@@ -31,7 +31,7 @@ retired.
 - **Timeline (the v1 timings):** 0.3–2.8 s the band's leading edge crosses the epigraph, revealing about one word every
   0.25 s; 2.8 s the attribution is in the light; 4.3–4.8 s the band passes off the right edge and both sink back into
   the dark.
-- **5.0 s: INTERREGNUM** in Iowan Old Style Roman capitals, 110 px, tracking 0.3 em, centred at y 520, lit at once on
+- **5.0 s: AI SI - I** in Iowan Old Style Roman capitals, 110 px, tracking 0.3 em, centred at y 520, lit at once on
   the sub hit by a wide band of rose that covers it. **5.1–5.8 s:** the rose light settles from 70 % to full strength.
 - **5.6 s:** EPISODE ONE · CONTINUITY in Iowan Old Style small capitals, 28 px, tracking 0.25 em, cream at 60 %, y 640,
   fading in over 0.4 s.

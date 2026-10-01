@@ -1,7 +1,8 @@
 # INTERREGNUM: working notes for Claude
 
-An anthology of short films (see `README.md`). King is the showrunner; Claude writes, directs and runs the
-production toolchain. Start with `README.md` (status) and `docs/playbook.md` (how an episode is made, end to end,
+An anthology of short films, publicly titled **AI SI - I** (see `README.md`). INTERREGNUM / interregnum
+remains an internal working name and the repository name. Use **AI SI - I** for all audience-facing series branding.
+King is the showrunner; Claude writes, directs and runs the production toolchain. Start with `README.md` (status) and `docs/playbook.md` (how an episode is made, end to end,
 with every lesson from the pilot; the `make-episode` skill follows it), then `docs/strategy.md` (v1 story reel → v2 polish with
 Seedance 2.5 and Suno; the motion model is now MiniMax H3 Max, see the playbook §7), `docs/pipeline.md` (which tool for what) and `docs/history.md` (what failed and why).
 

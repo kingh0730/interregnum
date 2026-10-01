@@ -1,6 +1,6 @@
 # CONTINUITY — screenplay (v1 story reel)
 
-INTERREGNUM, Episode One. Main cut 4:02, alt tail 0:10. Timecodes are `m:ss` from the start of the reel; `[NN]` is
+AI SI - I, Episode One. Main cut 4:02, alt tail 0:10. Timecodes are `m:ss` from the start of the reel; `[NN]` is
 the shot number. Every cut lands on a whole second (the clock ticks at 60 BPM). Speakers and scratch voices:
 FATHER = `Daniel`, IDA = `Samantha`, NANA = `Moira`, PA = `Karen` (details in `audio/pilot/cues.md`).
 
@@ -328,7 +328,7 @@ of a whole city talking.
 
 They fade. The chime returns in a new key, two notes, and the third never comes.
 
-> TITLE: **INTERREGNUM**
+> TITLE: **AI SI - I**
 > EPISODE ONE · CONTINUITY
 
 `4:02` END.

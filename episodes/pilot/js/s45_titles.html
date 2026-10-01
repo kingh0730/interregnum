@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- J13 `titles` — shot 45, 9.0 s on black: the epigraph, then INTERREGNUM over a line of dawn rose. -->
+<!-- J13 `titles` — shot 45, 9.0 s on black: the epigraph, then AI SI - I over a line of dawn rose. -->
 <html><head><meta charset="utf-8">
 <style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}</style></head>
 <body><canvas id="c" width="1920" height="1080"></canvas>
@@ -14,7 +14,7 @@ const F_EPI = "italic 54px Baskerville", F_ATT = "28px Baskerville";
 const F_TITLE = "500 110px Futura", F_EP = "bold 28px 'DIN Alternate'";
 const EPI = 'The old is dying and the new cannot be born.';
 
-// y values are baselines (the rose line sits "70 px below the baseline" of INTERREGNUM)
+// y values are baselines (the rose line sits "70 px below the baseline" of AI SI - I)
 function tracked(str, font, track, cx, y, color, alpha){
   ctx.font = font; ctx.letterSpacing = track + 'px'; ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
   const w = ctx.measureText(str).width - track;          // drop the trailing tracking so it centres truly
@@ -46,7 +46,7 @@ window.renderFrame = (t) => {
 
   // --- title card ---
   if (t >= 5.0){
-    tracked('INTERREGNUM', F_TITLE, 110*0.6, 960, 520, CREAM, outA);
+    tracked('AI SI - I', F_TITLE, 110*0.6, 960, 520, CREAM, outA);
     const p = easeInOutCubic((t - 5.1)/0.7);
     if (p > 0){ const hw = 200*p;
       ctx.globalAlpha = outA; ctx.fillStyle = ROSE; ctx.shadowBlur = 6; ctx.shadowColor = rgba(ROSE, 0.5);
@@ -55,5 +55,5 @@ window.renderFrame = (t) => {
     if (ea > 0) tracked('EPISODE ONE · CONTINUITY', F_EP, 28*0.4, 960, 640, CREAM, ea);
   }
 };
-window.ready = Promise.all([F_EPI, F_ATT, F_TITLE, F_EP].map(f => document.fonts.load(f, 'The old INTERREGNUM — ·')));
+window.ready = Promise.all([F_EPI, F_ATT, F_TITLE, F_EP].map(f => document.fonts.load(f, 'The old AI SI - I — ·')));
 </script></body></html>

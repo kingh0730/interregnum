@@ -10,7 +10,7 @@
   Type: Iowan Old Style (installed; the spec's old-style face), treated as metal type.
     0.3–2.8 the band's leading edge crosses the epigraph (≈ a word every 0.25 s); 2.8 the attribution is in the light;
     4.3–4.8 the band passes off the right edge and both sink into the dark.
-    5.0 INTERREGNUM, lit at once by a wide band; 5.1–5.8 the rose light settles 70 % → 100 %.
+    5.0 AI SI - I, lit at once by a wide band; 5.1–5.8 the rose light settles 70 % → 100 %.
     5.6 EPISODE ONE · CONTINUITY fades in over 0.4 s (cream at 60 %). 8.4–9.0 the light goes out; fade to black.
   Render: node tools/web/render.mjs episodes/pilot/js_v3/j13_card.html work/pilot/js_v3/j13_card.mp4 9 24
 -->
@@ -73,7 +73,7 @@ READY = (async () => {
     { text: 'The old is dying and the new cannot be born.', font: 'italic 54px "Iowan Old Style"', y: 500 },
     { text: '— Antonio Gramsci', font: '28px "Iowan Old Style"', caps: 'small-caps', y: 580 },
   ], 3, [1130, 486, 190]);
-  TITLE = inkLayer([{ text: 'INTERREGNUM', font: '110px "Iowan Old Style"', track: '33px', y: 520 }], 5, null);
+  TITLE = inkLayer([{ text: 'AI SI - I', font: '110px "Iowan Old Style"', track: '33px', y: 520 }], 5, null);
   SUB = inkLayer([{ text: 'EPISODE ONE · CONTINUITY', font: '28px "Iowan Old Style"', caps: 'small-caps', track: '7px', y: 640 }], 7, null);
   // the irregular cut edge of the light, per row (static: it is the shape of the window the light comes through)
   EDGE = new Float32Array(H); for (let y = 0; y < H; y++) EDGE[y] = K.fbm1(y / 38, 3) * 7 + K.noise1(y / 6, 9) * 1.5;

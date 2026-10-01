@@ -1,7 +1,7 @@
 [project]
 name = "interregnum"
 version = "0.0.0"
-description = "Production tools for the INTERREGNUM anthology"
+description = "Production tools for the AI SI - I anthology"
 requires-python = ">=3.12"
 dependencies = [
     "numpy",

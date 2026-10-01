@@ -76,7 +76,7 @@ functionary's conscience.
 | Q6 China narrative / red lines | Deliberately *not* China: there are no Chinese signifiers | If a red line forbids "a dead leader kept alive", move the premise into a company: a founder whose model keeps giving the keynote for the share price. The shots and structure survive intact. |
 | Q7 leaders: satire / myth / tragedy; blended? | A blended mythic figure treated as tragedy (he is kindly; the machinery is the target) | For *House of Cards* bite, add the Committee in the room. For one figure per real person, the pilot is the wrong vehicle. |
 | Q9 which love | Grandparent and grandchild bridged by a phrase | Nana can become a mother or father without any other change. |
-| Q12 dislikes | One short final address, no speeches | If King dislikes twists, drop shot 46. If he dislikes quotes on screen, cut the epigraph and keep only INTERREGNUM. |
+| Q12 dislikes | One short final address, no speeches | If King dislikes twists, drop shot 46. If he dislikes quotes on screen, cut the epigraph and keep only AI SI - I. |
 | Q15 language | English, with burned-in subtitles for the review cut | For Mandarin, the scratch voices become Tingting/Meijia/Sinji. Seedance speaks Chinese, and the text screens need a translation pass. |
 | Q16 look | RELIEF, the colour woodcut (chosen in v3; `episodes/pilot/bible/art_direction.md`): flat inks hide Codex drift, hold in Seedance and make screens, windows and phones trivial to mask | A photoreal or 3D pilot means more drift risk and a new lookdev pass. |
 | Q18 audience / platform | A public YouTube-style release | For **Bilibili**, a dead-leader premise is sensitive however fictional, so use the company variant above. |
@@ -152,7 +152,7 @@ to eat."* **Reveal 4:** Nana knew. *"Come home. The soup's still warm."* Ida ope
 night; steam rises, and we hear her laugh. The hall wide again: the desk is empty and the red phone rings for no one.
 The city at first light: starting from Nana's window, the blue windows turn to amber lamplight one by one, to the
 murmur of a city talking to itself. The sky turns a color the film has not used: rose. *The old is dying and the new
-cannot be born.* **INTERREGNUM.**
+cannot be born.* **AI SI - I.**
 
 **Alt ending (shot 46, a separate tail):** NIGHT 213. The chime, in the old key. The Father: *"Good evening, my
 children. … I am well."* Black.
@@ -396,5 +396,5 @@ plate + JS insert + comp; **JS** = JS only; **BC** = broadcast, 4:3. Images in b
 | 42 | 3:30 | Come home | 7 | KF | locked; lead room at last | "Come home. The soup's still warm." She opens the thermos; steam rises; the laugh is heard | k25 | 7 s silent |
 | 43 | 3:37 | Empty hall | 6 | KF (edit) + Wall | back up the nave on rails | The empty desk; standby over his burned-in ghost; the red phone rings for no one | k26 | 6 s silent |
 | 44 | 3:43 | The warm windows | 10 | KF (edit) + comp wave | a long, breathing pull-back | From Nana's window the city turns to lamplight; the sky prints rose; walla | k27 | optional 10 s silent |
-| 45 | 3:53 | Epigraph / title | 9 | JS | — | A letterpress card in raking rose light: the epigraph, INTERREGNUM | — | — |
+| 45 | 3:53 | Epigraph / title | 9 | JS | — | A letterpress card in raking rose light: the epigraph, AI SI - I | — | — |
 | 46 | alt | Night 213 (alt tail) | 10 | PL crop + JS + films, BC | locked | The drum rolls to 213; the Lighting in the old key; "Good evening, my children. … I am well." | (p08, p01, k01) | reuses 01 and the opening take |

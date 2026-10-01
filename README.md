@@ -1,10 +1,14 @@
-# INTERREGNUM
+# AI SI - I
 
 > *"The old is dying and the new cannot be born; in this interregnum a great variety of morbid symptoms appear."* — Antonio Gramsci
 
 An anthology of short films in the spirit of *Love, Death & Robots*: the story of a generation living at the end of an era — confused, excited, exhausted, cynical, hopeful. AI and consciousness, feeds, plague, war, strongmen and prophets of technology, ideology, faith, love and family — told through fictional worlds whose places, times, names, faces and even genders are changed.
 
 Each episode is one "morbid symptom" of the interregnum, with its own visual language, and every one is built to play like a blockbuster.
+
+The public-facing series title is **AI SI - I**, with that exact capitalization, spacing and hyphen.
+Use it on title cards, credits, release metadata and promotional material. **interregnum** remains the
+repository name and an internal working name.
 
 ## Layout
 
