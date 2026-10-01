@@ -21,3 +21,8 @@ When a subagent or background job runs long, check it proactively for stalls. Lo
   show (caught 2026-09-30).
 - When a stage completes, stop its monitors at once (TaskStop). A leftover watcher keeps running and raises false
   "no activity" alarms; King found one still running after a film finished (2026-09-30).
+- **Never hand-install fal results by grabbing "the first image URL" in a fal_run log** (2026-10-01): the payload's
+  input URL comes first, so k05, k12 and mum80_base got a reference image's URL, and a motion producer animated the
+  wrong image. Take the URL from the log's `response` field only (as luma_batch does), or re-run through the tool.
+  Also, running luma_batch without `--only` regenerates any entry it thinks is missing (it silently remade
+  k02_signed).

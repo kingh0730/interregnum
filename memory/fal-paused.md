@@ -18,6 +18,8 @@ Since 2026-09-29, fal.ai calls are paused ("let's not call fal anymore for now, 
   MiniMax lip-sync, Seedance 2.5): "sure let's try". The full Seedance or video run still needs his go.
 - **Test result:** Seedance 2.5 refuses photoreal human stills (a real-likeness filter). Default video model (King,
   2026-10-01): MiniMax H3 Max for motion and its lip-sync for all speech; Luma Ray 3.2 per shot only (playbook §7). A full video run still needs King's go.
+- **2026-10-01:** King approved the v2c motion pass (H3 Max) and final finishing pass: "let's get our final
+  production then. let's go!" Scope: v2c only; cap about $20.
 - **Exception (2026-09-29):** King asked to use fal for ElevenLabs audio: TTS, sound effects, music and the voice
   changer. That work is allowed. Actual audio spend so far is about $4 (the estimate was about $15).
 - Image work is allowed: Luma (the default model, run on fal at about 0.3¢ an image) and Codex. Estimate it first, per CLAUDE.md.
