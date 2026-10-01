@@ -24,16 +24,18 @@ v5–v7 Blender and Codex hybrids, v8–v9 Codex rotoscoping over Blender, v10�
 1. **Script → shot list** (`episodes/<ep>/shotlist.md`): each shot names its tool, duration, camera and acting.
    Identify story-critical actions, required repetitions and their relation to dialogue or other events.
 2. **Look development** (`assets/`): character sheets and locations first; every later image references them.
-3. **Keyframes** (Luma; Codex for some stylised looks) → **finish object lettering in the start frame** (JS/compositing
-   as needed; verify exact text) → **motion** (video model, or Blender for 3D set pieces). For image-to-video, let the
-   model animate supplied lettering with its surface. Use the approved scene frame to preserve faces, setting and
+3. **Keyframes** (Luma; Codex for some stylised looks) → **finish object graphics in the start frame** (JS/compositing
+   as needed; verify text, clock readings and display states) → **motion** (video model, or Blender for 3D set pieces).
+   For image-to-video, let the model animate supplied graphics with their objects. Use the approved scene frame to preserve faces, setting and
    composition; do not replace it with text-only generation. Add screen-space UI/graphics afterward.
 4. **Check takes → composite → edit and sound:** locate essential actions in the full generated takes and record their
    timestamps before selecting cut points. Composite layers, FX and grade (Python); edit and sound with ffmpeg plus
    audio. If an action is usable but late, adjust the edit while preserving sync and pacing; if missing or unusable,
    revise or regenerate within budget. A prompt requesting an action is not evidence that it happened.
-5. **Review**: Claude checks sampled frames and metrics; King watches the motion. Check surface text for spelling,
-   readability, attachment and pop-in over the intended cut; tracked repairs are a fallback, not an automatic pass.
+5. **Review**: Claude checks sampled frames and metrics; King watches the motion. Check all object graphics for exact content,
+   readings, readability, attachment, jiggle and pop-in over the intended cut, including inherited overlays. Prefer
+   corrected start frames and retakes for failures; tracked repairs require playback acceptance. Exact clock/display
+   transitions may need controlled inserts.
    Verify every essential action again in the final rendered cut, including repetition and timing relative to dialogue.
    Keep uncertain motion explicitly pending playback review.
 

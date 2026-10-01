@@ -205,9 +205,10 @@ in dependency order, resuming logged requests without automatic replacement). Fo
 - **Kit:** use a shared kit per episode (glyph tables, CRT pass, emblem), as in `episodes/pilot/js_v3/kit.js`.
 - **Outputs:** full-frame pictures, overlays (.mov with alpha), or screen textures for homography into keyframes.
 - **QA:** stills at key beats, read with Read. The text must be exact.
-- **Prepare object lettering before motion:** render or correct text attached to a prop or in-world surface, then
+- **Prepare object graphics before motion:** render or correct lettering, clock faces and hands, display states,
+  symbols and other graphics attached to a prop or in-world surface, then
   composite it into the approved image-to-video start frame with the intended perspective, lighting and occlusion.
-  Check spelling and readability before submitting that frame. Keep the clean plate and editable graphics as source
+  Check spelling, readings, geometry and readability before submitting that frame. Keep the clean plate and editable graphics as source
   assets. Subtitles, titles and screen-space narrative captions stay separate for post-production. See §7 for motion QA.
 
 ## 5. Compositing the stills reel
@@ -321,16 +322,19 @@ the stock, polished result, the audio version of the AI look. So describe the re
   words. Describe the action only, plus "mouth closed, not speaking".
 - **Shots with both action and a line:** first test `target_audio_url` on the normal H3 Max model (it may give
   directable action plus lip-sync together). Otherwise split the line (lip-sync) from the action (H3 Max) in the edit.
+- **Bound conditioning audio before padding:** trim to the intended line/shot with an explicit audio trim, reset
+  timestamps, then pad with silence. Verify the padded tail; repeated ffmpeg output `-t` options do not perform two
+  successive trims and can include the next shot's speech. Keep submitted input files for provenance.
 - **Discard every audio track a video model returns;** the mix is always ours (§6, §7b).
 - **Silent fake-talking:** a model can animate talking with no audio at all. QA every non-dialogue clip with a
   face-landmark mouth check (flag speech-like open and close rhythm), and retake or trim what's flagged.
 
 **What to fix before motion, and what after.**
-- **Before:** fix the visible face, setting and composition, and finish lettering that should already exist on objects
+- **Before:** fix the visible face, setting and composition, and finish graphics that should already exist on objects
   in the start frame (§4), plus the edit (shot lengths and order). Flaws the shot's own action resolves (a hand that lifts, a
   book that opens) can be left to the motion, or trimmed off the clip's head.
-- **After (§7b):** screen-space graphics, any necessary surface-text repairs or changing displays, the sound pass and
-  every other polish. Do not automatically reapply lettering already present in the generated plate.
+- **After (§7b):** screen-space graphics, any necessary object-graphic repairs or deliberately timed display changes, the sound pass and
+  every other polish. Do not automatically reapply graphics already present in the generated plate.
 
 **Strategy.**
 - **Triage shots by what the motion is for:**
@@ -360,18 +364,25 @@ the stock, polished result, the audio version of the AI look. So describe the re
   - **Check the final cut separately:** verify the action remains visible after trimming, retiming and assembly,
     with enough time for the audience to read it and with the intended relation to the dialogue. A good source take
     does not establish that the edited shot works.
-- **Text on moving surfaces — default adopted 2026-10-01:** supply correct lettering in the approved start frame,
-  then let the video model animate the lettering and object together. Where the endpoint accepts a prompt, describe
-  the text as already printed on the surface and ask to preserve it through motion, lighting and occlusion.
-  - King's playback review preferred this to the tested post-generation tracked overlay, whose text jiggled.
+- **Graphics attached to objects — default adopted 2026-10-01:** supply correct lettering, clock faces and hands,
+  display states, symbols and other object details in the approved start frame, then let the video model animate
+  the complete object. Where the endpoint accepts a prompt, describe these details as already present and ask to
+  preserve them through motion, lighting and occlusion. Specify any required change separately.
+  - King's playback review preferred supplied lettering to the tested post-generation tracked overlay, whose text
+    jiggled. Later clock overlays also looked bad: this failure is not specific to text. Generalizing the start-frame
+    approach to other graphics is the production policy; it is not yet a demonstrated clock-generation result.
   - A blank surface plus a prompt to add lettering made text appear during the shot; do not use that approach for
     lettering that must exist from the beginning. Text-only scene generation also gives up the supplied faces,
     setting and composition, so it is not a substitute for image-to-video when continuity matters.
-  - Check exact characters, attachment, occlusion and legibility from the first frame through the intended cut;
-    review playback for jiggle, pop-in and changes in the lettering's appearance. One successful shot does not
+  - Check exact characters, clock/display readings, attachment, occlusion and legibility throughout the intended cut;
+    review playback for jiggle, slipping edges, pop-in and changes in appearance. One successful shot does not
     guarantee reliable spelling or preservation on every surface, duration or model.
-  - If preservation fails, repair the frame or retake; use a tracked repair only when needed and verify it in playback.
-    Changing displays need their own timing and QA. Keep subtitles and narrative captions in screen space.
+  - If preservation fails, repair the start frame and retake, or reframe/re-edit when the story permits. Tracking is
+    an exceptional repair, never the default finishing pass; accept it only after playback review confirms attachment.
+    Tracking confidence, smooth coordinates and still frames cannot establish that it looks natural.
+  - Exact clock movement and changing displays need explicit state/timing checks. If the model cannot preserve a
+    story-critical reading or transition, use a controlled insert or separately designed shot. Do not hide an incorrect
+    reading under another unverified moving patch. Keep subtitles and narrative captions in screen space.
 - **A stills-reel clip is a poor video reference:** it carries framing, which the still already gives, and stillness.
   Video references are for real performance or camera motion.
 - **Test first on every new episode or model:** the key beat, one dialogue shot and one action shot, at a low
@@ -392,8 +403,9 @@ them, on the assembled film, in this order:
 2. **Repair or replace:** trim around artefacts, paint out small glitches, retake what can't be hidden. Run the face
    check and the landmark mouth check on every clip.
 3. **Unify the look:** film finish and grade over all the video, so takes and models sit together.
-4. **Finish the graphics:** check lettering already animated with objects; repair only where needed. Track any
-   remaining surface graphics or changing displays to the moving plates, and add screen-space graphics separately.
+4. **Finish the graphics:** audit all graphics attached to objects, including inherited overlays from earlier cuts.
+   Check their appearance, readings, timing and attachment. Apply §7's repair/retake policy to failures; do not
+   automatically track remaining graphics onto generated footage. Add screen-space graphics separately.
 5. **Sync:** dialogue to the lip-synced mouths, and hits to the stamps and actions.
 6. **Final mix:** fix cut-off and clipped lines; balance voice, music, SFX and any usable model motion sound.
 7. **Re-time the subtitles** from the final voice onsets.

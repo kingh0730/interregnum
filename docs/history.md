@@ -150,3 +150,19 @@ that came out of them is "Luma unless it truly can't" (playbook §2b).
   their timestamps, and in the final rendered cut. Adjust the edit for usable late action; revise or regenerate
   missing or unusable action. Clear prompts do not guarantee action, timing or repetition, and more prompt detail
   alone is not a demonstrated fix.
+
+## Object graphics beyond lettering (2026-10-01)
+- King reported that clock overlays moved to follow generated footage also looked bad. The earlier lesson had been
+  applied too narrowly to text; the finishing instructions still called for tracking remaining surface graphics.
+- **Revised policy:** prepare all attached graphics in the approved start frame, including clocks, display states
+  and symbols. Audit inherited overlays as well as new work. Prefer corrected frames and retakes to another tracking
+  adjustment; accept exceptional tracked repairs only after playback review. Exact changing readings may require
+  controlled inserts. The lettering test supports this direction, but does not prove reliable clock animation.
+
+## Applying the object-graphics policy (2026-10-01)
+- Replaced inherited tracked object graphics with complete-frame animation or controlled fixed-camera inserts.
+  Deliberate screen-space graphics remain separate. Review caught extra actors, newly revealed garbled signage
+  and generated captions in otherwise plausible replacement takes; those outputs were rejected or reframed.
+- Audio preparation also matters: repeated output duration flags allowed following-shot audio into padded
+  conditioning tails. Use an explicit trim before silence padding, preserve submitted inputs, and check the actual
+  selected dialogue interval. This is an implementation error, not evidence of model randomness.
