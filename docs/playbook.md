@@ -157,6 +157,13 @@ For troubleshooting an individual shot, make two honest Luma attempts with a rew
 at something the shot needs, test a few alternatives on that shot and use the winner for it. A shot-specific
 exception does not by itself establish a new default or a general per-style routing rule.
 
+**Approved beauty exception (2026-10-02):** when striking or idealized beauty is central to a character,
+use Codex's built-in image generation for the base portrait when available and suitable, using the subscription
+workflow first. If it is unavailable or cannot meet the brief, choose an appropriate alternative; there is no
+fixed fallback model. This exception does not require two further Luma attempts. Use the approved base as a
+reference for Luma scene generation, checking identity, makeup, age and skin texture on each result. The initial
+reference test was promising, but consistency across multiple angles and scenes is not yet established.
+
 - **Prompts are short photographer's briefs**, not prop lists:
   - where the camera stands and which lens;
   - the one thing the eye lands on first, set apart by position, scale and light (use blur only when the shot calls
@@ -171,9 +178,11 @@ exception does not by itself establish a new default or a general per-style rout
     heavy spots or blotches, weathered or gaunt skin, or faces that read older than written, unless a shot calls for
     it on purpose. Write each character as "looks her age, with a clear, even complexion". Never write texture or
     ageing details ("deep laugh lines", "age spots", "sunken temples").
-  - **One model per character within a sequence;** cutting between models reads as the face changing.
+  - **One scene-generation model per character within a sequence;** cutting between models can read as the face
+    changing. A base portrait made with another model under the beauty exception is a reference, not a reason to
+    alternate scene-generation models.
   - **Base portrait:** a Luma t2i head-and-shoulders on a plain wall, 16:9, and judged at 100% before anything is
-    built on it.
+    built on it. For beauty-focused characters, use the Codex-first exception above and judge the base the same way.
   - **Sheets** (three-quarter, profile, one expression) are Luma edits of the base, used to check the character and
     as extra references for younger faces.
   - **Why the base matters:** Luma edit adds skin texture every time, and edits of edits compound into crepey,

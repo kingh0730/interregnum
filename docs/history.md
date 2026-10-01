@@ -166,3 +166,19 @@ that came out of them is "Luma unless it truly can't" (playbook §2b).
 - Audio preparation also matters: repeated output duration flags allowed following-shot audio into padded
   conditioning tails. Use an explicit trim before silence padding, preserve submitted inputs, and check the actual
   selected dialogue interval. This is an implementation error, not evidence of model randomness.
+
+## Beauty portraits and reference transfer (2026-10-02)
+- Compared nine image workflows on three adult Chinese portrait briefs: natural beauty, glamour, and natural
+  beauty with modern Chinese makeup. One sample per model per brief, with differing native resolutions;
+  these are exploratory results, not a general model ranking.
+- Luma's text-only portraits stayed more understated. Codex image generation and GPT Image 2.5 produced more
+  idealized beauty; Seedream produced a more dramatic glamour interpretation.
+- One Luma edit using the Codex makeup portrait as its face reference placed the character in a cafe while
+  retaining much of her identity and beauty. Makeup softened and skin texture increased. This supports trying
+  the workflow, not assuming multi-shot consistency.
+- Adopted preference: Codex built-in image generation first for beauty-focused base portraits through the
+  subscription workflow. Choose another suitable option only if Codex is unavailable or unsuitable. Use the
+  approved original base as the reference for Luma scenes and check each result; avoid edits of edits.
+- Local test artifacts: `work/beauty-natural-comparison/comparison.jpg`,
+  `work/beauty-model-comparison/comparison.jpg`, `work/beauty-chinese-makeup-comparison/comparison.jpg`,
+  and `work/luma-beauty-reference-test/cafe.png` (media is untracked).
