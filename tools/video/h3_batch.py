@@ -24,28 +24,68 @@ Money safety:
   POST, before any polling. A re-run polls that request instead of POSTing again.
 - Requests exceeding --timeout are retained for a later run; polling/download failures never trigger replacement.
 - An ambiguous submission is retained for manual recovery rather than automatically POSTed again.
+- Resuming verifies the endpoint and full payload, including inline media. Legacy logs with redacted media
+  cannot establish identity and require manual recovery.
+- Confirmed generation failures are recorded and can be replaced with an explicit --redo; never automatically.
 - --redo moves the old output to <out>.takeN.mp4 (so earlier takes stay comparable) and starts a new request.
+- Redo intent is committed before archiving. Interrupted preparation resumes from that saved plan on a normal
+  rerun; an old output file cannot override a pending request. Logged completed outputs also verify input identity.
+- Logs/history/ledger use atomic, fsynced writes. One process at a time may use a batch's h3_log directory.
+  Use distinct output paths for independent batches; other tools must not write these files during a run.
+- A crash at the POST boundary is inherently ambiguous without service-side idempotency. The saved submitting
+  state blocks further POSTs until its request is manually recovered; --redo does not override that protection.
 Every submitted request is appended to <manifest dir>/h3_log/ledger.jsonl with its billable seconds and price.
 """
 import argparse
 import base64
+import hashlib
 import json
 import os
 import subprocess
 import sys
 import tempfile
-import threading
 import time
 import urllib.error
 import urllib.request
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from request_state import batch_lock, read_log, record_once, save_log, sync_dir
 
 ALIAS = {"i2v": "minimax/h3-max/image-to-video", "lipsync": "minimax/h3-max/lip-sync/image-to-video",
          "ray": "luma/agent/ray/v3.2/image-to-video", "camera": "minimax/h3-max/camera-controls"}
 PRICE_FALLBACK = {"minimax/h3-max/image-to-video": 0.025, "minimax/h3-max/lip-sync/image-to-video": 0.05,
                   "luma/agent/ray/v3.2/image-to-video": 0.03}
-LOCK = threading.Lock()
+
+
+class HTTPFailure(RuntimeError):
+    def __init__(self, code, url, body):
+        super().__init__(f"HTTP {code} {url}: {body}")
+        self.code = code
+
+
+class GenerationFailure(RuntimeError):
+    pass
+
+
+def archive_previous(log, logdir):
+    """Replay a persisted replacement plan before crossing the POST boundary."""
+    replacement = log.get('replacement')
+    if not replacement:
+        return
+    if replacement.get('previous'):
+        record_once(logdir / f"{log['id']}.history.jsonl", replacement['previous'])
+    if replacement.get('target'):
+        source, target = Path(replacement['source']), Path(replacement['target'])
+        if target.exists():
+            if source.exists():
+                raise RuntimeError(f"both archive and original exist: {target}; recover manually")
+        elif source.exists():
+            source.rename(target)
+            sync_dir(source.parent)
+        else:
+            raise RuntimeError(f"missing original and archive: {source}; recover manually")
 
 
 def http(url, key, payload=None, method=None, tries=6):
@@ -59,7 +99,7 @@ def http(url, key, payload=None, method=None, tries=6):
         except urllib.error.HTTPError as e:
             body = e.read().decode(errors="replace")[:500]
             if payload is not None or e.code < 500 or i == tries - 1:
-                raise RuntimeError(f"HTTP {e.code} {url}: {body}")
+                raise HTTPFailure(e.code, url, body) from e
         except (urllib.error.URLError, ConnectionError, TimeoutError):
             if payload is not None or i == tries - 1:  # never retry a POST: it may have been accepted
                 raise
@@ -119,12 +159,33 @@ def main():
     doc = json.loads(man_path.read_text())
     defaults = doc.get("defaults", {}) if isinstance(doc, dict) else {}
     jobs = [dict(defaults, **j) for j in (doc["jobs"] if isinstance(doc, dict) else doc)]
-    by_id = {j["id"]: j for j in jobs}
     logdir = man_path.parent / "h3_log"
     logdir.mkdir(parents=True, exist_ok=True)
+    try:
+        with batch_lock(logdir):
+            run_batch(a, root, jobs, logdir)
+    except (OSError, ValueError, RuntimeError) as e:
+        sys.exit(str(e))
+
+
+def run_batch(a, root, jobs, logdir):
+    by_id = {j["id"]: j for j in jobs}
+    if a.jobs < 1 or len(by_id) != len(jobs):
+        raise ValueError("--jobs must be positive and manifest job IDs must be unique")
+    if any(not isinstance(i, str) or not i or Path(i).name != i or i in ('.', '..') for i in by_id):
+        raise ValueError("job IDs must be nonempty filenames")
+    outputs = [(root / j['out']).resolve() for j in jobs]
+    working_paths = outputs + [p.with_suffix('.part.mp4') for p in outputs]
+    if len(set(working_paths)) != len(working_paths):
+        raise ValueError("manifest output and temporary download paths must be distinct")
+    reserved_paths = set(working_paths)
     ledger = logdir / "ledger.jsonl"
     only = set(filter(None, a.only.split(",")))
     redo = set(filter(None, a.redo.split(",")))
+    if (only | redo) - by_id.keys():
+        raise ValueError("--only/--redo contains unknown job IDs")
+    if only and redo - only:
+        raise ValueError("--redo jobs must also be selected by --only")
     key = os.environ.get("FAL_KEY") or sys.exit("FAL_KEY is not set")
 
     def ep_of(j):
@@ -147,11 +208,19 @@ def main():
         return float(str(d).rstrip("s"))
 
     sel = [j for j in jobs if not only or j["id"] in only]
-    todo = [j for j in sel if j["id"] in redo or not out_of(j).exists()]
-    est = sum(billable(j) * price(ep_of(j), key) for j in todo)
-    for j in todo:
+    selected_ids = {j['id'] for j in sel}
+    dependency_ids = set().union(*(deps_of(j) for j in sel)) & by_id.keys()
+    relevant_ids = selected_ids | dependency_ids
+    # A bad log outside the selected jobs and their required inputs must not
+    # prevent an independent --only recovery. Required logs still fail closed.
+    logs = {i: read_log(logdir / f"{i}.json") for i in relevant_ids}
+    planned = [j for j in sel if j['id'] in redo or logs[j['id']].get('phase') == 'prepared'
+               or not logs[j['id']] and not out_of(j).exists()]
+    todo = list(sel)
+    est = sum(billable(j) * price(ep_of(j), key) for j in planned)
+    for j in planned:
         print(f"plan {j['id']:<14} {ep_of(j):<42} {billable(j):5.1f} s  ${billable(j) * price(ep_of(j), key):.3f}")
-    print(f"{len(todo)} jobs, estimated ${est:.2f}", flush=True)
+    print(f"{len(sel)} selected jobs, estimated new spend ${est:.2f}", flush=True)
     if a.dry_run:
         return
 
@@ -197,65 +266,154 @@ def main():
     def clean(p):
         return {k: ("<data uri>" if isinstance(v, str) and v.startswith("data:") else v) for k, v in p.items()}
 
-    def fetch(log, j):
-        res = http(log["response_url"], key)
+    def read_result(log):
+        try:
+            res = http(log["response_url"], key)
+        except HTTPFailure as e:
+            # Only called after COMPLETED. Authentication, missing results and service
+            # outages are retrieval failures, not evidence of a failed generation.
+            if e.code == 422:
+                raise GenerationFailure(str(e)) from e
+            raise
+        if res.get("error") or res.get("error_type"):
+            raise GenerationFailure(json.dumps(res))
+        return res
+
+    def fetch(log, j, lp):
+        res = read_result(log)
         log["response"] = res
         url = (res.get("video") or {}).get("url")
         if not url:
             raise RuntimeError(f"no video in response: {json.dumps(res)[:300]}")
+        save_log(lp, log)
         out = out_of(j)
         out.parent.mkdir(parents=True, exist_ok=True)
         tmp = out.with_suffix(".part.mp4")
         urllib.request.urlretrieve(url, tmp)
+        with open(tmp, 'rb') as f:
+            os.fsync(f.fileno())
         tmp.replace(out)
+        sync_dir(out.parent)
         log["done"] = time.time()
+        log['phase'] = 'done'
         return out
 
     def run(j):
         i = j["id"]
         lp = logdir / f"{i}.json"
-        log = json.loads(lp.read_text()) if lp.exists() else {}
-        if i in redo and log and not log.get("done"):
-            print(f"FAIL {i}: unresolved request; resume/recover it before requesting a redo", flush=True)
-            return False
-        if i in redo and log.get("request_id"):
-            hist = logdir / f"{i}.history.jsonl"
-            with open(hist, "a") as f:
-                f.write(json.dumps(log) + "\n")
-            o = out_of(j)
-            if o.exists():
-                n = 1
-                while o.with_name(f"{o.stem}.take{n}.mp4").exists():
-                    n += 1
-                o.rename(o.with_name(f"{o.stem}.take{n}.mp4"))
-            log = {}
+        log = read_log(lp)
+
+        def record_failure(detail):
+            log["terminal_failure"] = {"time": time.time(), "detail": detail}
+            log['phase'] = 'failed'
+            save_log(lp, log)
+
+        prepared = log.get('phase') == 'prepared'
+        if i in redo and log and not prepared and not (log.get("done") or log.get("terminal_failure")):
+            # Older runs did not record terminal failures. Inspect completed results
+            # too, without downloading or rebuilding the original (possibly redacted) inputs.
+            if log.get("request_id") and log.get("status_url") and not log.get("submission_pending"):
+                try:
+                    st = http(log["status_url"], key)
+                    if st.get("status") == "COMPLETED":
+                        if st.get("error") or st.get("error_type"):
+                            record_failure(st)
+                        elif log.get("response_url"):
+                            read_result(log)
+                except GenerationFailure as e:
+                    record_failure(str(e))
+                except Exception as e:
+                    print(f"unable to verify {i}: {e}", flush=True)
+            if not log.get("terminal_failure"):
+                print(f"FAIL {i}: unresolved request; resume/recover it before requesting a redo", flush=True)
+                return False
+        replacing = i in redo and not prepared
         if log.get("submission_pending"):
             print(f"FAIL {i}: previous submission unresolved; recover manually before another POST", flush=True)
+            return False
+        if log.get("terminal_failure") and not replacing:
+            print(f"FAIL {i}: generation failed; use --redo {i} to request a replacement", flush=True)
+            return False
+        if not log and out_of(j).exists() and not replacing:
+            print(f"skip {i}: existing unlogged output (use --redo to replace)", flush=True)
+            return True
+        try:
+            ep, p = build(j)
+            fingerprint = hashlib.sha256(json.dumps(p, sort_keys=True, separators=(",", ":"),
+                                                   ensure_ascii=False).encode()).hexdigest()
+            if log and not replacing:
+                if log.get('out') and log['out'] != str(out_of(j).resolve()):
+                    raise ValueError("existing request has a different output path; restore the original path")
+                if log.get("endpoint") != ep or log.get("payload") != clean(p):
+                    raise ValueError("existing request differs from payload; restore original inputs or use a new job ID")
+                if log.get("payload_sha256"):
+                    if log["payload_sha256"] != fingerprint:
+                        raise ValueError("existing request differs from full payload; restore original inputs or use a new job ID")
+                elif any(v == "<data uri>" for v in log["payload"].values()):
+                    raise ValueError("legacy media payload has no identity hash; recover manually")
+                if not prepared and not all(log.get(k) for k in ("request_id", "status_url", "response_url")):
+                    raise ValueError("incomplete request log; recover manually before another POST")
+            if not replacing and log.get('done') and out_of(j).exists():
+                print(f"skip {i}: completed request", flush=True)
+                return True
+            # Finish all potentially failing local preparation before changing state.
+            seconds = billable(j) if replacing or not log or prepared else log.get('billable_s')
+            cost = round(seconds * price(ep, key), 4) if replacing or not log or prepared else log.get('price')
+        except Exception as e:
+            print(f"FAIL {i}: {e}", flush=True)
             return False
         poll_start = time.time()
         for attempt in range(3):
             try:
+                if replacing or not log:
+                    old = log
+                    log = {'id': i, 'endpoint': ep, 'payload': clean(p), 'payload_sha256': fingerprint,
+                           'out': str(out_of(j).resolve()), 'phase': 'prepared', 'billable_s': seconds, 'price': cost}
+                    if replacing:
+                        o = out_of(j).resolve()
+                        target = None
+                        if o.exists():
+                            n = 1
+                            while (o.with_name(f"{o.stem}.take{n}.mp4").exists()
+                                   or o.with_name(f"{o.stem}.take{n}.mp4") in reserved_paths):
+                                n += 1
+                            target = str(o.with_name(f"{o.stem}.take{n}.mp4"))
+                        log['replacement'] = {'previous': old, 'source': str(o), 'target': target}
+                    # Commit redo intent BEFORE moving the old take. A restart replays
+                    # this plan even when the old output still occupies the final path.
+                    save_log(lp, log)
+                    replacing = False
                 if not log.get("request_id"):
-                    ep, p = build(j)
-                    log = {"id": i, "endpoint": ep, "payload": clean(p), "submission_pending": True}
-                    lp.write_text(json.dumps(log, indent=1, ensure_ascii=False))
+                    archive_previous(log, logdir)
+                    log.pop('replacement', None)
+                    log['phase'] = 'submitting'
+                    log['submission_pending'] = True
+                    save_log(lp, log)
                     sub = http(f"https://queue.fal.run/{ep}", key, p)
-                    log = {"id": i, "endpoint": ep, "request_id": sub["request_id"], "status_url": sub["status_url"],
-                           "response_url": sub["response_url"], "cancel_url": sub.get("cancel_url"),
-                           "submitted": time.time(), "payload": clean(p), "billable_s": billable(j),
-                           "price": round(billable(j) * price(ep, key), 4)}
-                    lp.write_text(json.dumps(log, indent=1, ensure_ascii=False))
-                    with LOCK, open(ledger, "a") as f:
-                        f.write(json.dumps({k: log[k] for k in ("id", "endpoint", "request_id", "submitted",
-                                                                "billable_s", "price")}) + "\n")
+                    log.update({k: sub.get(k) for k in ('request_id', 'status_url', 'response_url', 'cancel_url')})
+                    if not all(log.get(k) for k in ('request_id', 'status_url', 'response_url')):
+                        save_log(lp, log)
+                        raise RuntimeError('incomplete submission response; recover manually')
+                    log.update(phase='accepted', submitted=time.time())
+                    log.pop('submission_pending', None)
+                    save_log(lp, log)
                     print(f"sub  {i} {log['request_id']}", flush=True)
+                if log.get('submission_pending'):
+                    break
+                if all(k in log for k in ('submitted', 'billable_s', 'price')):
+                    record_once(ledger, {k: log[k] for k in ('id', 'endpoint', 'request_id', 'submitted',
+                                                           'billable_s', 'price')}, key='request_id')
                 while True:
                     st = http(log["status_url"], key)
                     s = st.get("status")
                     if s == "COMPLETED":
-                        out = fetch(log, j)
-                        lp.write_text(json.dumps(log, indent=1, ensure_ascii=False))
-                        print(f"ok   {i} -> {out.relative_to(root)} ({time.time() - log['submitted']:.0f} s)",
+                        if st.get("error") or st.get("error_type"):
+                            record_failure(st)
+                            print(f"FAIL {i}: generation failed; use --redo {i} to request a replacement", flush=True)
+                            return False
+                        out = fetch(log, j, lp)
+                        save_log(lp, log)
+                        print(f"ok   {i} -> {out} ({time.time() - log['submitted']:.0f} s)",
                               flush=True)
                         return True
                     if s not in ("IN_QUEUE", "IN_PROGRESS"):
@@ -267,7 +425,10 @@ def main():
             except Exception as e:  # noqa: BLE001 (a bad input must fail this job, not the batch)
                 msg = f"{type(e).__name__}: {e}"
                 print(f"err  {i} (attempt {attempt + 1}): {msg[:400]}", flush=True)
-                if not log.get("request_id"):
+                if isinstance(e, GenerationFailure):
+                    record_failure(msg)
+                    break
+                if not log.get("request_id") or log.get('submission_pending'):
                     # The POST may have reached the service even though its response was lost.
                     break
                 if "HTTP 4" in msg and "HTTP 429" not in msg:
@@ -276,7 +437,10 @@ def main():
         print(f"FAIL {i}", flush=True)
         return False
 
-    done = {j["id"] for j in jobs if out_of(j).exists() and j["id"] not in redo}
+    # Selected jobs must validate their request identity before becoming dependencies.
+    # Unselected jobs may supply already completed takes, never pending replacements.
+    done = {j['id'] for j in jobs if j['id'] in dependency_ids - selected_ids and out_of(j).exists()
+            and (not logs[j['id']] or logs[j['id']].get('done'))}
     failed = set()
     pending = {}
     with ThreadPoolExecutor(a.jobs) as ex:
@@ -290,13 +454,18 @@ def main():
             if not pending:
                 if todo:
                     print(f"STUCK: unresolved deps for {[j['id'] for j in todo]}", flush=True)
+                    failed.update(j["id"] for j in todo)
                 break
             fin = [k for k, f in pending.items() if f.done()]
             if not fin:
-                time.sleep(1)
+                wait(pending.values(), return_when=FIRST_COMPLETED)
                 continue
             for k in fin:
-                ok = pending.pop(k).result()
+                try:
+                    ok = pending.pop(k).result()
+                except Exception as e:
+                    print(f"FAIL {k}: {e}", flush=True)
+                    ok = False
                 (done if ok else failed).add(k)
     print(f"done {len(done)}  failed {len(failed)}", flush=True)
     sys.exit(1 if failed else 0)

@@ -149,7 +149,9 @@ class FixTests(unittest.TestCase):
             logdir = Path(td) / 'h3_log'
             logdir.mkdir()
             (logdir / 's1.json').write_text(json.dumps({'request_id': 'old', 'status_url': 'status',
-                'response_url': 'response', 'submitted': 1}))
+                'response_url': 'response', 'submitted': 1, 'endpoint': h3.ALIAS['i2v'],
+                'payload': {'prompt': 'move', 'duration': 5, 'resolution': '768P',
+                            'prompt_expansion_mode': 'disabled'}}))
             def http(url, key, payload=None, **kw):
                 self.assertIsNone(payload)
                 return {'status': 'COMPLETED'} if url == 'status' else {'video': {'url': 'https://example.test/video.mp4'}}
@@ -165,6 +167,300 @@ class FixTests(unittest.TestCase):
                 self.assertEqual(caught.exception.code, 0)
             self.assertEqual(len(attempts), 2)
             self.assertEqual((Path(td) / 's1.mp4').read_bytes(), b'test-video')
+
+    def test_h3_invalid_redo_preserves_take_until_inputs_are_fixed(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            man = root / 'motion.json'
+            man.write_text(json.dumps([{'id': 's1', 'prompt': 'new prompt', 'image': 'frame.png', 'out': 's1.mp4'}]))
+            out = root / 's1.mp4'
+            out.write_bytes(b'old video')
+            logdir = root / 'h3_log'
+            logdir.mkdir()
+            lp = logdir / 's1.json'
+            lp.write_text(json.dumps({'request_id': 'old', 'done': 1, 'payload': {'prompt': 'old prompt'}}))
+            original_log = lp.read_bytes()
+            argv = ['h3', str(man), '--root', td]
+            def http(url, key, payload=None):
+                if payload is not None:
+                    self.assertEqual(payload['prompt'], 'new prompt')
+                    return {'request_id': 'new', 'status_url': 'status', 'response_url': 'response'}
+                return {'status': 'COMPLETED'} if url == 'status' else {'video': {'url': 'https://example.test/new.mp4'}}
+            with patch.dict(os.environ, FAL_KEY='test'), patch.object(h3, 'price', return_value=0), \
+                    patch.object(h3, 'data_uri_image', side_effect=lambda p: 'data:image/png;base64,' + Path(p).read_text()), \
+                    patch.object(h3, 'http', side_effect=http) as api, \
+                    patch.object(h3.urllib.request, 'urlretrieve', side_effect=lambda u, p: Path(p).write_bytes(b'new video')):
+                with patch.object(sys, 'argv', argv + ['--redo', 's1']), self.assertRaises(SystemExit) as caught:
+                    h3.main()
+                self.assertEqual(caught.exception.code, 1)
+                api.assert_not_called()
+                self.assertEqual(out.read_bytes(), b'old video')
+                self.assertEqual(lp.read_bytes(), original_log)
+                self.assertFalse((root / 's1.take1.mp4').exists())
+                self.assertFalse((logdir / 's1.history.jsonl').exists())
+                # A normal run now validates logged outputs too: the invalid new
+                # input must fail without restoring or overwriting the existing take.
+                with patch.object(sys, 'argv', argv), self.assertRaises(SystemExit) as caught:
+                    h3.main()
+                self.assertEqual(caught.exception.code, 1)
+                api.assert_not_called()
+                (root / 'frame.png').write_text('valid frame')
+                with patch.object(sys, 'argv', argv + ['--redo', 's1']), self.assertRaises(SystemExit) as caught:
+                    h3.main()
+                self.assertEqual(caught.exception.code, 0)
+                self.assertEqual(sum(call.args[2] is not None for call in api.call_args_list if len(call.args) > 2), 1)
+            self.assertEqual(out.read_bytes(), b'new video')
+            self.assertEqual((root / 's1.take1.mp4').read_bytes(), b'old video')
+            self.assertEqual(json.loads((logdir / 's1.history.jsonl').read_text()), json.loads(original_log))
+            self.assertEqual(json.loads(lp.read_text())['request_id'], 'new')
+
+    def test_h3_terminal_failure_requires_explicit_redo(self):
+        for failure in ('status', 'response', '422'):
+            with self.subTest(failure=failure), tempfile.TemporaryDirectory() as td:
+                root = Path(td)
+                man = root / 'motion.json'
+                man.write_text(json.dumps([{'id': 's1', 'prompt': 'move', 'out': 's1.mp4'}]))
+                submissions = []
+                def http(url, key, payload=None):
+                    if payload is not None:
+                        submissions.append(payload)
+                        return {'request_id': str(len(submissions)), 'status_url': 'status', 'response_url': 'response'}
+                    if url == 'status':
+                        return {'status': 'COMPLETED', **({'error': 'generation failed'}
+                                if len(submissions) == 1 and failure == 'status' else {})}
+                    if len(submissions) == 1:
+                        if failure == '422':
+                            raise h3.HTTPFailure(422, url, 'generation failed')
+                        return {'error': 'generation failed'}
+                    return {'video': {'url': 'https://example.test/new.mp4'}}
+                argv = ['h3', str(man), '--root', td]
+                with patch.dict(os.environ, FAL_KEY='test'), patch.object(h3, 'price', return_value=0), \
+                        patch.object(h3, 'http', side_effect=http) as api, \
+                        patch.object(h3.urllib.request, 'urlretrieve', side_effect=lambda u, p: Path(p).write_bytes(b'new')):
+                    with patch.object(sys, 'argv', argv):
+                        with self.assertRaises(SystemExit) as caught:
+                            h3.main()
+                        self.assertEqual(caught.exception.code, 1)
+                        self.assertIn('terminal_failure', json.loads((root / 'h3_log/s1.json').read_text()))
+                        api.reset_mock()
+                        with self.assertRaises(SystemExit) as caught:
+                            h3.main()
+                        self.assertEqual(caught.exception.code, 1)
+                        api.assert_not_called()
+                    with patch.object(sys, 'argv', argv + ['--redo', 's1']):
+                        with self.assertRaises(SystemExit) as caught:
+                            h3.main()
+                        self.assertEqual(caught.exception.code, 0)
+                self.assertEqual(len(submissions), 2)
+                self.assertEqual((root / 's1.mp4').read_bytes(), b'new')
+                history = json.loads((root / 'h3_log/s1.history.jsonl').read_text())
+                self.assertEqual(history['request_id'], '1')
+                self.assertIn('terminal_failure', history)
+
+    def test_h3_result_retrieval_errors_do_not_allow_redo(self):
+        for error in (TimeoutError(), h3.HTTPFailure(401, 'response', 'unauthorized'),
+                      h3.HTTPFailure(404, 'response', 'not found'), h3.HTTPFailure(503, 'response', 'unavailable')):
+            with self.subTest(error=str(error)), tempfile.TemporaryDirectory() as td:
+                root = Path(td)
+                man = root / 'motion.json'
+                man.write_text(json.dumps([{'id': 's1', 'prompt': 'move', 'out': 's1.mp4'}]))
+                posts = []
+                def http(url, key, payload=None):
+                    if payload is not None:
+                        posts.append(payload)
+                        return {'request_id': 'one', 'status_url': 'status', 'response_url': 'response'}
+                    if url == 'status':
+                        return {'status': 'COMPLETED'}
+                    raise error
+                argv = ['h3', str(man), '--root', td]
+                with patch.dict(os.environ, FAL_KEY='test'), patch.object(h3, 'price', return_value=0), \
+                        patch.object(h3, 'http', side_effect=http):
+                    for args in (argv, argv + ['--redo', 's1']):
+                        with patch.object(sys, 'argv', args), self.assertRaises(SystemExit) as caught:
+                            h3.main()
+                        self.assertEqual(caught.exception.code, 1)
+                self.assertEqual(len(posts), 1)
+                self.assertNotIn('terminal_failure', json.loads((root / 'h3_log/s1.json').read_text()))
+
+    def test_h3_redo_verifies_old_unresolved_requests(self):
+        for state in ('failed', 'pending', 'timeout', 'download_failed'):
+            with self.subTest(state=state), tempfile.TemporaryDirectory() as td:
+                root = Path(td)
+                man = root / 'motion.json'
+                man.write_text(json.dumps([{'id': 's1', 'prompt': 'move', 'out': 's1.mp4'}]))
+                logdir = root / 'h3_log'
+                logdir.mkdir()
+                lp = logdir / 's1.json'
+                lp.write_text(json.dumps({'request_id': 'old', 'status_url': 'status', 'response_url': 'response'}))
+                before = lp.read_bytes()
+                posts = []
+                def http(url, key, payload=None):
+                    if payload is not None:
+                        posts.append(payload)
+                        return {'request_id': 'new', 'status_url': 'new-status', 'response_url': 'response'}
+                    if url == 'new-status':
+                        return {'status': 'IN_PROGRESS'}
+                    if state == 'timeout':
+                        raise TimeoutError()
+                    if state == 'pending':
+                        return {'status': 'IN_PROGRESS'}
+                    return {'status': 'COMPLETED', **({'error_type': 'generation_error'} if state == 'failed' else {})}
+                with patch.dict(os.environ, FAL_KEY='test'), patch.object(sys, 'argv',
+                        ['h3', str(man), '--root', td, '--redo', 's1', '--timeout', '-1']), \
+                        patch.object(h3, 'price', return_value=0), patch.object(h3, 'http', side_effect=http):
+                    with self.assertRaises(SystemExit) as caught:
+                        h3.main()
+                    self.assertEqual(caught.exception.code, 1)
+                self.assertEqual(len(posts), 1 if state == 'failed' else 0)
+                if state != 'failed':
+                    self.assertEqual(lp.read_bytes(), before)
+
+    def test_h3_legacy_redo_checks_completed_result_before_replacing(self):
+        for result in ('error', 'error_type', 422, 401, 404, 429, 503, 'timeout', 'success', 'malformed'):
+            with self.subTest(result=result), tempfile.TemporaryDirectory() as td:
+                root = Path(td)
+                man = root / 'motion.json'
+                man.write_text(json.dumps([{'id': 's1', 'prompt': 'replacement', 'out': 's1.mp4'}]))
+                logdir = root / 'h3_log'
+                logdir.mkdir()
+                lp = logdir / 's1.json'
+                # Original inline media cannot be reconstructed or fingerprinted.
+                old = {'request_id': 'old', 'status_url': 'old-status', 'response_url': 'old-result',
+                       'payload': {'image_url': '<data uri>'}}
+                lp.write_text(json.dumps(old))
+                before = lp.read_bytes()
+                posts = []
+                reads = []
+                def http(url, key, payload=None):
+                    if payload is not None:
+                        self.assertEqual(reads, ['old-status', 'old-result'])
+                        self.assertEqual(payload['prompt'], 'replacement')
+                        posts.append(payload)
+                        return {'request_id': 'new', 'status_url': 'new-status', 'response_url': 'new-result'}
+                    reads.append(url)
+                    if url.endswith('status'):
+                        return {'status': 'COMPLETED'}
+                    if url == 'old-result':
+                        if isinstance(result, int):
+                            raise h3.HTTPFailure(result, url, 'request error')
+                        if result == 'timeout':
+                            raise TimeoutError()
+                        if result in ('error', 'error_type'):
+                            return {result: 'generation failed'}
+                        if result == 'malformed':
+                            return {}
+                    return {'video': {'url': 'https://example.test/video.mp4'}}
+                with patch.dict(os.environ, FAL_KEY='test'), patch.object(sys, 'argv',
+                        ['h3', str(man), '--root', td, '--redo', 's1']), \
+                        patch.object(h3, 'price', return_value=0), patch.object(h3, 'http', side_effect=http), \
+                        patch.object(h3.urllib.request, 'urlretrieve',
+                                     side_effect=lambda u, p: Path(p).write_bytes(b'new video')) as download:
+                    with self.assertRaises(SystemExit) as caught:
+                        h3.main()
+                failed_generation = result in ('error', 'error_type', 422)
+                self.assertEqual(caught.exception.code, 0 if failed_generation else 1)
+                self.assertEqual(len(posts), 1 if failed_generation else 0)
+                if failed_generation:
+                    self.assertEqual((root / 's1.mp4').read_bytes(), b'new video')
+                    history = json.loads((logdir / 's1.history.jsonl').read_text())
+                    self.assertEqual(history['request_id'], 'old')
+                    self.assertIn('terminal_failure', history)
+                    download.assert_called_once()
+                else:
+                    self.assertEqual(reads, ['old-status', 'old-result'])
+                    self.assertEqual(lp.read_bytes(), before)
+                    self.assertFalse((logdir / 's1.history.jsonl').exists())
+                    download.assert_not_called()
+
+    def test_h3_resume_rejects_changed_inputs(self):
+        for change in ('prompt', 'endpoint', 'media', 'legacy_media'):
+            with self.subTest(change=change), tempfile.TemporaryDirectory() as td:
+                root = Path(td)
+                man = root / 'motion.json'
+                job = {'id': 's1', 'prompt': 'move', 'image': 'frame.png', 'out': 's1.mp4'}
+                man.write_text(json.dumps([job]))
+                frame = root / 'frame.png'
+                frame.write_text('original')
+                def http(url, key, payload=None):
+                    if payload is not None:
+                        return {'request_id': 'one', 'status_url': 'status', 'response_url': 'response'}
+                    return {'status': 'IN_PROGRESS'}
+                with patch.dict(os.environ, FAL_KEY='test'), patch.object(sys, 'argv',
+                        ['h3', str(man), '--root', td, '--timeout', '-1']), \
+                        patch.object(h3, 'price', return_value=0), \
+                        patch.object(h3, 'data_uri_image', side_effect=lambda p: 'data:image/png;base64,' + Path(p).read_text()), \
+                        patch.object(h3, 'http', side_effect=http) as api:
+                    with self.assertRaises(SystemExit) as caught:
+                        h3.main()
+                    self.assertEqual(caught.exception.code, 1)
+                    lp = root / 'h3_log/s1.json'
+                    if change == 'media':
+                        frame.write_text('changed')
+                    elif change == 'legacy_media':
+                        log = json.loads(lp.read_text())
+                        del log['payload_sha256']
+                        lp.write_text(json.dumps(log))
+                    else:
+                        job[change] = 'changed' if change == 'prompt' else 'ray'
+                        man.write_text(json.dumps([job]))
+                    before = lp.read_bytes()
+                    api.reset_mock()
+                    with self.assertRaises(SystemExit) as caught:
+                        h3.main()
+                    self.assertEqual(caught.exception.code, 1)
+                    api.assert_not_called()
+                    self.assertEqual(lp.read_bytes(), before)
+                    self.assertFalse((root / 's1.mp4').exists())
+
+    def test_h3_unresolved_dependencies_fail(self):
+        for deps in (['missing'], ['s1']):
+            with self.subTest(deps=deps), tempfile.TemporaryDirectory() as td:
+                man = Path(td) / 'motion.json'
+                man.write_text(json.dumps([{'id': 's1', 'prompt': 'move', 'out': 's1.mp4', 'deps': deps}]))
+                with patch.dict(os.environ, FAL_KEY='test'), patch.object(sys, 'argv',
+                        ['h3', str(man), '--root', td]), patch.object(h3, 'price', return_value=0), \
+                        patch.object(h3, 'http') as api:
+                    with self.assertRaises(SystemExit) as caught:
+                        h3.main()
+                    self.assertEqual(caught.exception.code, 1)
+                    api.assert_not_called()
+
+    def test_luma_interrupted_redo_resumes_new_request(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            man = root / 'images.json'
+            man.write_text(json.dumps([{'id': 's1', 'mode': 't2i', 'prompt': 'test', 'out': 's1.png'}]))
+            out = root / 's1.png'
+            out.write_bytes(b'old image')
+            urls = man.with_suffix('.urls.json')
+            urls.write_text(json.dumps({'s1': 'https://example.test/old.png'}))
+            logdir = root / 'luma_log'
+            logdir.mkdir()
+            lp = logdir / 's1.json'
+            lp.write_text(json.dumps({'response': {'image': {'url': 'https://example.test/old.png'}}}))
+            def timeout(args, **kw):
+                self.assertNotIn('s1', json.loads(urls.read_text()))
+                lp.write_text(json.dumps({'request_id': 'new', 'status_url': 'status', 'response_url': 'response'}))
+                raise subprocess.TimeoutExpired(args, 420)
+            argv = ['luma', str(man), '--root', td]
+            with patch.object(sys, 'argv', argv + ['--redo', 's1']), patch.object(luma.subprocess, 'run', side_effect=timeout):
+                with self.assertRaises(SystemExit) as caught:
+                    luma.main()
+                self.assertEqual(caught.exception.code, 1)
+            self.assertEqual(out.read_bytes(), b'old image')
+            def resume(args, **kw):
+                self.assertIn('--resume', args)
+                self.assertEqual(json.loads(lp.read_text())['request_id'], 'new')
+                lp.write_text(json.dumps({'request_id': 'new', 'response': {'image': {'url': 'https://example.test/new.png'}}}))
+                (logdir / 's1.png').write_bytes(b'new image')
+                return subprocess.CompletedProcess(args, 0, '', '')
+            with patch.object(sys, 'argv', argv), patch.object(luma.subprocess, 'run', side_effect=resume) as run:
+                with self.assertRaises(SystemExit) as caught:
+                    luma.main()
+                self.assertEqual(caught.exception.code, 0)
+                run.assert_called_once()
+            self.assertEqual(out.read_bytes(), b'new image')
+            self.assertEqual(json.loads(urls.read_text())['s1'], 'https://example.test/new.png')
 
     def test_luma_timeout_uses_resume_every_attempt(self):
         with tempfile.TemporaryDirectory() as td:
