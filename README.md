@@ -18,6 +18,10 @@ Each episode is one "morbid symptom" of the interregnum, with its own visual lan
 | `docs/` | Pipeline, tool strengths and weaknesses, lessons learned |
 | `work/`, `renders/` | Scratch and output (git-ignored; large binaries) |
 
+Private productions may be archived outside this checkout. When a private project is absent, consult
+`private/ARCHIVES.md` if available for its location and restoration instructions before regenerating assets.
+That local index and the archived project contents must remain outside public commits.
+
 ## Status
 
 - [x] Step 0: repo set up; toolchain documented (`docs/pipeline.md`); strategy agreed (`docs/strategy.md`)
