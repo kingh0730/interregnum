@@ -9,6 +9,7 @@ Each episode is one "morbid symptom" of the interregnum, with its own visual lan
 The public-facing series title is **AI SI - I**, with that exact capitalization, spacing and hyphen.
 Use it on title cards, credits, release metadata and promotional material. **interregnum** remains the
 repository name and an internal working name.
+The title's layered meanings are recorded in [the series brief](bible/brief.md#series-title-ai-si---i-2026-10-02).
 
 ## Layout
 
