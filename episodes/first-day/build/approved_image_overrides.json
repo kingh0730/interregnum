@@ -1,0 +1,33 @@
+{
+  "k10": {
+    "mode": "t2i",
+    "refs": [],
+    "base": null,
+    "prompt": "Create a carefully reframed cinematic photograph of the FIRST image, preserving its woman looking RIGHT and its exact coastal setting. This is a WIDER dance master with the camera pulled back. Keep her at the left third but make her much smaller: head near 20% down the canvas, complete shoe soles no lower than 78% down. Leave the bottom 22% as uninterrupted empty pearl floor. Keep the city LEFT, ivory arch RIGHT, bench farLEFT, cobalt glass rail, sky and sea; extend surrounding floor and sky naturally. Same woman, exact youthful Chinese face from third image, bob and left ear cuff. Restore the finely tailored ivory sleeveless highneck top and wide STRAIGHT PLEATED ivory trousers from the second costume reference; silver seam, flat white leather shoes. Left foot bears weight; free right heel gently touches the floor in front, with the right TOES LIFTED UP so the heel-touch is unambiguous. Both arms are low, loosely separated. Her nose points RIGHT, left cheek visible, lips CLOSED. Keep natural photographic light and simple beautiful skin. All body, hands and shoes completely visible with abundant clear floor below. Single16:9 landscape photograph, no text, no frame, no panels.",
+    "scene_model": "Codex built-in image_gen; exact underlying model not exposed",
+    "external": true,
+    "external_recipe": "episodes/first-day/build/builtin_image_edits.json",
+    "approval": "composition approved; motion unverified"
+  },
+  "k42": {
+    "mode": "t2i",
+    "refs": [],
+    "base": null,
+    "prompt": "Reframe this exact cinematic photograph WIDER for a dance master. Preserve these two exact people, their faces, hairstyles, clothes, left/right arrangement, facing each other and the separate raised hands before touching. Preserve the exact pearl island, silver ribs, glass rail, sea, distant docked deck and bright photographic daylight. Pull the camera back so the figures take up only about60percent of the image height, with their complete shoe soles at or ABOVE the78percent height line. The bottom22percent of the canvas must be empty, unobstructed pearl dance floor beneath BOTH pairs of shoes. Add floor and environment around the existing view naturally, preserving scale and perspective. Keep their heads and ALL FOUR complete shoes in frame. Do not tighten the framing again. Do not change their identity, body proportions, costume, pose or hand gesture. Single elegant physical photographic image, landscape16:9, no text, no borders, no panels.",
+    "scene_model": "Codex built-in image_gen; exact underlying model not exposed",
+    "external": true,
+    "external_recipe": "episodes/first-day/build/builtin_image_edits.json",
+    "approval": "composition approved; motion unverified"
+  },
+  "k05": {
+    "mode": "edit",
+    "base": "world",
+    "refs": [
+      "world"
+    ],
+    "prompt": "Keep the supplied breathtaking aerial coastal city photograph and its EXACT three platform sizes, positions and futuristic skyline. Add ONLY TWO TINY DISTANT PEOPLE, each about one twentieth of a platform diameter tall: one woman wearing ivory top and ivory trousers with a black bob stands at the centre of the SMALL IVORY LEFT platform; one man wearing ink-blue jacket and trousers stands at the centre of the SMALL DARK RIGHT platform. They face inward toward each other across water. The LARGE CENTRAL PEARL PLATFORM IS COMPLETELY EMPTY. No foreground people. Keep the fixed central island with its THREE SILVER ARCH ASSEMBLIES and its broad permanent access bridge toward camera. The two small touring platforms are NOT DOCKED: retract their short lateral docking bridges so there is a plainly visible BLUE WATER GAP between each small platform and the central island. Their separate curved mechanical guide rails and carriages remain visible below. Glass safety rail closes each docking mouth. Preserve the elegant hollow-tower city, blue bay, clean sunlight and physical architectural details. Wide cinematic photograph,16:9. This is a geography establishing shot with tiny human scale figures, not a portrait.",
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "approval": "approved for apart/empty-island geography; motion and precise dock state unverified"
+  }
+}

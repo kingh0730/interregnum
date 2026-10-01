@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "edits": [
+    {
+      "id": "k10",
+      "tool": "image_gen.imagegen",
+      "model": "not exposed by tool response",
+      "status": "generated; composition approved by director and independent visual reviewer",
+      "out": "episodes/first-day/assets/keyframes/k10.png",
+      "output_sha256": "67e5521ce1d96e72a83d6437fb9d76b026507e70d90deba3106c53f14a6f50ff",
+      "inputs": [
+        {
+          "path": "episodes/first-day/assets/lookdev/k10_rejected_floor_margin.png",
+          "sha256": "e545d4e2669e7f6fcf7de6ecc0defb34af7fbb5f8e8e213441017bdb79fc4b1e"
+        },
+        {
+          "path": "episodes/first-day/assets/references/lin_costume.png",
+          "sha256": "fc267b837e53437b65b7d9e70ed91fd5c0f6afbc92bc8a1e7d3cfb1c637b9cca"
+        },
+        {
+          "path": "episodes/first-day/assets/characters/lin_base.png",
+          "sha256": "e480b13f300bc132246f098aa5b094ffc4e70b0354a9f0bb63c5e5ee1bf5a6df"
+        }
+      ],
+      "prompt": "Create a carefully reframed cinematic photograph of the FIRST image, preserving its woman looking RIGHT and its exact coastal setting. This is a WIDER dance master with the camera pulled back. Keep her at the left third but make her much smaller: head near 20% down the canvas, complete shoe soles no lower than 78% down. Leave the bottom 22% as uninterrupted empty pearl floor. Keep the city LEFT, ivory arch RIGHT, bench farLEFT, cobalt glass rail, sky and sea; extend surrounding floor and sky naturally. Same woman, exact youthful Chinese face from third image, bob and left ear cuff. Restore the finely tailored ivory sleeveless highneck top and wide STRAIGHT PLEATED ivory trousers from the second costume reference; silver seam, flat white leather shoes. Left foot bears weight; free right heel gently touches the floor in front, with the right TOES LIFTED UP so the heel-touch is unambiguous. Both arms are low, loosely separated. Her nose points RIGHT, left cheek visible, lips CLOSED. Keep natural photographic light and simple beautiful skin. All body, hands and shoes completely visible with abundant clear floor below. Single16:9 landscape photograph, no text, no frame, no panels.",
+      "transparent_background": false,
+      "reason": "Targeted wider framing after repeated Luma results crowded complete shoes against the bottom edge. Luma remains main scene renderer.",
+      "limits": "Still pose and framing only; no completed dance or motion approval."
+    },
+    {
+      "id": "k42",
+      "tool": "image_gen.imagegen",
+      "model": "not exposed by tool response",
+      "status": "generated; composition approved by director and independent visual reviewer",
+      "out": "episodes/first-day/assets/keyframes/k42.png",
+      "output_sha256": "956c8e872596261f5b145da1fc9f3b0010b8f94924d1d1f8658811221061dec6",
+      "inputs": [
+        {
+          "path": "episodes/first-day/assets/lookdev/k42_rejected_floor_margin.png",
+          "sha256": "5269e9394e9d16608fbfd5d71254a01cd07370f4b7f3127c31420fc0d40e5fb8"
+        }
+      ],
+      "prompt": "Reframe this exact cinematic photograph WIDER for a dance master. Preserve these two exact people, their faces, hairstyles, clothes, left/right arrangement, facing each other and the separate raised hands before touching. Preserve the exact pearl island, silver ribs, glass rail, sea, distant docked deck and bright photographic daylight. Pull the camera back so the figures take up only about60percent of the image height, with their complete shoe soles at or ABOVE the78percent height line. The bottom22percent of the canvas must be empty, unobstructed pearl dance floor beneath BOTH pairs of shoes. Add floor and environment around the existing view naturally, preserving scale and perspective. Keep their heads and ALL FOUR complete shoes in frame. Do not tighten the framing again. Do not change their identity, body proportions, costume, pose or hand gesture. Single elegant physical photographic image, landscape16:9, no text, no borders, no panels.",
+      "transparent_background": false,
+      "reason": "Targeted wider framing after repeated Luma results crowded complete shoes against the bottom edge. Luma remains main scene renderer.",
+      "limits": "Still pose and framing only; no completed dance or motion approval."
+    }
+  ],
+  "billing": "Tool did not expose cost or token/image usage. Separate from fal ledger."
+}

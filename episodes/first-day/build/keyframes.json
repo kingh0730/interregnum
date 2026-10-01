@@ -1,0 +1,1360 @@
+[
+  {
+    "id": "k01",
+    "out": "episodes/first-day/assets/keyframes/k01.png",
+    "mode": "edit",
+    "refs": [],
+    "deps": [
+      "k10"
+    ],
+    "prompt": "Reframe downward into a low shoe-and-trouser detail of the approved Lin scene. Exclude the head and upper torso; show only the specified legs, shoes and their floor contact. 85 mm, camera 0.25 m high looking south along A's floor; ivory shoe left of centre. A supported white shoe is flat; the free right heel hovers just above pearl stone. Trouser hems remain separate; cobalt rail and ivory arch identify A behind. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface.",
+    "aspect": "16:9",
+    "shots": [
+      "01",
+      "08",
+      "21",
+      "59"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "a",
+    "character_sheet_note": "No visible face requires portrait or sheet conditioning in this detail/location image.",
+    "approval": "pending generation and visual QA",
+    "base": "k10"
+  },
+  {
+    "id": "k02",
+    "out": "episodes/first-day/assets/keyframes/k02.png",
+    "mode": "edit",
+    "refs": [
+      "yu_costume"
+    ],
+    "deps": [
+      "loc_b",
+      "yu_costume"
+    ],
+    "prompt": "Low close detail on B's blue-grey floor: only Yu's ink trouser legs and dark flat shoes. Exclude head, torso and hands. Both shoes remain fully inside the crop. 85 mm, camera 0.25 m high looking south along B's floor; dark shoe right of centre. Yu's supporting dark shoe is flat; the free left heel is prepared to land. Separated trouser hems; blue-grey floor and dark arch establish B. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface.",
+    "aspect": "16:9",
+    "shots": [
+      "02",
+      "09",
+      "22",
+      "60"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "No visible face requires portrait or sheet conditioning in this detail/location image.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_b"
+  },
+  {
+    "id": "k03",
+    "out": "episodes/first-day/assets/keyframes/k03.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base"
+    ],
+    "deps": [
+      "k10",
+      "lin_base"
+    ],
+    "prompt": "Reframe the approved A scene to the described medium composition, keeping Lin left and her attention toward screen right. The ivory arch belongs at the right docking side; preserve the skyline on the left. 65 mm, chest-height 1.3 m, Lin left third with face and right hand clearly separated. Her right hand rests low beside her waist, palm angled toward screen right, poised to open. The cobalt rail is behind, never crossing wrist or face. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "03",
+      "25",
+      "63"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "a",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k10"
+  },
+  {
+    "id": "k04",
+    "out": "episodes/first-day/assets/keyframes/k04.png",
+    "mode": "edit",
+    "refs": [
+      "yu_base",
+      "yu_costume"
+    ],
+    "deps": [
+      "loc_b",
+      "yu_base",
+      "yu_costume"
+    ],
+    "prompt": "One Yu at the right third of the approved B scene, in the described torso-and-hand framing. His attention is toward screen left. Preserve the local dark arch and coral inset; do not enlarge him into a foreground head crop. 65 mm, chest-height 1.3 m, Yu right third, clear face and left hand. His left hand is low and separate from his torso, ready to answer toward screen left. The slim dark arch remains visible at the frame edge. Yu is the referenced 27-year-old Chinese man, loose short black hair, clean-shaven, ink-blue collarless jacket over grey shirt, ink trousers and dark flat shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "04",
+      "26",
+      "64"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_b"
+  },
+  {
+    "id": "k05",
+    "out": "episodes/first-day/assets/keyframes/k05.png",
+    "mode": "edit",
+    "refs": [
+      "world"
+    ],
+    "deps": [
+      "world"
+    ],
+    "prompt": "Keep the supplied breathtaking aerial coastal city photograph and its EXACT three platform sizes, positions and futuristic skyline. Add ONLY TWO TINY DISTANT PEOPLE, each about one twentieth of a platform diameter tall: one woman wearing ivory top and ivory trousers with a black bob stands at the centre of the SMALL IVORY LEFT platform; one man wearing ink-blue jacket and trousers stands at the centre of the SMALL DARK RIGHT platform. They face inward toward each other across water. The LARGE CENTRAL PEARL PLATFORM IS COMPLETELY EMPTY. No foreground people. Keep the fixed central island with its THREE SILVER ARCH ASSEMBLIES and its broad permanent access bridge toward camera. The two small touring platforms are NOT DOCKED: retract their short lateral docking bridges so there is a plainly visible BLUE WATER GAP between each small platform and the central island. Their separate curved mechanical guide rails and carriages remain visible below. Glass safety rail closes each docking mouth. Preserve the elegant hollow-tower city, blue bay, clean sunlight and physical architectural details. Wide cinematic photograph,16:9. This is a geography establishing shot with tiny human scale figures, not a portrait.",
+    "aspect": "16:9",
+    "shots": [
+      "05"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "Tiny geography figures preserve the approved frame's people and wardrobe; no readable facial-detail claim.",
+    "approval": "approved for apart/empty-island geography; motion and precise dock state unverified",
+    "base": "world"
+  },
+  {
+    "id": "k06",
+    "out": "episodes/first-day/assets/keyframes/k06.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base"
+    ],
+    "deps": [
+      "k10",
+      "lin_base"
+    ],
+    "prompt": "Reframe the approved A scene to the described medium composition, keeping Lin left and her attention toward screen right. The ivory arch belongs at the right docking side; preserve the skyline on the left. 50 mm, 1.4 m high, Lin left third, medium portrait with A's narrow arch at the right docking side. Her body faces the sea; her eyes rest toward screen right where Yu's gallery passes. Hands remain low; the profile is readable. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "06",
+      "10",
+      "15"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "a",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k10"
+  },
+  {
+    "id": "k07",
+    "out": "episodes/first-day/assets/keyframes/k07.png",
+    "mode": "edit",
+    "refs": [
+      "yu_base",
+      "yu_costume"
+    ],
+    "deps": [
+      "loc_b",
+      "yu_base",
+      "yu_costume"
+    ],
+    "prompt": "One Yu at the right third of the approved B scene, in the described torso-and-hand framing. His attention is toward screen left. Preserve the local dark arch and coral inset; do not enlarge him into a foreground head crop. 50 mm, 1.4 m high, Yu right third, waist-up with dark arch behind. He watches screen left with fingertips resting against his opposite sleeve cuff; the jacket remains unbuttoned and identical to reference. Yu is the referenced 27-year-old Chinese man, loose short black hair, clean-shaven, ink-blue collarless jacket over grey shirt, ink trousers and dark flat shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "07"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_b"
+  },
+  {
+    "id": "k08",
+    "out": "episodes/first-day/assets/keyframes/k08.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base"
+    ],
+    "deps": [
+      "k10",
+      "lin_base"
+    ],
+    "prompt": "Reframe the approved A scene to the described medium composition, keeping Lin left and her attention toward screen right. The ivory arch belongs at the right docking side; preserve the skyline on the left. 50 mm, 1.2 m high, Lin left third beside A's cobalt glass rail; medium-full composition. One rain droplet lies on the dry rail cap. Her index finger stops a finger-width from it; her gaze rests on the droplet, body safely inside the rail. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "11"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "a",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k10"
+  },
+  {
+    "id": "k09",
+    "out": "episodes/first-day/assets/keyframes/k09.png",
+    "mode": "edit",
+    "refs": [
+      "yu_base",
+      "yu_costume"
+    ],
+    "deps": [
+      "loc_b",
+      "yu_base",
+      "yu_costume"
+    ],
+    "prompt": "One Yu at the right third of the approved B scene, in the described torso-and-hand framing. His attention is toward screen left. Preserve the local dark arch and coral inset; do not enlarge him into a foreground head crop. 50 mm, 1.4 m high, Yu right third against the open sea and B's dark structural edge. His loose hair has one small wind-raised section; one hand remains below his shoulder before touching it. Yu is the referenced 27-year-old Chinese man, loose short black hair, clean-shaven, ink-blue collarless jacket over grey shirt, ink trousers and dark flat shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "12",
+      "48"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_b"
+  },
+  {
+    "id": "k10",
+    "out": "episodes/first-day/assets/keyframes/k10.png",
+    "mode": "t2i",
+    "refs": [],
+    "deps": [],
+    "prompt": "Create a carefully reframed cinematic photograph of the FIRST image, preserving its woman looking RIGHT and its exact coastal setting. This is a WIDER dance master with the camera pulled back. Keep her at the left third but make her much smaller: head near 20% down the canvas, complete shoe soles no lower than 78% down. Leave the bottom 22% as uninterrupted empty pearl floor. Keep the city LEFT, ivory arch RIGHT, bench farLEFT, cobalt glass rail, sky and sea; extend surrounding floor and sky naturally. Same woman, exact youthful Chinese face from third image, bob and left ear cuff. Restore the finely tailored ivory sleeveless highneck top and wide STRAIGHT PLEATED ivory trousers from the second costume reference; silver seam, flat white leather shoes. Left foot bears weight; free right heel gently touches the floor in front, with the right TOES LIFTED UP so the heel-touch is unambiguous. Both arms are low, loosely separated. Her nose points RIGHT, left cheek visible, lips CLOSED. Keep natural photographic light and simple beautiful skin. All body, hands and shoes completely visible with abundant clear floor below. Single16:9 landscape photograph, no text, no frame, no panels.",
+    "aspect": "16:9",
+    "shots": [
+      "13",
+      "50"
+    ],
+    "scene_model": "Codex built-in image_gen; exact underlying model not exposed",
+    "external": true,
+    "location": "a",
+    "character_sheet_note": "External approved image recipe records its identity and composition inputs; original portraits remain face authorities.",
+    "approval": "composition approved; motion unverified",
+    "external_recipe": "episodes/first-day/build/builtin_image_edits.json"
+  },
+  {
+    "id": "k11",
+    "out": "episodes/first-day/assets/keyframes/k11.png",
+    "mode": "edit",
+    "refs": [
+      "yu_base",
+      "yu_costume"
+    ],
+    "deps": [
+      "loc_b",
+      "yu_base",
+      "yu_costume"
+    ],
+    "prompt": "Wide B scene: one small complete Yu at the right third. Head-to-shoe height at most half the image; leave the bottom quarter clear floor and ample space to screen left. Preserve B's existing floor, dark arch, bench and coral inset. 35 mm, 1.15 m high, full-body Yu right third with travel space toward screen left. Yu begins balanced on his right foot, left heel prepared near the floor, arms low and separate. B's dark arch and coral inset remain fixed. Yu is the referenced 27-year-old Chinese man, loose short black hair, clean-shaven, ink-blue collarless jacket over grey shirt, ink trousers and dark flat shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "14",
+      "49"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_b"
+  },
+  {
+    "id": "k12",
+    "out": "episodes/first-day/assets/keyframes/k12.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base"
+    ],
+    "deps": [
+      "k10",
+      "lin_base"
+    ],
+    "prompt": "Keep the approved base's exact wide framing, figure scale, floor margins and wardrobe. Change only Lin's pose as follows. She looks toward screen right, never left. She is balanced just before a quarter turn: feet apart without crossed shins, right shoulder slightly leading, right hand low. A is the same approved set. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "23",
+      "36",
+      "61"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "a",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k10"
+  },
+  {
+    "id": "k13",
+    "out": "episodes/first-day/assets/keyframes/k13.png",
+    "mode": "edit",
+    "refs": [
+      "yu_base",
+      "yu_costume"
+    ],
+    "deps": [
+      "loc_b",
+      "yu_base",
+      "yu_costume"
+    ],
+    "prompt": "Wide B scene: one small complete Yu at the right third. Head-to-shoe height at most half the image; leave the bottom quarter clear floor and ample space to screen left. Preserve B's existing floor, dark arch, bench and coral inset. 50 mm, 1.15 m high, full-body Yu right of centre, clear floor toward screen left. He is balanced before the answering quarter turn, both feet supported and left arm separate from torso. Dark arch remains inland. Yu is the referenced 27-year-old Chinese man, loose short black hair, clean-shaven, ink-blue collarless jacket over grey shirt, ink trousers and dark flat shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "24",
+      "37",
+      "62"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_b"
+  },
+  {
+    "id": "k14",
+    "out": "episodes/first-day/assets/keyframes/k14.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base"
+    ],
+    "deps": [
+      "k10",
+      "lin_base"
+    ],
+    "prompt": "Keep the approved base's exact wide framing, figure scale, floor margins and wardrobe. Change only Lin's pose as follows. She looks toward screen right, never left. Her right hand is offered at waist height toward screen right; feet are apart and securely supported before the familiar retreat. She remains far inside A's rails. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "18",
+      "31",
+      "54"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "a",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k10"
+  },
+  {
+    "id": "k15",
+    "out": "episodes/first-day/assets/keyframes/k15.png",
+    "mode": "edit",
+    "refs": [
+      "yu_base",
+      "yu_costume"
+    ],
+    "deps": [
+      "loc_b",
+      "yu_base",
+      "yu_costume"
+    ],
+    "prompt": "Wide B scene: one small complete Yu at the right third. Head-to-shoe height at most half the image; leave the bottom quarter clear floor and ample space to screen left. Preserve B's existing floor, dark arch, bench and coral inset. 35 mm, 1.2 m high, full-body Yu right third, left hand clear against blue water. His left palm begins open toward screen left, feet planted apart before a retreat; B's architecture is unchanged. Yu is the referenced 27-year-old Chinese man, loose short black hair, clean-shaven, ink-blue collarless jacket over grey shirt, ink trousers and dark flat shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "32",
+      "53"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_b"
+  },
+  {
+    "id": "k16",
+    "out": "episodes/first-day/assets/keyframes/k16.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base",
+      "loc_i"
+    ],
+    "deps": [
+      "k10",
+      "lin_base",
+      "loc_i"
+    ],
+    "prompt": "Keep Lin as small as in the approved base with the same deep floor margin. Show the docking connection at screen right; change only her pose and the specified docking state. The island reference governs only the island beyond A. 50 mm, 1.25 m high from north, full Lin at left docking threshold; empty I visible beyond right. A is stopped beside the left island dock, bridge level and gate open. Lin's two shoes remain entirely on A, behind the seam; right palm low. Empty island and three ribs are readable. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "38",
+      "68"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "a",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k10"
+  },
+  {
+    "id": "k17",
+    "out": "episodes/first-day/assets/keyframes/k17.png",
+    "mode": "edit",
+    "refs": [
+      "yu_base",
+      "yu_costume",
+      "loc_i"
+    ],
+    "deps": [
+      "loc_b",
+      "yu_base",
+      "yu_costume",
+      "loc_i"
+    ],
+    "prompt": "Wide right-dock view: Yu is small at screen right, with complete shoes above a deep clear floor margin. B occupies the right and fixed I the left. Show one unambiguous level transfer seam and its specified gate state. 50 mm, 1.25 m high from north, full Yu at right docking threshold; empty I beyond screen left. B is stationary at the right island dock, bridge level and gate open. Both of Yu's shoes remain on B behind the seam; he watches departing A rather than the clear floor. Yu is the referenced 27-year-old Chinese man, loose short black hair, clean-shaven, ink-blue collarless jacket over grey shirt, ink trousers and dark flat shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "55"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_b"
+  },
+  {
+    "id": "k18",
+    "out": "episodes/first-day/assets/keyframes/k18.png",
+    "mode": "edit",
+    "refs": [],
+    "deps": [
+      "k10"
+    ],
+    "prompt": "Reframe downward into a low shoe-and-trouser detail of the approved Lin scene. Exclude the head and upper torso; show only the specified legs, shoes and their floor contact. 65 mm, 0.55 m high, Lin's lower full body left of centre; knees and both shoes clear. Her weight is forward and the free foot is ready for one short backward dance step on the uninterrupted floor of A, away from its dock. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface.",
+    "aspect": "16:9",
+    "shots": [
+      "27",
+      "52"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "a",
+    "character_sheet_note": "No visible face requires portrait or sheet conditioning in this detail/location image.",
+    "approval": "pending generation and visual QA",
+    "base": "k10"
+  },
+  {
+    "id": "k19",
+    "out": "episodes/first-day/assets/keyframes/k19.png",
+    "mode": "edit",
+    "refs": [
+      "yu_costume"
+    ],
+    "deps": [
+      "loc_b",
+      "yu_costume"
+    ],
+    "prompt": "Low close detail on B's blue-grey floor: only Yu's ink trouser legs and dark flat shoes. Exclude head, torso and hands. Both shoes remain fully inside the crop. 65 mm, 0.55 m high, Yu's lower body right of centre with knees and both shoes visible. The free foot is ready for one short backward dance step on B's blue-grey floor, well away from the docking threshold. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface.",
+    "aspect": "16:9",
+    "shots": [
+      "28",
+      "51"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "No visible face requires portrait or sheet conditioning in this detail/location image.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_b"
+  },
+  {
+    "id": "k20",
+    "out": "episodes/first-day/assets/keyframes/k20.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base"
+    ],
+    "deps": [
+      "k10",
+      "lin_base"
+    ],
+    "prompt": "Keep the approved base's exact wide framing, figure scale, floor margins and wardrobe. Change only Lin's pose as follows. She looks toward screen right, never left. She stands in a grounded lateral preparation, right foot free and hands separate; one shoulder points toward screen right without twisting the torso. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "19",
+      "33",
+      "65"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "a",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k10"
+  },
+  {
+    "id": "k21",
+    "out": "episodes/first-day/assets/keyframes/k21.png",
+    "mode": "edit",
+    "refs": [
+      "yu_base",
+      "yu_costume"
+    ],
+    "deps": [
+      "loc_b",
+      "yu_base",
+      "yu_costume"
+    ],
+    "prompt": "Wide B scene: one small complete Yu at the right third. Head-to-shoe height at most half the image; leave the bottom quarter clear floor and ample space to screen left. Preserve B's existing floor, dark arch, bench and coral inset. 35 mm, 1.15 m high, full Yu right third, clear floor to screen left and dark arch behind. He stands with relaxed knees before answering the two-step phrase, arms low and separate, jacket edge free of his hands. Yu is the referenced 27-year-old Chinese man, loose short black hair, clean-shaven, ink-blue collarless jacket over grey shirt, ink trousers and dark flat shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "20",
+      "34",
+      "66"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_b"
+  },
+  {
+    "id": "k22",
+    "out": "episodes/first-day/assets/keyframes/k22.png",
+    "mode": "edit",
+    "refs": [
+      "loc_a"
+    ],
+    "deps": [
+      "lin_base",
+      "loc_a"
+    ],
+    "prompt": "Close portrait of the original Lin identity in A. Face and upper torso only; gaze toward screen right. Do not invent a new face or change the actual local set. 85 mm, 1.45 m high, Lin's face and upper torso left third, right shoulder foreground edge. Her eyes point to screen right, mouth closed, head quiet between phrases; the distant blue rail establishes A without busy detail. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "29",
+      "58"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "a",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "lin_base"
+  },
+  {
+    "id": "k23",
+    "out": "episodes/first-day/assets/keyframes/k23.png",
+    "mode": "edit",
+    "refs": [
+      "loc_b"
+    ],
+    "deps": [
+      "yu_base",
+      "loc_b"
+    ],
+    "prompt": "Close portrait of the original Yu identity in B. Face and upper torso only; gaze toward screen left. Preserve his youthful clear skin and the local dark architectural edge. 85 mm, 1.45 m high, Yu's face and upper torso right third, dark arch as a clean background edge. His eyes point screen left, mouth closed; his head remains composed after the preceding dance phrase. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "30",
+      "57"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "yu_base"
+  },
+  {
+    "id": "k24",
+    "out": "episodes/first-day/assets/keyframes/k24.png",
+    "mode": "edit",
+    "refs": [],
+    "deps": [
+      "k05"
+    ],
+    "prompt": "Keep the base's wide oblique geography, distant human scale and exact deck identities. Change only the specified poses and docking state. Lin stays on A at left, Yu on B at right; the central island stays empty. Lin remains on A at left and Yu on B at right. Both prepare complementary low open arms; water separates their floors from empty I. Gates are closed on passing galleries. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface.",
+    "aspect": "16:9",
+    "shots": [
+      "35"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "Tiny geography figures preserve the approved frame's people and wardrobe; no readable facial-detail claim.",
+    "approval": "pending generation and visual QA",
+    "base": "k05"
+  },
+  {
+    "id": "k25",
+    "out": "episodes/first-day/assets/keyframes/k25.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base",
+      "loc_i"
+    ],
+    "deps": [
+      "k10",
+      "lin_base",
+      "loc_i"
+    ],
+    "prompt": "Keep Lin as small as in the approved base with the same deep floor margin. Show the docking connection at screen right; change only her pose and the specified docking state. The island reference governs only the island beyond A. 50 mm, 1.3 m high, Lin full at left and closed departure gate foreground edge, empty island receding right. Lin has stayed on A. Both feet are on its floor, hand lowered. Closed gate and broken water gap prove the opportunity has passed; nobody occupies I. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "39"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "a",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k10"
+  },
+  {
+    "id": "k26",
+    "out": "episodes/first-day/assets/keyframes/k26.png",
+    "mode": "edit",
+    "refs": [],
+    "deps": [
+      "loc_i"
+    ],
+    "prompt": "Preserve the approved island view with no people anywhere. The vacant central pearl floor is the subject. Change only the specified gate state. 35 mm, 1.5 m high, fixed island's vacant central floor and sea beyond; three ribs at north edge. I is visibly empty, its public access path attached and both docks closed. One low bench sits outside the dance floor. The empty patch of pearl floor is the visual subject. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface.",
+    "aspect": "16:9",
+    "shots": [
+      "40"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "No visible face requires portrait or sheet conditioning in this detail/location image.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_i"
+  },
+  {
+    "id": "k27",
+    "out": "episodes/first-day/assets/keyframes/k27.png",
+    "mode": "edit",
+    "refs": [
+      "yu_base",
+      "yu_costume"
+    ],
+    "deps": [
+      "loc_b",
+      "yu_base",
+      "yu_costume"
+    ],
+    "prompt": "Wide B scene: one small complete Yu at the right third. Head-to-shoe height at most half the image; leave the bottom quarter clear floor and ample space to screen left. Preserve B's existing floor, dark arch, bench and coral inset. 50 mm, 1.2 m high, Yu seated right third on B's dark bench with his complete legs and shoes visible. A jacket corner rests loose beside his thigh; one hand waits above it. Bench and dark arch are inland; the sea remains beyond the rail. Yu is the referenced 27-year-old Chinese man, loose short black hair, clean-shaven, ink-blue collarless jacket over grey shirt, ink trousers and dark flat shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "41"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_b"
+  },
+  {
+    "id": "k28",
+    "out": "episodes/first-day/assets/keyframes/k28.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base"
+    ],
+    "deps": [
+      "k10",
+      "lin_base"
+    ],
+    "prompt": "Keep the approved base's wide view, deep floor margin and existing bench at far left. Change only Lin's position to seated on that bench and the described small pose; retain her complete shoes. Her shoes are close together just above the floor; hands rest on the bench. She looks at the shoes before privately copying one fragment of Yu's premature retreat. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "42"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "a",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k10"
+  },
+  {
+    "id": "k29",
+    "out": "episodes/first-day/assets/keyframes/k29.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base"
+    ],
+    "deps": [
+      "k10",
+      "lin_base"
+    ],
+    "prompt": "Keep the approved base's wide view, deep floor margin and existing bench at far left. Change only Lin's position to seated on that bench and the described small pose; retain her complete shoes. Her hands rest on the ivory bench beside her; the empty seat and sea horizon occupy the right half. Both feet have settled. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "43"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "a",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k10"
+  },
+  {
+    "id": "k30",
+    "out": "episodes/first-day/assets/keyframes/k30.png",
+    "mode": "edit",
+    "refs": [
+      "yu_base",
+      "yu_costume"
+    ],
+    "deps": [
+      "loc_b",
+      "yu_base",
+      "yu_costume"
+    ],
+    "prompt": "Wide B scene: one small complete Yu at the right third. Head-to-shoe height at most half the image; leave the bottom quarter clear floor and ample space to screen left. Preserve B's existing floor, dark arch, bench and coral inset. 50 mm, 1.2 m high, seated Yu right third in three-quarter profile toward the same sea horizon. His hands rest on his thighs, jacket corner contained; the vacant bench space is to his left. Same horizon and sun as Lin's matching view. Yu is the referenced 27-year-old Chinese man, loose short black hair, clean-shaven, ink-blue collarless jacket over grey shirt, ink trousers and dark flat shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "44"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_b"
+  },
+  {
+    "id": "k31",
+    "out": "episodes/first-day/assets/keyframes/k31.png",
+    "mode": "edit",
+    "refs": [
+      "loc_a"
+    ],
+    "deps": [
+      "phase_model",
+      "loc_a"
+    ],
+    "prompt": "Close tabletop view of the exact approved physical phase model, all bobs retained. Only its quiet A-gallery setting changes; no person or body in frame. 85 mm, 0.9 m high at tabletop eye level, the referenced small phase demonstration left of centre. The approved phase_model sits on A's fixed narrow console: a graded row of polished brass pendulums, each independently suspended, with unlabelled hardware. It is the only immaculate schematic object. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface.",
+    "aspect": "16:9",
+    "shots": [
+      "45"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "a",
+    "character_sheet_note": "No visible face requires portrait or sheet conditioning in this detail/location image.",
+    "approval": "pending generation and visual QA",
+    "base": "phase_model"
+  },
+  {
+    "id": "k32",
+    "out": "episodes/first-day/assets/keyframes/k32.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base"
+    ],
+    "deps": [
+      "k10",
+      "lin_base"
+    ],
+    "prompt": "Keep the approved base's exact wide framing, figure scale, floor margins and wardrobe. Change only Lin's pose as follows. She looks toward screen right, never left. She has stood up; the right hand remains low, prepared for a very small invitation toward the island. Body and face stay composed. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "16",
+      "46"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "a",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k10"
+  },
+  {
+    "id": "k33",
+    "out": "episodes/first-day/assets/keyframes/k33.png",
+    "mode": "edit",
+    "refs": [
+      "yu_base",
+      "yu_costume"
+    ],
+    "deps": [
+      "loc_b",
+      "yu_base",
+      "yu_costume"
+    ],
+    "prompt": "One Yu at the right third of the approved B scene, in the described torso-and-hand framing. His attention is toward screen left. Preserve the local dark arch and coral inset; do not enlarge him into a foreground head crop. 50 mm, 1.3 m high, Yu right third, torso and lowered hand visible with the right dock in depth. He has risen beside the dark bench and looks screen left toward Lin's new, smaller invitation. His left hand remains still. Yu is the referenced 27-year-old Chinese man, loose short black hair, clean-shaven, ink-blue collarless jacket over grey shirt, ink trousers and dark flat shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "17",
+      "47"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_b"
+  },
+  {
+    "id": "k34",
+    "out": "episodes/first-day/assets/keyframes/k34.png",
+    "mode": "edit",
+    "refs": [
+      "loc_b"
+    ],
+    "deps": [
+      "gate",
+      "loc_b"
+    ],
+    "prompt": "Close object detail of the complete approved ribbon-reel housing beside B's glass gate, with a short ribbon still outside. No people. Keep this crop about the mechanism, not a wide dock view. 85 mm, 0.8 m high, brass boarding-ribbon housing beside B's closed glass gate, no people. The complete referenced gate hardware is on B's blue-grey floor. A short coral boarding ribbon remains visibly outside its brass spool; no text, clock or numbers. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface.",
+    "aspect": "16:9",
+    "shots": [
+      "56"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "No visible face requires portrait or sheet conditioning in this detail/location image.",
+    "approval": "pending generation and visual QA",
+    "base": "gate"
+  },
+  {
+    "id": "k35",
+    "out": "episodes/first-day/assets/keyframes/k35.png",
+    "mode": "edit",
+    "refs": [],
+    "deps": [
+      "k05"
+    ],
+    "prompt": "Keep the base's wide oblique geography, distant human scale and exact deck identities. Change only the specified poses and docking state. Lin stays on A at left, Yu on B at right; the central island stays empty. A with Lin is stopped at the left island dock; B with Yu approaches at right on its different guide. I is still empty. Its public path, supports and both separate gate states are unmistakable. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface.",
+    "aspect": "16:9",
+    "shots": [
+      "67"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "Tiny geography figures preserve the approved frame's people and wardrobe; no readable facial-detail claim.",
+    "approval": "pending generation and visual QA",
+    "base": "k05"
+  },
+  {
+    "id": "k36",
+    "out": "episodes/first-day/assets/keyframes/k36.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base",
+      "loc_i"
+    ],
+    "deps": [
+      "k10",
+      "lin_base",
+      "loc_i"
+    ],
+    "prompt": "Keep Lin as small as in the approved base with the same deep floor margin. Show the docking connection at screen right; change only her pose and the specified docking state. The island reference governs only the island beyond A. 35 mm, 1.15 m high from north, full Lin left third at A's open dock, continuous bridge to I on the right. A is stationary and level with I. Lin's two feet are still wholly on A before the seam, facing right toward the clear bridge; three silver ribs identify I. Gate fully open, handrail uninterrupted. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "69"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "a",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k10"
+  },
+  {
+    "id": "k37",
+    "out": "episodes/first-day/assets/keyframes/k37.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base",
+      "lin_costume",
+      "loc_a"
+    ],
+    "deps": [
+      "loc_i",
+      "lin_base",
+      "lin_costume",
+      "loc_a"
+    ],
+    "prompt": "Wide island view: add only Lin on the left third, complete head-to-shoe height at most half the image and bottom quarter clear floor. Yu is absent. Preserve I; the A reference governs only the left background deck and its specified dock state. 35 mm, 1.15 m high from north, full Lin left of centre on I, the level left bridge behind her. Lin has completed the crossing: both ivory shoes wholly on fixed I beyond the seam, arms down, empty floor to her right. A remains stopped behind the open bridge; she is not straddling it. Lin is the referenced 25-year-old Chinese woman, black chin-length bob, silver left-ear cuff, ivory high-neck sleeveless top, wide straight ivory trousers and flat ivory dance shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "70"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_i"
+  },
+  {
+    "id": "k38",
+    "out": "episodes/first-day/assets/keyframes/k38.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base",
+      "lin_costume",
+      "loc_a"
+    ],
+    "deps": [
+      "loc_i",
+      "lin_base",
+      "lin_costume",
+      "loc_a"
+    ],
+    "prompt": "Wide island view: add only Lin on the left third, complete head-to-shoe height at most half the image and bottom quarter clear floor. Yu is absent. Preserve I; the A reference governs only the left background deck and its specified dock state. 35 mm, 1.2 m high from north, full Lin left third on fixed I and a large empty right half. Both feet are planted well inside I and arms rest. The left gate is now closed before empty A departs behind her; A's ivory arch remains recognizable. Three ribs and the solid island floor prove stable ground. Lin is the referenced 25-year-old Chinese woman, black chin-length bob, silver left-ear cuff, ivory high-neck sleeveless top, wide straight ivory trousers and flat ivory dance shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "71"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_i"
+  },
+  {
+    "id": "k39",
+    "out": "episodes/first-day/assets/keyframes/k39.png",
+    "mode": "edit",
+    "refs": [
+      "yu_base",
+      "yu_costume",
+      "loc_i",
+      "lin_base"
+    ],
+    "deps": [
+      "loc_b",
+      "yu_base",
+      "yu_costume",
+      "loc_i",
+      "lin_base"
+    ],
+    "prompt": "Yu stands still on B at screen right, looking left. Compose his face and torso clearly while showing distant I at left with only a tiny ivory-clad Lin; no third person. The island reference governs the background, not his floor. 50 mm, 1.35 m high from north, Yu right third on B, island and waiting Lin's tiny ivory silhouette across left background. Yu stands with both feet aboard B and his hands still, looking left at the empty space beside Lin on I. His face is the focal point; the distant figure is only Lin, never a third person. Yu is the referenced 27-year-old Chinese man, loose short black hair, clean-shaven, ink-blue collarless jacket over grey shirt, ink trousers and dark flat shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "72",
+      "74"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_b"
+  },
+  {
+    "id": "k40",
+    "out": "episodes/first-day/assets/keyframes/k40.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base",
+      "lin_costume",
+      "loc_b"
+    ],
+    "deps": [
+      "loc_i",
+      "lin_base",
+      "lin_costume",
+      "loc_b"
+    ],
+    "prompt": "Wide island view: add only Lin on the left third, complete head-to-shoe height at most half the image and bottom quarter clear floor. Keep the right half empty beside her; Yu remains off this island. B is only the approaching right background gallery. 50 mm, 1.2 m high, full Lin left third on fixed I; open empty floor to screen right. Lin is balanced before her familiar phrase, right heel near the floor and right palm low. Her stopped stance on I and B's approaching right dock remain clear. Lin is the referenced 25-year-old Chinese woman, black chin-length bob, silver left-ear cuff, ivory high-neck sleeveless top, wide straight ivory trousers and flat ivory dance shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "73"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_i"
+  },
+  {
+    "id": "k41",
+    "out": "episodes/first-day/assets/keyframes/k41.png",
+    "mode": "edit",
+    "refs": [
+      "yu_base",
+      "yu_costume",
+      "lin_base",
+      "lin_costume",
+      "loc_b"
+    ],
+    "deps": [
+      "loc_i",
+      "yu_base",
+      "yu_costume",
+      "lin_base",
+      "lin_costume",
+      "loc_b"
+    ],
+    "prompt": "Wide level right-dock view: Yu stands wholly on B at screen right before its seam; Lin stands wholly on I at left. Both are small complete figures above a deep floor margin. B's reference governs the right gallery; preserve one clear open level bridge, not overlapping floors. 35 mm, 1.15 m high from north, full Yu at screen right and open level bridge toward I at left. B is stopped at the right dock with gate fully open; both of Yu's shoes are still on B before the seam. Lin stands on I left background, right hand offered; four arms remain visually separate. Yu is the referenced 27-year-old Chinese man, loose short black hair, clean-shaven, ink-blue collarless jacket over grey shirt, ink trousers and dark flat shoes. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "75"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "b",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "loc_i"
+  },
+  {
+    "id": "k42",
+    "out": "episodes/first-day/assets/keyframes/k42.png",
+    "mode": "t2i",
+    "refs": [],
+    "deps": [],
+    "prompt": "Reframe this exact cinematic photograph WIDER for a dance master. Preserve these two exact people, their faces, hairstyles, clothes, left/right arrangement, facing each other and the separate raised hands before touching. Preserve the exact pearl island, silver ribs, glass rail, sea, distant docked deck and bright photographic daylight. Pull the camera back so the figures take up only about60percent of the image height, with their complete shoe soles at or ABOVE the78percent height line. The bottom22percent of the canvas must be empty, unobstructed pearl dance floor beneath BOTH pairs of shoes. Add floor and environment around the existing view naturally, preserving scale and perspective. Keep their heads and ALL FOUR complete shoes in frame. Do not tighten the framing again. Do not change their identity, body proportions, costume, pose or hand gesture. Single elegant physical photographic image, landscape16:9, no text, no borders, no panels.",
+    "aspect": "16:9",
+    "shots": [
+      "77"
+    ],
+    "scene_model": "Codex built-in image_gen; exact underlying model not exposed",
+    "external": true,
+    "location": "i",
+    "character_sheet_note": "External approved image recipe records its identity and composition inputs; original portraits remain face authorities.",
+    "approval": "composition approved; motion unverified",
+    "external_recipe": "episodes/first-day/build/builtin_image_edits.json"
+  },
+  {
+    "id": "k43",
+    "out": "episodes/first-day/assets/keyframes/k43.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base",
+      "yu_base"
+    ],
+    "deps": [
+      "k42",
+      "lin_base",
+      "yu_base"
+    ],
+    "prompt": "Keep the approved duet base's exact wide framing, figure sizes, costumes and deep floor margin. Change only the specified body/hand pose. Lin stays left, Yu right, four shoes fully visible. Lin's right hand and Yu's left connect gently at waist height, no interlaced fingers. Both stand with separate supported feet, preparing one small grounded shared turn; no arms near faces. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "83",
+      "88"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k42"
+  },
+  {
+    "id": "k44",
+    "out": "episodes/first-day/assets/keyframes/k44.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base",
+      "yu_base"
+    ],
+    "deps": [
+      "k42",
+      "lin_base",
+      "yu_base"
+    ],
+    "prompt": "Keep the approved duet base's exact wide framing, figure sizes, costumes and deep floor margin. Change only the specified body/hand pose. Lin stays left, Yu right, four shoes fully visible. The modest shared turn has landed: Lin remains left and Yu right, both feet of each person fully supported, bodies angled slightly toward the sea, right-to-left hand connection relaxed at waist height. Exact I architecture and horizon. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "78",
+      "89",
+      "96"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k42"
+  },
+  {
+    "id": "k45",
+    "out": "episodes/first-day/assets/keyframes/k45.png",
+    "mode": "edit",
+    "refs": [],
+    "deps": [
+      "k42"
+    ],
+    "prompt": "Reframe downward from the approved duet into the described four-shoe detail. Exclude heads, torsos and hands; retain ivory shoes at left, dark shoes at right on one continuous pearl floor. 65 mm, 0.45 m high from north, four shoes and knees across one pearl-stone floor. Lin's ivory shoes occupy the left and Yu's dark shoes the right; all four have plausible support with a small shared dance gap. No crossed shins; no platform seam between them. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface.",
+    "aspect": "16:9",
+    "shots": [
+      "79",
+      "85",
+      "94"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "No visible face requires portrait or sheet conditioning in this detail/location image.",
+    "approval": "pending generation and visual QA",
+    "base": "k42"
+  },
+  {
+    "id": "k46",
+    "out": "episodes/first-day/assets/keyframes/k46.png",
+    "mode": "edit",
+    "refs": [],
+    "deps": [
+      "k42"
+    ],
+    "prompt": "Reframe the approved duet into a close waist-height hand detail, shoulders and faces outside the crop. Only Lin's bare right forearm from left and Yu's ink-sleeved left forearm from right form the specified light connection. 85 mm, 1.05 m high from north, Lin's right hand at left meets Yu's left at right, shoulders outside the crop. One simple light hand connection at waist height, distinct wrists and fingers with no interlacing; Lin's bare forearm and ivory top edge identify the left person, Yu's ink sleeve the right. Pearl floor and silver rib softly behind. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface.",
+    "aspect": "16:9",
+    "shots": [
+      "80",
+      "86",
+      "95"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "No visible face requires portrait or sheet conditioning in this detail/location image.",
+    "approval": "pending generation and visual QA",
+    "base": "k42"
+  },
+  {
+    "id": "k47",
+    "out": "episodes/first-day/assets/keyframes/k47.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base",
+      "yu_base"
+    ],
+    "deps": [
+      "k42",
+      "lin_base",
+      "yu_base"
+    ],
+    "prompt": "Reframe the approved duet into the described close face and partner-shoulder composition. Preserve the original identity references and the pair's left/right order; no full-body framing is requested. 85 mm, 1.45 m high from north, Lin's face left third with Yu's ink shoulder at right edge. Lin looks toward the real person beside her rather than across water; composed mouth closed, bob and left cuff unchanged. The shared island ribs fix location. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "81",
+      "90"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k42"
+  },
+  {
+    "id": "k48",
+    "out": "episodes/first-day/assets/keyframes/k48.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base",
+      "yu_base"
+    ],
+    "deps": [
+      "k42",
+      "lin_base",
+      "yu_base"
+    ],
+    "prompt": "Reframe the approved duet into the described close face and partner-shoulder composition. Preserve the original identity references and the pair's left/right order; no full-body framing is requested. 85 mm, 1.45 m high from north, Yu's face right third with Lin's ivory shoulder at left edge. Yu's eyes rest toward Lin beside him, face composed and mouth closed, with I's silver rib and blue sea behind. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "82",
+      "91"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k42"
+  },
+  {
+    "id": "k49",
+    "out": "episodes/first-day/assets/keyframes/k49.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base",
+      "yu_base"
+    ],
+    "deps": [
+      "k42",
+      "lin_base",
+      "yu_base"
+    ],
+    "prompt": "Keep the approved duet base's exact wide framing, figure sizes, costumes and deep floor margin. Change only the specified body/hand pose. Lin stays left, Yu right, four shoes fully visible. They stand a comfortable arm's distance apart, connection released, both prepared for a playful answering side step. Feet and hands stay separate and readable. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "84",
+      "87",
+      "93"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k42"
+  },
+  {
+    "id": "k50",
+    "out": "episodes/first-day/assets/keyframes/k50.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base",
+      "yu_base",
+      "world"
+    ],
+    "deps": [
+      "k42",
+      "lin_base",
+      "yu_base",
+      "world"
+    ],
+    "prompt": "Open the approved duet view into the described wider geography, keeping both people small, complete and safely on I. Preserve the island foreground and wardrobe; the world reference governs only the separate empty departing galleries and distant supported routes. 28 mm, 1.8 m high from north, full pair small but readable on I beneath the three silver ribs. Both stand on I after a shared phrase, hands lowered. Empty A and B depart on their visible guides; one spectacular open structural sweep frames the sea. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "92"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k42"
+  },
+  {
+    "id": "k51",
+    "out": "episodes/first-day/assets/keyframes/k51.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base",
+      "yu_base"
+    ],
+    "deps": [
+      "k42",
+      "lin_base",
+      "yu_base"
+    ],
+    "prompt": "Keep the approved duet's wide framing, figure scale, costumes and deep floor margin. Change only their position/orientation as described toward the existing sea rail; both remain standing with four shoes visible. Lin left and Yu right face the sea at a slight angle, ready to walk side by side; hands hang naturally and no dance pose remains. A clear pedestrian route leads to the rail. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "97"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k42"
+  },
+  {
+    "id": "k52",
+    "out": "episodes/first-day/assets/keyframes/k52.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base",
+      "yu_base"
+    ],
+    "deps": [
+      "k42",
+      "lin_base",
+      "yu_base"
+    ],
+    "prompt": "Keep the approved duet's wide framing, figure scale, costumes and deep floor margin. Change only their position/orientation as described toward the existing sea rail; both remain standing with four shoes visible. Both stand upright near each other, Lin left and Yu right. His left hand rests low between them, fingers naturally relaxed before the palm opens; her right arm is relaxed. They face the same sea, feet planted. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "98",
+      "100"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k42"
+  },
+  {
+    "id": "k53",
+    "out": "episodes/first-day/assets/keyframes/k53.png",
+    "mode": "edit",
+    "refs": [],
+    "deps": [
+      "k42"
+    ],
+    "prompt": "Reframe downward from the approved duet into the described four-shoe detail. Exclude heads, torsos and hands; retain ivory shoes at left, dark shoes at right on one continuous pearl floor. 85 mm, 0.25 m high from north, ivory and dark shoes together on the same uninterrupted pearl floor. Both pairs of shoes are at rest, ivory left and dark right, with a comfortable small gap; four feet fully supported. A thin cobalt reflection comes from the visible railing edge above. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface.",
+    "aspect": "16:9",
+    "shots": [
+      "99"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "No visible face requires portrait or sheet conditioning in this detail/location image.",
+    "approval": "pending generation and visual QA",
+    "base": "k42"
+  },
+  {
+    "id": "k54",
+    "out": "episodes/first-day/assets/keyframes/k54.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base",
+      "yu_base",
+      "world"
+    ],
+    "deps": [
+      "k42",
+      "lin_base",
+      "yu_base",
+      "world"
+    ],
+    "prompt": "Open the approved duet view into the described wider geography, keeping both people small, complete and safely on I. Preserve the island foreground and wardrobe; the world reference governs only the separate empty departing galleries and distant supported routes. 28 mm, 1.6 m high from north, wide final tableau with the standing pair at the south rail and open sea filling the upper half. Lin and Yu stand side by side, seen in quiet three-quarter rear profile, ivory left and ink right, full bodies and shoes clear. The three silver ribs in the foreground and empty departing galleries preserve the exact established world; no one sits. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "101"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k42"
+  },
+  {
+    "id": "k55",
+    "out": "episodes/first-day/assets/keyframes/k55.png",
+    "mode": "edit",
+    "refs": [
+      "lin_base",
+      "yu_base",
+      "loc_b"
+    ],
+    "deps": [
+      "k42",
+      "lin_base",
+      "yu_base",
+      "loc_b"
+    ],
+    "prompt": "Keep the approved duet's wide framing, figure scale, costumes and deep floor margin. Change only the arrival pose and right docking state: B remains docked with its gate open; the hands have not met. Yu has just completed his crossing: both dark shoes wholly on I beyond the right seam; both ivory shoes already on I. Lin's right hand and Yu's left remain separate. B is stopped, bridge level and gate still open; this is arrival, before the first shared dance. Photographic large-format film still in the approved porcelain maritime future, full 16:9. Preserve the base's architecture, materials, daylight direction and photographic finish. No extra people, text or interface. Faces composed, mouths closed. Original portraits govern identity. Keep the exact age and clear, even skin from the reference: add no blemishes, spots, weathering or extra lines.",
+    "aspect": "16:9",
+    "shots": [
+      "76"
+    ],
+    "scene_model": "luma/agent/uni-1/v1/max/edit",
+    "external": false,
+    "location": "i",
+    "character_sheet_note": "Original portraits govern faces; approved scene bases govern composition. Yu's sheet remains excluded after age/skin drift. Lin's sheet is supporting evidence only and is omitted where the approved scene already fixes the angle.",
+    "approval": "pending generation and visual QA",
+    "base": "k42"
+  }
+]

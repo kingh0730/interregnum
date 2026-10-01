@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "episode": "first-day",
+  "status": "plan_pass_images_pending",
+  "scope": "independent narrative, continuity, prompt parity, dependency and timing audit",
+  "canonical": {
+    "duration_seconds": 253.96,
+    "fps": 24,
+    "timeline_frames": 6096,
+    "lin_crossing": [
+      160.0,
+      164.0
+    ],
+    "held_wait": [
+      164.0,
+      179.13
+    ],
+    "yu_crossing": [
+      179.13,
+      191.05
+    ],
+    "phrase": [
+      "heel_touch",
+      "quarter_turn",
+      "open_palm",
+      "retreat_omitted_at_final_invitation"
+    ],
+    "ending": "standing_together_at_island_sea_rail"
+  },
+  "findings": [
+    {
+      "id": "N01",
+      "severity": "material",
+      "status": "resolved_verified",
+      "file": "episodes/first-day/episode.md",
+      "finding": "Outline has stale wrist-circle motif, crossing in 164–179.13 section, and seated coda, conflicting with canonical script."
+    },
+    {
+      "id": "G01",
+      "severity": "material",
+      "status": "resolved_verified",
+      "file": "episodes/first-day/build/director_lock.md",
+      "finding": "West sunlight cannot be screen-left in the stated north-to-south common camera view."
+    },
+    {
+      "id": "P01",
+      "severity": "material",
+      "status": "resolved_verified",
+      "file": "episodes/first-day/build/make_plan.py",
+      "finding": "k46 describes an ivory sleeve although Lin is sleeveless; must not introduce a wardrobe change."
+    },
+    {
+      "id": "P02",
+      "severity": "material",
+      "status": "resolved_verified",
+      "file": "episodes/first-day/build/make_plan.py",
+      "finding": "k33 starts already risen but motion asks Yu to rise; align initial pose and action."
+    },
+    {
+      "id": "P03",
+      "severity": "material",
+      "status": "resolved_verified",
+      "file": "episodes/first-day/build/motion_plan.json",
+      "finding": "m52 source ranges for coda98/100 overlap, replaying one invitation where100 requires a standing hold."
+    }
+  ],
+  "pending_checks": [
+    "generated_asset_existence",
+    "face_and_location_still_visual_QA",
+    "still_contact_sheet_continuity",
+    "human_motion_and_listening_review"
+  ],
+  "motion_or_listening_approval": false,
+  "machine_checks": {
+    "image_key_count": 55,
+    "reference_count": 12,
+    "timeline_shots": 101,
+    "motion_jobs": 53,
+    "start_frame": 0,
+    "end_frame": 6096,
+    "frame_contiguity": "pass",
+    "all_exact_image_prompts_match_shot_md": "pass_all_101",
+    "all_motion_prompts_match_shot_md": "pass_all_101",
+    "reference_base_dep_ids_resolve": "pass",
+    "dependency_cycles": "none",
+    "source_trim_bounds_and_lengths": "pass",
+    "keyframe_reverse_shot_indexes": "pass",
+    "motion_duration_range_5_to_15_seconds": "pass",
+    "planned_primary_motion_seconds": 327,
+    "planned_seconds_with_takes": 426,
+    "coda_tail_no_source_overlap": "pass",
+    "unique_dependency_namespace": 69,
+    "reference_and_sheet_unique_count": 14,
+    "max_reference_urls": 5,
+    "lin_sheet_scene_count": 0,
+    "rejected_yu_sheet_scene_count": 0,
+    "timeline_change_scope": "Frozen current plan checked; all intervals and source trim lengths conform. No assertion about unaudited intermediate drafts.",
+    "phase_model_numeric_count_removed": "pass",
+    "generated_keyframe_count_current": 3,
+    "character_sheet_manifest_entry_count": 4,
+    "external_completed_keyframes": [
+      "k10",
+      "k42"
+    ],
+    "external_recipe_prompt_and_output_input_hashes": "pass",
+    "scene_conditioning": "Composition bases govern framing and geometry; original portraits remain identity references where readable. Rejected Yu sheet and optional Lin sheet both absent from current scene conditioning.",
+    "approved_keyframe_bases": {
+      "k05": 2,
+      "k10": 14,
+      "k42": 13
+    }
+  },
+  "audited_file_sha256": {
+    "episodes/first-day/build/keyframes.json": "5afbbc87c37dd2cf822f611d8360f6969615e5fb69bd821d8c8e4e3a6e24cbd6",
+    "episodes/first-day/build/timeline.json": "c1e67840f5c3efbb0163a9f07b0b0cefe1a2ea19377a7711826162717e040eaa",
+    "episodes/first-day/build/motion_plan.json": "93c6097f434b84524f79f776d4d7df7dd5b49525f429ab60b6f7d06974d6ea28",
+    "episodes/first-day/build/references.json": "1d3ee0113d1af81a56615669a5aa8a2da3b1bc94d0953132282c5bd763b49d8c",
+    "episodes/first-day/build/character_sheets.json": "8915519d3ffcb98744944503880561987b5c56f8748bd15c24bfb16c8b1e3cc5",
+    "episodes/first-day/build/audio_plan.json": "a468fbf3b7aae1db912e0b9c4bf0c6a0251c307e76b8e5501af46c663a0dcb79",
+    "episodes/first-day/build/lyrics.json": "874b1f2e78d187054bd0c64acd0986212ffd06ad5368d758ac1f54667d4e838a",
+    "episodes/first-day/build/make_plan.py": "5da66750b5205f31ffb97837bcc68e7cddfe789568890d3ca4802c92bf6b79da",
+    "episodes/first-day/build/builtin_image_edits.json": "7454c2d6dd49164ac5e93a831b2fbfc4b72954cd4b5bb5c2dfdb8820f679fa08"
+  },
+  "audio_review": {
+    "status": "pass_signal_and_text_integrity",
+    "duration_seconds": 253.96,
+    "sample_rate": 44100,
+    "samples_per_channel": 11199636,
+    "channels": 2,
+    "static_gain_db": -8.2,
+    "master_lufs": -16.0,
+    "master_dbtp": -8.0,
+    "master_lra": 6.1,
+    "pcm_md5": "9f22390ec0e9da2cbfd20c271b1c184e",
+    "current_master_pcm_matches_source_plus_gain": true,
+    "original_mp3_lrc_sha256_unchanged": true,
+    "lyrics_exact_source_text_and_starts": 77,
+    "metadata_entries_separate": 4,
+    "last_subtitle_end_seconds": 243.96,
+    "listening_and_forced_alignment_claimed": false,
+    "srt_exact_cues_and_millisecond_times": true
+  },
+  "audit_runner": "episodes/first-day/build/delivery_audit.py",
+  "image_status_limits": "Existing files and completed provider responses are not image approval. Three keyframes currently decode; director/visual reviews separately cover k05 geography and k10/k42 wider compositions. The other 52 keyframes are pending generation at this audit."
+}
