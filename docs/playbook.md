@@ -319,11 +319,16 @@ availability in the current environment. The historical Codex observations below
   - **"Print" styles grow cream paper margins.** Frame past them in comp.
   - **Stray details,** such as a second mole: patch them locally with texture from the same hatching direction, sized
     to the defect. Verify at 4× zoom, then re-propagate to every consumer.
-- **QA:** contact sheets read with the Read tool: identity, style consistency, framing inside the 2.39 band.
+- **QA:** inspect contact sheets: identity, style consistency, framing inside the episode's chosen picture aperture.
   Before motion generation, compare each scene's full starting frames together in edit order against its location
   reference. Check faces, clothing, room layout, background landmarks, props, lighting and people's positions across
   cuts. Fix incompatible frames before animating them and record the comparison in the episode review notes.
   An individually plausible frame, including one inherited from an earlier cut, is not proof of scene continuity.
+- **Physical scale and cut continuity (Common Room, 2026-10-02):** when a joke depends on a tray not fitting a sink
+  or a pan leaving no work surface, inspect those relative sizes in the actual image. Dimensions in a prompt are
+  not evidence that the result obeys them. Compare adjacent states too: cookware already placed on a hob must
+  remain there in the reverse angle, and a shipping carton must be large enough for its intended contents.
+  Review the real caption composites, since a valid text box can still cover the hand or object that tells the story.
 - **Dance and crossings (First Day, 2026-10-02):** test the actual full-body dance composition and a source-to-destination
   crossing before batching their variants. Several location references can collapse separate floors into one plausible
   set. Require both platform outlines, the bridge and visible water/gap in the approved geography plate; derive later

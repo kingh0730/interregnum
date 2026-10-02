@@ -196,3 +196,23 @@ that came out of them is "Luma unless it truly can't" (playbook §2b).
   subjects that must both command attention and be highly elaborate. Architecture retains the Luma default unless
   it meets both conditions. The beauty-focused base-face exception remains separate. See `docs/playbook.md` §2b
   for the current rules; these preferences are not additional results from the two city comparisons above.
+
+## First episode: COMMON ROOM / 一室两家 (2026-10-02)
+- Developed and produced episode 01 of **AI SI - I** through the pre-motion story reel: 3:50, 40 shots,
+  1920×1080 at 24 fps, with Chinese-first bilingual subtitles. Eda and Sen separate their households while
+  retaining one shared kitchen. The ending preserves the practical inconvenience rather than reuniting them.
+- Selected the photographic direction after three contrasting look tests. Luma Uni-1 Max supplied originals;
+  Codex built-in edits supplied the final continuity states. The selected package has 27 photographic plates,
+  six authored paper states and an exact code-rendered end card. Source selection, hashes, rejected alternatives
+  and executed edit prompts are recorded in `episodes/ep01/build/` and the 40 per-shot documents.
+- Completed 26 designed-voice lines, original score, recorded-effect sources, five stems and the 230-second mix.
+  The master measures −18.0 LUFS and −1.8 dBTP. Static image/caption inspection, transcription, waveform checks
+  and complete export decoding were performed. Perceptual audio playback was not performed and remains distinct
+  from those technical checks.
+- Prepared and dry-ran the 30-job H3 Max handoff at an $8.28 first-pass estimate, with a proposed $4 retake reserve.
+  No video-generation requests were submitted. Actual generated motion and final finishing remain later stages.
+- Several Luma requests ended with generic HTTP 422 results. Separate PNG/JPEG and contact-board tests did not
+  establish a cause or a lower reference-count limit. Existing requests were polled rather than silently resubmitted;
+  request outcomes and conservative estimates are retained in the incident and budget records.
+- The reel and media remain local and ignored by Git. Open `episodes/ep01/README.md` for the delivery links,
+  rebuild commands, review limits and next-stage manifest. Production recipes and small audits are committed.
