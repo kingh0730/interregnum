@@ -118,6 +118,10 @@ felt like one tempo. Movement inside shots, narration cadence, sound density and
 - **Time as form:** slow motion, freezes, repetition or reversal can be the episode's formal invention (see
   `bible/taste.md` §2).
 - **QA:** measure cut lengths from the render (`ffmpeg` `select='gt(scene,0.3)'`) and check them against the tempo map.
+- **Action cells are not necessarily cuts.** A continuous view may contain several timed contacts or changes of
+  pose. Record actual camera transitions separately, and derive planned shot lengths from those transitions.
+  Check the resulting timeline graphic as well as its source data; counting every action cell can invent cuts and
+  even a zero-length opening. Planned statistics still do not replace measurement and normal-speed review of the edit.
 
 ## 2. Visual bible and art direction (a writer session, then tests)
 - **Bible:** a session writes the episode's own bible in `<episode>/bible/`, under the series rules in
@@ -294,6 +298,13 @@ whose intended finished medium is already code-rendered.
 5. **Keep the provenance.** Retain code sources, input images, prompts, output versions and selected states in the
    episode's build records; keep generated media in ignored output directories. Preserve a comparison with the
    original. Follow the existing source-selection and continuity review process before replacing reel assets.
+
+**Label ownership and layout cost (First Day Extremely Fast, 2026-10-02):** check spelling, attachment and action
+ownership separately. A correct Gemini word on the wrong body still fails, as does its repeated phrase on another
+character's continuous ribbon. A native seven-name layout can prove lettering space while its large plaques dominate
+the scene; do not mistake that feasibility proof for selected aesthetics. Integrating names into working surfaces can
+help, but a generative finish must then be checked again for geometry and support: one such pass preserved names while
+inventing a continuous floor across the intended gap. Exact source geometry remains authoritative.
 
 ### Prompts, faces and references
 
