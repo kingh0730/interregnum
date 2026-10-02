@@ -19,7 +19,7 @@ The commission explicitly replaces the usual 3–5-minute dramatic-film length a
 
 The named AI products are part of the requested fiction and Chinese meme culture. They can have playful fictional manifestations here. This does not authorize invented factual product failures, real-person likenesses, geopolitical combat, or claims of company endorsement. No existing first-day project is used to interpret the commission.
 
-The soundtrack is the supplied song. Its measured low-energy trough around **11.4–11.9 seconds**, followed by the strong transient near **11.92**, supplies a natural break. Visual stillness must also be designed elsewhere; the music does not need to be cut to create it. Measured periodicity candidates are **88.43 / 176.87 BPM**. They are a half/double-time interpretation, not approved musical metre or exact vocal alignment.
+The soundtrack is the supplied song. Its measured low-energy trough around **11.4–11.9 seconds**, followed by the strong onset candidate near **11.953**, supplies a natural break. That event is distinct from the LRC boundary **11.920**. Visual stillness must also be designed elsewhere; the music does not need to be cut to create it. Measured periodicity candidates are **88.43 / 176.87 BPM**. They are a half/double-time interpretation, not approved musical metre or exact vocal alignment.
 
 Multiple media are required by the brief and must obey a rule established early: the same object, state or action can acquire another material language, while its identity, count and direction remain accountable. A random style filter is not a motivated medium change.
 
@@ -67,4 +67,4 @@ The benchmark's orange spark travelling between roles is also excluded as this f
 
 ## Work status
 
-Planning and research. No production imagery, motion or perceptual soundtrack approval is implied. The director makes creative selections; the showrunner does not need to choose among a menu of unresolved concepts.
+Concept and script selected; art direction established through actual comparisons and focused studies. Final handoff verification is recorded in `episode.md` and the build review files. No production-state imagery, motion or perceptual soundtrack approval is implied. The director made the creative selection; there is no unresolved concept menu for the showrunner.
