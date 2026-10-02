@@ -11,3 +11,4 @@
 - [Parallel sessions & git](parallel-sessions-git.md) — other sessions share the repo: commit with `git commit -m … -- <paths>` only; coordinate fal/ElevenLabs
 - [Memory sync](memory-sync.md) — scripts/sync-memory.sh mirrors memory; private-* files go to gitignored bible/private/memory, the rest are PUBLIC in memory/
 - [Pure improvement](pure-improvement.md) — code/tools/docs/memory/reviews, not creative drafts: every change must dominate what it replaces on every input; verify at primary source; no unscoped absolutes; drop speculative findings
+- [Dance generation](dance-generation.md) — First Day H3 Max still-plus-text test missed choreography and camera lock; prove a short phrase before bulk motion; performance references remain untested
