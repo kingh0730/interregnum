@@ -1,7 +1,7 @@
 {
   "stage": "Preparation only; no motion generation authorized or performed",
   "manifest": "episodes/ep01/build/motion_plan.json",
-  "manifest_sha256": "58beb613f636957a13b838de65385bff6d4c577164209e75797fde4be9014ee1",
+  "manifest_sha256": "487a90da68d8ac17a2dd11e1df816575b05294b6974b0417a5cfe6d009c05413",
   "story_sha256": "df87ccb869be05d5fc5ed76c27f1da6ba545e8136dbd81290c2a2f128a6649eb",
   "local_media_ready": true,
   "visual_approval": "This validates files and media bounds only; it does not replace image continuity review.",

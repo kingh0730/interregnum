@@ -378,7 +378,7 @@
       "final_edit_frames": 120,
       "planned_takes": 1,
       "benchmark": false,
-      "behaviour_constraint": "Use Sen with the scale-comparison arrangement. The safely seated pan is a separate completed-state insert k11.",
+      "behaviour_constraint": "k10 already shows the pan resting safely on the compact hob. Sen holds the completed fit state during his question; keep the pan on the hob. The following k11 insert reveals the missing resting space without another placement.",
       "submission_status": "NOT SUBMITTED; stage7 is outside current authorization",
       "approved_image_sha256": "2557006acb8b39eb35659221f4ec7ed31f62a01de9483a8757e9a53e0316cdfa"
     },
@@ -406,7 +406,7 @@
       "final_edit_frames": 72,
       "planned_takes": 1,
       "benchmark": false,
-      "behaviour_constraint": "k12 already holds the tray offered inward over the small basin. Lip sync the request while holding that pose. No timed tray handoff or outward reach is required.",
+      "behaviour_constraint": "k12 already holds the wet tray offered inward over the small basin, while the pan remains on the compact hob. Hold this pose throughout the request. No timed tray handoff, outward reach or pan movement is required.",
       "submission_status": "NOT SUBMITTED; stage7 is outside current authorization",
       "approved_image_sha256": "ae790e6117e9cd182c254486b097ba062abbbf2a5db7a1fe13c77f1cfbf68511"
     },
@@ -490,7 +490,7 @@
       "final_edit_frames": 120,
       "planned_takes": 1,
       "benchmark": false,
-      "behaviour_constraint": "k28 is a distinct approved result: tray already down and small spill present. No lowering/spill simulation is required from lip sync.",
+      "behaviour_constraint": "k28 is a distinct approved result: tray already down, small spill present, and Eda's hand resting on the module. Keep those contacts. No lowering, pointing or spill simulation is required from lip sync.",
       "submission_status": "NOT SUBMITTED; stage7 is outside current authorization",
       "approved_image_sha256": "b29c095e82f1b0b363f82bc82cf68b90b9d7af7293921a33ca7830af4144918c"
     },
@@ -602,7 +602,7 @@
       "final_edit_frames": 144,
       "planned_takes": 1,
       "benchmark": false,
-      "behaviour_constraint": "k31 is a distinct approved result with the pan already raised. Do not use neutral empty-hands k06 for this line.",
+      "behaviour_constraint": "k31 is the reviewed result with the pan already raised in both of Sen's hands. Keep both hands supporting the same pan. No lift is required, and neutral empty-hands k06 cannot replace this plate.",
       "submission_status": "NOT SUBMITTED; stage7 is outside current authorization",
       "approved_image_sha256": "66085c2991e43b0bdaa004ad35e79e118d748aed5763e2bd538554b441e992ab"
     },
@@ -658,7 +658,7 @@
       "final_edit_frames": 144,
       "planned_takes": 1,
       "benchmark": false,
-      "behaviour_constraint": "k17 already has Sen's hand resting on a carton flap. Keep that pose for the line. The return is completed across the following authored paper insert; do not require lip sync to fold the carton. At motion finishing, move closure Foley into shot29 if no visible fold survives.",
+      "behaviour_constraint": "k17 already shows the full-height floor carton CLOSED and taped, with Sen's hands resting on top. Hold that contact during his line. No open flap, fold, closing action or shrinking module is required. Packing sounds refer to off-screen completion, not a visible closure in this plate.",
       "submission_status": "NOT SUBMITTED; stage7 is outside current authorization",
       "approved_image_sha256": "ce9f82d3c010cc25131f418747b4d2f9f312bbb5e69fe6ff8dd2a42b60ea848b"
     },
@@ -798,7 +798,7 @@
       "final_edit_frames": 144,
       "planned_takes": 1,
       "benchmark": false,
-      "behaviour_constraint": "k23 establishes his occupied former preparation area. No required pointing gesture; the following chair insert proves relocation.",
+      "behaviour_constraint": "k23 already shows the pan on the main hob with Sen's hand on its handle. Keep that completed arrangement during his vegetable line. No pointing, carrying or pan placement is required; the following chair insert proves the bowl's relocation.",
       "submission_status": "NOT SUBMITTED; stage7 is outside current authorization",
       "approved_image_sha256": "13c84e6c4adae664152cc02a7070e55b57ffda6d6eea8f4bbcc91394a72692a0"
     },
@@ -882,7 +882,7 @@
       "final_edit_frames": 192,
       "planned_takes": 1,
       "benchmark": false,
-      "behaviour_constraint": "k30 already holds the salt-pot/corner request arrangement. Keep it through the line. k26 separately completes the exchange with a spare cup at the pattern and salt by Sen.",
+      "behaviour_constraint": "k30 already shows the salt pot weighting the RIGHT pattern corner, Eda indicating the opposite LEFT corner, and the spare cup still behind. Hold these exact contacts during her request. k26 separately completes the exchange with the cup weighting the pattern and salt by Sen; no handover is required here.",
       "submission_status": "NOT SUBMITTED; stage7 is outside current authorization",
       "approved_image_sha256": "8df7257e7e7a1875680cb4d7258a5cc2716d329131308732cc164972ce9398c0"
     },

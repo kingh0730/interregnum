@@ -18,6 +18,9 @@ if assets is None:fail('Final approved assets.json is not available')
 if len(ids)!=len(jobs):fail('Duplicate job IDs')
 if len(jobs)!=30 or len(triage['shots'])!=40:fail('Expected30jobs and40triagedshots')
 if story['fps']!=24 or story['total_frames']!=5520:fail('Story frame contract changed')
+for row in triage['shots']:
+ sh=shots[row['shot_id']]
+ if row['input_state']!=sh['action'] or row['essential_story_check']!=sh['critical_action']:fail(f"Shot {row['shot_id']}: triage pose metadata differs from frozen story")
 if {j['shot_id'] for j in jobs if j['endpoint']=='lipsync'}!={s for s,x in lips.items() if x['use_for_lipsync']}:fail('On-screen voice coverage mismatch')
 if {j['shot_id'] for j in jobs}&{'02','08','19','22','29','40'}:fail('Graphic/off-screen insert/title incorrectly submitted')
 if len({j['out'] for j in jobs})!=len(jobs):fail('Output path collision')

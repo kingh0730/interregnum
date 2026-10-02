@@ -45,8 +45,8 @@
         144
       ],
       "edit_seconds": 6.0,
-      "input_state": "Eda places her new address tab beside her houseletter; Sen stays with the bowl.",
-      "essential_story_check": "Establish one kitchen, two fixed thresholds, one identifiable bowl. Tiny opening title may appear on the negative space without replacing the scene.",
+      "input_state": "Hold the reviewed opening pose: paper under Eda’s hands, Sen beside the bowl, one cherry visible.",
+      "essential_story_check": "Establish one kitchen, two fixed thresholds, one identifiable bowl. No opening title or branding overlay; the only title card is shot40.",
       "source_shot_document": "episodes/ep01/shots/01/shot.md",
       "motion_generated": false,
       "actual_action_onset": null,
@@ -70,8 +70,8 @@
         240
       ],
       "edit_seconds": 4.0,
-      "input_state": "Slide the new tab into the existing room flap with an exact two-state insert.",
-      "essential_story_check": "The ADDRESS changes; the kitchen flap and bowl position do not. Render an actual authored tab layer moving from the old slot to the new slot. This is graphic state change, not an immutable image described as moving.",
+      "input_state": "Replace the authored paper state at local frame48: Eda’s RAIN 04 tab is out and her RING 12 tab is seated in the same private-room slit.",
+      "essential_story_check": "Exact authored two-state address change at local frame48. Destination pictogram changes from rain to ring; ownership stripe and single private-room flap remain consistent.",
       "source_shot_document": "episodes/ep01/shots/02/shot.md",
       "motion_generated": false,
       "actual_action_onset": null,
@@ -95,7 +95,7 @@
         360
       ],
       "edit_seconds": 5.0,
-      "input_state": "Eda begins to return through her doorway toward the bowl.",
+      "input_state": "Hold Eda’s doorway return pose and extended empty hand during her line; the readdressed bedroom is already visible.",
       "essential_story_check": "Exact match-cut doorway replacement teaches a changed address. Eda is a living person returning through an ordinary threshold.",
       "source_shot_document": "episodes/ep01/shots/03/shot.md",
       "motion_generated": false,
@@ -146,7 +146,7 @@
         600
       ],
       "edit_seconds": 5.0,
-      "input_state": "She looks at the empty bowl while speaking; face stays composed.",
+      "input_state": "Hold the selected composed Eda pose for her line; no bowl movement is shown.",
       "essential_story_check": "Her complaint concerns the same object, not a vanished object or a failed door.",
       "source_shot_document": "episodes/ep01/shots/05/shot.md",
       "motion_generated": false,
@@ -172,7 +172,7 @@
         720
       ],
       "edit_seconds": 5.0,
-      "input_state": "He glances toward her readdressed doorway, then back to the table.",
+      "input_state": "Hold Sen’s selected screen-left gaze and empty hands for his reply.",
       "essential_story_check": "Same table geography; no reverse-axis doorway swap.",
       "source_shot_document": "episodes/ep01/shots/06/shot.md",
       "motion_generated": false,
@@ -198,7 +198,7 @@
         888
       ],
       "edit_seconds": 7.0,
-      "input_state": "She leaves the bowl where it is and moves her attention to the plan.",
+      "input_state": "Hold the selected Eda pose during the divorce line; the paper insert supplies the next concrete change.",
       "essential_story_check": "The single explicit word divorce establishes the separation. No bitter performance or romantic reassurance.",
       "source_shot_document": "episodes/ep01/shots/07/shot.md",
       "motion_generated": false,
@@ -224,8 +224,8 @@
         1056
       ],
       "edit_seconds": 7.0,
-      "input_state": "Eda’s paper room token moves to her houseletter; the kitchen remains undecided.",
-      "essential_story_check": "Use exact authored room-token/tab layers over the real paper plate. The table diagram matches production design and kitchen appears once. A still image with only a moving-sound effect is insufficient for this token assignment.",
+      "input_state": "Replace the exact room-allocation paper state at local frame72, placing Eda’s long-room token in her separate houseletter.",
+      "essential_story_check": "Exact authored room-allocation state change at local frame72. Two private rooms stay separate and the kitchen appears only once.",
       "source_shot_document": "episodes/ep01/shots/08/shot.md",
       "motion_generated": false,
       "actual_action_onset": null,
@@ -249,7 +249,7 @@
         1200
       ],
       "edit_seconds": 6.0,
-      "input_state": "Sen holds one finger at the narrow-room edge of the plan.",
+      "input_state": "Hold Sen’s selected neutral pose while his line explains the narrow-room allocation.",
       "essential_story_check": "The bicycle is a real practical preference, not shorthand for a personality speech.",
       "source_shot_document": "episodes/ep01/shots/09/shot.md",
       "motion_generated": false,
@@ -275,7 +275,7 @@
         1344
       ],
       "edit_seconds": 6.0,
-      "input_state": "She looks at the narrow-room mark rather than at his face.",
+      "input_state": "Hold Eda’s selected neutral pose while the bicycle question lands.",
       "essential_story_check": "A question about the bicycle fit supplies ordinary friction without adding a room or a flashback.",
       "source_shot_document": "episodes/ep01/shots/10/shot.md",
       "motion_generated": false,
@@ -301,7 +301,7 @@
         1512
       ],
       "edit_seconds": 7.0,
-      "input_state": "One hand pats that spot; he asks for the measure.",
+      "input_state": "Hold Sen beside the empty tool area; the later insert supplies the returned tape measure.",
       "essential_story_check": "The familiar empty spot makes the already-packed tool joke visible.",
       "source_shot_document": "episodes/ep01/shots/11/shot.md",
       "motion_generated": false,
@@ -327,7 +327,7 @@
         1632
       ],
       "edit_seconds": 5.0,
-      "input_state": "She turns toward the doorway after answering.",
+      "input_state": "Hold Eda’s selected pose during the packed-tool reply; the next insert shows the result of its return.",
       "essential_story_check": "The move has begun: objects already belong to separately addressed rooms.",
       "source_shot_document": "episodes/ep01/shots/12/shot.md",
       "motion_generated": false,
@@ -378,7 +378,7 @@
         1920
       ],
       "edit_seconds": 7.0,
-      "input_state": "Eda sets the order slip between the modules.",
+      "input_state": "Hold Eda’s hands beside the already-placed order slip; only her speaking face is visible.",
       "essential_story_check": "They deliberately ordered separate kitchens. Modules are genuinely usable small units; no faults, sparks or hazard.",
       "source_shot_document": "episodes/ep01/shots/14/shot.md",
       "motion_generated": false,
@@ -404,7 +404,7 @@
         2040
       ],
       "edit_seconds": 5.0,
-      "input_state": "He places his ordinary pan alongside it, pausing before the fit test.",
+      "input_state": "Hold the completed pan-fit state under Sen’s question; shot16 moves closer to reveal the missing resting space.",
       "essential_story_check": "Use scale comparison to reveal inconvenience, not a broken product.",
       "source_shot_document": "episodes/ep01/shots/15/shot.md",
       "motion_generated": false,
@@ -415,7 +415,7 @@
       "method": "lipsync",
       "category": "B",
       "job_id": "m15",
-      "action_policy": "Use Sen with the scale-comparison arrangement. The safely seated pan is a separate completed-state insert k11.",
+      "action_policy": "k10 already shows the pan resting safely on the compact hob. Sen holds the completed fit state during his question; keep the pan on the hob. The following k11 insert reveals the missing resting space without another placement.",
       "audio_is_on_screen": true,
       "request_seconds": 5,
       "estimated_first_take_usd": 0.25,
@@ -430,7 +430,7 @@
         2112
       ],
       "edit_seconds": 3.0,
-      "input_state": "Cut to the approved completed pan-placement state. Pan sits correctly on the small hob; there is no space beside it for its lid.",
+      "input_state": "Hold the completed safe pan placement and raised lid; no unstable balancing or product failure.",
       "essential_story_check": "Pan is safe and usable. The problem is missing preparation space, not impossibility or danger.",
       "source_shot_document": "episodes/ep01/shots/16/shot.md",
       "motion_generated": false,
@@ -455,7 +455,7 @@
         2184
       ],
       "edit_seconds": 3.0,
-      "input_state": "She offers the tray outward once.",
+      "input_state": "Hold the offered wet-tray pose during Eda’s request; the pan remains on the compact hob.",
       "essential_story_check": "Ordinary drips on the shared table, no flooded electrical device or ruined belongings.",
       "source_shot_document": "episodes/ep01/shots/17/shot.md",
       "motion_generated": false,
@@ -466,7 +466,7 @@
       "method": "lipsync",
       "category": "B",
       "job_id": "m17",
-      "action_policy": "k12 already holds the tray offered inward over the small basin. Lip sync the request while holding that pose. No timed tray handoff or outward reach is required.",
+      "action_policy": "k12 already holds the wet tray offered inward over the small basin, while the pan remains on the compact hob. Hold this pose throughout the request. No timed tray handoff, outward reach or pan movement is required.",
       "audio_is_on_screen": true,
       "request_seconds": 5,
       "estimated_first_take_usd": 0.25,
@@ -481,7 +481,7 @@
         2256
       ],
       "edit_seconds": 3.0,
-      "input_state": "He shows that his hands are occupied without theatrical juggling.",
+      "input_state": "Hold the occupied-hands pose during Sen’s line; bowl, spoon and lid remain clearly separate.",
       "essential_story_check": "The actors never become broad caricatures; object staging supplies the comedy.",
       "source_shot_document": "episodes/ep01/shots/18/shot.md",
       "motion_generated": false,
@@ -532,7 +532,7 @@
         2352
       ],
       "edit_seconds": 2.0,
-      "input_state": "He looks at the proposed surface without moving the objects.",
+      "input_state": "Reuse the same occupied-hands state for Where; no object is removed between shots18 and20.",
       "essential_story_check": "The previous insert motivates the response. No object disappears between the paired shots.",
       "source_shot_document": "episodes/ep01/shots/20/shot.md",
       "motion_generated": false,
@@ -558,7 +558,7 @@
         2472
       ],
       "edit_seconds": 5.0,
-      "input_state": "Hold the approved completed tray-placement state. She indicates the small wet area once.",
+      "input_state": "Hold the completed tray-down state during Eda’s line; the next insert shows the shared wet area.",
       "essential_story_check": "Clean derived state from k12. Distinct image required: tray set down and small spill visible, not the earlier held-tray frame.",
       "source_shot_document": "episodes/ep01/shots/21/shot.md",
       "motion_generated": false,
@@ -569,7 +569,7 @@
       "method": "lipsync",
       "category": "B",
       "job_id": "m21",
-      "action_policy": "k28 is a distinct approved result: tray already down and small spill present. No lowering/spill simulation is required from lip sync.",
+      "action_policy": "k28 is a distinct approved result: tray already down, small spill present, and Eda's hand resting on the module. Keep those contacts. No lowering, pointing or spill simulation is required from lip sync.",
       "audio_is_on_screen": true,
       "request_seconds": 5,
       "estimated_first_take_usd": 0.25,
@@ -584,7 +584,7 @@
         2616
       ],
       "edit_seconds": 6.0,
-      "input_state": "A cloth touches down once. Let the line and the shared wet area register.",
+      "input_state": "Hold the completed water trail reaching the empty bowl; the folded cream rag remains nearby rather than touching the water.",
       "essential_story_check": "Their two tiny work areas still inconvenience each other while packing. No shot introduces a leak defect.",
       "source_shot_document": "episodes/ep01/shots/22/shot.md",
       "motion_generated": false,
@@ -595,7 +595,7 @@
       "method": "held_result_insert",
       "category": "CONTROLLED",
       "job_id": null,
-      "action_policy": "Small shared wet area and cloth are already visible. Sen stays off screen; preserve the practical result without inventing a leak.",
+      "action_policy": "Hold the completed water trail reaching the empty bowl; the folded cream rag lies beside the water. Sen stays off screen. No cloth touch-down, wiping hand or leak defect is required.",
       "audio_is_on_screen": false,
       "estimated_first_take_usd": 0,
       "resolved_image_path": "work/ep01/keys/k15_edit.png",
@@ -609,8 +609,8 @@
         2856
       ],
       "edit_seconds": 10.0,
-      "input_state": "Neither speaks. After the first two seconds, each looks toward the existing counter. Hold the remaining space.",
-      "essential_story_check": "Ten-second decision hold. The full kitchen is the visible alternative. This is the film’s only deliberate hard sound stop.",
+      "input_state": "Hold the already-still decision composition for exactly240frames. Hands are down and both gazes already rest toward the usable full counter.",
+      "essential_story_check": "Exact uninterrupted10second still composition, frames2616–2856. Both look toward the full usable worktop already; only hard sound stop starts2616 and kitchen air remains.",
       "source_shot_document": "episodes/ep01/shots/23/shot.md",
       "motion_generated": false,
       "actual_action_onset": null,
@@ -634,7 +634,7 @@
         3000
       ],
       "edit_seconds": 6.0,
-      "input_state": "He looks past the modules toward the original worktop.",
+      "input_state": "Hold Sen’s selected table pose for the first practical negotiation line.",
       "essential_story_check": "He proposes retaining the existing shared room; no mechanical discovery supplies the solution.",
       "source_shot_document": "episodes/ep01/shots/24/shot.md",
       "motion_generated": false,
@@ -660,7 +660,7 @@
         3168
       ],
       "edit_seconds": 7.0,
-      "input_state": "She places a palm on the edge of the actual table while describing her use of the worktop.",
+      "input_state": "Hold Eda’s selected table pose while she names her need for worktop space.",
       "essential_story_check": "She names the cost: his exclusive control of a clear surface. No moral about love or independence.",
       "source_shot_document": "episodes/ep01/shots/25/shot.md",
       "motion_generated": false,
@@ -686,7 +686,7 @@
         3312
       ],
       "edit_seconds": 6.0,
-      "input_state": "Hold the approved raised-pan state while he speaks; no new face or room geometry.",
+      "input_state": "Hold the reviewed two-hand raised-pan state while Sen speaks; no lift is claimed over empty hands.",
       "essential_story_check": "Clean derived state from k06 with the specified pan. This is a distinct plate, not a gesture claimed over neutral empty hands.",
       "source_shot_document": "episodes/ep01/shots/26/shot.md",
       "motion_generated": false,
@@ -697,7 +697,7 @@
       "method": "lipsync",
       "category": "B",
       "job_id": "m26",
-      "action_policy": "k31 is a distinct approved result with the pan already raised. Do not use neutral empty-hands k06 for this line.",
+      "action_policy": "k31 is the reviewed result with the pan already raised in both of Sen's hands. Keep both hands supporting the same pan. No lift is required, and neutral empty-hands k06 cannot replace this plate.",
       "audio_is_on_screen": true,
       "request_seconds": 6,
       "estimated_first_take_usd": 0.3,
@@ -712,7 +712,7 @@
         3432
       ],
       "edit_seconds": 5.0,
-      "input_state": "She measures the full counter span with her gaze, not a large gesture.",
+      "input_state": "Hold Eda’s selected table pose through her qualification, Sometimes.",
       "essential_story_check": "Her cutting work is equally real. The film does not award one preference superiority.",
       "source_shot_document": "episodes/ep01/shots/27/shot.md",
       "motion_generated": false,
@@ -738,8 +738,8 @@
         3576
       ],
       "edit_seconds": 6.0,
-      "input_state": "Sen rests his hand on the carton flap while speaking; shot29’s recorded closure and separate finished arrangement complete the decision.",
-      "essential_story_check": "Acceptance is the practical act of returning the private module, not a speech or a romantic look.",
+      "input_state": "Hold Sen’s hands on the already-closed tall floor carton during his line. Further packing sounds refer to offscreen completion; no closing action is claimed in this held plate.",
+      "essential_story_check": "The private module is already packed into a closed, full-height floor carton. Preserve actual furniture scale; no magical shrink, open-flap gesture or romantic reconciliation.",
       "source_shot_document": "episodes/ep01/shots/28/shot.md",
       "motion_generated": false,
       "actual_action_onset": null,
@@ -749,7 +749,7 @@
       "method": "lipsync",
       "category": "B",
       "job_id": "m28",
-      "action_policy": "k17 already has Sen's hand resting on a carton flap. Keep that pose for the line. The return is completed across the following authored paper insert; do not require lip sync to fold the carton. At motion finishing, move closure Foley into shot29 if no visible fold survives.",
+      "action_policy": "k17 already shows the full-height floor carton CLOSED and taped, with Sen's hands resting on top. Hold that contact during his line. No open flap, fold, closing action or shrinking module is required. Packing sounds refer to off-screen completion, not a visible closure in this plate.",
       "audio_is_on_screen": true,
       "request_seconds": 6,
       "estimated_first_take_usd": 0.3,
@@ -764,8 +764,8 @@
         3720
       ],
       "edit_seconds": 6.0,
-      "input_state": "Eda threads her tab and Sen’s already-placed tab remains visible; the frame settles on one kitchen with two entries.",
-      "essential_story_check": "Use exact authored separate address-tab layers to reveal the final one-kitchen/two-address arrangement. Both tabs must be visible at end. Module carton closures may be off screen; the unused modules are absent in the later scene.",
+      "input_state": "Replace the authored paper state at local frame72 so both distinct address tabs are visibly threaded into the one kitchen flap.",
+      "essential_story_check": "Exact authored second-tab placement at local frame72. Final state visibly has ONE kitchen, TWO address tabs and TWO independently allocated private rooms.",
       "source_shot_document": "episodes/ep01/shots/29/shot.md",
       "motion_generated": false,
       "actual_action_onset": null,
@@ -789,7 +789,7 @@
         3912
       ],
       "edit_seconds": 8.0,
-      "input_state": "Cut to Eda in the sorting hall with the secured houseletter and cloth roll already in her hands; no long walk is claimed over an unchanged start frame.",
+      "input_state": "Hold the reviewed onward departure pose with secured houseletter and cloth; no completed long walk is claimed.",
       "essential_story_check": "She completes her move. Do not add an embrace, longing glance or hesitation implying renewed couplehood.",
       "source_shot_document": "episodes/ep01/shots/30/shot.md",
       "motion_generated": false,
@@ -814,7 +814,7 @@
         4080
       ],
       "edit_seconds": 7.0,
-      "input_state": "Hold the architecture’s scale; one authored dispatch-light or paper-label change is enough for the reel.",
+      "input_state": "Hold the architectural reveal and small Eda figure; no unmade dispatch-light or paper-label animation is claimed.",
       "essential_story_check": "One earned scale reveal. No new plot, endangered city or explanatory public announcement.",
       "source_shot_document": "episodes/ep01/shots/31/shot.md",
       "motion_generated": false,
@@ -839,7 +839,7 @@
         4248
       ],
       "edit_seconds": 7.0,
-      "input_state": "Reveal Eda’s cloth roll already on the cutting table in her completed separate home; one recorded cloth contact can motivate the cut.",
+      "input_state": "Hold the completed separate-home work arrangement, cloth already on the cutting table.",
       "essential_story_check": "Independent home is a completed outcome, not a temporary stop before reconciliation.",
       "source_shot_document": "episodes/ep01/shots/32/shot.md",
       "motion_generated": false,
@@ -864,7 +864,7 @@
         4392
       ],
       "edit_seconds": 6.0,
-      "input_state": "He reaches the clear hob and sees where his vegetable bowl has been displaced.",
+      "input_state": "Hold Sen beside the clear hob and Eda at her pattern; the displaced bowl is already visible on the RIGHT chair.",
       "essential_story_check": "Practical consequence of sharing. Cloth remains safely clear of hob and pan; no fire gag.",
       "source_shot_document": "episodes/ep01/shots/33/shot.md",
       "motion_generated": false,
@@ -889,7 +889,7 @@
         4536
       ],
       "edit_seconds": 6.0,
-      "input_state": "He indicates the exact space where his bowl usually sits.",
+      "input_state": "Hold the completed pan-on-hob pose with Sen’s hand on the handle during his vegetable line.",
       "essential_story_check": "His former exclusive preparation spot is now occupied by her actual work.",
       "source_shot_document": "episodes/ep01/shots/34/shot.md",
       "motion_generated": false,
@@ -900,7 +900,7 @@
       "method": "lipsync",
       "category": "B",
       "job_id": "m34",
-      "action_policy": "k23 establishes his occupied former preparation area. No required pointing gesture; the following chair insert proves relocation.",
+      "action_policy": "k23 already shows the pan on the main hob with Sen's hand on its handle. Keep that completed arrangement during his vegetable line. No pointing, carrying or pan placement is required; the following chair insert proves the bowl's relocation.",
       "audio_is_on_screen": true,
       "request_seconds": 6,
       "estimated_first_take_usd": 0.3,
@@ -915,7 +915,7 @@
         4680
       ],
       "edit_seconds": 6.0,
-      "input_state": "She points toward the chair with one hand while the other holds the pattern.",
+      "input_state": "Hold Eda’s indicating-hand pose during her chair reply; cup and salt remain behind the pattern.",
       "essential_story_check": "She has relocated his things usefully, but inconveniently. No apology or triumph.",
       "source_shot_document": "episodes/ep01/shots/35/shot.md",
       "motion_generated": false,
@@ -966,7 +966,7 @@
         4968
       ],
       "edit_seconds": 7.0,
-      "input_state": "He looks for the salt; the approved image already establishes that the bowl was retrieved.",
+      "input_state": "Hold the already-retrieved bowl state while Sen asks for salt.",
       "essential_story_check": "Clean derived state from k23. The bowl is the marked opening bowl. Never reuse the earlier empty surface while describing it as present.",
       "source_shot_document": "episodes/ep01/shots/37/shot.md",
       "motion_generated": false,
@@ -992,8 +992,8 @@
         5160
       ],
       "edit_seconds": 8.0,
-      "input_state": "Hold the approved handover-request state while she speaks; a later wide shows the task continued.",
-      "essential_story_check": "Clean derived state from k24. Actual salt-pot/corner arrangement must be present. Do not simulate the requested action solely through narration.",
+      "input_state": "Hold the completed salt-weight state and finger indicating the other corner during Eda’s line.",
+      "essential_story_check": "Selected salt pot actually weights the RIGHT pattern corner; Eda indicates the opposite LEFT corner. Spare cup remains behind until the final wide. No handover is claimed over an unchanged start state.",
       "source_shot_document": "episodes/ep01/shots/38/shot.md",
       "motion_generated": false,
       "actual_action_onset": null,
@@ -1003,7 +1003,7 @@
       "method": "lipsync",
       "category": "B",
       "job_id": "m38",
-      "action_policy": "k30 already holds the salt-pot/corner request arrangement. Keep it through the line. k26 separately completes the exchange with a spare cup at the pattern and salt by Sen.",
+      "action_policy": "k30 already shows the salt pot weighting the RIGHT pattern corner, Eda indicating the opposite LEFT corner, and the spare cup still behind. Hold these exact contacts during her request. k26 separately completes the exchange with the cup weighting the pattern and salt by Sen; no handover is required here.",
       "audio_is_on_screen": true,
       "request_seconds": 8,
       "estimated_first_take_usd": 0.4,
@@ -1018,7 +1018,7 @@
         5328
       ],
       "edit_seconds": 7.0,
-      "input_state": "Hold the completed everyday work arrangement: Eda’s pattern is weighted by a spare cup while Sen has the salt. Neither seeks a concluding look.",
+      "input_state": "Hold the completed practical exchange: cup weights the pattern, salt is with Sen, each continues an independent task.",
       "essential_story_check": "Two homes stay independent. One useful room is shared, still awkward. No kiss, clasped hands, knowing smile or thematic line.",
       "source_shot_document": "episodes/ep01/shots/39/shot.md",
       "motion_generated": false,
@@ -1043,7 +1043,7 @@
         5520
       ],
       "edit_seconds": 8.0,
-      "input_state": "Static typography; optional brief fade from final composition.",
+      "input_state": "Hold exact end-card typography for192frames.",
       "essential_story_check": "Audience branding uses AI SI - I exactly. Review-status wording must not masquerade as completed video generation.",
       "source_shot_document": "episodes/ep01/shots/40/shot.md",
       "motion_generated": false,
@@ -1061,5 +1061,6 @@
   ],
   "input_assets_map": "episodes/ep01/build/assets.json",
   "input_assets_map_sha256": "61a272bf585151b7cccc0f6a6a0f1f30051ef5dc2f96916303dcc34a52a9cba9",
-  "source_resolution_status": "All 30 jobs resolved to final director-approved assets.json paths; no video submitted."
+  "source_resolution_status": "All 30 jobs resolved to final director-approved assets.json paths; no video submitted.",
+  "story_sha256": "df87ccb869be05d5fc5ed76c27f1da6ba545e8136dbd81290c2a2f128a6649eb"
 }

@@ -22,10 +22,11 @@ The important physical changes already have explicit editorial states:
 
 - Shots 02, 08 and 29 retain the exact authored paper layers and switches in `build/paper_states.json`, at global 00:08, 00:40 and 02:32. No talking paper or generated lettering.
 - The doorway changes across the authored address insert and k03 result cut. No room morph.
-- k12 holds the offered tray; k28 separately shows it down with the small spill. k31 separately shows Sen's raised pan. Neutral reused frames cannot replace those results.
+- k10 already holds the pan on the compact hob, and it stays there while k12 holds the offered tray. k28 separately shows the tray down, the small spill and Eda's hand resting on the module. k31 separately shows Sen's pan raised in both hands. Neutral reused frames cannot replace those results.
 - Updated k14 shows the remaining strip beside the pan and Eda's hand. There is no drawer. Eda's line stays off screen.
-- k25 shows the displaced bowl on the chair; k29 separately shows it retrieved. k30 holds the salt/pattern request; k26 separately shows the spare cup weighting the pattern and salt with Sen.
-- The carton return completes across the following paper insert. If lip-sync footage contains no usable fold, carry the closure sound into shot 29; do not claim a fold merely because it was requested or heard.
+- k15 holds the water trail and a folded rag lying beside it; no cloth touch-down or wiping hand is expected. k23 already holds the pan on the main hob with Sen's hand on its handle.
+- k25 shows the displaced bowl on the chair; k29 separately shows it retrieved. In k30, the salt weights the RIGHT pattern corner, Eda indicates the LEFT corner and the spare cup remains behind. k26 separately shows the cup weighting the pattern and salt with Sen.
+- k17 already shows the tall floor carton closed and taped, with Sen's hands on top. Hold this completed packing state. Further packing sounds refer to off-screen completion; no flap, fold, visible closure or shrinking module is required.
 
 Held result inserts are 04, 13, 16, 19, 22 and 36. They are deliberate editorial tableaux, not evidence of an animated action. Title 40 is exact authored typography. Silent generated shots are 01, 23, 30, 31, 32, 33 and 39. The decision shot 23 preserves 240 uninterrupted frames; its supplied plate already holds the considered result pose, so a delayed new gaze is not a mandatory action. No additional romantic gesture or concluding shared look belongs in the ending.
 
