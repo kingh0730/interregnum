@@ -114,7 +114,13 @@ continuity_summary['review_path']=man.get('continuity_review')
 report.update(continuity_review=continuity_summary,continuity_approved=continuity['approved'],ready_for_motion=report['local_media_ready'] and continuity['approved'])
 out=B/'motion_preflight.json'
 if out.exists():
- previous=json.loads(out.read_text())
+ # Prior output supplies history only; it must not prevent fresh validation results.
+ try:
+  previous=json.loads(out.read_text())
+  if not isinstance(previous,dict):raise ValueError('Previous report must be a JSON object')
+ except (OSError,ValueError) as exc:
+  previous={}
+  report['history_read_warning']=f'Previous report history unavailable: {exc}'
  if 'superseded_spatial_approval_history' in previous:report['superseded_spatial_approval_history']=previous['superseded_spatial_approval_history']
  if previous.get('runner_dry_run_performed'):
   report['previous_runner_quote']={k:previous[k] for k in ['manifest_sha256','runner_returncode','runner_log','runner_estimate_usd','local_selected_estimate_usd'] if k in previous}
