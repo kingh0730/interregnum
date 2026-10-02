@@ -40,3 +40,19 @@ local disk space. After upload completes, Finder's **Remove Download** can relea
 
 For private productions, consult the gitignored `private/ARCHIVES.md` when available. Keep private
 archive details and contents outside public commits.
+
+## Completed experiments and working-output offload (2026-10-02)
+
+Completed image/model experiments and selected bulky working outputs were moved to iCloud Drive at
+`interregnum-archives/storage-offload-2026-10-02/`, preserving their repository-relative paths.
+The archive's `inventory.json` records the exact moved paths; consult it before regenerating absent
+experiment assets. Current episode source media, audio and current story-reel exports remain local.
+
+Archived working outputs include `work/first-day/qa/export_frames/`, `work/first-day/qa/export/`, and
+`work/ep01/render/`. Download and restore required directories to their original paths before reviewing
+those saved frames or reusing those render intermediates; do not overwrite newer local work.
+The archive also preserves experiment prompts, generation logs and comparisons with their assets.
+
+The move verified file identity and metadata and preserved the existing Git working status.
+Local verification records are in the ignored `work/storage-offload-20261002/` directory.
+Moving into iCloud alone does not free local storage; upload and local-download removal are separate steps.
