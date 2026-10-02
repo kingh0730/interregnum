@@ -1,0 +1,342 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-02T04:15:36.805177+00:00",
+  "scope": "Reference-ingestion diagnostic requests and subsequent original-insert/architecture batch. Original request logs and returned tests retained. No failure cause established.",
+  "tests": [
+    {
+      "id": "k01",
+      "request_id": "01a0fa6c-cf72-7f73-9b48-9f2a33752b32",
+      "request_log": "episodes/ep01/build/luma_log/k01.json",
+      "process_log": "work/ep01/logs/keys_test.log",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "reference_count": 4,
+      "reference_format": "four separate original PNGs",
+      "prompt_sha256": "51abf8053ea609da44765487f813f0232b25d364a7bc4c97bf3b22c24eddb29e",
+      "result": "terminal_HTTP_422",
+      "estimated_price_per_requested_image_usd": 0.003,
+      "invoice_charge_confirmed": false,
+      "http_status": 422,
+      "invalid_field_diagnosed": false,
+      "repeat_attempts": "The runner resumed GET/polling for the existing request ID; logged retry attempts are not separate generation POSTs.",
+      "detail": "Initial status was COMPLETED, but result retrieval returned body-level Invalid input / input_value_error. An earlier resume also encountered an SSL EOF."
+    },
+    {
+      "id": "k05",
+      "request_id": "01a0fa85-7b43-7461-ad60-c5a511c112f2",
+      "request_log": "episodes/ep01/build/luma_log/k05.json",
+      "process_log": "work/ep01/logs/keys_three_ref_test.log",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "reference_count": 2,
+      "reference_format": "two original PNG references",
+      "prompt_sha256": "d6e8d1c81f809cdeb3acdb0364710f81cc4fb9cd8e6949a697b0ee05e8a9146a",
+      "result": "successful_image",
+      "estimated_price_per_requested_image_usd": 0.003,
+      "invoice_charge_confirmed": false,
+      "output_dimensions": [
+        2672,
+        1504
+      ],
+      "billing_units_successful_images": 1,
+      "retained_original_output": "work/ep01/keys/k05.png",
+      "retained_output_sha256": "819319356c0ec4b1923685ca89c199c4eaa5cad4c5d93a6bd689c49260bfb251"
+    },
+    {
+      "id": "k01_v2",
+      "request_id": "01a0fa98-a548-7c41-b754-a81697b88075",
+      "request_log": "episodes/ep01/build/luma_log/k01_v2.json",
+      "process_log": "work/ep01/logs/keys_transport_test.log",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "reference_count": 4,
+      "reference_format": "four same-resolution Q90 JPEG derivatives",
+      "prompt_sha256": "51abf8053ea609da44765487f813f0232b25d364a7bc4c97bf3b22c24eddb29e",
+      "result": "terminal_HTTP_422",
+      "estimated_price_per_requested_image_usd": 0.003,
+      "invoice_charge_confirmed": false,
+      "http_status": 422,
+      "invalid_field_diagnosed": false,
+      "repeat_attempts": "The runner resumed GET/polling for the existing request ID; logged retry attempts are not separate generation POSTs.",
+      "control": "Same prompt and four reference roles as k01; only reference transport files/URLs changed."
+    },
+    {
+      "id": "k06",
+      "request_id": "01a0faad-f862-7890-a507-8c6342bc5301",
+      "request_log": "episodes/ep01/build/luma_log/k06.json",
+      "process_log": "work/ep01/logs/keys_representative.log",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "reference_count": 2,
+      "reference_format": "two Q90 JPEG derivatives",
+      "prompt_sha256": "178d6705c2226e3a2b414309f3fbbe2ccc3f8237f4f3036de7a0be202fbaf372",
+      "result": "terminal_HTTP_422",
+      "estimated_price_per_requested_image_usd": 0.003,
+      "invoice_charge_confirmed": false,
+      "http_status": 422,
+      "invalid_field_diagnosed": false,
+      "repeat_attempts": "The runner resumed GET/polling for the existing request ID; logged retry attempts are not separate generation POSTs."
+    },
+    {
+      "id": "k12",
+      "request_id": "01a0faad-f85c-7c02-84f9-c952ce6d0daa",
+      "request_log": "episodes/ep01/build/luma_log/k12.json",
+      "process_log": "work/ep01/logs/keys_representative.log",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "reference_count": 3,
+      "reference_format": "three Q90 JPEG derivatives",
+      "prompt_sha256": "8390c16b4e06d9e8beda4dd078e4c1e410428c7a950eab94ace0d023c37c9765",
+      "result": "terminal_HTTP_422",
+      "estimated_price_per_requested_image_usd": 0.003,
+      "invoice_charge_confirmed": false,
+      "http_status": 422,
+      "invalid_field_diagnosed": false,
+      "repeat_attempts": "The runner resumed GET/polling for the existing request ID; logged retry attempts are not separate generation POSTs."
+    },
+    {
+      "id": "k01_v3",
+      "request_id": "01a0fab4-658b-7f81-bfd6-3cec94240f08",
+      "request_log": "episodes/ep01/build/luma_log/k01_v3.json",
+      "process_log": "work/ep01/logs/keys_boards_test.log",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "reference_count": 2,
+      "reference_format": "two Q90 JPEG contact boards",
+      "prompt_sha256": "81558cbffeef1cb525e44364e861dffa02c42f01dc4a03e1ff210b54684ec128",
+      "result": "successful_image",
+      "estimated_price_per_requested_image_usd": 0.003,
+      "invoice_charge_confirmed": false,
+      "output_dimensions": [
+        2672,
+        1504
+      ],
+      "billing_units_successful_images": 1,
+      "control": "Reference layout/count and brief changed together; success is not proof of a reference-count or JPEG cause.",
+      "selection": "Technical test retained, but director selected k01_edit derived from the approved kitchen for stronger face and staging continuity.",
+      "retained_original_output": "work/ep01/keys/k01_v3.png",
+      "retained_output_sha256": "e81722303e491dd94abc6fe576a54347312cd9acf68e9527fc5efb5add8a0d7c"
+    },
+    {
+      "id": "k04",
+      "request_id": "01a0fabd-4085-7961-a9b3-a5965f9f7f73",
+      "request_log": "episodes/ep01/build/luma_log/k04.json",
+      "process_log": "work/ep01/logs/keys_original_inserts.log",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "reference_count": 2,
+      "reference_ids": [
+        "ref_cast_board",
+        "ref_set_board"
+      ],
+      "prompt_sha256": "1272e00491c2801259bda3a55b03f9ac7f2d97dabd997161a29120b584d6c25f",
+      "result": "terminal_HTTP_422",
+      "estimated_price_per_requested_image_usd": 0.003,
+      "invoice_charge_confirmed": false,
+      "batch": "Original close inserts and architecture after board test",
+      "http_status": 422,
+      "invalid_field_diagnosed": false,
+      "repeat_attempts": "The three logged resume attempts retrieved the same request ID, not three new paid generation requests."
+    },
+    {
+      "id": "k08",
+      "request_id": "01a0fabd-4097-7432-9644-d5a7c67e6944",
+      "request_log": "episodes/ep01/build/luma_log/k08.json",
+      "process_log": "work/ep01/logs/keys_original_inserts.log",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "reference_count": 2,
+      "reference_ids": [
+        "ref_cast_board",
+        "ref_set_board"
+      ],
+      "prompt_sha256": "6c70869eba2418f88c37062419734eca2f14edb11f16b156ead04a6cd21d8b6f",
+      "result": "terminal_HTTP_422",
+      "estimated_price_per_requested_image_usd": 0.003,
+      "invoice_charge_confirmed": false,
+      "batch": "Original close inserts and architecture after board test",
+      "http_status": 422,
+      "invalid_field_diagnosed": false,
+      "repeat_attempts": "The three logged resume attempts retrieved the same request ID, not three new paid generation requests."
+    },
+    {
+      "id": "k11",
+      "request_id": "01a0fabd-4045-7641-9fba-d2d79f7883c7",
+      "request_log": "episodes/ep01/build/luma_log/k11.json",
+      "process_log": "work/ep01/logs/keys_original_inserts.log",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "reference_count": 2,
+      "reference_ids": [
+        "ref_cast_board",
+        "ref_set_board"
+      ],
+      "prompt_sha256": "862ac0cf6b02b9c2be9e2a5fc05cd375bedbde9c644598b6efe79b44266ef01f",
+      "result": "successful_image",
+      "estimated_price_per_requested_image_usd": 0.003,
+      "invoice_charge_confirmed": false,
+      "batch": "Original close inserts and architecture after board test",
+      "output_dimensions": [
+        2672,
+        1504
+      ],
+      "billing_units_successful_images": 1,
+      "retained_original_output": "work/ep01/keys/k11.png",
+      "retained_output_sha256": "6d1c448cd8344d538e2670e3f0874dca5b004219776c93e949757b0d467210a1"
+    },
+    {
+      "id": "k14",
+      "request_id": "01a0fabd-4098-70b2-a6f3-44910b432417",
+      "request_log": "episodes/ep01/build/luma_log/k14.json",
+      "process_log": "work/ep01/logs/keys_original_inserts.log",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "reference_count": 2,
+      "reference_ids": [
+        "ref_cast_board",
+        "ref_set_board"
+      ],
+      "prompt_sha256": "0653e883ea4ed0c13e251ccfbbabfe4a1ecba09de5157a363c0f9cadc99a4c87",
+      "result": "terminal_HTTP_422",
+      "estimated_price_per_requested_image_usd": 0.003,
+      "invoice_charge_confirmed": false,
+      "batch": "Original close inserts and architecture after board test",
+      "http_status": 422,
+      "invalid_field_diagnosed": false,
+      "repeat_attempts": "The three logged resume attempts retrieved the same request ID, not three new paid generation requests."
+    },
+    {
+      "id": "k15",
+      "request_id": "01a0fabd-4043-7423-98e4-d4e2acb5f68b",
+      "request_log": "episodes/ep01/build/luma_log/k15.json",
+      "process_log": "work/ep01/logs/keys_original_inserts.log",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "reference_count": 2,
+      "reference_ids": [
+        "ref_cast_board",
+        "ref_set_board"
+      ],
+      "prompt_sha256": "3405edfd2b5a25ab991806e77635e9ac98caf5aa12ff9aa8a0fad19a0399da0f",
+      "result": "successful_image",
+      "estimated_price_per_requested_image_usd": 0.003,
+      "invoice_charge_confirmed": false,
+      "batch": "Original close inserts and architecture after board test",
+      "output_dimensions": [
+        2672,
+        1504
+      ],
+      "billing_units_successful_images": 1,
+      "retained_original_output": "work/ep01/keys/k15.png",
+      "retained_output_sha256": "240a9757a7b26e3efde598c6131bed178a8af3a854b979f36bf3e1e6415036a3"
+    },
+    {
+      "id": "k19",
+      "request_id": "01a0fabd-4086-7b20-b032-5835c517dccc",
+      "request_log": "episodes/ep01/build/luma_log/k19.json",
+      "process_log": "work/ep01/logs/keys_original_inserts.log",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "reference_count": 2,
+      "reference_ids": [
+        "ref_cast_board",
+        "style_A_scale"
+      ],
+      "prompt_sha256": "83b700955b864fddbd8e76b4cab8ed5777ac8431f5a90475c254020b802f4631",
+      "result": "terminal_HTTP_422",
+      "estimated_price_per_requested_image_usd": 0.003,
+      "invoice_charge_confirmed": false,
+      "batch": "Original close inserts and architecture after board test",
+      "http_status": 422,
+      "invalid_field_diagnosed": false,
+      "repeat_attempts": "The three logged resume attempts retrieved the same request ID, not three new paid generation requests."
+    },
+    {
+      "id": "k20",
+      "request_id": "01a0fabf-261b-7440-9368-23c44bcdb579",
+      "request_log": "episodes/ep01/build/luma_log/k20.json",
+      "process_log": "work/ep01/logs/keys_original_inserts.log",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "reference_count": 2,
+      "reference_ids": [
+        "ref_cast_board",
+        "style_A_scale"
+      ],
+      "prompt_sha256": "7b5a14dc6750909a4abe1052b306a3e33c9f19ef6b979f9cdc494d128afa8ad4",
+      "result": "terminal_HTTP_422",
+      "estimated_price_per_requested_image_usd": 0.003,
+      "invoice_charge_confirmed": false,
+      "batch": "Original close inserts and architecture after board test",
+      "http_status": 422,
+      "invalid_field_diagnosed": false,
+      "repeat_attempts": "The three logged resume attempts retrieved the same request ID, not three new paid generation requests."
+    },
+    {
+      "id": "k21",
+      "request_id": "01a0fabf-268d-7081-93bd-2494fd19ae82",
+      "request_log": "episodes/ep01/build/luma_log/k21.json",
+      "process_log": "work/ep01/logs/keys_original_inserts.log",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "reference_count": 1,
+      "reference_ids": [
+        "ref_cast_board"
+      ],
+      "prompt_sha256": "1f3d8a358f418cd35199d8f8e561c59701773c1838addf13f1c010278fe2fb40",
+      "result": "terminal_HTTP_422",
+      "estimated_price_per_requested_image_usd": 0.003,
+      "invoice_charge_confirmed": false,
+      "batch": "Original close inserts and architecture after board test",
+      "http_status": 422,
+      "invalid_field_diagnosed": false,
+      "repeat_attempts": "The three logged resume attempts retrieved the same request ID, not three new paid generation requests."
+    },
+    {
+      "id": "k25",
+      "request_id": "01a0fac1-3240-7210-a37a-d23d87600a95",
+      "request_log": "episodes/ep01/build/luma_log/k25.json",
+      "process_log": "work/ep01/logs/keys_original_inserts.log",
+      "endpoint": "luma/agent/uni-1/v1/max",
+      "reference_count": 2,
+      "reference_ids": [
+        "ref_cast_board",
+        "ref_set_board"
+      ],
+      "prompt_sha256": "b05407bdf9ff5845dec9c56de769636911eda4158e795186ee554d45232a95c6",
+      "result": "terminal_HTTP_422",
+      "estimated_price_per_requested_image_usd": 0.003,
+      "invoice_charge_confirmed": false,
+      "batch": "Original close inserts and architecture after board test",
+      "http_status": 422,
+      "invalid_field_diagnosed": false,
+      "repeat_attempts": "The three logged resume attempts retrieved the same request ID, not three new paid generation requests."
+    }
+  ],
+  "verified_facts": [
+    "Current fal schema allows up to nine reference URLs; all these request counts are schema-valid.",
+    "All five Q90 objects used ordinary public HTTPS fal CDN URLs without query signatures; remote bytes matched local SHA256.",
+    "All five Q90 references and both boards decoded with Pillow and OpenCV; RGB baseline JFIF with no EXIF or ICC payload.",
+    "Two-reference jobs both failed and succeeded; JPEG references both failed and succeeded.",
+    "The contact boards preserve all five approved source references across two URLs. No source pixels were generated for the boards; props/modules cells were downsampled 2:1."
+  ],
+  "limits": [
+    "Slow transfer was an initial hypothesis; it was not established as the failure cause.",
+    "A successful board test changes both input composition and brief, so it does not isolate which difference mattered.",
+    "An absent response in the resumable JSON alone is not proof of terminal failure; the four 422 classifications also use the completed process logs.",
+    "Per-image rates are estimates from the captured price response. Failed-request billing has not been reconciled against an invoice."
+  ],
+  "budget_for_these_six_tests": {
+    "successful_images": 2,
+    "terminal_failed_requests": 4,
+    "successful_output_estimate_usd": 0.006,
+    "conservative_all_six_requests_estimate_usd": 0.018,
+    "price_source": "work/ep01/prices.json"
+  },
+  "production_policy": "Luma supplies original new compositions, close inserts and architecture. Codex image editing derives exact kitchen states from approved room images. Contact boards and transport JPEGs are non-generative derivatives.",
+  "related_metadata": "episodes/ep01/build/reference_transport.json",
+  "later_batch_summary": {
+    "successful": [
+      "k11",
+      "k15"
+    ],
+    "terminal_HTTP_422": [
+      "k04",
+      "k08",
+      "k14",
+      "k19",
+      "k20",
+      "k21",
+      "k25"
+    ],
+    "no_more_luma_calls_planned": true,
+    "cause": "unconfirmed"
+  },
+  "budget_note": "The budget_for_these_six_tests field retains the original six-test subset. Complete episode fal accounting is in build/budget_estimate.json, including style tests, references, other originals, music and sound effects."
+}
