@@ -1,0 +1,206 @@
+{
+  "work/first-day-mix/production/plates/ankle.png": {
+    "sha256": "0e756da18b53c66087bf84b8e2e843718cff5c23fde3bee81e52bac0636d34cd",
+    "bytes": 609603
+  },
+  "work/first-day-mix/production/plates/canopy.png": {
+    "sha256": "70993a29f36b45c3ea03e5a2f7d71e4cda9219ef2db0a08526ef696be8eb5090",
+    "bytes": 1962250
+  },
+  "work/first-day-mix/production/plates/canopy_detail.png": {
+    "sha256": "18e207c622b7f34198c94f47c423e01bd8ee0d012602676e7b20165a4c405232",
+    "bytes": 7297717
+  },
+  "work/first-day-mix/production/plates/cyber_fan.png": {
+    "sha256": "5bf33b5cf9f6d91d482501a0e7e9450b94783b1f8a2035bf4fb90173ed7899d3",
+    "bytes": 4971517
+  },
+  "work/first-day-mix/production/plates/dance.png": {
+    "sha256": "62a40437926b30faa4ed5cdc3dac672ee6077f0ec6f3b110d9d5252097b5480c",
+    "bytes": 2078195
+  },
+  "work/first-day-mix/production/plates/future_gate.png": {
+    "sha256": "a823e70b9cf5e0162b1a08e2d969e1f95e513d8433e363bdf787ea39098c9812",
+    "bytes": 3619697
+  },
+  "work/first-day-mix/production/plates/go_macro.png": {
+    "sha256": "c3c02ce59f2773e997ee4a7fc1366fdc99ec59b2575720777938a6ba40e80734",
+    "bytes": 2561589
+  },
+  "work/first-day-mix/production/plates/ivory_world.png": {
+    "sha256": "933a1193b16926a851228b3bcfa11d602fd1dc5ff53dad93e45008ce14039d06",
+    "bytes": 3600286
+  },
+  "work/first-day-mix/production/video/ankle.mp4": {
+    "sha256": "ad90f2b3b7490295591466d43b12bec35421f406c19ae255e5450852f9bad206",
+    "bytes": 8362112
+  },
+  "work/first-day-mix/production/video/canopy.mp4": {
+    "sha256": "e986a73845bb1b55c27ee212456e551273a73f0c7bd04277c872bfe421a3bdd4",
+    "bytes": 20038646
+  },
+  "work/first-day-mix/production/video/canopy_detail.mp4": {
+    "sha256": "19e377fa36dbbd840d452c2027b73f356d1f4430d2f9bd49e27c5ce538c1cc1b",
+    "bytes": 14790588
+  },
+  "work/first-day-mix/production/video/cyber.mp4": {
+    "sha256": "f1862bb840f902d0a333138fdc30bf103e66957136f8bfb16bfcbebb45acf993",
+    "bytes": 15480206
+  },
+  "work/first-day-mix/production/video/dance.mp4": {
+    "sha256": "91d32a106a100a8930de80aa9910df084d473198fcc71b98dedbb91dd5e542e0",
+    "bytes": 20240415
+  },
+  "work/first-day-mix/production/video/macro.mp4": {
+    "sha256": "e25e1f5bc2abef243013707a8aedb28f2acc67164d9e2cfd96fca753b235edac",
+    "bytes": 4436631
+  },
+  "work/first-day-mix/production/video/night.mp4": {
+    "sha256": "d3b0706bdc46e5d6ab0a119ad36e09d690f9d63fceb385b1aa6a2c8deb1023d5",
+    "bytes": 23914996
+  },
+  "work/first-day-mix/production/video/portal.mp4": {
+    "sha256": "06517d0104663c0d8f69b2bbedd91cd377faef467323cd79a71ab5d2ec93297f",
+    "bytes": 9304195
+  },
+  "work/first-day-mix/production/cast/alexa.png": {
+    "sha256": "db643a49757c46cba5f1f2a955502c4be6e78c213ea13d358dfedb980bed30ca",
+    "bytes": 445727
+  },
+  "work/first-day-mix/production/cast/baichuan.png": {
+    "sha256": "fac5821ec15b8f4647161e55419d371b50dc0da813de608a4883aa5ff5841c0c",
+    "bytes": 456426
+  },
+  "work/first-day-mix/production/cast/cast-alpha-review.jpg": {
+    "sha256": "9b1728a51bccc190ba32ace61fc2c3e93b282c453cca216f741b56afb01a4b6d",
+    "bytes": 572865
+  },
+  "work/first-day-mix/production/cast/claude.png": {
+    "sha256": "18b912713ae46c8e43955894b381d55387ae140ec0caa4ab8f7382b464e9e662",
+    "bytes": 403421
+  },
+  "work/first-day-mix/production/cast/copilot.png": {
+    "sha256": "c097c4d00531580db12f06c8246ca9429ecfefde5289db6f37e0caf63f33af5d",
+    "bytes": 563293
+  },
+  "work/first-day-mix/production/cast/core-sheet.png": {
+    "sha256": "d89334632c9ff30dd95bd7922a608d19ab6316ef0d0fdf8985b0db4914bdd658",
+    "bytes": 2125811
+  },
+  "work/first-day-mix/production/cast/deepseek.png": {
+    "sha256": "72ba6545a89d68cff4bc2673bb9fbdbe3f828b287dca1aa4799ac37ed24b644b",
+    "bytes": 370134
+  },
+  "work/first-day-mix/production/cast/deepseek_dance_a.png": {
+    "sha256": "927672d664c1119655c36f9d7cf50ac3e554ff9bce117bf4f1fa6607dbccfe31",
+    "bytes": 286099
+  },
+  "work/first-day-mix/production/cast/deepseek_dance_b.png": {
+    "sha256": "0c0e9f44d74e118c431a6a9a7b852588b5ec5b596c7bb49e598f5b2b42d46f49",
+    "bytes": 355187
+  },
+  "work/first-day-mix/production/cast/doubao.png": {
+    "sha256": "5cb060fb1964e93e90efd8374b16c7c80cad1568667b7301c727cd140177debc",
+    "bytes": 332322
+  },
+  "work/first-day-mix/production/cast/future.png": {
+    "sha256": "825a5bd814ff6d168e80754fd88ade4c4f48828232213fda78797d0ddaac45f8",
+    "bytes": 258025
+  },
+  "work/first-day-mix/production/cast/future_open.png": {
+    "sha256": "e1798ab001adf504f36f1927f31e470b207852ddbe67ac36e7a5fe0cf77435f0",
+    "bytes": 384898
+  },
+  "work/first-day-mix/production/cast/gemini.png": {
+    "sha256": "0ca8304f12c086cf4ac0103eece7a84c2a0b733ea9335be491470a82ec76594d",
+    "bytes": 359631
+  },
+  "work/first-day-mix/production/cast/glm.png": {
+    "sha256": "6d096ca385034bf8f7965d3e2caf80e5cc33a4961c0120eb0a727314409c6943",
+    "bytes": 387277
+  },
+  "work/first-day-mix/production/cast/gpt.png": {
+    "sha256": "8f2e05c6b2d6c43536ac0622fc7bc80cb4f70258acba8481dc751e390b410d56",
+    "bytes": 344960
+  },
+  "work/first-day-mix/production/cast/gpt_dance_a.png": {
+    "sha256": "e0ff10d53e1a6f022518580df34993056b40ce7f422284d48227fda8afd5b6ab",
+    "bytes": 289634
+  },
+  "work/first-day-mix/production/cast/gpt_dance_b.png": {
+    "sha256": "5c8a68bf84afd6f7b79b4c19c4baf070aec545a0ee05a0d487fdfb5ec19bc939",
+    "bytes": 331384
+  },
+  "work/first-day-mix/production/cast/grok.png": {
+    "sha256": "28e1e9f8a43ac3b68b7efe195d9ec114994e3f2cca8f3712aea31233516dc1ff",
+    "bytes": 422472
+  },
+  "work/first-day-mix/production/cast/group1-sheet.png": {
+    "sha256": "e46a0a6759c59937bab372206f4637615ff40aca3f0f5511f1a5df81d84e7be1",
+    "bytes": 2132367
+  },
+  "work/first-day-mix/production/cast/group2-sheet.png": {
+    "sha256": "e245f3dca2a047ddbe37fd15351d80a10fe3b55582d77744a1247572018b43eb",
+    "bytes": 1806915
+  },
+  "work/first-day-mix/production/cast/group3-sheet.png": {
+    "sha256": "c936cdc817fb49ef5aa15c236d4fbce0021be57d8fce59af2e2fc089216f14ea",
+    "bytes": 2154950
+  },
+  "work/first-day-mix/production/cast/group4-sheet.png": {
+    "sha256": "beb0def5d48507c5381d7e52774920dd506cd8c8ad6b6aab960d0849114cf703",
+    "bytes": 1898274
+  },
+  "work/first-day-mix/production/cast/kimi.png": {
+    "sha256": "16f4d77a003a41d195f839c64e549ed885a377fd998fb1042ec0d6cade51f70c",
+    "bytes": 535370
+  },
+  "work/first-day-mix/production/cast/meta.png": {
+    "sha256": "73429065f9ca53e9dabc00d82a53bf0f8a4ede908dd086051a7d0233d384f6a8",
+    "bytes": 527916
+  },
+  "work/first-day-mix/production/cast/minimax.png": {
+    "sha256": "639aecd388221bcab95793d4781acb1e57ffa334de21f97b1445141e21ec751d",
+    "bytes": 539723
+  },
+  "work/first-day-mix/production/cast/pangu.png": {
+    "sha256": "7037f6c52e5f2d1e830909dc6c0d150f59fe7f254e37cb0c71627e4ea8877b40",
+    "bytes": 607622
+  },
+  "work/first-day-mix/production/cast/perplexity.png": {
+    "sha256": "5282a9dd87e496e9418a03f459787beac4286818b2f48ce55abab73ab16d3490",
+    "bytes": 481459
+  },
+  "work/first-day-mix/production/cast/poses-sheet.png": {
+    "sha256": "c5597913c4f4249c1c200b4b621109cec95c6b96d8cd5afd6cd7acf93e3b7de3",
+    "bytes": 1922479
+  },
+  "work/first-day-mix/production/cast/qwen.png": {
+    "sha256": "48664e74b91596222d36c22381d607501c4c0039a534e99e2b22205fc3a5cc2f",
+    "bytes": 577757
+  },
+  "work/first-day-mix/production/cast/sense.png": {
+    "sha256": "b4f99260e60ec69fd8164733fb42a77c4b20eaa85b0e6f3e6254ce427d2f678f",
+    "bytes": 532769
+  },
+  "work/first-day-mix/production/cast/siri.png": {
+    "sha256": "f32fa87c22489ca8dcf6987f4aec35216ac115c01818f01951bebedb0a641eaa",
+    "bytes": 503812
+  },
+  "work/first-day-mix/production/cast/spark.png": {
+    "sha256": "e547d308c263eaec0f8acfdfe79682e3d928140ba30732069efe80a396846bec",
+    "bytes": 465994
+  },
+  "work/first-day-mix/production/cast/step.png": {
+    "sha256": "fd25f4f5312a0004f7dc82eb2432e07758487807d826dd28812e7e798d10b508",
+    "bytes": 448894
+  },
+  "work/first-day-mix/production/cast/wenxin.png": {
+    "sha256": "568c996e05b7d8f115456bcf39b5804dc83b4f5465d93bdab98d184430d32077",
+    "bytes": 630693
+  },
+  "work/first-day-mix/production/cast/yuanbao.png": {
+    "sha256": "6913a7cee8b070126a93b15ae764aca08f1e9685dab9e976ef83b9cab6b47788",
+    "bytes": 528093
+  }
+}

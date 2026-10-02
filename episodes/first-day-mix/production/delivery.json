@@ -1,0 +1,48 @@
+{
+  "file": "renders/first-day-mix/first-day-mix-final.mp4",
+  "sha256": "ceb8c65fc2ce9182e35ff27dd879db2d49846072b3547bd8e31c22965d414ebf",
+  "bytes": 61818257,
+  "frames": 2621,
+  "fps": "60/1",
+  "width": 1920,
+  "height": 1080,
+  "duration": "43.683333",
+  "source_audio_sha256": "261c74fd2f73c1130b74544ba04173fc04b5687496611aefa6e6034036e75fab",
+  "chunks": {
+    "work/first-day-mix/production/final-part-a.mp4": "a7ced2ef4b32eb5a2f59232447202d6a9ebf7487c35b640e485b348d343b538b",
+    "work/first-day-mix/production/final-part-b.mp4": "1fa50dff4b90414fb88c8b5afba1a7731caadba89b6e67919019d6fa7a99a53e"
+  },
+  "meme_patch": {
+    "path": "work/first-day-mix/production/final-meme-patch.mp4",
+    "sha256": "651cfffd95d4e78db4004bef02e22598ccb83ef70170883a1ae1d93b653a13f1",
+    "frames": [
+      494,
+      715
+    ]
+  },
+  "birth_fit_patches": [
+    {
+      "path": "work/first-day-mix/production/final-birth22-patch.mp4",
+      "sha256": "ff4b2e936fdda28187c174e7dfde30f1f14c0844cf4fc789afe54e01bcda28e3"
+    },
+    {
+      "path": "work/first-day-mix/production/final-birth24-patch.mp4",
+      "sha256": "7e2fbef7191f7657a78b95bdacfcb78defa8a34316a55317cada94ca6b20fd91"
+    }
+  ],
+  "reserved_tile_patch": {
+    "path": "work/first-day-mix/production/final-reserved-patch.mp4",
+    "sha256": "fcd26df599a72e02a1340fa248bc9fb09f20c05a7b09e96c29c483d62814e51e",
+    "frames": [
+      1883,
+      1922
+    ]
+  },
+  "final_qa_status": "technical checks passed; sampled-frame visual review completed; real-time audiovisual review not performed",
+  "qa_report": "work/first-day-mix/production/qa/final-delivery/report.json",
+  "qa_report_sha256": "3e9a575a5d122112634adeee7eb060143e9c7d0c9e9c9420f2bc8b372870abc8",
+  "sampled_frames": 159,
+  "text_bounds_checked": 162,
+  "loudness_lufs": -15.03,
+  "true_peak_dbtp": -7.81
+}

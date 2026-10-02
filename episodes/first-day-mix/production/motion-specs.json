@@ -1,0 +1,50 @@
+{
+  "dance": {
+    "image": "work/first-day-mix/production/plates/dance.png",
+    "duration": 7,
+    "seed": 2041,
+    "reviewed_visually": true,
+    "source_evidence": "Inspected full generated frame: two same photographic adult leads in recognizable ivory/cobalt and celadon garments, complete legs and shoes on a visibly narrow suspended ivory rib; empty sky beneath; man behind right, woman front left; both arms extended to sides. No extra people. Background folded ivory/cobalt sail/fan, waist sashes. Faces clear; mouth smiles not deliberate speech. This is pre-flight dance coverage on inert structural rib, not a seed-tile birth.",
+    "prompt": "Energetic full-body dance by these two adults on the narrow ivory rib. In the first second bend knees and draw elbows inward. Then BOTH step right, cross left foot behind, step left, and lift the right knee, swinging their arms rhythmically to counterbalance. Complete two crisp side-step cycles, loose sleeves and hair swing with real momentum. Keep both complete bodies and all shoes visible. Remain on the rib; no jumping off, no flight, no new people or floor. Natural balance and leg articulation. Camera fixed at this low wide composition. Mouths closed, not speaking or singing. Crisp daytime photographic fashion-dance cinematography."
+  },
+  "ankle": {
+    "image": "work/first-day-mix/production/plates/ankle.png",
+    "duration": 5,
+    "seed": 3101,
+    "reviewed_visually": true,
+    "source_evidence": "Exact pixel crop of reviewed dance image, inspected: three visible boots belong to the same two leads, ivory trousers with cobalt garment left and celadon torso at top. Narrow rib and empty sky beneath remain clear. Cropping excludes heads and outside left foot intentionally; no new occupants or seed-tiles introduced.",
+    "prompt": "Photographic close insert of the already visible shoes and ankles on this narrow suspended ivory rib. Almost still: loose trouser fabric moves gently in the breeze. After one second the front left visible shoe rocks its heel up slightly, then plants gently again. Keep every foot anatomically attached, preserve all visible shoes and rib geometry. Camera completely locked. No new feet, objects, text or camera movement."
+  },
+  "canopy": {
+    "image": "work/first-day-mix/production/plates/canopy.png",
+    "duration": 7,
+    "seed": 3102,
+    "reviewed_visually": true,
+    "source_evidence": "Inspected image: same photographic adult pair, cobalt woman foreground left and celadon man behind right. Waist harness and taut apricot lines to sail above clearly visible, open air all beneath. Man holds womans upper forearm/sleeve rather than wrist; select this actual supportive contact and revise wording accordingly. Womans free arm extends toward empty lower-right area. Tight crop legitimately excludes other attached cast.",
+    "prompt": "The two photographic adults glide upward and forward together on taut apricot canopy harness lines. The blue-haired woman gently reaches her free hand farther toward lower right while the man maintains his existing hand on her forearm and sleeve. Loose sleeves and blue scarf stream backward. Their bodies rise a little then settle as the sail takes weight. Beautiful wind in hair, faces calm and mouths closed, not speaking. Camera tracks beside them smoothly, keeps this intimate two-shot with open blue sky. No other people appear, no floor, no new limbs."
+  },
+  "cyber": {
+    "image": "work/first-day-mix/production/plates/cyber_fan.png",
+    "duration": 5,
+    "seed": 3103,
+    "reviewed_visually": true,
+    "source_evidence": "Inspected 2048x1152 plate: gigantic single blue-panel modern folding fan with central dark brass hinge and black structural ribs, repeated empty oval rings along lower edge against dark void. No occupants, floor or text. The city is the printed/cellular panel surface, not an unrelated populated place.",
+    "prompt": "Cinematic low-angle travelling shot around this giant cyberpunk folding fan. Its blue illuminated paper-city panels rotate slowly open on mechanical black ribs, warm orange light pulses from one real slit. The camera glides rapidly along the central hinge then tilts upward, giving dramatic near-far parallax. Empty oval rings stay open to black air, no floor. Crisp brass mechanics, no text, no people or added structures. Restrained fragments stream along the ribs."
+  },
+  "portal": {
+    "image": "work/first-day-mix/production/plates/future_gate.png",
+    "duration": 5,
+    "seed": 3104,
+    "reviewed_visually": true,
+    "source_evidence": "Inspected plate: one curving sequence of hinged ivory rectangular frames over deep navy empty space, large foreground hinge and distant hollow curl. Sparse flecks, no figures/date/text. This is an explicitly speculative architectural insert, not new land or occupied support.",
+    "prompt": "Camera flies smoothly forward along the spiral of hinged ivory frames toward the empty cobalt center. Frames unfold slightly as camera passes the foreground brass hinge; red light slides across real frame edges. Monumental deep perspective, constant readable structure, no additional rings, no people or text. The far vanishing point grows toward the camera by the end, precise surreal architecture not a melting transition."
+  },
+  "canopy_detail": {
+    "image": "work/first-day-mix/production/plates/canopy_detail.png",
+    "duration": 5,
+    "seed": 3105,
+    "reviewed_visually": true,
+    "source_evidence": "Inspected macro underside of ivory/cobalt canopy: brass central hub, radial ribs, taut apricot woven lines descending out of frame. No visible people or floor. Light transmits through actual paper; a detail insert that intentionally excludes all occupants attached below camera.",
+    "prompt": "The ivory and cobalt paper canopy opens decisively around its brass hub as rising air fills it. Radial ribs spread a little, paper tightens, both apricot harness lines pull taut downward. The camera stays under the central hub with one smooth slight tilt. Real sunlight through paper, no people, no letters, no added structure. Finish with the canopy fully loaded and taut."
+  }
+}

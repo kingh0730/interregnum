@@ -1,0 +1,45 @@
+{
+  "files": {
+    "episodes/first-day-mix/production/renderer/export.mjs": "92980025afb946d83a467f9a8a806562cbc8418946f014074c8127cb2984b4b6",
+    "episodes/first-day-mix/first-day.wav": "261c74fd2f73c1130b74544ba04173fc04b5687496611aefa6e6034036e75fab",
+    "work/first-day-mix/production/engine-before-reserved.js": "869416eefd84d2e5675c0511899ca01b1be24ce81bb81ee32aaf15d0bf3211dc",
+    "episodes/first-day-mix/production/final-config-base.json": "98bd38096ba19b530812a02e6c50cd35380b028ff95784a53f647aedd0f438cf",
+    "episodes/first-day-mix/production/final-config.json": "1cbe78e60f255803cbf7f60123f22532ff0caba297b388fa5336d3cf6149900f",
+    "work/first-day-mix/production/engine-before-four-birth-fit.js": "66abda22f80b261c0270b8000b469a4a9938e90152f50469ec09d8496bbaa554",
+    "episodes/first-day-mix/production/renderer/engine.js": "fc7334b8ec18707e7f56b7d92402b146f205c32d21d721b70825efc051c5d3c2"
+  },
+  "fps": 60,
+  "frames": 2621,
+  "status": "frozen for final render",
+  "audio_policy": "source unmodified; AAC320kbps delivery, 13.333ms silence pad",
+  "patches": [
+    {
+      "frames": [
+        494,
+        715
+      ],
+      "reason": "Align each meme label to its depicted owner: Doubao, Gemini, DeepSeek."
+    },
+    {
+      "frames": [
+        1883,
+        1922
+      ],
+      "reason": "Show the reserved final tile intact before the final birth, not an unrelated cast view."
+    },
+    {
+      "frames": [
+        878,
+        935
+      ],
+      "reason": "Fit all four complete newborn figures inside frame."
+    },
+    {
+      "frames": [
+        978,
+        1031
+      ],
+      "reason": "Fit all four complete newborn figures inside frame."
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+> Preproduction treatment. The completed film is documented in [production/final-cut.md](production/final-cut.md); its actual performances and implemented shots supersede draft action intentions below.
+
 # 分镜脚本 / shot treatment
 
 开发稿；没有额外旁白。所有动作是计划，不是已生成或已验证的表演。歌曲使用所给版本。场景按歌词行锚点分配，行内切点已经作不等长设计，包含约0.18秒短促插镜与2秒以上长停顿；后续按实听鼓点和动作完成时间修订。

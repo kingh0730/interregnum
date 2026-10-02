@@ -1,8 +1,18 @@
 # FIRST DAY MIX · 《先别落地》
 
-**AI SI - I｜普通话音乐试播片｜43.670秒｜已完成开发至美术方向阶段**
+**AI SI - I｜普通话音乐试播片｜最终成片已导出**
 
-也可直接阅读 [14页图文决策PDF](../../output/pdf/first-day-mix-decisions.pdf)。
+[播放／下载最终MP4](../../renders/first-day-mix/first-day-mix-final.mp4) · [封面帧](../../renders/first-day-mix/first-day-mix-poster.jpg)
+
+1920×1080，60fps，43.683秒；保留完整43.670秒原曲。22位当代AI拟人角色、1位未命名未来角色，混合生成视频、摄影、赛璐璐、纸偶、像素、版画和程序动画。最后13.333毫秒仅为帧边界的静音补齐。
+
+最终实现、源片选段和复现入口见 [最终剪辑](production/final-cut.md)、[制作说明](production/README.md) 与 [交付记录](production/delivery.json)。以下保留前期美术阶段记录，早先“停在美术阶段”等文字描述当时的交付范围；后续最终成片以production内记录为准。
+
+---
+
+## 前期开发记录
+
+也可直接阅读14页图文决策PDF：[中文版](../../output/pdf/first-day-mix-decisions-zh.pdf) / [英文版](../../output/pdf/first-day-mix-decisions.pdf)。
 
 从 [美术提案与实图](art-review.md) 开始。九张生成测试、三种候选方向、一次白昼深化和一次夜景空间修订，选定了摄影人物 / 精密折纸机构 / 赛璐璐 / 纸偶 / 像素 / 版画的混合方向。
 

@@ -1,0 +1,904 @@
+{
+  "status": "generated artwork; exact crop and chroma extraction; intended authored cutout animation",
+  "processing": "fixed grid crop; green-screen unmix alpha; no synthesized pixels; RGB despill only at partial alpha; tight bbox with 12px transparent padding",
+  "characters": {
+    "gpt": {
+      "path": "work/first-day-mix/production/cast/gpt.png",
+      "sheet": "work/first-day-mix/production/cast/core-sheet.png",
+      "sheet_size": [
+        1536,
+        1024
+      ],
+      "cell_rect_xyxy": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "tight_crop_within_cell_xyxy": [
+        45,
+        4,
+        512,
+        512
+      ],
+      "size": [
+        467,
+        508
+      ],
+      "body_alpha_bbox": [
+        12,
+        11,
+        466,
+        504
+      ],
+      "source_sha256": "d89334632c9ff30dd95bd7922a608d19ab6316ef0d0fdf8985b0db4914bdd658",
+      "sha256": "8f2e05c6b2d6c43536ac0622fc7bc80cb4f70258acba8481dc751e390b410d56"
+    },
+    "deepseek": {
+      "path": "work/first-day-mix/production/cast/deepseek.png",
+      "sheet": "work/first-day-mix/production/cast/core-sheet.png",
+      "sheet_size": [
+        1536,
+        1024
+      ],
+      "cell_rect_xyxy": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "tight_crop_within_cell_xyxy": [
+        23,
+        10,
+        512,
+        512
+      ],
+      "size": [
+        489,
+        502
+      ],
+      "body_alpha_bbox": [
+        12,
+        12,
+        482,
+        500
+      ],
+      "source_sha256": "d89334632c9ff30dd95bd7922a608d19ab6316ef0d0fdf8985b0db4914bdd658",
+      "sha256": "72ba6545a89d68cff4bc2673bb9fbdbe3f828b287dca1aa4799ac37ed24b644b"
+    },
+    "claude": {
+      "path": "work/first-day-mix/production/cast/claude.png",
+      "sheet": "work/first-day-mix/production/cast/core-sheet.png",
+      "sheet_size": [
+        1536,
+        1024
+      ],
+      "cell_rect_xyxy": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "tight_crop_within_cell_xyxy": [
+        7,
+        6,
+        481,
+        512
+      ],
+      "size": [
+        474,
+        506
+      ],
+      "body_alpha_bbox": [
+        12,
+        12,
+        462,
+        500
+      ],
+      "source_sha256": "d89334632c9ff30dd95bd7922a608d19ab6316ef0d0fdf8985b0db4914bdd658",
+      "sha256": "18b912713ae46c8e43955894b381d55387ae140ec0caa4ab8f7382b464e9e662"
+    },
+    "doubao": {
+      "path": "work/first-day-mix/production/cast/doubao.png",
+      "sheet": "work/first-day-mix/production/cast/core-sheet.png",
+      "sheet_size": [
+        1536,
+        1024
+      ],
+      "cell_rect_xyxy": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "tight_crop_within_cell_xyxy": [
+        40,
+        0,
+        456,
+        508
+      ],
+      "size": [
+        416,
+        508
+      ],
+      "body_alpha_bbox": [
+        12,
+        1,
+        404,
+        496
+      ],
+      "source_sha256": "d89334632c9ff30dd95bd7922a608d19ab6316ef0d0fdf8985b0db4914bdd658",
+      "sha256": "5cb060fb1964e93e90efd8374b16c7c80cad1568667b7301c727cd140177debc"
+    },
+    "gemini": {
+      "path": "work/first-day-mix/production/cast/gemini.png",
+      "sheet": "work/first-day-mix/production/cast/core-sheet.png",
+      "sheet_size": [
+        1536,
+        1024
+      ],
+      "cell_rect_xyxy": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "tight_crop_within_cell_xyxy": [
+        9,
+        0,
+        480,
+        505
+      ],
+      "size": [
+        471,
+        505
+      ],
+      "body_alpha_bbox": [
+        11,
+        8,
+        460,
+        493
+      ],
+      "source_sha256": "d89334632c9ff30dd95bd7922a608d19ab6316ef0d0fdf8985b0db4914bdd658",
+      "sha256": "0ca8304f12c086cf4ac0103eece7a84c2a0b733ea9335be491470a82ec76594d"
+    },
+    "grok": {
+      "path": "work/first-day-mix/production/cast/grok.png",
+      "sheet": "work/first-day-mix/production/cast/core-sheet.png",
+      "sheet_size": [
+        1536,
+        1024
+      ],
+      "cell_rect_xyxy": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "tight_crop_within_cell_xyxy": [
+        0,
+        0,
+        499,
+        510
+      ],
+      "size": [
+        499,
+        510
+      ],
+      "body_alpha_bbox": [
+        4,
+        11,
+        487,
+        498
+      ],
+      "source_sha256": "d89334632c9ff30dd95bd7922a608d19ab6316ef0d0fdf8985b0db4914bdd658",
+      "sha256": "28e1e9f8a43ac3b68b7efe195d9ec114994e3f2cca8f3712aea31233516dc1ff"
+    },
+    "qwen": {
+      "path": "work/first-day-mix/production/cast/qwen.png",
+      "sheet": "work/first-day-mix/production/cast/group1-sheet.png",
+      "sheet_size": [
+        1024,
+        1536
+      ],
+      "cell_rect_xyxy": [
+        0,
+        0,
+        512,
+        750
+      ],
+      "tight_crop_within_cell_xyxy": [
+        10,
+        13,
+        500,
+        750
+      ],
+      "size": [
+        490,
+        737
+      ],
+      "body_alpha_bbox": [
+        12,
+        12,
+        479,
+        736
+      ],
+      "source_sha256": "e46a0a6759c59937bab372206f4637615ff40aca3f0f5511f1a5df81d84e7be1",
+      "sha256": "48664e74b91596222d36c22381d607501c4c0039a534e99e2b22205fc3a5cc2f"
+    },
+    "kimi": {
+      "path": "work/first-day-mix/production/cast/kimi.png",
+      "sheet": "work/first-day-mix/production/cast/group1-sheet.png",
+      "sheet_size": [
+        1024,
+        1536
+      ],
+      "cell_rect_xyxy": [
+        512,
+        0,
+        1024,
+        768
+      ],
+      "tight_crop_within_cell_xyxy": [
+        3,
+        0,
+        512,
+        759
+      ],
+      "size": [
+        509,
+        759
+      ],
+      "body_alpha_bbox": [
+        12,
+        9,
+        502,
+        750
+      ],
+      "source_sha256": "e46a0a6759c59937bab372206f4637615ff40aca3f0f5511f1a5df81d84e7be1",
+      "sha256": "16f4d77a003a41d195f839c64e549ed885a377fd998fb1042ec0d6cade51f70c"
+    },
+    "yuanbao": {
+      "path": "work/first-day-mix/production/cast/yuanbao.png",
+      "sheet": "work/first-day-mix/production/cast/group1-sheet.png",
+      "sheet_size": [
+        1024,
+        1536
+      ],
+      "cell_rect_xyxy": [
+        0,
+        750,
+        512,
+        1536
+      ],
+      "tight_crop_within_cell_xyxy": [
+        10,
+        0,
+        496,
+        770
+      ],
+      "size": [
+        486,
+        770
+      ],
+      "body_alpha_bbox": [
+        12,
+        1,
+        475,
+        758
+      ],
+      "source_sha256": "e46a0a6759c59937bab372206f4637615ff40aca3f0f5511f1a5df81d84e7be1",
+      "sha256": "6913a7cee8b070126a93b15ae764aca08f1e9685dab9e976ef83b9cab6b47788"
+    },
+    "wenxin": {
+      "path": "work/first-day-mix/production/cast/wenxin.png",
+      "sheet": "work/first-day-mix/production/cast/group1-sheet.png",
+      "sheet_size": [
+        1024,
+        1536
+      ],
+      "cell_rect_xyxy": [
+        512,
+        768,
+        1024,
+        1536
+      ],
+      "tight_crop_within_cell_xyxy": [
+        0,
+        0,
+        512,
+        753
+      ],
+      "size": [
+        512,
+        753
+      ],
+      "body_alpha_bbox": [
+        1,
+        1,
+        506,
+        741
+      ],
+      "source_sha256": "e46a0a6759c59937bab372206f4637615ff40aca3f0f5511f1a5df81d84e7be1",
+      "sha256": "568c996e05b7d8f115456bcf39b5804dc83b4f5465d93bdab98d184430d32077"
+    },
+    "step": {
+      "path": "work/first-day-mix/production/cast/step.png",
+      "sheet": "work/first-day-mix/production/cast/group2-sheet.png",
+      "sheet_size": [
+        1024,
+        1536
+      ],
+      "cell_rect_xyxy": [
+        0,
+        0,
+        512,
+        735
+      ],
+      "tight_crop_within_cell_xyxy": [
+        14,
+        2,
+        479,
+        726
+      ],
+      "size": [
+        465,
+        724
+      ],
+      "body_alpha_bbox": [
+        12,
+        11,
+        453,
+        712
+      ],
+      "source_sha256": "e245f3dca2a047ddbe37fd15351d80a10fe3b55582d77744a1247572018b43eb",
+      "sha256": "fd25f4f5312a0004f7dc82eb2432e07758487807d826dd28812e7e798d10b508"
+    },
+    "baichuan": {
+      "path": "work/first-day-mix/production/cast/baichuan.png",
+      "sheet": "work/first-day-mix/production/cast/group2-sheet.png",
+      "sheet_size": [
+        1024,
+        1536
+      ],
+      "cell_rect_xyxy": [
+        512,
+        0,
+        1024,
+        735
+      ],
+      "tight_crop_within_cell_xyxy": [
+        37,
+        4,
+        493,
+        733
+      ],
+      "size": [
+        456,
+        729
+      ],
+      "body_alpha_bbox": [
+        12,
+        12,
+        444,
+        719
+      ],
+      "source_sha256": "e245f3dca2a047ddbe37fd15351d80a10fe3b55582d77744a1247572018b43eb",
+      "sha256": "fac5821ec15b8f4647161e55419d371b50dc0da813de608a4883aa5ff5841c0c"
+    },
+    "glm": {
+      "path": "work/first-day-mix/production/cast/glm.png",
+      "sheet": "work/first-day-mix/production/cast/group2-sheet.png",
+      "sheet_size": [
+        1024,
+        1536
+      ],
+      "cell_rect_xyxy": [
+        0,
+        735,
+        512,
+        1536
+      ],
+      "tight_crop_within_cell_xyxy": [
+        53,
+        0,
+        432,
+        780
+      ],
+      "size": [
+        379,
+        780
+      ],
+      "body_alpha_bbox": [
+        11,
+        7,
+        367,
+        768
+      ],
+      "source_sha256": "e245f3dca2a047ddbe37fd15351d80a10fe3b55582d77744a1247572018b43eb",
+      "sha256": "6d096ca385034bf8f7965d3e2caf80e5cc33a4961c0120eb0a727314409c6943"
+    },
+    "spark": {
+      "path": "work/first-day-mix/production/cast/spark.png",
+      "sheet": "work/first-day-mix/production/cast/group2-sheet.png",
+      "sheet_size": [
+        1024,
+        1536
+      ],
+      "cell_rect_xyxy": [
+        512,
+        735,
+        1024,
+        1536
+      ],
+      "tight_crop_within_cell_xyxy": [
+        25,
+        9,
+        490,
+        772
+      ],
+      "size": [
+        465,
+        763
+      ],
+      "body_alpha_bbox": [
+        12,
+        12,
+        453,
+        751
+      ],
+      "source_sha256": "e245f3dca2a047ddbe37fd15351d80a10fe3b55582d77744a1247572018b43eb",
+      "sha256": "e547d308c263eaec0f8acfdfe79682e3d928140ba30732069efe80a396846bec"
+    },
+    "sense": {
+      "path": "work/first-day-mix/production/cast/sense.png",
+      "sheet": "work/first-day-mix/production/cast/group3-sheet.png",
+      "sheet_size": [
+        1024,
+        1536
+      ],
+      "cell_rect_xyxy": [
+        0,
+        0,
+        512,
+        750
+      ],
+      "tight_crop_within_cell_xyxy": [
+        12,
+        21,
+        500,
+        750
+      ],
+      "size": [
+        488,
+        729
+      ],
+      "body_alpha_bbox": [
+        12,
+        12,
+        476,
+        718
+      ],
+      "source_sha256": "c936cdc817fb49ef5aa15c236d4fbce0021be57d8fce59af2e2fc089216f14ea",
+      "sha256": "b4f99260e60ec69fd8164733fb42a77c4b20eaa85b0e6f3e6254ce427d2f678f"
+    },
+    "pangu": {
+      "path": "work/first-day-mix/production/cast/pangu.png",
+      "sheet": "work/first-day-mix/production/cast/group3-sheet.png",
+      "sheet_size": [
+        1024,
+        1536
+      ],
+      "cell_rect_xyxy": [
+        512,
+        0,
+        1024,
+        740
+      ],
+      "tight_crop_within_cell_xyxy": [
+        4,
+        4,
+        486,
+        740
+      ],
+      "size": [
+        482,
+        736
+      ],
+      "body_alpha_bbox": [
+        12,
+        12,
+        470,
+        736
+      ],
+      "source_sha256": "c936cdc817fb49ef5aa15c236d4fbce0021be57d8fce59af2e2fc089216f14ea",
+      "sha256": "7037f6c52e5f2d1e830909dc6c0d150f59fe7f254e37cb0c71627e4ea8877b40"
+    },
+    "minimax": {
+      "path": "work/first-day-mix/production/cast/minimax.png",
+      "sheet": "work/first-day-mix/production/cast/group3-sheet.png",
+      "sheet_size": [
+        1024,
+        1536
+      ],
+      "cell_rect_xyxy": [
+        0,
+        750,
+        550,
+        1536
+      ],
+      "tight_crop_within_cell_xyxy": [
+        10,
+        1,
+        541,
+        722
+      ],
+      "size": [
+        531,
+        721
+      ],
+      "body_alpha_bbox": [
+        12,
+        12,
+        520,
+        709
+      ],
+      "source_sha256": "c936cdc817fb49ef5aa15c236d4fbce0021be57d8fce59af2e2fc089216f14ea",
+      "sha256": "639aecd388221bcab95793d4781acb1e57ffa334de21f97b1445141e21ec751d"
+    },
+    "copilot": {
+      "path": "work/first-day-mix/production/cast/copilot.png",
+      "sheet": "work/first-day-mix/production/cast/group3-sheet.png",
+      "sheet_size": [
+        1024,
+        1536
+      ],
+      "cell_rect_xyxy": [
+        512,
+        740,
+        1024,
+        1536
+      ],
+      "tight_crop_within_cell_xyxy": [
+        4,
+        0,
+        502,
+        778
+      ],
+      "size": [
+        498,
+        778
+      ],
+      "body_alpha_bbox": [
+        12,
+        1,
+        486,
+        766
+      ],
+      "source_sha256": "c936cdc817fb49ef5aa15c236d4fbce0021be57d8fce59af2e2fc089216f14ea",
+      "sha256": "c097c4d00531580db12f06c8246ca9429ecfefde5289db6f37e0caf63f33af5d"
+    },
+    "alexa": {
+      "path": "work/first-day-mix/production/cast/alexa.png",
+      "sheet": "work/first-day-mix/production/cast/group4-sheet.png",
+      "sheet_size": [
+        1024,
+        1536
+      ],
+      "cell_rect_xyxy": [
+        0,
+        0,
+        490,
+        750
+      ],
+      "tight_crop_within_cell_xyxy": [
+        40,
+        0,
+        466,
+        748
+      ],
+      "size": [
+        426,
+        748
+      ],
+      "body_alpha_bbox": [
+        11,
+        4,
+        414,
+        736
+      ],
+      "source_sha256": "beb0def5d48507c5381d7e52774920dd506cd8c8ad6b6aab960d0849114cf703",
+      "sha256": "db643a49757c46cba5f1f2a955502c4be6e78c213ea13d358dfedb980bed30ca"
+    },
+    "meta": {
+      "path": "work/first-day-mix/production/cast/meta.png",
+      "sheet": "work/first-day-mix/production/cast/group4-sheet.png",
+      "sheet_size": [
+        1024,
+        1536
+      ],
+      "cell_rect_xyxy": [
+        490,
+        0,
+        1024,
+        750
+      ],
+      "tight_crop_within_cell_xyxy": [
+        0,
+        7,
+        531,
+        750
+      ],
+      "size": [
+        531,
+        743
+      ],
+      "body_alpha_bbox": [
+        8,
+        11,
+        519,
+        737
+      ],
+      "source_sha256": "beb0def5d48507c5381d7e52774920dd506cd8c8ad6b6aab960d0849114cf703",
+      "sha256": "73429065f9ca53e9dabc00d82a53bf0f8a4ede908dd086051a7d0233d384f6a8"
+    },
+    "perplexity": {
+      "path": "work/first-day-mix/production/cast/perplexity.png",
+      "sheet": "work/first-day-mix/production/cast/group4-sheet.png",
+      "sheet_size": [
+        1024,
+        1536
+      ],
+      "cell_rect_xyxy": [
+        0,
+        750,
+        512,
+        1536
+      ],
+      "tight_crop_within_cell_xyxy": [
+        14,
+        0,
+        512,
+        752
+      ],
+      "size": [
+        498,
+        752
+      ],
+      "body_alpha_bbox": [
+        12,
+        10,
+        497,
+        740
+      ],
+      "source_sha256": "beb0def5d48507c5381d7e52774920dd506cd8c8ad6b6aab960d0849114cf703",
+      "sha256": "5282a9dd87e496e9418a03f459787beac4286818b2f48ce55abab73ab16d3490"
+    },
+    "siri": {
+      "path": "work/first-day-mix/production/cast/siri.png",
+      "sheet": "work/first-day-mix/production/cast/group4-sheet.png",
+      "sheet_size": [
+        1024,
+        1536
+      ],
+      "cell_rect_xyxy": [
+        512,
+        750,
+        1024,
+        1536
+      ],
+      "tight_crop_within_cell_xyxy": [
+        8,
+        23,
+        505,
+        762
+      ],
+      "size": [
+        497,
+        739
+      ],
+      "body_alpha_bbox": [
+        12,
+        12,
+        485,
+        727
+      ],
+      "source_sha256": "beb0def5d48507c5381d7e52774920dd506cd8c8ad6b6aab960d0849114cf703",
+      "sha256": "f32fa87c22489ca8dcf6987f4aec35216ac115c01818f01951bebedb0a641eaa"
+    },
+    "future": {
+      "path": "work/first-day-mix/production/cast/future.png",
+      "sheet": "work/first-day-mix/production/cast/poses-sheet.png",
+      "sheet_size": [
+        1536,
+        1024
+      ],
+      "cell_rect_xyxy": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "tight_crop_within_cell_xyxy": [
+        38,
+        0,
+        451,
+        402
+      ],
+      "size": [
+        413,
+        402
+      ],
+      "body_alpha_bbox": [
+        12,
+        10,
+        402,
+        391
+      ],
+      "source_sha256": "c5597913c4f4249c1c200b4b621109cec95c6b96d8cd5afd6cd7acf93e3b7de3",
+      "sha256": "825a5bd814ff6d168e80754fd88ade4c4f48828232213fda78797d0ddaac45f8"
+    }
+  },
+  "variants": {
+    "gpt_dance_a": {
+      "path": "work/first-day-mix/production/cast/gpt_dance_a.png",
+      "sheet": "work/first-day-mix/production/cast/poses-sheet.png",
+      "sheet_size": [
+        1536,
+        1024
+      ],
+      "cell_rect_xyxy": [
+        0,
+        0,
+        512,
+        500
+      ],
+      "tight_crop_within_cell_xyxy": [
+        70,
+        1,
+        460,
+        500
+      ],
+      "size": [
+        390,
+        499
+      ],
+      "body_alpha_bbox": [
+        12,
+        12,
+        378,
+        493
+      ],
+      "source_sha256": "c5597913c4f4249c1c200b4b621109cec95c6b96d8cd5afd6cd7acf93e3b7de3",
+      "sha256": "e0ff10d53e1a6f022518580df34993056b40ce7f422284d48227fda8afd5b6ab"
+    },
+    "gpt_dance_b": {
+      "path": "work/first-day-mix/production/cast/gpt_dance_b.png",
+      "sheet": "work/first-day-mix/production/cast/poses-sheet.png",
+      "sheet_size": [
+        1536,
+        1024
+      ],
+      "cell_rect_xyxy": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "tight_crop_within_cell_xyxy": [
+        17,
+        0,
+        512,
+        483
+      ],
+      "size": [
+        495,
+        483
+      ],
+      "body_alpha_bbox": [
+        12,
+        12,
+        495,
+        471
+      ],
+      "source_sha256": "c5597913c4f4249c1c200b4b621109cec95c6b96d8cd5afd6cd7acf93e3b7de3",
+      "sha256": "5c8a68bf84afd6f7b79b4c19c4baf070aec545a0ee05a0d487fdfb5ec19bc939"
+    },
+    "deepseek_dance_a": {
+      "path": "work/first-day-mix/production/cast/deepseek_dance_a.png",
+      "sheet": "work/first-day-mix/production/cast/poses-sheet.png",
+      "sheet_size": [
+        1536,
+        1024
+      ],
+      "cell_rect_xyxy": [
+        1024,
+        0,
+        1536,
+        450
+      ],
+      "tight_crop_within_cell_xyxy": [
+        34,
+        49,
+        481,
+        439
+      ],
+      "size": [
+        447,
+        390
+      ],
+      "body_alpha_bbox": [
+        12,
+        11,
+        435,
+        378
+      ],
+      "source_sha256": "c5597913c4f4249c1c200b4b621109cec95c6b96d8cd5afd6cd7acf93e3b7de3",
+      "sha256": "927672d664c1119655c36f9d7cf50ac3e554ff9bce117bf4f1fa6607dbccfe31"
+    },
+    "deepseek_dance_b": {
+      "path": "work/first-day-mix/production/cast/deepseek_dance_b.png",
+      "sheet": "work/first-day-mix/production/cast/poses-sheet.png",
+      "sheet_size": [
+        1536,
+        1024
+      ],
+      "cell_rect_xyxy": [
+        0,
+        500,
+        512,
+        1024
+      ],
+      "tight_crop_within_cell_xyxy": [
+        32,
+        0,
+        512,
+        516
+      ],
+      "size": [
+        480,
+        516
+      ],
+      "body_alpha_bbox": [
+        12,
+        5,
+        476,
+        504
+      ],
+      "source_sha256": "c5597913c4f4249c1c200b4b621109cec95c6b96d8cd5afd6cd7acf93e3b7de3",
+      "sha256": "0c0e9f44d74e118c431a6a9a7b852588b5ec5b596c7bb49e598f5b2b42d46f49"
+    },
+    "future_open": {
+      "path": "work/first-day-mix/production/cast/future_open.png",
+      "sheet": "work/first-day-mix/production/cast/poses-sheet.png",
+      "sheet_size": [
+        1536,
+        1024
+      ],
+      "cell_rect_xyxy": [
+        1024,
+        450,
+        1536,
+        1024
+      ],
+      "tight_crop_within_cell_xyxy": [
+        0,
+        17,
+        497,
+        574
+      ],
+      "size": [
+        497,
+        557
+      ],
+      "body_alpha_bbox": [
+        4,
+        12,
+        485,
+        545
+      ],
+      "source_sha256": "c5597913c4f4249c1c200b4b621109cec95c6b96d8cd5afd6cd7acf93e3b7de3",
+      "sha256": "e1798ab001adf504f36f1927f31e470b207852ddbe67ac36e7a5fe0cf77435f0"
+    }
+  }
+}

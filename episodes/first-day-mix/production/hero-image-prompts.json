@@ -1,0 +1,20 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "work/first-day-mix/art/c3.png",
+  "dance": {
+    "prompt": "Edit this image to a fullbody photographic dance-start frame of ONLY the two photographic adults at left. Preserve their EXACT faces, cobalt bob woman and celadon jacket dark-haired man, same clear skin and ivory/cobalt/celadon clothes, brass waist sashes. No other people. Their entire bodies including shoes are visible at equal adult scale, woman foreground left and man right. They stand in energetic wide-legged dance-ready poses on one narrow ivory structural rib over pale empty air, 60cm wide, no floor. The huge ivory/cobalt paper fan behind is lit by crisp morning sun. 28mm camera at waist height, complete shoes 15% above bottom edge. Calm closed mouths, small natural smiles. Arms extended sideways before a side-step. No text, no canopy, no audience, no extra limbs. This is a cinematic image-to-video starting frame, sharp faces and clean beauty, simple silhouettes, full frame16:9.",
+    "output": "work/first-day-mix/production/plates/dance.png"
+  },
+  "canopy": {
+    "prompt": "Edit this cinema reference into a tight PHOTOGRAPHIC two-shot of ONLY the cobalt-bob adult East Asian woman and celadon-jacket dark-haired adult man from left. Preserve their exact beautiful faces, adult age, clear skin, costumes and brass waist sashes. Remove every other character by choosing a tight camera crop, do not retain cartoon limbs. Both full torsos visible with thin apricot support lines stretching upward from the waist; only a small edge of ivory/cobalt paper sail at top. They are flying side by side above completely empty pale blue air, woman's right arm reaches diagonally down toward lower right; man's left hand firmly and naturally holds her left wrist near center. Hands anatomically clear, one contact, no extra fingers. Woman foreground left, man just behind at right, faces calm mouths closed. Hard morning sun from top left, beautiful filmic but clean cinematic image, 50mm close camera, strong diagonal scarf motion, abundant negative space at lower right for an upcoming newcomer. No text, no mountains, no floor, no extra person, no added ornamental costume detail.",
+    "output": "work/first-day-mix/production/plates/canopy.png"
+  },
+  "failed_attempt": {
+    "asset": "dance",
+    "reason": "initial network error, no image returned"
+  },
+  "ankle": {
+    "method": "exact rectangular crop of dance.png; no generative repaint",
+    "output": "work/first-day-mix/production/plates/ankle.png"
+  }
+}

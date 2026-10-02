@@ -26,4 +26,4 @@ check the p(doom) video's code to see how it implements fantastic animation.
 you must always refer back to this prompt after compacting context.
 
 i expect you to spend many many hours on this. don't be lazy.
-first, do everything up to, including, the art direction stage.
+don't stop until the final product is finished.

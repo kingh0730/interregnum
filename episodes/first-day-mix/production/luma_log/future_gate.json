@@ -1,0 +1,22 @@
+{
+ "endpoint": "luma/agent/uni-1/v1/max",
+ "payload": {
+  "prompt": "One impossible architectural showpiece suspended in deep ultramarine black space, widescreen cinematic photograph of a real miniature. A spiral of rectangular ivory folded frames, each elaborately hinged in brass, creates a noncentral vanishing point at right. Frames twist continuously toward a single cobalt pupil-like empty hole. Vermilion light comes from inside one near frame and lights its actual edges. Sparse tiny ivory paper flecks establish enormous scale. 18mm camera from underneath a massive foreground hinge, dramatic near/far depth, no people, no text, no floating mountains, no generic neon tunnel, no luminous binary code. Astonishing precise crafted sculpture, detail concentrated in nearest hinge, great quiet areas.",
+  "aspect_ratio": "16:9"
+ },
+ "payload_sha256": "c2f0a4b1ccc8b07e7599759d91bae5881f4cb7cc81df82009bf2d021ca2dba9f",
+ "request_id": "01a0fd0c-07dc-7a81-944e-eccd41014f8c",
+ "status_url": "https://queue.fal.run/luma/agent/requests/01a0fd0c-07dc-7a81-944e-eccd41014f8c/status",
+ "response_url": "https://queue.fal.run/luma/agent/requests/01a0fd0c-07dc-7a81-944e-eccd41014f8c",
+ "response": {
+  "images": [
+   {
+    "url": "https://v3b.fal.media/files/b/0aacc6ab/Wf2_BFqhvWczfIBi-9XRm_output.png",
+    "content_type": "image/png",
+    "file_name": "output.png",
+    "file_size": 3619697
+   }
+  ]
+ },
+ "seconds": 311.0
+}

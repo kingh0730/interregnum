@@ -1,0 +1,7 @@
+{
+ "endpoint": "luma/agent/uni-1/v1/max",
+ "payload": {
+  "prompt": "Widescreen cinema environment for a futuristic music video. A single enormous articulated folding fan is a miniature CYBERPUNK CITY: translucent cobalt circuitlike paper panels with real orange practical lights, tightly layered black mechanical ribs, small cyan phosphor glass windows. The fan is suspended diagonally across deep black air. Camera 24mm from below extremely close to its central brass hinge, strong perspective. Empty oval ring sockets run along its narrow bottom ribs; see darkness cleanly through all rings, no continuous floor. This is an intricate focal architectural mechanism meant to be inspected, but primary silhouette is spare and elegant. One brilliant vermilion illuminated slit, no rain, no magenta haze, no text, no people. Chinese paper theatre meeting modern electronic fabrication, amazing scale.",
+  "aspect_ratio": "16:9"
+ }
+}
