@@ -1,0 +1,727 @@
+{
+  "schema_version": 1,
+  "episode": "first-day-extremely-fast",
+  "status": "roster_ready_actions_and_intervals_unassigned",
+  "research_cutoff": "2026-10-02",
+  "runtime_seconds": 43.67,
+  "source_registry": "../research/sources.json",
+  "policy": {
+    "scope": "Twenty bounded cast-family entries; not an exhaustive market census or capability ranking.",
+    "aliases": "Product and model arrays group related names within an entry; they are not claims that those names are interchangeable.",
+    "market_metadata": "Origin market is research metadata only; no national teams or onscreen grouping.",
+    "meme_actions": "Candidate physical translations from finalized research, not assigned narrative actions or claims about product behaviour.",
+    "future_sequence": "No inevitable sequence or AGI → SGI ladder. SGI remains unresolved and is not replaced with ASI."
+  },
+  "counts": {
+    "families": 20,
+    "foreground": 6,
+    "support": 14,
+    "historical": 2,
+    "speculative": 3
+  },
+  "families": [
+    {
+      "id": "ai_chatgpt",
+      "onscreen_name": "ChatGPT",
+      "tier": "foreground",
+      "metadata": {
+        "origin_market": "US",
+        "organisation": "OpenAI"
+      },
+      "aliases": {
+        "product": [
+          "ChatGPT"
+        ],
+        "model": [
+          "GPT"
+        ]
+      },
+      "source_ids": [
+        "P01"
+      ],
+      "identity_note": "ChatGPT is an assistant product; Codex is a related coding/agent surface.",
+      "meme": {
+        "status": "attested_2026",
+        "reference": "稳稳地接住你",
+        "evidence_date": "2026-02-05; creative reuse 2026-05-06",
+        "source_ids": [
+          "M01",
+          "M02"
+        ],
+        "access": "opened community text; indexed video metadata",
+        "candidate_action": "Ring-knot unfolds into a net and delicately catches one tiny bead.",
+        "limit": "No reach or stable-behaviour claim; do not copy the existing six-LLM song."
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_claude",
+      "onscreen_name": "Claude",
+      "tier": "foreground",
+      "metadata": {
+        "origin_market": "US",
+        "organisation": "Anthropic"
+      },
+      "aliases": {
+        "product": [
+          "Claude",
+          "Claude Code"
+        ],
+        "model": [
+          "Claude"
+        ]
+      },
+      "source_ids": [
+        "P02"
+      ],
+      "identity_note": "Claude Code is a coding agent; Clawd is not OpenClaw.",
+      "meme": {
+        "status": "current_2026_creative_reuse",
+        "reference": "Clawd / tiny crab at work",
+        "evidence_date": "2026-09-28",
+        "source_ids": [
+          "M07"
+        ],
+        "access": "indexed video metadata only",
+        "candidate_action": "Original terracotta-and-brass crab repairs a torn ribbon.",
+        "limit": "No mascot-origin date claim; do not copy pixel sprites or the unviewed animation."
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_grok",
+      "onscreen_name": "Grok",
+      "tier": "foreground",
+      "metadata": {
+        "origin_market": "US",
+        "organisation": "xAI / current site branding SpaceXAI"
+      },
+      "aliases": {
+        "product": [
+          "Grok"
+        ],
+        "model": [
+          "Grok"
+        ]
+      },
+      "source_ids": [
+        "P03"
+      ],
+      "identity_note": "Current site branding is recorded without inferring a corporate legal relationship.",
+      "meme": {
+        "status": "older_persona_with_chinese_reuse",
+        "reference": "锐评 / cheeky interrupter",
+        "evidence_date": "2023-11-03 official framing; Chinese uses 2024-12-25 and 2026-06-08",
+        "source_ids": [
+          "M15",
+          "M12",
+          "M13"
+        ],
+        "access": "opened official text; indexed creator metadata",
+        "candidate_action": "Asymmetric metal spark punctures one approval bubble.",
+        "limit": "An affectionate interpretation, not a new September 2026 trend or capability ranking."
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_deepseek",
+      "onscreen_name": "DeepSeek",
+      "tier": "foreground",
+      "metadata": {
+        "origin_market": "China",
+        "organisation": "DeepSeek"
+      },
+      "aliases": {
+        "product": [
+          "DeepSeek"
+        ],
+        "model": [
+          "DeepSeek"
+        ]
+      },
+      "source_ids": [
+        "P04"
+      ],
+      "identity_note": "The company, assistant and model family share the name in different contexts.",
+      "meme": {
+        "status": "attested_2026_fan_culture",
+        "reference": "蓝色大肥鱼 / eating tokens",
+        "evidence_date": "2026-07-08 video; fan archive retrieved 2026-10-02",
+        "source_ids": [
+          "M03",
+          "M04"
+        ],
+        "access": "opened fan repository; indexed video metadata",
+        "candidate_action": "Original blue glass whale eats physical token wafers.",
+        "limit": "Do not reproduce the whale-girl fan character, costumes or licensed fan assets."
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_doubao",
+      "onscreen_name": "豆包",
+      "tier": "foreground",
+      "metadata": {
+        "origin_market": "China",
+        "organisation": "ByteDance"
+      },
+      "aliases": {
+        "product": [
+          "豆包"
+        ],
+        "model": [
+          "Seed"
+        ]
+      },
+      "source_ids": [
+        "P05"
+      ],
+      "identity_note": "豆包 is the assistant; Seed is the model family.",
+      "meme": {
+        "status": "current_2026_reuse_of_older_joke",
+        "reference": "最直白 / 不绕弯子",
+        "evidence_date": "2026-09-06",
+        "source_ids": [
+          "M14"
+        ],
+        "access": "opened community thread and replies",
+        "candidate_action": "Porcelain bun folds a labyrinth into one straight path.",
+        "limit": "No origin, model-distillation or third-party routing claim."
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_gemini",
+      "onscreen_name": "Gemini",
+      "tier": "foreground",
+      "metadata": {
+        "origin_market": "US",
+        "organisation": "Google / Google DeepMind"
+      },
+      "aliases": {
+        "product": [
+          "Gemini"
+        ],
+        "model": [
+          "Gemini"
+        ]
+      },
+      "source_ids": [
+        "P06"
+      ],
+      "identity_note": "Gemma is a separate family; community nickname 哈基米 is not Kimi.",
+      "meme": {
+        "status": "attested_2026",
+        "reference": "哈基米 / 极其极其",
+        "evidence_date": "2026-03-01 and 2026-03-05",
+        "source_ids": [
+          "M05",
+          "M06"
+        ],
+        "access": "opened community text",
+        "candidate_action": "Two prism halves feed a repeating ribbon, then release it.",
+        "limit": "Anecdotal repetition joke, not universal model behaviour; 哈基米 is not Kimi."
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_qwen",
+      "onscreen_name": "千问",
+      "tier": "support",
+      "metadata": {
+        "origin_market": "China",
+        "organisation": "Alibaba"
+      },
+      "aliases": {
+        "product": [
+          "千问",
+          "千问办公",
+          "QwenWork"
+        ],
+        "model": [
+          "Qwen",
+          "通义千问"
+        ]
+      },
+      "source_ids": [
+        "P07",
+        "P08"
+      ],
+      "identity_note": "千问办公 is a product, not a separate model company.",
+      "meme": {
+        "status": "none_selected",
+        "source_ids": [],
+        "candidate_action": null
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_kimi",
+      "onscreen_name": "Kimi",
+      "tier": "support",
+      "metadata": {
+        "origin_market": "China",
+        "organisation": "Moonshot AI / 月之暗面"
+      },
+      "aliases": {
+        "product": [
+          "Kimi"
+        ],
+        "model": [
+          "Kimi"
+        ]
+      },
+      "source_ids": [
+        "P09"
+      ],
+      "identity_note": "Kimi is distinct from the Gemini nickname 哈基米.",
+      "meme": {
+        "status": "none_selected",
+        "source_ids": [],
+        "candidate_action": null
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_glm",
+      "onscreen_name": "智谱 GLM",
+      "tier": "support",
+      "metadata": {
+        "origin_market": "China",
+        "organisation": "智谱 / Z.AI"
+      },
+      "aliases": {
+        "product": [
+          "智谱清言",
+          "Z.ai"
+        ],
+        "model": [
+          "GLM"
+        ]
+      },
+      "source_ids": [
+        "P10"
+      ],
+      "identity_note": "Company, model family and assistant surfaces are distinct.",
+      "meme": {
+        "status": "none_selected",
+        "source_ids": [],
+        "candidate_action": null
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_hunyuan",
+      "onscreen_name": "元宝 / 混元",
+      "tier": "support",
+      "metadata": {
+        "origin_market": "China",
+        "organisation": "Tencent"
+      },
+      "aliases": {
+        "product": [
+          "元宝"
+        ],
+        "model": [
+          "混元",
+          "Hunyuan"
+        ]
+      },
+      "source_ids": [
+        "P11"
+      ],
+      "identity_note": "元宝 is an app; 混元 is a model family. Do not imply exclusive model use.",
+      "meme": {
+        "status": "none_selected",
+        "source_ids": [],
+        "candidate_action": null
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_ernie",
+      "onscreen_name": "文心",
+      "tier": "support",
+      "metadata": {
+        "origin_market": "China",
+        "organisation": "Baidu"
+      },
+      "aliases": {
+        "product": [
+          "文心APP",
+          "文心一言"
+        ],
+        "model": [
+          "文心",
+          "ERNIE"
+        ]
+      },
+      "source_ids": [
+        "P12"
+      ],
+      "identity_note": "Use the family identity rather than freezing an older app name.",
+      "meme": {
+        "status": "none_selected",
+        "source_ids": [],
+        "candidate_action": null
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_minimax",
+      "onscreen_name": "MiniMax",
+      "tier": "support",
+      "metadata": {
+        "origin_market": "China",
+        "organisation": "MiniMax"
+      },
+      "aliases": {
+        "product": [
+          "MiniMax Code",
+          "MiniMax Design",
+          "星野"
+        ],
+        "model": [
+          "MiniMax"
+        ]
+      },
+      "source_ids": [
+        "P13",
+        "P14"
+      ],
+      "identity_note": "Company ecosystem cameo; language, video, speech and music families are distinct.",
+      "meme": {
+        "status": "none_selected",
+        "source_ids": [],
+        "candidate_action": null
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_stepfun",
+      "onscreen_name": "阶跃",
+      "tier": "support",
+      "metadata": {
+        "origin_market": "China",
+        "organisation": "阶跃星辰 / StepFun"
+      },
+      "aliases": {
+        "product": [
+          "AI Studio"
+        ],
+        "model": [
+          "Step"
+        ]
+      },
+      "source_ids": [
+        "P15",
+        "P16"
+      ],
+      "identity_note": "The developer and Step model family are grouped for one cameo.",
+      "meme": {
+        "status": "none_selected",
+        "source_ids": [],
+        "candidate_action": null
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_spark",
+      "onscreen_name": "讯飞星火",
+      "tier": "support",
+      "metadata": {
+        "origin_market": "China",
+        "organisation": "科大讯飞"
+      },
+      "aliases": {
+        "product": [
+          "讯飞星火"
+        ],
+        "model": [
+          "星火"
+        ]
+      },
+      "source_ids": [
+        "P17"
+      ],
+      "identity_note": "Official title supports product identity; page body was JS-limited.",
+      "meme": {
+        "status": "none_selected",
+        "source_ids": [],
+        "candidate_action": null
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_meta",
+      "onscreen_name": "Meta AI",
+      "tier": "support",
+      "metadata": {
+        "origin_market": "US",
+        "organisation": "Meta"
+      },
+      "aliases": {
+        "product": [
+          "Meta AI",
+          "Muse"
+        ],
+        "model": [
+          "Muse Spark",
+          "Llama"
+        ]
+      },
+      "source_ids": [
+        "P18",
+        "P19"
+      ],
+      "identity_note": "One ecosystem cameo; Muse Spark and Llama are separate model families.",
+      "meme": {
+        "status": "none_selected",
+        "source_ids": [],
+        "candidate_action": null
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_copilot",
+      "onscreen_name": "Copilot",
+      "tier": "support",
+      "metadata": {
+        "origin_market": "US",
+        "organisation": "Microsoft"
+      },
+      "aliases": {
+        "product": [
+          "Microsoft Copilot",
+          "Copilot"
+        ],
+        "model": []
+      },
+      "source_ids": [
+        "P20"
+      ],
+      "identity_note": "Assistant brand, not a standalone foundation-model company; do not conflate GitHub Copilot.",
+      "meme": {
+        "status": "none_selected",
+        "source_ids": [],
+        "candidate_action": null
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_perplexity",
+      "onscreen_name": "Perplexity",
+      "tier": "support",
+      "metadata": {
+        "origin_market": "US",
+        "organisation": "Perplexity"
+      },
+      "aliases": {
+        "product": [
+          "Perplexity"
+        ],
+        "model": []
+      },
+      "source_ids": [
+        "P21"
+      ],
+      "identity_note": "Answer/search product with model routing; not one immutable proprietary model.",
+      "meme": {
+        "status": "none_selected",
+        "source_ids": [],
+        "candidate_action": null
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_nova",
+      "onscreen_name": "Nova",
+      "tier": "support",
+      "metadata": {
+        "origin_market": "US",
+        "organisation": "Amazon"
+      },
+      "aliases": {
+        "product": [],
+        "model": [
+          "Amazon Nova",
+          "Nova"
+        ]
+      },
+      "source_ids": [
+        "P22"
+      ],
+      "identity_note": "Nova is a model family, distinct from AWS as provider and Alexa as assistant.",
+      "meme": {
+        "status": "none_selected",
+        "source_ids": [],
+        "candidate_action": null
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_siri",
+      "onscreen_name": "Siri",
+      "tier": "support",
+      "metadata": {
+        "origin_market": "US",
+        "organisation": "Apple"
+      },
+      "aliases": {
+        "product": [
+          "Siri",
+          "Siri AI",
+          "Apple Intelligence"
+        ],
+        "model": []
+      },
+      "source_ids": [
+        "P23"
+      ],
+      "identity_note": "Siri assistant and Apple Intelligence system are related product identities; no worldwide availability claim.",
+      "meme": {
+        "status": "none_selected",
+        "source_ids": [],
+        "candidate_action": null
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "ai_nemotron",
+      "onscreen_name": "Nemotron",
+      "tier": "support",
+      "metadata": {
+        "origin_market": "US",
+        "organisation": "NVIDIA"
+      },
+      "aliases": {
+        "product": [],
+        "model": [
+          "Nemotron"
+        ]
+      },
+      "source_ids": [
+        "P24"
+      ],
+      "identity_note": "Model family, distinct from NVIDIA hardware and consumer assistant apps.",
+      "meme": {
+        "status": "none_selected",
+        "source_ids": [],
+        "candidate_action": null
+      },
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    }
+  ],
+  "historical": [
+    {
+      "id": "history_alphago",
+      "onscreen_name": "AlphaGo",
+      "kind": "historical_system",
+      "reference_year": 2016,
+      "source_ids": [
+        "H02"
+      ],
+      "note": "Go-match history; distinct technical lineage from Transformer. Do not imply literal descent.",
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "history_transformer",
+      "onscreen_name": "Transformer",
+      "kind": "historical_architecture",
+      "reference_year": 2017,
+      "source_ids": [
+        "H01"
+      ],
+      "note": "Original paper motifs: eight base-model heads, causal masking and sinusoidal position information; not universal current configurations.",
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    }
+  ],
+  "speculative": [
+    {
+      "id": "future_agi",
+      "onscreen_name": "AGI",
+      "kind": "speculative_capability",
+      "definition_status": "multiple_proposed_thresholds",
+      "source_ids": [
+        "F01",
+        "F02",
+        "F07",
+        "F08",
+        "F09"
+      ],
+      "note": "Broad general capability; performance, generality and autonomy are distinct. No arrival date or achieved-status assertion.",
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "future_sgi",
+      "onscreen_name": "SGI？",
+      "kind": "unresolved_speculative_term",
+      "definition_status": "unresolved",
+      "replace_with_asi": false,
+      "source_ids": [
+        "F03",
+        "F04",
+        "F05"
+      ],
+      "attested_meanings": [
+        {
+          "expansion": "Specialized Generalist AI",
+          "source_ids": [
+            "F03"
+          ]
+        },
+        {
+          "expansion": "Scientific General Intelligence",
+          "source_ids": [
+            "F04"
+          ]
+        },
+        {
+          "expansion": "Super-general-intelligence",
+          "source_ids": [
+            "F05"
+          ]
+        }
+      ],
+      "note": "Preserve the user-specified SGI. No agreed expansion or AGI-to-SGI hierarchy is asserted; do not substitute ASI.",
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    },
+    {
+      "id": "future_singularity",
+      "onscreen_name": "奇点",
+      "kind": "speculative_technological_hypothesis",
+      "definition_status": "hypothesis",
+      "source_ids": [
+        "F06",
+        "F09"
+      ],
+      "note": "Technological forecasting threshold, not a scheduled event, guaranteed next stage or literal astronomical singularity.",
+      "assigned_action": null,
+      "visible_intervals_seconds": []
+    }
+  ]
+}

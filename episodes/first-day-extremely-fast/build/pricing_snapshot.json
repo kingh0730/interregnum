@@ -1,0 +1,53 @@
+[
+  {
+    "endpoint": "luma/agent/uni-1/v1/max",
+    "source": "https://api.fal.ai/v1/models/pricing?endpoint_id=luma%2Fagent%2Funi-1%2Fv1%2Fmax",
+    "retrieved": "2026-10-02",
+    "response": {
+      "prices": [
+        {
+          "endpoint_id": "luma/agent/uni-1/v1/max",
+          "unit_price": 0.003,
+          "unit": "images",
+          "currency": "USD"
+        }
+      ],
+      "next_cursor": null,
+      "has_more": false
+    }
+  },
+  {
+    "endpoint": "minimax/h3-max/image-to-video",
+    "source": "https://api.fal.ai/v1/models/pricing?endpoint_id=minimax%2Fh3-max%2Fimage-to-video",
+    "retrieved": "2026-10-02",
+    "response": {
+      "prices": [
+        {
+          "endpoint_id": "minimax/h3-max/image-to-video",
+          "unit_price": 0.03,
+          "unit": "seconds",
+          "currency": "USD"
+        }
+      ],
+      "next_cursor": null,
+      "has_more": false
+    }
+  },
+  {
+    "endpoint": "minimax/h3-max/lip-sync/image-to-video",
+    "source": "https://api.fal.ai/v1/models/pricing?endpoint_id=minimax%2Fh3-max%2Flip-sync%2Fimage-to-video",
+    "retrieved": "2026-10-02",
+    "response": {
+      "prices": [
+        {
+          "endpoint_id": "minimax/h3-max/lip-sync/image-to-video",
+          "unit_price": 0.05,
+          "unit": "seconds",
+          "currency": "USD"
+        }
+      ],
+      "next_cursor": null,
+      "has_more": false
+    }
+  }
+]

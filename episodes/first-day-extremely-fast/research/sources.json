@@ -1,0 +1,795 @@
+{
+  "schema_version": 1,
+  "status": "complete_bounded_art_direction_snapshot",
+  "episode": "first-day-extremely-fast",
+  "research_cutoff": "2026-10-02",
+  "retrieved_date": "2026-10-02",
+  "retrieval_timezone": "Asia/Singapore",
+  "method": "Primary official and community sources preferred. Indexed platform metadata is distinguished from opened primary text. No video playback or model-behaviour replication was performed. Counts are retrieval/index snapshots and are not evidence of representative popularity.",
+  "sources": [
+    {
+      "id": "M01",
+      "title": "我就在这里，稳稳地接住你",
+      "url": "https://linux.do/t/topic/1568563",
+      "publisher": "LINUX DO",
+      "author": "paopao",
+      "published_at_display": "2026-02-05 07:17",
+      "publication_timezone": "not explicitly stated in rendered page",
+      "kind": "primary_community_post",
+      "access": "opened_primary_text",
+      "confidence": "high for posted wording; no model-output authenticity or virality claim",
+      "supports": [
+        "ChatGPT catchphrase is attested in Chinese community usage in February 2026"
+      ],
+      "engagement_snapshot": {
+        "likes": 4
+      }
+    },
+    {
+      "id": "M02",
+      "title": "【2026六大LLM联唱】稳稳地接住你（原创）",
+      "url": "https://www.bilibili.com/video/BV15uRbBGE44/",
+      "publisher": "Bilibili",
+      "author": "万童Official",
+      "published_at_display": "2026-05-06 21:39:36",
+      "publication_timezone": "not explicitly stated in indexed text",
+      "kind": "primary_creator_video",
+      "access": "indexed_primary_page; direct page and public metadata API returned HTTP 412",
+      "confidence": "medium; metadata and description only, playback not inspected",
+      "supports": [
+        "Creative reuse of catchphrase; six-model Chinese fandom ensemble"
+      ],
+      "engagement_snapshot": {
+        "indexed_plays_display": "29.3万"
+      },
+      "reuse_note": "Evidence only. Do not copy lyrics, music, designs, shots or structure."
+    },
+    {
+      "id": "M03",
+      "title": "DeepSeek这个蓝色大肥鱼！",
+      "url": "https://www.bilibili.com/video/BV11wMh6DE41/",
+      "publisher": "Bilibili",
+      "author": "隔壁同名",
+      "published_at_display": "2026-07-08 01:59:57",
+      "publication_timezone": "not explicitly stated in indexed text",
+      "kind": "primary_creator_video",
+      "access": "indexed_primary_page; direct page returned HTTP 412",
+      "confidence": "medium; metadata and series listing only",
+      "supports": [
+        "Blue fat fish nickname and token-appetite fan culture present in 2026"
+      ],
+      "engagement_snapshot": {
+        "indexed_plays_display": "4.6万"
+      }
+    },
+    {
+      "id": "M04",
+      "title": "blue-fish-archive",
+      "url": "https://github.com/EDMOK/blue-fish-archive",
+      "publisher": "GitHub",
+      "author": "EDMOK",
+      "published_at_display": null,
+      "publication_timezone": null,
+      "kind": "primary_community_project",
+      "access": "opened_primary_text",
+      "confidence": "high for repository content; no first-origin claim",
+      "supports": [
+        "Unofficial DeepSeek whale-girl fan archive exists; original and adaptation creators are distinguished",
+        "README states CC BY-NC-SA 4.0 for the adaptation"
+      ],
+      "reuse_note": "Do not reuse the fan-art character. Original physical whale interpretation only."
+    },
+    {
+      "id": "M05",
+      "title": "Gemini3.1Pro是一个极其极其的模型......",
+      "url": "https://linux.do/t/topic/1674431",
+      "publisher": "LINUX DO",
+      "author": "aayang",
+      "published_at_display": "2026-03-01 09:50",
+      "publication_timezone": "not explicitly stated in rendered page",
+      "kind": "primary_community_post",
+      "access": "opened_primary_text",
+      "confidence": "high for anecdote and joke; no general behavioural or causal claim",
+      "supports": [
+        "极其 repetition and 哈基米 nickname in Chinese Gemini discussion"
+      ],
+      "engagement_snapshot": {
+        "likes": 20
+      }
+    },
+    {
+      "id": "M06",
+      "title": "Gemini赛博鬼打墙",
+      "url": "https://linux.do/t/topic/1695530",
+      "publisher": "LINUX DO",
+      "author": "Veitch",
+      "published_at_display": "2026-03-05 12:39",
+      "publication_timezone": "not explicitly stated in rendered page",
+      "kind": "primary_community_post",
+      "access": "opened_primary_text",
+      "confidence": "high for posted joke; no benchmark or prevalence claim",
+      "supports": [
+        "Independent community reuse of repetition joke"
+      ],
+      "engagement_snapshot": {
+        "likes": 5
+      }
+    },
+    {
+      "id": "M07",
+      "title": "「AI 被提问时，脑子里到底在想什么？」我让 Claude Opus 5.5 把它画成了 81.6 秒动画",
+      "url": "https://www.bilibili.com/video/BV183aG6KEvA/",
+      "publisher": "Bilibili",
+      "author": null,
+      "published_at_display": "2026-09-28 15:36:52",
+      "publication_timezone": "not explicitly stated in indexed text",
+      "kind": "primary_creator_video",
+      "access": "indexed_primary_page",
+      "confidence": "medium; metadata and description, playback not inspected",
+      "supports": [
+        "Clawd pixel creature in recent Chinese creative use"
+      ],
+      "engagement_snapshot": {
+        "indexed_plays_display": "3.1万"
+      },
+      "reuse_note": "Do not copy explanatory animation, music or narrative structure."
+    },
+    {
+      "id": "M08",
+      "title": "豆包不会做馒头",
+      "url": "https://weibo.com/a/hot/75d0e45753e92402_0.html?type=grab",
+      "publisher": "Weibo",
+      "author": "topic aggregation includes 峰哥亡命天涯 and other users",
+      "published_at_display": "June 3 08:11 (year 2026 cross-referenced in secondary reporting)",
+      "publication_timezone": "not explicitly stated in indexed text",
+      "kind": "primary_platform_topic_aggregation",
+      "access": "indexed_primary_page; direct open restricted",
+      "confidence": "medium for topic-page anecdote; origin and exact year not established from a standalone primary post; reserve only",
+      "supports": [
+        "Mantou/baozi complaint and counterexample on same topic page"
+      ],
+      "reuse_note": "Anecdote only; do not claim present Doubao universally cannot generate mantou."
+    },
+    {
+      "id": "M09",
+      "title": "感觉B站视频都快被AI腌入味了 现在看到“不是 而是”的句型都反胃",
+      "url": "https://linux.do/t/topic/2612557",
+      "publisher": "LINUX DO",
+      "author": "Pinging",
+      "published_at_display": "2026-07-19 03:38",
+      "publication_timezone": "not explicitly stated in rendered page",
+      "kind": "primary_community_post",
+      "access": "opened_primary_text",
+      "confidence": "high for personal taste observation; not an authorship detector",
+      "supports": [
+        "Chinese community recognition of contrastive AI writing tic"
+      ]
+    },
+    {
+      "id": "M10",
+      "title": "除了AI写的代码以外，我还是很难接受AI产出的一切东西…… (page 2)",
+      "url": "https://linux.do/t/topic/2820634?page=2",
+      "publisher": "LINUX DO",
+      "author": "wanxiang (reply 35)",
+      "published_at_display": "2026-08-28 05:28",
+      "publication_timezone": "not explicitly stated in rendered page",
+      "kind": "primary_community_reply",
+      "access": "opened_primary_text",
+      "confidence": "high for the authored reply; not an authorship detector or representative audience claim",
+      "supports": [
+        "Continued use of 不是而是 as an AI-style joke"
+      ]
+    },
+    {
+      "id": "M11",
+      "title": "难绷deepseek:“我操，用户彻底怒了”",
+      "url": "https://www.bilibili.com/video/BV1T97hzbEaM/",
+      "publisher": "Bilibili",
+      "author": "倒吸一桶凉皮",
+      "published_at_display": "2025-06-03 20:25:27",
+      "publication_timezone": "not explicitly stated in indexed text",
+      "kind": "primary_creator_video",
+      "access": "indexed_primary_page; direct page returned HTTP 412",
+      "confidence": "medium; title/date prove indexed 2025 attestation, not original model behaviour",
+      "supports": [
+        "用户彻底怒了 is older than 2026"
+      ],
+      "engagement_snapshot": {
+        "indexed_plays_display": "9.1万"
+      }
+    },
+    {
+      "id": "M12",
+      "title": "太离谱了！最毒舌AI免费用，Grok一个细节让ChatGPT坐不住了",
+      "url": "https://www.bilibili.com/video/BV1cFCNYhEKi/",
+      "publisher": "Bilibili",
+      "author": "俗人六哥_Ai企业赋能",
+      "published_at_display": "2024-12-25 17:00:00",
+      "publication_timezone": "not explicitly stated in indexed text",
+      "kind": "primary_creator_video",
+      "access": "indexed_primary_page",
+      "confidence": "medium for attestation; tiny audience, no virality claim",
+      "supports": [
+        "Grok 毒舌 characterisation existed in Chinese creator usage in 2024"
+      ],
+      "engagement_snapshot": {
+        "indexed_plays_display": "116"
+      }
+    },
+    {
+      "id": "M13",
+      "title": "锐评国内与国外的AI，从夯到拉。唯一的真神Grok！！！",
+      "url": "https://www.douyin.com/video/7648885866895732345",
+      "publisher": "Douyin",
+      "author": null,
+      "published_at_display": "2026-06-08 13:03",
+      "publication_timezone": "not explicitly stated in indexed text",
+      "kind": "primary_creator_video",
+      "access": "indexed_primary_page",
+      "confidence": "medium for title and date only",
+      "supports": [
+        "Chinese AI ranking meme format in 2026"
+      ],
+      "reuse_note": "Do not endorse ranking or claim technical superiority."
+    },
+    {
+      "id": "M14",
+      "title": "gpt-6-astra 蒸馏豆包？？ — replies 4 and 8",
+      "url": "https://linux.do/t/topic/2863527",
+      "publisher": "LINUX DO",
+      "published_at_display": "2026-09-06 09:56 thread; reply 4 10:02; reply 8 10:22",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_community_thread",
+      "access": "opened_primary_text",
+      "supports": [
+        "September reuse of 豆包 direct-answer verbal persona",
+        "Replies explicitly identify the template as older and updated"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims",
+      "limitation": "No distillation, routing, pricing, or model-identity allegations are adopted. Thread 10 likes and reply 4 two likes are snapshot niche counts."
+    },
+    {
+      "id": "M15",
+      "title": "Announcing Grok",
+      "url": "https://x.ai/news/grok",
+      "publisher": "xAI; current site branded SpaceXAI",
+      "published_at_display": "2023-11-03",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_vendor_announcement",
+      "access": "opened_primary_text",
+      "supports": [
+        "Historical witty and rebellious marketing persona"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims",
+      "limitation": "Historical launch framing is not proof of current stable behaviour."
+    },
+    {
+      "id": "P01",
+      "title": "All models",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "publisher": "OpenAI",
+      "published_at_display": null,
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "Current official GPT and ChatGPT model catalogue; avoid treating ChatGPT as one immutable model"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "P02",
+      "title": "Anthropic newsroom",
+      "url": "https://www.anthropic.com/news",
+      "publisher": "Anthropic",
+      "published_at_display": null,
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "Claude product/model family and September 2026 announcements"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "P03",
+      "title": "Introducing Grok 4.7",
+      "url": "https://x.ai/news/grok-4-7",
+      "publisher": "SpaceXAI / x.ai",
+      "published_at_display": "2026-09-21",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "Grok current product naming; current official site branding"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "P04",
+      "title": "DeepSeek V4.1 Flash",
+      "url": "https://deepseek.com/en/news/deepseek-v4-1-flash/",
+      "publisher": "DeepSeek",
+      "published_at_display": "2026-09-10",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "Current DeepSeek family naming",
+        "Announced asymmetric encoder-decoder: 8B active input-side parameters and 16B output-side"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "P05",
+      "title": "Seed2.1 正式发布：迈向 AI 生产力新时代",
+      "url": "https://seed.bytedance.com/zh/blog/seed2-1-officially-released-advancing-ai-productivity",
+      "publisher": "ByteDance Seed",
+      "published_at_display": "2026-06-23",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "Seed model family deployment in 豆包 and TRAE; product/model distinction"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "P06",
+      "title": "Gemini 4 Argon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "publisher": "Google",
+      "published_at_display": "2026-09-30",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "Current Gemini family naming and announcement; broad rollout described as forthcoming"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "P07",
+      "title": "阿里巴巴千問App推進Agentic AI戰略",
+      "url": "https://www.alibabagroup.com/zh-HK/document-1948497434959151104",
+      "publisher": "Alibaba Group",
+      "published_at_display": "2026-01-15",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "indexed_primary_page",
+      "supports": [
+        "千问 app is an Alibaba product based on the Qwen model family"
+      ],
+      "confidence": "medium for indexed primary naming evidence; live body not fully inspected"
+    },
+    {
+      "id": "P08",
+      "title": "阿里巴巴推出一站式辦公 AI 智能體平台千問辦公",
+      "url": "https://www.alibabagroup.com/zh-HK/document-2021039099929952256",
+      "publisher": "Alibaba Group",
+      "published_at_display": "2026-08-03",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "indexed_primary_page",
+      "supports": [
+        "QwenWork/千问办公 is a product, not a separate foundation-model company"
+      ],
+      "confidence": "medium for indexed primary naming evidence; live body not fully inspected"
+    },
+    {
+      "id": "P09",
+      "title": "Kimi K3 Open Source",
+      "url": "https://www.kimi.com/news/kimi-k3-open-source",
+      "publisher": "Moonshot AI / 月之暗面",
+      "published_at_display": "updated 2026-07-27",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "Kimi company/family identification",
+        "Technical release says each token activates 16 of 896 routed experts"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "P10",
+      "title": "关于智谱",
+      "url": "https://www.zhipuai.cn/zh/about",
+      "publisher": "智谱 / Z.AI",
+      "published_at_display": null,
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "Z.AI and 智谱 company identification; GLM and 智谱清言 product/model links"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "P11",
+      "title": "騰訊混元Hy3正式發布：Agent能力顯著提升，產品深度融合",
+      "url": "https://www.tencent.com/zh-hk/tencent-hunyuan-officially-releases-hy3-advancing-agent-capabilities-and-deeper-product-integration/",
+      "publisher": "Tencent",
+      "published_at_display": "2026-07-06",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "Hunyuan/混元 is a Tencent model family; 元宝 is an integrated product"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "P12",
+      "title": "文心大模型",
+      "url": "https://cloud.baidu.com/product/model.html",
+      "publisher": "Baidu",
+      "published_at_display": null,
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "ERNIE/文心 naming; official links to 文心APP and 文心一言"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "P13",
+      "title": "MiniMax official Chinese homepage",
+      "url": "https://www.minimax.cn/",
+      "publisher": "MiniMax",
+      "published_at_display": null,
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "Distinct M/H/Speech/Music model families and MiniMax Code/Design/星野 products"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "P14",
+      "title": "MiniMax M3",
+      "url": "https://www.minimax.io/blog/minimax-m3",
+      "publisher": "MiniMax",
+      "published_at_display": "2026-06-01",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "MiniMax model family and company identification"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "P15",
+      "title": "StepFun Builder Program",
+      "url": "https://platform.stepfun.com/builder-program",
+      "publisher": "StepFun / 阶跃星辰",
+      "published_at_display": null,
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "indexed_primary_page",
+      "supports": [
+        "StepFun/Step developer and model naming"
+      ],
+      "confidence": "medium for indexed primary naming evidence; live body not fully inspected"
+    },
+    {
+      "id": "P16",
+      "title": "AI Studio | 阶跃星辰",
+      "url": "https://studio.stepfun.com/",
+      "publisher": "StepFun / 阶跃星辰",
+      "published_at_display": null,
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "indexed_primary_page",
+      "supports": [
+        "Official StepFun product identity"
+      ],
+      "confidence": "medium for indexed primary naming evidence; live body not fully inspected"
+    },
+    {
+      "id": "P17",
+      "title": "讯飞星火-懂我的AI助手",
+      "url": "https://xinghuo.xfyun.cn/",
+      "publisher": "科大讯飞",
+      "published_at_display": null,
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_title_js_limited",
+      "supports": [
+        "讯飞星火 product identity from official title"
+      ],
+      "confidence": "medium for indexed primary naming evidence; live body not fully inspected"
+    },
+    {
+      "id": "P18",
+      "title": "Introducing Muse, your personal AI agent",
+      "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "publisher": "Meta",
+      "published_at_display": "2026-09-08",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "Muse product and Muse Spark model are separate names; Meta ecosystem extends beyond Llama"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "P19",
+      "title": "Meta Model API — Llama documentation",
+      "url": "https://dev.meta.ai/llama",
+      "publisher": "Meta",
+      "published_at_display": null,
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "Official Llama family documentation distinct from Muse"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "P20",
+      "title": "Microsoft Copilot: AI built for work",
+      "url": "https://www.microsoft.com/en-us/copilot",
+      "publisher": "Microsoft",
+      "published_at_display": null,
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "Copilot assistant product branding; not an independent foundation-model company"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "P21",
+      "title": "Perplexity Hub",
+      "url": "https://www.perplexity.ai/hub",
+      "publisher": "Perplexity",
+      "published_at_display": null,
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "Answer/search product framing and multi-model routing/orchestration"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "P22",
+      "title": "What is Amazon Nova 2?",
+      "url": "https://docs.aws.amazon.com/nova/latest/nova2-userguide/what-is-nova-2.html",
+      "publisher": "Amazon Web Services",
+      "published_at_display": null,
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_or_documentation",
+      "access": "opened_primary_text",
+      "supports": [
+        "Amazon Nova foundation-model family identity"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims"
+    },
+    {
+      "id": "H01",
+      "title": "Attention Is All You Need",
+      "url": "https://arxiv.org/html/1706.03762v7",
+      "publisher": "Vaswani et al. / arXiv",
+      "published_at_display": "first submitted 2017-06-12; v7 revised 2023-08-02",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_research_paper",
+      "access": "opened_primary_text",
+      "supports": [
+        "Original base configuration: eight heads",
+        "Decoder future-position masking",
+        "Sinusoidal positional encoding"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims",
+      "limitation": "Specific original architecture; not a claim about every contemporary model. Visual mechanisms in ai_culture.md are invented metaphors."
+    },
+    {
+      "id": "H02",
+      "title": "What we learned in Seoul with AlphaGo",
+      "url": "https://blog.google/innovation-and-ai/products/what-we-learned-in-seoul-with-alphago/",
+      "publisher": "Google / DeepMind",
+      "published_at_display": "2016-03-16",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_researcher_retrospective",
+      "access": "opened_primary_text",
+      "supports": [
+        "Move 37 game 2 and move 78 game 4 each described as approximately one-in-ten-thousand under a human-move prediction model"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims",
+      "limitation": "Probability is conditional on the model, not an objective probability of human insight. Exact board coordinates not recovered."
+    },
+    {
+      "id": "H03",
+      "title": "Golden Gate Claude",
+      "url": "https://www.anthropic.com/news/golden-gate-claude",
+      "publisher": "Anthropic",
+      "published_at_display": "2024-05-23",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_research_demo",
+      "access": "opened_primary_text",
+      "supports": [
+        "Bridge-related feature amplification; 24-hour public demonstration"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims",
+      "limitation": "Historical research intervention; no present default behaviour or consciousness inference."
+    },
+    {
+      "id": "F01",
+      "title": "Levels of AGI for Operationalizing Progress on the Path to AGI",
+      "url": "https://arxiv.org/abs/2311.02462",
+      "publisher": "Morris et al. / arXiv",
+      "published_at_display": "first submitted 2023-11-04; v5 revised 2025-09-24",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_research_paper",
+      "access": "opened_primary_text",
+      "supports": [
+        "Proposed distinctions between performance, generality and autonomy"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims",
+      "limitation": "Attributed definition or conditional forecast, not a universally accepted threshold or an established future arrival."
+    },
+    {
+      "id": "F02",
+      "title": "Levels of AGI — full paper",
+      "url": "https://arxiv.org/html/2311.02462v5",
+      "publisher": "Morris et al. / arXiv",
+      "published_at_display": "v5 2025-09-24",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_research_paper",
+      "access": "opened_primary_text",
+      "supports": [
+        "Proposed ASI definition and performance/generality matrix; historical model-status examples are dated"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims",
+      "limitation": "Attributed definition or conditional forecast, not a universally accepted threshold or an established future arrival."
+    },
+    {
+      "id": "F03",
+      "title": "Towards Building Specialized Generalist AI with System 1 and System 2 Fusion",
+      "url": "https://arxiv.org/abs/2407.08642",
+      "publisher": "Kaiyan Zhang, Biqing Qi and Bowen Zhou / arXiv",
+      "published_at_display": "2024-07-11",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_research_paper",
+      "access": "opened_primary_text",
+      "supports": [
+        "SGI/SGAI used for Specialized Generalist AI"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims",
+      "limitation": "Attributed definition or conditional forecast, not a universally accepted threshold or an established future arrival."
+    },
+    {
+      "id": "F04",
+      "title": "Probing Scientific General Intelligence of LLMs with Scientist-Aligned Workflows",
+      "url": "https://arxiv.org/abs/2512.16969",
+      "publisher": "Wanghan Xu et al. / arXiv",
+      "published_at_display": "2025-12-18",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_research_paper",
+      "access": "opened_primary_text",
+      "supports": [
+        "SGI used for Scientific General Intelligence"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims",
+      "limitation": "Attributed definition or conditional forecast, not a universally accepted threshold or an established future arrival."
+    },
+    {
+      "id": "F05",
+      "title": "How intelligent should our models be?",
+      "url": "https://fredshone.github.io/blog/2026/AGI-vs-SGI-HGI/",
+      "publisher": "Fred Shone",
+      "published_at_display": "2026-03-19",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_author_essay",
+      "access": "opened_primary_text",
+      "supports": [
+        "Primary author usage of SGI for super-general-intelligence, not consensus"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims",
+      "limitation": "Attributed definition or conditional forecast, not a universally accepted threshold or an established future arrival."
+    },
+    {
+      "id": "F06",
+      "title": "The coming technological singularity: How to survive in the post-human era",
+      "url": "https://ntrs.nasa.gov/citations/19940022856",
+      "publisher": "Vernor Vinge; NASA NTRS record",
+      "published_at_display": "1993; NASA record publication 1993-12-01",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_author_essay",
+      "access": "opened_primary_text",
+      "supports": [
+        "Historical speculative technological singularity hypothesis and multiple proposed routes"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims",
+      "limitation": "Attributed definition or conditional forecast, not a universally accepted threshold or an established future arrival."
+    },
+    {
+      "id": "F07",
+      "title": "Thousands of AI Authors on the Future of AI",
+      "url": "https://arxiv.org/abs/2401.02843",
+      "publisher": "Katja Grace et al. / arXiv",
+      "published_at_display": "2024; survey conducted 2023",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_research_paper",
+      "access": "opened_primary_text",
+      "supports": [
+        "Survey of 2778 authors; forecast questions for all-task outperformance and occupation automation differ",
+        "Aggregate 50% dates 2047 and 2116 respectively, under stated conditions"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims",
+      "limitation": "Attributed definition or conditional forecast, not a universally accepted threshold or an established future arrival."
+    },
+    {
+      "id": "F08",
+      "title": "Machines of Loving Grace",
+      "url": "https://darioamodei.com/essay/machines-of-loving-grace",
+      "publisher": "Dario Amodei",
+      "published_at_display": "2024-10",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_author_essay",
+      "access": "opened_primary_text",
+      "supports": [
+        "Conditional powerful-AI-as-early-as-2026 scenario; explicitly may take much longer"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims",
+      "limitation": "Attributed definition or conditional forecast, not a universally accepted threshold or an established future arrival."
+    },
+    {
+      "id": "F09",
+      "title": "International AI Safety Report 2026",
+      "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026",
+      "publisher": "International AI Safety Report",
+      "published_at_display": "2026-02",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_expert_report",
+      "access": "opened_primary_text",
+      "supports": [
+        "Uncertainty over continued progress; evaluation gap; scenarios ranging from stagnation to acceleration"
+      ],
+      "confidence": "high for what the primary source states; not independent validation of vendor performance claims",
+      "limitation": "Attributed definition or conditional forecast, not a universally accepted threshold or an established future arrival."
+    },
+    {
+      "id": "P23",
+      "title": "Siri AI, a profoundly more capable and personal assistant, is here",
+      "url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/",
+      "publisher": "Apple",
+      "published_at_display": "2026-09-14",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_announcement",
+      "access": "opened_primary_text_by_parent_agent; exact source and date handed off to research agent",
+      "confidence": "high for official product naming; vendor performance claims not adopted",
+      "supports": [
+        "Siri AI assistant and Apple Intelligence system naming; English beta rollout is not universal availability"
+      ]
+    },
+    {
+      "id": "P24",
+      "title": "NVIDIA Expands Open Model Families to Power the Next Wave of Agentic, Physical and Healthcare AI",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-expands-open-model-families-to-power-the-next-wave-of-agentic-physical-and-healthcare-ai",
+      "publisher": "NVIDIA",
+      "published_at_display": "2026-03-16",
+      "publication_timezone": "not stated or date-only",
+      "kind": "primary_official_product_announcement",
+      "access": "opened_primary_text_by_parent_agent; exact source and date handed off to research agent",
+      "confidence": "high for official product naming; vendor performance claims not adopted",
+      "supports": [
+        "Nemotron model family; distinguish model family from hardware supplier and assistant apps"
+      ]
+    }
+  ],
+  "runtime_seconds": 43.67,
+  "limitations": [
+    "No video playback or model-output replication; indexed platform metadata does not establish popularity, authenticity, or meme origin.",
+    "Product roster is a bounded 20-family editorial representation, not a market ranking or exhaustive census.",
+    "Future definitions are attributed proposals; forecast questions and dates differ.",
+    "All records share the global retrieved_date unless explicitly overridden; publication timestamps use the displayed source timezone, which is frequently unstated."
+  ]
+}
