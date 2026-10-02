@@ -248,3 +248,17 @@ that came out of them is "Luma unless it truly can't" (playbook §2b).
   `work/lipsync-two-person-test-20261002/`; observations are in
   `work/lipsync-two-person-test-20261002/results.json`. Episode 01's continuity approval remains withdrawn;
   the experiment does not repair or approve its edit.
+
+## Code layout plus generative paper finish (2026-10-02)
+
+- Episode 01's code-drawn paper inserts conveyed the intended labels and states, but King found them too
+  presentation-like. Reused those renders as layout/state references for Codex's built-in image editor,
+  reconstructing them as photographed folded paper with thickness, contact shadows and directional light.
+- The first finished insert supplied a shared look reference for the others. Local edits produced the paired
+  after-states: address swap, room allocation and insertion into the shared kitchen flap. Six selected images,
+  a comparison and the actual prompts/output provenance are local in `work/ep01/paper-rework-v2/`, with the
+  full prompt set in `manifest.json`. King said the method worked out great.
+- This supports the hybrid method for suitable physical inserts, not a universal model ranking or a requirement
+  to polish all code artwork generatively. Minor texture/geometry drift remained between states; the kitchen
+  alignment correction also shifted the left slit slightly. The candidates were not integrated into the reel or
+  granted continuity approval. The reusable procedure is recorded in playbook §2b and the pipeline overview.

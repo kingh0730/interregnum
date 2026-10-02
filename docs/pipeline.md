@@ -25,6 +25,13 @@ not determine whether a video model is needed; timing, motion complexity and con
 | **ffmpeg** | Encoding, editing, conforming | | `-tune animation` for cel material |
 | **Audio** (`tools/audio/`) | Ambience, sound design, temp score, scratch dialogue (macOS `say`), mixing and loudness | Final music (**Suno**, run by King from Claude's cue sheets) and final voices (**Seedance**) | v2's synth is in `tools/audio/` |
 
+**Physical-insert workflow (2026-10-02):** code-authored layout and story state → generative reconstruction of
+materials and lighting → visual and semantic review. Use this for controlled inserts whose code render needs
+a more convincing physical finish; it is optional for other artwork. Codex's built-in image editor handles the
+reconstruction, with the layout and selected look reference assigned distinct roles. Verify lettering, counts,
+geometry and state changes after generation; exact input does not ensure exact output. See
+`docs/playbook.md` §2b, “Code layout → generative finish for physical inserts,” for the reusable procedure.
+
 ## Shot workflow
 
 1. **Script → shot list** (`episodes/<ep>/shotlist.md`): each shot names its tool, duration, camera and acting.

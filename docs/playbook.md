@@ -237,6 +237,33 @@ and Codex editing default below remain unchanged.
 
 These rules govern future work generally; adopting them does not authorize regenerating existing episodes.
 
+### Code layout → generative finish for physical inserts (2026-10-02)
+
+Use this hybrid method when an insert needs controlled labels, object counts or before/after states, but the
+code-rendered result looks flat or diagram-like. Episode 01's paper-insert rework demonstrated the method;
+King liked the result. It is an available technique, not a required extra pass for every image or for artwork
+whose intended finished medium is already code-rendered.
+
+1. **Author the structure in code.** Establish the composition, labels, symbols, object counts and story state.
+   Save the recipe and rendered reference. This supplies explicit design intent; it does not guarantee that a
+   later generative edit will preserve exact geometry or lettering.
+2. **Rebuild the existing image with the generative editor.** Use Codex's built-in image generation under the
+   editing policy above. Identify the code image as the layout/state reference, specify what must survive, and
+   art-direct the physical realization: material, thickness, folds, contact shadows, lens and motivated light.
+   For related inserts, supply a selected finished image as a separate look reference and explain each reference's
+   role. Seek exceptional composition and material beauty without adding unrelated ornament or objects.
+3. **Derive state changes from a clean finished base.** Ask for only the intended object move or replacement,
+   retaining camera, lighting and unaffected objects. Keep chains short. These are candidate states, not
+   guaranteed pixel-locked animation frames.
+4. **Check beauty and correctness separately.** Inspect full-size outputs against the layout, their actual inputs
+   and adjacent shots: exact text, symbols, counts, positions, scale, occlusion and before/after changes, alongside
+   composition, lighting and material quality. Correct exact typography with ordinary tools where appropriate,
+   preserving perspective and surface integration. Reject or repair unintended changes before production use;
+   a successful still treatment does not establish motion or continuity approval.
+5. **Keep the provenance.** Retain code sources, input images, prompts, output versions and selected states in the
+   episode's build records; keep generated media in ignored output directories. Preserve a comparison with the
+   original. Follow the existing source-selection and continuity review process before replacing reel assets.
+
 ### Prompts, faces and references
 
 - **Prompts are short photographer's briefs**, not prop lists:
