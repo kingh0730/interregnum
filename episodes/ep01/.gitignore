@@ -1,0 +1,4 @@
+# Generation state and downloaded responses are local; recipes remain tracked.
+build/luma_log/
+build/h3_log/
+build/*.urls.json

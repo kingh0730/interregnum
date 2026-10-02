@@ -1,0 +1,24 @@
+{
+  "recorded_at": "2026-10-02T01:43:00.114981+00:00",
+  "baseline_commit": "bba82526a7cbae83667365f3fa85684dcabd5c3f",
+  "scope": "Episode 01 through story reel and final sound; video generation not authorized in this run.",
+  "tool_sha256": {
+    "tools/imagegen/luma_batch.py": "5ffcba42a04a2be035408379d2b855b1a98710e4ad322ebd3d9fbe023d07d514",
+    "tools/fal_run.py": "87b1060a8046f39cb55c6fd83c274052c6fa7a553e3b90a5c755d0d24003e805",
+    "tools/request_state.py": "af9d4a4f28dafa1cfba2f3d3e4f91fb686e2a86cd445a4abc9d663c62c451805",
+    "tools/audio/voice_design.py": "f8c4433dc90cc56e86e9626b2b768ef4c5322cdfb77db54d0f19a556348abca2",
+    "tools/audio/perform2.py": "83988127326c611a4816718636bca60ba3f17f8b5ea56066cc43fbb1f79cc6c1",
+    "tools/audio/mix2.py": "b70e4db9023acad30a64d7ffe9425bc5862386b4bb9a876b825d9c806b0ad39f",
+    "tools/audio/rooms.py": "a26c3a2c17e7bd4ad535359a9790132bda26b8d860eb1f3e2f6fdd7272c6bb78",
+    "tools/comp/reel.py": "1cd11383b97ee2d123cccbd819b2ab9381f191e0beee6ab6dca10d91ff5777d0",
+    "tools/comp/assemble.py": "1394762f9a922e82cb4263010f8c204c63c4ae4d6df27ec43b71cfd2236baec3",
+    "tools/video/h3_batch.py": "266af81654431f9a2c7fcac8656b20158b9bcc473e120c777d8ab76abbabe603"
+  },
+  "media_policy": "All generated media and request logs stay in work/ep01 and renders/ep01; recipes stay in episodes/ep01.",
+  "budget_plan": {
+    "images_usd_estimate": 0.3,
+    "fal_audio_usd_estimate": 4,
+    "direct_voice_budget_chars": 9000,
+    "pre_motion_fal_ceiling_usd": 8
+  }
+}

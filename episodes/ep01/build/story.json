@@ -1,0 +1,914 @@
+{
+  "title": "COMMON ROOM",
+  "title_zh": "一室两家",
+  "fps": 24,
+  "total_frames": 5520,
+  "sections": [
+    {
+      "id": "opening",
+      "label": "One bowl, two addresses",
+      "start_frame": 0,
+      "end_frame": 720,
+      "tempo": {
+        "cut_length": "5–6 seconds, plus a 4-second address insert",
+        "movement": "One address change, one returned reach, one missed cherry",
+        "sound_voice_density": "Sparse speech and recorded paper/ceramic; no score",
+        "emotional_intensity": "Curiosity and dry practical friction"
+      }
+    },
+    {
+      "id": "division",
+      "label": "Familiar division",
+      "start_frame": 720,
+      "end_frame": 1752,
+      "tempo": {
+        "cut_length": "5–7 seconds; returns to established character setups",
+        "movement": "Separate room tokens, one returned measuring tool",
+        "sound_voice_density": "Ordinary clipped exchange; sparse performed notes enter",
+        "emotional_intensity": "Competent, mildly irritating familiarity"
+      }
+    },
+    {
+      "id": "modules",
+      "label": "Two private kitchens",
+      "start_frame": 1752,
+      "end_frame": 2616,
+      "tempo": {
+        "cut_length": "7 and 5 seconds narrow into 3,3,3,2,2; then 5 and 6",
+        "movement": "Specific object placements and occupied hands accelerate",
+        "sound_voice_density": "Object rhythm and instrumental density rise together",
+        "emotional_intensity": "Comic pressure; no danger"
+      }
+    },
+    {
+      "id": "decision",
+      "label": "Decision hold",
+      "start_frame": 2616,
+      "end_frame": 2856,
+      "tempo": {
+        "cut_length": "One exact uninterrupted 10-second wide",
+        "movement": "Both stop; delayed looks toward existing worktop",
+        "sound_voice_density": "Only hard stop in film at section onset; kitchen air remains",
+        "emotional_intensity": "Exposed practical consideration"
+      }
+    },
+    {
+      "id": "choice",
+      "label": "One shared kitchen",
+      "start_frame": 2856,
+      "end_frame": 3720,
+      "tempo": {
+        "cut_length": "5–7 seconds",
+        "movement": "Minimal gestures, then carton and paper decision",
+        "sound_voice_density": "Spare voices and room; a few performed notes return at carton close",
+        "emotional_intensity": "Measured negotiation and acceptance"
+      }
+    },
+    {
+      "id": "departure",
+      "label": "Separate homes",
+      "start_frame": 3720,
+      "end_frame": 4248,
+      "tempo": {
+        "cut_length": "8,7,7 seconds",
+        "movement": "Eda completes a move; scale expands once",
+        "sound_voice_density": "Space perspective broadens then quietens; no speech",
+        "emotional_intensity": "Forward movement and large-world possibility"
+      }
+    },
+    {
+      "id": "consequence",
+      "label": "Chosen inconvenience",
+      "start_frame": 4248,
+      "end_frame": 5328,
+      "tempo": {
+        "cut_length": "5–8 seconds",
+        "movement": "Useful handovers, pattern work and cooking occupy different regions",
+        "sound_voice_density": "Low object details, little music; rain and dry air share room",
+        "emotional_intensity": "Quiet, dry amusement; ongoing independent lives"
+      }
+    },
+    {
+      "id": "endcard",
+      "label": "End card",
+      "start_frame": 5328,
+      "end_frame": 5520,
+      "tempo": {
+        "cut_length": "8 seconds",
+        "movement": "Static text",
+        "sound_voice_density": "Soft tails to silence, no hard stop",
+        "emotional_intensity": "Unforced finish"
+      }
+    }
+  ],
+  "shots": [
+    {
+      "id": "01",
+      "start_frame": 0,
+      "end_frame": 144,
+      "section": "opening",
+      "asset": "k01",
+      "kind": "scene",
+      "description": "The whole shared kitchen; Eda at screen left with two open houseletters, Sen screen right. Two rear thresholds flank the long worktop. Eda’s left door currently shows her packed old room; Sen’s right door shows a rain-dark landing. One cherry remains in the bowl on the ash table.",
+      "action": "Eda places her new address tab beside her houseletter; Sen stays with the bowl.",
+      "camera": "Guest eye from SOUTH slightly east of center, 32 mm, height 1.35 m, stable wide; Eda left / Sen right.",
+      "dialogue": [],
+      "sound": "Continuous kitchen air; faint rain beyond right door; dry paper contact. No score.",
+      "critical_action": "Establish one kitchen, two fixed thresholds, one identifiable bowl. Tiny opening title may appear on the negative space without replacing the scene.",
+      "refs": []
+    },
+    {
+      "id": "02",
+      "start_frame": 144,
+      "end_frame": 240,
+      "section": "opening",
+      "asset": "k02",
+      "kind": "graphic",
+      "description": "Overhead physical houseletter and Eda’s private-room flap; her new address tab aligns with a slit. Exact labels and diagram are authored in post.",
+      "action": "Slide the new tab into the existing room flap with an exact two-state insert.",
+      "camera": "Straight overhead, 65 mm equivalent; exact physical paper insert.",
+      "dialogue": [],
+      "sound": "Close recorded paper slide and one light fingertip tap; kitchen air continues.",
+      "critical_action": "The ADDRESS changes; the kitchen flap and bowl position do not. Render an actual authored tab layer moving from the old slot to the new slot. This is graphic state change, not an immutable image described as moving.",
+      "refs": []
+    },
+    {
+      "id": "03",
+      "start_frame": 240,
+      "end_frame": 360,
+      "section": "opening",
+      "asset": "k03",
+      "kind": "scene",
+      "description": "Same left kitchen threshold now opens into Eda’s long private room overlooking a huge red planetary ring. Eda stands just beyond the threshold and faces the unchanged kitchen.",
+      "action": "Eda begins to return through her doorway toward the bowl.",
+      "camera": "Kitchen side of Eda’s LEFT doorway, 40 mm, height 1.35 m; established axis preserved.",
+      "dialogue": [
+        {
+          "id": "D01",
+          "speaker": "EDA",
+          "text": "Leave the bowl there. I'll be back for it.",
+          "zh": "碗先放着。我一会儿回来拿。",
+          "offset": 0.5
+        }
+      ],
+      "sound": "The new room’s dry air becomes faintly audible at left; rain persists at right. Eda speaks plainly.",
+      "critical_action": "Exact match-cut doorway replacement teaches a changed address. Eda is a living person returning through an ordinary threshold.",
+      "refs": []
+    },
+    {
+      "id": "04",
+      "start_frame": 360,
+      "end_frame": 480,
+      "section": "opening",
+      "asset": "k04",
+      "kind": "insert",
+      "description": "Close on the same bowl, now empty. Sen’s fingers hold its last cherry just above the rim; Eda’s empty hand has arrived from frame left. A single small asymmetric mark on the bowl fixes its identity.",
+      "action": "Hold the already-completed missed handover state: empty bowl, last cherry in Sen’s fingers, Eda’s hand empty. The preceding wide supplied the full bowl.",
+      "camera": "Table-height close insert, 75 mm, bowl occupies lower center; Eda’s approach from left.",
+      "dialogue": [],
+      "sound": "One dry ceramic touch; cloth sleeve; no comedy sting.",
+      "critical_action": "The two addresses still reach ONE bowl and ONE last cherry. Do not generate two bowls or a second cherry.",
+      "refs": []
+    },
+    {
+      "id": "05",
+      "start_frame": 480,
+      "end_frame": 600,
+      "section": "opening",
+      "asset": "k05",
+      "kind": "scene",
+      "description": "Eda at the left side of the kitchen table; the ring doorway is behind and left of her. Her hand rests near the bowl.",
+      "action": "She looks at the empty bowl while speaking; face stays composed.",
+      "camera": "Eda medium, 50 mm, height 1.35 m from SOUTH; face left of center, gaze screen right/down.",
+      "dialogue": [
+        {
+          "id": "D02",
+          "speaker": "EDA",
+          "text": "That's still my side.",
+          "zh": "那边还是我的。",
+          "offset": 0.8
+        }
+      ],
+      "sound": "Eda at normal low conversational volume; continuous kitchen bed.",
+      "critical_action": "Her complaint concerns the same object, not a vanished object or a failed door.",
+      "refs": []
+    },
+    {
+      "id": "06",
+      "start_frame": 600,
+      "end_frame": 720,
+      "section": "opening",
+      "asset": "k06",
+      "kind": "scene",
+      "description": "Sen at the right side of the same table; rain-dark doorway behind right. His hands are now empty and rest on the table.",
+      "action": "He glances toward her readdressed doorway, then back to the table.",
+      "camera": "Sen medium, 50 mm, height 1.35 m from SOUTH; face right of center, gaze screen left/down.",
+      "dialogue": [
+        {
+          "id": "D03",
+          "speaker": "SEN",
+          "text": "You moved the door.",
+          "zh": "是你把门搬走了。",
+          "offset": 0.8
+        }
+      ],
+      "sound": "Sen answers without a punchline accent; rain remains distant.",
+      "critical_action": "Same table geography; no reverse-axis doorway swap.",
+      "refs": []
+    },
+    {
+      "id": "07",
+      "start_frame": 720,
+      "end_frame": 888,
+      "section": "division",
+      "asset": "k05",
+      "kind": "scene",
+      "description": "Return to the approved Eda table medium.",
+      "action": "She leaves the bowl where it is and moves her attention to the plan.",
+      "camera": "Eda medium, 50 mm, height 1.35 m from SOUTH; face left of center, gaze screen right/down.",
+      "dialogue": [
+        {
+          "id": "D04",
+          "speaker": "EDA",
+          "text": "I didn't move the bowl. Fine. You get it in the divorce.",
+          "zh": "我又没搬碗。行，离婚分给你。",
+          "offset": 0.45
+        }
+      ],
+      "sound": "Plain, unhurried Eda line with a short pause after bowl.",
+      "critical_action": "The single explicit word divorce establishes the separation. No bitter performance or romantic reassurance.",
+      "refs": []
+    },
+    {
+      "id": "08",
+      "start_frame": 888,
+      "end_frame": 1056,
+      "section": "division",
+      "asset": "k07",
+      "kind": "graphic",
+      "description": "Overhead plan of the real apartment, two houseletters beside it. Long private room at Eda’s left address, narrow private room at Sen’s right. Kitchen appears exactly once between their tabs.",
+      "action": "Eda’s paper room token moves to her houseletter; the kitchen remains undecided.",
+      "camera": "Straight overhead 65 mm, authored plan insert with real paper texture.",
+      "dialogue": [
+        {
+          "id": "D05",
+          "speaker": "EDA",
+          "text": "I'll take the long room. The cutting table fits.",
+          "zh": "长的那间归我。放得下裁剪台。",
+          "offset": 0.55
+        }
+      ],
+      "sound": "Recorded paper scrape beneath Eda off screen; a very sparse performed instrumental figure may enter.",
+      "critical_action": "Use exact authored room-token/tab layers over the real paper plate. The table diagram matches production design and kitchen appears once. A still image with only a moving-sound effect is insufficient for this token assignment.",
+      "refs": []
+    },
+    {
+      "id": "09",
+      "start_frame": 1056,
+      "end_frame": 1200,
+      "section": "division",
+      "asset": "k06",
+      "kind": "scene",
+      "description": "Return to Sen’s table medium, with the plan below the frame.",
+      "action": "Sen holds one finger at the narrow-room edge of the plan.",
+      "camera": "Sen medium, 50 mm, height 1.35 m from SOUTH; face right of center, gaze screen left/down.",
+      "dialogue": [
+        {
+          "id": "D06",
+          "speaker": "SEN",
+          "text": "The narrow room fits the bicycle. I measured.",
+          "zh": "窄的那间放得下自行车。我量过。",
+          "offset": 0.6
+        }
+      ],
+      "sound": "Sen speaks evenly. Music remains sparse and below the room.",
+      "critical_action": "The bicycle is a real practical preference, not shorthand for a personality speech.",
+      "refs": []
+    },
+    {
+      "id": "10",
+      "start_frame": 1200,
+      "end_frame": 1344,
+      "section": "division",
+      "asset": "k05",
+      "kind": "scene",
+      "description": "Return to Eda’s table medium.",
+      "action": "She looks at the narrow-room mark rather than at his face.",
+      "camera": "Eda medium, 50 mm, height 1.35 m from SOUTH; face left of center, gaze screen right/down.",
+      "dialogue": [
+        {
+          "id": "D07",
+          "speaker": "EDA",
+          "text": "With both wheels on?",
+          "zh": "两个轮子都装着？",
+          "offset": 0.75
+        }
+      ],
+      "sound": "Eda’s four-word question; leave the remaining space for his nonverbal pause.",
+      "critical_action": "A question about the bicycle fit supplies ordinary friction without adding a room or a flashback.",
+      "refs": []
+    },
+    {
+      "id": "11",
+      "start_frame": 1344,
+      "end_frame": 1512,
+      "section": "division",
+      "asset": "k06",
+      "kind": "scene",
+      "description": "Sen checks the empty place where the tape measure usually sits at the table edge.",
+      "action": "One hand pats that spot; he asks for the measure.",
+      "camera": "Sen medium, 50 mm, height 1.35 m from SOUTH; face right of center, gaze screen left/down.",
+      "dialogue": [
+        {
+          "id": "D08",
+          "speaker": "SEN",
+          "text": "Where's the tape measure? You can check it yourself.",
+          "zh": "卷尺呢？你可以自己量。",
+          "offset": 0.7
+        }
+      ],
+      "sound": "Sen’s line; one soft hand-on-wood sound; score remains intermittent.",
+      "critical_action": "The familiar empty spot makes the already-packed tool joke visible.",
+      "refs": []
+    },
+    {
+      "id": "12",
+      "start_frame": 1512,
+      "end_frame": 1632,
+      "section": "division",
+      "asset": "k05",
+      "kind": "scene",
+      "description": "Eda glances toward her left doorway, already showing her relocated private room.",
+      "action": "She turns toward the doorway after answering.",
+      "camera": "Eda medium, 50 mm, height 1.35 m from SOUTH; face left of center, gaze screen right/down.",
+      "dialogue": [
+        {
+          "id": "D09",
+          "speaker": "EDA",
+          "text": "Packed. In the long room.",
+          "zh": "装箱了。在长的那间。",
+          "offset": 0.55
+        }
+      ],
+      "sound": "Eda’s short answer, followed by one retreating footstep beginning the next action.",
+      "critical_action": "The move has begun: objects already belong to separately addressed rooms.",
+      "refs": []
+    },
+    {
+      "id": "13",
+      "start_frame": 1632,
+      "end_frame": 1752,
+      "section": "division",
+      "asset": "k08",
+      "kind": "insert",
+      "description": "The tape measure lands on the original table; Eda’s sleeve enters from left. Her distant room remains a soft sliver through the left threshold.",
+      "action": "Reveal the returned tape measure already on the original table in a new approved insert; sync its recorded tap to the cut.",
+      "camera": "Table-height 65 mm insert, tool entering from left; keep table edge fixed.",
+      "dialogue": [],
+      "sound": "Tape case taps the table, tail allowed into next cut.",
+      "critical_action": "The tool has returned through the same doorway; no new transport rule.",
+      "refs": []
+    },
+    {
+      "id": "14",
+      "start_frame": 1752,
+      "end_frame": 1920,
+      "section": "modules",
+      "asset": "k09",
+      "kind": "scene",
+      "description": "Eda in a medium-wide at the left compact sink module, with both tiny units readable along the table edge and part of the full worktop behind. Sen is outside the crop; at most his hands enter. Eda is the ONLY visible speaking face.",
+      "action": "Eda sets the order slip between the modules.",
+      "camera": "Eda medium-wide from canonical SOUTH axis, 45 mm, height1.35m; crop excludes Sen’s face while retaining the modules as a scale comparison.",
+      "dialogue": [
+        {
+          "id": "D10",
+          "speaker": "EDA",
+          "text": "We said separate kitchens. That's what we ordered.",
+          "zh": "说好厨房分开。这就是订的。",
+          "offset": 0.8
+        }
+      ],
+      "sound": "Eda line; cardboard and a dry lid knock. Performed figure becomes more regular.",
+      "critical_action": "They deliberately ordered separate kitchens. Modules are genuinely usable small units; no faults, sparks or hazard.",
+      "refs": []
+    },
+    {
+      "id": "15",
+      "start_frame": 1920,
+      "end_frame": 2040,
+      "section": "modules",
+      "asset": "k10",
+      "kind": "scene",
+      "description": "Sen’s medium at the small hob module, looking down at its very limited surrounding surface.",
+      "action": "He places his ordinary pan alongside it, pausing before the fit test.",
+      "camera": "Sen medium at small module, 50 mm, height 1.35 m; right-side position.",
+      "dialogue": [
+        {
+          "id": "D11",
+          "speaker": "SEN",
+          "text": "Those are the kitchens?",
+          "zh": "这就是厨房？",
+          "offset": 0.9
+        }
+      ],
+      "sound": "Sen question, level and literal; a pan handle brushes cardboard.",
+      "critical_action": "Use scale comparison to reveal inconvenience, not a broken product.",
+      "refs": []
+    },
+    {
+      "id": "16",
+      "start_frame": 2040,
+      "end_frame": 2112,
+      "section": "modules",
+      "asset": "k11",
+      "kind": "insert",
+      "description": "The pan fits on the small hotplate, but its lid and spoon have no resting space beside it. Unit remains unplugged during unpacking.",
+      "action": "Cut to the approved completed pan-placement state. Pan sits correctly on the small hob; there is no space beside it for its lid.",
+      "camera": "Close practical insert, 70 mm, modest downward angle onto unplugged hob and pan.",
+      "dialogue": [],
+      "sound": "Three recorded contacts start a faster object rhythm; no speech.",
+      "critical_action": "Pan is safe and usable. The problem is missing preparation space, not impossibility or danger.",
+      "refs": []
+    },
+    {
+      "id": "17",
+      "start_frame": 2112,
+      "end_frame": 2184,
+      "section": "modules",
+      "asset": "k12",
+      "kind": "scene",
+      "description": "Eda at the small sink holding a wet tray diagonally above it; most of the tray extends over the surrounding table.",
+      "action": "She offers the tray outward once.",
+      "camera": "Eda medium at left small module, 50 mm, height 1.35 m; tray projects inward, not toward camera.",
+      "dialogue": [
+        {
+          "id": "D12",
+          "speaker": "EDA",
+          "text": "Hold this.",
+          "zh": "拿一下。",
+          "offset": 0.5
+        }
+      ],
+      "sound": "Eda’s short request; a few real drips beneath the growing object rhythm.",
+      "critical_action": "Ordinary drips on the shared table, no flooded electrical device or ruined belongings.",
+      "refs": []
+    },
+    {
+      "id": "18",
+      "start_frame": 2184,
+      "end_frame": 2256,
+      "section": "modules",
+      "asset": "k13",
+      "kind": "scene",
+      "description": "Sen holds a pan lid, a bowl and a spoon; every hand has an object. His shoulders stay level.",
+      "action": "He shows that his hands are occupied without theatrical juggling.",
+      "camera": "Sen medium with occupied hands, 50 mm, right side, same module axis.",
+      "dialogue": [
+        {
+          "id": "D13",
+          "speaker": "SEN",
+          "text": "I am holding everything.",
+          "zh": "都在我手上了。",
+          "offset": 0.35
+        }
+      ],
+      "sound": "Sen’s line, dry utensil ticks, faster music punctuation.",
+      "critical_action": "The actors never become broad caricatures; object staging supplies the comedy.",
+      "refs": []
+    },
+    {
+      "id": "19",
+      "start_frame": 2256,
+      "end_frame": 2304,
+      "section": "modules",
+      "asset": "k14",
+      "kind": "insert",
+      "description": "A small module drawer is open where a lid might rest; the drawer’s rim leaves insufficient flat space. Eda’s empty hand indicates it from left.",
+      "action": "Cut to the already-open drawer and Eda’s indicating hand; this discrete result motivates the next response.",
+      "camera": "Close object insert, 70 mm, table-height downward angle; no spatial-axis reversal.",
+      "dialogue": [
+        {
+          "id": "D14",
+          "speaker": "EDA",
+          "text": "Put it down.",
+          "zh": "放下啊。",
+          "offset": 0.2
+        }
+      ],
+      "sound": "Eda off-screen line; one short drawer stop, score rhythm continues.",
+      "critical_action": "This is a specific failed placement, not a random comedy montage.",
+      "refs": []
+    },
+    {
+      "id": "20",
+      "start_frame": 2304,
+      "end_frame": 2352,
+      "section": "modules",
+      "asset": "k13",
+      "kind": "scene",
+      "description": "Return to Sen with occupied hands, keeping exactly the same objects.",
+      "action": "He looks at the proposed surface without moving the objects.",
+      "camera": "Sen medium with occupied hands, 50 mm, right side, same module axis.",
+      "dialogue": [
+        {
+          "id": "D15",
+          "speaker": "SEN",
+          "text": "Where?",
+          "zh": "放哪儿？",
+          "offset": 0.4
+        }
+      ],
+      "sound": "The single word Where lands inside the object rhythm, not after a new silence.",
+      "critical_action": "The previous insert motivates the response. No object disappears between the paired shots.",
+      "refs": []
+    },
+    {
+      "id": "21",
+      "start_frame": 2352,
+      "end_frame": 2472,
+      "section": "modules",
+      "asset": "k28",
+      "kind": "scene",
+      "description": "Eda at the left compact sink AFTER setting down the tray. The tray bridges the sink rim and table; a small wet patch is visible on the wood. Face, module, sleeve and geometry match clean k12.",
+      "action": "Hold the approved completed tray-placement state. She indicates the small wet area once.",
+      "camera": "Eda medium at left small module, 50 mm, height 1.35 m; tray projects inward, not toward camera.",
+      "dialogue": [
+        {
+          "id": "D16",
+          "speaker": "EDA",
+          "text": "That's your half.",
+          "zh": "那是你那半边。",
+          "offset": 0.7
+        }
+      ],
+      "sound": "Eda line; soft tray settling; the music repeats one increasingly crowded phrase.",
+      "critical_action": "Clean derived state from k12. Distinct image required: tray set down and small spill visible, not the earlier held-tray frame.",
+      "refs": []
+    },
+    {
+      "id": "22",
+      "start_frame": 2472,
+      "end_frame": 2616,
+      "section": "modules",
+      "asset": "k15",
+      "kind": "insert",
+      "description": "Close on the table between the two compact modules: the same thin wet patch reaches under the corner of Eda’s cloth and toward Sen’s bowl.",
+      "action": "A cloth touches down once. Let the line and the shared wet area register.",
+      "camera": "Close table insert, 70 mm, low downward view; both module edges define the shared wet area.",
+      "dialogue": [
+        {
+          "id": "D17",
+          "speaker": "SEN",
+          "text": "And a little of yours.",
+          "zh": "也沾了点你那边。",
+          "offset": 0.8
+        }
+      ],
+      "sound": "Sen off screen; object rhythm reaches its busiest point, then runs to the cut without a pause.",
+      "critical_action": "Their two tiny work areas still inconvenience each other while packing. No shot introduces a leak defect.",
+      "refs": []
+    },
+    {
+      "id": "23",
+      "start_frame": 2616,
+      "end_frame": 2856,
+      "section": "decision",
+      "asset": "k16",
+      "kind": "scene",
+      "description": "An uninterrupted wide from the established kitchen axis: both people have set their objects down, the tiny modules below them, the full clear worktop behind them. Eda left, Sen right.",
+      "action": "Neither speaks. After the first two seconds, each looks toward the existing counter. Hold the remaining space.",
+      "camera": "Return to k01 SOUTH axis, 32 mm, height 1.35 m. Locked unbroken ten-second wide.",
+      "dialogue": [],
+      "sound": "EXACTLY ONE HARD STOP at this shot’s first frame: performed score and module/action rhythm stop together. Continuous thin kitchen air remains; no digital-black silence. No score during this hold.",
+      "critical_action": "Ten-second decision hold. The full kitchen is the visible alternative. This is the film’s only deliberate hard sound stop.",
+      "refs": []
+    },
+    {
+      "id": "24",
+      "start_frame": 2856,
+      "end_frame": 3000,
+      "section": "choice",
+      "asset": "k06",
+      "kind": "scene",
+      "description": "Return to Sen’s approved table medium.",
+      "action": "He looks past the modules toward the original worktop.",
+      "camera": "Sen medium, 50 mm, height 1.35 m from SOUTH; face right of center, gaze screen left/down.",
+      "dialogue": [
+        {
+          "id": "D18",
+          "speaker": "SEN",
+          "text": "We could keep this one.",
+          "zh": "这间可以留着。",
+          "offset": 0.8
+        }
+      ],
+      "sound": "Sen speaks after 0.8 s; room air only, no score yet.",
+      "critical_action": "He proposes retaining the existing shared room; no mechanical discovery supplies the solution.",
+      "refs": []
+    },
+    {
+      "id": "25",
+      "start_frame": 3000,
+      "end_frame": 3168,
+      "section": "choice",
+      "asset": "k05",
+      "kind": "scene",
+      "description": "Return to Eda’s table medium; both sleeves and posture remain ordinary.",
+      "action": "She places a palm on the edge of the actual table while describing her use of the worktop.",
+      "camera": "Eda medium, 50 mm, height 1.35 m from SOUTH; face left of center, gaze screen right/down.",
+      "dialogue": [
+        {
+          "id": "D19",
+          "speaker": "EDA",
+          "text": "Then you don't get to clear the worktop.",
+          "zh": "那你可不能随便清台面。",
+          "offset": 0.65
+        }
+      ],
+      "sound": "Eda line; dry voice with room bed.",
+      "critical_action": "She names the cost: his exclusive control of a clear surface. No moral about love or independence.",
+      "refs": []
+    },
+    {
+      "id": "26",
+      "start_frame": 3168,
+      "end_frame": 3312,
+      "section": "choice",
+      "asset": "k31",
+      "kind": "scene",
+      "description": "Sen in the approved right-table medium, now holding his ordinary pan slightly above the table. The pan supplies a concrete reason for wanting the worktop clear.",
+      "action": "Hold the approved raised-pan state while he speaks; no new face or room geometry.",
+      "camera": "Sen medium, 50 mm, height 1.35 m from SOUTH; face right of center, gaze screen left/down.",
+      "dialogue": [
+        {
+          "id": "D20",
+          "speaker": "SEN",
+          "text": "I still need to cook.",
+          "zh": "我还得做饭。",
+          "offset": 0.8
+        }
+      ],
+      "sound": "Sen line; one low pan contact allowed to decay.",
+      "critical_action": "Clean derived state from k06 with the specified pan. This is a distinct plate, not a gesture claimed over neutral empty hands.",
+      "refs": []
+    },
+    {
+      "id": "27",
+      "start_frame": 3312,
+      "end_frame": 3432,
+      "section": "choice",
+      "asset": "k05",
+      "kind": "scene",
+      "description": "Return to Eda.",
+      "action": "She measures the full counter span with her gaze, not a large gesture.",
+      "camera": "Eda medium, 50 mm, height 1.35 m from SOUTH; face left of center, gaze screen right/down.",
+      "dialogue": [
+        {
+          "id": "D21",
+          "speaker": "EDA",
+          "text": "I'll need all of it. Sometimes.",
+          "zh": "我会用满的。有时候。",
+          "offset": 0.55
+        }
+      ],
+      "sound": "Eda line with an ordinary short pause before Sometimes.",
+      "critical_action": "Her cutting work is equally real. The film does not award one preference superiority.",
+      "refs": []
+    },
+    {
+      "id": "28",
+      "start_frame": 3432,
+      "end_frame": 3576,
+      "section": "choice",
+      "asset": "k17",
+      "kind": "scene",
+      "description": "A slightly tighter Sen profile from the same side of the axis; the unused small hob carton is in front of him.",
+      "action": "Sen rests his hand on the carton flap while speaking; shot29’s recorded closure and separate finished arrangement complete the decision.",
+      "camera": "Sen slightly tighter 65 mm profile, same SOUTH side, face remains screen right.",
+      "dialogue": [
+        {
+          "id": "D22",
+          "speaker": "SEN",
+          "text": "I suppose I'll find out when.",
+          "zh": "看来到时候就知道了。",
+          "offset": 0.8
+        }
+      ],
+      "sound": "Sen’s line then a real cardboard fold. A light performed phrase may return softly under the cardboard tail.",
+      "critical_action": "Acceptance is the practical act of returning the private module, not a speech or a romantic look.",
+      "refs": []
+    },
+    {
+      "id": "29",
+      "start_frame": 3576,
+      "end_frame": 3720,
+      "section": "choice",
+      "asset": "k18",
+      "kind": "graphic",
+      "description": "Overhead the finished houseletter arrangement: ONE kitchen flap receives TWO distinct address tabs. The two private-room areas remain separate. Exact geometry and minimal labels are composited, not generated.",
+      "action": "Eda threads her tab and Sen’s already-placed tab remains visible; the frame settles on one kitchen with two entries.",
+      "camera": "Straight overhead 65 mm, exact composited paper plan and two physical address tabs.",
+      "dialogue": [],
+      "sound": "Two paper contacts; a small tape pull from the module cartons off screen. Music is sparse, not swelling.",
+      "critical_action": "Use exact authored separate address-tab layers to reveal the final one-kitchen/two-address arrangement. Both tabs must be visible at end. Module carton closures may be off screen; the unused modules are absent in the later scene.",
+      "refs": []
+    },
+    {
+      "id": "30",
+      "start_frame": 3720,
+      "end_frame": 3912,
+      "section": "departure",
+      "asset": "k19",
+      "kind": "scene",
+      "description": "Eda at the immense sorting-hall threshold with her compact houseletter and a practical roll of cloth; the kitchen remains available through her address.",
+      "action": "Cut to Eda in the sorting hall with the secured houseletter and cloth roll already in her hands; no long walk is claimed over an unchanged start frame.",
+      "camera": "Threshold medium-wide 40 mm, height 1.4 m, Eda small within hall entrance; one purposeful scale change.",
+      "dialogue": [],
+      "sound": "Hall air opens beneath footfalls; kitchen bed recedes over a soft perspective change.",
+      "critical_action": "She completes her move. Do not add an embrace, longing glance or hesitation implying renewed couplehood.",
+      "refs": []
+    },
+    {
+      "id": "31",
+      "start_frame": 3912,
+      "end_frame": 4080,
+      "section": "departure",
+      "asset": "k20",
+      "kind": "scene",
+      "description": "Monumental postal architecture with upright folded apartment structures, one clean absence where a dispatched room had stood. Eda is a tiny readable figure within the composition.",
+      "action": "Hold the architecture’s scale; one authored dispatch-light or paper-label change is enough for the reel.",
+      "camera": "Very wide architectural view, 24 mm, high but humanly accessible landing; deep negative space.",
+      "dialogue": [],
+      "sound": "Large recorded hall resonance, distant rolling wheels, a brief light extension of the performed theme.",
+      "critical_action": "One earned scale reveal. No new plot, endangered city or explanatory public announcement.",
+      "refs": []
+    },
+    {
+      "id": "32",
+      "start_frame": 4080,
+      "end_frame": 4248,
+      "section": "departure",
+      "asset": "k21",
+      "kind": "scene",
+      "description": "Eda alone in her new long room with its cutting table, red planetary ring clearly visible outside; her kitchen doorway occupies its established side.",
+      "action": "Reveal Eda’s cloth roll already on the cutting table in her completed separate home; one recorded cloth contact can motivate the cut.",
+      "camera": "Eda’s room wide, 35 mm, height 1.35 m; private room first, planetary ring through real window second.",
+      "dialogue": [],
+      "sound": "Dry local room air; hall sound fades naturally. One cloth contact; music thins.",
+      "critical_action": "Independent home is a completed outcome, not a temporary stop before reconciliation.",
+      "refs": []
+    },
+    {
+      "id": "33",
+      "start_frame": 4248,
+      "end_frame": 4392,
+      "section": "consequence",
+      "asset": "k22",
+      "kind": "scene",
+      "description": "Later: same kitchen wide, light changed only by ordinary evening sources. Eda’s cloth and paper pattern cover the LEFT and CENTRAL worktop; the RIGHT hob is clear. Sen has entered through his right rain door carrying a pan.",
+      "action": "He reaches the clear hob and sees where his vegetable bowl has been displaced.",
+      "camera": "Return to canonical SOUTH wide, 32 mm, 1.35 m; cloth state, both doors and cleared right hob legible.",
+      "dialogue": [],
+      "sound": "Kitchen bed resumes at its continuing time, with rain at right and dry distant air at left. Fabric snip and low ordinary extractor may be present; music drops back softly.",
+      "critical_action": "Practical consequence of sharing. Cloth remains safely clear of hob and pan; no fire gag.",
+      "refs": []
+    },
+    {
+      "id": "34",
+      "start_frame": 4392,
+      "end_frame": 4536,
+      "section": "consequence",
+      "asset": "k23",
+      "kind": "scene",
+      "description": "Sen at the right hob, pan in hand, looking toward the central worktop.",
+      "action": "He indicates the exact space where his bowl usually sits.",
+      "camera": "Sen at right hob, 50 mm, 1.35 m from SOUTH; no doorway reversal.",
+      "dialogue": [
+        {
+          "id": "D23",
+          "speaker": "SEN",
+          "text": "My vegetables were there.",
+          "zh": "我的菜刚在那儿。",
+          "offset": 0.9
+        }
+      ],
+      "sound": "Sen line, no punchline music. Continuous kitchen and faint rain.",
+      "critical_action": "His former exclusive preparation spot is now occupied by her actual work.",
+      "refs": []
+    },
+    {
+      "id": "35",
+      "start_frame": 4536,
+      "end_frame": 4680,
+      "section": "consequence",
+      "asset": "k24",
+      "kind": "scene",
+      "description": "Eda at the left/central counter with pattern, cloth and cutting tool laid flat. She looks toward the one chair without leaving her pattern.",
+      "action": "She points toward the chair with one hand while the other holds the pattern.",
+      "camera": "Eda at left/central worktop, 50 mm, 1.35 m from SOUTH; pattern visible below face.",
+      "dialogue": [
+        {
+          "id": "D24",
+          "speaker": "EDA",
+          "text": "They're on the chair. The bowl's underneath.",
+          "zh": "在椅子上。碗在下面。",
+          "offset": 0.7
+        }
+      ],
+      "sound": "Eda line; small fabric movement.",
+      "critical_action": "She has relocated his things usefully, but inconveniently. No apology or triumph.",
+      "refs": []
+    },
+    {
+      "id": "36",
+      "start_frame": 4680,
+      "end_frame": 4800,
+      "section": "consequence",
+      "asset": "k25",
+      "kind": "insert",
+      "description": "The only free chair now holds the vegetables and their familiar bowl under a folded corner of cloth. The vegetables are dry and contained.",
+      "action": "Reveal the bowl on the chair with Sen’s hand reaching it. Shot37 uses a separate approved state with bowl now at his cooking surface.",
+      "camera": "Chair/bowl insert 65 mm, downward at hand height; preserve exact bowl mark.",
+      "dialogue": [],
+      "sound": "Ceramic contact, vegetable rustle, cloth lift. No dialogue.",
+      "critical_action": "The bowl from the opening returns as an ordinary working object. Preserve its one identifying mark.",
+      "refs": []
+    },
+    {
+      "id": "37",
+      "start_frame": 4800,
+      "end_frame": 4968,
+      "section": "consequence",
+      "asset": "k29",
+      "kind": "scene",
+      "description": "Sen at the same clear right-hob position as k23, with the retrieved vegetable bowl now on his available preparation surface and the pan on the hob.",
+      "action": "He looks for the salt; the approved image already establishes that the bowl was retrieved.",
+      "camera": "Sen at right hob, 50 mm, 1.35 m from SOUTH; no doorway reversal.",
+      "dialogue": [
+        {
+          "id": "D25",
+          "speaker": "SEN",
+          "text": "And the salt?",
+          "zh": "那盐呢？",
+          "offset": 0.9
+        }
+      ],
+      "sound": "Sen asks after a short practical pause. The extractor remains low and continuous.",
+      "critical_action": "Clean derived state from k23. The bowl is the marked opening bowl. Never reuse the earlier empty surface while describing it as present.",
+      "refs": []
+    },
+    {
+      "id": "38",
+      "start_frame": 4968,
+      "end_frame": 5160,
+      "section": "consequence",
+      "asset": "k30",
+      "kind": "scene",
+      "description": "Eda at the same left/central worktop position as k24. The salt pot visibly weights one corner of her unchanged paper pattern; her free hand indicates the other corner. Cutting tool lies flat and clear.",
+      "action": "Hold the approved handover-request state while she speaks; a later wide shows the task continued.",
+      "camera": "Eda at left/central worktop, 50 mm, 1.35 m from SOUTH; pattern visible below face.",
+      "dialogue": [
+        {
+          "id": "D26",
+          "speaker": "EDA",
+          "text": "Hold that corner. No, the other one.",
+          "zh": "按住那个角。不，另一个。",
+          "offset": 0.8
+        }
+      ],
+      "sound": "Eda’s direction, paper and sleeve contact, no added musical resolution.",
+      "critical_action": "Clean derived state from k24. Actual salt-pot/corner arrangement must be present. Do not simulate the requested action solely through narration.",
+      "refs": []
+    },
+    {
+      "id": "39",
+      "start_frame": 5160,
+      "end_frame": 5328,
+      "section": "consequence",
+      "asset": "k26",
+      "kind": "scene",
+      "description": "Final wide on the original axis: Eda works LEFT/center, Sen cooks RIGHT, both ordinary doors open. Her left door frames the red ring and her separate room; his right door frames the rainy landing. The crooked lamp remains over the same foreground table.",
+      "action": "Hold the completed everyday work arrangement: Eda’s pattern is weighted by a spare cup while Sen has the salt. Neither seeks a concluding look.",
+      "camera": "Return to canonical SOUTH wide, 32 mm, 1.35 m; both door worlds legible without enlarging or moving them.",
+      "dialogue": [],
+      "sound": "Rain and dry-air perspectives coexist quietly with low cooking and paper sounds. Any score finishes without a large chord. Begin a soft tail into the end card.",
+      "critical_action": "Two homes stay independent. One useful room is shared, still awkward. No kiss, clasped hands, knowing smile or thematic line.",
+      "refs": []
+    },
+    {
+      "id": "40",
+      "start_frame": 5328,
+      "end_frame": 5520,
+      "section": "endcard",
+      "asset": "k27",
+      "kind": "title",
+      "description": "Restrained end card with exact text COMMON ROOM, 一室两家, and AI SI - I. Separate small production text may identify this as a story reel in review exports only.",
+      "action": "Static typography; optional brief fade from final composition.",
+      "camera": "Static typography, no camera.",
+      "dialogue": [],
+      "sound": "Carry room and music tails softly, then fade to silence. No second hard stop, no sting.",
+      "critical_action": "Audience branding uses AI SI - I exactly. Review-status wording must not masquerade as completed video generation.",
+      "refs": []
+    }
+  ]
+}
