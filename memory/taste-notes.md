@@ -1,11 +1,11 @@
 ---
 name: taste-notes
-description: "King's visual taste and editing rules — original-generation preferences, Codex edits, clean sources and preservation review"
+description: "King's visual taste and model choices — Luma originals, Codex beauty faces and elaborate focal subjects, Codex edits and preservation review"
 metadata:
   node_type: memory
   type: feedback
   originSessionId: b27232ca-5280-4208-9826-f1156f716aae
-  modified: 2026-10-02T00:57:47.540Z
+  modified: 2026-10-02T01:29:24.513Z
 ---
 
 **1. Images (2026-09-30):** "suboptimal… 'oily' and 'crowded' and just looking very ai-generated, not elegant."
@@ -23,7 +23,8 @@ metadata:
     single-image test results into routing rules; that's overfitting (2026-09-30). Settled for good: even after a blind
     screen where Claude ranked Grok and Muse above Luma, King said "it's just luma for me. settled."
     **Update 2026-10-02:** the approved general editing rules in §6 below supersede this older rule for edits.
-    Retain the original-generation preferences and beauty-portrait exception in `docs/playbook.md` §2b;
+    Original-generation preferences now include the beauty-portrait and elaborate focal-subject exceptions
+    in `docs/playbook.md` §2b and §7 below;
     Codex is now the default generative editor. This is an explicit workflow choice, not a model-superiority finding.
 
 **2. Cliché:** "your art has been quite cliche so far… the artworks that I loved are all not cliche when they came out.
@@ -86,5 +87,24 @@ repair First Day, then approved the following policy with "yes, let's remember t
 
 Applies to future work generally; remembering the policy is not a request to regenerate existing episodes.
 Operational guidance: `docs/playbook.md` §2b. Existing episode recipes remain historical records.
+
+**7. Original generation: attention AND elaboration (approved 2026-10-02).** King finds Codex's added detail
+undesirable when it competes with the intended subject. Use that detail deliberately through this general rule:
+
+- For a non-face subject to qualify for Codex original generation under this exception, **both** conditions must
+  hold: it **must command viewer attention** and its design **must be highly elaborate**, with close inspection
+  of intricate detail part of the intended experience. Otherwise default to Luma.
+- Small size, foreground position, prominence, beauty or intricacy alone does not qualify. A plain foreground cup
+  remains Luma; an intricate background ornament remains Luma. A large elaborate focal sculpture can qualify.
+- **Architecture defaults to Luma:** settings, skylines, cityscapes, buildings and interiors, including spectacular
+  architecture whose appeal is scale, silhouette, proportion, space or light. An ornate background building stays
+  with Luma. Codex applies to an architectural showpiece only when it meets both attention and elaboration
+  conditions: the viewer is meant to inspect its mechanisms, carvings or layered construction. Grandeur alone
+  does not qualify.
+- **Beauty-focused base faces remain a separate Codex exception.** The two-condition non-face rule does not
+  narrow that existing exception. The general Codex editing default and all seven editing rules in §6 are unchanged.
+- This is an approved division of work based on King's taste, not a universal model-quality ranking. These
+  original-generation exceptions do not require failed Luma attempts first. Ordinary objects and surrounding
+  environments retain the Luma default.
 
 Related: [[director-owns-creative-calls]], [[episode-defaults]].

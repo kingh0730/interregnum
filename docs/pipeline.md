@@ -1,6 +1,6 @@
 # Pipeline and tool matrix
 
-The overall plan is in `strategy.md`: v1 is everything in-house, v2 is polish with a video model. **The current tool choices are in `docs/playbook.md`** (Luma Uni-1 Max for original images with the beauty-portrait exception, Codex for generative image edits, MiniMax H3 Max for motion and lip-sync, ElevenLabs for voices, music and SFX); this table is the earlier survey. `history.md` covers the experiments behind these choices.
+The overall plan is in `strategy.md`: v1 is everything in-house, v2 is polish with a video model. **The current tool choices are in `docs/playbook.md`** (Luma Uni-1 Max for original images with the beauty-portrait and elaborate focal-subject exceptions in §2b, Codex for generative image edits, MiniMax H3 Max for motion and lip-sync, ElevenLabs for voices, music and SFX); this table is the earlier survey. `history.md` covers the experiments behind these choices.
 
 Every shot is built with the tool that is strongest for that job. These notes come from hands-on tests in
 `~/repos/yue/outputs/anime_clip/`: v1 slideshow, v2 layered compositing, v3 Codex frame-by-frame, v4 Blender + VRM,

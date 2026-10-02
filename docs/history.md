@@ -192,3 +192,7 @@ that came out of them is "Luma unless it truly can't" (playbook §2b).
   base portraits, then use approved faces as references for Luma scenes.
 - Local comparisons: `work/city-luma-codex-test/comparison.jpg` and
   `work/future-city-luma-codex-test/comparison.jpg` (media is untracked).
+- **Later policy on the same date:** King separately adopted Codex for generative edits and for original non-face
+  subjects that must both command attention and be highly elaborate. Architecture retains the Luma default unless
+  it meets both conditions. The beauty-focused base-face exception remains separate. See `docs/playbook.md` §2b
+  for the current rules; these preferences are not additional results from the two city comparisons above.

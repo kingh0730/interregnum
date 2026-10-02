@@ -149,19 +149,20 @@ not a replacement default for every production. Existing production-scope and bu
 
 ## 2b. Image technique: elegant, not "AI"
 **Choose original generation and editing separately.** Use Luma Uni-1 Max
-(`luma/agent/uni-1/v1/max`) as the default for original images, with the beauty-portrait exception below.
+(`luma/agent/uni-1/v1/max`) as the default for original images, with the beauty-portrait and elaborate
+focal-subject exceptions below.
 **Use Codex's built-in image generation as the default for generative edits**, including corrections,
 reframing and derived poses/views (King, approved 2026-10-02). This is an adopted workflow preference,
 not a claim that Codex always preserves quality better. Apply the general editing rules below.
 The supporting evidence from the 2026-09-30 tests is in `docs/history.md`. Credible new evidence of a better fit
 for original generation can warrant a small representative comparison under the reassessment guidance above;
-Luma need not fail first. Keep Luma as the original-generation default unless the comparison supports changing it,
-and record why.
+Luma need not fail first. Outside the approved exceptions, keep Luma as the original-generation default unless
+the comparison supports changing it, and record why.
 
 For troubleshooting an original-generation shot assigned to Luma, make two honest Luma attempts with a rewritten
 brief. If it still fails at something the shot needs, test a few alternatives on that shot and use the winner for it.
-This does not require Luma attempts before a Codex edit. A shot-specific exception does not by itself establish
-a new default or a general per-style routing rule.
+The approved original-generation exceptions and Codex edits do not require prior Luma attempts. A shot-specific
+exception does not by itself establish a new default or a general per-style routing rule.
 
 **Approved beauty exception (2026-10-02):** when striking or idealized beauty is central to a character,
 use Codex's built-in image generation for the base portrait when available and suitable, using the subscription
@@ -173,8 +174,26 @@ reference test was promising, but consistency across multiple angles and scenes 
 **Non-face beauty preference (King, 2026-10-02):** keep Luma as the default for beautiful environments,
 cityscapes, objects and other non-face subjects. After the city and futuristic-city comparisons, King preferred
 Luma for non-face beauty despite the assistant favoring Codex's more polished results. Follow King's preference
-for original generation; generative edits follow the Codex default. The Codex-first beauty exception above is
-for base faces, not a general original-generation rule for anything described as beautiful.
+for original generation, subject to the elaborate focal-subject exception below; generative edits follow the
+Codex default. Beauty alone does not qualify a non-face subject for Codex original generation.
+
+**Elaborate focal-subject exception (King, approved 2026-10-02):** for original generation of a non-face
+subject, use Codex's built-in image generation under this exception only when **both** conditions hold:
+
+1. The subject must command the viewer's attention.
+2. Its design must be highly elaborate, so close inspection of intricate detail is part of the intended experience.
+
+Otherwise, default to Luma. Foreground position, small size, prominence, beauty or intricacy alone is insufficient:
+a plain foreground cup stays with Luma, as does an intricate background ornament. Scale is a cue, not the rule;
+a large elaborate focal sculpture can qualify. This records a preference for where extra detail is welcome,
+not a universal claim about either model's quality. The beauty-focused base-face exception remains separate.
+
+**Architecture follows the same two conditions.** Default to Luma for buildings, skylines, cityscapes and interiors,
+including spectacular architecture whose appeal comes from scale, silhouette, proportion, space or light. An
+ornate background building remains Luma. Use Codex for an architectural showpiece only when it must command
+attention and viewers are meant to inspect its elaborate mechanisms, carvings or layered construction.
+Architectural grandeur alone does not qualify. These are original-generation choices; the general editing rules
+and Codex editing default below remain unchanged.
 
 ### General image-editing rules (King, approved 2026-10-02)
 
