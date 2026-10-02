@@ -1,6 +1,7 @@
 # scratch and outputs: large binaries, regenerable
 /work/
 /renders/
+/output/pdf/
 *.mp4
 *.mov
 *.wav
@@ -33,3 +34,7 @@ tools/blender/models/
 
 # private projects (e.g. episodes made for family): never public; own local git repo inside
 /private/
+
+
+/episodes/first-day-show-off/
+/episodes/first-day-extremely-fast/

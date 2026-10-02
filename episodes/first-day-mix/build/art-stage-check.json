@@ -1,0 +1,14 @@
+{
+  "audio_samples": 1925847,
+  "audio_sample_rate": 44100,
+  "audio_duration_seconds": 43.67,
+  "fps": 60,
+  "video_frames": 2621,
+  "video_tail_after_audio_seconds": 0.013333333333328312,
+  "editorial_cells": 53,
+  "planned_camera_shots": 52,
+  "tiles": 23,
+  "final_people": 23,
+  "continuity_approval": false,
+  "motion_generated": false
+}

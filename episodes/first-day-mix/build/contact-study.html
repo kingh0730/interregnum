@@ -1,0 +1,65 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>First Day · contact material study</title>
+<style>*{box-sizing:border-box}html,body{margin:0;background:#eee9dd;width:100%;height:100%;overflow:hidden}canvas{display:block;width:100vw;height:100vh;object-fit:contain}aside{position:fixed;bottom:12px;left:24px;right:24px;display:flex;align-items:center;gap:16px;color:#244bbd;font:13px sans-serif}input{width:300px}button{background:#244bbd;color:#fff;border:0;padding:8px 15px;cursor:pointer}</style>
+<canvas id="art" width="1920" height="1080"></canvas><aside id="controls"><button id="play">Play study</button><input id="scrub" type="range" min="0" max="6" step=".001" value="0"><span id="readout">0.000 s · 12 fps pose / continuous effects</span></aside>
+<script>
+'use strict';
+// Original dependency-free compositing experiment. It is not a production character asset.
+const canvas=document.getElementById('art'),c=canvas.getContext('2d');
+const C={paper:'#eee9dd',ivory:'#faf7ed',blue:'#254cc2',deep:'#173a96',pale:'#cbd3eb',apricot:'#eeae81',ink:'#173679'};
+const clamp=x=>Math.max(0,Math.min(1,x)),smooth=x=>{x=clamp(x);return x*x*(3-2*x)},mix=(a,b,t)=>a+(b-a)*t;
+const hash=n=>{const q=Math.sin(n*127.1+91.7)*43758.5453;return q-Math.floor(q)};
+function ellipse(x,y,rx,ry,color){c.fillStyle=color;c.beginPath();c.ellipse(x,y,rx,ry,0,0,Math.PI*2);c.fill()}
+function path(points,fill){c.fillStyle=fill;c.beginPath();points.forEach((p,i)=>i?c.lineTo(...p):c.moveTo(...p));c.closePath();c.fill()}
+function stroke(points,col,w){c.strokeStyle=col;c.lineWidth=w;c.lineCap='round';c.lineJoin='round';c.beginPath();points.forEach((p,i)=>i?c.lineTo(...p):c.moveTo(...p));c.stroke()}
+function tileState(t){const unfold=smooth((t-.45)/1.7),consume=smooth((t-1.95)/.85);return{x:1210,y:697-unfold*110,scale:.45+unfold*.42,angle:0,unfold,consume}}
+function tile(t){const p=tileState(t);if(p.consume>=1)return;c.save();c.globalAlpha=1-p.consume;c.translate(p.x,p.y);c.scale(p.scale,p.scale);
+// Each pair is a rigid leaf hinged at the shared root, rotating outward as the folded tile opens.
+const spread=mix(.10,1.12,p.unfold),lift=p.consume*120;
+for(let i=0;i<13;i++){const u=(i-6)/6,theta=u*spread;c.save();c.rotate(theta);c.translate(0,-lift);const length=210-45*Math.abs(u);path([[0,18],[-26,-length+24],[0,-length],[26,-length+24]],i%2?'#fffdf5':'#cbd3eb');stroke([[0,18],[0,-length]],C.blue,1.4);c.restore()}
+ellipse(0,17,18,11,C.apricot);c.restore()}
+function plinthBack(){
+path([[950,706],[1470,706],[1483,945],[929,945]],C.blue);ellipse(1208,944,278,42,C.deep);ellipse(1210,706,260,104,C.pale);
+ellipse(1210,698,169,67,C.deep);ellipse(1210,704,145,54,'#122b6a');
+// Thin back crescent catches light; socket remains visibly empty before contact.
+c.strokeStyle=C.ivory;c.lineWidth=5;c.beginPath();c.ellipse(1210,698,169,67,0,Math.PI,2*Math.PI);c.stroke();}
+function plinthFront(){
+// Annular front rim: even-odd fill retains a genuinely open hole at every timestamp.
+c.save();c.beginPath();c.rect(900,709,650,300);c.clip();c.fillStyle=C.pale;c.beginPath();c.ellipse(1210,706,260,104,0,0,Math.PI*2);c.ellipse(1210,698,169,67,0,0,Math.PI*2);c.fill('evenodd');c.restore();
+c.strokeStyle='#6e8bd6';c.lineWidth=2;c.beginPath();c.ellipse(1210,706,260,104,0,0,Math.PI);c.stroke();}
+function silhouette(t){const qt=Math.floor(t*12)/12,emerge=smooth((qt-1.95)/1.3);if(emerge<=0)return;
+c.save();c.globalAlpha=emerge;c.translate(1210,690-emerge*90);c.scale(.88,.88);c.scale(.35+.65*emerge,.25+.75*emerge);
+// Newly appearing 12 fps body is a reduced graphic proxy, never a production character.
+stroke([[-20,-138],[-39,-66],[-31,-4]],C.blue,22);stroke([[20,-138],[41,-68],[45,-4]],C.deep,21);
+path([[-27,-249],[26,-249],[39,-133],[-37,-133]],C.blue);ellipse(0,-291,29,35,C.blue);
+const open=smooth((qt-2.4)/.9);stroke([[-25,-236],[-66,-199],[-105,-226-30*open]],C.blue,17);stroke([[25,-236],[67,-199],[106,-226-30*open]],C.blue,17);
+ellipse(-109,-228-30*open,10,13,C.apricot);ellipse(110,-228-30*open,10,13,C.apricot);c.restore();}
+function particles(t,front){
+// Stable birth IDs on a 36 Hz clock. Depth phase assigns a near/far pass each instant.
+const burst=smooth((t-2.25)/.45)*(1-smooth((t-4.1)/.7));
+for(let id=0;id<120;id++){const born=2.2+id/70,age=t-born,life=1.5+hash(id+7)*.6;if(age<0||age>life)continue;
+const a=hash(id+2)*Math.PI*2+age*1.8,rad=80+age*(120+hash(id+5)*70),z=Math.sin(a),near=z>0;if(near!==front)continue;
+const x=1210+Math.cos(a)*rad,y=697+z*rad*.27-age*180+age*age*55;
+const fade=Math.sin(Math.PI*clamp(age/life)),size=(2+hash(id+8)*5)*(near?1.3:.65);
+c.globalAlpha=fade*(near?.9:.45);c.save();c.translate(x,y);c.rotate(a);c.fillStyle=id%3?C.apricot:C.ivory;c.fillRect(-size,-size*.36,size*2,size*.72);c.restore();}
+c.globalAlpha=1;
+if(front&&burst>0){c.globalAlpha=burst*.5;c.strokeStyle=C.apricot;c.lineWidth=2;c.beginPath();c.ellipse(1210,697,170+90*(t-2.25),66+32*(t-2.25),0,0,Math.PI*2);c.stroke();c.globalAlpha=1;}}
+function frame(t){t=Math.max(0,Math.min(6,Number(t)||0));c.setTransform(1,0,0,1,0,0);c.clearRect(0,0,1920,1080);c.fillStyle=C.paper;c.fillRect(0,0,1920,1080);
+// Curved cobalt wall gives a stable scale and negative space around the sculptural focal object.
+c.fillStyle=C.blue;c.beginPath();c.moveTo(1528,0);c.bezierCurveTo(1410,290,1580,512,1920,553);c.lineTo(1920,0);c.fill();
+c.strokeStyle='#d5d9e0';c.lineWidth=1;for(let j=0;j<4;j++){c.beginPath();c.ellipse(1120,941,400+j*133,60+j*22,0,0,Math.PI*2);c.stroke()}
+ellipse(1208,954,341,52,'rgba(38,59,113,.075)');
+particles(t,false);plinthBack();tile(t);silhouette(t);plinthFront();particles(t,true);
+// The open socket remains dark and empty after the tile is consumed into the emerging body.
+c.fillStyle=C.ink;c.font='500 17px sans-serif';c.fillText('FIRST DAY / MATERIAL CONTACT',115,115);c.font='13px sans-serif';c.fillText('01   TILE → BODY / EMPTY SOCKET',115,148);
+c.fillText('ART-DIRECTION EXPERIMENT · POSE PROXY',115,1000);c.textAlign='right';c.fillText('12 / 60',1800,1000);c.textAlign='left';
+// Loop returns to its opening via an explicit paper wipe, not an unnoticed continuity jump.
+if(t>5.35){const w=smooth((t-5.35)/.65);c.fillStyle=C.paper;c.fillRect(0,0,1920*w,1080)}
+}
+window.renderFrame=t=>{document.getElementById('controls').style.display='none';frame(t)};
+window.ready=Promise.resolve();let playing=false,start=0,offset=0;
+const scrub=document.getElementById('scrub'),readout=document.getElementById('readout');
+function preview(t){frame(t);scrub.value=t;readout.textContent=t.toFixed(3)+' s · 12 fps pose / continuous effects'}
+scrub.oninput=()=>{playing=false;offset=+scrub.value;document.getElementById('play').textContent='Play study';preview(offset)};
+document.getElementById('play').onclick=()=>{playing=!playing;start=performance.now();offset=+scrub.value;document.getElementById('play').textContent=playing?'Pause':'Play study';if(playing)requestAnimationFrame(tick)};
+function tick(now){if(!playing)return;preview((offset+(now-start)/1000)%6);requestAnimationFrame(tick)}preview(0);
+</script></html>
