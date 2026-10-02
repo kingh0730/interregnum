@@ -1,5 +1,5 @@
 {
-  "stage": "Prepared only; all motion evidence remains pending",
+  "stage": "BLOCKED: spatial approval withdrawn; current sources are a review version pending full continuity audit and repair. No video submitted.",
   "shot_count": 40,
   "submitted_job_count": 0,
   "planned_generation_jobs": 30,
@@ -1061,6 +1061,22 @@
   ],
   "input_assets_map": "episodes/ep01/build/assets.json",
   "input_assets_map_sha256": "61a272bf585151b7cccc0f6a6a0f1f30051ef5dc2f96916303dcc34a52a9cba9",
-  "source_resolution_status": "All 30 jobs resolved to final director-approved assets.json paths; no video submitted.",
-  "story_sha256": "df87ccb869be05d5fc5ed76c27f1da6ba545e8136dbd81290c2a2f128a6649eb"
+  "source_resolution_status": "Paths still resolve to the unchanged selected review-version files; earlier sequence-level spatial approval is withdrawn.",
+  "story_sha256": "df87ccb869be05d5fc5ed76c27f1da6ba545e8136dbd81290c2a2f128a6649eb",
+  "superseded_spatial_approval_history": [
+    {
+      "superseded_at_utc": "2026-10-02T06:13:43.380697+00:00",
+      "reason": "Spatial approval withdrawn after user detection and director image/prompt corroboration at cuts05→06 and23→24. Full continuity audit pending.",
+      "previous": {
+        "stage": "Prepared only; all motion evidence remains pending",
+        "source_resolution_status": "All 30 jobs resolved to final director-approved assets.json paths; no video submitted."
+      }
+    }
+  ],
+  "current_review_status": "blocked_spatial_continuity",
+  "spatial_continuity_approved": false,
+  "motion_ready": false,
+  "continuity_review": "episodes/ep01/build/continuity_review.json",
+  "full_continuity_audit_status": "pending; not performed by this status correction",
+  "status_corrected_at_utc": "2026-10-02T06:13:43.380697+00:00"
 }

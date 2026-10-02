@@ -62,7 +62,7 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
 - **Brief:** the pilot's writer brief is the template (it produced `episodes/pilot/*`). It must cover:
   - runtime of 3–5 minutes, shots of 2–10 s, 3 recurring faces or fewer;
   - every keyframe must work as an image-to-video start frame;
-  - dialogue for lip-sync, one speaker per shot;
+  - dialogue for lip-sync, one speaker per shot; this does not mean only one person exists or may be visible;
   - stillness designed as a strength (the "PPT" note);
   - fiction only;
   - the deliverables: `episode.md`, `script.md`, `shots/NN/shot.md`, lookdev prompts and a cue sheet.
@@ -91,6 +91,11 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
   - **Stuck** means 30 minutes with no transcript change.
 - **QA:** a single subagent extracts a machine-readable image manifest (id, out, prompt, refs, alpha, deps, shots) and
   checks that every prompt matches its `shot.md` word for word.
+- **Scene state:** for each intended continuous physical scene, assign stable IDs to recurring people and
+  story-relevant objects. Record positions relative to the set, prop counts/condition, and the before/after state of
+  each change. Link shots to those states; use `episodes/_template/continuity.md` as a starting point. Mark ellipses,
+  montage, transformations and ordinary implied moves with their story basis where they affect continuity; this
+  records the intended inference, not a requirement to show every move on screen.
 
 ### Pacing (King, 2026-09-30: "our first two films have constant pacing")
 Both films measured as varied cut lengths (pilot median 6 s, range 2–35 s; mom film median 4 s, mostly 3–5 s), but they
@@ -304,6 +309,14 @@ availability in the current environment. The historical Codex observations below
   relative to the shared layout: doors, windows, counters, furniture and light sources. Different angles may reveal
   different parts of the space; they must remain spatially compatible. Record intentional setting or lighting changes
   in `shot.md` so review can distinguish them from drift.
+- **Persistent occupants and visibility:** changing the camera or speaker does not reset the scene state. For each
+  relevant person or prop, compare its established position with the actual frame: visible, occluded by a named
+  object/person, or outside the camera's view. "Offscreen" in a prompt is not proof. If the frame exposes that
+  position, preserve the occupant or supply a story-supported state change. One speaking mouth does not require
+  deleting listeners; choose any framing that makes their continued presence spatially credible.
+- **State-aware reuse:** reuse a plate or take only when its visible state fits that occurrence in the edit. A prior
+  approval does not restore a consumed object, empty a hand, move a person or undo a placement. Check the reused
+  frame against the current scene state, including any occlusion or crop used to exclude changed details.
 - **Speed and quality:** about 1 minute per image at 5 in parallel. Identity holds well from the character sheets plus
   refs.
 - **Known failures:**
@@ -319,11 +332,28 @@ availability in the current environment. The historical Codex observations below
   - **"Print" styles grow cream paper margins.** Frame past them in comp.
   - **Stray details,** such as a second mole: patch them locally with texture from the same hatching direction, sized
     to the defect. Verify at 4× zoom, then re-propagate to every consumer.
-- **QA:** inspect contact sheets: identity, style consistency, framing inside the episode's chosen picture aperture.
-  Before motion generation, compare each scene's full starting frames together in edit order against its location
-  reference. Check faces, clothing, room layout, background landmarks, props, lighting and people's positions across
-  cuts. Fix incompatible frames before animating them and record the comparison in the episode review notes.
-  An individually plausible frame, including one inherited from an earlier cut, is not proof of scene continuity.
+- **QA:** inspect actual full frames at the intended crop and aperture, together in edit order against the scene
+  state and location reference. Review every adjacent cut and every reuse occurrence with its current neighbors;
+  a deduplicated contact sheet of unique assets cannot establish this. Check identities, clothing, room landmarks,
+  lighting, people's positions and prop counts/conditions. Test whether an absent entity's established position is
+  genuinely outside the view or occluded, rather than visibly empty. Record the compared shot occurrences, selected
+  sources/crops, finding and unresolved issues. Before motion, fix incompatible starting states; after motion, also
+  compare the actual outgoing and incoming cut states. Intentional discontinuities are judged against their recorded
+  story basis, not mistaken for physical continuity.
+- **Approval scope and freshness:** keep technical validation (files, hashes, frame counts, timing and render
+  success) separate from spatial continuity approval based on actual images. Neither substitutes for the other, nor
+  proves acting, motion or perceptual audio quality. A source replacement, crop, state change or edit-order change
+  invalidates affected spatial approvals: recheck each changed occurrence and its incoming/outgoing cuts, including
+  every use of a shared source and downstream states that depend on the change. Record which exact version was
+  reviewed; do not carry a pass forward by asset name.
+- **Recorded continuity gate:** new episodes maintain a machine-readable visual review record, and new motion
+  manifests declare its path in top-level `continuity_review`. Use `python3 tools/continuity.py --help` for the current
+  CLI. Bind the review to the selected story, asset map and source hashes, plus authored states and scene/framing
+  plans where used; record actual findings for every adjacent cut and within-shot authored state switch. The gate
+  checks completeness and freshness of those records, not geometry or visual truth. It cannot turn technical success
+  into spatial approval. H3 rejects new generation/redo when the declared review is missing, pending, blocked or
+  stale; recovery of an already accepted paid request remains possible. Legacy manifests without the field retain
+  their compatibility behavior; new production manifests must not omit it to bypass review.
 - **Physical scale and cut continuity (Common Room, 2026-10-02):** when a joke depends on a tray not fitting a sink
   or a pan leaving no work surface, inspect those relative sizes in the actual image. Dimensions in a prompt are
   not evidence that the result obeys them. Compare adjacent states too: cookware already placed on a hob must
@@ -571,7 +601,7 @@ them, on the assembled film, in this order:
 8. **QA the whole film:** cut lengths against the tempo map, loudness, the silence, faces, text, mouths, and every
    story-critical action in the final rendered cut. Confirm action, required repetition, order and relation to dialogue;
    compare neighboring shots for compatible setting, background layout, lighting, faces, clothing and prop placement
-   after all crops, trims and replacements. Check against the intentional changes recorded in `shot.md`;
+   after all crops, trims and replacements, including each reuse occurrence under §3. Check against the intentional changes recorded in `shot.md`;
    unresolved playback checks remain explicit for King's review.
 9. **King's review, then one fix loop** on what he flags.
 

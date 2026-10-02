@@ -29,6 +29,9 @@ not determine whether a video model is needed; timing, motion complexity and con
 
 1. **Script → shot list** (`episodes/<ep>/shotlist.md`): each shot names its tool, duration, camera and acting.
    Identify story-critical actions, required repetitions and their relation to dialogue or other events.
+   For continuous physical scenes, maintain stable entity IDs, set-relative positions, prop counts/conditions and
+   before/after states (`episodes/_template/continuity.md`). Record story-supported discontinuities and implied
+   changes; ordinary movements need not all be shown.
 2. **Look development** (`assets/`): character sheets and locations first; every later image references them.
    Shots sharing a setting use shared location references in their image manifests, alongside character and prop
    references. Establish compatible room layout, background landmarks and lighting across camera angles.
@@ -37,8 +40,10 @@ not determine whether a video model is needed; timing, motion complexity and con
    Blender or a video model, according to the episode's visual direction and shot needs).
    For image-to-video, let the model animate supplied graphics with their objects. Use the approved scene frame to preserve faces, setting and
    composition; do not replace it with text-only generation. Add screen-space UI/graphics afterward.
-   Before motion, compare the scene's starting frames together in edit order against its location reference; correct
-   continuity mismatches, including inherited ones, before animating (playbook §3).
+   Before motion, compare actual starting frames in edit order against the scene state and location reference.
+   Prove visibility from the actual camera/crop: missing people or props must be outside its view, credibly occluded,
+   or changed for a recorded story reason. One speaker does not mean only one person. Reused plates must fit the
+   state at every occurrence; correct mismatches before animating (playbook §3).
    For edits, use a clean approved source, keep chains short, retain authoritative references and version history,
    and inspect both the requested change and preservation of the whole image. Reject degraded results rather
    than repeatedly editing them. Use ordinary tools for exact crops, resizes and typography (playbook §2b).
@@ -50,11 +55,18 @@ not determine whether a video model is needed; timing, motion complexity and con
    readings, readability, attachment, jiggle and pop-in over the intended cut, including inherited overlays. Prefer
    corrected start frames and retakes for failures; tracked repairs require playback acceptance. Exact clock/display
    transitions may need controlled inserts.
-   Compare each new or regenerated take with its input frame, shared location reference and neighboring shots;
-   recheck scene continuity in the final cut after crops and replacements. Include backgrounds revealed by motion,
-   and distinguish intended changes recorded in `shot.md` from drift. Faithfulness to one input is not enough.
+   Compare actual outgoing/incoming states at every adjacent cut, including every reuse context rather than only
+   unique assets. Recheck after source, crop, state or order changes; invalidate the affected occurrences and cuts
+   until reviewed again. Include backgrounds revealed by motion and distinguish recorded intentional changes from
+   drift. Faithfulness to one input is not enough.
    Verify every essential action again in the final rendered cut, including repetition and timing relative to dialogue.
    Keep uncertain motion explicitly pending playback review.
+   Record technical validation separately from spatial approval, tied to the selected source versions and crops.
+   Files, hashes, timing and successful renders do not prove continuous occupancy or object state; static continuity
+   approval does not prove motion or perceptual audio quality. Detailed review rules are in playbook §3.
+   New episodes also maintain the recorded visual review used by `tools/continuity.py`; new motion manifests must
+   declare its path as `continuity_review`. Check `python3 tools/continuity.py --help` for the current CLI. Its checks
+   establish coverage and freshness, not correct geometry; actual visual inspection supplies the findings.
 
 ## Constraints
 

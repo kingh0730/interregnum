@@ -1,6 +1,8 @@
 # COMMON ROOM — motion handoff
 
-Prepared through stage 6 only. **No video request has been submitted.** All 30 motion inputs now use the final director-approved source paths from `build/assets.json`. Local media preflight and the shared runner's dry-run quote pass. The final sound and story reel are the current deliverables; this document specifies a later motion pass without authorizing it.
+**Motion blocked: spatial-continuity approval withdrawn.** User review identified failures at shots 05→06 (00:25) and 23→24 (01:59). The current reel is a review version requiring full continuity audit, repair and renewed approval before motion. No video request has been submitted. The 30 proposed jobs still reference the unchanged selected sources, but those sources no longer carry sequence-level spatial approval. See [the continuity gate](build/continuity_review.json).
+
+Historical technical finding: local media checks and the shared runner's dry-run quote passed. Those format, timing and price checks remain valid evidence about the unchanged inputs; they do not clear the continuity block. The former “final director-approved” source and ready-handoff wording is superseded by this status.
 
 `build/motion_plan.json` is a direct input to `tools/video/h3_batch.py` with the repository root supplied explicitly. `build/motion_triage.json` covers all 40 shots, including the 10 that are deliberately kept as authored graphics, typography or held material inserts. The manifest has 23 lip-sync jobs and 7 useful silent-motion jobs. Every output is reserved beneath `work/ep01/motion/`.
 
@@ -46,7 +48,7 @@ After future authorization, test those three jobs before the other 27. Review th
 
 ## Preflight and review
 
-All 30 `image` fields resolve to 21 distinct approved files in `build/assets.json`, including the corrected opening, doorway, module and decision plates. The manifest records each approved image's SHA256; triage records the resolved paths for generated and held shots. Never substitute a conditioning reference or an earlier rejected take. `motion_prepare.py` now uses the approved map whenever present; canonical `kNN.png` paths are bootstrap placeholders only when the map is absent. Any regenerated manifest must pass local preflight again.
+All 30 `image` fields resolve to 21 distinct selected files in `build/assets.json`. The manifest retains their SHA256 hashes; triage records the resolved paths for proposed generated and held shots. These are the current review-version sources, not a renewed spatial approval. Source changes after repair require updated manifests and checks. Canonical `kNN.png` paths remain bootstrap placeholders, not substitutes for reviewed results.
 
 The independent preflight decodes every image, checks its canvas and approved-map identity, verifies all 23 isolated audio sources sample-for-sample, confirms silence-only padding, checks 40-shot coverage and the 30-job exclusion logic, and prices the manifest. It never submits video. The shared runner's own dry-run only prices jobs and does not validate their media, which is why the local gate comes first.
 
@@ -55,6 +57,6 @@ uv run python episodes/ep01/build/motion_preflight.py
 uv run python episodes/ep01/build/motion_preflight.py --runner-dry-run
 ```
 
-The second command calls the existing runner with `--dry-run` only, and only after local inputs pass. The completed check reports no errors or missing sources; all 23 conditioning files preserve the exact original isolated samples, and all three extended tails contain only silence. The live runner quote is $8.28, matching the captured estimate. Evidence is in `build/motion_preflight.json` and `work/ep01/motion/runner_dry_run.txt`. No request or billing ledger was created. The final audio master remains unchanged, with SHA256 `cd40a5cd19413d5b95ca1e10b269dc0e11b403382e7207fd24b5276feb57622d`.
+The retained technical check reported no missing sources: all 23 conditioning files preserve the exact original isolated samples, and all three extended tails contain only silence. Its runner quote was $8.28, matching the captured estimate. Evidence remains in `build/motion_preflight.json` and `work/ep01/motion/runner_dry_run.txt`. This is historical technical PASS evidence, not current motion readiness. No request or billing ledger was created. The audio master remains unchanged, with SHA256 `cd40a5cd19413d5b95ca1e10b269dc0e11b403382e7207fd24b5276feb57622d`.
 
 Future footage must be decoded and counted at its actual returned frame rate and length. Verify mouths during every silent section and during the padded voice tails; verify every visible hand, prop count, doorway destination, bowl stripe, counter boundary and garment against its starting frame and neighboring cuts. For the ordinary step, locate full onset, planted foot and settled finish without camera crop. Review the final edited clip separately; keep measured action timestamps in the triage record, whose values are currently null. Preserve the exact 01:49 score/action stop and continuous room air. Uncertain naturalness or motion remains explicitly pending playback review.

@@ -1,8 +1,8 @@
-"""Register reviewed stills and exact authored paper states; makes no API calls.
+"""Register selected stills and exact authored paper states; makes no API calls.
 
 Run from any directory after restoring the ignored work/ep01 media tree.
-Selected images were visually inspected; rerunning this script is a file-integrity
-check, not an automatic artistic approval of changed pixels.
+Rerunning this script registers media and checks file integrity. Artistic approval
+comes only from a separate current continuity review of the actual cut.
 """
 import hashlib
 import json
@@ -54,8 +54,9 @@ def main():
     save("assets.json", dict(sorted(assets.items())))
     save("reel_states.json", json.loads((BUILD / "paper_states.json").read_text()))
     save("selected_assets.json", {
-        "scope": "Static starting frames and authored insert states only; no motion approval implied.",
-        "review_basis": "Actual images inspected against the character, room, prop references and adjacent states. Rejected versions remain outside assets.json.",
+        "scope": "Selected static starting frames and authored insert states; registration does not confer visual or motion approval.",
+        "review_basis": "File integrity and dimensions only. Consult the current continuity review for spatial approval; registration never clears its pending or blocked cuts.",
+        "continuity_review": "episodes/ep01/build/continuity_review.json",
         "photographic_source_policy": "Luma Uni-1 Max originals; Codex built-in generative continuity edits. Exact lettering is authored separately.",
         "endcard": "k27 is exact typography rendered by render_reel.py; no generated lettering.",
         "assets": records,

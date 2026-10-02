@@ -4,6 +4,10 @@ usage: uv run tools/video/h3_batch.py <motion_plan.json> [--root DIR] [--jobs 4]
                                      [--dry-run] [--timeout 900]
 
 Manifest: a JSON list of jobs, or {"defaults": {...}, "jobs": [...]}. Defaults are merged under every job.
+An object manifest may opt into a local recorded-visual-review gate with
+"continuity_review": "path/relative/to/root.json". It gates NEW submissions,
+including redo/prepared requests, while preserving accepted-request recovery.
+The gate establishes recorded review coverage/freshness, not visual correctness.
 A job:
   id          unique name
   endpoint    fal endpoint; aliases: "i2v" (minimax/h3-max/image-to-video), "lipsync"
@@ -52,11 +56,45 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from request_state import batch_lock, read_log, record_once, save_log, sync_dir
+from continuity import ContinuityReviewError, require_approved
 
 ALIAS = {"i2v": "minimax/h3-max/image-to-video", "lipsync": "minimax/h3-max/lip-sync/image-to-video",
          "ray": "luma/agent/ray/v3.2/image-to-video", "camera": "minimax/h3-max/camera-controls"}
 PRICE_FALLBACK = {"minimax/h3-max/image-to-video": 0.025, "minimax/h3-max/lip-sync/image-to-video": 0.05,
                   "luma/agent/ray/v3.2/image-to-video": 0.03}
+NO_CONTINUITY_REVIEW = object()
+
+
+def continuity_approval(review_path, root, jobs):
+    """Check the opt-in record and the local images actually selected for jobs."""
+    if not isinstance(review_path, str) or not review_path.strip():
+        raise ContinuityReviewError("continuity_review must name a local review file relative to --root")
+    review = require_approved(review_path, root)
+    for job in jobs:
+        sid = str(job.get('shot_id', ''))
+        occurrence = review['shot_sources'].get(sid)
+        if occurrence is None:
+            raise ContinuityReviewError(f"{job['id']}: new gated submissions require shot_id naming a reviewed story occurrence")
+        if 'image_key' in job and job['image_key'] != occurrence['first_asset']:
+            raise ContinuityReviewError(f"{job['id']}: image_key differs from shot {sid}'s reviewed first state")
+        if not job.get('image'):
+            raise ContinuityReviewError(f"{job['id']}: recorded still review requires a local start image")
+        if any(k in job.get('params', {}) for k in ('image_url', 'end_image_url')):
+            raise ContinuityReviewError(f"{job['id']}: params image URLs are not covered by recorded still review; use local image/end_image fields")
+        for field in ('image', 'end_image'):
+            value = job.get(field)
+            if value is None:
+                continue
+            if not isinstance(value, str) or not value.strip() or value.startswith(('http:', 'https:', 'data:')):
+                raise ContinuityReviewError(f"{job['id']}: {field} must be a reviewed local still; URL/chained frames need a separate frame review before new submission")
+            path = (root / value).resolve()
+            expected_path = occurrence['first_path' if field == 'image' else 'last_path']
+            if str(path) != expected_path:
+                raise ContinuityReviewError(f"{job['id']}: {field} differs from shot {sid}'s reviewed {'first' if field == 'image' else 'last'} state: {expected_path}")
+            expected = review['source_hashes'].get(str(path))
+            if expected is None or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+                raise ContinuityReviewError(f"{job['id']}: {field} is not the exact reviewed source: {path}")
+    return review
 
 
 class HTTPFailure(RuntimeError):
@@ -163,12 +201,13 @@ def main():
     logdir.mkdir(parents=True, exist_ok=True)
     try:
         with batch_lock(logdir):
-            run_batch(a, root, jobs, logdir)
+            review = doc.get('continuity_review', NO_CONTINUITY_REVIEW) if isinstance(doc, dict) else NO_CONTINUITY_REVIEW
+            run_batch(a, root, jobs, logdir, continuity_review=review)
     except (OSError, ValueError, RuntimeError) as e:
         sys.exit(str(e))
 
 
-def run_batch(a, root, jobs, logdir):
+def run_batch(a, root, jobs, logdir, continuity_review=NO_CONTINUITY_REVIEW):
     by_id = {j["id"]: j for j in jobs}
     if a.jobs < 1 or len(by_id) != len(jobs):
         raise ValueError("--jobs must be positive and manifest job IDs must be unique")
@@ -222,6 +261,12 @@ def run_batch(a, root, jobs, logdir):
         print(f"plan {j['id']:<14} {ep_of(j):<42} {billable(j):5.1f} s  ${billable(j) * price(ep_of(j), key):.3f}")
     print(f"{len(sel)} selected jobs, estimated new spend ${est:.2f}", flush=True)
     if a.dry_run:
+        if continuity_review is not NO_CONTINUITY_REVIEW:
+            try:
+                continuity_approval(continuity_review, root, planned)
+                print("continuity gate: recorded review is current for planned inputs; price quote is not submission or motion approval", flush=True)
+            except (OSError, ValueError, RuntimeError) as e:
+                print(f"continuity gate BLOCKED for new submissions: {e}; price quote only, recovery remains available", flush=True)
         return
 
     def media(v, j):
@@ -338,6 +383,12 @@ def run_batch(a, root, jobs, logdir):
             print(f"skip {i}: existing unlogged output (use --redo to replace)", flush=True)
             return True
         try:
+            approval = None
+            if continuity_review is not NO_CONTINUITY_REVIEW and (replacing or not log or prepared):
+                # Check before persisting redo intent or moving an existing take.
+                # Accepted requests keep their existing payload-identity checks,
+                # and can poll/download even after artistic approval is withdrawn.
+                approval = continuity_approval(continuity_review, root, [j])
             ep, p = build(j)
             fingerprint = hashlib.sha256(json.dumps(p, sort_keys=True, separators=(",", ":"),
                                                    ensure_ascii=False).encode()).hexdigest()
@@ -384,6 +435,10 @@ def run_batch(a, root, jobs, logdir):
                     save_log(lp, log)
                     replacing = False
                 if not log.get("request_id"):
+                    if continuity_review is not NO_CONTINUITY_REVIEW:
+                        current = continuity_approval(continuity_review, root, [j])
+                        if approval is None or current['review_sha256'] != approval['review_sha256']:
+                            raise ContinuityReviewError("Continuity review changed during local preparation; rerun against the current review")
                     archive_previous(log, logdir)
                     log.pop('replacement', None)
                     log['phase'] = 'submitting'

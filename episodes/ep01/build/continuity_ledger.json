@@ -7,7 +7,7 @@
   "snapshot_at": "2026-10-02T04:44:53.768122+00:00",
   "source_story": "episodes/ep01/build/story.json",
   "source_story_sha256": "df87ccb869be05d5fc5ed76c27f1da6ba545e8136dbd81290c2a2f128a6649eb",
-  "purpose": "Selected static continuity ledger. Paths and source hashes correspond to root-selected images. Static approval covers actual stills and authored graphic states only; it does not approve generated motion, lip sync or perceptual audio.",
+  "purpose": "Review-version source/pose ledger. Earlier spatial approval is withdrawn; intended invariants and prior inspection findings are retained, not revalidated.",
   "global_invariants": {
     "kitchen_world_count": 1,
     "relevant_door_count": 2,
@@ -79,7 +79,7 @@
     "final_timed_reel_check_pending": true
   },
   "selection_manifest": "episodes/ep01/build/selected_assets.json",
-  "selection_manifest_sha256": "12372443126f33aee0cccb87415bb1161d395c1447c0237fc88c6c4ba23a9cd3",
+  "selection_manifest_sha256": "f4ac4f514a0e06c5d5eb9d1a5258e9808e233a962c309d7e25fcb8ca9bb1585d",
   "image_counts": {
     "photographic_edited_plates": 27,
     "authored_paper_images": 6,
@@ -89,9 +89,9 @@
     "shots": 40
   },
   "review_status": {
-    "static_continuity": "approved selected stills and exact graphic states",
-    "approval_basis": "Root selected_assets.json review basis plus root-reported static composite review; independent reviews checked identities, geography and completed action states during production.",
-    "motion": "not generated or reviewed",
+    "static_continuity": "withdrawn; full continuity audit and repair pending",
+    "approval_basis": "User detection and director corroboration at05→06 and23→24; current blocked gate supersedes earlier spatial sign-offs.",
+    "motion": "blocked; not generated or reviewed",
     "perceptual_audio": "not claimed by this review"
   },
   "historical_preproduction_prompt_audit": {
@@ -781,7 +781,7 @@
         "Establish one kitchen, two fixed thresholds, one identifiable bowl. No opening title or branding overlay; the only title card is shot40.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -889,7 +889,7 @@
         "Exact authored two-state address change at local frame48. Destination pictogram changes from rain to ring; ownership stripe and single private-room flap remain consistent.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -982,7 +982,7 @@
         "Exact match-cut doorway replacement teaches a changed address. Eda is a living person returning through an ordinary threshold.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -1075,7 +1075,7 @@
         "The two addresses still reach ONE bowl and ONE last cherry. Do not generate two bowls or a second cherry.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -1168,7 +1168,7 @@
         "Her complaint concerns the same object, not a vanished object or a failed door.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -1261,7 +1261,7 @@
         "Same table geography; no reverse-axis doorway swap.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -1354,7 +1354,7 @@
         "The single explicit word divorce establishes the separation. No bitter performance or romantic reassurance.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -1462,7 +1462,7 @@
         "Exact authored room-allocation state change at local frame72. Two private rooms stay separate and the kitchen appears only once.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -1555,7 +1555,7 @@
         "The bicycle is a real practical preference, not shorthand for a personality speech.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -1648,7 +1648,7 @@
         "A question about the bicycle fit supplies ordinary friction without adding a room or a flashback.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -1741,7 +1741,7 @@
         "The familiar empty spot makes the already-packed tool joke visible.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -1834,7 +1834,7 @@
         "The move has begun: objects already belong to separately addressed rooms.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -1927,7 +1927,7 @@
         "The tool has returned through the same doorway; no new transport rule.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -2020,7 +2020,7 @@
         "They deliberately ordered separate kitchens. Modules are genuinely usable small units; no faults, sparks or hazard.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -2113,7 +2113,7 @@
         "Use scale comparison to reveal inconvenience, not a broken product.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -2206,7 +2206,7 @@
         "Pan is safe and usable. The problem is missing preparation space, not impossibility or danger.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -2299,7 +2299,7 @@
         "Ordinary drips on the shared table, no flooded electrical device or ruined belongings.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -2392,7 +2392,7 @@
         "The actors never become broad caricatures; object staging supplies the comedy.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -2485,7 +2485,7 @@
         "The strip beside the pan is visibly too narrow for the held bowl and lid. The pan is safe; the failure is preparation space. Do not add a drawer absent from the approved unit.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -2578,7 +2578,7 @@
         "The previous insert motivates the response. No object disappears between the paired shots.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -2671,7 +2671,7 @@
         "Clean derived state from k12. Distinct image required: tray set down and small spill visible, not the earlier held-tray frame.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -2764,7 +2764,7 @@
         "Their two tiny work areas still inconvenience each other while packing. No shot introduces a leak defect.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -2857,7 +2857,7 @@
         "Exact uninterrupted10second still composition, frames2616–2856. Both look toward the full usable worktop already; only hard sound stop starts2616 and kitchen air remains.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -2950,7 +2950,7 @@
         "He proposes retaining the existing shared room; no mechanical discovery supplies the solution.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -3043,7 +3043,7 @@
         "She names the cost: his exclusive control of a clear surface. No moral about love or independence.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -3136,7 +3136,7 @@
         "Clean derived state from k06 with the specified pan. This is a distinct plate, not a gesture claimed over neutral empty hands.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -3229,7 +3229,7 @@
         "Her cutting work is equally real. The film does not award one preference superiority.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -3322,7 +3322,7 @@
         "The private module is already packed into a closed, full-height floor carton. Preserve actual furniture scale; no magical shrink, open-flap gesture or romantic reconciliation.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -3430,7 +3430,7 @@
         "Exact authored second-tab placement at local frame72. Final state visibly has ONE kitchen, TWO address tabs and TWO independently allocated private rooms.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -3523,7 +3523,7 @@
         "She completes her move. Do not add an embrace, longing glance or hesitation implying renewed couplehood.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -3616,7 +3616,7 @@
         "One earned scale reveal. No new plot, endangered city or explanatory public announcement.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -3709,7 +3709,7 @@
         "Independent home is a completed outcome, not a temporary stop before reconciliation.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -3802,7 +3802,7 @@
         "Practical consequence of sharing. Cloth remains safely clear of hob and pan; no fire gag.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -3895,7 +3895,7 @@
         "His former exclusive preparation spot is now occupied by her actual work.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -3988,7 +3988,7 @@
         "She has relocated his things usefully, but inconveniently. No apology or triumph.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -4081,7 +4081,7 @@
         "The bowl from the opening returns as an ordinary working object. Preserve its one identifying mark.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -4174,7 +4174,7 @@
         "Clean derived state from k23. The bowl is the marked opening bowl. Never reuse the earlier empty surface while describing it as present.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -4267,7 +4267,7 @@
         "Selected salt pot actually weights the RIGHT pattern corner; Eda indicates the opposite LEFT corner. Spare cup remains behind until the final wide. No handover is claimed over an unchanged start state.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -4360,7 +4360,7 @@
         "Two homes stay independent. One useful room is shared, still awkward. No kiss, clasped hands, knowing smile or thematic line.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -4439,7 +4439,7 @@
         "Audience branding uses AI SI - I exactly. Review-status wording must not masquerade as completed video generation.",
         "Use the selected held pose; historical proposed motion is not evidence of generated movement."
       ],
-      "actual_review": {
+      "superseded_spatial_review": {
         "status": "STATIC_CONTINUITY_APPROVED",
         "approved": true,
         "scope": "Selected still image or exact authored graphic state only",
@@ -4451,5 +4451,28 @@
       "selected_description": "Exact code-authored end card: COMMON ROOM, 一室两家, and AI SI - I. It is the only title in the film.",
       "selected_state": "Hold exact end-card typography for192frames."
     }
-  ]
+  ],
+  "superseded_spatial_approval_history": [
+    {
+      "superseded_at_utc": "2026-10-02T06:13:43.380697+00:00",
+      "reason": "Spatial approval withdrawn after user detection and director image/prompt corroboration at cuts05→06 and23→24. Full continuity audit pending.",
+      "previous": {
+        "purpose": "Selected static continuity ledger. Paths and source hashes correspond to root-selected images. Static approval covers actual stills and authored graphic states only; it does not approve generated motion, lip sync or perceptual audio.",
+        "review_status": {
+          "static_continuity": "approved selected stills and exact graphic states",
+          "approval_basis": "Root selected_assets.json review basis plus root-reported static composite review; independent reviews checked identities, geography and completed action states during production.",
+          "motion": "not generated or reviewed",
+          "perceptual_audio": "not claimed by this review"
+        },
+        "selection_manifest_sha256": "12372443126f33aee0cccb87415bb1161d395c1447c0237fc88c6c4ba23a9cd3"
+      }
+    }
+  ],
+  "current_review_status": "blocked_spatial_continuity",
+  "spatial_continuity_approved": false,
+  "motion_ready": false,
+  "continuity_review": "episodes/ep01/build/continuity_review.json",
+  "full_continuity_audit_status": "pending; not performed by this status correction",
+  "status_corrected_at_utc": "2026-10-02T06:13:43.380697+00:00",
+  "per_shot_review_history_scope": "superseded_spatial_review preserves each previous sign-off verbatim as history. None establishes current cut or sequence approval. Paper-specific prior findings likewise do not clear pending state-change reviews."
 }

@@ -1,0 +1,617 @@
+{
+  "schema_version": 1,
+  "status": "blocked",
+  "reviewer": "Codex director; approval withdrawn after user review",
+  "recorded_at_utc": "2026-10-02T06:13:43.380697+00:00",
+  "scope": "Status withdrawal and evidence binding only. No full continuity audit or media repair performed.",
+  "story": {
+    "path": "episodes/ep01/build/story.json",
+    "sha256": "df87ccb869be05d5fc5ed76c27f1da6ba545e8136dbd81290c2a2f128a6649eb"
+  },
+  "assets": {
+    "path": "episodes/ep01/build/assets.json",
+    "sha256": "61a272bf585151b7cccc0f6a6a0f1f30051ef5dc2f96916303dcc34a52a9cba9"
+  },
+  "states": {
+    "path": "episodes/ep01/build/reel_states.json",
+    "sha256": "8a813f97ceb61b95a5195ebcce8f25e4c3db289120cf38b7ab2f07cae3c2d9d0"
+  },
+  "additional_inputs": [
+    {
+      "path": "episodes/ep01/bible/cinematography.md",
+      "sha256": "34891744043a73f9b229ad901da0f9f9f3c923414b82ce06be1233a0a949bb20"
+    },
+    {
+      "path": "episodes/ep01/bible/production_design.md",
+      "sha256": "740b1422456a60f18829b28180786ab460b6e51c59d40f798855755ddec45024"
+    },
+    {
+      "path": "episodes/ep01/build/render_contract.json",
+      "sha256": "4216602d3abce35051f4123122d19e4b6dc5563873472a8e978bd73f46abd2aa"
+    },
+    {
+      "path": "episodes/ep01/build/subtitle_layouts.json",
+      "sha256": "5d547e3410289fbe6ba55d42f6bc3543d6b662d09e54cf142f07cffa03d5b6c3"
+    },
+    {
+      "path": "episodes/ep01/build/render_reel.py",
+      "sha256": "81cf7abcaae0f7dd28e5470c41e96c467008f0a53e02ea8493017feef62a869a"
+    }
+  ],
+  "sources": [
+    {
+      "path": "work/ep01/keys/k01_edit.png",
+      "sha256": "cf1d7361790552336051a0dae2b9c3618b2fe05a0b832f597e12cc86aa24161c"
+    },
+    {
+      "path": "work/ep01/keys/k03_fix.png",
+      "sha256": "7f65cba151b24f6eb779b4306cc55921b150f2a0561c191e0da4e52c842e3c1b"
+    },
+    {
+      "path": "work/ep01/keys/k04_fix.png",
+      "sha256": "320d614ee8078e913c58dd6d41a14e481e663614a20d9c656c9f491e63e493d2"
+    },
+    {
+      "path": "work/ep01/keys/k05_fix.png",
+      "sha256": "63bb24ff065ded1f1a711151986ddab9677f7f03eb962247b2c7f8076e11bb37"
+    },
+    {
+      "path": "work/ep01/keys/k06_edit.png",
+      "sha256": "d6d87ed7851b9ab0cd9e4912e3643461a38d8bca26ad2be49220d1f4982921d0"
+    },
+    {
+      "path": "work/ep01/keys/k08_edit.png",
+      "sha256": "f5df9d1a3810b7b43f38d7cb18114570b611ba7f58ff2334a49b15f3c079707a"
+    },
+    {
+      "path": "work/ep01/keys/k09_fix.png",
+      "sha256": "8e5f6aba6da7fedc3cea22074c8f49af5ffea6782f5df9680a564b627a6bb5c6"
+    },
+    {
+      "path": "work/ep01/keys/k10_fix.png",
+      "sha256": "2557006acb8b39eb35659221f4ec7ed31f62a01de9483a8757e9a53e0316cdfa"
+    },
+    {
+      "path": "work/ep01/keys/k11_fix.png",
+      "sha256": "3a508bf3fa10ea0d66ca9bf1a17266e497f58c29a8fa6d6ef5e615d65061ea9e"
+    },
+    {
+      "path": "work/ep01/keys/k12_final.png",
+      "sha256": "ae790e6117e9cd182c254486b097ba062abbbf2a5db7a1fe13c77f1cfbf68511"
+    },
+    {
+      "path": "work/ep01/keys/k13_fix.png",
+      "sha256": "8670201aba7a50dba872d9a659dc60214c4647b6548dc256f7b69aec98d330e6"
+    },
+    {
+      "path": "work/ep01/keys/k14_edit.png",
+      "sha256": "9181652f0b9c4ab0b30f17d6b70d5659dd7216e08cd9ab9c8f93f9170fa7d0c9"
+    },
+    {
+      "path": "work/ep01/keys/k15_edit.png",
+      "sha256": "e714309f9624bdb80ff771eca985b08ee3a718049cbfd87099ec74bb266d245c"
+    },
+    {
+      "path": "work/ep01/keys/k16_final.png",
+      "sha256": "5ce6a43f76680a29c7721b72140fb5f9327763e7e8cd20c578ec2f3f7b478c66"
+    },
+    {
+      "path": "work/ep01/keys/k17_final.png",
+      "sha256": "ce9f82d3c010cc25131f418747b4d2f9f312bbb5e69fe6ff8dd2a42b60ea848b"
+    },
+    {
+      "path": "work/ep01/keys/k19_edit.png",
+      "sha256": "3ee014d7ffc6ed4b7e768628716b0b0d92dd56da95a7b037dc97c5bccb02b918"
+    },
+    {
+      "path": "work/ep01/keys/k20_edit.png",
+      "sha256": "9db95d746f0060009fbd6a709c7704e9b9cfec34f8d5441afb2b94a272f89cdf"
+    },
+    {
+      "path": "work/ep01/keys/k21_edit.png",
+      "sha256": "2bbd7f3bcded27d55897a8aa1263712fe2a80fafac9658521651d6b1508c1cb4"
+    },
+    {
+      "path": "work/ep01/keys/k22_edit.png",
+      "sha256": "d6dfa19bba21ecdcd235cc847d2d104ae924bf031c298bd946baacbd07be0121"
+    },
+    {
+      "path": "work/ep01/keys/k23_edit.png",
+      "sha256": "13c84e6c4adae664152cc02a7070e55b57ffda6d6eea8f4bbcc91394a72692a0"
+    },
+    {
+      "path": "work/ep01/keys/k24_edit.png",
+      "sha256": "43031740ba70859ed353b6dc2590a50e47710c3f0291625c69a54f9cab37df14"
+    },
+    {
+      "path": "work/ep01/keys/k25_edit.png",
+      "sha256": "bfa0bcd34bb44ffad55358638e75ebefa361cb7ee78e15e85981f6a56984ec29"
+    },
+    {
+      "path": "work/ep01/keys/k26_edit.png",
+      "sha256": "8668d21f0af989f3d4c2253c83b52a6076d5109393f06e57eaadfcd379b7ec9b"
+    },
+    {
+      "path": "work/ep01/keys/k28_edit.png",
+      "sha256": "b29c095e82f1b0b363f82bc82cf68b90b9d7af7293921a33ca7830af4144918c"
+    },
+    {
+      "path": "work/ep01/keys/k29_edit.png",
+      "sha256": "384bad6e70901a696c15b0c16de69fe447fbff8d2864ae4944b20077f01be100"
+    },
+    {
+      "path": "work/ep01/keys/k30_edit.png",
+      "sha256": "8df7257e7e7a1875680cb4d7258a5cc2716d329131308732cc164972ce9398c0"
+    },
+    {
+      "path": "work/ep01/keys/k31_edit.png",
+      "sha256": "66085c2991e43b0bdaa004ad35e79e118d748aed5763e2bd538554b441e992ab"
+    },
+    {
+      "path": "work/ep01/paper/k02.png",
+      "sha256": "3fa53fbdab941b2435b09361256a05f3703f38cb68a55e2667e44ed6815ad905"
+    },
+    {
+      "path": "work/ep01/paper/k02_after.png",
+      "sha256": "f22344e86ea65de1f573d4ef68fd4b46c0b3cd143edc425e3ab29e2bd53a1ad9"
+    },
+    {
+      "path": "work/ep01/paper/k07.png",
+      "sha256": "be83b011305077d093812033f0968c5886645b241628b8cd287fb03ed21b78ed"
+    },
+    {
+      "path": "work/ep01/paper/k07_after.png",
+      "sha256": "ae42b83255db70a3514d4201dded50442845ecf775537b24b43b70eb52ccf99a"
+    },
+    {
+      "path": "work/ep01/paper/k18.png",
+      "sha256": "06f047a6264290e40a8e6f55e0a2ada2f007b9a3ef96af0d80e02fbe46f8a0de"
+    },
+    {
+      "path": "work/ep01/paper/k18_after.png",
+      "sha256": "0c2d820092af26bdda6d5b006e4fc7e40bdfa9a4b45b1cc8fef4fc022a8dd5aa"
+    }
+  ],
+  "relation_label_scope": "For pending entries, relation labels express intended continuity/scene boundaries from the existing plan only. They remain unverified and must be confirmed during the full audit.",
+  "cuts": [
+    {
+      "from_shot": "01",
+      "to_shot": "02",
+      "from_asset": "k01",
+      "to_asset": "k02",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "02",
+      "to_shot": "03",
+      "from_asset": "k02_after",
+      "to_asset": "k03",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "03",
+      "to_shot": "04",
+      "from_asset": "k03",
+      "to_asset": "k04",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "04",
+      "to_shot": "05",
+      "from_asset": "k04",
+      "to_asset": "k05",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "05",
+      "to_shot": "06",
+      "from_asset": "k05",
+      "to_asset": "k06",
+      "relation": "continuous",
+      "status": "blocked",
+      "evidence": "User initially identified the continuity problem at25s/frame600; director image and executed-prompt inspection corroborated it. Both shots use broad frontal room/table views. The k06 edit explicitly requests \"Remove Eda completely from frame\", \"Add ONLY Sen\" and \"No second person\".",
+      "issues": [
+        "Eda disappears between broad room/table views when Sen appears, with no depicted exit or crop explanation.",
+        "Prior coverage/continuity approval is withdrawn; no missing movement is inferred or invented."
+      ]
+    },
+    {
+      "from_shot": "06",
+      "to_shot": "07",
+      "from_asset": "k06",
+      "to_asset": "k05",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "07",
+      "to_shot": "08",
+      "from_asset": "k05",
+      "to_asset": "k07",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "08",
+      "to_shot": "09",
+      "from_asset": "k07_after",
+      "to_asset": "k06",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "09",
+      "to_shot": "10",
+      "from_asset": "k06",
+      "to_asset": "k05",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "10",
+      "to_shot": "11",
+      "from_asset": "k05",
+      "to_asset": "k06",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "11",
+      "to_shot": "12",
+      "from_asset": "k06",
+      "to_asset": "k05",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "12",
+      "to_shot": "13",
+      "from_asset": "k05",
+      "to_asset": "k08",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "13",
+      "to_shot": "14",
+      "from_asset": "k08",
+      "to_asset": "k09",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "14",
+      "to_shot": "15",
+      "from_asset": "k09",
+      "to_asset": "k10",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "15",
+      "to_shot": "16",
+      "from_asset": "k10",
+      "to_asset": "k11",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "16",
+      "to_shot": "17",
+      "from_asset": "k11",
+      "to_asset": "k12",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "17",
+      "to_shot": "18",
+      "from_asset": "k12",
+      "to_asset": "k13",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "18",
+      "to_shot": "19",
+      "from_asset": "k13",
+      "to_asset": "k14",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "19",
+      "to_shot": "20",
+      "from_asset": "k14",
+      "to_asset": "k13",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "20",
+      "to_shot": "21",
+      "from_asset": "k13",
+      "to_asset": "k28",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "21",
+      "to_shot": "22",
+      "from_asset": "k28",
+      "to_asset": "k15",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "22",
+      "to_shot": "23",
+      "from_asset": "k15",
+      "to_asset": "k16",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "23",
+      "to_shot": "24",
+      "from_asset": "k16",
+      "to_asset": "k06",
+      "relation": "continuous",
+      "status": "blocked",
+      "evidence": "User initially identified the continuity problem at119s/frame2856; director image/prompt inspection corroborated it. The k16 wide contains two compact kitchen modules and pan, tray, bowl, lid, spoon, cloth and spill. Shot24 reuses the early k06 empty-table image.",
+      "issues": [
+        "The reused early image does not preserve the occupied kitchen/object state established immediately before the cut.",
+        "Earlier notes incorrectly described a tighter crop; that explanation does not match the observed broad view. No off-screen removal is inferred."
+      ]
+    },
+    {
+      "from_shot": "24",
+      "to_shot": "25",
+      "from_asset": "k06",
+      "to_asset": "k05",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "25",
+      "to_shot": "26",
+      "from_asset": "k05",
+      "to_asset": "k31",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "26",
+      "to_shot": "27",
+      "from_asset": "k31",
+      "to_asset": "k05",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "27",
+      "to_shot": "28",
+      "from_asset": "k05",
+      "to_asset": "k17",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "28",
+      "to_shot": "29",
+      "from_asset": "k17",
+      "to_asset": "k18",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "29",
+      "to_shot": "30",
+      "from_asset": "k18_after",
+      "to_asset": "k19",
+      "relation": "scene_change",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "30",
+      "to_shot": "31",
+      "from_asset": "k19",
+      "to_asset": "k20",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "31",
+      "to_shot": "32",
+      "from_asset": "k20",
+      "to_asset": "k21",
+      "relation": "scene_change",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "32",
+      "to_shot": "33",
+      "from_asset": "k21",
+      "to_asset": "k22",
+      "relation": "scene_change",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "33",
+      "to_shot": "34",
+      "from_asset": "k22",
+      "to_asset": "k23",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "34",
+      "to_shot": "35",
+      "from_asset": "k23",
+      "to_asset": "k24",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "35",
+      "to_shot": "36",
+      "from_asset": "k24",
+      "to_asset": "k25",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "36",
+      "to_shot": "37",
+      "from_asset": "k25",
+      "to_asset": "k29",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "37",
+      "to_shot": "38",
+      "from_asset": "k29",
+      "to_asset": "k30",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "38",
+      "to_shot": "39",
+      "from_asset": "k30",
+      "to_asset": "k26",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    },
+    {
+      "from_shot": "39",
+      "to_shot": "40",
+      "from_asset": "k26",
+      "to_asset": "k27",
+      "relation": "intentional_discontinuity",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol. Relation is an intended editing obligation or provisional planning label, not a verified visual classification.",
+      "issues": []
+    }
+  ],
+  "state_changes": [
+    {
+      "shot_id": "02",
+      "offset_frame": 48,
+      "from_asset": "k02",
+      "to_asset": "k02_after",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol",
+      "issues": []
+    },
+    {
+      "shot_id": "08",
+      "offset_frame": 72,
+      "from_asset": "k07",
+      "to_asset": "k07_after",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol",
+      "issues": []
+    },
+    {
+      "shot_id": "29",
+      "offset_frame": 72,
+      "from_asset": "k18",
+      "to_asset": "k18_after",
+      "relation": "continuous",
+      "status": "pending",
+      "evidence": "Not reviewed under strengthened protocol",
+      "issues": []
+    }
+  ],
+  "known_blocked_cuts": [
+    "05→06 at00:25",
+    "23→24 at01:59"
+  ],
+  "next_required_work": "Full episode continuity audit, spatial/coverage plan and repairs, then renewed cut/state-change approval before motion.",
+  "technical_passes_preserved": [
+    "Full export decode and5520frames",
+    "Unchanged final PCM master and muxed-audio technical audit PASS"
+  ],
+  "media_changed": false,
+  "timeline_changed": false
+}

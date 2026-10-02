@@ -1,5 +1,7 @@
 # COMMON ROOM / 一室两家 — adversarial creative review
 
+**Current status: spatial-continuity approval withdrawn; review version only.** User review identified failures at shots 05→06 (00:25) and 23→24 (01:59). Full continuity audit and repair remain pending before motion. The earlier creative analysis and inspection findings below are retained as history; their spatial sign-offs are superseded. The story selection, unchanged media and technical export/audio PASS facts are not withdrawn. See [the current continuity gate](build/continuity_review.json).
+
 This review covers the locked script, frame timeline, approved references, selected static plates and exact authored insert states. Root has reported a static review of all 61 render composites. This review makes no generated-motion, lip-sync or perceptual-audio claim. The deliverable remains a story reel before video generation.
 
 ## Decision
@@ -60,7 +62,7 @@ The module sequence must alter all four dials: occupied hands, actual placements
 
 **Keep:** the2–3 second module burst, the uninterrupted hold, restrained dialogue and the final longer shots. Natural object impacts are not additional designed silence events. End-card sound fades softly rather than creating a second hard stop.
 
-**Current-stage limit:** reused dialogue plates prove shot/reverse-shot geography and accommodate final voices; they do not prove subtle acting. Avoid universal pushes or simulated camera drift to disguise this. Later approved motion must be judged in full takes, not inferred from attractive stills.
+**Superseded spatial claim:** the earlier review stated that “reused dialogue plates prove shot/reverse-shot geography and accommodate final voices.” The geography claim is withdrawn after the two observed failing cuts. Retained production guidance: avoid universal pushes or simulated camera drift to disguise problems, and judge any later approved motion in full takes rather than inferring it from attractive stills.
 
 ## Keyframe and handoff integrity
 
@@ -72,6 +74,6 @@ The module sequence must alter all four dials: occupied hands, actual placements
 - Root approved the character, kitchen, prop and module reference assets before production. Independent static reviews identified and corrected added facial age, missing/reversed ring-room views, trousers drift and the old-room background in the bowl insert. Unselected attempts and their original logs remain preserved.
 - The final documentation update preserves all 40 shot IDs and asset IDs, all 5520 frames, all 26 bilingual dialogue entries with authored offsets, and every sound field. The earlier reference-driven removal of nonexistent drawer effects was performed by the audio owner; no further audio change is made here.
 
-## Static acceptance and remaining stage boundary
+## Superseded static acceptance and current stage boundary
 
-Selected stills and exact paper states have static continuity approval for the opening address change, unique bowl, separate homes, usable module alternative, held decision and completed salt/pattern exchange. Root reported that all 61 static render composites passed inspection. The documentation makes no claim to have watched generated character movement or perceptually approved the final audio. Future motion remains a separate, ungenerated stage.
+Historical finding, now superseded as spatial approval: “Selected stills and exact paper states have static continuity approval for the opening address change, unique bowl, separate homes, usable module alternative, held decision and completed salt/pattern exchange.” Root previously reported that all 61 static render composites passed inspection. Those inspections remain historical evidence, not current sequence approval. The current reel requires a full continuity audit and repair before motion. Technical decode, frame-count and audio-alignment checks remain PASS; generated character movement and perceptual audio approval are still unclaimed.

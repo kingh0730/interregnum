@@ -5,10 +5,13 @@ Run after render_reel.py and the final motion_preflight.py dry-run.
 """
 import hashlib
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 B = ROOT / "episodes/ep01/build"
+sys.path.insert(0, str(ROOT / "tools"))
+from continuity import evaluate_review
 
 
 def read(path):
@@ -25,13 +28,21 @@ def require(condition, message):
 
 
 def main():
+    manifest = read("episodes/ep01/build/motion_plan.json")
+    continuity = evaluate_review(manifest.get("continuity_review"), ROOT)
+    require(continuity["approved"], "Continuity approval required: " + "; ".join(continuity["errors"]))
+    review = json.loads(Path(continuity["review_path"]).read_text())
+    for key, name in [("story", "story.json"), ("assets", "assets.json"), ("states", "reel_states.json")]:
+        require((ROOT / review.get(key, {}).get("path", "")).resolve() == (B / name).resolve(),
+                f"Continuity review must bind episode 01 {name}")
+    visual = read("episodes/ep01/build/visual_review.json")
+    require(visual.get("status") == "passed", "Visual approval has not passed or has been withdrawn")
     story = read("episodes/ep01/build/story.json")
     export = read("episodes/ep01/build/export_audit.json")
     motion = read("episodes/ep01/build/motion_preflight.json")
     audio = read("work/ep01/audio/technical_qc.json")
     selected = read("episodes/ep01/build/selected_assets.json")
     budget = read("episodes/ep01/build/budget_estimate.json")
-    visual = read("episodes/ep01/build/visual_review.json")
     encoded_frames = read("episodes/ep01/build/export_frame_audit.json")
     encoded_audio = read("work/ep01/audio/export_audio_audit.json")
     require(export["status"] == "passed", "Export audit has not passed")
@@ -50,6 +61,8 @@ def main():
         require(visual["hashes"][key] == digest(path), f"Visual review input changed: {key}")
     require(motion["story_sha256"] == story_hash, "Motion preflight uses an older story file")
     require(motion["local_media_ready"] and motion["runner_dry_run_performed"], "Motion inputs need preflight")
+    require(motion.get("ready_for_motion") and motion.get("continuity_approved"), "Motion preflight needs current continuity approval")
+    require(motion.get("continuity_review", {}).get("review_sha256") == continuity["review_sha256"], "Continuity review changed after preflight")
     require(motion["video_requests_submitted"] == 0, "Pre-motion scope exceeded")
     require(motion["manifest_sha256"] == digest("episodes/ep01/build/motion_plan.json"), "Motion manifest changed after preflight")
     master = "work/ep01/audio/master_mix.wav"
@@ -64,6 +77,7 @@ def main():
              "episodes/ep01/build/story.json", "episodes/ep01/build/motion_plan.json",
              "episodes/ep01/build/export_audit.json", "episodes/ep01/build/motion_preflight.json",
              "episodes/ep01/build/visual_review.json",
+             manifest["continuity_review"],
              "episodes/ep01/build/export_frame_audit.json", "work/ep01/audio/export_audio_audit.json",
              "episodes/ep01/build/selected_assets.json"]
     result = {
@@ -77,6 +91,7 @@ def main():
                   "integrated_lufs": audio["master"]["I"], "true_peak_dbtp": audio["master"]["TP"],
                   "loudness_range_lu": audio["master"]["LRA"]},
         "motion_jobs_prepared": 30, "motion_requests_submitted": 0,
+        "continuity_approved": True, "continuity_review": manifest["continuity_review"],
         "export_audio_measurements": encoded_audio["measurements"],
         "export_audio_zero_lag_correlation": encoded_audio["zero_lag_full_cut_correlation"],
         "motion_budget": motion["budget"],
@@ -95,4 +110,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except ValueError as exc:
+        print(f"Delivery remains unapproved: {exc}", file=sys.stderr)
+        sys.exit(2)

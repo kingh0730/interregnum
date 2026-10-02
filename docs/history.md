@@ -216,3 +216,19 @@ that came out of them is "Luma unless it truly can't" (playbook §2b).
   request outcomes and conservative estimates are retained in the incident and budget records.
 - The reel and media remain local and ignored by Git. Open `episodes/ep01/README.md` for the delivery links,
   rebuild commands, review limits and next-stage manifest. Production recipes and small audits are committed.
+
+## Common Room continuity approval withdrawn (2026-10-02)
+- King identified disappearing occupants at 00:24–00:25 (shots 05→06) and disappearing objects at
+  01:58–01:59 (shots 23→24). The first cut replaces a person in broad coverage without establishing an exit
+  or excluding their position. The second reuses an early empty-table plate after kitchen units and props
+  have occupied the scene. Prompt instructions and unsupported "offscreen" explanations had overridden
+  the actual shared scene state; the review failed to catch this. These were not intentional discontinuities.
+- Withdrew episode 01's spatial approval and complete/ready handoff claims. The two reported cuts are blocked;
+  all other cuts and authored state switches await a full continuity audit. Existing media and technical/audio
+  integrity results are preserved; this pipeline change does not repair the reel.
+- Strengthened the playbook and templates with persistent scene state, actual camera visibility evidence,
+  state-aware reuse and review of every cut occurrence. New motion manifests declare a hash-bound continuity
+  review. H3 rejects new submissions/redo with incomplete or stale approval while retaining recovery of already
+  accepted requests. Episode preflight and packaging now distinguish valid media from spatial approval.
+- The gate verifies recorded review coverage and freshness, not visual truth. Actual image comparison remains
+  essential; neither hashes nor an individually plausible frame establish continuity.

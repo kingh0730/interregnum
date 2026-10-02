@@ -1,6 +1,8 @@
 # COMMON ROOM / 一室两家
 
-**Series:** AI SI - I. **Episode:** 01. **Format:** 16:9, 24 fps, English dialogue with Chinese-first bilingual burn-ins and a bilingual SRT. **Runtime:** 3:50, including an eight-second end card. **Production scope:** complete still-based story reel and final sound; prepare but do not generate video-model motion.
+**Series:** AI SI - I. **Episode:** 01. **Format:** 16:9, 24 fps, English dialogue with Chinese-first bilingual burn-ins and a bilingual SRT. **Runtime:** 3:50, including an eight-second end card. **Current production status:** review-version still reel with prepared sound; spatial-continuity approval withdrawn, motion blocked.
+
+User review identified spatial-continuity failures at shots 05→06 (00:25) and 23→24 (01:59). A full continuity audit and repair remain pending. The story, timeline, images and sound are unchanged, and technical export/audio PASS results remain valid. The spatial rules below describe the intended film, not a current finding that the reel satisfies them. See [the continuity review gate](build/continuity_review.json).
 
 Eda and Sen are dividing their home. In their world a room can have doors at several postal addresses, but it remains one room: nothing inside is duplicated. They can leave with two tiny private kitchens, or keep the full kitchen shared and give up exclusive control of its use. They choose the room, complete their move to separate homes, and immediately get in one another's way.
 
@@ -45,4 +47,6 @@ The home register uses clear room geography, restrained faces and discrete actio
 
 The canonical shot sequence and bilingual dialogue are in `episodes/ep01/build/story.json`. The human-readable script and shot list must match it. All 26 dialogue lines, authored cue offsets and 5520 frames are locked. Selected-source documentation reflects the actual reviewed still poses; final subtitle timing is supplied by the audio/subtitle artifacts. Future motion may improve performance, but the present story reel must already make the rule and decision readable through selected still states and exact inserts.
 
-Current image status: static continuity approval of the selected photographic edits and exact authored paper states. This does not approve future character motion, lip sync or perceptual audio quality.
+Current image status: spatial-continuity approval withdrawn. The selected media remains available for review; full continuity audit, repair and renewed approval are required before motion. No full continuity audit or media repair is claimed by this status correction.
+
+Superseded history: the previous status was “static continuity approval of the selected photographic edits and exact authored paper states.” That sign-off is retained as historical context and is no longer valid for the current sequence. Technical export/audio checks remain separate from spatial approval.

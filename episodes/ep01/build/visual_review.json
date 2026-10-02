@@ -1,5 +1,5 @@
 {
-  "status": "passed",
+  "status": "blocked_spatial_continuity",
   "reviewed_unix": 1790917372.35748,
   "review_scope": {
     "edit_order_shots": 40,
@@ -60,14 +60,9 @@
     "renderer": "81cf7abcaae0f7dd28e5470c41e96c467008f0a53e02ea8493017feef62a869a"
   },
   "findings": [
-    "No blocking static-picture defect remains for this story reel. Selected repaired sources are used; rejected originals are excluded.",
-    "Chinese 40 px first, English 32 px second, one line each for all 26 cues; dark stroke only, no rectangular banner. Face and hand clearance checked on every native caption composite.",
-    "Authored subtitle positions clear Eda doorway/table hands, Sen table hands, Eda tray/working hand, and Sen final hanging hand. Paper labels and tab changes remain unobscured.",
-    "Physical paper states change at 8.0, 40.0 and 152.0 seconds. Separate houseletters and one kitchen with two tabs read clearly.",
-    "The module sequence retains the pan across Eda/Sen cuts, shows a thin local tabletop spill and empty marked bowl, and uses a tall floor-standing return carton.",
-    "The final state chain shows the bowl on a chair then retrieved, salt weighting the pattern, and salt handed off while a spare cup holds the pattern. Door sides, identities and garments remain readable.",
-    "The final 8-second card uses COMMON ROOM / 一室两家 / AI SI - I / EPISODE 01. There is no opening title or endcard subtitle.",
-    "All 5,520 video frames and the entire audio stream decoded without errors. All 61 unique encoded composites match approved native composites within expected lossy-codec differences."
+    "Spatial-continuity approval withdrawn after user detection and director image/prompt corroboration at05→06/00:25 and23→24/01:59.",
+    "The current reel is a review version. A full continuity audit and repair remain pending; no other cut is newly approved.",
+    "Existing technical export, decoded-frame comparison and muxed-audio PASS records remain valid for the unchanged media."
   ],
   "subtitle_positions": {
     "03": {
@@ -114,10 +109,10 @@
     }
   },
   "limitations": [
-    "Review covers still states, edit-order composition, caption placement, causal readability, full technical decoding and measured audio alignment. Generated motion and lip synchronization have not been produced or assessed.",
-    "All 61 unique composites were visually reviewed in contact sheets and all 26 caption cues at native size before encoding. Seven actual decoded export frames were visually rechecked at native size; all 61 encoded composites were compared programmatically.",
-    "Small plate-to-plate prop proportion and set-detail variation remains. Movement continuity must be checked at the future video stage.",
-    "No end-to-end perceptual playback or listening review was performed. Audio measurements do not certify comic timing, material recognizability or listening balance."
+    "No full continuity audit was performed by this status correction.",
+    "Earlier spatial sign-offs and the claim that no blocking static-picture defect remained are superseded.",
+    "Technical decode/frame comparison/audio measurements do not establish spatial continuity or coverage.",
+    "No generated motion or perceptual audio playback approval is claimed."
   ],
   "technical_export_audit": "episodes/ep01/build/export_audit.json",
   "review_manifest": "work/ep01/render/review/review_manifest.json",
@@ -186,5 +181,87 @@
       "loudness_range_lu": 15.3,
       "event_windows_with_zero_sample_lag": 8
     }
-  }
+  },
+  "superseded_spatial_approval_history": [
+    {
+      "superseded_at_utc": "2026-10-02T06:13:43.380697+00:00",
+      "reason": "Spatial approval withdrawn after user detection and director image/prompt corroboration at cuts05→06 and23→24. Full continuity audit pending.",
+      "previous": {
+        "status": "passed",
+        "reviewed_unix": 1790917372.35748,
+        "review_scope": {
+          "edit_order_shots": 40,
+          "unique_native_composites": 61,
+          "contact_sheets": 6,
+          "source_images": 33,
+          "native_caption_lines_reviewed": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07",
+            "D08",
+            "D09",
+            "D10",
+            "D11",
+            "D12",
+            "D13",
+            "D14",
+            "D15",
+            "D16",
+            "D17",
+            "D18",
+            "D19",
+            "D20",
+            "D21",
+            "D22",
+            "D23",
+            "D24",
+            "D25",
+            "D26"
+          ],
+          "paper_before_after_pairs": 3,
+          "authored_endcard_seconds": [
+            222,
+            230
+          ],
+          "actual_decoded_native_frames_visually_reviewed": [
+            168,
+            216,
+            2385,
+            3612,
+            3684,
+            4832,
+            5424
+          ],
+          "decoded_unique_composites_automatically_compared": 61
+        },
+        "findings": [
+          "No blocking static-picture defect remains for this story reel. Selected repaired sources are used; rejected originals are excluded.",
+          "Chinese 40 px first, English 32 px second, one line each for all 26 cues; dark stroke only, no rectangular banner. Face and hand clearance checked on every native caption composite.",
+          "Authored subtitle positions clear Eda doorway/table hands, Sen table hands, Eda tray/working hand, and Sen final hanging hand. Paper labels and tab changes remain unobscured.",
+          "Physical paper states change at 8.0, 40.0 and 152.0 seconds. Separate houseletters and one kitchen with two tabs read clearly.",
+          "The module sequence retains the pan across Eda/Sen cuts, shows a thin local tabletop spill and empty marked bowl, and uses a tall floor-standing return carton.",
+          "The final state chain shows the bowl on a chair then retrieved, salt weighting the pattern, and salt handed off while a spare cup holds the pattern. Door sides, identities and garments remain readable.",
+          "The final 8-second card uses COMMON ROOM / 一室两家 / AI SI - I / EPISODE 01. There is no opening title or endcard subtitle.",
+          "All 5,520 video frames and the entire audio stream decoded without errors. All 61 unique encoded composites match approved native composites within expected lossy-codec differences."
+        ],
+        "limitations": [
+          "Review covers still states, edit-order composition, caption placement, causal readability, full technical decoding and measured audio alignment. Generated motion and lip synchronization have not been produced or assessed.",
+          "All 61 unique composites were visually reviewed in contact sheets and all 26 caption cues at native size before encoding. Seven actual decoded export frames were visually rechecked at native size; all 61 encoded composites were compared programmatically.",
+          "Small plate-to-plate prop proportion and set-detail variation remains. Movement continuity must be checked at the future video stage.",
+          "No end-to-end perceptual playback or listening review was performed. Audio measurements do not certify comic timing, material recognizability or listening balance."
+        ]
+      }
+    }
+  ],
+  "current_review_status": "blocked_spatial_continuity",
+  "spatial_continuity_approved": false,
+  "motion_ready": false,
+  "continuity_review": "episodes/ep01/build/continuity_review.json",
+  "full_continuity_audit_status": "pending; not performed by this status correction",
+  "status_corrected_at_utc": "2026-10-02T06:13:43.380697+00:00",
+  "review_scope_status": "Previous inspection counts remain historical coverage, not current spatial acceptance."
 }

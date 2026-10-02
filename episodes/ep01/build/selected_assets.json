@@ -1,6 +1,6 @@
 {
-  "scope": "Static starting frames and authored insert states only; no motion approval implied.",
-  "review_basis": "Actual images inspected against the character, room, prop references and adjacent states. Rejected versions remain outside assets.json.",
+  "scope": "Selected review-version source inventory. Spatial continuity approval is withdrawn; paths/hashes are retained without media changes.",
+  "review_basis": "Earlier static inspections are preserved in superseded history. User detection and director corroboration at cuts05→06 and23→24 block sequence approval pending full audit and repair.",
   "photographic_source_policy": "Luma Uni-1 Max originals; Codex built-in generative continuity edits. Exact lettering is authored separately.",
   "endcard": "k27 is exact typography rendered by render_reel.py; no generated lettering.",
   "assets": [
@@ -433,5 +433,21 @@
       "edit_id": null,
       "base": "ref_paper"
     }
-  ]
+  ],
+  "superseded_spatial_approval_history": [
+    {
+      "superseded_at_utc": "2026-10-02T06:13:43.380697+00:00",
+      "reason": "Spatial approval withdrawn after user detection and director image/prompt corroboration at cuts05→06 and23→24. Full continuity audit pending.",
+      "previous": {
+        "scope": "Static starting frames and authored insert states only; no motion approval implied.",
+        "review_basis": "Actual images inspected against the character, room, prop references and adjacent states. Rejected versions remain outside assets.json."
+      }
+    }
+  ],
+  "current_review_status": "blocked_spatial_continuity",
+  "spatial_continuity_approved": false,
+  "motion_ready": false,
+  "continuity_review": "episodes/ep01/build/continuity_review.json",
+  "full_continuity_audit_status": "pending; not performed by this status correction",
+  "status_corrected_at_utc": "2026-10-02T06:13:43.380697+00:00"
 }

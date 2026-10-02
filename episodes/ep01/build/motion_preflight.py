@@ -2,13 +2,25 @@
 Usage: uv run python episodes/ep01/build/motion_preflight.py [--runner-dry-run] [--only m07,m23,m30]
        [--quote-retakes m07,m23]
 The shared runner's --dry-run prices jobs but does not decode media; this tool supplies those missing checks.
+File/media validity and current recorded visual continuity approval are separate gates.
 """
 import argparse,hashlib,json,re,subprocess,sys
 from pathlib import Path
 import numpy as np
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[3];B=ROOT/'episodes/ep01/build';W=ROOT/'work/ep01';ap=argparse.ArgumentParser();ap.add_argument('--runner-dry-run',action='store_true');ap.add_argument('--only');ap.add_argument('--quote-retakes');a=ap.parse_args()
+sys.path.insert(0,str(ROOT/'tools'))
+from continuity import evaluate_review
 man=json.loads((B/'motion_plan.json').read_text());story=json.loads((B/'story.json').read_text());triage=json.loads((B/'motion_triage.json').read_text());lipdata=json.loads((W/'audio/lipsync_manifest.json').read_text());lips={x['shot_id']:x for x in lipdata};shots={x['id']:x for x in story['shots']};jobs=[dict(man['defaults'],**x) for x in man['jobs']];ids={x['id'] for x in jobs};errors=[];missing=[];checks=[]
+continuity=evaluate_review(man.get('continuity_review'),ROOT)
+# An otherwise valid review of another episode must not approve this handoff.
+if continuity['review_sha256']:
+ try:
+  review=json.loads(Path(continuity['review_path']).read_text())
+  for key,name in [('story','story.json'),('assets','assets.json'),('states','reel_states.json')]:
+   if (ROOT/review.get(key,{}).get('path','')).resolve()!=(B/name).resolve():continuity['errors'].append(f'Continuity review must bind episode 01 {name}')
+ except (ValueError,TypeError,AttributeError,OSError) as exc:continuity['errors'].append(f'Cannot verify episode continuity bindings: {exc}')
+continuity['approved']=continuity['approved'] and not continuity['errors']
 def fail(message):errors.append(message)
 def probe(p):return json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(p)]))
 def samples(p):return np.frombuffer(subprocess.check_output(['ffmpeg','-v','error','-i',str(p),'-ar','48000','-ac','2','-f','f32le','-']),np.float32).reshape(-1,2)
@@ -97,4 +109,14 @@ if a.runner_dry_run and not errors and not missing:
  if found and abs(float(found.group(1))-round(expected,2))>.02:errors.append('Live/fallback runner price differs from captured rate or existing jobs; reconcile before any paid run')
  elif not found:errors.append('Runner estimate missing')
 report['local_media_ready']=not errors and not missing
-out=B/'motion_preflight.json';out.write_text(json.dumps(report,indent=2));print(json.dumps({k:report[k] for k in ['local_media_ready','errors','missing_sources','budget','runner_dry_run_performed','video_requests_submitted']},indent=2));sys.exit(0 if report['local_media_ready'] else 2)
+continuity_summary={k:v for k,v in continuity.items() if k not in ['source_hashes','shot_sources']}
+continuity_summary['review_path']=man.get('continuity_review')
+report.update(continuity_review=continuity_summary,continuity_approved=continuity['approved'],ready_for_motion=report['local_media_ready'] and continuity['approved'])
+out=B/'motion_preflight.json'
+if out.exists():
+ previous=json.loads(out.read_text())
+ if 'superseded_spatial_approval_history' in previous:report['superseded_spatial_approval_history']=previous['superseded_spatial_approval_history']
+ if previous.get('runner_dry_run_performed'):
+  report['previous_runner_quote']={k:previous[k] for k in ['manifest_sha256','runner_returncode','runner_log','runner_estimate_usd','local_selected_estimate_usd'] if k in previous}
+ elif 'previous_runner_quote' in previous:report['previous_runner_quote']=previous['previous_runner_quote']
+out.write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({k:report[k] for k in ['local_media_ready','continuity_approved','ready_for_motion','errors','missing_sources','budget','runner_dry_run_performed','video_requests_submitted']},indent=2));sys.exit(0 if report['ready_for_motion'] else 2)
