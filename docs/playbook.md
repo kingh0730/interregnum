@@ -492,6 +492,26 @@ the stock, polished result, the audio version of the AI look. So describe the re
 
 **Speech only ever comes from our audio** (King: models "invent dialogue out of thin air").
 - **Pure dialogue shots:** lip-sync with our voice take.
+- **Multiple people in a dialogue shot:** retain the scene's occupants and props; one speaker does not require
+  removing listeners or showing every face. Multi-person framing is allowed, subject to actual-take review. The
+  dedicated H3 lip-sync endpoint has no documented face selector or speaker-direction prompt; a speaker label in
+  our manifest is review metadata, not a control sent to the model.
+  - Record the intended speaker, visible listeners, exact input audio and selected take in `shot.md`. Include a
+    representative multi-person dialogue shot in the initial small motion batch before expanding that coverage.
+  - Check three things separately: **speaker assignment**, **mouth timing against our audio**, and **listener
+    behavior**. Inspect every visible mouth through the line and surrounding silence, including padded tails.
+    Reject wrong-speaker or shared speech-like animation and distracting listener fake-talking. Natural breathing,
+    reactions or an isolated mouth opening are not by themselves evidence of unintended speech.
+  - Review both the full take and the retained final-cut interval with our audio. Sampled frames can support a
+    speaker-selection finding; they do not establish precise audiovisual sync. Keep unperformed playback checks
+    pending. Changing the selected take, audio alignment or trim requires renewed performance review.
+  - If a take fails, retake within the approved budget or use a spatially consistent close-up/over-the-shoulder
+    angle. Recheck the changed framing and adjacent cuts under §3; never erase a listener from a still-visible
+    position to simplify lip-sync. Correct speaker selection does not waive spatial continuity review.
+  - **Evidence limit:** the 2026-10-02 two-person test showed the intended speaker's main speech-like movement in
+    both sampled-frame sequences, with some later listener mouth movement. One composition, one seed and two
+    different voice/line tracks do not establish a success rate, exact sync, or reliable alternating/overlapping
+    speakers in one take. See `docs/history.md` for the experiment record.
 - **Motion prompts never mention speech** ("says a line", "shouts"): with no audio to follow, the model invents the
   words. Describe the action only, plus "mouth closed, not speaking".
 - **Shots with both action and a line:** the normal H3 Max schema describes `target_audio_url` as replacing
@@ -529,7 +549,9 @@ the stock, polished result, the audio version of the AI look. So describe the re
     which read as a glitch or "PPT"; stillness comes from the content, not a freeze.
 - **Image-to-video from the approved still is the default;** reference mode only to restage a still that's wrong.
 - **Group short shots:** consecutive shots of one scene go in one continuous take (5–15 s) and are cut in the edit.
-  Chain takes for continuity: the last frame of one clip starts the next.
+  Chain takes for continuity: the last frame of one clip starts the next. For dialogue, combining different speakers'
+  turns needs evidence that the route assigns each turn correctly; the two-person, one-speaker tests above do not
+  establish that capability.
 - **Acting:** prompts describe behaviour, never emotion (see the series visual rules); faces underplay.
 - **Story-critical actions must survive generation and the edit:** model output varies; a clear submitted prompt is
   direction, not evidence that the action happened. For each essential beat, record in `shot.md` the visible action,

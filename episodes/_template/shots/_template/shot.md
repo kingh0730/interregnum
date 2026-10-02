@@ -30,3 +30,15 @@ without a story-supported change. Framing style is free; its spatial explanation
 
 Changing the source, crop, state or edit order invalidates affected spatial review. Recheck the changed occurrence
 and both neighboring cuts, plus dependent states; a shared-source change affects every occurrence that uses it.
+
+## Dialogue performance review (when applicable)
+
+**Intended speaker / visible listeners:** <entity IDs; speaker label is not an H3 face-selection control>
+**Audio and take:** <exact input audio version/hash, selected video version/hash, line interval and final source trim>
+**Speaker assignment:** <who actually makes speech-like mouth movements; observations/timestamps and status>
+**Sync to our audio:** <onset, articulation and ending in audiovisual playback; pending if not reviewed>
+**Listener behavior:** <each visible listener during the line and surrounding silence; distinguish natural reactions from fake-talking>
+**Review scope / result:** <full take and retained final cut; actual method, reviewer, approved / blocked / pending>
+
+Frame samples alone do not approve exact sync. Recheck after a take, audio-alignment or trim change. If performance
+fails, retake within budget or revise camera coverage while preserving occupants, props and adjacent-cut continuity.

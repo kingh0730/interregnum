@@ -232,3 +232,19 @@ that came out of them is "Luma unless it truly can't" (playbook §2b).
   accepted requests. Episode preflight and packaging now distinguish valid media from spatial approval.
 - The gate verifies recorded review coverage and freshness, not visual truth. Actual image comparison remains
   essential; neither hashes nor an individually plausible frame establish continuity.
+
+## Two-person H3 lip-sync experiment (2026-10-02)
+- Ran two standalone five-second H3 Max lip-sync requests on the same opening two-person image, at 768P,
+  seed 4242 and transcription disabled. One used Eda's existing line; the other used Sen's. The live API quote
+  was $0.50 total, not a reconciled invoice. These requests were experiments, not episode motion production.
+- Inspected both faces at ten timestamps per clip. The intended speaker showed the main speech-like mouth
+  movements in each sequence; listeners showed some later mouth movement. An isolated mouth opening is not
+  proof of speech. No real-time audiovisual or phoneme-level sync approval was performed.
+- This supports testing multi-person coverage rather than deleting listeners. It does not establish reliability:
+  only one composition and seed were used, and the two audio tracks differed in both voice and words. Alternating
+  or overlapping speakers in one take were not tested. The playbook now separates speaker selection, exact sync,
+  listener behavior and spatial continuity in take/final-cut review.
+- Inputs, request logs, output clips, original-audio review copies and findings remain local under
+  `work/lipsync-two-person-test-20261002/`; observations are in
+  `work/lipsync-two-person-test-20261002/results.json`. Episode 01's continuity approval remains withdrawn;
+  the experiment does not repair or approve its edit.

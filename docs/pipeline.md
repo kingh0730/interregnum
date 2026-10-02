@@ -61,6 +61,10 @@ not determine whether a video model is needed; timing, motion complexity and con
    drift. Faithfulness to one input is not enough.
    Verify every essential action again in the final rendered cut, including repetition and timing relative to dialogue.
    Keep uncertain motion explicitly pending playback review.
+   For dialogue with multiple visible people, record the intended speaker and check each visible mouth: speaker
+   assignment, sync to our audio, and listener behavior are separate findings. Inspect the line and surrounding
+   silence in the full take and final cut. Failed takes need a retake or spatially consistent coverage, not a deleted
+   listener. Include representative multi-person coverage in the initial small motion batch (playbook §7).
    Record technical validation separately from spatial approval, tied to the selected source versions and crops.
    Files, hashes, timing and successful renders do not prove continuous occupancy or object state; static continuity
    approval does not prove motion or perceptual audio quality. Detailed review rules are in playbook §3.
