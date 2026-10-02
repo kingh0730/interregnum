@@ -7,7 +7,7 @@ basically, you're going to make an episode of the series using all the instructi
 but it's a special type of video, it's a music video.
 
 your primary goal in this episode is to 'show off your techniques'.
-use and mix in as many techniques, styles
+use and mix in as many techniques (e.g. html/js graphics on top of generated videos, etc.), styles
 (e.g. photorealistic, anime, cyberpunk, night, day, modern, ancient,
 high frame rate, low frame rate, explosion, dance, etc.),
 cinematography, effects and stuff, as many as you can.
