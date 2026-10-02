@@ -1,5 +1,5 @@
 # Production strategy: v1 → v2 (agreed with King, 2026-09-29)
-> **Superseded in part (2026-10-01):** images are Luma, motion is MiniMax H3 Max (Seedance refuses photoreal faces), and all speech comes from our own voices. The playbook is the current process.
+> **Superseded in part (updated 2026-10-02):** original images default to Luma with the beauty-portrait exception; generative image edits default to Codex. Motion is MiniMax H3 Max (Seedance refuses photoreal faces), and all speech comes from our own voices. The playbook is the current process.
 
 An engineer's approach: build everything that is **orthogonal** to what the paid models do well, ship a complete
 version, then use the models to polish.

@@ -1,6 +1,6 @@
 # Pipeline and tool matrix
 
-The overall plan is in `strategy.md`: v1 is everything in-house, v2 is polish with a video model. **The current tool choices are in `docs/playbook.md`** (Luma Uni-1 for images, MiniMax H3 Max for motion and lip-sync, ElevenLabs for voices, music and SFX); this table is the earlier survey. `history.md` covers the experiments behind these choices.
+The overall plan is in `strategy.md`: v1 is everything in-house, v2 is polish with a video model. **The current tool choices are in `docs/playbook.md`** (Luma Uni-1 Max for original images with the beauty-portrait exception, Codex for generative image edits, MiniMax H3 Max for motion and lip-sync, ElevenLabs for voices, music and SFX); this table is the earlier survey. `history.md` covers the experiments behind these choices.
 
 Every shot is built with the tool that is strongest for that job. These notes come from hands-on tests in
 `~/repos/yue/outputs/anime_clip/`: v1 slideshow, v2 layered compositing, v3 Codex frame-by-frame, v4 Blender + VRM,
@@ -32,13 +32,16 @@ not determine whether a video model is needed; timing, motion complexity and con
 2. **Look development** (`assets/`): character sheets and locations first; every later image references them.
    Shots sharing a setting use shared location references in their image manifests, alongside character and prop
    references. Establish compatible room layout, background landmarks and lighting across camera angles.
-3. **Keyframes** (Luma; Codex for some stylised looks) → **finish object graphics in the start frame** (JS/compositing
+3. **Keyframes** (original generation and editing follow separate defaults in playbook §2b) → **finish object graphics in the start frame** (JS/compositing
    as needed; verify text, clock readings and display states) → **motion** (code, reusable artwork/image sequences,
    Blender or a video model, according to the episode's visual direction and shot needs).
    For image-to-video, let the model animate supplied graphics with their objects. Use the approved scene frame to preserve faces, setting and
    composition; do not replace it with text-only generation. Add screen-space UI/graphics afterward.
    Before motion, compare the scene's starting frames together in edit order against its location reference; correct
    continuity mismatches, including inherited ones, before animating (playbook §3).
+   For edits, use a clean approved source, keep chains short, retain authoritative references and version history,
+   and inspect both the requested change and preservation of the whole image. Reject degraded results rather
+   than repeatedly editing them. Use ordinary tools for exact crops, resizes and typography (playbook §2b).
 4. **Check takes → composite → edit and sound:** locate essential actions in the full generated takes and record their
    timestamps before selecting cut points. Composite layers, FX and grade (Python); edit and sound with ffmpeg plus
    audio. If an action is usable but late, adjust the edit while preserving sync and pacing; if missing or unusable,

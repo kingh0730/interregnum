@@ -38,7 +38,7 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
 - **Budget:**
   - **fal:** images (Luma, about 0.3¢ each), music and SFX (about $4 per episode) and motion (MiniMax H3 Max, about
     $0.025/s, and its lip-sync, $0.05/s: roughly $5–15 per episode). The balance is shared by parallel sessions.
-  - **Codex:** only for stylised looks it does best; it draws on King's quota.
+  - **Codex:** the default generative image editor, plus original-image uses in §2b; it draws on King's quota.
   - **ElevenLabs:** the Starter account (about 40,000 characters a month), which covers an episode's dialogue several
     times over.
   - Estimate before any batch, test one item first, and tell King the cost when it crosses about $10.
@@ -148,26 +148,60 @@ not a blanket prohibition on authored character animation. This is an available 
 not a replacement default for every production. Existing production-scope and budget approvals still apply.
 
 ## 2b. Image technique: elegant, not "AI"
-**Use Luma Uni-1 max (`luma/agent/uni-1/v1/max`, edit at `/max/edit`) as the default for images.**
+**Choose original generation and editing separately.** Use Luma Uni-1 Max
+(`luma/agent/uni-1/v1/max`) as the default for original images, with the beauty-portrait exception below.
+**Use Codex's built-in image generation as the default for generative edits**, including corrections,
+reframing and derived poses/views (King, approved 2026-10-02). This is an adopted workflow preference,
+not a claim that Codex always preserves quality better. Apply the general editing rules below.
 The supporting evidence from the 2026-09-30 tests is in `docs/history.md`. Credible new evidence of a better fit
-for the planned production can warrant a small representative comparison under the reassessment guidance above;
-Luma need not fail first. Keep Luma as the default unless the comparison supports changing it, and record why.
+for original generation can warrant a small representative comparison under the reassessment guidance above;
+Luma need not fail first. Keep Luma as the original-generation default unless the comparison supports changing it,
+and record why.
 
-For troubleshooting an individual shot, make two honest Luma attempts with a rewritten brief. If it still fails
-at something the shot needs, test a few alternatives on that shot and use the winner for it. A shot-specific
-exception does not by itself establish a new default or a general per-style routing rule.
+For troubleshooting an original-generation shot assigned to Luma, make two honest Luma attempts with a rewritten
+brief. If it still fails at something the shot needs, test a few alternatives on that shot and use the winner for it.
+This does not require Luma attempts before a Codex edit. A shot-specific exception does not by itself establish
+a new default or a general per-style routing rule.
 
 **Approved beauty exception (2026-10-02):** when striking or idealized beauty is central to a character,
 use Codex's built-in image generation for the base portrait when available and suitable, using the subscription
 workflow first. If it is unavailable or cannot meet the brief, choose an appropriate alternative; there is no
-fixed fallback model. This exception does not require two further Luma attempts. Use the approved base as a
-reference for Luma scene generation, checking identity, makeup, age and skin texture on each result. The initial
+fixed fallback model. This exception does not require two further Luma attempts. Use the approved base as an
+identity reference for scene generation or editing, checking identity, makeup, age and skin texture on each result. The initial
 reference test was promising, but consistency across multiple angles and scenes is not yet established.
 
 **Non-face beauty preference (King, 2026-10-02):** keep Luma as the default for beautiful environments,
 cityscapes, objects and other non-face subjects. After the city and futuristic-city comparisons, King preferred
-Luma for non-face beauty despite the assistant favoring Codex's more polished results. Follow King's preference;
-the Codex-first beauty exception above is for base faces, not a general rule for anything described as beautiful.
+Luma for non-face beauty despite the assistant favoring Codex's more polished results. Follow King's preference
+for original generation; generative edits follow the Codex default. The Codex-first beauty exception above is
+for base faces, not a general original-generation rule for anything described as beautiful.
+
+### General image-editing rules (King, approved 2026-10-02)
+
+1. **Separate generation from editing.** Retain the original-generation preferences above; use Codex by default
+   for generative corrections, reframing and derived poses/views. Using images as references for a fresh composition
+   does not by itself make that composition an edit. Changing an existing image follows the editing policy.
+2. **Start from a clean, approved source.** For each revision, select the clean source best suited to the change,
+   rather than automatically using the latest attempt. It need not be the earliest image if a later approved
+   version contains a necessary pose, composition or intentional design change.
+3. **Keep edit chains short.** Combine compatible changes when practical. A further edit of an edited image is
+   acceptable when its existing improvements matter and its quality remains intact. No fixed number of edits
+   guarantees quality.
+4. **Preserve authoritative references.** Retain approved character, costume and location references throughout.
+   An edited shot must not silently replace them. Record intentional updates to the approved design.
+5. **Review preservation as carefully as the requested change.** Inspect the whole output at full size against
+   its input and the clean approved source: faces, texture, sharpness, colour, lighting and geometry. Compare
+   neighboring shots for continuity, including after a cross-model edit. A corrected detail does not excuse
+   degradation elsewhere.
+6. **Reject degradation instead of repeatedly repairing it.** If an edit introduces harsh texture, identity drift
+   or damaged geometry, return to a clean source or regenerate; do not build further work on the damaged result.
+7. **Use ordinary editing tools for exact operations.** Cropping, resizing and typography generally do not need
+   generative repainting. Preserve source pixels wherever practical. Retain originals, version history and the
+   actual input/output relationships; distinguish a serial edit from an independent retry using the same source.
+
+These rules govern future work generally; adopting them does not authorize regenerating existing episodes.
+
+### Prompts, faces and references
 
 - **Prompts are short photographer's briefs**, not prop lists:
   - where the camera stands and which lens;
@@ -185,22 +219,25 @@ the Codex-first beauty exception above is for base faces, not a general rule for
     ageing details ("deep laugh lines", "age spots", "sunken temples").
   - **One scene-generation model per character within a sequence;** cutting between models can read as the face
     changing. A base portrait made with another model under the beauty exception is a reference, not a reason to
-    alternate scene-generation models.
+    alternate scene-generation models. The Codex editing default permits cross-model repairs, but each must pass
+    the same sequence-level identity and texture review; it does not guarantee that the face survives unchanged.
   - **Base portrait:** a Luma t2i head-and-shoulders on a plain wall, 16:9, and judged at 100% before anything is
     built on it. For beauty-focused characters, use the Codex-first exception above and judge the base the same way.
-  - **Sheets** (three-quarter, profile, one expression) are Luma edits of the base, used to check the character and
-    as extra references for younger faces.
-  - **Why the base matters:** Luma edit adds skin texture every time, and edits of edits compound into crepey,
-    spotted faces.
-  - **Keyframes:** Luma edit with `image_url` = the base (padded to 16:9 if it isn't), `reference_image_urls` = the
-    base plus the sheets for young faces, or **the base only as the face reference for older faces**. Add the shared
-    location and recurring-prop references separately (§3); describe the shot within that established space rather
-    than asking for an independently invented setting. Every edit ends with the skin lock: "Keep the exact age and clear, even skin from the
+  - **Sheets** (three-quarter, profile, one expression) use Codex edits of the approved base by default, used to
+    check the character and as extra references for younger faces. Derive variants from the clean base rather
+    than chaining the sheet views together.
+  - **Why the base matters:** earlier Luma edit chains increased skin texture into crepey, spotted faces. This is
+    observed failure evidence, not a claim that every edit does so or that Codex cannot drift.
+  - **Keyframes:** use the selected original-generation model for a new composition and the default editor for
+    changes derived from an existing image. Supply the approved base plus sheets for young faces, or **the base
+    only as the face reference for older faces**. Add shared location and recurring-prop references separately (§3);
+    describe the shot within that established space rather than asking for an independently invented setting.
+    Every identity-preserving face edit ends with the skin lock: "Keep the exact age and clear, even skin from the
     reference: add no blemishes, spots, weathering or extra lines."
   - **An aged version** of a character (60 → 80) is a Luma **t2i** with the younger base in
     `reference_image_urls` and the ageing described plainly ("soft and even for her age"), never an ageing edit.
-    Only a small ageing done by edit (28 → 48) uses the ageing lock, "Age her only as described here, and keep a
-    clear, even complexion", instead of the skin lock.
+    Only a small ageing done by edit (28 → 48, Codex by default) uses the ageing lock, "Age her only as described
+    here, and keep a clear, even complexion", instead of the skin lock.
   - **Name the skin inside the character description, not only in the lock** (2026-10-01): "Her skin is smooth and
     clear, with an even tone and no freckles, moles or dark spots." Luma magnifies faint freckles in a base into heavy
     spots at close-up scale; the trailing lock and softer light alone didn't stop it, but this sentence did. Soft light
@@ -231,9 +268,11 @@ the Codex-first beauty exception above is for base faces, not a general rule for
 - **Finish:** `tools/imagegen/film_finish.py` evens out sheen and ties stills together. It can't rescue a bad frame.
 
 ## 3. Lookdev and keyframes
-The default model is Luma (§2b): `tools/imagegen/luma_batch.py <images.json> --jobs 8` runs a manifest (t2i or edit,
-in dependency order, resuming logged requests without automatic replacement). For Codex looks: `tools/imagegen/gen.sh` for one image,
-`tools/imagegen/batch.py <manifest> --jobs 5` for many. The Codex notes below apply only when a shot uses Codex.
+Original generation defaults to Luma, while generative editing defaults to Codex's built-in image tool (§2b).
+`tools/imagegen/luma_batch.py <images.json> --jobs 8` runs Luma manifests (t2i or explicitly selected Luma edits,
+in dependency order, resuming logged requests without automatic replacement). Existing Codex CLI helpers are
+`tools/imagegen/gen.sh` for one image and `tools/imagegen/batch.py <manifest> --jobs 5` for many; check their
+availability in the current environment. The historical Codex observations below apply when a shot uses Codex.
 - **Order:**
   1. The master style frame alone, then judge it.
   2. The other lookdev: character sheets and locations.
@@ -250,7 +289,9 @@ in dependency order, resuming logged requests without automatic replacement). Fo
 - **Known failures:**
   - **Cutout layers don't register with their keyframe.** Build mattes from the plate itself (GrabCut plus inpaint)
     instead of requesting cutouts.
-  - **Edits of a keyframe re-render everything.** Paste back only the edited region, with a feathered mask.
+  - **Generative edits can change unrequested regions.** For an isolated repair, preserve the original outside
+    the edited region when registration, perspective and lighting permit a clean composite. Inspect the boundary,
+    shadows and reflections; a pose, camera or lighting change may require a complete new frame.
   - **One image keeps failing with "network errors"** while others succeed: the prompt is usually too long (for
     example 4,900 characters). Cut it to about 3,000 by attaching the approved test frame as a composition reference.
   - **Codex flatters age.** "100 years old" rendered as about 78. Describe ageing through hair, posture, a narrower
@@ -412,7 +453,7 @@ the stock, polished result, the audio version of the AI look. So describe the re
 **Strategy.**
 - **Triage shots by what the motion is for:**
   - **A, story beats carried by acting:** image-to-video with an end frame pinning the pose the beat must land on
-    (make it as a Luma still), a behaviour-only prompt, 2–3 takes, and a real performance clip from King as a
+    (make it using §2b's generation/editing defaults), a behaviour-only prompt, 2–3 takes, and a real performance clip from King as a
     reference where he can give one. Complex beats are split at the pose: start → the pose, then the pose → the end.
   - **B, dialogue:** lip-sync (above).
   - **C, action and places:** image-to-video with a plain behaviour prompt, 1–2 takes.

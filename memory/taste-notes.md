@@ -1,11 +1,11 @@
 ---
 name: taste-notes
-description: "King's taste notes after two episodes — images looked oily/crowded/AI; the art was cliché"
+description: "King's visual taste and editing rules — original-generation preferences, Codex edits, clean sources and preservation review"
 metadata:
   node_type: memory
   type: feedback
   originSessionId: b27232ca-5280-4208-9826-f1156f716aae
-  modified: 2026-09-30T10:14:58.804Z
+  modified: 2026-10-02T00:57:47.540Z
 ---
 
 **1. Images (2026-09-30):** "suboptimal… 'oily' and 'crowded' and just looking very ai-generated, not elegant."
@@ -21,8 +21,10 @@ metadata:
     different styles or sequences (King: "it's not true that we should never use multiple models for one film").
     General rule (King): "use Luma Uni-1 Max unless there's truly something it just can't do right". Don't turn
     single-image test results into routing rules; that's overfitting (2026-09-30). Settled for good: even after a blind
-    screen where Claude ranked Grok and Muse above Luma, King said "it's just luma for me. settled." Don't reopen the
-    default model; only switch per shot when Luma really can't do it.
+    screen where Claude ranked Grok and Muse above Luma, King said "it's just luma for me. settled."
+    **Update 2026-10-02:** the approved general editing rules in §6 below supersede this older rule for edits.
+    Retain the original-generation preferences and beauty-portrait exception in `docs/playbook.md` §2b;
+    Codex is now the default generative editor. This is an explicit workflow choice, not a model-superiority finding.
 
 **2. Cliché:** "your art has been quite cliche so far… the artworks that I loved are all not cliche when they came out.
 There's always something niche, unique, creative… it's not that we can't use repeated elements, it's just the core
@@ -57,5 +59,32 @@ it's intentional, like a man without one arm or something)."
 - **Why:** Luma's first mother read about 70 instead of 58, and the son's edit sheets drifted into weathered, spotted,
   gaunt skin.
 - **How to apply:** judge every face for "scary" and retake it. The prompt method is in docs/playbook.md §2b, "Faces".
+
+**6. General image-editing rules (approved 2026-10-02):** King asked to establish general rules rather than
+repair First Day, then approved the following policy with "yes, let's remember this".
+
+1. **Choose original generation and editing separately.** Retain existing preferences for original images;
+   use Codex's built-in image generation by default for generative edits, including corrections, reframing and
+   derived poses/views. This is a workflow choice, not a claim that Codex always wins. Luma retries are not a
+   prerequisite for using the default editor.
+2. **Start from a clean, approved source best suited to the change.** Do not automatically pass the latest
+   attempt into the next. The best source need not be the earliest when a later approved version contains a
+   necessary pose, composition or intentional design change.
+3. **Keep edit chains short.** Combine compatible changes when practical. A further edit of an edited image is
+   acceptable when its existing improvements matter and its quality remains intact. No fixed edit count
+   guarantees quality.
+4. **Preserve authoritative references.** Retain approved character, costume and location references throughout;
+   an edited shot must not silently replace them. Record intentional approved design changes.
+5. **Check preservation as carefully as the requested change.** Compare the whole image at full size with its
+   input and the clean approved source: faces, texture, sharpness, colour, lighting and geometry. Check neighboring
+   shots for continuity, including after cross-model edits, so gradual deterioration is not missed.
+6. **Reject degradation instead of repeatedly repairing it.** Harsh texture, identity drift or damaged geometry
+   means returning to a clean source or regenerating, not building further work on the damaged result.
+7. **Use ordinary editing tools for exact operations.** Cropping, resizing and typography generally do not need
+   generative repainting. Preserve source pixels wherever practical, and retain originals and version history,
+   including which images were the actual inputs to each edit.
+
+Applies to future work generally; remembering the policy is not a request to regenerate existing episodes.
+Operational guidance: `docs/playbook.md` §2b. Existing episode recipes remain historical records.
 
 Related: [[director-owns-creative-calls]], [[episode-defaults]].
