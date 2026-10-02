@@ -31,4 +31,6 @@ uv run episodes/first-day/build/render_reel.py episodes/first-day/build/render.j
 
 The renderer preserves entire source images, holds them without simulated camera movement, composes Chinese type locally, and checks both exports before replacing them. Generation assets live under `assets/`, intermediate media under `work/first-day/`, and exports under `renders/first-day/`; media are deliberately excluded from Git.
 
-Stage 7 is prepared separately. No motion-generation request has been submitted. Use the handoff's three benchmark cases and inspect real action before approving a full motion batch.
+Stage 7 began with an authorized short test on 2026-10-02: one solo take (m10) and one duet take (m42), using MiniMax H3 Max. Watch the [17.42-second motion test with music](../../renders/first-day/first_day_motion_test.mp4) and read the [test receipt and review](build/motion_test.json). These are isolated full-take excerpts, not a replacement episode edit. Neither take passes the planned choreography and camera requirements; the full motion batch has not started.
+
+The original `build/motion_plan.json` is the frozen pre-motion recipe; its submission labels describe that preparation stage. Current test request IDs, results and review status are recorded separately in `build/motion_test.json`, with resumable provider logs retained locally under `build/h3_log/`.

@@ -1,0 +1,450 @@
+{
+  "schema_version": 1,
+  "episode": "first-day",
+  "created_at_utc": "2026-10-02T00:34:10.643749+00:00",
+  "scope": "Authorized short stage 7 test: one solo and one duet; no full motion batch. Original story reels unchanged.",
+  "generation_status": "Both requests completed; no retries or replacement generations.",
+  "production_acceptance": "Neither take passes its planned choreography and camera requirements.",
+  "authorization": "User: let's do the next stage on a short duration to test if it works",
+  "model": "MiniMax H3 Max",
+  "model_docs": "https://fal.ai/models/minimax/h3-max/image-to-video/api",
+  "requested_total_seconds": 17,
+  "returned_total_frames": 418,
+  "returned_total_seconds": 17.416666666666668,
+  "estimated_total_usd": 0.51,
+  "pricing_basis": "Live authenticated pricing via runner dry run before submission: $0.03 per requested second. Runner logs record $0.21 and $0.30. Estimate only, not an invoice.",
+  "original_motion_plan_sha256": "f7c9aa95eda1d1d1e1e8b8ac4985a0cef22c3e4c0d7311da90921a3601698b85",
+  "runner_sha256": "266af81654431f9a2c7fcac8656b20158b9bcc473e120c777d8ab76abbabe603",
+  "generation_command_template": "uv run tools/video/h3_batch.py episodes/first-day/build/motion_plan.json --root . --only <id> --jobs 1 --timeout 900",
+  "resume_policy": "Retain build/h3_log and resume the same ID; never submit a replacement merely because a polling window expires. Original motion_plan remains the pre-motion recipe; this receipt is current benchmark state.",
+  "jobs": [
+    {
+      "id": "m10",
+      "request_id": "01a0fa02-d155-76a2-898a-ce63c901152d",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "requested_seconds": 7.0,
+      "quoted_estimated_usd": 0.21,
+      "status": "done",
+      "payload_sha256": "b7778e4208d78638b181320f3b0727b3e53075e21d4d5153ca4c36e35e32faff",
+      "input_image": "episodes/first-day/assets/keyframes/k10.png",
+      "input_sha256": "67e5521ce1d96e72a83d6437fb9d76b026507e70d90deba3106c53f14a6f50ff",
+      "prompt": "Photoreal cinematic image in the established porcelain maritime future. 35 mm, 1.15 m high, full-body Lin left third, generous empty floor toward screen right. Lin performs one complete grounded phrase: right heel touch, quarter turn toward screen right, inward palm opens, one small backward step, then settles fully on A. Use the same offered arm visible in the starting frame throughout this shot; never switch hands during the gesture or contact. The invitation travels inward: Lin toward screen right and Yu toward screen left.  Preserve the supplied identities, age, costumes, supported architecture and closed/open dock state. Understated facial performance: mouths closed; only the described body movements happen. Locked companion camera. No generated text or lip movements. Diegetic sound only; no music. Return audio will be discarded.",
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "returned_video": "work/first-day/motion/m10.mp4",
+      "returned_video_sha256": "5945ac9911f4a4f16208dbe4d0a4551f98293fea1ea4fa020a1f3b26b70efd7d",
+      "returned_frames": 175,
+      "fps": 24,
+      "returned_seconds": 7.291666666666667,
+      "review": {
+        "job_id": "m10",
+        "source": "work/first-day/motion/m10.mp4",
+        "source_sha256": "5945ac9911f4a4f16208dbe4d0a4551f98293fea1ea4fa020a1f3b26b70efd7d",
+        "review_method": "Sampled decoded still frames; not continuous playback or audio review. Event times are sample-bounded observations, not frame-exact motion annotations.",
+        "production_acceptance": "reject_as_planned_full_phrase",
+        "motion_playback_verified": false,
+        "beat_sync_verified": false,
+        "sample_frames": [
+          0,
+          6,
+          12,
+          18,
+          24,
+          30,
+          36,
+          42,
+          48,
+          54,
+          60,
+          66,
+          72,
+          78,
+          84,
+          90,
+          96,
+          102,
+          108,
+          114,
+          120,
+          126,
+          132,
+          138,
+          144,
+          150,
+          156,
+          162,
+          168,
+          174
+        ],
+        "video_frames": 175,
+        "fps": 24,
+        "video_duration_seconds": 7.291666666666667,
+        "native_body_crop_rectangle": [
+          240,
+          180,
+          590,
+          740
+        ],
+        "evidence_sheets": [
+          "work/first-day/motion-test/m10_native_body_1.jpg",
+          "work/first-day/motion-test/m10_native_body_2.jpg",
+          "work/first-day/motion-test/m10_native_body_3.jpg"
+        ],
+        "landmarks": [
+          {
+            "interval_seconds": [
+              0,
+              0.25
+            ],
+            "observation": "Starting anticipatory pose."
+          },
+          {
+            "interval_seconds": [
+              0.5,
+              5.5
+            ],
+            "observation": "Repeated forward steps toward screen right, gradually raising an inward arm; no distinct touch/recovery then retreat phrase is visible in this sample sequence."
+          },
+          {
+            "interval_seconds": [
+              5.5,
+              7.25
+            ],
+            "observation": "Standing with inward arm raised. No backward step appears before the end."
+          }
+        ],
+        "material_findings": [
+          {
+            "finding": "Required complete solo phrase not demonstrated.",
+            "evidence": "Forward travel and arm raising replace the distinct heel-touch/recovery, quarter-turn, offer, backward-step sequence. Body becomes more side-on while advancing, but a distinct grounded dance pivot is not established. Required retreat is absent from reviewed sequence.",
+            "scope": "Entire sampled source and both provisional trims."
+          },
+          {
+            "finding": "Camera lock not followed.",
+            "evidence": "Full-frame framing and fixed architecture change substantially from beginning to end, with apparent push-in/reframing. Full body nevertheless remains in frame."
+          }
+        ],
+        "provisional_trim_assessment": [
+          {
+            "shot": "13",
+            "trim_seconds": [
+              0.5,
+              5.291667
+            ],
+            "status": "Does not retain a completed phrase; source remains in forward approach at cut endpoint."
+          },
+          {
+            "shot": "50",
+            "trim_seconds": [
+              0.85,
+              4.683333
+            ],
+            "status": "Does not retain a completed phrase; source remains in forward approach at cut endpoint."
+          }
+        ],
+        "other_observations": [
+          "Full body and two feet remain visible in reviewed frames.",
+          "No gross identity replacement or costume change seen in sampled frames.",
+          "Foot sliding, performance quality and musical timing have not been established by frame review."
+        ],
+        "mouth_motion_verified": false,
+        "temporal_identity_approved": false
+      }
+    },
+    {
+      "id": "m42",
+      "request_id": "01a0fa03-a172-7b61-a21d-37f54872903e",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "requested_seconds": 10.0,
+      "quoted_estimated_usd": 0.3,
+      "status": "done",
+      "payload_sha256": "449edd334f55cec4e5669ac7829f229b740f98a370f740cc907fa298bc878274",
+      "input_image": "episodes/first-day/assets/keyframes/k42.png",
+      "input_sha256": "956c8e872596261f5b145da1fc9f3b0010b8f94924d1d1f8658811221061dec6",
+      "prompt": "Photoreal cinematic image in the established porcelain maritime future. 35 mm, 1.15 m high from north, uninterrupted full-body two-shot: Lin left, Yu right, four feet and both faces clear. The two share one complete grounded phrase: heel touch, quarter turn, Lin's offered palm meets Yu's answering palm once, a modest connected quarter turn, then a balanced finish. Release the connection and lower both hands before the cut to the next phrase. Preserve each starting pose's offered arm throughout this phrase, with no hand switching. Keep four feet, both faces and the joined hands visible through contact and turn; no lifts or finger interlacing. Use the same offered arm visible in the starting frame throughout this shot; never switch hands during the gesture or contact. The invitation travels inward: Lin toward screen right and Yu toward screen left.  Preserve the supplied identities, age, costumes, supported architecture and closed/open dock state. Understated facial performance: mouths closed; only the described body movements happen. Locked companion camera. No generated text or lip movements. Diegetic sound only; no music. Return audio will be discarded.",
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "returned_video": "work/first-day/motion/m42.mp4",
+      "returned_video_sha256": "af0370142981355e874f84a39fe8de0ee283375ede81371cb830b7e8b2174d1a",
+      "returned_frames": 243,
+      "fps": 24,
+      "returned_seconds": 10.125,
+      "review": {
+        "job_id": "m42",
+        "source": "work/first-day/motion/m42.mp4",
+        "source_sha256": "af0370142981355e874f84a39fe8de0ee283375ede81371cb830b7e8b2174d1a",
+        "review_method": "Sampled decoded still frames; not continuous playback or audio review. Event times are sample-bounded observations, not frame-exact motion annotations.",
+        "production_acceptance": "reject_as_planned_full_phrase",
+        "motion_playback_verified": false,
+        "beat_sync_verified": false,
+        "sample_frames": [
+          0,
+          24,
+          30,
+          36,
+          42,
+          72,
+          78,
+          84,
+          90,
+          96,
+          108,
+          120,
+          132,
+          144,
+          150,
+          156,
+          162,
+          192,
+          202,
+          210,
+          216,
+          222,
+          228,
+          234,
+          242
+        ],
+        "video_frames": 243,
+        "fps": 24,
+        "video_duration_seconds": 10.125,
+        "evidence_sheets": [
+          "work/first-day/motion-test/m42_timed_1.jpg",
+          "work/first-day/motion-test/m42_timed_2.jpg",
+          "work/first-day/motion-test/m42_timed_3.jpg"
+        ],
+        "native_details_inspected": [
+          "work/first-day/motion-test/m42_frame_042.png",
+          "work/first-day/motion-test/m42_frame_078.png",
+          "work/first-day/motion-test/m42_frame_222.png"
+        ],
+        "landmarks": [
+          {
+            "interval_seconds": [
+              0,
+              1.5
+            ],
+            "observation": "Pair advance with raised palms. Palms are separate at 1.25 and close at 1.5."
+          },
+          {
+            "interval_seconds": [
+              1.5,
+              1.75
+            ],
+            "observation": "First palm contact begins within this sampled interval; clear at 1.75."
+          },
+          {
+            "interval_seconds": [
+              3,
+              3.25
+            ],
+            "observation": "Push-in/reframing crosses into foot cropping; both performers have clipped lower feet by 3.25."
+          },
+          {
+            "interval_seconds": [
+              3.75,
+              4
+            ],
+            "observation": "First contact ends within this sampled interval; palms visibly apart at 4.0."
+          },
+          {
+            "interval_seconds": [
+              3.5,
+              6
+            ],
+            "observation": "Lin turns from facing Yu through back, opposite profile and front, returning toward Yu: approximately a full solo rotation. Connection is broken for most of it; feet are cropped, so support cannot be assessed."
+          },
+          {
+            "interval_seconds": [
+              6.5,
+              6.75
+            ],
+            "observation": "Second palm contact; separate at 6.5 and joined at 6.75."
+          },
+          {
+            "interval_seconds": [
+              6.75,
+              8.75
+            ],
+            "observation": "Second connection held; still joined at planned trim endpoint 8.416667."
+          },
+          {
+            "interval_seconds": [
+              9,
+              9.75
+            ],
+            "observation": "Hands lower from 9.0; fingertips still touch at 9.25. Arms settle lower by 9.5–9.75, but hands leave frame, preventing full visual confirmation of a clear separated-hands finish."
+          }
+        ],
+        "material_findings": [
+          {
+            "finding": "Unwanted push-in removes feet during the required full-body phrase.",
+            "evidence": "Native frame78 at3.25s crops lower feet; later frames become waist-up. Full-body contact, supported turn and balanced finish cannot be verified from this source."
+          },
+          {
+            "finding": "Choreography differs materially from the requested shared phrase.",
+            "evidence": "Initial approach/contact is followed by a disconnected approximately full Lin rotation and a second palm contact. Prompt asked one contact and a modest connected quarter-turn. A distinct shared heel touch and initial quarter-turn are not established."
+          },
+          {
+            "finding": "Final release falls after the provisional production trim.",
+            "evidence": "Palms remain firmly joined at frame202 /8.416667s. Lowering begins near9.0s, with fingertips still touching9.25s. The source-trim endpoint cannot fulfill release/hands-low requirement."
+          }
+        ],
+        "provisional_trim_assessment": [
+          {
+            "shot": "77",
+            "trim_seconds": [
+              0.5,
+              8.416667
+            ],
+            "status": "Fails: final contact still held, feet cropped and required connected quarter-turn absent."
+          }
+        ],
+        "other_observations": [
+          "Faces and broad wardrobe remain recognizable and visually appealing in sampled frames.",
+          "No claim that Lin is unsupported: her feet are out of view during the rotation.",
+          "Visible palms are sufficient to see two distinct contact events, but complete finger stability requires playback and closer temporal review."
+        ],
+        "mouth_motion_verified": false,
+        "temporal_identity_approved": false
+      }
+    }
+  ],
+  "preview": {
+    "script": "episodes/first-day/build/motion_test_preview.py",
+    "script_sha256": "bd46f8ba47ef8d5c17e80b7799cd994d8305ad787556a17966ec99bf7a19409e",
+    "rebuild_command": "python3 episodes/first-day/build/motion_test_preview.py",
+    "method": "Full returned frames, native 24 fps, contain fit to 1920x1080. Direct cut between isolated excerpts. No provider audio, retiming, captions or added camera motion.",
+    "audio_note": "Full-take excerpts use the original song at provisional source-to-timeline positions; they jump between two nonadjacent parts of the recording. No provider audio or audio/time stretching. Not a beat-synchronized final edit.",
+    "master_audio": {
+      "path": "work/first-day/audio/master.wav",
+      "sha256": "242752ff5479f48ba4ee1cda3e42fd5dc2345b163d43f16529d87ca6b812e4aa"
+    },
+    "status": "technical_checks_pass",
+    "outputs": [
+      {
+        "path": "renders/first-day/first_day_motion_test_solo.mp4",
+        "sha256": "66ac03aa134e2520498508a46059574269574cfe5b0789de9cd2e02bc152dfe9",
+        "frames": 175,
+        "duration_seconds": 7.291666666666667,
+        "audio_samples": 321563,
+        "full_decode": "pass",
+        "timeline": [
+          {
+            "id": "m10",
+            "name": "solo",
+            "source": "work/first-day/motion/m10.mp4",
+            "source_video_frames": [
+              0,
+              175
+            ],
+            "output_frames": [
+              0,
+              175
+            ],
+            "output_audio_samples": [
+              0,
+              321563
+            ],
+            "master_audio_samples": [
+              1506750,
+              1828313
+            ],
+            "master_start_seconds": 34.166666666666664
+          }
+        ]
+      },
+      {
+        "path": "renders/first-day/first_day_motion_test_duet.mp4",
+        "sha256": "42903b85d240f83c92aa0d288a1e7d7acaef9fb70fc2059cbd87e84727d9a7b8",
+        "frames": 243,
+        "duration_seconds": 10.125,
+        "audio_samples": 446513,
+        "full_decode": "pass",
+        "timeline": [
+          {
+            "id": "m42",
+            "name": "duet",
+            "source": "work/first-day/motion/m42.mp4",
+            "source_video_frames": [
+              0,
+              243
+            ],
+            "output_frames": [
+              0,
+              243
+            ],
+            "output_audio_samples": [
+              0,
+              446513
+            ],
+            "master_audio_samples": [
+              8404725,
+              8851238
+            ],
+            "master_start_seconds": 190.58333333333334
+          }
+        ]
+      },
+      {
+        "path": "renders/first-day/first_day_motion_test.mp4",
+        "sha256": "d0d6edfb562c5b6f12e05a72c0d736715cff5cd8c62387e52aa4131358aac3b5",
+        "frames": 418,
+        "duration_seconds": 17.416666666666668,
+        "audio_samples": 768075,
+        "full_decode": "pass",
+        "timeline": [
+          {
+            "id": "m10",
+            "name": "solo",
+            "source": "work/first-day/motion/m10.mp4",
+            "source_video_frames": [
+              0,
+              175
+            ],
+            "output_frames": [
+              0,
+              175
+            ],
+            "output_audio_samples": [
+              0,
+              321563
+            ],
+            "master_audio_samples": [
+              1506750,
+              1828313
+            ],
+            "master_start_seconds": 34.166666666666664
+          },
+          {
+            "id": "m42",
+            "name": "duet",
+            "source": "work/first-day/motion/m42.mp4",
+            "source_video_frames": [
+              0,
+              243
+            ],
+            "output_frames": [
+              175,
+              418
+            ],
+            "output_audio_samples": [
+              321563,
+              768075
+            ],
+            "master_audio_samples": [
+              8404725,
+              8851237
+            ],
+            "master_start_seconds": 190.58333333333334
+          }
+        ]
+      }
+    ]
+  },
+  "decision": "Hold full-batch generation. Test simpler action phases and explicit constant framing before accepting production takes; user playback feedback can guide the next test.",
+  "review_limits": [
+    "Source and export frame inspection plus complete technical decode; no continuous playback or listening approval.",
+    "Both takes already fail action/framing requirements; mouth landmark metrics were not run and mouth motion remains unapproved.",
+    "Crossings and scene-to-scene motion continuity are not tested by these two clips."
+  ]
+}

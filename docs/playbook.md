@@ -461,6 +461,9 @@ the stock, polished result, the audio version of the AI look. So describe the re
 - **Test first on every new episode or model:** the key beat, one dialogue shot and one action shot, at a low
   resolution, and settle open questions (for H3 Max: `target_audio_url`, prompt expansion on or off, 768P against
   1080P) before the full batch.
+- **Measure returned footage, not just requested seconds.** In the 2026-10-02 First Day test, H3 Max returned
+  175 frames for a 7-second request and 243 frames for a 10-second request, both at 24 fps. Use actual decoded
+  frame counts when assembling previews and selecting action; these two observations are not a fixed padding rule.
 - **Review:** Claude screens every clip's frames (identity, hands, ageing, props, mouths) and retakes; King watches one
   assembled motion cut.
   For each new or regenerated take, compare the intended cut with its supplied frame, the scene's location reference

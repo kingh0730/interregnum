@@ -24,7 +24,9 @@ The source MP3 and LRC remain unchanged. The 44.1 kHz stereo float master contai
 
 The MP4 soundtrack is encoded once to AAC at 320 kb/s; both versions share that audio stream. Independent export checks found matching AAC packet hashes and decoded PCM, zero measured sample lag in five alignment windows, and −16.0 LUFS / −7.2 dBTP in the delivery decode. Picture lasts 6,096 frames at 24 fps, leaving 40 ms of picture after the complete 253.96-second master. Lyric starts preserve the supplied LRC. Provisional line endings avoid overlap and clear long gaps; the final lyric clears at 243.96 seconds before the closing credits. These are source-based timings, not verified sung-word alignment. Listening and experienced musical pacing remain for King's assembled playback review.
 
-## Motion handoff — no generation submitted
+## Motion handoff — original pre-motion checkpoint
+
+**2026-10-02 test update:** King subsequently authorized a short motion test. m10 and m42 were generated once each with MiniMax H3 Max; both returned downloadable video. The combined preview retains 418 returned frames at 24 fps (17.4167 seconds) and uses excerpts of the approved song master. The solo does not complete the specified phrase; the duet changes the contact sequence and pushes in until the feet leave frame. Neither take is accepted for production. See [the test receipt and review](build/motion_test.json) and [watch the preview](../../renders/first-day/first_day_motion_test.mp4). The remaining handoff below records the original stage 6 checkpoint, not the current submission state.
 
 `build/motion_plan.json` prepares 53 jobs, defaulting to MiniMax H3 Max at 768P with prompt expansion disabled. Current source handles total **334 seconds** for primary takes and **440 seconds** including planned extra takes. The final read-only runner dry run observed $0.03/second, giving **$10.02 / $13.20**, before unplanned retakes or other finishing costs. This supersedes the earlier $0.025 historical guide. These are estimates, not charges or authorization to submit; refresh pricing before submission. The dry run completed successfully without a generation POST; its receipt is `build/motion_dry_run.json`.
 
@@ -42,7 +44,7 @@ Landing stills from other camera angles are QA references, not forced end-image 
 
 The local fal ledger records **81 distinct accepted image request IDs**, including deliberate retakes and two k09 requests that returned HTTP 422 during recovery. One-image arithmetic at the observed authenticated/public image rates gives **$0.243 / $8.262**. Those conflicting rate scenarios are not an invoice or confirmed billed cost. The ledger distinguishes saved successful responses from incomplete local receipts; repeated polling of the same ID is not counted as another request. The rejected k09 calls were replaced by a reviewed built-in frame.
 
-Built-in generations, including recorded intermediate repairs, are counted separately by output hash; deliberate file-copy aliases are excluded. Their usage and cost are unknown. No paid motion-generation request or public publishing action was performed.
+Built-in generations, including recorded intermediate repairs, are counted separately by output hash; deliberate file-copy aliases are excluded. Their usage and cost are unknown. At the original stage 6 checkpoint, no paid motion-generation request or public publishing action had been performed. The subsequent short test added two motion requests, totaling 17 requested seconds and a $0.51 estimate at the live quoted rate; this is not an invoice. No public publishing occurred.
 
 ## Evidence
 
@@ -54,4 +56,4 @@ Built-in generations, including recorded intermediate repairs, are counted separ
 - `build/export_frame_review.json`: all 377 sampled shot/lyric/title frame checks pass; nine native decoded frames visually checked for text, title/credits and foot clearance.
 - `work/first-day/qa/`: full edit-order contact sheets, native review details and export-frame checks.
 
-The completed scope is stages 0–6, through the story reel with its final soundtrack. Stage 7 motion and stage 7b final finishing remain separate, with the benchmark plan, action checks and cost estimate ready.
+Stages 0–6 are complete through the story reel with its final soundtrack. The authorized stage 7 test is now complete; the full motion batch and stage 7b finishing remain outstanding. Playback review of the test is still required, and the observed choreography and framing failures must be resolved before production acceptance.
