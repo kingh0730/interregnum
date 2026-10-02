@@ -37,7 +37,8 @@ public repo ignores it, and it has its own local git repo that is never pushed. 
   worked examples, not rules: their choices belong to their films.
 - **Budget:**
   - **fal:** images (Luma, about 0.3¢ each), music and SFX (about $4 per episode) and motion (MiniMax H3 Max, about
-    $0.025/s, and its lip-sync, $0.05/s: roughly $5–15 per episode). The balance is shared by parallel sessions.
+    $0.03/s, and its lip-sync, $0.05/s: roughly $5–15 per episode; fal pricing snapshot 2026-10-02).
+    Refresh the rates before a batch. The balance is shared by parallel sessions.
   - **Codex:** the default generative image editor, plus original-image uses in §2b; it draws on King's quota.
   - **ElevenLabs:** the Starter account (about 40,000 characters a month), which covers an episode's dialogue several
     times over.
@@ -432,12 +433,13 @@ the stock, polished result, the audio version of the AI look. So describe the re
   which run early. Match subtitles to lines by ID and time, never by text (lines repeat).
 
 ## 7. Motion (default MiniMax H3 Max; fal; needs King's go)
-**Models** (tested 2026-10-01; evidence in `docs/history.md`):
+**Models** (tested 2026-10-01; evidence in `docs/history.md`; schema and pricing rechecked 2026-10-02):
 - **Default for video-generated motion and lip-sync: MiniMax H3 Max** (King's call). Choose whether to use video
   generation under §2's animation-method guidance. One family keeps motion, skin and light consistent from
   shot to shot, and mixing models reads as drift.
-  - **Motion:** `minimax/h3-max/image-to-video`, about $0.025/s. Start frame, optional end frame, 5–15 s, 480P, 768P
-    or 1080P; `prompt_expansion_mode: "disabled"` keeps prompts literal.
+  - **Motion:** `minimax/h3-max/image-to-video`, about $0.03/s in the 2026-10-02 fal pricing snapshot.
+    Start frame, optional end frame, 5–15 s, 480P, 768P or 1080P;
+    `prompt_expansion_mode: "disabled"` keeps prompts literal.
   - **Speech:** `minimax/h3-max/lip-sync/image-to-video`, $0.05/s. Image plus our audio, no prompt.
   - **Camera moves:** `minimax/h3-max/camera-controls` (keyframed camera paths, scene frozen).
   - **Restaging a still that's wrong:** `minimax/h3-max/reference-to-video` (images, videos and audio as refs).
@@ -445,16 +447,28 @@ the stock, polished result, the audio version of the AI look. So describe the re
   $0.03/s, no audio, keyframes pinned anywhere in the clip), then a quick comparison on that one shot.
 - **Seedance 2.5 refuses photoreal human stills** ("likenesses of real people"), even though every face is
   generated. Don't work around it. It stays an option only for stylised looks without photoreal faces.
-- **Tools:** `tools/fal_run.py <endpoint> <payload.json> <out>` for one clip; it never re-POSTs and it saves the
-  request id. There's no H3 Max batch tool yet: write one on the first full run, following
-  `tools/imagegen/luma_batch.py`. `tools/video/i2v.py` and `run_jobs.py` are Seedance-only.
+- **Tools:** `tools/video/h3_batch.py <motion.json> --root <repo>` runs parallel, resumable H3/i2v, lip-sync
+  and Ray manifests, including dependencies and chained frame inputs. `--dry-run` quotes new spend using fal's
+  pricing API; compare it with the current rate snapshot because lookup failures use fallback constants.
+  Request logs and a ledger preserve accepted requests; reruns resume them without another generation POST.
+  `--redo <ids>` explicitly requests paid replacement takes and archives old outputs; it is not timeout recovery.
+  `tools/fal_run.py <endpoint> <payload.json> <out>` remains the single-request tool.
+  `tools/video/i2v.py` and `run_jobs.py` are Seedance-only.
 
 **Speech only ever comes from our audio** (King: models "invent dialogue out of thin air").
 - **Pure dialogue shots:** lip-sync with our voice take.
 - **Motion prompts never mention speech** ("says a line", "shouts"): with no audio to follow, the model invents the
   words. Describe the action only, plus "mouth closed, not speaking".
-- **Shots with both action and a line:** first test `target_audio_url` on the normal H3 Max model (it may give
-  directable action plus lip-sync together). Otherwise split the line (lip-sync) from the action (H3 Max) in the edit.
+- **Shots with both action and a line:** the normal H3 Max schema describes `target_audio_url` as replacing
+  the output soundtrack, with trimming or silence padding; it does not establish directable action plus lip-sync.
+  Use the dedicated lip-sync endpoint for the line, and separate essential physical action or its completed state
+  in the edit. Any proposed combined performance requires a successful representative test before it enters the plan.
+  See the [i2v schema](https://fal.ai/models/minimax/h3-max/image-to-video/api) and
+  [lip-sync schema](https://fal.ai/models/minimax/h3-max/lip-sync/image-to-video/api).
+- **Local preflight before a motion quote:** resolve each image against the final approved asset map and verify
+  image decoding, aspect ratio and exact isolated-audio duration. Lip-sync input must be at least 5 seconds;
+  retain a silence-only submission tail for shorter shots. The batch runner's `--dry-run` estimates spend but
+  does not decode every image input. Supply `--root` explicitly so episode manifests resolve repository paths.
 - **Bound conditioning audio before padding:** trim to the intended line/shot with an explicit audio trim, reset
   timestamps, then pad with silence. Verify the padded tail; repeated ffmpeg output `-t` options do not perform two
   successive trims and can include the next shot's speech. Keep submitted input files for provenance.
@@ -519,7 +533,7 @@ the stock, polished result, the audio version of the AI look. So describe the re
 - **A stills-reel clip is a poor video reference:** it carries framing, which the still already gives, and stillness.
   Video references are for real performance or camera motion.
 - **Test first on every new episode or model:** the key beat, one dialogue shot and one action shot, at a low
-  resolution, and settle open questions (for H3 Max: `target_audio_url`, prompt expansion on or off, 768P against
+  resolution, and settle open questions (for H3 Max: isolated-audio timing, literal prompting, 768P against
   1080P) before the full batch.
 - **Measure returned footage, not just requested seconds.** In the 2026-10-02 First Day test, H3 Max returned
   175 frames for a 7-second request and 243 frames for a 10-second request, both at 24 fps. Use actual decoded
