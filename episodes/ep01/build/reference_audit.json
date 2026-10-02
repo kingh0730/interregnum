@@ -1,0 +1,86 @@
+{
+  "reviewed_by": "Codex director",
+  "review_scope": "Actual full frames; face masters also native-size crop; sheets inspected in returned tool images. No motion or audio perceptual claim.",
+  "references": [
+    {
+      "id": "ref_eda",
+      "path": "work/ep01/refs/ref_eda.png",
+      "size": [
+        2672,
+        1504
+      ],
+      "sha256": "9364c5c0fc5686b2f4a63b78afbc4eeb2df2175dbd946fb84cfba35a0395f3d2",
+      "review": "Approved full frame and native1024px face crop. Ordinary middle-aged East Asian woman; retain exact compact bob, face and ink-blue/bone costume. Tiny natural skin details are part of this master, not permission to add weathering."
+    },
+    {
+      "id": "ref_sen",
+      "path": "work/ep01/refs/ref_sen.png",
+      "size": [
+        2672,
+        1504
+      ],
+      "sha256": "62b1457fd7b92fc5f99276dccd103c12d902f76e392554d8061193934ac91fa8",
+      "review": "Approved full frame and native1024px face crop. Ordinary middle-aged Black man with cropped curls, clean-shaven silhouette; preserve clay shirt and face."
+    },
+    {
+      "id": "eda_sheet",
+      "path": "work/ep01/refs/eda_sheet.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "3e5fe43db875344735986f7eaa4b97e02710db5231e4a2787231f31b2cf31086",
+      "review": "Approved Codex derived three-view sheet; identity review reference. Luma scene jobs use base only for this adult face."
+    },
+    {
+      "id": "sen_sheet",
+      "path": "work/ep01/refs/sen_sheet.png",
+      "size": [
+        2048,
+        768
+      ],
+      "sha256": "bf49ba157599c9facfa038f5828c7f291779598c6662223b9a1c61e571e5dd88",
+      "review": "Approved Codex derived three-view sheet; identity review reference. Luma scene jobs use base only for this adult face."
+    },
+    {
+      "id": "ref_kitchen",
+      "path": "work/ep01/refs/ref_kitchen.png",
+      "size": [
+        2672,
+        1504
+      ],
+      "sha256": "91ad19aa17ecdcb41155aae4054eebd2bd8186777c7c2e7308188a9ef40fb445",
+      "review": "Approved empty location: left packed room, right rain landing; sinkleft/hobright, onecounter, twoashshelves, oneforegroundtable and paleyellowpendant. Geometry authority."
+    },
+    {
+      "id": "ref_props",
+      "path": "work/ep01/refs/ref_props.png",
+      "size": [
+        2672,
+        1504
+      ],
+      "sha256": "78a5edfd4a9333bd207a2a694bd6f771ae9204c396f7b3ba2f9797270796407b",
+      "review": "Approved recurring prop designs: bluebowl/onecrookedwhitestripe, carbonsteelpan/lid, mustardtapemeasure, stonewaresaltpot. Shot-specific count/content may change only as script records."
+    },
+    {
+      "id": "ref_modules",
+      "path": "work/ep01/refs/ref_modules.png",
+      "size": [
+        2672,
+        1504
+      ],
+      "sha256": "9eba07540df9d2e5ff7913d12113d72194f5a3581f7daa4e3ff08a49e7a2c052",
+      "review": "Approved separate floorstanding compact sink and hob units; plainfronts, no invented drawer. Must remain practical furniture scale, unplugged during trial."
+    },
+    {
+      "id": "ref_paper",
+      "path": "work/ep01/refs/ref_paper.png",
+      "size": [
+        2672,
+        1504
+      ],
+      "sha256": "1c7e93a4d8d85d7ab5178b41f77ba8cdbbf845c1085bcc9e291321fb140f3968",
+      "review": "Approved plain overhead ash substrate for exact authored in-world letterlocking inserts."
+    }
+  ]
+}
