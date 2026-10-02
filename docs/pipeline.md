@@ -25,6 +25,13 @@ not determine whether a video model is needed; timing, motion complexity and con
 | **ffmpeg** | Encoding, editing, conforming | | `-tune animation` for cel material |
 | **Audio** (`tools/audio/`) | Ambience, sound design, temp score, scratch dialogue (macOS `say`), mixing and loudness | Final music (**Suno**, run by King from Claude's cue sheets) and final voices (**Seedance**) | v2's synth is in `tools/audio/` |
 
+**Imagination and camera exploration (King, approved 2026-10-02):** use Codex's built-in image generation to
+discover alternative designs or compelling views of an existing design. For the latter, explore camera angle,
+framing, perspective, lighting and staging while preserving the subject and spatial continuity. Develop useful
+visual discoveries in language; image-first is optional. This exploratory role does not change Luma's existing
+original-production default or the Codex editing default. See playbook §2b, “Image generation as an imagination
+and camera partner,” for the procedure and evidence limits.
+
 **Physical-insert workflow (2026-10-02):** code-authored layout and story state → generative reconstruction of
 materials and lighting → visual and semantic review. Use this for controlled inserts whose code render needs
 a more convincing physical finish; it is optional for other artwork. Codex's built-in image editor handles the

@@ -262,3 +262,21 @@ that came out of them is "Luma unless it truly can't" (playbook §2b).
   to polish all code artwork generatively. Minor texture/geometry drift remained between states; the kitchen
   alignment correction also shifted the left slit slightly. The candidates were not integrated into the reel or
   granted continuity approval. The reusable procedure is recorded in playbook §2b and the pipeline overview.
+
+## Image-assisted imagination and visual interpretation (2026-10-02)
+
+- In the initial two-brief, 12-image test, King preferred the hybrid setting and object: image exploration,
+  assistant development, then image refinement. Records are in `work/creativity-workflow-test-20261002/`.
+- The expanded study used 12 new briefs across six categories, with two calls each for language-first and
+  image-assisted workflows: 48 images. The assistant's own ratings favoured language-first on five briefs,
+  image-assisted on four, with three ties. Treating one-point gaps as inconclusive left three stronger results
+  per approach and six close/tied comparisons. These were not independent or blind ratings; the same assistant
+  designed and evaluated the results. One sample per arm per brief does not establish a general ranking.
+- Useful image-led discoveries included a carrying cradle, a curved library ferry and a shared bed-lifting
+  action. Other explorations anchored development to familiar covers, animal combinations or outdoor gear.
+  Records, prompts, all images and the report remain in `work/imagination-study-20261002/`.
+- King identified another valuable use: visually appealing camera angles and ways of presenting a particular
+  thing, even when the underlying design stays the same. Adopted both design invention and visual interpretation
+  as optional Codex image-gen workflows in playbook §2b. Camera exploration was not separately controlled in
+  these tests; this addition records King's preference. No Luma comparison was performed, and production-model
+  defaults are unchanged.

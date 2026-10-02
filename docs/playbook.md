@@ -212,6 +212,37 @@ attention and viewers are meant to inspect its elaborate mechanisms, carvings or
 Architectural grandeur alone does not qualify. These are original-generation choices; the general editing rules
 and Codex editing default below remain unchanged.
 
+### Image generation as an imagination and camera partner (King, approved 2026-10-02)
+
+Use **Codex's built-in image generation** for this exploratory workflow. Separate two creative questions:
+
+- **Design invention:** what could the setting, object, creature, costume or visual action be? Give the model
+  the purpose and constraints, inspect its proposal, then develop a substantive discovery in language before
+  refining the image. Keep a written candidate available; image-first is not mandatory.
+- **Visual interpretation:** how could we see an existing design more compellingly? Supply its reference and
+  preserve its defining features while exploring camera position, height, angle, framing, perspective, lighting,
+  scale cues and staging. The object or setting need not be reinvented to obtain a stronger image. King
+  particularly values Codex image gen for appealing camera angles and interesting visual presentation.
+
+Before exploring, state which question is open and what is fixed. Afterward, identify the actual contribution:
+a new form, mechanism or action, or a better way of showing the same design. Develop useful discoveries;
+reject generic or merely decorative alternatives rather than polishing them automatically. Judge aesthetics,
+story usefulness and coherence separately. Use small purposeful explorations within the existing budget rules,
+not a compulsory batch for every shot.
+
+For camera exploration, retain authoritative character, prop and location references and the scene's entity
+states. Check that the new viewpoint is spatially possible, with correct positions, counts, screen direction,
+occlusion and occupancy across adjacent shots. An attractive angle is not permission to redesign the subject
+or remove a person. Apply the editing and continuity reviews to any selected result.
+
+Exploratory originals in this workflow may use Codex without prior Luma retries. **Final production imagery
+still follows the existing original-generation and editing choices above:** Luma remains the original-image
+default with its established exceptions, and Codex remains the generative editor. A Codex exploration can
+inform a production brief/reference without automatically becoming the approved production asset or master.
+This is an adopted workflow preference, not evidence that Codex is more imaginative than Luma; the tests did
+not compare Luma. The expanded study found no clear overall workflow advantage, and camera exploration was
+not isolated as a separate experimental variable (see `docs/history.md`).
+
 ### General image-editing rules (King, approved 2026-10-02)
 
 1. **Separate generation from editing.** Retain the original-generation preferences above; use Codex by default

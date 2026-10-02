@@ -5,6 +5,7 @@
 - [Audio decisions](audio-decisions.md) — I cast & pick audio myself; final voices only via Starter key; underplay voices (Kuleshov); Nana must sound 82
 - [Episode defaults](episode-defaults.md) — every episode stops before Seedance by default
 - [Taste notes](taste-notes.md) — Luma originals/architecture; Codex beauty faces or attention AND elaboration, plus generative edits; clean sources, preservation review, non-cliché art and varied pacing
+- [Image inspiration](image-inspiration.md) — Codex image gen for design discovery and compelling camera angles/views of existing designs; preserve identity and continuity; optional exploration, production routing unchanged
 - [Full file paths](full-file-paths.md) — every file as a complete repo-relative path in backticks (coloured, clickable); no bare names or globs
 - [Don't over-test](dont-over-test.md) — adopt ideas that are clearly sound by reasoning; test only genuine uncertainties that change decisions
 - [Reasoning effort](reasoning-effort.md) — Present or unspecified → default for everything; explicitly away → max for creative work (including writing/design) and checking, default for routine execution. Equal-length Astra pilot: max +2.42/30, 5.3× slower; 12 pitches, same-model judging and three-brief limitations. Return to default when King is back.
