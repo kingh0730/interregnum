@@ -9,6 +9,12 @@ and constraints of their production dates. Preserve useful lessons and source ma
 quality as a ceiling or copy their model choices, prompts, and workarounds by default. Judge a new episode
 against its own goals and the current series taste and quality requirements.
 
+**Visual ambition is mandatory for every episode.** Aim for exceptional aesthetic quality and memorable,
+eye-catching images that can astonish the audience. Achieve this through composition, light, colour, scale,
+materials, staging and visual invention, not by filling frames with complicated detail. Quiet shots and simple
+designs must be crafted as carefully as spectacular moments. Every production method, including code-rendered
+inserts and graphics, answers to this same bar. See `bible/visual.md` for the series-wide requirement.
+
 **Re-evaluate technical defaults when planning a new production.** Model recommendations and failure reports
 below record the evidence available when written; they are not permanent rankings. Check current primary
 documentation for relevant capabilities and availability, and use a small representative comparison when
@@ -121,6 +127,11 @@ felt like one tempo. Movement inside shots, narration cadence, sound density and
   series acting rule applies) and test-frame prompts.
 - **Tests:** 2 frames per direction, 6 in all, with **no refs** (old refs pull the old look back). Pick one direction
   and state why.
+- **Aesthetic review:** state what makes the chosen direction arresting and distinctive in the actual frames.
+  Review ordinary dialogue coverage and functional inserts as well as the major visual moments as those images
+  are produced; one impressive establishing shot does not excuse weak supporting imagery. Reject generic,
+  diagram-like substitutes for physical scenes even when their labels and geometry are correct. Revise the
+  composition, artwork or production method rather than adding detail indiscriminately.
 - **Rules learned the hard way:**
   - **Codex drifts to semi-photoreal 3D** (when a stylised look uses Codex) unless the style block says so
     explicitly: matte ink, no reflections, no gradients, "avoid 3D render".
@@ -372,7 +383,11 @@ availability in the current environment. The historical Codex observations below
   is deterministic.
 - **Kit:** use a shared kit per episode (glyph tables, CRT pass, emblem), as in `episodes/pilot/js_v3/kit.js`.
 - **Outputs:** full-frame pictures, overlays (.mov with alpha), or screen textures for homography into keyframes.
-- **QA:** stills at key beats, read with Read. The text must be exact.
+- **QA:** inspect stills at key beats for exact text and aesthetic quality in the episode's chosen medium. Review
+  inserts next to surrounding shots; readability alone is not a pass. For physical props in photographic scenes,
+  exact lettering should belong to convincing materials, lighting, perspective and contact, not flat shapes laid
+  over a photographic background. Use code selectively for precision where useful; code-rendered artwork is
+  acceptable when the actual result meets the same visual standard as the rest of the film.
 - **Prepare object graphics before motion:** render or correct lettering, clock faces and hands, display states,
   symbols and other graphics attached to a prop or in-world surface, then
   composite it into the approved image-to-video start frame with the intended perspective, lighting and occlusion.

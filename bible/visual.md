@@ -12,6 +12,20 @@ or its palette, belongs to that film. It is not series law, and a new episode st
 
 Sound has its own series rules in `bible/sound.md`.
 
+**Visual ambition (King, 2026-10-02).** Every episode must be aesthetically exceptional, eye-catching and
+visually memorable; aim for images that make the audience say "wow," even feel astonished. This is a series-wide
+quality bar, not an optional flourish for spectacular stories.
+
+Visual impact can come from a simple composition, extraordinary light, colour, scale, material, staging or an
+unexpected visual idea. Complexity, ornament and crowded detail do not establish quality. Quiet scenes still need
+strong visual craft; they need not compete with the episode's major visual moments. Preserve the contrast and
+restraint of §1 rather than turning every shot into a spectacle.
+
+Apply the same aesthetic bar to generated imagery, code-rendered pictures, inserts, diagrams, screens and titles.
+Technical correctness, legibility and deterministic control are not aesthetic approval. Reject generic or
+presentation-slide-looking substitutes that weaken the chosen visual world. Judge the actual image and its place
+in the sequence, not the tool used to make it; a deliberate graphic style can be exceptional too.
+
 ---
 
 ## 1. No constant dial

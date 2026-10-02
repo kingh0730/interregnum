@@ -4,6 +4,7 @@
 **Logline:** <one sentence>
 **Runtime:** <target minutes>
 **Visual language:** <references, palette, medium: 2D anime / 3D / mixed / live-action look>
+**Visual ambition:** <what makes this episode aesthetically exceptional and memorable; how simple/quiet scenes and functional inserts sustain that quality without clutter or constant spectacle>
 **Tools:** <which parts are video model, Blender, JS, Codex stills>
 
 ## Story
@@ -25,6 +26,7 @@
 ## Review status
 
 **Technical validation:** <evidence and unresolved issues>
+**Aesthetic review:** <actual images and sequence reviewed, including supporting shots and inserts; distinctive strengths and unresolved visual weaknesses; technical success alone is insufficient>
 **Spatial continuity:** <actual adjacent-cut review record; approved / pending / stale>
 **Continuity gate record:** <machine-readable review path; declared as continuity_review in new motion manifests>
 **Motion and perceptual audio:** <what was actually reviewed; leave unverified work explicit>
