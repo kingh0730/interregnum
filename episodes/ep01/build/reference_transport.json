@@ -145,5 +145,176 @@
   "source_total_bytes": 30533238,
   "transport_total_bytes": 2256531,
   "complete": true,
-  "originals_preserved": true
+  "originals_preserved": true,
+  "boards": [
+    {
+      "id": "ref_cast_board",
+      "out": "work/ep01/refs/boards/ref_cast_board.jpg",
+      "dimensions": [
+        5344,
+        1560
+      ],
+      "bytes": 1002859,
+      "sha256": "8b1df15a0d1ccf1b7e05543614b4ef2ef9f0fd4a04a026e2177116fdb795730a",
+      "format": "JPEG",
+      "mode": "RGB",
+      "quality": 90,
+      "optimize": true,
+      "progressive": false,
+      "metadata": "JFIF only; no EXIF or ICC",
+      "non_generative": true,
+      "labels_outside_image_cells": true,
+      "cells": [
+        {
+          "role": "eda",
+          "source": "work/ep01/refs/ref_eda.png",
+          "source_sha256": "9364c5c0fc5686b2f4a63b78afbc4eeb2df2175dbd946fb84cfba35a0395f3d2",
+          "source_dimensions": [
+            2672,
+            1504
+          ],
+          "destination_box_xyxy": [
+            0,
+            56,
+            2672,
+            1560
+          ],
+          "label": "EDA",
+          "label_top_left": [
+            16,
+            10
+          ],
+          "source_crop": null,
+          "resample": "none",
+          "content_changes": "none; contact placement only before JPEG encoding"
+        },
+        {
+          "role": "sen",
+          "source": "work/ep01/refs/ref_sen.png",
+          "source_sha256": "62b1457fd7b92fc5f99276dccd103c12d902f76e392554d8061193934ac91fa8",
+          "source_dimensions": [
+            2672,
+            1504
+          ],
+          "destination_box_xyxy": [
+            2672,
+            56,
+            5344,
+            1560
+          ],
+          "label": "SEN",
+          "label_top_left": [
+            2688,
+            10
+          ],
+          "source_crop": null,
+          "resample": "none",
+          "content_changes": "none; contact placement only before JPEG encoding"
+        }
+      ],
+      "local_decode_checks": [
+        "Pillow full decode",
+        "OpenCV full decode"
+      ],
+      "remote_sha256_verified": true
+    },
+    {
+      "id": "ref_set_board",
+      "out": "work/ep01/refs/boards/ref_set_board.jpg",
+      "dimensions": [
+        2672,
+        2368
+      ],
+      "bytes": 680710,
+      "sha256": "be2f41b57ea992c34f34fb71d2c2e2291cb4a1f3426fb4624daad34c5ee841c4",
+      "format": "JPEG",
+      "mode": "RGB",
+      "quality": 90,
+      "optimize": true,
+      "progressive": false,
+      "metadata": "JFIF only; no EXIF or ICC",
+      "non_generative": true,
+      "labels_outside_image_cells": true,
+      "cells": [
+        {
+          "role": "kitchen",
+          "source": "work/ep01/refs/ref_kitchen.png",
+          "source_sha256": "91ad19aa17ecdcb41155aae4054eebd2bd8186777c7c2e7308188a9ef40fb445",
+          "source_dimensions": [
+            2672,
+            1504
+          ],
+          "destination_box_xyxy": [
+            0,
+            56,
+            2672,
+            1560
+          ],
+          "label": "ROOM",
+          "label_top_left": [
+            16,
+            10
+          ],
+          "source_crop": null,
+          "resample": "none",
+          "content_changes": "none; contact placement only before JPEG encoding"
+        },
+        {
+          "role": "props",
+          "source": "work/ep01/refs/ref_props.png",
+          "source_sha256": "78a5edfd4a9333bd207a2a694bd6f771ae9204c396f7b3ba2f9797270796407b",
+          "source_dimensions": [
+            2672,
+            1504
+          ],
+          "destination_box_xyxy": [
+            0,
+            1616,
+            1336,
+            2368
+          ],
+          "label": "PROPS",
+          "label_top_left": [
+            16,
+            1570
+          ],
+          "source_crop": null,
+          "resample": "Lanczos 2:1 downsample",
+          "content_changes": "none; contact placement only before JPEG encoding"
+        },
+        {
+          "role": "modules",
+          "source": "work/ep01/refs/ref_modules.png",
+          "source_sha256": "9eba07540df9d2e5ff7913d12113d72194f5a3581f7daa4e3ff08a49e7a2c052",
+          "source_dimensions": [
+            2672,
+            1504
+          ],
+          "destination_box_xyxy": [
+            1336,
+            1616,
+            2672,
+            2368
+          ],
+          "label": "MODULES",
+          "label_top_left": [
+            1352,
+            1570
+          ],
+          "source_crop": null,
+          "resample": "Lanczos 2:1 downsample",
+          "content_changes": "none; contact placement only before JPEG encoding"
+        }
+      ],
+      "local_decode_checks": [
+        "Pillow full decode",
+        "OpenCV full decode"
+      ],
+      "remote_sha256_verified": true
+    }
+  ],
+  "board_url_catalog": "work/ep01/board_urls.json",
+  "board_builder": "episodes/ep01/build/reference_boards.py",
+  "generation_submitted_field_scope": "The derivative preparation/upload process made no image-generation requests. Subsequent scene tests using these references are recorded separately in build/image_incidents.json.",
+  "diagnostic_outcome": "Full-resolution Q90 replacements did not resolve k01_v2. Two- and three-reference Q90 jobs also failed. The two-board job with a rewritten prompt succeeded; count, encoding, and prompt are not isolated causes."
 }

@@ -58,7 +58,7 @@ Future motion start frames show the first neutral performance state. One key act
 
 ## Frame and type safety
 
-Master **16:9**, no decorative letterboxing. Maintain clean lower floor/table regions when possible for later English/Chinese subtitles, but never move a necessary hand action out of causal view merely to reserve a band. Keep critical objects away from the bottom12% of frame when an alternative framing preserves the action. Subtitle placement can shift for a necessary object insert. Exact text is added after image generation. All furniture surface labels that must survive future motion are finished in the approved start frame.
+Master **16:9**, no decorative letterboxing. Maintain clean lower floor/table regions when possible for bilingual subtitles, but never move a necessary hand action out of causal view merely to reserve a band. Chinese appears first at40px and English second at32px in the1080p reel, with a restrained dark stroke and no rectangular banner. The usual two-language block is96px tall. Keep critical objects away from the bottom12% of frame when an alternative framing preserves the action. Subtitle placement can shift for a necessary object insert; the k05 return shots raise the block above both hands. Exact text is added after image generation. All furniture surface labels that must survive future motion are finished in the approved start frame.
 
 Do not use a framing crop that cuts shoes during a threshold crossing or removes the far edge of a module whose cramped size supplies the joke. Do not crop a wide hall test into a portrait to judge its scale.
 

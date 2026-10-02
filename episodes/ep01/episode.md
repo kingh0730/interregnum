@@ -1,6 +1,6 @@
 # COMMON ROOM / 一室两家
 
-**Series:** AI SI - I. **Episode:** 01. **Format:** 16:9, 24 fps, English dialogue with English and Simplified Chinese subtitle tracks. **Planned runtime:** 3:50, including an eight-second end card. **Production scope:** complete still-based story reel and final sound; prepare but do not generate video-model motion.
+**Series:** AI SI - I. **Episode:** 01. **Format:** 16:9, 24 fps, English dialogue with Chinese-first bilingual burn-ins and a bilingual SRT. **Runtime:** 3:50, including an eight-second end card. **Production scope:** complete still-based story reel and final sound; prepare but do not generate video-model motion.
 
 Eda and Sen are dividing their home. In their world a room can have doors at several postal addresses, but it remains one room: nothing inside is duplicated. They can leave with two tiny private kitchens, or keep the full kitchen shared and give up exclusive control of its use. They choose the room, complete their move to separate homes, and immediately get in one another's way.
 
@@ -41,6 +41,8 @@ The physical design draws on letterlocking research: paper becomes its own enclo
 
 ## Tempo and production contract
 
-The home register uses clear room geography, restrained faces and discrete actions. Module testing accelerates cuts, movements and recorded object sounds together. The one hard stop is earned by both characters setting their objects down. The final section uses fewer sounds and longer reactions while practical work continues. Sound should retain the left door's distant dry air and the right door's rain at the ending, without filling quiet with a pad.
+The home register uses clear room geography, restrained faces and discrete actions. Module testing accelerates cuts, movements and recorded object sounds together. The one hard stop arrives on the completed objects-down state. The final section uses fewer sounds and longer reactions while practical work continues. Sound should retain the left door's distant dry air and the right door's rain at the ending, without filling quiet with a pad.
 
-The canonical shot sequence and bilingual dialogue are in `episodes/ep01/build/story.json`. The human-readable script and shot list must match it. Dialogue offsets are provisional until the generated takes are measured; final runtime adjustments must update all three artifacts. Future motion may improve performance, but the present story reel must already make the rule and decision readable through selected still states and exact inserts.
+The canonical shot sequence and bilingual dialogue are in `episodes/ep01/build/story.json`. The human-readable script and shot list must match it. All 26 dialogue lines, authored cue offsets and 5520 frames are locked. Selected-source documentation reflects the actual reviewed still poses; final subtitle timing is supplied by the audio/subtitle artifacts. Future motion may improve performance, but the present story reel must already make the rule and decision readable through selected still states and exact inserts.
+
+Current image status: static continuity approval of the selected photographic edits and exact authored paper states. This does not approve future character motion, lip sync or perceptual audio quality.

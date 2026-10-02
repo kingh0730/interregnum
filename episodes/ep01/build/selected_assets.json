@@ -1,0 +1,437 @@
+{
+  "scope": "Static starting frames and authored insert states only; no motion approval implied.",
+  "review_basis": "Actual images inspected against the character, room, prop references and adjacent states. Rejected versions remain outside assets.json.",
+  "photographic_source_policy": "Luma Uni-1 Max originals; Codex built-in generative continuity edits. Exact lettering is authored separately.",
+  "endcard": "k27 is exact typography rendered by render_reel.py; no generated lettering.",
+  "assets": [
+    {
+      "asset": "k01",
+      "path": "work/ep01/keys/k01_edit.png",
+      "sha256": "cf1d7361790552336051a0dae2b9c3618b2fe05a0b832f597e12cc86aa24161c",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k01_edit",
+      "base": "ref_kitchen"
+    },
+    {
+      "asset": "k03",
+      "path": "work/ep01/keys/k03_fix.png",
+      "sha256": "7f65cba151b24f6eb779b4306cc55921b150f2a0561c191e0da4e52c842e3c1b",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k03_fix",
+      "base": "k03_edit"
+    },
+    {
+      "asset": "k04",
+      "path": "work/ep01/keys/k04_fix.png",
+      "sha256": "320d614ee8078e913c58dd6d41a14e481e663614a20d9c656c9f491e63e493d2",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k04_fix",
+      "base": "k04_edit"
+    },
+    {
+      "asset": "k05",
+      "path": "work/ep01/keys/k05_fix.png",
+      "sha256": "63bb24ff065ded1f1a711151986ddab9677f7f03eb962247b2c7f8076e11bb37",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k05_fix",
+      "base": "k05"
+    },
+    {
+      "asset": "k06",
+      "path": "work/ep01/keys/k06_edit.png",
+      "sha256": "d6d87ed7851b9ab0cd9e4912e3643461a38d8bca26ad2be49220d1f4982921d0",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k06_edit",
+      "base": "k05_fix"
+    },
+    {
+      "asset": "k08",
+      "path": "work/ep01/keys/k08_edit.png",
+      "sha256": "f5df9d1a3810b7b43f38d7cb18114570b611ba7f58ff2334a49b15f3c079707a",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k08_edit",
+      "base": "k05_fix"
+    },
+    {
+      "asset": "k09",
+      "path": "work/ep01/keys/k09_fix.png",
+      "sha256": "8e5f6aba6da7fedc3cea22074c8f49af5ffea6782f5df9680a564b627a6bb5c6",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k09_fix",
+      "base": "k09_edit"
+    },
+    {
+      "asset": "k10",
+      "path": "work/ep01/keys/k10_fix.png",
+      "sha256": "2557006acb8b39eb35659221f4ec7ed31f62a01de9483a8757e9a53e0316cdfa",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k10_fix",
+      "base": "k10_edit"
+    },
+    {
+      "asset": "k11",
+      "path": "work/ep01/keys/k11_fix.png",
+      "sha256": "3a508bf3fa10ea0d66ca9bf1a17266e497f58c29a8fa6d6ef5e615d65061ea9e",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k11_fix",
+      "base": "k11"
+    },
+    {
+      "asset": "k12",
+      "path": "work/ep01/keys/k12_final.png",
+      "sha256": "ae790e6117e9cd182c254486b097ba062abbbf2a5db7a1fe13c77f1cfbf68511",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k12_final",
+      "base": "k12_fix"
+    },
+    {
+      "asset": "k13",
+      "path": "work/ep01/keys/k13_fix.png",
+      "sha256": "8670201aba7a50dba872d9a659dc60214c4647b6548dc256f7b69aec98d330e6",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k13_fix",
+      "base": "k13_edit"
+    },
+    {
+      "asset": "k14",
+      "path": "work/ep01/keys/k14_edit.png",
+      "sha256": "9181652f0b9c4ab0b30f17d6b70d5659dd7216e08cd9ab9c8f93f9170fa7d0c9",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k14_edit",
+      "base": "k11_fix"
+    },
+    {
+      "asset": "k15",
+      "path": "work/ep01/keys/k15_edit.png",
+      "sha256": "e714309f9624bdb80ff771eca985b08ee3a718049cbfd87099ec74bb266d245c",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k15_edit",
+      "base": "k16_fix"
+    },
+    {
+      "asset": "k16",
+      "path": "work/ep01/keys/k16_final.png",
+      "sha256": "5ce6a43f76680a29c7721b72140fb5f9327763e7e8cd20c578ec2f3f7b478c66",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k16_final",
+      "base": "k16_fix"
+    },
+    {
+      "asset": "k17",
+      "path": "work/ep01/keys/k17_final.png",
+      "sha256": "ce9f82d3c010cc25131f418747b4d2f9f312bbb5e69fe6ff8dd2a42b60ea848b",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k17_final",
+      "base": "k17_edit"
+    },
+    {
+      "asset": "k19",
+      "path": "work/ep01/keys/k19_edit.png",
+      "sha256": "3ee014d7ffc6ed4b7e768628716b0b0d92dd56da95a7b037dc97c5bccb02b918",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k19_edit",
+      "base": "style_A_scale"
+    },
+    {
+      "asset": "k20",
+      "path": "work/ep01/keys/k20_edit.png",
+      "sha256": "9db95d746f0060009fbd6a709c7704e9b9cfec34f8d5441afb2b94a272f89cdf",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k20_edit",
+      "base": "style_A_scale"
+    },
+    {
+      "asset": "k21",
+      "path": "work/ep01/keys/k21_edit.png",
+      "sha256": "2bbd7f3bcded27d55897a8aa1263712fe2a80fafac9658521651d6b1508c1cb4",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k21_edit",
+      "base": "k03_fix"
+    },
+    {
+      "asset": "k22",
+      "path": "work/ep01/keys/k22_edit.png",
+      "sha256": "d6dfa19bba21ecdcd235cc847d2d104ae924bf031c298bd946baacbd07be0121",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k22_edit",
+      "base": "k01_edit"
+    },
+    {
+      "asset": "k23",
+      "path": "work/ep01/keys/k23_edit.png",
+      "sha256": "13c84e6c4adae664152cc02a7070e55b57ffda6d6eea8f4bbcc91394a72692a0",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k23_edit",
+      "base": "k22_edit"
+    },
+    {
+      "asset": "k24",
+      "path": "work/ep01/keys/k24_edit.png",
+      "sha256": "43031740ba70859ed353b6dc2590a50e47710c3f0291625c69a54f9cab37df14",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k24_edit",
+      "base": "k22_edit"
+    },
+    {
+      "asset": "k25",
+      "path": "work/ep01/keys/k25_edit.png",
+      "sha256": "bfa0bcd34bb44ffad55358638e75ebefa361cb7ee78e15e85981f6a56984ec29",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k25_edit",
+      "base": "k22_edit"
+    },
+    {
+      "asset": "k26",
+      "path": "work/ep01/keys/k26_edit.png",
+      "sha256": "8668d21f0af989f3d4c2253c83b52a6076d5109393f06e57eaadfcd379b7ec9b",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k26_edit",
+      "base": "k22_edit"
+    },
+    {
+      "asset": "k28",
+      "path": "work/ep01/keys/k28_edit.png",
+      "sha256": "b29c095e82f1b0b363f82bc82cf68b90b9d7af7293921a33ca7830af4144918c",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k28_edit",
+      "base": "k12_fix"
+    },
+    {
+      "asset": "k29",
+      "path": "work/ep01/keys/k29_edit.png",
+      "sha256": "384bad6e70901a696c15b0c16de69fe447fbff8d2864ae4944b20077f01be100",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k29_edit",
+      "base": "k23_edit"
+    },
+    {
+      "asset": "k30",
+      "path": "work/ep01/keys/k30_edit.png",
+      "sha256": "8df7257e7e7a1875680cb4d7258a5cc2716d329131308732cc164972ce9398c0",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k30_edit",
+      "base": "k24_edit"
+    },
+    {
+      "asset": "k31",
+      "path": "work/ep01/keys/k31_edit.png",
+      "sha256": "66085c2991e43b0bdaa004ad35e79e118d748aed5763e2bd538554b441e992ab",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "method": "Codex built-in image edit of approved photographic sources",
+      "recipe": "episodes/ep01/build/codex_edits.json",
+      "edit_id": "k31_edit",
+      "base": "k06_edit"
+    },
+    {
+      "asset": "k02",
+      "path": "work/ep01/paper/k02.png",
+      "sha256": "3fa53fbdab941b2435b09361256a05f3703f38cb68a55e2667e44ed6815ad905",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "method": "Authored paper graphics on photographic ash-table plate",
+      "recipe": "episodes/ep01/build/paper_graphics.py",
+      "edit_id": null,
+      "base": "ref_paper"
+    },
+    {
+      "asset": "k02_after",
+      "path": "work/ep01/paper/k02_after.png",
+      "sha256": "f22344e86ea65de1f573d4ef68fd4b46c0b3cd143edc425e3ab29e2bd53a1ad9",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "method": "Authored paper graphics on photographic ash-table plate",
+      "recipe": "episodes/ep01/build/paper_graphics.py",
+      "edit_id": null,
+      "base": "ref_paper"
+    },
+    {
+      "asset": "k07",
+      "path": "work/ep01/paper/k07.png",
+      "sha256": "be83b011305077d093812033f0968c5886645b241628b8cd287fb03ed21b78ed",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "method": "Authored paper graphics on photographic ash-table plate",
+      "recipe": "episodes/ep01/build/paper_graphics.py",
+      "edit_id": null,
+      "base": "ref_paper"
+    },
+    {
+      "asset": "k07_after",
+      "path": "work/ep01/paper/k07_after.png",
+      "sha256": "ae42b83255db70a3514d4201dded50442845ecf775537b24b43b70eb52ccf99a",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "method": "Authored paper graphics on photographic ash-table plate",
+      "recipe": "episodes/ep01/build/paper_graphics.py",
+      "edit_id": null,
+      "base": "ref_paper"
+    },
+    {
+      "asset": "k18",
+      "path": "work/ep01/paper/k18.png",
+      "sha256": "06f047a6264290e40a8e6f55e0a2ada2f007b9a3ef96af0d80e02fbe46f8a0de",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "method": "Authored paper graphics on photographic ash-table plate",
+      "recipe": "episodes/ep01/build/paper_graphics.py",
+      "edit_id": null,
+      "base": "ref_paper"
+    },
+    {
+      "asset": "k18_after",
+      "path": "work/ep01/paper/k18_after.png",
+      "sha256": "0c2d820092af26bdda6d5b006e4fc7e40bdfa9a4b45b1cc8fef4fc022a8dd5aa",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "method": "Authored paper graphics on photographic ash-table plate",
+      "recipe": "episodes/ep01/build/paper_graphics.py",
+      "edit_id": null,
+      "base": "ref_paper"
+    }
+  ]
+}

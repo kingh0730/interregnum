@@ -1,0 +1,587 @@
+[
+  {
+    "id": "k01",
+    "out": "work/ep01/keys/k01.png",
+    "mode": "t2i",
+    "prompt": "New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Preserve the referenced kitchen: two rear doors flank one continuous pale worktop, Eda doorLEFT, Sen doorRIGHT, deep sinkLEFT, hobRIGHT, ash table foreground, one slightly crooked pale-yellow lamp over the TABLE. Daylight enters from camera-right. START STATE. Wide32mm from1.35m, south side slightly right of centre; see the whole table top and both full doorframes. Eda stands left of the table, Sen right; their heads sit in the upper half, with waists and hands readable, rather than faces cropped along the bottom. Eda wears her ink-blue overshirt; Sen his clay shirt. LEFT door shows her ordinary packed old bedroom, without planetary ring. RIGHT door shows his sheltered rain-dark vestibule. Two pale blank folded houseletters lie on the table. Exactly ONE shallow BLUE bowl with ONE crooked WHITE stripe faces camera and holds exactly ONE dark-red cherry. Eda places her blue-edged address slip beside her houseletter; Sen watches the bowl. Their faces are restrained, mouths closed. Clear floor routes, only the established useful furniture.",
+    "refs": [
+      "ref_eda",
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "deps": [
+      "ref_eda",
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "aspect": "16:9",
+    "legacy_v1": {
+      "preserved": true,
+      "sha256": "51abf8053ea609da44765487f813f0232b25d364a7bc4c97bf3b22c24eddb29e",
+      "reason": "Root active k01_v2 uses this original recipe; root repairs generated k05 by approved-image editing. Do not silently alter historical executed recipes."
+    },
+    "future_prompt_proposal": "Eda is EXACTLY42, matching the supplied Eda identity reference: same face proportions, full cheeks, jaw-length dark bob and clear even skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Sen is EXACTLY44, matching the supplied Sen identity reference: same face proportions, short tight curls, clean-shaven face and clear even dark-brown skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Preserve the referenced kitchen: two rear doors flank one continuous pale worktop, Eda doorLEFT, Sen doorRIGHT, deep sinkLEFT, hobRIGHT, ash table foreground, one slightly crooked pale-yellow lamp over the TABLE. Daylight enters from camera-right. START STATE. Wide32mm from1.35m, south side slightly right of centre; see the whole table top and both full doorframes. Eda stands left of the table, Sen right; their heads sit in the upper half, with waists and hands readable, rather than faces cropped along the bottom. Eda wears her ink-blue overshirt; Sen his clay shirt. LEFT door shows her ordinary packed old bedroom, without planetary ring. RIGHT door shows his sheltered rain-dark vestibule. Two pale blank folded houseletters lie on the table. Exactly ONE shallow BLUE bowl with ONE crooked WHITE stripe faces camera and holds exactly ONE dark-red cherry. Eda places her blue-edged address slip beside her houseletter; Sen watches the bowl. Their faces are restrained, mouths closed. Clear floor routes, only the established useful furniture.",
+    "future_prompt_status": "Proposed stronger locks for a future rerun only; not the active canonical prompt and not a claim of approval."
+  },
+  {
+    "id": "k02",
+    "out": "work/ep01/keys/k02.png",
+    "mode": "t2i",
+    "prompt": "New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Physical plate recipe ONLY; exact paper diagrams, address tabs and text will be authored afterward. Straight overhead65mm: a clean ash tabletop with one broad blank off-white folded letter substrate centred in the frame. Its flat readable face occupies the middle65percent of picture, with simple physically plausible crease and slit edges. Keep this central face and a generous blank margin entirely unobstructed; a single ink-blue cotton sleeve may end beside the lower-left edge without crossing the paper. Soft side daylight. No printed words, symbols, icons, room plan or invented address. This is the base for a real before/after tab operation, not the completed illustration.",
+    "refs": [
+      "ref_kitchen"
+    ],
+    "deps": [
+      "ref_kitchen"
+    ],
+    "aspect": "16:9",
+    "execution_note": "Root owns exact authored insert and before/after states. Prompt describes only physical source plate; do not ask Luma to draw typography or causal layout."
+  },
+  {
+    "id": "k03",
+    "out": "work/ep01/keys/k03.png",
+    "mode": "t2i",
+    "prompt": "Eda is EXACTLY42, matching the supplied Eda identity reference: same face proportions, full cheeks, jaw-length dark bob and clear even skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Preserve the referenced kitchen: two rear doors flank one continuous pale worktop, Eda doorLEFT, Sen doorRIGHT, deep sinkLEFT, hobRIGHT, ash table foreground, one slightly crooked pale-yellow lamp over the TABLE. Daylight enters from camera-right. RESULT STATE after changing Eda’s address. Camera inside the kitchen,40mm at1.35m, frames the unchanged LEFT ash doorway and a small fixed strip of kitchen table at lower right. Through the door is Eda’s ordinary long private bedroom, real safe floor and a large distant window beneath a huge red planetary ring. Eda stands just on the room side of that threshold, three-quarter front, facing the kitchen; she has an empty hand ready to return toward the table. Her face, mouth, whole empty hand, doorway jamb and floor threshold are visible. She is the ONLY visible face. Preserve the frame and nearby kitchen surfaces exactly; the red ring is beyond a real window, without portal glow. Composed ordinary face, mouth closed at the speaking start, lips unobstructed, both eyes and the complete hand/action target visible. ",
+    "refs": [
+      "ref_eda",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "deps": [
+      "ref_eda",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "32ac57d1b9385e5759cb3258577f7c4742f7cd066eb3e78f0e200729865cf50f",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k04",
+    "out": "work/ep01/keys/k04.png",
+    "mode": "t2i",
+    "prompt": "Eda is EXACTLY42, matching the supplied Eda identity reference: same face proportions, full cheeks, jaw-length dark bob and clear even skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Sen is EXACTLY44, matching the supplied Sen identity reference: same face proportions, short tight curls, clean-shaven face and clear even dark-brown skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. RESULT STATE, close75mm practical insert at a modest downward angle onto the original ash table. The exact shallow BLUE bowl with its single crooked WHITE stripe turned toward camera is EMPTY and fully visible. From screenRIGHT, Sen’s one dark-brown hand in the clay sleeve holds exactly ONE cherry a few centimetres above its rim. From screenLEFT, Eda’s empty hand in her blue sleeve has reached the bowl too late; her empty palm and complete fingers remain clearly separate from his hand. Two human hands, one empty bowl, one cherry. Preserve real scale and the bowl silhouette, moderate focus, no faces or unrelated props. Kitchen daylight from right. The chosen instant is the completed missed handover, not two simultaneous copies of a cherry.",
+    "refs": [
+      "ref_eda",
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "deps": [
+      "ref_eda",
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "c5ca8da1bdc693696e79c97a895d4458c78a6b5cb262dffb02d8797047b63a49",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k05",
+    "out": "work/ep01/keys/k05.png",
+    "mode": "t2i",
+    "prompt": "New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Preserve the referenced kitchen: two rear doors flank one continuous pale worktop, Eda doorLEFT, Sen doorRIGHT, deep sinkLEFT, hobRIGHT, ash table foreground, one slightly crooked pale-yellow lamp over the TABLE. Daylight enters from camera-right. Neutral dialogue START used across several Eda exchanges.50mm at1.35m from the south, waist-up Eda left of centre at the left side of the ash table. Her hands rest naturally on the unobstructed table edge; no tool, fruit or bowl must be frozen in her hands. The LEFT ring-bedroom doorway is a recognizable narrow background depth; a glimpse of the left sink establishes orientation. She looks slightly down and screenRIGHT toward Sen’s position, not into camera. Sen’s face and body stay outside the crop. Her exact reference face, dark bob and ink-blue overshirt remain unchanged. Composed ordinary face, mouth closed at the speaking start, lips unobstructed, both eyes and the complete hand/action target visible. ",
+    "refs": [
+      "ref_eda",
+      "ref_kitchen"
+    ],
+    "deps": [
+      "ref_eda",
+      "ref_kitchen"
+    ],
+    "aspect": "16:9",
+    "legacy_v1": {
+      "preserved": true,
+      "sha256": "d6e8d1c81f809cdeb3acdb0364710f81cc4fb9cd8e6949a697b0ee05e8a9146a",
+      "reason": "Root active k01_v2 uses this original recipe; root repairs generated k05 by approved-image editing. Do not silently alter historical executed recipes."
+    },
+    "future_prompt_proposal": "Eda is EXACTLY42, matching the supplied Eda identity reference: same face proportions, full cheeks, jaw-length dark bob and clear even skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Preserve the referenced kitchen: two rear doors flank one continuous pale worktop, Eda doorLEFT, Sen doorRIGHT, deep sinkLEFT, hobRIGHT, ash table foreground, one slightly crooked pale-yellow lamp over the TABLE. Daylight enters from camera-right. Neutral dialogue START used across several Eda exchanges.50mm at1.35m from the south, waist-up Eda left of centre at the left side of the ash table. Her hands rest naturally on the unobstructed table edge; no tool, fruit or bowl must be frozen in her hands. The LEFT ring-bedroom doorway is a recognizable narrow background depth; a glimpse of the left sink establishes orientation. She looks slightly down and screenRIGHT toward Sen’s position, not into camera. Sen’s face and body stay outside the crop. Her exact reference face, dark bob and ink-blue overshirt remain unchanged. Composed ordinary face, mouth closed at the speaking start, lips unobstructed, both eyes and the complete hand/action target visible. ",
+    "future_prompt_status": "Proposed stronger locks for a future rerun only; not the active canonical prompt and not a claim of approval."
+  },
+  {
+    "id": "k06",
+    "out": "work/ep01/keys/k06.png",
+    "mode": "t2i",
+    "prompt": "Sen is EXACTLY44, matching the supplied Sen identity reference: same face proportions, short tight curls, clean-shaven face and clear even dark-brown skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Preserve the referenced kitchen: two rear doors flank one continuous pale worktop, Eda doorLEFT, Sen doorRIGHT, deep sinkLEFT, hobRIGHT, ash table foreground, one slightly crooked pale-yellow lamp over the TABLE. Daylight enters from camera-right. Neutral dialogue START used across several Sen exchanges.50mm at1.35m from the south, waist-up Sen right of centre at the right side of the table. Both hands are EMPTY and rest on the visible ash table edge, with room around the hands for later derived object states. The RIGHT sheltered rain doorway and a limited glimpse of the right hob fix orientation. He looks slightly down and screenLEFT toward Eda’s position. Eda is outside the crop. Same clean-shaven face, short tightly curled hair, clay cotton shirt and ordinary even complexion as his identity reference. Composed ordinary face, mouth closed at the speaking start, lips unobstructed, both eyes and the complete hand/action target visible. ",
+    "refs": [
+      "ref_sen",
+      "ref_kitchen"
+    ],
+    "deps": [
+      "ref_sen",
+      "ref_kitchen"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "bd67131a0a18b344549bc69c2a442db38fce69d04a8a97441453508037f781d8",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k07",
+    "out": "work/ep01/keys/k07.png",
+    "mode": "t2i",
+    "prompt": "New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Physical plate recipe ONLY for the room-allocation insert; root will author the entire exact diagram and movable tokens. Straight overhead65mm onto the same ash table. One LARGE rectangular blank off-white sheet lies completely flat in the centre; two pale folded blank houseletter enclosures sit separately at left and right, one with a small blue edge and one with a small clay edge. The broad central sheet has an uninterrupted flat field suited to an exact single-kitchen drawing. No hands obscure any paper face. Keep gentle real paper shadows and physically consistent size. No generated writing, map, duplicate room icons or decorative seals. Right-side kitchen daylight.",
+    "refs": [
+      "ref_kitchen"
+    ],
+    "deps": [
+      "ref_kitchen"
+    ],
+    "aspect": "16:9",
+    "execution_note": "Root owns exact authored insert and before/after states. Prompt describes only physical source plate; do not ask Luma to draw typography or causal layout."
+  },
+  {
+    "id": "k08",
+    "out": "work/ep01/keys/k08.png",
+    "mode": "t2i",
+    "prompt": "Eda is EXACTLY42, matching the supplied Eda identity reference: same face proportions, full cheeks, jaw-length dark bob and clear even skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. RESULT STATE, table-height65mm close insert on the kitchen’s original ash table. The exact mustard-yellow tape measure with black strap has JUST been returned and rests flat, fully visible. Eda’s one blue-cuffed hand is withdrawing toward screenLEFT, fingers empty and clear of the housing. Show one table edge and a softly recognizable sliver of her left doorway in depth; do not turn this into a portrait. One measure only, no duplicate tools or writing. Natural right-side daylight and a small credible contact shadow.",
+    "refs": [
+      "ref_eda",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "deps": [
+      "ref_eda",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "5534c5f6141a9598552e4e470ce3436bf05650f9d14bb61ddd3dbc7d51d1cd69",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k09",
+    "out": "work/ep01/keys/k09.png",
+    "mode": "t2i",
+    "prompt": "Eda is EXACTLY42, matching the supplied Eda identity reference: same face proportions, full cheeks, jaw-length dark bob and clear even skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Preserve the referenced kitchen: two rear doors flank one continuous pale worktop, Eda doorLEFT, Sen doorRIGHT, deep sinkLEFT, hobRIGHT, ash table foreground, one slightly crooked pale-yellow lamp over the TABLE. Daylight enters from camera-right. START of compact-kitchen testing.45mm at1.35m: medium-wide Eda left of centre, her full face and hands visible above and beside two reference-matching movable modules placed on the FLOOR just forward of the ash table. Each is real90cm counter height and45cm wide, not a toy or tabletop appliance. Sink module onLEFT, hob module onRIGHT; show their top surfaces and enough vertical sides/base to establish furniture scale. The existing generous rear worktop remains visible for comparison. Eda sets a blank order slip on the narrow surface between them. Sen’s FACE is outside the crop; at most one clay sleeve or hand enters the right edge. Units are ordinary and usable, no loose plumbing or product failure. Composed ordinary face, mouth closed at the speaking start, lips unobstructed, both eyes and the complete hand/action target visible. ",
+    "refs": [
+      "ref_eda",
+      "ref_kitchen",
+      "ref_props",
+      "ref_modules"
+    ],
+    "deps": [
+      "ref_eda",
+      "ref_kitchen",
+      "ref_props",
+      "ref_modules"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "f439dcd2e5843378a088ae70c91ee57a79f74816817374e112b3b32228b1180e",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k10",
+    "out": "work/ep01/keys/k10.png",
+    "mode": "t2i",
+    "prompt": "Sen is EXACTLY44, matching the supplied Sen identity reference: same face proportions, short tight curls, clean-shaven face and clear even dark-brown skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Preserve the referenced kitchen: two rear doors flank one continuous pale worktop, Eda doorLEFT, Sen doorRIGHT, deep sinkLEFT, hobRIGHT, ash table foreground, one slightly crooked pale-yellow lamp over the TABLE. Daylight enters from camera-right. START of Sen’s fit test,50mm at1.35m, medium framing on Sen and the real floor-standing hob module at screenRIGHT. His full face and both hands are visible; the exact32cm dark carbon-steel pan rests alongside or just above the module’s18cm hotplate, its long straight handle unobstructed. Include the reference unit’s full45cm width and a clear portion of its vertical front: counter-height furniture, not an object on the dining table. The cramped surrounding work area is the subject. Eda stays outside the crop. Neutral composed speaking start; lips visible, no broad reaction.",
+    "refs": [
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props",
+      "ref_modules"
+    ],
+    "deps": [
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props",
+      "ref_modules"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "bb1bc5186a243cbcd6f5050eec7fbfbb39d124650f865f34c48835ebe910daf7",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k11",
+    "out": "work/ep01/keys/k11.png",
+    "mode": "t2i",
+    "prompt": "Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. RESULT STATE, practical70mm close insert from a gentle downward working angle: Sen’s exact32cm dark carbon-steel pan sits SAFELY centred on the18cm hotplate of the45cm-wide floor-standing module. Pan diameter may exceed the heating disc, as with an ordinary frying pan; it must not balance on an edge. Its long straight handle extends into open air clear of furniture. The pan fits, but there is almost no unused preparation surface around it. Show the unit’s full width and top-to-front corner; it is unplugged during unpacking. A dark round lid is held at one edge by a single complete hand because there is nowhere to rest it. No sparks, flame, dangling pan or toy-scale unit.",
+    "refs": [
+      "ref_props",
+      "ref_modules",
+      "ref_kitchen"
+    ],
+    "deps": [
+      "ref_props",
+      "ref_modules",
+      "ref_kitchen"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "18b2c385d640bbe0ed6125bc4850142bde2e9fc1cd163a1ebde024b4f1b7dfc6",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k12",
+    "out": "work/ep01/keys/k12.png",
+    "mode": "t2i",
+    "prompt": "Eda is EXACTLY42, matching the supplied Eda identity reference: same face proportions, full cheeks, jaw-length dark bob and clear even skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Preserve the referenced kitchen: two rear doors flank one continuous pale worktop, Eda doorLEFT, Sen doorRIGHT, deep sinkLEFT, hobRIGHT, ash table foreground, one slightly crooked pale-yellow lamp over the TABLE. Daylight enters from camera-right. BEFORE tray placement,50mm medium of Eda at the reference floor-standing sink module onLEFT. Her face and both complete hands are visible. She holds one dull-silver rectangular tray42×30cm diagonally over the tiny sink; the tray clearly exceeds the basin width. The visible sink unit is45cm wide and90cm tall, its front descends toward the floor beside the ash table. She offers one edge of the tray inward toward Sen’s offscreen position. The tabletop is still dry in this state; a few droplets stay on the tray. Her feet and floor need not dominate, but the module cannot sit atop the table. Composed ordinary face, mouth closed at the speaking start, lips unobstructed, both eyes and the complete hand/action target visible. ",
+    "refs": [
+      "ref_eda",
+      "ref_kitchen",
+      "ref_modules"
+    ],
+    "deps": [
+      "ref_eda",
+      "ref_kitchen",
+      "ref_modules"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "6accc472ceee8af647896e4a150534f2c08e58dd88d83f73d79499776eb4ee96",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k13",
+    "out": "work/ep01/keys/k13.png",
+    "mode": "t2i",
+    "prompt": "Sen is EXACTLY44, matching the supplied Sen identity reference: same face proportions, short tight curls, clean-shaven face and clear even dark-brown skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Preserve the referenced kitchen: two rear doors flank one continuous pale worktop, Eda doorLEFT, Sen doorRIGHT, deep sinkLEFT, hobRIGHT, ash table foreground, one slightly crooked pale-yellow lamp over the TABLE. Daylight enters from camera-right. START/held-object state,50mm medium on Sen beside the right floor-standing module. Sen’s hands are genuinely occupied: one hand supports the exact empty BLUE bowl with its crooked WHITE stripe; the other holds the dark round pan lid with one wooden spoon resting against it. Show the full contours of both hands, the bowl and lid, separated clearly from his clay shirt. No impossible juggling or extra arms. The carbon-steel pan itself is already on the hob out of the main crop. Sen looks down toward the offered resting place, face composed and mouth available for speech. Eda remains offscreen. Moderate depth keeps each obstruction readable.",
+    "refs": [
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props",
+      "ref_modules"
+    ],
+    "deps": [
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props",
+      "ref_modules"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "c955ac6365aa903517fa9aef0f3f0320b64e9cba47370308e78d710114508992",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k14",
+    "out": "work/ep01/keys/k14.png",
+    "mode": "t2i",
+    "prompt": "Eda is EXACTLY42, matching the supplied Eda identity reference: same face proportions, full cheeks, jaw-length dark bob and clear even skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact object and module design. RESULT STATE, practical70mm close view of the narrow remaining strip of preparation surface BESIDE Sen’s safely centred32cm carbon-steel pan on the45cm-wide floor-standing hob module. The complete strip is visibly too narrow for the bowl and lid he is holding off screen. Eda’s one blue-cuffed hand enters fromLEFT and points at that misleading space; show her complete pointing hand, pan rim and full near edge of the module top. No face needed. The module has the same plain cupboard front as its reference: do not invent a drawer. Ordinary right-side kitchen light and real furniture-scale edges. This is a specific lack of resting space, not a broken appliance or a dangerously balanced pan.",
+    "refs": [
+      "ref_eda",
+      "ref_kitchen",
+      "ref_modules"
+    ],
+    "deps": [
+      "ref_eda",
+      "ref_kitchen",
+      "ref_modules"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "e978bcd3b8c2e320d885cc3faddb5aeaccfff7ae2339d244df831d315ff6461a",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k15",
+    "out": "work/ep01/keys/k15.png",
+    "mode": "t2i",
+    "prompt": "Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. RESULT STATE,70mm low downward insert on the shared ash table immediately beside the small sink module. A THIN small patch of ordinary water crosses the local working boundary between Eda’s cream wiping cloth and Sen’s BLUE bowl, which rests a short reach away; the bowl’s one crooked WHITE stripe is visible. Show only the necessary nearby edge of the floor-standing sink unit and the wet tray edge, not two modules improbably touching across the full table. Water is confined to the wood, away from the unplugged hob; no bedding, flood, electrical hazard or broken pipe. One hand has just placed the cloth at the water edge. The tiny spill inconveniences both adjacent work areas.",
+    "refs": [
+      "ref_kitchen",
+      "ref_props",
+      "ref_modules"
+    ],
+    "deps": [
+      "ref_kitchen",
+      "ref_props",
+      "ref_modules"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "cbee7e74ac1a57a97531b0693dd25b39ec1c1c74f41200c7b03e7fee1ba53bed",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k16",
+    "out": "work/ep01/keys/k16.png",
+    "mode": "t2i",
+    "prompt": "Eda is EXACTLY42, matching the supplied Eda identity reference: same face proportions, full cheeks, jaw-length dark bob and clear even skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Sen is EXACTLY44, matching the supplied Sen identity reference: same face proportions, short tight curls, clean-shaven face and clear even dark-brown skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Preserve the referenced kitchen: two rear doors flank one continuous pale worktop, Eda doorLEFT, Sen doorRIGHT, deep sinkLEFT, hobRIGHT, ash table foreground, one slightly crooked pale-yellow lamp over the TABLE. Daylight enters from camera-right. RESULT/DECISION STATE for an uninterrupted ten-second hold. Return to the established32mm south camera at1.35m. Both adults stand beside their floor-standing modules, EdaLEFT and SenRIGHT; faces and stopped hands visible, restrained and ordinary. The tray, lid and BLUE bowl have been SET DOWN safely. Tiny sink and hob units sit on the FLOOR toward the foreground, never on the table; their small top areas contrast with the fully visible long CLEAR rear worktop. Leave the central worktop visually spacious. Both look toward that usable surface after the work has stopped. The crooked lamp stays over the table. Both doors remain fixed, ring roomLEFT/rain vestibuleRIGHT. No tears, handclasp or completed romantic pose.",
+    "refs": [
+      "ref_eda",
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props",
+      "ref_modules"
+    ],
+    "deps": [
+      "ref_eda",
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props",
+      "ref_modules"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "6ad59068e22485231ea69501e2c8cfd4707f0469be1b046712a8a5775add4852",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k17",
+    "out": "work/ep01/keys/k17.png",
+    "mode": "t2i",
+    "prompt": "Sen is EXACTLY44, matching the supplied Sen identity reference: same face proportions, short tight curls, clean-shaven face and clear even dark-brown skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. New slightly tighter65mm view of Sen from the same SOUTH side of the kitchen axis, face on the right of frame, exact reference identity and clay shirt. His complete nearer hand rests on the open cardboard packaging flap beside the unused reference compact hob unit; the FLOOR-standing unit remains plausible full furniture scale, only partly visible. This is the neutral START just before returning the small unit, not a magically collapsed cabinet. Plain original kitchen depth behind, rain doorway at farRIGHT if visible. Face composed, mouth and carton-contact hand unobstructed. A credible fold in the carton can be completed later; preserve clean daylight from camera-right.",
+    "refs": [
+      "ref_sen",
+      "ref_kitchen",
+      "ref_modules"
+    ],
+    "deps": [
+      "ref_sen",
+      "ref_kitchen",
+      "ref_modules"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "98479498a57a19b95fdd2b8c19f2e9aa380464b1235680ff032851a5016055ea",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k18",
+    "out": "work/ep01/keys/k18.png",
+    "mode": "t2i",
+    "prompt": "New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Physical plate recipe ONLY for the final shared-room assignment; root will author exact one-kitchen diagram, two address tabs and their before/after states. Straight overhead65mm onto the same ash table: one broad flat pale paper substrate centred, two blank houseletter enclosures placed separately left and right with small blue and clay edge markers. Keep the central plane and both enclosure lips unobstructed so two tab layers can be accurately composited. Subtle real fold/slit material is welcome only at the blank outer margins. No generated diagram, written address, room icons, seals or lettering. Ordinary paper and daylight, not a screen.",
+    "refs": [
+      "ref_kitchen"
+    ],
+    "deps": [
+      "ref_kitchen"
+    ],
+    "aspect": "16:9",
+    "execution_note": "Root owns exact authored insert and before/after states. Prompt describes only physical source plate; do not ask Luma to draw typography or causal layout."
+  },
+  {
+    "id": "k19",
+    "out": "work/ep01/keys/k19.png",
+    "mode": "t2i",
+    "prompt": "Eda is EXACTLY42, matching the supplied Eda identity reference: same face proportions, full cheeks, jaw-length dark bob and clear even skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. RESULT of departure: Eda stands at an ordinary safe landing inside the vast postal sorting hall, fully visible from head to shoes in a40mm medium-wide at1.4m. She holds one closed pale folded houseletter and one practical roll of cream fabric. Exact reference face, jaw-length dark bob and ink-blue overshirt. Her body faces onward into the hall, three-quarter face still legible; she is not looking back or posing a farewell. Large chalk masonry piers, ash rails and a few upright apartment sections make a physically convincing public interior behind her. Clerestory daylight makes clear shapes on dark stone. Sparse composition, an unobstructed walking route, architecture by proportion rather than elaborate machinery. No labels or generated typography.",
+    "refs": [
+      "ref_eda"
+    ],
+    "deps": [
+      "ref_eda"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "875ec87a9de4638f9859eea6f9dea467a4802592ef1824bdeb0d7b03d2f9adb5",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k20",
+    "out": "work/ep01/keys/k20.png",
+    "mode": "t2i",
+    "prompt": "Eda is EXACTLY42, matching the supplied Eda identity reference: same face proportions, full cheeks, jaw-length dark bob and clear even skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. The one large-scale reveal: a truly immense postal hall with full apartment-building sections stored vertically like thick folded letters. Camera24mm at0.95m on a safe broad public landing; one low dark balustrade foreground, Eda a SMALL full-body figure in the lowerRIGHT holding her folded houseletter and cream fabric roll. Match her exact reference face/hair/costume rather than replacing her with a silhouette. Upper two-thirds are monumental pale piers and deep empty height; upright ordinary facades alternate with plain structural backing. ONE clean narrow empty slot interrupts the sequence. A visible floor route leads onward. High clerestory light, dry stone, real thickness and cast shadows. Like photographed impossible architecture, not holographic shelves, ornamented science-fiction machinery, dream morphs, crowds or floating UI.",
+    "refs": [
+      "ref_eda"
+    ],
+    "deps": [
+      "ref_eda"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "45dbd62dca3a81bd255611ab7ca50dec974b731de8509be1bcb0ec73e77163c2",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k21",
+    "out": "work/ep01/keys/k21.png",
+    "mode": "t2i",
+    "prompt": "Eda is EXACTLY42, matching the supplied Eda identity reference: same face proportions, full cheeks, jaw-length dark bob and clear even skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. RESULT: Eda has moved into her separate long ordinary private room. Wide35mm at1.35m. Her own waist-high cutting table fills one side with her cream cloth roll already SET DOWN; packed personal boxes remain few and practical. Eda stands beside the table with complete face and hands visible, exact dark bob and ink-blue overshirt, looking at her work surface rather than back for Sen. A large distant window beyond real bedroom floor frames a spectacular mineral-red planetary ring. An ordinary doorway in the near side leads back toward the shared kitchen but does not show a second copy of it. Source light comes through the actual window, gentle local colour rather than a red wash. This is useful independent living space, not a romantic suite or glowing portal.",
+    "refs": [
+      "ref_eda"
+    ],
+    "deps": [
+      "ref_eda"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "47b4388ca31fe3417ceb1177c83da77741ca6df6b5741a8aa4765eee9fde4f65",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k22",
+    "out": "work/ep01/keys/k22.png",
+    "mode": "t2i",
+    "prompt": "Eda is EXACTLY42, matching the supplied Eda identity reference: same face proportions, full cheeks, jaw-length dark bob and clear even skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Sen is EXACTLY44, matching the supplied Sen identity reference: same face proportions, short tight curls, clean-shaven face and clear even dark-brown skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Preserve the referenced kitchen: two rear doors flank one continuous pale worktop, Eda doorLEFT, Sen doorRIGHT, deep sinkLEFT, hobRIGHT, ash table foreground, one slightly crooked pale-yellow lamp over the TABLE. Daylight enters from camera-right. Later-day RESULT wide32mm from the SAME canonical south position at1.35m. Eda works at the LEFT/CENTRAL rear worktop; cream fabric and a charcoal paper dressmaking pattern occupy that region. Sen has just entered from his RIGHT rain vestibule with the exact carbon-steel pan. The RIGHT hob and its immediate landing space are CLEAR of all textiles. Eda’s LEFT door remains open onto her distant room and red ring. Both full faces, hands and two thresholds are legible; they attend to tasks, not one another. Their two compact modules and cartons have been removed. The familiar BLUE bowl containing dry vegetables has been moved onto the one available chair near the table. Pale-yellow lamp casts a small warm table pool, natural window light remains motivated. No embrace or mutual gaze.",
+    "refs": [
+      "ref_eda",
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "deps": [
+      "ref_eda",
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "5b1eec2dbb9573b8da397bf621607ff2722fe95a127241404ac91662414f54b7",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k23",
+    "out": "work/ep01/keys/k23.png",
+    "mode": "t2i",
+    "prompt": "Sen is EXACTLY44, matching the supplied Sen identity reference: same face proportions, short tight curls, clean-shaven face and clear even dark-brown skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Preserve the referenced kitchen: two rear doors flank one continuous pale worktop, Eda doorLEFT, Sen doorRIGHT, deep sinkLEFT, hobRIGHT, ash table foreground, one slightly crooked pale-yellow lamp over the TABLE. Daylight enters from camera-right. BEFORE retrieving the vegetables.50mm at1.35m on Sen at the RIGHT hob, full face and both hands visible, exact clay shirt and reference identity. He holds the32cm carbon-steel pan with its long straight handle in one hand, indicating the occupied central preparation area with the other empty hand. The BLUE vegetable bowl is NOT yet on his small available counter surface; it remains on the offscreen chair. A small edge of cream fabric/pattern lies well toLEFT of the clear hob, fixing the practical obstruction without touching heat. Rain vestibule remains at backgroundRIGHT. His face stays composed, lips visible for the plain line; no angry reaction.",
+    "refs": [
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "deps": [
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "4b4f8aaefc87fbac9b5513e1d6f7e5e31782e4221ef899598e49efe095a1c674",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k24",
+    "out": "work/ep01/keys/k24.png",
+    "mode": "t2i",
+    "prompt": "Eda is EXACTLY42, matching the supplied Eda identity reference: same face proportions, full cheeks, jaw-length dark bob and clear even skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Preserve the referenced kitchen: two rear doors flank one continuous pale worktop, Eda doorLEFT, Sen doorRIGHT, deep sinkLEFT, hobRIGHT, ash table foreground, one slightly crooked pale-yellow lamp over the TABLE. Daylight enters from camera-right. BEFORE salt handover,50mm at1.35m on Eda at LEFT/CENTRAL worktop. Cream fabric and the same charcoal paper pattern spread along the useful surface in front of her; both complete hands and her mouth are clearly visible. One hand holds the pattern in place, the other indicates the nearby offscreen chair. A cutting tool lies FLAT at the far left, separated from any handover area. Keep the RIGHT hob outside or safely beyond the cloth edge. Her exact dark bob, ink-blue overshirt and composed face match her reference. The salt pot may sit farther along the worktop but does NOT yet weight her held corner; that specific later state has its own plate. No Sen face in this speaking frame.",
+    "refs": [
+      "ref_eda",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "deps": [
+      "ref_eda",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "8331d949171a17d6a03ad7ef6bb90d92b65db9bc2685f54351427909e0a813ee",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k25",
+    "out": "work/ep01/keys/k25.png",
+    "mode": "t2i",
+    "prompt": "Sen is EXACTLY44, matching the supplied Sen identity reference: same face proportions, short tight curls, clean-shaven face and clear even dark-brown skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. BEFORE retrieval,65mm working-height downward insert. The kitchen’s plain ash chair holds the exact BLUE bowl with ONE crooked WHITE stripe, containing a few dry ordinary vegetables. A folded cream cloth corner lies beside or just over the chair edge without burying the identifiable bowl. Sen’s single complete dark-brown hand in his clay sleeve reaches toward the rim fromRIGHT, about to take it. Show the entire bowl and clear chair-seat geometry; one actual hand, no spilled food or alternate pot. Kitchen side daylight and soft later lamp light. This is a usable object displaced onto a chair, not garbage or damage.",
+    "refs": [
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "deps": [
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "c062170d5fc7112a788087e36dfaf4f3969b9383280b347a984e7fb6ac15a4b7",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k26",
+    "out": "work/ep01/keys/k26.png",
+    "mode": "t2i",
+    "prompt": "Eda is EXACTLY42, matching the supplied Eda identity reference: same face proportions, full cheeks, jaw-length dark bob and clear even skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Sen is EXACTLY44, matching the supplied Sen identity reference: same face proportions, short tight curls, clean-shaven face and clear even dark-brown skin. Add no extra wrinkles, spots, age lines, gauntness or weathering. Show only the body parts requested by this framing; do not add a face to a hands-only insert. Kitchen AFTER-address state: the unchanged LEFT doorway leads to an ordinary real room whose far window visibly frames a HUGE RED PLANETARY RING. If that doorway is in this crop, preserve this view, never packed cartons. Do not move a doorway into a crop where it does not belong. New original photographic live-action cinema composition, landscape16:9. Use the supplied references for exact identities, garments, set and object designs while creating the specified new framing. Ordinary adult domestic comedy; dry natural surfaces, motivated daylight, clear moderate depth. Preserve the referenced kitchen: two rear doors flank one continuous pale worktop, Eda doorLEFT, Sen doorRIGHT, deep sinkLEFT, hobRIGHT, ash table foreground, one slightly crooked pale-yellow lamp over the TABLE. Daylight enters from camera-right. FINAL RESULT, same32mm canonical SOUTH wide at1.35m, held calmly. Eda continues pattern work onLEFT/CENTRAL rear worktop, Sen cooks at the clearRIGHT hob. Her unchanged charcoal pattern on cream cloth is now weighted by one plain spare cup. Sen has the exact small pale-stoneware salt pot near his free hand and the BLUE marked vegetable bowl on his small clear preparation surface; his carbon-steel pan is safely on the hob. Two independent doors remain OPEN: her real room and vast red ringLEFT, his sheltered evening rain vestibuleRIGHT. The same lamp stays above the same foreground table. Both faces are composed and directed at their separate tasks, complete working hands visible, no final look or romantic gesture. Shared useful space remains genuinely occupied; no miraculous increase in counter width.",
+    "refs": [
+      "ref_eda",
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "deps": [
+      "ref_eda",
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "aspect": "16:9",
+    "previous_prompt_sha256": "bfa1f585d9284f817dfac7cf0401b0e5a0f6c4c6ac5ef0f008720f965c694a3c",
+    "revision_note": "Ungenerated-job revision: exact age/skin preservation and explicit post-change left-door ring state. Root must merge intentionally into executable manifest."
+  },
+  {
+    "id": "k27",
+    "out": "work/ep01/keys/k27.png",
+    "mode": "procedural",
+    "prompt": "PROCEDURAL END CARD ONLY. Author exact typography with ordinary layout tools: COMMON ROOM; 一室两家; AI SI - I. Restrained warm dark background and quiet cream type, no generated lettering. Match the renderer’s established card treatment. This entry is not a paid image-generation request.",
+    "refs": [],
+    "deps": [],
+    "aspect": "16:9",
+    "execution_note": "Renderer substitutes exact code-authored card; no generation and no keys mapping required."
+  },
+  {
+    "id": "k28",
+    "out": "work/ep01/keys/k28.png",
+    "mode": "codex_edit",
+    "base": "k12",
+    "prompt": "Edit the clean approved k12 image into the RESULT after Eda sets down the same42×30cm silver tray. Preserve every existing face feature, dark bob, ink-blue garment, camera position, light, kitchen geometry and floor-standing sink module. Move the existing tray out of her hands so it rests diagonally across the tiny sink rim and the nearby ash table edge; the tray’s far edge overhangs the little basin. Add only a thin small patch of water on the WOOD table below it, clear of every electrical object. Eda’s now free complete hand indicates that wet patch, and the other reaches toward a cream wiping cloth. Her speaking mouth stays visible and composed. Change only tray/hand/cloth/water state; no new module, no table-mounted sink, no flood or damaged belongings. Inspect preservation at full size against k12 and the original identity/set masters.",
+    "refs": [
+      "k12",
+      "ref_eda",
+      "ref_kitchen",
+      "ref_modules"
+    ],
+    "deps": [
+      "k12",
+      "ref_eda",
+      "ref_kitchen",
+      "ref_modules"
+    ],
+    "aspect": "16:9",
+    "execution_note": "Root uses the default built-in generative editor from the clean approved base; inspect preservation before acceptance. No paid generation is authorized by this catalog itself."
+  },
+  {
+    "id": "k29",
+    "out": "work/ep01/keys/k29.png",
+    "mode": "codex_edit",
+    "base": "k23",
+    "prompt": "Edit the clean approved k23 RIGHT-hob frame into the RESULT after Sen retrieves his vegetables. Keep his exact identity, clay shirt, camera, scale, room and rain-door position. Place the SAME shallow BLUE bowl with its ONE crooked WHITE stripe and dry vegetables on the small available preparation surface beside the RIGHT hob. Put his existing carbon-steel pan safely on the hob, long dark handle clear. His hands are now free enough to look for the salt; both hands and his speaking mouth remain visible. Preserve the cream cloth edge well toLEFT of the clear cooking area. Do not expand the counter, swap the bowl, introduce a second bowl or return Sen to the doorway. Edit only the necessary object/hand states from k23, checking all unchanged pixels and face detail.",
+    "refs": [
+      "k23",
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "deps": [
+      "k23",
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "aspect": "16:9",
+    "execution_note": "Root uses the default built-in generative editor from the clean approved base; inspect preservation before acceptance. No paid generation is authorized by this catalog itself."
+  },
+  {
+    "id": "k30",
+    "out": "work/ep01/keys/k30.png",
+    "mode": "codex_edit",
+    "base": "k24",
+    "prompt": "Edit clean approved k24 into the precise salt/pattern handover REQUEST state. Preserve Eda’s exact face, bob, ink-blue clothes, camera, daylight, room geometry, cream cloth and the shape/location of the SAME charcoal paper pattern. The existing small pale-stoneware salt pot now visibly weights ONE corner of that pattern. Eda’s free complete hand points to the OTHER corner where Sen should hold it; her other hand steadies the first corner beside the salt pot. Her mouth remains unobstructed for her line. Keep the cutting tool lying FLAT at farLEFT, clear of the pointing hand and handover. No new torso, second salt pot, changed pattern, extra fingers or fabric over the hob. Change only the required hand/salt state and check preservation against k24 and authoritative references.",
+    "refs": [
+      "k24",
+      "ref_eda",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "deps": [
+      "k24",
+      "ref_eda",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "aspect": "16:9",
+    "execution_note": "Root uses the default built-in generative editor from the clean approved base; inspect preservation before acceptance. No paid generation is authorized by this catalog itself."
+  },
+  {
+    "id": "k31",
+    "out": "work/ep01/keys/k31.png",
+    "mode": "codex_edit",
+    "base": "k06",
+    "prompt": "Edit clean approved neutral k06 into Sen’s RAISED-PAN objection state. Preserve exact face, hair, clay shirt, table, camera, lighting and right rain doorway. Place the exact32cm dark carbon-steel pan in his nearer hand, lifted only a few centimetres above the ash table, with its single long straight handle and entire pan silhouette clearly readable. His other complete hand stays naturally at the table edge. Keep his mouth and both eyes visible, composed and ready to say his ordinary line. Change only arm/hand/pan state; no new expression, posture exaggeration, bowl, second pan or countertop geometry. Compare edited face, cloth texture and room at full size with clean k06 and the authoritative identity reference.",
+    "refs": [
+      "k06",
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "deps": [
+      "k06",
+      "ref_sen",
+      "ref_kitchen",
+      "ref_props"
+    ],
+    "aspect": "16:9",
+    "execution_note": "Root uses the default built-in generative editor from the clean approved base; inspect preservation before acceptance. No paid generation is authorized by this catalog itself."
+  }
+]
