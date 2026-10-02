@@ -1,0 +1,7 @@
+{
+  "EDA": {
+    "description": "An ordinary 42-year-old woman speaking neutral General American English in a small quiet room. East Asian American, a textile pattern cutter used to giving brief practical instructions to a colleague across a table. Middle register, slightly dry consonants, conversational breath, even pace, narrow pitch variation. Her voice is clear without a broadcast finish. No theatrical delivery, no narrator cadence, no smiling sales tone. Close dry recording without room echo. An invented adult person, not an imitation of anyone.",
+    "text": "The long room is mine. I measured it yesterday. The table fits, but the shelves have to come down. Leave the bowl there for now. I still need it. Have you packed the tape measure? It was beside the scissors. No, the other scissors. I'll get it.",
+    "target": {"f0": [165, 225], "age": false}
+  }
+}
