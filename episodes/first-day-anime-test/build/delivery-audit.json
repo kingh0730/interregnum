@@ -1,0 +1,308 @@
+{
+  "master": "renders/first-day-anime-test/first-day_opus55_1080p30.mp4",
+  "master_sha256": "6007fa473ec6798380d877dc9e687f82d542ff35345ffe1a3b3a9ab0738e9bee",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "duration": "43.700000",
+        "nb_frames": "1311"
+      },
+      {
+        "codec_name": "aac",
+        "r_frame_rate": "0/0",
+        "duration": "43.670000",
+        "nb_frames": "1882"
+      }
+    ]
+  },
+  "full_decode": "passed",
+  "frames": 1311,
+  "fps": 30,
+  "planned_shots": 44,
+  "cut_frame_tolerance": "passed, <= 3 frames from rounded target",
+  "lyric_anchor_data": "passed; visual appearance reviewed separately",
+  "audio": {
+    "source": "episodes/first-day-anime-test/first-day.mp3",
+    "sha256": "1a118d29b8ee750ab6a14673ab274ed0e090efafeb538a49c1a2c381ca338d1f",
+    "processing": "Original MP3 supplied directly to final AAC mux. No gain, SFX, or model audio used."
+  },
+  "requests": 28,
+  "billable_seconds": 143.0,
+  "estimated_motion_cost_usd": 4.29,
+  "image_tool": "Codex built-in image_gen",
+  "luma_requests": 0,
+  "playback_review": "pending",
+  "sources": [
+    {
+      "path": "work/first-day-anime-test/assets/anthropic-a.png",
+      "sha256": "48c4dca67767b81b43a3becad829f0a5eae0120ffa19027aa93c332253ce3d9c",
+      "bytes": 32253
+    },
+    {
+      "path": "work/first-day-anime-test/assets/anthropic-a.svg",
+      "sha256": "196bfd3bbae5fb7a6cfdb2b7a80e3467c013fe6db6c190169a6b8ff6ddd31a65",
+      "bytes": 307
+    },
+    {
+      "path": "work/first-day-anime-test/assets/anthropic-wordmark.svg",
+      "sha256": "38393da114314883ff23f87be7bf4ae7d327e0065eccaa4fcb0455491fe1d207",
+      "bytes": 2482
+    },
+    {
+      "path": "work/first-day-anime-test/assets/birth-clean.png",
+      "sha256": "9c59102a4ddf252462841473976b76c5eb2b95c97a4e5765ab1b16ff0b094434",
+      "bytes": 2408869
+    },
+    {
+      "path": "work/first-day-anime-test/assets/birth.png",
+      "sha256": "82a786b6a50557a64c5737ce1f763c07b57aab8dd9883ba9aeeb9a570d90003d",
+      "bytes": 2434059
+    },
+    {
+      "path": "work/first-day-anime-test/assets/breath-clean.png",
+      "sha256": "fb1fa05482073e4709dc9a5c9308c180f7c1319277ca1f54354f4a07877dac85",
+      "bytes": 2209871
+    },
+    {
+      "path": "work/first-day-anime-test/assets/breath.png",
+      "sha256": "54aeab230d18250edad1ef94c00ec17d5b4a8bde7ab3bdba61bf95b5d4644e76",
+      "bytes": 2225854
+    },
+    {
+      "path": "work/first-day-anime-test/assets/city.png",
+      "sha256": "4d6823daaabda35170bdfacedf31ce41edd180f512aa2b6bd4b0a962f6d612e1",
+      "bytes": 346794
+    },
+    {
+      "path": "work/first-day-anime-test/assets/claude-spark.png",
+      "sha256": "06d1d401857b25320b2fed1c08fbf6fcdc2e9cf8b016f6d07722e7187d86655a",
+      "bytes": 67502
+    },
+    {
+      "path": "work/first-day-anime-test/assets/claude-spark.svg",
+      "sha256": "1ae02aebfd90572cfa5050d1e5b30d029287fe3bdb60e036b7450eb7130de046",
+      "bytes": 1966
+    },
+    {
+      "path": "work/first-day-anime-test/assets/claude-wordmark.svg",
+      "sha256": "19d1a4eedb2cc6f70077b0a3434bf010bd502205fe3f8f990fedf7c619be3e23",
+      "bytes": 8034
+    },
+    {
+      "path": "work/first-day-anime-test/assets/environment-reference.png",
+      "sha256": "fe00dc6f206a7b3d77a3a614ed0900e538b040e9aa6ddd47feffeea04d64e229",
+      "bytes": 2455835
+    },
+    {
+      "path": "work/first-day-anime-test/assets/flight-clean.png",
+      "sha256": "6d17e211bde703dbbe9a9ed2c3e8cd1a6f05dc4794748fa7ab2f9a8d47c9a049",
+      "bytes": 2695324
+    },
+    {
+      "path": "work/first-day-anime-test/assets/flight.png",
+      "sha256": "f6405575fc3553bcdd9df5755fb43955883bc9f4bdbbbde6472a028634ea4392",
+      "bytes": 2731381
+    },
+    {
+      "path": "work/first-day-anime-test/assets/float-clean.png",
+      "sha256": "5b683ec207deb9d50f7d781a3c557ddc98e1225232621ada94b42a807cdc7517",
+      "bytes": 2252127
+    },
+    {
+      "path": "work/first-day-anime-test/assets/float.png",
+      "sha256": "63285c7be86f82108311253ca9f90c3368a283936f36748f0fd4cfb194545cc6",
+      "bytes": 2305596
+    },
+    {
+      "path": "work/first-day-anime-test/assets/helix-hero.png",
+      "sha256": "f435a2e87b4af3bde4b6646495e9063d74eeff5974f02cb19be1545580e67e8f",
+      "bytes": 454895
+    },
+    {
+      "path": "work/first-day-anime-test/assets/helix-sheet.png",
+      "sha256": "da98be67b13b6a87192b2af5e0a6df504e967ca07248b740c025ecb1d7f08370",
+      "bytes": 1975629
+    },
+    {
+      "path": "work/first-day-anime-test/assets/helix-start-clean.png",
+      "sha256": "af0516317f2bcd14c97482abef05b662a9917f74c1ee4d0b12e0ccbf2ed170d4",
+      "bytes": 2275139
+    },
+    {
+      "path": "work/first-day-anime-test/assets/helix-start.png",
+      "sha256": "33184d2a80f515c6c919f5ec23cdf222815b72b574d2f728e9aa260e22e878d1",
+      "bytes": 2319940
+    },
+    {
+      "path": "work/first-day-anime-test/assets/helix-view-0.png",
+      "sha256": "f435a2e87b4af3bde4b6646495e9063d74eeff5974f02cb19be1545580e67e8f",
+      "bytes": 454895
+    },
+    {
+      "path": "work/first-day-anime-test/assets/helix-view-1.png",
+      "sha256": "5b8f1b65c4f26e01de2abe9c5174d0902c96c7a85ef0c0df39c9e44a48679c81",
+      "bytes": 406330
+    },
+    {
+      "path": "work/first-day-anime-test/assets/helix-view-2.png",
+      "sha256": "4da7f1e688343e44323dea7f08c586217dcaaf5c1bac1aca1599286d25870d44",
+      "bytes": 285312
+    },
+    {
+      "path": "work/first-day-anime-test/assets/helix-view-3.png",
+      "sha256": "16b0442960a4e1956e68573b04f0076f52902d3010c8b5d51d9cb7e88547e98e",
+      "bytes": 379672
+    },
+    {
+      "path": "work/first-day-anime-test/assets/helix-view-4.png",
+      "sha256": "0ac96a135bb27dca83a55e04bacee70db607fe6de58654d372fa4697396a862d",
+      "bytes": 438797
+    },
+    {
+      "path": "work/first-day-anime-test/assets/hug-clean.png",
+      "sha256": "00db84a9f4a35e8385a6b28cdc30326ae891108092aa5dd2d500bf77447aa69e",
+      "bytes": 2209021
+    },
+    {
+      "path": "work/first-day-anime-test/assets/hug.png",
+      "sha256": "51468bac9364a3d6484eb8fde9a973dc2a7979025e8173e05bfe21c6ef3b7e81",
+      "bytes": 2215108
+    },
+    {
+      "path": "work/first-day-anime-test/assets/leap-clean.png",
+      "sha256": "6fe6268c3ea627d17ef2cc8e13bb802a3d81faa3de1550114e91038c1cd8b2a2",
+      "bytes": 2463125
+    },
+    {
+      "path": "work/first-day-anime-test/assets/leap-fixed-clean.png",
+      "sha256": "49961f4f8f574277f7d982831a2a4ade45350fd96149fad229d6b320e53c3bdd",
+      "bytes": 2387895
+    },
+    {
+      "path": "work/first-day-anime-test/assets/leap.png",
+      "sha256": "222b8e0497229eac969f67b75f0feb07cc1bcb69aa6987bc41c66441d51870fe",
+      "bytes": 2416991
+    },
+    {
+      "path": "work/first-day-anime-test/assets/opus-reference-v1.png",
+      "sha256": "13550c8e62172a8361a3b4a79403320f483c46b39b499e6ec02a976a10c4a575",
+      "bytes": 2471114
+    },
+    {
+      "path": "work/first-day-anime-test/assets/opus-reference.png",
+      "sha256": "18eb608cabf57a6d5c6d16ad1dec5a6ea1520638c1b739010444058e21eae29d",
+      "bytes": 2445071
+    },
+    {
+      "path": "work/first-day-anime-test/assets/outro-clean.png",
+      "sha256": "776a6ae92efe7d5681cdbc46def12fa09554b2cdcdd6f9ab741e70e1e58ab835",
+      "bytes": 2255208
+    },
+    {
+      "path": "work/first-day-anime-test/assets/outro-fixed-clean.png",
+      "sha256": "3d0906ca273013d3847dd53d0ac3fb097be183d9fd24fb0867e5d36f7e171b8f",
+      "bytes": 2218973
+    },
+    {
+      "path": "work/first-day-anime-test/assets/outro.png",
+      "sha256": "7eb6aa9aa5472b605616e4ab41c8d62c3cbd40c158296c083fc2a2822fa4bf16",
+      "bytes": 2229804
+    },
+    {
+      "path": "work/first-day-anime-test/assets/paper.png",
+      "sha256": "1e6d2a19ea7ba68c6802e81f446f5757b52fabf9082f9f8c7535b1510794fce4",
+      "bytes": 3097399
+    },
+    {
+      "path": "work/first-day-anime-test/assets/s01-glasses.png",
+      "sha256": "d6ef549e0ed85145365b91144647faaadc17ebb13250b95a3c755872b5422afd",
+      "bytes": 1619972
+    },
+    {
+      "path": "work/first-day-anime-test/assets/s03-room.png",
+      "sha256": "a00bf0f1e2b3edbc8a80cbd534a5c97ca94d76c77fba5be846f195faa4d627cd",
+      "bytes": 2146379
+    },
+    {
+      "path": "work/first-day-anime-test/assets/s04-tea.png",
+      "sha256": "22739fadd6422c3ec573f4fff646cc900bd3166b05b6ea23b605ab5b9d0ded9a",
+      "bytes": 1826771
+    },
+    {
+      "path": "work/first-day-anime-test/assets/s05-screen-clean.png",
+      "sha256": "eb0222881316389d147d47d4703315faa5ab97af9a27b70c49a58cbb49d4dbcb",
+      "bytes": 1847283
+    },
+    {
+      "path": "work/first-day-anime-test/assets/s20-ankle-clean.png",
+      "sha256": "79ff3b12c32d4dc77ecce663f2cd350a48a7390ba93e1360f5d090a483f56cd7",
+      "bytes": 2146791
+    },
+    {
+      "path": "work/first-day-anime-test/assets/s20-ankle-start.png",
+      "sha256": "ba24cef82b87574c9f19530a2bd666830f2dd561082ead4e619b080ba60d4fac",
+      "bytes": 2135016
+    },
+    {
+      "path": "work/first-day-anime-test/assets/s20-ankle.png",
+      "sha256": "ed07caa5499fe0f7f36c2de939544e08bc61f1f9eed605b81314682b373ad5fc",
+      "bytes": 2183708
+    },
+    {
+      "path": "work/first-day-anime-test/assets/sky.png",
+      "sha256": "23bd9447245e3b05fe214b21c3fd894938fc0ecbf4dd7ae8ec92256c0d332edc",
+      "bytes": 2273805
+    },
+    {
+      "path": "work/first-day-anime-test/assets/sprint-clean.png",
+      "sha256": "1dfbc846068a7ceae96ef13c71566bb1159a3789a53a3eae0e566cc89ea3f38c",
+      "bytes": 2424266
+    },
+    {
+      "path": "work/first-day-anime-test/assets/sprint.png",
+      "sha256": "0bf763e1bcb6078e8ae60250e5ad8277b796dac3fb2b6860dc34510975d6642c",
+      "bytes": 2435344
+    },
+    {
+      "path": "work/first-day-anime-test/assets/steps-clean.png",
+      "sha256": "94a4c96257c186ff7fec43e674945b4b338660f15a3b42700af3dd9fbe996a7b",
+      "bytes": 2459858
+    },
+    {
+      "path": "work/first-day-anime-test/assets/steps-fixed-clean.png",
+      "sha256": "74af85faf8f22c9b2b4d636d311d86000cf346adca697548ab0fb6bf6b689669",
+      "bytes": 2402867
+    },
+    {
+      "path": "work/first-day-anime-test/assets/steps.png",
+      "sha256": "310ecdd6d073752c6ce5af679ec7610898f7633eb9381e9f11b070f44f27fec7",
+      "bytes": 2426615
+    },
+    {
+      "path": "work/first-day-anime-test/assets/touch-clasp.png",
+      "sha256": "2f2cf72ab3448832c57e4215aaf2962c5e8a027496d47dc8cb3c825d11b3c4f8",
+      "bytes": 1500555
+    },
+    {
+      "path": "work/first-day-anime-test/assets/touch-clean.png",
+      "sha256": "bb1383c92ef4f003dd66d7ffc68198cbac1c430f883e9511943bc2157634ca23",
+      "bytes": 2314437
+    },
+    {
+      "path": "work/first-day-anime-test/assets/touch.png",
+      "sha256": "9437bc656b836740c0b6f51ae3759ec5a1c765f991ecc7a6e78e23d38fd12373",
+      "bytes": 2336962
+    },
+    {
+      "path": "work/first-day-anime-test/assets/xiaoman-reference.png",
+      "sha256": "96c93c85ab7a7b5c56f07545dc3a8a5692975ad7dcc259ebb287e99c63a2e64c",
+      "bytes": 2031369
+    }
+  ]
+}

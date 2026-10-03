@@ -1,0 +1,558 @@
+{
+  "schema_version": 1,
+  "status": "approved",
+  "reviewer": "Codex: conditioning-source visual review, 2026-10-04",
+  "review_scope": "Selected still conditioning and authored intentional transitions only; generated take/cut states, performance and audio are pending.",
+  "story": {
+    "path": "episodes/first-day-anime-test/build/story-sources.json",
+    "sha256": "f90c820e82a7ae77d08fc508bb26b6427dcaa0bb70b3491dd82b77d2c9fd79c2"
+  },
+  "assets": {
+    "path": "episodes/first-day-anime-test/build/asset-map.json",
+    "sha256": "210064a2e052a109b18ae10a4ab3ea4a756de6ea9ac6d21154c928c1b2e94171"
+  },
+  "states": {
+    "path": "episodes/first-day-anime-test/build/conditioning-states.json",
+    "sha256": "3f4ba5382c40fd12dea0b0d47a88a91cc332f0116c9fbcf683b443729fd0e9ea"
+  },
+  "additional_inputs": [
+    {
+      "path": "episodes/first-day-anime-test/build/render.py",
+      "sha256": "27cc5f633bbe3ffecc016faaa11050c8c70928872342229948712425d4abdfa5"
+    },
+    {
+      "path": "episodes/first-day-anime-test/build/mark_plates.py",
+      "sha256": "89bccf3d5605b8a0535c69949f864dd85a4f2bc28bebe8a082ea884abdf28e19"
+    }
+  ],
+  "sources": [
+    {
+      "path": "work/first-day-anime-test/assets/birth.png",
+      "sha256": "82a786b6a50557a64c5737ce1f763c07b57aab8dd9883ba9aeeb9a570d90003d"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/breath.png",
+      "sha256": "54aeab230d18250edad1ef94c00ec17d5b4a8bde7ab3bdba61bf95b5d4644e76"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/city.png",
+      "sha256": "4d6823daaabda35170bdfacedf31ce41edd180f512aa2b6bd4b0a962f6d612e1"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/flight.png",
+      "sha256": "f6405575fc3553bcdd9df5755fb43955883bc9f4bdbbbde6472a028634ea4392"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/float.png",
+      "sha256": "63285c7be86f82108311253ca9f90c3368a283936f36748f0fd4cfb194545cc6"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/helix-start.png",
+      "sha256": "33184d2a80f515c6c919f5ec23cdf222815b72b574d2f728e9aa260e22e878d1"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/hug.png",
+      "sha256": "51468bac9364a3d6484eb8fde9a973dc2a7979025e8173e05bfe21c6ef3b7e81"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/leap.png",
+      "sha256": "222b8e0497229eac969f67b75f0feb07cc1bcb69aa6987bc41c66441d51870fe"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/outro.png",
+      "sha256": "7eb6aa9aa5472b605616e4ab41c8d62c3cbd40c158296c083fc2a2822fa4bf16"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/paper.png",
+      "sha256": "1e6d2a19ea7ba68c6802e81f446f5757b52fabf9082f9f8c7535b1510794fce4"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/s01-glasses.png",
+      "sha256": "d6ef549e0ed85145365b91144647faaadc17ebb13250b95a3c755872b5422afd"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/s03-room.png",
+      "sha256": "a00bf0f1e2b3edbc8a80cbd534a5c97ca94d76c77fba5be846f195faa4d627cd"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/s04-tea.png",
+      "sha256": "22739fadd6422c3ec573f4fff646cc900bd3166b05b6ea23b605ab5b9d0ded9a"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/s05-screen-clean.png",
+      "sha256": "eb0222881316389d147d47d4703315faa5ab97af9a27b70c49a58cbb49d4dbcb"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/s20-ankle-start.png",
+      "sha256": "ba24cef82b87574c9f19530a2bd666830f2dd561082ead4e619b080ba60d4fac"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/s20-ankle.png",
+      "sha256": "ed07caa5499fe0f7f36c2de939544e08bc61f1f9eed605b81314682b373ad5fc"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/sky.png",
+      "sha256": "23bd9447245e3b05fe214b21c3fd894938fc0ecbf4dd7ae8ec92256c0d332edc"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/sprint.png",
+      "sha256": "0bf763e1bcb6078e8ae60250e5ad8277b796dac3fb2b6860dc34510975d6642c"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/steps.png",
+      "sha256": "310ecdd6d073752c6ce5af679ec7610898f7633eb9381e9f11b070f44f27fec7"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/touch-clasp.png",
+      "sha256": "2f2cf72ab3448832c57e4215aaf2962c5e8a027496d47dc8cb3c825d11b3c4f8"
+    },
+    {
+      "path": "work/first-day-anime-test/assets/touch.png",
+      "sha256": "9437bc656b836740c0b6f51ae3759ec5a1c765f991ecc7a6e78e23d38fd12373"
+    }
+  ],
+  "cuts": [
+    {
+      "from_shot": "S01",
+      "to_shot": "S02",
+      "from_asset": "s01-glasses",
+      "to_asset": "code-S02",
+      "relation": "intentional_discontinuity",
+      "evidence": "The glasses reflection becomes the full-frame chat feed; this is the specified optical dive, not a room cut.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S02",
+      "to_shot": "S03",
+      "from_asset": "code-S02",
+      "to_asset": "s03-room",
+      "relation": "scene_change",
+      "evidence": "The full-frame feed returns to the apartment: Xiaoman remains the sole person at the left desk; screen left and rainy windows behind.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S03",
+      "to_shot": "S04",
+      "from_asset": "s03-room",
+      "to_asset": "s04-tea",
+      "relation": "continuous",
+      "evidence": "Wide room and tea insert retain Xiaoman's cream sleeve, round glasses, dark bob, desk-side chair and the single tea cup.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S04",
+      "to_shot": "S05",
+      "from_asset": "s04-tea",
+      "to_asset": "s05-screen-clean",
+      "relation": "ellipsis",
+      "evidence": "Tea insert to monitor-side face: same hoodie, face and rain-lit desk. Cup lowers offscreen between setups; no second person enters.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S05",
+      "to_shot": "S06",
+      "from_asset": "s05-screen-clean",
+      "to_asset": "code-S06",
+      "relation": "intentional_discontinuity",
+      "evidence": "The monitor reply gives way to an authored macro of its Thinking indicator.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S06",
+      "to_shot": "S07",
+      "from_asset": "code-S06",
+      "to_asset": "s03-room",
+      "relation": "scene_change",
+      "evidence": "Thinking insert returns to the same selected room plate. Xiaoman remains at the left desk; levitation is an effect/action yet to be generated.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S07",
+      "to_shot": "S08",
+      "from_asset": "s03-room",
+      "to_asset": "s03-room",
+      "relation": "continuous",
+      "evidence": "The burst chain retains the same apartment, seated woman and props; its source is shared with the levitation setup.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S08",
+      "to_shot": "S09",
+      "from_asset": "s03-room",
+      "to_asset": "s03-room",
+      "relation": "continuous",
+      "evidence": "Burst 1 to Burst 2 use the same room source; the increasing spark radius is intentional graphic continuity.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S09",
+      "to_shot": "S10",
+      "from_asset": "s03-room",
+      "to_asset": "s03-room",
+      "relation": "continuous",
+      "evidence": "Burst 2 to Burst 3 use the same room source and increasing ring radius.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S10",
+      "to_shot": "S11",
+      "from_asset": "s03-room",
+      "to_asset": "s03-room",
+      "relation": "continuous",
+      "evidence": "Burst 3 to Burst 4 preserve the room source; the ring is intended to exceed the aperture.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S11",
+      "to_shot": "S12",
+      "from_asset": "s03-room",
+      "to_asset": "code-S12",
+      "relation": "intentional_discontinuity",
+      "evidence": "Room burst becomes the graphic ray macro, then black; no implied physical room reset.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S12",
+      "to_shot": "S13",
+      "from_asset": "code-S12",
+      "to_asset": "s03-room",
+      "relation": "intentional_discontinuity",
+      "evidence": "Ray/black resolves to the authored stopped-room insert. The final hold must inherit frozen outgoing levitation objects when motion exists.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S13",
+      "to_shot": "S14",
+      "from_asset": "s03-room",
+      "to_asset": "code-S14",
+      "relation": "intentional_discontinuity",
+      "evidence": "The stopped screen cuts to the authored title impact on locked chorus frame 358.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S14",
+      "to_shot": "S15",
+      "from_asset": "code-S14",
+      "to_asset": "birth",
+      "relation": "intentional_discontinuity",
+      "evidence": "Title to magical birth is the planned transformation. Birth source visibly retains Xiaoman left, desk left, rear windows and right balcony door.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S15",
+      "to_shot": "S16",
+      "from_asset": "birth",
+      "to_asset": "birth",
+      "relation": "continuous",
+      "evidence": "Birth and reveal share the same source heroine, hovering bare feet, long hair and seated Xiaoman; generated phases must remain sequential.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S16",
+      "to_shot": "S17",
+      "from_asset": "birth",
+      "to_asset": "breath",
+      "relation": "continuous",
+      "evidence": "Reveal to close breath retains Opus's face, collar brooch, hairclip and coral hair. Tight crop excludes Xiaoman's established desk position.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S17",
+      "to_shot": "S18",
+      "from_asset": "breath",
+      "to_asset": "birth",
+      "relation": "continuous",
+      "evidence": "Breath close-up returns to the same birth-room layout, with Xiaoman present at the left desk. Window rupture is a pending generated action.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S18",
+      "to_shot": "S19",
+      "from_asset": "birth",
+      "to_asset": "birth",
+      "relation": "continuous",
+      "evidence": "Window burst and pullback share one requested take; their final neighboring motion frames require review after generation.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S19",
+      "to_shot": "S20",
+      "from_asset": "birth",
+      "to_asset": "s20-ankle-start",
+      "relation": "ellipsis",
+      "evidence": "Room pullback to ankle insert follows Opus toward the balcony. The insert shows one bare foot and one gold 5.5 charm against wet tile and railing.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S20",
+      "to_shot": "S21",
+      "from_asset": "s20-ankle",
+      "to_asset": "steps",
+      "relation": "continuous",
+      "evidence": "Ankle landing to first steps retains bare feet, wet balcony tile, metal railing and long pale hair tips. The steps source was corrected to one ankle chain.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S21",
+      "to_shot": "S22",
+      "from_asset": "steps",
+      "to_asset": "touch",
+      "relation": "ellipsis",
+      "evidence": "Steps to reach: Opus has turned to Xiaoman at the doorway. Both women appear; same balcony rail and left interior desk, brighter dawn is the intended progression.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S22",
+      "to_shot": "S23",
+      "from_asset": "touch",
+      "to_asset": "touch-clasp",
+      "relation": "continuous",
+      "evidence": "The reach source shows two approaching fingertips. The orbit source is decoded frame 73 of the accepted contact take, where the two women visibly clasp hands at the same doorway. The requested orbit continues from that observed contact state.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S23",
+      "to_shot": "S24",
+      "from_asset": "touch-clasp",
+      "to_asset": "sprint",
+      "relation": "ellipsis",
+      "evidence": "Doorway reach to sprint: both women remain together and hold hands. Their change to shoes belongs to the planned pre-flight costume state. New front camera places Opus left and Xiaoman right.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S24",
+      "to_shot": "S25",
+      "from_asset": "sprint",
+      "to_asset": "leap",
+      "relation": "continuous",
+      "evidence": "Sprint and leap preserve Opus left/Xiaoman right, joined inner hands, Opus loafers and black socks, Xiaoman sneakers, wet tiles and metal balcony rail.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S25",
+      "to_shot": "S26",
+      "from_asset": "leap",
+      "to_asset": "flight",
+      "relation": "intentional_discontinuity",
+      "evidence": "Leap to flight is the planned orbit/unfreeze and shoe-dissolution transition. Flight source deliberately shows both women barefoot; change of screen side follows the orbit.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S26",
+      "to_shot": "S27",
+      "from_asset": "flight",
+      "to_asset": "flight",
+      "relation": "continuous",
+      "evidence": "Launch and roll share the selected flying-pair source with held hands, streaming hair and city beneath.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S27",
+      "to_shot": "S28",
+      "from_asset": "flight",
+      "to_asset": "flight",
+      "relation": "continuous",
+      "evidence": "Roll to cloud skim preserves the same flying pair. The city-to-cloud movement is a required action within the requested flight take, pending review.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S28",
+      "to_shot": "S29",
+      "from_asset": "flight",
+      "to_asset": "flight",
+      "relation": "continuous",
+      "evidence": "Cloud skim to Opus close-up is a reframing of the same selected flight take; her partner remains outside the tight crop, not removed from the source.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S29",
+      "to_shot": "S30",
+      "from_asset": "flight",
+      "to_asset": "flight",
+      "relation": "continuous",
+      "evidence": "Opus to Xiaoman face uses opposite tight crops of the same two-person flight source; both retain supplied identity and costume.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S30",
+      "to_shot": "S31",
+      "from_asset": "flight",
+      "to_asset": "flight",
+      "relation": "continuous",
+      "evidence": "Face crop to climb returns to the same flying pair and held hands; vertical climb remains a generated-action check.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S31",
+      "to_shot": "S32",
+      "from_asset": "flight",
+      "to_asset": "float",
+      "relation": "scene_change",
+      "evidence": "Climb/whiteout reaches the cloud sea. Both women remain barefoot and holding hands; tall towers give way to clouds at the higher elevation.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S32",
+      "to_shot": "S33",
+      "from_asset": "float",
+      "to_asset": "flight",
+      "relation": "intentional_discontinuity",
+      "evidence": "Cloud pair to contact/eye motif is a planned detail montage. The selected flying-pair source supplies sky-lit hands and Opus's eye; no earlier apartment plate is used here.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S33",
+      "to_shot": "S34",
+      "from_asset": "flight",
+      "to_asset": "helix-start",
+      "relation": "intentional_discontinuity",
+      "evidence": "Pupil spark opens to the helix in the cloud world. New hero source contains both barefoot women, Opus arms wide and twin tails extended.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S34",
+      "to_shot": "S35",
+      "from_asset": "helix-start",
+      "to_asset": "paper",
+      "relation": "intentional_discontinuity",
+      "evidence": "Helix to paper meadow is the explicitly scripted medium change; both women retain distinguishing hair, glasses, clothing and joined hands.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S35",
+      "to_shot": "S36",
+      "from_asset": "paper",
+      "to_asset": "flight",
+      "relation": "intentional_discontinuity",
+      "evidence": "Paper meadow to payoff montage is the planned return to cel anime. The close-up is the established heroine identity.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S36",
+      "to_shot": "S37",
+      "from_asset": "flight",
+      "to_asset": "flight",
+      "relation": "intentional_discontinuity",
+      "evidence": "Payoff montage advances from Opus to Xiaoman; these are independent celebratory inserts, not a continuous physical cut.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S37",
+      "to_shot": "S38",
+      "from_asset": "flight",
+      "to_asset": "city",
+      "relation": "intentional_discontinuity",
+      "evidence": "Xiaoman payoff to city rush is the scripted strobe montage.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S38",
+      "to_shot": "S39",
+      "from_asset": "city",
+      "to_asset": "sky",
+      "relation": "intentional_discontinuity",
+      "evidence": "City rush to official spark-sun is a scripted graphic payoff.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S39",
+      "to_shot": "S40",
+      "from_asset": "sky",
+      "to_asset": "helix-start",
+      "relation": "intentional_discontinuity",
+      "evidence": "Spark-sun to ribbon storm stays in the intentionally discontinuous payoff montage.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S40",
+      "to_shot": "S41",
+      "from_asset": "helix-start",
+      "to_asset": "code-S41",
+      "relation": "intentional_discontinuity",
+      "evidence": "Ribbon storm becomes the full-screen authored danmaku wall.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S41",
+      "to_shot": "S42",
+      "from_asset": "code-S41",
+      "to_asset": "hug",
+      "relation": "intentional_discontinuity",
+      "evidence": "Danmaku wall to embrace uses both established faces and costumes. The chosen tight crop excludes the erroneous distant sneaker in the raw hug plate.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S42",
+      "to_shot": "S43",
+      "from_asset": "hug",
+      "to_asset": "code-S43",
+      "relation": "intentional_discontinuity",
+      "evidence": "Embrace to whiteout is the specified final montage impact.",
+      "status": "approved",
+      "issues": []
+    },
+    {
+      "from_shot": "S43",
+      "to_shot": "S44",
+      "from_asset": "code-S43",
+      "to_asset": "outro",
+      "relation": "scene_change",
+      "evidence": "Whiteout opens on the meadow with both women seated, Opus's bare feet and one ankle chain foreground. Xiaoman sneakers were explicitly removed in the selected edit.",
+      "status": "approved",
+      "issues": []
+    }
+  ],
+  "state_changes": [
+    {
+      "shot_id": "S20",
+      "offset_frame": 31,
+      "from_asset": "s20-ankle-start",
+      "to_asset": "s20-ankle",
+      "relation": "continuous",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Viewed both full-resolution ankle plates. Start has a visible air gap under all toes; endpoint touches the wet tile. Same chain, readable 5.5, railing and light. Generation must connect these states without changing anatomy."
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "S03": {
+    "take": "room",
+    "seconds": [
+      0,
+      2.5
+    ]
+  },
+  "S04": {
+    "take": "tea",
+    "seconds": [
+      0,
+      2.3
+    ]
+  },
+  "S07": {
+    "take": "levitate",
+    "seconds": [
+      1,
+      2.2
+    ]
+  },
+  "S08": {
+    "take": "levitate",
+    "seconds": [
+      2.2,
+      3.3
+    ]
+  },
+  "S09": {
+    "take": "levitate",
+    "seconds": [
+      3.3,
+      4
+    ]
+  },
+  "S10": {
+    "take": "levitate",
+    "seconds": [
+      4,
+      4.5
+    ]
+  },
+  "S11": {
+    "take": "levitate",
+    "seconds": [
+      4.5,
+      5
+    ]
+  },
+  "S15": {
+    "take": "birth",
+    "seconds": [
+      0,
+      1.7
+    ]
+  },
+  "S16": {
+    "take": "birth",
+    "seconds": [
+      1.7,
+      3.4
+    ]
+  },
+  "S17": {
+    "take": "breath",
+    "seconds": [
+      0,
+      1.25
+    ]
+  },
+  "S18": {
+    "take": "burst",
+    "seconds": [
+      0,
+      1.9
+    ]
+  },
+  "S19": {
+    "take": "burst",
+    "seconds": [
+      1.9,
+      5
+    ]
+  },
+  "S20": {
+    "take": "ankle",
+    "seconds": [
+      0,
+      1.1
+    ]
+  },
+  "S21": {
+    "take": "steps",
+    "seconds": [
+      0,
+      2.6
+    ]
+  },
+  "S22": {
+    "take": "touch",
+    "seconds": [
+      0,
+      3.0
+    ]
+  },
+  "S23": {
+    "take": "touch-orbit",
+    "seconds": [
+      0,
+      5
+    ]
+  },
+  "S24": {
+    "take": "sprint",
+    "seconds": [
+      0,
+      1.5
+    ]
+  },
+  "S25": {
+    "take": "orbit",
+    "seconds": [
+      0,
+      5
+    ]
+  },
+  "S26": {
+    "take": "flight",
+    "seconds": [
+      0,
+      1.15
+    ]
+  },
+  "S27": {
+    "take": "flight",
+    "seconds": [
+      1.15,
+      1.75
+    ]
+  },
+  "S28": {
+    "take": "flight",
+    "seconds": [
+      1.75,
+      3
+    ]
+  },
+  "S29": {
+    "take": "flight",
+    "seconds": [
+      0.1,
+      0.45
+    ]
+  },
+  "S30": {
+    "take": "flight",
+    "seconds": [
+      0.1,
+      0.5
+    ]
+  },
+  "S31": {
+    "take": "climb",
+    "seconds": [
+      1.5,
+      5
+    ]
+  },
+  "S32": {
+    "take": "float",
+    "seconds": [
+      0,
+      5
+    ]
+  },
+  "S33": {
+    "take": "flight",
+    "seconds": [
+      0.1,
+      0.45
+    ]
+  },
+  "S34": {
+    "take": "helix",
+    "seconds": [
+      0,
+      5
+    ]
+  },
+  "S36": {
+    "take": "flight",
+    "seconds": [
+      0.1,
+      0.45
+    ]
+  },
+  "S37": {
+    "take": "xiaoman-joy",
+    "seconds": [
+      2.5,
+      2.85
+    ]
+  },
+  "S38": {
+    "take": null,
+    "seconds": [
+      3.5,
+      3.85
+    ]
+  },
+  "S40": {
+    "take": "helix",
+    "seconds": [
+      2.7,
+      3.1
+    ]
+  },
+  "S42": {
+    "take": "hug",
+    "seconds": [
+      0,
+      0.35
+    ]
+  },
+  "S44": {
+    "take": "outro",
+    "seconds": [
+      0,
+      5
+    ]
+  },
+  "S35": {
+    "take": "paper",
+    "seconds": [
+      0,
+      3.4
+    ]
+  }
+}

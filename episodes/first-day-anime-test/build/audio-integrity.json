@@ -1,0 +1,7 @@
+{
+  "source_samples": 698720,
+  "output_samples": 698828,
+  "sample_rate": 16000,
+  "pearson_correlation": 0.9986710838664905,
+  "scope": "Decoded signal comparison only; no perceptual listening claim."
+}

@@ -1,0 +1,409 @@
+{
+  "status": "pending_playback",
+  "scope": "Final moving cut, distinct from conditioning-source approval",
+  "static_checks": [
+    "Source plates inspected during generation",
+    "Timed samples of all selected motion takes inspected",
+    "Full-film midpoint contact sheet inspected",
+    "Selected critical text, foot-contact, orbit and final frames inspected"
+  ],
+  "unperformed": [
+    "Normal-speed audiovisual playback",
+    "Frame-by-frame proof of every generated logo and fingertip",
+    "Independent measurement of the generated orbit angles"
+  ],
+  "known_limitations": [
+    "Helix actor/ribbon/halo integration remains visibly composite",
+    "Generated fine hair, collar marks and small props can change during movement",
+    "Reveal and page birth use authored composites rather than full room-depth or cloth simulation"
+  ],
+  "cuts": [
+    {
+      "from": "S01",
+      "to": "S02",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S01-0033.jpg",
+        "work/first-day-anime-test/qa/S02-0034.jpg"
+      ]
+    },
+    {
+      "from": "S02",
+      "to": "S03",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S02-0084.jpg",
+        "work/first-day-anime-test/qa/S03-0085.jpg"
+      ]
+    },
+    {
+      "from": "S03",
+      "to": "S04",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S03-0127.jpg",
+        "work/first-day-anime-test/qa/S04-0128.jpg"
+      ]
+    },
+    {
+      "from": "S04",
+      "to": "S05",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S04-0156.jpg",
+        "work/first-day-anime-test/qa/S05-0157.jpg"
+      ]
+    },
+    {
+      "from": "S05",
+      "to": "S06",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S05-0201.jpg",
+        "work/first-day-anime-test/qa/S06-0202.jpg"
+      ]
+    },
+    {
+      "from": "S06",
+      "to": "S07",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S06-0224.jpg",
+        "work/first-day-anime-test/qa/S07-0225.jpg"
+      ]
+    },
+    {
+      "from": "S07",
+      "to": "S08",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S07-0252.jpg",
+        "work/first-day-anime-test/qa/S08-0253.jpg"
+      ]
+    },
+    {
+      "from": "S08",
+      "to": "S09",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S08-0283.jpg",
+        "work/first-day-anime-test/qa/S09-0284.jpg"
+      ]
+    },
+    {
+      "from": "S09",
+      "to": "S10",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S09-0303.jpg",
+        "work/first-day-anime-test/qa/S10-0304.jpg"
+      ]
+    },
+    {
+      "from": "S10",
+      "to": "S11",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S10-0318.jpg",
+        "work/first-day-anime-test/qa/S11-0319.jpg"
+      ]
+    },
+    {
+      "from": "S11",
+      "to": "S12",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S11-0325.jpg",
+        "work/first-day-anime-test/qa/S12-0326.jpg"
+      ]
+    },
+    {
+      "from": "S12",
+      "to": "S13",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S12-0337.jpg",
+        "work/first-day-anime-test/qa/S13-0338.jpg"
+      ]
+    },
+    {
+      "from": "S13",
+      "to": "S14",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S13-0357.jpg",
+        "work/first-day-anime-test/qa/S14-0358.jpg"
+      ]
+    },
+    {
+      "from": "S14",
+      "to": "S15",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S14-0378.jpg",
+        "work/first-day-anime-test/qa/S15-0379.jpg"
+      ]
+    },
+    {
+      "from": "S15",
+      "to": "S16",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S15-0410.jpg",
+        "work/first-day-anime-test/qa/S16-0411.jpg"
+      ]
+    },
+    {
+      "from": "S16",
+      "to": "S17",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S16-0438.jpg",
+        "work/first-day-anime-test/qa/S17-0439.jpg"
+      ]
+    },
+    {
+      "from": "S17",
+      "to": "S18",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S17-0471.jpg",
+        "work/first-day-anime-test/qa/S18-0472.jpg"
+      ]
+    },
+    {
+      "from": "S18",
+      "to": "S19",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S18-0491.jpg",
+        "work/first-day-anime-test/qa/S19-0492.jpg"
+      ]
+    },
+    {
+      "from": "S19",
+      "to": "S20",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S19-0527.jpg",
+        "work/first-day-anime-test/qa/S20-0528.jpg"
+      ]
+    },
+    {
+      "from": "S20",
+      "to": "S21",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S20-0559.jpg",
+        "work/first-day-anime-test/qa/S21-0560.jpg"
+      ]
+    },
+    {
+      "from": "S21",
+      "to": "S22",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S21-0589.jpg",
+        "work/first-day-anime-test/qa/S22-0590.jpg"
+      ]
+    },
+    {
+      "from": "S22",
+      "to": "S23",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S22-0620.jpg",
+        "work/first-day-anime-test/qa/S23-0621.jpg"
+      ]
+    },
+    {
+      "from": "S23",
+      "to": "S24",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S23-0680.jpg",
+        "work/first-day-anime-test/qa/S24-0681.jpg"
+      ]
+    },
+    {
+      "from": "S24",
+      "to": "S25",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S24-0711.jpg",
+        "work/first-day-anime-test/qa/S25-0712.jpg"
+      ]
+    },
+    {
+      "from": "S25",
+      "to": "S26",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S25-0763.jpg",
+        "work/first-day-anime-test/qa/S26-0764.jpg"
+      ]
+    },
+    {
+      "from": "S26",
+      "to": "S27",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S26-0783.jpg",
+        "work/first-day-anime-test/qa/S27-0784.jpg"
+      ]
+    },
+    {
+      "from": "S27",
+      "to": "S28",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S27-0794.jpg",
+        "work/first-day-anime-test/qa/S28-0795.jpg"
+      ]
+    },
+    {
+      "from": "S28",
+      "to": "S29",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S28-0815.jpg",
+        "work/first-day-anime-test/qa/S29-0816.jpg"
+      ]
+    },
+    {
+      "from": "S29",
+      "to": "S30",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S29-0825.jpg",
+        "work/first-day-anime-test/qa/S30-0826.jpg"
+      ]
+    },
+    {
+      "from": "S30",
+      "to": "S31",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S30-0839.jpg",
+        "work/first-day-anime-test/qa/S31-0840.jpg"
+      ]
+    },
+    {
+      "from": "S31",
+      "to": "S32",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S31-0855.jpg",
+        "work/first-day-anime-test/qa/S32-0856.jpg"
+      ]
+    },
+    {
+      "from": "S32",
+      "to": "S33",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S32-0887.jpg",
+        "work/first-day-anime-test/qa/S33-0888.jpg"
+      ]
+    },
+    {
+      "from": "S33",
+      "to": "S34",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S33-0919.jpg",
+        "work/first-day-anime-test/qa/S34-0920.jpg"
+      ]
+    },
+    {
+      "from": "S34",
+      "to": "S35",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S34-1025.jpg",
+        "work/first-day-anime-test/qa/S35-1026.jpg"
+      ]
+    },
+    {
+      "from": "S35",
+      "to": "S36",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S35-1111.jpg",
+        "work/first-day-anime-test/qa/S36-1112.jpg"
+      ]
+    },
+    {
+      "from": "S36",
+      "to": "S37",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S36-1122.jpg",
+        "work/first-day-anime-test/qa/S37-1123.jpg"
+      ]
+    },
+    {
+      "from": "S37",
+      "to": "S38",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S37-1132.jpg",
+        "work/first-day-anime-test/qa/S38-1133.jpg"
+      ]
+    },
+    {
+      "from": "S38",
+      "to": "S39",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S38-1142.jpg",
+        "work/first-day-anime-test/qa/S39-1143.jpg"
+      ]
+    },
+    {
+      "from": "S39",
+      "to": "S40",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S39-1153.jpg",
+        "work/first-day-anime-test/qa/S40-1154.jpg"
+      ]
+    },
+    {
+      "from": "S40",
+      "to": "S41",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S40-1163.jpg",
+        "work/first-day-anime-test/qa/S41-1164.jpg"
+      ]
+    },
+    {
+      "from": "S41",
+      "to": "S42",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S41-1174.jpg",
+        "work/first-day-anime-test/qa/S42-1175.jpg"
+      ]
+    },
+    {
+      "from": "S42",
+      "to": "S43",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S42-1184.jpg",
+        "work/first-day-anime-test/qa/S43-1185.jpg"
+      ]
+    },
+    {
+      "from": "S43",
+      "to": "S44",
+      "moving_continuity": "pending playback",
+      "sample_files": [
+        "work/first-day-anime-test/qa/S43-1196.jpg",
+        "work/first-day-anime-test/qa/S44-1197.jpg"
+      ]
+    }
+  ]
+}

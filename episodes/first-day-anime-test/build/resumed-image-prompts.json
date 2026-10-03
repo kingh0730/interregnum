@@ -1,0 +1,232 @@
+[
+  {
+    "asset": "birth-clean",
+    "path": "work/first-day-anime-test/assets/birth-clean.png",
+    "sha256": "9c59102a4ddf252462841473976b76c5eb2b95c97a4e5765ab1b16ff0b094434",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-93551f4e-4a65-49b5-bdcd-17e0345a7ba3.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/opus-reference.png",
+      "work/first-day-anime-test/assets/s03-room.png"
+    ],
+    "prompt": "Create one widescreen anime film frame using these references. The heroine from image 1 floats barefoot in a column of ivory light in the centre of the room from image 2. Eyes closed, arms opening, long coral-to-cream twin tails unfurling to the floor. Preserve her face and outfit and the room layout. Xiaoman stays at the left desk in her cream hoodie, turning toward the light. Rainy window behind, balcony door right. Low wide-angle full-body view, luminous 2D cel anime. No text or logos.",
+    "seed": null
+  },
+  {
+    "asset": "breath-clean",
+    "path": "work/first-day-anime-test/assets/breath-clean.png",
+    "sha256": "fb1fa05482073e4709dc9a5c9308c180f7c1319277ca1f54354f4a07877dac85",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-0599d018-30a7-4f79-9432-2974d73d7ac9.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/opus-reference.png",
+      "work/first-day-anime-test/assets/birth-clean.png"
+    ],
+    "prompt": "One widescreen cinematic anime frame. Reframe the heroine from image 1 into an intimate low-angle face and shoulders close-up in the room from image 2. Same identity, coral-to-cream twin tails, ivory black-piped collar, blank black brooch and coral disk hairclip. Eyes gently opening, lips barely parted for her first breath, a lock of hair across one mouth corner. Ivory light from left and coral rim from right, rainy window blurred behind. Leave space at left. Clean 2D cel linework and painterly light. No text, logos or halo.",
+    "seed": null
+  },
+  {
+    "asset": "touch-clean",
+    "path": "work/first-day-anime-test/assets/touch-clean.png",
+    "sha256": "bb1383c92ef4f003dd66d7ffc68198cbac1c430f883e9511943bc2157634ca23",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-a7ff3239-0a52-410c-9c6d-a44409780c2f.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/xiaoman-reference.png",
+      "work/first-day-anime-test/assets/opus-reference.png",
+      "work/first-day-anime-test/assets/s03-room.png"
+    ],
+    "prompt": "One widescreen anime film frame. Preserve identities and outfits in refs 1 and 2 and apartment geography in ref 3. Xiaoman on left, coral-to-cream twin-tailed Opus on right, standing at the balcony doorway facing each other. Their outstretched fingertips ALMOST touch in the centre foreground, two distinct natural hands. Wide 24mm camera close to hands, both faces visible behind them. Xiaoman round glasses, cream hoodie; Opus ivory black-piped jacket, short charcoal musical skirt, coral sash. Wet balcony railing right, desk behind Xiaoman left. Night turning pale dawn, coral glow at their fingers. Clean 2D cel anime with luminous painterly light. No text or logos, pins and charm blank.",
+    "seed": null
+  },
+  {
+    "asset": "steps-clean",
+    "path": "work/first-day-anime-test/assets/steps-clean.png",
+    "sha256": "94a4c96257c186ff7fec43e674945b4b338660f15a3b42700af3dd9fbe996a7b",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-afa165fd-7024-41ff-bb96-7ba8342a8f2e.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/opus-reference.png",
+      "work/first-day-anime-test/assets/s03-room.png"
+    ],
+    "prompt": "One widescreen anime movie frame, a low camera following Opus's first steps across the wet balcony of reference 2. Preserve reference 1's heroine and clothes: ivory black-piped jacket, charcoal above-knee musical-staff skirt, coral bookmark sash, floor-length coral-to-cream twin tails, bare feet, gold ankle chain. Show her whole body with floor below both feet, one foot just raised to begin a step, looking forward. Rain beads suspended, coral glow reflects in tiles. Balcony railing to right, apartment door behind left, dense generic Asian city before sunrise. No extra people in this tight balcony view. Clean 2D cel anime, painterly light. No text or logos.",
+    "seed": null
+  },
+  {
+    "asset": "steps-fixed-clean",
+    "path": "work/first-day-anime-test/assets/steps-fixed-clean.png",
+    "sha256": "74af85faf8f22c9b2b4d636d311d86000cf346adca697548ab0fb6bf6b689669",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-7915fac4-92b0-4fce-a1e6-ff44502ac2d6.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/steps-clean.png"
+    ],
+    "prompt": "Edit the balcony walking image only to remove the gold chain from the RAISED foot's ankle (left side of image). Keep the gold chain and round tag on the planted foot on right. Keep face, pose, hands, clothes, hair, balcony, framing and lighting unchanged. There is exactly ONE ankle chain.",
+    "seed": null
+  },
+  {
+    "asset": "leap-clean",
+    "path": "work/first-day-anime-test/assets/leap-clean.png",
+    "sha256": "6fe6268c3ea627d17ef2cc8e13bb802a3d81faa3de1550114e91038c1cd8b2a2",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-989a2496-c418-44c4-bdcd-c58a27ff4574.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/opus-reference.png",
+      "work/first-day-anime-test/assets/xiaoman-reference.png"
+    ],
+    "prompt": "One widescreen anime frame using these two character identities. They leap hand in hand over their apartment's balcony rail at dawn. Both full figures visible outside the rail, frozen midair, hair and blank paper flying. Opus wears the same ivory jacket, charcoal short musical skirt, coral sash and long coral-to-cream twin tails, plus black knee socks and tan loafers. Xiaoman wears cream hoodie, glasses, dark trousers, sneakers. Low wide camera looks sideways across wet metal railing to dawn towers. Joyful 2D cel anime, painterly light. No text, logos or halo.",
+    "seed": null
+  },
+  {
+    "asset": "leap-fixed-clean",
+    "path": "work/first-day-anime-test/assets/leap-fixed-clean.png",
+    "sha256": "49961f4f8f574277f7d982831a2a4ade45350fd96149fad229d6b320e53c3bdd",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-ff379d06-705b-43cb-b908-0ad970d3275f.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/leap-clean.png"
+    ],
+    "prompt": "Edit only the floating paper sheets in this leap frame: erase ALL markings from every sheet, leaving completely blank ivory paper with the same folds, perspective, edges, light and shadow. Preserve both characters, faces, shoes, hand contact, hair, poses and entire balcony and city exactly. No letters, numbers or music marks anywhere on paper.",
+    "seed": null
+  },
+  {
+    "asset": "flight-clean",
+    "path": "work/first-day-anime-test/assets/flight-clean.png",
+    "sha256": "6d17e211bde703dbbe9a9ed2c3e8cd1a6f05dc4794748fa7ab2f9a8d47c9a049",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-a6a9a3be-677a-4c07-a090-3fad52ac0fcb.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/opus-reference.png",
+      "work/first-day-anime-test/assets/xiaoman-reference.png"
+    ],
+    "prompt": "One widescreen cinematic anime frame. Same two women as references, flying hand in hand between tall generic Asian city towers at coral dawn. Heroine at right with floor-length coral-to-cream twin tails streaming behind, ivory black-piped jacket, short charcoal musical skirt, long coral sash, bare legs and feet. Xiaoman at left, black bob, round glasses, cream hoodie and dark trousers, also barefoot. Both smiling with wind on hair, full bodies clearly separated. Wide 18mm aerial camera alongside them, strong depth and reflections, clouds below. Clean 2D cel anime and painterly luminous backgrounds. No text, billboards, lettering, logos or halo.",
+    "seed": null
+  },
+  {
+    "asset": "float-clean",
+    "path": "work/first-day-anime-test/assets/float-clean.png",
+    "sha256": "5b683ec207deb9d50f7d781a3c557ddc98e1225232621ada94b42a807cdc7517",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-9099f438-6c6f-4a94-98bb-3ac66f996ed9.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/opus-reference.png",
+      "work/first-day-anime-test/assets/xiaoman-reference.png"
+    ],
+    "prompt": "One widescreen cinematic anime frame. Preserve both women in these references. They float weightlessly above a vast sea of cream clouds, holding hands, full figures small in lower-middle of the frame. Xiaoman left in cream hoodie, dark trousers, black bob and glasses, bare feet. Opus right in ivory black-piped short jacket, charcoal musical skirt, long coral sash, floor-length coral-to-cream twin tails fanning upward, bare feet. Both relaxed and smiling. Dawn sky blue above, coral sunrise on horizon, delicate sheet-music paper lantern shapes rise far below with blank faces for later graphics. Wide-angle, luminous hand-painted cloud volumes and clean 2D cel figures. No text or logos.",
+    "seed": null
+  },
+  {
+    "asset": "hug-clean",
+    "path": "work/first-day-anime-test/assets/hug-clean.png",
+    "sha256": "00db84a9f4a35e8385a6b28cdc30326ae891108092aa5dd2d500bf77447aa69e",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-340c7c03-3023-4ce8-91f9-f15954619693.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/opus-reference.png",
+      "work/first-day-anime-test/assets/xiaoman-reference.png"
+    ],
+    "prompt": "One widescreen anime film frame. Same women as references hugging each other joyfully in midair above dawn clouds, full heads and upper bodies visible, hands gently resting on each other's backs. Xiaoman short black bob glasses cream hoodie left; Opus coral-to-cream long twin tails ivory black-piped jacket right. Opus hair and coral bookmark sash swirl around both. Clean distinct bodies, natural hands, bright closed-eye smiles. Luminous cream cloud sea and coral sky, clean 2D feature-film cel drawing. No text logos or halo.",
+    "seed": null
+  },
+  {
+    "asset": "paper",
+    "path": "work/first-day-anime-test/assets/paper.png",
+    "sha256": "1e6d2a19ea7ba68c6802e81f446f5757b52fabf9082f9f8c7535b1510794fce4",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-2d91be3e-4878-43b8-9e2f-e0b11e3e46ce.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/opus-reference.png",
+      "work/first-day-anime-test/assets/xiaoman-reference.png"
+    ],
+    "prompt": "One widescreen flat editorial paper illustration. Transform the two women from the references into simple elegant ink line-drawn figures running hand in hand across an olive meadow. One black bob glasses cream hoodie dark trousers, one very long coral-to-cream twin tails ivory jacket charcoal skirt and coral sash. Cream paper field with hand-drawn grasses, a flat cut-paper coral sun, scribbled tiny stars. Five separated depths of meadow grasses and hills, large negative space sky. Deliberately flat hand-inked art, minimal shading, torn-paper edges, warm Anthropic editorial sensibility, no photographic or 3D look. No text, logos or lettering.",
+    "seed": null
+  },
+  {
+    "asset": "outro-clean",
+    "path": "work/first-day-anime-test/assets/outro-clean.png",
+    "sha256": "776a6ae92efe7d5681cdbc46def12fa09554b2cdcdd6f9ab741e70e1e58ab835",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-d6e19d45-dd5c-4726-b0cf-596f27a928dc.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/opus-reference.png",
+      "work/first-day-anime-test/assets/xiaoman-reference.png"
+    ],
+    "prompt": "One widescreen anime film frame. Same two women from these references on a quiet olive-grass hill at dawn. Opus reclines at right with her bare toes prominent in foreground grass and a thin gold ankle chain with one blank round charm, while Xiaoman sits close beside her at left. Both look toward sky with peaceful small smiles. Preserve coral-to-cream long twin tails spread naturally in grass, ivory jacket and charcoal short skirt, coral sash; Xiaoman's black bob glasses cream hoodie dark trousers. Wide-angle low camera near toes, the hill slopes into cloud sea, sky blue fading coral at horizon, calm luminous painterly anime. No city, buildings, text, logos or halo.",
+    "seed": null
+  },
+  {
+    "asset": "outro-fixed-clean",
+    "path": "work/first-day-anime-test/assets/outro-fixed-clean.png",
+    "sha256": "3d0906ca273013d3847dd53d0ac3fb097be183d9fd24fb0867e5d36f7e171b8f",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-95a88df6-8c2a-4bf7-b9a8-e226c1e686fd.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/outro-clean.png"
+    ],
+    "prompt": "Edit only the black-haired woman's sneakers in the background left: remove her sneakers and socks, making her feet bare in the grass. Preserve absolutely everything else, including both faces, the coral-haired heroine's foreground feet, her gold ankle chain, clothing, light and scenery. No text or logos.",
+    "seed": null
+  },
+  {
+    "asset": "helix-start-clean",
+    "path": "work/first-day-anime-test/assets/helix-start-clean.png",
+    "sha256": "af0516317f2bcd14c97482abef05b662a9917f74c1ee4d0b12e0ccbf2ed170d4",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-e2ef79be-bbaa-47c6-8790-f80c62739baf.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/opus-reference.png",
+      "work/first-day-anime-test/assets/xiaoman-reference.png"
+    ],
+    "prompt": "One widescreen anime film hero frame for an orbit shot. Preserve these two characters. Opus floats at centre over dawn clouds with arms spread wide, eyes closed smiling, long coral-to-cream twin tails streaming upward like two paintbrush ribbons. Ivory black-piped jacket and short charcoal musical skirt, coral sash, bare feet. Xiaoman floats a little behind her at left, cream hoodie dark trousers glasses black bob, also barefoot. Both full bodies visible, clean separated silhouettes, no hands joined. Sky blue and luminous cream clouds with coral dawn horizon. Cinematic 2D cel anime, painterly light. Leave sky space around them for huge ribbon effects in post. No text logos or halo.",
+    "seed": null
+  },
+  {
+    "asset": "s20-ankle-start",
+    "path": "work/first-day-anime-test/assets/s20-ankle-start.png",
+    "sha256": "ba24cef82b87574c9f19530a2bd666830f2dd561082ead4e619b080ba60d4fac",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-b0ea9168-2de9-457f-afaf-cd283b9888cf.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/s20-ankle.png"
+    ],
+    "prompt": "Edit this ankle close-up into the instant BEFORE contact. Lift the same foot and ankle upward so every toe is clearly suspended about 8 centimetres above the same wet tile. Visible dark air gap between toe tips and floor. Keep its identical shape, five toes, ankle chain and readable 5.5 gold charm, hair, balcony, camera and light. Do not add another foot. Preserve the entire background and artwork quality. The foot points downward ready to land.",
+    "seed": null
+  },
+  {
+    "asset": "sprint-clean",
+    "path": "work/first-day-anime-test/assets/sprint-clean.png",
+    "sha256": "1dfbc846068a7ceae96ef13c71566bb1159a3789a53a3eae0e566cc89ea3f38c",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-b1c552d3-cc3d-4998-81e0-b697ea23851a.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/opus-reference.png",
+      "work/first-day-anime-test/assets/xiaoman-reference.png"
+    ],
+    "prompt": "Widescreen anime frame. These same two women run hand in hand toward camera along a wet apartment balcony at dawn, feet on the tiles, starting their sprint. Full bodies. Opus in ivory jacket short charcoal musical skirt coral sash and long coral-to-cream twin tails, black knee socks tan loafers. Xiaoman black bob round glasses cream hoodie dark trousers sneakers. Metal railing right, sliding doorway behind left. Joyful cel anime, painterly dawn city background. No letters logos or halo.",
+    "seed": null
+  },
+  {
+    "asset": "s05-screen-clean",
+    "path": "work/first-day-anime-test/assets/s05-screen-clean.png",
+    "sha256": "eb0222881316389d147d47d4703315faa5ab97af9a27b70c49a58cbb49d4dbcb",
+    "tool": "Codex built-in image_gen",
+    "original_generated_filename": "exec-c0197d12-c1a0-4cce-97b2-99d63f3eed86.png",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/xiaoman-reference.png",
+      "work/first-day-anime-test/assets/s03-room.png"
+    ],
+    "prompt": "One widescreen anime film frame. Same Xiaoman and apartment as references. Intimate close-up from beside her monitor: blank cream monitor screen occupies left half, her face in profile at right, black bob, round glasses, cream hoodie. She looks at the screen with a tiny disbelieving smile. Cold 3am rain-window light, restrained coral reflected dot. Keep left screen a clean empty quadrilateral for exact chat text compositing, no UI or writing. Clean cel anime face and painterly apartment shadows. No text logos or watermarks.",
+    "seed": null
+  },
+  {
+    "asset": "helix-sheet",
+    "path": "work/first-day-anime-test/assets/helix-sheet.png",
+    "sha256": "da98be67b13b6a87192b2af5e0a6df504e967ca07248b740c025ecb1d7f08370",
+    "tool": "Codex built-in image_gen",
+    "transparent_background": true,
+    "status": "Rejected as final turning solution; retained for animatic/reference",
+    "reference_paths": [
+      "work/first-day-anime-test/assets/opus-reference.png"
+    ],
+    "prompt": "Transparent-background anime animation asset sheet, wide 3:1 canvas. FIVE equally spaced columns, one full-body view of the SAME heroine in each, no overlap between columns. Angles left to right: front, front three-quarter, side, rear three-quarter, back. She floats with arms spread wide, eyes closed smiling, bare feet pointed down, coral-to-cream floor-length twin tails flowing upward and outward but contained in each column. Match reference face and costume exactly, ivory short black-piped jacket, charcoal musical-staff pleated skirt, coral sash. Same pose, scale and body proportions across all five views, feet same baseline. Entire silhouette and hair visible, space between sprites, no text or labels, NO ground, shadows, scenery or panel outlines. Crisp 2D cel anime. Real transparent alpha."
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "S20": [
+    {
+      "offset_frame": 0,
+      "asset": "s20-ankle-start"
+    },
+    {
+      "offset_frame": 31,
+      "asset": "s20-ankle"
+    }
+  ]
+}

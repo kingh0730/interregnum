@@ -1,0 +1,62 @@
+[
+  {
+    "id": "environment",
+    "prompt": "Use case: illustration-story. Single wide landscape environment reference board, five distinct panels, NO text or labels. Feature-film hand-painted anime environments, ink #141413, cream #F0EEE6, tiny coral #D97757 accents at night, sky #6A9BCC and coral dawn, olive #788C5D meadow. Panel1 largest: cramped high-floor apartment office at 3am, desk at left perpendicular to a large rainy window on back wall, blank monitor on desk, blank sticky notes and blank wall calendar, milk tea cup, dark swivel chair, sliding balcony door at right, no people. Panel2: adjoining small balcony with wet rectangular tiles and simple metal railing, same sliding door and generic dense Asian megacity outside, no real landmarks or signs. Panel3: same dense city at dawn. Panel4: luminous coral sunrise over a cloud sea. Panel5: quiet olive-grass hill above cloud sea at dawn, no buildings. All panels fully painted, cinematic light, clean painterly silhouettes, atmospheric depth; no 3D render, no photorealism, no text, logos, watermarks.",
+    "tool": "Codex built-in image_gen",
+    "output_hint": "Generated images are saved to /Users/kingh0730/.codex/generated_images/01a1024f-b1ea-7c33-a26f-5700983b631e as /Users/kingh0730/.codex/generated_images/01a1024f-b1ea-7c33-a26f-5700983b631e/exec-4e9e2d52-95ec-454f-9698-4dd5810e092c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "id": "s03",
+    "prompt": "Use case: illustration-story. Single cinematic widescreen 16:9 anime film frame, NOT a sheet. References: image1 is Xiaoman identity; image2 is the apartment geography and lighting. Wide 24mm view from foot of bed: Xiaoman slumped in swivel chair at desk on left, short messy black bob with claw clip, round glasses, oversized cream hoodie with coral zipper pull. Keep reference room: desk and blank monitor left, large rain-streaked window on back wall, balcony sliding door right. Unlettered calendar above monitor, blank sticky notes, tea cup. Screen casts desaturated cold blue light on her face, apartment dark ink. Elegantly composed cramped loneliness at 3am. 2D hand-drawn feature-film anime, cel character and painterly background, no photorealism. Screen and paper BLANK, no text, numbers, glyphs, logos, watermarks. No letterbox.",
+    "tool": "Codex built-in image_gen",
+    "output_hint": "Generated images are saved to /Users/kingh0730/.codex/generated_images/01a1024f-b1ea-7c33-a26f-5700983b631e as /Users/kingh0730/.codex/generated_images/01a1024f-b1ea-7c33-a26f-5700983b631e/exec-b3ebfcf3-e509-4d0d-ab0a-3c4d88ba1446.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "id": "s04",
+    "prompt": "Use case: illustration-story. Single widescreen 16:9 shot. References give Xiaoman identity and her exact apartment. Tight cinematic profile of Xiaoman's cream-sleeved hand lifting the milk tea cup with straw toward her lower face; other hand rests on the swivel chair arm. Round glasses edge and short black bob visible in upper right, cream hoodie. Her shoulders relax; quiet tired adult face. Desk and glowing blank monitor out of focus at left; rainy window behind, same dark room. Camera at desk height, intimate 50mm. Clean 2D feature-film anime cel linework with painterly background, ink and cream, subdued blue-grey monitor glow, tiny coral zipper pull only. Natural anatomically correct hands five fingers, ordinary cup. NO text, logos, numbers, watermark, no borders.",
+    "tool": "Codex built-in image_gen",
+    "output_hint": "Generated images are saved to /Users/kingh0730/.codex/generated_images/01a1024f-b1ea-7c33-a26f-5700983b631e as /Users/kingh0730/.codex/generated_images/01a1024f-b1ea-7c33-a26f-5700983b631e/exec-c1eb24dc-8eba-438f-b69f-2e9ad6f53726.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "id": "opus",
+    "prompt": "A widescreen 2D anime character model sheet on ivory. One consistent young adult heroine, four full-body views front, three-quarter, side, back and six expression portraits. Floor-length wavy low twin-tails, coral-orange roots fading to cream ends, amber eyes. Ivory short high-collar jacket with black piping and blank black collar pin, charcoal pleated skirt with fine cream musical staff lines at hem, long coral bookmark sash, barefoot, thin gold ankle chain with blank round charm. Blank coral disk hairclip on left. Clean confident feature-film anime linework and soft cel shading. Warm ivory, ink, muted coral palette. No writing, numbers, logos, labels or watermark. Include hand, eye, hair and ankle detail panels.",
+    "tool": "Codex built-in image_gen",
+    "output_hint": "Generated images are saved to /Users/kingh0730/.codex/generated_images/01a1024f-b1ea-7c33-a26f-5700983b631e as /Users/kingh0730/.codex/generated_images/01a1024f-b1ea-7c33-a26f-5700983b631e/exec-d47e7c86-b68f-49dc-9af8-581e1dfd4d7f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "id": "opus_fix",
+    "prompt": "Edit this anime character sheet. Keep the same face, coral-to-cream hair gradient, ivory jacket, black piping, coral sash, four angles, expressions, detail panels and drawing style. Correct TWO costume/proportion errors consistently in every view: her twin tails must extend all the way to the floor, not stop at the waist; her charcoal pleated skirt must end just ABOVE THE KNEES, not at the ankles. Keep cream musical-staff hem embroidery. Bare legs and bare feet with gold ankle charm. She is a young adult heroine. No text, numbers, logos or watermark. Do not change the facial identity.",
+    "tool": "Codex built-in image_gen",
+    "output_hint": null
+  },
+  {
+    "id": "s20",
+    "prompt": "Use case: illustration-story. Single widescreen 16:9 feature-film anime macro keyframe. References identify the heroine's ankle jewelry and the apartment's wet balcony tiles. At tile height, extreme close-up of ONE bare foot descending toe-first, hovering three centimetres above wet dark balcony tile. A delicate gold chain encircles ankle, one small circular gold tag faces camera with its face completely BLANK for lettering in post. Natural five toes, anatomically clean. Cream-tipped long hair soft at frame edge, charcoal skirt not in this tight crop. Rain beads suspended in air, reflected coral glow under sole, cool inky balcony beyond. Cinematic 100mm close-up, foot diagonal from upper-right to lower-left, charm sharply legible as shape. 2D anime clean cel lines, soft painted light. No letters, numbers, symbols, logos or watermark.",
+    "tool": "Codex built-in image_gen",
+    "output_hint": "Generated images are saved to /Users/kingh0730/.codex/generated_images/01a1024f-b1ea-7c33-a26f-5700983b631e as /Users/kingh0730/.codex/generated_images/01a1024f-b1ea-7c33-a26f-5700983b631e/exec-12316328-c2a7-4175-9269-4f39c2a881c9.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "id": "sky",
+    "prompt": "Use case: illustration-story. Single 16:9 panoramic film background, a vast sea of voluminous clouds at dawn, use the environment sheet's lower middle panel as strict world and palette reference. Camera above clouds, low horizon at lower third, huge luminous sky open for a flying heroine and ribbons to be composited later. Sky #6A9BCC, cream #FAF9F5 clouds, coral #D97757 dawn horizon and #FFD9A8 sunlight. Feature-film hand-painted anime, luminous painterly cloud volumes, subtle paper texture, elegant cinematic scale. No characters, letters, text, logos, watermark or panel borders. Not a collage.",
+    "tool": "Codex built-in image_gen",
+    "output_hint": "Generated images are saved to /Users/kingh0730/.codex/generated_images/01a1024f-b1ea-7c33-a26f-5700983b631e as /Users/kingh0730/.codex/generated_images/01a1024f-b1ea-7c33-a26f-5700983b631e/exec-6089f20d-f7e8-4f52-b5a1-e5d816743a7f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+  },
+  {
+    "id": "birth",
+    "prompt": "Single widescreen 16:9 anime film frame. Opus from first reference floats barefoot in an ivory beam at centre of the apartment from second reference. Same face, floor-length coral-to-cream twin tails, ivory short jacket with black piping, short charcoal pleated skirt, coral sash. Eyes closed, arms opening, hair unfurling. Low wide-angle camera, full body. Desk and blank monitor left, rainy window behind, balcony door right. Xiaoman appears small at the far-left desk, cream hoodie, black bob and glasses. Blank papers suspended in air. Clean 2D cel characters and luminous painterly background, ink shadows, ivory beam, coral rim. No text, logos, numbers or halo; pins blank.",
+    "tool": "Codex built-in image_gen",
+    "output_hint": null
+  },
+  {
+    "id": "breath",
+    "prompt": "Single widescreen 16:9 cinematic anime frame: intimate low-angle close-up of the heroine in this reference, same face and outfit. Amber eyes gently open, lips barely parted for her first breath. Coral-to-cream twin tails, ivory high collar with black piping, blank black brooch and blank coral hairclip. One strand across mouth corner. Ivory light from left, coral rim from right, dark rain-window apartment blurred behind. Clean feature-film 2D cel linework and painterly lighting, no realistic skin. No text, numbers, logos or halo.",
+    "tool": "Codex built-in image_gen",
+    "output_hint": null
+  },
+  {
+    "id": "touch",
+    "prompt": "One widescreen 16:9 anime movie frame. The two women in the references face each other at a rainy apartment balcony doorway. Black-haired glasses woman on left in cream hoodie; coral-to-cream twin-tailed heroine on right in ivory black-piped jacket and short charcoal pleated skirt. Their outstretched fingertips almost touch at foreground centre. Wide 24mm camera close to the hands, both faces visible behind, tender understated expressions. Wet balcony railing behind right, desk behind left, first pale coral dawn light. Natural hands. Same identities and outfits as references. 2D anime cel linework and painterly luminous background. No text, numbers, logos or halo, all pins blank.",
+    "tool": "Codex built-in image_gen",
+    "output_hint": null
+  }
+]
