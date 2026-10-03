@@ -4,6 +4,7 @@
 
 ## Delivery
 
+- [Scene-labeled review copy](../../renders/landing-day-one/landing-day-one-labeled-review.mp4) — all 69 scene IDs, scene ranges, live frame number and time, in a separate top bar.
 - [1080p60 viewing copy](../../renders/landing-day-one/landing-day-one-1080p60.mp4) — H.264 / AAC.
 - [1440p60 master](../../renders/landing-day-one/landing-day-one-1440p60-master.mov) — ProRes 422 / original PCM24 audio.
 - [Delivery checks](build/delivery-checks.json) and [review record](build/final-review.md).

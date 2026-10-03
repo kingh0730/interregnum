@@ -1,0 +1,12 @@
+{
+  "frames": 2621,
+  "fps": 60,
+  "dimensions": [
+    1920,
+    1200
+  ],
+  "labels": 69,
+  "label_position": "120px bar above full original image",
+  "audio_packets_identical_to_viewing_copy": true,
+  "source_sha256": "9e81504944b4a000babe5bf56d554a0a0d8f5b401989babad27bdc7c90f7890c"
+}
