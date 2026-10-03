@@ -12,7 +12,7 @@ def main():
     (EP/'build/motion-plan-final.json').write_text(json.dumps(motion,ensure_ascii=False,indent=2)+'\n')
     jobs={j['id']:j for j in motion['jobs']}
     with (EP/'shotlog.csv').open('w',newline='') as f:
-        w=csv.DictWriter(f,fieldnames=['shot','name','start_frame','end_frame','method','tool','seed','source','take_interval_seconds','prompt','retries','review'])
+        w=csv.DictWriter(f,lineterminator='\n',fieldnames=['shot','name','start_frame','end_frame','method','tool','seed','source','take_interval_seconds','prompt','retries','review'])
         w.writeheader()
         for shot in TIMELINE:
             n=int(shot['id'][1:]);name=MOTION.get(n);j=jobs.get(name,{})
