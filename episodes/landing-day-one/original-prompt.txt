@@ -1,0 +1,29 @@
+so i've added episodes/first-day-mix. there's a music 'first-day.wav'.
+
+it's gonna be another music pilot (for Mandarin language speakers, in Chinese language) of our series,
+don't use the other first-day episodes as reference, they were failed attempts.
+
+basically, you're going to make an episode of the series using all the instructions we have,
+but it's a special type of video, it's a music video.
+
+your primary goal in this episode is to 'show off your techniques'.
+use and mix in as many techniques (e.g. html/js graphics on top of generated videos, etc.), styles
+(e.g. photorealistic, anime, cyberpunk, night, day, modern, ancient,
+high frame rate, low frame rate, explosion, dance, etc.),
+cinematography, effects and stuff, as many as you can.
+plot should be something about 'birth of AI', mentioning all major American and Chinese AIs,
+such as ChatGPT, Claude, Grok, DeepSeek, 豆包, etc. depicted as adorable human-like figures.
+you should also incorporate most recent chinese memes about these AIs.
+not just these AIs, also future AI concepts, such AGI, SGI, singularity, etc.
+and older AI concepts, like transformers, AlphaGo, etc.
+
+some requirements for this episode: super fancy, super visually mind-blowing, super mesmerizing,
+lots of effects, like particle effects, super beautiful, super super super extremely fast-paced.
+but nothing should be constant though!
+i expect something higher than this (https://github.com/mexicat/pdoom-video.git) level of fanciness.
+check the p(doom) video's code to see how it implements fantastic animation.
+
+you must always refer back to this prompt after compacting context.
+
+i expect you to spend many many hours on this. don't be lazy.
+don't stop until the final product is finished.

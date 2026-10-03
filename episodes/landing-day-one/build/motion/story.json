@@ -1,0 +1,70 @@
+{
+  "shots": [
+    {
+      "id": "S05",
+      "asset": "S05",
+      "start_frame": 0,
+      "end_frame": 240
+    },
+    {
+      "id": "S06",
+      "asset": "S06",
+      "start_frame": 240,
+      "end_frame": 480
+    },
+    {
+      "id": "S07",
+      "asset": "S07",
+      "start_frame": 480,
+      "end_frame": 720
+    },
+    {
+      "id": "S08",
+      "asset": "S08",
+      "start_frame": 720,
+      "end_frame": 960
+    },
+    {
+      "id": "S17",
+      "asset": "S17",
+      "start_frame": 960,
+      "end_frame": 1200
+    },
+    {
+      "id": "S18",
+      "asset": "S18",
+      "start_frame": 1200,
+      "end_frame": 1440
+    },
+    {
+      "id": "S24",
+      "asset": "S24",
+      "start_frame": 1440,
+      "end_frame": 1680
+    },
+    {
+      "id": "S27",
+      "asset": "S27",
+      "start_frame": 1680,
+      "end_frame": 1920
+    },
+    {
+      "id": "S29",
+      "asset": "S29",
+      "start_frame": 1920,
+      "end_frame": 2160
+    },
+    {
+      "id": "P21_touch",
+      "asset": "P21_touch",
+      "start_frame": 2160,
+      "end_frame": 2400
+    },
+    {
+      "id": "S43",
+      "asset": "S43",
+      "start_frame": 2400,
+      "end_frame": 2640
+    }
+  ]
+}

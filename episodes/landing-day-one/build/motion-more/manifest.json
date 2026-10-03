@@ -1,0 +1,65 @@
+{
+  "continuity_review": "episodes/landing-day-one/build/motion-more/continuity.json",
+  "jobs": [
+    {
+      "id": "m_S09r",
+      "shot_id": "S09r",
+      "image_key": "S09r",
+      "image": "episodes/landing-day-one/assets/S09r.png",
+      "endpoint": "i2v",
+      "duration": 4,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "prompt": "Locked medium shot. The girl in peach gently offers one steaming bun in her mittened hands to the blue whale-hood young man. He leans toward the bun with a small warm smile. The two-tone-coat young woman behind adjusts the tiny bun-shaped hat once. Understated real human acting, no talking, no text, no new people.",
+      "out": "episodes/landing-day-one/assets/m_S09r.mp4"
+    },
+    {
+      "id": "m_S22r",
+      "shot_id": "S22r",
+      "image_key": "S22r",
+      "image": "episodes/landing-day-one/assets/S22r.png",
+      "endpoint": "i2v",
+      "duration": 4,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "prompt": "Locked wide golden-hour shot, all six full bodies and shoes remain visible. The tall cream-haired terracotta-cardigan man at center takes ONE small weighted step forward: heel lands then knee softly settles. The other five watch without walking. Natural human movement, warm realistic skin, no new people, no camera move.",
+      "out": "episodes/landing-day-one/assets/m_S22r.mp4"
+    },
+    {
+      "id": "m_S26r",
+      "shot_id": "S26r",
+      "image_key": "S26r",
+      "image": "episodes/landing-day-one/assets/S26r.png",
+      "endpoint": "i2v",
+      "duration": 4,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "prompt": "Locked high crane view. All fifteen friends on the wet crossing gather into a crouch in a gentle canon from front row to back row. Feet remain planted, knees bend and arms sweep back in anticipation of a jump. No jump yet. Preserve the count and costumes, no camera move, no cut, no text.",
+      "out": "episodes/landing-day-one/assets/m_S26r.mp4"
+    },
+    {
+      "id": "m_S28r",
+      "shot_id": "S28r",
+      "image_key": "S28r",
+      "image": "episodes/landing-day-one/assets/S28r.png",
+      "endpoint": "i2v",
+      "duration": 4,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "prompt": "Cinematic anime upward tracking shot through the gold ring helix. The six small friends step and spring upward from one horizontal glowing ring to the next, moving through cloud layers toward dawn. Camera rises with them. Preserve character identities, readable stepping contact and distinct separated bodies, no extra characters, no text. Golden sunrise emerges above clouds.",
+      "out": "episodes/landing-day-one/assets/m_S28r.mp4"
+    },
+    {
+      "id": "m_S29r",
+      "shot_id": "S29r",
+      "image_key": "S29r",
+      "image": "episodes/landing-day-one/assets/S29r.png",
+      "endpoint": "i2v",
+      "duration": 4,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "prompt": "The central girl and young man rotate together in zero gravity without releasing their one joined pair of hands. Only a gentle quarter-turn; hair and cardigan float. Keep ALL FOUR central shoes and every head in frame. The other four tiny friends drift, black-white-jacket man stays deadpan. Camera gently rolls 15 degrees. Preserve cel linework and dawn colors, no extra bodies or text.",
+      "out": "episodes/landing-day-one/assets/m_S29r.mp4"
+    }
+  ]
+}

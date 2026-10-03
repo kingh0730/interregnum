@@ -1,0 +1,72 @@
+{
+  "numericTolerancePass": true,
+  "tolerance": "max 2 of 255; mean <0.001 of 255 (GPU/Canvas raster rounding)",
+  "diffs": {
+    "0": {
+      "max": 0,
+      "changedBytes": 0,
+      "mean": 0
+    },
+    "196": {
+      "max": 0,
+      "changedBytes": 0,
+      "mean": 0
+    },
+    "715": {
+      "max": 1,
+      "changedBytes": 1,
+      "mean": 0.0000010850694444444444
+    },
+    "1235": {
+      "max": 0,
+      "changedBytes": 0,
+      "mean": 0
+    },
+    "1767": {
+      "max": 2,
+      "changedBytes": 58,
+      "mean": 0.00006510416666666667
+    },
+    "2033": {
+      "max": 0,
+      "changedBytes": 0,
+      "mean": 0
+    },
+    "2600": {
+      "max": 0,
+      "changedBytes": 0,
+      "mean": 0
+    }
+  },
+  "deterministic": false,
+  "final_hold_identical": true,
+  "first": {
+    "0": "6778055a67dd99ba56ce662cba2b118a906c9d46861941ece63cb927e93dc476",
+    "196": "253d2a0817352d9af4bae68a1c42a21dc3774e82f0c9bb347874c03a9e61f636",
+    "715": "14c59e07dadddd182e077a4e8c919306d2d930beb20b12d27120bff0bd133ef2",
+    "1235": "f2e8b84b9d5e8a4e28333250ff6857f77d5029b38c5128497134c2746869af4a",
+    "1767": "5a23e337af24a1b7f9a9558a69b9a9628ca379f3c2acb4a16ecfd274b498fda2",
+    "2033": "e8ef03c14fa74b72e63f5f4b5420bcb1693cac13736ee3cc00b4052210083eae",
+    "2600": "b655d708551286bf8f685dd8952f68e532e22c6e46ac2f70647d0b76a1f93798"
+  },
+  "second": {
+    "0": "6778055a67dd99ba56ce662cba2b118a906c9d46861941ece63cb927e93dc476",
+    "196": "253d2a0817352d9af4bae68a1c42a21dc3774e82f0c9bb347874c03a9e61f636",
+    "715": "b9e9f09cfcfa671b2d37d8410dc4254fef3de9be14e39d3e5121e73837c5d725",
+    "1235": "f2e8b84b9d5e8a4e28333250ff6857f77d5029b38c5128497134c2746869af4a",
+    "1767": "07ce235137e255fd5c128fe9454f6f8e58aca6fbf75150ae3509b3daf4eb15d3",
+    "2033": "e8ef03c14fa74b72e63f5f4b5420bcb1693cac13736ee3cc00b4052210083eae",
+    "2600": "b655d708551286bf8f685dd8952f68e532e22c6e46ac2f70647d0b76a1f93798"
+  },
+  "held": {
+    "2610": "9db57797d533a465e8839c2cf1b932ec2b33b90fd298ac87e7f68d6a2ed274d7",
+    "2614": "9db57797d533a465e8839c2cf1b932ec2b33b90fd298ac87e7f68d6a2ed274d7",
+    "2620": "9db57797d533a465e8839c2cf1b932ec2b33b90fd298ac87e7f68d6a2ed274d7"
+  },
+  "errors": [],
+  "audit": {
+    "missing": [],
+    "shots": 69,
+    "images": 134
+  }
+}

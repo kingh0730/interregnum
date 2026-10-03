@@ -1,0 +1,270 @@
+{
+  "image_requests": 31,
+  "image_unit_price_usd": 0.102,
+  "images_estimated_usd": 3.162,
+  "video_requests": 19,
+  "video_estimated_usd": 2.4,
+  "total_estimated_usd": 5.562,
+  "note": "Conservative request-based estimate includes failed requests; not an account invoice. Built-in image generation uses subscription quota and is not priced here.",
+  "images": [
+    {
+      "id": "S08",
+      "complete": true
+    },
+    {
+      "id": "E11_cloud",
+      "complete": true
+    },
+    {
+      "id": "S24",
+      "complete": true
+    },
+    {
+      "id": "P2_toy_start",
+      "complete": true
+    },
+    {
+      "id": "S12",
+      "complete": true
+    },
+    {
+      "id": "S28",
+      "complete": false
+    },
+    {
+      "id": "S26r",
+      "complete": true
+    },
+    {
+      "id": "S29",
+      "complete": true
+    },
+    {
+      "id": "S22r",
+      "complete": true
+    },
+    {
+      "id": "S05",
+      "complete": true
+    },
+    {
+      "id": "S13",
+      "complete": true
+    },
+    {
+      "id": "S09",
+      "complete": false
+    },
+    {
+      "id": "S43",
+      "complete": true
+    },
+    {
+      "id": "S03_inkfeet",
+      "complete": true
+    },
+    {
+      "id": "S18",
+      "complete": true
+    },
+    {
+      "id": "P21_touch",
+      "complete": true
+    },
+    {
+      "id": "P34_hold",
+      "complete": true
+    },
+    {
+      "id": "S09r",
+      "complete": true
+    },
+    {
+      "id": "S17",
+      "complete": true
+    },
+    {
+      "id": "S20photo",
+      "complete": true
+    },
+    {
+      "id": "S26",
+      "complete": false
+    },
+    {
+      "id": "AGI",
+      "complete": true
+    },
+    {
+      "id": "S33f",
+      "complete": true
+    },
+    {
+      "id": "S06",
+      "complete": true
+    },
+    {
+      "id": "S10",
+      "complete": true
+    },
+    {
+      "id": "S13r",
+      "complete": true
+    },
+    {
+      "id": "S07",
+      "complete": true
+    },
+    {
+      "id": "P22_photo_cast",
+      "complete": true
+    },
+    {
+      "id": "E02_hand",
+      "complete": true
+    },
+    {
+      "id": "S27",
+      "complete": true
+    },
+    {
+      "id": "S28r",
+      "complete": true
+    }
+  ],
+  "videos": [
+    {
+      "id": "P2_reference",
+      "endpoint": "minimax/h3-max/reference-to-video",
+      "seconds": 3.0,
+      "unit_price": 0.049999999999999996,
+      "estimated_usd": 0.15
+    },
+    {
+      "id": "P2_i2v",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 4.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.12
+    },
+    {
+      "id": "P2_ray",
+      "endpoint": "luma/agent/ray/v3.2/image-to-video",
+      "seconds": 5.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.15
+    },
+    {
+      "id": "m_S22r",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 4.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.12
+    },
+    {
+      "id": "m_S09r",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 4.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.12
+    },
+    {
+      "id": "m_S26r",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 4.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.12
+    },
+    {
+      "id": "m_S28r",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 4.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.12
+    },
+    {
+      "id": "m_S29r",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 4.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.12
+    },
+    {
+      "id": "m_finale",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 6.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.18
+    },
+    {
+      "id": "m_S05",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 4.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.12
+    },
+    {
+      "id": "m_S07",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 4.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.12
+    },
+    {
+      "id": "m_S06",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 4.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.12
+    },
+    {
+      "id": "m_S08",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 4.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.12
+    },
+    {
+      "id": "m_S18",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 4.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.12
+    },
+    {
+      "id": "m_S17",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 4.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.12
+    },
+    {
+      "id": "m_S24",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 4.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.12
+    },
+    {
+      "id": "m_P21_touch",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 4.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.12
+    },
+    {
+      "id": "m_S27",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 4.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.12
+    },
+    {
+      "id": "m_S43",
+      "endpoint": "minimax/h3-max/image-to-video",
+      "seconds": 4.0,
+      "unit_price": 0.03,
+      "estimated_usd": 0.12
+    }
+  ]
+}

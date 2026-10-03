@@ -1,0 +1,125 @@
+{
+  "continuity_review": "episodes/landing-day-one/build/motion/continuity.json",
+  "jobs": [
+    {
+      "id": "m_S05",
+      "shot_id": "S05",
+      "image_key": "S05",
+      "image": "episodes/landing-day-one/assets/S05.png",
+      "endpoint": "i2v",
+      "duration": 4,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "prompt": "Locked medium close-up. The sitting girl softly exhales, her shoulders lower and long sleeves settle against her crossed knees. Understated small smile, only a gentle blink. Preserve cel animation artwork, costume and scene. No camera move, no new objects. No dialogue, no text, no subtitles.",
+      "out": "episodes/landing-day-one/assets/m_S05.mp4"
+    },
+    {
+      "id": "m_S06",
+      "shot_id": "S06",
+      "image_key": "S06",
+      "image": "episodes/landing-day-one/assets/S06.png",
+      "endpoint": "i2v",
+      "duration": 4,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "prompt": "Locked eye-level wide view. The peach-puffer girl passes the ONE steaming bun to the indigo-peach girl; their hands release and receive it cleanly. The cream-haired terracotta-cardigan boy gives one small nod. Other friends watch naturally with small head movements. Keep six characters, no extras. Preserve cel style. No dialogue, no text, no subtitles.",
+      "out": "episodes/landing-day-one/assets/m_S06.mp4"
+    },
+    {
+      "id": "m_S07",
+      "shot_id": "S07",
+      "image_key": "S07",
+      "image": "episodes/landing-day-one/assets/S07.png",
+      "endpoint": "i2v",
+      "duration": 4,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "prompt": "Locked low-angle live-action medium shot. The man raises one eyebrow and gives a single small deadpan shrug, shoulders up then down. One unseen friend hand briefly points toward him from camera edge. Wet neon bokeh and vending-machine practical light. Real natural motion, no exaggerated face, no camera pan. No dialogue, no text, no subtitles.",
+      "out": "episodes/landing-day-one/assets/m_S07.mp4"
+    },
+    {
+      "id": "m_S08",
+      "shot_id": "S08",
+      "image_key": "S08",
+      "image": "episodes/landing-day-one/assets/S08.png",
+      "endpoint": "i2v",
+      "duration": 4,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "prompt": "Side-on camera tracks a short fast lateral skid. The whale-hood young man brakes from his running pose, sneaker slides then PLANTS firmly in one shallow puddle with one small splash. Hood and headlamp bounce then settle. Finish with both feet grounded. All feet remain in frame. No forward walk, no jump. No dialogue, no text, no subtitles.",
+      "out": "episodes/landing-day-one/assets/m_S08.mp4"
+    },
+    {
+      "id": "m_S17",
+      "shot_id": "S17",
+      "image_key": "S17",
+      "image": "episodes/landing-day-one/assets/S17.png",
+      "endpoint": "i2v",
+      "duration": 4,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "prompt": "Locked macro camera on the felt boy. Handmade stop-motion performance: one slow inhale, chest rises, shoulders rise slightly, then a held breath. Individual wool fibers drift subtly. Gentle tiny face, no lip speech, no camera movement, keep handmade needle-felt material. No dialogue, no text, no subtitles.",
+      "out": "episodes/landing-day-one/assets/m_S17.mp4"
+    },
+    {
+      "id": "m_S18",
+      "shot_id": "S18",
+      "image_key": "S18",
+      "image": "episodes/landing-day-one/assets/S18.png",
+      "endpoint": "i2v",
+      "duration": 4,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "prompt": "Locked wide miniature view. All six wool puppets take a slow synchronized breath, chests and shoulders expand, then exhale together and a modest cloud of cotton dandelion seeds rises. Keep six distinct puppets exactly, all feet planted and visible, handmade stop motion not liquid deformation. No dialogue, no text, no subtitles.",
+      "out": "episodes/landing-day-one/assets/m_S18.mp4"
+    },
+    {
+      "id": "m_S24",
+      "shot_id": "S24",
+      "image_key": "S24",
+      "image": "episodes/landing-day-one/assets/S24.png",
+      "endpoint": "i2v",
+      "duration": 4,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "prompt": "Locked floor-level wide camera. All six friends perform one forceful synchronized heel plant from crouch, then knees compress and settle. Their soles visibly contact the wet crossing, making small puddle splashes. Keep all feet and heads framed. No camera push or cut, preserve the night street and neon reflections. No dialogue, no text, no subtitles.",
+      "out": "episodes/landing-day-one/assets/m_S24.mp4"
+    },
+    {
+      "id": "m_S27",
+      "shot_id": "S27",
+      "image_key": "S27",
+      "image": "episodes/landing-day-one/assets/S27.png",
+      "endpoint": "i2v",
+      "duration": 4,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "prompt": "Locked wide full-body framing, anime action. The girl bends knees slightly deeper, stamps her raised heel on the white stripe once, then springs into a strong vertical jump with arms reaching upward. Start anticipation, visible foot contact, then launch. Keep full body feet visible throughout, camera may tilt up only to follow the ascent, no walking or extra flips. Clean drawing and squash-and-stretch. No dialogue, no text, no subtitles.",
+      "out": "episodes/landing-day-one/assets/m_S27.mp4"
+    },
+    {
+      "id": "m_P21_touch",
+      "shot_id": "P21_touch",
+      "image_key": "P21_touch",
+      "image": "episodes/landing-day-one/assets/P21_touch.png",
+      "endpoint": "i2v",
+      "duration": 4,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "prompt": "Locked 100mm macro camera. The TWO index fingertips approach horizontally, pause just before touching, then touch softly once and stay touching. Grey cuff hand left, terracotta cuff hand right. Real anatomically natural hands, no extra fingers or hands. Warm golden backlight, no camera movement. No dialogue, no text, no subtitles.",
+      "out": "episodes/landing-day-one/assets/m_P21_touch.mp4"
+    },
+    {
+      "id": "m_S43",
+      "shot_id": "S43",
+      "image_key": "S43",
+      "image": "episodes/landing-day-one/assets/S43.png",
+      "endpoint": "i2v",
+      "duration": 4,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "prompt": "Locked top-down macro. The hand gently lowers its calligraphy brush tip to the dead center of the ivory paper, deposits ONE small black ink dot, then lifts and begins to withdraw toward lower right. Only one brush and one hand, no letters, no other marks. Warm paper fiber macro, delicate precise contact. No dialogue, no text, no subtitles.",
+      "out": "episodes/landing-day-one/assets/m_S43.mp4"
+    }
+  ]
+}

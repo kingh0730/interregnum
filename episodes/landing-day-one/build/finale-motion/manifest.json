@@ -1,0 +1,17 @@
+{
+  "continuity_review": "episodes/landing-day-one/build/finale-motion/continuity.json",
+  "jobs": [
+    {
+      "id": "m_finale",
+      "shot_id": "S35-36",
+      "image_key": "all15",
+      "image": "episodes/landing-day-one/assets/S34-clean.png",
+      "endpoint": "i2v",
+      "duration": 6,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "prompt": "Continue this exact ensemble of FIFTEEN distinct anime friends. Wide full-body camera, all fifteen heads and shoes remain visible. They fall gently from their frozen leaps and all land together on the large ivory paper floor, knees compressing with real weight, feet visible. After landing they perform a synchronized short dance: stomp right foot, stomp left foot, quarter-turn together, then a small final leap. Maintain their ring formation and exact distinct costumes, no new people and no disappearing figures. Gold confetti settles, sunrise light remains soft. Camera holds wide and level. The ivory floor is the entire stage, no scenery or new objects. Do not draw text.",
+      "out": "episodes/landing-day-one/assets/m_finale.mp4"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "source_duration": 43.67,
+  "expected_video_frames": 2621,
+  "fps": 60,
+  "master_pcm_bit_identical": true,
+  "master_pcm_sha256": "ec0f33a0d64d9924b336cdb23b61aaebe807108402137c0d63b03efdc23ba71b",
+  "source_pcm_sha256": "ec0f33a0d64d9924b336cdb23b61aaebe807108402137c0d63b03efdc23ba71b",
+  "samples_per_channel": 1925847,
+  "outputs": {
+    "landing-day-one-1440p60-master.mov": {
+      "path": "/Users/kingh0730/repos/interregnum/renders/landing-day-one/landing-day-one-1440p60-master.mov",
+      "bytes": 2724266255,
+      "sha256": "0efd2e8ee5e4a166118a194cd152f06269393a6308abba16602c2fb651dbb4be",
+      "video": {
+        "codec_name": "prores",
+        "profile": "Standard",
+        "width": 2560,
+        "height": 1440,
+        "pix_fmt": "yuv422p10le",
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "2621",
+        "duration": "43.683333",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709"
+      },
+      "audio": {
+        "codec_name": "pcm_s24le",
+        "sample_rate": "44100",
+        "channels": 2,
+        "bits_per_sample": 24,
+        "duration": "43.670000"
+      }
+    },
+    "landing-day-one-1080p60.mp4": {
+      "path": "/Users/kingh0730/repos/interregnum/renders/landing-day-one/landing-day-one-1080p60.mp4",
+      "bytes": 54826171,
+      "sha256": "9e81504944b4a000babe5bf56d554a0a0d8f5b401989babad27bdc7c90f7890c",
+      "video": {
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "60/1",
+        "nb_read_frames": "2621",
+        "duration": "43.683333",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709"
+      },
+      "audio": {
+        "codec_name": "aac",
+        "sample_rate": "44100",
+        "channels": 2,
+        "bits_per_sample": 0,
+        "duration": "43.670000"
+      }
+    }
+  },
+  "review_limits": "Full-speed aesthetic/musicality and p(doom) comparison remain unverified by a human. Technical checks do not certify them.",
+  "decoded_master_final_hold": {
+    "frames": 11,
+    "unique_pixel_hashes": 1
+  },
+  "source_hashes_current": true
+}

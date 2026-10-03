@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "approved",
+  "reviewer": "Codex source-frame inspection",
+  "story": {
+    "path": "episodes/landing-day-one/build/finale-motion/story.json",
+    "sha256": "3d390bb0a0275a4c5d3ababe094eeb27ce5830a8b4df97fe557684a3f880c483"
+  },
+  "assets": {
+    "path": "episodes/landing-day-one/build/finale-motion/assets.json",
+    "sha256": "78bc69e8c614b328998c8133338166de27ea1bb5f4e73c305727408dbfac5e67"
+  },
+  "sources": [
+    {
+      "path": "episodes/landing-day-one/assets/S34-clean.png",
+      "sha256": "8359261c5888b0e9e12fa72a6bcd8b00d3d4fa17147dfdd7eaaee79665052a2e"
+    }
+  ],
+  "additional_inputs": [
+    {
+      "path": "episodes/landing-day-one/shots.md",
+      "sha256": "19e898a68247be0d56bdb7a7e6459209451d4c9884504fb308efb012064d0fde"
+    }
+  ],
+  "cuts": [],
+  "notes": "Fifteen distinct complete leaping figures arranged on a broad ring, gold confetti and white paper floor below. The source is the clean final frame of H1 with all glyphs removed. Small edge overlaps preserve each head and main body. Only source composition approved, action pending."
+}

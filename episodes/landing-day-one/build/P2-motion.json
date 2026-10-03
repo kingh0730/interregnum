@@ -1,0 +1,23 @@
+{
+  "continuity_review": "episodes/landing-day-one/build/P2-continuity.json",
+  "jobs": [
+    {
+      "id": "P2_reference",
+      "shot_id": "P2",
+      "image_key": "toy-start",
+      "image": "episodes/landing-day-one/assets/P2_toy_start.png",
+      "endpoint": "minimax/h3-max/reference-to-video",
+      "duration": 3,
+      "resolution": "768P",
+      "prompt_expansion_mode": "disabled",
+      "params": {
+        "reference_video_urls": [
+          "https://v3b.fal.media/files/b/0aacdfc5/A83jBI9hiVOtqGegabSAo_P2-motion-reference-v2.mp4"
+        ],
+        "aspect_ratio": "16:9"
+      },
+      "prompt": "Image 1 is the exact first frame and appearance. Video 1 is ONLY the choreography/timing reference: ignore its primitive appearance and on-screen text. Preserve the beautiful six toy characters and polished pastel floor from the first image. LOCKED full-body wide camera, all heads and all shoes always visible. All six perform ONE synchronized phrase: 0.0-0.6s raise one hand, 0.6-1.2s bring palm to sternum, 1.2-1.6s raise right heel then plant it firmly exactly at 1.6s with a small knee compression and weight transfer, 1.6-2.4s toe tap and settle, 2.4-3.0s small springboard jump and land. Legs and arms articulate naturally, supporting feet stay planted. No walking forward, no extra spins, no camera movement, no cuts, no text, no speech. Keep bodies separate with clean silhouettes. Refined animated cinema, appealing understated faces.",
+      "out": "episodes/landing-day-one/assets/P2-reference.mp4"
+    }
+  ]
+}
