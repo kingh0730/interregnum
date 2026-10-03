@@ -1,7 +1,0 @@
-{
- "endpoint": "luma/agent/uni-1/v1/max",
- "payload": {
-  "prompt": "Widescreen cinematic miniature architecture, a suspended open-air theatre made of ivory folded paper and cobalt brass ribs. Camera low wide24mm looks through a vast EMPTY performance volume. Upper left and far right edges show an enormous distant articulated fan curving away, sculptural and elegant. Center70percent of frame is clear pale blue air grading to deep cobalt below, NO FLOOR, NO PLATFORM, no ceramic seeds, no stones, no rings, no people, no words, no stars. Directional morning sunlight from upper left illuminates paper edges and actual brass joints. Foreground bottom completely empty dark blue air. High visual elegance, photographic tactile paper, deep perspective, extreme architecture only at edges, natural physical source light. Leave the entire center unobstructed for added characters.",
-  "aspect_ratio": "16:9"
- }
-}

@@ -1,5 +1,0 @@
-{"dur": 7.0, "fps": 24, "out": "work/pilot/shots/06.mp4",
- "layers": [{"src": "work/pilot/js/s06_suite.mp4", "fixed": true}],
- "grade": {"exposure": 0, "contrast": 1.0, "sat": 1.0, "lift": [0.008, 0.01, 0.02], "gain": [0.98, 1.0, 1.02],
-           "bloom": 0.25, "vignette": 0.18, "grain": 0.02, "chroma": 0},
- "letterbox": 2.39}

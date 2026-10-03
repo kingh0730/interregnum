@@ -1,9 +1,0 @@
-{"dur": 8.0, "fps": 24, "out": "work/pilot/shots/05.mp4",
- "layers": [
-  {"src": "work/pilot/comp/c1/05_plate.mp4", "par": 1.0},
-  {"src": "work/pilot/keys/k03_fg_desks.png", "par": 1.5}
- ],
- "camera": {"from": [0.5, 0.5, 1.0], "to": [0.5, 0.5157, 1.07], "ease": "inout"},
- "grade": {"exposure": 0, "contrast": 1.05, "sat": 1.0, "lift": [0.03, 0.04, 0.08], "gain": [0.96, 1.0, 1.04],
-           "bloom": 0.5, "vignette": 0.25, "grain": 0.02, "chroma": 0},
- "letterbox": 2.39}

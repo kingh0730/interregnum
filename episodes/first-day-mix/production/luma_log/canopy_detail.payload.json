@@ -1,7 +1,0 @@
-{
- "endpoint": "luma/agent/uni-1/v1/max",
- "payload": {
-  "prompt": "Photographic cinematic extreme closeup of an exquisite ivory-and-cobalt paper flying canopy. Visible central brass umbrella-like hub, radial articulated ribs, translucent folded paper catching sunlight from above left. Apricot woven harness lines descend out of frame. Background is pale blue-white empty sky without clouds or mountains. 35mm low camera nearly under the hinge, asymmetrical radial composition, clean tactile materials, intricate mechanical detail is the only focal point. No people, no text or logos, no extra wings, no floor.",
-  "aspect_ratio": "16:9"
- }
-}

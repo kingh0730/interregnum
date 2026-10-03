@@ -1,7 +1,0 @@
-{
- "endpoint": "luma/agent/uni-1/v1/max",
- "payload": {
-  "prompt": "Extreme macro cinema photograph, 16:9. A glossy black Go stone suspended a centimetre above an ivory porcelain oval with one shallow human sole indentation and a closed hairline seam. This single exquisite object occupies the right third; at left vast warm ivory negative space. Beneath the oval a delicate brass ring bracket, beneath the bracket empty pale blue air, no table or floor. Tiny mechanical ivory folds visible inside seam, cobalt inlay only along its edge. 100mm macro lens at stone height, crisp morning sun from upper left, clean elegant deep shadows, real ceramic and brass, astounding tactile detail at contact point, no text, no letters, no people, no clouds or mountain scenery.",
-  "aspect_ratio": "16:9"
- }
-}

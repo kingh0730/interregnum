@@ -27,13 +27,14 @@ Private productions may be archived outside this checkout. When a private projec
 `private/ARCHIVES.md` if available for its location and restoration instructions before regenerating assets.
 That local index and the archived project contents must remain outside public commits.
 
-The pilot's media and working outputs are archived outside this checkout; its tracked scripts, plans,
-and production notes remain here as examples. See `docs/archives.md` before rebuilding the pilot.
+Only `first-day-anime-test` and `first-day-animation` remain active in this checkout. All other
+episodes, including tracked source files, are archived in iCloud Drive. See `docs/archives.md`
+for locations and restoration instructions before rebuilding an archived episode.
 
 ## Status
 
 - [x] Step 0: repo set up; toolchain documented (`docs/pipeline.md`); strategy agreed (`docs/strategy.md`)
 - [ ] King answers `bible/00-questionnaire.md`
 - [ ] Series bible and episode slate (default effort while King is present; max when explicitly away, per CLAUDE.md)
-- [ ] v1 story reels (no paid models): **pilot *CONTINUITY* built**, awaiting King's review (`episodes/pilot/review.md`)
+- [ ] v1 story reels (no paid models): **pilot *CONTINUITY* built and archived** (see `docs/archives.md`)
 - [ ] v2 polish: motion (MiniMax H3 Max; Seedance refuses photoreal faces) + the final finishing pass (playbook §7–7b)

@@ -1,7 +1,0 @@
-{
-  "SEN": {
-    "description": "An ordinary 44-year-old Black American man speaking neutral General American English. A bicycle mechanic talking to someone who already knows him, indoors across a kitchen table. Mid-low register, lightly nasal resonance, ordinary breath between short clauses. Even unhurried pace and small pitch range. Clear everyday speech, not trained acting or announcing, not a deep trailer voice. Close dry recording without room echo. No performative warmth, no exaggerated reaction. An invented adult person, not an imitation of anyone.",
-    "text": "I need the narrow room. The bicycle goes under the stairs. Yes, I measured it. The pan is staying here until we decide about the kitchen. Put that box down for a minute. There should be a cloth in it. No, that's my bedding. Just leave the box where it is.",
-    "target": {"f0": [95, 155], "age": false}
-  }
-}
