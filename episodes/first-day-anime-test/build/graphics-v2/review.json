@@ -1,0 +1,85 @@
+{
+  "master": "renders/first-day-anime-test/first-day_opus55_graphics-v2_1080p30.mp4",
+  "sha256": "5a1c70bb1750ae21ba06ed7a097357187ef915efa7659f1d27294d6fc0ea99d5",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "duration": "43.700000",
+        "nb_frames": "1311",
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "codec_name": "aac",
+        "r_frame_rate": "0/0",
+        "duration": "43.670000",
+        "nb_frames": "1882"
+      }
+    ]
+  },
+  "full_decode": "passed",
+  "clean_base_frames": 1311,
+  "greeting_prefix_mean_pixel_difference": 0.0,
+  "transition_39s_nonblank_fraction_min": 0.9986181818181818,
+  "implementation": "Bun + HTML Canvas 2D + textured paper meshes + Puppeteer/Chrome",
+  "sampled_frames": [
+    0,
+    20,
+    30,
+    33,
+    34,
+    35,
+    42,
+    51,
+    65,
+    84,
+    90,
+    104,
+    120,
+    170,
+    201,
+    220,
+    242,
+    260,
+    300,
+    328,
+    335,
+    339,
+    346,
+    350,
+    355,
+    358,
+    371,
+    382,
+    390,
+    402,
+    785,
+    800,
+    860,
+    925,
+    973,
+    1020,
+    1138,
+    1185,
+    1190,
+    1196,
+    1200,
+    1285
+  ],
+  "new_image_or_video_model_requests": 0,
+  "normal_speed_audiovisual_review": "pending user playback",
+  "sources": {
+    "prepare_base.py": "28d71a9981e11f8c9d540830c404413efa77aef54c58d72c40aa857c4f7621ed",
+    "index.html": "020f62aba39d3ebecbb0b2d9c359a19664977faffd1dc9ba91893be5033b7cd7",
+    "film.js": "7525261734910e7f24995824fb10383f173c53e1285c4061cc555c577e915431",
+    "render.ts": "91c088404f6d4ab66b3a71c94fce06d7e5bf29d56f994a06a21e5cb43dc8d180",
+    "verify.py": "72fbc58d7a9561d98aa4589f88160e23379969fb31fe38140b0d32bc686c9aef"
+  }
+}

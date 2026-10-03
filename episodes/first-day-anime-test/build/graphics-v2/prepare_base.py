@@ -9,7 +9,9 @@ ASSET=ROOT/'work/first-day-anime-test/assets'
 def run(s):
     n=int(s['id'][1:]);frames=s['end_frame']-s['start_frame'];duration=frames/30
     target=OUT/f'{s["id"]}.mp4'
-    if target.exists():return target
+    if target.exists():
+        count=int(subprocess.check_output(['ffprobe','-v','error','-select_streams','v','-show_entries','stream=nb_frames','-of','csv=p=0',str(target)]).strip())
+        if count==frames:return target
     name=MOTION.get(n)
     if name:
         source=ROOT/f'work/first-day-anime-test/motion/{name}.mp4';a,b=TAKE_RANGES.get(n,(0,1))
@@ -24,13 +26,13 @@ def run(s):
             inp=['-ss','5','-i',str(ROOT/'work/first-day-anime-test/motion/levitate.mp4')]
             vf='trim=duration=0.041667,setpts=PTS-STARTPTS,tpad=stop_mode=clone:stop_duration=1,fps=30'
         else:inp=['-loop','1','-framerate','30','-i',str(source)];vf='null'
-    vf+=',scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,setsar=1'
+    vf+=',tpad=stop_mode=clone:stop_duration=1,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,setsar=1'
     subprocess.run(['ffmpeg','-y','-v','error',*inp,'-vf',vf,'-frames:v',str(frames),'-an','-c:v','libx264','-preset','fast','-crf','17','-pix_fmt','yuv420p','-g','15',str(target)],check=True)
     return target
 if __name__=='__main__':
     OUT.mkdir(parents=True,exist_ok=True)
     with ThreadPoolExecutor(max_workers=3) as pool:paths=list(pool.map(run,TIMELINE))
     listing=OUT/'concat.txt';listing.write_text(''.join(f"file '{p}'\n" for p in paths))
-    subprocess.run(['ffmpeg','-y','-v','error','-f','concat','-safe','0','-i',str(listing),'-c','copy','-movflags','+faststart',str(OUT/'clean-base.mp4')],check=True)
+    subprocess.run(['ffmpeg','-y','-v','error','-f','concat','-safe','0','-i',str(listing),'-vf','setpts=N/(30*TB)','-r','30','-frames:v','1311','-an','-c:v','libx264','-crf','14','-preset','fast','-g','15','-movflags','+faststart',str(OUT/'clean-base.mp4')],check=True)
     (OUT/'data.json').write_text(json.dumps({'shots':TIMELINE,'lyrics':json.loads((ROOT/'episodes/first-day-anime-test/timing.json').read_text())['lyrics']},ensure_ascii=False))
     print(OUT/'clean-base.mp4')

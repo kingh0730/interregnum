@@ -1,5 +1,14 @@
 # 第一天 / First Day — Opus 5.5
 
+## Graphics revision — Bun / Canvas
+
+Latest revision: `renders/first-day-anime-test/first-day_opus55_graphics-v2_1080p30.mp4`
+(smaller copy: `renders/first-day-anime-test/first-day_opus55_graphics-v2_540p30.mp4`).
+The overlay system was rebuilt after playback feedback. See
+`episodes/first-day-anime-test/build/graphics-v2/README.md` for changes, checks and Bun rebuild commands.
+The original production record and export below are retained as v1.
+
+
 Full-length production cut: **43.70 seconds, 44 timeline shots, 1,311 frames, 1920×1080 at 30 fps**.
 Codex built-in image generation supplied the artwork; MiniMax H3 Max supplied character and camera passes.
 **No Luma was used.** The original song is the only soundtrack, encoded to AAC at the final mux.
