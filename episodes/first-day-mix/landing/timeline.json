@@ -1,0 +1,560 @@
+{
+  "fps": 60,
+  "width": 2560,
+  "height": 1440,
+  "frames": 2621,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0,
+      "end": 56,
+      "entry": "first",
+      "sync": "T",
+      "medium": "MD1"
+    },
+    {
+      "id": "S02",
+      "start": 56,
+      "end": 112,
+      "entry": "FLOW",
+      "sync": "P",
+      "medium": "MD1"
+    },
+    {
+      "id": "S03",
+      "start": 112,
+      "end": 170,
+      "entry": "CUT",
+      "sync": "P",
+      "medium": "MD1"
+    },
+    {
+      "id": "S04",
+      "start": 170,
+      "end": 222,
+      "entry": "WHIP",
+      "sync": "T",
+      "medium": "MD2"
+    },
+    {
+      "id": "S05",
+      "start": 222,
+      "end": 270,
+      "entry": "CUT",
+      "sync": "P",
+      "medium": "MD2"
+    },
+    {
+      "id": "S06",
+      "start": 270,
+      "end": 314,
+      "entry": "CUT",
+      "sync": "P",
+      "medium": "MD2"
+    },
+    {
+      "id": "S07",
+      "start": 314,
+      "end": 364,
+      "entry": "CUT",
+      "sync": "T",
+      "medium": "MD3"
+    },
+    {
+      "id": "S08",
+      "start": 364,
+      "end": 424,
+      "entry": "CUT",
+      "sync": "P",
+      "medium": "MD3"
+    },
+    {
+      "id": "S09",
+      "start": 424,
+      "end": 494,
+      "entry": "CUT",
+      "sync": "P",
+      "medium": "MD3"
+    },
+    {
+      "id": "S10",
+      "start": 494,
+      "end": 556,
+      "entry": "MATCH",
+      "sync": "T",
+      "medium": "MD4"
+    },
+    {
+      "id": "S11",
+      "start": 556,
+      "end": 622,
+      "entry": "CUT",
+      "sync": "P",
+      "medium": "MD4"
+    },
+    {
+      "id": "S12",
+      "start": 622,
+      "end": 676,
+      "entry": "FLOW",
+      "sync": "P",
+      "medium": "MD4/10"
+    },
+    {
+      "id": "S13",
+      "start": 676,
+      "end": 715,
+      "entry": "CUT",
+      "sync": "P",
+      "medium": "MD4"
+    },
+    {
+      "id": "S14",
+      "start": 715,
+      "end": 757,
+      "entry": "MATCH",
+      "sync": "T+H",
+      "medium": "MD5"
+    },
+    {
+      "id": "S15a",
+      "start": 757,
+      "end": 768,
+      "entry": "FLOW then CUTs",
+      "sync": "P",
+      "medium": "MD5"
+    },
+    {
+      "id": "S15b",
+      "start": 768,
+      "end": 779,
+      "entry": "FLOW then CUTs",
+      "sync": "P",
+      "medium": "MD5"
+    },
+    {
+      "id": "S15c",
+      "start": 779,
+      "end": 790,
+      "entry": "FLOW then CUTs",
+      "sync": "P",
+      "medium": "MD5"
+    },
+    {
+      "id": "S15d",
+      "start": 790,
+      "end": 801,
+      "entry": "FLOW then CUTs",
+      "sync": "P",
+      "medium": "MD5"
+    },
+    {
+      "id": "S15e",
+      "start": 801,
+      "end": 811,
+      "entry": "FLOW then CUTs",
+      "sync": "P",
+      "medium": "MD5"
+    },
+    {
+      "id": "S15f",
+      "start": 811,
+      "end": 821,
+      "entry": "FLOW then CUTs",
+      "sync": "P",
+      "medium": "MD5"
+    },
+    {
+      "id": "S16",
+      "start": 821,
+      "end": 878,
+      "entry": "CUT",
+      "sync": "P",
+      "medium": "MD5"
+    },
+    {
+      "id": "S17",
+      "start": 878,
+      "end": 940,
+      "entry": "CUT",
+      "sync": "T",
+      "medium": "MD6"
+    },
+    {
+      "id": "S18",
+      "start": 940,
+      "end": 1000,
+      "entry": "CUT",
+      "sync": "P",
+      "medium": "MD6"
+    },
+    {
+      "id": "S19",
+      "start": 1000,
+      "end": 1057,
+      "entry": "CUT",
+      "sync": "P",
+      "medium": "MD6"
+    },
+    {
+      "id": "S20a",
+      "start": 1057,
+      "end": 1077,
+      "entry": "CUT",
+      "sync": "T/P",
+      "medium": "mixed"
+    },
+    {
+      "id": "S20b",
+      "start": 1077,
+      "end": 1098,
+      "entry": "CUT",
+      "sync": "T/P",
+      "medium": "mixed"
+    },
+    {
+      "id": "S20c",
+      "start": 1098,
+      "end": 1118,
+      "entry": "CUT",
+      "sync": "T/P",
+      "medium": "mixed"
+    },
+    {
+      "id": "S20d",
+      "start": 1118,
+      "end": 1139,
+      "entry": "CUT",
+      "sync": "T/P",
+      "medium": "mixed"
+    },
+    {
+      "id": "S20e",
+      "start": 1139,
+      "end": 1160,
+      "entry": "CUT",
+      "sync": "T/P",
+      "medium": "mixed"
+    },
+    {
+      "id": "S20f",
+      "start": 1160,
+      "end": 1180,
+      "entry": "CUT",
+      "sync": "T/P",
+      "medium": "mixed"
+    },
+    {
+      "id": "S21",
+      "start": 1180,
+      "end": 1250,
+      "entry": "CUT",
+      "sync": "T",
+      "medium": "MD2\u21923"
+    },
+    {
+      "id": "S22",
+      "start": 1250,
+      "end": 1310,
+      "entry": "FLOW",
+      "sync": "P",
+      "medium": "MD5\u21923"
+    },
+    {
+      "id": "S23",
+      "start": 1310,
+      "end": 1362,
+      "entry": "CUT",
+      "sync": "P",
+      "medium": "MD3/5"
+    },
+    {
+      "id": "S24",
+      "start": 1362,
+      "end": 1410,
+      "entry": "MATCH",
+      "sync": "T+H",
+      "medium": "MD7"
+    },
+    {
+      "id": "S25a",
+      "start": 1410,
+      "end": 1425,
+      "entry": "WHIP/CUT",
+      "sync": "P",
+      "medium": "MD7"
+    },
+    {
+      "id": "S25b",
+      "start": 1425,
+      "end": 1440,
+      "entry": "WHIP/CUT",
+      "sync": "P",
+      "medium": "MD7"
+    },
+    {
+      "id": "S25c",
+      "start": 1440,
+      "end": 1455,
+      "entry": "WHIP/CUT",
+      "sync": "P",
+      "medium": "MD7"
+    },
+    {
+      "id": "S25d",
+      "start": 1455,
+      "end": 1470,
+      "entry": "WHIP/CUT",
+      "sync": "P",
+      "medium": "MD7"
+    },
+    {
+      "id": "S26",
+      "start": 1470,
+      "end": 1527,
+      "entry": "FLOW",
+      "sync": "P",
+      "medium": "MD7"
+    },
+    {
+      "id": "S27",
+      "start": 1527,
+      "end": 1580,
+      "entry": "FLOW",
+      "sync": "T",
+      "medium": "MD8"
+    },
+    {
+      "id": "S28",
+      "start": 1580,
+      "end": 1640,
+      "entry": "FLOW",
+      "sync": "P",
+      "medium": "MD8"
+    },
+    {
+      "id": "S29",
+      "start": 1640,
+      "end": 1713,
+      "entry": "CUT",
+      "sync": "P",
+      "medium": "MD8"
+    },
+    {
+      "id": "S30",
+      "start": 1713,
+      "end": 1760,
+      "entry": "CUT",
+      "sync": "T+H",
+      "medium": "MD10"
+    },
+    {
+      "id": "S31",
+      "start": 1760,
+      "end": 1800,
+      "entry": "CUT",
+      "sync": "P",
+      "medium": "MD10"
+    },
+    {
+      "id": "S32",
+      "start": 1800,
+      "end": 1841,
+      "entry": "FLOW",
+      "sync": "P",
+      "medium": "MD10"
+    },
+    {
+      "id": "S33a",
+      "start": 1841,
+      "end": 1865,
+      "entry": "CUT, last two FLOW",
+      "sync": "T/P",
+      "medium": "mixed"
+    },
+    {
+      "id": "S33b",
+      "start": 1865,
+      "end": 1885,
+      "entry": "CUT, last two FLOW",
+      "sync": "T/P",
+      "medium": "mixed"
+    },
+    {
+      "id": "S33c",
+      "start": 1885,
+      "end": 1903,
+      "entry": "CUT, last two FLOW",
+      "sync": "T/P",
+      "medium": "mixed"
+    },
+    {
+      "id": "S33d",
+      "start": 1903,
+      "end": 1919,
+      "entry": "CUT, last two FLOW",
+      "sync": "T/P",
+      "medium": "mixed"
+    },
+    {
+      "id": "S33e",
+      "start": 1919,
+      "end": 1933,
+      "entry": "CUT, last two FLOW",
+      "sync": "T/P",
+      "medium": "mixed"
+    },
+    {
+      "id": "S33f",
+      "start": 1933,
+      "end": 1947,
+      "entry": "CUT, last two FLOW",
+      "sync": "T/P",
+      "medium": "mixed"
+    },
+    {
+      "id": "S33g",
+      "start": 1947,
+      "end": 1959,
+      "entry": "CUT, last two FLOW",
+      "sync": "T/P",
+      "medium": "mixed"
+    },
+    {
+      "id": "S33h",
+      "start": 1959,
+      "end": 1971,
+      "entry": "CUT, last two FLOW",
+      "sync": "T/P",
+      "medium": "mixed"
+    },
+    {
+      "id": "S33i",
+      "start": 1971,
+      "end": 1983,
+      "entry": "CUT, last two FLOW",
+      "sync": "T/P",
+      "medium": "mixed"
+    },
+    {
+      "id": "S33j",
+      "start": 1983,
+      "end": 2013,
+      "entry": "CUT, last two FLOW",
+      "sync": "T/P",
+      "medium": "mixed"
+    },
+    {
+      "id": "S34",
+      "start": 2013,
+      "end": 2053,
+      "entry": "FLOW",
+      "sync": "H",
+      "medium": "MD5/10"
+    },
+    {
+      "id": "S35",
+      "start": 2053,
+      "end": 2095,
+      "entry": "CUT",
+      "sync": "T+H",
+      "medium": "MD10"
+    },
+    {
+      "id": "S36a",
+      "start": 2095,
+      "end": 2112,
+      "entry": "FLOW then CUT",
+      "sync": "P",
+      "medium": "MD5/10"
+    },
+    {
+      "id": "S36b",
+      "start": 2112,
+      "end": 2129,
+      "entry": "FLOW then CUT",
+      "sync": "P",
+      "medium": "MD5/10"
+    },
+    {
+      "id": "S36c",
+      "start": 2129,
+      "end": 2145,
+      "entry": "FLOW then CUT",
+      "sync": "P",
+      "medium": "MD5/10"
+    },
+    {
+      "id": "S37",
+      "start": 2145,
+      "end": 2185,
+      "entry": "CUT",
+      "sync": "P",
+      "medium": "MD10"
+    },
+    {
+      "id": "S38",
+      "start": 2185,
+      "end": 2224,
+      "entry": "FLOW",
+      "sync": "P",
+      "medium": "MD10/12"
+    },
+    {
+      "id": "S39",
+      "start": 2224,
+      "end": 2268,
+      "entry": "FLASH",
+      "sync": "T+H",
+      "medium": "MD12"
+    },
+    {
+      "id": "S40",
+      "start": 2268,
+      "end": 2320,
+      "entry": "CUT",
+      "sync": "P",
+      "medium": "MD12"
+    },
+    {
+      "id": "S41",
+      "start": 2320,
+      "end": 2360,
+      "entry": "CUT",
+      "sync": "P",
+      "medium": "MD12"
+    },
+    {
+      "id": "S42",
+      "start": 2360,
+      "end": 2394,
+      "entry": "FLOW",
+      "sync": "P",
+      "medium": "MD12"
+    },
+    {
+      "id": "S43",
+      "start": 2394,
+      "end": 2470,
+      "entry": "CUT",
+      "sync": "T",
+      "medium": "MD12"
+    },
+    {
+      "id": "S44",
+      "start": 2470,
+      "end": 2560,
+      "entry": "FLOW",
+      "sync": "P",
+      "medium": "MD12/11"
+    },
+    {
+      "id": "S45",
+      "start": 2560,
+      "end": 2621,
+      "entry": "FLOW",
+      "sync": "P",
+      "medium": "MD12"
+    }
+  ]
+}

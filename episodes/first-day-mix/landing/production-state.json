@@ -1,0 +1,12 @@
+{
+  "plan_sha256": "125bf6b1a913340208b25f4dbdc63109a4efba60be27cfb00e56d814d1f932f1",
+  "source_plan": "episodes/first-day-mix/offline-planner-brief-result.md",
+  "fresh_production": true,
+  "old_assets_used": false,
+  "status": "proofs",
+  "decisions": [
+    "Full continuous landing phrase across short S15 cuts, not physically impossible full phrase per 10-frame shot.",
+    "1440p master uses lossless PCM audio in MOV; 1080p MP4 uses AAC so decoded audio is not claimed bit-identical.",
+    "Use exact fixed shot windows; provisional music accents refined within windows."
+  ]
+}
