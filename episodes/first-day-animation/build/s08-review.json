@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "approved",
+  "reviewer": "Codex source inspection",
+  "assets": {
+    "path": "build/s08-assets.json",
+    "sha256": "7e629c4dcf27bf9a68a184848b340a5600723ecac05548c94a2cbee996974425"
+  },
+  "story": {
+    "path": "build/s08-story.json",
+    "sha256": "9370447706dae487e63d13b510416044fd98e02c7f40e0b6a3afce67910d2f4e"
+  },
+  "states": {
+    "path": "build/s08-states.json",
+    "sha256": "2f78a8d36c20468487980053c9857160484f39611a5cb1f71520a5bb670eb7fd"
+  },
+  "additional_inputs": [],
+  "sources": [
+    {
+      "path": "assets/keyframes/S08.png",
+      "sha256": "207482a8b0bf33df6f673bce87274142ebf0e2bff0ec8fb094a0ab59b099d32c"
+    },
+    {
+      "path": "assets/keyframes/S06b.png",
+      "sha256": "5eb4d6df76878c9e3b017118519ece3531474b2cbb71e4c9fb951be70f335976"
+    }
+  ],
+  "cuts": [],
+  "state_changes": [
+    {
+      "shot_id": "S08",
+      "offset_frame": 149,
+      "from_asset": "S08",
+      "to_asset": "S08_end",
+      "relation": "continuous",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Start is barefoot ankle with 5.5 ribbon at mirror floor. End is same barefoot heroine on same ivory mirror floor with the correct charcoal pleated skirt, high-neck charcoal bodysuit and ivory cropped cardigan. End frame prevents earlier takes inventing a white dress."
+    }
+  ]
+}

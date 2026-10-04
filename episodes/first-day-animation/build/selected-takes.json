@@ -1,0 +1,202 @@
+[
+  {
+    "id": "S01b",
+    "take": 1,
+    "source": "assets/clips/S01b_take1.mp4",
+    "source_start": 0,
+    "source_duration": 4.6,
+    "target_duration": 1.4333333333333333,
+    "frames": 43,
+    "review": "Selected from five sampled timestamps per take for visible action, framing, identity and source continuity; final temporal quality requires playback."
+  },
+  {
+    "id": "S02a",
+    "take": 1,
+    "source": "assets/clips/S02a_take1.mp4",
+    "source_start": 1,
+    "source_duration": 3.3,
+    "target_duration": 1.1666666666666667,
+    "frames": 35,
+    "review": "Selected from five sampled timestamps per take for visible action, framing, identity and source continuity; final temporal quality requires playback."
+  },
+  {
+    "id": "S02b",
+    "take": 1,
+    "source": "assets/clips/S02b_take1.mp4",
+    "source_start": 0,
+    "source_duration": 4.8,
+    "target_duration": 1.7666666666666666,
+    "frames": 53,
+    "review": "Selected from five sampled timestamps per take for visible action, framing, identity and source continuity; final temporal quality requires playback."
+  },
+  {
+    "id": "S03a",
+    "take": 1,
+    "source": "assets/clips/S03a_take1.mp4",
+    "source_start": 0.3,
+    "source_duration": 0.28,
+    "target_duration": 0.7666666666666667,
+    "frames": 23,
+    "review": "Selected from five sampled timestamps per take for visible action, framing, identity and source continuity; final temporal quality requires playback."
+  },
+  {
+    "id": "S04a",
+    "take": 2,
+    "source": "assets/clips/S04a_take2.mp4",
+    "source_start": 0,
+    "source_duration": 4.8,
+    "target_duration": 1.3666666666666667,
+    "frames": 41,
+    "review": "Selected from five sampled timestamps per take for visible action, framing, identity and source continuity; final temporal quality requires playback."
+  },
+  {
+    "id": "S06a",
+    "take": 1,
+    "source": "assets/clips/S06a_take1.mp4",
+    "source_start": 0,
+    "source_duration": 3.2,
+    "target_duration": 1.0666666666666667,
+    "frames": 32,
+    "review": "Selected from five sampled timestamps per take for visible action, framing, identity and source continuity; final temporal quality requires playback."
+  },
+  {
+    "id": "S06b",
+    "take": 2,
+    "source": "assets/clips/S06b_take2.mp4",
+    "source_start": 0,
+    "source_duration": 2.7,
+    "target_duration": 1.6333333333333333,
+    "frames": 49,
+    "review": "Take1 introduces duplicate heroine late; choose take2 front-to-back interval."
+  },
+  {
+    "id": "S07a",
+    "take": 3,
+    "source": "assets/clips/S07a_take3.mp4",
+    "source_start": 0,
+    "source_duration": 5.0,
+    "target_duration": 1.1,
+    "frames": 33,
+    "review": "Take3 shows upright-side-inverted-side-upright roll; preserve whole roll, prioritize compound camera over literal 50% retime."
+  },
+  {
+    "id": "S07c",
+    "take": 2,
+    "source": "assets/clips/S07c_take2.mp4",
+    "source_start": 1.5,
+    "source_duration": 3.3,
+    "target_duration": 0.8333333333333334,
+    "frames": 25,
+    "review": "Selected from five sampled timestamps per take for visible action, framing, identity and source continuity; final temporal quality requires playback."
+  },
+  {
+    "id": "S08",
+    "take": 3,
+    "source": "assets/clips/S08_take3.mp4",
+    "source_start": 0,
+    "source_duration": 4.8,
+    "target_duration": 2.066666666666667,
+    "frames": 62,
+    "review": "Takes1/2 rejected: white dress invented during upward tilt. Take3 constrained with reviewed wardrobe end frame."
+  },
+  {
+    "id": "S09a",
+    "take": 3,
+    "source": "assets/clips/S09a_take3.mp4",
+    "source_start": 0,
+    "source_duration": 5.0,
+    "target_duration": 1.5333333333333334,
+    "frames": 46,
+    "review": "Takes1/2 replaced monitor spark with text. Take3 retains spark for match cut."
+  },
+  {
+    "id": "S10a",
+    "take": 1,
+    "source": "assets/clips/S10a_take1.mp4",
+    "source_start": 0,
+    "source_duration": 3.4,
+    "target_duration": 1.3333333333333333,
+    "frames": 40,
+    "review": "Selected from five sampled timestamps per take for visible action, framing, identity and source continuity; final temporal quality requires playback."
+  },
+  {
+    "id": "S10b",
+    "take": 2,
+    "source": "assets/clips/S10b_take2.mp4",
+    "source_start": 0.1,
+    "source_duration": 3.7,
+    "target_duration": 1.4333333333333333,
+    "frames": 43,
+    "review": "Take1 moves Clawd off head. Take2 retains correct head placement."
+  },
+  {
+    "id": "S11a",
+    "take": 2,
+    "source": "assets/clips/S11a_take2.mp4",
+    "source_start": 0,
+    "source_duration": 4.8,
+    "target_duration": 1.2,
+    "frames": 36,
+    "review": "Selected from five sampled timestamps per take for visible action, framing, identity and source continuity; final temporal quality requires playback."
+  },
+  {
+    "id": "S11b",
+    "take": 1,
+    "source": "assets/clips/S11b_take1.mp4",
+    "source_start": 0,
+    "source_duration": 4.8,
+    "target_duration": 1.3666666666666667,
+    "frames": 41,
+    "review": "Selected from five sampled timestamps per take for visible action, framing, identity and source continuity; final temporal quality requires playback."
+  },
+  {
+    "id": "S12a",
+    "take": 2,
+    "source": "assets/clips/S12a_take2.mp4",
+    "source_start": 0,
+    "source_duration": 4.7,
+    "target_duration": 1.1666666666666667,
+    "frames": 35,
+    "review": "Selected from five sampled timestamps per take for visible action, framing, identity and source continuity; final temporal quality requires playback."
+  },
+  {
+    "id": "S12b",
+    "take": 2,
+    "source": "assets/clips/S12b_take2.mp4",
+    "source_start": 0,
+    "source_duration": 4.8,
+    "target_duration": 0.9333333333333333,
+    "frames": 28,
+    "review": "Selected from five sampled timestamps per take for visible action, framing, identity and source continuity; final temporal quality requires playback."
+  },
+  {
+    "id": "S14",
+    "take": 3,
+    "source": "assets/clips/S14_take3.mp4",
+    "source_start": 0,
+    "source_duration": 5.1,
+    "target_duration": 2.8666666666666667,
+    "frames": 86,
+    "review": "Take3 shows front-side-back-front orbit followed by pupil approach."
+  },
+  {
+    "id": "S16a",
+    "take": 2,
+    "source": "assets/clips/S16a_take2.mp4",
+    "source_start": 0,
+    "source_duration": 2.5,
+    "target_duration": 1.2666666666666666,
+    "frames": 38,
+    "review": "Selected from five sampled timestamps per take for visible action, framing, identity and source continuity; final temporal quality requires playback."
+  },
+  {
+    "id": "S16b",
+    "take": 1,
+    "source": "assets/clips/S16b_take1.mp4",
+    "source_start": 0,
+    "source_duration": 4.8,
+    "target_duration": 1.3,
+    "frames": 39,
+    "review": "Selected from five sampled timestamps per take for visible action, framing, identity and source continuity; final temporal quality requires playback."
+  }
+]

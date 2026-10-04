@@ -1,0 +1,10 @@
+{
+ "date":"2026-10-04",
+ "brand":{"source":"https://www.anthropic.com/news","result":"Official newsroom press-kit link was located, but asset download failed through web tool and HTTP 403 from direct request. Using authorized procedural 12-blade spark and serif ANTHROPIC fallback."},
+ "mascot":{"source":"https://github.com/anthropics/claude-code/issues/8536","result":"Clawd reference corroborated; redrawn as specified chunky cel-shaded orange pixel creature."},
+ "memes":[{"source":"https://github.com/huxleyli15/frank/blob/main/README.zh-CN.md","result":"Current usage includes 好问题 and 你说得太对了 as recognizable AI-sycophancy phrases."},{"source":"https://www.parkjunwoo.com/zh/lecture/class-01/","result":"氛围编程 is in active Mandarin usage. Retain authored strings as jokes, not factual performance claims."}],
+ "fonts":["https://github.com/google/fonts/tree/main/ofl/notosanssc","https://github.com/google/fonts/tree/main/ofl/newsreader","https://github.com/google/fonts/tree/main/ofl/jetbrainsmono"],
+ "depth":"https://huggingface.co/onnx-community/depth-anything-v2-small",
+ "motion":{"docs":"https://fal.ai/models/minimax/h3-max/image-to-video/api","price_api":"https://api.fal.ai/v1/models/pricing?endpoint_id=minimax/h3-max/image-to-video","usd_per_second":0.03,"base_jobs":40,"seconds_per_job":5,"base_estimate_usd":6},
+ "source_audio":{"decoded_seconds":43.67,"picture_seconds":43.7,"decision":"MP3 stream copy; never stretch or reencode original audio."}
+}

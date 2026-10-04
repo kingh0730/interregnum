@@ -1,0 +1,96 @@
+{
+  "source": "episodes/first-day-animation/director-response.md",
+  "source_sha256": "aea6547b8eb1847ddf192923e94b81d63eb92d6aec9eb3602297582a5169fe1b",
+  "fps": 30,
+  "total_frames": 1311,
+  "frame_rounding": "round-half-up(t * 30); intervals [start_frame,end_frame)",
+  "checks": {
+    "shot_count": 37,
+    "source_counts": {
+      "H": 6,
+      "V": 20,
+      "P": 9,
+      "P/H": 1,
+      "H/P": 1
+    },
+    "frame_sum": 1311,
+    "contiguous": true,
+    "keyframes": 32,
+    "references": 2,
+    "missing_keyframe_shots": []
+  },
+  "conflicts": [
+    {
+      "id": "counts",
+      "evidence": "§5 states 21 V, 9 P, 7 H (37 total). Actual rows have {'H': 6, 'V': 20, 'P': 9, 'P/H': 1, 'H/P': 1}.",
+      "resolution": "Use all 37 actual rows. There are 20 V, 9 pure P, 6 pure H, and 2 hybrid shots; the printed source subtotals are inaccurate."
+    },
+    {
+      "id": "grid_rounding",
+      "evidence": "Hard title time 11.92 s is not on a 30 fps frame; round(t×30) = 358 = 11.9333 s. Other times have same quantization.",
+      "resolution": "Preserve authored seconds as metadata, quantize once with round-half-up and use frame intervals."
+    },
+    {
+      "id": "cut_grid",
+      "evidence": "§9 says copy §5 verbatim, §7.9 says snap every non-lyric cut ±0.08 s to detected beats.",
+      "resolution": "Keep verbatim planned times and separately record any measured-grid adjustments; never silently mutate source."
+    },
+    {
+      "id": "char_global",
+      "evidence": "§3.4 and §6 append Wuwu hair/outfit clause to every image, including solo Sonnet, Haiku, Clawd, and line-art.",
+      "resolution": "Literal expansion retained. In production scope Wuwu traits to Wuwu only; solo support frames retain their §3.3 identities."
+    },
+    {
+      "id": "line_color",
+      "evidence": "§6 S09b shorthand describes pencil linework; §7.10 requires both color and line textures and §6 requests a second edited line version.",
+      "resolution": "Generate color base first, then pixel-aligned line-art edit. Line-art requirements override luminous/full-color style."
+    },
+    {
+      "id": "counter_duration",
+      "evidence": "S04b lasts 1.05 s (about 3 beats), but six values 5.0 through 5.5 at one value per beat require five intervals (about 1.7425 s). §4 starts counter at 8.24; §5 starts at 9.59.",
+      "resolution": "Keep S04b shot timing; director must explicitly resolve counter tick rate or carry progression over S04a."
+    },
+    {
+      "id": "hypercuts",
+      "evidence": "§8 calls S13 cuts every beat (~0.3485 s), while §5 S13a-d last ~0.66–0.70 s (about two beats).",
+      "resolution": "Keep explicit shot list; beat accents can occur inside each shot."
+    },
+    {
+      "id": "audio_codec",
+      "evidence": "§7.3 sample re-encodes source MP3 to AAC, conflicting with untouched original audio and §7.11 bit-identical content.",
+      "resolution": "Use source audio stream copy where container permits, check audio packet payload hash and playback timing."
+    },
+    {
+      "id": "end_card",
+      "evidence": "S16c asks last 0.3 s fade to ivory and §7.10 final stable clean card; fading whole image erases card text.",
+      "resolution": "Fade animated scene/FX toward ivory while preserving stable final card lockup."
+    },
+    {
+      "id": "crash_zoom",
+      "evidence": "§7.4a scale = 1 + 5*(1-outExpo(u)) moves scale 6→1, opposite to §5 and §6 wide→close crash zoom.",
+      "resolution": "Implement camera wide-to-close / scale 1→6 with eased settling."
+    },
+    {
+      "id": "wipe_direction",
+      "evidence": "§7.10 mix(line,color,smoothstep(...uv...-u)) with increasing u decreases color coverage, reversing required line→color.",
+      "resolution": "Invert mask or swap mix endpoints, ensuring line at start and color at end."
+    },
+    {
+      "id": "silence_overlay",
+      "evidence": "§5 S05 says overlay nothing else; §7.7 L4 spans S05 and would render lyrics unless gated.",
+      "resolution": "Suppress all lyric/UI overlays during S05, leaving contracted spark and prescribed drift."
+    },
+    {
+      "id": "parallax_coverage",
+      "evidence": "S07b macro brooch keyframe must pull back to face; narrow crop lacks face. §5 demands 90° orbit for S13a from one still.",
+      "resolution": "Generate sufficient field-of-view and layered coverage; use explicit camera projection and bounded parallax, record limitations without silently dropping moves."
+    }
+  ],
+  "prompt_verification": {
+    "ordinary_rows": "shot-specific KF and motion snippets copied by regex without rewording",
+    "grouped_S13": "split exact (a)-(d) text; one image per row",
+    "S09b": "derived color counterpart is explicitly labeled; line-art edit retains required composition",
+    "references": "expanded from §3.3 and §6 reference instructions",
+    "prohibited_source_used": false
+  }
+}

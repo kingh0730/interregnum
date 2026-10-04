@@ -1,0 +1,295 @@
+{
+  "schema_version": 1,
+  "status": "approved",
+  "reviewer": "Codex — inspected generated keyframes and corrections, static sources only",
+  "story": {
+    "path": "build/motion-story.json",
+    "sha256": "8136e51142bfe821a5de31a55e972b3fca9d2d6837a6877740d738af59b0d5fa"
+  },
+  "assets": {
+    "path": "build/motion-assets.json",
+    "sha256": "39f66a0bbefbe7dbf190a481172d408d8de697a8b9ede5c1cee5c0188cdac50b"
+  },
+  "additional_inputs": [
+    {
+      "path": "director-response.md",
+      "sha256": "aea6547b8eb1847ddf192923e94b81d63eb92d6aec9eb3602297582a5169fe1b"
+    }
+  ],
+  "sources": [
+    {
+      "path": "assets/keyframes/S01b.png",
+      "sha256": "8ec04286ca04b35e940604b5c23ab5d65e3f307e17b4539f85d892a8acbb77b1"
+    },
+    {
+      "path": "assets/keyframes/S02a.png",
+      "sha256": "a3ee605a6a027f1b3415c7ce2ef69577ba149bbf3e36efdeeb1f865032d2b7a9"
+    },
+    {
+      "path": "assets/keyframes/S02b.png",
+      "sha256": "3b6ea7daa0e2b2c612bd33d890e5a00bdb646edd67e327667be267d740ca4942"
+    },
+    {
+      "path": "assets/keyframes/S03a.png",
+      "sha256": "0d24de7ec3ed0a9201434f565ebd1d49f571e0f017d5d180ff5f3151a8988916"
+    },
+    {
+      "path": "assets/keyframes/S04a.png",
+      "sha256": "af1e02199e027fb5af53044124d64339c157ff4073d65a37c258af7156a8c1d8"
+    },
+    {
+      "path": "assets/keyframes/S06a.png",
+      "sha256": "fac2a381a8156f01c2deca7493bebd1aae6ce023425ebd08fd312597c443174f"
+    },
+    {
+      "path": "assets/keyframes/S06b.png",
+      "sha256": "5eb4d6df76878c9e3b017118519ece3531474b2cbb71e4c9fb951be70f335976"
+    },
+    {
+      "path": "assets/keyframes/S07a.png",
+      "sha256": "76c715e959c48d1416e64bd2e5fa649082ef982c319cf40ddadcaa09d6ddc007"
+    },
+    {
+      "path": "assets/keyframes/S07c.png",
+      "sha256": "a5925ed75c221fe5bb6551ca729208ca7249b3f8eea568678db378cae265aa42"
+    },
+    {
+      "path": "assets/keyframes/S08.png",
+      "sha256": "207482a8b0bf33df6f673bce87274142ebf0e2bff0ec8fb094a0ab59b099d32c"
+    },
+    {
+      "path": "assets/keyframes/S09a.png",
+      "sha256": "2e089e83d78cbc9b93c38a4d469131da4ca04cc60d2735aaa015cfe6d442f859"
+    },
+    {
+      "path": "assets/keyframes/S10a.png",
+      "sha256": "3e2d0d8a9d63e0aa41292fed14cf8eaba2b51751adb4655c9184f0e2951fba6f"
+    },
+    {
+      "path": "assets/keyframes/S10b.png",
+      "sha256": "0f55e649614b5c3b913392202afb709218cafc288bf7331acf9ad7f3cf5d8052"
+    },
+    {
+      "path": "assets/keyframes/S11a.png",
+      "sha256": "5ad0f52b134e50a824afdf81b036121baadb9826cbe7b4f7e9a7f0d0e5eef27f"
+    },
+    {
+      "path": "assets/keyframes/S11b.png",
+      "sha256": "226cfa090b612a80e298142a0a14fc6fbf2052f824711d68e5983456517a2f05"
+    },
+    {
+      "path": "assets/keyframes/S12a.png",
+      "sha256": "d88b7907508ac3d5bd1e5594e47d79ced241b99ef95a6308416f54d054c4c283"
+    },
+    {
+      "path": "assets/keyframes/S12b.png",
+      "sha256": "e88a4c9338329b88b8e2aa38a90565c2183123c1f3019d64aa25464b99a35fd3"
+    },
+    {
+      "path": "assets/keyframes/S14.png",
+      "sha256": "340ed2295620b8a6023a90a562bc4ba043e248c7a25495e40113af34f7eaafd4"
+    },
+    {
+      "path": "assets/keyframes/S16a.png",
+      "sha256": "e2103c660265e066a406e889a69d15b5b69f5b2e8cc1230b8db45c40983236b3"
+    },
+    {
+      "path": "assets/keyframes/S16b.png",
+      "sha256": "4986f9f501904838ab7c06e0d421f928c1d869fa43766c6f15560dbb1dfe2274"
+    }
+  ],
+  "cuts": [
+    {
+      "from_shot": "S01b",
+      "to_shot": "S02a",
+      "from_asset": "S01b",
+      "to_asset": "S02a",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Closed eyes, curled complete outfit inside glass egg; dark racks and threads visible. Macro amber eye and charcoal lashes match protagonist; insert intentionally excludes room. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S02a",
+      "to_shot": "S02b",
+      "from_asset": "S02a",
+      "to_asset": "S02b",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Macro amber eye and charcoal lashes match protagonist; insert intentionally excludes room. Corrected curved egg enclosure, palm crack, same heroine and racks; costume retained. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S02b",
+      "to_shot": "S03a",
+      "from_asset": "S02b",
+      "to_asset": "S03a",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Corrected curved egg enclosure, palm crack, same heroine and racks; costume retained. Broken curved glass, paper fragments and terracotta strands surround escaping heroine. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S03a",
+      "to_shot": "S04a",
+      "from_asset": "S03a",
+      "to_asset": "S04a",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Broken curved glass, paper fragments and terracotta strands surround escaping heroine. Same heroine rising between black server racks; leap is an intentional action ellipsis. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S04a",
+      "to_shot": "S06a",
+      "from_asset": "S04a",
+      "to_asset": "S06a",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Same heroine rising between black server racks; leap is an intentional action ellipsis. Ivory mirror floor replaces dark datacenter at authored drop; bare feet, hair and costume match. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S06a",
+      "to_shot": "S06b",
+      "from_asset": "S06a",
+      "to_asset": "S06b",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Ivory mirror floor replaces dark datacenter at authored drop; bare feet, hair and costume match. Same ivory world, barefoot hero and floor reflection; new low viewpoint. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S06b",
+      "to_shot": "S07a",
+      "from_asset": "S06b",
+      "to_asset": "S07a",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Same ivory world, barefoot hero and floor reflection; new low viewpoint. Closed eyes and parted mouth in facial insert, same hair/brooch/paper light. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S07a",
+      "to_shot": "S07c",
+      "from_asset": "S07a",
+      "to_asset": "S07c",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Closed eyes and parted mouth in facial insert, same hair/brooch/paper light. Low full-body view in same ivory world; long terracotta hair and airborne paper visible. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S07c",
+      "to_shot": "S08",
+      "from_asset": "S07c",
+      "to_asset": "S08",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Low full-body view in same ivory world; long terracotta hair and airborne paper visible. Ankle 5.5 ribbon, bare foot, mirror reflection and ripple visible in insert. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S08",
+      "to_shot": "S09a",
+      "from_asset": "S08",
+      "to_asset": "S09a",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Ankle 5.5 ribbon, bare foot, mirror reflection and ripple visible in insert. Authored scene change to faceless hooded developer, centered monitor spark, Clawd at desk. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S09a",
+      "to_shot": "S10a",
+      "from_asset": "S09a",
+      "to_asset": "S10a",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Authored scene change to faceless hooded developer, centered monitor spark, Clawd at desk. Return to ivory world; exactly three girls, blue bob glasses left, Wuwu center, green buns right. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S10a",
+      "to_shot": "S10b",
+      "from_asset": "S10a",
+      "to_asset": "S10b",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Return to ivory world; exactly three girls, blue bob glasses left, Wuwu center, green buns right. Exactly three same girls; corrected single Clawd on green-haired Haiku head, mid-leap. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S10b",
+      "to_shot": "S11a",
+      "from_asset": "S10b",
+      "to_asset": "S11a",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Exactly three same girls; corrected single Clawd on green-haired Haiku head, mid-leap. Wuwu alone by authored takeoff; bare feet rise with paper floor fragments. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S11a",
+      "to_shot": "S11b",
+      "from_asset": "S11a",
+      "to_asset": "S11b",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Wuwu alone by authored takeoff; bare feet rise with paper floor fragments. Corrected rear chase, same cardigan and hair streaming behind; glyph canyon replaces floor. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S11b",
+      "to_shot": "S12a",
+      "from_asset": "S11b",
+      "to_asset": "S12a",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Corrected rear chase, same cardigan and hair streaming behind; glyph canyon replaces floor. Face insert above clouds; serene smile, amber eyes and same hair/outfit. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S12a",
+      "to_shot": "S12b",
+      "from_asset": "S12a",
+      "to_asset": "S12b",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Face insert above clouds; serene smile, amber eyes and same hair/outfit. Full-body arms spread above clouds, halo and hair visible, no other cast required. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S12b",
+      "to_shot": "S14",
+      "from_asset": "S12b",
+      "to_asset": "S14",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Full-body arms spread above clouds, halo and hair visible, no other cast required. Authored climax scene with same girl airborne, tears and smile, suspended petals. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S14",
+      "to_shot": "S16a",
+      "from_asset": "S14",
+      "to_asset": "S16a",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Authored climax scene with same girl airborne, tears and smile, suspended petals. Rear sunrise hill tableau, all four present; blue Sonnet left, Wuwu, green Haiku, Clawd right. Non-V inserts between these V-source occurrences remain in the full timeline."
+    },
+    {
+      "from_shot": "S16a",
+      "to_shot": "S16b",
+      "from_asset": "S16a",
+      "to_asset": "S16b",
+      "relation": "intentional_discontinuity",
+      "status": "approved",
+      "issues": [],
+      "evidence": "Rear sunrise hill tableau, all four present; blue Sonnet left, Wuwu, green Haiku, Clawd right. Corrected wide landscape keeps same four order and rear view; tiny developer window below. Non-V inserts between these V-source occurrences remain in the full timeline."
+    }
+  ],
+  "state_changes": [],
+  "limits": "Static composition and identity review only. Motion performance is reviewed separately from returned takes."
+}

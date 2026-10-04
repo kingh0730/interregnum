@@ -1,0 +1,730 @@
+{
+  "source": "episodes/first-day-animation/director-response.md",
+  "source_sha256": "aea6547b8eb1847ddf192923e94b81d63eb92d6aec9eb3602297582a5169fe1b",
+  "fps": 30,
+  "total_frames": 1311,
+  "frame_rounding": "round-half-up(t * 30); intervals [start_frame,end_frame)",
+  "style": "high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.",
+  "negative": "realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+  "character_clause": "Character reference: [ref sheet]. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.",
+  "notes": [
+    "User mandates Codex imagegen and forbids Luma.",
+    "Source prompt text retained verbatim; expansions explicitly identified.",
+    "S09b color is required by §7.10; line-art is a dependent edit.",
+    "Review qa.json before production: literal global CHAR clause is unsuitable for solo support-character shots."
+  ],
+  "images": [
+    {
+      "id": "REF_SUPPORT",
+      "out": "assets/ref/support.png",
+      "kind": "reference",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nSecond character reference sheet with Sonnet-chan, Haiku-chan, Clawd. Backgrounds plain ivory. **Sonnet-chan (十四酱)**: slightly shorter, calm and sly, bob haircut in blue `#6A9BCC`, round glasses, ivory cardigan with blue piping, small spark brooch in blue.\n**Haiku-chan (俳句酱)**: smallest, loud and bouncy, green `#788C5D` twin buns, huge grin, ivory hoodie with green piping, spark brooch in green. Keep both sisters age-neutral and wholesome.\n**Clawd (小克)**: Claude Code's mascot: a blocky **orange pixel creature** (`#D97757`) with two black square eyes, stubby arms and legs. He holds signs and pops up in bubbles. He is the comic-relief sidekick. Search \"Claude Code Clawd mascot\" for reference, then redraw in the anime world as a chunky cel-shaded pixel creature.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "Second character reference sheet with Sonnet-chan, Haiku-chan, Clawd. Backgrounds plain ivory. **Sonnet-chan (十四酱)**: slightly shorter, calm and sly, bob haircut in blue `#6A9BCC`, round glasses, ivory cardigan with blue piping, small spark brooch in blue.\n**Haiku-chan (俳句酱)**: smallest, loud and bouncy, green `#788C5D` twin buns, huge grin, ivory hoodie with green piping, spark brooch in green. Keep both sisters age-neutral and wholesome.\n**Clawd (小克)**: Claude Code's mascot: a blocky **orange pixel creature** (`#D97757`) with two black square eyes, stubby arms and legs. He holds signs and pops up in bubbles. He is the comic-relief sidekick. Search \"Claude Code Clawd mascot\" for reference, then redraw in the anime world as a chunky cel-shaded pixel creature.",
+      "source_motion": "",
+      "verbatim_spec": "**Step 1: Character sheet.** Full-body turnaround (front/side/back/3/4) + 6 expressions of 五五; second sheet with Sonnet-chan, Haiku-chan, Clawd. Backgrounds plain ivory. Generate until hair gradient, spark ahoge and spark eye are consistent. Save as `assets/ref/`.",
+      "refs": [],
+      "alpha": false,
+      "deps": [],
+      "shots": [],
+      "provider": "codex-imagegen",
+      "motion_prompt": null
+    },
+    {
+      "id": "REF_WUWU",
+      "out": "assets/ref/wuwu.png",
+      "kind": "reference",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nFull-body turnaround (front/side/back/3/4) + 6 expressions of 五五. Backgrounds plain ivory. protagonist. Late-teen anime girl, graceful, wholesome. Very long hair reaching her ankles, **ink-charcoal `#141413` at the roots grading to terracotta `#D97757` at the tips**; the tips disintegrate into spark particles in motion. Asymmetric bangs, one long side lock, **ahoge (antenna hair) shaped like a tiny spark**. Large amber-terracotta eyes with a **12-ray spark as the pupil highlight** and darker limbal ring. Outfit: oversized **ivory cropped cardigan-jacket** with terracotta piping over a charcoal high-neck bodysuit and pleated charcoal skirt, ivory fingerless gloves, **barefoot** with a thin ankle ribbon printed \"5.5\". Cream ribbons in the hair printed \"5.5\". **Chest brooch = glowing Claude spark.** Behind her head, a thin **halo ring of rotating glyphs** reading \"OPUS 5.5 · OPUS 5.5 ·\". Expression range: sleepy → startled → radiant joy → fierce → serene.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "Full-body turnaround (front/side/back/3/4) + 6 expressions of 五五. Backgrounds plain ivory. protagonist. Late-teen anime girl, graceful, wholesome. Very long hair reaching her ankles, **ink-charcoal `#141413` at the roots grading to terracotta `#D97757` at the tips**; the tips disintegrate into spark particles in motion. Asymmetric bangs, one long side lock, **ahoge (antenna hair) shaped like a tiny spark**. Large amber-terracotta eyes with a **12-ray spark as the pupil highlight** and darker limbal ring. Outfit: oversized **ivory cropped cardigan-jacket** with terracotta piping over a charcoal high-neck bodysuit and pleated charcoal skirt, ivory fingerless gloves, **barefoot** with a thin ankle ribbon printed \"5.5\". Cream ribbons in the hair printed \"5.5\". **Chest brooch = glowing Claude spark.** Behind her head, a thin **halo ring of rotating glyphs** reading \"OPUS 5.5 · OPUS 5.5 ·\". Expression range: sleepy → startled → radiant joy → fierce → serene.",
+      "source_motion": "",
+      "verbatim_spec": "**Step 1: Character sheet.** Full-body turnaround (front/side/back/3/4) + 6 expressions of 五五; second sheet with Sonnet-chan, Haiku-chan, Clawd. Backgrounds plain ivory. Generate until hair gradient, spark ahoge and spark eye are consistent. Save as `assets/ref/`.",
+      "refs": [],
+      "alpha": false,
+      "deps": [],
+      "shots": [],
+      "provider": "codex-imagegen",
+      "motion_prompt": null
+    },
+    {
+      "id": "S01b",
+      "out": "assets/keyframes/S01b.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\ncolossal datacenter cathedral at night, server racks like organ pipes, a giant glass incubator (egg-shaped, floating in terracotta light), 五五 curled in fetal position inside wrapped in glowing terracotta threads, a small engraved plaque in the corner, cold slate fog.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "colossal datacenter cathedral at night, server racks like organ pipes, a giant glass incubator (egg-shaped, floating in terracotta light), 五五 curled in fetal position inside wrapped in glowing terracotta threads, a small engraved plaque in the corner, cold slate fog.",
+      "source_motion": "camera dollies back and cranes up slowly with 8° Dutch roll, threads pulse, fog drifts.",
+      "verbatim_spec": "**S01b**: *KF:* colossal datacenter cathedral at night, server racks like organ pipes, a giant glass incubator (egg-shaped, floating in terracotta light), 五五 curled in fetal position inside wrapped in glowing terracotta threads, a small engraved plaque in the corner, cold slate fog. *Motion:* camera dollies back and cranes up slowly with 8° Dutch roll, threads pulse, fog drifts.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S01b"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\ncamera dollies back and cranes up slowly with 8° Dutch roll, threads pulse, fog drifts. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S02a",
+      "out": "assets/keyframes/S02a.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nextreme close-up of an eye, eyelid half open, spark-shaped pupil highlight starting to glow terracotta, lashes with tiny tear-gloss.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "extreme close-up of an eye, eyelid half open, spark-shaped pupil highlight starting to glow terracotta, lashes with tiny tear-gloss.",
+      "source_motion": "micro push-in, eyelid lifts fully, spark flares, subtle rack focus from lashes to iris.",
+      "verbatim_spec": "**S02a**: *KF:* extreme close-up of an eye, eyelid half open, spark-shaped pupil highlight starting to glow terracotta, lashes with tiny tear-gloss. *Motion:* micro push-in, eyelid lifts fully, spark flares, subtle rack focus from lashes to iris.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S02a"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nmicro push-in, eyelid lifts fully, spark flares, subtle rack focus from lashes to iris. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S02b",
+      "out": "assets/keyframes/S02b.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\n五五 inside the incubator pressing a palm to the glass, small crack at her palm, threads taut, orange light behind her.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "五五 inside the incubator pressing a palm to the glass, small crack at her palm, threads taut, orange light behind her.",
+      "source_motion": "fast orbit around her, roll 15°, crack spreads outward like a spiderweb, threads vibrate; ends with the glass whiting out.",
+      "verbatim_spec": "**S02b**: *KF:* 五五 inside the incubator pressing a palm to the glass, small crack at her palm, threads taut, orange light behind her. *Motion:* fast orbit around her, roll 15°, crack spreads outward like a spiderweb, threads vibrate; ends with the glass whiting out.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S02b"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nfast orbit around her, roll 15°, crack spreads outward like a spiderweb, threads vibrate; ends with the glass whiting out. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S03a",
+      "out": "assets/keyframes/S03a.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nthe incubator glass exploding outward toward camera, shards and cream paper fragments frozen mid-air, her silhouette bursting through, terracotta threads snapping.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "the incubator glass exploding outward toward camera, shards and cream paper fragments frozen mid-air, her silhouette bursting through, terracotta threads snapping.",
+      "source_motion": "slow-motion camera pull-back from the center, shards spiral past lens.",
+      "verbatim_spec": "**S03a**: *KF:* the incubator glass exploding outward toward camera, shards and cream paper fragments frozen mid-air, her silhouette bursting through, terracotta threads snapping. *Motion:* slow-motion camera pull-back from the center, shards spiral past lens.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S03a"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nslow-motion camera pull-back from the center, shards spiral past lens. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S03b",
+      "out": "assets/keyframes/S03b.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nlow-angle shot of bare feet pushing off from a shard, hair streaming behind with sparks, dust.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "low-angle shot of bare feet pushing off from a shard, hair streaming behind with sparks, dust.",
+      "source_motion": "whip-pan right then handheld push, roll 12°.",
+      "verbatim_spec": "**S03b (P)**: *KF:* low-angle shot of bare feet pushing off from a shard, hair streaming behind with sparks, dust. *Depth + P-camera:* whip-pan right then handheld push, roll 12°.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S03b"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nwhip-pan right then handheld push, roll 12°. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S03c",
+      "out": "assets/keyframes/S03c.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nClawd popping out of her cardigan pocket holding a blank sign, chat bubbles blank-ivory swirling around, her laughing, startled and delighted.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "Clawd popping out of her cardigan pocket holding a blank sign, chat bubbles blank-ivory swirling around, her laughing, startled and delighted.",
+      "source_motion": "snap zoom onto Clawd, then 20° rotate.",
+      "verbatim_spec": "**S03c (P)**: *KF:* Clawd popping out of her cardigan pocket holding a blank sign, chat bubbles blank-ivory swirling around, her laughing, startled and delighted. *P-camera:* snap zoom onto Clawd, then 20° rotate.",
+      "refs": [
+        "REF_WUWU",
+        "REF_SUPPORT"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU",
+        "REF_SUPPORT"
+      ],
+      "shots": [
+        "S03c"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nsnap zoom onto Clawd, then 20° rotate. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S04a",
+      "out": "assets/keyframes/S04a.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\n五五 rocketing upward in a vertical shaft between towering server racks, light shafts, threads trailing, camera alongside.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "五五 rocketing upward in a vertical shaft between towering server racks, light shafts, threads trailing, camera alongside.",
+      "source_motion": "camera rises alongside her at high speed, rolls 30°, light strobes through rack gaps.",
+      "verbatim_spec": "**S04a**: *KF:* 五五 rocketing upward in a vertical shaft between towering server racks, light shafts, threads trailing, camera alongside. *Motion:* camera rises alongside her at high speed, rolls 30°, light strobes through rack gaps.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S04a"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\ncamera rises alongside her at high speed, rolls 30°, light strobes through rack gaps. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S04c",
+      "out": "assets/keyframes/S04c.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nface close-up, eyes narrowed with determination, hand reaching toward camera, hair floating.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "face close-up, eyes narrowed with determination, hand reaching toward camera, hair floating.",
+      "source_motion": "6× push-in over 0.56 s with radial blur.",
+      "verbatim_spec": "**S04c (P)**: *KF:* face close-up, eyes narrowed with determination, hand reaching toward camera, hair floating. *P-camera:* 6× push-in over 0.56 s with radial blur.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S04c"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\n6× push-in over 0.56 s with radial blur. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S05",
+      "out": "assets/keyframes/S05.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\n五五 suspended mid-air in a dark void, eyes closed, desaturated slate, hair frozen, a single terracotta spark in front of her chest.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "五五 suspended mid-air in a dark void, eyes closed, desaturated slate, hair frozen, a single terracotta spark in front of her chest.",
+      "source_motion": "1% drift-in only.",
+      "verbatim_spec": "**S05 (P)**: *KF:* 五五 suspended mid-air in a dark void, eyes closed, desaturated slate, hair frozen, a single terracotta spark in front of her chest. *P-camera:* 1% drift-in only.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S05"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\n1% drift-in only. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S06a",
+      "out": "assets/keyframes/S06a.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nwide shot of an endless glossy cream mirror floor under blown-out ivory light, 五五 landing in a heroic pose, arms wide, hair erupting in terracotta sparks, halo ring flaring.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "wide shot of an endless glossy cream mirror floor under blown-out ivory light, 五五 landing in a heroic pose, arms wide, hair erupting in terracotta sparks, halo ring flaring.",
+      "source_motion": "crash zoom from very wide into a low-angle hero shot, impact ripple on the floor.",
+      "verbatim_spec": "**S06a**: *KF:* wide shot of an endless glossy cream mirror floor under blown-out ivory light, 五五 landing in a heroic pose, arms wide, hair erupting in terracotta sparks, halo ring flaring. *Motion:* crash zoom from very wide into a low-angle hero shot, impact ripple on the floor.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S06a"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\ncrash zoom from very wide into a low-angle hero shot, impact ripple on the floor. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S06b",
+      "out": "assets/keyframes/S06b.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nlow-angle hero shot of 五五 standing on the mirror floor, reflection beneath, halo ring spinning.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "low-angle hero shot of 五五 standing on the mirror floor, reflection beneath, halo ring spinning.",
+      "source_motion": "180° low orbit while tilting up to her face, hair and cardigan billowing.",
+      "verbatim_spec": "**S06b**: *KF:* low-angle hero shot of 五五 standing on the mirror floor, reflection beneath, halo ring spinning. *Motion:* 180° low orbit while tilting up to her face, hair and cardigan billowing.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S06b"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\n180° low orbit while tilting up to her face, hair and cardigan billowing. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S07a",
+      "out": "assets/keyframes/S07a.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nextreme close-up, 五五 face, eyes closed, mouth slightly open, spark dust streaming in.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "extreme close-up, 五五 face, eyes closed, mouth slightly open, spark dust streaming in.",
+      "source_motion": "50% slow-mo, camera rolls a full 360° while pushing in, eyelashes tremble, petals spiral.",
+      "verbatim_spec": "**S07a**: *KF:* extreme close-up, 五五 face, eyes closed, mouth slightly open, spark dust streaming in. *Motion:* 50% slow-mo, camera rolls a full 360° while pushing in, eyelashes tremble, petals spiral.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S07a"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\n50% slow-mo, camera rolls a full 360° while pushing in, eyelashes tremble, petals spiral. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S07b",
+      "out": "assets/keyframes/S07b.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nmacro of the glowing spark brooch on her chest, soft light ribs, fabric rising.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "macro of the glowing spark brooch on her chest, soft light ribs, fabric rising.",
+      "source_motion": "pull from brooch to chest to chin over 1.03 s.",
+      "verbatim_spec": "**S07b (P)**: *KF:* macro of the glowing spark brooch on her chest, soft light ribs, fabric rising. *P-camera:* pull from brooch to chest to chin over 1.03 s.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S07b"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\npull from brooch to chest to chin over 1.03 s. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S07c",
+      "out": "assets/keyframes/S07c.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nlow-angle, her long hair unfurling in wind into ribbons of terracotta that dissolve to sparks.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "low-angle, her long hair unfurling in wind into ribbons of terracotta that dissolve to sparks.",
+      "source_motion": "whip-roll, wind gust, ribbons streak across the lens.",
+      "verbatim_spec": "**S07c**: *KF:* low-angle, her long hair unfurling in wind into ribbons of terracotta that dissolve to sparks. *Motion:* whip-roll, wind gust, ribbons streak across the lens.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S07c"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nwhip-roll, wind gust, ribbons streak across the lens. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S08",
+      "out": "assets/keyframes/S08.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nmacro of a bare ankle with a \"5.5\" ribbon touching a glossy cream mirror floor, terracotta ripple ring spreading, reflection below.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "macro of a bare ankle with a \"5.5\" ribbon touching a glossy cream mirror floor, terracotta ripple ring spreading, reflection below.",
+      "source_motion": "camera tracks along the floor then tilts up the full body to her smiling face.",
+      "verbatim_spec": "**S08**: *KF:* macro of a bare ankle with a \"5.5\" ribbon touching a glossy cream mirror floor, terracotta ripple ring spreading, reflection below. *Motion:* camera tracks along the floor then tilts up the full body to her smiling face.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S08"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\ncamera tracks along the floor then tilts up the full body to her smiling face. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S09a",
+      "out": "assets/keyframes/S09a.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nover-the-shoulder, faceless hooded developer at a desk in a warm dim room, monitor glowing with a terracotta spark, mug, Clawd on the desk, rain on the window.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "over-the-shoulder, faceless hooded developer at a desk in a warm dim room, monitor glowing with a terracotta spark, mug, Clawd on the desk, rain on the window.",
+      "source_motion": "slow push-in toward the monitor, light flickers, typing hands.",
+      "verbatim_spec": "**S09a**: *KF:* over-the-shoulder, faceless hooded developer at a desk in a warm dim room, monitor glowing with a terracotta spark, mug, Clawd on the desk, rain on the window. *Motion:* slow push-in toward the monitor, light flickers, typing hands.",
+      "refs": [
+        "REF_WUWU",
+        "REF_SUPPORT"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU",
+        "REF_SUPPORT"
+      ],
+      "shots": [
+        "S09a"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nslow push-in toward the monitor, light flickers, typing hands. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S09b_color",
+      "out": "assets/keyframes/S09b_color.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\n五五 on the other side of a glass pane, palm raised, the user's silhouette reflected. Full color base image for the pixel-aligned pencil-linework reveal wipe.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "五五 on the other side of a glass pane, palm raised, the user's silhouette reflected. Full color base image for the pixel-aligned pencil-linework reveal wipe.",
+      "source_motion": "",
+      "verbatim_spec": "**S09b (H/P)**: *Native:* the monitor spark expands into an iris-wipe (§7.8) revealing KF S09b: 五五 on the other side of a glass pane, palm raised, the user's silhouette reflected, in pencil linework. At 22.0 the color reveal wipe sweeps across.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S09b"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": null
+    },
+    {
+      "id": "S09b_line",
+      "out": "assets/keyframes/S09b_line.png",
+      "kind": "edit",
+      "prompt": "Transform the provided S09b color image into clean pencil linework only (black lines on ivory) for the reveal wipe. Same composition, pixel-aligned. Preserve all characters, pose, camera, framing, geometry and silhouettes. No text, watermark, new elements, or color fills.\nOriginal mandated STYLE (line-art instruction takes precedence): high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.",
+      "source_keyframe": "Generate a second image of S09b as clean pencil linework only (black lines on ivory) for the reveal wipe. Same composition, pixel-aligned (use img2img/edit tool with the color image as source).",
+      "source_motion": "",
+      "verbatim_spec": "**S09b line-art version:** generate a second image of S09b as clean pencil linework only (black lines on ivory) for the reveal wipe. Same composition, pixel-aligned (use img2img/edit tool with the color image as source).",
+      "refs": [
+        "S09b_color"
+      ],
+      "alpha": false,
+      "deps": [
+        "S09b_color"
+      ],
+      "shots": [
+        "S09b"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": null
+    },
+    {
+      "id": "S10a",
+      "out": "assets/keyframes/S10a.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nwide ivory plain, Sonnet-chan (blue bob, glasses) and Haiku-chan (green buns) running toward 五五 from both sides, hair streaming, grins.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "wide ivory plain, Sonnet-chan (blue bob, glasses) and Haiku-chan (green buns) running toward 五五 from both sides, hair streaming, grins.",
+      "source_motion": "crane up and orbit, lens flare sweep.",
+      "verbatim_spec": "**S10a**: *KF:* wide ivory plain, Sonnet-chan (blue bob, glasses) and Haiku-chan (green buns) running toward 五五 from both sides, hair streaming, grins. *Motion:* crane up and orbit, lens flare sweep.",
+      "refs": [
+        "REF_WUWU",
+        "REF_SUPPORT"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU",
+        "REF_SUPPORT"
+      ],
+      "shots": [
+        "S10a"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\ncrane up and orbit, lens flare sweep. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S10b",
+      "out": "assets/keyframes/S10b.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nthe three girls huddled mid-leap, Clawd on Haiku's head, peace signs, hair intermixing in orange, blue and green.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "the three girls huddled mid-leap, Clawd on Haiku's head, peace signs, hair intermixing in orange, blue and green.",
+      "source_motion": "slow-mo orbit, then hold at the end.",
+      "verbatim_spec": "**S10b**: *KF:* the three girls huddled mid-leap, Clawd on Haiku's head, peace signs, hair intermixing in orange, blue and green. *Motion:* slow-mo orbit, then hold at the end.",
+      "refs": [
+        "REF_WUWU",
+        "REF_SUPPORT"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU",
+        "REF_SUPPORT"
+      ],
+      "shots": [
+        "S10b"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nslow-mo orbit, then hold at the end. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S11a",
+      "out": "assets/keyframes/S11a.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nvery low angle, 五五's feet leaving the ground, the mirror floor shattering into pages.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "very low angle, 五五's feet leaving the ground, the mirror floor shattering into pages.",
+      "source_motion": "FPV takeoff, ground rushes away, pages whirl upward.",
+      "verbatim_spec": "**S11a**: *KF:* very low angle, 五五's feet leaving the ground, the mirror floor shattering into pages. *Motion:* FPV takeoff, ground rushes away, pages whirl upward.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S11a"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nFPV takeoff, ground rushes away, pages whirl upward. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S11b",
+      "out": "assets/keyframes/S11b.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nbehind 五五 flying between towering walls of floating code glyphs, spark ribbons trailing, sky bright ivory.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "behind 五五 flying between towering walls of floating code glyphs, spark ribbons trailing, sky bright ivory.",
+      "source_motion": "FPV chase with a full barrel roll, glyph streaks, speed.",
+      "verbatim_spec": "**S11b**: *KF:* behind 五五 flying between towering walls of floating code glyphs, spark ribbons trailing, sky bright ivory. *Motion:* FPV chase with a full barrel roll, glyph streaks, speed.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S11b"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nFPV chase with a full barrel roll, glyph streaks, speed. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S11c",
+      "out": "assets/keyframes/S11c.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\n五五 rising toward a cloud ceiling, camera low.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "五五 rising toward a cloud ceiling, camera low.",
+      "source_motion": "whip-tilt up, burst through the clouds.",
+      "verbatim_spec": "**S11c (P)**: *KF:* 五五 rising toward a cloud ceiling, camera low. *P-camera:* whip-tilt up, burst through the clouds.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S11c"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nwhip-tilt up, burst through the clouds. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S12a",
+      "out": "assets/keyframes/S12a.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\ntight face shot of 五五 smiling serenely as sparks rise around her, background clouds.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "tight face shot of 五五 smiling serenely as sparks rise around her, background clouds.",
+      "source_motion": "dolly zoom (camera pushes in while the lens widens; background stretches), sparks float upward.",
+      "verbatim_spec": "**S12a**: *KF:* tight face shot of 五五 smiling serenely as sparks rise around her, background clouds. *Motion:* dolly zoom (camera pushes in while the lens widens; background stretches), sparks float upward.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S12a"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\ndolly zoom (camera pushes in while the lens widens; background stretches), sparks float upward. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S12b",
+      "out": "assets/keyframes/S12b.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\n五五 above the clouds with arms spread, sky ivory fading to faint blue, halo ring bright.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "五五 above the clouds with arms spread, sky ivory fading to faint blue, halo ring bright.",
+      "source_motion": "slow crane back, stillness, halo accelerating.",
+      "verbatim_spec": "**S12b**: *KF:* 五五 above the clouds with arms spread, sky ivory fading to faint blue, halo ring bright. *Motion:* slow crane back, stillness, halo accelerating.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S12b"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nslow crane back, stillness, halo accelerating. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S13a",
+      "out": "assets/keyframes/S13a.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\n五五 mid-pose with orange burst\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "五五 mid-pose with orange burst",
+      "source_motion": "90° orbit",
+      "verbatim_spec": "**S13a–d (P)**: *KF each:* (a) 五五 mid-pose with orange burst, (b) Sonnet-chan with blue light flood, (c) Haiku-chan in a shower of green confetti glyphs, (d) Clawd holding a sparkler. Each has a depth map and a distinct P-camera: 90° orbit, whip-orbit, handheld bounce, snap zoom.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S13a"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\n90° orbit smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S13b",
+      "out": "assets/keyframes/S13b.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nSonnet-chan with blue light flood\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "Sonnet-chan with blue light flood",
+      "source_motion": "whip-orbit",
+      "verbatim_spec": "**S13a–d (P)**: *KF each:* (a) 五五 mid-pose with orange burst, (b) Sonnet-chan with blue light flood, (c) Haiku-chan in a shower of green confetti glyphs, (d) Clawd holding a sparkler. Each has a depth map and a distinct P-camera: 90° orbit, whip-orbit, handheld bounce, snap zoom.",
+      "refs": [
+        "REF_SUPPORT"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_SUPPORT"
+      ],
+      "shots": [
+        "S13b"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nwhip-orbit smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S13c",
+      "out": "assets/keyframes/S13c.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nHaiku-chan in a shower of green confetti glyphs\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "Haiku-chan in a shower of green confetti glyphs",
+      "source_motion": "handheld bounce",
+      "verbatim_spec": "**S13a–d (P)**: *KF each:* (a) 五五 mid-pose with orange burst, (b) Sonnet-chan with blue light flood, (c) Haiku-chan in a shower of green confetti glyphs, (d) Clawd holding a sparkler. Each has a depth map and a distinct P-camera: 90° orbit, whip-orbit, handheld bounce, snap zoom.",
+      "refs": [
+        "REF_SUPPORT"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_SUPPORT"
+      ],
+      "shots": [
+        "S13c"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nhandheld bounce smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S13d",
+      "out": "assets/keyframes/S13d.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nClawd holding a sparkler\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "Clawd holding a sparkler",
+      "source_motion": "snap zoom",
+      "verbatim_spec": "**S13a–d (P)**: *KF each:* (a) 五五 mid-pose with orange burst, (b) Sonnet-chan with blue light flood, (c) Haiku-chan in a shower of green confetti glyphs, (d) Clawd holding a sparkler. Each has a depth map and a distinct P-camera: 90° orbit, whip-orbit, handheld bounce, snap zoom.",
+      "refs": [
+        "REF_SUPPORT"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_SUPPORT"
+      ],
+      "shots": [
+        "S13d"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nsnap zoom smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S14",
+      "out": "assets/keyframes/S14.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\n五五 frozen mid-leap in a world flooded with orange, blue and green light, petals and glyphs suspended around her, she turns toward camera crying happy tears.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "五五 frozen mid-leap in a world flooded with orange, blue and green light, petals and glyphs suspended around her, she turns toward camera crying happy tears.",
+      "source_motion": "bullet-time 360° orbit (action nearly frozen), then she turns and smiles; the camera pushes into her pupil.",
+      "verbatim_spec": "**S14**: *KF:* 五五 frozen mid-leap in a world flooded with orange, blue and green light, petals and glyphs suspended around her, she turns toward camera crying happy tears. *Motion:* bullet-time 360° orbit (action nearly frozen), then she turns and smiles; the camera pushes into her pupil.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S14"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nbullet-time 360° orbit (action nearly frozen), then she turns and smiles; the camera pushes into her pupil. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S16a",
+      "out": "assets/keyframes/S16a.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\na green hill at sunrise, 五五 from behind with hair in the wind, Clawd and two sisters beside her, golden-pink sky, valley mist.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "a green hill at sunrise, 五五 from behind with hair in the wind, Clawd and two sisters beside her, golden-pink sky, valley mist.",
+      "source_motion": "slow crane up, hair flows, light intensifies.",
+      "verbatim_spec": "**S16a**: *KF:* a green hill at sunrise, 五五 from behind with hair in the wind, Clawd and two sisters beside her, golden-pink sky, valley mist. *Motion:* slow crane up, hair flows, light intensifies.",
+      "refs": [
+        "REF_WUWU",
+        "REF_SUPPORT"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU",
+        "REF_SUPPORT"
+      ],
+      "shots": [
+        "S16a"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nslow crane up, hair flows, light intensifies. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    },
+    {
+      "id": "S16b",
+      "out": "assets/keyframes/S16b.png",
+      "kind": "keyframe",
+      "prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs.\nultra-wide of the dawn flooding a vast valley, tiny glowing window of a developer's room far below, 五五 small on the hill.\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).",
+      "source_keyframe": "ultra-wide of the dawn flooding a vast valley, tiny glowing window of a developer's room far below, 五五 small on the hill.",
+      "source_motion": "big crane-out, mist moves, clouds glow.",
+      "verbatim_spec": "**S16b**: *KF:* ultra-wide of the dawn flooding a vast valley, tiny glowing window of a developer's room far below, 五五 small on the hill. *Motion:* big crane-out, mist moves, clouds glow.",
+      "refs": [
+        "REF_WUWU"
+      ],
+      "alpha": false,
+      "deps": [
+        "REF_WUWU"
+      ],
+      "shots": [
+        "S16b"
+      ],
+      "provider": "codex-imagegen",
+      "motion_prompt": "STYLE: high-budget modern TV-anime film look, clean thick-thin cel-shaded lineart, painterly cinematic backgrounds with Makoto-Shinkai-style luminous skies and light shafts, ufotable-grade compositing (glowing particles, lens bloom, light wrap), glossy hair with angel-ring highlights, soft subsurface skin shading, anamorphic horizontal flares, filmic halation and fine grain, 16:9, 2.39-feel framing within 16:9, no text, no watermark, no logos unless specified.\nbig crane-out, mist moves, clouds glow. smooth, no cut, no morphing of face, hair stays ink-charcoal to terracotta\nNEG: realistic photo, 3D render look, extra fingers, deformed hands, blurry face, off-model hair color, text artifacts, watermark, purple/neon-magenta palette, cluttered background, chibi proportions (except Clawd).\nCharacter reference: assets/ref/wuwu.png. Hair ink-charcoal to terracotta #D97757 tips, spark-shaped ahoge, amber eyes with spark highlight, ivory cropped cardigan, charcoal skirt, barefoot, halo ring of glyphs."
+    }
+  ]
+}

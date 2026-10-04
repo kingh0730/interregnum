@@ -1,0 +1,6 @@
+# Production media, model/API responses and build output stay local.
+assets/fonts/*.ttf
+assets/fonts/*.otf
+build/**/h3_log/
+compositor/dist/
+out/qa/

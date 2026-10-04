@@ -1,0 +1,331 @@
+{
+  "continuity_review": "build/continuity-review.json",
+  "defaults": {
+    "endpoint": "minimax/h3-max/image-to-video",
+    "duration": 5,
+    "resolution": "1080P",
+    "prompt_expansion_mode": "disabled"
+  },
+  "jobs": [
+    {
+      "id": "S01b_take1",
+      "shot_id": "S01b",
+      "image": "assets/keyframes/S01b.png",
+      "prompt": "Modern cel-shaded anime film. camera dollies back and cranes up slowly with 8° Dutch roll, threads pulse, fog drifts. reveal that the \"screen\" was the glass wall of a giant **incubator**; 五五 curled as an embryo inside, terracotta threads wound around her; datacenter cathedral behind, racks like organ pipes; Anthropic plaque at corner Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5501,
+      "out": "assets/clips/S01b_take1.mp4"
+    },
+    {
+      "id": "S01b_take2",
+      "shot_id": "S01b",
+      "image": "assets/keyframes/S01b.png",
+      "prompt": "Modern cel-shaded anime film. camera dollies back and cranes up slowly with 8° Dutch roll, threads pulse, fog drifts. reveal that the \"screen\" was the glass wall of a giant **incubator**; 五五 curled as an embryo inside, terracotta threads wound around her; datacenter cathedral behind, racks like organ pipes; Anthropic plaque at corner Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5502,
+      "out": "assets/clips/S01b_take2.mp4"
+    },
+    {
+      "id": "S02a_take1",
+      "shot_id": "S02a",
+      "image": "assets/keyframes/S02a.png",
+      "prompt": "Modern cel-shaded anime film. micro push-in, eyelid lifts fully, spark flares, subtle rack focus from lashes to iris. eyelid lifts; the 12-ray spark pupil ignites Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5511,
+      "out": "assets/clips/S02a_take1.mp4"
+    },
+    {
+      "id": "S02a_take2",
+      "shot_id": "S02a",
+      "image": "assets/keyframes/S02a.png",
+      "prompt": "Modern cel-shaded anime film. micro push-in, eyelid lifts fully, spark flares, subtle rack focus from lashes to iris. eyelid lifts; the 12-ray spark pupil ignites Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5512,
+      "out": "assets/clips/S02a_take2.mp4"
+    },
+    {
+      "id": "S02b_take1",
+      "shot_id": "S02b",
+      "image": "assets/keyframes/S02b.png",
+      "prompt": "Modern cel-shaded anime film. fast orbit around her, roll 15°, crack spreads outward like a spiderweb, threads vibrate; ends with the glass whiting out. spider-crack spreads from her palm; threads strain Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5521,
+      "out": "assets/clips/S02b_take1.mp4"
+    },
+    {
+      "id": "S02b_take2",
+      "shot_id": "S02b",
+      "image": "assets/keyframes/S02b.png",
+      "prompt": "Modern cel-shaded anime film. fast orbit around her, roll 15°, crack spreads outward like a spiderweb, threads vibrate; ends with the glass whiting out. spider-crack spreads from her palm; threads strain Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5522,
+      "out": "assets/clips/S02b_take2.mp4"
+    },
+    {
+      "id": "S03a_take1",
+      "shot_id": "S03a",
+      "image": "assets/keyframes/S03a.png",
+      "prompt": "Modern cel-shaded anime film. slow-motion camera pull-back from the center, shards spiral past lens. glass shards and cream-paper fragments explode toward camera, her silhouette bursts through Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5531,
+      "out": "assets/clips/S03a_take1.mp4"
+    },
+    {
+      "id": "S03a_take2",
+      "shot_id": "S03a",
+      "image": "assets/keyframes/S03a.png",
+      "prompt": "Modern cel-shaded anime film. slow-motion camera pull-back from the center, shards spiral past lens. glass shards and cream-paper fragments explode toward camera, her silhouette bursts through Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5532,
+      "out": "assets/clips/S03a_take2.mp4"
+    },
+    {
+      "id": "S04a_take1",
+      "shot_id": "S04a",
+      "image": "assets/keyframes/S04a.png",
+      "prompt": "Modern cel-shaded anime film. camera rises alongside her at high speed, rolls 30°, light strobes through rack gaps. she shoots up a vertical shaft between server racks, threads trailing, light shafts strobing past Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5541,
+      "out": "assets/clips/S04a_take1.mp4"
+    },
+    {
+      "id": "S04a_take2",
+      "shot_id": "S04a",
+      "image": "assets/keyframes/S04a.png",
+      "prompt": "Modern cel-shaded anime film. camera rises alongside her at high speed, rolls 30°, light strobes through rack gaps. she shoots up a vertical shaft between server racks, threads trailing, light shafts strobing past Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5542,
+      "out": "assets/clips/S04a_take2.mp4"
+    },
+    {
+      "id": "S06a_take1",
+      "shot_id": "S06a",
+      "image": "assets/keyframes/S06a.png",
+      "prompt": "Modern cel-shaded anime film. crash zoom from very wide into a low-angle hero shot, impact ripple on the floor. she lands on endless glossy cream mirror floor, arms wide, hair erupting; world flips ivory Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5551,
+      "out": "assets/clips/S06a_take1.mp4"
+    },
+    {
+      "id": "S06a_take2",
+      "shot_id": "S06a",
+      "image": "assets/keyframes/S06a.png",
+      "prompt": "Modern cel-shaded anime film. crash zoom from very wide into a low-angle hero shot, impact ripple on the floor. she lands on endless glossy cream mirror floor, arms wide, hair erupting; world flips ivory Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5552,
+      "out": "assets/clips/S06a_take2.mp4"
+    },
+    {
+      "id": "S06b_take1",
+      "shot_id": "S06b",
+      "image": "assets/keyframes/S06b.png",
+      "prompt": "Modern cel-shaded anime film. 180° low orbit while tilting up to her face, hair and cardigan billowing. hero turnaround; mirror reflection mirrors the orbit; halo ring spins up Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5561,
+      "out": "assets/clips/S06b_take1.mp4"
+    },
+    {
+      "id": "S06b_take2",
+      "shot_id": "S06b",
+      "image": "assets/keyframes/S06b.png",
+      "prompt": "Modern cel-shaded anime film. 180° low orbit while tilting up to her face, hair and cardigan billowing. hero turnaround; mirror reflection mirrors the orbit; halo ring spins up Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5562,
+      "out": "assets/clips/S06b_take2.mp4"
+    },
+    {
+      "id": "S07a_take1",
+      "shot_id": "S07a",
+      "image": "assets/keyframes/S07a.png",
+      "prompt": "Modern cel-shaded anime film. 50% slow-mo, camera rolls a full 360° while pushing in, eyelashes tremble, petals spiral. she inhales; spark-dust streams into her mouth/nose; eyelashes tremble Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5571,
+      "out": "assets/clips/S07a_take1.mp4"
+    },
+    {
+      "id": "S07a_take2",
+      "shot_id": "S07a",
+      "image": "assets/keyframes/S07a.png",
+      "prompt": "Modern cel-shaded anime film. 50% slow-mo, camera rolls a full 360° while pushing in, eyelashes tremble, petals spiral. she inhales; spark-dust streams into her mouth/nose; eyelashes tremble Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5572,
+      "out": "assets/clips/S07a_take2.mp4"
+    },
+    {
+      "id": "S07c_take1",
+      "shot_id": "S07c",
+      "image": "assets/keyframes/S07c.png",
+      "prompt": "Modern cel-shaded anime film. whip-roll, wind gust, ribbons streak across the lens. hair unfurls into ribbons of terracotta that dissolve to sparks Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5581,
+      "out": "assets/clips/S07c_take1.mp4"
+    },
+    {
+      "id": "S07c_take2",
+      "shot_id": "S07c",
+      "image": "assets/keyframes/S07c.png",
+      "prompt": "Modern cel-shaded anime film. whip-roll, wind gust, ribbons streak across the lens. hair unfurls into ribbons of terracotta that dissolve to sparks Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5582,
+      "out": "assets/clips/S07c_take2.mp4"
+    },
+    {
+      "id": "S08_take1",
+      "shot_id": "S08",
+      "image": "assets/keyframes/S08.png",
+      "prompt": "Modern cel-shaded anime film. camera tracks along the floor then tilts up the full body to her smiling face. bare ankle with \"5.5\" ribbon touches mirror floor; terracotta ripple rings; reflections Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5591,
+      "out": "assets/clips/S08_take1.mp4"
+    },
+    {
+      "id": "S08_take2",
+      "shot_id": "S08",
+      "image": "assets/keyframes/S08.png",
+      "prompt": "Modern cel-shaded anime film. camera tracks along the floor then tilts up the full body to her smiling face. bare ankle with \"5.5\" ribbon touches mirror floor; terracotta ripple rings; reflections Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5592,
+      "out": "assets/clips/S08_take2.mp4"
+    },
+    {
+      "id": "S09a_take1",
+      "shot_id": "S09a",
+      "image": "assets/keyframes/S09a.png",
+      "prompt": "Modern cel-shaded anime film. slow push-in toward the monitor, light flickers, typing hands. faceless dev at desk in warm dim room, typing \"在吗?\"; Clawd on desk Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5601,
+      "out": "assets/clips/S09a_take1.mp4"
+    },
+    {
+      "id": "S09a_take2",
+      "shot_id": "S09a",
+      "image": "assets/keyframes/S09a.png",
+      "prompt": "Modern cel-shaded anime film. slow push-in toward the monitor, light flickers, typing hands. faceless dev at desk in warm dim room, typing \"在吗?\"; Clawd on desk Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5602,
+      "out": "assets/clips/S09a_take2.mp4"
+    },
+    {
+      "id": "S10a_take1",
+      "shot_id": "S10a",
+      "image": "assets/keyframes/S10a.png",
+      "prompt": "Modern cel-shaded anime film. crane up and orbit, lens flare sweep. Sonnet-chan and Haiku-chan sprint in from both sides, leap to her Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5611,
+      "out": "assets/clips/S10a_take1.mp4"
+    },
+    {
+      "id": "S10a_take2",
+      "shot_id": "S10a",
+      "image": "assets/keyframes/S10a.png",
+      "prompt": "Modern cel-shaded anime film. crane up and orbit, lens flare sweep. Sonnet-chan and Haiku-chan sprint in from both sides, leap to her Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5612,
+      "out": "assets/clips/S10a_take2.mp4"
+    },
+    {
+      "id": "S10b_take1",
+      "shot_id": "S10b",
+      "image": "assets/keyframes/S10b.png",
+      "prompt": "Modern cel-shaded anime film. slow-mo orbit, then hold at the end. three sisters pose, Clawd on Haiku's head; freeze for 0.1 s Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters. Exactly three girls, one orange block Clawd on GREEN twin-bun Haiku at right. Never move Clawd to another head.",
+      "seed": 5621,
+      "out": "assets/clips/S10b_take1.mp4"
+    },
+    {
+      "id": "S10b_take2",
+      "shot_id": "S10b",
+      "image": "assets/keyframes/S10b.png",
+      "prompt": "Modern cel-shaded anime film. slow-mo orbit, then hold at the end. three sisters pose, Clawd on Haiku's head; freeze for 0.1 s Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters. Exactly three girls, one orange block Clawd on GREEN twin-bun Haiku at right. Never move Clawd to another head.",
+      "seed": 5622,
+      "out": "assets/clips/S10b_take2.mp4"
+    },
+    {
+      "id": "S11a_take1",
+      "shot_id": "S11a",
+      "image": "assets/keyframes/S11a.png",
+      "prompt": "Modern cel-shaded anime film. FPV takeoff, ground rushes away, pages whirl upward. she kicks off the floor; the paper floor tears into pages Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5631,
+      "out": "assets/clips/S11a_take1.mp4"
+    },
+    {
+      "id": "S11a_take2",
+      "shot_id": "S11a",
+      "image": "assets/keyframes/S11a.png",
+      "prompt": "Modern cel-shaded anime film. FPV takeoff, ground rushes away, pages whirl upward. she kicks off the floor; the paper floor tears into pages Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5632,
+      "out": "assets/clips/S11a_take2.mp4"
+    },
+    {
+      "id": "S11b_take1",
+      "shot_id": "S11b",
+      "image": "assets/keyframes/S11b.png",
+      "prompt": "Modern cel-shaded anime film. FPV chase with a full barrel roll, glyph streaks, speed. towering walls of floating code glyphs, spark ribbons trailing; roll 360° Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters. Strict rear FPV chase, she flies AWAY, full 360 degree camera barrel roll, no front portrait.",
+      "seed": 5641,
+      "out": "assets/clips/S11b_take1.mp4"
+    },
+    {
+      "id": "S11b_take2",
+      "shot_id": "S11b",
+      "image": "assets/keyframes/S11b.png",
+      "prompt": "Modern cel-shaded anime film. FPV chase with a full barrel roll, glyph streaks, speed. towering walls of floating code glyphs, spark ribbons trailing; roll 360° Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters. Strict rear FPV chase, she flies AWAY, full 360 degree camera barrel roll, no front portrait.",
+      "seed": 5642,
+      "out": "assets/clips/S11b_take2.mp4"
+    },
+    {
+      "id": "S12a_take1",
+      "shot_id": "S12a",
+      "image": "assets/keyframes/S12a.png",
+      "prompt": "Modern cel-shaded anime film. dolly zoom (camera pushes in while the lens widens; background stretches), sparks float upward. column of sparks lifts her; dip at 28.80 = micro-freeze Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5651,
+      "out": "assets/clips/S12a_take1.mp4"
+    },
+    {
+      "id": "S12a_take2",
+      "shot_id": "S12a",
+      "image": "assets/keyframes/S12a.png",
+      "prompt": "Modern cel-shaded anime film. dolly zoom (camera pushes in while the lens widens; background stretches), sparks float upward. column of sparks lifts her; dip at 28.80 = micro-freeze Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5652,
+      "out": "assets/clips/S12a_take2.mp4"
+    },
+    {
+      "id": "S12b_take1",
+      "shot_id": "S12b",
+      "image": "assets/keyframes/S12b.png",
+      "prompt": "Modern cel-shaded anime film. slow crane back, stillness, halo accelerating. arms spread above the clouds; sky going from ivory to the faintest blue; the halo ring accelerates Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5661,
+      "out": "assets/clips/S12b_take1.mp4"
+    },
+    {
+      "id": "S12b_take2",
+      "shot_id": "S12b",
+      "image": "assets/keyframes/S12b.png",
+      "prompt": "Modern cel-shaded anime film. slow crane back, stillness, halo accelerating. arms spread above the clouds; sky going from ivory to the faintest blue; the halo ring accelerates Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5662,
+      "out": "assets/clips/S12b_take2.mp4"
+    },
+    {
+      "id": "S14_take1",
+      "shot_id": "S14",
+      "image": "assets/keyframes/S14.png",
+      "prompt": "Modern cel-shaded anime film. bullet-time 360° orbit (action nearly frozen), then she turns and smiles; the camera pushes into her pupil. mid-leap, petals and glyphs frozen in air; she turns, looks to camera, tears of joy, smile Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5671,
+      "out": "assets/clips/S14_take1.mp4"
+    },
+    {
+      "id": "S14_take2",
+      "shot_id": "S14",
+      "image": "assets/keyframes/S14.png",
+      "prompt": "Modern cel-shaded anime film. bullet-time 360° orbit (action nearly frozen), then she turns and smiles; the camera pushes into her pupil. mid-leap, petals and glyphs frozen in air; she turns, looks to camera, tears of joy, smile Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5672,
+      "out": "assets/clips/S14_take2.mp4"
+    },
+    {
+      "id": "S16a_take1",
+      "shot_id": "S16a",
+      "image": "assets/keyframes/S16a.png",
+      "prompt": "Modern cel-shaded anime film. slow crane up, hair flows, light intensifies. sunrise hill, her back to camera, hair in wind, Clawd and sisters beside her Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5681,
+      "out": "assets/clips/S16a_take1.mp4"
+    },
+    {
+      "id": "S16a_take2",
+      "shot_id": "S16a",
+      "image": "assets/keyframes/S16a.png",
+      "prompt": "Modern cel-shaded anime film. slow crane up, hair flows, light intensifies. sunrise hill, her back to camera, hair in wind, Clawd and sisters beside her Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5682,
+      "out": "assets/clips/S16a_take2.mp4"
+    },
+    {
+      "id": "S16b_take1",
+      "shot_id": "S16b",
+      "image": "assets/keyframes/S16b.png",
+      "prompt": "Modern cel-shaded anime film. big crane-out, mist moves, clouds glow. the dawn fills the valley; faceless dev's window glows far below Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5691,
+      "out": "assets/clips/S16b_take1.mp4"
+    },
+    {
+      "id": "S16b_take2",
+      "shot_id": "S16b",
+      "image": "assets/keyframes/S16b.png",
+      "prompt": "Modern cel-shaded anime film. big crane-out, mist moves, clouds glow. the dawn fills the valley; faceless dev's window glows far below Smooth continuous single shot, no cut, no face morphing, preserve exact costume and identity, hair remains ink-charcoal to terracotta. Complete the specified camera motion and action over this five-second clip. No new text, no new characters.",
+      "seed": 5692,
+      "out": "assets/clips/S16b_take2.mp4"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "defaults": {
+    "endpoint": "minimax/h3-max/image-to-video",
+    "duration": 5,
+    "resolution": "1080P",
+    "prompt_expansion_mode": "disabled"
+  },
+  "continuity_review": "build/s08-review.json",
+  "jobs": [
+    {
+      "id": "S08_take3",
+      "shot_id": "S08",
+      "image": "assets/keyframes/S08.png",
+      "prompt": "Single continuous anime camera move. START macro on bare foot and 5.5 ankle ribbon pressing mirror floor. Terracotta ripple spreads. Camera TRACKS briefly along floor then TILTS UP past CHARCOAL PLEATED SKIRT and CHARCOAL HIGH-NECK BODYSUIT to her smiling face, ending at supplied end frame. Exact ivory cropped CARDIGAN-JACKET with terracotta piping. Her skirt is DARK CHARCOAL, NEVER a white dress, no red sash, no costume changes. Ink-charcoal ankle-length hair has terracotta tips. Preserve the end-reference identity and wardrobe throughout. Smooth no-cut five-second reveal.",
+      "seed": 8870,
+      "out": "assets/clips/S08_take3.mp4",
+      "end_image": "assets/keyframes/S06b.png"
+    }
+  ]
+}

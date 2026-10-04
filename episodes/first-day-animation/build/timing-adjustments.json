@@ -1,0 +1,138 @@
+{
+  "measured_tempo": 178.20581896551724,
+  "adjustments": [
+    {
+      "id": "S01b",
+      "authored": 1.39,
+      "onset": 1.3931972789115645,
+      "frame": 42,
+      "difference": 0.003197278911564627
+    },
+    {
+      "id": "S02b",
+      "authored": 4.04,
+      "onset": 3.9938321995464854,
+      "frame": 120,
+      "difference": -0.04616780045351465
+    },
+    {
+      "id": "S03b",
+      "authored": 6.48,
+      "onset": 6.548027210884354,
+      "frame": 196,
+      "difference": 0.06802721088435337
+    },
+    {
+      "id": "S03c",
+      "authored": 7.15,
+      "onset": 7.22140589569161,
+      "frame": 217,
+      "difference": 0.07140589569160927
+    },
+    {
+      "id": "S03d",
+      "authored": 7.85,
+      "onset": 7.87156462585034,
+      "frame": 236,
+      "difference": 0.021564625850340136
+    },
+    {
+      "id": "S04b",
+      "authored": 9.59,
+      "onset": 9.613061224489796,
+      "frame": 288,
+      "difference": 0.023061224489795862
+    },
+    {
+      "id": "S06b",
+      "authored": 12.93,
+      "onset": 13.003174603174603,
+      "frame": 390,
+      "difference": 0.07317460317460345
+    },
+    {
+      "id": "S07b",
+      "authored": 15.67,
+      "onset": 15.731519274376417,
+      "frame": 472,
+      "difference": 0.06151927437641724
+    },
+    {
+      "id": "S07c",
+      "authored": 16.7,
+      "onset": 16.77641723356009,
+      "frame": 503,
+      "difference": 0.07641723356008967
+    },
+    {
+      "id": "S09b",
+      "authored": 21.15,
+      "onset": 21.21142857142857,
+      "frame": 636,
+      "difference": 0.06142857142857139
+    },
+    {
+      "id": "S10b",
+      "authored": 24.04,
+      "nearest_event": 23.939773242630384,
+      "difference": -0.10022675736961517,
+      "decision": "Retain explicit shot-list boundary: no measured event within tolerance."
+    },
+    {
+      "id": "S11b",
+      "authored": 26.59,
+      "onset": 26.656507936507936,
+      "frame": 800,
+      "difference": 0.06650793650793574
+    },
+    {
+      "id": "S11c",
+      "authored": 27.96,
+      "onset": 28.026485260770976,
+      "frame": 841,
+      "difference": 0.06648526077097472
+    },
+    {
+      "id": "S12b",
+      "authored": 29.68,
+      "onset": 29.733151927437643,
+      "frame": 892,
+      "difference": 0.053151927437642854
+    },
+    {
+      "id": "S13b",
+      "authored": 31.38,
+      "onset": 31.381768707482994,
+      "frame": 941,
+      "difference": 0.0017687074829950689
+    },
+    {
+      "id": "S13c",
+      "authored": 32.04,
+      "onset": 32.1015873015873,
+      "frame": 963,
+      "difference": 0.06158730158730208
+    },
+    {
+      "id": "S13d",
+      "authored": 32.74,
+      "onset": 32.79818594104309,
+      "frame": 984,
+      "difference": 0.058185941043085165
+    },
+    {
+      "id": "S13e",
+      "authored": 33.41,
+      "onset": 33.47156462585034,
+      "frame": 1004,
+      "difference": 0.06156462585034461
+    },
+    {
+      "id": "S16b",
+      "authored": 41.1,
+      "onset": 41.16897959183674,
+      "frame": 1235,
+      "difference": 0.06897959183673663
+    }
+  ]
+}

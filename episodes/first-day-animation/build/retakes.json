@@ -1,0 +1,35 @@
+{
+  "continuity_review": "build/continuity-review.json",
+  "defaults": {
+    "endpoint": "minimax/h3-max/image-to-video",
+    "duration": 5,
+    "resolution": "1080P",
+    "prompt_expansion_mode": "disabled"
+  },
+  "jobs": [
+    {
+      "id": "S07a_take3",
+      "shot_id": "S07a",
+      "image": "assets/keyframes/S07a.png",
+      "prompt": "Single continuous modern cel-shaded anime shot. Extreme close-up of the same girl inhaling, eyes CLOSED and lips slightly parted. Tiny orange spark dust flows INTO her mouth and nose, ivory petals spiral. CAMERA ROLLS CLOCKWISE A FULL 360 DEGREES about its optical axis over 5 seconds: upright at 0s, sideways at 1.25s, UPSIDE DOWN at 2.5s, sideways at 3.75s, upright at 5s. Camera simultaneously pushes slowly closer. Do not rotate the character herself. Preserve exactly her ivory cropped cardigan, charcoal bodysuit, ink-charcoal hair with terracotta tips and amber eyes. No cut, no new objects.",
+      "seed": 8833,
+      "out": "assets/clips/S07a_take3.mp4"
+    },
+    {
+      "id": "S09a_take3",
+      "shot_id": "S09a",
+      "image": "assets/keyframes/S09a.png",
+      "prompt": "Single continuous cel-shaded anime shot. Rear over-shoulder camera PUSHES FORWARD through the room straight toward the centered monitor. Developer remains FACELESS, typing hands subtle. Orange cube Clawd remains on desk. The monitor screen must KEEP ITS EXACT ORIGINAL TERRACOTTA SPARK SYMBOL for the entire take, absolutely NO LETTERS, NO WORDS, NO CHAT TEXT, NO CURSOR. Camera ends close to the spark filling center frame. Warm dim room and rain window remain intact. No cuts, no girl in room.",
+      "seed": 8834,
+      "out": "assets/clips/S09a_take3.mp4"
+    },
+    {
+      "id": "S14_take3",
+      "shot_id": "S14",
+      "image": "assets/keyframes/S14.png",
+      "prompt": "Single continuous cel-shaded anime shot. Wuwu remains frozen in a mid-leap pose with airborne petals and glyphs frozen all around her. Camera makes ONE COMPLETE 360-DEGREE ORBIT around her during seconds 0 through 3: FRONT at 0s, SIDE at .75s, BACK at 1.5s, OTHER SIDE at 2.25s, FRONT at 3s. This is BULLET TIME: camera circles, heroine and petals nearly frozen. During seconds 3 through 5 she turns her gaze to lens, smiles with joyful tears and camera dives rapidly into her RIGHT AMBER PUPIL until eye fills frame. Preserve same outfit, floor-length black-to-terracotta hair. No cut, no duplicate character.",
+      "seed": 8835,
+      "out": "assets/clips/S14_take3.mp4"
+    }
+  ]
+}

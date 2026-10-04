@@ -1,0 +1,17 @@
+{
+  "model": "onnx-community/depth-anything-v2-small",
+  "near": "white",
+  "shots": [
+    "S03b",
+    "S03c",
+    "S04c",
+    "S05",
+    "S07b",
+    "S09b",
+    "S11c",
+    "S13a",
+    "S13b",
+    "S13c",
+    "S13d"
+  ]
+}
