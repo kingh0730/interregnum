@@ -1,0 +1,35 @@
+{
+ "id": "S44_take1",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Quiet dawn in grass: Opus gently wiggles the toes of the near bare foot once, ankle tag catches a tiny glint, both girls breathe peacefully and smile softly. A light breeze moves grass and hair. Keep foot anatomy and all five toes clean. Camera locked; a real crane rig is added later. No large body motion.",
+  "image_url": "<data uri>",
+  "duration": 3,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026100441
+ },
+ "payload_sha256": "c7ec2aaed784ef4700904875264488c3f4fe33b52e79fcee1f52c4cd0f071f56",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S44_take1.mp4",
+ "phase": "done",
+ "billable_s": 3.0,
+ "price": 0.09,
+ "request_id": "01a1060b-2f7d-7e50-a0e0-e8fab58cf906",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060b-2f7d-7e50-a0e0-e8fab58cf906/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060b-2f7d-7e50-a0e0-e8fab58cf906",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060b-2f7d-7e50-a0e0-e8fab58cf906/cancel",
+ "submitted": 1791102758.916039,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad0183/zxnZ98b83wrd6-eN0Q3TM_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "zxnZ98b83wrd6-eN0Q3TM_minimax-h3.mp4",
+   "file_size": 12138874
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 1.7094538379460573
+  }
+ },
+ "done": 1791102770.667937
+}

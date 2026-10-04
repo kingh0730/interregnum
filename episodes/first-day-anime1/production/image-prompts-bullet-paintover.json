@@ -1,0 +1,18 @@
+[
+  {
+    "id": "S25front-paint",
+    "prompt": "Anime production background paintover. Preserve EXACT camera view, framing, the two girls' identities, positions, poses, hands, costumes, hair, scale and silhouette from image 1. Repaint ONLY the crude CG architectural surfaces/background into beautiful feature-film anime painterly architecture matching image 2: coherent high-rise glass/concrete buildings with delicate ink perspective lines, warm coral dawn reflections, believable atmospheric depth and luminous dawn, no repetitive texture seams. Keep all building geometry/location relationships and balcony position. Make the balcony a believable wet tiled balcony with thin dark rail, not flat beige shapes. The frozen airborne pair remain the exact same. No text, logos or letters. Avoid photoreal/3D-render sheen; elegant painterly luminous cel anime. Do not change anyone's face or anatomy.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-1d1bde8b-a9f8-4b6d-be31-dd6f995d1ec1.png",
+    "local_path": "assets/plates/S25front-paint-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "S25back-paint",
+    "prompt": "Anime production background paintover. Preserve EXACT camera view, framing, the two girls' identities, positions, poses, hands, costumes, hair, scale and silhouette from image 1. Repaint ONLY the crude CG architectural surfaces/background into beautiful feature-film anime painterly architecture matching image 2: coherent high-rise glass/concrete buildings with delicate ink perspective lines, warm coral dawn reflections, believable atmospheric depth and luminous dawn, no repetitive texture seams. Keep all building geometry/location relationships and balcony position. Make the balcony a believable wet tiled balcony with thin dark rail, not flat beige shapes. The frozen airborne pair remain the exact same. No text, logos or letters. Avoid photoreal/3D-render sheen; elegant painterly luminous cel anime. Do not change anyone's face or anatomy.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-a17a7582-c620-4d29-a79a-34e88f0fd142.png",
+    "local_path": "assets/plates/S25back-paint-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  }
+]

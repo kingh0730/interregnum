@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "errors": [],
+  "video_frames": 1311,
+  "video_duration": 43.7,
+  "original_decoded_duration": 43.67002267573696,
+  "encoded_decoded_duration": 43.67673469387755,
+  "audio_stream": {
+    "index": 1,
+    "codec_name": "aac",
+    "codec_long_name": "AAC (Advanced Audio Coding)",
+    "profile": "LC",
+    "codec_type": "audio",
+    "codec_tag_string": "mp4a",
+    "codec_tag": "0x6134706d",
+    "mime_codec_string": "mp4a.40.2",
+    "sample_fmt": "fltp",
+    "sample_rate": "44100",
+    "channels": 2,
+    "channel_layout": "stereo",
+    "bits_per_sample": 0,
+    "initial_padding": 0,
+    "id": "0x2",
+    "r_frame_rate": "0/0",
+    "avg_frame_rate": "0/0",
+    "time_base": "1/44100",
+    "start_pts": 0,
+    "start_time": "0.000000",
+    "duration_ts": 1925847,
+    "duration": "43.670000",
+    "bit_rate": "322891",
+    "nb_frames": "1882",
+    "nb_read_frames": "1881",
+    "extradata_size": 5,
+    "disposition": {
+      "default": 1,
+      "dub": 0,
+      "original": 0,
+      "comment": 0,
+      "lyrics": 0,
+      "karaoke": 0,
+      "forced": 0,
+      "hearing_impaired": 0,
+      "visual_impaired": 0,
+      "clean_effects": 0,
+      "attached_pic": 0,
+      "timed_thumbnails": 0,
+      "non_diegetic": 0,
+      "captions": 0,
+      "descriptions": 0,
+      "metadata": 0,
+      "dependent": 0,
+      "still_image": 0,
+      "multilayer": 0
+    },
+    "tags": {
+      "language": "und",
+      "handler_name": "SoundHandler"
+    }
+  },
+  "audio_alignment": [
+    {
+      "start_seconds": 2,
+      "lag_samples_22050": 0,
+      "correlation_at_zero": 0.9997899814953614
+    },
+    {
+      "start_seconds": 11,
+      "lag_samples_22050": 0,
+      "correlation_at_zero": 0.9992415990490516
+    },
+    {
+      "start_seconds": 24,
+      "lag_samples_22050": 0,
+      "correlation_at_zero": 0.9993669649130791
+    },
+    {
+      "start_seconds": 38,
+      "lag_samples_22050": 0,
+      "correlation_at_zero": 0.9994511848653932
+    }
+  ],
+  "decode_errors": "",
+  "duration_tolerance_exception": "Exact 1311 frames require 43.700 s; original song is 43.670 s. Preserve both without retiming.",
+  "manual_audiovisual_playback_verified": false
+}

@@ -1,0 +1,48 @@
+{
+  "shots": {
+    "S02": {
+      "assets": {
+        "plate": "assets/normalized/tomorrow.png",
+        "depth": "assets/depth/tomorrow.png",
+        "mask": null,
+        "layers": [],
+        "poses": [],
+        "support": {},
+        "features": {
+          "status": "not_required",
+          "eyes": [],
+          "hairpin": null,
+          "tie": null,
+          "halo": null
+        },
+        "status": "normalized_source_available",
+        "approval": false,
+        "mask_required": false,
+        "mask_status": "not_required",
+        "depth_status": "available_unreviewed",
+        "asset_id": "tomorrow",
+        "depth_input": "assets/normalized/tomorrow.png"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo"
+      ],
+      "unverified": [
+        "Billboard plane placement must match generated blank hardware locations."
+      ]
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    72
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}

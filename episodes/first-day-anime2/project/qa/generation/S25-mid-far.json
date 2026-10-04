@@ -1,0 +1,12 @@
+{
+  "id": "S25-mid-far",
+  "out": "assets/plates/S25-mid-far.png",
+  "refs": [
+    "assets/plates/S25-mid.png"
+  ],
+  "alpha": true,
+  "prompt": "Remove the entire LARGE FOREGROUND WALLS on both left and right sides. Keep ONLY the small DISTANT BUILDINGS in the central-bottom region, about the middle third of the image width. All left and right regions and all sky must be fully transparent. Preserve the exact distant paper towers, tiny bridge, rectangular windows, blank facades, existing perspective and lighting. This is a separated far-city layer, not the whole canyon. No near wall, no giant building entering the edges, no background or sky. Genuine transparent alpha outside the small distant central skyline. Do not add anything. No people, no text, no letters, no logos, no watermark.",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-cc4096a2-baf2-4b3f-b11e-1898cee29c27.png",
+  "generator": "Codex built-in",
+  "status": "pending_review"
+}

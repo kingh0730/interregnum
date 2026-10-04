@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "path": "work/opus55-firstpass/part0.mp4",
+      "bytes": 46744007,
+      "sha256": "bc59fb8687afd8c91f4ec09e593f533f4c9f8887d299fa4faaf81ae68b7e26af",
+      "reason": "Superseded firstpass movie or task-local unavailable VLC distribution cache; selected artwork and final render inputs preserved."
+    },
+    {
+      "path": "work/opus55-firstpass/part1.mp4",
+      "bytes": 33941108,
+      "sha256": "6e1e98c911161bf1f3eed0724080a189e376ace0f1b401b9bd2de1bb64c9cf53",
+      "reason": "Superseded firstpass movie or task-local unavailable VLC distribution cache; selected artwork and final render inputs preserved."
+    },
+    {
+      "path": "work/opus55-firstpass/part3.mp4",
+      "bytes": 15645355,
+      "sha256": "da381c97a864644ee7288a79b2f1cd1b30b114fc08908087eddc0c36b219bdf0",
+      "reason": "Superseded firstpass movie or task-local unavailable VLC distribution cache; selected artwork and final render inputs preserved."
+    },
+    {
+      "path": "work/opus55-firstpass/part2.mp4",
+      "bytes": 43879660,
+      "sha256": "d23ba9211ef26eaaf345a53a7fbf240cb610c742c01e1bbc326212bba06f1ce3",
+      "reason": "Superseded firstpass movie or task-local unavailable VLC distribution cache; selected artwork and final render inputs preserved."
+    },
+    {
+      "path": "work/opus55-firstpass/part4.mp4",
+      "bytes": 4746726,
+      "sha256": "bea2577276cde562fec8ecf17de4c0b3b40064e1629e7a1c38340396733753cf",
+      "reason": "Superseded firstpass movie or task-local unavailable VLC distribution cache; selected artwork and final render inputs preserved."
+    },
+    {
+      "path": "work/opus55-vlc-arm64.dmg",
+      "bytes": 56960605,
+      "sha256": "64a89d93cdd30b0e97131743e246373db82d6826ea882d265d46d74b136da2b7",
+      "reason": "Superseded firstpass movie or task-local unavailable VLC distribution cache; selected artwork and final render inputs preserved."
+    },
+    {
+      "path": "work/opus55-vlc-arm64.dmg.sha256",
+      "bytes": 87,
+      "sha256": "d52cf161770efcdc9b1869614baa7d704bae2850672ce896a292250305f9f6d5",
+      "reason": "Superseded firstpass movie or task-local unavailable VLC distribution cache; selected artwork and final render inputs preserved."
+    },
+    {
+      "path": "work/opus55-vlc-index.html",
+      "bytes": 2162,
+      "sha256": "56715b6087127db62ac37fb3a1e4e33bb217d41466742e98b902fe1fbba6430b",
+      "reason": "Superseded firstpass movie or task-local unavailable VLC distribution cache; selected artwork and final render inputs preserved."
+    }
+  ],
+  "bytes_reclaimed": 201919710,
+  "scope": "Only files created by this task; no source artwork or other productions altered."
+}

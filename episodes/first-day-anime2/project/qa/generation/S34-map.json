@@ -1,0 +1,7 @@
+{
+  "prompt": "Create a new SINGLE STRAIGHT-DOWN ORTHOGRAPHIC overhead frame of the paper world as a map. Camera points vertically down at90degrees, no horizon and no sky or sun anywhere. Use reference only for ivory handmade-paper mountains and winding charcoal ink rivers. A vast unfolded ivory paper world map fills the whole widescreen frame: tiny folded-paper hills and valleys seen from directly above, ink rivers branching across the map, restrained coral patches of warm light. Leave large areas of clean paper for code flowers made of brackets and spark shapes that will be added later. No flowers or symbols drawn by the model. Beautiful feature-film anime gouache, fine paper fibers, warm ivory/clay/charcoal, matte ink. No people, no characters, no text, no letters, no numbers, no logos, no watermark, no borders, no collage.",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-d58fb297-331f-4a8d-9611-268a0ff81597.png",
+  "output": "assets/plates/S34-map.png",
+  "status": "pending_review",
+  "reason": "Original retained horizon; S34 requires straight-down map view."
+}

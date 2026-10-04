@@ -1,0 +1,53 @@
+{
+  "id": "S36c-start",
+  "tool": "Codex built-in image_gen",
+  "prompt": "Use case: identity-preserve. TARGET is the first attached transparent LEFT-HAND dance pose. Supporting second image is approved identity reference only. Change ONE detail: CORRECT THE HEAD TILT to her anatomical LEFT, towards her raised hand on VIEWER RIGHT. Her LEFT ear lowers toward her LEFT shoulder on image right; crown of head must lean to image RIGHT of her chin; eye-line slopes visibly DOWNWARD from image-left eye to image-right eye (clockwise head tilt). Current target leans the opposite way: do not preserve that erroneous tilt. Keep torso mostly upright and left open palm beside left cheek on VIEWER RIGHT with five fingers, thumb toward centre. Preserve all other character identity/outfit/rendering, open eyes, smile, cream ribbon/long side-lock and plain barrette on her anatomical LEFT/viewer-right side, transparent alpha background, framing and scale. Do not mirror whole image. Single front mid-shot only, no second character/collage, no scene. No text, no letters, no logos, no watermark, no numbers, no starbursts or halo. Leave top hair and every raised fingertip inside transparent margins.",
+  "references": [
+    "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-95c66a77-8cfa-4c11-934d-3bef2f2ecd4b.png",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/sheets/opus-base.png"
+  ],
+  "transparent_background": true,
+  "source_path": "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-8801b50c-18c5-4625-a14e-cd146e4df919.png",
+  "selected_path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S36c-start.png",
+  "status": "superseded-framing-candidate",
+  "original_codex_image_retained": true,
+  "previous_candidate": {
+    "prompt": "Use case: illustration-story. Derive ONE production dance-pose cutout from the attached approved Opus character sheet, used ONLY as identity/clothing reference; never reproduce its sheet layout. Genuinely transparent RGBA background, no scenery/floor/checkerboard/collage. 1920x1080 landscape. FRONT MID SHOT from top of hair to just below waist, camera at face height65mm. Her anatomical LEFT hand is open beside her LEFT cheek, meaning raised open hand is on VIEWER RIGHT. Palm faces camera with exactly five clearly separated fingers, thumb towards image centre. Her anatomical RIGHT arm rests down on VIEWER LEFT; DO NOT raise the right hand. Head tilts to her anatomical LEFT (viewer right). Both amber-coral eyes open, playful happy smile. This must be the distinct LEFT-HAND response to a prior right-hand gesture; do NOT mirror her whole identity design: cream-ribbon long side lock and plain coral barrette remain on her own LEFT/viewer-right side as in reference. Asymmetric black bob with warm brown undertone, clay-coral inner layer/tips, cream oversized knit cardigan-cape/slate piping, white blouse, plain coral tie, charcoal pleated skirt/five thin parallel hem stripes; exact reference cel-anime rendering. Leave clean transparent margin above hair and all fingertips. Whole raised hand visible, no cropped fingers. Plain eyes/barrette/tie mounting areas, NO halo or starburst: all exact spark marks added later in code. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no extra fingers, no fanservice, no motion blur. One single character pose only.",
+    "references": [
+      "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/sheets/opus-base.png"
+    ],
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-95c66a77-8cfa-4c11-934d-3bef2f2ecd4b.png",
+    "rejected_reason": "Correct left hand but head tilted in prior right-hand direction; targeted edit corrected head tilt only."
+  },
+  "sha256": "9f7950fc270bdf2aadb5ff350041758d7048a74a8456536f2e07374615409b2e",
+  "alphaStatistics": {
+    "mode": "RGBA",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "min": 0,
+    "max": 255,
+    "transparentFraction": 0.7030562772984049,
+    "nonzeroBounds": [
+      453,
+      0,
+      1473,
+      941
+    ],
+    "edgeNonzeroCounts": {
+      "top": 36,
+      "bottom": 671,
+      "left": 0,
+      "right": 0
+    }
+  },
+  "visualReview": [
+    "Left palm on viewer right: five fingers; both eyes open.",
+    "Targeted edit corrected head tilt toward viewer right; eye-line now slopes downward left-to-right.",
+    "Identity asymmetry not mirrored: ribbon side lock/barrette still character left/viewer right."
+  ],
+  "generatedSymbols": "No starburst/logo/text visible; exact symbols remain code-owned",
+  "motionReview": "No motion claim; one selected pose still only",
+  "selectedReplacement": "assets/plates/S36c-start-v2.png"
+}

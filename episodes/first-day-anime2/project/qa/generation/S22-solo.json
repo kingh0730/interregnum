@@ -1,0 +1,13 @@
+{
+  "id": "S22-solo",
+  "out": "assets/plates/S22-solo.png",
+  "refs": [
+    "assets/sheets/sonnet.png",
+    "assets/worlds/canyon.png"
+  ],
+  "alpha": false,
+  "prompt": "ONE SINGLE cinematic close-up of ONE PERSON ONLY: Sonnet, the blue-haired older sister in the first reference. She lifts her round glasses with a calm smirk, long wavy sky-blue hair half-up with cream ribbon, slate-blue blazer, ivory shirt, blank poem-line ribbon flutters. Chest-up, 50mm camera at face height, slight three-degree Dutch tilt, blank paper skyscrapers of second reference behind her. No other people, no second figure, no duplicates, no younger sister, no black-haired girl. NOT a character sheet or collage. Exact hand-drawn anime cel ink and painterly paper style, dawn coral sidelight, ivory/slate palette with blue hair. No text, no letters, no logos, no numbers, no watermark.",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-ddb3c066-32db-4428-a594-cb30853488f7.png",
+  "generator": "Codex built-in",
+  "status": "pending_review"
+}

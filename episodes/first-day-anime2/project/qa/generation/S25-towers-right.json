@@ -1,0 +1,6 @@
+{
+  "prompt": "One separated architecture layer only. All empty space and the left/central open space must be fully transparent alpha, no background, no sky, no ground, no characters. The building silhouettes and tall blank right-side facades occupy the right side only. 1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Near right canyon wall of ivory paper towers viewed sharply upward, tall blank planes and window geometry, open center and left transparent; no characters or sky. Register perspective to sky and mid layers. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-73bbd2f8-4d67-46ee-a171-29d11ea06e88.png",
+  "output": "assets/plates/S25-towers-right.png",
+  "status": "pending_review"
+}

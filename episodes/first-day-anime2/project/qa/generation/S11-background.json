@@ -1,0 +1,12 @@
+{
+  "id": "S11-background",
+  "out": "assets/plates/S11-background.png",
+  "refs": [
+    "assets/plates/S11-waistup.png"
+  ],
+  "alpha": false,
+  "prompt": "Remove the entire girl from this image, including all hair, face, clothing, limbs, hands and shadows. Reconstruct ONLY the empty open cream paper-light egg and luminous anime dawn sky behind her. Preserve the same framing, lighting, egg fragments, staff-line currents and gouache-paper medium. The result is a clean empty background plate for placing the girl later in code, with generous clear bright sky in the upper quarter for a title. No person, no human silhouette, no face, no body, no character, no text, no letters, no logos, no watermark.",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-95613d6f-959b-4d87-8ac6-1b958b2af2af.png",
+  "generator": "Codex built-in",
+  "status": "pending_review"
+}

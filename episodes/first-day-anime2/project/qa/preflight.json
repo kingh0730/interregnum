@@ -1,0 +1,337 @@
+{
+  "scope": "Supplied timeline and original audio only; final rendered sync is not yet tested.",
+  "audio_sha256": "1a118d29b8ee750ab6a14673ab274ed0e090efafeb538a49c1a2c381ca338d1f",
+  "audio_probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "mp3",
+        "codec_long_name": "MP3 (MPEG audio layer 3)",
+        "codec_type": "audio",
+        "codec_tag_string": "[0][0][0][0]",
+        "codec_tag": "0x0000",
+        "mime_codec_string": "mp4a.40.34",
+        "sample_fmt": "fltp",
+        "sample_rate": "44100",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/14112000",
+        "start_pts": 353600,
+        "start_time": "0.025057",
+        "duration_ts": 616271040,
+        "duration": "43.670000",
+        "bit_rate": "320000",
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "encoder": "Lavc62.28"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/first-day.mp3",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mp3",
+      "format_long_name": "MP2/3 (MPEG audio layer 2/3)",
+      "start_time": "0.025057",
+      "duration": "43.670000",
+      "size": "1749203",
+      "bit_rate": "320440",
+      "probe_score": 51,
+      "tags": {
+        "encoder": "Lavf62.12.102"
+      }
+    }
+  },
+  "sync_verification": "grid offset error (s): 0.0\nsilence gap found: (11.45, 11.9)\nPASS 1.062\n",
+  "shots": 52,
+  "frames": 1311,
+  "duration_seconds": 43.7,
+  "cuts": [
+    {
+      "shot": "S01",
+      "frame": 0,
+      "nearest_grid_error_frames": 0.0
+    },
+    {
+      "shot": "S02",
+      "frame": 32,
+      "nearest_grid_error_frames": 0.14
+    },
+    {
+      "shot": "S03",
+      "frame": 73,
+      "nearest_grid_error_frames": 0.22
+    },
+    {
+      "shot": "S04",
+      "frame": 114,
+      "nearest_grid_error_frames": 0.33
+    },
+    {
+      "shot": "S05",
+      "frame": 155,
+      "nearest_grid_error_frames": 0.41
+    },
+    {
+      "shot": "S06",
+      "frame": 195,
+      "nearest_grid_error_frames": 0.51
+    },
+    {
+      "shot": "S07",
+      "frame": 236,
+      "nearest_grid_error_frames": 0.4
+    },
+    {
+      "shot": "S08a",
+      "frame": 277,
+      "nearest_grid_error_frames": 0.32
+    },
+    {
+      "shot": "S08b",
+      "frame": 288,
+      "nearest_grid_error_frames": 0.45
+    },
+    {
+      "shot": "S08c",
+      "frame": 298,
+      "nearest_grid_error_frames": 0.14
+    },
+    {
+      "shot": "S08d",
+      "frame": 308,
+      "nearest_grid_error_frames": 0.01
+    },
+    {
+      "shot": "S09a",
+      "frame": 318,
+      "nearest_grid_error_frames": 0.0
+    },
+    {
+      "shot": "S09b",
+      "frame": 328,
+      "nearest_grid_error_frames": 0.44
+    },
+    {
+      "shot": "S10",
+      "frame": 339,
+      "nearest_grid_error_frames": 0.33
+    },
+    {
+      "shot": "S11",
+      "frame": 359,
+      "nearest_grid_error_frames": 0.13
+    },
+    {
+      "shot": "S12",
+      "frame": 380,
+      "nearest_grid_error_frames": 0.41
+    },
+    {
+      "shot": "S13",
+      "frame": 400,
+      "nearest_grid_error_frames": 0.05
+    },
+    {
+      "shot": "S14",
+      "frame": 441,
+      "nearest_grid_error_frames": 0.06
+    },
+    {
+      "shot": "S15",
+      "frame": 482,
+      "nearest_grid_error_frames": 0.14
+    },
+    {
+      "shot": "S16",
+      "frame": 523,
+      "nearest_grid_error_frames": 0.19
+    },
+    {
+      "shot": "S17",
+      "frame": 543,
+      "nearest_grid_error_frames": 0.0
+    },
+    {
+      "shot": "S18",
+      "frame": 584,
+      "nearest_grid_error_frames": 0.1
+    },
+    {
+      "shot": "S19",
+      "frame": 605,
+      "nearest_grid_error_frames": 0.41
+    },
+    {
+      "shot": "S20",
+      "frame": 645,
+      "nearest_grid_error_frames": 0.51
+    },
+    {
+      "shot": "S21",
+      "frame": 686,
+      "nearest_grid_error_frames": 0.4
+    },
+    {
+      "shot": "S22",
+      "frame": 707,
+      "nearest_grid_error_frames": 0.14
+    },
+    {
+      "shot": "S23",
+      "frame": 727,
+      "nearest_grid_error_frames": 0.32
+    },
+    {
+      "shot": "S24",
+      "frame": 748,
+      "nearest_grid_error_frames": 0.19
+    },
+    {
+      "shot": "S25",
+      "frame": 768,
+      "nearest_grid_error_frames": 0.21
+    },
+    {
+      "shot": "S26",
+      "frame": 809,
+      "nearest_grid_error_frames": 0.13
+    },
+    {
+      "shot": "S27",
+      "frame": 850,
+      "nearest_grid_error_frames": 0.05
+    },
+    {
+      "shot": "S28a",
+      "frame": 891,
+      "nearest_grid_error_frames": 0.06
+    },
+    {
+      "shot": "S28b",
+      "frame": 901,
+      "nearest_grid_error_frames": 0.17
+    },
+    {
+      "shot": "S28c",
+      "frame": 911,
+      "nearest_grid_error_frames": 0.4
+    },
+    {
+      "shot": "S29",
+      "frame": 922,
+      "nearest_grid_error_frames": 0.37
+    },
+    {
+      "shot": "S30",
+      "frame": 932,
+      "nearest_grid_error_frames": 0.04
+    },
+    {
+      "shot": "S31",
+      "frame": 973,
+      "nearest_grid_error_frames": 0.22
+    },
+    {
+      "shot": "S32",
+      "frame": 1014,
+      "nearest_grid_error_frames": 0.09
+    },
+    {
+      "shot": "S33",
+      "frame": 1034,
+      "nearest_grid_error_frames": 0.13
+    },
+    {
+      "shot": "S34",
+      "frame": 1055,
+      "nearest_grid_error_frames": 0.41
+    },
+    {
+      "shot": "S35",
+      "frame": 1075,
+      "nearest_grid_error_frames": 0.05
+    },
+    {
+      "shot": "S36a",
+      "frame": 1095,
+      "nearest_grid_error_frames": 0.51
+    },
+    {
+      "shot": "S36b",
+      "frame": 1106,
+      "nearest_grid_error_frames": 0.29
+    },
+    {
+      "shot": "S36c",
+      "frame": 1116,
+      "nearest_grid_error_frames": 0.06
+    },
+    {
+      "shot": "S36d",
+      "frame": 1126,
+      "nearest_grid_error_frames": 0.17
+    },
+    {
+      "shot": "S36e",
+      "frame": 1136,
+      "nearest_grid_error_frames": 0.4
+    },
+    {
+      "shot": "S36f",
+      "frame": 1147,
+      "nearest_grid_error_frames": 0.29
+    },
+    {
+      "shot": "S36g",
+      "frame": 1157,
+      "nearest_grid_error_frames": 0.14
+    },
+    {
+      "shot": "S36h",
+      "frame": 1167,
+      "nearest_grid_error_frames": 0.09
+    },
+    {
+      "shot": "S37",
+      "frame": 1177,
+      "nearest_grid_error_frames": 0.32
+    },
+    {
+      "shot": "S38",
+      "frame": 1218,
+      "nearest_grid_error_frames": 0.21
+    },
+    {
+      "shot": "S39",
+      "frame": 1259,
+      "nearest_grid_error_frames": 0.13
+    }
+  ]
+}

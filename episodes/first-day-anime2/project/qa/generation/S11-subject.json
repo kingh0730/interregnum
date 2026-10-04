@@ -1,0 +1,12 @@
+{
+  "id": "S11-subject",
+  "out": "assets/plates/S11-subject.png",
+  "refs": [
+    "assets/plates/S11-waistup.png"
+  ],
+  "alpha": true,
+  "prompt": "Extract ONLY the exact girl from this frame onto a fully transparent background. Preserve her exact open-arm pose, both hands and all five fingers each, face, amber eyes, black/coral hair, cream ribbon sidelock, cardigan, blouse, plain coral tie, all ink lines, color and shading. Remove all eggshell, sky, light trails and background pixels, including gaps between fingers and hair. Do not change scale, pose, framing, or design. Every pixel outside her silhouette must be fully transparent, no glow haze, no shadows on a background. No text, no letters, no logos, no watermark.",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-dd206442-e439-4db0-8531-6a7bfdb3a646.png",
+  "generator": "Codex built-in",
+  "status": "pending_review"
+}

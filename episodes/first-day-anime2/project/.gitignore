@@ -1,0 +1,8 @@
+assets/fonts/
+assets/clips/
+public/
+out/
+qa/*.mp4
+node_modules/
+helper/motion-test/h3_log/
+qa/.matplotlib/

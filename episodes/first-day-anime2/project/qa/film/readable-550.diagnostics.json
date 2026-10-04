@@ -1,0 +1,64 @@
+{
+  "shots": {
+    "S17": {
+      "assets": {
+        "plate": "assets/normalized/S17-contact.png",
+        "depth": "assets/depth/S17-contact.png",
+        "mask": "assets/masks/S17-contact.png",
+        "layers": [],
+        "poses": [],
+        "support": {},
+        "features": {
+          "status": "anchors_located_pending_composite_review",
+          "eyes": [],
+          "hairpin": null,
+          "tie": null,
+          "halo": null,
+          "eyes_state": "outside_crop",
+          "review_evidence": [
+            "qa/features/S17-contact-anchors.png",
+            "Raw source viewed individually; final action/composite review pending."
+          ],
+          "halo_requires_subject_occlusion": false,
+          "only_character": "Opus",
+          "contact": [
+            0.36363636,
+            0.84183945
+          ]
+        },
+        "status": "normalized_source_available",
+        "approval": false,
+        "mask_required": true,
+        "mask_status": "available_unreviewed",
+        "depth_status": "available_unreviewed",
+        "asset_id": "S17-contact",
+        "depth_input": "assets/normalized/S17-contact.png"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo",
+        "eyes_state",
+        "review_evidence",
+        "halo_requires_subject_occlusion",
+        "only_character",
+        "contact"
+      ],
+      "unverified": [
+        "Contact ripple/grass remain near annotated floor anchor; below-knee masking requires plate review."
+      ]
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    550
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}

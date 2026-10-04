@@ -1,0 +1,332 @@
+{
+  "status": "eight-selected-still-poses-reviewed-render-integration-pending",
+  "generation": "Codex built-in image_gen only; no CLI/API generation or Luma",
+  "poseMethod": "One selected still per S36a–h for the authorized still plus2.5D and smear fallback. No end-pose candidates generated.",
+  "fallbackReason": "Original motion-model pilots could not submit because runtime DNS/network failed before generation. This is not evidence of model-quality failure.",
+  "sourceReference": "assets/sheets/opus-base.png",
+  "sourceReferenceSha256": "9d6a5246b5fdef5a6b9d8ce16d2eae4aaf1bbd8f14947347d7d7d501848b0c32",
+  "toolCalls": 13,
+  "batchConcurrencyMax": 2,
+  "poses": {
+    "S36a": {
+      "selected": "assets/plates/S36a-start.png",
+      "sha256": "efaf5502f794107f8ef05d0b2ae6cd7253d62d6344248f8eee227b3cdf3e56cf",
+      "generationLog": "qa/generation/S36a-start.json",
+      "alpha": {
+        "mode": "RGBA",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "min": 0,
+        "max": 255,
+        "transparentFraction": 0.6261122749391109,
+        "nonzeroBounds": [
+          130,
+          7,
+          1472,
+          941
+        ],
+        "edgeNonzeroCounts": {
+          "top": 0,
+          "bottom": 827,
+          "left": 0,
+          "right": 0
+        },
+        "alphaAbove32Bounds": [
+          340,
+          11,
+          1339,
+          941
+        ]
+      },
+      "visualReview": [
+        "Front mid-shot: anatomical right palm on viewer left, five fingers visible, right-eye wink.",
+        "Head tilts to her right; ribbon side lock and plain barrette remain on her left.",
+        "Lower torso crop is intentional; raised hand and hair remain inside the image."
+      ],
+      "approvalScope": "Selected raw still for integration; not final composite approval."
+    },
+    "S36b": {
+      "selected": "assets/plates/S36b-start.png",
+      "sha256": "a407acee9ac40bb801ba92ea1b6f6193526a2da88073c1ecac2be7b9d9e4b671",
+      "generationLog": "qa/generation/S36b-start.json",
+      "alpha": {
+        "mode": "RGBA",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "min": 0,
+        "max": 255,
+        "transparentFraction": 0.6095253954614098,
+        "nonzeroBounds": [
+          0,
+          22,
+          1612,
+          941
+        ],
+        "edgeNonzeroCounts": {
+          "top": 0,
+          "bottom": 473,
+          "left": 418,
+          "right": 0
+        },
+        "alphaAbove32Bounds": [
+          0,
+          195,
+          1610,
+          941
+        ]
+      },
+      "visualReview": [
+        "One anatomical right hand and wrist in an outward-flick configuration; five distinct digits and plausible joints.",
+        "Reference cream knit cuff and slate piping retained. No face appears in this insert.",
+        "Forearm exits lower left intentionally; all fingertips are inside the canvas."
+      ],
+      "approvalScope": "Selected raw still for integration; not final composite approval."
+    },
+    "S36c": {
+      "selected": "assets/plates/S36c-start-v2.png",
+      "sha256": "c27ddf31c2834e508b482b225807d9571ea06b32209d933be282d60486571195",
+      "generationLog": "qa/generation/S36c-start-v2.json",
+      "alpha": {
+        "mode": "RGBA",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "min": 0,
+        "max": 255,
+        "transparentFraction": 0.7623640482231566,
+        "nonzeroBounds": [
+          202,
+          91,
+          1467,
+          941
+        ],
+        "edgeNonzeroCounts": {
+          "top": 0,
+          "bottom": 577,
+          "left": 0,
+          "right": 0
+        },
+        "alphaAbove32Bounds": [
+          508,
+          93,
+          1152,
+          941
+        ]
+      },
+      "visualReview": [
+        "Front mid-shot with anatomical left open palm on viewer right and five fingers.",
+        "Head tilt corrected toward her left/viewer right. Ribbon and barrette identity placement were not mirrored.",
+        "Framing repair provides91px of transparent headroom; lower torso crop is intentional."
+      ],
+      "approvalScope": "Selected raw still for integration; not final composite approval."
+    },
+    "S36d": {
+      "selected": "assets/plates/S36d-start-v2.png",
+      "sha256": "56df7ce65b12629cd4f0710292c168d61b07f5bfdf77077a86c133355a9f22a5",
+      "generationLog": "qa/generation/S36d-start-v2.json",
+      "alpha": {
+        "mode": "RGBA",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "min": 0,
+        "max": 255,
+        "transparentFraction": 0.9004221560083185,
+        "nonzeroBounds": [
+          594,
+          108,
+          1471,
+          892
+        ],
+        "edgeNonzeroCounts": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "alphaAbove32Bounds": [
+          596,
+          110,
+          1084,
+          887
+        ]
+      },
+      "visualReview": [
+        "Full figure in a small-bounce pose with softly bent knees and relaxed balance hands.",
+        "Skirt hem and parallel stripes visible; modest coverage with no underwear/upskirt view.",
+        "Hair, hands and both shoes are enclosed by transparent margins after framing repair."
+      ],
+      "approvalScope": "Selected raw still for integration; not final composite approval."
+    },
+    "S36e": {
+      "selected": "assets/plates/S36e-start-v2.png",
+      "sha256": "1fdff90d6af5c9b90c24e54e1507a6afe51b439012904bd273f2fbeaa484a5ab",
+      "generationLog": "qa/generation/S36e-start-v2.json",
+      "alpha": {
+        "mode": "RGBA",
+        "dimensions": [
+          1671,
+          941
+        ],
+        "min": 0,
+        "max": 255,
+        "transparentFraction": 0.7584728165854856,
+        "nonzeroBounds": [
+          535,
+          125,
+          1470,
+          941
+        ],
+        "edgeNonzeroCounts": {
+          "top": 0,
+          "bottom": 239,
+          "left": 0,
+          "right": 0
+        },
+        "alphaAbove32Bounds": [
+          537,
+          127,
+          1166,
+          941
+        ]
+      },
+      "visualReview": [
+        "High-angle upper body: crossed wrists and forearms form a clear X over her chest.",
+        "Both open hands have five visible fingers; face remains unobscured.",
+        "Framing repair provides125px of transparent headroom; lower body crop is intentional."
+      ],
+      "approvalScope": "Selected raw still for integration; not final composite approval."
+    },
+    "S36f": {
+      "selected": "assets/plates/S36f-start.png",
+      "sha256": "1947a55b92f24828ae0fbea1f506d4e3735044e765c4f7aa4ebae2e0a76c65c3",
+      "generationLog": "qa/generation/S36f-start.json",
+      "alpha": {
+        "mode": "RGBA",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "min": 0,
+        "max": 255,
+        "transparentFraction": 0.8491488236580244,
+        "nonzeroBounds": [
+          132,
+          17,
+          1471,
+          927
+        ],
+        "edgeNonzeroCounts": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "alphaAbove32Bounds": [
+          452,
+          19,
+          1224,
+          925
+        ]
+      },
+      "visualReview": [
+        "Front wide full figure: arms burst open diagonally upward, five fingers per hand.",
+        "Legs naturally apart; both shoes and every hand remain inside transparent margins.",
+        "No generated emblem behind the body; background spark and effects belong to code."
+      ],
+      "approvalScope": "Selected raw still for integration; not final composite approval."
+    },
+    "S36g": {
+      "selected": "assets/plates/S36g-start-v2.png",
+      "sha256": "fdd1f9f8037f70d730e8013a1674ad06671683a9788968daeed96bc8b806e8c1",
+      "generationLog": "qa/generation/S36g-start-v2.json",
+      "alpha": {
+        "mode": "RGBA",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "min": 0,
+        "max": 255,
+        "transparentFraction": 0.8365604136900071,
+        "nonzeroBounds": [
+          473,
+          21,
+          1473,
+          884
+        ],
+        "edgeNonzeroCounts": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "alphaAbove32Bounds": [
+          565,
+          25,
+          1070,
+          847
+        ]
+      },
+      "visualReview": [
+        "Side-profile tuck jump facing left; both knees raised forward/up and lower legs folded.",
+        "Both sneakers visible, hair flares, and skirt covers hips and upper thighs.",
+        "All body parts remain inside transparent margins. Initial heels-back jump was rejected."
+      ],
+      "approvalScope": "Selected raw still for integration; not final composite approval."
+    },
+    "S36h": {
+      "selected": "assets/plates/S36h-start.png",
+      "sha256": "d5cd8f325374e8a0024592bfaf0a03d9f31df41388cb8f6cfef797dcc277a0e8",
+      "generationLog": "qa/generation/S36h-start.json",
+      "alpha": {
+        "mode": "RGBA",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "min": 0,
+        "max": 255,
+        "transparentFraction": 0.8871816351331425,
+        "nonzeroBounds": [
+          71,
+          13,
+          1610,
+          929
+        ],
+        "edgeNonzeroCounts": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "alphaAbove32Bounds": [
+          662,
+          15,
+          1073,
+          926
+        ]
+      },
+      "visualReview": [
+        "Front full figure with soft landing knees and a friendly right-hand finger-gun aimed toward the viewer.",
+        "Foreshortened pointing index, raised thumb, and folded fingers; no actual object or weapon.",
+        "Both shoes and hands complete. A still cannot prove the timing or mechanics of the landing."
+      ],
+      "approvalScope": "Selected raw still for integration; not final composite approval."
+    }
+  },
+  "pending": [
+    "Code eye, barrette and tie sparks, halos, exact text, trails and shock rings.",
+    "Source feature annotations and depth by main production agents.",
+    "Actual2.5D/smear motion and shot crops require rendered review; no final motion or camera pass.",
+    "Final symbol absence, modesty and edge quality must be checked in composites."
+  ],
+  "reviewContact": "qa/dance/eight-poses-checker.jpg",
+  "contactSha256": "5e9e1b8dcf1403a7b18d87df442445b76b160d69dc89cf4ce26cb8d08aeb839b"
+}

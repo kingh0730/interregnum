@@ -1,0 +1,224 @@
+{
+  "shots": {
+    "S27": {
+      "assets": {
+        "plate": "assets/normalized/S27.png",
+        "depth": "assets/depth/S27.png",
+        "mask": "assets/masks/S27.png",
+        "layers": [],
+        "poses": [],
+        "support": {},
+        "features": {
+          "status": "anchors_located_pending_composite_review",
+          "eyes": [
+            [
+              0.51375598,
+              0.13795853,
+              0.00478469
+            ],
+            [
+              0.54665072,
+              0.11988304,
+              0.00478469
+            ]
+          ],
+          "hairpin": [
+            0.5562201,
+            0.07203615,
+            0.01076555
+          ],
+          "tie": [
+            0.55861244,
+            0.24641148,
+            0.01435407
+          ],
+          "halo": [
+            0.53349282,
+            0.11881978,
+            0.20334928,
+            0.28708134
+          ],
+          "eyes_state": "open",
+          "review_evidence": [
+            "qa/features/S27-anchors.png",
+            "qa/features/batch-S26-dance3-overlay-grid.jpg"
+          ],
+          "halo_requires_subject_occlusion": true,
+          "only_character": "Opus",
+          "heart": [
+            0.56818182,
+            0.29106858
+          ]
+        },
+        "status": "normalized_source_available",
+        "approval": false,
+        "mask_required": true,
+        "mask_status": "available_unreviewed",
+        "depth_status": "available_unreviewed",
+        "asset_id": "S27",
+        "depth_input": "assets/normalized/S27.png"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [
+        {
+          "frame": 39.75,
+          "clamped": true,
+          "retainedMoveFraction": 0.14939498901367188,
+          "requestedProjectedTravelFraction": 0.0471026842052269,
+          "actualProjectedTravelFraction": 0.0030367817745337246,
+          "coverageClamped": true,
+          "requestedCoverage": {
+            "safe": false,
+            "uvBounds": {
+              "minU": -1.4717320853039992,
+              "maxU": 0.8683595546966907,
+              "minV": -1.004711686090174,
+              "maxV": 2.004711686090174
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": true
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.00052090456564019,
+              "maxU": 0.9145521585937102,
+              "minV": 0.007662036091690083,
+              "maxV": 0.9923379639083099
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false
+          },
+          "requestedCameraPosition": [
+            -0.043585748007658215,
+            0,
+            9.998187381064339
+          ],
+          "actualCameraPosition": [
+            -5.4740951103377,
+            0,
+            8.009691513503078
+          ],
+          "requestedCameraQuaternion": [
+            0,
+            -0.0021816598269984,
+            0,
+            0.9999976201773678
+          ],
+          "actualCameraQuaternion": [
+            0,
+            -0.29288531100176374,
+            0,
+            0.9561475799265511
+          ],
+          "sourceCropReserve": 0.08,
+          "backgroundMode": "finite-source-plane",
+          "foregroundLayers": [],
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 40,
+          "clamped": true,
+          "retainedMoveFraction": 0.14864349365234375,
+          "requestedProjectedTravelFraction": 0.047833562907950156,
+          "actualProjectedTravelFraction": 0.0030793997451276298,
+          "coverageClamped": true,
+          "requestedCoverage": {
+            "safe": false,
+            "uvBounds": {
+              "minU": -1.5192768178061455,
+              "maxU": 0.8685089913091626,
+              "minV": -1.0355563426745944,
+              "maxV": 2.035556342674594
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": true
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.0005211967715631483,
+              "maxU": 0.9143867860138091,
+              "minV": 0.007707605080634061,
+              "maxV": 0.9922923949193659
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false
+          },
+          "requestedCameraPosition": [
+            2.220446049250313e-16,
+            0,
+            9.999999999999998
+          ],
+          "actualCameraPosition": [
+            -5.47241413706293,
+            0,
+            8.008204144531527
+          ],
+          "requestedCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "actualCameraQuaternion": [
+            0,
+            -0.29282449183421383,
+            0,
+            0.9561662078226958
+          ],
+          "sourceCropReserve": 0.08,
+          "backgroundMode": "finite-source-plane",
+          "foregroundLayers": [],
+          "requiresVisualEdgeQA": true
+        }
+      ],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo",
+        "eyes_state",
+        "review_evidence",
+        "halo_requires_subject_occlusion",
+        "only_character",
+        "heart"
+      ],
+      "unverified": [],
+      "heart": {
+        "anchor": [
+          0.56818182,
+          0.29106858
+        ],
+        "exactBrandSpark": true,
+        "subtleHeartOutline": true
+      },
+      "particleOrbitDegrees": 360
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    890
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}

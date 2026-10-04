@@ -1,0 +1,7 @@
+{
+  "prompt": "Targeted edit. Replace ONLY the person sitting at the laptop with an anonymous warm cream paper-cut human silhouette. It must have a completely plain smooth head shape and no detailed hair, no black bob, no coral hair, no ribbon, no cream school cardigan, no blouse or tie. A neutral featureless cream silhouette of a person seated in precisely the same pose, viewed over the shoulder from behind, no face visible. Maintain the exact laptop, blank screen, keyboard, desk, mug, book, plants, window, sunset lighting and composition unchanged. Person is the unseen USER, NOT the anime girl. Preserve hand-painted cinematic anime atmosphere and warm ivory paper texture. No text, no letters, no logos, no watermark.",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-375737a2-2438-4a8a-94dd-87983115df6c.png",
+  "output": "assets/plates/S19-user.png",
+  "status": "pending_review",
+  "reason": "Original wronglydepictedOpus asuser; replacewithanonymoussilhouette."
+}

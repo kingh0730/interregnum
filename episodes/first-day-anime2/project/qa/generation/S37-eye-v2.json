@@ -1,0 +1,26 @@
+{
+  "id": "S37-eye-v2",
+  "tool": "Codex built-in image_gen",
+  "prompt": "Use case: precise-object-edit. FIRST image is a macro candidate with geometry drift. SECOND image is the authoritative bust: match its anatomicalLEFT/viewerRIGHT eye EXACTLY, not merely the same anime identity. Correct the macro EYE SHAPE to match that actual bust eye. In particular the current macro iris is too wide/round: make the visible iris a NARROWER VERTICAL OVAL, around20%narrower horizontally while preserving its visible height, exactly as the bust. The current upper lashes are too thick/flamboyant with multiple long spikes: replace them with the bust's simpler thinner upper-lid contour and only its few SHORT corner lash flicks. Preserve the bust's eye opening and inner/outer canthus positions and direct gaze, eyebrow shape, iris-to-pupil proportion and ordinary small upper iris highlight. This is optical enlargement of that ONE eye at the SAME frozen head angle and calm expression, not beautification or redesign. Keep macro composition/skin/hair/brown-coral palette; one single eye, inner/nose sideLEFT and outer/hair sideRIGHT. The entire visible eye remains within frame. No new makeup, dramatic long lashes, sparkling eye textures, logos/starbursts, tiles/reflections, text, letters, numbers, watermark or collage. Ring/spark pupil/reflection mosaic all added later by code. Crisp anime linework, no blur. Single opaque image, same ivory void wherever background visible.",
+  "references": [
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S37-eye.png",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S37-bust.png"
+  ],
+  "transparent_background": false,
+  "source_path": "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-d05e1821-29bb-4f6a-89b6-b922fbf69ef0.png",
+  "selected_path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S37-eye-v2.png",
+  "status": "selected-corrected-macro-render-review-pending",
+  "original_codex_image_retained": true,
+  "revision_reason": "First macro widened iris and exaggerated lash spikes relative to bust; targeted edit restores narrower vertical iris and simpler upper-lid lashes.",
+  "sha256": "277e94c07ba6194bffc84f65d1c0684ee552875ee0906fe000433df4029d0652",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "visualReview": [
+    "Same anatomical left/viewer-right eye as bust; nose side left, hair/ear side right.",
+    "Corrected iris now a narrower vertical oval; lash spikes reduced relative to rejected first candidate.",
+    "Ordinary catchlight matches source placement; no generated starburst/text/logo/reflection tiles.",
+    "Fine eyelash/iris texture remains a generative interpretation; seamless compositing still requires rendered review."
+  ]
+}

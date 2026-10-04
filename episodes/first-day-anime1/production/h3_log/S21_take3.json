@@ -1,0 +1,35 @@
+{
+ "id": "S21_take3",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Cinematic cel anime, same girl takes exactly three short barefoot steps forward, one foot contact at 0, 1 and 2 seconds. Camera TRACKS BACKWARDS to keep her ENTIRE body, head and both feet inside frame throughout, low 24mm view, then TILTS UP gently to her face as she looks up at the end. Do not crop the head. Natural alternating feet, five toes each, no deformation. Long coral-cream twin-tails and sash follow through. Preserve identity/outfit/location/night lighting. No text/letters/logos, blank ankle charm, no cuts.",
+  "image_url": "<data uri>",
+  "duration": 3,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026102133
+ },
+ "payload_sha256": "6bb4f5738b91e81d200c8affb0d32e4371c140f8fe7a3238d1ce8cb182856b31",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S21_take3.mp4",
+ "phase": "done",
+ "billable_s": 3.0,
+ "price": 0.09,
+ "request_id": "01a1062a-6ace-78f3-a6af-84fc73eb6a11",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a1062a-6ace-78f3-a6af-84fc73eb6a11/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a1062a-6ace-78f3-a6af-84fc73eb6a11",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a1062a-6ace-78f3-a6af-84fc73eb6a11/cancel",
+ "submitted": 1791104805.741299,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad0250/JSUixkLrIXYT6wvXYXAeh_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "JSUixkLrIXYT6wvXYXAeh_minimax-h3.mp4",
+   "file_size": 12389681
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 1.7315170189831406
+  }
+ },
+ "done": 1791104817.613699
+}

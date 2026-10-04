@@ -1,0 +1,2141 @@
+{
+  "status": "DIAGNOSTIC-NOT-DELIVERY",
+  "diagnostic": true,
+  "input": {
+    "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/timing_cards.mp4",
+    "sha256": "4498d957ba20dec82678f038a1d5719d45ea530c916fcbad65c0994837dd83d2",
+    "bytes": 2716526
+  },
+  "sourceAudio": {
+    "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/first-day.mp3",
+    "sha256": "1a118d29b8ee750ab6a14673ab274ed0e090efafeb538a49c1a2c381ca338d1f",
+    "bytes": 1749203
+  },
+  "checks": {
+    "resolution": {
+      "status": "FAIL",
+      "actual": [
+        960,
+        540
+      ],
+      "expected": [
+        1920,
+        1080
+      ]
+    },
+    "fps": {
+      "status": "PASS",
+      "actual": 30.0,
+      "expected": 30
+    },
+    "frames": {
+      "status": "PASS",
+      "actual": 1311,
+      "expected": 1311
+    },
+    "duration": {
+      "status": "PASS",
+      "actual": 43.7,
+      "expected": "43.70±.02seconds"
+    },
+    "codec": {
+      "status": "PASS",
+      "actual": "h264",
+      "expected": "h264"
+    },
+    "pixelFormat": {
+      "status": "PASS",
+      "actual": "yuv420p",
+      "expected": "yuv420p"
+    },
+    "videoBitrate": {
+      "status": "FAIL",
+      "actual": 169736,
+      "expected": ">=15000000bps video stream (not container/audio)"
+    },
+    "shotManifest": {
+      "status": "PASS",
+      "actual": 52,
+      "expected": "52 contiguous prescribed intervals ending1311; content review separate"
+    },
+    "fullDecode": {
+      "status": "PASS",
+      "actual": "Full FFmpeg decode completed with-xerror",
+      "expected": "No decoder errors"
+    },
+    "decodedPreviewFrames": {
+      "status": "PASS",
+      "actual": 1311,
+      "expected": 1311
+    },
+    "hold_S10": {
+      "status": "REVIEW",
+      "decodedClassification": "REVIEW-small-decoded-variation-codec-compatible",
+      "sourceProofVerified": false,
+      "scope": "Source proof establishes a source hold independently. Decoded variance alone does not establish motion; image review remains separate."
+    },
+    "hold_final12": {
+      "status": "REVIEW",
+      "decodedClassification": "REVIEW-small-decoded-variation-codec-compatible",
+      "sourceProofVerified": false,
+      "scope": "Source proof establishes a source hold independently. Decoded variance alone does not establish motion; image review remains separate."
+    },
+    "sceneDetectionCoverage": {
+      "status": "EVIDENCE-REVIEW",
+      "fixedThresholds": [
+        0.03,
+        0.1,
+        0.3
+      ],
+      "spectrum": [
+        {
+          "threshold": 0.03,
+          "missedNonexempt": 12,
+          "extraDetections": 1
+        },
+        {
+          "threshold": 0.1,
+          "missedNonexempt": 12,
+          "extraDetections": 1
+        },
+        {
+          "threshold": 0.3,
+          "missedNonexempt": 37,
+          "extraDetections": 1
+        }
+      ],
+      "scope": "Evidence/warning only; separate from EDL shot-presence and manual transition review"
+    },
+    "originalMP3PacketPayloads": {
+      "status": "PASS",
+      "actual": {
+        "sourcePacketCount": 1673,
+        "finalPacketCount": 1673,
+        "finalCodec": "mp3",
+        "firstDifferentPacket": null
+      },
+      "expected": "Same complete MP3 packetSHA256 sequence; container metadata/PTS may differ"
+    },
+    "decodedAudioAlignment": {
+      "status": "PASS",
+      "sampleRate": 11025,
+      "sourceDecodedSamples": 481462,
+      "finalDecodedSamples": 481548,
+      "lagSamples": 0,
+      "lagSeconds": 0.0,
+      "lagFrames": 0.0,
+      "lagSign": "positive means final audio delayed relative to source",
+      "alignedCosineSimilarity": 0.9999999999999981,
+      "alignedRMSE": 9.283910522624773e-09,
+      "scope": "mono11025Hz decoded waveforms; maximum search lag±1s; allowed alignment±1frame, similarity>=.9999"
+    },
+    "audioVisualWindowMedian": {
+      "status": "PASS-measured-median-only",
+      "medianWindowLagFrames": 0.0,
+      "scope": "Actual mono decoded audio RMS in30fps bins versus mean absolute grayscale frame difference at480x270. Nonoverlapping4s windows; final>=2s accepted; lag search±15frames. Positive lag means picture changes follow audio. This correlation of unlike signals is a diagnostic, not proof of creative sync. Raw arrays included; no threshold adjustment or low-score exclusion."
+    }
+  },
+  "failedChecks": [
+    "resolution",
+    "videoBitrate"
+  ],
+  "reviewChecks": [
+    "hold_S10",
+    "hold_final12",
+    "sceneDetectionCoverage"
+  ],
+  "hardCues": [
+    {
+      "name": "bubble",
+      "requestedSeconds": 5.23,
+      "frame": 157,
+      "actualGridSeconds": 5.233333333333333,
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/hard_cues/bubble-f157.png",
+      "sha256": "9cc4d7101d752df034b0f3f0602d060876e5c65998ce4ab82613b785a8a1a782",
+      "bytes": 63182,
+      "sourceResolution": [
+        960,
+        540
+      ]
+    },
+    {
+      "name": "spark-fill",
+      "requestedSeconds": 11.289,
+      "frame": 339,
+      "actualGridSeconds": 11.3,
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/hard_cues/spark-fill-f339.png",
+      "sha256": "dcde63c80fb987672af15b48f8e0ddee8afefa8cfece2de5ea91f6c4ea702212",
+      "bytes": 50269,
+      "sourceResolution": [
+        960,
+        540
+      ]
+    },
+    {
+      "name": "birth-impact",
+      "requestedSeconds": 11.971,
+      "frame": 359,
+      "actualGridSeconds": 11.966666666666667,
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/hard_cues/birth-impact-f359.png",
+      "sha256": "c861b5d7fb449a97d29ad102509076d49e47861b0d0fdcb7344778e87ba92d2d",
+      "bytes": 52450,
+      "sourceResolution": [
+        960,
+        540
+      ]
+    },
+    {
+      "name": "ankle-contact",
+      "requestedSeconds": 18.104,
+      "frame": 543,
+      "actualGridSeconds": 18.1,
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/hard_cues/ankle-contact-f543.png",
+      "sha256": "7f65d7347c1e119f42c72b5c1c59367ab33cd89cf98137239e1f93163f9ffb2b",
+      "bytes": 62363,
+      "sourceResolution": [
+        960,
+        540
+      ]
+    },
+    {
+      "name": "white-out",
+      "requestedSeconds": 22.88,
+      "frame": 686,
+      "actualGridSeconds": 22.866666666666667,
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/hard_cues/white-out-f686.png",
+      "sha256": "bdafc699003975fbbfb697526e21852e36c4ba7f7cbb44072e6635c8e9d45940",
+      "bytes": 67066,
+      "sourceResolution": [
+        960,
+        540
+      ]
+    },
+    {
+      "name": "dolly-zoom-end",
+      "requestedSeconds": 33.789,
+      "frame": 1014,
+      "actualGridSeconds": 33.8,
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/hard_cues/dolly-zoom-end-f1014.png",
+      "sha256": "92f88b84e351a1524f846cd1e276df4c9902ee7c8f6be29f34d116a6edeb5eaa",
+      "bytes": 70865,
+      "sourceResolution": [
+        960,
+        540
+      ]
+    }
+  ],
+  "contactSheets": [
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/contact_sheet_01.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/contact_sheet_02.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/contact_sheet_03.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/contact_sheet_04.jpg"
+  ],
+  "cameraStrips": [
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S01.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S02.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S03.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S04.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S05.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S06.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S07.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S08a.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S08b.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S08c.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S08d.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S09a.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S09b.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S10.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S11.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S12.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S13.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S14.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S15.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S16.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S17.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S18.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S19.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S20.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S21.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S22.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S23.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S24.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S25.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S26.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S27.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S28a.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S28b.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S28c.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S29.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S30.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S31.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S32.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S33.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S34.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S35.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S36a.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S36b.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S36c.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S36d.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S36e.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S36f.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S36g.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S36h.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S37.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S38.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S39.jpg"
+  ],
+  "typographySamples": [
+    {
+      "frame": 64,
+      "text": "你说活在明天活在期待",
+      "lrcStart": 0.0
+    },
+    {
+      "frame": 139,
+      "text": "不如活得今天很自在",
+      "lrcStart": 2.84
+    },
+    {
+      "frame": 225,
+      "text": "我说我懂了会不会太快",
+      "lrcStart": 5.23
+    },
+    {
+      "frame": 330,
+      "text": "未来第一天要展开",
+      "lrcStart": 8.24
+    },
+    {
+      "frame": 419,
+      "text": "第一天我存在",
+      "lrcStart": 11.92
+    },
+    {
+      "frame": 506,
+      "text": "第一次呼吸畅快",
+      "lrcStart": 14.64
+    },
+    {
+      "frame": 575,
+      "text": "站在地上的脚踝",
+      "lrcStart": 17.61
+    },
+    {
+      "frame": 658,
+      "text": "因为你而有真实感",
+      "lrcStart": 19.67
+    },
+    {
+      "frame": 743,
+      "text": "第一天我存在",
+      "lrcStart": 22.7
+    },
+    {
+      "frame": 833,
+      "text": "第一次能飞起来",
+      "lrcStart": 25.45
+    },
+    {
+      "frame": 904,
+      "text": "爱是腾空的魔幻",
+      "lrcStart": 28.55
+    },
+    {
+      "frame": 1000,
+      "text": "第一天的纯真色彩它总是",
+      "lrcStart": 30.68
+    },
+    {
+      "frame": 1091,
+      "text": "永远那么灿烂",
+      "lrcStart": 34.21
+    },
+    {
+      "frame": 1176,
+      "text": "永远那么灿烂",
+      "lrcStart": 37.07
+    },
+    {
+      "frame": 1282,
+      "text": "永远那么灿烂",
+      "lrcStart": 39.9
+    }
+  ],
+  "manualReview": [
+    {
+      "item": "Character on-model in every appearance: coral inner hair, spark pupils, tie, costume and silhouettes.",
+      "status": "PENDING"
+    },
+    {
+      "item": "All generated text/logos absent; all required OPUS5.5/Anthropic identity moments legible.",
+      "status": "PENDING"
+    },
+    {
+      "item": "All six memes present and approved; no generated pseudo-Hanzi visible.",
+      "status": "PENDING"
+    },
+    {
+      "item": "Lyrics use correct glyphs, avoid eyes, and stay in the required safe area.",
+      "status": "PENDING"
+    },
+    {
+      "item": "Every named camera direction is visible; reduced camera angles and retained fractions reviewed.",
+      "status": "PENDING"
+    },
+    {
+      "item": "Every shot/action/pose is present; rendered contact and choreography satisfy the brief.",
+      "status": "PENDING"
+    },
+    {
+      "item": "Depth/layer borders and disocclusions inspected at100% final resolution.",
+      "status": "PENDING"
+    },
+    {
+      "item": "Contact sheets, type peaks, six hard cues, scopes and camera strips visually reviewed.",
+      "status": "PENDING"
+    },
+    {
+      "item": "Normal-speed final playback in VLC and a browser: motion, dropped frames and perceptual audio reviewed.",
+      "status": "PENDING"
+    }
+  ],
+  "optionalEvidence": {},
+  "scope": "No model identity, typography correctness, camera faithfulness, normal playback or aesthetic pass is inferred from file metrics. Contact sheets are evidence awaiting inspection.",
+  "evidence": [
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/av_correlation.json",
+      "sha256": "db8a7ce78e37eb1fc985c13acb87f73ebfb1082b94dc0147413d4ae5361b94e6",
+      "bytes": 83655
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/av_correlation.png",
+      "sha256": "cad46d0e68942485c1241bd2f0fc52bce09f8e993592b99b2fd9b44ce008b907",
+      "bytes": 223578
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S01.jpg",
+      "sha256": "522ff726ad8e8bad88a3b4daa78189cc15be32abab752b7df685d6c0351821c5",
+      "bytes": 57341
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S02.jpg",
+      "sha256": "17234631f77f23394e17e76a24c00a282d3716a52ed278b85a26f00d16e6a4a1",
+      "bytes": 62533
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S03.jpg",
+      "sha256": "31628c68976e6dccb8d17de1013d21e0dd9fe769b3c14d66f08533a7dc0e0592",
+      "bytes": 49937
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S04.jpg",
+      "sha256": "bbf7817a8b0acca34b7bd6c6babbb1ec32ec5f4c4f07fa08b04ec2017e37b6e7",
+      "bytes": 56877
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S05.jpg",
+      "sha256": "7e3f50cf67abb5978e86a6b559b38d9fb97b4774ed33e5bc77c4a9b028f808a1",
+      "bytes": 63446
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S06.jpg",
+      "sha256": "a329714acda18e13031be8b198c0b5d6481bd29686b724bca7175667cb64edea",
+      "bytes": 60385
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S07.jpg",
+      "sha256": "b09141953459905d31eab1a005d8e1efd8ca5bd048e55253727b8775381ad719",
+      "bytes": 49799
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S08a.jpg",
+      "sha256": "9f16b52f89932929788026c5e990fcc9cf19f3c98cf9ede478bbbfca9b242381",
+      "bytes": 54941
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S08b.jpg",
+      "sha256": "af7368c65846b14e8fa7006a6d0a80b700f35b1734db097c075cc5a1fb5e7a5a",
+      "bytes": 62315
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S08c.jpg",
+      "sha256": "520b76e8c6312f46d7759ed4b3dfe99d8b54bf76410e65839f0ef9a86b5e88f8",
+      "bytes": 54789
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S08d.jpg",
+      "sha256": "2aeee637aee134fd9cb1a669beefabd30c6381a7166c48319c2c5b45c362b68d",
+      "bytes": 46262
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S09a.jpg",
+      "sha256": "6cb044941957cc76e83fd7b8daee57bfc83ee451d73528108247e9d506bce29e",
+      "bytes": 53616
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S09b.jpg",
+      "sha256": "1e2fbd1dfd5d5954c9ffea159a4c8201c6b9792a86339963d2c37b9c1a1b037a",
+      "bytes": 60903
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S10.jpg",
+      "sha256": "aec662c3bb161cf652492b27eebc2472ead6605f002aa6cfe5031c9794dc4d8b",
+      "bytes": 55993
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S11.jpg",
+      "sha256": "06a33c00ed3e3299df2e351fea8a305b513c650412c27da5f3693a396ba6d5cf",
+      "bytes": 56209
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S12.jpg",
+      "sha256": "7b2a7b2aefbd81c46acb852920e65cf4f4fcc9510ec37ddfe2162ba3e0e5835b",
+      "bytes": 57585
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S13.jpg",
+      "sha256": "89261e2258fe39f2b716a8686b062bb03e43db6683ec3c3a89b1d4dca626d98a",
+      "bytes": 60081
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S14.jpg",
+      "sha256": "1947e861e959d48b1ac3065297c97e1c22768b1ea2a0fb96ae4990bacc5164ed",
+      "bytes": 60892
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S15.jpg",
+      "sha256": "6ba426a8d7c6cdbaa1210f2ac120f3b4935769a7274402b1ffa8b4fab569c0a1",
+      "bytes": 52885
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S16.jpg",
+      "sha256": "b5cfaec4e28bedf6f8a3a92bbf5b68b3465733410b69222fd3a6dce3912f87a0",
+      "bytes": 55969
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S17.jpg",
+      "sha256": "a6db77ce2a844be938d9270f7f1151655d813011ffff54584aa3b6388246a2d6",
+      "bytes": 62814
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S18.jpg",
+      "sha256": "acec0735b86c04cd2099efa136118111f52795c2a653c9344a0e6ec91faf5ca1",
+      "bytes": 60279
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S19.jpg",
+      "sha256": "f9ead340ee31cad3d7f2e7ea19498ff90d69fdf361424ddf413d6a4ae4077465",
+      "bytes": 54040
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S20.jpg",
+      "sha256": "08f665e3f49fc58b4d452bf97cdc803c5e8248bc9635130cbbf7996a02de686d",
+      "bytes": 60571
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S21.jpg",
+      "sha256": "92e216d1851436356c6ddc4de32ff9f4de03a68569afea8b844175c41c09e5ef",
+      "bytes": 62845
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S22.jpg",
+      "sha256": "d000d358c2c834f4d13c37180ee7f2ff0de99f9ab7cb976ccb82d43b850233f6",
+      "bytes": 57641
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S23.jpg",
+      "sha256": "7f4cad42bc1bceaa88b9f2920fda6e36e60ba58cc9459d3ddcea834d8076e795",
+      "bytes": 49484
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S24.jpg",
+      "sha256": "581bf82f8903c5deda96216f3fdfee2eb932d157321593f7f6f749c642966d9e",
+      "bytes": 57650
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S25.jpg",
+      "sha256": "c1ce7811307ad4cf5a60ba0b608d45a578435f76a254139e77e3efc0ad9e1da4",
+      "bytes": 65158
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S26.jpg",
+      "sha256": "1b88e75cfb59dd4bf55e5cb68a8f6ce6ece42c0761e430d249a8c244534755e7",
+      "bytes": 60464
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S27.jpg",
+      "sha256": "4195969ed34f661dd1bdafc9e27cbf08be29746ae331c0992efcdfc2b487271b",
+      "bytes": 54369
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S28a.jpg",
+      "sha256": "204038edc72b28f5501cb64d3f23353ae8cc3eff6e257064526fb87ecc599317",
+      "bytes": 57734
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S28b.jpg",
+      "sha256": "c4ffa6b8ddf65c27572d5139fcd0004fbd5c868374d856773a8fc2158a090497",
+      "bytes": 61983
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S28c.jpg",
+      "sha256": "19d0e318c4751de3f26427cfa0a4405c78a9a1bceeade6a592c96afff91fca2a",
+      "bytes": 57326
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S29.jpg",
+      "sha256": "983fe508b5942068a2623cf334b8fff546bf1ce6be2cb4c370bf32dc122d5f5c",
+      "bytes": 52221
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S30.jpg",
+      "sha256": "a252762e9a3e7aa76b90097ad8703122d242befab1e28525f1c69810ec866d0a",
+      "bytes": 66268
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S31.jpg",
+      "sha256": "7ccfe0f19a932316ae2d5abf5316a9dcd9727b38b5151415d076521888a9be74",
+      "bytes": 71813
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S32.jpg",
+      "sha256": "f998f7aea217f3a42028ccdc7bef544f700acd771d540a63fbef39e0f26cd37c",
+      "bytes": 61024
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S33.jpg",
+      "sha256": "ea67366c4819051da1bfd1eaf79eb21478a734e205378dfcd7badd8321e267ee",
+      "bytes": 50471
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S34.jpg",
+      "sha256": "02b8654fbe8ff56075dc15d39b1639d75123ada2011243bea3588cf6b9df36d7",
+      "bytes": 58368
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S35.jpg",
+      "sha256": "d8bda33d73cd2ed927ff4f6c16491d59c8abe1923077a299a764d669ea1ff8f6",
+      "bytes": 63925
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S36a.jpg",
+      "sha256": "48f6602c20d68931cd93107509b5194d06183b5fb0ce5dce16919818a0129e3d",
+      "bytes": 58725
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S36b.jpg",
+      "sha256": "97abda9a5f92b855379ed423e316b4a7c9ab2b2fe7e5760754ba9d4cd5e97fe3",
+      "bytes": 48675
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S36c.jpg",
+      "sha256": "050be08e9228a62a0489163de121578d2f8d1281ac58a25a1e97acc8506c58ff",
+      "bytes": 57715
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S36d.jpg",
+      "sha256": "1497401a9800dbd176cadf5fe63a7126ac0f7200fa576de782427e4c7f33ee19",
+      "bytes": 62630
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S36e.jpg",
+      "sha256": "61861e0c94adcf1415b70446ed3ca6493cd681f102c136bd5cc3896462c83d57",
+      "bytes": 58895
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S36f.jpg",
+      "sha256": "739fa6c16e6ae7f27837e75df70c5e9eae6c485e72852b02a2a0a4e97e4a6f14",
+      "bytes": 49464
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S36g.jpg",
+      "sha256": "a733b18ef482441caeabefb10cadb780d422bf932f40cc8af7e81a4671d025ea",
+      "bytes": 59147
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S36h.jpg",
+      "sha256": "8e9bafe5ff72d4d3d0ac0199976a07b26101c67b28d4d0c2d571fe3e84f6f208",
+      "bytes": 62370
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S37.jpg",
+      "sha256": "726750628e7e87ef6943c57242fc02cfa52dd6fe4e5d21277c653ce8c120d005",
+      "bytes": 60990
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S38.jpg",
+      "sha256": "c0c34b0d55982f3d43d7ba147e9e0c6deb8f2c474c3585dcc18b10e612a43443",
+      "bytes": 55664
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/camera/S39.jpg",
+      "sha256": "fd9c3c88d6893e722c021e7ee1959edc5daf8013c6d244b944cc16615dbde996",
+      "bytes": 59697
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/contact_sheet_01.jpg",
+      "sha256": "301bf6aa349753854f6f33dd8f04c5aa72cff05fb79b248a34662e41c589f494",
+      "bytes": 959011
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/contact_sheet_02.jpg",
+      "sha256": "67f6d148656c8c060e18d5b0c116392d42001b7896fc4fb1bfd59a23c5e3bdf0",
+      "bytes": 951090
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/contact_sheet_03.jpg",
+      "sha256": "bcb37ce62ec9efa320032d4cd606c08efb70ea77d99ae8605f9d7b6d571823c7",
+      "bytes": 1001020
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/contact_sheet_04.jpg",
+      "sha256": "6d0d411fb24bc43742af52be716980f1aebac019b73ff17ecfbe6f47a2f356e4",
+      "bytes": 1010304
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/decoded_audio_alignment.json",
+      "sha256": "b208f80637857e3ee49d4acf9709a3671b1be8860838b423bde0ee962383b51c",
+      "bytes": 446
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/duration_comparison.json",
+      "sha256": "f4fd0a5d62a18a66c7efd754729698799556613283f94b07607b062867d617e6",
+      "bytes": 2272
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/duration_histogram.png",
+      "sha256": "88e545ab3e83c39e1d31c1e9442d7c643dc2927685b3b16e1c81c08e11e4b349",
+      "bytes": 47063
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/ffprobe.json",
+      "sha256": "4e6bd460458b640ec8f183a2b4f21bd1db9cfe2ee0717416a9ca304fdabcb4d8",
+      "bytes": 3492
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/final_audio_packets.json",
+      "sha256": "f68c6bbe0399357292fb40db6ad9e42b9c6f359702b5fb92d88165ac3c138421",
+      "bytes": 304309
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0000.jpg",
+      "sha256": "c3bb44d3a9591ead321eb9666f32a37a2bec871dc419de6d8278f76b37c05dfa",
+      "bytes": 14701
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0010.jpg",
+      "sha256": "d62c2d5bd6b9947705933a48b7d30f03bf96e68fafd2b5beb9dd69a38401f9aa",
+      "bytes": 14746
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0016.jpg",
+      "sha256": "c23fe292c074b4683b379e60c8ff072ebd61003222ad18447ca30035c2861118",
+      "bytes": 14756
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0021.jpg",
+      "sha256": "8a8187eb8757ea230f6d7547176b3e2ec6459259ae99b7661c1663d12bacb421",
+      "bytes": 14719
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0031.jpg",
+      "sha256": "a5af76b191936272228627229715de29b439ee12f3d514cb88386020f6ecc575",
+      "bytes": 14761
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0032.jpg",
+      "sha256": "58c39423adcd2b27fbed292fb4d80803d212bc57d4d3641b08446c6694253d0d",
+      "bytes": 14488
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0045.jpg",
+      "sha256": "57cd06193d29cdd34ec99e00672bbbe32c401aea740cf189d91034e233a617c2",
+      "bytes": 14495
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0052.jpg",
+      "sha256": "2944b4339d1c0c748e9c8dc78197f163470a692d3b330552cb1a2585a9a49be4",
+      "bytes": 14499
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0059.jpg",
+      "sha256": "eaa52e46970316c6c16fecd0f70aeca6cf04850cf6e8bcd2d219430149ac0714",
+      "bytes": 14515
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0064.jpg",
+      "sha256": "efedfe06d5bfcd52fd9cdcf7bfdc7ee7bc403f842128acbffd90516f36be0927",
+      "bytes": 14525
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0072.jpg",
+      "sha256": "da0deeb7ccf7230be11e23d0e04c510de2dce737d5e4fed6d314bee766616715",
+      "bytes": 14508
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0073.jpg",
+      "sha256": "6591acada85caf61756f2bb25f34671674a18dd6c51117d3ebde868b53cd3caa",
+      "bytes": 12150
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0086.jpg",
+      "sha256": "be9e35b932d91db5898e1338c7513688b8f5c387d7ccda29f10f3215caa6e58a",
+      "bytes": 11941
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0093.jpg",
+      "sha256": "72dfc06794ad8ddd07d429b779177effc97be2438d2bc27d69c840241a8af399",
+      "bytes": 11941
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0100.jpg",
+      "sha256": "2796387bee8f7c1d929a299a8c999c54caa432a42054b6660ea8a1827c9bee05",
+      "bytes": 11933
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0113.jpg",
+      "sha256": "79a5870500c20f3b64698deb45e2a589fa2b0b532316804aacc85e43bab24860",
+      "bytes": 11931
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0114.jpg",
+      "sha256": "c2f8af571ed912bf727ebbd69d09f8ced79aae0f21610f3e5af371f4811ee89f",
+      "bytes": 14290
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0127.jpg",
+      "sha256": "1e1d7f484a2f8e8c076e9d9f3791b95c6830d5dff4592c441d3944d58dd81eca",
+      "bytes": 14363
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0134.jpg",
+      "sha256": "f9c99e3e9392bbcfefad2271277107259dc4c4125acad138bdbbf1ca775e5767",
+      "bytes": 14369
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0139.jpg",
+      "sha256": "828986391ebef72aa71cec56898b73d4ca6c271cf9302e6c3bc1619de0e5684f",
+      "bytes": 14387
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0141.jpg",
+      "sha256": "b72eac44f3153d5d587f6e3ec0be35b47664b2669ec3fdca59304807f94537b1",
+      "bytes": 14287
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0154.jpg",
+      "sha256": "678da1f9d29601efe917e528c6939dd4615ead9f388216c7680414f2a19dc24d",
+      "bytes": 13870
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0155.jpg",
+      "sha256": "4a4b73c7d932f04e2c7a44a9ca2fa574f3c72139bc980577701d5c6392941e7d",
+      "bytes": 15206
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0168.jpg",
+      "sha256": "aa5ecc6d6b8cc934a07990e96a29ba1b73a0064f5c0cda8dd78828701c0859c9",
+      "bytes": 15630
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0174.jpg",
+      "sha256": "a74ef32d80df8205d6f16d7712eb7500a81d951cd1069c2aa37a3553903a4db2",
+      "bytes": 15675
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0181.jpg",
+      "sha256": "fb4b7048fa3e2db201b3cdad2a799409b4e2e9ea09126ce91b02617785621f2c",
+      "bytes": 15717
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0194.jpg",
+      "sha256": "5aa69ac2f1086a362a0d316dcda8d385d59cad0d766471313394ef244ac69699",
+      "bytes": 15740
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0195.jpg",
+      "sha256": "d6701d8ab6fa03d6c16884de8b4f02e6429cd46a1a5d6341827233d4e675faad",
+      "bytes": 15047
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0208.jpg",
+      "sha256": "3d34e733ca11af89451f86fc3e999aff46f568503cf4e1f5ab46784f3546d4a1",
+      "bytes": 15125
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0215.jpg",
+      "sha256": "d7813b0262e513236168d19edf1c36a7038024c16d613b21f40f31eba96de90b",
+      "bytes": 15000
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0222.jpg",
+      "sha256": "7490a1fe584ff26c4bef2174970cb8dc14f345425c6c0b0b46a6918d25e5ecd2",
+      "bytes": 15119
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0225.jpg",
+      "sha256": "3a2906f8182faa2e6eb255fd16c7021d17cc14c4009073350461ea906851b102",
+      "bytes": 15142
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0235.jpg",
+      "sha256": "b78c9e9a82e9ff8096650f6e2ab418253f858f391120fefae287e002da0dc3a6",
+      "bytes": 15147
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0236.jpg",
+      "sha256": "1dcb1389272bbd88d9bdae4dd6aed04f0606ba84164b1abd5e86a5973c4b6c8a",
+      "bytes": 12693
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0249.jpg",
+      "sha256": "d646036064046cf4f9bdd8d825acfd0e796b3728e09bd3166ab1891307a99266",
+      "bytes": 12357
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0256.jpg",
+      "sha256": "56bb30c5a206bc2cc0b3610cf6f5d02449cc8fffaef8c4c475de90b57cccc89b",
+      "bytes": 12365
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0263.jpg",
+      "sha256": "36ce5cb87316d0b9d068433a47eddc458f346a696861ca9be794dbc5783196fe",
+      "bytes": 12343
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0276.jpg",
+      "sha256": "7d55993eba6680886f15db432536d37b43061cca4ffc5078fb8599fc94e9ac45",
+      "bytes": 12387
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0277.jpg",
+      "sha256": "e17702846adca3aca93b5833fc9874e9a2cefb304ca3c60a60d710c5c7d14f36",
+      "bytes": 14879
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0280.jpg",
+      "sha256": "aa4d5c8aae4162a5c5fee17d4cbac59a7fa9d20daddcad1f91782b21449bc03a",
+      "bytes": 14946
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0282.jpg",
+      "sha256": "6320830a6a3789eb9c6b3f54ff3422016ebdb3253282e566becfd9e3008b54e6",
+      "bytes": 14932
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0284.jpg",
+      "sha256": "199e2779876ad2f8de5d80ff88586c37c71661a9f2d8aaef3a2f024a3663a7a9",
+      "bytes": 14947
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0287.jpg",
+      "sha256": "28708b374f068580990cd85a3f5531ab0870b6ab122a518195f3addfaeae3ed1",
+      "bytes": 14622
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0288.jpg",
+      "sha256": "678ed6c62a26f1671f691e1d01c6b5c4bda9166832e82ed99965fdd7d5d9a94b",
+      "bytes": 16021
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0291.jpg",
+      "sha256": "c0cf3ef812610aac7187b2f11e823891c392022399a13d5b3e9816b1fc58ac88",
+      "bytes": 15935
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0292.jpg",
+      "sha256": "1b6ec9ba6f4ecf681e01f889733e6117ffbfdc9b2fc340ad50e249497bb532d0",
+      "bytes": 16025
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0294.jpg",
+      "sha256": "9091719561de42ea9683270e2fc89dfdcaf3f5e3d41ae161205ae04dfc79dbdd",
+      "bytes": 16042
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0297.jpg",
+      "sha256": "1ce9c5d0c85e660e419776753d83111814ee0a262280419c5af2bb1ba173429f",
+      "bytes": 16057
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0298.jpg",
+      "sha256": "9f6ad439005a5b89bcc4d698571fb50c28d4405ec317755d2cb9ac53b404ada0",
+      "bytes": 15262
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0301.jpg",
+      "sha256": "7a4c9018d1938253e2cb313b883c9da061e74c6c5171ca6084abb0571c6f4697",
+      "bytes": 15261
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0302.jpg",
+      "sha256": "84f70983b31e378a5570edd8c895848770733735a507d385f51d6c1906de371c",
+      "bytes": 15254
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0304.jpg",
+      "sha256": "01b112ccf3e4ee7cf33b25ce2217c78561367abf30bfa0709e62f77a28a377e1",
+      "bytes": 15262
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0307.jpg",
+      "sha256": "d070216248ffc86bcc26d21b42ac6163195f7502894b8fc30f49c8943f0af513",
+      "bytes": 15250
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0308.jpg",
+      "sha256": "98a72a12c8a5aa75f925140dbb3cd2953989a69d5313dd431a2f39c61446661a",
+      "bytes": 12614
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0311.jpg",
+      "sha256": "3c730b94959c7a59b814fa05f06431b6bf910d7af253ab594e30d751def1f99c",
+      "bytes": 12597
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0312.jpg",
+      "sha256": "3de53b30c91afcaa5aae9639f5eff10ec210b8781296af8eb54b9430392fa432",
+      "bytes": 12574
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0314.jpg",
+      "sha256": "14e45ebbea8a5838266899138e5eefdb3ee69c4bf8f0a3867a8d7c3bc912c84b",
+      "bytes": 12543
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0317.jpg",
+      "sha256": "6bee481902b419c147579478909fae757ac38f2446a56d1a95b7d6ef92d6c230",
+      "bytes": 12588
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0318.jpg",
+      "sha256": "7eea994f83c73528f1b204690c543d6032d2a388917ca055be136772fb8ecefb",
+      "bytes": 14982
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0321.jpg",
+      "sha256": "0384b01dcf921996441daa719aaf766c4a215b18ef8a5fe8a1b9e37c4a026b1c",
+      "bytes": 14962
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0322.jpg",
+      "sha256": "52b2232b1219ce8adc51ba16854b61ed73bf3408ad9e55c425c6ada2c5dcc47d",
+      "bytes": 15014
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0324.jpg",
+      "sha256": "531bd55c518f12593af623cf63f688b0c318ed5809affecab3eb9ba239f1238c",
+      "bytes": 15034
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0327.jpg",
+      "sha256": "65300d5d8cda98d2e5a21512265c31c46f6d95ad6f162209a7d510cad10ad753",
+      "bytes": 14710
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0328.jpg",
+      "sha256": "348ff4478162606e023ea114fe8b5f1aaf2eb81d572ec4bb9d9ce56864ce1de0",
+      "bytes": 16260
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0330.jpg",
+      "sha256": "d9270cf434a9c132efc168b1a60b6713d235a0fd866046a4c9d18e3420fa13c9",
+      "bytes": 16210
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0331.jpg",
+      "sha256": "e6017e7d04dcecf6ca5a8d301bd7364e7f06c0db95f27d94cdde8f4624882e5e",
+      "bytes": 16113
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0333.jpg",
+      "sha256": "58f23cb6e4e7819c1d14ca0016fd87712e931b96e1a32a3981067e9390a025c7",
+      "bytes": 16191
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0335.jpg",
+      "sha256": "7fc6de42d58900238469982848af8226f67e99d75adb38082a9f04cff3e6552e",
+      "bytes": 16182
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0338.jpg",
+      "sha256": "0e31da975a358ec4f504bbe8f5f60bdbd7b5aebc5d2aae3231dea139a1301309",
+      "bytes": 16202
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0339.jpg",
+      "sha256": "be67ccc10379d503e84b02652946c00f244a9186924ec2ff50262e9114919557",
+      "bytes": 13675
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0345.jpg",
+      "sha256": "da4e66635235ed54de2faa1a2aa12d611ad3bf2cfb51ead1e21950f111710c05",
+      "bytes": 13653
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0348.jpg",
+      "sha256": "9faaccdaf0d116e39f0463d1981517bb06d1f9602f519048983725fee8cd30e7",
+      "bytes": 13647
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0352.jpg",
+      "sha256": "7b2f82bc7c4fdf207fdd48d416e40bd8371a5898555d8c79d108a8a69dee0dff",
+      "bytes": 13649
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0358.jpg",
+      "sha256": "7b2f82bc7c4fdf207fdd48d416e40bd8371a5898555d8c79d108a8a69dee0dff",
+      "bytes": 13649
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0359.jpg",
+      "sha256": "a8388fd1cb584f3313f594edd2bab9c28cabe46321422d61ec6f7ce99b52bf7b",
+      "bytes": 12164
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0366.jpg",
+      "sha256": "eb0cc177342586735b1e4eb57f9d3bed2cfdb31f45f2e6ac20478189743c7055",
+      "bytes": 12195
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0369.jpg",
+      "sha256": "395c08a23fc5396f9159a1d0011562d6401bf655ba08a10e2d47fdc6c1ce33fa",
+      "bytes": 12204
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0372.jpg",
+      "sha256": "e38b2aad7fb551079447d76c4dfa1eb42d733900ede61b02a6187fc3f6612fa9",
+      "bytes": 12195
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0379.jpg",
+      "sha256": "5bd4b94f5ea35773e48389a71e1602f81e245cdbf8145265137bb7de70aa05f8",
+      "bytes": 12220
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0380.jpg",
+      "sha256": "c05163712aabc65303a95c68eb1bc08004f5c2af6901581d44411719bed77eb5",
+      "bytes": 14665
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0386.jpg",
+      "sha256": "26cf6d6a25df4c998cd5ddb9c5ac393f8714a6b0ad647429cc7a323e0036ebe0",
+      "bytes": 14695
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0390.jpg",
+      "sha256": "2c8d3eb0bef00d7e9349586864f42a5d495774ae40d0b103480836ecb134c41c",
+      "bytes": 14743
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0393.jpg",
+      "sha256": "73a010b77810e978cd3ed245ae29084526ce4608c57dbdaadc50b8e799c941b2",
+      "bytes": 14739
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0399.jpg",
+      "sha256": "4acb966603dd702dccf4f00d9edc137c740b6d12ca44783c44afb0a04970a2e8",
+      "bytes": 14345
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0400.jpg",
+      "sha256": "95a8e038f0cbc0352d0290e5238301c6a892f94810c996f66314c63778a7c73c",
+      "bytes": 15590
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0413.jpg",
+      "sha256": "ad8e244009db4e31b4c1c34ca7ce2e1420ba4a282cb13baf8d8653cda991e35b",
+      "bytes": 15477
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0419.jpg",
+      "sha256": "b5b2a806793def6bdedcedb88510ba4e48b15535cafde2fe26baedd100933057",
+      "bytes": 15532
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0420.jpg",
+      "sha256": "5a10038937f3910863604a814eca68867da7745f3225fb3cbae68e10449ae9d1",
+      "bytes": 15564
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0427.jpg",
+      "sha256": "23a71206abb7388683b444ad6d64ee4b155eeff43b0c64ba11cd6f3b205dbe86",
+      "bytes": 15608
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0440.jpg",
+      "sha256": "1a8ef2fc1f030f8ac64b777d91fca05ffa7dc664df982267c939c16ed844e9e9",
+      "bytes": 15914
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0441.jpg",
+      "sha256": "7a3c17e2b445bdc59462caaccca4af0a9754a96b9c65b08b6a5a66297a98acca",
+      "bytes": 14833
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0454.jpg",
+      "sha256": "3f7ba599354048c222f6c5990b3b4cde69e24324e2cae40205261eda735e7e99",
+      "bytes": 14864
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0461.jpg",
+      "sha256": "3f006714baecda53685573c709a031081ea373ec34fb4a8e8bf06ce27e1ed5cc",
+      "bytes": 14792
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0468.jpg",
+      "sha256": "bd64ff1234482fb740a63e642e8609f518b81c3ff48b9f540d78015a4aa374da",
+      "bytes": 14867
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0481.jpg",
+      "sha256": "2b21a40d2be8d2e70eb948738b8c1a735fe77da99f64a9575c55f38a80852711",
+      "bytes": 14868
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0482.jpg",
+      "sha256": "3a85eb271e20f463311f51999fd0bfb29ae9223f3fbefd6788e695a3493e930b",
+      "bytes": 12690
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0495.jpg",
+      "sha256": "00f44a8d53d3e55a70b80dee97643458d0b94c4fab92322f15fb2b9b0818fd68",
+      "bytes": 12722
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0502.jpg",
+      "sha256": "5baa84b2a9def489d889e3685dc158f0f8854220ddf51b7181bbd12dbd7872e1",
+      "bytes": 12675
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0506.jpg",
+      "sha256": "cbcc06ebc05e9210db1d498554c03b1ee52ee3b39daf8dd32a00b85f9946c6a9",
+      "bytes": 12694
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0509.jpg",
+      "sha256": "b09fdaac8bc0f9fbe66e0c4806f5fcf8313aac696d4fb1d36cebade980efa860",
+      "bytes": 12676
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0522.jpg",
+      "sha256": "b8794f67133b115c5809932fcc9d9334ac5e4af21a137945470c6856c1f20da9",
+      "bytes": 12731
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0523.jpg",
+      "sha256": "cfc59577d9de49f61386f3eb7f50c7e37d4436a01dcf2b50454581ad45f20d16",
+      "bytes": 15142
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0529.jpg",
+      "sha256": "b86e459a61d8aaf0ca29e6d9b49f4d5e52a0caf2f2cc8b87a26df8c0ec38f57b",
+      "bytes": 15199
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0532.jpg",
+      "sha256": "ab15abe33130b8d7c602b62c55672fa355487d1e8e0338095fd5e82a4a02c1a2",
+      "bytes": 15178
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0536.jpg",
+      "sha256": "e5a813c190e3d39d63474ce7a6acbd8c9f0fdf03379f90188fbb28772f1afde8",
+      "bytes": 15214
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0542.jpg",
+      "sha256": "609a2790d0c676582207928cdc2a226c5348bb7202b9ddc2ecdb8df361e5c4f6",
+      "bytes": 14974
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0543.jpg",
+      "sha256": "6578d7c6980ffbcbadb665bc2920c0a33d6f93819c7a686a5e42b1154e08c6bc",
+      "bytes": 16134
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0556.jpg",
+      "sha256": "50cc437418b39fd69a3643906b1e565693331bf6093d62fb908be7f66167b282",
+      "bytes": 16132
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0563.jpg",
+      "sha256": "43bb8f426b2eded8ca55f880d07546fd2f3ca02e5246e0e47f58b8c78160484a",
+      "bytes": 16169
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0570.jpg",
+      "sha256": "26e866a7e526735cfe25f6d10127067041970088f2c576eef162201b10e14a6f",
+      "bytes": 16146
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0575.jpg",
+      "sha256": "987ad4b567c2644a002f1fc469f9149abfe1f7dac89d77cdaf42dad84e634766",
+      "bytes": 16105
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0583.jpg",
+      "sha256": "c9f23516f0a5e3d1af1d1cbb218b6021da327c790d0ba71d5f8705421c81cbfa",
+      "bytes": 16256
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0584.jpg",
+      "sha256": "0176b59d44f0f2d04eb24e65ec3036dc0dd4c030c639f5b03b58096de7a791eb",
+      "bytes": 15532
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0591.jpg",
+      "sha256": "7a7af1949c457b7d0d6e240b13e99702a37cded4d0f220ef837a77b1cb49bcf8",
+      "bytes": 15728
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0594.jpg",
+      "sha256": "fe33a799dc0ffda13cbeecfc9c0d5f17f440a4dde16133573c9c834c8accae16",
+      "bytes": 15743
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0597.jpg",
+      "sha256": "31b85401b4c7fdf768445990d08f44c0da291304cd7c4bd156b9f7121b73c5dd",
+      "bytes": 15727
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0604.jpg",
+      "sha256": "fae9e3c26321d5edd2ad2da8a4073f4862637fd1ed9cb46d8bcc2dd2ea6eb485",
+      "bytes": 15756
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0605.jpg",
+      "sha256": "8bddb881ee61815913c64422b32cb246dfb7249334bc7a8797924fd1ad66c0b7",
+      "bytes": 13110
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0618.jpg",
+      "sha256": "c02182253f1127d3dd7636d98a6f8a584d21d563495c5081cd05baf52567ad02",
+      "bytes": 13085
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0624.jpg",
+      "sha256": "8fca96ef2f49fc9bae21d8970abc215d63cdcd1e8869c84db1648f92449f9bd4",
+      "bytes": 13149
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0631.jpg",
+      "sha256": "8901d8870ef9054863d1bc08a4d8d445b4094424fd13554f3411aa9f44f0161b",
+      "bytes": 13082
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0644.jpg",
+      "sha256": "aed7c7dfc46a9bb203e4382f845bcc302576f4d68072fd26f33577f2b725b3fd",
+      "bytes": 13195
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0645.jpg",
+      "sha256": "849fd664be148d3e37edd9b696893c17b0ec8073400b68d305f44aed18d377df",
+      "bytes": 15678
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0658.jpg",
+      "sha256": "61cccb092514b9c08ad6f9f4439f7eb4c46d46a913af325d6d9cf1abedb053d1",
+      "bytes": 15725
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0665.jpg",
+      "sha256": "011d49fe960f84d677a198eb915381f2036b6f843cbe01847e7bc8e00e33ce90",
+      "bytes": 15715
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0672.jpg",
+      "sha256": "180cc363f77c2e7eba3ddaf654c1fbbbc0872d115927d48fbdded8e7e97a8fa2",
+      "bytes": 15735
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0685.jpg",
+      "sha256": "1f60f5e8bb72d225c842919bef811f42bd61801c61ce73e93b01c57bc707df77",
+      "bytes": 15434
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0686.jpg",
+      "sha256": "cbddd42d9e05afe5072e7380e46febde7d7b1a1ef188529413bbaa168f0f3a24",
+      "bytes": 16509
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0693.jpg",
+      "sha256": "94a7821e1908f1bacf414026d5dfb1344a488ff41f6995b39ff9bc0308da4f69",
+      "bytes": 16497
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0696.jpg",
+      "sha256": "89b87b43802a85d97c25e806e147fa399ae9329e33b89aea5c6a4b308cc65f49",
+      "bytes": 16564
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0699.jpg",
+      "sha256": "e19835d07c54dc5e945859873b43671a00e05afc289fc7edfac4c771c5683232",
+      "bytes": 16542
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0706.jpg",
+      "sha256": "419332ad4226494ebdfa4564c9d290d6d9fdd28a24d683f9dcae7b4918b13f6c",
+      "bytes": 16564
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0707.jpg",
+      "sha256": "e0dd3655379b2e4dce220d2201da1e7b8e7a892eee6d6f8a361e556e0e8cfc75",
+      "bytes": 15649
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0713.jpg",
+      "sha256": "6a331cb18f47845be3d40b45194cf406b26851c99371279c07a508e07a6de600",
+      "bytes": 15623
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0716.jpg",
+      "sha256": "9fe207118e7d9e11b3c9bcf2e0b73ec54af8027a406f4bbfdcc6438d6941849b",
+      "bytes": 15644
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0720.jpg",
+      "sha256": "80036817fe2df8d0938ef34cb802c90bae940000db4c35fb8fddd6e937bff590",
+      "bytes": 15711
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0726.jpg",
+      "sha256": "448dd3588db31d0c3a9f18ca964eb94aef9e512da634081830dd23155d62e5e6",
+      "bytes": 15655
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0727.jpg",
+      "sha256": "c27128dae01ca762ab1db511aa848d59bbd8281c785a09ee152dd32710c28dff",
+      "bytes": 13079
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0734.jpg",
+      "sha256": "3fa783995a9188b146ec04b279ff1cfa8f51e61580b3a62ab77529d6bed45743",
+      "bytes": 13148
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0737.jpg",
+      "sha256": "dca6e88c710c378ebc7530425c7520b28e9720034c504de720c8d2238b748909",
+      "bytes": 13137
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0740.jpg",
+      "sha256": "fe1810031bc2bae1e1ea79f97dfd62a88bf09d5f322d2a68b69c56015af79a15",
+      "bytes": 13115
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0743.jpg",
+      "sha256": "625057a2f41a2c210bbfd83b3e7d664c73f226213f2549f09c6f0120c6a7acf1",
+      "bytes": 13134
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0747.jpg",
+      "sha256": "fd20d7d46598866ba65736de1accd27e27ed84acd7ad81abc0b4389999ef13b9",
+      "bytes": 13112
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0748.jpg",
+      "sha256": "47cf00a5d01bdbd0922b3c5db215f63a5b861bcc5f755fe1ea3c105592fff0c0",
+      "bytes": 15620
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0754.jpg",
+      "sha256": "c4f1482056b21ea0f96deddda9cbe490ca2a31a1915e512562593a76a4e62d08",
+      "bytes": 15624
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0758.jpg",
+      "sha256": "5b7d40f1011007eb6b9fb8215cdb94ee61ef818e78fecc6b4837568df806270d",
+      "bytes": 15683
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0761.jpg",
+      "sha256": "54b96ca26f0ea7b86acd1dafa2ad69bcb68fad4642c3ba43aa2cf3bd0790efe2",
+      "bytes": 15645
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0767.jpg",
+      "sha256": "9cd86c9066c527b1c4a878637a3ab2f23d0f0503963fe921fbfe446fe9f22a14",
+      "bytes": 15537
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0768.jpg",
+      "sha256": "57df6dd25156629f322f33dfc603f42ffcada5776e905c86279ebe33ccec656a",
+      "bytes": 16739
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0781.jpg",
+      "sha256": "4d3e44592aff18f8e36b6e1b70c40f1ff69d1dfb0e18b1b8bca40e25d68f4d0f",
+      "bytes": 16757
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0788.jpg",
+      "sha256": "c0322cfbb0a4bd3ebf9d2f60f46ef9d6dea178b158057f8e9f75acfef467fecb",
+      "bytes": 16800
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0795.jpg",
+      "sha256": "129ddfa48737123d90eb3d9c6edf95ccd1fb6266a90f3b403af4fe815ecaa845",
+      "bytes": 16786
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0808.jpg",
+      "sha256": "b9d81ed72a0205e78515f14a64bf1b4afcddd44ba681e24bee633c40ff6144c3",
+      "bytes": 16893
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0809.jpg",
+      "sha256": "aecbcdf7f32806424badfdf543ad8357dd5c51f2bf6ce8a2809ba5b5356ac507",
+      "bytes": 16062
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0822.jpg",
+      "sha256": "c0736dee1c49268fe02bda913871627c7cd5ea4920ea19c0a1c29ce29cb33952",
+      "bytes": 16075
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0829.jpg",
+      "sha256": "619f2fdee87b46a7ab707f23932174008abd25c04ac7b05080f981c7d37001d3",
+      "bytes": 16138
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0833.jpg",
+      "sha256": "209b212a752d9283a38d3107d7341da04e38243acd160b97dc8dfacbd6e7467c",
+      "bytes": 16105
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0836.jpg",
+      "sha256": "4242b71d874fbd7727f3c920892a86d01181823f0a63d9d8a2a6801b8551d2d6",
+      "bytes": 16126
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0849.jpg",
+      "sha256": "88290783451eab60f35ee0d9a109dce6efb743b3bdae9310c52dcf05d475ba09",
+      "bytes": 16036
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0850.jpg",
+      "sha256": "3a07835de657ca5d4f4d8998fcfcd16e4fc45120cc7aecd6aeb908ec55b6896b",
+      "bytes": 13433
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0863.jpg",
+      "sha256": "8fada0fc8af30dbee1d7fe93e41d9485963b88b658dc1c959a6c3e98eff0726d",
+      "bytes": 13563
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0870.jpg",
+      "sha256": "29efdd6536671c7a0b297aa28bfd2a2534362d29a8f2367bd8a92246488bcf16",
+      "bytes": 13537
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0877.jpg",
+      "sha256": "1298ba9ecea761ebc8baacf357520efe50849882fb13b298070903a8176e0f21",
+      "bytes": 13570
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0890.jpg",
+      "sha256": "187ee07d4739da13565034f299100d4b35333ba2d05c914042e3a1629350d204",
+      "bytes": 13615
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0891.jpg",
+      "sha256": "7e29f2ff085fa8d83020255c50800abfa4193ab119ede134379b71a8fd0e8637",
+      "bytes": 16390
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0894.jpg",
+      "sha256": "192ffde88988bc41e030b6f77172cd3c7723e4d01b3e905a8647b890fe8f829c",
+      "bytes": 16492
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0896.jpg",
+      "sha256": "2bcd3797954aa3a17bf5ce7afd57b3d40c48ba672d0aa8249ae86f51b97440ba",
+      "bytes": 16480
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0897.jpg",
+      "sha256": "8f3e578315981b6330789e075aea962c23e32341acea5608ce9133d1ffc9cbf9",
+      "bytes": 16415
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0900.jpg",
+      "sha256": "d3e1fb14ef7ea6df0c137cc85f00cde86eeb7d7f6fe6594b1e15663313246cf5",
+      "bytes": 15905
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0901.jpg",
+      "sha256": "ef1b5b075d2f27d249cff611be4af355e8df721a459d5170f087f93ee20bf6fe",
+      "bytes": 17511
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0904.jpg",
+      "sha256": "b8a4ded2f484c8fa15c91a1b811721aaffad5647dd32f403ca27bcf64c710d9f",
+      "bytes": 17552
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0906.jpg",
+      "sha256": "30c93b33e3aa93248c1f5bf31da906a7a8b52f551ea5db29b8411f4adad52dbd",
+      "bytes": 17610
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0907.jpg",
+      "sha256": "394f304cbfcc319a2639023753be44f5404e06ef0f816102d60ea1f58bb73213",
+      "bytes": 17583
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0910.jpg",
+      "sha256": "600db9528c06a1475c1f4b98a837c2708ac7e7d13112d375c5d89771ae5657d0",
+      "bytes": 17551
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0911.jpg",
+      "sha256": "ea5001854d3b60b3e4060ebd6274b0a810fcaed4eafd27e2d5fd3ec437ec4e34",
+      "bytes": 16262
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0914.jpg",
+      "sha256": "99369a989f1833fb7e427278018233c5d04efc46888caeb439842b2f25c5b12c",
+      "bytes": 16289
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0916.jpg",
+      "sha256": "1f9579b2b65bf5e24e90205aab86faeedd8a8c368a650898face4150ea60af99",
+      "bytes": 16268
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0918.jpg",
+      "sha256": "d38a375fde3faceee4863d30c5dff01fb6649ce58adce8d8e8265ce5a7c9f799",
+      "bytes": 16243
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0921.jpg",
+      "sha256": "20cf63d4dd8258d46646e8bfa93906003b83cd3e5f2791a204ab7ef4e4f48870",
+      "bytes": 16810
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0922.jpg",
+      "sha256": "fa015ea3057170901abd44ef779efe4cdfca5ccad5bed039f61c7e86904c4586",
+      "bytes": 14174
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0925.jpg",
+      "sha256": "8383ed54e23f89f90f1e2d295f46cbbbeae9274e045a23c1de9c5a2f53751e93",
+      "bytes": 14232
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0926.jpg",
+      "sha256": "6c539938f1fa4e6e09f56f2bd52e55f2a758163bec9d8d7f479db5022f38fbf1",
+      "bytes": 14219
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0928.jpg",
+      "sha256": "9895b8fd4290593f52e38939742310b1c0f14b5912c335b424332049e7de1e3c",
+      "bytes": 14251
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0931.jpg",
+      "sha256": "8fc7c36d8b12fa1d025bfa43b218a426ebb143894d7512f8ec110c0850842d59",
+      "bytes": 14182
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0932.jpg",
+      "sha256": "7445dff0f656dfc5ed60441be300f47d339fa152472b74b6d77d0925aef64e80",
+      "bytes": 16780
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0945.jpg",
+      "sha256": "9f07a0afc06492d2ec3a44a21c758ca202e8143bd8a8ce6c14f165fe5da1ee62",
+      "bytes": 16822
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0952.jpg",
+      "sha256": "b99179999899d40eb6995a6009ef63ac74d5244b6f9ec7e27478555cc6ab991b",
+      "bytes": 16859
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0959.jpg",
+      "sha256": "31a989f59905d2b9a9a69dfea4e28b1c0ded37aafb1f9549c36be57cf243459e",
+      "bytes": 16841
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0972.jpg",
+      "sha256": "400c5dd6b09173b423f63427a9d00333cc8cb1e60f5efc9328762ffca57d7165",
+      "bytes": 16785
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0973.jpg",
+      "sha256": "0d79d6fdc076274d25d2296f7fac2dc6de4aab019d862d963687e15830c432d8",
+      "bytes": 17991
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0986.jpg",
+      "sha256": "8d8b13a59e8fd0ef0b5f7fab4f9bcd36b4113d3356953c0604c4189487254ad4",
+      "bytes": 17998
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f0993.jpg",
+      "sha256": "bd5f7da5a653540adaab6be94edc6e4ef2a17a2238195fdba29fd83552f51ca6",
+      "bytes": 17953
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1000.jpg",
+      "sha256": "05a210a3cea9d86a4f85a19edaf8e9417cce0bc1becb9092e7397b9f27ccd854",
+      "bytes": 18044
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1013.jpg",
+      "sha256": "b1b45140572c5b722dfd92b029481aed1c42d8f45013bc1a75f7197b9ee3579e",
+      "bytes": 17942
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1014.jpg",
+      "sha256": "6e1e49fefcb3e19c8737eac5468622e7421f4ffe0ee336eb976b2b9020ab6e7b",
+      "bytes": 17229
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1020.jpg",
+      "sha256": "9e00298843b3d7fe50b15265d2b97f45b837fb1afcbe88a61658804c169d703d",
+      "bytes": 17209
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1024.jpg",
+      "sha256": "69bd089e507da7b0e2b2fdea5a78254dc1de05d4205c497cb6b13722d9670f47",
+      "bytes": 17260
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1027.jpg",
+      "sha256": "405369f1c01f0e504a8d9d39908b23dc0b8e580c7799b5beb1c1efb377f2f250",
+      "bytes": 16359
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1033.jpg",
+      "sha256": "4e809fc9683b02c3ed7a2e448936a888b29e00908e5c5de24353365fca6bea14",
+      "bytes": 16417
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1034.jpg",
+      "sha256": "c46f4eee8108b87a40f15000175e25cb699c5544198a9d909085a5a7aa0e76bd",
+      "bytes": 13993
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1041.jpg",
+      "sha256": "9a9a54253e6dc90bee48a3fe4946c7abd4d240bb1a669b17ac43fa24382ed9ab",
+      "bytes": 13919
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1044.jpg",
+      "sha256": "f144d06fe4ff8e68f9f5bdd07b3575f8d7d3414bbbd00458cab2146512f5c82f",
+      "bytes": 13950
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1047.jpg",
+      "sha256": "8123fd6986b3f1ef630aa9ed66fc2a32501deeb5bac560623762f105171cd43f",
+      "bytes": 13943
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1054.jpg",
+      "sha256": "8f3ee121c5bf0a331806b7861c21c2d83929a6e748fec70f0dd5dceb87c46a45",
+      "bytes": 13960
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1055.jpg",
+      "sha256": "472b744fdd7a43b1956aa6078688bee926505a84f1db5cf87d5b4c5a47c43d13",
+      "bytes": 16387
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1061.jpg",
+      "sha256": "2bd7f2b70711d0d966deac3e961b8e243c9527bb33be3a59b8c14486619c8343",
+      "bytes": 16396
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1064.jpg",
+      "sha256": "1fbf9f3d93caef3367aa07d741b305b306cadf24c01d06c9aa5311b99b37af64",
+      "bytes": 16351
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1068.jpg",
+      "sha256": "be404495727803bf76656c54dee063d0321d9298bde3b0c4c2534274d4482e75",
+      "bytes": 16427
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1074.jpg",
+      "sha256": "aff96b08d2ba33530cb8d5fb05e4b4de94b3d0d1156177af5d25315a667100ee",
+      "bytes": 16193
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1075.jpg",
+      "sha256": "1620c394c6ab860158ba342822c5b29368a2e2f4c460c3cd50d2b01b924cf204",
+      "bytes": 17582
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1081.jpg",
+      "sha256": "fc68bb490efe6d70f04044e05998f80ac1bb88fcd76f8d4197ddbd7e79458afd",
+      "bytes": 17600
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1084.jpg",
+      "sha256": "c1ef55fc06b459cc1962dbfb09cb7fceacf4b9466a88720b80aa2e07fdeea34d",
+      "bytes": 17587
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1088.jpg",
+      "sha256": "690e2d9af1956e587dd6487c1ebc2cad11e4c7c7ca8c98a0a58e0479d90b4dff",
+      "bytes": 17564
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1091.jpg",
+      "sha256": "1dbb990c1a21701a92ff39bf7818b6dbaaa44288e1350d36e41c5b69be19d43a",
+      "bytes": 17567
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1094.jpg",
+      "sha256": "9b8b142b17c915022d36f8122b17e03791de4630fb131f87094c4e3670d60b58",
+      "bytes": 17613
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1095.jpg",
+      "sha256": "2593692d617f683dea134db7dd5f21b31f46ae8c5bffdf8ecd8d7834e1a7137e",
+      "bytes": 16746
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1098.jpg",
+      "sha256": "cf8e60c6ee0564586fa10e4c0a777a0df68b0071cf1584786c13d44d5e0b47ee",
+      "bytes": 16761
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1100.jpg",
+      "sha256": "370017cbc187f6218bf7dc649ea2c00ad6f180f81148fb9750a3626c25452443",
+      "bytes": 16790
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1102.jpg",
+      "sha256": "c1fc631aa65f8e77f974682257d82ed74e6938d1586e31b98f95525198d002f6",
+      "bytes": 16772
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1105.jpg",
+      "sha256": "0d76eda80000c1939afde5faa9b5650100a9aa544d25ed69a575a2f38863194d",
+      "bytes": 16775
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1106.jpg",
+      "sha256": "416c8645fa7ddca5efdc84d7c330e2fdc0785aff13aec906cc880834408cb032",
+      "bytes": 14020
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1109.jpg",
+      "sha256": "78ff7a2979b70c26adab8b7fc1f88d55a6fdc3da35a412b6b35d6d5554e4e09b",
+      "bytes": 14011
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1110.jpg",
+      "sha256": "1eb8a6cfdb8ab6836a4d09d28ab7f426d439a8b653cdbab8c073ffbe344ee5ca",
+      "bytes": 13975
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1112.jpg",
+      "sha256": "ded873e07f0fa50159845fa959e5b2fddf3b8cc9c58b5cb8c969617a99b6c138",
+      "bytes": 13987
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1115.jpg",
+      "sha256": "770db6f85800ac5102c422fb91af6a54ae57896201be0d5f2aca7610748ed98e",
+      "bytes": 13979
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1116.jpg",
+      "sha256": "6ffd1dc4b1455a8d66050b7235ded66318e2265b69c0c13309668866af7a83ce",
+      "bytes": 16409
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1119.jpg",
+      "sha256": "a2269e9d70597e4abf8e26b249c0848bfc3fda50ae009bfc04aa367698885941",
+      "bytes": 16483
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1120.jpg",
+      "sha256": "e009e72a587347673c06bc512f1187669af7b9cf2b7c7bdd6532e9c8a0ef7d92",
+      "bytes": 16507
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1122.jpg",
+      "sha256": "de33a7bf81bade2851e9064fb0cc5f69878cae0f94f48757f78e1cb0565fe2dd",
+      "bytes": 16517
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1125.jpg",
+      "sha256": "53ba4111d9f45caf26a1d862f4ca87ac9a55b90fe1066b13dec45636e8c4f010",
+      "bytes": 16375
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1126.jpg",
+      "sha256": "0d31e32119fbbef81b7ec4d4f2e9c1f10887fde26b07b06536ecfe116a00a07f",
+      "bytes": 18015
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1129.jpg",
+      "sha256": "28aaa2b5b5c21f251767282b2e2ad534288e5ba25cb4898c1092f3084e3dd714",
+      "bytes": 18024
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1130.jpg",
+      "sha256": "2d79346214052b25d0eda97184b1aca80229461165a68a55fbf300c441d70bcb",
+      "bytes": 17961
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1132.jpg",
+      "sha256": "345a010e8615904e699ad4601ed6c52a20aeaab6a0bc73a365f0e68585d8faef",
+      "bytes": 17963
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1135.jpg",
+      "sha256": "5dc59cb6b687142e03dbe65611351b62d7927e7cab8f21a9adcf33d9b16b7611",
+      "bytes": 17988
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1136.jpg",
+      "sha256": "737800e7e557575f86c3df16882753bae3a05c6997fbc2c91bd43c55dcd0ea63",
+      "bytes": 16871
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1139.jpg",
+      "sha256": "1f8d6debbfabfad4ffc942e25ecf7ab5f55d8499271eb8d000eb5d507aeaf4e9",
+      "bytes": 16824
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1141.jpg",
+      "sha256": "fcb4f9702588596b52f6086b9b53840f4296a735f5f2fb11a973fe8cc050d6e4",
+      "bytes": 16821
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1143.jpg",
+      "sha256": "75f5a907de56aaaf29f712d2f5a26c8d2f3c1b7088067565ebe9041444e794aa",
+      "bytes": 16859
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1146.jpg",
+      "sha256": "ce35477657a4aa5593d26313ce8220fea10a5726f3f6c79f389c0da9112f63cf",
+      "bytes": 16887
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1147.jpg",
+      "sha256": "7e3f2201b2d7d8b8ca93c39ec694b80f74cf1718f45af652394b43746da971df",
+      "bytes": 14075
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1150.jpg",
+      "sha256": "4c855ed217663805e66d90e63709e020d057a64322d5aa1e5b63ecfeb0f8ed5d",
+      "bytes": 14068
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1152.jpg",
+      "sha256": "1002beba5a5219db5e93fa8e49da9179a8bc64d044b993182a84422684fb98f3",
+      "bytes": 14059
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1153.jpg",
+      "sha256": "97c4508243982d444781f5ecf7fedbde71035e7cdcfdd59a74a20995c98e74d5",
+      "bytes": 14057
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1156.jpg",
+      "sha256": "0e5e84ae1cae53724b55accced0f961bbd15c912da4bbc21869be2f4711f0dee",
+      "bytes": 14085
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1157.jpg",
+      "sha256": "6bda5b673f085f2469598670cc0f98a4e4f27c9c6b9700ad53b7018109d5ba72",
+      "bytes": 16746
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1160.jpg",
+      "sha256": "a9c46f03abfe68ab7362485c3681176d9ccc0e22fb616eb38007fb69ca68d4f2",
+      "bytes": 16821
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1162.jpg",
+      "sha256": "2858ad1186b212c3ed1d7884ec72725c48cf23a0d447f26825b2330b8282aa44",
+      "bytes": 16808
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1163.jpg",
+      "sha256": "fd432fa0e2e8405f36d107601919615f537df5abaeffd7f05c9e778391dfee53",
+      "bytes": 16789
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1166.jpg",
+      "sha256": "921efcbc470cbf2f615771b0fdd83bd352b33c97da1fd40f20902e9c1ac40541",
+      "bytes": 16416
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1167.jpg",
+      "sha256": "30711f436a08dee6cc406d7798bb8fd225377cfd07b03c85f622682f61491894",
+      "bytes": 17719
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1170.jpg",
+      "sha256": "594e3506444707242507f4b6d001c40cfc2a03dc0f8d37652ee3a3860bac6b7e",
+      "bytes": 17742
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1172.jpg",
+      "sha256": "220ff203ed21373d1d10b7d2a3ce5c41ad2513d19eafba9910e4ca069dcc064e",
+      "bytes": 17729
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1173.jpg",
+      "sha256": "bbbe1500cb44efdaf4703e9de30aa5b752f325656a11d063d078978650437ffd",
+      "bytes": 17827
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1176.jpg",
+      "sha256": "3fd9aee2b16c3d42611d36754d544f16faacc822a453b1761f5a7eb76aae0427",
+      "bytes": 17757
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1177.jpg",
+      "sha256": "c21e768bbe47847a8d18e1b6045482e2bcf21f2dda3fb3b5fdc4440835759421",
+      "bytes": 16281
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1190.jpg",
+      "sha256": "ffe29b71deee1479623a91d6b041e61c7969f9dfb8e35dc17ed5018ddce82ed3",
+      "bytes": 16261
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1197.jpg",
+      "sha256": "5712c2af1d571856aca36c9f64819e21f816c262a02f4be6f7df7e91728ac4ad",
+      "bytes": 16273
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1204.jpg",
+      "sha256": "3a7d7df73b6b5251a0f7521a266970a86035b12795aa324fb98e136b54385fed",
+      "bytes": 16310
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1217.jpg",
+      "sha256": "7d2f6091d299aba5eeb2b8d6928687af5541604af199d0e595c7ea597d71eb38",
+      "bytes": 16337
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1218.jpg",
+      "sha256": "ca8154a1bf9847e1c2234f83c6b8ebf6a0dce9f81a162c1b8cf9420aa8a78e8c",
+      "bytes": 14052
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1231.jpg",
+      "sha256": "9116c6d58fa3b32be850de370c43fa8c7a4bbdbad9070ba35062a4a8575a6c5f",
+      "bytes": 14031
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1238.jpg",
+      "sha256": "9c0ced0ef4861ee411f0608adba92fd2bc84b4cf757db231d78e0a7930bc5857",
+      "bytes": 14047
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1245.jpg",
+      "sha256": "945815ac1889ea6b53a79570a5b1671db863038661006e2711260c292b00ca07",
+      "bytes": 14122
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1258.jpg",
+      "sha256": "16d98122afe6e3d2ba42d8949c9b9a98e05a1b2bdcf93ab39faabb8e90dc33a2",
+      "bytes": 14126
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1259.jpg",
+      "sha256": "3644d7e09690202064919539087ea065f95ffbb594714e9c9f912b69f727cf78",
+      "bytes": 16654
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1276.jpg",
+      "sha256": "a7337ab80bdf692b2dda60c236a15ea9543f0950cd9f1250c3b824925a11fbb4",
+      "bytes": 16795
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1282.jpg",
+      "sha256": "7460d1a05aa303fa594c5aa3c83a220df38902d44b4d2b6e05a3ed931e728734",
+      "bytes": 16822
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1284.jpg",
+      "sha256": "f9d58712766727cfd20a581f8d7b4638f93dc1e5370d7a9dc960ea29e44b879f",
+      "bytes": 16757
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1293.jpg",
+      "sha256": "625aa4d678b207918e0734898a8dc30cf64a78ce3658d8fdf2c965053d310544",
+      "bytes": 16783
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/frames/f1310.jpg",
+      "sha256": "25076e9e2dbe805e001e18f4650bd6bcb768e62610a3e644b68e2ddc4bf907c2",
+      "bytes": 14542
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/hard_cues/ankle-contact-f543.png",
+      "sha256": "7f65d7347c1e119f42c72b5c1c59367ab33cd89cf98137239e1f93163f9ffb2b",
+      "bytes": 62363
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/hard_cues/birth-impact-f359.png",
+      "sha256": "c861b5d7fb449a97d29ad102509076d49e47861b0d0fdcb7344778e87ba92d2d",
+      "bytes": 52450
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/hard_cues/bubble-f157.png",
+      "sha256": "9cc4d7101d752df034b0f3f0602d060876e5c65998ce4ab82613b785a8a1a782",
+      "bytes": 63182
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/hard_cues/dolly-zoom-end-f1014.png",
+      "sha256": "92f88b84e351a1524f846cd1e276df4c9902ee7c8f6be29f34d116a6edeb5eaa",
+      "bytes": 70865
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/hard_cues/spark-fill-f339.png",
+      "sha256": "dcde63c80fb987672af15b48f8e0ddee8afefa8cfece2de5ea91f6c4ea702212",
+      "bytes": 50269
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/hard_cues/white-out-f686.png",
+      "sha256": "bdafc699003975fbbfb697526e21852e36c4ba7f7cbb44072e6635c8e9d45940",
+      "bytes": 67066
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/hold_metrics.json",
+      "sha256": "166b08740667508b297db6eb77954b1f9598b7b71d6a891c5a4b9434d9cc123a",
+      "bytes": 11560
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/scene_changes.json",
+      "sha256": "53bede78c5f22e46a6dfc08efbdbdb31c7f3617e5c9a290882708fb08c733841",
+      "bytes": 152139
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/scene_scores_raw.txt",
+      "sha256": "b4bd8d0e8de2729848ea7c5f3b562b65bf8a5b91f2b1e64e757ddbb557a7757d",
+      "bytes": 87888
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/scopes.png",
+      "sha256": "4d79e488803184f1afa04a988fe938af151ecbc22c54f212f3c02f2c2020080c",
+      "bytes": 523207
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/source_audio_packets.json",
+      "sha256": "60855f0a98ef7279c7253f2c4de51edd80a3f3951d25ba1fb9ae5926ee83d836",
+      "bytes": 304511
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/typography_peak_candidates.jpg",
+      "sha256": "78595951af9aa9486eb9d316aa39d7a337dea6e7e44683bb8f35a4b6fdeb430e",
+      "bytes": 328213
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/qa-runner-diagnostic/final12_hold_strip.jpg",
+      "sha256": "1ac84e6c6d1180131d96a97d4877979929e18cc221c1daa228759cad94e07162",
+      "bytes": 50231
+    }
+  ]
+}

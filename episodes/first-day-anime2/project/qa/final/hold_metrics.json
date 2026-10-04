@@ -1,0 +1,438 @@
+{
+  "decoded": {
+    "S10": {
+      "status": "REVIEW-small-decoded-variation-codec-compatible",
+      "framesExpected": 20,
+      "framesDecoded": 20,
+      "decodedRGBHashes": [
+        "c284c36f8102493fd8eec1f54a2d33910101b79e86e08a7c4985d303a010dc01",
+        "9a9330ca13b6def3df10d9679bb5e64d268193d548a81174c9b325ad4f94c225",
+        "f12391b82a7c0f929733c1c61fab30f837ded98c69ab314bffa1c10cae317721",
+        "a9a9db1c95f5382e112ef1552ff42f25748a63a24981e7d3bbd92d97e907655a",
+        "c78dab549dd0ebd1bed7739bf58450a2fff1a3d934001a9262c53ec9e3640ce7",
+        "32c356cdd0cc2ebde696b859ffd34ce4113224d4e573fe1f83a9fb334b82494a",
+        "8691d6f901773d45bff7b8588a330c0356fa103438ada739f40b85633526b667",
+        "a02976a3c05514a741f04f245f4b790deaf18d4bc8398b5daffc13581c07edcd",
+        "6e6a407b3e6e26a8e05ade1093bf0acea11897103688d36a65bef553827f81ca",
+        "e29bb5514e59698b4c026d7073517b8dd62ec63be3b98e3e66f60d53eec27224",
+        "6784c2924ec27533d8922607297de6c005aba90e106e9e7e807b35347c5cd4a8",
+        "b33cf202499a8d7d80984e8a80ee0e75b360481d00350b070ffafda9b38be807",
+        "2a63c6f321ef05cff02ae3910956b6d6e616454c7cd633c1a6d56f086e15c63f",
+        "47b3d2e5d486998a4a0dbecc676c964122b38d17bbb4e7a70d0ccfa2764f75dd",
+        "54bf7ad44d33ff6d1297309d07efadcc56eb79406d2cbb0c5966b4fc39789ed2",
+        "e675f71871c7efedb752860178192adc5d3f17669d7deb57ff4f996e67ad4ba5",
+        "e675f71871c7efedb752860178192adc5d3f17669d7deb57ff4f996e67ad4ba5",
+        "9a218148ef7cf9dc820613f9e3ac60a2b1b6345601d2c779867124e570118ce5",
+        "9a218148ef7cf9dc820613f9e3ac60a2b1b6345601d2c779867124e570118ce5",
+        "9a218148ef7cf9dc820613f9e3ac60a2b1b6345601d2c779867124e570118ce5"
+      ],
+      "metrics": [
+        {
+          "frame": 339,
+          "meanDifferenceFromFirst": 0.0,
+          "maxDifferenceFromFirst": 0,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0
+        },
+        {
+          "frame": 340,
+          "meanDifferenceFromFirst": 0.0008138824588477366,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.0008138824588477366
+        },
+        {
+          "frame": 341,
+          "meanDifferenceFromFirst": 0.006479713220164609,
+          "maxDifferenceFromFirst": 51,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.006389210390946502
+        },
+        {
+          "frame": 342,
+          "meanDifferenceFromFirst": 0.00665380658436214,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.0002158886316872428
+        },
+        {
+          "frame": 343,
+          "meanDifferenceFromFirst": 0.006721804269547325,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 6.896219135802469e-05
+        },
+        {
+          "frame": 344,
+          "meanDifferenceFromFirst": 0.0037837577160493826,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.005575649434156379
+        },
+        {
+          "frame": 345,
+          "meanDifferenceFromFirst": 0.003853684413580247,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 6.99266975308642e-05
+        },
+        {
+          "frame": 346,
+          "meanDifferenceFromFirst": 0.003854327417695473,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 6.430041152263375e-07
+        },
+        {
+          "frame": 347,
+          "meanDifferenceFromFirst": 0.007971804269547324,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.004460519547325103
+        },
+        {
+          "frame": 348,
+          "meanDifferenceFromFirst": 0.007972286522633746,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 4.822530864197531e-07
+        },
+        {
+          "frame": 349,
+          "meanDifferenceFromFirst": 0.007973090277777779,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 8.037551440329218e-07
+        },
+        {
+          "frame": 350,
+          "meanDifferenceFromFirst": 0.004526588220164609,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.004241255144032922
+        },
+        {
+          "frame": 351,
+          "meanDifferenceFromFirst": 0.004527070473251029,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 4.822530864197531e-07
+        },
+        {
+          "frame": 352,
+          "meanDifferenceFromFirst": 0.00452562371399177,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 1.4467592592592592e-06
+        },
+        {
+          "frame": 353,
+          "meanDifferenceFromFirst": 0.00794238683127572,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.003933095421810699
+        },
+        {
+          "frame": 354,
+          "meanDifferenceFromFirst": 0.007941100823045267,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 1.9290123456790124e-06
+        },
+        {
+          "frame": 355,
+          "meanDifferenceFromFirst": 0.007941100823045267,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.0
+        },
+        {
+          "frame": 356,
+          "meanDifferenceFromFirst": 0.004614840534979424,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.003969264403292181
+        },
+        {
+          "frame": 357,
+          "meanDifferenceFromFirst": 0.004614840534979424,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.0
+        },
+        {
+          "frame": 358,
+          "meanDifferenceFromFirst": 0.004614840534979424,
+          "maxDifferenceFromFirst": 56,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.0
+        }
+      ],
+      "classificationLimits": "Exact decodedRGB identity passes. Mean<=.15/255 and p99<=2/255 only label small variation codec-compatible for REVIEW; max pixel outliers remain reported and never alone imply animation. Other variation is inconclusive REVIEW, not motion failure. Missing frames fail. Source-frame proof and actual image inspection remain separate."
+    },
+    "final12": {
+      "status": "REVIEW-small-decoded-variation-codec-compatible",
+      "framesExpected": 12,
+      "framesDecoded": 12,
+      "decodedRGBHashes": [
+        "a1d9132d991b17dc0eea8b50e3cf5f4a1227afff728fcfad00a01306a4f73269",
+        "43370e3e63cc90c5142ccbf1c195c1764f2915a08827686115a5e0bd3ed45d0e",
+        "900a151071d611d5b334c9f7d6c0495673834e01153c5704f50c195ffeb951d4",
+        "2a4e741c8b3b1d189bce1af1e6297a34bb70aa8b8c83bef812cc1603fd9667eb",
+        "686445e42fa7d86bfb5167dabbc903db50add7a46ce1fb3a4652dc98acef56e7",
+        "bf1c4680f66845c3c0146198ae68e205ff207f3afeaa06edc792b4cf63ce2a84",
+        "2be10b3a6185eb1246d20953b4e8448fde9609ee3fe01605a231625bfe5a37b9",
+        "3751d6daecea66651a3fe544695777d553982255193b07a8da7fa6f477606970",
+        "e85ae2dd7ecef326cc92c0f8b5bb9bd725e2439cf5437d0f06d9991336e57d0d",
+        "f6dc87496de898b40564351ff4abc6f01ebb86e98beac3ddce759ea41ed878ff",
+        "1bd66f38774065291171b79b25fdc81949a612263b994e85f5fd0bd4a5994592",
+        "e9491d9d72dcd7ef058745f3135f175fe589b39252593f08a6b607c95b487b82"
+      ],
+      "metrics": [
+        {
+          "frame": 1299,
+          "meanDifferenceFromFirst": 0.0,
+          "maxDifferenceFromFirst": 0,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0
+        },
+        {
+          "frame": 1300,
+          "meanDifferenceFromFirst": 0.0004060570987654321,
+          "maxDifferenceFromFirst": 19,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.0004060570987654321
+        },
+        {
+          "frame": 1301,
+          "meanDifferenceFromFirst": 0.03386638374485597,
+          "maxDifferenceFromFirst": 13,
+          "p99DifferenceFromFirst": 2.0,
+          "meanConsecutiveDifference": 0.03370884773662552
+        },
+        {
+          "frame": 1302,
+          "meanDifferenceFromFirst": 0.03396363811728395,
+          "maxDifferenceFromFirst": 19,
+          "p99DifferenceFromFirst": 2.0,
+          "meanConsecutiveDifference": 9.789737654320988e-05
+        },
+        {
+          "frame": 1303,
+          "meanDifferenceFromFirst": 0.033954796810699586,
+          "maxDifferenceFromFirst": 19,
+          "p99DifferenceFromFirst": 2.0,
+          "meanConsecutiveDifference": 1.591435185185185e-05
+        },
+        {
+          "frame": 1304,
+          "meanDifferenceFromFirst": 0.00507860725308642,
+          "maxDifferenceFromFirst": 19,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.034549414866255145
+        },
+        {
+          "frame": 1305,
+          "meanDifferenceFromFirst": 0.005095003858024691,
+          "maxDifferenceFromFirst": 19,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 5.9799382716049385e-05
+        },
+        {
+          "frame": 1306,
+          "meanDifferenceFromFirst": 0.009521444187242798,
+          "maxDifferenceFromFirst": 19,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.004518389917695473
+        },
+        {
+          "frame": 1307,
+          "meanDifferenceFromFirst": 0.016127346965020575,
+          "maxDifferenceFromFirst": 19,
+          "p99DifferenceFromFirst": 1.0,
+          "meanConsecutiveDifference": 0.00851466049382716
+        },
+        {
+          "frame": 1308,
+          "meanDifferenceFromFirst": 0.016129918981481483,
+          "maxDifferenceFromFirst": 19,
+          "p99DifferenceFromFirst": 1.0,
+          "meanConsecutiveDifference": 0.00010706018518518519
+        },
+        {
+          "frame": 1309,
+          "meanDifferenceFromFirst": 0.0051122042181069955,
+          "maxDifferenceFromFirst": 19,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.012848025977366255
+        },
+        {
+          "frame": 1310,
+          "meanDifferenceFromFirst": 0.0051234567901234564,
+          "maxDifferenceFromFirst": 19,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.0001604295267489712
+        }
+      ],
+      "classificationLimits": "Exact decodedRGB identity passes. Mean<=.15/255 and p99<=2/255 only label small variation codec-compatible for REVIEW; max pixel outliers remain reported and never alone imply animation. Other variation is inconclusive REVIEW, not motion failure. Missing frames fail. Source-frame proof and actual image inspection remain separate."
+    }
+  },
+  "sourceProof": {
+    "manifest": {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/out/opus55_first_day_1080p30.source-frame-hashes.json",
+      "sha256": "4d467e70212f9743395f86ab5a6592d57c964007e96404247666f88a045e815e",
+      "bytes": 153598
+    },
+    "definition": "SHA256 of lossless PNG frames supplied to the segment encoders; segment video streams concatenated without re-encoding.",
+    "source": "Renderer hashes of lossless PNG buffers fed directly to encoder; no claim of decoded H264 byte identity.",
+    "videoHashBindingVerified": true,
+    "expectedVideoSha256": "e9edb78e1299b558ed81ea0d58dc627fa39494cba0ab0c23e86c6d932869d191",
+    "actualVideoSha256": "e9edb78e1299b558ed81ea0d58dc627fa39494cba0ab0c23e86c6d932869d191",
+    "recordsStructurallyValid": true,
+    "groups": {
+      "S10": {
+        "status": "PASS-renderer-source-PNG-hold",
+        "contiguousWindowCoverageVerified": true,
+        "identicalSourceHashes": true,
+        "records": [
+          {
+            "frame": 339,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 340,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 341,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 342,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 343,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 344,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 345,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 346,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 347,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 348,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 349,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 350,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 351,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 352,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 353,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 354,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 355,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 356,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 357,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          },
+          {
+            "frame": 358,
+            "sha256": "f9ed7f393a3d975ae887daefef5a13ea2b4fc0aa500917d483a0216f39efa125"
+          }
+        ]
+      },
+      "final12": {
+        "status": "PASS-renderer-source-PNG-hold",
+        "contiguousWindowCoverageVerified": true,
+        "identicalSourceHashes": true,
+        "records": [
+          {
+            "frame": 1299,
+            "sha256": "2ae0c7da9a18e103eb94458957aaeb0b2668509ad0b2fa93301ccc646299f70c"
+          },
+          {
+            "frame": 1300,
+            "sha256": "2ae0c7da9a18e103eb94458957aaeb0b2668509ad0b2fa93301ccc646299f70c"
+          },
+          {
+            "frame": 1301,
+            "sha256": "2ae0c7da9a18e103eb94458957aaeb0b2668509ad0b2fa93301ccc646299f70c"
+          },
+          {
+            "frame": 1302,
+            "sha256": "2ae0c7da9a18e103eb94458957aaeb0b2668509ad0b2fa93301ccc646299f70c"
+          },
+          {
+            "frame": 1303,
+            "sha256": "2ae0c7da9a18e103eb94458957aaeb0b2668509ad0b2fa93301ccc646299f70c"
+          },
+          {
+            "frame": 1304,
+            "sha256": "2ae0c7da9a18e103eb94458957aaeb0b2668509ad0b2fa93301ccc646299f70c"
+          },
+          {
+            "frame": 1305,
+            "sha256": "2ae0c7da9a18e103eb94458957aaeb0b2668509ad0b2fa93301ccc646299f70c"
+          },
+          {
+            "frame": 1306,
+            "sha256": "2ae0c7da9a18e103eb94458957aaeb0b2668509ad0b2fa93301ccc646299f70c"
+          },
+          {
+            "frame": 1307,
+            "sha256": "2ae0c7da9a18e103eb94458957aaeb0b2668509ad0b2fa93301ccc646299f70c"
+          },
+          {
+            "frame": 1308,
+            "sha256": "2ae0c7da9a18e103eb94458957aaeb0b2668509ad0b2fa93301ccc646299f70c"
+          },
+          {
+            "frame": 1309,
+            "sha256": "2ae0c7da9a18e103eb94458957aaeb0b2668509ad0b2fa93301ccc646299f70c"
+          },
+          {
+            "frame": 1310,
+            "sha256": "2ae0c7da9a18e103eb94458957aaeb0b2668509ad0b2fa93301ccc646299f70c"
+          }
+        ]
+      }
+    },
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "S36c-start-v2",
+  "tool": "Codex built-in image_gen",
+  "prompt": "Use case: precise-object-edit. Edit ONLY the framing of this approved transparent single dance pose: provide generous clear TRANSPARENT HEADROOM, at least60pixels above the very highest flyaway hair on a1920x1080 canvas. Current hair touches top edge; zoom out the single character slightly (about10%) and centre her horizontally, retaining a natural lower-waist mid-shot crop. Keep identical pose, face, costume, cel shading, left open hand on VIEWER RIGHT, correct head tilt toward VIEWER RIGHT/raised hand, and five fingers. Do not alter the hand gesture or mirror the image. The crown must be fully visible with a band of actual transparent alpha above ALL hair. Retain actual transparency everywhere around subject; no black/white backdrop, no rendered checkerboard, no frame, no collage. No text, no letters, no logos, no watermark, no numbers, no starbursts or halo. Preserve correct character identity and all details, only fix the top crop and maintain transparent side margins.",
+  "references": [
+    "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-8801b50c-18c5-4625-a14e-cd146e4df919.png"
+  ],
+  "transparent_background": true,
+  "source_path": "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-7e5a726b-1c95-4a22-882a-814bcb781045.png",
+  "selected_path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S36c-start-v2.png",
+  "status": "selected-still-reviewed-render-pending",
+  "original_codex_image_retained": true,
+  "previous_selected_path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S36c-start.png",
+  "revision_reason": "Framing-only correction: first selected pose had36 nonzero-alpha pixels touching top edge; generate actual headroom, preserve left hand and correct tilt.",
+  "sha256": "c27ddf31c2834e508b482b225807d9571ea06b32209d933be282d60486571195",
+  "alphaStatistics": {
+    "mode": "RGBA",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "min": 0,
+    "max": 255,
+    "transparentFraction": 0.7623640482231566,
+    "nonzeroBounds": [
+      202,
+      91,
+      1467,
+      941
+    ],
+    "edgeNonzeroCounts": {
+      "top": 0,
+      "bottom": 577,
+      "left": 0,
+      "right": 0
+    },
+    "alphaAbove32Bounds": [
+      508,
+      93,
+      1152,
+      941
+    ]
+  },
+  "visualReview": [
+    "Front mid-shot with anatomical left open palm on viewer right and five fingers.",
+    "Head tilt corrected toward her left/viewer right. Ribbon and barrette identity placement were not mirrored.",
+    "Framing repair provides91px of transparent headroom; lower torso crop is intentional."
+  ],
+  "motionReview": "Not reviewed: a generated still is not proof of dance performance.",
+  "referenceOriginalRetained": true,
+  "generatedSymbols": "No visible text, logos or starburst emblems; ordinary barrette and plain tie retained for code finishing."
+}

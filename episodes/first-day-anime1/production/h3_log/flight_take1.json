@@ -1,0 +1,35 @@
+{
+ "id": "flight_take1",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Animate ONLY these same two anime girls flying weightlessly while holding hands. Keep identities, costumes, hand clasp, five fingers and bare feet exact. Their very long coral-to-cream twin-tails and coral sash stream strongly in wind with follow-through; the short black bob and hoodie flutter, knees and ankles move gently as they fly. Joyful natural smiles, no large pose change or body rotation. Camera absolutely fixed and composition stable. Background must stay a completely flat uniform chroma GREEN #00FF00, no shadows, no gradients, no scenery or new objects. No text, letters, logos or watermark. Clean feature-film cel anime linework, no morphing or extra limbs.",
+  "image_url": "<data uri>",
+  "duration": 3,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026102601
+ },
+ "payload_sha256": "8096121de955de0eb98264fe29d1268104d93cb25008909c39a44daf385d0ff0",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/flight_take1.mp4",
+ "phase": "done",
+ "billable_s": 3.0,
+ "price": 0.09,
+ "request_id": "01a106af-1a6f-7833-9109-3f66c3e5498e",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a106af-1a6f-7833-9109-3f66c3e5498e/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a106af-1a6f-7833-9109-3f66c3e5498e",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a106af-1a6f-7833-9109-3f66c3e5498e/cancel",
+ "submitted": 1791113501.4209542,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad05b6/Pc1AV1_-ffWWt1n1a7WQl_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "Pc1AV1_-ffWWt1n1a7WQl_minimax-h3.mp4",
+   "file_size": 8945635
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 1.3347176909446716
+  }
+ },
+ "done": 1791113513.2151968
+}

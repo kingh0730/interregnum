@@ -1,0 +1,104 @@
+{
+  "status": "implemented-diagnostic-tested-not-final-film-QA",
+  "script": "scripts/qa_final.py",
+  "command": ".venv/bin/python episodes/first-day-anime2/project/scripts/qa_final.py episodes/first-day-anime2/project/out/opus55_first_day_1080p30.mp4 --out episodes/first-day-anime2/project/qa/final --asset-map episodes/first-day-anime2/project/helper/asset_map.json --camera-diagnostics <optional-existing-diagnostics.json>",
+  "exitCodes": {
+    "0": "No measured FAIL; manual/evidence review may still remain pending. Never overall artistic approval.",
+    "1": "At least one measured technical FAIL.",
+    "2": "Missing input/tool or runtime error. No fabricated pass report."
+  },
+  "sceneThresholdsFixedBeforeFinal": [
+    0.03,
+    0.1,
+    0.3
+  ],
+  "sceneDetectionPolicy": "Raw FFmpeg scene scores; all thresholds report every missed boundary, nearest-frame lag and extra detection. Detection is evidence-review separate from EDL/actual-shot-presence. S37→S38 exempt as continuous; S20→S21 postwhite at687 is valid+1.",
+  "sourceFreezeProofSchema": {
+    "note": "Optional --source-freeze-proof JSON; paths resolved relative to manifest. All actual files/hashes verified; each group must cover exact prescribed frames with one identicalSHA256. Empty/unverifiable manifests cannot pass.",
+    "S10": [
+      {
+        "frame": 339,
+        "path": "source-f339.png",
+        "sha256": "actualSHA256 repeatfor339through358"
+      }
+    ],
+    "final12": [
+      {
+        "frame": 1299,
+        "path": "source-f1299.png",
+        "sha256": "actualSHA256 repeatfor1299through1310"
+      }
+    ]
+  },
+  "holdPolicy": "Exact decoded identity passes; nonidentical decoded frames are codec-compatible or inconclusive REVIEW. Max outliers alone never imply motion. Verified source hashes establish source hold independently; obvious actual content movement would require visual evidence.",
+  "diagnosticTest": {
+    "input": "qa/timing_cards.mp4",
+    "report": "qa/qa-runner-diagnostic/qa.json",
+    "reportSha256": "306d9db4f86014b0af68cfe8b574adcc95086e0b3cc878afc958b4d2f8ecbe55",
+    "status": "DIAGNOSTIC-NOT-DELIVERY",
+    "expectedFailures": [
+      "resolution",
+      "videoBitrate"
+    ],
+    "actualFrameCount": 1311,
+    "actualPacketIdentity": {
+      "status": "PASS",
+      "actual": {
+        "sourcePacketCount": 1673,
+        "finalPacketCount": 1673,
+        "finalCodec": "mp3",
+        "firstDifferentPacket": null
+      },
+      "expected": "Same complete MP3 packetSHA256 sequence; container metadata/PTS may differ"
+    },
+    "actualAudioAlignment": {
+      "status": "PASS",
+      "sampleRate": 11025,
+      "sourceDecodedSamples": 481462,
+      "finalDecodedSamples": 481548,
+      "lagSamples": 0,
+      "lagSeconds": 0.0,
+      "lagFrames": 0.0,
+      "lagSign": "positive means final audio delayed relative to source",
+      "alignedCosineSimilarity": 0.9999999999999981,
+      "alignedRMSE": 9.283910522624773e-09,
+      "scope": "mono11025Hz decoded waveforms; maximum search lag±1s; allowed alignment±1frame, similarity>=.9999"
+    },
+    "actualAVWindowMedian": {
+      "status": "PASS-measured-median-only",
+      "medianWindowLagFrames": 0.0,
+      "scope": "Actual mono decoded audio RMS in30fps bins versus mean absolute grayscale frame difference at480x270. Nonoverlapping4s windows; final>=2s accepted; lag search±15frames. Positive lag means picture changes follow audio. This correlation of unlike signals is a diagnostic, not proof of creative sync. Raw arrays included; no threshold adjustment or low-score exclusion."
+    },
+    "evidenceFiles": 346,
+    "visuallyInspected": "S10 and final12 actual-video strips show frozen0339/1299counters and unchangedprogress. Sourcehashsidecar absent onhistorical timingcards; codecresidue REVIEW retained.",
+    "syntheticMath": "Known+367sample delay recovered exactly at11025Hz, cosine≈1; positive lag convention checked.",
+    "holdReviews": {
+      "S10": "REVIEW-small-decoded-variation-codec-compatible",
+      "final12": "REVIEW-small-decoded-variation-codec-compatible"
+    },
+    "correction": "Earlier verbal moving-frame-counter claim was unsupported and withdrawn after actual S10 strip inspection. Sparse decoded differences are REVIEW, not proof of animation."
+  },
+  "scopeLimits": [
+    "Final video has not yet been supplied to this runner.",
+    "Decoded audio/visual correlation is a weak diagnostic of unlike signals; raw window values retained, no hand-selected windows.",
+    "75%-into-LRC frames are reproducible typography review candidates, not proven true text peaks.",
+    "Contact sheets and strips do not auto-certify identity, actual named move, safe text or aesthetic quality.",
+    "Manual/model/text/playback checks are always pending in generated reports."
+  ],
+  "scriptSyntax": "PASS; hold classification retested against saved actual decoded measurements after correction.",
+  "rendererSourceHashSidecar": {
+    "argument": "--source-hashes PATH (optional; auto-discovers video.with_suffix(.source-frame-hashes.json))",
+    "schema": {
+      "definition": "lossless PNG buffer sent directly to encoder",
+      "video_sha256": "SHA256 of exact final encodedvideo",
+      "frames": [
+        {
+          "frame": 339,
+          "sha256": "SHA256 of lossless sourcePNGbuffer"
+        }
+      ]
+    },
+    "verification": "Encoded videoSHA binding mustmatch, records must have unique integer frameindices/64hexhashes, and eachholdwindow mustcoverall20or12contiguousframes withoneidenticalsourcehash. Sourceproof reportedseparately fromdecodedH264variance.",
+    "test": "Synthetic schema/binding test passed:matchingboundfixturevalid;modifiedvideofixturerejected. These synthetic records aretemporary andnever attached toproductionQA."
+  }
+}

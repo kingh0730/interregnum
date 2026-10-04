@@ -1,0 +1,41 @@
+{
+  "shots": {
+    "S10": {
+      "assets": {
+        "plate": null,
+        "depth": null,
+        "mask": null,
+        "layers": [],
+        "poses": [],
+        "support": {},
+        "features": {
+          "status": "not_required",
+          "eyes": [],
+          "hairpin": null,
+          "tie": null,
+          "halo": null
+        },
+        "status": "code_only",
+        "approval": false
+      },
+      "method": "authored-code",
+      "cameraClamps": [],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo"
+      ],
+      "unverified": []
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    339
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}

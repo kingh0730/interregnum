@@ -1,0 +1,42 @@
+[
+  {
+    "id": "xiaoman-float",
+    "prompt": "One full body isolated Xiaoman anime character floating joyfully weightless, arms open loosely, knees slightly bent, BARE FEET, exact identity black short messy bob with claw clip round glasses cream hoodie coral zipper pull charcoal trousers. Gentle joyful smile, warm cel shading. Entire body/hair/feet in frame generous margin, genuine transparent alpha, no background or haze or glow. No text/logo. Clean feature-film anime matching reference.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-b96229f6-af34-47c3-b5a2-22723eec433a.png",
+    "local_path": "assets/plates/xiaoman-float-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "S22-v2",
+    "prompt": "Preserve the entire frame, two girls, their hands, poses, faces and camera exactly. Change only the outdoor skyline from sunrise to rainy 3am NIGHT: dark ink/blue sky and lit city, no sun, no dawn. Keep gentle warm supernatural coral-ivory light on characters. The door geography and all room objects remain identical. No text or logos.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-d17de0a5-1d9a-4511-a9e8-e25c13707b7e.png",
+    "local_path": "assets/plates/S22-v2.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "S25-back",
+    "prompt": "Turntable view of the EXACT same pair frozen in the same leap, holding hands, but camera rotated 180 degrees to strict BACK VIEW. Show backs of both heads and outfits, no faces. Opus now on camera RIGHT with very long coral-cream twin-tails; Xiaoman on camera LEFT short black bob and cream hoodie charcoal pants. Preserve world poses, bent knees, hand clasp at center, both wearing tan shoes, Opus black socks. Full pair inside frame, transparent alpha, no background/haze/glow, no letters/text/logos.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-fe2373a8-14e3-453b-b228-71eaed6b6be7.png",
+    "local_path": "assets/plates/S25-back-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "S25-side",
+    "prompt": "Turntable view of the EXACT same pair frozen in same leap holding hands, camera rotated 90 degrees around pair: side view with Xiaoman closer to camera, Opus behind her, their joined hands visible. Keep world poses, bent knees, tan shoes and Opus black socks, laughing faces when visible. Full two silhouettes within frame, no extra limbs, true transparent alpha, no background/haze/glow. Same identities and costumes, no text/logos.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-b4855c65-41ca-410c-9708-ca0cd7e8631c.png",
+    "local_path": "assets/plates/S25-side-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "S25-side2",
+    "prompt": "Turntable view of EXACT same pair frozen in same leap holding hands, camera rotated 270 degrees around pair: opposite side view with Opus closer to camera, Xiaoman behind her, joined hands visible. Keep world poses, bent knees, tan shoes and Opus black socks, laughing faces when visible. Full two silhouettes within frame, no extra limbs, true transparent alpha, no background/haze/glow. Same identities and costumes, no text/logos.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-5c48e6cf-3622-4cea-8a07-965735d3f12e.png",
+    "local_path": "assets/plates/S25-side2-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  }
+]

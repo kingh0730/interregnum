@@ -1,0 +1,34 @@
+[
+  {
+    "id": "S16-v2",
+    "tool": "Codex built-in image_gen",
+    "prompt": "Edit this anime frame precisely. Keep Opus identity, pose, anatomy, costume, camera, apartment geometry and ivory light column unchanged. Change ONLY these two things: (1) outside the window it is STILL NIGHT at 3am, ink-dark sky with rain and city lights, not dawn or sunrise; preserve warm coral/ivory light column on heroine but no sun visible outside; (2) every floating keyboard keycap must be COMPLETELY BLANK, remove all letters/numbers/symbols from keys. No text or logos anywhere. Keep image quality crisp and cel-anime, preserve fine hair and hands.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-a7088746-4840-4be6-9045-a021f09912ac.png",
+    "local_path": "assets/plates/S16-v2.png",
+    "seed": null
+  },
+  {
+    "id": "S32",
+    "tool": "Codex built-in image_gen",
+    "prompt": "Cinematic feature film anime 16:9 frame. Two reference girls Opus and Xiaoman floating weightless above an immense luminous blue and coral DAWN CLOUD SEA, holding hands, both BAREFOOT; Opus floor-length coral-to-cream twin-tails and coral bookmark sash float gently, ivory jacket/charcoal music hem skirt; Xiaoman black bob round glasses cream hoodie charcoal pants. Full bodies tiny at center-left, large sweeping cloud space, blank sheet-music paper lanterns rising from far city below, gentle dawn rim light. Camera wide24mm tilted view for slow camera roll. Tender hush, not action. Clean cel linework soft cel shade painterly cloud volumes and cream-paper warmth, ink #141413 ivory #FAF9F5 coral #D97757 blue #6A9BCC. Blank brooch and ankle tag, no text, logos, letters, watermarks.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-a7ba446c-9c8f-4a28-b7ac-8842d4aa7879.png",
+    "local_path": "assets/plates/S32-v1.png",
+    "seed": null
+  },
+  {
+    "id": "S44",
+    "tool": "Codex built-in image_gen",
+    "prompt": "Cinematic anime 16:9 final dawn meadow frame. Camera LOW CLOSE to Opus's bare feet resting in real olive-green grass in foreground, right ankle fine gold chain with blank round tag. Opus sits farther up left in grass with legs toward camera, ivory jacket charcoal music hem skirt long coral sash, very long coral-to-cream low twin-tails lying softly in grass. Xiaoman lies smiling beside her to right, black bob round glasses cream hoodie charcoal pants, also barefoot. Anatomically correct toes/hands, peaceful underplayed faces. Vast blue sky #6A9BCC merging with restrained coral horizon #D97757 fills upper half, gentle dawn light, no city. Strong wide24mm ground perspective for rising crane-away. Feature-film clean cel linework and painterly luminous landscape cream paper texture. Blank logos/tag, no letters or text.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-527e2bae-8456-45e1-bbf2-bbdce23d54e3.png",
+    "local_path": "assets/plates/S44-v1.png",
+    "seed": null
+  },
+  {
+    "id": "helix-cutout",
+    "tool": "Codex built-in image_gen",
+    "prompt": "Background extraction only. Remove the entire blurry brown/gray background and all glow, shadows and haze from outside this anime character, leaving genuine clean transparent alpha right up to the hair edges. Keep the character's pixels, face, hands, clothes, pose and long twin-tail strands unchanged. No red/yellow halo or fringe. Do not repaint or redesign. Character should be fully opaque except antialiased edge pixels; all exterior empty pixels fully transparent.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-c804f397-5c15-40e6-8e83-68a488500619.png",
+    "local_path": "assets/plates/helix-front-cutout-v2.png",
+    "seed": null
+  }
+]

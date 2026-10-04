@@ -1,0 +1,50 @@
+{
+  "id": "S36h-start",
+  "tool": "Codex built-in image_gen",
+  "prompt": "Use case: illustration-story. Derive ONE isolated full-body anime dance-pose cutout from approved character sheet; identity/clothes reference ONLY, never a sheet. Genuine transparent RGBA alpha, no scenery/floor/shadow/checkerboard/collage. 1920x1080 landscape; centre one character at75%canvasheight, generous transparent margins around ALL hair, fingers and both shoes. Exact reference Opus: asymmetric black bob with warm brown undertone and claycoral innerlayer/tips, amber-coral eyes, cream-ribbon long side lock/plain coral barrette on anatomicalLEFT, oversized cream knit cardigan-cape/slatepiping, white blouse/plain coral tie, charcoal pleated skirt/fivefineparallel hemstripes, white anklesocks/chunky cream sneakers/coral soles. Thin-thick animeink and warmsoftcelshading. Pose H: FRONT-FACING FULL FIGURE landing lightly ON TOES after a smalljump, knees soft and heels slightly raised, body balanced and upright. Her anatomicalRIGHT arm extends toward camera with a friendly FINGER-GUN hand gesture: index points at VIEWER, thumb raised, otherthree fingers naturally folded, anatomically clear foreshortening. NO actual gun or object. Leftarm relaxed at side forbalance. Look straight towardviewer with joyful confident smile. Keep allhandsandfeet intact with no cropped fingertips orshoetips. Wholesome modest fullyclothed, chest-height50mm view. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no generated halo/starbursts/emblems; codeadds these later. One precise still, no motiontrail/duplicate limbs.",
+  "references": [
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/sheets/opus-base.png"
+  ],
+  "transparent_background": true,
+  "source_path": "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-b1def461-ee4d-413e-a8a2-ad13413a0e3b.png",
+  "selected_path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S36h-start.png",
+  "status": "selected-still-reviewed-render-pending",
+  "original_codex_image_retained": true,
+  "sha256": "d5cd8f325374e8a0024592bfaf0a03d9f31df41388cb8f6cfef797dcc277a0e8",
+  "alphaStatistics": {
+    "mode": "RGBA",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "min": 0,
+    "max": 255,
+    "transparentFraction": 0.8871816351331425,
+    "nonzeroBounds": [
+      71,
+      13,
+      1610,
+      929
+    ],
+    "edgeNonzeroCounts": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "alphaAbove32Bounds": [
+      662,
+      15,
+      1073,
+      926
+    ]
+  },
+  "visualReview": [
+    "Front full figure with soft landing knees and a friendly right-hand finger-gun aimed toward the viewer.",
+    "Foreshortened pointing index, raised thumb, and folded fingers; no actual object or weapon.",
+    "Both shoes and hands complete. A still cannot prove the timing or mechanics of the landing."
+  ],
+  "motionReview": "Not reviewed: a generated still is not proof of dance performance.",
+  "referenceOriginalRetained": true,
+  "generatedSymbols": "No visible text, logos or starburst emblems; ordinary barrette and plain tie retained for code finishing."
+}

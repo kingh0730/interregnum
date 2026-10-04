@@ -1,0 +1,5 @@
+{
+  "completed_video_requests": 40,
+  "quoted_video_cost_usd": 3.7,
+  "scope": "Sum of recorded video request estimates; excludes Codex image generation and matting/depth utilities. Not an invoice."
+}

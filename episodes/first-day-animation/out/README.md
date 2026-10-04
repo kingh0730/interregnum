@@ -90,3 +90,7 @@ Generation files and media remain local and are not committed. Do not regenerate
 Final verification: 1,311 frames at 30/1 fps; video duration 43.700000 seconds; 1,673 MP3 packet payloads identical to source; no all-black frames. Six representative frame indices rendered identically after out-of-order rendering. See `qa/technical-report.json`, `qa/determinism.json`, `qa/visual-review.json`, `qa/contact-sheet.jpg` and `qa/luminance.png`.
 
 Revision: removed only the S07a spin around 0:15. All rendered frames outside 439–471 remain byte-identical to the prior version. Original audio and overall timing remain unchanged. See `qa/no-spin-revision.json`.
+
+## QuickTime playback copy
+
+Use `opus55_first_day-quicktime.mp4` for QuickTime: AAC-LC audio at 320 kb/s, with the video stream copied byte-for-byte. The original `opus55_first_day.mp4` retains untouched MP3 audio but its MP3-in-MP4 packaging was reported silent in QuickTime. The playback copy changes audio encoding only; it preserves the no-spin edit, timing and level. Original master retained. Native QuickTime playback has not been directly verified.

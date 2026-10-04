@@ -1,0 +1,28 @@
+{
+  "base_scene_sha256": "ccadc5f79888aefedd61e0f1266f2b036f9d8698659e9f7f2d5ad3c2cf6325d5",
+  "base_frame_store": {
+    "fingerprint": "66e3e82f9d2fcef46118033ba22720734569986eb08d2338d26bd8adfc2939dc",
+    "frame_count": 1311,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 30
+  },
+  "applied_revision": {
+    "shots": [
+      "S23"
+    ],
+    "frames": [
+      621,
+      680
+    ],
+    "reason": "Cover all four room walls during the full orbit, removing exposed blank wall borders.",
+    "scene_sha256": "962ba9fc8ca12069b70c9ed281d3ad515643d67ab550301661970f87096a612c",
+    "verified": "Fresh-browser and out-of-order test at frame 640 passed. Frame 500 unchanged. Revised preview anchors 622/640/672 visually inspected; all 60 final frames rerendered."
+  },
+  "non_visual_delivery_metadata_update": {
+    "scene_sha256": "e0d6c326149fe6b90e192da0b9628d957382ac00347ae428c2ecf767611ddc63",
+    "reason": "STAGE.json status updated after export; stage remains production and no rendered property changes."
+  }
+}

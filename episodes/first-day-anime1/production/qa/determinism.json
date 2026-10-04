@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "scale": 0.5,
+  "subframes": 4,
+  "test": "frame -> 10 -> frame -> fresh-browser frame; all three SHA256 hashes identical",
+  "frames": {
+    "500": "09d9a567ea63141d420067d32c01e4e0ce580e1732ac607117c2ffb49f0ec8a3",
+    "952": "0a1b066082148e616367f606e3413643d4322465866d677f99854dc924fc5835",
+    "1230": "9189a2ccd816124f462f0a052d1bb37c1e2ab18117e767188798ec32e4776878",
+    "640": "e1be342af52d000694c4840babdcdf2be34a8dba408aee0a51f2666e64beaf12"
+  },
+  "font_coverage": {
+    "unique_characters": 197,
+    "missing": 0
+  },
+  "revision_note": "S23 wall coverage revision passed frame 640 determinism; unaffected frame 500 retained its prior hash."
+}

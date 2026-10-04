@@ -1,0 +1,26 @@
+[
+  {
+    "id": "meadow-empty",
+    "prompt": "16:9 single painterly anime environment plate for final crane-away. Same quiet dawn hillside as first reference but NO PEOPLE or belongings anywhere. A gently rolling olive-green grassy hillside occupies lower third, a few soft wildflowers, distant low hills at horizon. Huge serene clear sky #6A9BCC fading into pale coral #D97757 at horizon, cream light, less cloud detail and more negative space than reference. Feature-film luminous painterly anime landscape, subtle cream paper, no buildings, no text/logo. Eye-height wide24mm, calm.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-42717947-d758-4664-a292-49516a7904c8.png",
+    "local_path": "assets/plates/meadow-empty-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "S16-v3",
+    "prompt": "Reframe this same scene 15% WIDER while preserving the entire character identity, pose, costume, night apartment and light column. Add space ABOVE her head and below feet so full girl occupies about 75% of picture height and there is a generous empty space above the head for a halo composited later. Keep camera centered on her and aspect16:9, maintain every existing object position relationally and no new items. All floating keycaps and labels remain completely BLANK. It is still rainy NIGHT outside, no sun/dawn. No text or logos.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-c5d2cb2c-f5a4-44a0-a3cc-53785771b976.png",
+    "local_path": "assets/plates/S16-v3.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "S20-contact",
+    "prompt": "Create the ending keyframe of the same foot descent. Keep exact camera, same right foot and ankle identity, wet balcony tile pattern, night city background, hair and skirt edges, blank round gold tag and chain. Lower the foot gently until the sole and toes have JUST MADE CONTACT with the wet tile surface, a delicate coral ripple spreading from the contact. Foot anatomically correct five toes, natural slight toe flex on landing. No change elsewhere, no letters/text/logos.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-47f8f0aa-a60e-4ad1-b3b5-860fbe0ab653.png",
+    "local_path": "assets/plates/S20-contact-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  }
+]

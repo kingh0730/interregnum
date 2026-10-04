@@ -1,0 +1,31 @@
+{
+  "status": "exported_technical_qa_passed_manual_playback_pending",
+  "plan": "files/opus55_first-day_MV_production_plan.md",
+  "user_overrides": [
+    "No Luma",
+    "All generative images use Codex built-in image generation",
+    "Execute authorized work without permission questions"
+  ],
+  "completed": [
+    "Audio analysis, lyric/onset/beat timing",
+    "44-shot animatic and contact-sheet review",
+    "Codex character/environment/shot artwork",
+    "Selected H3 Max motion, lip and chroma passes",
+    "Official vectors and font coverage",
+    "All scene/camera rigs and prescribed S25 fallback",
+    "Fresh-browser/order determinism at frames 500, 952, 1230",
+    "Shot log and production documentation",
+    "All 1311 full-resolution frames rendered and image QA passed",
+    "Requested full-size anchors and all-shot contact sheets inspected",
+    "H.264/AAC film and 540p preview encoded",
+    "Encoded colour tags, frame count, clean decode and zero-lag audio checks passed"
+  ],
+  "pending": [
+    "Full audiovisual playback and phoneme review"
+  ],
+  "spec_conflicts": [
+    "Audio duration is 43.670 seconds; 1311 frames at 30fps is 43.700 seconds, exceeding the requested 20ms tolerance by 10ms. Preserve required frame count and original song.",
+    "Plan anchor-frame examples use 357 for 11.92 seconds and 528 for 17.61; the explicit round(t*30) rule gives 358 and 528 respectively. Use round rule."
+  ],
+  "manual_playback_verified": false
+}

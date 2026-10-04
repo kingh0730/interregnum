@@ -1,0 +1,35 @@
+{
+ "id": "S23_take1",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Their index fingertips remain in exactly the same gentle contact at frame center, a tender shared breath and a barely perceptible tearful smile. Keep the fingertip contact point stationary and all fingers stable. Tiny natural eye and cheek movement only; no reaching or withdrawing.",
+  "image_url": "<data uri>",
+  "duration": 3,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026100231
+ },
+ "payload_sha256": "a8ac4adbf31851efa13d7fdb60cda39d36bf6f69b45c74ba0705ce292b4dd8d3",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S23_take1.mp4",
+ "phase": "done",
+ "billable_s": 3.0,
+ "price": 0.09,
+ "request_id": "01a1060a-7bf0-7e30-9c24-7c03da26735d",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060a-7bf0-7e30-9c24-7c03da26735d/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060a-7bf0-7e30-9c24-7c03da26735d",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060a-7bf0-7e30-9c24-7c03da26735d/cancel",
+ "submitted": 1791102712.943445,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad017f/xpQmRTLGDxe6kp8T4uL39_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "xpQmRTLGDxe6kp8T4uL39_minimax-h3.mp4",
+   "file_size": 10269757
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 1.7133152075111866
+  }
+ },
+ "done": 1791102724.663349
+}

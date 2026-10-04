@@ -1,0 +1,47 @@
+{
+  "render_method": "Local Three.js / Playwright PNG-to-FFmpeg, native1920x1080,30fps,CRF14",
+  "parallel_execution": true,
+  "runs": [
+    {
+      "segment": "part0",
+      "from": 0,
+      "frames": 339,
+      "elapsed_seconds": 519.613
+    },
+    {
+      "segment": "part1",
+      "from": 339,
+      "frames": 347,
+      "elapsed_seconds": 689.647
+    },
+    {
+      "segment": "part3",
+      "from": 1014,
+      "frames": 163,
+      "elapsed_seconds": 454.07
+    },
+    {
+      "segment": "part2",
+      "from": 686,
+      "frames": 328,
+      "elapsed_seconds": 727.774
+    },
+    {
+      "segment": "part4",
+      "from": 1177,
+      "frames": 41,
+      "elapsed_seconds": 36.831,
+      "previous_elapsed_seconds": 37.358,
+      "revision": "Final S37 identity backplate and dependent mosaic update"
+    },
+    {
+      "segment": "part5",
+      "from": 1218,
+      "frames": 93,
+      "elapsed_seconds": 25.553,
+      "previous_elapsed_seconds": 27.23,
+      "revision": "Final S37 identity backplate and dependent mosaic update"
+    }
+  ],
+  "scope": "All six corrected segment renders complete; elapsedSeconds from actual command output."
+}

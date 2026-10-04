@@ -1,0 +1,126 @@
+{
+  "status": "implemented_syntax_checked_integration_pending",
+  "module": "src/graphics.mjs",
+  "api": "createGraphics({width,height,sync,shots,onsets,fonts,brand}) -> {draw,components,texture,drawSpark,titleSlam,brushWrite,...}",
+  "validation": {
+    "javascript_syntax": "PASS: node --check",
+    "browser_render": "NOT RUN: delegated task forbids browser",
+    "glyph_coverage": "PENDING: caller must load local fonts and visually inspect glyph coverage",
+    "safe_area_and_face_occlusion": "Safe ink-bound geometry PASS; actual local font pixel review and subject-mask occlusion still pending.",
+    "full_film_QA": "NOT APPROVED",
+    "styleB_safe_bounds_math": {
+      "status": "PASS",
+      "method": "Node-only mocked Canvas TextMetrics, checking every visible frame of every specified layout under conservative ink metrics and missing-actual-metrics fallback; not a browser/font raster check.",
+      "results": [
+        {
+          "mode": "conservativeInk",
+          "checks": 350,
+          "layouts": [
+            "S11",
+            "S12",
+            "S14",
+            "S15",
+            "S16",
+            "S18",
+            "S20",
+            "S21",
+            "S25",
+            "S27",
+            "S29",
+            "S32",
+            "S33",
+            "S36a",
+            "S37"
+          ],
+          "minimumUniformFitScale": 0.7827898587908217,
+          "status": "PASS"
+        },
+        {
+          "mode": "missingActualMetrics",
+          "checks": 350,
+          "layouts": [
+            "S11",
+            "S12",
+            "S14",
+            "S15",
+            "S16",
+            "S18",
+            "S20",
+            "S21",
+            "S25",
+            "S27",
+            "S29",
+            "S32",
+            "S33",
+            "S36a",
+            "S37"
+          ],
+          "minimumUniformFitScale": 0.8443158786103193,
+          "status": "PASS"
+        }
+      ]
+    },
+    "styleB_after_outro_fix": {
+      "status": "PASS",
+      "visibleFrameChecks": 421,
+      "layouts": 21,
+      "secondOutroFirstCharacterPresentAtFrame1112": true,
+      "method": "Node conservative Canvas TextMetrics stand-in; browser pixel review remains required."
+    },
+    "latest_fix": "Node syntax PASS; replacement render QA pending."
+  },
+  "implemented": [
+    "Style A per-character lyrics from sync.lyrics[].chars, 54px serif and 6-frame cross-dissolve, 530ms coral cursor.",
+    "Style B analytic spring damping12 stiffness200, 1.8-to-1 entry, six-degree rotation, three trails, kick pulses, staggered rows, emphasized glyph, outline and clay shadow.",
+    "Style B renders to a separate canvas with destination-out subject mask, or a protected face box when no subject mask supplied.",
+    "Style C slide-in name tags with image-backed SVG spark bullet.",
+    "ChatWindow, ChatBubble, Toast, Stamp, LabelCloud, fixed99% ProgressBar and generic TextPlane components.",
+    "Exact supplied Chinese meme strings, model pill, mono caption and blank-plate text strings.",
+    "Deterministic final lockup timing, 12-frame freeze and wordmark asset or tracked Newsreader fallback.",
+    "S10 graphics fully frozen: no cursor blink, progress flip, scale creep or changes.",
+    "All spark graphics use brand.image drawn as an image; no font spark glyphs.",
+    "3D title and BrushWrite descriptors explicitly distinguish data interfaces from completed effects.",
+    "Intentional continuity extension: ChatWindow persists from S19 into early S20, time anchored S19.f0; reply triggers at frame646 and types at40ms/char, then screen fades frames674–684 before white-out at686. Shot boundaries unchanged.",
+    "StyleB uses180px base, rows615/860, singles760, small floor baseline925; only first row emphasizes. Actual TextMetrics bounds include outline/shadow/rotation/trails, then translate or minimally uniformly fit complete layout into90% safe area without clipping.",
+    "Hard-rule identity resolution: persistent screen-affordance model pill begins at frame576 (19.2s) on S17/S18 at top-right safe area, clear of ankle contact and central eyes; S19 ChatWindow carries the same Opus5.5 identity through frame645 and into S20 continuity. No shot boundaries changed.",
+    "S39 fix: distribute all11 tagline characters over10 available frames1290–1299 so 生 is visible before final hold; official wordmark retains its native aspect ratio centered at y765.",
+    "S36a–h all render the active outro lyric with rows永远那么/灿烂 and original sync.lyrics[].chars timing; lyric time does not restart at pose cuts. Thus second-outro entry37.07s remains visible inside S36b. S34 renders its specified short灿烂 layout. S39 unchanged.",
+    "Actual firstpass fixes: S37 name tag uses slate on ivory; S29 pure-code ink shot has no phantom face-box subtraction, and graphics are omitted at terminal whiteout frame931."
+  ],
+  "integration_contract": {
+    "brand": "brand.image is required: loaded SVG spark Image. Optional brand.wordmarkImage and brand.svg.",
+    "fonts": "Local browser FontFace loading and document.fonts.ready are caller responsibility; default families Noto Serif SC, Noto Sans SC, LXGW WenKai, Newsreader, Inter, JetBrains Mono.",
+    "draw": "draw(ctx,{frame,shot,localFrame,subjectMask,faceBox,uiIn3D=true,drawLyrics=true}); shot can be object or id.",
+    "mask": "subjectMask should be a 1920x1080 alpha mask for exact foreground subject occlusion. Reserved face box is only a fallback.",
+    "textures": "texture(\"ChatWindow\",{frame,width:1280,height:760}) for caller-managed 3D screen plane. Other components use canonical1920x1080 coordinates scaled to requested texture size.",
+    "ui3D": "uiIn3D defaults true, suppressing flat ChatWindow/Stamp/Toast/Cloud fallback. Caller composites corresponding texture/component into the actual scene.",
+    "title": "titleSlam(frame) returns separate OPUS5, spark and5 runs, weight800, capHeight160, extrusion depth0.35, materials, scale and shake. Caller must build true extruded geometry.",
+    "brush": "brushWrite({text,frame,startFrame,color,paths}) returns variable-width stroke mask metadata; caller supplies real font-derived SVG outline paths.",
+    "chat_continuity": "Use live ChatWindow plane in both S19 and S20. chatState(frame) reports visibility/opacity and cue anchors; texture already applies fade. Caller owns S20 perspective/refraction/glass animation.",
+    "early_model_pill": "drawModelPill(ctx,{frame,x=1390,y=86,w=400,h=78}) and components.ModelPill are exported; gate576–645. draw() invokes automatically on S17/S18; S19 uses its live screen model pill."
+  },
+  "pending": [
+    "True TitleSlam geometry, perspective UI planes, screen reflection and glow, 40-piece Voronoi toast shatter, actual glyph-path BrushWrite and paper-fiber multiply.",
+    "Code-rendered tower Hanzi, billboards, flip clock, chart steps and halo digits are exposed as strings for the scene owner; not drawn flat by this module.",
+    "Stamp rough edge is deterministic raster distress; requested SVG turbulence treatment still requires final texture/vector review.",
+    "S16 floor-perspective typography and S27 3D orbiting typography require scene integration.",
+    "Actual browser local-font ink bounds and text/subject contact-sheet review pending; metric fitting replaces clipping and preserves complete glyphs."
+  ],
+  "source_authority": [
+    "helper/shots.json",
+    "helper/sync.json",
+    "helper/onsets.json",
+    "helper/execution_decisions.json",
+    "../files/OPUS55_MV_PLAN.md sections8.4/8.5/10"
+  ],
+  "affected_render_frames_latest_fix": {
+    "S29": [
+      922,
+      931
+    ],
+    "S37": [
+      1177,
+      1217
+    ]
+  }
+}

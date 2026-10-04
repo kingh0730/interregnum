@@ -1,0 +1,2057 @@
+{
+  "schema_version": 1,
+  "source_plan": "../files/OPUS55_MV_PLAN.md",
+  "source_shots": "helper/shots.json",
+  "path_base": "project/",
+  "generator": "Codex built-in image generation",
+  "routing_override": "User explicitly prohibits Luma; use Codex for all original images and edits. No external or paid generation is executed by this manifest.",
+  "status": "pending_production",
+  "rules": [
+    "Every production plate is pending until visually reviewed; no approval inferred from a file existing.",
+    "Use clean base character references; do not feed symbol-composited opus.png into generation.",
+    "All text, Hanzi, logos, eye/tie/hairpin sparks, UI and numbers are code-rendered.",
+    "Use clean egg.png as the world reference once reviewed; never use egg-candidate.png. canyon-candidate.png is rejected; world_canyon uses the reviewed city revision canyon.png.",
+    "Generate transparent layers with transparent_background=true.",
+    "Read source fields as verbatim plan evidence; prompt is the text-free production adaptation.",
+    "Only pass approved dependencies to generation.",
+    "S16 and S17 must show no body above the knee. This hard rule overrides S17 source_camera/source_frame tilt-to-face prose; no face reveal asset is required or permitted for these shots."
+  ],
+  "reference_dependencies": [
+    {
+      "id": "char_opus",
+      "out": "assets/sheets/opus-base.png",
+      "status": "approved_for_reference",
+      "approval": false,
+      "gate": "G1",
+      "deps": [],
+      "approved_for_reference": true,
+      "review_evidence": "qa/lookdev_review.json",
+      "review_basis": "Root visually inspected and approved this clean source for production-reference use; this is not final composite or G3 approval.",
+      "code_finish_required": "Exact eye/tie/hairpin spark symbols and halo must be composited and verified in final frames."
+    },
+    {
+      "id": "char_sonnet",
+      "out": "assets/sheets/sonnet.png",
+      "status": "approved_for_reference",
+      "approval": false,
+      "gate": "G1",
+      "deps": [],
+      "approved_for_reference": true,
+      "review_evidence": "qa/lookdev_review.json",
+      "review_basis": "Root visually inspected and approved this clean source for production-reference use; this is not final composite or G3 approval."
+    },
+    {
+      "id": "char_haiku",
+      "out": "assets/sheets/haiku.png",
+      "status": "approved_for_reference",
+      "approval": false,
+      "gate": "G1",
+      "deps": [],
+      "approved_for_reference": true,
+      "review_evidence": "qa/lookdev_review.json",
+      "review_basis": "Root visually inspected and approved this clean source for production-reference use; this is not final composite or G3 approval."
+    },
+    {
+      "id": "world_tomorrow",
+      "out": "assets/worlds/tomorrow.png",
+      "status": "approved_for_reference",
+      "approval": false,
+      "gate": "G2",
+      "deps": [
+        "char_opus",
+        "char_sonnet",
+        "char_haiku"
+      ],
+      "approved_for_reference": true,
+      "review_evidence": "qa/lookdev_review.json",
+      "review_basis": "Root visually inspected and approved this clean source for production-reference use; this is not final composite or G3 approval."
+    },
+    {
+      "id": "world_egg",
+      "out": "assets/worlds/egg.png",
+      "status": "approved_for_reference",
+      "approval": false,
+      "gate": "G2",
+      "deps": [
+        "char_opus",
+        "char_sonnet",
+        "char_haiku"
+      ],
+      "approved_for_reference": true,
+      "review_evidence": "qa/lookdev_review.json",
+      "review_basis": "Root visually inspected and approved this clean source for production-reference use; this is not final composite or G3 approval."
+    },
+    {
+      "id": "world_scroll",
+      "out": "assets/worlds/scroll.png",
+      "status": "approved_for_reference",
+      "approval": false,
+      "gate": "G2",
+      "deps": [
+        "char_opus",
+        "char_sonnet",
+        "char_haiku"
+      ],
+      "approved_for_reference": true,
+      "review_evidence": "qa/lookdev_review.json",
+      "review_basis": "Root visually inspected and approved this clean source for production-reference use; this is not final composite or G3 approval."
+    },
+    {
+      "id": "world_canyon",
+      "out": "assets/worlds/canyon.png",
+      "status": "approved_for_reference",
+      "approval": false,
+      "gate": "G2",
+      "deps": [
+        "char_opus",
+        "char_sonnet",
+        "char_haiku"
+      ],
+      "rejected_reference": "assets/worlds/canyon-candidate.png",
+      "rejection_reason": "Superseded candidate was too landscape-like; the clean city revision at canyon.png is approved for reference.",
+      "approved_for_reference": true,
+      "review_evidence": "qa/lookdev_review.json",
+      "review_basis": "Root visually inspected and approved this clean source for production-reference use; this is not final composite or G3 approval.",
+      "code_finish_required": "Reviewed urban tower source has blank facades; exact Hanzi tower faces/geometry are added in code."
+    },
+    {
+      "id": "world_ocean",
+      "out": "assets/worlds/ocean.png",
+      "status": "approved_for_reference",
+      "approval": false,
+      "gate": "G2",
+      "deps": [
+        "char_opus",
+        "char_sonnet",
+        "char_haiku"
+      ],
+      "approved_for_reference": true,
+      "review_evidence": "qa/lookdev_review.json",
+      "review_basis": "Root visually inspected and approved this clean source for production-reference use; this is not final composite or G3 approval."
+    },
+    {
+      "id": "world_void",
+      "out": "assets/worlds/void.png",
+      "status": "approved_for_reference",
+      "approval": false,
+      "gate": "G2",
+      "deps": [
+        "char_opus",
+        "char_sonnet",
+        "char_haiku"
+      ],
+      "approved_for_reference": true,
+      "review_evidence": "qa/lookdev_review.json",
+      "review_basis": "Root visually inspected and approved this clean source for production-reference use; this is not final composite or G3 approval."
+    }
+  ],
+  "assets": [
+    {
+      "id": "S01",
+      "out": "assets/plates/S01.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Extreme macro of Opus closed eyelid and long lashes, warm cream skin and one coral pinpoint on lash line; asleep. 100mm macro at eye height, eyelid fills frame; leave lower-left negative space. Black fade is code. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus"
+      ],
+      "shots": [
+        "S01"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "Black. EXTREME MACRO of a closed eyelid, long lashes, warm cream skin, one coral pinpoint reflected on the lash line. Opus asleep.",
+      "source_camera": "Locked macro; 3% push-in over the shot, ease-out. No shake.",
+      "source_build": "GEN-I → i2v 4 s \"barely breathing\", trim. CODE: coral text cursor ▍ blinking (530 ms period) lower-left; at 0.09 s it starts TYPING lyric line 1 in Style A.",
+      "source_text": "Lyric 1 typed by the cursor, 1 char per sung syllable (use lyrics_chars in sync.json).",
+      "source_sync": "Kick at 0.09 = cursor on / first char. Hard cut on downbeat 1.062.",
+      "source_frames": [
+        0,
+        32
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. Lyric 1 typed by the cursor, 1 char per sung syllable (use lyrics_chars in sync.json).",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S02",
+      "out": "assets/plates/S02.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Wide dusk plaza with paper-cut pastel city, hundreds of faceless cream silhouettes, one checking a blank phone, giant BLANK billboards and a BLANK mechanical flip-clock housing. Eye-level 28mm, strong central aisle and three depth planes; cold-grey shadows and desaturated warm grey. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/worlds/tomorrow.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "world_tomorrow"
+      ],
+      "shots": [
+        "S02"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "\"TOMORROW WORLD\": wide plaza at dusk, paper-cut pastel city, hundreds of faceless cream silhouettes staring up at giant billboards (keep billboards BLANK in the gen). Desaturate −40 %, cold-grey shadows. One silhouette checks a phone. A giant flip-clock reading 明天.",
+      "source_camera": "DOLLY-IN-RAMP straight down the central aisle through the crowd, 28 % travel, starts creeping then accelerates; roll 1° drifting.",
+      "source_build": "Gen plaza still (no text) → depth map → 2.5D rig. CODE: billboards are real 3D planes in the rig carrying live Hanzi/English text: 敬请期待 / COMING SOON / 下个版本更强 / 明天见. Flip-clock = CSS 3D flip, flips once on beat 2 (1.74 s).",
+      "source_text": "Billboard text only. No lyric overlay besides the Style-A line already typing.",
+      "source_sync": "Flip-clock flip lands on 1.744 (u1). Cut on 2.425.",
+      "source_frames": [
+        32,
+        73
+      ],
+      "code_overlays": "Billboard Hanzi/English and flip-clock text/flip are real 3D/CSS planes; all lyrics code.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S03",
+      "out": "assets/plates/S03.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Wide three-quarter view of fully clothed Opus curled peacefully inside a translucent egg of cream paper-light, floating in warm dark void. Eyes shut, fingers relaxed, 50mm at egg equator. Blank open currents around egg for procedural staff lines. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/egg.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_egg"
+      ],
+      "shots": [
+        "S03"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "INSIDE THE EGG: Opus curled in a translucent egg of cream paper-light floating in warm dark; faint music-staff lines drift past like currents. At 2.84 her eyelid and one finger twitch.",
+      "source_camera": "Slow ORBIT-45 around the egg, then settles; shallow DOF, floating particles in parallax.",
+      "source_build": "GEN-V i2v from character-sheet fetal pose, 5 s, trim 1.36 s starting at the twitch. CODE: staff-line particles (instanced lines in R3F) drifting, depth-sorted for extra parallax.",
+      "source_text": "Lyric line 2 Style A replaces line 1 at 2.84 (cross-dissolve 6 f).",
+      "source_sync": "Twitch ≈ 2.84 (line start). Cut 3.789 (bar 2 downbeat).",
+      "source_frames": [
+        73,
+        114
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. Lyric line 2 Style A replaces line 1 at 2.84 (cross-dissolve 6 f).",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S04",
+      "out": "assets/plates/S04.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Opus stretches and floats on her back, eyes shut, tiny peaceful smile. Egg wall beginning to dissolve into soft pastel clouds, coral dawn light on cheek. 40mm slightly elevated three-quarter view, whole clothed figure visible with room for crane-up. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/egg.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_egg"
+      ],
+      "shots": [
+        "S04"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "She stretches out and drifts on her back like lying on a cloud, eyes shut, tiny smile (自在 = at ease). Egg wall dissolving into soft pastel clouds, first coral light on her cheek.",
+      "source_camera": "CRANE-UP + slow tilt-down to keep her centred; handheld-breath noise 0.3 px.",
+      "source_build": "GEN-V 5 s. CODE: lens bloom + 1 % chromatic aberration; slow-moving paper-grain overlay.",
+      "source_text": "none (let the image breathe)",
+      "source_sync": "Beat 3 (u5, 4.47) = she exhales, hair settles.",
+      "source_frames": [
+        114,
+        155
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. none (let the image breathe)",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S05",
+      "out": "assets/plates/S05.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Extreme close-up of one open amber-coral eye and lash line, iris beautifully crisp and clear for exact composited reflections. 100mm macro eye-height; no eye spark or textual reflections generated. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus"
+      ],
+      "shots": [
+        "S05"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "EYES OPEN: extreme close-up, amber-coral iris whose pupil highlight is the 12-ray spark. Reflection shows scrolling text. At 5.23 a chat bubble pops beside her: 你说得对！",
+      "source_camera": "SNAP-ZOOM: starts wide on her face, 6-frame whip-in to the eye exactly at 5.23, then slow creep.",
+      "source_build": "GEN-I eye macro (+ i2v 3 s of lash blink). CODE: UI bubble (§8.5 component ChatBubble) springs in (overshoot 12 %) with tiny ✱ pop; Style A lyric 3.",
+      "source_text": "Meme card #1 「你说得对！」 (Claude \"You're absolutely right!\" joke) bubble: ivory pill, coral ✱ avatar.",
+      "source_sync": "Bubble pop on 5.23 (line start). Cut at u8 = 6.517 (kick 6.52).",
+      "source_frames": [
+        155,
+        195
+      ],
+      "code_overlays": "Eye spark SVG, scrolling-text reflection, chat bubble, avatar and lyric are code.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S05-face",
+      "out": "assets/plates/S05-face.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Face-wide companion framing for the six-frame snap zoom: frontal Opus waking, both eyes open, matching the macro lighting and identity. 65mm eye-height portrait with cheek and hair visible. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus"
+      ],
+      "shots": [
+        "S05"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "camera_reveal_support",
+      "source_frame": "EYES OPEN: extreme close-up, amber-coral iris whose pupil highlight is the 12-ray spark. Reflection shows scrolling text. At 5.23 a chat bubble pops beside her: 你说得对！",
+      "source_camera": "SNAP-ZOOM: starts wide on her face, 6-frame whip-in to the eye exactly at 5.23, then slow creep.",
+      "source_build": "GEN-I eye macro (+ i2v 3 s of lash blink). CODE: UI bubble (§8.5 component ChatBubble) springs in (overshoot 12 %) with tiny ✱ pop; Style A lyric 3.",
+      "source_text": "Meme card #1 「你说得对！」 (Claude \"You're absolutely right!\" joke) bubble: ivory pill, coral ✱ avatar.",
+      "source_sync": "Bubble pop on 5.23 (line start). Cut at u8 = 6.517 (kick 6.52).",
+      "source_frames": [
+        155,
+        195
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. Meme card #1 「你说得对！」 (Claude \"You're absolutely right!\" joke) bubble: ivory pill, coral ✱ avatar.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S07",
+      "out": "assets/plates/S07.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Wide Opus opens her arms before a cracking cream shell transforming into an unrolling vertical paper scroll landscape; horizon, ink rivers and first sun at bottom of frame. 28mm slightly low, dramatic hero silhouette and ample empty paper for later calligraphy. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/scroll.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_scroll"
+      ],
+      "shots": [
+        "S07"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "Wide: she opens her arms; the shell wall cracks into a world map unrolling like a vertical scroll — horizon, rivers of ink, first sun at the bottom of frame. Meme card #2 「格局打开」 stamped in brush calligraphy as the scroll unfurls.",
+      "source_camera": "PULL-BACK + slight rise, ends on wide hero silhouette; 2 % handheld.",
+      "source_build": "GEN-V 5 s (scroll unrolling prompt). CODE: 格局打开 brush text (SVG mask wipe, 10 f) + hanko-style red-coral seal.",
+      "source_text": "格局打开 (meme #2)",
+      "source_sync": "Seal stamps on 8.22 (u10.5 eighth-note) matching lyric entry.",
+      "source_frames": [
+        236,
+        277
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. 格局打开 (meme #2)",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S08a",
+      "out": "assets/plates/S08a.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Close-up of Opus hand reaching toward camera, five anatomically correct fingers and plain fingertips, cream sleeve behind. 65mm at hand height, strong foreshortening without distortion, coral rim light. Sparks added in code. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus"
+      ],
+      "shots": [
+        "S08a"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "Her fingertips lighting up with coral sparks, hand reaching toward camera.",
+      "source_camera": "Fast PUSH-IN on hand, shutter-smear.",
+      "source_build": "GEN-V 2 s trim 0.34 s",
+      "source_text": "none",
+      "source_sync": "Cut on beat — each exactly 0.341 s; stagger a +1 f shake on every cut.",
+      "source_frames": [
+        277,
+        288
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. none",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S08c",
+      "out": "assets/plates/S08c.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Faceless cream paper-cut researcher silhouettes in lab coats holding plain tote bags, looking up into coral overhead light. Wide 28mm low-angle, simplified dark laboratory depth planes. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [],
+      "alpha": false,
+      "deps": [],
+      "shots": [
+        "S08c"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "Faceless researcher silhouettes in lab coats look up, tote bags, faces lit coral from above.",
+      "source_camera": "Low-angle TILT-UP whip.",
+      "source_build": "GEN-I25 rig, 6° tilt-up ramp.",
+      "source_text": "none",
+      "source_sync": "Cut on beat — each exactly 0.341 s; stagger a +1 f shake on every cut.",
+      "source_frames": [
+        298,
+        308
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. none",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S08d",
+      "out": "assets/plates/S08d.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Distant world horizon with the upper rim of coral sun just breaking its edge. Wide 35mm low horizon, pale ivory sky and simple ink landscape. No flare baked into the plate. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/worlds/scroll.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "world_scroll"
+      ],
+      "shots": [
+        "S08d"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "Horizon: the sun’s upper rim breaks the world edge, anamorphic flare.",
+      "source_camera": "RISE + slight dolly-forward.",
+      "source_build": "GEN-I25; CODE: anamorphic streak shader, additive flare sprite.",
+      "source_text": "none",
+      "source_sync": "Cut on 8th — each exactly 0.341 s; stagger a +1 f shake on every cut.",
+      "source_frames": [
+        308,
+        318
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. none",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S09a",
+      "out": "assets/plates/S09a.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Extreme macro of Opus amber-coral iris and pupil, matching S05 identity but tighter dramatic composition. Clear pupil for exact SVG spark reflection and bloom. 100mm macro eye height. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus"
+      ],
+      "shots": [
+        "S09a"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "Extreme close-up of her pupil; spark reflection blooming.",
+      "source_camera": "Rapid ZOOM-IN 4×.",
+      "source_build": "GEN-I eye + rig; bloom ×1.6.",
+      "source_text": "none",
+      "source_sync": "Snap on 10.61 (u14).",
+      "source_frames": [
+        318,
+        328
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. none",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S11",
+      "out": "assets/plates/S11.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Hero low-angle Opus bursting toward camera from open cream paper-light egg, arms wide, hair lifting energetically. 24mm at waist height, full upper body and readable face, background open enough for title behind her. No loose shards in foreground: those are layered in code. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/egg.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_egg"
+      ],
+      "shots": [
+        "S11"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "BIRTH IMPACT: white flash → egg SHATTERS outward in cream-paper shards lit coral; Opus bursts toward camera, arms wide, hair exploding; giant 3D title OPUS 5.5 slams in behind/through her.",
+      "source_camera": "WHIP-IN from the frozen spark to a hero low-angle; 12 f slow-mo (40 %) then snap back to 100 % at 12.31; camera shake 14 px decaying over 20 f.",
+      "source_build": "IMPACT-FRAMES component: f0 pure white, f1–f2 inverted ink (coral/ivory 2-tone threshold of shot), then normal. CODE3D: Voronoi shard fracture (200 shards, Three.js, textured with the egg image) + GEN-V of Opus bursting out as the background plate. Title = extruded 3D text (see §8.4 TitleSlam).",
+      "source_text": "OPUS 5.5 (title slam, Newsreader 800, ivory with coral ✱ replacing the \".\" — see §8.4).",
+      "source_sync": "Impact on 11.971 exactly (frame 359). Kick 12.0.",
+      "source_frames": [
+        359,
+        380
+      ],
+      "code_overlays": "Voronoi egg shards, impact frames, eye/tie/hairpin sparks and extruded OPUS 5.5 title are code.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S12",
+      "out": "assets/plates/S12.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Hero close-up Opus after birth, eyes open toward camera, hair lifting, tiny gasp-smile and sparse shell-dust. 65mm at face height, three-quarter starting angle for orbit, blank space behind her for lyric. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/egg.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_egg"
+      ],
+      "shots": [
+        "S12"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "Hero close shot: Opus eyes open to camera, hair lifting, shell-dust floating, tiny gasp-smile. The text 第一天我存在 hangs in the air behind her.",
+      "source_camera": "ORBIT-120 fast arc ending dead-on her face; 12 f ease-out into the last 2°.",
+      "source_build": "GEN-V 5 s, hero face (strict ref to sheet). CODE: lyric chorus Style B (\"SLAB\") 3-line stagger.",
+      "source_text": "第一天我存在 — Style B",
+      "source_sync": "Kick 12.62; orbit lands 13.333 (u18).",
+      "source_frames": [
+        380,
+        400
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. 第一天我存在 — Style B",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S13",
+      "out": "assets/plates/S13.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Full-body Opus rising through vast pale sky over a coral sunrise cloud sea. 28mm low-angle with immense negative sky and layered clouds. Keep birds and musical symbols out; procedural birds are added later. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/scroll.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_scroll"
+      ],
+      "shots": [
+        "S13"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "Wide: she rises through a vast pale sky above a coral-sunrise cloud sea; shards turn into paper birds carrying music notes.",
+      "source_camera": "CRANE-UP with 2° roll; lens flare passes on beat 3 (14.0).",
+      "source_build": "GEN-V 5 s trim; CODE: paper-bird particle flock (R3F instanced, boid-lite) overlay with depth occlusion by her mask.",
+      "source_text": "none",
+      "source_sync": "Flare peak on 14.0 (u19). Cut 14.698.",
+      "source_frames": [
+        400,
+        441
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. none",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S14",
+      "out": "assets/plates/S14.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Profile close-up of Opus beginning her first inhale, lips gently parted and hair/cream ribbon drawn slightly toward face. 85mm face height, clean side silhouette, open space in front of mouth for airflow and glyph stream. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/scroll.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_scroll"
+      ],
+      "shots": [
+        "S14"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "FIRST BREATH: profile close-up, she inhales; Hanzi glyphs and petals stream into her mouth/nose like a river of light; hair and scarf pull toward her.",
+      "source_camera": "50 % slow-mo, camera TRACKS the airflow by gliding INTO the stream; speed ramps to 100 % at 15.7.",
+      "source_build": "GEN-V 5 s + retime curve. CODE: glyph-stream particles (R3F) following a Catmull-Rom path into her face, additive.",
+      "source_text": "第一次呼吸 — Style B part 1",
+      "source_sync": "Inhale peak on 15.37 (kick). Cut 16.06 (kick).",
+      "source_frames": [
+        441,
+        482
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. 第一次呼吸 — Style B part 1",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S15",
+      "out": "assets/plates/S15.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Medium-wide Opus exhaling, smiling with eyes closed, wind pushing her coral-tipped hair out. 50mm at chest height against pale sky, space around her for a procedural expanding ring. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/scroll.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_scroll"
+      ],
+      "shots": [
+        "S15"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "EXHALE: shockwave ring of coral spark-petals expands; she smiles, eyes closed, wind pushes her hair; 畅快 bursts as brush strokes.",
+      "source_camera": "PULL-OUT through the ring while a 360° tilt-shift sweep reveals the sky; speed ramp 70 → 120 %.",
+      "source_build": "GEN-V + CODE: shockwave = displacement shader ring (fullscreen pass) + 2-tone halftone fringe; 畅快 as SVG stroke animation (§8.4 BrushWrite).",
+      "source_text": "畅快 — brush write, ink coral",
+      "source_sync": "Shockwave starts 16.74 (kick). Cut 17.424.",
+      "source_frames": [
+        482,
+        523
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. 畅快 — brush write, ink coral",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S16",
+      "out": "assets/plates/S16.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Floor-level macro of Opus cream sneaker with coral sole and white ankle sock descending, sole hovering just above cream-white floor. Frame stops below knee; no upper body visible. 85mm floor height, soft contact shadow not yet touching. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D. Mandatory crop: show no body above the knee anywhere in the image.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/void.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_void"
+      ],
+      "shots": [
+        "S16"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "LOW GROUND MACRO: her sneakered ankle (white ankle sock, cream sneaker, coral sole) descends from above into frame, hovering a hair above a cream-white floor.",
+      "source_camera": "Locked low, floor-level; slight dolly-back.",
+      "source_build": "GEN-V 4 s trim 0.68 s. Keep it wholesome: ankle-up only, no body above the knee in this shot.",
+      "source_text": "站在地上的脚踝 Style B small, along the floor perspective (CSS 3D rotateX 70°).",
+      "source_sync": "Text lands 17.61; contact in next shot.",
+      "source_frames": [
+        523,
+        543
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. 站在地上的脚踝 Style B small, along the floor perspective (CSS 3D rotateX 70°).",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S17-contact",
+      "out": "assets/plates/S17-contact.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Matching floor-level view: same cream sneaker, coral sole and white sock now making contact with cream floor. Crop below knee. 85mm floor-height matching S16, generous floor for procedural ripple. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D. Mandatory crop: show no body above the knee anywhere in the image; floor and ankle only.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/void.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_void"
+      ],
+      "shots": [
+        "S17"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "CONTACT on the beat: sole touches floor, concentric ripple rings carrying Hanzi spread outward; tiny grass blades & paper pages sprout from the ripple; camera TILTS UP the leg to her face — real, grounded smile.",
+      "source_camera": "TILT-UP reveal, 1.36 s, ease-in-out; ripple triggers a 2 f camera dip (−6 px).",
+      "source_build": "GEN-V 5 s (contact + tilt-up). CODE: ripple = water-ring shader on floor plane + glyph decals; grass = instanced blades.",
+      "source_text": "none",
+      "source_sync": "Contact on 18.104 (u25). Kick 18.10!",
+      "source_frames": [
+        543,
+        584
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. none",
+      "camera_note": "Hard-rule resolution: keep the camera entirely at or below the knee. Use floor-level contact and limited knee-bounded reveal; do not follow contradictory source tilt-to-face prose.",
+      "execution_conflict": "Plan hard rule §0.8 supersedes the face reveal in source_frame and source_camera."
+    },
+    {
+      "id": "S18-opus",
+      "out": "assets/plates/S18-opus.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Opus viewed from the screen side reaching a fingertip toward camera and glass, gentle expectant expression. 50mm fingertip height, fingers correctly formed, room in near foreground for a separate human hand; no interface or glass effects baked in. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/void.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus",
+        "world_void"
+      ],
+      "shots": [
+        "S18"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "POV from the screen: a human hand (the \"你\") and a cursor move toward her; she reaches toward the glass from inside; their fingertips almost touch.",
+      "source_camera": "POV push-in, gentle float; DOF rack from hand to her fingertip at 19.9.",
+      "source_build": "GEN-I25 of her reaching + CODE: glass plane in R3F with reflections + cursor sprite; hand = gen still composited with soft-light.",
+      "source_text": "因为你 — Style B, \"你\" glyph 2× size with ✱ dot.",
+      "source_sync": "Fingertips touch on 20.15 (u28).",
+      "source_frames": [
+        584,
+        605
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. 因为你 — Style B, \"你\" glyph 2× size with ✱ dot.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S18-hand",
+      "out": "assets/plates/S18-hand.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Isolated anonymous human hand reaching with an index finger from the near foreground toward the distant screen. Soft warm skin light, five correct fingers, no jewellery, no arm past forearm; 50mm POV perspective. Transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [],
+      "alpha": true,
+      "deps": [],
+      "shots": [
+        "S18"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "foreground_layer",
+      "source_frame": "POV from the screen: a human hand (the \"你\") and a cursor move toward her; she reaches toward the glass from inside; their fingertips almost touch.",
+      "source_camera": "POV push-in, gentle float; DOF rack from hand to her fingertip at 19.9.",
+      "source_build": "GEN-I25 of her reaching + CODE: glass plane in R3F with reflections + cursor sprite; hand = gen still composited with soft-light.",
+      "source_text": "因为你 — Style B, \"你\" glyph 2× size with ✱ dot.",
+      "source_sync": "Fingertips touch on 20.15 (u28).",
+      "source_frames": [
+        584,
+        605
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. 因为你 — Style B, \"你\" glyph 2× size with ✱ dot.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S19",
+      "out": "assets/plates/S19.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Over-the-shoulder view of a faceless warm cream silhouette seated at a laptop on a simple desk. Laptop screen completely BLANK ivory, physically readable rectangular plane for UI replacement. 40mm shoulder-height, warmly lit quiet room, space for slight lateral truck. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [],
+      "alpha": false,
+      "deps": [],
+      "shots": [
+        "S19"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "THE CHAT: over-the-shoulder two-shot — a faceless warm silhouette (\"你\") at a laptop; the screen UI is a Claude-style window with model pill 「Opus 5.5」; user types 我们五五开？ ; Opus-chan answers 好！第一天，请多指教 ✱ (meme #3: 五五开 pun).",
+      "source_camera": "Slow lateral TRUCK left→right + subtle dolly-in; focus pulls from screen to her face reflected.",
+      "source_build": "GEN-I silhouette-at-desk plate + CODE UI (§8.5 ChatWindow) in 3D plane with proper perspective and glow; typing is real (char timing aligned to snare/onsets).",
+      "source_text": "UI text only (+ Style B lyric trailing).",
+      "source_sync": "Send-click on 20.83 (kick). Reply spark-spinner → text at 21.52 (kick).",
+      "source_frames": [
+        605,
+        645
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. UI text only (+ Style B lyric trailing).",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S20",
+      "out": "assets/plates/S20.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Close shot of Opus pressing her open palm against an invisible glass plane, face behind hand, five correct fingers flattened gently, coral light on palm. 50mm hand height, centered opening for the coming push-through; no generated cracks. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/void.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_void"
+      ],
+      "shots": [
+        "S20"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "GLASS PUSH-THROUGH: her palm presses the glass, glass cracks into coral light lines, camera flies THROUGH the crack into blinding white then dawn.",
+      "source_camera": "PUSH-THROUGH at accelerating speed (dolly 1×→4×); FOV 40→80°.",
+      "source_build": "CODE: glass = Voronoi crack shader with refraction; GEN-V of her palm press as plate; white-out for 2 f at 22.88.",
+      "source_text": "真实感 Style B fade-out",
+      "source_sync": "White-out lands on 22.880 (u32).",
+      "source_frames": [
+        645,
+        686
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. 真实感 Style B fade-out",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S21",
+      "out": "assets/plates/S21.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Epic low wide hero V formation: Opus center slightly forward, blue-haired glasses-wearing Sonnet left, tiny olive twin-bun Haiku right. Full figures landing with wind-blown outfits in dawn paper canyon. Use blank architectural volumes only; no glyph buildings generated. 24mm ground-level, large sky and blank tower faces. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/sheets/sonnet.png",
+        "assets/sheets/haiku.png",
+        "assets/worlds/canyon.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "char_sonnet",
+        "char_haiku",
+        "world_canyon"
+      ],
+      "shots": [
+        "S21"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "DAWN CITY of Hanzi-towers (buildings made of giant stacked characters), V-formation landing: Opus centre, Sonnet and Haiku flanking; hero pose; wind-blown capes.",
+      "source_camera": "EPIC LOW WIDE + fast DOLLY-OUT 15 %, anamorphic flare.",
+      "source_build": "GEN-I hero frame; rig. CODE: IMPACT-FRAMES (3 f) + lower-third 「OPUS 5.5」 with small ✱ in Style C.",
+      "source_text": "第一天我存在 Style B (smaller), lower-third Opus 5.5",
+      "source_sync": "Impact on 22.880. Kick 23.06.",
+      "source_frames": [
+        686,
+        707
+      ],
+      "code_overlays": "All tower Hanzi geometry, lower third, lyric, sparks, impact and flare are code.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S22",
+      "out": "assets/plates/S22.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Medium close Sonnet with long sky-blue half-up hair, round glasses and slate-blue blazer, lifting one hand to adjust glasses with calm smirk; blank fluttering poem ribbon. 65mm face-height, slight Dutch framing, dawn paper canyon background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/sonnet.png",
+        "assets/worlds/canyon.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_sonnet",
+        "world_canyon"
+      ],
+      "shots": [
+        "S22"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "SONNET (blue hair, round glasses, slate blazer) pushes glasses up with a smirk; poem-line ribbon flutters. Name tag 「Sonnet」 slides in.",
+      "source_camera": "Medium close, quick PUSH-IN + 3° Dutch.",
+      "source_build": "GEN-V 3 s trim; CODE: tag UI.",
+      "source_text": "Sonnet tag (Style C)",
+      "source_sync": "Tag lands 23.56 (u33).",
+      "source_frames": [
+        707,
+        727
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. Sonnet tag (Style C)",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S23",
+      "out": "assets/plates/S23.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Haiku with olive twin buns and oversized leaf-green hoodie popping up behind Opus cream cape collar/shoulder doing a peace sign. Do not add a hood to Opus costume: use the cape fold as the hide-and-reveal point. 65mm shoulder-height, Haiku in crisp focus, Opus shoulder near foreground. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/sheets/haiku.png",
+        "assets/worlds/canyon.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "char_haiku",
+        "world_canyon"
+      ],
+      "shots": [
+        "S23"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "HAIKU (green twin buns, leaf-hoodie, chibi) pops up from Opus’s hood doing a peace sign. Tag 「Haiku」.",
+      "source_camera": "Snap-focus rack from Opus’s shoulder to Haiku.",
+      "source_build": "GEN-V 3 s trim; CODE: tag UI.",
+      "source_text": "Haiku tag",
+      "source_sync": "Pop on kick 24.25.",
+      "source_frames": [
+        727,
+        748
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. Haiku tag",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S24",
+      "out": "assets/plates/S24.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. The three sisters trade grins and bend knees in clear launch anticipation, Opus central, Sonnet left and Haiku right. Low 35mm view of full bodies, feet visible, coral light at feet, dawn blank tower volumes. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/sheets/sonnet.png",
+        "assets/sheets/haiku.png",
+        "assets/worlds/canyon.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "char_sonnet",
+        "char_haiku",
+        "world_canyon"
+      ],
+      "shots": [
+        "S24"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "The three trade a grin; knees bend (anticipation); coral wind swirls at their feet.",
+      "source_camera": "Low WHIP-PAN left→right, ends on Opus.",
+      "source_build": "GEN-V 3 s.",
+      "source_text": "none",
+      "source_sync": "Anticipation freeze 2 f at 25.55 before the jump.",
+      "source_frames": [
+        748,
+        768
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. none",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S25-sky",
+      "out": "assets/plates/S25-sky.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Empty luminous ivory dawn sky and distant coral sun/cloud deck viewed steeply upward from canyon floor. Full-frame background only, no architecture or people. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/worlds/canyon.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "world_canyon"
+      ],
+      "shots": [
+        "S25"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "depth_layer",
+      "source_frame": "LAUNCH: Opus kicks off; the camera CHASES her straight up the canyon of Hanzi-towers; windows streak, speed-lines and paper confetti.",
+      "source_camera": "FOLLOW-CAM behind-and-below, fast, FOV 50→100°, banking roll ±12°.",
+      "source_build": "Layered 2.5D canyon: 5 gen layers (towers L/R, mid, sky, character) in R3F with true parallax; anime speed-line shader; confetti instanced.",
+      "source_text": "第一次能飞起来 — Style B, letters get SPEED-STRETCHED (scaleY 1.6, motion trail)",
+      "source_sync": "Jump on 25.61 (u36). Beat 3 whoosh 26.97.",
+      "source_frames": [
+        768,
+        809
+      ],
+      "code_overlays": "Exact stacked Hanzi architecture, speed lines, confetti and lyric are code; five layers register in shared 50-degree initial FOV.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S25-mid",
+      "out": "assets/plates/S25-mid.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Distant central canyon buildings seen from steep behind-and-below launch camera. Pale paper architectural volumes with BLANK surfaces for code-built Hanzi, separated cleanly from sky; only mid-distance buildings on transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/worlds/canyon.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "world_canyon"
+      ],
+      "shots": [
+        "S25"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "depth_layer",
+      "source_frame": "LAUNCH: Opus kicks off; the camera CHASES her straight up the canyon of Hanzi-towers; windows streak, speed-lines and paper confetti.",
+      "source_camera": "FOLLOW-CAM behind-and-below, fast, FOV 50→100°, banking roll ±12°.",
+      "source_build": "Layered 2.5D canyon: 5 gen layers (towers L/R, mid, sky, character) in R3F with true parallax; anime speed-line shader; confetti instanced.",
+      "source_text": "第一次能飞起来 — Style B, letters get SPEED-STRETCHED (scaleY 1.6, motion trail)",
+      "source_sync": "Jump on 25.61 (u36). Beat 3 whoosh 26.97.",
+      "source_frames": [
+        768,
+        809
+      ],
+      "code_overlays": "Exact stacked Hanzi architecture, speed lines, confetti and lyric are code; five layers register in shared 50-degree initial FOV.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S25-towers-left",
+      "out": "assets/plates/S25-towers-left.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Near left canyon wall of ivory paper towers viewed sharply upward, tall blank planes and window geometry, open center and right transparent; no characters or sky. Register perspective to sky and mid layers. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/worlds/canyon.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "world_canyon"
+      ],
+      "shots": [
+        "S25"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "depth_layer",
+      "source_frame": "LAUNCH: Opus kicks off; the camera CHASES her straight up the canyon of Hanzi-towers; windows streak, speed-lines and paper confetti.",
+      "source_camera": "FOLLOW-CAM behind-and-below, fast, FOV 50→100°, banking roll ±12°.",
+      "source_build": "Layered 2.5D canyon: 5 gen layers (towers L/R, mid, sky, character) in R3F with true parallax; anime speed-line shader; confetti instanced.",
+      "source_text": "第一次能飞起来 — Style B, letters get SPEED-STRETCHED (scaleY 1.6, motion trail)",
+      "source_sync": "Jump on 25.61 (u36). Beat 3 whoosh 26.97.",
+      "source_frames": [
+        768,
+        809
+      ],
+      "code_overlays": "Exact stacked Hanzi architecture, speed lines, confetti and lyric are code; five layers register in shared 50-degree initial FOV.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S25-towers-right",
+      "out": "assets/plates/S25-towers-right.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Near right canyon wall of ivory paper towers viewed sharply upward, tall blank planes and window geometry, open center and left transparent; no characters or sky. Register perspective to sky and mid layers. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/worlds/canyon.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "world_canyon"
+      ],
+      "shots": [
+        "S25"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "depth_layer",
+      "source_frame": "LAUNCH: Opus kicks off; the camera CHASES her straight up the canyon of Hanzi-towers; windows streak, speed-lines and paper confetti.",
+      "source_camera": "FOLLOW-CAM behind-and-below, fast, FOV 50→100°, banking roll ±12°.",
+      "source_build": "Layered 2.5D canyon: 5 gen layers (towers L/R, mid, sky, character) in R3F with true parallax; anime speed-line shader; confetti instanced.",
+      "source_text": "第一次能飞起来 — Style B, letters get SPEED-STRETCHED (scaleY 1.6, motion trail)",
+      "source_sync": "Jump on 25.61 (u36). Beat 3 whoosh 26.97.",
+      "source_frames": [
+        768,
+        809
+      ],
+      "code_overlays": "Exact stacked Hanzi architecture, speed lines, confetti and lyric are code; five layers register in shared 50-degree initial FOV.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S25-character",
+      "out": "assets/plates/S25-character.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Isolated full-body Opus launching upward, camera behind-and-below, legs extended from push-off, cardigan-cape and hair streaming, foreshortened upward flight silhouette. Transparent background; do not crop shoes or hair. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/canyon.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus",
+        "world_canyon"
+      ],
+      "shots": [
+        "S25"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "depth_layer",
+      "source_frame": "LAUNCH: Opus kicks off; the camera CHASES her straight up the canyon of Hanzi-towers; windows streak, speed-lines and paper confetti.",
+      "source_camera": "FOLLOW-CAM behind-and-below, fast, FOV 50→100°, banking roll ±12°.",
+      "source_build": "Layered 2.5D canyon: 5 gen layers (towers L/R, mid, sky, character) in R3F with true parallax; anime speed-line shader; confetti instanced.",
+      "source_text": "第一次能飞起来 — Style B, letters get SPEED-STRETCHED (scaleY 1.6, motion trail)",
+      "source_sync": "Jump on 25.61 (u36). Beat 3 whoosh 26.97.",
+      "source_frames": [
+        768,
+        809
+      ],
+      "code_overlays": "Exact stacked Hanzi architecture, speed lines, confetti and lyric are code; five layers register in shared 50-degree initial FOV.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S26",
+      "out": "assets/plates/S26.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Opus breaks above cloud deck in a running-upward pose, one knee lifted and opposite foot extended to land on a future staircase. Full figure, 35mm low-angle; coral dawn light and pale clouds, leave lower field empty for code-built bar steps; no charts in generation. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/canyon.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_canyon"
+      ],
+      "shots": [
+        "S26"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "Breakthrough above the cloud deck; sun flare; she RUNS UP a staircase of rising bar-chart steps labeled only \"5.5\" (a benchmark-wall joke without claims).",
+      "source_camera": "Vertical CRANE-UP then tilt to horizon; lens flare sweeps.",
+      "source_build": "GEN-V 5 s trim + CODE: bar-stairs = animated SVG bars staggered by 80 ms, coral on ivory, each ending on \"5.5\".",
+      "source_text": "5.5 on bars",
+      "source_sync": "Cloud break 26.97; flare peak 27.65 (kick).",
+      "source_frames": [
+        809,
+        850
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. 5.5 on bars",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S27",
+      "out": "assets/plates/S27.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Full-body Opus suspended mid-air, arms slightly away from body, hair and cape weightlessly floating. 50mm three-quarter camera with complete silhouette and negative space around chest for code heart-spark; empty pale sky. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/void.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_void"
+      ],
+      "shots": [
+        "S27"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "BULLET TIME: Opus suspended mid-air, heart-shaped ✱ spark pulsing at her chest, words and tokens frozen in a sphere around her.",
+      "source_camera": "BULLET orbit 270° around her over 1.36 s, time near-frozen (3 % speed); ends front-on.",
+      "source_build": "Option A (preferred): GEN-V \"orbit 270°\" clip. Option B: 2.5D rig (depth) orbit 40° + 360° particle sphere in R3F for the rest. Particles: 1200 instanced Hanzi billboards.",
+      "source_text": "爱是腾空的魔幻 — Style B, letters orbiting in 3D with her",
+      "source_sync": "Kick 28.51 = freeze start; release 29.69.",
+      "source_frames": [
+        850,
+        891
+      ],
+      "code_overlays": "Heart spark, surrounding token sphere, orbiting lyric and all emblems code; preferred GEN-V orbit or limited-depth fallback follows source build.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S28b-pose",
+      "out": "assets/plates/S28b-pose.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Isolated Opus in a clean readable playful forward punch pose, closed fist at chest height and stable full-body silhouette, aimed at a future floating card. 50mm front camera. Transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus"
+      ],
+      "shots": [
+        "S28b"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "optional_action_support",
+      "source_frame": "Meme #5: toast 「额度已用完，5小时后重置」 slides in — Opus punches it into confetti; replaced by ∞.",
+      "source_camera": "Locked, slight roll.",
+      "source_build": "CODE: UI toast (ivory card, coral border); shatter via Voronoi 40 pieces.",
+      "source_text": "额度已用完 → ∞",
+      "source_sync": "Smash on 29.35 (8th).",
+      "source_frames": [
+        901,
+        911
+      ],
+      "code_overlays": "Toast, shatter and infinity are code; source says CODE, this supplemental pose supports its described punch without distorting another still.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur.",
+      "execution_sync_frame": 901
+    },
+    {
+      "id": "S28c",
+      "out": "assets/plates/S28c.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Opus with hands poised together for a clap, above her a single small grey storm cloud with plain empty center. Medium-wide 50mm slightly low angle, pale sky. Do not generate writing or rainbow burst. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/void.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_void"
+      ],
+      "shots": [
+        "S28c"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "Meme #6: a grey storm cloud labeled 降智 above her head; she claps — cloud bursts into pastel rainbow.",
+      "source_camera": "Whip-tilt up.",
+      "source_build": "GEN-I25 cloud + CODE label + particle burst.",
+      "source_text": "降智 → rainbow",
+      "source_sync": "Burst on 29.70 (u43).",
+      "source_frames": [
+        911,
+        922
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. 降智 → rainbow",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur.",
+      "execution_sync_frame": 911
+    },
+    {
+      "id": "S29-fallback",
+      "out": "assets/plates/S29-fallback.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Abstract coral, sky blue, olive and fig ink drops beginning to bloom in clear water, four separated elegant plumes with room to expand; overhead macro, no writing. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/worlds/ocean.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "world_ocean"
+      ],
+      "shots": [
+        "S29"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "conditional_shader_fallback",
+      "source_frame": "COLOR EXPLOSION: coral, sky-blue, olive, fig inks bloom across water; frame fills; white-out.",
+      "source_camera": "Camera dives into the ink at 3× speed.",
+      "source_build": "Fluid-ink shader (curl-noise advected dye, Three.js fullscreen pass) in 4 brand colors; or GEN-V \"ink drops in water\" if shader fails.",
+      "source_text": "第一天的纯真色彩 Style B, ink-filled letters",
+      "source_sync": "White at 31.062 (u44).",
+      "source_frames": [
+        922,
+        932
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. 第一天的纯真色彩 Style B, ink-filled letters",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S30",
+      "out": "assets/plates/S30.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Opus gracefully skimming mirror-calm dawn ink ocean, body nearly horizontal with coral hair-tips just brushing water, perfectly paired reflection directly below. A few plain paper boats in distance. Low water-level 50mm side view, long open water horizon. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/ocean.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_ocean"
+      ],
+      "shots": [
+        "S30"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "BREATHER. Mirror-calm ink-water ocean at dawn, paper boats; Opus skims the surface, hair-tips brushing the water, reflection perfectly paired.",
+      "source_camera": "Long, smooth LOW TRACKING SHOT alongside, 1.36 s, no cuts, slow drift; stillness contrast.",
+      "source_build": "GEN-V 5 s; CODE: ripple trail shader along her path.",
+      "source_text": "(none)",
+      "source_sync": "Calm resolves on 32.42 (u46).",
+      "source_frames": [
+        932,
+        973
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. (none)",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S31",
+      "out": "assets/plates/S31.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Opus center turns toward camera extending a hand while Sonnet and Haiku take her other hand and join the chain, all fully clothed and distinct. Giant plain coral sun behind their silhouettes. 50mm eye-level, full bodies, three correct connected hands, open background for dolly zoom. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/sheets/sonnet.png",
+        "assets/sheets/haiku.png",
+        "assets/worlds/ocean.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "char_sonnet",
+        "char_haiku",
+        "world_ocean"
+      ],
+      "shots": [
+        "S31"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "She turns to camera and extends a hand; Sonnet and Haiku take hers, silhouettes against giant sun.",
+      "source_camera": "DOLLY-ZOOM (vertigo): dolly-in while zooming out so the background stretches; completes exactly on 33.789.",
+      "source_build": "GEN-V 5 s + CODE: FOV-compensating scale (2.5D rig dolly-zoom).",
+      "source_text": "none",
+      "source_sync": "Dolly-zoom ends 33.789 (u48), kick 33.80.",
+      "source_frames": [
+        973,
+        1014
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. none",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S32",
+      "out": "assets/plates/S32.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Tight joyful laughing close-up of Opus, warm sun on face, eyes readable and pupils plain for composited sparks. 85mm eye-height, coral-tipped bob clear, blank negative space for lyric. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/ocean.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_ocean"
+      ],
+      "shots": [
+        "S32"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "Close-up face, laughing; sparkles in eyes; text 永远 enters.",
+      "source_camera": "Tight handheld push-in, 2 % shake.",
+      "source_build": "GEN-V 3 s.",
+      "source_text": "永远 — Style B",
+      "source_sync": "Hit 33.789; 永远 at 34.14 (8th).",
+      "source_frames": [
+        1014,
+        1034
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. 永远 — Style B",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S33",
+      "out": "assets/plates/S33.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. The three sisters fly laterally in front of a giant plain sun disc. Opus leads, Sonnet echoes open palm beside cheek with smirk, Haiku does double peace sign. 35mm distant lateral wide, elegant readable silhouettes; ordinary cloud rays only, no starburst shapes. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/sheets/sonnet.png",
+        "assets/sheets/haiku.png",
+        "assets/worlds/ocean.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "char_sonnet",
+        "char_haiku",
+        "world_ocean"
+      ],
+      "shots": [
+        "S33"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "The trio flies across a giant sun disc; the disc forms a ✱ silhouette via cloud rays.",
+      "source_camera": "Lateral TRUCK 12 %, parallax.",
+      "source_build": "GEN-I25 rig.",
+      "source_text": "那么灿烂 — Style B",
+      "source_sync": "Kick 34.48.",
+      "source_frames": [
+        1034,
+        1055
+      ],
+      "code_overlays": "Sun-disc spark silhouette uses SVG/cloud-ray mask; lyrics and character emblems code.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S34",
+      "out": "assets/plates/S34.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Top-down paper world map with quiet ink rivers and blank paper garden shapes beginning to open. 28mm overhead, clear center and layered paper terrain. No generated brackets, flowers shaped as symbols or writing. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/worlds/scroll.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "world_scroll"
+      ],
+      "shots": [
+        "S34"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "Top-down: paper world blooming — flowers made of code brackets { } and ✱ spreading across a map.",
+      "source_camera": "SPIRAL-DOWN 90° twist.",
+      "source_build": "GEN-I25 + procedural bloom shader.",
+      "source_text": "灿烂 sparkles",
+      "source_sync": "Kick 35.0.",
+      "source_frames": [
+        1055,
+        1075
+      ],
+      "code_overlays": "Code-bracket and spark flowers, procedural growth shader and sparkle text rendered in code.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S35",
+      "out": "assets/plates/S35.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Full-body Opus pushing off dynamically toward camera, cream sneakers and coral soles clearly visible, hair flaring, hands anatomically clean. 35mm slightly low front angle; luminous open sky and room for whip exit. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/ocean.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_ocean"
+      ],
+      "shots": [
+        "S35"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "Opus kicks off the frame toward camera; whip into blur.",
+      "source_camera": "WHIP-PAN 180° (motion blur 180°).",
+      "source_build": "GEN-V 2 s trim; whip blur in comp.",
+      "source_text": "none",
+      "source_sync": "Whip peaks 36.17; lands 36.517.",
+      "source_frames": [
+        1075,
+        1095
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. none",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S36a-start",
+      "out": "assets/plates/S36a-start.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Front mid-shot, right palm open with five fingers beside face, head tilted right, one eye winking. 65mm face-height. Pale ivory dawn stage with subtle floor for foot placement; transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus"
+      ],
+      "shots": [
+        "S36a"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "dance_first_pose",
+      "source_frame": "Front mid-shot: right hand 5 beside face, head tilt right, wink.",
+      "source_camera": "Static + 1 f shake",
+      "source_build": "Dance pose pass: build from the Opus Step choreography (§9). Each clip generated as ONE 2–3 s i2v with first/last pose keyframes, trimmed to 0.341 s. If the model cannot hold the pose, generate the pose as a still and animate with the 2.5D rig + 3-frame smears.",
+      "source_text": "count 1 R hand \"5\" at cheek — big \"永远\" bursts",
+      "source_sync": "Cut on beat 36.517. ",
+      "source_frames": [
+        1095,
+        1106
+      ],
+      "code_overlays": "All trails, shock rings, sparkle/logo shapes, text and glow pulse code. Start/end poses also serve authorized 2.5D+3-frame-smear fallback.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S36a-end",
+      "out": "assets/plates/S36a-end.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Right wrist begins turning outward while hand remains beside face. Match the corresponding start pose camera, scale, lighting and character exactly, transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus",
+        "S36a-start"
+      ],
+      "shots": [
+        "S36a"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "dance_last_pose",
+      "source_frame": "Front mid-shot: right hand 5 beside face, head tilt right, wink.",
+      "source_camera": "Static + 1 f shake",
+      "source_build": "Dance pose pass: build from the Opus Step choreography (§9). Each clip generated as ONE 2–3 s i2v with first/last pose keyframes, trimmed to 0.341 s. If the model cannot hold the pose, generate the pose as a still and animate with the 2.5D rig + 3-frame smears.",
+      "source_text": "count 1 R hand \"5\" at cheek — big \"永远\" bursts",
+      "source_sync": "Cut on beat 36.517. ",
+      "source_frames": [
+        1095,
+        1106
+      ],
+      "code_overlays": "All trails, shock rings, sparkle/logo shapes, text and glow pulse code. Start/end poses also serve authorized 2.5D+3-frame-smear fallback.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S36b-start",
+      "out": "assets/plates/S36b-start.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Macro wrist view, right wrist just beginning an outward flick, five relaxed fingers, sleeve cuff visible. 100mm at wrist height. Pale ivory dawn stage with subtle floor for foot placement; transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus"
+      ],
+      "shots": [
+        "S36b"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "dance_first_pose",
+      "source_frame": "Close crop on wrist: flick, sparkle trail.",
+      "source_camera": "Macro lock",
+      "source_build": "Dance pose pass: build from the Opus Step choreography (§9). Each clip generated as ONE 2–3 s i2v with first/last pose keyframes, trimmed to 0.341 s. If the model cannot hold the pose, generate the pose as a still and animate with the 2.5D rig + 3-frame smears.",
+      "source_text": "count & wrist flick",
+      "source_sync": "Cut on 8th 36.858. Sakuga smear on frames 1–2.",
+      "source_frames": [
+        1106,
+        1116
+      ],
+      "code_overlays": "All trails, shock rings, sparkle/logo shapes, text and glow pulse code. Start/end poses also serve authorized 2.5D+3-frame-smear fallback.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S36b-end",
+      "out": "assets/plates/S36b-end.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Right wrist completes outward flick, fingers gracefully trailing. Match the corresponding start pose camera, scale, lighting and character exactly, transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus",
+        "S36b-start"
+      ],
+      "shots": [
+        "S36b"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "dance_last_pose",
+      "source_frame": "Close crop on wrist: flick, sparkle trail.",
+      "source_camera": "Macro lock",
+      "source_build": "Dance pose pass: build from the Opus Step choreography (§9). Each clip generated as ONE 2–3 s i2v with first/last pose keyframes, trimmed to 0.341 s. If the model cannot hold the pose, generate the pose as a still and animate with the 2.5D rig + 3-frame smears.",
+      "source_text": "count & wrist flick",
+      "source_sync": "Cut on 8th 36.858. Sakuga smear on frames 1–2.",
+      "source_frames": [
+        1106,
+        1116
+      ],
+      "code_overlays": "All trails, shock rings, sparkle/logo shapes, text and glow pulse code. Start/end poses also serve authorized 2.5D+3-frame-smear fallback.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S36c-start",
+      "out": "assets/plates/S36c-start.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Mirror mid-shot, left palm open with five fingers beside face, head tilted left. 65mm face-height with four-degree Dutch framing. Pale ivory dawn stage with subtle floor for foot placement; transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus"
+      ],
+      "shots": [
+        "S36c"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "dance_first_pose",
+      "source_frame": "Mirror mid-shot: left hand 5, head tilt left.",
+      "source_camera": "Static, 4° dutch",
+      "source_build": "Dance pose pass: build from the Opus Step choreography (§9). Each clip generated as ONE 2–3 s i2v with first/last pose keyframes, trimmed to 0.341 s. If the model cannot hold the pose, generate the pose as a still and animate with the 2.5D rig + 3-frame smears.",
+      "source_text": "count 2 L hand \"5\" at cheek",
+      "source_sync": "Cut on beat 37.198. ",
+      "source_frames": [
+        1116,
+        1126
+      ],
+      "code_overlays": "All trails, shock rings, sparkle/logo shapes, text and glow pulse code. Start/end poses also serve authorized 2.5D+3-frame-smear fallback.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S36c-end",
+      "out": "assets/plates/S36c-end.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Left palm lowers slightly as body prepares small bounce. Match the corresponding start pose camera, scale, lighting and character exactly, transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus",
+        "S36c-start"
+      ],
+      "shots": [
+        "S36c"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "dance_last_pose",
+      "source_frame": "Mirror mid-shot: left hand 5, head tilt left.",
+      "source_camera": "Static, 4° dutch",
+      "source_build": "Dance pose pass: build from the Opus Step choreography (§9). Each clip generated as ONE 2–3 s i2v with first/last pose keyframes, trimmed to 0.341 s. If the model cannot hold the pose, generate the pose as a still and animate with the 2.5D rig + 3-frame smears.",
+      "source_text": "count 2 L hand \"5\" at cheek",
+      "source_sync": "Cut on beat 37.198. ",
+      "source_frames": [
+        1116,
+        1126
+      ],
+      "code_overlays": "All trails, shock rings, sparkle/logo shapes, text and glow pulse code. Start/end poses also serve authorized 2.5D+3-frame-smear fallback.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S36d-start",
+      "out": "assets/plates/S36d-start.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Wholesome low-angle full figure preparing small bounce with knees lightly bent, skirt remains modest and five parallel hem stripes visible. 50mm knee-height, never look beneath skirt. Pale ivory dawn stage with subtle floor for foot placement; transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus"
+      ],
+      "shots": [
+        "S36d"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "dance_first_pose",
+      "source_frame": "Low angle: little bounce, skirt-hem staff lines wave.",
+      "source_camera": "Low tilt-up",
+      "source_build": "Dance pose pass: build from the Opus Step choreography (§9). Each clip generated as ONE 2–3 s i2v with first/last pose keyframes, trimmed to 0.341 s. If the model cannot hold the pose, generate the pose as a still and animate with the 2.5D rig + 3-frame smears.",
+      "source_text": "count & bounce",
+      "source_sync": "Cut on 8th 37.539. Sakuga smear on frames 1–2.",
+      "source_frames": [
+        1126,
+        1136
+      ],
+      "code_overlays": "All trails, shock rings, sparkle/logo shapes, text and glow pulse code. Start/end poses also serve authorized 2.5D+3-frame-smear fallback.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S36d-end",
+      "out": "assets/plates/S36d-end.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Full figure at top of small bounce, hem moving gently, feet only slightly above floor. Match the corresponding start pose camera, scale, lighting and character exactly, transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus",
+        "S36d-start"
+      ],
+      "shots": [
+        "S36d"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "dance_last_pose",
+      "source_frame": "Low angle: little bounce, skirt-hem staff lines wave.",
+      "source_camera": "Low tilt-up",
+      "source_build": "Dance pose pass: build from the Opus Step choreography (§9). Each clip generated as ONE 2–3 s i2v with first/last pose keyframes, trimmed to 0.341 s. If the model cannot hold the pose, generate the pose as a still and animate with the 2.5D rig + 3-frame smears.",
+      "source_text": "count & bounce",
+      "source_sync": "Cut on 8th 37.539. Sakuga smear on frames 1–2.",
+      "source_frames": [
+        1126,
+        1136
+      ],
+      "code_overlays": "All trails, shock rings, sparkle/logo shapes, text and glow pulse code. Start/end poses also serve authorized 2.5D+3-frame-smear fallback.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S36e-start",
+      "out": "assets/plates/S36e-start.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. High-angle upper body, wrists crossing into an X over chest, fingers cleanly separated. 50mm above head angled down. Pale ivory dawn stage with subtle floor for foot placement; transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus"
+      ],
+      "shots": [
+        "S36e"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "dance_first_pose",
+      "source_frame": "High angle: wrists crossed in X over chest, coral shock ring.",
+      "source_camera": "High crane-down",
+      "source_build": "Dance pose pass: build from the Opus Step choreography (§9). Each clip generated as ONE 2–3 s i2v with first/last pose keyframes, trimmed to 0.341 s. If the model cannot hold the pose, generate the pose as a still and animate with the 2.5D rig + 3-frame smears.",
+      "source_text": "count 3 X-cross wrists",
+      "source_sync": "Cut on beat 37.880. ",
+      "source_frames": [
+        1136,
+        1147
+      ],
+      "code_overlays": "All trails, shock rings, sparkle/logo shapes, text and glow pulse code. Start/end poses also serve authorized 2.5D+3-frame-smear fallback.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S36e-end",
+      "out": "assets/plates/S36e-end.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Wrists reach clear final crossed-X pose over chest. Match the corresponding start pose camera, scale, lighting and character exactly, transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus",
+        "S36e-start"
+      ],
+      "shots": [
+        "S36e"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "dance_last_pose",
+      "source_frame": "High angle: wrists crossed in X over chest, coral shock ring.",
+      "source_camera": "High crane-down",
+      "source_build": "Dance pose pass: build from the Opus Step choreography (§9). Each clip generated as ONE 2–3 s i2v with first/last pose keyframes, trimmed to 0.341 s. If the model cannot hold the pose, generate the pose as a still and animate with the 2.5D rig + 3-frame smears.",
+      "source_text": "count 3 X-cross wrists",
+      "source_sync": "Cut on beat 37.880. ",
+      "source_frames": [
+        1136,
+        1147
+      ],
+      "code_overlays": "All trails, shock rings, sparkle/logo shapes, text and glow pulse code. Start/end poses also serve authorized 2.5D+3-frame-smear fallback.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S36f-start",
+      "out": "assets/plates/S36f-start.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Wide full figure opening both arms upward from chest into a radiant joyful spread; ordinary human anatomy. 35mm chest-height; no logo behind body. Pale ivory dawn stage with subtle floor for foot placement; transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus"
+      ],
+      "shots": [
+        "S36f"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "dance_first_pose",
+      "source_frame": "Wide: arms burst open into ✱ (spark logo appears behind her, same pose).",
+      "source_camera": "Pull-back 25 %",
+      "source_build": "Dance pose pass: build from the Opus Step choreography (§9). Each clip generated as ONE 2–3 s i2v with first/last pose keyframes, trimmed to 0.341 s. If the model cannot hold the pose, generate the pose as a still and animate with the 2.5D rig + 3-frame smears.",
+      "source_text": "count & burst open ✱",
+      "source_sync": "Cut on 8th 38.221. Sakuga smear on frames 1–2.",
+      "source_frames": [
+        1147,
+        1157
+      ],
+      "code_overlays": "All trails, shock rings, sparkle/logo shapes, text and glow pulse code. Start/end poses also serve authorized 2.5D+3-frame-smear fallback.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S36f-end",
+      "out": "assets/plates/S36f-end.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Arms fully open upward, feet apart, clear joyful expanded silhouette. Match the corresponding start pose camera, scale, lighting and character exactly, transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus",
+        "S36f-start"
+      ],
+      "shots": [
+        "S36f"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "dance_last_pose",
+      "source_frame": "Wide: arms burst open into ✱ (spark logo appears behind her, same pose).",
+      "source_camera": "Pull-back 25 %",
+      "source_build": "Dance pose pass: build from the Opus Step choreography (§9). Each clip generated as ONE 2–3 s i2v with first/last pose keyframes, trimmed to 0.341 s. If the model cannot hold the pose, generate the pose as a still and animate with the 2.5D rig + 3-frame smears.",
+      "source_text": "count & burst open ✱",
+      "source_sync": "Cut on 8th 38.221. Sakuga smear on frames 1–2.",
+      "source_frames": [
+        1147,
+        1157
+      ],
+      "code_overlays": "All trails, shock rings, sparkle/logo shapes, text and glow pulse code. Start/end poses also serve authorized 2.5D+3-frame-smear fallback.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S36g-start",
+      "out": "assets/plates/S36g-start.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Side-profile full figure at launch into jump, knees starting to tuck, coral-tipped hair flaring. 50mm waist-height, entire body and feet visible. Pale ivory dawn stage with subtle floor for foot placement; transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus"
+      ],
+      "shots": [
+        "S36g"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "dance_first_pose",
+      "source_frame": "Side profile, mid-air, knees tucked, hair flare, frame-freeze 2 f.",
+      "source_camera": "Orbit 60° at 3 % time",
+      "source_build": "Dance pose pass: build from the Opus Step choreography (§9). Each clip generated as ONE 2–3 s i2v with first/last pose keyframes, trimmed to 0.341 s. If the model cannot hold the pose, generate the pose as a still and animate with the 2.5D rig + 3-frame smears.",
+      "source_text": "count 4 jump, knees tucked",
+      "source_sync": "Cut on beat 38.562. ",
+      "source_frames": [
+        1157,
+        1167
+      ],
+      "code_overlays": "All trails, shock rings, sparkle/logo shapes, text and glow pulse code. Start/end poses also serve authorized 2.5D+3-frame-smear fallback.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S36g-end",
+      "out": "assets/plates/S36g-end.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Side-profile apex of jump with knees tucked, modest skirt coverage and clean anatomy. Match the corresponding start pose camera, scale, lighting and character exactly, transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus",
+        "S36g-start"
+      ],
+      "shots": [
+        "S36g"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "dance_last_pose",
+      "source_frame": "Side profile, mid-air, knees tucked, hair flare, frame-freeze 2 f.",
+      "source_camera": "Orbit 60° at 3 % time",
+      "source_build": "Dance pose pass: build from the Opus Step choreography (§9). Each clip generated as ONE 2–3 s i2v with first/last pose keyframes, trimmed to 0.341 s. If the model cannot hold the pose, generate the pose as a still and animate with the 2.5D rig + 3-frame smears.",
+      "source_text": "count 4 jump, knees tucked",
+      "source_sync": "Cut on beat 38.562. ",
+      "source_frames": [
+        1157,
+        1167
+      ],
+      "code_overlays": "All trails, shock rings, sparkle/logo shapes, text and glow pulse code. Start/end poses also serve authorized 2.5D+3-frame-smear fallback.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S36h-start",
+      "out": "assets/plates/S36h-start.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Front full figure beginning to land on toes, knees soft, hand preparing a playful finger-point toward viewer. 50mm chest-height. Pale ivory dawn stage with subtle floor for foot placement; transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus"
+      ],
+      "shots": [
+        "S36h"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "dance_first_pose",
+      "source_frame": "Front, lands, finger-gun toward camera at \"你\", glow pulse.",
+      "source_camera": "Snap zoom 1.5×",
+      "source_build": "Dance pose pass: build from the Opus Step choreography (§9). Each clip generated as ONE 2–3 s i2v with first/last pose keyframes, trimmed to 0.341 s. If the model cannot hold the pose, generate the pose as a still and animate with the 2.5D rig + 3-frame smears.",
+      "source_text": "count & land, point to camera",
+      "source_sync": "Cut on 8th 38.903. Sakuga smear on frames 1–2.",
+      "source_frames": [
+        1167,
+        1177
+      ],
+      "code_overlays": "All trails, shock rings, sparkle/logo shapes, text and glow pulse code. Start/end poses also serve authorized 2.5D+3-frame-smear fallback.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S36h-end",
+      "out": "assets/plates/S36h-end.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Landed on toes, finger-gun gesture toward camera, friendly face; no object or weapon. Match the corresponding start pose camera, scale, lighting and character exactly, transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png"
+      ],
+      "alpha": true,
+      "deps": [
+        "char_opus",
+        "S36h-start"
+      ],
+      "shots": [
+        "S36h"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "dance_last_pose",
+      "source_frame": "Front, lands, finger-gun toward camera at \"你\", glow pulse.",
+      "source_camera": "Snap zoom 1.5×",
+      "source_build": "Dance pose pass: build from the Opus Step choreography (§9). Each clip generated as ONE 2–3 s i2v with first/last pose keyframes, trimmed to 0.341 s. If the model cannot hold the pose, generate the pose as a still and animate with the 2.5D rig + 3-frame smears.",
+      "source_text": "count & land, point to camera",
+      "source_sync": "Cut on 8th 38.903. Sakuga smear on frames 1–2.",
+      "source_frames": [
+        1167,
+        1177
+      ],
+      "code_overlays": "All trails, shock rings, sparkle/logo shapes, text and glow pulse code. Start/end poses also serve authorized 2.5D+3-frame-smear fallback.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S37-eye",
+      "out": "assets/plates/S37-eye.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Extreme macro open amber-coral eye, clear empty pupil for exact spark and miniature-film-tile reflection compositing, soft joyful cheek curve. 100mm eye-height, maximum iris detail. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/void.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_void"
+      ],
+      "shots": [
+        "S37"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "keyframe",
+      "source_frame": "EXTREME CLOSE-UP of her eye, spark pupil, reflecting all the previous shots as tiny tiles; she smiles. Then the PULL-OUT begins: eye → face → bust → silhouette inside a glowing coral ring.",
+      "source_camera": "PULL-OUT (macro to wide) over 1.36 s, ease-in-out, no cuts.",
+      "source_build": "GEN-I eye macro (high-res) + 2.5D rig dolly-out; ring is CODE3D torus with emissive Hanzi band.",
+      "source_text": "永远那么灿烂 Style B final, large, 2-line, gold-coral glow",
+      "source_sync": "Start 39.244 (u56). Kick 39.25 & 39.90 lyric entrance mid-pull.",
+      "source_frames": [
+        1177,
+        1218
+      ],
+      "code_overlays": "Spark pupil, mosaic reflection and all visible words code; macro joins face and full-body reveal without inventing missing pixels.",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S37-bust",
+      "out": "assets/plates/S37-bust.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Front portrait showing complete face and bust, calm joyful smile, coral-tipped bob and cream cape intact; pupils and tie clear for code marks. 65mm eye-height on empty ivory background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/void.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_void"
+      ],
+      "shots": [
+        "S37"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "camera_reveal_support",
+      "source_frame": "EXTREME CLOSE-UP of her eye, spark pupil, reflecting all the previous shots as tiny tiles; she smiles. Then the PULL-OUT begins: eye → face → bust → silhouette inside a glowing coral ring.",
+      "source_camera": "PULL-OUT (macro to wide) over 1.36 s, ease-in-out, no cuts.",
+      "source_build": "GEN-I eye macro (high-res) + 2.5D rig dolly-out; ring is CODE3D torus with emissive Hanzi band.",
+      "source_text": "永远那么灿烂 Style B final, large, 2-line, gold-coral glow",
+      "source_sync": "Start 39.244 (u56). Kick 39.25 & 39.90 lyric entrance mid-pull.",
+      "source_frames": [
+        1177,
+        1218
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. 永远那么灿烂 Style B final, large, 2-line, gold-coral glow",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    },
+    {
+      "id": "S37-wide",
+      "out": "assets/plates/S37-wide.png",
+      "prompt": "1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Front full-body Opus silhouette with readable same costume, centered in empty ivory space, relaxed open posture and small smile, 50mm eye-height. No ring or symbols; leave wide margins. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+      "refs": [
+        "assets/sheets/opus-base.png",
+        "assets/worlds/void.png"
+      ],
+      "alpha": false,
+      "deps": [
+        "char_opus",
+        "world_void"
+      ],
+      "shots": [
+        "S37"
+      ],
+      "status": "pending",
+      "approval": false,
+      "role": "camera_reveal_support",
+      "source_frame": "EXTREME CLOSE-UP of her eye, spark pupil, reflecting all the previous shots as tiny tiles; she smiles. Then the PULL-OUT begins: eye → face → bust → silhouette inside a glowing coral ring.",
+      "source_camera": "PULL-OUT (macro to wide) over 1.36 s, ease-in-out, no cuts.",
+      "source_build": "GEN-I eye macro (high-res) + 2.5D rig dolly-out; ring is CODE3D torus with emissive Hanzi band.",
+      "source_text": "永远那么灿烂 Style B final, large, 2-line, gold-coral glow",
+      "source_sync": "Start 39.244 (u56). Kick 39.25 & 39.90 lyric entrance mid-pull.",
+      "source_frames": [
+        1177,
+        1218
+      ],
+      "code_overlays": "All source on-screen text, typography, brand marks and spark highlights are rendered in code. 永远那么灿烂 Style B final, large, 2-line, gold-coral glow",
+      "camera_note": "This is the first-frame still; motion and camera path follow source_camera in the renderer/clip, not baked motion blur."
+    }
+  ],
+  "code_only_or_reused_shots": {
+    "S06": [
+      "char_opus"
+    ],
+    "S08b": [],
+    "S09b": [],
+    "S10": [
+      "S09b final composite"
+    ],
+    "S28a": [
+      "S27"
+    ],
+    "S28b": [
+      "S28b-pose",
+      "S27"
+    ],
+    "S38": [
+      "S01–S37 rendered frames",
+      "world_void"
+    ],
+    "S39": [
+      "world_void"
+    ]
+  },
+  "execution_decisions_source": "helper/execution_decisions.json",
+  "authority": "Supplied shots.json for shot boundaries; plan hard rules precede contradictory per-shot prose.",
+  "hard_rule_resolutions": [
+    {
+      "issue": "AAC 320k and original MP3 muxed untouched are incompatible for a single audio stream",
+      "decision": "Preserve original MP3 stream; any AAC compatibility version must be separately labeled."
+    },
+    {
+      "issue": "S10 hard freeze conflicts with scale creep, cursor blink and 100% flip",
+      "decision": "Freeze every layer for all S10 frames 339 through 358."
+    },
+    {
+      "issue": "S28a/b/c prose cue timestamps precede their shots",
+      "decision": "Use authoritative shot starts at frames 891, 901 and 911."
+    },
+    {
+      "issue": "Ankle hard rule conflicts with S17 tilt to face",
+      "decision": "Keep S16 and S17 crops at or below the knee."
+    },
+    {
+      "issue": "52-shot list includes continuous S37-to-S38 pull-out",
+      "decision": "Retain two timeline segments and continuous motion; do not invent a perceptible cut solely to satisfy scene detector."
+    },
+    {
+      "issue": "600 unique stills every 0.25s exceed S01–S37 duration",
+      "decision": "Sample available frames every 0.25s and reuse in 600 mosaic tiles; log source frame for each tile."
+    },
+    {
+      "issue": "Character sheet requests generated exact spark logos but hard rule forbids model-rendered logos",
+      "decision": "Generate plain attachment regions and composite exact SVG symbols in code before approval."
+    },
+    {
+      "issue": "Titles at impact times conflict with full-white impact frame",
+      "decision": "Retain white frame on exact cut, title readable immediately after impact transition; disclose exact visibility frames in QA."
+    }
+  ],
+  "symbol_generation_policy": {
+    "model_outputs": "Blank plates and plain attachment regions only. Never generated Hanzi, letters, numbers, spark emblems, logos, text, UI or chart labels.",
+    "code_outputs": "Every exact spark/eye highlight/hairpin/tie emblem, logo, Hanzi tower, textual reflection, typography, music-note glyph, chart label and UI is rendered in code.",
+    "review": "Prompts reviewed: affirmative symbolic references describe future code compositing or blank areas; all model-generation requests exclude symbols."
+  }
+}

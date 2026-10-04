@@ -1,0 +1,50 @@
+{
+  "id": "S36a-start",
+  "tool": "Codex built-in image_gen",
+  "prompt": "Use case: illustration-story. Derive ONE production anime dance-pose cutout from the attached approved character sheet, used ONLY as identity/clothing reference, never reproduce the sheet. Output a single isolated character/crop on genuinely transparent RGBA alpha; no backdrop, no floor, no drawn checkerboard, no framing panel, no collage. 1920x1080 landscape composition. Preserve her asymmetric chin-length ink-black bob with subtle brown undertone and warm clay-coral inner hair/tips, amber-coral eyes, long cream-ribbon-tied side lock on her LEFT (viewer right), plain coral barrette, cream oversized knit cardigan-cape with slate piping, white blouse, plain coral tie, charcoal pleated skirt with five fine parallel hem stripes. Thin-thick anime ink and soft warm cel shading matching reference. Plain eyes and barrette/tie mounting areas: exact eye highlights, emblems and halo will be composited later in code; do not generate a halo or spark symbols. Fully clothed, wholesome. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no starbursts. No extra limbs or fingers. Pose A: FRONT MID SHOT cropped naturally just below the waist, camera at face height, 65mm composition. Her anatomical RIGHT hand is open beside her RIGHT cheek, meaning the open hand is on VIEWER LEFT. Palm faces camera with exactly five clearly separated anatomically plausible fingers. RIGHT elbow lifted gently. She tilts her head to her anatomical RIGHT (viewer left), gives a cheerful RIGHT-eye wink and soft joyful smile; left eye remains open. Left arm relaxed down, not another raised hand. Leave clean transparent margin above hair and around raised hand; do not crop any fingertip. Pose fills central roughly60% width, with head and right hand both fully readable. One image only.",
+  "references": [
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/sheets/opus-base.png"
+  ],
+  "transparent_background": true,
+  "source_path": "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-d7c37b31-9327-44e7-8e73-d8d464d048ad.png",
+  "selected_path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S36a-start.png",
+  "status": "selected-still-reviewed-render-pending",
+  "original_codex_image_retained": true,
+  "sha256": "efaf5502f794107f8ef05d0b2ae6cd7253d62d6344248f8eee227b3cdf3e56cf",
+  "alphaStatistics": {
+    "mode": "RGBA",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "min": 0,
+    "max": 255,
+    "transparentFraction": 0.6261122749391109,
+    "nonzeroBounds": [
+      130,
+      7,
+      1472,
+      941
+    ],
+    "edgeNonzeroCounts": {
+      "top": 0,
+      "bottom": 827,
+      "left": 0,
+      "right": 0
+    },
+    "alphaAbove32Bounds": [
+      340,
+      11,
+      1339,
+      941
+    ]
+  },
+  "visualReview": [
+    "Front mid-shot: anatomical right palm on viewer left, five fingers visible, right-eye wink.",
+    "Head tilts to her right; ribbon side lock and plain barrette remain on her left.",
+    "Lower torso crop is intentional; raised hand and hair remain inside the image."
+  ],
+  "generatedSymbols": "No visible text, logos or starburst emblems; ordinary barrette and plain tie retained for code finishing.",
+  "motionReview": "Not reviewed: a generated still is not proof of dance performance.",
+  "referenceOriginalRetained": true
+}

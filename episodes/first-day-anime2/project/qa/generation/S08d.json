@@ -1,0 +1,11 @@
+{
+  "id": "S08d",
+  "prompt": "One single cinematic frame, never a collage, sheet or multi-panel layout. Reference sheets establish style or identity only, not layout. 1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Distant world horizon with the upper rim of coral sun just breaking its edge. Wide 35mm low horizon, pale ivory sky and simple ink landscape. No flare baked into the plate. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+  "refs": [
+    "assets/worlds/scroll.png"
+  ],
+  "generator": "Codex built-in",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-48a0d0b8-9110-4367-b98e-92f5f92c448f.png",
+  "output": "assets/plates/S08d.png",
+  "status": "pending_review"
+}

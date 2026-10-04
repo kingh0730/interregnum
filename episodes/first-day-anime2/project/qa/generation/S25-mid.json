@@ -1,0 +1,11 @@
+{
+  "id": "S25-mid",
+  "prompt": "A single separated environment layer on a genuinely transparent alpha background. ALL pixels outside the specified architecture must be fully transparent, no sky or backdrop. Reference is architecture and palette only. No people or character, no character sheet or collage. 1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Distant central canyon buildings seen from steep behind-and-below launch camera. Pale paper architectural volumes with BLANK surfaces for code-built Hanzi, separated cleanly from sky; only mid-distance buildings on transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+  "refs": [
+    "assets/worlds/canyon.png"
+  ],
+  "generator": "Codex built-in",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-055575f6-690c-4c1f-986f-2cbe7055ae45.png",
+  "output": "assets/plates/S25-mid.png",
+  "status": "pending_review"
+}

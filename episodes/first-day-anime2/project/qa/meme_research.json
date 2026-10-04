@@ -1,0 +1,12 @@
+{
+  "checked": "2026-10-04",
+  "scope": "Evidence that the phrases remain in Chinese online circulation; not a popularity ranking or endorsement of factual allegations about products.",
+  "items": [
+    {"phrase":"你说得对","decision":"Retain affectionate agreement catchphrase.","sources":["https://www.aigengtu.com/zh-Hant/meme/1163","https://birdmanoutman.com/zh/blog/2026-09-04-ai-cliches-by-model"],"evidence":"Claude-girl meme page and September2026 discussion of model speech habits explicitly use the phrase."},
+    {"phrase":"格局打开","decision":"Retain general Chinese internet expression adapted to the unfolding paper world.","sources":["https://www.bilibili.com/video/BV17wRKBmEZ8/"],"evidence":"Bilibili video published2026-05-01 uses the phrase in its title. It is not uniquely a Claude meme."},
+    {"phrase":"五五开","decision":"Retain the plan's authored5.5/co-authorship pun. Do not claim this exact Opus5.5 joke was found online.","sources":["https://finance.sina.com.cn/stock/t/2026-05-09/doc-inhxifkz3412126.shtml"],"evidence":"May2026 Chinese Claude coverage uses the underlying fifty-fifty expression. The film's model-number application is an original adaptation."},
+    {"phrase":"封号","decision":"Retain fictional bouncing-stamp gag.","sources":["https://zhuanlan.zhihu.com/p/2056747772498425756"],"evidence":"Recent Chinese community commentary uses account-ban terminology in a Claude/Anthropic context."},
+    {"phrase":"额度","decision":"Retain the quota-toast gag from the supplied plan, as fictional UI.","sources":["https://zhuanlan.zhihu.com/p/2077810946018484421"],"evidence":"August2026 Chinese commentary discusses quota and five-hour windows. The film's toast is not a precise billing or reset-time explanation."},
+    {"phrase":"降智","decision":"Retain the gray-cloud gag; no real performance claim is made.","sources":["https://zhuanlan.zhihu.com/p/2031793688465163710","https://linux.do/t/topic/1950338"],"evidence":"Chinese Claude discussion in2026 explicitly uses the phrase; the cited opinions do not establish objective model degradation."}
+  ]
+}

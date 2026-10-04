@@ -1,0 +1,288 @@
+{
+  "decoded": {
+    "S10": {
+      "status": "REVIEW-small-decoded-variation-codec-compatible",
+      "framesExpected": 20,
+      "framesDecoded": 20,
+      "decodedRGBHashes": [
+        "a083398b515db360ae48480d2324f31ca96b5dee8da992cabd2b34df9a9e8dce",
+        "10a7b2562399fdcc93b410dc62d1928f7b24f78fcc366e763f9f9d24db7cd625",
+        "feb26176a99a3404a728fa9a7c032a255cbc7bfd0786d10775d7740cb580829b",
+        "8e3ff7038f0bc53831eef49304f41a125dc8c84f5b61d771ae57d1a4c6dc48bb",
+        "4f43b853b2c0d88e35f08ba8b80cec93da567a44076d763ace501de93e4e7233",
+        "68df7c6314372c9f13a9e7d9c53af622ded7d43d67278b5fc7d95aacbac03a73",
+        "c4da2d70d5982fbf974897688eb0c30f122ceb9e5d593da6321a06137b3a6ad3",
+        "19a500de7767047289f428587479eb2d2da8c44074010e0d5b75a0f212622815",
+        "8ade6ebca802bae194936a1d2a880089b177db2ec483287e050d6ebd71fe1238",
+        "9b8185788eff24bcf2c551ffed2d4cd47ca627c44f08425bb808f1ec90057a16",
+        "0064fc7b3cbc43070d6d60144e93bed12b008df5ec19c1ff5f849d06f3bd6ce3",
+        "ca77beb2c7872ee4ae6ce6dda7922024e84dbf38a94553eb5e3911e022f172ed",
+        "ff66d6de2da84ad4f4f6a4468f09be28097262f09739e3951bcd358327f25937",
+        "7c441022a2c3c852ab597d9a8a21fe701687f82bb14484ea9de6133ed028ab4c",
+        "3438a6c0306e87f3e9375061b27f2e23695117496ba193f2d019cfc95f14633e",
+        "3438a6c0306e87f3e9375061b27f2e23695117496ba193f2d019cfc95f14633e",
+        "3438a6c0306e87f3e9375061b27f2e23695117496ba193f2d019cfc95f14633e",
+        "83a4faf89f3314d9e27a8272787959beec4684fed18bb98898c06526309cf368",
+        "e5994f36b32436c498c5252510ab9c0260a50fa25683617e9e5fe2c52ad5cd97",
+        "db0fad26fc7e611cf861976aa198007bb2244c9f1394b3c4bded3375bd123909"
+      ],
+      "metrics": [
+        {
+          "frame": 339,
+          "meanDifferenceFromFirst": 0.0,
+          "maxDifferenceFromFirst": 0,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0
+        },
+        {
+          "frame": 340,
+          "meanDifferenceFromFirst": 0.004393647119341564,
+          "maxDifferenceFromFirst": 67,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.004393647119341564
+        },
+        {
+          "frame": 341,
+          "meanDifferenceFromFirst": 0.010961291152263375,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.009386574074074073
+        },
+        {
+          "frame": 342,
+          "meanDifferenceFromFirst": 0.01188207304526749,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.001902006172839506
+        },
+        {
+          "frame": 343,
+          "meanDifferenceFromFirst": 0.012892232510288065,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.002221579218106996
+        },
+        {
+          "frame": 344,
+          "meanDifferenceFromFirst": 0.009650848765432098,
+          "maxDifferenceFromFirst": 46,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.009322916666666667
+        },
+        {
+          "frame": 345,
+          "meanDifferenceFromFirst": 0.015289351851851853,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.0057465277777777775
+        },
+        {
+          "frame": 346,
+          "meanDifferenceFromFirst": 0.01535815329218107,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 8.037551440329218e-05
+        },
+        {
+          "frame": 347,
+          "meanDifferenceFromFirst": 0.015443029835390946,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 8.487654320987654e-05
+        },
+        {
+          "frame": 348,
+          "meanDifferenceFromFirst": 0.015629501028806586,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.0002199074074074074
+        },
+        {
+          "frame": 349,
+          "meanDifferenceFromFirst": 0.015711805555555555,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.00023662551440329217
+        },
+        {
+          "frame": 350,
+          "meanDifferenceFromFirst": 0.01573431069958848,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 8.037551440329218e-05
+        },
+        {
+          "frame": 351,
+          "meanDifferenceFromFirst": 0.015792181069958847,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 6.17283950617284e-05
+        },
+        {
+          "frame": 352,
+          "meanDifferenceFromFirst": 0.01577289094650206,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 8.873456790123456e-05
+        },
+        {
+          "frame": 353,
+          "meanDifferenceFromFirst": 0.01576517489711934,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 7.71604938271605e-06
+        },
+        {
+          "frame": 354,
+          "meanDifferenceFromFirst": 0.01576517489711934,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.0
+        },
+        {
+          "frame": 355,
+          "meanDifferenceFromFirst": 0.01576517489711934,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.0
+        },
+        {
+          "frame": 356,
+          "meanDifferenceFromFirst": 0.015763245884773663,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 1.9290123456790124e-06
+        },
+        {
+          "frame": 357,
+          "meanDifferenceFromFirst": 0.015761316872427985,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 9.645061728395062e-06
+        },
+        {
+          "frame": 358,
+          "meanDifferenceFromFirst": 0.01576517489711934,
+          "maxDifferenceFromFirst": 53,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 3.858024691358025e-06
+        }
+      ],
+      "classificationLimits": "Decoded high max outliers alone do not imply motion. Small mean<=.15 and p99<=2 variations are codec-compatible REVIEW; other variation is inconclusive REVIEW; exact byte identity passes."
+    },
+    "final12": {
+      "status": "REVIEW-small-decoded-variation-codec-compatible",
+      "framesExpected": 12,
+      "framesDecoded": 12,
+      "decodedRGBHashes": [
+        "11d96fb8e507cf3ee39376e2c3d098146fa82065843a0135379372501fc3e8ba",
+        "17284c7c98fcb0ca917c6a44af5b39affc69c765757497ddb69dc6c8aea5a000",
+        "79a3846e253553c4c94007745c8f51d8c2c0b4366d814e56d27669d346bdc947",
+        "d8b5a72a7f1a6d6a58bb4adbb9116ee0cc74a1f3b217ab028f9359c57f8d6434",
+        "7e0e104a85d8a949646c0a2f9b55fc828042a58dbe56e7fcde27d8e6e4aa926b",
+        "ceacb0a39f98809fd92e3c10acf3e3fedd8c690143f8b27ab7c2492c44f49b9a",
+        "25d9c609f7e079b1526183b666c00f2eacc9f6059df0a505fcdfefe47d301c2d",
+        "c0c9eadf4a7ae8eb2f0728c34e8e0b7eff97aad9824119177de759578a9c14e2",
+        "c7d8dcb9db53be82c219b84c040030530ac79d14bbeefb87aebf08c16a6fc27f",
+        "c7d8dcb9db53be82c219b84c040030530ac79d14bbeefb87aebf08c16a6fc27f",
+        "c7d8dcb9db53be82c219b84c040030530ac79d14bbeefb87aebf08c16a6fc27f",
+        "c0c9eadf4a7ae8eb2f0728c34e8e0b7eff97aad9824119177de759578a9c14e2"
+      ],
+      "metrics": [
+        {
+          "frame": 1299,
+          "meanDifferenceFromFirst": 0.0,
+          "maxDifferenceFromFirst": 0,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0
+        },
+        {
+          "frame": 1300,
+          "meanDifferenceFromFirst": 0.00026041666666666666,
+          "maxDifferenceFromFirst": 4,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.00026041666666666666
+        },
+        {
+          "frame": 1301,
+          "meanDifferenceFromFirst": 0.0023296039094650206,
+          "maxDifferenceFromFirst": 31,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.002539866255144033
+        },
+        {
+          "frame": 1302,
+          "meanDifferenceFromFirst": 0.015518261316872428,
+          "maxDifferenceFromFirst": 63,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.013238811728395061
+        },
+        {
+          "frame": 1303,
+          "meanDifferenceFromFirst": 0.005248842592592592,
+          "maxDifferenceFromFirst": 46,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.013763503086419753
+        },
+        {
+          "frame": 1304,
+          "meanDifferenceFromFirst": 0.004260545267489712,
+          "maxDifferenceFromFirst": 31,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.0010435956790123457
+        },
+        {
+          "frame": 1305,
+          "meanDifferenceFromFirst": 0.0032883230452674895,
+          "maxDifferenceFromFirst": 16,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.00126929012345679
+        },
+        {
+          "frame": 1306,
+          "meanDifferenceFromFirst": 0.0029346707818930042,
+          "maxDifferenceFromFirst": 19,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.001649948559670782
+        },
+        {
+          "frame": 1307,
+          "meanDifferenceFromFirst": 0.0029501028806584364,
+          "maxDifferenceFromFirst": 19,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 1.54320987654321e-05
+        },
+        {
+          "frame": 1308,
+          "meanDifferenceFromFirst": 0.0029501028806584364,
+          "maxDifferenceFromFirst": 19,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.0
+        },
+        {
+          "frame": 1309,
+          "meanDifferenceFromFirst": 0.0029501028806584364,
+          "maxDifferenceFromFirst": 19,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 0.0
+        },
+        {
+          "frame": 1310,
+          "meanDifferenceFromFirst": 0.0029346707818930042,
+          "maxDifferenceFromFirst": 19,
+          "p99DifferenceFromFirst": 0.0,
+          "meanConsecutiveDifference": 1.54320987654321e-05
+        }
+      ],
+      "classificationLimits": "Decoded high max outliers alone do not imply motion. Small mean<=.15 and p99<=2 variations are codec-compatible REVIEW; other variation is inconclusive REVIEW; exact byte identity passes."
+    }
+  },
+  "sourceProof": {
+    "status": "PENDING",
+    "reason": "No independently verifiable source-frame freeze proof supplied"
+  },
+  "visualReview": {
+    "S10": "Inspected timing_stop_strip.png and camera/S10.jpg: visible counter remains Frame0339, progress bar and card are unchanged. No moving-counter finding is supported.",
+    "final12": "Inspected actual decodedframes1299/1304/1310 in final12_hold_strip.jpg: all show Frame1299 and the same visible progress/card. Sparse codec differences do not establish animation."
+  }
+}

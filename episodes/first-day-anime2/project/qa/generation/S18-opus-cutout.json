@@ -1,0 +1,7 @@
+{
+  "prompt": "Remove the entire background from this image. Keep ONLY Opus's exact body, hair, clothing, head and reaching hand, completely unchanged in pose, scale, identity, fingers, face, ink lines, colors and shading. Make all pixels outside her silhouette fully transparent alpha. No sky, no clouds, no city, no paper background, no ground, no shadows outside her body, no gradient haze. Do not redraw the character; isolate her precisely including the spaces between fingers and hair locks. No text, no letters, no logos, no watermark.",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-31b40fb2-82f4-40f5-a71e-d3a594ec1d6c.png",
+  "output": "assets/plates/S18-opus-cutout.png",
+  "status": "pending_review",
+  "reason": "Original alpha lacked fully transparent background; targeted extraction."
+}

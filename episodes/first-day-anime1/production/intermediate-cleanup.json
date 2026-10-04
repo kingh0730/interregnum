@@ -1,0 +1,12 @@
+{
+  "removed_regenerable_sequences": [
+    "work/first-day-anime1/plates",
+    "work/first-day-anime1/plates_preview",
+    "work/first-day-anime1/anchors_preview"
+  ],
+  "retained": "Selected movies, source art, 35 full-size anchors, all frame hashes, contact sheets, final/preview films, code and preparation scripts",
+  "ram_device": "/dev/disk26",
+  "ram_mount": "/Volumes/Opus55Frames",
+  "ram_device_ejected": true,
+  "frame_directory": "Empty regular directory restored for future rebuilds"
+}

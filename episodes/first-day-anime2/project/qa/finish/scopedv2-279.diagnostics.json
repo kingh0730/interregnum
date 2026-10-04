@@ -1,0 +1,107 @@
+{
+  "shots": {
+    "S08a": {
+      "assets": {
+        "plate": "assets/normalized/S08a.png",
+        "depth": "assets/depth/S08a.png",
+        "mask": "assets/masks/S08a.png",
+        "layers": [],
+        "poses": [],
+        "support": {},
+        "features": {
+          "status": "anchors_located_pending_composite_review",
+          "eyes": [
+            [
+              0.53528708,
+              0.23896863,
+              0.00837321
+            ],
+            [
+              0.62978469,
+              0.28043594,
+              0.00837321
+            ]
+          ],
+          "hairpin": [
+            0.69557416,
+            0.18261563,
+            0.01794258
+          ],
+          "tie": [
+            0.53588517,
+            0.59835194,
+            0.02990431
+          ],
+          "halo": [
+            0.59210526,
+            0.20175439,
+            0.46650718,
+            0.63795853
+          ],
+          "eyes_state": "open",
+          "review_evidence": [
+            "qa/features/S08a-anchors.png",
+            "qa/features/first-batch-overlay-grid.jpg"
+          ],
+          "halo_requires_subject_occlusion": true,
+          "only_character": "Opus"
+        },
+        "status": "normalized_source_available",
+        "approval": false,
+        "mask_required": true,
+        "mask_status": "available_unreviewed",
+        "depth_status": "available_unreviewed",
+        "asset_id": "S08a",
+        "depth_input": "assets/normalized/S08a.png"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo",
+        "eyes_state",
+        "review_evidence",
+        "halo_requires_subject_occlusion",
+        "only_character"
+      ],
+      "unverified": [],
+      "fingertipSparks": {
+        "sourceAnchors": [
+          [
+            0.184,
+            0.381
+          ],
+          [
+            0.083,
+            0.74
+          ],
+          [
+            0.176,
+            0.91
+          ],
+          [
+            0.311,
+            0.952
+          ],
+          [
+            0.432,
+            0.864
+          ]
+        ],
+        "exactBrandGeometry": true,
+        "registered": true
+      }
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    279
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}

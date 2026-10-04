@@ -1,0 +1,35 @@
+{
+ "id": "S17_take1",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Her first breath: lips part softly, she inhales with a tiny natural chest rise, holds a moment, then releases a gentle breath. Hair follows with a light outward drift. Keep amber-coral eyes and face completely consistent; underplayed awe. No exaggerated singing.",
+  "image_url": "<data uri>",
+  "duration": 3,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026100171
+ },
+ "payload_sha256": "51b584b128fc62366e9a8165b6666d8b09eaaead63d9c7d1fa905bdf1584ebcf",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S17_take1.mp4",
+ "phase": "done",
+ "billable_s": 3.0,
+ "price": 0.09,
+ "request_id": "01a10609-dc3b-7a32-adf9-be9836a2e3f0",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-dc3b-7a32-adf9-be9836a2e3f0/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-dc3b-7a32-adf9-be9836a2e3f0",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-dc3b-7a32-adf9-be9836a2e3f0/cancel",
+ "submitted": 1791102672.066508,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad017b/yVnm75vG6jWwU4JkYAA7n_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "yVnm75vG6jWwU4JkYAA7n_minimax-h3.mp4",
+   "file_size": 10345981
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 1.7012815726920962
+  }
+ },
+ "done": 1791102683.58564
+}

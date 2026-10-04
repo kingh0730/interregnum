@@ -1,0 +1,81 @@
+{
+  "shots": {
+    "S31": {
+      "assets": {
+        "plate": "assets/normalized/S31-hands.png",
+        "depth": "assets/depth/S31-hands.png",
+        "mask": "assets/masks/S31-hands.png",
+        "layers": [],
+        "poses": [],
+        "support": {},
+        "features": {
+          "status": "anchors_located_pending_composite_review",
+          "eyes": [
+            [
+              0.48744019,
+              0.16454014,
+              0.0041866
+            ],
+            [
+              0.51495215,
+              0.15178097,
+              0.0041866
+            ]
+          ],
+          "hairpin": [
+            0.52332536,
+            0.11244019,
+            0.00837321
+          ],
+          "tie": [
+            0.51495215,
+            0.25917065,
+            0.01315789
+          ],
+          "halo": [
+            0.49641148,
+            0.1507177,
+            0.17344498,
+            0.25518341
+          ],
+          "eyes_state": "open",
+          "review_evidence": [
+            "qa/features/S31-hands-anchors.png",
+            "qa/features/final-sources-overlay-grid.jpg"
+          ],
+          "halo_requires_subject_occlusion": true,
+          "only_character": "Opus"
+        },
+        "status": "normalized_source_available",
+        "approval": false,
+        "mask_required": true,
+        "mask_status": "available_unreviewed",
+        "depth_status": "available_unreviewed",
+        "asset_id": "S31-hands",
+        "depth_input": "assets/normalized/S31-hands.png"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo",
+        "eyes_state",
+        "review_evidence",
+        "halo_requires_subject_occlusion",
+        "only_character"
+      ],
+      "unverified": []
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    1000
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}

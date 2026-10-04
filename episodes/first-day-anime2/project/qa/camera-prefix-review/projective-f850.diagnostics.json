@@ -1,0 +1,95 @@
+{
+  "shots": {
+    "S27": {
+      "assets": {
+        "plate": "assets/normalized/S27.png",
+        "depth": "assets/depth/S27.png",
+        "mask": "assets/masks/S27.png",
+        "layers": [],
+        "poses": [],
+        "support": {},
+        "features": {
+          "status": "anchors_located_pending_composite_review",
+          "eyes": [
+            [
+              0.51375598,
+              0.13795853,
+              0.00478469
+            ],
+            [
+              0.54665072,
+              0.11988304,
+              0.00478469
+            ]
+          ],
+          "hairpin": [
+            0.5562201,
+            0.07203615,
+            0.01076555
+          ],
+          "tie": [
+            0.55861244,
+            0.24641148,
+            0.01435407
+          ],
+          "halo": [
+            0.53349282,
+            0.11881978,
+            0.20334928,
+            0.28708134
+          ],
+          "eyes_state": "open",
+          "review_evidence": [
+            "qa/features/S27-anchors.png",
+            "qa/features/batch-S26-dance3-overlay-grid.jpg"
+          ],
+          "halo_requires_subject_occlusion": true,
+          "only_character": "Opus",
+          "heart": [
+            0.56818182,
+            0.29106858
+          ]
+        },
+        "status": "normalized_source_available",
+        "approval": false,
+        "mask_required": true,
+        "mask_status": "available_unreviewed",
+        "depth_status": "available_unreviewed",
+        "asset_id": "S27",
+        "depth_input": "assets/normalized/S27.png"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo",
+        "eyes_state",
+        "review_evidence",
+        "halo_requires_subject_occlusion",
+        "only_character",
+        "heart"
+      ],
+      "unverified": [],
+      "heart": {
+        "anchor": [
+          0.56818182,
+          0.29106858
+        ],
+        "exactBrandSpark": true,
+        "subtleHeartOutline": true
+      },
+      "particleOrbitDegrees": 360
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    850
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}

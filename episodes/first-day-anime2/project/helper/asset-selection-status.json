@@ -1,0 +1,535 @@
+{
+  "status": "rendered_and_sample_reviewed_final_media_checks_pass",
+  "shot_count": 52,
+  "selected_unique_asset_count": 52,
+  "normalized_count": 52,
+  "missing_sources": [],
+  "written_or_updated_normalized": [],
+  "pending_features": [],
+  "pending_depth": [],
+  "pending_masks": [],
+  "source_files_untouched": true,
+  "G3_approved": false,
+  "feature_review": "Only visually inspected source images receive anchors. Overlay alignment and halo subject occlusion require composite QA.",
+  "exact_alpha_depth_inputs": {
+    "S11-subject": "assets/depth-inputs/S11-subject.png",
+    "S18-opus-cutout": "assets/depth-inputs/S18-opus-cutout.png",
+    "S18-hand": "assets/depth-inputs/S18-hand.png",
+    "S25-mid-far": "assets/depth-inputs/S25-mid-far.png",
+    "S25-towers-left": "assets/depth-inputs/S25-towers-left.png",
+    "S25-towers-right": "assets/depth-inputs/S25-towers-right.png",
+    "S25-character-refined": "assets/depth-inputs/S25-character-refined.png",
+    "S28b-pose": "assets/depth-inputs/S28b-pose.png",
+    "S36a-start": "assets/depth-inputs/S36a-start.png",
+    "S36b-start": "assets/depth-inputs/S36b-start.png",
+    "S36c-start-v2": "assets/depth-inputs/S36c-start-v2.png",
+    "S36d-start-v2": "assets/depth-inputs/S36d-start-v2.png",
+    "S36e-start-v2": "assets/depth-inputs/S36e-start-v2.png",
+    "S36f-start": "assets/depth-inputs/S36f-start.png",
+    "S36g-start-v2": "assets/depth-inputs/S36g-start-v2.png",
+    "S36h-start": "assets/depth-inputs/S36h-start.png"
+  },
+  "next_batch": "No render or measured-media repair pending; consult QA report for fallback and native-review limits.",
+  "source_annotations_complete": true,
+  "reflection_status": "S30 observed reflection mapped under runtime-confirmed nested schema; no synthesized halo.",
+  "source_freeze": "All selected sources and required feature anchors fixed for firstpass; no further edits until explicit review correction.",
+  "firstpass_generated_later": [],
+  "depth_not_required": [
+    "S11-background",
+    "S18-hand",
+    "S25-character-refined",
+    "S25-mid-far",
+    "S25-sky-clean",
+    "S25-towers-left",
+    "S25-towers-right",
+    "S37-bust",
+    "S37-wide"
+  ],
+  "depth_not_required_reason": "Separate flat S25 layers, source-alpha hand support, flat S11 background and iris-registered S37 wider support images do not require independent depth maps in current runtime.",
+  "depth_required_count": 43,
+  "depth_file_audit": [
+    {
+      "id": "S01",
+      "path": "assets/depth/S01.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S03",
+      "path": "assets/depth/S03.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S04",
+      "path": "assets/depth/S04.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S05-eye",
+      "path": "assets/depth/S05-eye.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S05-face",
+      "path": "assets/depth/S05-face.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S07",
+      "path": "assets/depth/S07.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S08a",
+      "path": "assets/depth/S08a.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S08c-researchers",
+      "path": "assets/depth/S08c-researchers.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S08d",
+      "path": "assets/depth/S08d.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S11-subject",
+      "path": "assets/depth/S11-subject.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S12",
+      "path": "assets/depth/S12.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S13",
+      "path": "assets/depth/S13.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S14",
+      "path": "assets/depth/S14.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S15",
+      "path": "assets/depth/S15.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S16",
+      "path": "assets/depth/S16.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S17-contact",
+      "path": "assets/depth/S17-contact.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S18-opus-cutout",
+      "path": "assets/depth/S18-opus-cutout.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S19-user",
+      "path": "assets/depth/S19-user.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S20",
+      "path": "assets/depth/S20.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S21",
+      "path": "assets/depth/S21.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S22-solo",
+      "path": "assets/depth/S22-solo.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S23",
+      "path": "assets/depth/S23.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S24",
+      "path": "assets/depth/S24.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S26",
+      "path": "assets/depth/S26.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S27",
+      "path": "assets/depth/S27.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S28b-pose",
+      "path": "assets/depth/S28b-pose.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S28c-clean",
+      "path": "assets/depth/S28c-clean.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S30",
+      "path": "assets/depth/S30.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S31-hands",
+      "path": "assets/depth/S31-hands.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S32",
+      "path": "assets/depth/S32.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S33",
+      "path": "assets/depth/S33.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S34-map",
+      "path": "assets/depth/S34-map.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S35",
+      "path": "assets/depth/S35.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S36a-start",
+      "path": "assets/depth/S36a-start.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S36b-start",
+      "path": "assets/depth/S36b-start.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S36c-start-v2",
+      "path": "assets/depth/S36c-start-v2.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S36d-start-v2",
+      "path": "assets/depth/S36d-start-v2.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S36e-start-v2",
+      "path": "assets/depth/S36e-start-v2.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S36f-start",
+      "path": "assets/depth/S36f-start.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S36g-start-v2",
+      "path": "assets/depth/S36g-start-v2.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S36h-start",
+      "path": "assets/depth/S36h-start.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "S37-eye-v2",
+      "path": "assets/depth/S37-eye-v2.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    },
+    {
+      "id": "tomorrow",
+      "path": "assets/depth/tomorrow.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model_output_hash_matches": true,
+      "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "visualApproval": false
+    }
+  ],
+  "depth_provenance_mismatch": [],
+  "latest_file_audit": "Existing files checked after firstpass; builder and image outputs were not regenerated. Depth file/model hashes checked; visual matte/depth approval remains separate.",
+  "ending_assets_complete": [
+    "assets/mosaic/reflection-atlas.png",
+    "assets/mosaic/atlas.png",
+    "assets/mosaic/hero.png"
+  ],
+  "final_delivery_sha256": "e9edb78e1299b558ed81ea0d58dc627fa39494cba0ab0c23e86c6d932869d191",
+  "final_visual_review": "qa/final/visual_contact_review.json",
+  "G3_scope": "All final shot contact samples reviewed. Full native motion/perceptual approval remains unverified; no generated video clips."
+}

@@ -1,0 +1,70 @@
+{
+  "description": "Local fonts and code-authored or sourced vector assets used by the film; integrity inventory, not a licensing assertion.",
+  "files": [
+    {
+      "path": "assets/brand/spark.svg",
+      "bytes": 1139,
+      "sha256": "ecc60e48c033e3d38a1dea771604b409fcd3affafbc1cbda93b3984466d604ba"
+    },
+    {
+      "path": "assets/brand/title-right.svg",
+      "bytes": 1177,
+      "sha256": "2f91bd2e86395186eed8f48aba160d21ade81fb899a0e5f159f41fb263169121"
+    },
+    {
+      "path": "assets/brand/title-left.svg",
+      "bytes": 3407,
+      "sha256": "14bbcb02493d8120d45915e218e628e42fb1de9ca2b2e9eeb3f470b1fa1969bc"
+    },
+    {
+      "path": "assets/brand/anthropic-wordmark.svg",
+      "bytes": 1969,
+      "sha256": "c89653a9edd5cb712368cde82196cd50914fb9e28a77cb5723a7f71a60ac5fc0"
+    },
+    {
+      "path": "assets/brand/canyon-hanzi.json",
+      "bytes": 8710,
+      "sha256": "11230ec7fe3ce82cae0db3838c87794fe74991334d26de1286eae10868877116"
+    },
+    {
+      "path": "assets/brand/brush-changkuai.json",
+      "bytes": 4228,
+      "sha256": "b832500e06c937483b9b771a0d722408bcd03b582ce0b6798703cbaab46b5d59"
+    },
+    {
+      "path": "assets/brand/spark-source.svg",
+      "bytes": 1155,
+      "sha256": "5de1221c77cc91e748066fd642ad0eee1c1fa65328814f5178166f901e599709"
+    },
+    {
+      "path": "assets/fonts/LXGWWenKai.ttf",
+      "bytes": 25575676,
+      "sha256": "39ad71264b588165b469e35e6afb162a378dacd1f95348160240ba9038ac3009"
+    },
+    {
+      "path": "assets/fonts/NotoSerifSC.ttf",
+      "bytes": 25125512,
+      "sha256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9"
+    },
+    {
+      "path": "assets/fonts/Inter.ttf",
+      "bytes": 876576,
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031"
+    },
+    {
+      "path": "assets/fonts/JetBrainsMono.ttf",
+      "bytes": 187208,
+      "sha256": "48715a42ec242c21e9f02692891e147d022299a52e48d5e413e1a942193ffeda"
+    },
+    {
+      "path": "assets/fonts/NotoSansSC.ttf",
+      "bytes": 17772300,
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da"
+    },
+    {
+      "path": "assets/fonts/Newsreader.ttf",
+      "bytes": 451664,
+      "sha256": "8a08d13f8a6c0d51be379a60af84f945f65369a67e509ee3c3bdcc421254d7c1"
+    }
+  ]
+}

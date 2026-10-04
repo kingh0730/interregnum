@@ -1,0 +1,35 @@
+{
+ "id": "lip_test",
+ "endpoint": "minimax/h3-max/lip-sync/image-to-video",
+ "payload": {
+  "enable_transcription": true,
+  "image_url": "<data uri>",
+  "audio_url": "<data uri>",
+  "resolution": "1080P",
+  "seed": 2026105534
+ },
+ "payload_sha256": "aed8f75ef534dbc46f0b60d76e38e6dd6afbc5115d04d4f5686b2c1f1e99ef55",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/lip-test.mp4",
+ "phase": "done",
+ "billable_s": 5.0,
+ "price": 0.25,
+ "request_id": "01a1062a-6a79-72d0-be1a-213c3c251eeb",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a1062a-6a79-72d0-be1a-213c3c251eeb/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a1062a-6a79-72d0-be1a-213c3c251eeb",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a1062a-6a79-72d0-be1a-213c3c251eeb/cancel",
+ "submitted": 1791104805.642883,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad0251/BvcAC2sIjy94R4fn8LJlM_dubbed.mp4",
+   "content_type": null,
+   "file_name": null,
+   "file_size": null
+  },
+  "seed": 2026105534,
+  "duration": 5.0,
+  "timings": {
+   "inference": 4.13
+  }
+ },
+ "done": 1791104831.140578
+}

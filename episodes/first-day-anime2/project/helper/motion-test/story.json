@@ -1,0 +1,11 @@
+{
+  "shots": [
+    {
+      "id": "S01",
+      "asset": "S01",
+      "start_frame": 0,
+      "end_frame": 32,
+      "kind": "image"
+    }
+  ]
+}

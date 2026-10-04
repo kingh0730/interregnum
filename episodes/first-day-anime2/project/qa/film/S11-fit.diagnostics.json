@@ -1,0 +1,228 @@
+{
+  "shots": {
+    "S11": {
+      "assets": {
+        "plate": "assets/normalized/S11-subject.png",
+        "depth": "assets/depth/S11-subject.png",
+        "mask": "assets/masks/S11-subject.png",
+        "layers": [],
+        "poses": [],
+        "support": {
+          "subject": {
+            "id": "S11-subject",
+            "source": "assets/plates/S11-subject.png",
+            "plate": "assets/normalized/S11-subject.png",
+            "depth": "assets/depth/S11-subject.png",
+            "mask": "assets/masks/S11-subject.png",
+            "expected_mask": "assets/masks/S11-subject.png",
+            "status": "normalized_source_available",
+            "depth_status": "available_unreviewed",
+            "mask_status": "exact_source_alpha",
+            "features": {
+              "status": "anchors_located_pending_composite_review",
+              "eyes": [
+                [
+                  0.4611244,
+                  0.29957469,
+                  0.00717703
+                ],
+                [
+                  0.53767943,
+                  0.26448698,
+                  0.00717703
+                ]
+              ],
+              "hairpin": [
+                0.56339713,
+                0.15284423,
+                0.01614833
+              ],
+              "tie": [
+                0.51255981,
+                0.59516215,
+                0.02691388
+              ],
+              "halo": [
+                0.49940191,
+                0.24960128,
+                0.3708134,
+                0.51036683
+              ],
+              "eyes_state": "open",
+              "review_evidence": [
+                "qa/features/S11-subject-anchors.png",
+                "qa/features/batch-through-S25-overlay-grid.jpg"
+              ],
+              "halo_requires_subject_occlusion": true,
+              "only_character": "Opus"
+            },
+            "features_required": true,
+            "mask_required": true,
+            "approval": false,
+            "source_sha256": "393f29aa857ba582686987ad9a2c123a559e56d1f4f20fcabe701b9640eeac1f",
+            "output_sha256": "1cffea305c65ac8c9e17ad32b760d3f4d7d111e58e8cfa25104ce602557d91b5",
+            "transform": {
+              "source_size": [
+                1672,
+                941
+              ],
+              "crop_box": [
+                0,
+                0.25,
+                1672,
+                940.75
+              ],
+              "target_size": [
+                1920,
+                1080
+              ],
+              "scale": 1.1483253588516746,
+              "method": "center_crop_lanczos_preserve_alpha"
+            },
+            "mode": "RGBA",
+            "source_alpha_range": [
+              0,
+              255
+            ],
+            "depth_input": "assets/depth-inputs/S11-subject.png",
+            "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+            "mask_provenance": {
+              "method": "normalized_source_alpha_channel",
+              "source_sha256": "393f29aa857ba582686987ad9a2c123a559e56d1f4f20fcabe701b9640eeac1f",
+              "alpha_sha256": "9c534b809721f630e89aecbe9943e6e36b4abd5d730ff44f3f52bf5db4c13214",
+              "fully_transparent_pixel_fraction": 0.502205825617284,
+              "approval": false
+            },
+            "path": "assets/normalized/S11-subject.png"
+          },
+          "background": {
+            "id": "S11-background",
+            "source": "assets/plates/S11-background.png",
+            "plate": "assets/normalized/S11-background.png",
+            "depth": "assets/depth/S11-background.png",
+            "mask": null,
+            "expected_mask": "assets/masks/S11-background.png",
+            "status": "normalized_source_available",
+            "depth_status": "pending_inference",
+            "mask_status": "not_required",
+            "features": {
+              "status": "not_required",
+              "eyes": [],
+              "hairpin": null,
+              "tie": null,
+              "halo": null
+            },
+            "features_required": false,
+            "mask_required": false,
+            "approval": false,
+            "source_sha256": "47d59389e3af80062fa4d73f66031a0a6315c117ffa629b5bd57e40005c1f82e",
+            "output_sha256": "a149deb3ebfa37ff91b868532fcfdeea3c64d04700846fdf59d229766d8e8579",
+            "transform": {
+              "source_size": [
+                1672,
+                941
+              ],
+              "crop_box": [
+                0,
+                0.25,
+                1672,
+                940.75
+              ],
+              "target_size": [
+                1920,
+                1080
+              ],
+              "scale": 1.1483253588516746,
+              "method": "center_crop_lanczos_preserve_alpha"
+            },
+            "mode": "RGB",
+            "source_alpha_range": null,
+            "path": "assets/normalized/S11-background.png"
+          }
+        },
+        "features": {
+          "status": "anchors_located_pending_composite_review",
+          "eyes": [
+            [
+              0.4611244,
+              0.29957469,
+              0.00717703
+            ],
+            [
+              0.53767943,
+              0.26448698,
+              0.00717703
+            ]
+          ],
+          "hairpin": [
+            0.56339713,
+            0.15284423,
+            0.01614833
+          ],
+          "tie": [
+            0.51255981,
+            0.59516215,
+            0.02691388
+          ],
+          "halo": [
+            0.49940191,
+            0.24960128,
+            0.3708134,
+            0.51036683
+          ],
+          "eyes_state": "open",
+          "review_evidence": [
+            "qa/features/S11-subject-anchors.png",
+            "qa/features/batch-through-S25-overlay-grid.jpg"
+          ],
+          "halo_requires_subject_occlusion": true,
+          "only_character": "Opus"
+        },
+        "status": "normalized_source_available",
+        "approval": false,
+        "mask_required": true,
+        "mask_status": "exact_source_alpha",
+        "depth_status": "available_unreviewed",
+        "asset_id": "S11-subject",
+        "depth_input": "assets/depth-inputs/S11-subject.png"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo",
+        "eyes_state",
+        "review_evidence",
+        "halo_requires_subject_occlusion",
+        "only_character"
+      ],
+      "unverified": [
+        "Title/foreground subject depth intersection requires visual review."
+      ],
+      "subjectLayout": {
+        "scale": 0.19,
+        "offsetYSourceFraction": 0.045,
+        "background": "assets/normalized/S11-background.png",
+        "subject": "assets/normalized/S11-subject.png",
+        "requiresMatchingOriginalDepthAndAnchors": true
+      },
+      "titleProjectedBounds": {
+        "left": 248.6019168167371,
+        "right": 1657.1918605995113,
+        "top": 89.62214399219017,
+        "bottom": 321.2007011530172
+      }
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    369
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}

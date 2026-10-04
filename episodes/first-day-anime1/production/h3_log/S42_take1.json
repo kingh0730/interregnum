@@ -1,0 +1,35 @@
+{
+ "id": "S42_take1",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The two girls hold a tender joyful hug while floating, shoulders breathe and the long hair swirls gently around them. Keep the existing arms, hands and bodies exactly coherent, no new limbs, no change of identity. Underplayed smiles.",
+  "image_url": "<data uri>",
+  "duration": 2,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026100421
+ },
+ "payload_sha256": "0a0aeb2ead3825f2cf7ba6d275a28f4bf3be7e802041113570bcd0a050312be9",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S42_take1.mp4",
+ "phase": "done",
+ "billable_s": 2.0,
+ "price": 0.06,
+ "request_id": "01a1060b-0c98-7133-820f-8154329c758b",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060b-0c98-7133-820f-8154329c758b/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060b-0c98-7133-820f-8154329c758b",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060b-0c98-7133-820f-8154329c758b/cancel",
+ "submitted": 1791102749.98478,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad0183/3fX9i3Sf2SSEmitG4JT9D_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "3fX9i3Sf2SSEmitG4JT9D_minimax-h3.mp4",
+   "file_size": 9172995
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 1.228096513543278
+  }
+ },
+ "done": 1791102761.624306
+}

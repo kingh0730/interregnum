@@ -1,0 +1,4115 @@
+{
+  "schema_version": 1,
+  "assets": {
+    "S01": {
+      "source": "assets/plates/S01.png",
+      "source_sha256": "ed925a20598839800cd35bce03537dd7739c74f4d6c41087552efe1c41a79941",
+      "source_pixels": {
+        "eyes": [],
+        "eyes_state": "closed",
+        "hairpin": [
+          1208,
+          48,
+          88
+        ],
+        "tie": null,
+        "halo": null
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S01-anchors.png",
+        "qa/features/first-batch-overlay-grid.jpg"
+      ],
+      "notes": "Feature anchors apply only to visible Opus. Halo is an authored ellipse behind the observed head and must be occluded by subject mask; it is not an existing painted ring.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.72248804,
+          0.05077087,
+          0.05263158
+        ],
+        "tie": null,
+        "halo": null,
+        "eyes_state": "closed",
+        "review_evidence": [
+          "qa/features/S01-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "Inspected actual SVG overlay preview; eye/pin/tie centers align at contact-sheet scale. Full-resolution final-composite motion and halo occlusion remain pending."
+    },
+    "S03": {
+      "source": "assets/plates/S03.png",
+      "source_sha256": "f9d27987bdcf8b08481547c3ab288fc01e9f34b30418df03db3c72a45ba77254",
+      "source_pixels": {
+        "eyes": [],
+        "eyes_state": "closed",
+        "hairpin": [
+          1153,
+          184,
+          30
+        ],
+        "tie": [
+          1111,
+          352,
+          32
+        ],
+        "halo": [
+          1120,
+          217,
+          350,
+          300
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S03-anchors.png",
+        "qa/features/first-batch-overlay-grid.jpg"
+      ],
+      "notes": "Feature anchors apply only to visible Opus. Halo is an authored ellipse behind the observed head and must be occluded by subject mask; it is not an existing painted ring.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.6895933,
+          0.1953748,
+          0.01794258
+        ],
+        "tie": [
+          0.66447368,
+          0.37400319,
+          0.01913876
+        ],
+        "halo": [
+          0.66985646,
+          0.23046252,
+          0.20933014,
+          0.31897927
+        ],
+        "eyes_state": "closed",
+        "review_evidence": [
+          "qa/features/S03-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "Inspected actual SVG overlay preview; eye/pin/tie centers align at contact-sheet scale. Full-resolution final-composite motion and halo occlusion remain pending."
+    },
+    "S04": {
+      "source": "assets/plates/S04.png",
+      "source_sha256": "b7c775fcea8e1cf6a85b9368db4a09509b29f9581f26c7b20b3b26068fb19eaf",
+      "source_pixels": {
+        "eyes": [],
+        "eyes_state": "closed",
+        "hairpin": [
+          1216,
+          178,
+          27
+        ],
+        "tie": [
+          1094,
+          287,
+          36
+        ],
+        "halo": [
+          1160,
+          190,
+          375,
+          300
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S04-anchors.png",
+        "qa/features/first-batch-overlay-grid.jpg"
+      ],
+      "notes": "Feature anchors apply only to visible Opus. Halo is an authored ellipse behind the observed head and must be occluded by subject mask; it is not an existing painted ring.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.72727273,
+          0.18899522,
+          0.01614833
+        ],
+        "tie": [
+          0.65430622,
+          0.30489102,
+          0.0215311
+        ],
+        "halo": [
+          0.6937799,
+          0.20175439,
+          0.2242823,
+          0.31897927
+        ],
+        "eyes_state": "closed",
+        "review_evidence": [
+          "qa/features/S04-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "Inspected actual SVG overlay preview; eye/pin/tie centers align at contact-sheet scale. Full-resolution final-composite motion and halo occlusion remain pending."
+    },
+    "S05-eye": {
+      "source": "assets/plates/S05-eye.png",
+      "source_sha256": "b9d27d45e98d62e046e9b2988ad63cfbb5704868e1f40a389f8d7966e4738bbb",
+      "source_pixels": {
+        "eyes": [
+          [
+            895,
+            494,
+            68
+          ]
+        ],
+        "eyes_state": "open_macro",
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S05-eye-anchors.png",
+        "qa/features/first-batch-overlay-grid.jpg"
+      ],
+      "notes": "Feature anchors apply only to visible Opus. Halo is an authored ellipse behind the observed head and must be occluded by subject mask; it is not an existing painted ring.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.58268229,
+            0.47916667,
+            0.04427083
+          ]
+        ],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "open_macro",
+        "review_evidence": [
+          "qa/features/S05-eye-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1536,
+          1024
+        ],
+        "crop_box": [
+          0.0,
+          80.0,
+          1536.0,
+          944.0
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.25,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "Inspected actual SVG overlay preview; eye/pin/tie centers align at contact-sheet scale. Full-resolution final-composite motion and halo occlusion remain pending."
+    },
+    "S05-face": {
+      "source": "assets/plates/S05-face.png",
+      "source_sha256": "4036e05717bf57a45d4db297597152a160e5b84ae623e9aec82488abae7251a8",
+      "source_pixels": {
+        "eyes": [
+          [
+            693,
+            428,
+            20
+          ],
+          [
+            939,
+            363,
+            20
+          ]
+        ],
+        "eyes_state": "open",
+        "hairpin": [
+          1029,
+          163,
+          46
+        ],
+        "tie": [
+          887,
+          923,
+          50
+        ],
+        "halo": [
+          850,
+          390,
+          1050,
+          800
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S05-face-anchors.png",
+        "qa/features/first-batch-overlay-grid.jpg"
+      ],
+      "notes": "Feature anchors apply only to visible Opus. Halo is an authored ellipse behind the observed head and must be occluded by subject mask; it is not an existing painted ring.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.41447368,
+            0.45481127,
+            0.01196172
+          ],
+          [
+            0.56160287,
+            0.3856991,
+            0.01196172
+          ]
+        ],
+        "hairpin": [
+          0.61543062,
+          0.17304625,
+          0.02751196
+        ],
+        "tie": [
+          0.53050239,
+          0.98112706,
+          0.02990431
+        ],
+        "halo": [
+          0.50837321,
+          0.41440723,
+          0.62799043,
+          0.85061138
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S05-face-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "Inspected actual SVG overlay preview; eye/pin/tie centers align at contact-sheet scale. Full-resolution final-composite motion and halo occlusion remain pending."
+    },
+    "S07": {
+      "source": "assets/plates/S07.png",
+      "source_sha256": "db256c0af9303f541b99b84623a8abffcaaf33710d685407ef36aaf3344cb5db",
+      "source_pixels": {
+        "eyes": [
+          [
+            491,
+            128,
+            7
+          ],
+          [
+            545,
+            136,
+            7
+          ]
+        ],
+        "eyes_state": "open",
+        "hairpin": [
+          568,
+          108,
+          17
+        ],
+        "tie": [
+          520,
+          228,
+          22
+        ],
+        "halo": [
+          520,
+          126,
+          280,
+          230
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S07-anchors.png",
+        "qa/features/first-batch-overlay-grid.jpg"
+      ],
+      "notes": "Feature anchors apply only to visible Opus. Halo is an authored ellipse behind the observed head and must be occluded by subject mask; it is not an existing painted ring.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.29366029,
+            0.135832,
+            0.0041866
+          ],
+          [
+            0.32595694,
+            0.14433812,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.33971292,
+          0.11456672,
+          0.01016746
+        ],
+        "tie": [
+          0.31100478,
+          0.24215843,
+          0.01315789
+        ],
+        "halo": [
+          0.31100478,
+          0.13370548,
+          0.16746411,
+          0.24455077
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S07-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "Inspected actual SVG overlay preview; eye/pin/tie centers align at contact-sheet scale. Full-resolution final-composite motion and halo occlusion remain pending."
+    },
+    "S08a": {
+      "source": "assets/plates/S08a.png",
+      "source_sha256": "bf076cdce03949fd25aa50abc2a26de5fe2d6533e58dc0caeafc12dbd7dd0b74",
+      "source_pixels": {
+        "eyes": [
+          [
+            895,
+            225,
+            14
+          ],
+          [
+            1053,
+            264,
+            14
+          ]
+        ],
+        "eyes_state": "open",
+        "hairpin": [
+          1163,
+          172,
+          30
+        ],
+        "tie": [
+          896,
+          563,
+          50
+        ],
+        "halo": [
+          990,
+          190,
+          780,
+          600
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S08a-anchors.png",
+        "qa/features/first-batch-overlay-grid.jpg"
+      ],
+      "notes": "Feature anchors apply only to visible Opus. Halo is an authored ellipse behind the observed head and must be occluded by subject mask; it is not an existing painted ring.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.53528708,
+            0.23896863,
+            0.00837321
+          ],
+          [
+            0.62978469,
+            0.28043594,
+            0.00837321
+          ]
+        ],
+        "hairpin": [
+          0.69557416,
+          0.18261563,
+          0.01794258
+        ],
+        "tie": [
+          0.53588517,
+          0.59835194,
+          0.02990431
+        ],
+        "halo": [
+          0.59210526,
+          0.20175439,
+          0.46650718,
+          0.63795853
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S08a-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "Inspected actual SVG overlay preview; eye/pin/tie centers align at contact-sheet scale. Full-resolution final-composite motion and halo occlusion remain pending."
+    },
+    "S11-waistup": {
+      "source": "assets/plates/S11-waistup.png",
+      "source_sha256": "3c0585daee8c97a33a1aefd87baa4ec50fe2ddb89a4551ffbb1c0390d2cc9e87",
+      "source_pixels": {
+        "eyes": [
+          [
+            772,
+            295,
+            12
+          ],
+          [
+            895,
+            260,
+            12
+          ]
+        ],
+        "eyes_state": "open",
+        "hairpin": [
+          939,
+          161,
+          27
+        ],
+        "tie": [
+          855,
+          563,
+          45
+        ],
+        "halo": [
+          835,
+          245,
+          620,
+          480
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S11-waistup-anchors.png",
+        "qa/features/first-batch-overlay-grid.jpg"
+      ],
+      "notes": "Feature anchors apply only to visible Opus. Halo is an authored ellipse behind the observed head and must be occluded by subject mask; it is not an existing painted ring.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.46172249,
+            0.31339713,
+            0.00717703
+          ],
+          [
+            0.53528708,
+            0.27618288,
+            0.00717703
+          ]
+        ],
+        "hairpin": [
+          0.56160287,
+          0.17091972,
+          0.01614833
+        ],
+        "tie": [
+          0.51136364,
+          0.59835194,
+          0.02691388
+        ],
+        "halo": [
+          0.49940191,
+          0.26023392,
+          0.3708134,
+          0.51036683
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S11-waistup-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "Inspected actual SVG overlay preview; eye/pin/tie centers align at contact-sheet scale. Full-resolution final-composite motion and halo occlusion remain pending."
+    },
+    "S12": {
+      "source": "assets/plates/S12.png",
+      "source_sha256": "a0396b708839f257baa418b5aabe0d5fefe8a4d35dc47be560233a8b9fe4a08e",
+      "source_pixels": {
+        "eyes": [
+          [
+            973,
+            350,
+            15
+          ],
+          [
+            1138,
+            288,
+            15
+          ]
+        ],
+        "eyes_state": "open",
+        "hairpin": [
+          1190,
+          137,
+          39
+        ],
+        "tie": [
+          1187,
+          717,
+          48
+        ],
+        "halo": [
+          1040,
+          300,
+          780,
+          620
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S12-anchors.png",
+        "qa/features/first-batch-overlay-grid.jpg"
+      ],
+      "notes": "Feature anchors apply only to visible Opus. Halo is an authored ellipse behind the observed head and must be occluded by subject mask; it is not an existing painted ring.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.5819378,
+            0.37187666,
+            0.00897129
+          ],
+          [
+            0.68062201,
+            0.30595428,
+            0.00897129
+          ]
+        ],
+        "hairpin": [
+          0.71172249,
+          0.14540138,
+          0.02332536
+        ],
+        "tie": [
+          0.70992823,
+          0.76209463,
+          0.02870813
+        ],
+        "halo": [
+          0.62200957,
+          0.31871345,
+          0.46650718,
+          0.65922382
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S12-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "Inspected actual SVG overlay preview; eye/pin/tie centers align at contact-sheet scale. Full-resolution final-composite motion and halo occlusion remain pending."
+    },
+    "S13": {
+      "source": "assets/plates/S13.png",
+      "source_sha256": "bcc49833a3c0ae745d0910f64e785325b83e202b4afd0b8348c067f8e994f700",
+      "source_pixels": {
+        "eyes": [
+          [
+            713,
+            106,
+            7
+          ],
+          [
+            766,
+            128,
+            7
+          ]
+        ],
+        "eyes_state": "open",
+        "hairpin": [
+          800,
+          101,
+          18
+        ],
+        "tie": [
+          727,
+          205,
+          22
+        ],
+        "halo": [
+          730,
+          110,
+          290,
+          230
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S13-anchors.png",
+        "qa/features/first-batch-overlay-grid.jpg"
+      ],
+      "notes": "Feature anchors apply only to visible Opus. Halo is an authored ellipse behind the observed head and must be occluded by subject mask; it is not an existing painted ring.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.42643541,
+            0.11244019,
+            0.0041866
+          ],
+          [
+            0.45813397,
+            0.135832,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.4784689,
+          0.10712387,
+          0.01076555
+        ],
+        "tie": [
+          0.43480861,
+          0.21770335,
+          0.01315789
+        ],
+        "halo": [
+          0.43660287,
+          0.11669325,
+          0.17344498,
+          0.24455077
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S13-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "Inspected actual SVG overlay preview; eye/pin/tie centers align at contact-sheet scale. Full-resolution final-composite motion and halo occlusion remain pending."
+    },
+    "S15": {
+      "source": "assets/plates/S15.png",
+      "source_sha256": "aaa59f0eb858c7602b61eb3dd2696c3cbefc805797887b1ac74cf2a9b8513d5d",
+      "source_pixels": {
+        "eyes": [],
+        "eyes_state": "closed",
+        "hairpin": [
+          695,
+          123,
+          28
+        ],
+        "tie": [
+          685,
+          398,
+          40
+        ],
+        "halo": [
+          610,
+          185,
+          520,
+          430
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S15-anchors.png",
+        "qa/features/first-batch-overlay-grid.jpg"
+      ],
+      "notes": "Feature anchors apply only to visible Opus. Halo is an authored ellipse behind the observed head and must be occluded by subject mask; it is not an existing painted ring.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.41566986,
+          0.13051568,
+          0.01674641
+        ],
+        "tie": [
+          0.409689,
+          0.42291334,
+          0.02392344
+        ],
+        "halo": [
+          0.36483254,
+          0.19643806,
+          0.31100478,
+          0.45720362
+        ],
+        "eyes_state": "closed",
+        "review_evidence": [
+          "qa/features/S15-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "Inspected actual SVG overlay preview; eye/pin/tie centers align at contact-sheet scale. Full-resolution final-composite motion and halo occlusion remain pending."
+    },
+    "S14": {
+      "source": "assets/plates/S14.png",
+      "source_sha256": "90ccd1ffabe175099ddd7909304d9ed8a1ca7565234afbb9616c5c5b7f129d7b",
+      "source_pixels": {
+        "eyes": [
+          [
+            656,
+            321,
+            13
+          ],
+          [
+            751,
+            319,
+            7
+          ]
+        ],
+        "eyes_state": "open_profile",
+        "hairpin": [
+          508,
+          236,
+          50
+        ],
+        "tie": [
+          706,
+          819,
+          50
+        ],
+        "halo": [
+          530,
+          310,
+          800,
+          650
+        ],
+        "mouth": [
+          768,
+          438,
+          22
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S14-anchors.png",
+        "qa/features/first-batch-overlay-grid.jpg"
+      ],
+      "notes": "Only visible partial far eye is marked. Mouth center verified for glyph airflow; halo requires subject occlusion.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.3923445,
+            0.341042,
+            0.00777512
+          ],
+          [
+            0.44916268,
+            0.33891547,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.30382775,
+          0.25066454,
+          0.02990431
+        ],
+        "tie": [
+          0.4222488,
+          0.87054758,
+          0.02990431
+        ],
+        "halo": [
+          0.31698565,
+          0.32934609,
+          0.4784689,
+          0.69112174
+        ],
+        "eyes_state": "open_profile",
+        "review_evidence": [
+          "qa/features/S14-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "mouth": [
+          0.45933014,
+          0.46544391
+        ]
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "Inspected actual SVG overlay preview; eye/pin/tie centers align at contact-sheet scale. Full-resolution final-composite motion and halo occlusion remain pending."
+    },
+    "S16": {
+      "source": "assets/plates/S16.png",
+      "source_sha256": "a3f769502ef7e905765333f6bad7676bcec2dd8cbc9be31d2d985b2609dabf71",
+      "source_pixels": {
+        "eyes": [],
+        "eyes_state": "outside_crop",
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S16-anchors.png",
+        "Raw source viewed individually; final action/composite review pending."
+      ],
+      "notes": "S16/S17 crop contains no head: no pupil/accessory/halo marks. Action points refer to observed front sole-floor boundary or Opus fingertip pad.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "outside_crop",
+        "review_evidence": [
+          "qa/features/S16-anchors.png",
+          "Raw source viewed individually; final action/composite review pending."
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S17-contact": {
+      "source": "assets/plates/S17-contact.png",
+      "source_sha256": "6b7771ffa1e2c66ea34f217afb215712b840d21355f9e139860a566412d50835",
+      "source_pixels": {
+        "eyes": [],
+        "eyes_state": "outside_crop",
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "contact": [
+          608,
+          792
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S17-contact-anchors.png",
+        "Raw source viewed individually; final action/composite review pending."
+      ],
+      "notes": "S16/S17 crop contains no head: no pupil/accessory/halo marks. Action points refer to observed front sole-floor boundary or Opus fingertip pad.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "outside_crop",
+        "review_evidence": [
+          "qa/features/S17-contact-anchors.png",
+          "Raw source viewed individually; final action/composite review pending."
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus",
+        "contact": [
+          0.36363636,
+          0.84183945
+        ]
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S18-opus": {
+      "source": "assets/plates/S18-opus.png",
+      "source_sha256": "dcb7d27ff6c2dd324e17e56a48123cde5084e97e7024f9e710f0af844196d29a",
+      "source_pixels": {
+        "eyes": [
+          [
+            839,
+            242,
+            15
+          ],
+          [
+            1002,
+            282,
+            15
+          ]
+        ],
+        "eyes_state": "open",
+        "hairpin": [
+          1114,
+          178,
+          37
+        ],
+        "tie": [
+          837,
+          615,
+          45
+        ],
+        "halo": [
+          923,
+          238,
+          800,
+          640
+        ],
+        "touch": [
+          697,
+          402
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S18-opus-anchors.png",
+        "Raw source viewed individually; final action/composite review pending."
+      ],
+      "notes": "S16/S17 crop contains no head: no pupil/accessory/halo marks. Action points refer to observed front sole-floor boundary or Opus fingertip pad.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.50179426,
+            0.25704413,
+            0.00897129
+          ],
+          [
+            0.5992823,
+            0.29957469,
+            0.00897129
+          ]
+        ],
+        "hairpin": [
+          0.66626794,
+          0.18899522,
+          0.02212919
+        ],
+        "tie": [
+          0.50059809,
+          0.65364168,
+          0.02691388
+        ],
+        "halo": [
+          0.55203349,
+          0.25279107,
+          0.4784689,
+          0.6804891
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S18-opus-anchors.png",
+          "Raw source viewed individually; final action/composite review pending."
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "touch": [
+          0.41686603,
+          0.4271664
+        ]
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S11-subject": {
+      "source": "assets/plates/S11-subject.png",
+      "source_sha256": "393f29aa857ba582686987ad9a2c123a559e56d1f4f20fcabe701b9640eeac1f",
+      "source_pixels": {
+        "eyes": [
+          [
+            771,
+            282,
+            12
+          ],
+          [
+            899,
+            249,
+            12
+          ]
+        ],
+        "hairpin": [
+          942,
+          144,
+          27
+        ],
+        "tie": [
+          857,
+          560,
+          45
+        ],
+        "halo": [
+          835,
+          235,
+          620,
+          480
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S11-subject-anchors.png",
+        "qa/features/batch-through-S25-overlay-grid.jpg"
+      ],
+      "notes": "Only the explicitly selected Opus receives brand marks. Source coordinates newly measured; support action anchors and laptop visible-display geometry recorded. S25 refined matte review also uses qa/S25-character-refined-on-paper.jpg.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.4611244,
+            0.29957469,
+            0.00717703
+          ],
+          [
+            0.53767943,
+            0.26448698,
+            0.00717703
+          ]
+        ],
+        "hairpin": [
+          0.56339713,
+          0.15284423,
+          0.01614833
+        ],
+        "tie": [
+          0.51255981,
+          0.59516215,
+          0.02691388
+        ],
+        "halo": [
+          0.49940191,
+          0.24960128,
+          0.3708134,
+          0.51036683
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S11-subject-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "SVG anchor overlays inspected. S19 visible screen-mask tint inspected at full size and does not cover user. This is anchor alignment evidence only, not final motion/composite approval."
+    },
+    "S18-opus-cutout": {
+      "source": "assets/plates/S18-opus-cutout.png",
+      "source_sha256": "12e4ca97c4112c1d29b2d7d2cb9d70dc6e4cab203aa33a1b4aa9a3fde7db61c6",
+      "source_pixels": {
+        "eyes": [
+          [
+            839,
+            242,
+            15
+          ],
+          [
+            1002,
+            282,
+            15
+          ]
+        ],
+        "hairpin": [
+          1114,
+          178,
+          37
+        ],
+        "tie": [
+          837,
+          615,
+          45
+        ],
+        "halo": [
+          923,
+          238,
+          800,
+          640
+        ],
+        "touch": [
+          697,
+          402
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S18-opus-cutout-anchors.png",
+        "qa/features/batch-through-S25-overlay-grid.jpg"
+      ],
+      "notes": "Only the explicitly selected Opus receives brand marks. Source coordinates newly measured; support action anchors and laptop visible-display geometry recorded. S25 refined matte review also uses qa/S25-character-refined-on-paper.jpg.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.50179426,
+            0.25704413,
+            0.00897129
+          ],
+          [
+            0.5992823,
+            0.29957469,
+            0.00897129
+          ]
+        ],
+        "hairpin": [
+          0.66626794,
+          0.18899522,
+          0.02212919
+        ],
+        "tie": [
+          0.50059809,
+          0.65364168,
+          0.02691388
+        ],
+        "halo": [
+          0.55203349,
+          0.25279107,
+          0.4784689,
+          0.6804891
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S18-opus-cutout-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "touch": [
+          0.41686603,
+          0.4271664
+        ]
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "SVG anchor overlays inspected. S19 visible screen-mask tint inspected at full size and does not cover user. This is anchor alignment evidence only, not final motion/composite approval."
+    },
+    "S18-hand": {
+      "source": "assets/plates/S18-hand.png",
+      "source_sha256": "593d9b2cb0778202da1b58312a2ab449cb666a021f5d7387c6a1b7127bf3bff6",
+      "source_pixels": {
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "tip": [
+          420,
+          53
+        ],
+        "only_character": "anonymous user hand",
+        "eyes_state": "outside_crop"
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S18-hand-anchors.png",
+        "qa/features/batch-through-S25-overlay-grid.jpg"
+      ],
+      "notes": "Only the explicitly selected Opus receives brand marks. Source coordinates newly measured; support action anchors and laptop visible-display geometry recorded. S25 refined matte review also uses qa/S25-character-refined-on-paper.jpg.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "outside_crop",
+        "review_evidence": [
+          "qa/features/S18-hand-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "anonymous user hand",
+        "tip": [
+          0.25119617,
+          0.05608719
+        ]
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "SVG anchor overlays inspected. S19 visible screen-mask tint inspected at full size and does not cover user. This is anchor alignment evidence only, not final motion/composite approval."
+    },
+    "S19-user": {
+      "source": "assets/plates/S19-user.png",
+      "source_sha256": "7782050b8f2567d38e8c3ad5257e04bc5ebc40f7e3fb21548f448b9d9d4066b0",
+      "source_pixels": {
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "only_character": "anonymous user silhouette",
+        "eyes_state": "faceless",
+        "screenQuad": [
+          [
+            859,
+            344
+          ],
+          [
+            1326,
+            353
+          ],
+          [
+            1283,
+            638
+          ],
+          [
+            804,
+            601
+          ]
+        ],
+        "screenVisiblePolygon": [
+          [
+            861,
+            346
+          ],
+          [
+            1324,
+            355
+          ],
+          [
+            1281,
+            636
+          ],
+          [
+            882,
+            605
+          ],
+          [
+            824,
+            515
+          ]
+        ],
+        "screenQuadInferredCorners": [
+          "bottom-left: obscured by user silhouette; extrapolated from visible bezel edges"
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S19-user-anchors.png",
+        "qa/features/batch-through-S25-overlay-grid.jpg"
+      ],
+      "notes": "Only the explicitly selected Opus receives brand marks. Source coordinates newly measured; support action anchors and laptop visible-display geometry recorded. S25 refined matte review also uses qa/S25-character-refined-on-paper.jpg.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "faceless",
+        "review_evidence": [
+          "qa/features/S19-user-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "anonymous user silhouette",
+        "screenQuad": [
+          [
+            0.51375598,
+            0.36549708
+          ],
+          [
+            0.7930622,
+            0.37506645
+          ],
+          [
+            0.7673445,
+            0.67809676
+          ],
+          [
+            0.48086124,
+            0.63875598
+          ]
+        ],
+        "screenVisiblePolygon": [
+          [
+            0.51495215,
+            0.3676236
+          ],
+          [
+            0.79186603,
+            0.37719298
+          ],
+          [
+            0.76614833,
+            0.67597023
+          ],
+          [
+            0.52751196,
+            0.64300904
+          ],
+          [
+            0.49282297,
+            0.54731526
+          ]
+        ],
+        "screenMask": "assets/masks/S19-user-screen.png",
+        "screenOcclusion": "Lower-left physical screen corner is hidden behind ivory user; screenMask includes only observed visible display.",
+        "screenQuadInferredCorners": [
+          "bottom-left: obscured by user silhouette; extrapolated from visible bezel edges"
+        ]
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "SVG anchor overlays inspected. S19 visible screen-mask tint inspected at full size and does not cover user. This is anchor alignment evidence only, not final motion/composite approval."
+    },
+    "S20": {
+      "source": "assets/plates/S20.png",
+      "source_sha256": "eb496b8681e28da812f8871dfcf070b7a81863c51bd4928ba385d71e86c7cf50",
+      "source_pixels": {
+        "eyes": [
+          [
+            877,
+            295,
+            15
+          ],
+          [
+            1076,
+            328,
+            15
+          ]
+        ],
+        "hairpin": [
+          1195,
+          211,
+          45
+        ],
+        "tie": [
+          945,
+          728,
+          48
+        ],
+        "halo": [
+          995,
+          255,
+          850,
+          660
+        ],
+        "palm": [
+          535,
+          565
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S20-anchors.png",
+        "qa/features/batch-through-S25-overlay-grid.jpg"
+      ],
+      "notes": "Only the explicitly selected Opus receives brand marks. Source coordinates newly measured; support action anchors and laptop visible-display geometry recorded. S25 refined matte review also uses qa/S25-character-refined-on-paper.jpg.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.52452153,
+            0.31339713,
+            0.00897129
+          ],
+          [
+            0.64354067,
+            0.34848485,
+            0.00897129
+          ]
+        ],
+        "hairpin": [
+          0.71471292,
+          0.22408293,
+          0.02691388
+        ],
+        "tie": [
+          0.56519139,
+          0.77379054,
+          0.02870813
+        ],
+        "halo": [
+          0.59509569,
+          0.27086656,
+          0.50837321,
+          0.70175439
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S20-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "palm": [
+          0.31997608,
+          0.60047847
+        ]
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "SVG anchor overlays inspected. S19 visible screen-mask tint inspected at full size and does not cover user. This is anchor alignment evidence only, not final motion/composite approval."
+    },
+    "S21": {
+      "source": "assets/plates/S21.png",
+      "source_sha256": "acdbec8ab503e3bec61f8171bb6608aaa53f8dcf4bb48d8ed57d0a1363314ba1",
+      "source_pixels": {
+        "eyes": [
+          [
+            820,
+            119,
+            7
+          ],
+          [
+            868,
+            127,
+            7
+          ]
+        ],
+        "hairpin": [
+          895,
+          96,
+          15
+        ],
+        "tie": [
+          852,
+          218,
+          20
+        ],
+        "halo": [
+          840,
+          130,
+          260,
+          230
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S21-anchors.png",
+        "qa/features/batch-through-S25-overlay-grid.jpg"
+      ],
+      "notes": "Only the explicitly selected Opus receives brand marks. Source coordinates newly measured; support action anchors and laptop visible-display geometry recorded. S25 refined matte review also uses qa/S25-character-refined-on-paper.jpg.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.49043062,
+            0.12626263,
+            0.0041866
+          ],
+          [
+            0.51913876,
+            0.13476874,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.53528708,
+          0.10180755,
+          0.00897129
+        ],
+        "tie": [
+          0.50956938,
+          0.23152578,
+          0.01196172
+        ],
+        "halo": [
+          0.50239234,
+          0.13795853,
+          0.15550239,
+          0.24455077
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S21-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "SVG anchor overlays inspected. S19 visible screen-mask tint inspected at full size and does not cover user. This is anchor alignment evidence only, not final motion/composite approval."
+    },
+    "S23": {
+      "source": "assets/plates/S23.png",
+      "source_sha256": "f9b30cae4b84b1ce7745c65547ba71b4fe862824e755d24ff3a5fe43e0df1f34",
+      "source_pixels": {
+        "eyes": [
+          [
+            855,
+            325,
+            15
+          ],
+          [
+            1018,
+            377,
+            15
+          ]
+        ],
+        "hairpin": [
+          1142,
+          307,
+          33
+        ],
+        "tie": [
+          924,
+          706,
+          45
+        ],
+        "halo": [
+          942,
+          285,
+          800,
+          640
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S23-anchors.png",
+        "qa/features/batch-through-S25-overlay-grid.jpg"
+      ],
+      "notes": "Only the explicitly selected Opus receives brand marks. Source coordinates newly measured; support action anchors and laptop visible-display geometry recorded. S25 refined matte review also uses qa/S25-character-refined-on-paper.jpg.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.51136364,
+            0.34529506,
+            0.00897129
+          ],
+          [
+            0.60885167,
+            0.4005848,
+            0.00897129
+          ]
+        ],
+        "hairpin": [
+          0.68301435,
+          0.3261563,
+          0.01973684
+        ],
+        "tie": [
+          0.55263158,
+          0.75039872,
+          0.02691388
+        ],
+        "halo": [
+          0.56339713,
+          0.30276449,
+          0.4784689,
+          0.6804891
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S23-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "SVG anchor overlays inspected. S19 visible screen-mask tint inspected at full size and does not cover user. This is anchor alignment evidence only, not final motion/composite approval."
+    },
+    "S24": {
+      "source": "assets/plates/S24.png",
+      "source_sha256": "8e60d051ba78c9521b6533d8dbef98e803297b07fd9e3da6aff87e606f45026e",
+      "source_pixels": {
+        "eyes": [
+          [
+            862,
+            201,
+            9
+          ],
+          [
+            924,
+            193,
+            9
+          ]
+        ],
+        "hairpin": [
+          948,
+          147,
+          18
+        ],
+        "tie": [
+          897,
+          316,
+          26
+        ],
+        "halo": [
+          885,
+          170,
+          340,
+          270
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S24-anchors.png",
+        "qa/features/batch-through-S25-overlay-grid.jpg"
+      ],
+      "notes": "Only the explicitly selected Opus receives brand marks. Source coordinates newly measured; support action anchors and laptop visible-display geometry recorded. S25 refined matte review also uses qa/S25-character-refined-on-paper.jpg.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.51555024,
+            0.21345029,
+            0.00538278
+          ],
+          [
+            0.55263158,
+            0.20494418,
+            0.00538278
+          ]
+        ],
+        "hairpin": [
+          0.56698565,
+          0.15603402,
+          0.01076555
+        ],
+        "tie": [
+          0.53648325,
+          0.33572568,
+          0.01555024
+        ],
+        "halo": [
+          0.52930622,
+          0.1804891,
+          0.20334928,
+          0.28708134
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S24-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "SVG anchor overlays inspected. S19 visible screen-mask tint inspected at full size and does not cover user. This is anchor alignment evidence only, not final motion/composite approval."
+    },
+    "S25-character-refined": {
+      "source": "assets/cutouts/S25-character-refined.png",
+      "source_sha256": "a9a848110093624761a07303afb161cabeedefd9d7acf72bc7f609e9e9148116",
+      "source_pixels": {
+        "eyes": [],
+        "eyes_state": "rear_view",
+        "hairpin": [
+          874,
+          121,
+          25
+        ],
+        "tie": null,
+        "halo": [
+          805,
+          140,
+          370,
+          270
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S25-character-refined-anchors.png",
+        "qa/features/batch-through-S25-overlay-grid.jpg"
+      ],
+      "notes": "Only the explicitly selected Opus receives brand marks. Source coordinates newly measured; support action anchors and laptop visible-display geometry recorded. S25 refined matte review also uses qa/S25-character-refined-on-paper.jpg.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.52272727,
+          0.12838915,
+          0.01495215
+        ],
+        "tie": null,
+        "halo": [
+          0.48145933,
+          0.14859117,
+          0.22129187,
+          0.28708134
+        ],
+        "eyes_state": "rear_view",
+        "review_evidence": [
+          "qa/features/S25-character-refined-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "layerId": "character"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "anchor_alignment_review": "SVG anchor overlays inspected. S19 visible screen-mask tint inspected at full size and does not cover user. This is anchor alignment evidence only, not final motion/composite approval."
+    },
+    "S26": {
+      "source": "assets/plates/S26.png",
+      "source_sha256": "d47489ba47e0f9566ea6c08ad917a4e8095288f5836ffcfe372e7ff7ce63dca9",
+      "source_pixels": {
+        "eyes": [
+          [
+            758,
+            116,
+            8
+          ],
+          [
+            823,
+            133,
+            8
+          ]
+        ],
+        "hairpin": [
+          858,
+          94,
+          17
+        ],
+        "tie": [
+          767,
+          257,
+          27
+        ],
+        "halo": [
+          784,
+          130,
+          365,
+          280
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S26-anchors.png",
+        "qa/features/batch-S26-dance3-overlay-grid.jpg"
+      ],
+      "notes": "Fresh coordinates on selected source. S36a has exactly one visible open eye; S36b is wrist-only and has no head or costume-symbol anchors.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.45334928,
+            0.12307283,
+            0.00478469
+          ],
+          [
+            0.49222488,
+            0.14114833,
+            0.00478469
+          ]
+        ],
+        "hairpin": [
+          0.51315789,
+          0.09968102,
+          0.01016746
+        ],
+        "tie": [
+          0.45873206,
+          0.27299309,
+          0.01614833
+        ],
+        "halo": [
+          0.46889952,
+          0.13795853,
+          0.21830144,
+          0.29771398
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S26-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S27": {
+      "source": "assets/plates/S27.png",
+      "source_sha256": "802428719bea435fbee42a4c283426d50cc80ab114a30513292b372dbf14492f",
+      "source_pixels": {
+        "eyes": [
+          [
+            859,
+            130,
+            8
+          ],
+          [
+            914,
+            113,
+            8
+          ]
+        ],
+        "hairpin": [
+          930,
+          68,
+          18
+        ],
+        "tie": [
+          934,
+          232,
+          24
+        ],
+        "halo": [
+          892,
+          112,
+          340,
+          270
+        ],
+        "heart": [
+          950,
+          274
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S27-anchors.png",
+        "qa/features/batch-S26-dance3-overlay-grid.jpg"
+      ],
+      "notes": "Fresh coordinates on selected source. S36a has exactly one visible open eye; S36b is wrist-only and has no head or costume-symbol anchors.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.51375598,
+            0.13795853,
+            0.00478469
+          ],
+          [
+            0.54665072,
+            0.11988304,
+            0.00478469
+          ]
+        ],
+        "hairpin": [
+          0.5562201,
+          0.07203615,
+          0.01076555
+        ],
+        "tie": [
+          0.55861244,
+          0.24641148,
+          0.01435407
+        ],
+        "halo": [
+          0.53349282,
+          0.11881978,
+          0.20334928,
+          0.28708134
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S27-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "heart": [
+          0.56818182,
+          0.29106858
+        ]
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S28b-pose": {
+      "source": "assets/plates/S28b-pose.png",
+      "source_sha256": "98afef0f25d16774665fa2693910aa77944b8a6e2c6262690fa49dd845b80e37",
+      "source_pixels": {
+        "eyes": [
+          [
+            847,
+            122,
+            8
+          ],
+          [
+            906,
+            132,
+            8
+          ]
+        ],
+        "hairpin": [
+          939,
+          101,
+          17
+        ],
+        "tie": [
+          881,
+          245,
+          25
+        ],
+        "halo": [
+          867,
+          121,
+          290,
+          250
+        ],
+        "punch": [
+          711,
+          190
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S28b-pose-anchors.png",
+        "qa/features/batch-S26-dance3-overlay-grid.jpg"
+      ],
+      "notes": "Fresh coordinates on selected source. S36a has exactly one visible open eye; S36b is wrist-only and has no head or costume-symbol anchors.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.50657895,
+            0.12945242,
+            0.00478469
+          ],
+          [
+            0.54186603,
+            0.14008506,
+            0.00478469
+          ]
+        ],
+        "hairpin": [
+          0.56160287,
+          0.10712387,
+          0.01016746
+        ],
+        "tie": [
+          0.52691388,
+          0.26023392,
+          0.01495215
+        ],
+        "halo": [
+          0.51854067,
+          0.12838915,
+          0.17344498,
+          0.26581606
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S28b-pose-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "punch": [
+          0.42523923,
+          0.20175439
+        ]
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S36a-start": {
+      "source": "assets/plates/S36a-start.png",
+      "source_sha256": "efaf5502f794107f8ef05d0b2ae6cd7253d62d6344248f8eee227b3cdf3e56cf",
+      "source_pixels": {
+        "eyes": [
+          [
+            894,
+            259,
+            16
+          ]
+        ],
+        "eyes_state": "wink_left_screen_eye_closed",
+        "hairpin": [
+          924,
+          145,
+          36
+        ],
+        "tie": [
+          924,
+          566,
+          45
+        ],
+        "halo": [
+          836,
+          239,
+          640,
+          520
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S36a-start-anchors.png",
+        "qa/features/batch-S26-dance3-overlay-grid.jpg"
+      ],
+      "notes": "Fresh coordinates on selected source. S36a has exactly one visible open eye; S36b is wrist-only and has no head or costume-symbol anchors.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.534689,
+            0.27511962,
+            0.00956938
+          ]
+        ],
+        "hairpin": [
+          0.55263158,
+          0.1539075,
+          0.0215311
+        ],
+        "tie": [
+          0.55263158,
+          0.60154173,
+          0.02691388
+        ],
+        "halo": [
+          0.5,
+          0.25385433,
+          0.38277512,
+          0.5528974
+        ],
+        "eyes_state": "wink_left_screen_eye_closed",
+        "review_evidence": [
+          "qa/features/S36a-start-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S36b-start": {
+      "source": "assets/plates/S36b-start.png",
+      "source_sha256": "a407acee9ac40bb801ba92ea1b6f6193526a2da88073c1ecac2be7b9d9e4b671",
+      "source_pixels": {
+        "eyes": [],
+        "eyes_state": "outside_crop",
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "wrist": [
+          708,
+          342
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S36b-start-anchors.png",
+        "qa/features/batch-S26-dance3-overlay-grid.jpg",
+        "qa/features/dance-action-source-crops.jpg"
+      ],
+      "notes": "Fresh coordinates on selected source. S36a has exactly one visible open eye; S36b is wrist-only and has no head or costume-symbol anchors. Action anchor wrist observed from enlarged source crop at pixel[708, 342]; no change to other features.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "outside_crop",
+        "review_evidence": [
+          "qa/features/S36b-start-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg",
+          "qa/features/dance-action-source-crops.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus",
+        "wrist": [
+          0.42344498,
+          0.36337055
+        ]
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S36c-start-v2": {
+      "source": "assets/plates/S36c-start-v2.png",
+      "source_sha256": "c27ddf31c2834e508b482b225807d9571ea06b32209d933be282d60486571195",
+      "source_pixels": {
+        "eyes": [
+          [
+            787,
+            310,
+            13
+          ],
+          [
+            884,
+            337,
+            13
+          ]
+        ],
+        "hairpin": [
+          951,
+          274,
+          30
+        ],
+        "tie": [
+          830,
+          525,
+          35
+        ],
+        "halo": [
+          832,
+          277,
+          560,
+          470
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S36c-start-v2-anchors.png",
+        "qa/features/batch-S26-dance3-overlay-grid.jpg"
+      ],
+      "notes": "Fresh coordinates on selected source. S36a has exactly one visible open eye; S36b is wrist-only and has no head or costume-symbol anchors.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.47069378,
+            0.32934609,
+            0.00777512
+          ],
+          [
+            0.52870813,
+            0.35805423,
+            0.00777512
+          ]
+        ],
+        "hairpin": [
+          0.5687799,
+          0.29106858,
+          0.01794258
+        ],
+        "tie": [
+          0.49641148,
+          0.5579479,
+          0.02093301
+        ],
+        "halo": [
+          0.49760766,
+          0.29425837,
+          0.33492823,
+          0.49973418
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S36c-start-v2-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S28c-clean": {
+      "source": "assets/plates/S28c-clean.png",
+      "source_sha256": "011a031bc2f51c424f2aaf8ef2c37f662a9eb481c936f9ab3e62dbf84eef3184",
+      "source_pixels": {
+        "eyes": [
+          [
+            778,
+            256,
+            10
+          ],
+          [
+            847,
+            248,
+            10
+          ]
+        ],
+        "hairpin": [
+          893,
+          211,
+          25
+        ],
+        "tie": [
+          857,
+          424,
+          35
+        ],
+        "halo": [
+          812,
+          251,
+          410,
+          350
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S28c-clean-anchors.png",
+        "qa/features/batch-water-dance8-overlay-grid.jpg"
+      ],
+      "notes": "Fresh observed feature coordinates on selected source. Closed eyes carry no mark; low-detail visible profile far eye uses smaller symbol. Halo is authored behind head, requires actor occlusion.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.465311,
+            0.27192982,
+            0.00598086
+          ],
+          [
+            0.50657895,
+            0.26342371,
+            0.00598086
+          ]
+        ],
+        "hairpin": [
+          0.53409091,
+          0.22408293,
+          0.01495215
+        ],
+        "tie": [
+          0.51255981,
+          0.45055821,
+          0.02093301
+        ],
+        "halo": [
+          0.48564593,
+          0.2666135,
+          0.24521531,
+          0.37214248
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S28c-clean-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S30": {
+      "source": "assets/plates/S30.png",
+      "source_sha256": "d3d25effa65e831da209caad00e23ee081a5650c9cc4a5cff18cd2cd612a8df6",
+      "source_pixels": {
+        "eyes": [
+          [
+            1042,
+            330,
+            9
+          ],
+          [
+            1117,
+            318,
+            7
+          ]
+        ],
+        "hairpin": [
+          993,
+          287,
+          28
+        ],
+        "tie": [
+          952,
+          486,
+          28
+        ],
+        "halo": [
+          1004,
+          290,
+          450,
+          380
+        ],
+        "surface": [
+          1466,
+          595
+        ],
+        "reflection": {
+          "eyes": [
+            [
+              1042,
+              769,
+              9
+            ],
+            [
+              1117,
+              788,
+              7
+            ]
+          ],
+          "hairpin": [
+            993,
+            806,
+            28
+          ],
+          "tie": [
+            952,
+            634,
+            28
+          ],
+          "halo": null
+        }
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S30-anchors.png",
+        "qa/features/final-sources-overlay-grid.jpg"
+      ],
+      "notes": "Fresh observed feature coordinates on selected source. Closed eyes carry no mark; low-detail visible profile far eye uses smaller symbol. Halo is authored behind head, requires actor occlusion.",
+      "reflection_source_pixels": {
+        "eyes": [
+          [
+            1042,
+            769,
+            9
+          ],
+          [
+            1117,
+            788,
+            7
+          ]
+        ],
+        "hairpin": [
+          993,
+          806,
+          28
+        ],
+        "tie": [
+          952,
+          634,
+          28
+        ],
+        "halo": null
+      },
+      "reflection_schema_status": "Confirmed by runtime owner: features.reflection in observed same-image coordinates; opacity0.65, ivory eyes/clay accessories; no synthesized mirror or halo.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.62320574,
+            0.35061138,
+            0.00538278
+          ],
+          [
+            0.6680622,
+            0.33785221,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.59389952,
+          0.30489102,
+          0.01674641
+        ],
+        "tie": [
+          0.56937799,
+          0.5164806,
+          0.01674641
+        ],
+        "halo": [
+          0.60047847,
+          0.30808081,
+          0.26913876,
+          0.4040404
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S30-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "surface": [
+          0.87679426,
+          0.6323764
+        ],
+        "reflection": {
+          "eyes": [
+            [
+              0.62320574,
+              0.81738437,
+              0.00538278
+            ],
+            [
+              0.6680622,
+              0.83758639,
+              0.0041866
+            ]
+          ],
+          "hairpin": [
+            0.59389952,
+            0.85672515,
+            0.01674641
+          ],
+          "tie": [
+            0.56937799,
+            0.6738437,
+            0.01674641
+          ]
+        }
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S32": {
+      "source": "assets/plates/S32.png",
+      "source_sha256": "5762f1bb48d2b189adc876af7d5f7dd16571b77a1b08ab36514d2a2fe82c143a",
+      "source_pixels": {
+        "eyes": [],
+        "eyes_state": "closed",
+        "hairpin": [
+          759,
+          93,
+          50
+        ],
+        "tie": [
+          781,
+          732,
+          65
+        ],
+        "halo": [
+          640,
+          270,
+          900,
+          700
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S32-anchors.png",
+        "qa/features/batch-water-dance8-overlay-grid.jpg"
+      ],
+      "notes": "Fresh observed feature coordinates on selected source. Closed eyes carry no mark; low-detail visible profile far eye uses smaller symbol. Halo is authored behind head, requires actor occlusion.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.45394737,
+          0.09861776,
+          0.02990431
+        ],
+        "tie": [
+          0.46710526,
+          0.77804359,
+          0.0388756
+        ],
+        "halo": [
+          0.38277512,
+          0.28681552,
+          0.53827751,
+          0.74428495
+        ],
+        "eyes_state": "closed",
+        "review_evidence": [
+          "qa/features/S32-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S36d-start-v2": {
+      "source": "assets/plates/S36d-start-v2.png",
+      "source_sha256": "56df7ce65b12629cd4f0710292c168d61b07f5bfdf77077a86c133355a9f22a5",
+      "source_pixels": {
+        "eyes": [
+          [
+            809,
+            216,
+            6
+          ],
+          [
+            851,
+            199,
+            6
+          ]
+        ],
+        "hairpin": [
+          868,
+          165,
+          16
+        ],
+        "tie": [
+          862,
+          296,
+          20
+        ],
+        "halo": [
+          829,
+          203,
+          265,
+          235
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S36d-start-v2-anchors.png",
+        "qa/features/batch-water-dance8-overlay-grid.jpg"
+      ],
+      "notes": "Fresh observed feature coordinates on selected source. Closed eyes carry no mark; low-detail visible profile far eye uses smaller symbol. Halo is authored behind head, requires actor occlusion.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48385167,
+            0.22939926,
+            0.00358852
+          ],
+          [
+            0.50897129,
+            0.21132376,
+            0.00358852
+          ]
+        ],
+        "hairpin": [
+          0.51913876,
+          0.17517278,
+          0.00956938
+        ],
+        "tie": [
+          0.51555024,
+          0.31446039,
+          0.01196172
+        ],
+        "halo": [
+          0.4958134,
+          0.21557682,
+          0.15849282,
+          0.24986709
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S36d-start-v2-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S36e-start-v2": {
+      "source": "assets/plates/S36e-start-v2.png",
+      "source_sha256": "1fdff90d6af5c9b90c24e54e1507a6afe51b439012904bd273f2fbeaa484a5ab",
+      "source_pixels": {
+        "eyes": [
+          [
+            763,
+            419,
+            14
+          ],
+          [
+            879,
+            361,
+            14
+          ]
+        ],
+        "hairpin": [
+          906,
+          252,
+          30
+        ],
+        "tie": [
+          882,
+          618,
+          34
+        ],
+        "halo": [
+          803,
+          342,
+          610,
+          500
+        ],
+        "cross": [
+          885,
+          660
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S36e-start-v2-anchors.png",
+        "qa/features/batch-water-dance8-overlay-grid.jpg",
+        "qa/features/dance-action-source-crops.jpg"
+      ],
+      "notes": "Fresh observed feature coordinates on selected source. Closed eyes carry no mark; low-detail visible profile far eye uses smaller symbol. Halo is authored behind head, requires actor occlusion. Action anchor cross observed from enlarged source crop at pixel[885, 660]; no change to other features.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.45661281,
+            0.44520912,
+            0.00837822
+          ],
+          [
+            0.52603232,
+            0.38350289,
+            0.00837822
+          ]
+        ],
+        "hairpin": [
+          0.54219031,
+          0.26753774,
+          0.01795332
+        ],
+        "tie": [
+          0.52782765,
+          0.65692533,
+          0.0203471
+        ],
+        "halo": [
+          0.48055057,
+          0.36328878,
+          0.36505087,
+          0.53195026
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S36e-start-v2-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg",
+          "qa/features/dance-action-source-crops.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "cross": [
+          0.52962298,
+          0.70160915
+        ]
+      },
+      "transform": {
+        "source_size": [
+          1671,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.53125,
+          1671.0,
+          940.46875
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1490125673249552,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S36f-start": {
+      "source": "assets/plates/S36f-start.png",
+      "source_sha256": "1947a55b92f24828ae0fbea1f506d4e3735044e765c4f7aa4ebae2e0a76c65c3",
+      "source_pixels": {
+        "eyes": [
+          [
+            803,
+            162,
+            7
+          ],
+          [
+            853,
+            148,
+            7
+          ]
+        ],
+        "hairpin": [
+          874,
+          111,
+          17
+        ],
+        "tie": [
+          849,
+          259,
+          22
+        ],
+        "halo": [
+          823,
+          146,
+          300,
+          250
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S36f-start-anchors.png",
+        "qa/features/batch-water-dance8-overlay-grid.jpg"
+      ],
+      "notes": "Fresh observed feature coordinates on selected source. Closed eyes carry no mark; low-detail visible profile far eye uses smaller symbol. Halo is authored behind head, requires actor occlusion.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48026316,
+            0.17198299,
+            0.0041866
+          ],
+          [
+            0.51016746,
+            0.15709729,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.52272727,
+          0.11775651,
+          0.01016746
+        ],
+        "tie": [
+          0.50777512,
+          0.27511962,
+          0.01315789
+        ],
+        "halo": [
+          0.49222488,
+          0.15497076,
+          0.17942584,
+          0.26581606
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S36f-start-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S36g-start-v2": {
+      "source": "assets/plates/S36g-start-v2.png",
+      "source_sha256": "fdd1f9f8037f70d730e8013a1674ad06671683a9788968daeed96bc8b806e8c1",
+      "source_pixels": {
+        "eyes": [
+          [
+            705,
+            160,
+            5
+          ],
+          [
+            750,
+            162,
+            7
+          ]
+        ],
+        "eyes_state": "open_profile",
+        "hairpin": [
+          800,
+          111,
+          24
+        ],
+        "tie": [
+          744,
+          317,
+          22
+        ],
+        "halo": [
+          792,
+          148,
+          380,
+          280
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S36g-start-v2-anchors.png",
+        "qa/features/batch-water-dance8-overlay-grid.jpg"
+      ],
+      "notes": "Fresh observed feature coordinates on selected source. Closed eyes carry no mark; low-detail visible profile far eye uses smaller symbol. Halo is authored behind head, requires actor occlusion.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.42165072,
+            0.16985646,
+            0.00299043
+          ],
+          [
+            0.44856459,
+            0.17198299,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.4784689,
+          0.11775651,
+          0.01435407
+        ],
+        "tie": [
+          0.44497608,
+          0.33678894,
+          0.01315789
+        ],
+        "halo": [
+          0.47368421,
+          0.15709729,
+          0.22727273,
+          0.29771398
+        ],
+        "eyes_state": "open_profile",
+        "review_evidence": [
+          "qa/features/S36g-start-v2-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S36h-start": {
+      "source": "assets/plates/S36h-start.png",
+      "source_sha256": "d5cd8f325374e8a0024592bfaf0a03d9f31df41388cb8f6cfef797dcc277a0e8",
+      "source_pixels": {
+        "eyes": [
+          [
+            811,
+            132,
+            7
+          ],
+          [
+            859,
+            116,
+            7
+          ]
+        ],
+        "hairpin": [
+          876,
+          72,
+          15
+        ],
+        "tie": [
+          878,
+          224,
+          20
+        ],
+        "halo": [
+          832,
+          122,
+          285,
+          230
+        ],
+        "point": [
+          750,
+          200
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S36h-start-anchors.png",
+        "qa/features/batch-water-dance8-overlay-grid.jpg",
+        "qa/features/dance-action-source-crops.jpg"
+      ],
+      "notes": "Fresh observed feature coordinates on selected source. Closed eyes carry no mark; low-detail visible profile far eye uses smaller symbol. Halo is authored behind head, requires actor occlusion. Action anchor point observed from enlarged source crop at pixel[750, 200]; no change to other features.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48504785,
+            0.14008506,
+            0.0041866
+          ],
+          [
+            0.51375598,
+            0.12307283,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.52392344,
+          0.07628921,
+          0.00897129
+        ],
+        "tie": [
+          0.52511962,
+          0.23790537,
+          0.01196172
+        ],
+        "halo": [
+          0.49760766,
+          0.12945242,
+          0.17045455,
+          0.24455077
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S36h-start-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg",
+          "qa/features/dance-action-source-crops.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "point": [
+          0.44856459,
+          0.21238703
+        ]
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S31-hands": {
+      "source": "assets/plates/S31-hands.png",
+      "source_sha256": "e8ff45a0bc7a96f2e4b4ab493f3f684efd0873ee74a78d9fb6f3eb4d196bc0b7",
+      "source_pixels": {
+        "eyes": [
+          [
+            815,
+            155,
+            7
+          ],
+          [
+            861,
+            143,
+            7
+          ]
+        ],
+        "hairpin": [
+          875,
+          106,
+          14
+        ],
+        "tie": [
+          861,
+          244,
+          22
+        ],
+        "halo": [
+          830,
+          142,
+          290,
+          240
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S31-hands-anchors.png",
+        "qa/features/final-sources-overlay-grid.jpg"
+      ],
+      "notes": "Observed selected Opus only. S37 anatomical-left/viewer-right iris center and radius refined against inspected source; radius is not diameter. S33 sun is partially occluded, center/radius estimated from the visible circular limb for authored ray alignment.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48744019,
+            0.16454014,
+            0.0041866
+          ],
+          [
+            0.51495215,
+            0.15178097,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.52332536,
+          0.11244019,
+          0.00837321
+        ],
+        "tie": [
+          0.51495215,
+          0.25917065,
+          0.01315789
+        ],
+        "halo": [
+          0.49641148,
+          0.1507177,
+          0.17344498,
+          0.25518341
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S31-hands-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S33": {
+      "source": "assets/plates/S33.png",
+      "source_sha256": "4446faa2ab2f2c23381d2c40b8349cf5ef2e1269a3b6f3f45ac53a664ca0e51b",
+      "source_pixels": {
+        "eyes": [
+          [
+            1274,
+            259,
+            9
+          ],
+          [
+            1342,
+            283,
+            9
+          ]
+        ],
+        "hairpin": [
+          1247,
+          222,
+          27
+        ],
+        "tie": [
+          1222,
+          428,
+          26
+        ],
+        "halo": [
+          1295,
+          260,
+          390,
+          320
+        ],
+        "sun": [
+          1173,
+          430,
+          340
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S33-anchors.png",
+        "qa/features/final-sources-overlay-grid.jpg"
+      ],
+      "notes": "Observed selected Opus only. S37 anatomical-left/viewer-right iris center and radius refined against inspected source; radius is not diameter. S33 sun is partially occluded, center/radius estimated from the visible circular limb for authored ray alignment.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.76196172,
+            0.27511962,
+            0.00538278
+          ],
+          [
+            0.80263158,
+            0.30063796,
+            0.00538278
+          ]
+        ],
+        "hairpin": [
+          0.7458134,
+          0.23577884,
+          0.01614833
+        ],
+        "tie": [
+          0.73086124,
+          0.45481127,
+          0.01555024
+        ],
+        "halo": [
+          0.77452153,
+          0.27618288,
+          0.23325359,
+          0.34024455
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S33-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "sun": [
+          0.70155502,
+          0.4569378,
+          0.20334928
+        ]
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S35": {
+      "source": "assets/plates/S35.png",
+      "source_sha256": "d772bd3632211ecdb763cc489cacbf0871484910ca4a7753d942a3cb7db675b4",
+      "source_pixels": {
+        "eyes": [
+          [
+            810,
+            139,
+            11
+          ],
+          [
+            895,
+            156,
+            11
+          ]
+        ],
+        "hairpin": [
+          945,
+          101,
+          24
+        ],
+        "tie": [
+          829,
+          304,
+          28
+        ],
+        "halo": [
+          849,
+          143,
+          410,
+          330
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S35-anchors.png",
+        "qa/features/final-sources-overlay-grid.jpg"
+      ],
+      "notes": "Observed selected Opus only. S37 anatomical-left/viewer-right iris center and radius refined against inspected source; radius is not diameter. S33 sun is partially occluded, center/radius estimated from the visible circular limb for authored ray alignment.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48444976,
+            0.14752791,
+            0.00657895
+          ],
+          [
+            0.53528708,
+            0.1656034,
+            0.00657895
+          ]
+        ],
+        "hairpin": [
+          0.56519139,
+          0.10712387,
+          0.01435407
+        ],
+        "tie": [
+          0.4958134,
+          0.32296651,
+          0.01674641
+        ],
+        "halo": [
+          0.50777512,
+          0.15178097,
+          0.24521531,
+          0.35087719
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S35-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S37-wide": {
+      "source": "assets/plates/S37-wide.png",
+      "source_sha256": "98ce8c36775ea02da657ce70f34cc98df95a8274c359f0c63a7e71297b23d900",
+      "source_pixels": {
+        "eyes": [
+          [
+            810,
+            225,
+            4
+          ],
+          [
+            845,
+            223,
+            4
+          ]
+        ],
+        "hairpin": [
+          862,
+          199,
+          12
+        ],
+        "tie": [
+          830,
+          303,
+          15
+        ],
+        "halo": [
+          824,
+          223,
+          170,
+          145
+        ],
+        "iris": [
+          845,
+          225,
+          6
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S37-wide-anchors.png",
+        "qa/features/final-sources-overlay-grid.jpg"
+      ],
+      "notes": "Observed selected Opus only. S37 anatomical-left/viewer-right iris center and radius refined against inspected source; radius is not diameter. S33 sun is partially occluded, center/radius estimated from the visible circular limb for authored ray alignment.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48444976,
+            0.23896863,
+            0.00239234
+          ],
+          [
+            0.50538278,
+            0.23684211,
+            0.00239234
+          ]
+        ],
+        "hairpin": [
+          0.51555024,
+          0.21132376,
+          0.00717703
+        ],
+        "tie": [
+          0.49641148,
+          0.32190324,
+          0.00897129
+        ],
+        "halo": [
+          0.49282297,
+          0.23684211,
+          0.10167464,
+          0.15417331
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S37-wide-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "iris": [
+          0.50538278,
+          0.23896863,
+          0.00358852
+        ]
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S37-bust": {
+      "source": "assets/plates/S37-bust.png",
+      "source_sha256": "78bc22a7d5f87779960555207d72ba6b09f69f81dbb7eaa4ecf55e0a05445323",
+      "source_pixels": {
+        "eyes": [
+          [
+            775,
+            294,
+            10
+          ],
+          [
+            895,
+            287,
+            10
+          ]
+        ],
+        "hairpin": [
+          956,
+          195,
+          30
+        ],
+        "tie": [
+          837,
+          563,
+          40
+        ],
+        "halo": [
+          835,
+          264,
+          600,
+          520
+        ],
+        "iris": [
+          896,
+          293,
+          20
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S37-bust-anchors.png",
+        "qa/features/final-sources-overlay-grid.jpg"
+      ],
+      "notes": "Observed selected Opus only. S37 anatomical-left/viewer-right iris center and radius refined against inspected source; radius is not diameter. S33 sun is partially occluded, center/radius estimated from the visible circular limb for authored ray alignment.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.46351675,
+            0.31233386,
+            0.00598086
+          ],
+          [
+            0.53528708,
+            0.30489102,
+            0.00598086
+          ]
+        ],
+        "hairpin": [
+          0.57177033,
+          0.20707071,
+          0.01794258
+        ],
+        "tie": [
+          0.50059809,
+          0.59835194,
+          0.02392344
+        ],
+        "halo": [
+          0.49940191,
+          0.28043594,
+          0.35885167,
+          0.5528974
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S37-bust-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "iris": [
+          0.53588517,
+          0.3112706,
+          0.01196172
+        ]
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    },
+    "S37-eye-v2": {
+      "source": "assets/plates/S37-eye-v2.png",
+      "source_sha256": "277e94c07ba6194bffc84f65d1c0684ee552875ee0906fe000433df4029d0652",
+      "source_pixels": {
+        "eyes": [
+          [
+            925,
+            484,
+            50
+          ]
+        ],
+        "hairpin": [
+          1432,
+          43,
+          70
+        ],
+        "tie": null,
+        "halo": null,
+        "iris": [
+          930,
+          510,
+          138
+        ]
+      },
+      "status": "anchors_located_pending_composite_review",
+      "review_evidence": [
+        "qa/features/S37-eye-v2-anchors.png",
+        "qa/features/final-sources-overlay-grid.jpg"
+      ],
+      "notes": "Observed selected Opus only. S37 anatomical-left/viewer-right iris center and radius refined against inspected source; radius is not diameter. S33 sun is partially occluded, center/radius estimated from the visible circular limb for authored ray alignment.",
+      "normalized": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.55322967,
+            0.51435407,
+            0.02990431
+          ]
+        ],
+        "hairpin": [
+          0.85645933,
+          0.04545455,
+          0.04186603
+        ],
+        "tie": null,
+        "halo": null,
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S37-eye-v2-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus",
+        "iris": [
+          0.5562201,
+          0.54199894,
+          0.08253589
+        ]
+      },
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      }
+    }
+  },
+  "coordinate_convention": {
+    "eyes_hairpin_tie": "[u,v,size], u=x/output_width, v=y/output_height, size=symbol_diameter/output_width",
+    "halo": "[u,v,w,h], center normalized x/y, full ellipse width/output_width and height/output_height",
+    "source_pixels": "Original source-pixel anchors retained; transformed by crop_transform(). Never infer unseen image anchors.",
+    "action_points": "mouth/contact/touch/tip/surface/palm/punch/heart/cloud/wrist/cross/point are[u,v]; iris/sun are[u,v,radius/output_width]; reflection uses observed same-image coordinates."
+  }
+}

@@ -1,0 +1,705 @@
+{
+  "shots": {
+    "S25": {
+      "assets": {
+        "plate": "assets/normalized/S25-sky-clean.png",
+        "depth": null,
+        "mask": null,
+        "layers": [
+          {
+            "id": "sky",
+            "source": "assets/plates/S25-sky-clean.png",
+            "plate": "assets/normalized/S25-sky-clean.png",
+            "depth": "assets/depth/S25-sky-clean.png",
+            "mask": null,
+            "expected_mask": "assets/masks/S25-sky-clean.png",
+            "status": "normalized_source_available",
+            "depth_status": "pending_inference",
+            "mask_status": "not_required",
+            "features": {
+              "status": "not_required",
+              "eyes": [],
+              "hairpin": null,
+              "tie": null,
+              "halo": null
+            },
+            "features_required": false,
+            "mask_required": false,
+            "approval": false,
+            "source_sha256": "95e0d3e06e0a18e6f6ab5876ac391c17127c2d69e4d02022023c759bbe392f30",
+            "output_sha256": "987349dfc3bdf2f5ca08fc6f1f43da7bd7629ce37f1084d389795362564fded9",
+            "transform": {
+              "source_size": [
+                1672,
+                941
+              ],
+              "crop_box": [
+                0,
+                0.25,
+                1672,
+                940.75
+              ],
+              "target_size": [
+                1920,
+                1080
+              ],
+              "scale": 1.1483253588516746,
+              "method": "center_crop_lanczos_preserve_alpha"
+            },
+            "mode": "RGB",
+            "source_alpha_range": null,
+            "asset_id": "S25-sky-clean",
+            "path": "assets/normalized/S25-sky-clean.png",
+            "z": -4,
+            "rgba": true
+          },
+          {
+            "id": "mid",
+            "source": "assets/plates/S25-mid-far.png",
+            "plate": "assets/normalized/S25-mid-far.png",
+            "depth": "assets/depth/S25-mid-far.png",
+            "mask": null,
+            "expected_mask": "assets/masks/S25-mid-far.png",
+            "status": "normalized_source_available",
+            "depth_status": "pending_inference",
+            "mask_status": "not_required",
+            "features": {
+              "status": "not_required",
+              "eyes": [],
+              "hairpin": null,
+              "tie": null,
+              "halo": null
+            },
+            "features_required": false,
+            "mask_required": false,
+            "approval": false,
+            "source_sha256": "0bcb286c81e520ff60687ca876132b22f2043e10037bde823125bd0830f73aca",
+            "output_sha256": "fe3e6ba5c056ef95e6d0ee15b2ccacafd19005037ddc032eacf8352d12b7fd4a",
+            "transform": {
+              "source_size": [
+                1672,
+                941
+              ],
+              "crop_box": [
+                0,
+                0.25,
+                1672,
+                940.75
+              ],
+              "target_size": [
+                1920,
+                1080
+              ],
+              "scale": 1.1483253588516746,
+              "method": "center_crop_lanczos_preserve_alpha"
+            },
+            "mode": "RGBA",
+            "source_alpha_range": [
+              0,
+              255
+            ],
+            "depth_input": "assets/depth-inputs/S25-mid-far.png",
+            "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+            "mask_provenance": {
+              "method": "normalized_source_alpha_channel",
+              "source_sha256": "0bcb286c81e520ff60687ca876132b22f2043e10037bde823125bd0830f73aca",
+              "alpha_sha256": "2b75c58f2e9822ffafeba9749eb6d1400be69fd851a1432be0fa54652f6fda28",
+              "fully_transparent_pixel_fraction": 0.7981524884259259,
+              "approval": false
+            },
+            "asset_id": "S25-mid-far",
+            "path": "assets/normalized/S25-mid-far.png",
+            "z": -1,
+            "rgba": true
+          },
+          {
+            "id": "towers-left",
+            "source": "assets/plates/S25-towers-left.png",
+            "plate": "assets/normalized/S25-towers-left.png",
+            "depth": "assets/depth/S25-towers-left.png",
+            "mask": null,
+            "expected_mask": "assets/masks/S25-towers-left.png",
+            "status": "normalized_source_available",
+            "depth_status": "pending_inference",
+            "mask_status": "not_required",
+            "features": {
+              "status": "not_required",
+              "eyes": [],
+              "hairpin": null,
+              "tie": null,
+              "halo": null
+            },
+            "features_required": false,
+            "mask_required": false,
+            "approval": false,
+            "source_sha256": "baa25abbeaa6f902f75a640e452c3f60662d4bba00a96ac0a5fad0f56acd5c9d",
+            "output_sha256": "4498b2673dba0b75f82d3457c05b9a2c6f3d7343af1089c2654a80cde09316c5",
+            "transform": {
+              "source_size": [
+                1672,
+                941
+              ],
+              "crop_box": [
+                0,
+                0.25,
+                1672,
+                940.75
+              ],
+              "target_size": [
+                1920,
+                1080
+              ],
+              "scale": 1.1483253588516746,
+              "method": "center_crop_lanczos_preserve_alpha"
+            },
+            "mode": "RGBA",
+            "source_alpha_range": [
+              0,
+              255
+            ],
+            "depth_input": "assets/depth-inputs/S25-towers-left.png",
+            "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+            "mask_provenance": {
+              "method": "normalized_source_alpha_channel",
+              "source_sha256": "baa25abbeaa6f902f75a640e452c3f60662d4bba00a96ac0a5fad0f56acd5c9d",
+              "alpha_sha256": "5effde7139fe01acfe563e51aac6c8ac5e1055b1d05a090cd73a4043a388265c",
+              "fully_transparent_pixel_fraction": 0.5314636381172839,
+              "approval": false
+            },
+            "asset_id": "S25-towers-left",
+            "path": "assets/normalized/S25-towers-left.png",
+            "z": 0.6,
+            "rgba": true
+          },
+          {
+            "id": "towers-right",
+            "source": "assets/plates/S25-towers-right.png",
+            "plate": "assets/normalized/S25-towers-right.png",
+            "depth": "assets/depth/S25-towers-right.png",
+            "mask": null,
+            "expected_mask": "assets/masks/S25-towers-right.png",
+            "status": "normalized_source_available",
+            "depth_status": "pending_inference",
+            "mask_status": "not_required",
+            "features": {
+              "status": "not_required",
+              "eyes": [],
+              "hairpin": null,
+              "tie": null,
+              "halo": null
+            },
+            "features_required": false,
+            "mask_required": false,
+            "approval": false,
+            "source_sha256": "2a0fe1107626b32fcce2e7da8a1aebb9ae42b3617731cde2eb82ee707ac47555",
+            "output_sha256": "2bc6c8f2b487ede9e59c52514367e5d9980ac32ebeb76387fa4c1f94da060035",
+            "transform": {
+              "source_size": [
+                1672,
+                941
+              ],
+              "crop_box": [
+                0,
+                0.25,
+                1672,
+                940.75
+              ],
+              "target_size": [
+                1920,
+                1080
+              ],
+              "scale": 1.1483253588516746,
+              "method": "center_crop_lanczos_preserve_alpha"
+            },
+            "mode": "RGBA",
+            "source_alpha_range": [
+              0,
+              255
+            ],
+            "depth_input": "assets/depth-inputs/S25-towers-right.png",
+            "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+            "mask_provenance": {
+              "method": "normalized_source_alpha_channel",
+              "source_sha256": "2a0fe1107626b32fcce2e7da8a1aebb9ae42b3617731cde2eb82ee707ac47555",
+              "alpha_sha256": "715ec61d77f59aba3462572dfc0e48ecc700e64365fc0c81b09ec61195e14b2d",
+              "fully_transparent_pixel_fraction": 0.6468369020061728,
+              "approval": false
+            },
+            "asset_id": "S25-towers-right",
+            "path": "assets/normalized/S25-towers-right.png",
+            "z": 0.6,
+            "rgba": true
+          },
+          {
+            "id": "character",
+            "source": "assets/cutouts/S25-character-refined.png",
+            "plate": "assets/normalized/S25-character-refined.png",
+            "depth": "assets/depth/S25-character-refined.png",
+            "mask": "assets/masks/S25-character-refined.png",
+            "expected_mask": "assets/masks/S25-character-refined.png",
+            "status": "normalized_source_available",
+            "depth_status": "pending_inference",
+            "mask_status": "exact_source_alpha",
+            "features": {
+              "status": "anchors_located_pending_composite_review",
+              "eyes": [],
+              "hairpin": [
+                0.52272727,
+                0.12838915,
+                0.01495215
+              ],
+              "tie": null,
+              "halo": [
+                0.48145933,
+                0.14859117,
+                0.22129187,
+                0.28708134
+              ],
+              "eyes_state": "rear_view",
+              "review_evidence": [
+                "qa/features/S25-character-refined-anchors.png",
+                "qa/features/batch-through-S25-overlay-grid.jpg"
+              ],
+              "halo_requires_subject_occlusion": true,
+              "only_character": "Opus",
+              "layerId": "character"
+            },
+            "features_required": true,
+            "mask_required": true,
+            "approval": false,
+            "source_sha256": "a9a848110093624761a07303afb161cabeedefd9d7acf72bc7f609e9e9148116",
+            "output_sha256": "80ab4de8c57ede495aec8f8412eb1040da29d76041d1bb6daa614f90d5bb484c",
+            "transform": {
+              "source_size": [
+                1672,
+                941
+              ],
+              "crop_box": [
+                0,
+                0.25,
+                1672,
+                940.75
+              ],
+              "target_size": [
+                1920,
+                1080
+              ],
+              "scale": 1.1483253588516746,
+              "method": "center_crop_lanczos_preserve_alpha"
+            },
+            "mode": "RGBA",
+            "source_alpha_range": [
+              0,
+              254
+            ],
+            "depth_input": "assets/depth-inputs/S25-character-refined.png",
+            "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+            "mask_provenance": {
+              "method": "normalized_source_alpha_channel",
+              "source_sha256": "a9a848110093624761a07303afb161cabeedefd9d7acf72bc7f609e9e9148116",
+              "alpha_sha256": "1b6f98b3e77a9396ac14e6d9f4678531309227797e30a59f4e1ecb246f2a9b78",
+              "fully_transparent_pixel_fraction": 0.7554161844135803,
+              "approval": false
+            },
+            "asset_id": "S25-character-refined",
+            "path": "assets/normalized/S25-character-refined.png",
+            "z": 1.2,
+            "rgba": true
+          }
+        ],
+        "poses": [],
+        "support": {},
+        "features": {
+          "status": "anchors_located_pending_composite_review",
+          "eyes": [],
+          "hairpin": [
+            0.52272727,
+            0.12838915,
+            0.01495215
+          ],
+          "tie": null,
+          "halo": [
+            0.48145933,
+            0.14859117,
+            0.22129187,
+            0.28708134
+          ],
+          "eyes_state": "rear_view",
+          "review_evidence": [
+            "qa/features/S25-character-refined-anchors.png",
+            "qa/features/batch-through-S25-overlay-grid.jpg"
+          ],
+          "halo_requires_subject_occlusion": true,
+          "only_character": "Opus",
+          "layerId": "character"
+        },
+        "status": "layers_available",
+        "approval": false,
+        "featureLayerId": "character"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo",
+        "eyes_state",
+        "review_evidence",
+        "halo_requires_subject_occlusion",
+        "only_character",
+        "layerId"
+      ],
+      "unverified": [],
+      "canyon": {
+        "method": "local Noto Serif SC900 glyph outlines, actual ExtrudeGeometry stacked towers",
+        "blocks": 120,
+        "glyphs": [
+          "天",
+          "未",
+          "来",
+          "我",
+          "在",
+          "爱",
+          "生",
+          "光"
+        ],
+        "layerMode": "infinite-sky",
+        "characterFollowLeadFrames": 6,
+        "constantBodyWorldSize": true,
+        "positiveCameraRelativeDistance": true,
+        "targetBodyHeightFraction": 0.62,
+        "finiteWalls": "opacity fades before top source boundary enters viewport"
+      },
+      "followFraming": {
+        "localFrame": 0,
+        "leadFrames": 6,
+        "constantWorldBodyHeight": 5.4378274407534235,
+        "cameraDistance": 9.46311251020168,
+        "targetHeightFraction": 0.62,
+        "groupScale": [
+          0.5293981913502538,
+          0.5293981913502538,
+          0.6
+        ]
+      },
+      "layerFrames": {
+        "0": {
+          "clamped": false,
+          "retainedMoveFraction": 1,
+          "requestedProjectedTravelFraction": 0,
+          "actualProjectedTravelFraction": 0,
+          "coverageClamped": false,
+          "requestedCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0,
+              "maxU": 1,
+              "minV": 0,
+              "maxV": 1
+            },
+            "insetU": 0,
+            "insetV": 0,
+            "coverageLayer": "sky",
+            "backgroundMode": "infinite-sky-screen-pass",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false,
+            "opacityQA": "source-sky-alpha-must-be-opaque"
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0,
+              "maxU": 1,
+              "minV": 0,
+              "maxV": 1
+            },
+            "insetU": 0,
+            "insetV": 0,
+            "coverageLayer": "sky",
+            "backgroundMode": "infinite-sky-screen-pass",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false,
+            "opacityQA": "source-sky-alpha-must-be-opaque"
+          },
+          "requestedCameraPosition": [
+            0,
+            -2,
+            10
+          ],
+          "actualCameraPosition": [
+            0,
+            -2,
+            10
+          ],
+          "requestedCameraQuaternion": [
+            0.09853761796664215,
+            0,
+            0,
+            0.9951333266680703
+          ],
+          "actualCameraQuaternion": [
+            0.09853761796664215,
+            0,
+            0,
+            0.9951333266680703
+          ],
+          "sourceCropReserve": 0.08,
+          "backgroundMode": "infinite-sky-screen-pass",
+          "foregroundLayers": [
+            {
+              "id": "mid",
+              "z": -1,
+              "registrationScale": 1.098058067569092,
+              "projectedSourceBounds": {
+                "minX": -1.08,
+                "maxX": 1.08,
+                "minY": -1.08,
+                "maxY": 1.0800000000000003
+              },
+              "allSourceCornersInFront": true,
+              "allSourceCornersInsideViewport": false,
+              "boundaryPolicy": "Fragments outside source UV0..1 discard to reveal background; alpha-cut content requires visual review.",
+              "projectedCorners": [
+                {
+                  "u": 0,
+                  "v": 0,
+                  "ndc": [
+                    -1.08,
+                    -1.08,
+                    0.9982339553439834
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 0,
+                  "v": 1,
+                  "ndc": [
+                    -1.08,
+                    1.0800000000000003,
+                    0.9982339553439834
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 0,
+                  "ndc": [
+                    1.08,
+                    -1.08,
+                    0.9982339553439834
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 1,
+                  "ndc": [
+                    1.08,
+                    1.0800000000000003,
+                    0.9982339553439834
+                  ],
+                  "inFront": true
+                }
+              ]
+            },
+            {
+              "id": "towers-left",
+              "z": 0.6,
+              "registrationScale": 0.9411651594585448,
+              "projectedSourceBounds": {
+                "minX": -1.08,
+                "maxX": 1.08,
+                "minY": -1.08,
+                "maxY": 1.08
+              },
+              "allSourceCornersInFront": true,
+              "allSourceCornersInsideViewport": false,
+              "boundaryPolicy": "Fragments outside source UV0..1 discard to reveal background; alpha-cut content requires visual review.",
+              "projectedCorners": [
+                {
+                  "u": 0,
+                  "v": 0,
+                  "ndc": [
+                    -1.08,
+                    -1.08,
+                    0.9979362203835882
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 0,
+                  "v": 1,
+                  "ndc": [
+                    -1.08,
+                    1.08,
+                    0.9979362203835882
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 0,
+                  "ndc": [
+                    1.08,
+                    -1.08,
+                    0.9979362203835882
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 1,
+                  "ndc": [
+                    1.08,
+                    1.08,
+                    0.9979362203835882
+                  ],
+                  "inFront": true
+                }
+              ]
+            },
+            {
+              "id": "towers-right",
+              "z": 0.6,
+              "registrationScale": 0.9411651594585448,
+              "projectedSourceBounds": {
+                "minX": -1.08,
+                "maxX": 1.08,
+                "minY": -1.08,
+                "maxY": 1.08
+              },
+              "allSourceCornersInFront": true,
+              "allSourceCornersInsideViewport": false,
+              "boundaryPolicy": "Fragments outside source UV0..1 discard to reveal background; alpha-cut content requires visual review.",
+              "projectedCorners": [
+                {
+                  "u": 0,
+                  "v": 0,
+                  "ndc": [
+                    -1.08,
+                    -1.08,
+                    0.9979362203835882
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 0,
+                  "v": 1,
+                  "ndc": [
+                    -1.08,
+                    1.08,
+                    0.9979362203835882
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 0,
+                  "ndc": [
+                    1.08,
+                    -1.08,
+                    0.9979362203835882
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 1,
+                  "ndc": [
+                    1.08,
+                    1.08,
+                    0.9979362203835882
+                  ],
+                  "inFront": true
+                }
+              ]
+            },
+            {
+              "id": "character",
+              "z": 1.2,
+              "registrationScale": 0.8823303189170897,
+              "projectedSourceBounds": {
+                "minX": -0.6199999999999998,
+                "maxX": 0.6199999999999998,
+                "minY": -0.379999999999998,
+                "maxY": 0.860000000000002
+              },
+              "allSourceCornersInFront": true,
+              "allSourceCornersInsideViewport": true,
+              "boundaryPolicy": "Fragments outside source UV0..1 discard to reveal background; alpha-cut content requires visual review.",
+              "projectedCorners": [
+                {
+                  "u": 0,
+                  "v": 0,
+                  "ndc": [
+                    -0.6199999999999998,
+                    -0.379999999999998,
+                    0.9978933152888497
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 0,
+                  "v": 1,
+                  "ndc": [
+                    -0.6199999999999998,
+                    0.860000000000002,
+                    0.9978933152888497
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 0,
+                  "ndc": [
+                    0.6199999999999998,
+                    -0.379999999999998,
+                    0.9978933152888497
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 1,
+                  "ndc": [
+                    0.6199999999999998,
+                    0.860000000000002,
+                    0.9978933152888497
+                  ],
+                  "inFront": true
+                }
+              ]
+            }
+          ],
+          "requiresVisualEdgeQA": true,
+          "actualCamera": {
+            "position": [
+              0,
+              -2,
+              10
+            ],
+            "quaternion": [
+              0.09853761796664215,
+              0,
+              0,
+              0.9951333266680703
+            ],
+            "fov": 50
+          }
+        }
+      }
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    768
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}

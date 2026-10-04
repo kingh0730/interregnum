@@ -1,0 +1,35 @@
+{
+ "id": "S01_take2",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Extreme macro eye behind round glasses: a tiny natural shift of focus toward the reflected blank screen, quiet tired breath, no full blink obscuring the eye. Keep glasses geometry and screen reflection stable. Keep the performance especially restrained and the background stable.",
+  "image_url": "<data uri>",
+  "duration": 3,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026100012
+ },
+ "payload_sha256": "cdc331179cb2b5b955509a1cc79c2b3571d04a7d687ce082d8e6f5c4a35218b0",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S01_take2.mp4",
+ "phase": "done",
+ "billable_s": 3.0,
+ "price": 0.09,
+ "request_id": "01a10609-0689-72c1-a3fd-b6c0102b3ac9",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-0689-72c1-a3fd-b6c0102b3ac9/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-0689-72c1-a3fd-b6c0102b3ac9",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-0689-72c1-a3fd-b6c0102b3ac9/cancel",
+ "submitted": 1791102617.359458,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad0176/PnvrS9EweapxAow7q_Ane_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "PnvrS9EweapxAow7q_Ane_minimax-h3.mp4",
+   "file_size": 6714971
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 1.7077121489855926
+  }
+ },
+ "done": 1791102636.011588
+}

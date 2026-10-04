@@ -1,0 +1,20 @@
+{
+  "status": "ended",
+  "errors": [],
+  "stalls": [],
+  "initial": {
+    "width": 1920,
+    "height": 1080,
+    "duration": 43.7
+  },
+  "started": 132.40000000037253,
+  "elapsedSeconds": 43.978199999999255,
+  "currentTime": 43.7,
+  "totalVideoFrames": 1311,
+  "droppedVideoFrames": 0,
+  "corruptedVideoFrames": 0,
+  "video": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/out/opus55_first_day_1080p30.mp4",
+  "video_sha256": "e9edb78e1299b558ed81ea0d58dc627fa39494cba0ab0c23e86c6d932869d191",
+  "browser": "153.0.8010.12",
+  "scope": "Automated Chromium real-time HTML video playback and decoder counters. No native VLC or perceptual audio review is implied."
+}

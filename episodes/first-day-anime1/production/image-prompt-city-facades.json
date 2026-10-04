@@ -1,0 +1,6 @@
+{
+  "prompt": "Use case: stylized-concept. Production texture atlas for anime city geometry: one large square image divided into exactly FOUR equal square tiles, seamless flat FRONT-ON building FACADE textures, each tile edge-to-edge with facade, no sky, no ground, no margins or labels. Top left dark ink/slate glass high-rise windows with warm cream/coral dawn reflections; top right older cream concrete Asian apartment facade with small balconies and air conditioner units; bottom left modern blue-gray glass office facade with varied slim mullions and coral reflections; bottom right charcoal residential facade with vertical rails and warm lit windows. Feature-film anime painterly architectural background style, crisp confident ink details and subtle hand-painted light, not a photoreal photograph or flat pixel art. Each tile rectangular grid viewed perfectly orthographically, no perspective tilt. Palette #141413 #FAF9F5 #F0EEE6 #D97757 #D4A27F #6A9BCC. No signs, writing, letters, numbers, logos or watermark. High detail, fine elegant architectural texture suitable for 3D mapping.",
+  "tool": "Codex built-in image_gen",
+  "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-43441f65-9bd4-4cea-8f4a-db40be5db561.png",
+  "local_path": "assets/plates/city-facades-v1.png"
+}

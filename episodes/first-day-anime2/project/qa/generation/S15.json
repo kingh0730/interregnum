@@ -1,0 +1,12 @@
+{
+  "id": "S15",
+  "prompt": "One single widescreen cinematic frame, never a collage, sheet or multi-panel layout. Reference sheets establish identity only; do not copy the sheet layout. 1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Medium-wide Opus exhaling, smiling with eyes closed, wind pushing her coral-tipped hair out. 50mm at chest height against pale sky, space around her for a procedural expanding ring. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+  "refs": [
+    "assets/sheets/opus-base.png",
+    "assets/worlds/scroll.png"
+  ],
+  "generator": "Codex built-in",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-cc85a880-ab5f-450d-bf65-2e431aec0640.png",
+  "output": "assets/plates/S15.png",
+  "status": "pending_review"
+}

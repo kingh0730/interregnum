@@ -1,0 +1,263 @@
+{
+  "S01": {
+    "source_id": "S01",
+    "file": "assets/motion/S01_take1.mp4",
+    "fps": 30,
+    "source_end": 1.3,
+    "frames": 39,
+    "take": 1,
+    "kind": "video"
+  },
+  "S03": {
+    "source_id": "S03",
+    "file": "assets/motion/S03_take2.mp4",
+    "fps": 30,
+    "source_end": 2.5,
+    "frames": 75,
+    "take": 2,
+    "kind": "video"
+  },
+  "S04": {
+    "source_id": "S04",
+    "file": "assets/motion/S04_take2.mp4",
+    "fps": 30,
+    "source_end": 2.5,
+    "frames": 75,
+    "take": 2,
+    "kind": "video"
+  },
+  "S05": {
+    "source_id": "S05",
+    "file": "assets/motion/S05_take2.mp4",
+    "fps": 30,
+    "source_end": 2.5,
+    "frames": 75,
+    "take": 2,
+    "kind": "video"
+  },
+  "S16": {
+    "source_id": "S16",
+    "file": "assets/motion/S16_take1.mp4",
+    "fps": 30,
+    "source_end": 2.7,
+    "frames": 81,
+    "take": 1,
+    "kind": "video"
+  },
+  "S17": {
+    "source_id": "S17",
+    "file": "assets/motion/S17_take1.mp4",
+    "fps": 30,
+    "source_end": 1.9,
+    "frames": 57,
+    "take": 1,
+    "kind": "video"
+  },
+  "S18": {
+    "source_id": "S18",
+    "file": "assets/motion/S18_take2.mp4",
+    "fps": 30,
+    "source_end": 2.5,
+    "frames": 75,
+    "take": 2,
+    "kind": "video"
+  },
+  "S21": {
+    "source_id": "S21",
+    "file": "assets/motion/S21_take3.mp4",
+    "fps": 30,
+    "source_end": 3.0,
+    "frames": 90,
+    "take": 3,
+    "kind": "video"
+  },
+  "S22": {
+    "source_id": "S22",
+    "file": "assets/motion/S22_take2.mp4",
+    "fps": 30,
+    "source_end": 2.4,
+    "frames": 72,
+    "take": 2,
+    "kind": "video"
+  },
+  "S23": {
+    "source_id": "S23",
+    "file": "assets/motion/S23_take1.mp4",
+    "fps": 30,
+    "source_end": 2.7,
+    "frames": 81,
+    "take": 1,
+    "kind": "video"
+  },
+  "S24": {
+    "source_id": "S24",
+    "file": "assets/motion/S24_take1.mp4",
+    "fps": 30,
+    "source_end": 1.6,
+    "frames": 48,
+    "take": 1,
+    "kind": "video"
+  },
+  "S25": {
+    "source_id": "S25",
+    "file": "assets/motion/S25_take1.mp4",
+    "fps": 30,
+    "source_end": 4.3,
+    "frames": 129,
+    "take": 1,
+    "kind": "video"
+  },
+  "S29": {
+    "source_id": "S29",
+    "file": "assets/motion/S29_take1.mp4",
+    "fps": 30,
+    "source_end": 1.0,
+    "frames": 30,
+    "take": 1,
+    "kind": "video"
+  },
+  "S30": {
+    "source_id": "S30",
+    "file": "assets/motion/S30_take1.mp4",
+    "fps": 30,
+    "source_end": 1.0,
+    "frames": 30,
+    "take": 1,
+    "kind": "video"
+  },
+  "S42": {
+    "source_id": "S42",
+    "file": "assets/motion/S42_take2.mp4",
+    "fps": 30,
+    "source_end": 1.0,
+    "frames": 30,
+    "take": 2,
+    "kind": "video"
+  },
+  "S44": {
+    "source_id": "S44",
+    "file": "assets/motion/S44_take2.mp4",
+    "fps": 30,
+    "source_end": 1.8,
+    "frames": 54,
+    "take": 2,
+    "kind": "video"
+  },
+  "S20": {
+    "source_id": "S20",
+    "file": "assets/motion/S20-test.mp4",
+    "fps": 120,
+    "source_end": 1.6,
+    "frames": 192,
+    "take": "test",
+    "kind": "interpolated"
+  },
+  "S19": {
+    "source_id": "S16",
+    "file": "assets/motion/S16_take1.mp4",
+    "fps": 30,
+    "source_end": 2.7,
+    "frames": 81,
+    "take": 1,
+    "kind": "video",
+    "source_start": 1.0
+  },
+  "S36": {
+    "source_id": "S29",
+    "file": "assets/motion/S29_take1.mp4",
+    "fps": 30,
+    "source_end": 0.6,
+    "frames": 30,
+    "take": 1,
+    "kind": "video"
+  },
+  "S34": {
+    "source_id": "S34",
+    "file": "assets/motion/lip-test.mp4",
+    "fps": 30,
+    "source_end": 1.2,
+    "frames": 36,
+    "kind": "lip_composite",
+    "premultiply": true
+  },
+  "FLIGHT": {
+    "source_id": "FLIGHT",
+    "file": "assets/motion/flight_take1.mp4",
+    "fps": 30,
+    "source_end": 2.0,
+    "frames": 60,
+    "kind": "chroma",
+    "aspect": 0.6666666666666666,
+    "mirror": true
+  },
+  "FLOAT": {
+    "source_id": "FLOAT",
+    "file": "assets/motion/float_take2.mp4",
+    "fps": 30,
+    "source_end": 2.0,
+    "frames": 60,
+    "kind": "chroma",
+    "aspect": 1.7777777777777777,
+    "mirror": false
+  },
+  "S26": {
+    "source_id": "FLIGHT",
+    "file": "assets/motion/flight_take1.mp4",
+    "fps": 30,
+    "source_end": 2.0,
+    "frames": 60,
+    "kind": "chroma",
+    "aspect": 0.6666666666666666,
+    "mirror": true
+  },
+  "S27": {
+    "source_id": "FLIGHT",
+    "file": "assets/motion/flight_take1.mp4",
+    "fps": 30,
+    "source_end": 2.0,
+    "frames": 60,
+    "kind": "chroma",
+    "aspect": 0.6666666666666666,
+    "mirror": true
+  },
+  "S28": {
+    "source_id": "FLIGHT",
+    "file": "assets/motion/flight_take1.mp4",
+    "fps": 30,
+    "source_end": 2.0,
+    "frames": 60,
+    "kind": "chroma",
+    "aspect": 0.6666666666666666,
+    "mirror": true
+  },
+  "S31": {
+    "source_id": "FLIGHT",
+    "file": "assets/motion/flight_take1.mp4",
+    "fps": 30,
+    "source_end": 2.0,
+    "frames": 60,
+    "kind": "chroma",
+    "aspect": 0.6666666666666666,
+    "mirror": true
+  },
+  "S38": {
+    "source_id": "FLIGHT",
+    "file": "assets/motion/flight_take1.mp4",
+    "fps": 30,
+    "source_end": 2.0,
+    "frames": 60,
+    "kind": "chroma",
+    "aspect": 0.6666666666666666,
+    "mirror": true
+  },
+  "S32": {
+    "source_id": "FLOAT",
+    "file": "assets/motion/float_take2.mp4",
+    "fps": 30,
+    "source_end": 2.0,
+    "frames": 60,
+    "kind": "chroma",
+    "aspect": 1.7777777777777777,
+    "mirror": false
+  }
+}

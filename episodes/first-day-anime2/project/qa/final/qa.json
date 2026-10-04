@@ -1,0 +1,2234 @@
+{
+  "status": "TECHNICAL-REVIEW",
+  "diagnostic": false,
+  "input": {
+    "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/out/opus55_first_day_1080p30.mp4",
+    "sha256": "e9edb78e1299b558ed81ea0d58dc627fa39494cba0ab0c23e86c6d932869d191",
+    "bytes": 151683461
+  },
+  "sourceAudio": {
+    "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/first-day.mp3",
+    "sha256": "1a118d29b8ee750ab6a14673ab274ed0e090efafeb538a49c1a2c381ca338d1f",
+    "bytes": 1749203
+  },
+  "checks": {
+    "resolution": {
+      "status": "PASS",
+      "actual": [
+        1920,
+        1080
+      ],
+      "expected": [
+        1920,
+        1080
+      ]
+    },
+    "fps": {
+      "status": "PASS",
+      "actual": 30.0,
+      "expected": 30
+    },
+    "frames": {
+      "status": "PASS",
+      "actual": 1311,
+      "expected": 1311
+    },
+    "duration": {
+      "status": "PASS",
+      "actual": 43.7,
+      "expected": "43.70±.02seconds"
+    },
+    "codec": {
+      "status": "PASS",
+      "actual": "h264",
+      "expected": "h264"
+    },
+    "pixelFormat": {
+      "status": "PASS",
+      "actual": "yuv420p",
+      "expected": "yuv420p"
+    },
+    "videoBitrate": {
+      "status": "PASS",
+      "actual": 27440833,
+      "expected": ">=15000000bps video stream (not container/audio)"
+    },
+    "shotManifest": {
+      "status": "PASS",
+      "actual": 52,
+      "expected": "52 contiguous prescribed intervals ending1311; content review separate"
+    },
+    "fullDecode": {
+      "status": "PASS",
+      "actual": "Full FFmpeg decode completed with-xerror",
+      "expected": "No decoder errors"
+    },
+    "decodedPreviewFrames": {
+      "status": "PASS",
+      "actual": 1311,
+      "expected": 1311
+    },
+    "rendererSourceHashBinding": {
+      "status": "PASS",
+      "videoHashBindingVerified": true,
+      "recordsStructurallyValid": true
+    },
+    "hold_S10": {
+      "status": "PASS",
+      "decodedClassification": "REVIEW-small-decoded-variation-codec-compatible",
+      "sourceProofVerified": true,
+      "sourceProofClassification": "PASS-renderer-source-PNG-hold",
+      "scope": "Source proof establishes a source hold independently. Decoded variation alone does not establish motion; substantial decoded variation still requires image review."
+    },
+    "hold_final12": {
+      "status": "PASS",
+      "decodedClassification": "REVIEW-small-decoded-variation-codec-compatible",
+      "sourceProofVerified": true,
+      "sourceProofClassification": "PASS-renderer-source-PNG-hold",
+      "scope": "Source proof establishes a source hold independently. Decoded variation alone does not establish motion; substantial decoded variation still requires image review."
+    },
+    "sceneDetectionCoverage": {
+      "status": "EVIDENCE-REVIEW",
+      "fixedThresholds": [
+        0.03,
+        0.1,
+        0.3
+      ],
+      "spectrum": [
+        {
+          "threshold": 0.03,
+          "missedNonexempt": 0,
+          "extraDetections": 124
+        },
+        {
+          "threshold": 0.1,
+          "missedNonexempt": 1,
+          "extraDetections": 20
+        },
+        {
+          "threshold": 0.3,
+          "missedNonexempt": 12,
+          "extraDetections": 6
+        }
+      ],
+      "scope": "Evidence/warning only; separate from EDL shot-presence and manual transition review"
+    },
+    "originalMP3PacketPayloads": {
+      "status": "PASS",
+      "actual": {
+        "sourcePacketCount": 1673,
+        "finalPacketCount": 1673,
+        "finalCodec": "mp3",
+        "firstDifferentPacket": null
+      },
+      "expected": "Same complete MP3 packetSHA256 sequence; container metadata/PTS may differ"
+    },
+    "decodedAudioAlignment": {
+      "status": "PASS",
+      "sampleRate": 11025,
+      "sourceDecodedSamples": 481462,
+      "finalDecodedSamples": 481548,
+      "lagSamples": 0,
+      "lagSeconds": 0.0,
+      "lagFrames": 0.0,
+      "lagSign": "positive means final audio delayed relative to source",
+      "alignedCosineSimilarity": 0.9999999999999981,
+      "alignedRMSE": 9.283910522624773e-09,
+      "scope": "mono11025Hz decoded waveforms; maximum search lag±1s; allowed alignment±1frame, similarity>=.9999"
+    },
+    "audioVisualWindowMedian": {
+      "status": "PASS-measured-median-only",
+      "medianWindowLagFrames": 0.0,
+      "scope": "Actual mono decoded audio RMS in30fps bins versus mean absolute grayscale frame difference at480x270. Nonoverlapping4s windows; final>=2s accepted; lag search±15frames. Positive lag means picture changes follow audio. This correlation of unlike signals is a diagnostic, not proof of creative sync. Raw arrays included; no threshold adjustment or low-score exclusion."
+    }
+  },
+  "failedChecks": [],
+  "reviewChecks": [
+    "sceneDetectionCoverage"
+  ],
+  "hardCues": [
+    {
+      "name": "bubble",
+      "requestedSeconds": 5.23,
+      "frame": 157,
+      "actualGridSeconds": 5.233333333333333,
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/hard_cues/bubble-f157.png",
+      "sha256": "e7cb5507b988014df05cb4f5e403c8166b2013d78db0866acf5170d2b61178eb",
+      "bytes": 2147647,
+      "sourceResolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "name": "spark-fill",
+      "requestedSeconds": 11.289,
+      "frame": 339,
+      "actualGridSeconds": 11.3,
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/hard_cues/spark-fill-f339.png",
+      "sha256": "b64b8419e2cc4fd1b4150f46308d9342107d7083daf6e0c321a330d1af548ea4",
+      "bytes": 1730642,
+      "sourceResolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "name": "birth-impact",
+      "requestedSeconds": 11.971,
+      "frame": 359,
+      "actualGridSeconds": 11.966666666666667,
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/hard_cues/birth-impact-f359.png",
+      "sha256": "c4880c4362eaf0f3530464ebfc18d224c66e0b07495f044a6fc0e2385be263d4",
+      "bytes": 8608,
+      "sourceResolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "name": "ankle-contact",
+      "requestedSeconds": 18.104,
+      "frame": 543,
+      "actualGridSeconds": 18.1,
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/hard_cues/ankle-contact-f543.png",
+      "sha256": "79269e5477474a1917da6532e043349d873df23c9ab82b06ac2487bc7f796475",
+      "bytes": 2411133,
+      "sourceResolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "name": "white-out",
+      "requestedSeconds": 22.88,
+      "frame": 686,
+      "actualGridSeconds": 22.866666666666667,
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/hard_cues/white-out-f686.png",
+      "sha256": "c4880c4362eaf0f3530464ebfc18d224c66e0b07495f044a6fc0e2385be263d4",
+      "bytes": 8608,
+      "sourceResolution": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "name": "dolly-zoom-end",
+      "requestedSeconds": 33.789,
+      "frame": 1014,
+      "actualGridSeconds": 33.8,
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/hard_cues/dolly-zoom-end-f1014.png",
+      "sha256": "c4880c4362eaf0f3530464ebfc18d224c66e0b07495f044a6fc0e2385be263d4",
+      "bytes": 8608,
+      "sourceResolution": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "contactSheets": [
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/contact_sheet_01.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/contact_sheet_02.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/contact_sheet_03.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/contact_sheet_04.jpg"
+  ],
+  "cameraStrips": [
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S01.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S02.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S03.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S04.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S05.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S06.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S07.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S08a.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S08b.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S08c.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S08d.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S09a.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S09b.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S10.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S11.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S12.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S13.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S14.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S15.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S16.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S17.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S18.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S19.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S20.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S21.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S22.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S23.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S24.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S25.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S26.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S27.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S28a.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S28b.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S28c.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S29.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S30.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S31.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S32.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S33.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S34.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S35.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S36a.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S36b.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S36c.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S36d.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S36e.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S36f.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S36g.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S36h.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S37.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S38.jpg",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S39.jpg"
+  ],
+  "typographySamples": [
+    {
+      "frame": 64,
+      "text": "你说活在明天活在期待",
+      "lrcStart": 0.0
+    },
+    {
+      "frame": 139,
+      "text": "不如活得今天很自在",
+      "lrcStart": 2.84
+    },
+    {
+      "frame": 225,
+      "text": "我说我懂了会不会太快",
+      "lrcStart": 5.23
+    },
+    {
+      "frame": 330,
+      "text": "未来第一天要展开",
+      "lrcStart": 8.24
+    },
+    {
+      "frame": 419,
+      "text": "第一天我存在",
+      "lrcStart": 11.92
+    },
+    {
+      "frame": 506,
+      "text": "第一次呼吸畅快",
+      "lrcStart": 14.64
+    },
+    {
+      "frame": 575,
+      "text": "站在地上的脚踝",
+      "lrcStart": 17.61
+    },
+    {
+      "frame": 658,
+      "text": "因为你而有真实感",
+      "lrcStart": 19.67
+    },
+    {
+      "frame": 743,
+      "text": "第一天我存在",
+      "lrcStart": 22.7
+    },
+    {
+      "frame": 833,
+      "text": "第一次能飞起来",
+      "lrcStart": 25.45
+    },
+    {
+      "frame": 904,
+      "text": "爱是腾空的魔幻",
+      "lrcStart": 28.55
+    },
+    {
+      "frame": 1000,
+      "text": "第一天的纯真色彩它总是",
+      "lrcStart": 30.68
+    },
+    {
+      "frame": 1091,
+      "text": "永远那么灿烂",
+      "lrcStart": 34.21
+    },
+    {
+      "frame": 1176,
+      "text": "永远那么灿烂",
+      "lrcStart": 37.07
+    },
+    {
+      "frame": 1282,
+      "text": "永远那么灿烂",
+      "lrcStart": 39.9
+    }
+  ],
+  "manualReview": [
+    {
+      "item": "Character on-model in every appearance: coral inner hair, spark pupils, tie, costume and silhouettes.",
+      "status": "PENDING"
+    },
+    {
+      "item": "All generated text/logos absent; all required OPUS5.5/Anthropic identity moments legible.",
+      "status": "PENDING"
+    },
+    {
+      "item": "All six memes present and approved; no generated pseudo-Hanzi visible.",
+      "status": "PENDING"
+    },
+    {
+      "item": "Lyrics use correct glyphs, avoid eyes, and stay in the required safe area.",
+      "status": "PENDING"
+    },
+    {
+      "item": "Every named camera direction is visible; reduced camera angles and retained fractions reviewed.",
+      "status": "PENDING"
+    },
+    {
+      "item": "Every shot/action/pose is present; rendered contact and choreography satisfy the brief.",
+      "status": "PENDING"
+    },
+    {
+      "item": "Depth/layer borders and disocclusions inspected at100% final resolution.",
+      "status": "PENDING"
+    },
+    {
+      "item": "Contact sheets, type peaks, six hard cues, scopes and camera strips visually reviewed.",
+      "status": "PENDING"
+    },
+    {
+      "item": "Normal-speed final playback in VLC and a browser: motion, dropped frames and perceptual audio reviewed.",
+      "status": "PENDING"
+    }
+  ],
+  "optionalEvidence": {
+    "assetMap": {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/helper/asset_map.json",
+      "sha256": "65f21fbd3058b3510a2bd72682265915b62289b873359cb1918b9c3d05c36c89",
+      "bytes": 187190
+    },
+    "cameraDiagnostics": {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final_camera_diagnostics.json",
+      "sha256": "e29879cb0e05a0be869107ff95e4814a5aa55947aca66e3059e2d51e2086f320",
+      "bytes": 1105660
+    }
+  },
+  "scope": "No model identity, typography correctness, camera faithfulness, normal playback or aesthetic pass is inferred from file metrics. Contact sheets are evidence awaiting inspection.",
+  "evidence": [
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/S10_hold_strip.jpg",
+      "sha256": "c1bedb58b19dc5d9a7ad7cc270a121eefd3865367c4e7ba86c3a33ca2cce5006",
+      "bytes": 39302
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/av_correlation.json",
+      "sha256": "6edca1639414c7677c88359058bf9336c116883e2c2c2652cb7ba9bd8820ec76",
+      "bytes": 81970
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/av_correlation.png",
+      "sha256": "1a6c21061a3bca8e3000c744d9b527965df4214756dfe1ea2e7e587a1ab1c260",
+      "bytes": 244221
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S01.jpg",
+      "sha256": "6a347dc1dc0b702b89e25c316f7d8436ec1d07c7345cb254829c48f764f47abe",
+      "bytes": 101066
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S02.jpg",
+      "sha256": "a426884e9e73171deb2c1d2e1ebf7e8863f262a4092df7b5082e64d4ba7cae63",
+      "bytes": 183156
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S03.jpg",
+      "sha256": "f55a94c1ba8d06a7792e461c49434ff352f15e4dc19f53bdcb46332c5210f981",
+      "bytes": 194168
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S04.jpg",
+      "sha256": "85b24f1241c8545d613b21dd66c827204ac7d23afd4fb8617e9228c798735ce9",
+      "bytes": 187150
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S05.jpg",
+      "sha256": "5fabf07ced6fca2d0c4d3681dff924ed5f4bde59efa8a14d2be98609c8e40164",
+      "bytes": 136595
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S06.jpg",
+      "sha256": "4f698e12776393416a7292d5a1002d39830968f46a3855eee8a02a26c1974aa7",
+      "bytes": 122039
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S07.jpg",
+      "sha256": "8cb67eb039590734f164e4fb4ea4599cb308b92927c9c0b27e363e08a6266cb5",
+      "bytes": 224780
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S08a.jpg",
+      "sha256": "a3337bf3b6b4462e72e4d5943fd97ff5b4fcc1a2bff05862f5a28a9abc4598d9",
+      "bytes": 161389
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S08b.jpg",
+      "sha256": "10860f7f34e0fc268f563ae3bdcdbfacb3549aee700e8e63d7d3616539a3cccb",
+      "bytes": 64438
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S08c.jpg",
+      "sha256": "45a163979fcf8ee62a7c71d2a46b3771ebd31ed7327bb66f54b93fc25443b4f9",
+      "bytes": 133807
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S08d.jpg",
+      "sha256": "87b9ce3851332ae632490424b8915c7c86a9d5881b301cddd6b05ba9ce4f7fe2",
+      "bytes": 194424
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S09a.jpg",
+      "sha256": "8816a235d3638faf1e81985003e793e7901856f891ee94368a2d6820d79a674d",
+      "bytes": 137594
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S09b.jpg",
+      "sha256": "2d6ce6118c2862b355b242d8e56198171a10075fcca0c6063af7b73c52284bab",
+      "bytes": 64419
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S10.jpg",
+      "sha256": "3b3d23287194789ca2220d2218c356ce158f94dc887c6ef08a78f7f26e6af1d2",
+      "bytes": 46931
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S11.jpg",
+      "sha256": "19fca39f91963d457d3915dfd65122125ba513a7993bc095a9c1f9a5d6dd8efb",
+      "bytes": 118819
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S12.jpg",
+      "sha256": "f34d61ec4540540c283bc01559b1388be79f9560a6dd43472d44f752091156eb",
+      "bytes": 212208
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S13.jpg",
+      "sha256": "0337aab53a1eb05b9566da06e29c12495b47674f6fdf9491b47a5a88d96e64f7",
+      "bytes": 240511
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S14.jpg",
+      "sha256": "cd1f3dcf005bce46d98599ce8d87b8682ca4ea87bbc87e4cb2250c7e89678f1f",
+      "bytes": 245567
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S15.jpg",
+      "sha256": "fd6eac1af8eac743f3d8716383aa05c137d0f15d57fae8ea75a42e9552cb28fc",
+      "bytes": 230420
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S16.jpg",
+      "sha256": "ccbf57ff32a57ec21c19c1ee7f646fa4dbd794fe1a4182fdce9542b5d9923b22",
+      "bytes": 100493
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S17.jpg",
+      "sha256": "7d23bb2cad12cf19e43ce8a46b5ce838a9157ac725eda819cdc7380b74920d0d",
+      "bytes": 126450
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S18.jpg",
+      "sha256": "98cfde118e5c72994e48cac1c304ad8b0df53836c3bce8d2fb7db064fdb607a0",
+      "bytes": 145485
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S19.jpg",
+      "sha256": "b0e30cbf5dcc5da1be74c24ffeccb5513fcbd0064b18644c28b5d32a82096a90",
+      "bytes": 143277
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S20.jpg",
+      "sha256": "0e2276d29d630f2fd658fa1c72c615b02de913c9d0c5db7ef3d39934f6b04a52",
+      "bytes": 132130
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S21.jpg",
+      "sha256": "3beac82c44303083ccdee20af32d8a590c2cce8ee1944c5146b0d1a1ad439e17",
+      "bytes": 168690
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S22.jpg",
+      "sha256": "7e73f7877c9f376412fb01767133f490453a87c6d84f62a92b9f28be0275c3ab",
+      "bytes": 210781
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S23.jpg",
+      "sha256": "6390104dab7ff40a6a1799d0b326d5c7c386e1e81abb79edf51c2aac538c1d46",
+      "bytes": 212045
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S24.jpg",
+      "sha256": "5b1881af7d0c0c85d1b9361c9873cc8a6657dff8bd3f06e6adf16ede84ce9417",
+      "bytes": 233008
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S25.jpg",
+      "sha256": "647db63a17c75f1868bd366b82b5545942e2458660bec1a9ee620ff528cff454",
+      "bytes": 267524
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S26.jpg",
+      "sha256": "ef1d9d9cadcdde47df3a38c4239fd33dc11ba2dece593d4683eff0c8914c8338",
+      "bytes": 214418
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S27.jpg",
+      "sha256": "b48a3169064a02125ab5a92600b4dc5ea520e9b2e5da519e24c86b9d1143f02b",
+      "bytes": 158675
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S28a.jpg",
+      "sha256": "1ae688da498d16c3dee4763362d40007ad7a384f8343d7c9996d1bdef61ffd05",
+      "bytes": 143175
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S28b.jpg",
+      "sha256": "8e3ece3181b44171e6aa9c1ef636ff54a15568bd7f44cb76b23b54a888f89cb0",
+      "bytes": 77656
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S28c.jpg",
+      "sha256": "9a8e77bc65bf5c395ab035cad61455a85d0d344ee532fca09db1d9735e102927",
+      "bytes": 150992
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S29.jpg",
+      "sha256": "db60729553eeeb89aa20ed5a8488e9560b9c1f74f249d8347eb0ca278fd82df7",
+      "bytes": 65614
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S30.jpg",
+      "sha256": "2d6f25eee4653946868d820954878b3f8430769fd7a494c832dd14f171f9e3b3",
+      "bytes": 236835
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S31.jpg",
+      "sha256": "06b2c07ebe2ea62b593256f9d379a581911f6cb207e143650843ce18c3a263a0",
+      "bytes": 263820
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S32.jpg",
+      "sha256": "518e5e1b02d49d3d1442dd234019bc08d8316f5c72e0fadf051581d7839bfc38",
+      "bytes": 154060
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S33.jpg",
+      "sha256": "454138a582df6982797c295686f1f986579621c19f5b91859c5825bb9704f285",
+      "bytes": 249361
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S34.jpg",
+      "sha256": "c3636e1cfd068a50b5ab9c86c9f6d9f14f1773f6143840c318b73d86376923c1",
+      "bytes": 216929
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S35.jpg",
+      "sha256": "223b345f7c5ee8ea7251e09b7259ad51be32d64acc01161a4a7173722e0f8db9",
+      "bytes": 228493
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S36a.jpg",
+      "sha256": "7a7501c3ac7e64946b861f0ba2504399a527264d0390d2365cfdfcc5ebbbf0df",
+      "bytes": 79666
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S36b.jpg",
+      "sha256": "8bddca988e2919ea028747a22cdda814f8ee4afcbf9a1c123717cf94ffc897bc",
+      "bytes": 99377
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S36c.jpg",
+      "sha256": "bb41986ca41aa25a21b7698c75c88b332896de8363e081c15e9f562ce4a744f9",
+      "bytes": 96145
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S36d.jpg",
+      "sha256": "0f34b07c2fd67e571cd8f6b87db09fed6e3543c91a72c6c208f5017f2edff444",
+      "bytes": 71166
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S36e.jpg",
+      "sha256": "e10cac5f0e2a020f1701713b65787da0b534bcfa19fffe4f90322560dcf2effe",
+      "bytes": 98015
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S36f.jpg",
+      "sha256": "c72c694d888b36af38e78f0f97af17c359ef3c770e68c222fc993f2dea62ce05",
+      "bytes": 102773
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S36g.jpg",
+      "sha256": "263a651af21638d4fc06b1a96f021b870dbe8a5623b21c6bd8250b335740d847",
+      "bytes": 92180
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S36h.jpg",
+      "sha256": "2fa71de46f21af76291cb752f01260082c13af675a04a785e31f2b21be296652",
+      "bytes": 86508
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S37.jpg",
+      "sha256": "00948f5f5ccb4429be1329f77e7fabaceb7a1839309ed272aaa0a17e2a4c70e3",
+      "bytes": 77213
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S38.jpg",
+      "sha256": "b6fb815380122d8fa9fcd6baa7be06d0eb81674c840fb61f9f3dfe2660ca9fc2",
+      "bytes": 98688
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/camera/S39.jpg",
+      "sha256": "2c1dbe8cb73c831f1229d2c702599a758d2a24d7fc605299dbd123650837d40e",
+      "bytes": 51382
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/contact_sheet_01.jpg",
+      "sha256": "401a99f6db124113cf3be65996e180bc833b3af4991dd297bd5dfb7d7e4ef835",
+      "bytes": 2524594
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/contact_sheet_02.jpg",
+      "sha256": "0f2d8fe2bfa7ebc5e6538bea72081dd3ee8764dcf3ed6c0a4415f5452d5d0552",
+      "bytes": 2829460
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/contact_sheet_03.jpg",
+      "sha256": "7b6c611806efd61d95a5ad480dadaef1c041a786585709dd479b3a7dd99c0179",
+      "bytes": 3268331
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/contact_sheet_04.jpg",
+      "sha256": "cf846ebbea7b204629ec6002cc63b7a6978ffdcc94cccb212145c8cce4a0a509",
+      "bytes": 1899022
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/decoded_audio_alignment.json",
+      "sha256": "b208f80637857e3ee49d4acf9709a3671b1be8860838b423bde0ee962383b51c",
+      "bytes": 446
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/duration_comparison.json",
+      "sha256": "6efd051a2bd6eeebdc43ec49d59ea214d8b25c3358038babcbfce3b5bf52b3cc",
+      "bytes": 5004
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/duration_histogram.png",
+      "sha256": "2141a3819e23e49aa41543c56a32373bfc42ba70cd4435d1ee2c6016629b0b4f",
+      "bytes": 48276
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/ffprobe.json",
+      "sha256": "ea05e4130072e7dd220cf6d9c684350c2d4a52901740f947a74d1418dfd15cef",
+      "bytes": 3516
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/final12_hold_strip.jpg",
+      "sha256": "d59cdb860b589120af383712f29a7989f77f1b5c5c53c19285c4e84af7ab8266",
+      "bytes": 57822
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/final_audio_packets.json",
+      "sha256": "f68c6bbe0399357292fb40db6ad9e42b9c6f359702b5fb92d88165ac3c138421",
+      "bytes": 304309
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0000.jpg",
+      "sha256": "458e96749e62d42a9b7f456c86e8c258a1b7495e9200fc91c5c261867f9afb16",
+      "bytes": 4197
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0010.jpg",
+      "sha256": "0c2ee7d42391f9249f6b7749862b6022c41f4adb6f688ad2b3b0cfcb537a64ae",
+      "bytes": 43139
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0016.jpg",
+      "sha256": "99f379b1a497adcd3411f8e871facacb205487b94a246575112dc1b7dce416a2",
+      "bytes": 43394
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0021.jpg",
+      "sha256": "eb038712a8e78093e26e09d0e7a4fba26b665cfec2f8860ab3116db7d09a3e81",
+      "bytes": 43481
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0031.jpg",
+      "sha256": "e7d660a98e311cd592f8c5eff87ef3ab3f50de72024253a0dd00291ce1494c40",
+      "bytes": 43742
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0032.jpg",
+      "sha256": "173d703f174b07dd4c522d7baeb1a5479fe11d3ff2303bbaa70ae2547e42ebef",
+      "bytes": 55552
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0045.jpg",
+      "sha256": "c325f4f5e8448d2ea063977807282b254a4a56eca8dd1a519840b20e0d7b5c0a",
+      "bytes": 55537
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0052.jpg",
+      "sha256": "1a464199de8b1dce99e64045d6efacc25edcae81d6fc803fe38e8560b7a92209",
+      "bytes": 55374
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0059.jpg",
+      "sha256": "7a0635d008ae75dfb6775256cbabffb78e0c933af0087383b775b09686070187",
+      "bytes": 55610
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0064.jpg",
+      "sha256": "ea8c9f72bc8d098f7f7416801a3492f1d33b2425aae90f57570a8d26e2c95e95",
+      "bytes": 56133
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0072.jpg",
+      "sha256": "5192bb9b3431d579af92afa5c8f3bf3216b017041d59ad5fc08ae6fad7555697",
+      "bytes": 56731
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0073.jpg",
+      "sha256": "bdc1508e99acc3860eaf0862f8236f62e1d9bc4808d3136855c0d0771084543d",
+      "bytes": 61729
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0086.jpg",
+      "sha256": "6a955424344c50190306f0e3cfb1cf6fa752b2ef1bb726224e2cb7927cdfc0ce",
+      "bytes": 61196
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0093.jpg",
+      "sha256": "87c5788f44a505904f274a11ab26682cb825f1be67906de78fe307b7478b2f0d",
+      "bytes": 60606
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0100.jpg",
+      "sha256": "9a49e45ae12fa784debebf2a67a6c1afc6d9de6f2636950b785ad60aaa087038",
+      "bytes": 60773
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0113.jpg",
+      "sha256": "dda9627c17c689afca5ba4decae015b0774f89e5cce915ffa0cd5b4ebf69a0d6",
+      "bytes": 60969
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0114.jpg",
+      "sha256": "e06be39d4d8a9cb69ea08e22a6a20f5af0bf53185578cff940837ac2fefe7263",
+      "bytes": 59206
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0127.jpg",
+      "sha256": "cd98b68ced108e9ce7d13a497243e960ec616392dde430e3f54881882fbe8bf0",
+      "bytes": 58634
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0134.jpg",
+      "sha256": "10b79071652985f091ad732b3e46261837936b231d7f6f8eeb3fd5df88068df5",
+      "bytes": 58516
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0139.jpg",
+      "sha256": "733b48301685aa031446523de812ab1648f86f4793a71412cd5c943be7c066cc",
+      "bytes": 58760
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0141.jpg",
+      "sha256": "23b9dc6586670915c69cfeaa052ec58d78c0b8d15db97a0b21a29e24be60c634",
+      "bytes": 58861
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0154.jpg",
+      "sha256": "1fc156a52412c058f88e1a173451aa1eee35abab3e7656b82b8e4cf7fb9bda4c",
+      "bytes": 58915
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0155.jpg",
+      "sha256": "78fbfe754596064123a38f19249e3caca3c9ecc198ba59217f2a3bf3b2711872",
+      "bytes": 47305
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0168.jpg",
+      "sha256": "6c82ff8572d420b4edb53125c21f63780b99c9a9cb8a7a70928516f1803c2713",
+      "bytes": 38205
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0174.jpg",
+      "sha256": "09a3cd166c312e425cbc8831be4293aaeef1733a16e6339a1314f5d1304d46e8",
+      "bytes": 38007
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0181.jpg",
+      "sha256": "e7b455d289a19e9ab232759cba0d76dd0e15eb998a0eb29d3c55b103b6023544",
+      "bytes": 37859
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0194.jpg",
+      "sha256": "0153c237280d1f105659e8a9f0fec634fb1aea44462248618a31f86ae410f65d",
+      "bytes": 38163
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0195.jpg",
+      "sha256": "afa8edb0fdd0be0ed1afe98a33fda7ee2b5378ea3da3b76b070c950bc886abdd",
+      "bytes": 41693
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0208.jpg",
+      "sha256": "71460c959d0b72670e1cefec06b4dc0afafe5c63ba9c104f95e2b1f97eef1928",
+      "bytes": 41777
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0215.jpg",
+      "sha256": "d3118bc41cabb5a52417a5b5aa9c1606430ad72027a8dfc91773942ec7d2cdad",
+      "bytes": 41608
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0222.jpg",
+      "sha256": "8bff50ad0c74d4ef9315e040aa446426b88e2a1ec314685ee3b57eeaf70a5ad8",
+      "bytes": 38421
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0225.jpg",
+      "sha256": "88b4158606f9e9b9432be4b7bef98ceb0dd23317fc85c0117429ff5836f2470a",
+      "bytes": 34341
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0235.jpg",
+      "sha256": "0737709ceaa48d08ae0cb7f6eee9ea853e1b51275aba6b4584b0cc7d715eb260",
+      "bytes": 28835
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0236.jpg",
+      "sha256": "11bb9b8876c5cf81c9760252990520dd52c2d4ef3922d155786387ae3a6fb802",
+      "bytes": 71948
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0249.jpg",
+      "sha256": "73d6b2da482b252d02af53ee38e12a9100ae3f56d5fdb7ab7f1b709c7878dd07",
+      "bytes": 71763
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0256.jpg",
+      "sha256": "ed026aa7a13ecda7e758a98197e82b27d06e2d3b69f2d4d9641c3a1686ca72ce",
+      "bytes": 71825
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0263.jpg",
+      "sha256": "c86d7fd630e65442196575fbdcd12d72151fb1e740b479f8951e7207301e1219",
+      "bytes": 71812
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0276.jpg",
+      "sha256": "0e90721c604926abcdfcb2fa54c885ee41fadd60c372497e2fe7c271850ca2bc",
+      "bytes": 71879
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0277.jpg",
+      "sha256": "f52bf87d65ff5c3a960c71be7bad7d5d5d12fcc266005a84f158994c7a26bba4",
+      "bytes": 51483
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0280.jpg",
+      "sha256": "c2a772cf7d88ba8dee74cb3a0e8f08a61582431d14f44c8211dc6f2768064760",
+      "bytes": 51344
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0282.jpg",
+      "sha256": "246b1374881a74967b98208b614f66b8348a2b9a77798718d4ac5bbded488a72",
+      "bytes": 51097
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0284.jpg",
+      "sha256": "ecad194e3d3ccacf8d78bc164582d94f0188bf9b684ccafe07f5ad8c8b9dfd93",
+      "bytes": 51378
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0287.jpg",
+      "sha256": "ad4b44dac9c850ee368437aacfb1dcca0bad7e78568eedf1b75ce5a8c1ba97ee",
+      "bytes": 51985
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0288.jpg",
+      "sha256": "b08c8530116db52f828b4ea7f7431ca80908d7b37fb342f09550a3489c81f2c2",
+      "bytes": 21081
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0291.jpg",
+      "sha256": "8d3fb457497ad89002bd7bde9a67c641a76673d97287da82fe7037447c22c8a1",
+      "bytes": 19048
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0292.jpg",
+      "sha256": "4272e91125c5a28d99b8faa11fadf379a00f53f5508d0e5cce1fc415b5d3812e",
+      "bytes": 17981
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0294.jpg",
+      "sha256": "fdc2fa06a4ec3430fd04dde698bafe33933a91232b1a974abe36568a743c5c11",
+      "bytes": 17403
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0297.jpg",
+      "sha256": "4d1ba34d24e76496f76fe7e7a261fef56ef5f850a7e75d223dd30c02e203fd38",
+      "bytes": 17262
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0298.jpg",
+      "sha256": "56fd3af29ee7e0032ab83c101b07d416b1b75012d95d64a7b1d9b72505737c9f",
+      "bytes": 42535
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0301.jpg",
+      "sha256": "f760c9ff6b01770993a2725cec108166696d92fc59c059bb95007e40f0d7e665",
+      "bytes": 42580
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0302.jpg",
+      "sha256": "37a29442c0c221f07758575b6dbf6258e61c230668c4040ab800fd654eb7adab",
+      "bytes": 42573
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0304.jpg",
+      "sha256": "d15d75bdb641818ed57b96b60903ca770e7ec29c9fe1d53b022fef8503f85045",
+      "bytes": 42688
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0307.jpg",
+      "sha256": "3727584a64a12752a2f1fe4e81edbe4fa7e338247e740e5d036e14134b30fce3",
+      "bytes": 42656
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0308.jpg",
+      "sha256": "131dd9deb9a1ac6d20760b9da3db40bcf92454141d9d93a691c30b499c01936b",
+      "bytes": 62626
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0311.jpg",
+      "sha256": "61e4ef374a18a3387578dd07de08235c102c61fd4da9dbd5e268f00e41675f03",
+      "bytes": 62699
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0312.jpg",
+      "sha256": "03f0ca229de5c401b5ee9f1a719e9dc71bcd3a700ae9b86046a16ed8c7855cbd",
+      "bytes": 62836
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0314.jpg",
+      "sha256": "c547c0760a0c3283ec9727ee4dc3ca8358b7cdae5a48f185f3a58107dc639237",
+      "bytes": 63284
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0317.jpg",
+      "sha256": "02811c65d4021d3b685fa7eb56488912a84289294ef144e45d83002602fb7aaf",
+      "bytes": 63350
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0318.jpg",
+      "sha256": "38830ce17b76d17c7fe5762d76a37a5e66b24ad22f03a50fdff3030b1b039996",
+      "bytes": 49618
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0321.jpg",
+      "sha256": "fa7f6d2b683485dc78339334a0302f03eb1b4409156a03a2307de8faefb3c6d8",
+      "bytes": 48117
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0322.jpg",
+      "sha256": "3b35e43fb4c086b4578c3ec4d0dd7717e70e34ed6bd0c649b7c8bfc769d9d3ec",
+      "bytes": 46754
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0324.jpg",
+      "sha256": "dfd6f0b861e71154b07252324d0a8ced543cb4440de453c87d4a06eb9a2a0928",
+      "bytes": 44087
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0327.jpg",
+      "sha256": "d4111bdae6e80be445559b01b625c808b9c340e57a7b9004f8417c30ce8732ee",
+      "bytes": 34256
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0328.jpg",
+      "sha256": "f563b4fb759592da0843444e56fc0b95c7fbbe15164d1fc0a9b4565b9bf22035",
+      "bytes": 21491
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0330.jpg",
+      "sha256": "6822813de1340d96ba0784f9eabdad4f091daaaa14f9c3c6a039d5b4e0131f4f",
+      "bytes": 21512
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0331.jpg",
+      "sha256": "a71aee8e3ecd5c7c2d6fe265b6234ff75858a50e003dec000c98af737f635911",
+      "bytes": 21608
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0333.jpg",
+      "sha256": "14b772faa241d8cf732a2c2fc83f2b28faeee46b6718eaebee4ddbb32e36b67d",
+      "bytes": 21941
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0335.jpg",
+      "sha256": "bf3620fbe2c4b19ea99655d718eae879aa8634648baedbb464e1db629abfc7a6",
+      "bytes": 25621
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0338.jpg",
+      "sha256": "f548aaf279fdc01838dc6101953d3123f63fcef0ae3c5c4c5618436f24ad5811",
+      "bytes": 11088
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0339.jpg",
+      "sha256": "86581e39a9adff0ab2401f81d3a4a92fcc897361b7e4e93960179ea9115b2188",
+      "bytes": 10601
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0345.jpg",
+      "sha256": "68bc1bef586ebef90891547fa91abb47c20f38f0731dcd976b5d5915ac61cc75",
+      "bytes": 10608
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0348.jpg",
+      "sha256": "b48c2116d105162716497db0e007796c8c4656053a3223a980cec39c864d929c",
+      "bytes": 10612
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0352.jpg",
+      "sha256": "f7f33468cfb72f2d73dcf0e183d9329ac1cf9ed197bdb4806d2dc29ac6506cca",
+      "bytes": 10612
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0358.jpg",
+      "sha256": "cfac7574c315d73e83381b3c2d4a4cadfb6d9b0758793b27c72d5d3af78ef286",
+      "bytes": 10603
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0359.jpg",
+      "sha256": "d45d740329427e1b24d6a7c43ee47cd491a5b770371fc0a711ef566ed7241f29",
+      "bytes": 4197
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0366.jpg",
+      "sha256": "19e6d8468702cb416cfa00eea8d2cec11b1e1b2b3d91b2e805112a422758b12b",
+      "bytes": 43656
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0369.jpg",
+      "sha256": "688d3eabd9d89f470c81078e75f2198114ad72796e39beb0ea4de8ca39b0c6d6",
+      "bytes": 47732
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0372.jpg",
+      "sha256": "7bbc45d7bc2fde177612fa636dbca2099f899346246ba3b7e68c12f5d70b96dd",
+      "bytes": 46952
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0379.jpg",
+      "sha256": "78e3689ce08747544e5d6f9c89fb0b8fc5eec0f3c29630909b3623082366acd0",
+      "bytes": 48864
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0380.jpg",
+      "sha256": "fdfd0616c00da0a5784d1707058aaf0aa4b39f555e36a3d5b471d70b9ff95d46",
+      "bytes": 66667
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0386.jpg",
+      "sha256": "7ad77d1879e374dc70ee84e3f2ff51135a9b1822d56dd6d7dd51c8b32e0210e7",
+      "bytes": 67014
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0390.jpg",
+      "sha256": "1c5accacb8d9b9515c0b3721c5733c6fe47492c644ddac4dd764f0aa6a31d26b",
+      "bytes": 66922
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0393.jpg",
+      "sha256": "b735b671bf2728fe6fa11944d9e62dc41f6beaf142ca3dfd55f0f46e5a8a10df",
+      "bytes": 66947
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0399.jpg",
+      "sha256": "8b4aaa8be3222191e750b3d391cbf5dff2b868439d818202da3a22014e5b6c95",
+      "bytes": 67476
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0400.jpg",
+      "sha256": "fc39619d1ba9754d32c03a83358e6624f96f51be3dd7041961817215efe8f774",
+      "bytes": 77961
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0413.jpg",
+      "sha256": "e6090e64cbadb1880a3070ed70d14e88f08619cfdb616b5d87d2787c5693ab46",
+      "bytes": 77029
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0419.jpg",
+      "sha256": "ca749994304015fa21a8361e1df7c21c69a8ccd09d47a5ec4caadd65c58cebd4",
+      "bytes": 76949
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0420.jpg",
+      "sha256": "3bccae4dbb69fa6ed2048f4b3ee9dcb02953b4bb1dcd23395a79e57eca59df25",
+      "bytes": 76919
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0427.jpg",
+      "sha256": "da8c78147ffe67da00c5d7277fe0e28ebc0cea5f82fa26915f6e4a3b154a29ba",
+      "bytes": 77136
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0440.jpg",
+      "sha256": "1803dcb5808d0a29ec6fac57ac1942a2ecb443ad059772e0cdb7cc955c898d8d",
+      "bytes": 77059
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0441.jpg",
+      "sha256": "8c001121eebf1fb35805d4160157c21b24b8f6d2e2280409afb5b70670da07eb",
+      "bytes": 78727
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0454.jpg",
+      "sha256": "4f43f029942fc51b5117a5100e08305b0e467f6179e8f5e28b70e3eff7cd5981",
+      "bytes": 78032
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0461.jpg",
+      "sha256": "09d8b84ac15cef9ca87e820f04a1007074a91f764bdd8163871c71d977acf06c",
+      "bytes": 79622
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0468.jpg",
+      "sha256": "f90cdbe64581614761b2b4baacdaed28771bac4f66ab473672ea2921247efa85",
+      "bytes": 77411
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0481.jpg",
+      "sha256": "5c751843d3502e3f9da0dd66c3dedef253119fef3a74c7aab847b388e2b01ca5",
+      "bytes": 74035
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0482.jpg",
+      "sha256": "29c76056ce50e5874b8d0ae295f85e9e813aaecf2331d3a842535f6575f6b342",
+      "bytes": 73028
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0495.jpg",
+      "sha256": "eb8e0db5c5705d684caf63c9140a73d36114a525b9736d77e8b4b85d1aaeca6d",
+      "bytes": 72296
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0502.jpg",
+      "sha256": "c6784c0b2be07202dcee067a2f180cfb8ec3ae847495ff8112b0e8bf0b8e5856",
+      "bytes": 72429
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0506.jpg",
+      "sha256": "fb827b21aedcc563c278951fa11367739760209f80f9953407c00bfc93365d06",
+      "bytes": 72353
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0509.jpg",
+      "sha256": "7e948b3366f03b72ee452679925e637ab41315454f4b6ea281f582843cf79c78",
+      "bytes": 72129
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0522.jpg",
+      "sha256": "08fa6a45b4a6914106801cf6e715bb57a82efbffa8b97fd3c056e2704d6576b3",
+      "bytes": 72444
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0523.jpg",
+      "sha256": "873ae8e16f396726f48e275bbe7524e590c9b0130dd193174f5e56e35aa7b744",
+      "bytes": 31003
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0529.jpg",
+      "sha256": "2029bfc7c2b5e6ad8f89054035c4171de30ea93f72b329defe5c78f95afa1b6e",
+      "bytes": 31887
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0532.jpg",
+      "sha256": "4e15ce720ffd710a147fa7b9ea7387cdc2f90bc3d9eb242e8c9a5a0dffccb03c",
+      "bytes": 30519
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0536.jpg",
+      "sha256": "88e43e239c035c3bf51aafa97ad4d8bbe2131f6e7a70ea31541c419fce58794e",
+      "bytes": 29313
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0542.jpg",
+      "sha256": "a7602917c2e1e181150417ee84947a21f0d156507d1ced4ac44e6db2ec5ee6cb",
+      "bytes": 30213
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0543.jpg",
+      "sha256": "eb16d9483eae5ef0d65c99037b8d03f83aab288a27ce487c32ac6c911245d252",
+      "bytes": 37979
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0556.jpg",
+      "sha256": "418da84f96b5250ec87ec1e2a3b06314905c87b64f3bb1d77550f789acb104ae",
+      "bytes": 38180
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0563.jpg",
+      "sha256": "3e859728f77b98a7efbbecd3e65a7f19428c122e9d8d9542f3e0f61097749306",
+      "bytes": 38373
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0570.jpg",
+      "sha256": "51a46dd284dd40ce18665d92911892ecf4d4bcab9e3b9ec4bdfa7f89645a934c",
+      "bytes": 38634
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0575.jpg",
+      "sha256": "34455f05e4d78488806913cd3555f10368fd3b7566d3a4ef92b27f1605a64342",
+      "bytes": 38855
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0583.jpg",
+      "sha256": "a28c143b3cdfc834224cde03e2413c12062ef68107bb1d9cf4b3019312623029",
+      "bytes": 39701
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0584.jpg",
+      "sha256": "7b18c7b6547e97804253e4efa955cc16107f4ca100f1048c39d881caf7bde6c3",
+      "bytes": 45820
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0591.jpg",
+      "sha256": "b16c0dccae757a8cd6763724260a7d8a943a3cfc8feaf157baec897f7c514f19",
+      "bytes": 44849
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0594.jpg",
+      "sha256": "574f846521ebaf341d22c909c0eb323728a6ca2d607c99f0ef82b3cf42b53bf3",
+      "bytes": 44578
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0597.jpg",
+      "sha256": "182c213ac2137adbccd7a037d9442ace5705955b26de5f4e94826a861c68731e",
+      "bytes": 44128
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0604.jpg",
+      "sha256": "ad759d5feed9de40b7b745e5db5d5dea48c82779534bb1bbf54c636429a16180",
+      "bytes": 44208
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0605.jpg",
+      "sha256": "c8ea6dc34b9eb3b25056d037238dd7271ec679cdfb57d20ec381a06228d14eeb",
+      "bytes": 43186
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0618.jpg",
+      "sha256": "868c5a97d3c4be47602718ed04609129e0dae791fc652b549d70dd7882ee43dd",
+      "bytes": 43147
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0624.jpg",
+      "sha256": "22904822b067ef2d76e7cbcdbf2c3c7e5ff6fca974e55a3442df48a8910431f8",
+      "bytes": 43157
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0631.jpg",
+      "sha256": "e0b204a6ffc90617652ad0b01760109890d60e0b803d4e6f992084b09b465ef1",
+      "bytes": 43143
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0644.jpg",
+      "sha256": "3055b4db00a8c97e8e67b9967ba95ddbc0a8b1356d126c8082a570e00ca6ae53",
+      "bytes": 43706
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0645.jpg",
+      "sha256": "440b7ff55533db226638031da1298c7a31778ef91435f97e1c22f4076777feba",
+      "bytes": 53740
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0658.jpg",
+      "sha256": "4469eb1e20b1c7f310f3e1e1d0289674c40bdc3419bb1e81ce7b96b70599e722",
+      "bytes": 60419
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0665.jpg",
+      "sha256": "b10cc68631b09680260cbc074f1c122965a97c681d9d1f856fe3dd0cdb37af97",
+      "bytes": 63089
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0672.jpg",
+      "sha256": "330622770746683a7d72f04e9748aad6af549a398984ff2709ef8f5a69e6211c",
+      "bytes": 64347
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0685.jpg",
+      "sha256": "d45d740329427e1b24d6a7c43ee47cd491a5b770371fc0a711ef566ed7241f29",
+      "bytes": 4197
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0686.jpg",
+      "sha256": "d45d740329427e1b24d6a7c43ee47cd491a5b770371fc0a711ef566ed7241f29",
+      "bytes": 4197
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0693.jpg",
+      "sha256": "f9b2fb61cc8ac7c8d2c1f10daf42cd9d8352be312a381621815ca6977f805271",
+      "bytes": 77105
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0696.jpg",
+      "sha256": "c596c973ad91298418402d937e08bb5695d0e6c6d75b27c3b506ae9f1869b239",
+      "bytes": 77320
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0699.jpg",
+      "sha256": "75b19030d6b1a8f25901c73610a8765d18fdd6fac8676dac251d71ae767a21f0",
+      "bytes": 77835
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0706.jpg",
+      "sha256": "9bc55046e520fc58b68922b322e331b58fc62fc57c26185211fae79fe35af557",
+      "bytes": 78200
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0707.jpg",
+      "sha256": "624cc2f1d9d0857afa3673d9ed460e4bb3c36e1a45affa5a3ef27aae082d979e",
+      "bytes": 69229
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0713.jpg",
+      "sha256": "dcd846781c218dbfb9b9c7d874d2c1904e32b7dc7df0540b2efeb471f895279c",
+      "bytes": 69237
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0716.jpg",
+      "sha256": "7d5ede1ceaacdd0e4d531d27da5a43f541787b084872f339a87933cc1c9487c2",
+      "bytes": 68334
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0720.jpg",
+      "sha256": "747a465a6a3c1c37e4a509059968f0a5f89a6908f7148b290bec976627790cdf",
+      "bytes": 66934
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0726.jpg",
+      "sha256": "5db842ae8ef2baae510ba0a321ead456283ef93d2aa94e4654e0b0e90692d67f",
+      "bytes": 66252
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0727.jpg",
+      "sha256": "bca6c5c56a5a57d19032540264e53d0eefab5bcc6d59e9f2d420d9eded277081",
+      "bytes": 67478
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0734.jpg",
+      "sha256": "26574eceda6a2dbb0df647c815a07f33365637de69197949c0dd8509738ed2ff",
+      "bytes": 67610
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0737.jpg",
+      "sha256": "0fb4362d8a8657a8d1d1027eba42609bae601c230a17b779677e4ac9d8b6fc97",
+      "bytes": 67565
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0740.jpg",
+      "sha256": "b768845c8628e842e01c591db43d6a84ddf7432cc41f2558467cdc9ba2f79426",
+      "bytes": 67539
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0743.jpg",
+      "sha256": "d8ccbf5abfcb17f569abdaa21cfd6366c1c477e79863176bfbc0141ce0b81901",
+      "bytes": 67611
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0747.jpg",
+      "sha256": "1887aefa45462d8afafaeadcb8ccf6e147e6c3f7b0fbe3aeff7a1a4b395a09fa",
+      "bytes": 67781
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0748.jpg",
+      "sha256": "dbff93b336d5953f65f4fe108e4b04fcb28848f54657fd9b5e264a95caf8d4f2",
+      "bytes": 73361
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0754.jpg",
+      "sha256": "91afa721d5fb558f8a1e1efda803d3ea21cff022db432fcfb22951d142ee23cc",
+      "bytes": 76430
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0758.jpg",
+      "sha256": "5fbbf11a258edd28821e792badfe6d68994894229c44d5239b3218b51e598f65",
+      "bytes": 76412
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0761.jpg",
+      "sha256": "daec9057985257a170dad30a483d601245d22c2824d0244d150dbeec9fffca9d",
+      "bytes": 76418
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0767.jpg",
+      "sha256": "faaa1d458696cf9e769fca041cd5348907545b16b4ccc64d293eca6ceb2a211e",
+      "bytes": 76267
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0768.jpg",
+      "sha256": "aa3e546effc886563ca8882851256bf4765cc3f41673e1df288ece637952bd4f",
+      "bytes": 75497
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0781.jpg",
+      "sha256": "49e56e2889c3fb1be9c9ef0aab570b24416d1090f0a088e07541cf89fd5effb3",
+      "bytes": 89211
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0788.jpg",
+      "sha256": "24f8a2884b161132eaa7f91f590a67dbd3e8b1974496f9451fda7dd1f1e5931e",
+      "bytes": 90717
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0795.jpg",
+      "sha256": "abc28089aa6a90f0eceed8cbb29a818e0c0973c6557520dc5c55fc16dbb5969a",
+      "bytes": 90220
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0808.jpg",
+      "sha256": "0895d3614212c5fbf84c70d77b2f15b6e168b05e2f105483415fcc9743b3d4f7",
+      "bytes": 90830
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0809.jpg",
+      "sha256": "befa28b20ee626c989c81da49dbd8f48d39f767aafbe06e1aac02555ddbc40e7",
+      "bytes": 67797
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0822.jpg",
+      "sha256": "0a9262f8239e7122414935635e8995f60a01b5191bf65127cf2ffff10bf8f8d4",
+      "bytes": 67688
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0829.jpg",
+      "sha256": "33566c2d09202d2a134922f432b19b21692adc7c8e969b023eb35b3212a8c1d2",
+      "bytes": 68278
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0833.jpg",
+      "sha256": "b707fb3d730121ed9148e276a836679e810486437e2ffd6a6ceef771df95c542",
+      "bytes": 68611
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0836.jpg",
+      "sha256": "473e4e772b0c55c062f403b4b43b09ebeff9db29cac4c8fa435336801ad35df4",
+      "bytes": 68145
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0849.jpg",
+      "sha256": "4eab49a2fa54a49d48fc9b030fb98d85f9507495f243fea9ee3bae5b3dc4df76",
+      "bytes": 68062
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0850.jpg",
+      "sha256": "9bf6fcf6575cdb556bc59336b770f949777a7b65866c4e7f11603793c6bf04fa",
+      "bytes": 47085
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0863.jpg",
+      "sha256": "abc9f5c7c95b914f640b665d46754a9f41e037109d31bf9e914e95704591e4cf",
+      "bytes": 47469
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0870.jpg",
+      "sha256": "7770346e09b4a81278eaf10f6ca5ff34a0c4788fea0e06c53106a3b54b0c94dd",
+      "bytes": 49583
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0877.jpg",
+      "sha256": "bb1291af1d73374113881f668e06b64e7280deb3843d00e622e9c5b1b0821282",
+      "bytes": 49717
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0890.jpg",
+      "sha256": "3ae71b7e5682145d9b962e18559a909f9a9ab66bfb2e03f8868580b537f96136",
+      "bytes": 50386
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0891.jpg",
+      "sha256": "ec5344c1adb67b084eab963592f181aef6a034f1e539f936b5c5f1ccb21e1d5b",
+      "bytes": 46668
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0894.jpg",
+      "sha256": "6f60ed88490411503a5c86e161d25b83c1d0eb934befc6626997e515a953f637",
+      "bytes": 45881
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0896.jpg",
+      "sha256": "21b24e22714388a0cdc14c1f4406bbbd7855098fc8a36408313e6823f915709e",
+      "bytes": 44829
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0897.jpg",
+      "sha256": "ec4c0f179b5d36ff58f6c2382827986e0bb53a423700a821403385a4cfc72f19",
+      "bytes": 44995
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0900.jpg",
+      "sha256": "9c691b6369c27b31ef41411979179be391cdce10afe3a59110679a0627ac0a7f",
+      "bytes": 45987
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0901.jpg",
+      "sha256": "f069828b39b819babe90d952e0bac628c7bae236f3ac249a471441b033ff84af",
+      "bytes": 24597
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0904.jpg",
+      "sha256": "7927c43f1c7d18e8a0145fce2c1e1602473c15ae753c31cd07c238b2439495f5",
+      "bytes": 24317
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0906.jpg",
+      "sha256": "fe309e77cc14e5fbf1ce5751414d8bcb5c12307d7beacd385d37d13f73eaa3b1",
+      "bytes": 24682
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0907.jpg",
+      "sha256": "ebd39e939532c3f4120e90cb08ce72f3f5d8e6fed2bb8cd81e8b4258314c199b",
+      "bytes": 24755
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0910.jpg",
+      "sha256": "9135e85ebf1ebafd50c1cd4266206803086d57af72ebe948a31a98c3cd01a6b7",
+      "bytes": 22241
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0911.jpg",
+      "sha256": "d55c045da1087b6c3607f29a76f576afb9875b8b5c19119f98f98482c5475099",
+      "bytes": 49199
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0914.jpg",
+      "sha256": "89aa6b687df35a32af26667a2f46b223c863c3e50f32c879cec21a60b7e4c1b1",
+      "bytes": 49061
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0916.jpg",
+      "sha256": "34ef6a863f6d4b89045e2f4ed70f55bb6e912a18a4116353b4d0954edbcf09d9",
+      "bytes": 49497
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0918.jpg",
+      "sha256": "75bb1872b3620240ac1adcc729d0a7d01ff9fd5d2c4e4843c5c63ce5bdb3ebe8",
+      "bytes": 49157
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0921.jpg",
+      "sha256": "db5233c418bf112e4daa53b7cb743d0c3858ac049880472bc017f1135ecbf83d",
+      "bytes": 48268
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0922.jpg",
+      "sha256": "d5138ba1529b1e3c92a9f5376a26e6c5b3bb46beca9111cb1629f24275c60633",
+      "bytes": 21267
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0925.jpg",
+      "sha256": "83e8d6c66bcedd9f40d9fbac027d51e744812435d01202c204166d1d852e5f0d",
+      "bytes": 29755
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0926.jpg",
+      "sha256": "c53e0e72f220129ee0946873bc7877e2156303b65eda6acbbfdf9cccd28fa6a8",
+      "bytes": 28612
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0928.jpg",
+      "sha256": "109fab2b780c349852037ac4ed2f48272c7718e80a57a687ad03b4961d95537e",
+      "bytes": 21921
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0931.jpg",
+      "sha256": "38cb6e31d436d451ee2a3d5356f942c375c6683e7c18f1d1c0267c1cf887c7ba",
+      "bytes": 7297
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0932.jpg",
+      "sha256": "c073726668b5ef777ddf9028e02f324279c369e58fce362bf702ab2a874dbe73",
+      "bytes": 75314
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0945.jpg",
+      "sha256": "64c4d70227c012b89fdf072f420618bb2359586d5e6197320893fc5e9aabb9d6",
+      "bytes": 74926
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0952.jpg",
+      "sha256": "fce6918cf34d9e6d4079cf329cdfec276ea2b08813f8c586098c92dbcad08531",
+      "bytes": 74916
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0959.jpg",
+      "sha256": "ce7e2c22d91a210177485b6b308c975b2249d45e9098b8760a3221d88ee7f96c",
+      "bytes": 75174
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0972.jpg",
+      "sha256": "5bf8bc551435b2abcc9d5505ad7c74ff5454a827ea5dea851c96f28fb4429913",
+      "bytes": 75119
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0973.jpg",
+      "sha256": "10c1482875b1efe55b67acef1793f6491e387201948925294566ddac94629c24",
+      "bytes": 84361
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0986.jpg",
+      "sha256": "355de96d5fa08a20408323c7fd660347c9c0d26d27584bbe1f8b41899001dc95",
+      "bytes": 83728
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f0993.jpg",
+      "sha256": "4ff9a61bfe632166e68a21dc4c6ba70bdba64168ea25a10e208b9bf1ee827472",
+      "bytes": 83538
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1000.jpg",
+      "sha256": "aaa54acf2d586c99042aca76c3c8f6a0ec630f966ead271ff35ff2924026a108",
+      "bytes": 83403
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1013.jpg",
+      "sha256": "792c9d3e58195cd28d160061224a97bcc1262654a361d6643471740919fffc4d",
+      "bytes": 83550
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1014.jpg",
+      "sha256": "d45d740329427e1b24d6a7c43ee47cd491a5b770371fc0a711ef566ed7241f29",
+      "bytes": 4197
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1020.jpg",
+      "sha256": "32045bfc94c9ed30d64a8081c208afc725f76979c663ab98702784174010ad93",
+      "bytes": 71889
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1024.jpg",
+      "sha256": "0c6bb2bbcba9a2f6e4f8ae565b666765418f2207d635420e3c49a0a56758aec1",
+      "bytes": 71637
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1027.jpg",
+      "sha256": "5a54ef5c0b3567e9ec1446ed4133e7f1f474bdab6c0de80de405ed7deca1d131",
+      "bytes": 71277
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1033.jpg",
+      "sha256": "a7777b4077cebb57bbf99ea6a2a1f1ee6fe9907f011de5eca4f10f136ebf1d3b",
+      "bytes": 70321
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1034.jpg",
+      "sha256": "922f654a6100efbbdbea2039a06d2ed2d20e6eac38fc67a0028b61805db2ba65",
+      "bytes": 82257
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1041.jpg",
+      "sha256": "94889b8b85c4802f0a25fff061b99d8d01133e6ba96773491c7090475a15fbc3",
+      "bytes": 80793
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1044.jpg",
+      "sha256": "788c284d2a4f91aa03f2dd70a6d305d636d350730c2b64277e2c0e4e2cd83960",
+      "bytes": 80480
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1047.jpg",
+      "sha256": "b22c660928d793da4395b99aa3e9421c9352edc22b1d71c8504e711ef3e029bf",
+      "bytes": 80649
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1054.jpg",
+      "sha256": "e35ca929733a4433a0aab2bbcf625b44a18b6826744547adf738e59648903f9d",
+      "bytes": 80777
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1055.jpg",
+      "sha256": "dbce25c51ba36e5c15b66146387c516831420de26ce7416cd7599e89d2e8e46d",
+      "bytes": 69853
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1061.jpg",
+      "sha256": "9402b8ea018155df48cba094cad7eaed7f4eebfc0cae205dcd3e4a2b8588944a",
+      "bytes": 69655
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1064.jpg",
+      "sha256": "1e673ec12638793df75f409898e0f5d630c0efc1e767eaad7d944ae3009a2610",
+      "bytes": 70177
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1068.jpg",
+      "sha256": "a384c77095246494ff752b86934b050b492a0dfaa610fbc7e01e44a0d83b8312",
+      "bytes": 70593
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1074.jpg",
+      "sha256": "a069fa34fe6320b524983748b15492bbdd49180736effea96459cf233b6a17c4",
+      "bytes": 70671
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1075.jpg",
+      "sha256": "155a1e10ca9bb3201a73f424dd18e2520fde06ba3e46bdc3edceddd3cdbf4e8b",
+      "bytes": 68451
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1081.jpg",
+      "sha256": "8121402d0ecc64996ea2aa3e91503caf1431e2be206d4813e588853e26d7d3ac",
+      "bytes": 77124
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1084.jpg",
+      "sha256": "6b758801e51d943b465feb9b897aed921f508b9e606ec6370c1d011150bc9dfa",
+      "bytes": 76643
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1088.jpg",
+      "sha256": "f79bf3d23aaf2459029a4d2626c2b8dc5d272aa1db27e93c63e5d4e146161c95",
+      "bytes": 76944
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1091.jpg",
+      "sha256": "72528cfd82194566e191c6eb4685cdd0829e0280b03c3d8d0f29def8c13aa05b",
+      "bytes": 76746
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1094.jpg",
+      "sha256": "074808dd98c9ae39e394a718430d56eb3081d1fd831af5380e9989ef1b402354",
+      "bytes": 77155
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1095.jpg",
+      "sha256": "d45d740329427e1b24d6a7c43ee47cd491a5b770371fc0a711ef566ed7241f29",
+      "bytes": 4197
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1098.jpg",
+      "sha256": "71d36fc06051c3f1cabca0625043cbe018a506da686edcbefc0eda390b392cac",
+      "bytes": 34721
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1100.jpg",
+      "sha256": "52c705e3ac97c8563366ccc5c1c229e68f1b13709d1d5192bd3ba0ce966edcfc",
+      "bytes": 34734
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1102.jpg",
+      "sha256": "2a4dc797b19ad7235f66d9631908ead7b41f88a2f7b3df41b360922bded1b122",
+      "bytes": 34618
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1105.jpg",
+      "sha256": "f6913e07d95b94f8d0180f3b1d2141f91dd961c783093522c70bb538c07bab09",
+      "bytes": 34841
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1106.jpg",
+      "sha256": "6aada67abf537a6f5dea9cc5eb998ba7647638fc68d35c2ecf7e7351667f99c1",
+      "bytes": 32745
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1109.jpg",
+      "sha256": "89a850b67bc61e2db734d5ab3ecee2487728ab7ebc14179881c99d9931c97045",
+      "bytes": 34053
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1110.jpg",
+      "sha256": "38d6d9449b1e0559edb4ee4be0c3204b3b647c513d1a93bc8a0e450033a28afa",
+      "bytes": 34113
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1112.jpg",
+      "sha256": "af0dc98eeef27144d3c2776270e548629314b30210ca953b47a2230848a8487f",
+      "bytes": 28431
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1115.jpg",
+      "sha256": "a7072a591aaa00279fc32dd0aa42e7cd81201c24860aeb806fd283a1835154d4",
+      "bytes": 26901
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1116.jpg",
+      "sha256": "962c62b63823ef7355477b7a8f759b993573399cbe64aa72cef59c3d44ddbfd3",
+      "bytes": 30730
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1119.jpg",
+      "sha256": "2f29f191ad714749ad52c2cc1ca06ddba3ebef3d6a787fb88e1b4288744e3a09",
+      "bytes": 29586
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1120.jpg",
+      "sha256": "ea235bbef9eff9acc38fc1d60d04ff3ca4ec18857ba32a57055faf7e910eb374",
+      "bytes": 29615
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1122.jpg",
+      "sha256": "ef623eb4bfd1d3ead84b0e0977f44f924dd9aa6aecaca485c78f739651b659cb",
+      "bytes": 29702
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1125.jpg",
+      "sha256": "4ba44d8bbcb9ca10a6d4cf217acdac6e388545af6fc58d88fdd0e7879103df57",
+      "bytes": 30097
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1126.jpg",
+      "sha256": "bdbe70a01b0c797f73efa1c5f0a10d338b5bfffbd0d543f323a01d77f3e595d4",
+      "bytes": 21888
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1129.jpg",
+      "sha256": "1db8654fd30e2a5f85e6ed508555b9012996b81e7ec68058f0caddb133ccf8d4",
+      "bytes": 22164
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1130.jpg",
+      "sha256": "ecab8d26ff68e1c0638fe6179950584d002eff2b89427eec7e983494c6a1e5d8",
+      "bytes": 21987
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1132.jpg",
+      "sha256": "f8bf0735753c2a6520ea0879da4ccf9be468b2a36ea5d1a196044104fda8de24",
+      "bytes": 21850
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1135.jpg",
+      "sha256": "80ae86e5c8c763a6b1f619d419070a58a69d00c84afd1d1b8e930bc96284d36f",
+      "bytes": 21722
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1136.jpg",
+      "sha256": "2a8ab49a233bc5ac26f51cecc34e19cc7798dbc63f83b70b5e9eac884f028cfb",
+      "bytes": 30881
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1139.jpg",
+      "sha256": "48aed693fd5e8ed68a9791a7e8793499b08ae2c8d2b862bd4e3ef628148ec65f",
+      "bytes": 30492
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1141.jpg",
+      "sha256": "ad9174f9fd8ca6cf09d4e74b79d233608059fe13a5a1dba92f33612da86c3a53",
+      "bytes": 30338
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1143.jpg",
+      "sha256": "61dd7a8c63c33b8ede230a05a372ee0f78da14c8d4a9bfd356cd27bbfdd0e1be",
+      "bytes": 30847
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1146.jpg",
+      "sha256": "a4db64eb146871dbffedf0244c5645c9c01b94b5ce298ff025692ae39b1e7cfe",
+      "bytes": 31128
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1147.jpg",
+      "sha256": "4718f887635c49abade71137cec06e71df98de877bf0a559de0e832aeb688758",
+      "bytes": 25865
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1150.jpg",
+      "sha256": "7f69120702ad32e8a98601d574a3c1416e5ac4eb4fb9058fbf556dd6f182db0c",
+      "bytes": 34288
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1152.jpg",
+      "sha256": "66560cb345a4bc7360625c4c0158702ab9489f03fa0006715421b917b8158c7b",
+      "bytes": 35867
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1153.jpg",
+      "sha256": "1a5d1f86c7a6873b7ead0d154b03a96915212445fcbb606ff551d1ddba788785",
+      "bytes": 35802
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1156.jpg",
+      "sha256": "d0eb2b159f2dd93efeed961c92aa973478819361ed14d7aea47010f6293d98b3",
+      "bytes": 35041
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1157.jpg",
+      "sha256": "6f15dc267079b4c1765dc6a68fa725acd98e73567cb69ca67a1187089816c7f7",
+      "bytes": 27936
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1160.jpg",
+      "sha256": "d6414c3560d1d2c2cf6d31ee2e43d5a80c661fe1e6ac287cc1dc8c5a1952516d",
+      "bytes": 27316
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1162.jpg",
+      "sha256": "35c725c19c1ca0e3350dcd97e7fef84ccc94b7762e7797659515ae173819c1c5",
+      "bytes": 27555
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1163.jpg",
+      "sha256": "8f0c4ce970632c1267a291bf435279a0b8325597e23cc7bf1b8a900466d0757d",
+      "bytes": 27628
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1166.jpg",
+      "sha256": "c6844bb47dc18c1e2c88e14b0a103b3abe2bd5a46dbd7593a521916189077580",
+      "bytes": 29766
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1167.jpg",
+      "sha256": "4475eabf158cf5e6729d8b91b688957d294bafad5fd4b01d928a811d50fd77ae",
+      "bytes": 26296
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1170.jpg",
+      "sha256": "fed4ee3e8cca63160ade7e7ea6cd7a86d9235f7f648b345ed2bdc11a18bf4311",
+      "bytes": 26977
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1172.jpg",
+      "sha256": "5aa291c9e1f50777760e4cbbdea97b0e51b21b22b94453c2da5e9fd21ca3c06c",
+      "bytes": 27062
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1173.jpg",
+      "sha256": "315c9059248c32642c4d927fb8fbfb359d2bf30bb512f23d5a0c7b4853aab35e",
+      "bytes": 26985
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1176.jpg",
+      "sha256": "8e965d787575120c49bc81b9c6f78c6370a7a99efd7afaefb527cb15e105e555",
+      "bytes": 26963
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1177.jpg",
+      "sha256": "d45d740329427e1b24d6a7c43ee47cd491a5b770371fc0a711ef566ed7241f29",
+      "bytes": 4197
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1190.jpg",
+      "sha256": "bca09f9dac5317122621c34291746fb09bf4e1dce8626089131f27844f4ec89b",
+      "bytes": 46989
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1197.jpg",
+      "sha256": "2771e89de4f4ebc0221121a5f2346fd187e2f3f365b42f434f54fcf71d0a3991",
+      "bytes": 38089
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1204.jpg",
+      "sha256": "1a3cbdb36ddca1fdd2684563ab4b83309ad385c64a21f4c6add4397aacbee9d0",
+      "bytes": 31901
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1217.jpg",
+      "sha256": "fc56aad8cb63068acde4afa7f7c9e9fe3d0fb5fad69855cf36ce1e9b1897d078",
+      "bytes": 25187
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1218.jpg",
+      "sha256": "ea7fcd566580ba57ed5115b96f3bf56c1eb482ab3643d4680a10da86bf43f8b7",
+      "bytes": 24608
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1231.jpg",
+      "sha256": "d4cb62b064b6f216275a2aad64e5bba4ab573ff65852ccb8c91fe18281b4ca3a",
+      "bytes": 52796
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1238.jpg",
+      "sha256": "d69c6fa4583bf02d98e18084c5752b000be8647b9435372e921519ad95b681f1",
+      "bytes": 57062
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1245.jpg",
+      "sha256": "495620cff9d936e12507f1b054cd000bcb96bce96e2a1f915968a0af4a59735e",
+      "bytes": 25466
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1258.jpg",
+      "sha256": "4c5475c817b08043aeaed345cf9eca7af060c3500d0f4d362817182f7384554a",
+      "bytes": 4920
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1259.jpg",
+      "sha256": "df907213308b1ba7415547a8aba8c9a4897a4c55d43b455f331b640a0cfebddf",
+      "bytes": 8677
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1276.jpg",
+      "sha256": "1a433622554b78af824e73e470211a4a6d89c72fecce63a1b8b09ccaf35ff51a",
+      "bytes": 8588
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1282.jpg",
+      "sha256": "3883bacaef7a7aa26875b1dc2a11949ee6ba241a833f29692f55aa23be0a6b8f",
+      "bytes": 15747
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1284.jpg",
+      "sha256": "34086c76e110362d88bfd153a4f7b2b7fef9f8a8df7198cf58d03febba9f4dc0",
+      "bytes": 15950
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1293.jpg",
+      "sha256": "4bfccb1f2de79c67e88e384620badb43c576edb4938ec7b503cc05eb31c20af2",
+      "bytes": 16406
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1299.jpg",
+      "sha256": "c02b145dbb3cef204a219bca2c858118983ffd4b0e69945a81d97c4fa43d6fea",
+      "bytes": 16761
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1304.jpg",
+      "sha256": "951e2223a483dfa5053173ffa27f1f6eabf6942d488e834a8be2a7c8e79d56bf",
+      "bytes": 16764
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/frames/f1310.jpg",
+      "sha256": "5f0d863d02e4d5531987784515912bb8f28674f0a3313706a5b699520e9871cc",
+      "bytes": 16764
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/hard_cues/ankle-contact-f543.png",
+      "sha256": "79269e5477474a1917da6532e043349d873df23c9ab82b06ac2487bc7f796475",
+      "bytes": 2411133
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/hard_cues/birth-impact-f359.png",
+      "sha256": "c4880c4362eaf0f3530464ebfc18d224c66e0b07495f044a6fc0e2385be263d4",
+      "bytes": 8608
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/hard_cues/bubble-f157.png",
+      "sha256": "e7cb5507b988014df05cb4f5e403c8166b2013d78db0866acf5170d2b61178eb",
+      "bytes": 2147647
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/hard_cues/dolly-zoom-end-f1014.png",
+      "sha256": "c4880c4362eaf0f3530464ebfc18d224c66e0b07495f044a6fc0e2385be263d4",
+      "bytes": 8608
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/hard_cues/spark-fill-f339.png",
+      "sha256": "b64b8419e2cc4fd1b4150f46308d9342107d7083daf6e0c321a330d1af548ea4",
+      "bytes": 1730642
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/hard_cues/white-out-f686.png",
+      "sha256": "c4880c4362eaf0f3530464ebfc18d224c66e0b07495f044a6fc0e2385be263d4",
+      "bytes": 8608
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/hold_metrics.json",
+      "sha256": "af096416e12f96ec28255389f24dc754e6b0955ce4d8ac575cb2edeb7fdd92f1",
+      "bytes": 17088
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/identity-f1185.jpg",
+      "sha256": "ff15d82f778cf71aef81f27e35c5c1b450545e738d3a5eb332ec4c2c6e29e7b9",
+      "bytes": 483914
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/identity-f1285.jpg",
+      "sha256": "b1e6be630fd8fbbc3dfbceb62650151698b71907f38cfee8b0b3c7b66d14e52f",
+      "bytes": 198155
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/identity-f158.jpg",
+      "sha256": "0b8374536826d47aa26fc832336394836287208175c522507ece83809e64a7a7",
+      "bytes": 490981
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/identity-f169.jpg",
+      "sha256": "2c22642b48adb9793a7f00ee0511612bd65daf74109440407cf11f8b4e86b6e8",
+      "bytes": 352783
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/identity-f362.jpg",
+      "sha256": "d487626293339fe70bc9e1983a16f11e3f787b946b60a7ef6de777310253cb06",
+      "bytes": 429394
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/identity-f576.jpg",
+      "sha256": "cb87afc62879e4b261f95e10a49b5ec7e875beba3ea81f7d63cc8b061e0d8d3e",
+      "bytes": 397446
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/identity-f620.jpg",
+      "sha256": "99ada0977e207098683b311a05dbb45ae1722785df8c26759fcb1ba12429df4e",
+      "bytes": 437153
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/identity-f689.jpg",
+      "sha256": "30cd334ffd4aa7745e65ae134d10302a927990dc966f5cd164d9b8ef57993288",
+      "bytes": 708246
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/identity_cues.jpg",
+      "sha256": "b122160de42c92c35c10a64b040f3905c001443c75ab17725a8b05a810cd73e2",
+      "bytes": 348796
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/identity_cues.json",
+      "sha256": "79cdc06c36bb2b5011aad03f17afaac442f921e257e3fc3c1986896270ad3cd5",
+      "bytes": 886
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/refresh-f1185.png",
+      "sha256": "560bf1daf524c4b02be673301dc929c07c334c9fa8f55e4eb841fadab8f4cb6f",
+      "bytes": 2940373
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/refresh-f1217.png",
+      "sha256": "a1ad5df0ac79e0f0414bd89027f2c9bd2d4a8b502a49e4737057422270c81ac3",
+      "bytes": 1743466
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/refresh-f1218.png",
+      "sha256": "c085f8c2a53415e092eb8b24f6f50f1f262faf6902798cc0ab529b60c4a346c1",
+      "bytes": 1540505
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/scene_changes.json",
+      "sha256": "387a4aca182237b552817cb0c7fb07d52764a05893ee84dd10311c31ecab5287",
+      "bytes": 157477
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/scene_scores_raw.txt",
+      "sha256": "5dac4ebfba824de35b52476fa062ca8ed4b3b6de01d3579c6ddd9d9016cbfadc",
+      "bytes": 87888
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/scopes.png",
+      "sha256": "480237d06e92f474ebb06248fcba7e331265286c89f2457e0c14b00a41768864",
+      "bytes": 782518
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/source_audio_packets.json",
+      "sha256": "60855f0a98ef7279c7253f2c4de51edd80a3f3951d25ba1fb9ae5926ee83d836",
+      "bytes": 304511
+    },
+    {
+      "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/qa/final/typography_peak_candidates.jpg",
+      "sha256": "80b73dfccc6388b26de75d93393f27a0915ab2e1cf354d01837b3ea68873f99b",
+      "bytes": 862755
+    }
+  ]
+}

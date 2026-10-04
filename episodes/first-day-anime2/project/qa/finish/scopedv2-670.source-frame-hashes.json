@@ -1,0 +1,10 @@
+{
+  "definition": "SHA256 of each lossless PNG supplied directly to ffmpeg, in source frame order.",
+  "video_sha256": "976d919be1d6fe741c59745dd4f38d5f1ee4da64d810b278f3f5c2f322e6c75c",
+  "frames": [
+    {
+      "frame": 670,
+      "sha256": "dc7e5f194c8456959566d9f4fa57386cabcb66958243b534389a80b65321cde5"
+    }
+  ]
+}

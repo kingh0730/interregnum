@@ -1,0 +1,34 @@
+{
+ "endpoint": "fal-ai/birefnet",
+ "payload": {
+  "image_url": "<data uri>",
+  "model": "General Use (Heavy)",
+  "operating_resolution": "2048x2048",
+  "output_mask": true,
+  "refine_foreground": false,
+  "output_format": "png"
+ },
+ "payload_sha256": "24111d3a3aefdfcf14efeb513c5a8e06b3939a099f432d9930b4c54364e24c68",
+ "request_id": "01a105b3-6808-72a1-8a3c-61ac9d40e3dc",
+ "status_url": "https://queue.fal.run/fal-ai/birefnet/requests/01a105b3-6808-72a1-8a3c-61ac9d40e3dc/status",
+ "response_url": "https://queue.fal.run/fal-ai/birefnet/requests/01a105b3-6808-72a1-8a3c-61ac9d40e3dc",
+ "response": {
+  "image": {
+   "url": "https://v3b.fal.media/files/b/0aacff44/xdJ0IDpgWSTHjcyt8JLUk_vpC8zbzf.png",
+   "content_type": "image/png",
+   "file_name": "xdJ0IDpgWSTHjcyt8JLUk_vpC8zbzf.png",
+   "file_size": null,
+   "width": 1672,
+   "height": 941
+  },
+  "mask_image": {
+   "url": "https://v3b.fal.media/files/b/0aacff44/bF14dI2wYH9UnWzjeeD-o_xWUWav8N.png",
+   "content_type": "image/png",
+   "file_name": "bF14dI2wYH9UnWzjeeD-o_xWUWav8N.png",
+   "file_size": null,
+   "width": 1672,
+   "height": 941
+  }
+ },
+ "seconds": 2.3
+}

@@ -1,0 +1,35 @@
+{
+ "id": "S22_take1",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The girl slowly extends her reaching hand a few centimetres toward the developer, while the developer holds her hand out warmly. Hands remain separated, no contact yet. Underplayed anticipation, subtle breath, slight hair movement. Preserve exactly five fingers per hand and night outside.",
+  "image_url": "<data uri>",
+  "duration": 3,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026100221
+ },
+ "payload_sha256": "57c341dde943a6ad06b9fbc8ee47f2ad817c35437723d69b02cbea2d53d8d431",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S22_take1.mp4",
+ "phase": "done",
+ "billable_s": 3.0,
+ "price": 0.09,
+ "request_id": "01a1060a-5126-7be1-9acc-9bb95545b70c",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060a-5126-7be1-9acc-9bb95545b70c/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060a-5126-7be1-9acc-9bb95545b70c",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060a-5126-7be1-9acc-9bb95545b70c/cancel",
+ "submitted": 1791102702.004236,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad017e/gyXOz--QARJiSb8xwWu9t_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "gyXOz--QARJiSb8xwWu9t_minimax-h3.mp4",
+   "file_size": 8862669
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 1.7409660329576582
+  }
+ },
+ "done": 1791102713.790714
+}

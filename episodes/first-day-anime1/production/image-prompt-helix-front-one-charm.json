@@ -1,0 +1,7 @@
+{
+  "id": "helix-front-one-charm",
+  "prompt": "Precise tiny correction only: this girl currently has an ankle chain on both ankles. Remove ONLY the chain and tag on HER LEFT ankle (the ankle on the RIGHT side of the image). Keep the chain and tag on her RIGHT ankle (image left). Preserve every other pixel and feature: face, expression, hands, pose, hair, outfit, colour, lighting, line quality, both feet, and existing transparent alpha. Do not change or repaint the rest. No added text/logos/background.",
+  "reference": "assets/plates/helix-front-v1.png",
+  "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-a53c180e-935b-48b5-933e-41927e55b763.png",
+  "tool": "Codex built-in image_gen"
+}

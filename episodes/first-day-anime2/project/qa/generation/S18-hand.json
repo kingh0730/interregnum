@@ -1,0 +1,11 @@
+{
+  "id": "S18-hand",
+  "prompt": "Isolated specified subject ONLY on a genuinely fully transparent alpha background, no setting or paper backdrop. Reference establishes anime linework ONLY; draw ONLY the human user's hand, no girl or face. 1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Isolated anonymous human hand reaching with an index finger from the near foreground toward the distant screen. Soft warm skin light, five correct fingers, no jewellery, no arm past forearm; 50mm POV perspective. Transparent background. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+  "refs": [
+    "assets/sheets/opus-base.png"
+  ],
+  "generator": "Codex built-in",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-394b74e8-6933-4563-af1d-7e045d9c0a1d.png",
+  "output": "assets/plates/S18-hand.png",
+  "status": "pending_review"
+}

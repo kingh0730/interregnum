@@ -1,0 +1,27 @@
+{
+  "continuity_review": "helper/motion-test/review.json",
+  "defaults": {
+    "endpoint": "i2v",
+    "duration": 4,
+    "resolution": "1080P",
+    "prompt_expansion_mode": "disabled"
+  },
+  "jobs": [
+    {
+      "id": "S01-a",
+      "shot_id": "S01",
+      "image": "assets/plates/S01.png",
+      "prompt": "2D cinematic cel anime, preserve the exact supplied face, black hair with coral inner tips, ribbon and warm cream shading. Extreme macro closed eyelid. She remains asleep, eyes completely closed, head almost perfectly still; barely perceptible breathing, one tiny movement of lashes near the end. Gentle 3 percent camera push-in over four seconds, ease-out, no shake. Preserve the source composition and plain hair barrette; do not invent symbols. No text, no letters, no logos, no watermark, no added fingers or objects, no dialogue. No music. Character stays exactly on-model.",
+      "seed": 5501,
+      "out": "assets/clips/S01-a.mp4"
+    },
+    {
+      "id": "S01-b",
+      "shot_id": "S01",
+      "image": "assets/plates/S01.png",
+      "prompt": "2D cinematic cel anime, preserve the exact supplied face, black hair with coral inner tips, ribbon and warm cream shading. Extreme macro closed eyelid. She remains asleep, eyes completely closed, head almost perfectly still; barely perceptible breathing, one tiny movement of lashes near the end. Gentle 3 percent camera push-in over four seconds, ease-out, no shake. Preserve the source composition and plain hair barrette; do not invent symbols. No text, no letters, no logos, no watermark, no added fingers or objects, no dialogue. No music. Character stays exactly on-model.",
+      "seed": 5502,
+      "out": "assets/clips/S01-b.mp4"
+    }
+  ]
+}

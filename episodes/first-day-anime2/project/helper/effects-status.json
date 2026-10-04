@@ -1,0 +1,75 @@
+{
+  "module": "src/effects.mjs",
+  "implemented": {
+    "TokenTunnel": "6000 atlas InstancedMesh quads around CatmullRom spline; additive blend; grey-to-clay tint; 48-to-88 degree FOV",
+    "Shatter": "240 exact clipped Voronoi polygons with egg UVs; radial impulse; gravity 0.3; coral point light",
+    "ToastShatter": "40 Voronoi polygons with toast UVs",
+    "GlassCrack": "90 Voronoi cells converted into emissive ribbon mesh; plate refraction offset shader; camera crosses glass plane; white-out",
+    "InkBloom": "Four-pigment analytic curl-noise backward advection shader; 90-frame normalized source; clay/sky/olive/fig; deterministic dither",
+    "Mosaic": "599 instanced atlas tiles plus one exact finishedS37 hero tile; central overlap rejection, hero-front depth, full-viewport start projection, exponential pullout to small12.49%height spark",
+    "SpeedLines": "32 radial shader lines with varying animated length"
+  },
+  "required_assets": {
+    "TokenTunnel": [
+      "glyphAtlas: preloaded THREE.Texture or URL",
+      "glyphColumns and glyphRows: default 8 and 8"
+    ],
+    "Shatter": [
+      "egg: preloaded THREE.Texture or URL"
+    ],
+    "ToastShatter": [
+      "toast: preloaded THREE.Texture or URL"
+    ],
+    "GlassCrack": [
+      "plate: preloaded THREE.Texture or URL"
+    ],
+    "Mosaic": [
+      "mosaicAtlas: preloaded THREE.Texture or URL",
+      "mosaicColumns and mosaicRows: default 30 and 20",
+      "sparkSVG: raw SVG path document, or sparkContains(x,y) normalized predicate",
+      "mosaicHero: finishedS37frame1217 texture; only explicit diagnosticMissingHero:true can omit this in standalone factory tests"
+    ]
+  },
+  "checks_passed": [
+    "Node syntax check",
+    "Instantiate all seven effects with existing production Three.js version",
+    "Update at start, midpoint, end, and reverse seek to start without exception",
+    "Dispose removes group from scene",
+    "240 Voronoi cells cover normalized rectangle exactly: signed area 3.9999999999999973",
+    "GlassCrack: actual WebGL 42-frame 960x540 preview renders after color-space correction",
+    "InkBloom: actual WebGL 90-frame 960x540 preview renders after color-space and dye balance correction",
+    "Visually inspected GlassCrack midpoint: source luminance restored; crack cores now coral instead of additive white",
+    "Visually inspected InkBloom midpoint: clay, sky, olive and fig visible with distinct curl-advection edges",
+    "TokenTunnel and SpeedLines: modified custom shaders compile/render 42-frame 960x540 previews; midpoints inspected for glyphs and coral rays",
+    "UpdatedMosaic CPUprojection tests: exact full-screen hero corners, 600totaltiles, monotonically outward camera, missinghero rejection"
+  ],
+  "not_tested": [
+    "Actual glyph atlas filtering and legibility",
+    "Actual SVG mask visual recognition",
+    "Composited final shot review",
+    "Mosaic browser compilation and final atlas integration",
+    "Full normal-speed motion quality review; frame inspection alone does not approve motion",
+    "GlassCrack final palm-press source and shell-only Shatter source integration"
+  ],
+  "integration_notes": [
+    "Call update with shot-local frame and normalized progress; it never integrates elapsed state, so frame order is free.",
+    "createEffectPreview creates a standalone scene/camera and render(frame,totalFrames) helper; renderer and loaded production assets remain caller-owned.",
+    "Bloom requires caller compositor with threshold 0.8, intensity 0.6; effect materials supply HDR emission.",
+    "TokenTunnel currently implements the spline particle tunnel; Opus silhouette attractor compositing remains caller-owned.",
+    "InkBloom uses analytic backward advection rather than a stateful Navier-Stokes solver, so arbitrary seeking is deterministic.",
+    "SVG parser handles path elements and viewBox. It does not apply nested SVG transforms; supplied project spark.svg has none.",
+    "The plan asks 600 unique stills every 0.25 seconds from a 40.607-second render, which yields only about 163 unique time samples. Resolve extraction cadence/repetition explicitly; module accepts 600 atlas slots without inventing provenance.",
+    "Await effect.ready if URL textures are supplied; missing assets fail immediately rather than producing placeholder artwork.",
+    "Custom shader final output includes Three r170 colorspace_fragment. Color textures must declare SRGBColorSpace; URL-loaded effect textures do this automatically. Do not manually encode sampled textures before output.",
+    "Shatter assets.egg must be a clean shell-only texture or shell matte with alpha, not a plate containing Opus; otherwise shards fracture her face/body. Existing egg.png preview is diagnostic only.",
+    "GlassCrack shader midpoint checked using diagnostic egg plate. The final effect must be fed the actual S20 palm-press plate.",
+    "InkBloom growth reduced and pigment contributions normalized together so early clay does not paint over all later colors.",
+    "UpdatedMosaic requires explicit diagnosticMissingHero flag for hero-less standalone previews; final runtime never supplies this flag. Finished hero/atlas emit1 and bypass global regrading/rebloom. Actual seam still unreviewed."
+  ],
+  "preview_artifacts": {
+    "GlassCrack": "qa/fx/GlassCrack.mp4",
+    "InkBloom": "qa/fx/InkBloom.mp4",
+    "TokenTunnel": "qa/fx/TokenTunnel.mp4",
+    "SpeedLines": "qa/fx/SpeedLines.mp4"
+  }
+}

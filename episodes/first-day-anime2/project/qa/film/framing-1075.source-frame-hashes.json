@@ -1,0 +1,86 @@
+{
+  "definition": "SHA256 of each lossless PNG supplied directly to ffmpeg, in source frame order.",
+  "video_sha256": "c92829cff018a88000ae93ee7aff37b4526d98ef23100034e85d2b60e420cce2",
+  "frames": [
+    {
+      "frame": 1075,
+      "sha256": "8ffbd7e47ba890779ff8f9c91a0aa637b31388b22e1b69723ad2b019215ad484"
+    },
+    {
+      "frame": 1076,
+      "sha256": "43a964d4b3046a74f3e242c6a4a7c336ad9636a97ed8e2591031eaae01c7436a"
+    },
+    {
+      "frame": 1077,
+      "sha256": "5dd46b02aae4a0276bc9acc23ce1780d0928e8e66cce321918861fd1cbd9d161"
+    },
+    {
+      "frame": 1078,
+      "sha256": "9d8baacb88900ea06871d7b4dcbae3ea934ac63f73adca301cfaa17f65e5c24e"
+    },
+    {
+      "frame": 1079,
+      "sha256": "aace8709f7de04d848f2635154b17c875ef49e810fb620aaafe9f42c9299588b"
+    },
+    {
+      "frame": 1080,
+      "sha256": "a4b3ee320c7d4f6a0aab3a22ee4287e88fc308983246df6c2f6c33f1ec67d785"
+    },
+    {
+      "frame": 1081,
+      "sha256": "84a81ee340343b5089addd7d396ccfa18e8c9378ae0c30c35d5d0d256b2e9283"
+    },
+    {
+      "frame": 1082,
+      "sha256": "5dbde3c6b9955b0712dca9b849431d01a2c466ea1bef245ff012400caa8cd86c"
+    },
+    {
+      "frame": 1083,
+      "sha256": "ea2594e1d8482054f617b0c66fdd80422736e3a2e237e16b675e7b3d8e2f65d7"
+    },
+    {
+      "frame": 1084,
+      "sha256": "bbbe5b77df1f9433fd7d50842db660d0640a91d27b6743f98cda88c903e001fa"
+    },
+    {
+      "frame": 1085,
+      "sha256": "fe92bfea9755ce11d503e6dc6f699212961ccc2e2f798c48a7c2dd6795c14cf9"
+    },
+    {
+      "frame": 1086,
+      "sha256": "c194e1b06d31500306db24cbbd2a30aa9eb17b8f498fda4b038e95fa5ede1070"
+    },
+    {
+      "frame": 1087,
+      "sha256": "705b93ad19401172beb53a4f5000024326a58dd93ec84adb618695384e509155"
+    },
+    {
+      "frame": 1088,
+      "sha256": "31a0527c81928a88c98dcfd1210a358d17f58af334468cacfdf15921acd00d7a"
+    },
+    {
+      "frame": 1089,
+      "sha256": "f7a9e350f5c92cfce8fd637e39a9d166e432048a594800f8108bbc38cfd7aebe"
+    },
+    {
+      "frame": 1090,
+      "sha256": "fab53cbb15e87cac8ea5344ef5f333363b9d2536982d4a85d0fffefe68cc8fdb"
+    },
+    {
+      "frame": 1091,
+      "sha256": "2722edc5a19003eadf6f7ac9f1c47525f183a646211d846be9845ba47cf88947"
+    },
+    {
+      "frame": 1092,
+      "sha256": "8e8d65395112c43a01c0ece1f9cdef1182ed73be6b5056625213fca55d9d09ac"
+    },
+    {
+      "frame": 1093,
+      "sha256": "f9d5e5c6814146d43224f6a4753a61c1d001e2bd825eb7b056c03a096abe3cb4"
+    },
+    {
+      "frame": 1094,
+      "sha256": "89f80041d132f6c4324d5a212075293696d9669c6e36c7f11693cc20f21e6e01"
+    }
+  ]
+}

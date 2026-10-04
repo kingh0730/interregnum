@@ -1,0 +1,6662 @@
+{
+  "schema_version": 1,
+  "path_base": "project",
+  "target_size": [
+    1920,
+    1080
+  ],
+  "shots": {
+    "S01": {
+      "plate": "assets/normalized/S01.png",
+      "depth": "assets/depth/S01.png",
+      "mask": "assets/masks/S01.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.72248804,
+          0.05077087,
+          0.05263158
+        ],
+        "tie": null,
+        "halo": null,
+        "eyes_state": "closed",
+        "review_evidence": [
+          "qa/features/S01-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S01",
+      "depth_input": "assets/normalized/S01.png"
+    },
+    "S02": {
+      "plate": "assets/normalized/tomorrow.png",
+      "depth": "assets/depth/tomorrow.png",
+      "mask": null,
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": false,
+      "mask_status": "not_required",
+      "depth_status": "available_unreviewed",
+      "asset_id": "tomorrow",
+      "depth_input": "assets/normalized/tomorrow.png"
+    },
+    "S03": {
+      "plate": "assets/normalized/S03.png",
+      "depth": "assets/depth/S03.png",
+      "mask": "assets/masks/S03.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.6895933,
+          0.1953748,
+          0.01794258
+        ],
+        "tie": [
+          0.66447368,
+          0.37400319,
+          0.01913876
+        ],
+        "halo": [
+          0.66985646,
+          0.23046252,
+          0.20933014,
+          0.31897927
+        ],
+        "eyes_state": "closed",
+        "review_evidence": [
+          "qa/features/S03-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S03",
+      "depth_input": "assets/normalized/S03.png"
+    },
+    "S04": {
+      "plate": "assets/normalized/S04.png",
+      "depth": "assets/depth/S04.png",
+      "mask": "assets/masks/S04.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.72727273,
+          0.18899522,
+          0.01614833
+        ],
+        "tie": [
+          0.65430622,
+          0.30489102,
+          0.0215311
+        ],
+        "halo": [
+          0.6937799,
+          0.20175439,
+          0.2242823,
+          0.31897927
+        ],
+        "eyes_state": "closed",
+        "review_evidence": [
+          "qa/features/S04-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S04",
+      "depth_input": "assets/normalized/S04.png"
+    },
+    "S05": {
+      "plate": "assets/normalized/S05-face.png",
+      "depth": "assets/depth/S05-face.png",
+      "mask": "assets/masks/S05-face.png",
+      "layers": [],
+      "poses": [],
+      "support": {
+        "eye": {
+          "id": "S05-eye",
+          "source": "assets/plates/S05-eye.png",
+          "plate": "assets/normalized/S05-eye.png",
+          "depth": "assets/depth/S05-eye.png",
+          "mask": "assets/masks/S05-eye.png",
+          "expected_mask": "assets/masks/S05-eye.png",
+          "status": "normalized_source_available",
+          "depth_status": "available_unreviewed",
+          "mask_status": "available_unreviewed",
+          "features": {
+            "status": "anchors_located_pending_composite_review",
+            "eyes": [
+              [
+                0.58268229,
+                0.47916667,
+                0.04427083
+              ]
+            ],
+            "hairpin": null,
+            "tie": null,
+            "halo": null,
+            "eyes_state": "open_macro",
+            "review_evidence": [
+              "qa/features/S05-eye-anchors.png",
+              "qa/features/first-batch-overlay-grid.jpg"
+            ],
+            "halo_requires_subject_occlusion": false,
+            "only_character": "Opus"
+          },
+          "features_required": true,
+          "mask_required": true,
+          "approval": false,
+          "source_sha256": "b9d27d45e98d62e046e9b2988ad63cfbb5704868e1f40a389f8d7966e4738bbb",
+          "output_sha256": "13a8a74c3ff334a6cbd3411fc10f3f2cf998b89daafdf2c6a2f569f5c1f749f2",
+          "transform": {
+            "source_size": [
+              1536,
+              1024
+            ],
+            "crop_box": [
+              0.0,
+              80.0,
+              1536.0,
+              944.0
+            ],
+            "target_size": [
+              1920,
+              1080
+            ],
+            "scale": 1.25,
+            "method": "center_crop_lanczos_preserve_alpha"
+          },
+          "mode": "RGB",
+          "source_alpha_range": null,
+          "path": "assets/normalized/S05-eye.png"
+        }
+      },
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.41447368,
+            0.45481127,
+            0.01196172
+          ],
+          [
+            0.56160287,
+            0.3856991,
+            0.01196172
+          ]
+        ],
+        "hairpin": [
+          0.61543062,
+          0.17304625,
+          0.02751196
+        ],
+        "tie": [
+          0.53050239,
+          0.98112706,
+          0.02990431
+        ],
+        "halo": [
+          0.50837321,
+          0.41440723,
+          0.62799043,
+          0.85061138
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S05-face-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S05-face",
+      "depth_input": "assets/normalized/S05-face.png"
+    },
+    "S06": {
+      "plate": null,
+      "depth": null,
+      "mask": null,
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "status": "code_only",
+      "approval": false
+    },
+    "S07": {
+      "plate": "assets/normalized/S07.png",
+      "depth": "assets/depth/S07.png",
+      "mask": "assets/masks/S07.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.29366029,
+            0.135832,
+            0.0041866
+          ],
+          [
+            0.32595694,
+            0.14433812,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.33971292,
+          0.11456672,
+          0.01016746
+        ],
+        "tie": [
+          0.31100478,
+          0.24215843,
+          0.01315789
+        ],
+        "halo": [
+          0.31100478,
+          0.13370548,
+          0.16746411,
+          0.24455077
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S07-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S07",
+      "depth_input": "assets/normalized/S07.png"
+    },
+    "S08a": {
+      "plate": "assets/normalized/S08a.png",
+      "depth": "assets/depth/S08a.png",
+      "mask": "assets/masks/S08a.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.53528708,
+            0.23896863,
+            0.00837321
+          ],
+          [
+            0.62978469,
+            0.28043594,
+            0.00837321
+          ]
+        ],
+        "hairpin": [
+          0.69557416,
+          0.18261563,
+          0.01794258
+        ],
+        "tie": [
+          0.53588517,
+          0.59835194,
+          0.02990431
+        ],
+        "halo": [
+          0.59210526,
+          0.20175439,
+          0.46650718,
+          0.63795853
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S08a-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S08a",
+      "depth_input": "assets/normalized/S08a.png"
+    },
+    "S08b": {
+      "plate": null,
+      "depth": null,
+      "mask": null,
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "status": "code_only",
+      "approval": false
+    },
+    "S08c": {
+      "plate": "assets/normalized/S08c-researchers.png",
+      "depth": "assets/depth/S08c-researchers.png",
+      "mask": null,
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": false,
+      "mask_status": "not_required",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S08c-researchers",
+      "depth_input": "assets/normalized/S08c-researchers.png"
+    },
+    "S08d": {
+      "plate": "assets/normalized/S08d.png",
+      "depth": "assets/depth/S08d.png",
+      "mask": null,
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": false,
+      "mask_status": "not_required",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S08d",
+      "depth_input": "assets/normalized/S08d.png"
+    },
+    "S09a": {
+      "plate": "assets/normalized/S05-eye.png",
+      "depth": "assets/depth/S05-eye.png",
+      "mask": "assets/masks/S05-eye.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.58268229,
+            0.47916667,
+            0.04427083
+          ]
+        ],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "open_macro",
+        "review_evidence": [
+          "qa/features/S05-eye-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S05-eye",
+      "depth_input": "assets/normalized/S05-eye.png"
+    },
+    "S09b": {
+      "plate": null,
+      "depth": null,
+      "mask": null,
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "status": "code_only",
+      "approval": false
+    },
+    "S10": {
+      "plate": null,
+      "depth": null,
+      "mask": null,
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "status": "code_only",
+      "approval": false
+    },
+    "S11": {
+      "plate": "assets/normalized/S11-subject.png",
+      "depth": "assets/depth/S11-subject.png",
+      "mask": "assets/masks/S11-subject.png",
+      "layers": [],
+      "poses": [],
+      "support": {
+        "subject": {
+          "id": "S11-subject",
+          "source": "assets/plates/S11-subject.png",
+          "plate": "assets/normalized/S11-subject.png",
+          "depth": "assets/depth/S11-subject.png",
+          "mask": "assets/masks/S11-subject.png",
+          "expected_mask": "assets/masks/S11-subject.png",
+          "status": "normalized_source_available",
+          "depth_status": "available_unreviewed",
+          "mask_status": "exact_source_alpha",
+          "features": {
+            "status": "anchors_located_pending_composite_review",
+            "eyes": [
+              [
+                0.4611244,
+                0.29957469,
+                0.00717703
+              ],
+              [
+                0.53767943,
+                0.26448698,
+                0.00717703
+              ]
+            ],
+            "hairpin": [
+              0.56339713,
+              0.15284423,
+              0.01614833
+            ],
+            "tie": [
+              0.51255981,
+              0.59516215,
+              0.02691388
+            ],
+            "halo": [
+              0.49940191,
+              0.24960128,
+              0.3708134,
+              0.51036683
+            ],
+            "eyes_state": "open",
+            "review_evidence": [
+              "qa/features/S11-subject-anchors.png",
+              "qa/features/batch-through-S25-overlay-grid.jpg"
+            ],
+            "halo_requires_subject_occlusion": true,
+            "only_character": "Opus"
+          },
+          "features_required": true,
+          "mask_required": true,
+          "approval": false,
+          "source_sha256": "393f29aa857ba582686987ad9a2c123a559e56d1f4f20fcabe701b9640eeac1f",
+          "output_sha256": "1cffea305c65ac8c9e17ad32b760d3f4d7d111e58e8cfa25104ce602557d91b5",
+          "transform": {
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0.0,
+              0.25,
+              1672.0,
+              940.75
+            ],
+            "target_size": [
+              1920,
+              1080
+            ],
+            "scale": 1.1483253588516746,
+            "method": "center_crop_lanczos_preserve_alpha"
+          },
+          "mode": "RGBA",
+          "source_alpha_range": [
+            0,
+            255
+          ],
+          "depth_input": "assets/depth-inputs/S11-subject.png",
+          "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+          "mask_provenance": {
+            "method": "normalized_source_alpha_channel",
+            "source_sha256": "393f29aa857ba582686987ad9a2c123a559e56d1f4f20fcabe701b9640eeac1f",
+            "alpha_sha256": "9c534b809721f630e89aecbe9943e6e36b4abd5d730ff44f3f52bf5db4c13214",
+            "fully_transparent_pixel_fraction": 0.502205825617284,
+            "approval": false
+          },
+          "path": "assets/normalized/S11-subject.png"
+        },
+        "background": {
+          "id": "S11-background",
+          "source": "assets/plates/S11-background.png",
+          "plate": "assets/normalized/S11-background.png",
+          "depth": "assets/depth/S11-background.png",
+          "mask": null,
+          "expected_mask": "assets/masks/S11-background.png",
+          "status": "normalized_source_available",
+          "depth_status": "pending_inference",
+          "mask_status": "not_required",
+          "features": {
+            "status": "not_required",
+            "eyes": [],
+            "hairpin": null,
+            "tie": null,
+            "halo": null
+          },
+          "features_required": false,
+          "mask_required": false,
+          "approval": false,
+          "source_sha256": "47d59389e3af80062fa4d73f66031a0a6315c117ffa629b5bd57e40005c1f82e",
+          "output_sha256": "a149deb3ebfa37ff91b868532fcfdeea3c64d04700846fdf59d229766d8e8579",
+          "transform": {
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0.0,
+              0.25,
+              1672.0,
+              940.75
+            ],
+            "target_size": [
+              1920,
+              1080
+            ],
+            "scale": 1.1483253588516746,
+            "method": "center_crop_lanczos_preserve_alpha"
+          },
+          "mode": "RGB",
+          "source_alpha_range": null,
+          "path": "assets/normalized/S11-background.png"
+        }
+      },
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.4611244,
+            0.29957469,
+            0.00717703
+          ],
+          [
+            0.53767943,
+            0.26448698,
+            0.00717703
+          ]
+        ],
+        "hairpin": [
+          0.56339713,
+          0.15284423,
+          0.01614833
+        ],
+        "tie": [
+          0.51255981,
+          0.59516215,
+          0.02691388
+        ],
+        "halo": [
+          0.49940191,
+          0.24960128,
+          0.3708134,
+          0.51036683
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S11-subject-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "exact_source_alpha",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S11-subject",
+      "depth_input": "assets/depth-inputs/S11-subject.png"
+    },
+    "S12": {
+      "plate": "assets/normalized/S12.png",
+      "depth": "assets/depth/S12.png",
+      "mask": "assets/masks/S12.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.5819378,
+            0.37187666,
+            0.00897129
+          ],
+          [
+            0.68062201,
+            0.30595428,
+            0.00897129
+          ]
+        ],
+        "hairpin": [
+          0.71172249,
+          0.14540138,
+          0.02332536
+        ],
+        "tie": [
+          0.70992823,
+          0.76209463,
+          0.02870813
+        ],
+        "halo": [
+          0.62200957,
+          0.31871345,
+          0.46650718,
+          0.65922382
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S12-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S12",
+      "depth_input": "assets/normalized/S12.png"
+    },
+    "S13": {
+      "plate": "assets/normalized/S13.png",
+      "depth": "assets/depth/S13.png",
+      "mask": "assets/masks/S13.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.42643541,
+            0.11244019,
+            0.0041866
+          ],
+          [
+            0.45813397,
+            0.135832,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.4784689,
+          0.10712387,
+          0.01076555
+        ],
+        "tie": [
+          0.43480861,
+          0.21770335,
+          0.01315789
+        ],
+        "halo": [
+          0.43660287,
+          0.11669325,
+          0.17344498,
+          0.24455077
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S13-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S13",
+      "depth_input": "assets/normalized/S13.png"
+    },
+    "S14": {
+      "plate": "assets/normalized/S14.png",
+      "depth": "assets/depth/S14.png",
+      "mask": "assets/masks/S14.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.3923445,
+            0.341042,
+            0.00777512
+          ],
+          [
+            0.44916268,
+            0.33891547,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.30382775,
+          0.25066454,
+          0.02990431
+        ],
+        "tie": [
+          0.4222488,
+          0.87054758,
+          0.02990431
+        ],
+        "halo": [
+          0.31698565,
+          0.32934609,
+          0.4784689,
+          0.69112174
+        ],
+        "eyes_state": "open_profile",
+        "review_evidence": [
+          "qa/features/S14-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "mouth": [
+          0.45933014,
+          0.46544391
+        ]
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S14",
+      "depth_input": "assets/normalized/S14.png"
+    },
+    "S15": {
+      "plate": "assets/normalized/S15.png",
+      "depth": "assets/depth/S15.png",
+      "mask": "assets/masks/S15.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.41566986,
+          0.13051568,
+          0.01674641
+        ],
+        "tie": [
+          0.409689,
+          0.42291334,
+          0.02392344
+        ],
+        "halo": [
+          0.36483254,
+          0.19643806,
+          0.31100478,
+          0.45720362
+        ],
+        "eyes_state": "closed",
+        "review_evidence": [
+          "qa/features/S15-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S15",
+      "depth_input": "assets/normalized/S15.png"
+    },
+    "S16": {
+      "plate": "assets/normalized/S16.png",
+      "depth": "assets/depth/S16.png",
+      "mask": "assets/masks/S16.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "outside_crop",
+        "review_evidence": [
+          "qa/features/S16-anchors.png",
+          "Raw source viewed individually; final action/composite review pending."
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S16",
+      "depth_input": "assets/normalized/S16.png"
+    },
+    "S17": {
+      "plate": "assets/normalized/S17-contact.png",
+      "depth": "assets/depth/S17-contact.png",
+      "mask": "assets/masks/S17-contact.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "outside_crop",
+        "review_evidence": [
+          "qa/features/S17-contact-anchors.png",
+          "Raw source viewed individually; final action/composite review pending."
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus",
+        "contact": [
+          0.36363636,
+          0.84183945
+        ]
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S17-contact",
+      "depth_input": "assets/normalized/S17-contact.png"
+    },
+    "S18": {
+      "plate": "assets/normalized/S18-opus-cutout.png",
+      "depth": "assets/depth/S18-opus-cutout.png",
+      "mask": "assets/masks/S18-opus-cutout.png",
+      "layers": [],
+      "poses": [],
+      "support": {
+        "hand": {
+          "id": "S18-hand",
+          "source": "assets/plates/S18-hand.png",
+          "plate": "assets/normalized/S18-hand.png",
+          "depth": "assets/depth/S18-hand.png",
+          "mask": null,
+          "expected_mask": "assets/masks/S18-hand.png",
+          "status": "normalized_source_available",
+          "depth_status": "pending_inference",
+          "mask_status": "not_required",
+          "features": {
+            "status": "anchors_located_pending_composite_review",
+            "eyes": [],
+            "hairpin": null,
+            "tie": null,
+            "halo": null,
+            "eyes_state": "outside_crop",
+            "review_evidence": [
+              "qa/features/S18-hand-anchors.png",
+              "qa/features/batch-through-S25-overlay-grid.jpg"
+            ],
+            "halo_requires_subject_occlusion": false,
+            "only_character": "anonymous user hand",
+            "tip": [
+              0.25119617,
+              0.05608719
+            ]
+          },
+          "features_required": false,
+          "mask_required": false,
+          "approval": false,
+          "source_sha256": "593d9b2cb0778202da1b58312a2ab449cb666a021f5d7387c6a1b7127bf3bff6",
+          "output_sha256": "f14d2b522fbbf7155e024b735182cace06a6c8046112d7feb47f890cf040e197",
+          "transform": {
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0.0,
+              0.25,
+              1672.0,
+              940.75
+            ],
+            "target_size": [
+              1920,
+              1080
+            ],
+            "scale": 1.1483253588516746,
+            "method": "center_crop_lanczos_preserve_alpha"
+          },
+          "mode": "RGBA",
+          "source_alpha_range": [
+            0,
+            255
+          ],
+          "depth_input": "assets/depth-inputs/S18-hand.png",
+          "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+          "mask_provenance": {
+            "method": "normalized_source_alpha_channel",
+            "source_sha256": "593d9b2cb0778202da1b58312a2ab449cb666a021f5d7387c6a1b7127bf3bff6",
+            "alpha_sha256": "b8ff85c92a2d3eeaa2989434ccdac2889c9591c284834449d1027938382c3498",
+            "fully_transparent_pixel_fraction": 0.7683873456790123,
+            "approval": false
+          },
+          "path": "assets/normalized/S18-hand.png",
+          "tip": [
+            0.25119617,
+            0.05608719
+          ]
+        }
+      },
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.50179426,
+            0.25704413,
+            0.00897129
+          ],
+          [
+            0.5992823,
+            0.29957469,
+            0.00897129
+          ]
+        ],
+        "hairpin": [
+          0.66626794,
+          0.18899522,
+          0.02212919
+        ],
+        "tie": [
+          0.50059809,
+          0.65364168,
+          0.02691388
+        ],
+        "halo": [
+          0.55203349,
+          0.25279107,
+          0.4784689,
+          0.6804891
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S18-opus-cutout-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "touch": [
+          0.41686603,
+          0.4271664
+        ]
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "exact_source_alpha",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S18-opus-cutout",
+      "depth_input": "assets/depth-inputs/S18-opus-cutout.png"
+    },
+    "S19": {
+      "plate": "assets/normalized/S19-user.png",
+      "depth": "assets/depth/S19-user.png",
+      "mask": null,
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "faceless",
+        "review_evidence": [
+          "qa/features/S19-user-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "anonymous user silhouette",
+        "screenQuad": [
+          [
+            0.51375598,
+            0.36549708
+          ],
+          [
+            0.7930622,
+            0.37506645
+          ],
+          [
+            0.7673445,
+            0.67809676
+          ],
+          [
+            0.48086124,
+            0.63875598
+          ]
+        ],
+        "screenVisiblePolygon": [
+          [
+            0.51495215,
+            0.3676236
+          ],
+          [
+            0.79186603,
+            0.37719298
+          ],
+          [
+            0.76614833,
+            0.67597023
+          ],
+          [
+            0.52751196,
+            0.64300904
+          ],
+          [
+            0.49282297,
+            0.54731526
+          ]
+        ],
+        "screenMask": "assets/masks/S19-user-screen.png",
+        "screenOcclusion": "Lower-left physical screen corner is hidden behind ivory user; screenMask includes only observed visible display.",
+        "screenQuadInferredCorners": [
+          "bottom-left: obscured by user silhouette; extrapolated from visible bezel edges"
+        ]
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": false,
+      "mask_status": "not_required",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S19-user",
+      "depth_input": "assets/normalized/S19-user.png"
+    },
+    "S20": {
+      "plate": "assets/normalized/S20.png",
+      "depth": "assets/depth/S20.png",
+      "mask": "assets/masks/S20.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.52452153,
+            0.31339713,
+            0.00897129
+          ],
+          [
+            0.64354067,
+            0.34848485,
+            0.00897129
+          ]
+        ],
+        "hairpin": [
+          0.71471292,
+          0.22408293,
+          0.02691388
+        ],
+        "tie": [
+          0.56519139,
+          0.77379054,
+          0.02870813
+        ],
+        "halo": [
+          0.59509569,
+          0.27086656,
+          0.50837321,
+          0.70175439
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S20-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "palm": [
+          0.31997608,
+          0.60047847
+        ]
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S20",
+      "depth_input": "assets/normalized/S20.png"
+    },
+    "S21": {
+      "plate": "assets/normalized/S21.png",
+      "depth": "assets/depth/S21.png",
+      "mask": "assets/masks/S21.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.49043062,
+            0.12626263,
+            0.0041866
+          ],
+          [
+            0.51913876,
+            0.13476874,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.53528708,
+          0.10180755,
+          0.00897129
+        ],
+        "tie": [
+          0.50956938,
+          0.23152578,
+          0.01196172
+        ],
+        "halo": [
+          0.50239234,
+          0.13795853,
+          0.15550239,
+          0.24455077
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S21-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S21",
+      "depth_input": "assets/normalized/S21.png"
+    },
+    "S22": {
+      "plate": "assets/normalized/S22-solo.png",
+      "depth": "assets/depth/S22-solo.png",
+      "mask": null,
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": false,
+      "mask_status": "not_required",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S22-solo",
+      "depth_input": "assets/normalized/S22-solo.png"
+    },
+    "S23": {
+      "plate": "assets/normalized/S23.png",
+      "depth": "assets/depth/S23.png",
+      "mask": "assets/masks/S23.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.51136364,
+            0.34529506,
+            0.00897129
+          ],
+          [
+            0.60885167,
+            0.4005848,
+            0.00897129
+          ]
+        ],
+        "hairpin": [
+          0.68301435,
+          0.3261563,
+          0.01973684
+        ],
+        "tie": [
+          0.55263158,
+          0.75039872,
+          0.02691388
+        ],
+        "halo": [
+          0.56339713,
+          0.30276449,
+          0.4784689,
+          0.6804891
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S23-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S23",
+      "depth_input": "assets/normalized/S23.png"
+    },
+    "S24": {
+      "plate": "assets/normalized/S24.png",
+      "depth": "assets/depth/S24.png",
+      "mask": "assets/masks/S24.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.51555024,
+            0.21345029,
+            0.00538278
+          ],
+          [
+            0.55263158,
+            0.20494418,
+            0.00538278
+          ]
+        ],
+        "hairpin": [
+          0.56698565,
+          0.15603402,
+          0.01076555
+        ],
+        "tie": [
+          0.53648325,
+          0.33572568,
+          0.01555024
+        ],
+        "halo": [
+          0.52930622,
+          0.1804891,
+          0.20334928,
+          0.28708134
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S24-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S24",
+      "depth_input": "assets/normalized/S24.png"
+    },
+    "S25": {
+      "plate": "assets/normalized/S25-sky-clean.png",
+      "depth": null,
+      "mask": null,
+      "layers": [
+        {
+          "id": "sky",
+          "source": "assets/plates/S25-sky-clean.png",
+          "plate": "assets/normalized/S25-sky-clean.png",
+          "depth": "assets/depth/S25-sky-clean.png",
+          "mask": null,
+          "expected_mask": "assets/masks/S25-sky-clean.png",
+          "status": "normalized_source_available",
+          "depth_status": "pending_inference",
+          "mask_status": "not_required",
+          "features": {
+            "status": "not_required",
+            "eyes": [],
+            "hairpin": null,
+            "tie": null,
+            "halo": null
+          },
+          "features_required": false,
+          "mask_required": false,
+          "approval": false,
+          "source_sha256": "95e0d3e06e0a18e6f6ab5876ac391c17127c2d69e4d02022023c759bbe392f30",
+          "output_sha256": "987349dfc3bdf2f5ca08fc6f1f43da7bd7629ce37f1084d389795362564fded9",
+          "transform": {
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0.0,
+              0.25,
+              1672.0,
+              940.75
+            ],
+            "target_size": [
+              1920,
+              1080
+            ],
+            "scale": 1.1483253588516746,
+            "method": "center_crop_lanczos_preserve_alpha"
+          },
+          "mode": "RGB",
+          "source_alpha_range": null,
+          "asset_id": "S25-sky-clean",
+          "path": "assets/normalized/S25-sky-clean.png",
+          "z": -4,
+          "rgba": true
+        },
+        {
+          "id": "mid",
+          "source": "assets/plates/S25-mid-far.png",
+          "plate": "assets/normalized/S25-mid-far.png",
+          "depth": "assets/depth/S25-mid-far.png",
+          "mask": null,
+          "expected_mask": "assets/masks/S25-mid-far.png",
+          "status": "normalized_source_available",
+          "depth_status": "pending_inference",
+          "mask_status": "not_required",
+          "features": {
+            "status": "not_required",
+            "eyes": [],
+            "hairpin": null,
+            "tie": null,
+            "halo": null
+          },
+          "features_required": false,
+          "mask_required": false,
+          "approval": false,
+          "source_sha256": "0bcb286c81e520ff60687ca876132b22f2043e10037bde823125bd0830f73aca",
+          "output_sha256": "fe3e6ba5c056ef95e6d0ee15b2ccacafd19005037ddc032eacf8352d12b7fd4a",
+          "transform": {
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0.0,
+              0.25,
+              1672.0,
+              940.75
+            ],
+            "target_size": [
+              1920,
+              1080
+            ],
+            "scale": 1.1483253588516746,
+            "method": "center_crop_lanczos_preserve_alpha"
+          },
+          "mode": "RGBA",
+          "source_alpha_range": [
+            0,
+            255
+          ],
+          "depth_input": "assets/depth-inputs/S25-mid-far.png",
+          "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+          "mask_provenance": {
+            "method": "normalized_source_alpha_channel",
+            "source_sha256": "0bcb286c81e520ff60687ca876132b22f2043e10037bde823125bd0830f73aca",
+            "alpha_sha256": "2b75c58f2e9822ffafeba9749eb6d1400be69fd851a1432be0fa54652f6fda28",
+            "fully_transparent_pixel_fraction": 0.7981524884259259,
+            "approval": false
+          },
+          "asset_id": "S25-mid-far",
+          "path": "assets/normalized/S25-mid-far.png",
+          "z": -1,
+          "rgba": true
+        },
+        {
+          "id": "towers-left",
+          "source": "assets/plates/S25-towers-left.png",
+          "plate": "assets/normalized/S25-towers-left.png",
+          "depth": "assets/depth/S25-towers-left.png",
+          "mask": null,
+          "expected_mask": "assets/masks/S25-towers-left.png",
+          "status": "normalized_source_available",
+          "depth_status": "pending_inference",
+          "mask_status": "not_required",
+          "features": {
+            "status": "not_required",
+            "eyes": [],
+            "hairpin": null,
+            "tie": null,
+            "halo": null
+          },
+          "features_required": false,
+          "mask_required": false,
+          "approval": false,
+          "source_sha256": "baa25abbeaa6f902f75a640e452c3f60662d4bba00a96ac0a5fad0f56acd5c9d",
+          "output_sha256": "4498b2673dba0b75f82d3457c05b9a2c6f3d7343af1089c2654a80cde09316c5",
+          "transform": {
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0.0,
+              0.25,
+              1672.0,
+              940.75
+            ],
+            "target_size": [
+              1920,
+              1080
+            ],
+            "scale": 1.1483253588516746,
+            "method": "center_crop_lanczos_preserve_alpha"
+          },
+          "mode": "RGBA",
+          "source_alpha_range": [
+            0,
+            255
+          ],
+          "depth_input": "assets/depth-inputs/S25-towers-left.png",
+          "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+          "mask_provenance": {
+            "method": "normalized_source_alpha_channel",
+            "source_sha256": "baa25abbeaa6f902f75a640e452c3f60662d4bba00a96ac0a5fad0f56acd5c9d",
+            "alpha_sha256": "5effde7139fe01acfe563e51aac6c8ac5e1055b1d05a090cd73a4043a388265c",
+            "fully_transparent_pixel_fraction": 0.5314636381172839,
+            "approval": false
+          },
+          "asset_id": "S25-towers-left",
+          "path": "assets/normalized/S25-towers-left.png",
+          "z": 0.6,
+          "rgba": true
+        },
+        {
+          "id": "towers-right",
+          "source": "assets/plates/S25-towers-right.png",
+          "plate": "assets/normalized/S25-towers-right.png",
+          "depth": "assets/depth/S25-towers-right.png",
+          "mask": null,
+          "expected_mask": "assets/masks/S25-towers-right.png",
+          "status": "normalized_source_available",
+          "depth_status": "pending_inference",
+          "mask_status": "not_required",
+          "features": {
+            "status": "not_required",
+            "eyes": [],
+            "hairpin": null,
+            "tie": null,
+            "halo": null
+          },
+          "features_required": false,
+          "mask_required": false,
+          "approval": false,
+          "source_sha256": "2a0fe1107626b32fcce2e7da8a1aebb9ae42b3617731cde2eb82ee707ac47555",
+          "output_sha256": "2bc6c8f2b487ede9e59c52514367e5d9980ac32ebeb76387fa4c1f94da060035",
+          "transform": {
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0.0,
+              0.25,
+              1672.0,
+              940.75
+            ],
+            "target_size": [
+              1920,
+              1080
+            ],
+            "scale": 1.1483253588516746,
+            "method": "center_crop_lanczos_preserve_alpha"
+          },
+          "mode": "RGBA",
+          "source_alpha_range": [
+            0,
+            255
+          ],
+          "depth_input": "assets/depth-inputs/S25-towers-right.png",
+          "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+          "mask_provenance": {
+            "method": "normalized_source_alpha_channel",
+            "source_sha256": "2a0fe1107626b32fcce2e7da8a1aebb9ae42b3617731cde2eb82ee707ac47555",
+            "alpha_sha256": "715ec61d77f59aba3462572dfc0e48ecc700e64365fc0c81b09ec61195e14b2d",
+            "fully_transparent_pixel_fraction": 0.6468369020061728,
+            "approval": false
+          },
+          "asset_id": "S25-towers-right",
+          "path": "assets/normalized/S25-towers-right.png",
+          "z": 0.6,
+          "rgba": true
+        },
+        {
+          "id": "character",
+          "source": "assets/cutouts/S25-character-refined.png",
+          "plate": "assets/normalized/S25-character-refined.png",
+          "depth": "assets/depth/S25-character-refined.png",
+          "mask": "assets/masks/S25-character-refined.png",
+          "expected_mask": "assets/masks/S25-character-refined.png",
+          "status": "normalized_source_available",
+          "depth_status": "pending_inference",
+          "mask_status": "exact_source_alpha",
+          "features": {
+            "status": "anchors_located_pending_composite_review",
+            "eyes": [],
+            "hairpin": [
+              0.52272727,
+              0.12838915,
+              0.01495215
+            ],
+            "tie": null,
+            "halo": [
+              0.48145933,
+              0.14859117,
+              0.22129187,
+              0.28708134
+            ],
+            "eyes_state": "rear_view",
+            "review_evidence": [
+              "qa/features/S25-character-refined-anchors.png",
+              "qa/features/batch-through-S25-overlay-grid.jpg"
+            ],
+            "halo_requires_subject_occlusion": true,
+            "only_character": "Opus",
+            "layerId": "character"
+          },
+          "features_required": true,
+          "mask_required": true,
+          "approval": false,
+          "source_sha256": "a9a848110093624761a07303afb161cabeedefd9d7acf72bc7f609e9e9148116",
+          "output_sha256": "80ab4de8c57ede495aec8f8412eb1040da29d76041d1bb6daa614f90d5bb484c",
+          "transform": {
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0.0,
+              0.25,
+              1672.0,
+              940.75
+            ],
+            "target_size": [
+              1920,
+              1080
+            ],
+            "scale": 1.1483253588516746,
+            "method": "center_crop_lanczos_preserve_alpha"
+          },
+          "mode": "RGBA",
+          "source_alpha_range": [
+            0,
+            254
+          ],
+          "depth_input": "assets/depth-inputs/S25-character-refined.png",
+          "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+          "mask_provenance": {
+            "method": "normalized_source_alpha_channel",
+            "source_sha256": "a9a848110093624761a07303afb161cabeedefd9d7acf72bc7f609e9e9148116",
+            "alpha_sha256": "1b6f98b3e77a9396ac14e6d9f4678531309227797e30a59f4e1ecb246f2a9b78",
+            "fully_transparent_pixel_fraction": 0.7554161844135803,
+            "approval": false
+          },
+          "asset_id": "S25-character-refined",
+          "path": "assets/normalized/S25-character-refined.png",
+          "z": 1.2,
+          "rgba": true
+        }
+      ],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.52272727,
+          0.12838915,
+          0.01495215
+        ],
+        "tie": null,
+        "halo": [
+          0.48145933,
+          0.14859117,
+          0.22129187,
+          0.28708134
+        ],
+        "eyes_state": "rear_view",
+        "review_evidence": [
+          "qa/features/S25-character-refined-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "layerId": "character"
+      },
+      "status": "layers_available",
+      "approval": false,
+      "featureLayerId": "character"
+    },
+    "S26": {
+      "plate": "assets/normalized/S26.png",
+      "depth": "assets/depth/S26.png",
+      "mask": "assets/masks/S26.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.45334928,
+            0.12307283,
+            0.00478469
+          ],
+          [
+            0.49222488,
+            0.14114833,
+            0.00478469
+          ]
+        ],
+        "hairpin": [
+          0.51315789,
+          0.09968102,
+          0.01016746
+        ],
+        "tie": [
+          0.45873206,
+          0.27299309,
+          0.01614833
+        ],
+        "halo": [
+          0.46889952,
+          0.13795853,
+          0.21830144,
+          0.29771398
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S26-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S26",
+      "depth_input": "assets/normalized/S26.png"
+    },
+    "S27": {
+      "plate": "assets/normalized/S27.png",
+      "depth": "assets/depth/S27.png",
+      "mask": "assets/masks/S27.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.51375598,
+            0.13795853,
+            0.00478469
+          ],
+          [
+            0.54665072,
+            0.11988304,
+            0.00478469
+          ]
+        ],
+        "hairpin": [
+          0.5562201,
+          0.07203615,
+          0.01076555
+        ],
+        "tie": [
+          0.55861244,
+          0.24641148,
+          0.01435407
+        ],
+        "halo": [
+          0.53349282,
+          0.11881978,
+          0.20334928,
+          0.28708134
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S27-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "heart": [
+          0.56818182,
+          0.29106858
+        ]
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S27",
+      "depth_input": "assets/normalized/S27.png"
+    },
+    "S28a": {
+      "plate": "assets/normalized/S27.png",
+      "depth": "assets/depth/S27.png",
+      "mask": "assets/masks/S27.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.51375598,
+            0.13795853,
+            0.00478469
+          ],
+          [
+            0.54665072,
+            0.11988304,
+            0.00478469
+          ]
+        ],
+        "hairpin": [
+          0.5562201,
+          0.07203615,
+          0.01076555
+        ],
+        "tie": [
+          0.55861244,
+          0.24641148,
+          0.01435407
+        ],
+        "halo": [
+          0.53349282,
+          0.11881978,
+          0.20334928,
+          0.28708134
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S27-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "heart": [
+          0.56818182,
+          0.29106858
+        ]
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S27",
+      "depth_input": "assets/normalized/S27.png"
+    },
+    "S28b": {
+      "plate": "assets/normalized/S28b-pose.png",
+      "depth": "assets/depth/S28b-pose.png",
+      "mask": "assets/masks/S28b-pose.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.50657895,
+            0.12945242,
+            0.00478469
+          ],
+          [
+            0.54186603,
+            0.14008506,
+            0.00478469
+          ]
+        ],
+        "hairpin": [
+          0.56160287,
+          0.10712387,
+          0.01016746
+        ],
+        "tie": [
+          0.52691388,
+          0.26023392,
+          0.01495215
+        ],
+        "halo": [
+          0.51854067,
+          0.12838915,
+          0.17344498,
+          0.26581606
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S28b-pose-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "punch": [
+          0.42523923,
+          0.20175439
+        ]
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "exact_source_alpha",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S28b-pose",
+      "depth_input": "assets/depth-inputs/S28b-pose.png"
+    },
+    "S28c": {
+      "plate": "assets/normalized/S28c-clean.png",
+      "depth": "assets/depth/S28c-clean.png",
+      "mask": "assets/masks/S28c-clean.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.465311,
+            0.27192982,
+            0.00598086
+          ],
+          [
+            0.50657895,
+            0.26342371,
+            0.00598086
+          ]
+        ],
+        "hairpin": [
+          0.53409091,
+          0.22408293,
+          0.01495215
+        ],
+        "tie": [
+          0.51255981,
+          0.45055821,
+          0.02093301
+        ],
+        "halo": [
+          0.48564593,
+          0.2666135,
+          0.24521531,
+          0.37214248
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S28c-clean-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S28c-clean",
+      "depth_input": "assets/normalized/S28c-clean.png"
+    },
+    "S29": {
+      "plate": null,
+      "depth": null,
+      "mask": null,
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "status": "code_only",
+      "approval": false
+    },
+    "S30": {
+      "plate": "assets/normalized/S30.png",
+      "depth": "assets/depth/S30.png",
+      "mask": "assets/masks/S30.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.62320574,
+            0.35061138,
+            0.00538278
+          ],
+          [
+            0.6680622,
+            0.33785221,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.59389952,
+          0.30489102,
+          0.01674641
+        ],
+        "tie": [
+          0.56937799,
+          0.5164806,
+          0.01674641
+        ],
+        "halo": [
+          0.60047847,
+          0.30808081,
+          0.26913876,
+          0.4040404
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S30-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "surface": [
+          0.87679426,
+          0.6323764
+        ],
+        "reflection": {
+          "eyes": [
+            [
+              0.62320574,
+              0.81738437,
+              0.00538278
+            ],
+            [
+              0.6680622,
+              0.83758639,
+              0.0041866
+            ]
+          ],
+          "hairpin": [
+            0.59389952,
+            0.85672515,
+            0.01674641
+          ],
+          "tie": [
+            0.56937799,
+            0.6738437,
+            0.01674641
+          ]
+        }
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S30",
+      "depth_input": "assets/normalized/S30.png"
+    },
+    "S31": {
+      "plate": "assets/normalized/S31-hands.png",
+      "depth": "assets/depth/S31-hands.png",
+      "mask": "assets/masks/S31-hands.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48744019,
+            0.16454014,
+            0.0041866
+          ],
+          [
+            0.51495215,
+            0.15178097,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.52332536,
+          0.11244019,
+          0.00837321
+        ],
+        "tie": [
+          0.51495215,
+          0.25917065,
+          0.01315789
+        ],
+        "halo": [
+          0.49641148,
+          0.1507177,
+          0.17344498,
+          0.25518341
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S31-hands-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S31-hands",
+      "depth_input": "assets/normalized/S31-hands.png"
+    },
+    "S32": {
+      "plate": "assets/normalized/S32.png",
+      "depth": "assets/depth/S32.png",
+      "mask": "assets/masks/S32.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.45394737,
+          0.09861776,
+          0.02990431
+        ],
+        "tie": [
+          0.46710526,
+          0.77804359,
+          0.0388756
+        ],
+        "halo": [
+          0.38277512,
+          0.28681552,
+          0.53827751,
+          0.74428495
+        ],
+        "eyes_state": "closed",
+        "review_evidence": [
+          "qa/features/S32-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S32",
+      "depth_input": "assets/normalized/S32.png"
+    },
+    "S33": {
+      "plate": "assets/normalized/S33.png",
+      "depth": "assets/depth/S33.png",
+      "mask": "assets/masks/S33.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.76196172,
+            0.27511962,
+            0.00538278
+          ],
+          [
+            0.80263158,
+            0.30063796,
+            0.00538278
+          ]
+        ],
+        "hairpin": [
+          0.7458134,
+          0.23577884,
+          0.01614833
+        ],
+        "tie": [
+          0.73086124,
+          0.45481127,
+          0.01555024
+        ],
+        "halo": [
+          0.77452153,
+          0.27618288,
+          0.23325359,
+          0.34024455
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S33-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "sun": [
+          0.70155502,
+          0.4569378,
+          0.20334928
+        ]
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S33",
+      "depth_input": "assets/normalized/S33.png"
+    },
+    "S34": {
+      "plate": "assets/normalized/S34-map.png",
+      "depth": "assets/depth/S34-map.png",
+      "mask": null,
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": false,
+      "mask_status": "not_required",
+      "depth_status": "pending_inference",
+      "asset_id": "S34-map",
+      "depth_input": "assets/normalized/S34-map.png"
+    },
+    "S35": {
+      "plate": "assets/normalized/S35.png",
+      "depth": "assets/depth/S35.png",
+      "mask": "assets/masks/S35.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48444976,
+            0.14752791,
+            0.00657895
+          ],
+          [
+            0.53528708,
+            0.1656034,
+            0.00657895
+          ]
+        ],
+        "hairpin": [
+          0.56519139,
+          0.10712387,
+          0.01435407
+        ],
+        "tie": [
+          0.4958134,
+          0.32296651,
+          0.01674641
+        ],
+        "halo": [
+          0.50777512,
+          0.15178097,
+          0.24521531,
+          0.35087719
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S35-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "available_unreviewed",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S35",
+      "depth_input": "assets/normalized/S35.png"
+    },
+    "S36a": {
+      "plate": "assets/normalized/S36a-start.png",
+      "depth": "assets/depth/S36a-start.png",
+      "mask": "assets/masks/S36a-start.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.534689,
+            0.27511962,
+            0.00956938
+          ]
+        ],
+        "hairpin": [
+          0.55263158,
+          0.1539075,
+          0.0215311
+        ],
+        "tie": [
+          0.55263158,
+          0.60154173,
+          0.02691388
+        ],
+        "halo": [
+          0.5,
+          0.25385433,
+          0.38277512,
+          0.5528974
+        ],
+        "eyes_state": "wink_left_screen_eye_closed",
+        "review_evidence": [
+          "qa/features/S36a-start-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "exact_source_alpha",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S36a-start",
+      "depth_input": "assets/depth-inputs/S36a-start.png"
+    },
+    "S36b": {
+      "plate": "assets/normalized/S36b-start.png",
+      "depth": "assets/depth/S36b-start.png",
+      "mask": "assets/masks/S36b-start.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "outside_crop",
+        "review_evidence": [
+          "qa/features/S36b-start-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg",
+          "qa/features/dance-action-source-crops.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus",
+        "wrist": [
+          0.42344498,
+          0.36337055
+        ]
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "exact_source_alpha",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S36b-start",
+      "depth_input": "assets/depth-inputs/S36b-start.png"
+    },
+    "S36c": {
+      "plate": "assets/normalized/S36c-start-v2.png",
+      "depth": "assets/depth/S36c-start-v2.png",
+      "mask": "assets/masks/S36c-start-v2.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.47069378,
+            0.32934609,
+            0.00777512
+          ],
+          [
+            0.52870813,
+            0.35805423,
+            0.00777512
+          ]
+        ],
+        "hairpin": [
+          0.5687799,
+          0.29106858,
+          0.01794258
+        ],
+        "tie": [
+          0.49641148,
+          0.5579479,
+          0.02093301
+        ],
+        "halo": [
+          0.49760766,
+          0.29425837,
+          0.33492823,
+          0.49973418
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S36c-start-v2-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "exact_source_alpha",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S36c-start-v2",
+      "depth_input": "assets/depth-inputs/S36c-start-v2.png"
+    },
+    "S36d": {
+      "plate": "assets/normalized/S36d-start-v2.png",
+      "depth": "assets/depth/S36d-start-v2.png",
+      "mask": "assets/masks/S36d-start-v2.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48385167,
+            0.22939926,
+            0.00358852
+          ],
+          [
+            0.50897129,
+            0.21132376,
+            0.00358852
+          ]
+        ],
+        "hairpin": [
+          0.51913876,
+          0.17517278,
+          0.00956938
+        ],
+        "tie": [
+          0.51555024,
+          0.31446039,
+          0.01196172
+        ],
+        "halo": [
+          0.4958134,
+          0.21557682,
+          0.15849282,
+          0.24986709
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S36d-start-v2-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "exact_source_alpha",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S36d-start-v2",
+      "depth_input": "assets/depth-inputs/S36d-start-v2.png"
+    },
+    "S36e": {
+      "plate": "assets/normalized/S36e-start-v2.png",
+      "depth": "assets/depth/S36e-start-v2.png",
+      "mask": "assets/masks/S36e-start-v2.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.45661281,
+            0.44520912,
+            0.00837822
+          ],
+          [
+            0.52603232,
+            0.38350289,
+            0.00837822
+          ]
+        ],
+        "hairpin": [
+          0.54219031,
+          0.26753774,
+          0.01795332
+        ],
+        "tie": [
+          0.52782765,
+          0.65692533,
+          0.0203471
+        ],
+        "halo": [
+          0.48055057,
+          0.36328878,
+          0.36505087,
+          0.53195026
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S36e-start-v2-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg",
+          "qa/features/dance-action-source-crops.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "cross": [
+          0.52962298,
+          0.70160915
+        ]
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "exact_source_alpha",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S36e-start-v2",
+      "depth_input": "assets/depth-inputs/S36e-start-v2.png"
+    },
+    "S36f": {
+      "plate": "assets/normalized/S36f-start.png",
+      "depth": "assets/depth/S36f-start.png",
+      "mask": "assets/masks/S36f-start.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48026316,
+            0.17198299,
+            0.0041866
+          ],
+          [
+            0.51016746,
+            0.15709729,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.52272727,
+          0.11775651,
+          0.01016746
+        ],
+        "tie": [
+          0.50777512,
+          0.27511962,
+          0.01315789
+        ],
+        "halo": [
+          0.49222488,
+          0.15497076,
+          0.17942584,
+          0.26581606
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S36f-start-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "exact_source_alpha",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S36f-start",
+      "depth_input": "assets/depth-inputs/S36f-start.png"
+    },
+    "S36g": {
+      "plate": "assets/normalized/S36g-start-v2.png",
+      "depth": "assets/depth/S36g-start-v2.png",
+      "mask": "assets/masks/S36g-start-v2.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.42165072,
+            0.16985646,
+            0.00299043
+          ],
+          [
+            0.44856459,
+            0.17198299,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.4784689,
+          0.11775651,
+          0.01435407
+        ],
+        "tie": [
+          0.44497608,
+          0.33678894,
+          0.01315789
+        ],
+        "halo": [
+          0.47368421,
+          0.15709729,
+          0.22727273,
+          0.29771398
+        ],
+        "eyes_state": "open_profile",
+        "review_evidence": [
+          "qa/features/S36g-start-v2-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "exact_source_alpha",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S36g-start-v2",
+      "depth_input": "assets/depth-inputs/S36g-start-v2.png"
+    },
+    "S36h": {
+      "plate": "assets/normalized/S36h-start.png",
+      "depth": "assets/depth/S36h-start.png",
+      "mask": "assets/masks/S36h-start.png",
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48504785,
+            0.14008506,
+            0.0041866
+          ],
+          [
+            0.51375598,
+            0.12307283,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.52392344,
+          0.07628921,
+          0.00897129
+        ],
+        "tie": [
+          0.52511962,
+          0.23790537,
+          0.01196172
+        ],
+        "halo": [
+          0.49760766,
+          0.12945242,
+          0.17045455,
+          0.24455077
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S36h-start-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg",
+          "qa/features/dance-action-source-crops.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "point": [
+          0.44856459,
+          0.21238703
+        ]
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "exact_source_alpha",
+      "depth_status": "available_unreviewed",
+      "asset_id": "S36h-start",
+      "depth_input": "assets/depth-inputs/S36h-start.png"
+    },
+    "S37": {
+      "plate": "assets/normalized/S37-eye-v2.png",
+      "depth": "assets/depth/S37-eye-v2.png",
+      "mask": "assets/masks/S37-eye-v2.png",
+      "layers": [],
+      "poses": [],
+      "support": {
+        "bust": {
+          "id": "S37-bust",
+          "source": "assets/plates/S37-bust.png",
+          "plate": "assets/normalized/S37-bust.png",
+          "depth": "assets/depth/S37-bust.png",
+          "mask": "assets/masks/S37-bust.png",
+          "expected_mask": "assets/masks/S37-bust.png",
+          "status": "normalized_source_available",
+          "depth_status": "pending_inference",
+          "mask_status": "pending_inference",
+          "features": {
+            "status": "anchors_located_pending_composite_review",
+            "eyes": [
+              [
+                0.46351675,
+                0.31233386,
+                0.00598086
+              ],
+              [
+                0.53528708,
+                0.30489102,
+                0.00598086
+              ]
+            ],
+            "hairpin": [
+              0.57177033,
+              0.20707071,
+              0.01794258
+            ],
+            "tie": [
+              0.50059809,
+              0.59835194,
+              0.02392344
+            ],
+            "halo": [
+              0.49940191,
+              0.28043594,
+              0.35885167,
+              0.5528974
+            ],
+            "eyes_state": "open",
+            "review_evidence": [
+              "qa/features/S37-bust-anchors.png",
+              "qa/features/final-sources-overlay-grid.jpg"
+            ],
+            "halo_requires_subject_occlusion": true,
+            "only_character": "Opus",
+            "iris": [
+              0.53588517,
+              0.3112706,
+              0.01196172
+            ]
+          },
+          "features_required": true,
+          "mask_required": true,
+          "approval": false,
+          "source_sha256": "78bc22a7d5f87779960555207d72ba6b09f69f81dbb7eaa4ecf55e0a05445323",
+          "output_sha256": "c444e6a36cb1cdfbafcc41bab0a98fde056ddd13b2af674d4a8a69887cf25aef",
+          "transform": {
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0.0,
+              0.25,
+              1672.0,
+              940.75
+            ],
+            "target_size": [
+              1920,
+              1080
+            ],
+            "scale": 1.1483253588516746,
+            "method": "center_crop_lanczos_preserve_alpha"
+          },
+          "mode": "RGB",
+          "source_alpha_range": null,
+          "path": "assets/normalized/S37-bust.png",
+          "iris": [
+            0.53588517,
+            0.3112706,
+            0.01196172
+          ]
+        },
+        "wide": {
+          "id": "S37-wide",
+          "source": "assets/plates/S37-wide.png",
+          "plate": "assets/normalized/S37-wide.png",
+          "depth": "assets/depth/S37-wide.png",
+          "mask": "assets/masks/S37-wide.png",
+          "expected_mask": "assets/masks/S37-wide.png",
+          "status": "normalized_source_available",
+          "depth_status": "pending_inference",
+          "mask_status": "pending_inference",
+          "features": {
+            "status": "anchors_located_pending_composite_review",
+            "eyes": [
+              [
+                0.48444976,
+                0.23896863,
+                0.00239234
+              ],
+              [
+                0.50538278,
+                0.23684211,
+                0.00239234
+              ]
+            ],
+            "hairpin": [
+              0.51555024,
+              0.21132376,
+              0.00717703
+            ],
+            "tie": [
+              0.49641148,
+              0.32190324,
+              0.00897129
+            ],
+            "halo": [
+              0.49282297,
+              0.23684211,
+              0.10167464,
+              0.15417331
+            ],
+            "eyes_state": "open",
+            "review_evidence": [
+              "qa/features/S37-wide-anchors.png",
+              "qa/features/final-sources-overlay-grid.jpg"
+            ],
+            "halo_requires_subject_occlusion": true,
+            "only_character": "Opus",
+            "iris": [
+              0.50538278,
+              0.23896863,
+              0.00358852
+            ]
+          },
+          "features_required": true,
+          "mask_required": true,
+          "approval": false,
+          "source_sha256": "98ce8c36775ea02da657ce70f34cc98df95a8274c359f0c63a7e71297b23d900",
+          "output_sha256": "fe57357898548cda2e4c5e8cf916085253040396dd1c46041a3a37e265e424e4",
+          "transform": {
+            "source_size": [
+              1672,
+              941
+            ],
+            "crop_box": [
+              0.0,
+              0.25,
+              1672.0,
+              940.75
+            ],
+            "target_size": [
+              1920,
+              1080
+            ],
+            "scale": 1.1483253588516746,
+            "method": "center_crop_lanczos_preserve_alpha"
+          },
+          "mode": "RGB",
+          "source_alpha_range": null,
+          "path": "assets/normalized/S37-wide.png",
+          "iris": [
+            0.50538278,
+            0.23896863,
+            0.00358852
+          ]
+        }
+      },
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.55322967,
+            0.51435407,
+            0.02990431
+          ]
+        ],
+        "hairpin": [
+          0.85645933,
+          0.04545455,
+          0.04186603
+        ],
+        "tie": null,
+        "halo": null,
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S37-eye-v2-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus",
+        "iris": [
+          0.5562201,
+          0.54199894,
+          0.08253589
+        ]
+      },
+      "status": "normalized_source_available",
+      "approval": false,
+      "mask_required": true,
+      "mask_status": "pending_inference",
+      "depth_status": "pending_inference",
+      "asset_id": "S37-eye-v2",
+      "depth_input": "assets/normalized/S37-eye-v2.png"
+    },
+    "S38": {
+      "plate": null,
+      "depth": null,
+      "mask": null,
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "status": "code_only",
+      "approval": false
+    },
+    "S39": {
+      "plate": null,
+      "depth": null,
+      "mask": null,
+      "layers": [],
+      "poses": [],
+      "support": {},
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "status": "code_only",
+      "approval": false
+    }
+  },
+  "assets": {
+    "S01": {
+      "id": "S01",
+      "source": "assets/plates/S01.png",
+      "plate": "assets/normalized/S01.png",
+      "depth": "assets/depth/S01.png",
+      "mask": "assets/masks/S01.png",
+      "expected_mask": "assets/masks/S01.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.72248804,
+          0.05077087,
+          0.05263158
+        ],
+        "tie": null,
+        "halo": null,
+        "eyes_state": "closed",
+        "review_evidence": [
+          "qa/features/S01-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "ed925a20598839800cd35bce03537dd7739c74f4d6c41087552efe1c41a79941",
+      "output_sha256": "35ddb928bb224cf2208cde31d8a9bf3d8f0a972d0856d6c9a9b67a786f668f5d",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "tomorrow": {
+      "id": "tomorrow",
+      "source": "assets/worlds/tomorrow.png",
+      "plate": "assets/normalized/tomorrow.png",
+      "depth": "assets/depth/tomorrow.png",
+      "mask": null,
+      "expected_mask": "assets/masks/tomorrow.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "not_required",
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "features_required": false,
+      "mask_required": false,
+      "approval": false,
+      "source_sha256": "ff57a3af5f61bc66b6800bb48d914fa09a0186581cdb1d0803988aa7d473b099",
+      "output_sha256": "947a7eddd14bb75f5be6430672e3701688379300ecec303524635118c0d85d3e",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S03": {
+      "id": "S03",
+      "source": "assets/plates/S03.png",
+      "plate": "assets/normalized/S03.png",
+      "depth": "assets/depth/S03.png",
+      "mask": "assets/masks/S03.png",
+      "expected_mask": "assets/masks/S03.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.6895933,
+          0.1953748,
+          0.01794258
+        ],
+        "tie": [
+          0.66447368,
+          0.37400319,
+          0.01913876
+        ],
+        "halo": [
+          0.66985646,
+          0.23046252,
+          0.20933014,
+          0.31897927
+        ],
+        "eyes_state": "closed",
+        "review_evidence": [
+          "qa/features/S03-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "f9d27987bdcf8b08481547c3ab288fc01e9f34b30418df03db3c72a45ba77254",
+      "output_sha256": "6e906e03ff60cf726fe8dda3331dd798a47c75c94338ed0ca27812f185fa39ec",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S04": {
+      "id": "S04",
+      "source": "assets/plates/S04.png",
+      "plate": "assets/normalized/S04.png",
+      "depth": "assets/depth/S04.png",
+      "mask": "assets/masks/S04.png",
+      "expected_mask": "assets/masks/S04.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.72727273,
+          0.18899522,
+          0.01614833
+        ],
+        "tie": [
+          0.65430622,
+          0.30489102,
+          0.0215311
+        ],
+        "halo": [
+          0.6937799,
+          0.20175439,
+          0.2242823,
+          0.31897927
+        ],
+        "eyes_state": "closed",
+        "review_evidence": [
+          "qa/features/S04-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "b7c775fcea8e1cf6a85b9368db4a09509b29f9581f26c7b20b3b26068fb19eaf",
+      "output_sha256": "3d96ec64c137d80768272cd34cc068232b098024ab09f6c5b2bbefa7135a9a49",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S05-face": {
+      "id": "S05-face",
+      "source": "assets/plates/S05-face.png",
+      "plate": "assets/normalized/S05-face.png",
+      "depth": "assets/depth/S05-face.png",
+      "mask": "assets/masks/S05-face.png",
+      "expected_mask": "assets/masks/S05-face.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.41447368,
+            0.45481127,
+            0.01196172
+          ],
+          [
+            0.56160287,
+            0.3856991,
+            0.01196172
+          ]
+        ],
+        "hairpin": [
+          0.61543062,
+          0.17304625,
+          0.02751196
+        ],
+        "tie": [
+          0.53050239,
+          0.98112706,
+          0.02990431
+        ],
+        "halo": [
+          0.50837321,
+          0.41440723,
+          0.62799043,
+          0.85061138
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S05-face-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "4036e05717bf57a45d4db297597152a160e5b84ae623e9aec82488abae7251a8",
+      "output_sha256": "2cc4e63778b147cd0b7bc5db1c350bdef9d5faedced40499f23045fcc3fe5922",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S05-eye": {
+      "id": "S05-eye",
+      "source": "assets/plates/S05-eye.png",
+      "plate": "assets/normalized/S05-eye.png",
+      "depth": "assets/depth/S05-eye.png",
+      "mask": "assets/masks/S05-eye.png",
+      "expected_mask": "assets/masks/S05-eye.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.58268229,
+            0.47916667,
+            0.04427083
+          ]
+        ],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "open_macro",
+        "review_evidence": [
+          "qa/features/S05-eye-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "b9d27d45e98d62e046e9b2988ad63cfbb5704868e1f40a389f8d7966e4738bbb",
+      "output_sha256": "13a8a74c3ff334a6cbd3411fc10f3f2cf998b89daafdf2c6a2f569f5c1f749f2",
+      "transform": {
+        "source_size": [
+          1536,
+          1024
+        ],
+        "crop_box": [
+          0.0,
+          80.0,
+          1536.0,
+          944.0
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.25,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S07": {
+      "id": "S07",
+      "source": "assets/plates/S07.png",
+      "plate": "assets/normalized/S07.png",
+      "depth": "assets/depth/S07.png",
+      "mask": "assets/masks/S07.png",
+      "expected_mask": "assets/masks/S07.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.29366029,
+            0.135832,
+            0.0041866
+          ],
+          [
+            0.32595694,
+            0.14433812,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.33971292,
+          0.11456672,
+          0.01016746
+        ],
+        "tie": [
+          0.31100478,
+          0.24215843,
+          0.01315789
+        ],
+        "halo": [
+          0.31100478,
+          0.13370548,
+          0.16746411,
+          0.24455077
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S07-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "db256c0af9303f541b99b84623a8abffcaaf33710d685407ef36aaf3344cb5db",
+      "output_sha256": "318c0f69615fc1669bdb4a4c5f26788dd8458865adc4b30b7109dcdca448bc2e",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S08a": {
+      "id": "S08a",
+      "source": "assets/plates/S08a.png",
+      "plate": "assets/normalized/S08a.png",
+      "depth": "assets/depth/S08a.png",
+      "mask": "assets/masks/S08a.png",
+      "expected_mask": "assets/masks/S08a.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.53528708,
+            0.23896863,
+            0.00837321
+          ],
+          [
+            0.62978469,
+            0.28043594,
+            0.00837321
+          ]
+        ],
+        "hairpin": [
+          0.69557416,
+          0.18261563,
+          0.01794258
+        ],
+        "tie": [
+          0.53588517,
+          0.59835194,
+          0.02990431
+        ],
+        "halo": [
+          0.59210526,
+          0.20175439,
+          0.46650718,
+          0.63795853
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S08a-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "bf076cdce03949fd25aa50abc2a26de5fe2d6533e58dc0caeafc12dbd7dd0b74",
+      "output_sha256": "b955026f5090807b3984aea58a7971c67ce898f1b8ebeeeb73a3c465910a860a",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S08c-researchers": {
+      "id": "S08c-researchers",
+      "source": "assets/plates/S08c-researchers.png",
+      "plate": "assets/normalized/S08c-researchers.png",
+      "depth": "assets/depth/S08c-researchers.png",
+      "mask": null,
+      "expected_mask": "assets/masks/S08c-researchers.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "not_required",
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "features_required": false,
+      "mask_required": false,
+      "approval": false,
+      "source_sha256": "c80f27e08c8979294d4afcef95ab48874cf9e95cdd4cbca0163e3b220529c15d",
+      "output_sha256": "9e0b08ae4c0c62c5e581a775f616ce6525f01185df880db18eadfc7c1c9e7a15",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S08d": {
+      "id": "S08d",
+      "source": "assets/plates/S08d.png",
+      "plate": "assets/normalized/S08d.png",
+      "depth": "assets/depth/S08d.png",
+      "mask": null,
+      "expected_mask": "assets/masks/S08d.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "not_required",
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "features_required": false,
+      "mask_required": false,
+      "approval": false,
+      "source_sha256": "a36676b96463d3623a32a3555860e329100180fd6a2fb0577edbd84f35a08105",
+      "output_sha256": "8ab1f2c82707a8b80538991e500262bb7a340a0bf28bd370866bf6beed6284f6",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S11-subject": {
+      "id": "S11-subject",
+      "source": "assets/plates/S11-subject.png",
+      "plate": "assets/normalized/S11-subject.png",
+      "depth": "assets/depth/S11-subject.png",
+      "mask": "assets/masks/S11-subject.png",
+      "expected_mask": "assets/masks/S11-subject.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "exact_source_alpha",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.4611244,
+            0.29957469,
+            0.00717703
+          ],
+          [
+            0.53767943,
+            0.26448698,
+            0.00717703
+          ]
+        ],
+        "hairpin": [
+          0.56339713,
+          0.15284423,
+          0.01614833
+        ],
+        "tie": [
+          0.51255981,
+          0.59516215,
+          0.02691388
+        ],
+        "halo": [
+          0.49940191,
+          0.24960128,
+          0.3708134,
+          0.51036683
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S11-subject-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "393f29aa857ba582686987ad9a2c123a559e56d1f4f20fcabe701b9640eeac1f",
+      "output_sha256": "1cffea305c65ac8c9e17ad32b760d3f4d7d111e58e8cfa25104ce602557d91b5",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGBA",
+      "source_alpha_range": [
+        0,
+        255
+      ],
+      "depth_input": "assets/depth-inputs/S11-subject.png",
+      "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+      "mask_provenance": {
+        "method": "normalized_source_alpha_channel",
+        "source_sha256": "393f29aa857ba582686987ad9a2c123a559e56d1f4f20fcabe701b9640eeac1f",
+        "alpha_sha256": "9c534b809721f630e89aecbe9943e6e36b4abd5d730ff44f3f52bf5db4c13214",
+        "fully_transparent_pixel_fraction": 0.502205825617284,
+        "approval": false
+      }
+    },
+    "S11-background": {
+      "id": "S11-background",
+      "source": "assets/plates/S11-background.png",
+      "plate": "assets/normalized/S11-background.png",
+      "depth": "assets/depth/S11-background.png",
+      "mask": null,
+      "expected_mask": "assets/masks/S11-background.png",
+      "status": "normalized_source_available",
+      "depth_status": "pending_inference",
+      "mask_status": "not_required",
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "features_required": false,
+      "mask_required": false,
+      "approval": false,
+      "source_sha256": "47d59389e3af80062fa4d73f66031a0a6315c117ffa629b5bd57e40005c1f82e",
+      "output_sha256": "a149deb3ebfa37ff91b868532fcfdeea3c64d04700846fdf59d229766d8e8579",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S12": {
+      "id": "S12",
+      "source": "assets/plates/S12.png",
+      "plate": "assets/normalized/S12.png",
+      "depth": "assets/depth/S12.png",
+      "mask": "assets/masks/S12.png",
+      "expected_mask": "assets/masks/S12.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.5819378,
+            0.37187666,
+            0.00897129
+          ],
+          [
+            0.68062201,
+            0.30595428,
+            0.00897129
+          ]
+        ],
+        "hairpin": [
+          0.71172249,
+          0.14540138,
+          0.02332536
+        ],
+        "tie": [
+          0.70992823,
+          0.76209463,
+          0.02870813
+        ],
+        "halo": [
+          0.62200957,
+          0.31871345,
+          0.46650718,
+          0.65922382
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S12-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "a0396b708839f257baa418b5aabe0d5fefe8a4d35dc47be560233a8b9fe4a08e",
+      "output_sha256": "acf25627337ed944cd80bbe470ce107a41ff9f129db08a1d7f64e681a62c1f82",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S13": {
+      "id": "S13",
+      "source": "assets/plates/S13.png",
+      "plate": "assets/normalized/S13.png",
+      "depth": "assets/depth/S13.png",
+      "mask": "assets/masks/S13.png",
+      "expected_mask": "assets/masks/S13.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.42643541,
+            0.11244019,
+            0.0041866
+          ],
+          [
+            0.45813397,
+            0.135832,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.4784689,
+          0.10712387,
+          0.01076555
+        ],
+        "tie": [
+          0.43480861,
+          0.21770335,
+          0.01315789
+        ],
+        "halo": [
+          0.43660287,
+          0.11669325,
+          0.17344498,
+          0.24455077
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S13-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "bcc49833a3c0ae745d0910f64e785325b83e202b4afd0b8348c067f8e994f700",
+      "output_sha256": "041d48ea84c8c09315475c810da2edcef249701f82cedb2299e5ae1f6dd09272",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S14": {
+      "id": "S14",
+      "source": "assets/plates/S14.png",
+      "plate": "assets/normalized/S14.png",
+      "depth": "assets/depth/S14.png",
+      "mask": "assets/masks/S14.png",
+      "expected_mask": "assets/masks/S14.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.3923445,
+            0.341042,
+            0.00777512
+          ],
+          [
+            0.44916268,
+            0.33891547,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.30382775,
+          0.25066454,
+          0.02990431
+        ],
+        "tie": [
+          0.4222488,
+          0.87054758,
+          0.02990431
+        ],
+        "halo": [
+          0.31698565,
+          0.32934609,
+          0.4784689,
+          0.69112174
+        ],
+        "eyes_state": "open_profile",
+        "review_evidence": [
+          "qa/features/S14-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "mouth": [
+          0.45933014,
+          0.46544391
+        ]
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "90ccd1ffabe175099ddd7909304d9ed8a1ca7565234afbb9616c5c5b7f129d7b",
+      "output_sha256": "f2f50a6dd81a7c7c81336da144e574fe1b832c712638b6f76cf421e349bd192a",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S15": {
+      "id": "S15",
+      "source": "assets/plates/S15.png",
+      "plate": "assets/normalized/S15.png",
+      "depth": "assets/depth/S15.png",
+      "mask": "assets/masks/S15.png",
+      "expected_mask": "assets/masks/S15.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.41566986,
+          0.13051568,
+          0.01674641
+        ],
+        "tie": [
+          0.409689,
+          0.42291334,
+          0.02392344
+        ],
+        "halo": [
+          0.36483254,
+          0.19643806,
+          0.31100478,
+          0.45720362
+        ],
+        "eyes_state": "closed",
+        "review_evidence": [
+          "qa/features/S15-anchors.png",
+          "qa/features/first-batch-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "aaa59f0eb858c7602b61eb3dd2696c3cbefc805797887b1ac74cf2a9b8513d5d",
+      "output_sha256": "e12f89e3fe1c77d4c9219fd59644fd2878b0f3ba5dfe69d717f84429ae7b906b",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S16": {
+      "id": "S16",
+      "source": "assets/plates/S16.png",
+      "plate": "assets/normalized/S16.png",
+      "depth": "assets/depth/S16.png",
+      "mask": "assets/masks/S16.png",
+      "expected_mask": "assets/masks/S16.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "outside_crop",
+        "review_evidence": [
+          "qa/features/S16-anchors.png",
+          "Raw source viewed individually; final action/composite review pending."
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "a3f769502ef7e905765333f6bad7676bcec2dd8cbc9be31d2d985b2609dabf71",
+      "output_sha256": "269ea253bfd18956c31903efdb0bdabb6f454c4833732895100251aec6c09de2",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S17-contact": {
+      "id": "S17-contact",
+      "source": "assets/plates/S17-contact.png",
+      "plate": "assets/normalized/S17-contact.png",
+      "depth": "assets/depth/S17-contact.png",
+      "mask": "assets/masks/S17-contact.png",
+      "expected_mask": "assets/masks/S17-contact.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "outside_crop",
+        "review_evidence": [
+          "qa/features/S17-contact-anchors.png",
+          "Raw source viewed individually; final action/composite review pending."
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus",
+        "contact": [
+          0.36363636,
+          0.84183945
+        ]
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "6b7771ffa1e2c66ea34f217afb215712b840d21355f9e139860a566412d50835",
+      "output_sha256": "5837361eab3c23c348328a8dbe9945f33ac4340786f8f34ad6a14b509ce87b52",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S18-opus-cutout": {
+      "id": "S18-opus-cutout",
+      "source": "assets/plates/S18-opus-cutout.png",
+      "plate": "assets/normalized/S18-opus-cutout.png",
+      "depth": "assets/depth/S18-opus-cutout.png",
+      "mask": "assets/masks/S18-opus-cutout.png",
+      "expected_mask": "assets/masks/S18-opus-cutout.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "exact_source_alpha",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.50179426,
+            0.25704413,
+            0.00897129
+          ],
+          [
+            0.5992823,
+            0.29957469,
+            0.00897129
+          ]
+        ],
+        "hairpin": [
+          0.66626794,
+          0.18899522,
+          0.02212919
+        ],
+        "tie": [
+          0.50059809,
+          0.65364168,
+          0.02691388
+        ],
+        "halo": [
+          0.55203349,
+          0.25279107,
+          0.4784689,
+          0.6804891
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S18-opus-cutout-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "touch": [
+          0.41686603,
+          0.4271664
+        ]
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "12e4ca97c4112c1d29b2d7d2cb9d70dc6e4cab203aa33a1b4aa9a3fde7db61c6",
+      "output_sha256": "1cc7b367ee2218da5b2d3099bfe2d1b36f4064ac12463f3b2bad18247fe8c704",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGBA",
+      "source_alpha_range": [
+        0,
+        255
+      ],
+      "depth_input": "assets/depth-inputs/S18-opus-cutout.png",
+      "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+      "mask_provenance": {
+        "method": "normalized_source_alpha_channel",
+        "source_sha256": "12e4ca97c4112c1d29b2d7d2cb9d70dc6e4cab203aa33a1b4aa9a3fde7db61c6",
+        "alpha_sha256": "5376cbe8d9b46c66365972301eac1f4ec26ab19b9bbc04253f2f2b1c6052f6cb",
+        "fully_transparent_pixel_fraction": 0.5205116705246914,
+        "approval": false
+      }
+    },
+    "S18-hand": {
+      "id": "S18-hand",
+      "source": "assets/plates/S18-hand.png",
+      "plate": "assets/normalized/S18-hand.png",
+      "depth": "assets/depth/S18-hand.png",
+      "mask": null,
+      "expected_mask": "assets/masks/S18-hand.png",
+      "status": "normalized_source_available",
+      "depth_status": "pending_inference",
+      "mask_status": "not_required",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "outside_crop",
+        "review_evidence": [
+          "qa/features/S18-hand-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "anonymous user hand",
+        "tip": [
+          0.25119617,
+          0.05608719
+        ]
+      },
+      "features_required": false,
+      "mask_required": false,
+      "approval": false,
+      "source_sha256": "593d9b2cb0778202da1b58312a2ab449cb666a021f5d7387c6a1b7127bf3bff6",
+      "output_sha256": "f14d2b522fbbf7155e024b735182cace06a6c8046112d7feb47f890cf040e197",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGBA",
+      "source_alpha_range": [
+        0,
+        255
+      ],
+      "depth_input": "assets/depth-inputs/S18-hand.png",
+      "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+      "mask_provenance": {
+        "method": "normalized_source_alpha_channel",
+        "source_sha256": "593d9b2cb0778202da1b58312a2ab449cb666a021f5d7387c6a1b7127bf3bff6",
+        "alpha_sha256": "b8ff85c92a2d3eeaa2989434ccdac2889c9591c284834449d1027938382c3498",
+        "fully_transparent_pixel_fraction": 0.7683873456790123,
+        "approval": false
+      }
+    },
+    "S19-user": {
+      "id": "S19-user",
+      "source": "assets/plates/S19-user.png",
+      "plate": "assets/normalized/S19-user.png",
+      "depth": "assets/depth/S19-user.png",
+      "mask": null,
+      "expected_mask": "assets/masks/S19-user.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "not_required",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "faceless",
+        "review_evidence": [
+          "qa/features/S19-user-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "anonymous user silhouette",
+        "screenQuad": [
+          [
+            0.51375598,
+            0.36549708
+          ],
+          [
+            0.7930622,
+            0.37506645
+          ],
+          [
+            0.7673445,
+            0.67809676
+          ],
+          [
+            0.48086124,
+            0.63875598
+          ]
+        ],
+        "screenVisiblePolygon": [
+          [
+            0.51495215,
+            0.3676236
+          ],
+          [
+            0.79186603,
+            0.37719298
+          ],
+          [
+            0.76614833,
+            0.67597023
+          ],
+          [
+            0.52751196,
+            0.64300904
+          ],
+          [
+            0.49282297,
+            0.54731526
+          ]
+        ],
+        "screenMask": "assets/masks/S19-user-screen.png",
+        "screenOcclusion": "Lower-left physical screen corner is hidden behind ivory user; screenMask includes only observed visible display.",
+        "screenQuadInferredCorners": [
+          "bottom-left: obscured by user silhouette; extrapolated from visible bezel edges"
+        ]
+      },
+      "features_required": false,
+      "mask_required": false,
+      "approval": false,
+      "source_sha256": "7782050b8f2567d38e8c3ad5257e04bc5ebc40f7e3fb21548f448b9d9d4066b0",
+      "output_sha256": "c6a95e60bd25ac1e2d81a85e4ccae743864d41779758f28dd2911628a963e0af",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S20": {
+      "id": "S20",
+      "source": "assets/plates/S20.png",
+      "plate": "assets/normalized/S20.png",
+      "depth": "assets/depth/S20.png",
+      "mask": "assets/masks/S20.png",
+      "expected_mask": "assets/masks/S20.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.52452153,
+            0.31339713,
+            0.00897129
+          ],
+          [
+            0.64354067,
+            0.34848485,
+            0.00897129
+          ]
+        ],
+        "hairpin": [
+          0.71471292,
+          0.22408293,
+          0.02691388
+        ],
+        "tie": [
+          0.56519139,
+          0.77379054,
+          0.02870813
+        ],
+        "halo": [
+          0.59509569,
+          0.27086656,
+          0.50837321,
+          0.70175439
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S20-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "palm": [
+          0.31997608,
+          0.60047847
+        ]
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "eb496b8681e28da812f8871dfcf070b7a81863c51bd4928ba385d71e86c7cf50",
+      "output_sha256": "1629dc08d280f483aba46935c2f13fc903fc98e7d512830392cde1aa787c79a4",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S21": {
+      "id": "S21",
+      "source": "assets/plates/S21.png",
+      "plate": "assets/normalized/S21.png",
+      "depth": "assets/depth/S21.png",
+      "mask": "assets/masks/S21.png",
+      "expected_mask": "assets/masks/S21.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.49043062,
+            0.12626263,
+            0.0041866
+          ],
+          [
+            0.51913876,
+            0.13476874,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.53528708,
+          0.10180755,
+          0.00897129
+        ],
+        "tie": [
+          0.50956938,
+          0.23152578,
+          0.01196172
+        ],
+        "halo": [
+          0.50239234,
+          0.13795853,
+          0.15550239,
+          0.24455077
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S21-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "acdbec8ab503e3bec61f8171bb6608aaa53f8dcf4bb48d8ed57d0a1363314ba1",
+      "output_sha256": "01e18895128acdad1119444adfb7f739ab8f193b78ec295ceab2634ca59fdfb1",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S22-solo": {
+      "id": "S22-solo",
+      "source": "assets/plates/S22-solo.png",
+      "plate": "assets/normalized/S22-solo.png",
+      "depth": "assets/depth/S22-solo.png",
+      "mask": null,
+      "expected_mask": "assets/masks/S22-solo.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "not_required",
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "features_required": false,
+      "mask_required": false,
+      "approval": false,
+      "source_sha256": "e4abd23b1c88bc92aae60a8c40115ba4dd0d6bd36bf11832326ee47104caeebf",
+      "output_sha256": "3a83a66782fae4a11fb756f5562bd7d20541d96374f424e67ca8a2fa374dc9fe",
+      "transform": {
+        "source_size": [
+          1536,
+          1024
+        ],
+        "crop_box": [
+          0.0,
+          80.0,
+          1536.0,
+          944.0
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.25,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S23": {
+      "id": "S23",
+      "source": "assets/plates/S23.png",
+      "plate": "assets/normalized/S23.png",
+      "depth": "assets/depth/S23.png",
+      "mask": "assets/masks/S23.png",
+      "expected_mask": "assets/masks/S23.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.51136364,
+            0.34529506,
+            0.00897129
+          ],
+          [
+            0.60885167,
+            0.4005848,
+            0.00897129
+          ]
+        ],
+        "hairpin": [
+          0.68301435,
+          0.3261563,
+          0.01973684
+        ],
+        "tie": [
+          0.55263158,
+          0.75039872,
+          0.02691388
+        ],
+        "halo": [
+          0.56339713,
+          0.30276449,
+          0.4784689,
+          0.6804891
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S23-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "f9b30cae4b84b1ce7745c65547ba71b4fe862824e755d24ff3a5fe43e0df1f34",
+      "output_sha256": "aca62ee4739e28551694dd5ea814b409e180fff2b2b2d5e4b186b6fa89eef77d",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S24": {
+      "id": "S24",
+      "source": "assets/plates/S24.png",
+      "plate": "assets/normalized/S24.png",
+      "depth": "assets/depth/S24.png",
+      "mask": "assets/masks/S24.png",
+      "expected_mask": "assets/masks/S24.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.51555024,
+            0.21345029,
+            0.00538278
+          ],
+          [
+            0.55263158,
+            0.20494418,
+            0.00538278
+          ]
+        ],
+        "hairpin": [
+          0.56698565,
+          0.15603402,
+          0.01076555
+        ],
+        "tie": [
+          0.53648325,
+          0.33572568,
+          0.01555024
+        ],
+        "halo": [
+          0.52930622,
+          0.1804891,
+          0.20334928,
+          0.28708134
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S24-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "8e60d051ba78c9521b6533d8dbef98e803297b07fd9e3da6aff87e606f45026e",
+      "output_sha256": "23e5d32f257cc6073d9429a2ce9edb3d0b16e432438f31ad710ddba5f8320e93",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S25-sky-clean": {
+      "id": "S25-sky-clean",
+      "source": "assets/plates/S25-sky-clean.png",
+      "plate": "assets/normalized/S25-sky-clean.png",
+      "depth": "assets/depth/S25-sky-clean.png",
+      "mask": null,
+      "expected_mask": "assets/masks/S25-sky-clean.png",
+      "status": "normalized_source_available",
+      "depth_status": "pending_inference",
+      "mask_status": "not_required",
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "features_required": false,
+      "mask_required": false,
+      "approval": false,
+      "source_sha256": "95e0d3e06e0a18e6f6ab5876ac391c17127c2d69e4d02022023c759bbe392f30",
+      "output_sha256": "987349dfc3bdf2f5ca08fc6f1f43da7bd7629ce37f1084d389795362564fded9",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S25-mid-far": {
+      "id": "S25-mid-far",
+      "source": "assets/plates/S25-mid-far.png",
+      "plate": "assets/normalized/S25-mid-far.png",
+      "depth": "assets/depth/S25-mid-far.png",
+      "mask": null,
+      "expected_mask": "assets/masks/S25-mid-far.png",
+      "status": "normalized_source_available",
+      "depth_status": "pending_inference",
+      "mask_status": "not_required",
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "features_required": false,
+      "mask_required": false,
+      "approval": false,
+      "source_sha256": "0bcb286c81e520ff60687ca876132b22f2043e10037bde823125bd0830f73aca",
+      "output_sha256": "fe3e6ba5c056ef95e6d0ee15b2ccacafd19005037ddc032eacf8352d12b7fd4a",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGBA",
+      "source_alpha_range": [
+        0,
+        255
+      ],
+      "depth_input": "assets/depth-inputs/S25-mid-far.png",
+      "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+      "mask_provenance": {
+        "method": "normalized_source_alpha_channel",
+        "source_sha256": "0bcb286c81e520ff60687ca876132b22f2043e10037bde823125bd0830f73aca",
+        "alpha_sha256": "2b75c58f2e9822ffafeba9749eb6d1400be69fd851a1432be0fa54652f6fda28",
+        "fully_transparent_pixel_fraction": 0.7981524884259259,
+        "approval": false
+      }
+    },
+    "S25-towers-left": {
+      "id": "S25-towers-left",
+      "source": "assets/plates/S25-towers-left.png",
+      "plate": "assets/normalized/S25-towers-left.png",
+      "depth": "assets/depth/S25-towers-left.png",
+      "mask": null,
+      "expected_mask": "assets/masks/S25-towers-left.png",
+      "status": "normalized_source_available",
+      "depth_status": "pending_inference",
+      "mask_status": "not_required",
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "features_required": false,
+      "mask_required": false,
+      "approval": false,
+      "source_sha256": "baa25abbeaa6f902f75a640e452c3f60662d4bba00a96ac0a5fad0f56acd5c9d",
+      "output_sha256": "4498b2673dba0b75f82d3457c05b9a2c6f3d7343af1089c2654a80cde09316c5",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGBA",
+      "source_alpha_range": [
+        0,
+        255
+      ],
+      "depth_input": "assets/depth-inputs/S25-towers-left.png",
+      "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+      "mask_provenance": {
+        "method": "normalized_source_alpha_channel",
+        "source_sha256": "baa25abbeaa6f902f75a640e452c3f60662d4bba00a96ac0a5fad0f56acd5c9d",
+        "alpha_sha256": "5effde7139fe01acfe563e51aac6c8ac5e1055b1d05a090cd73a4043a388265c",
+        "fully_transparent_pixel_fraction": 0.5314636381172839,
+        "approval": false
+      }
+    },
+    "S25-towers-right": {
+      "id": "S25-towers-right",
+      "source": "assets/plates/S25-towers-right.png",
+      "plate": "assets/normalized/S25-towers-right.png",
+      "depth": "assets/depth/S25-towers-right.png",
+      "mask": null,
+      "expected_mask": "assets/masks/S25-towers-right.png",
+      "status": "normalized_source_available",
+      "depth_status": "pending_inference",
+      "mask_status": "not_required",
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "features_required": false,
+      "mask_required": false,
+      "approval": false,
+      "source_sha256": "2a0fe1107626b32fcce2e7da8a1aebb9ae42b3617731cde2eb82ee707ac47555",
+      "output_sha256": "2bc6c8f2b487ede9e59c52514367e5d9980ac32ebeb76387fa4c1f94da060035",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGBA",
+      "source_alpha_range": [
+        0,
+        255
+      ],
+      "depth_input": "assets/depth-inputs/S25-towers-right.png",
+      "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+      "mask_provenance": {
+        "method": "normalized_source_alpha_channel",
+        "source_sha256": "2a0fe1107626b32fcce2e7da8a1aebb9ae42b3617731cde2eb82ee707ac47555",
+        "alpha_sha256": "715ec61d77f59aba3462572dfc0e48ecc700e64365fc0c81b09ec61195e14b2d",
+        "fully_transparent_pixel_fraction": 0.6468369020061728,
+        "approval": false
+      }
+    },
+    "S25-character-refined": {
+      "id": "S25-character-refined",
+      "source": "assets/cutouts/S25-character-refined.png",
+      "plate": "assets/normalized/S25-character-refined.png",
+      "depth": "assets/depth/S25-character-refined.png",
+      "mask": "assets/masks/S25-character-refined.png",
+      "expected_mask": "assets/masks/S25-character-refined.png",
+      "status": "normalized_source_available",
+      "depth_status": "pending_inference",
+      "mask_status": "exact_source_alpha",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.52272727,
+          0.12838915,
+          0.01495215
+        ],
+        "tie": null,
+        "halo": [
+          0.48145933,
+          0.14859117,
+          0.22129187,
+          0.28708134
+        ],
+        "eyes_state": "rear_view",
+        "review_evidence": [
+          "qa/features/S25-character-refined-anchors.png",
+          "qa/features/batch-through-S25-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "layerId": "character"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "a9a848110093624761a07303afb161cabeedefd9d7acf72bc7f609e9e9148116",
+      "output_sha256": "80ab4de8c57ede495aec8f8412eb1040da29d76041d1bb6daa614f90d5bb484c",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGBA",
+      "source_alpha_range": [
+        0,
+        254
+      ],
+      "depth_input": "assets/depth-inputs/S25-character-refined.png",
+      "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+      "mask_provenance": {
+        "method": "normalized_source_alpha_channel",
+        "source_sha256": "a9a848110093624761a07303afb161cabeedefd9d7acf72bc7f609e9e9148116",
+        "alpha_sha256": "1b6f98b3e77a9396ac14e6d9f4678531309227797e30a59f4e1ecb246f2a9b78",
+        "fully_transparent_pixel_fraction": 0.7554161844135803,
+        "approval": false
+      }
+    },
+    "S26": {
+      "id": "S26",
+      "source": "assets/plates/S26.png",
+      "plate": "assets/normalized/S26.png",
+      "depth": "assets/depth/S26.png",
+      "mask": "assets/masks/S26.png",
+      "expected_mask": "assets/masks/S26.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.45334928,
+            0.12307283,
+            0.00478469
+          ],
+          [
+            0.49222488,
+            0.14114833,
+            0.00478469
+          ]
+        ],
+        "hairpin": [
+          0.51315789,
+          0.09968102,
+          0.01016746
+        ],
+        "tie": [
+          0.45873206,
+          0.27299309,
+          0.01614833
+        ],
+        "halo": [
+          0.46889952,
+          0.13795853,
+          0.21830144,
+          0.29771398
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S26-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "d47489ba47e0f9566ea6c08ad917a4e8095288f5836ffcfe372e7ff7ce63dca9",
+      "output_sha256": "5b8a17a19f2693500f78b6f9384c8a45721fcb38af09df3afffb84616da111fc",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S27": {
+      "id": "S27",
+      "source": "assets/plates/S27.png",
+      "plate": "assets/normalized/S27.png",
+      "depth": "assets/depth/S27.png",
+      "mask": "assets/masks/S27.png",
+      "expected_mask": "assets/masks/S27.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.51375598,
+            0.13795853,
+            0.00478469
+          ],
+          [
+            0.54665072,
+            0.11988304,
+            0.00478469
+          ]
+        ],
+        "hairpin": [
+          0.5562201,
+          0.07203615,
+          0.01076555
+        ],
+        "tie": [
+          0.55861244,
+          0.24641148,
+          0.01435407
+        ],
+        "halo": [
+          0.53349282,
+          0.11881978,
+          0.20334928,
+          0.28708134
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S27-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "heart": [
+          0.56818182,
+          0.29106858
+        ]
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "802428719bea435fbee42a4c283426d50cc80ab114a30513292b372dbf14492f",
+      "output_sha256": "f5449677771b8e964d6f99c0e040022c22ba2066246ec8d16abe8bcd507e33b2",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S28b-pose": {
+      "id": "S28b-pose",
+      "source": "assets/plates/S28b-pose.png",
+      "plate": "assets/normalized/S28b-pose.png",
+      "depth": "assets/depth/S28b-pose.png",
+      "mask": "assets/masks/S28b-pose.png",
+      "expected_mask": "assets/masks/S28b-pose.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "exact_source_alpha",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.50657895,
+            0.12945242,
+            0.00478469
+          ],
+          [
+            0.54186603,
+            0.14008506,
+            0.00478469
+          ]
+        ],
+        "hairpin": [
+          0.56160287,
+          0.10712387,
+          0.01016746
+        ],
+        "tie": [
+          0.52691388,
+          0.26023392,
+          0.01495215
+        ],
+        "halo": [
+          0.51854067,
+          0.12838915,
+          0.17344498,
+          0.26581606
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S28b-pose-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "punch": [
+          0.42523923,
+          0.20175439
+        ]
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "98afef0f25d16774665fa2693910aa77944b8a6e2c6262690fa49dd845b80e37",
+      "output_sha256": "65947af89c416f50b2ddff4c31c42fb365888d5ab7b5252b3a3444dc5c08992f",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGBA",
+      "source_alpha_range": [
+        0,
+        255
+      ],
+      "depth_input": "assets/depth-inputs/S28b-pose.png",
+      "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+      "mask_provenance": {
+        "method": "normalized_source_alpha_channel",
+        "source_sha256": "98afef0f25d16774665fa2693910aa77944b8a6e2c6262690fa49dd845b80e37",
+        "alpha_sha256": "fd7d58bc9ae0f40a9d40a60552aa5ffd132d91fe292960c247c2d3dc1f8ff297",
+        "fully_transparent_pixel_fraction": 0.8593291859567901,
+        "approval": false
+      }
+    },
+    "S28c-clean": {
+      "id": "S28c-clean",
+      "source": "assets/plates/S28c-clean.png",
+      "plate": "assets/normalized/S28c-clean.png",
+      "depth": "assets/depth/S28c-clean.png",
+      "mask": "assets/masks/S28c-clean.png",
+      "expected_mask": "assets/masks/S28c-clean.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.465311,
+            0.27192982,
+            0.00598086
+          ],
+          [
+            0.50657895,
+            0.26342371,
+            0.00598086
+          ]
+        ],
+        "hairpin": [
+          0.53409091,
+          0.22408293,
+          0.01495215
+        ],
+        "tie": [
+          0.51255981,
+          0.45055821,
+          0.02093301
+        ],
+        "halo": [
+          0.48564593,
+          0.2666135,
+          0.24521531,
+          0.37214248
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S28c-clean-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "011a031bc2f51c424f2aaf8ef2c37f662a9eb481c936f9ab3e62dbf84eef3184",
+      "output_sha256": "793baec3ad0f98fb65ce62fe0087e72bf907a2104ca2e8877ef45c205eb1b541",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S30": {
+      "id": "S30",
+      "source": "assets/plates/S30.png",
+      "plate": "assets/normalized/S30.png",
+      "depth": "assets/depth/S30.png",
+      "mask": "assets/masks/S30.png",
+      "expected_mask": "assets/masks/S30.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.62320574,
+            0.35061138,
+            0.00538278
+          ],
+          [
+            0.6680622,
+            0.33785221,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.59389952,
+          0.30489102,
+          0.01674641
+        ],
+        "tie": [
+          0.56937799,
+          0.5164806,
+          0.01674641
+        ],
+        "halo": [
+          0.60047847,
+          0.30808081,
+          0.26913876,
+          0.4040404
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S30-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "surface": [
+          0.87679426,
+          0.6323764
+        ],
+        "reflection": {
+          "eyes": [
+            [
+              0.62320574,
+              0.81738437,
+              0.00538278
+            ],
+            [
+              0.6680622,
+              0.83758639,
+              0.0041866
+            ]
+          ],
+          "hairpin": [
+            0.59389952,
+            0.85672515,
+            0.01674641
+          ],
+          "tie": [
+            0.56937799,
+            0.6738437,
+            0.01674641
+          ]
+        }
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "d3d25effa65e831da209caad00e23ee081a5650c9cc4a5cff18cd2cd612a8df6",
+      "output_sha256": "6d920cdce184b3270cbd80e142ad705e853f750de9e7c998be3bb17ddfaec7b2",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S31-hands": {
+      "id": "S31-hands",
+      "source": "assets/plates/S31-hands.png",
+      "plate": "assets/normalized/S31-hands.png",
+      "depth": "assets/depth/S31-hands.png",
+      "mask": "assets/masks/S31-hands.png",
+      "expected_mask": "assets/masks/S31-hands.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48744019,
+            0.16454014,
+            0.0041866
+          ],
+          [
+            0.51495215,
+            0.15178097,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.52332536,
+          0.11244019,
+          0.00837321
+        ],
+        "tie": [
+          0.51495215,
+          0.25917065,
+          0.01315789
+        ],
+        "halo": [
+          0.49641148,
+          0.1507177,
+          0.17344498,
+          0.25518341
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S31-hands-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "e8ff45a0bc7a96f2e4b4ab493f3f684efd0873ee74a78d9fb6f3eb4d196bc0b7",
+      "output_sha256": "69f3b9a5e96001263d7e405aa4401c40d20f33b6b89fe41b4cc0738c928b5d93",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S32": {
+      "id": "S32",
+      "source": "assets/plates/S32.png",
+      "plate": "assets/normalized/S32.png",
+      "depth": "assets/depth/S32.png",
+      "mask": "assets/masks/S32.png",
+      "expected_mask": "assets/masks/S32.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": [
+          0.45394737,
+          0.09861776,
+          0.02990431
+        ],
+        "tie": [
+          0.46710526,
+          0.77804359,
+          0.0388756
+        ],
+        "halo": [
+          0.38277512,
+          0.28681552,
+          0.53827751,
+          0.74428495
+        ],
+        "eyes_state": "closed",
+        "review_evidence": [
+          "qa/features/S32-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "5762f1bb48d2b189adc876af7d5f7dd16571b77a1b08ab36514d2a2fe82c143a",
+      "output_sha256": "b49b6a2bb622f8c48707d8e6cae9e3c4b88f7613d83e3e085b99f6094a9aecf8",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S33": {
+      "id": "S33",
+      "source": "assets/plates/S33.png",
+      "plate": "assets/normalized/S33.png",
+      "depth": "assets/depth/S33.png",
+      "mask": "assets/masks/S33.png",
+      "expected_mask": "assets/masks/S33.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.76196172,
+            0.27511962,
+            0.00538278
+          ],
+          [
+            0.80263158,
+            0.30063796,
+            0.00538278
+          ]
+        ],
+        "hairpin": [
+          0.7458134,
+          0.23577884,
+          0.01614833
+        ],
+        "tie": [
+          0.73086124,
+          0.45481127,
+          0.01555024
+        ],
+        "halo": [
+          0.77452153,
+          0.27618288,
+          0.23325359,
+          0.34024455
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S33-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "sun": [
+          0.70155502,
+          0.4569378,
+          0.20334928
+        ]
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "4446faa2ab2f2c23381d2c40b8349cf5ef2e1269a3b6f3f45ac53a664ca0e51b",
+      "output_sha256": "bbff8df0b849e4eaf33c3adebe36d027c0eefc892efdd293e92cea56c19e5736",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S34-map": {
+      "id": "S34-map",
+      "source": "assets/plates/S34-map.png",
+      "plate": "assets/normalized/S34-map.png",
+      "depth": "assets/depth/S34-map.png",
+      "mask": null,
+      "expected_mask": "assets/masks/S34-map.png",
+      "status": "normalized_source_available",
+      "depth_status": "pending_inference",
+      "mask_status": "not_required",
+      "features": {
+        "status": "not_required",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null
+      },
+      "features_required": false,
+      "mask_required": false,
+      "approval": false,
+      "source_sha256": "20a29497d99ff5c48b118188a3dea5828387c00a24051f53c64707ed4123cd7b",
+      "output_sha256": "79bc3452315eca4b8b4391c6ac672effbb7cd45fff8e208a3053e1af831c7b28",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S35": {
+      "id": "S35",
+      "source": "assets/plates/S35.png",
+      "plate": "assets/normalized/S35.png",
+      "depth": "assets/depth/S35.png",
+      "mask": "assets/masks/S35.png",
+      "expected_mask": "assets/masks/S35.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "available_unreviewed",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48444976,
+            0.14752791,
+            0.00657895
+          ],
+          [
+            0.53528708,
+            0.1656034,
+            0.00657895
+          ]
+        ],
+        "hairpin": [
+          0.56519139,
+          0.10712387,
+          0.01435407
+        ],
+        "tie": [
+          0.4958134,
+          0.32296651,
+          0.01674641
+        ],
+        "halo": [
+          0.50777512,
+          0.15178097,
+          0.24521531,
+          0.35087719
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S35-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "d772bd3632211ecdb763cc489cacbf0871484910ca4a7753d942a3cb7db675b4",
+      "output_sha256": "3ffebd2568920c211a3e62d9b7098b993ccfe8cbef1c69b639896792932ac99b",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S36a-start": {
+      "id": "S36a-start",
+      "source": "assets/plates/S36a-start.png",
+      "plate": "assets/normalized/S36a-start.png",
+      "depth": "assets/depth/S36a-start.png",
+      "mask": "assets/masks/S36a-start.png",
+      "expected_mask": "assets/masks/S36a-start.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "exact_source_alpha",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.534689,
+            0.27511962,
+            0.00956938
+          ]
+        ],
+        "hairpin": [
+          0.55263158,
+          0.1539075,
+          0.0215311
+        ],
+        "tie": [
+          0.55263158,
+          0.60154173,
+          0.02691388
+        ],
+        "halo": [
+          0.5,
+          0.25385433,
+          0.38277512,
+          0.5528974
+        ],
+        "eyes_state": "wink_left_screen_eye_closed",
+        "review_evidence": [
+          "qa/features/S36a-start-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "efaf5502f794107f8ef05d0b2ae6cd7253d62d6344248f8eee227b3cdf3e56cf",
+      "output_sha256": "7f09b2d384bd563ba2f3b3e73c0bc307e9c12b560ee5e6a2cb486331fddccb63",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGBA",
+      "source_alpha_range": [
+        0,
+        255
+      ],
+      "depth_input": "assets/depth-inputs/S36a-start.png",
+      "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+      "mask_provenance": {
+        "method": "normalized_source_alpha_channel",
+        "source_sha256": "efaf5502f794107f8ef05d0b2ae6cd7253d62d6344248f8eee227b3cdf3e56cf",
+        "alpha_sha256": "a429a9ce30c27f395c1c4d6b171e1df3e81672be99dd7fc247e31b9ea67564f9",
+        "fully_transparent_pixel_fraction": 0.625919174382716,
+        "approval": false
+      }
+    },
+    "S36b-start": {
+      "id": "S36b-start",
+      "source": "assets/plates/S36b-start.png",
+      "plate": "assets/normalized/S36b-start.png",
+      "depth": "assets/depth/S36b-start.png",
+      "mask": "assets/masks/S36b-start.png",
+      "expected_mask": "assets/masks/S36b-start.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "exact_source_alpha",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [],
+        "hairpin": null,
+        "tie": null,
+        "halo": null,
+        "eyes_state": "outside_crop",
+        "review_evidence": [
+          "qa/features/S36b-start-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg",
+          "qa/features/dance-action-source-crops.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus",
+        "wrist": [
+          0.42344498,
+          0.36337055
+        ]
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "a407acee9ac40bb801ba92ea1b6f6193526a2da88073c1ecac2be7b9d9e4b671",
+      "output_sha256": "1e03ee514b5a1c76a93e3c445e56813830c9501c4913bb36276a9aefb19fe3be",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGBA",
+      "source_alpha_range": [
+        0,
+        255
+      ],
+      "depth_input": "assets/depth-inputs/S36b-start.png",
+      "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+      "mask_provenance": {
+        "method": "normalized_source_alpha_channel",
+        "source_sha256": "a407acee9ac40bb801ba92ea1b6f6193526a2da88073c1ecac2be7b9d9e4b671",
+        "alpha_sha256": "3c58d8eaf4618adcf32f20f962740b11304b1572caccf7c726be8e1d76e7554d",
+        "fully_transparent_pixel_fraction": 0.6089559220679013,
+        "approval": false
+      }
+    },
+    "S36c-start-v2": {
+      "id": "S36c-start-v2",
+      "source": "assets/plates/S36c-start-v2.png",
+      "plate": "assets/normalized/S36c-start-v2.png",
+      "depth": "assets/depth/S36c-start-v2.png",
+      "mask": "assets/masks/S36c-start-v2.png",
+      "expected_mask": "assets/masks/S36c-start-v2.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "exact_source_alpha",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.47069378,
+            0.32934609,
+            0.00777512
+          ],
+          [
+            0.52870813,
+            0.35805423,
+            0.00777512
+          ]
+        ],
+        "hairpin": [
+          0.5687799,
+          0.29106858,
+          0.01794258
+        ],
+        "tie": [
+          0.49641148,
+          0.5579479,
+          0.02093301
+        ],
+        "halo": [
+          0.49760766,
+          0.29425837,
+          0.33492823,
+          0.49973418
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S36c-start-v2-anchors.png",
+          "qa/features/batch-S26-dance3-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "c27ddf31c2834e508b482b225807d9571ea06b32209d933be282d60486571195",
+      "output_sha256": "10c7e812cee5a3f83e7e6ad69645a2a75759a183689ed6c8e68e6f26d7d9a3b1",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGBA",
+      "source_alpha_range": [
+        0,
+        255
+      ],
+      "depth_input": "assets/depth-inputs/S36c-start-v2.png",
+      "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+      "mask_provenance": {
+        "method": "normalized_source_alpha_channel",
+        "source_sha256": "c27ddf31c2834e508b482b225807d9571ea06b32209d933be282d60486571195",
+        "alpha_sha256": "34652e399e378eb98e4057d111cc182c6db8010aad72b1e67c90815b47c9ccbe",
+        "fully_transparent_pixel_fraction": 0.7622569444444445,
+        "approval": false
+      }
+    },
+    "S36d-start-v2": {
+      "id": "S36d-start-v2",
+      "source": "assets/plates/S36d-start-v2.png",
+      "plate": "assets/normalized/S36d-start-v2.png",
+      "depth": "assets/depth/S36d-start-v2.png",
+      "mask": "assets/masks/S36d-start-v2.png",
+      "expected_mask": "assets/masks/S36d-start-v2.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "exact_source_alpha",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48385167,
+            0.22939926,
+            0.00358852
+          ],
+          [
+            0.50897129,
+            0.21132376,
+            0.00358852
+          ]
+        ],
+        "hairpin": [
+          0.51913876,
+          0.17517278,
+          0.00956938
+        ],
+        "tie": [
+          0.51555024,
+          0.31446039,
+          0.01196172
+        ],
+        "halo": [
+          0.4958134,
+          0.21557682,
+          0.15849282,
+          0.24986709
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S36d-start-v2-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "56df7ce65b12629cd4f0710292c168d61b07f5bfdf77077a86c133355a9f22a5",
+      "output_sha256": "c4dee3e604d5120b89226e6d8e0ca8614d41335372da601903b5f6da95737705",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGBA",
+      "source_alpha_range": [
+        0,
+        255
+      ],
+      "depth_input": "assets/depth-inputs/S36d-start-v2.png",
+      "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+      "mask_provenance": {
+        "method": "normalized_source_alpha_channel",
+        "source_sha256": "56df7ce65b12629cd4f0710292c168d61b07f5bfdf77077a86c133355a9f22a5",
+        "alpha_sha256": "f020c6af45f4ec0dbae71379d244a79a9556b6917c7e7c2f6ac59a0c4584ff63",
+        "fully_transparent_pixel_fraction": 0.9003071952160494,
+        "approval": false
+      }
+    },
+    "S36e-start-v2": {
+      "id": "S36e-start-v2",
+      "source": "assets/plates/S36e-start-v2.png",
+      "plate": "assets/normalized/S36e-start-v2.png",
+      "depth": "assets/depth/S36e-start-v2.png",
+      "mask": "assets/masks/S36e-start-v2.png",
+      "expected_mask": "assets/masks/S36e-start-v2.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "exact_source_alpha",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.45661281,
+            0.44520912,
+            0.00837822
+          ],
+          [
+            0.52603232,
+            0.38350289,
+            0.00837822
+          ]
+        ],
+        "hairpin": [
+          0.54219031,
+          0.26753774,
+          0.01795332
+        ],
+        "tie": [
+          0.52782765,
+          0.65692533,
+          0.0203471
+        ],
+        "halo": [
+          0.48055057,
+          0.36328878,
+          0.36505087,
+          0.53195026
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S36e-start-v2-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg",
+          "qa/features/dance-action-source-crops.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "cross": [
+          0.52962298,
+          0.70160915
+        ]
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "1fdff90d6af5c9b90c24e54e1507a6afe51b439012904bd273f2fbeaa484a5ab",
+      "output_sha256": "ec7ad72efeb5f2815fdc5fe512c524ebe724e15544f2911d52d0182a9e3de2f7",
+      "transform": {
+        "source_size": [
+          1671,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.53125,
+          1671.0,
+          940.46875
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1490125673249552,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGBA",
+      "source_alpha_range": [
+        0,
+        255
+      ],
+      "depth_input": "assets/depth-inputs/S36e-start-v2.png",
+      "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+      "mask_provenance": {
+        "method": "normalized_source_alpha_channel",
+        "source_sha256": "1fdff90d6af5c9b90c24e54e1507a6afe51b439012904bd273f2fbeaa484a5ab",
+        "alpha_sha256": "de3d8f878ec3ce272004c103a2a0cdfc55923d6ccabe279ddee1ba0ffc0af9fe",
+        "fully_transparent_pixel_fraction": 0.7580975115740741,
+        "approval": false
+      }
+    },
+    "S36f-start": {
+      "id": "S36f-start",
+      "source": "assets/plates/S36f-start.png",
+      "plate": "assets/normalized/S36f-start.png",
+      "depth": "assets/depth/S36f-start.png",
+      "mask": "assets/masks/S36f-start.png",
+      "expected_mask": "assets/masks/S36f-start.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "exact_source_alpha",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48026316,
+            0.17198299,
+            0.0041866
+          ],
+          [
+            0.51016746,
+            0.15709729,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.52272727,
+          0.11775651,
+          0.01016746
+        ],
+        "tie": [
+          0.50777512,
+          0.27511962,
+          0.01315789
+        ],
+        "halo": [
+          0.49222488,
+          0.15497076,
+          0.17942584,
+          0.26581606
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S36f-start-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "1947a55b92f24828ae0fbea1f506d4e3735044e765c4f7aa4ebae2e0a76c65c3",
+      "output_sha256": "64419a84e72816ca5eb6c0fa4998c35764aee5f443c65cec921686c8ed8a17c7",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGBA",
+      "source_alpha_range": [
+        0,
+        255
+      ],
+      "depth_input": "assets/depth-inputs/S36f-start.png",
+      "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+      "mask_provenance": {
+        "method": "normalized_source_alpha_channel",
+        "source_sha256": "1947a55b92f24828ae0fbea1f506d4e3735044e765c4f7aa4ebae2e0a76c65c3",
+        "alpha_sha256": "ecad784cb9cfeee4ea5c3f734b3025052ce5fa88bfc8337dde1c54239c0e7022",
+        "fully_transparent_pixel_fraction": 0.8489568865740741,
+        "approval": false
+      }
+    },
+    "S36g-start-v2": {
+      "id": "S36g-start-v2",
+      "source": "assets/plates/S36g-start-v2.png",
+      "plate": "assets/normalized/S36g-start-v2.png",
+      "depth": "assets/depth/S36g-start-v2.png",
+      "mask": "assets/masks/S36g-start-v2.png",
+      "expected_mask": "assets/masks/S36g-start-v2.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "exact_source_alpha",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.42165072,
+            0.16985646,
+            0.00299043
+          ],
+          [
+            0.44856459,
+            0.17198299,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.4784689,
+          0.11775651,
+          0.01435407
+        ],
+        "tie": [
+          0.44497608,
+          0.33678894,
+          0.01315789
+        ],
+        "halo": [
+          0.47368421,
+          0.15709729,
+          0.22727273,
+          0.29771398
+        ],
+        "eyes_state": "open_profile",
+        "review_evidence": [
+          "qa/features/S36g-start-v2-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus"
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "fdd1f9f8037f70d730e8013a1674ad06671683a9788968daeed96bc8b806e8c1",
+      "output_sha256": "0ae6c214075d55455985333375a753d4027f848134f086b8998c3843f117bb3f",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGBA",
+      "source_alpha_range": [
+        0,
+        255
+      ],
+      "depth_input": "assets/depth-inputs/S36g-start-v2.png",
+      "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+      "mask_provenance": {
+        "method": "normalized_source_alpha_channel",
+        "source_sha256": "fdd1f9f8037f70d730e8013a1674ad06671683a9788968daeed96bc8b806e8c1",
+        "alpha_sha256": "b14bc046ce55841027070592d985102021eaa7bc928bb1508c459cedf71537ca",
+        "fully_transparent_pixel_fraction": 0.8365538194444444,
+        "approval": false
+      }
+    },
+    "S36h-start": {
+      "id": "S36h-start",
+      "source": "assets/plates/S36h-start.png",
+      "plate": "assets/normalized/S36h-start.png",
+      "depth": "assets/depth/S36h-start.png",
+      "mask": "assets/masks/S36h-start.png",
+      "expected_mask": "assets/masks/S36h-start.png",
+      "status": "normalized_source_available",
+      "depth_status": "available_unreviewed",
+      "mask_status": "exact_source_alpha",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48504785,
+            0.14008506,
+            0.0041866
+          ],
+          [
+            0.51375598,
+            0.12307283,
+            0.0041866
+          ]
+        ],
+        "hairpin": [
+          0.52392344,
+          0.07628921,
+          0.00897129
+        ],
+        "tie": [
+          0.52511962,
+          0.23790537,
+          0.01196172
+        ],
+        "halo": [
+          0.49760766,
+          0.12945242,
+          0.17045455,
+          0.24455077
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S36h-start-anchors.png",
+          "qa/features/batch-water-dance8-overlay-grid.jpg",
+          "qa/features/dance-action-source-crops.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "point": [
+          0.44856459,
+          0.21238703
+        ]
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "d5cd8f325374e8a0024592bfaf0a03d9f31df41388cb8f6cfef797dcc277a0e8",
+      "output_sha256": "ba09048a4ba35aa04f6e79253fc63d9a0fbb6b3ff95c481ec5afc18c3f3f7d5b",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGBA",
+      "source_alpha_range": [
+        0,
+        255
+      ],
+      "depth_input": "assets/depth-inputs/S36h-start.png",
+      "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+      "mask_provenance": {
+        "method": "normalized_source_alpha_channel",
+        "source_sha256": "d5cd8f325374e8a0024592bfaf0a03d9f31df41388cb8f6cfef797dcc277a0e8",
+        "alpha_sha256": "2e541b6edd0321fa7c9338ea145fe50b3dc8f1e8375dd329176f0a1c41972881",
+        "fully_transparent_pixel_fraction": 0.8870630787037037,
+        "approval": false
+      }
+    },
+    "S37-eye-v2": {
+      "id": "S37-eye-v2",
+      "source": "assets/plates/S37-eye-v2.png",
+      "plate": "assets/normalized/S37-eye-v2.png",
+      "depth": "assets/depth/S37-eye-v2.png",
+      "mask": "assets/masks/S37-eye-v2.png",
+      "expected_mask": "assets/masks/S37-eye-v2.png",
+      "status": "normalized_source_available",
+      "depth_status": "pending_inference",
+      "mask_status": "pending_inference",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.55322967,
+            0.51435407,
+            0.02990431
+          ]
+        ],
+        "hairpin": [
+          0.85645933,
+          0.04545455,
+          0.04186603
+        ],
+        "tie": null,
+        "halo": null,
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S37-eye-v2-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": false,
+        "only_character": "Opus",
+        "iris": [
+          0.5562201,
+          0.54199894,
+          0.08253589
+        ]
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "277e94c07ba6194bffc84f65d1c0684ee552875ee0906fe000433df4029d0652",
+      "output_sha256": "cebbb94cee8c0be3dd33785c8de8bd33fd8c6a45e009bc114a07bf07c5d1e75d",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S37-bust": {
+      "id": "S37-bust",
+      "source": "assets/plates/S37-bust.png",
+      "plate": "assets/normalized/S37-bust.png",
+      "depth": "assets/depth/S37-bust.png",
+      "mask": "assets/masks/S37-bust.png",
+      "expected_mask": "assets/masks/S37-bust.png",
+      "status": "normalized_source_available",
+      "depth_status": "pending_inference",
+      "mask_status": "pending_inference",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.46351675,
+            0.31233386,
+            0.00598086
+          ],
+          [
+            0.53528708,
+            0.30489102,
+            0.00598086
+          ]
+        ],
+        "hairpin": [
+          0.57177033,
+          0.20707071,
+          0.01794258
+        ],
+        "tie": [
+          0.50059809,
+          0.59835194,
+          0.02392344
+        ],
+        "halo": [
+          0.49940191,
+          0.28043594,
+          0.35885167,
+          0.5528974
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S37-bust-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "iris": [
+          0.53588517,
+          0.3112706,
+          0.01196172
+        ]
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "78bc22a7d5f87779960555207d72ba6b09f69f81dbb7eaa4ecf55e0a05445323",
+      "output_sha256": "c444e6a36cb1cdfbafcc41bab0a98fde056ddd13b2af674d4a8a69887cf25aef",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    },
+    "S37-wide": {
+      "id": "S37-wide",
+      "source": "assets/plates/S37-wide.png",
+      "plate": "assets/normalized/S37-wide.png",
+      "depth": "assets/depth/S37-wide.png",
+      "mask": "assets/masks/S37-wide.png",
+      "expected_mask": "assets/masks/S37-wide.png",
+      "status": "normalized_source_available",
+      "depth_status": "pending_inference",
+      "mask_status": "pending_inference",
+      "features": {
+        "status": "anchors_located_pending_composite_review",
+        "eyes": [
+          [
+            0.48444976,
+            0.23896863,
+            0.00239234
+          ],
+          [
+            0.50538278,
+            0.23684211,
+            0.00239234
+          ]
+        ],
+        "hairpin": [
+          0.51555024,
+          0.21132376,
+          0.00717703
+        ],
+        "tie": [
+          0.49641148,
+          0.32190324,
+          0.00897129
+        ],
+        "halo": [
+          0.49282297,
+          0.23684211,
+          0.10167464,
+          0.15417331
+        ],
+        "eyes_state": "open",
+        "review_evidence": [
+          "qa/features/S37-wide-anchors.png",
+          "qa/features/final-sources-overlay-grid.jpg"
+        ],
+        "halo_requires_subject_occlusion": true,
+        "only_character": "Opus",
+        "iris": [
+          0.50538278,
+          0.23896863,
+          0.00358852
+        ]
+      },
+      "features_required": true,
+      "mask_required": true,
+      "approval": false,
+      "source_sha256": "98ce8c36775ea02da657ce70f34cc98df95a8274c359f0c63a7e71297b23d900",
+      "output_sha256": "fe57357898548cda2e4c5e8cf916085253040396dd1c46041a3a37e265e424e4",
+      "transform": {
+        "source_size": [
+          1672,
+          941
+        ],
+        "crop_box": [
+          0.0,
+          0.25,
+          1672.0,
+          940.75
+        ],
+        "target_size": [
+          1920,
+          1080
+        ],
+        "scale": 1.1483253588516746,
+        "method": "center_crop_lanczos_preserve_alpha"
+      },
+      "mode": "RGB",
+      "source_alpha_range": null
+    }
+  },
+  "silhouette": "assets/cutouts/opus-silhouette.png",
+  "silhouette_provenance": "qa/silhouette-provenance.json",
+  "shell": "assets/worlds/shell.png",
+  "reflectionAtlas": "assets/mosaic/reflection-atlas.png",
+  "mosaicAtlas": "assets/mosaic/atlas.png",
+  "mosaicHero": "assets/mosaic/hero.png",
+  "special_assets": {
+    "shell_status": "alpha_verified_root_reference_review",
+    "mosaicAtlas_status": "pending",
+    "shell_alpha": {
+      "extrema": [
+        0,
+        255
+      ],
+      "fully_transparent_pixel_fraction": 0.5088586211476899,
+      "source_sha256": "62a20d514dd1017373535bdcff91ac12ba2fb86d42d7daaba4e3f05029b6c9f7"
+    }
+  },
+  "notes": [
+    "All52 shot boundaries unchanged. Missing source paths remain pending; no placeholder images.",
+    "S09a intentionally reuses the eye motif from S05-eye with a distinct4x camera move.",
+    "S28a intentionally reuses suspended S27 pose under authored stamp animation.",
+    "S36a–h use the eight authorized still-pose fallbacks; first/end clips are not claimed.",
+    "Depth/mask existence is not visual approval or proof it matches current source; renderer QA must verify."
+  ]
+}

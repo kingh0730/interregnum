@@ -1,0 +1,303 @@
+{
+  "shots": {
+    "S10": {
+      "assets": {
+        "plate": null,
+        "depth": null,
+        "mask": null,
+        "layers": [],
+        "poses": [],
+        "support": {},
+        "features": {
+          "status": "not_required",
+          "eyes": [],
+          "hairpin": null,
+          "tie": null,
+          "halo": null
+        },
+        "status": "code_only",
+        "approval": false
+      },
+      "method": "authored-code",
+      "cameraClamps": [],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo"
+      ],
+      "unverified": []
+    },
+    "S11": {
+      "assets": {
+        "plate": "assets/normalized/S11-waistup.png",
+        "depth": "assets/depth/S11-waistup.png",
+        "mask": "assets/masks/S11-waistup.png",
+        "layers": [],
+        "poses": [],
+        "support": {},
+        "features": {
+          "status": "anchors_located_pending_composite_review",
+          "eyes": [
+            [
+              0.46172249,
+              0.31339713,
+              0.00717703
+            ],
+            [
+              0.53528708,
+              0.27618288,
+              0.00717703
+            ]
+          ],
+          "hairpin": [
+            0.56160287,
+            0.17091972,
+            0.01614833
+          ],
+          "tie": [
+            0.51136364,
+            0.59835194,
+            0.02691388
+          ],
+          "halo": [
+            0.49940191,
+            0.26023392,
+            0.3708134,
+            0.51036683
+          ],
+          "eyes_state": "open",
+          "review_evidence": [
+            "qa/features/S11-waistup-anchors.png",
+            "qa/features/first-batch-overlay-grid.jpg"
+          ],
+          "halo_requires_subject_occlusion": true,
+          "only_character": "Opus"
+        },
+        "status": "normalized_source_available",
+        "approval": false,
+        "mask_required": true,
+        "mask_status": "available_unreviewed",
+        "depth_status": "available_unreviewed",
+        "asset_id": "S11-waistup"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo",
+        "eyes_state",
+        "review_evidence",
+        "halo_requires_subject_occlusion",
+        "only_character"
+      ],
+      "unverified": [
+        "Title/foreground subject depth intersection requires visual review."
+      ]
+    },
+    "S12": {
+      "assets": {
+        "plate": "assets/normalized/S12.png",
+        "depth": "assets/depth/S12.png",
+        "mask": "assets/masks/S12.png",
+        "layers": [],
+        "poses": [],
+        "support": {},
+        "features": {
+          "status": "anchors_located_pending_composite_review",
+          "eyes": [
+            [
+              0.5819378,
+              0.37187666,
+              0.00897129
+            ],
+            [
+              0.68062201,
+              0.30595428,
+              0.00897129
+            ]
+          ],
+          "hairpin": [
+            0.71172249,
+            0.14540138,
+            0.02332536
+          ],
+          "tie": [
+            0.70992823,
+            0.76209463,
+            0.02870813
+          ],
+          "halo": [
+            0.62200957,
+            0.31871345,
+            0.46650718,
+            0.65922382
+          ],
+          "eyes_state": "open",
+          "review_evidence": [
+            "qa/features/S12-anchors.png",
+            "qa/features/first-batch-overlay-grid.jpg"
+          ],
+          "halo_requires_subject_occlusion": true,
+          "only_character": "Opus"
+        },
+        "status": "normalized_source_available",
+        "approval": false,
+        "mask_required": true,
+        "mask_status": "pending_inference",
+        "depth_status": "pending_inference",
+        "asset_id": "S12"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [
+        {
+          "frame": 0.75,
+          "clamped": true,
+          "retainedMoveFraction": 0.5,
+          "requestedProjectedTravelFraction": 0.10402028894792101,
+          "actualProjectedTravelFraction": 0.05914962070781349,
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 1,
+          "clamped": true,
+          "retainedMoveFraction": 0.25,
+          "requestedProjectedTravelFraction": 0.1006380398684372,
+          "actualProjectedTravelFraction": 0.03451470478775065,
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 1.75,
+          "clamped": true,
+          "retainedMoveFraction": 0.125,
+          "requestedProjectedTravelFraction": 0.1198275572157554,
+          "actualProjectedTravelFraction": 0.04776082591373679,
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 2,
+          "clamped": true,
+          "retainedMoveFraction": 0.125,
+          "requestedProjectedTravelFraction": 0.11340384653061802,
+          "actualProjectedTravelFraction": 0.06255486141473038,
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 2.75,
+          "clamped": true,
+          "retainedMoveFraction": 0.0625,
+          "requestedProjectedTravelFraction": 0.09565817319622581,
+          "actualProjectedTravelFraction": 0.0388990309476899,
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 3,
+          "clamped": true,
+          "retainedMoveFraction": 0.0625,
+          "requestedProjectedTravelFraction": 0.09153337755627727,
+          "actualProjectedTravelFraction": 0.04390400305707365,
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 3.75,
+          "clamped": true,
+          "retainedMoveFraction": 0.0625,
+          "requestedProjectedTravelFraction": 0.08320125311510537,
+          "actualProjectedTravelFraction": 0.05870243295388822,
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 4,
+          "clamped": true,
+          "retainedMoveFraction": 0.0625,
+          "requestedProjectedTravelFraction": 0.08136320439351347,
+          "actualProjectedTravelFraction": 0.06339765891243637,
+          "requiresVisualEdgeQA": true
+        }
+      ],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo",
+        "eyes_state",
+        "review_evidence",
+        "halo_requires_subject_occlusion",
+        "only_character"
+      ],
+      "unverified": []
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}

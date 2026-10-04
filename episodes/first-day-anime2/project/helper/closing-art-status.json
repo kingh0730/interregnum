@@ -1,0 +1,153 @@
+{
+  "status": "three-selected-views-reviewed-registration-and-render-pending",
+  "selected": {
+    "S37-wide": "assets/plates/S37-wide.png",
+    "S37-bust": "assets/plates/S37-bust.png",
+    "S37-eye": "assets/plates/S37-eye-v2.png"
+  },
+  "generator": "Codex built-in image_gen only; five calls including wide framing and eye geometry corrections. No CLI/API generation or Luma.",
+  "references": "Approved opus-base sheet; wide master -> bust with wide+base -> eye with bust+base; targeted eye correction against actual bust.",
+  "scene": "Ivory cream void; front-facing level head, direct gaze, calm closed-mouth smile, same hair/ribbon/barrette/outfit arrangement.",
+  "comparisonEvidence": [
+    "qa/closing/wide-face-inspection.png",
+    "qa/closing/wide-bust-heads.jpg",
+    "qa/closing/bust-eye-comparison.jpg (rejected first macro mismatch)",
+    "qa/closing/bust-eye-v2-comparison.jpg (corrected selected macro)",
+    "qa/closing/selected-three-views.jpg"
+  ],
+  "visualFindings": [
+    "Wide selected after reframing to approximately70% canvas height with complete hands/shoes and generous margins.",
+    "Wide-to-bust full head comparison reviewed; eye direction, mouth expression, fringe and ribbon/barrette side agree.",
+    "First eye macro rejected for overly wide iris and exaggerated lashes. Selected v2 narrows iris and simplifies upper-lid lashes toward bust geometry.",
+    "No generated text, logos, starbursts, rings, numbers or prior-film image tiles are visible. Ordinary small eye catchlights remain consistent with source."
+  ],
+  "irisProposals": {
+    "S37-wide": {
+      "source": "assets/plates/S37-wide.png",
+      "sourceSha256": "98ce8c36775ea02da657ce70f34cc98df95a8274c359f0c63a7e71297b23d900",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "eye": "anatomical left / viewer right",
+      "coordinateConvention": "u=x/width,v=y/height from image top left; radii, not diameters",
+      "irisCenterPixels": [
+        845,
+        225
+      ],
+      "irisRadiusPixels": [
+        6,
+        7
+      ],
+      "irisCenterNormalized": [
+        0.5053827751196173,
+        0.23910733262486716
+      ],
+      "irisRadiusNormalized": [
+        0.0035885167464114833,
+        0.007438894792773645
+      ],
+      "pupilCenterPixels": [
+        845,
+        223
+      ],
+      "pupilCenterNormalized": [
+        0.5053827751196173,
+        0.23698193411264612
+      ],
+      "confidence": "manual proposal for map-agent refinement; not final feature approval",
+      "annotationEvidence": "qa/closing/S37-wide-iris-proposal.png"
+    },
+    "S37-bust": {
+      "source": "assets/plates/S37-bust.png",
+      "sourceSha256": "78bc22a7d5f87779960555207d72ba6b09f69f81dbb7eaa4ecf55e0a05445323",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "eye": "anatomical left / viewer right",
+      "coordinateConvention": "u=x/width,v=y/height from image top left; radii, not diameters",
+      "irisCenterPixels": [
+        896,
+        293
+      ],
+      "irisRadiusPixels": [
+        20,
+        20
+      ],
+      "irisCenterNormalized": [
+        0.5358851674641149,
+        0.31137088204038255
+      ],
+      "irisRadiusNormalized": [
+        0.011961722488038277,
+        0.021253985122210415
+      ],
+      "pupilCenterPixels": [
+        895,
+        287
+      ],
+      "pupilCenterNormalized": [
+        0.5352870813397129,
+        0.30499468650371947
+      ],
+      "confidence": "manual proposal for map-agent refinement; not final feature approval",
+      "annotationEvidence": "qa/closing/S37-bust-iris-proposal.png"
+    },
+    "S37-eye": {
+      "source": "assets/plates/S37-eye-v2.png",
+      "sourceSha256": "277e94c07ba6194bffc84f65d1c0684ee552875ee0906fe000433df4029d0652",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "eye": "anatomical left / viewer right",
+      "coordinateConvention": "u=x/width,v=y/height from image top left; radii, not diameters",
+      "irisCenterPixels": [
+        930,
+        510
+      ],
+      "irisRadiusPixels": [
+        138,
+        161
+      ],
+      "irisCenterNormalized": [
+        0.55622009569378,
+        0.5419766206163655
+      ],
+      "irisRadiusNormalized": [
+        0.08253588516746412,
+        0.17109458023379384
+      ],
+      "pupilCenterPixels": [
+        925,
+        484
+      ],
+      "pupilCenterNormalized": [
+        0.5532296650717703,
+        0.5143464399574921
+      ],
+      "confidence": "manual proposal for map-agent refinement; not final feature approval",
+      "annotationEvidence": "qa/closing/S37-eye-iris-proposal.png"
+    }
+  },
+  "codeOwned": [
+    "Exact12-ray eye spark and accessory emblems",
+    "Prior-film reflections within iris",
+    "Glowing coral ring and5.5/Hanzi",
+    "Continuous code-controlled pull-out, transition registration, frame timing and mosaic handoff"
+  ],
+  "limitations": [
+    "Fine eyelashes, iris texture, hair folds and ribbon detail are generated rather than a pixel-identical crop. Neither iris alignment nor still resemblance proves a seamless full-composition transition.",
+    "Macro region contains skin/hair/eye; ivory void is naturally outside that tight crop.",
+    "No camera blur or baked motion added. Actual39.244–40.607 pull-out and S38 match must be reviewed in rendered frames and playback.",
+    "Proposed iris/pupil coordinates are manual estimates; map agent owns final helper/features.json."
+  ],
+  "generationLogs": [
+    "qa/generation/S37-wide.json",
+    "qa/generation/S37-bust.json",
+    "qa/generation/S37-eye.json (rejected)",
+    "qa/generation/S37-eye-v2.json"
+  ],
+  "originalCodexImagesRetained": true
+}

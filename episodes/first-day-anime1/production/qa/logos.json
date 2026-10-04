@@ -1,0 +1,12 @@
+[
+  {
+    "name": "claude-spark",
+    "meanChannelDifference": 0,
+    "silhouetteIoU": 1
+  },
+  {
+    "name": "anthropic-symbol",
+    "meanChannelDifference": 0,
+    "silhouetteIoU": 1
+  }
+]

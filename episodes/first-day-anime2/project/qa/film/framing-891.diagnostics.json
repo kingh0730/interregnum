@@ -1,0 +1,617 @@
+{
+  "shots": {
+    "S28a": {
+      "assets": {
+        "plate": "assets/normalized/S27.png",
+        "depth": "assets/depth/S27.png",
+        "mask": "assets/masks/S27.png",
+        "layers": [],
+        "poses": [],
+        "support": {},
+        "features": {
+          "status": "anchors_located_pending_composite_review",
+          "eyes": [
+            [
+              0.51375598,
+              0.13795853,
+              0.00478469
+            ],
+            [
+              0.54665072,
+              0.11988304,
+              0.00478469
+            ]
+          ],
+          "hairpin": [
+            0.5562201,
+            0.07203615,
+            0.01076555
+          ],
+          "tie": [
+            0.55861244,
+            0.24641148,
+            0.01435407
+          ],
+          "halo": [
+            0.53349282,
+            0.11881978,
+            0.20334928,
+            0.28708134
+          ],
+          "eyes_state": "open",
+          "review_evidence": [
+            "qa/features/S27-anchors.png",
+            "qa/features/batch-S26-dance3-overlay-grid.jpg"
+          ],
+          "halo_requires_subject_occlusion": true,
+          "only_character": "Opus",
+          "heart": [
+            0.56818182,
+            0.29106858
+          ]
+        },
+        "status": "normalized_source_available",
+        "approval": false,
+        "mask_required": true,
+        "mask_status": "available_unreviewed",
+        "depth_status": "available_unreviewed",
+        "asset_id": "S27",
+        "depth_input": "assets/normalized/S27.png"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [
+        {
+          "frame": 0.75,
+          "clamped": true,
+          "retainedMoveFraction": 0.5494766235351562,
+          "requestedProjectedTravelFraction": 0.003061436395866571,
+          "actualProjectedTravelFraction": 0.0016821234301871665,
+          "coverageClamped": true,
+          "requestedCoverage": {
+            "safe": false,
+            "uvBounds": {
+              "minU": 0.006100357241877741,
+              "maxU": 0.9982200925483552,
+              "minV": 0.009237974424560036,
+              "maxV": 1.001568505572204
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": true
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.0051397948760733,
+              "maxU": 0.997234191286817,
+              "minV": 0.006863842171559331,
+              "maxV": 0.9990740659693627
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false
+          },
+          "requestedCameraPosition": [
+            0.047635066805189905,
+            0.05075381569062145,
+            9.999151552916022
+          ],
+          "actualCameraPosition": [
+            0.031376833384762035,
+            0.027888035277208307,
+            9.999533798161048
+          ],
+          "requestedCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "actualCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "sourceCropReserve": 0.008,
+          "backgroundMode": "finite-source-plane",
+          "foregroundLayers": [],
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 1,
+          "clamped": true,
+          "retainedMoveFraction": 0.505767822265625,
+          "requestedProjectedTravelFraction": 0.0033773966408296484,
+          "actualProjectedTravelFraction": 0.0017079483410770342,
+          "coverageClamped": true,
+          "requestedCoverage": {
+            "safe": false,
+            "uvBounds": {
+              "minU": 0.006353234462139423,
+              "maxU": 0.9982973976366636,
+              "minV": 0.009866773219848302,
+              "maxV": 1.0020469879311853
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": true
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.005174500358792744,
+              "maxU": 0.9971776397099775,
+              "minV": 0.006951535204725023,
+              "maxV": 0.9990740618276261
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false
+          },
+          "requestedCameraPosition": [
+            0.05044183047970425,
+            0.05598142537287081,
+            9.997273616921674
+          ],
+          "actualCameraPosition": [
+            0.03121906557672853,
+            0.028313603598162474,
+            9.998621083167814
+          ],
+          "requestedCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "actualCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "sourceCropReserve": 0.008,
+          "backgroundMode": "finite-source-plane",
+          "foregroundLayers": [],
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 1.75,
+          "clamped": true,
+          "retainedMoveFraction": 0.46952056884765625,
+          "requestedProjectedTravelFraction": 0.004307087053693645,
+          "actualProjectedTravelFraction": 0.0020194353788957806,
+          "coverageClamped": true,
+          "requestedCoverage": {
+            "safe": false,
+            "uvBounds": {
+              "minU": 0.007117367308077882,
+              "maxU": 0.9966902112724167,
+              "minV": 0.012572081840955207,
+              "maxV": 1.002511392162193
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": true
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.0054468274549343,
+              "maxU": 0.9963409090061117,
+              "minV": 0.008007928125312314,
+              "maxV": 0.9990740731688448
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false
+          },
+          "requestedCameraPosition": [
+            0.044041071087620134,
+            0.07122261989534709,
+            9.973646887678617
+          ],
+          "actualCameraPosition": [
+            0.026803969481392072,
+            0.03344048500808376,
+            9.987626671711958
+          ],
+          "requestedCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "actualCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "sourceCropReserve": 0.008,
+          "backgroundMode": "finite-source-plane",
+          "foregroundLayers": [],
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 2,
+          "clamped": true,
+          "retainedMoveFraction": 0.4425315856933594,
+          "requestedProjectedTravelFraction": 0.005061514088561005,
+          "actualProjectedTravelFraction": 0.0022342418404718003,
+          "coverageClamped": true,
+          "requestedCoverage": {
+            "safe": false,
+            "uvBounds": {
+              "minU": 0.007662566895984824,
+              "maxU": 0.9953962996874586,
+              "minV": 0.01474001626048349,
+              "maxV": 1.0029065448222436
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": true
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.0056031041262106784,
+              "maxU": 0.9957505409533849,
+              "minV": 0.008735099016146552,
+              "maxV": 0.9990740616418272
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false
+          },
+          "requestedCameraPosition": [
+            0.03793897024460604,
+            0.08354092861224645,
+            9.95493756830143
+          ],
+          "actualCameraPosition": [
+            0.02322663221251079,
+            0.036969499609073156,
+            9.980058450645233
+          ],
+          "requestedCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "actualCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "sourceCropReserve": 0.008,
+          "backgroundMode": "finite-source-plane",
+          "foregroundLayers": [],
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 2.75,
+          "clamped": true,
+          "retainedMoveFraction": 0.48040771484375,
+          "requestedProjectedTravelFraction": 0.008033569394707554,
+          "actualProjectedTravelFraction": 0.003827540616481821,
+          "coverageClamped": true,
+          "requestedCoverage": {
+            "safe": false,
+            "uvBounds": {
+              "minU": 0.012272375247254164,
+              "maxU": 0.9891915147641979,
+              "minV": 0.02504670960808436,
+              "maxV": 1.0023645224431181
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": true
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.007957617895684166,
+              "maxU": 0.9927456461595001,
+              "minV": 0.014094506674620533,
+              "maxV": 0.9990740606761496
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false
+          },
+          "requestedCameraPosition": [
+            0.024177805242019654,
+            0.13109591073175214,
+            9.842383534655514
+          ],
+          "actualCameraPosition": [
+            0.01761526415316578,
+            0.06297948690000128,
+            9.924279834062107
+          ],
+          "requestedCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "actualCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "sourceCropReserve": 0.008,
+          "backgroundMode": "finite-source-plane",
+          "foregroundLayers": [],
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 3,
+          "clamped": true,
+          "retainedMoveFraction": 0.6406211853027344,
+          "requestedProjectedTravelFraction": 0.008966842965497426,
+          "actualProjectedTravelFraction": 0.005698452719404599,
+          "coverageClamped": true,
+          "requestedCoverage": {
+            "safe": false,
+            "uvBounds": {
+              "minU": 0.01523841319890279,
+              "maxU": 0.9862400273868794,
+              "minV": 0.02948018837967492,
+              "maxV": 1.0007807725681666
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": true
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.011188156733142995,
+              "maxU": 0.9897589636273204,
+              "minV": 0.02031173963026406,
+              "maxV": 0.999074073040542
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false
+          },
+          "requestedCameraPosition": [
+            0.024303344925646363,
+            0.14540993799899843,
+            9.78079625827169
+          ],
+          "actualCameraPosition": [
+            0.01971921157960287,
+            0.0931526868357155,
+            9.859573439151216
+          ],
+          "requestedCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "actualCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "sourceCropReserve": 0.008,
+          "backgroundMode": "finite-source-plane",
+          "foregroundLayers": [],
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 8.75,
+          "clamped": true,
+          "retainedMoveFraction": 0.9665184020996094,
+          "requestedProjectedTravelFraction": 0.08360093624372691,
+          "actualProjectedTravelFraction": 0.07999983112353075,
+          "coverageClamped": false,
+          "requestedCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.1164448126356184,
+              "maxU": 0.8871048164389512,
+              "minV": 0.22456738126919668,
+              "maxV": 0.9952273850725315
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.11267891772509797,
+              "maxU": 0.8907518640961013,
+              "minV": 0.21718136999172932,
+              "maxV": 0.9952543163627348
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false
+          },
+          "requestedCameraPosition": [
+            0.04217317890702078,
+            1.0666962486719416,
+            7.695719567591405
+          ],
+          "actualCameraPosition": [
+            0.04114778662700067,
+            1.0309815537920526,
+            7.772870558479048
+          ],
+          "requestedCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "actualCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "sourceCropReserve": 0.008,
+          "backgroundMode": "finite-source-plane",
+          "foregroundLayers": [],
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 9,
+          "clamped": true,
+          "retainedMoveFraction": 0.9614906311035156,
+          "requestedProjectedTravelFraction": 0.08416526978411346,
+          "actualProjectedTravelFraction": 0.07999989551636856,
+          "coverageClamped": false,
+          "requestedCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.11657316535189699,
+              "maxU": 0.8869053440004879,
+              "minV": 0.22542408542353864,
+              "maxV": 0.9957562640721315
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.11223682127986839,
+              "maxU": 0.8911077328726557,
+              "minV": 0.2168959611157495,
+              "maxV": 0.9957668727085386
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false
+          },
+          "requestedCameraPosition": [
+            0.041559571002610166,
+            1.0734206870065428,
+            7.692307692307689
+          ],
+          "actualCameraPosition": [
+            0.04040383013430478,
+            1.0320839337894903,
+            7.781175466684191
+          ],
+          "requestedCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "actualCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "sourceCropReserve": 0.008,
+          "backgroundMode": "finite-source-plane",
+          "foregroundLayers": [],
+          "requiresVisualEdgeQA": true
+        }
+      ],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo",
+        "eyes_state",
+        "review_evidence",
+        "halo_requires_subject_occlusion",
+        "only_character",
+        "heart"
+      ],
+      "unverified": [],
+      "stampStrike": {
+        "haloRight": [
+          0.6167798092083473,
+          0.2011513259700415
+        ],
+        "contactLocalFrame": 2,
+        "widthSourceFraction": 0.18,
+        "geometry": "cropped exact seal on physical source-registered plane"
+      }
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    891,
+    892,
+    893,
+    894,
+    895,
+    896,
+    897,
+    898,
+    899,
+    900
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}

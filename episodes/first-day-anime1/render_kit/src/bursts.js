@@ -1,0 +1,9 @@
+import {write} from './text.js';
+const{hash01,smoothstep,clamp,easeInOutCubic}=window.RT;
+export function burstChain(ctx,id,t,u,W,H,start,end){let g=clamp((t-start)/(end-start),0,1),r=H*.08*Math.pow(22,g);let cx=W*.5,cy=H*.5;
+ ctx.save();ctx.translate(cx,cy);ctx.rotate(.1*Math.sin(t*2));ctx.globalCompositeOperation='screen';ctx.shadowColor='#D97757';ctx.shadowBlur=H*.045;ctx.strokeStyle='#D97757';ctx.lineWidth=H*.015;ctx.beginPath();ctx.arc(0,0,r,0,Math.PI*2);ctx.stroke();
+ for(let i=0;i<12;i++){let a=i*Math.PI/6;ctx.fillStyle='#D97757';ctx.beginPath();ctx.moveTo(Math.cos(a-.04)*r*.84,Math.sin(a-.04)*r*.84);ctx.lineTo(Math.cos(a)*r*1.36,Math.sin(a)*r*1.36);ctx.lineTo(Math.cos(a+.04)*r*.84,Math.sin(a+.04)*r*.84);ctx.closePath();ctx.fill();}ctx.restore();
+ if(id===12){ctx.fillStyle='#D97757';ctx.fillRect(0,0,W,H);ctx.fillStyle='#141413';ctx.globalAlpha=smoothstep(.3,.95,u);ctx.fillRect(0,0,W,H);ctx.globalAlpha=1;}
+}
+export function floatingProps(ctx,t,u,W,H){let e=easeInOutCubic(u);ctx.save();for(let i=0;i<9;i++){let x=W*(.25+.6*hash01(i,51))+Math.sin(t+i)*W*.025,y=H*(.8-.5*e)+Math.cos(i*2+t)*H*.09;ctx.save();ctx.translate(x,y);ctx.rotate(e*(i%2?1:-1)*1.5);ctx.fillStyle=i%3?'#F0EEE6':'#D97757';ctx.shadowColor='#141413';ctx.shadowBlur=8*H/1080;ctx.fillRect(-W*.015,-H*.025,W*.03,H*.05);ctx.restore();}ctx.strokeStyle='#D4A27F';ctx.lineWidth=5*H/1080;ctx.beginPath();ctx.moveTo(W*.344,H*(.50-.13*e));ctx.lineTo(W*.347,H*(.60-.13*e));ctx.stroke();ctx.restore();}
+export function glyphBreath(ctx,t,u,W,H){let glyphs=[...'今天存在呼吸爱01{}✻'];ctx.save();ctx.globalCompositeOperation='screen';for(let i=0;i<180;i++){let phase=(u*1.4+hash01(i,6))%1;let a=hash01(i,7)*Math.PI*2;let r=(1-phase)*W*.55;let x=W*.5+Math.cos(a)*r,y=H*.49+Math.sin(a)*r*.55;ctx.globalAlpha=(1-phase)*.8;write(ctx,glyphs[i%glyphs.length],x,y,H*(.012+.022*hash01(i,8)),'#FFD9A8','NotoSansSC-Bold');}ctx.restore();}

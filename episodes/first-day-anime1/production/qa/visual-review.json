@@ -1,0 +1,43 @@
+{
+  "reviewed_full_resolution_anchors": [
+    0,
+    30,
+    60,
+    336,
+    357,
+    358,
+    366,
+    430,
+    528,
+    640,
+    754,
+    755,
+    920,
+    930,
+    952,
+    1014,
+    1230,
+    1290,
+    1310
+  ],
+  "reviewed_contact_sheets": [
+    "final-contact-1.jpg",
+    "final-contact-2.jpg",
+    "final-contact-3.jpg",
+    "final-contact-4.jpg"
+  ],
+  "findings": [
+    "Chinese lyric/UI strings readable in reviewed anchors; font coverage independently passed",
+    "Letterbox present before title; absent after the title impact",
+    "358 and 359 mathematically verified all-white; intentional impact",
+    "Official vector shape comparison at 4x was pixel-identical",
+    "S23 full-resolution wall coverage repaired and reviewed",
+    "Spark identifiable at frame 1014; dawn gradient shows no obvious contour banding at inspected size",
+    "Last frame fades to cream, not black"
+  ],
+  "limitations": [
+    "Frame and contact-sheet review only; no full audiovisual playback",
+    "Angle blends in the hand orbit and cut-out integration in 3D flight remain the weakest visual areas",
+    "S25 uses the specified two-view fallback; phonetic sync not independently verified"
+  ]
+}

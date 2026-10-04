@@ -1,0 +1,2049 @@
+{
+  "schemaVersion": 1,
+  "models": {
+    "depth": {
+      "file": "work/opus55-models/depth-anything-v2-small.onnx",
+      "sha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "onnxruntimeVersion": "1.30.0",
+      "inputs": [
+        {
+          "name": "pixel_values",
+          "shape": [
+            "batch_size",
+            3,
+            "height",
+            "width"
+          ],
+          "type": "tensor(float)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "predicted_depth",
+          "shape": [
+            "floor(1.0*batch_size)",
+            "14*floor(height/14)",
+            "14*floor(width/14)"
+          ],
+          "type": "tensor(float)"
+        }
+      ],
+      "source": "https://huggingface.co/onnx-community/depth-anything-v2-small",
+      "preprocessing": {
+        "do_normalize": true,
+        "do_pad": false,
+        "do_rescale": true,
+        "do_resize": true,
+        "ensure_multiple_of": 14,
+        "image_mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "image_processor_type": "DPTImageProcessor",
+        "image_std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "keep_aspect_ratio": true,
+        "resample": 3,
+        "rescale_factor": 0.00392156862745098,
+        "size": {
+          "height": 518,
+          "width": 518
+        },
+        "size_divisor": null
+      },
+      "postprocessing": "per-image min/max normalization to grayscale L; larger inverse-depth prediction is whiter/nearer; bicubic resize to original dimensions",
+      "preprocessorSha256": "03576db3c13dd0471fdf5f5e1428befcb95de063fe699879150b293dc9e0a2c6",
+      "resizeImplementation": "DPT keep-aspect chooses scale closest to 1, dimensions rounded to nearest positive multiple14. No padding."
+    },
+    "mask": {
+      "file": "work/opus55-models/isnet-anime.onnx",
+      "sha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "onnxruntimeVersion": "1.30.0",
+      "inputs": [
+        {
+          "name": "img",
+          "shape": [
+            1,
+            3,
+            1024,
+            1024
+          ],
+          "type": "tensor(float)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mask",
+          "shape": [
+            1,
+            1,
+            1024,
+            1024
+          ],
+          "type": "tensor(float)"
+        }
+      ],
+      "source": "https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-anime.onnx",
+      "preprocessing": {
+        "resize": [
+          1024,
+          1024
+        ],
+        "resample": "Lanczos",
+        "rescale": "divide resized RGB by its maximum pixel value, lower-bounded 1e-6",
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          1,
+          1,
+          1
+        ],
+        "layout": "NCHW float32"
+      },
+      "postprocessing": "first ONNX output channel0, min/max normalization, uint8 L, Lanczos resize to original dimensions; unchanged source RGB plus predicted alpha",
+      "verifiedOfficialMd5": "6f184e756bb3bd901c8849220a83e38e"
+    }
+  },
+  "results": {
+    "S11-waistup": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S11-waistup.png",
+        "sourceSha256": "9e909eca6ab8b787ff2be4de4443ab5bebf6e6838912e6ac54d5a8779acbdcea",
+        "output": "episodes/first-day-anime2/project/assets/depth/S11-waistup.png",
+        "outputSha256": "5c34d0e1173c665405fd6b8157bb9800a5183797f2f2887a12f4066defc58ca2",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          5.788980960845947
+        ],
+        "elapsedSeconds": 0.865,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S11-waistup-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S11-waistup.png",
+        "sourceSha256": "9e909eca6ab8b787ff2be4de4443ab5bebf6e6838912e6ac54d5a8779acbdcea",
+        "output": "episodes/first-day-anime2/project/assets/masks/S11-waistup.png",
+        "outputSha256": "18584ae102efb28a5587c09fa47c1f0576a5e41170523d094ece9d846ff13e94",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          2.8014183044433594e-06,
+          0.9999276399612427
+        ],
+        "elapsedSeconds": 0.939,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S11-waistup-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S11-waistup.png",
+        "cutoutSha256": "b8c485fe95633d02a46482bfcfc3d31e9a45d07f052b0298437d49aec32b57bc",
+        "foregroundPixelFraction": 0.4572246334876543,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S11-waistup-mask-native-dark.jpg"
+      }
+    },
+    "S01": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S01.png",
+        "sourceSha256": "35ddb928bb224cf2208cde31d8a9bf3d8f0a972d0856d6c9a9b67a786f668f5d",
+        "output": "episodes/first-day-anime2/project/assets/depth/S01.png",
+        "outputSha256": "182adc2828428b7b065e20a611734211537ffecd9736be3a4cc53ae4062ef09a",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          1.080573558807373,
+          4.90049934387207
+        ],
+        "elapsedSeconds": 0.913,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S01-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S01.png",
+        "sourceSha256": "35ddb928bb224cf2208cde31d8a9bf3d8f0a972d0856d6c9a9b67a786f668f5d",
+        "output": "episodes/first-day-anime2/project/assets/masks/S01.png",
+        "outputSha256": "9a073c915836779f8e61e5e65442f9aa5c6689e2569ebbe10eab25199b125f1c",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          3.039836883544922e-06,
+          0.7126126289367676
+        ],
+        "elapsedSeconds": 0.973,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S01-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S01.png",
+        "cutoutSha256": "0f7484744ce9ee2c950146825c3859cfde084abdc22074f6f54b7f019917fa2e",
+        "foregroundPixelFraction": 0.06933449074074075,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S01-mask-native-dark.jpg"
+      }
+    },
+    "S03": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S03.png",
+        "sourceSha256": "6e906e03ff60cf726fe8dda3331dd798a47c75c94338ed0ca27812f185fa39ec",
+        "output": "episodes/first-day-anime2/project/assets/depth/S03.png",
+        "outputSha256": "27027cca25fc2c39bfb94448bfc04f7ab515357f01e46c72003096826912c87e",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.27118492126464844,
+          4.0445556640625
+        ],
+        "elapsedSeconds": 0.909,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S03-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S03.png",
+        "sourceSha256": "6e906e03ff60cf726fe8dda3331dd798a47c75c94338ed0ca27812f185fa39ec",
+        "output": "episodes/first-day-anime2/project/assets/masks/S03.png",
+        "outputSha256": "27ce6600722abdc3808af9406b6f88ce4b45e506213b1256af721488cdd04506",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          2.0265579223632812e-06,
+          0.9998079538345337
+        ],
+        "elapsedSeconds": 0.954,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S03-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S03.png",
+        "cutoutSha256": "8521ba3b657522c726d9c71135f1bbfbda05e0881e321cb2b8d05bc8d3ca3023",
+        "foregroundPixelFraction": 0.17425154320987654,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S03-mask-native-dark.jpg"
+      }
+    },
+    "S04": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S04.png",
+        "sourceSha256": "3d96ec64c137d80768272cd34cc068232b098024ab09f6c5b2bbefa7135a9a49",
+        "output": "episodes/first-day-anime2/project/assets/depth/S04.png",
+        "outputSha256": "cf04c47d8d87a4db05c452c53249504e2e9ce14b618a5527847fcf671721b14c",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          4.206657886505127
+        ],
+        "elapsedSeconds": 0.869,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S04-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S04.png",
+        "sourceSha256": "3d96ec64c137d80768272cd34cc068232b098024ab09f6c5b2bbefa7135a9a49",
+        "output": "episodes/first-day-anime2/project/assets/masks/S04.png",
+        "outputSha256": "28b1a8ac6a57ab2a7cbb8fb6c61e5ff3de1334e37e223f63c339930112d4ac33",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          1.6689300537109375e-06,
+          0.9999202489852905
+        ],
+        "elapsedSeconds": 0.937,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S04-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S04.png",
+        "cutoutSha256": "c588cfcc06531d52ce2ed7a4a05bf633192f2ee8804801df5de749f8da91e8cb",
+        "foregroundPixelFraction": 0.17436439043209875,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S04-mask-native-dark.jpg"
+      }
+    },
+    "S05-eye": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S05-eye.png",
+        "sourceSha256": "13a8a74c3ff334a6cbd3411fc10f3f2cf998b89daafdf2c6a2f569f5c1f749f2",
+        "output": "episodes/first-day-anime2/project/assets/depth/S05-eye.png",
+        "outputSha256": "0f2a3d6dd4161c4ebe8f5dd9319026dc500e6e458666cb0f277eaaac356354b1",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          2.0272014141082764,
+          5.162082195281982
+        ],
+        "elapsedSeconds": 0.874,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S05-eye-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S05-eye.png",
+        "sourceSha256": "13a8a74c3ff334a6cbd3411fc10f3f2cf998b89daafdf2c6a2f569f5c1f749f2",
+        "output": "episodes/first-day-anime2/project/assets/masks/S05-eye.png",
+        "outputSha256": "1164bfe1d930661d18a58f5d08d83a190839e5c8ebabb756ccefb2277ad6a18c",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          3.039836883544922e-06,
+          0.08745935559272766
+        ],
+        "elapsedSeconds": 0.96,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S05-eye-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S05-eye.png",
+        "cutoutSha256": "ab27cdb6116ef9d1f1499799a532b401716e236e3261cbee59e609117d3b8cf6",
+        "foregroundPixelFraction": 0.013391203703703704,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S05-eye-mask-native-dark.jpg"
+      }
+    },
+    "S05-face": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S05-face.png",
+        "sourceSha256": "2cc4e63778b147cd0b7bc5db1c350bdef9d5faedced40499f23045fcc3fe5922",
+        "output": "episodes/first-day-anime2/project/assets/depth/S05-face.png",
+        "outputSha256": "d7365b1129ef81880fc313c7f96c2800162b94e9e9478e6c3176e394f8bfda9a",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          5.073763370513916
+        ],
+        "elapsedSeconds": 0.867,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S05-face-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S05-face.png",
+        "sourceSha256": "2cc4e63778b147cd0b7bc5db1c350bdef9d5faedced40499f23045fcc3fe5922",
+        "output": "episodes/first-day-anime2/project/assets/masks/S05-face.png",
+        "outputSha256": "647bab21c157ffbba66243b1b1a38dfcf472b5c491b9654bad712d03a6de9696",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          2.9802322387695312e-06,
+          0.9999492168426514
+        ],
+        "elapsedSeconds": 0.936,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S05-face-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S05-face.png",
+        "cutoutSha256": "1d89a53eb599f81da88d27e0521aa7096b4007ff7d69c0c132e4dff0696d8740",
+        "foregroundPixelFraction": 0.5764930555555555,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S05-face-mask-native-dark.jpg"
+      }
+    },
+    "S07": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S07.png",
+        "sourceSha256": "318c0f69615fc1669bdb4a4c5f26788dd8458865adc4b30b7109dcdca448bc2e",
+        "output": "episodes/first-day-anime2/project/assets/depth/S07.png",
+        "outputSha256": "a1a4925b2663e8be488c523eca8dad9e0b60b98deba2b0e8e05c199e0f0639d6",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          9.423097610473633
+        ],
+        "elapsedSeconds": 0.861,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S07-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S07.png",
+        "sourceSha256": "318c0f69615fc1669bdb4a4c5f26788dd8458865adc4b30b7109dcdca448bc2e",
+        "output": "episodes/first-day-anime2/project/assets/masks/S07.png",
+        "outputSha256": "90212e991a9b0cb5429e4dbc84ac1c38b1902fe1e7ef9fea657c80ca18a6c81f",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          2.8908252716064453e-06,
+          0.9998944997787476
+        ],
+        "elapsedSeconds": 0.939,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S07-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S07.png",
+        "cutoutSha256": "95bfa8c0055eb9f8b338b73807ba33f5f14362639e62f6b3c16d23da233b23a2",
+        "foregroundPixelFraction": 0.1400265239197531,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S07-mask-native-dark.jpg"
+      }
+    },
+    "S08a": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S08a.png",
+        "sourceSha256": "b955026f5090807b3984aea58a7971c67ce898f1b8ebeeeb73a3c465910a860a",
+        "output": "episodes/first-day-anime2/project/assets/depth/S08a.png",
+        "outputSha256": "a957b409427c4649d988795fe047d3170bb52c951a2f9a77c842d687dd5bff14",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          7.900058746337891
+        ],
+        "elapsedSeconds": 0.862,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S08a-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S08a.png",
+        "sourceSha256": "b955026f5090807b3984aea58a7971c67ce898f1b8ebeeeb73a3c465910a860a",
+        "output": "episodes/first-day-anime2/project/assets/masks/S08a.png",
+        "outputSha256": "17ac68bff78236fac02f17f5b1aae37d06dc4eb6f29ccef546733a727501e4c4",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          2.384185791015625e-06,
+          0.999948263168335
+        ],
+        "elapsedSeconds": 0.939,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S08a-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S08a.png",
+        "cutoutSha256": "32bb901ddd7cbd5452fd1d62c887332b6c44b1175aacd1acbbcf88fd4b7f8ef7",
+        "foregroundPixelFraction": 0.5401847029320987,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S08a-mask-native-dark.jpg"
+      }
+    },
+    "S08c-researchers": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S08c-researchers.png",
+        "sourceSha256": "9e0b08ae4c0c62c5e581a775f616ce6525f01185df880db18eadfc7c1c9e7a15",
+        "output": "episodes/first-day-anime2/project/assets/depth/S08c-researchers.png",
+        "outputSha256": "9c586efa6b63f379ea6b48f1e63a28716fa03a5c5ab6a7f35c2a22a210c53526",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.22939181327819824,
+          6.505302906036377
+        ],
+        "elapsedSeconds": 0.87,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S08c-researchers-depth.jpg"
+      }
+    },
+    "S08d": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S08d.png",
+        "sourceSha256": "8ab1f2c82707a8b80538991e500262bb7a340a0bf28bd370866bf6beed6284f6",
+        "output": "episodes/first-day-anime2/project/assets/depth/S08d.png",
+        "outputSha256": "5d8b8341e33d864cd615075a6e2937379f0e1d855270ac82cbfb4f3eac8384d2",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          7.798251628875732
+        ],
+        "elapsedSeconds": 0.868,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S08d-depth.jpg"
+      }
+    },
+    "S12": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S12.png",
+        "sourceSha256": "acf25627337ed944cd80bbe470ce107a41ff9f129db08a1d7f64e681a62c1f82",
+        "output": "episodes/first-day-anime2/project/assets/depth/S12.png",
+        "outputSha256": "f25900d607380b28ea904bede81834dfdc718d1ceb6dc8756a7b6c5487b3a715",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          7.20198392868042
+        ],
+        "elapsedSeconds": 0.866,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S12-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S12.png",
+        "sourceSha256": "acf25627337ed944cd80bbe470ce107a41ff9f129db08a1d7f64e681a62c1f82",
+        "output": "episodes/first-day-anime2/project/assets/masks/S12.png",
+        "outputSha256": "f825804890a36cafe1c7c3fca2e19e204b00ed1edd37164a4eee0ae029359fbe",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          3.248453140258789e-06,
+          0.999930739402771
+        ],
+        "elapsedSeconds": 0.94,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S12-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S12.png",
+        "cutoutSha256": "b602781aa3860b8b8bf54d5ad5e682accd8093ec408660d80f8fb38da3ebdc65",
+        "foregroundPixelFraction": 0.47488088348765434,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S12-mask-native-dark.jpg"
+      }
+    },
+    "S13": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S13.png",
+        "sourceSha256": "041d48ea84c8c09315475c810da2edcef249701f82cedb2299e5ae1f6dd09272",
+        "output": "episodes/first-day-anime2/project/assets/depth/S13.png",
+        "outputSha256": "c1d62e11b0627fc30a7e5582f4b8ffe7725ad7a544cb6415bf358782763492c9",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          5.498926639556885
+        ],
+        "elapsedSeconds": 0.861,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S13-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S13.png",
+        "sourceSha256": "041d48ea84c8c09315475c810da2edcef249701f82cedb2299e5ae1f6dd09272",
+        "output": "episodes/first-day-anime2/project/assets/masks/S13.png",
+        "outputSha256": "33c02332a4a1f34a1022f7ffc1637baece28be8fd89c802f7ce23e06a1b87d28",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          1.7583370208740234e-06,
+          0.9999353885650635
+        ],
+        "elapsedSeconds": 0.935,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S13-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S13.png",
+        "cutoutSha256": "73a7f524e262a73f62f3f02a9bd7bd74990d0c8be23f2f12ecf5a195c48d2719",
+        "foregroundPixelFraction": 0.1344164737654321,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S13-mask-native-dark.jpg"
+      }
+    },
+    "S14": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S14.png",
+        "sourceSha256": "f2f50a6dd81a7c7c81336da144e574fe1b832c712638b6f76cf421e349bd192a",
+        "output": "episodes/first-day-anime2/project/assets/depth/S14.png",
+        "outputSha256": "3b4a13ee6195455fde6c8f7d24f656a81f94cb804d915f1fd0fb362d014e23ed",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          7.694977283477783
+        ],
+        "elapsedSeconds": 0.859,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S14-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S14.png",
+        "sourceSha256": "f2f50a6dd81a7c7c81336da144e574fe1b832c712638b6f76cf421e349bd192a",
+        "output": "episodes/first-day-anime2/project/assets/masks/S14.png",
+        "outputSha256": "cc62c883423868d4d1a87f20d16f6ff8b3dca42ece62bf60297ed82c5cc4e0e7",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          2.592802047729492e-06,
+          0.999944269657135
+        ],
+        "elapsedSeconds": 0.944,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S14-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S14.png",
+        "cutoutSha256": "01ad6c7e73deeddf16676f658f2b613003debf1ef9822049dfdf3496ab6b4898",
+        "foregroundPixelFraction": 0.3725318287037037,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S14-mask-native-dark.jpg"
+      }
+    },
+    "S15": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S15.png",
+        "sourceSha256": "e12f89e3fe1c77d4c9219fd59644fd2878b0f3ba5dfe69d717f84429ae7b906b",
+        "output": "episodes/first-day-anime2/project/assets/depth/S15.png",
+        "outputSha256": "cc924b32c2b2c8b5e06d014659c15acdd16d7e398b89788cfd1d0226072b3a45",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          6.000047206878662
+        ],
+        "elapsedSeconds": 0.859,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S15-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S15.png",
+        "sourceSha256": "e12f89e3fe1c77d4c9219fd59644fd2878b0f3ba5dfe69d717f84429ae7b906b",
+        "output": "episodes/first-day-anime2/project/assets/masks/S15.png",
+        "outputSha256": "85a2fad0dd2b6bca297e611455fe59fbbe85c6cc61d52a4642ab583d696334f5",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          2.562999725341797e-06,
+          0.9999311566352844
+        ],
+        "elapsedSeconds": 0.945,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S15-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S15.png",
+        "cutoutSha256": "0a735ef934198975806d6c8e261a5ff3c9d959ea60a9daa51a32569a8756217a",
+        "foregroundPixelFraction": 0.2993754822530864,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S15-mask-native-dark.jpg"
+      }
+    },
+    "S16": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S16.png",
+        "sourceSha256": "269ea253bfd18956c31903efdb0bdabb6f454c4833732895100251aec6c09de2",
+        "output": "episodes/first-day-anime2/project/assets/depth/S16.png",
+        "outputSha256": "c8e0c85de5e989c5391baf982492ecd44a1872aa1556b19bdf848fbc00ae0692",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          9.776019096374512
+        ],
+        "elapsedSeconds": 0.856,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S16-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S16.png",
+        "sourceSha256": "269ea253bfd18956c31903efdb0bdabb6f454c4833732895100251aec6c09de2",
+        "output": "episodes/first-day-anime2/project/assets/masks/S16.png",
+        "outputSha256": "f5e0a09644521c2649f1e3fc61000175b143f733ff7bae6276a8677ad87fda06",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          1.2814998626708984e-06,
+          0.9998778700828552
+        ],
+        "elapsedSeconds": 0.942,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S16-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S16.png",
+        "cutoutSha256": "a4288d8be5140ac2ef81e806d2cb25a75b7e6d42aa06582d196bf9888a3256b1",
+        "foregroundPixelFraction": 0.17015576774691357,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S16-mask-native-dark.jpg"
+      }
+    },
+    "S17-contact": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S17-contact.png",
+        "sourceSha256": "5837361eab3c23c348328a8dbe9945f33ac4340786f8f34ad6a14b509ce87b52",
+        "output": "episodes/first-day-anime2/project/assets/depth/S17-contact.png",
+        "outputSha256": "779e02dd887ced973a2fa5764eeedac2de7857e5cf145acbb592e70e53202cb9",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          6.4998626708984375
+        ],
+        "elapsedSeconds": 0.86,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S17-contact-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S17-contact.png",
+        "sourceSha256": "5837361eab3c23c348328a8dbe9945f33ac4340786f8f34ad6a14b509ce87b52",
+        "output": "episodes/first-day-anime2/project/assets/masks/S17-contact.png",
+        "outputSha256": "cc45a51b4d6050bfa2a94faa04b78f196cd37713a4df08bb491bc9ff22402c95",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          1.7285346984863281e-06,
+          0.9998725056648254
+        ],
+        "elapsedSeconds": 0.937,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S17-contact-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S17-contact.png",
+        "cutoutSha256": "2af670c7739ad4784f22c51c775f6f1341f72ee788e01868cfefb6a9812e5aa1",
+        "foregroundPixelFraction": 0.17224778163580248,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S17-contact-mask-native-dark.jpg"
+      }
+    },
+    "S18-opus": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S18-opus.png",
+        "sourceSha256": "85b69f4dcbe52bb2e2304a5ab8e632e6347e4ed1ceee15a03b596cad92bdacec",
+        "output": "episodes/first-day-anime2/project/assets/depth/S18-opus.png",
+        "outputSha256": "3952fa3e73746600826241c04182f483b43cf5a561713c17da362983fff375c4",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          7.952024459838867
+        ],
+        "elapsedSeconds": 0.856,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S18-opus-depth.jpg"
+      }
+    },
+    "tomorrow": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/tomorrow.png",
+        "sourceSha256": "947a7eddd14bb75f5be6430672e3701688379300ecec303524635118c0d85d3e",
+        "output": "episodes/first-day-anime2/project/assets/depth/tomorrow.png",
+        "outputSha256": "7d9beb326cef0fbaf42593766d94178ea7c3ca3ef7e2db4a7eeecf6e1814dae2",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          7.839976787567139
+        ],
+        "elapsedSeconds": 0.86,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/tomorrow-depth.jpg"
+      }
+    },
+    "S20": {
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S20.png",
+        "sourceSha256": "1629dc08d280f483aba46935c2f13fc903fc98e7d512830392cde1aa787c79a4",
+        "output": "episodes/first-day-anime2/project/assets/masks/S20.png",
+        "outputSha256": "3bd221626d9a8d38f6d0077a013a46eb6b13a1feb0852bfdd7ad80d9a7d9c78d",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          1.7583370208740234e-06,
+          0.999962329864502
+        ],
+        "elapsedSeconds": 0.938,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S20-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S20.png",
+        "cutoutSha256": "d00ea2a1b2718554209b1993521546ffbc183bcef6fc08e60a3078ee2c077763",
+        "foregroundPixelFraction": 0.6027420910493827,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S20-mask-native-dark.jpg"
+      },
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S20.png",
+        "sourceSha256": "1629dc08d280f483aba46935c2f13fc903fc98e7d512830392cde1aa787c79a4",
+        "output": "episodes/first-day-anime2/project/assets/depth/S20.png",
+        "outputSha256": "a9e0f9c453a450325f8d2c275830c4b2df640416358d769c97705f7db0934a49",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          6.1161699295043945
+        ],
+        "elapsedSeconds": 0.856,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S20-depth.jpg"
+      }
+    },
+    "opus-front": {
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/sheets/opus-front.png",
+        "sourceSha256": "59eba70bdc2a757a13d13fcf651464b0ccb7c0010ad17c47c07ef5d609812777",
+        "output": "episodes/first-day-anime2/project/assets/masks/opus-front.png",
+        "outputSha256": "e47b053080d0edbb2bc49eacb291fe799eedfdf22a5e83a191989673d77c3fad",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          290,
+          980
+        ],
+        "rawPredictionRange": [
+          1.6987323760986328e-06,
+          0.9999268054962158
+        ],
+        "elapsedSeconds": 1.05,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/opus-front-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/opus-front.png",
+        "cutoutSha256": "daae0f2118e4e622d5ab748277ec16ee134aa36a04aef547ed682d08816abde7",
+        "foregroundPixelFraction": 0.48719915552427867,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/opus-front-mask-native-dark.jpg"
+      }
+    },
+    "S25-character-refined": {
+      "mask": {
+        "source": "work/opus55-matte/S25-character-refined.png",
+        "sourceSha256": "b3bbc8e04d1ba681ec4389edc951038709de02edb39a0bb07daf48b832da1d1a",
+        "output": "episodes/first-day-anime2/project/assets/masks/S25-character-refined.png",
+        "outputSha256": "7e19fdfe742901fbb5b7d5569ea91b9b9712f7cd8d35c25703e95bb6135d8df3",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1672,
+          941
+        ],
+        "rawPredictionRange": [
+          1.3709068298339844e-06,
+          0.9999296069145203
+        ],
+        "elapsedSeconds": 0.97,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S25-character-refined-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S25-character-refined.png",
+        "cutoutSha256": "a9a848110093624761a07303afb161cabeedefd9d7acf72bc7f609e9e9148116",
+        "foregroundPixelFraction": 0.2754342321362289,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S25-character-refined-mask-native-dark.jpg"
+      }
+    },
+    "S11-subject": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/depth-inputs/S11-subject.png",
+        "sourceSha256": "2e6c3f1e5f7346e4a07194ab6ae2915b8454037bfd1213a2ecb43187cb132c0c",
+        "output": "episodes/first-day-anime2/project/assets/depth/S11-subject.png",
+        "outputSha256": "08647a7836cbc25b1541ee5bc4ea73460f804deb624d561c7f2bb1e4db857284",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          4.884750843048096
+        ],
+        "elapsedSeconds": 0.944,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S11-subject-depth.jpg"
+      }
+    },
+    "S18-opus-cutout": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/depth-inputs/S18-opus-cutout.png",
+        "sourceSha256": "325a3168d5eb8258ad56040150c68a43f68a90872de638aa7235eb87bc0b9210",
+        "output": "episodes/first-day-anime2/project/assets/depth/S18-opus-cutout.png",
+        "outputSha256": "d1134d41ad3c2a612c5f2d1cef4236ae25aad9a4231b3d58007657be39163dc8",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          7.9191741943359375
+        ],
+        "elapsedSeconds": 1.026,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S18-opus-cutout-depth.jpg"
+      }
+    },
+    "S19-user": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S19-user.png",
+        "sourceSha256": "c6a95e60bd25ac1e2d81a85e4ccae743864d41779758f28dd2911628a963e0af",
+        "output": "episodes/first-day-anime2/project/assets/depth/S19-user.png",
+        "outputSha256": "c8f9cbbb5cc25f882b7e754df356cc03b5bf20720b6063a1a6b8bfa216834565",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.10002711415290833,
+          10.455794334411621
+        ],
+        "elapsedSeconds": 0.883,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S19-user-depth.jpg"
+      }
+    },
+    "S21": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S21.png",
+        "sourceSha256": "01e18895128acdad1119444adfb7f739ab8f193b78ec295ceab2634ca59fdfb1",
+        "output": "episodes/first-day-anime2/project/assets/depth/S21.png",
+        "outputSha256": "68a7a1e0e50563723f0b0cdfe72842afbcf27975ad5e29787a81a6769e175cd4",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          8.30473804473877
+        ],
+        "elapsedSeconds": 0.849,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S21-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S21.png",
+        "sourceSha256": "01e18895128acdad1119444adfb7f739ab8f193b78ec295ceab2634ca59fdfb1",
+        "output": "episodes/first-day-anime2/project/assets/masks/S21.png",
+        "outputSha256": "9ad808c999a2d312b1ce7ba2de08496ae663d2225e12bb8a007cabb0c8bf6cd7",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          1.1324882507324219e-06,
+          0.9999491572380066
+        ],
+        "elapsedSeconds": 0.949,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S21-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S21.png",
+        "cutoutSha256": "bf1a43bc82c4fb09866a1bb191a7496343e4e27e007440a86f0c8d4fefebd02b",
+        "foregroundPixelFraction": 0.26328269675925925,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S21-mask-native-dark.jpg"
+      }
+    },
+    "S22-solo": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S22-solo.png",
+        "sourceSha256": "3a83a66782fae4a11fb756f5562bd7d20541d96374f424e67ca8a2fa374dc9fe",
+        "output": "episodes/first-day-anime2/project/assets/depth/S22-solo.png",
+        "outputSha256": "82ac34bc6eae41e2ed57c9c81c9afc025596d1172e3fc9fad467575896b14129",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          7.096331596374512
+        ],
+        "elapsedSeconds": 0.862,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S22-solo-depth.jpg"
+      }
+    },
+    "S23": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S23.png",
+        "sourceSha256": "aca62ee4739e28551694dd5ea814b409e180fff2b2b2d5e4b186b6fa89eef77d",
+        "output": "episodes/first-day-anime2/project/assets/depth/S23.png",
+        "outputSha256": "e3a978b3b9433287b52959f38e02628710adc9265fd13244cc06a14cc08869b9",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          7.756725311279297
+        ],
+        "elapsedSeconds": 0.855,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S23-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S23.png",
+        "sourceSha256": "aca62ee4739e28551694dd5ea814b409e180fff2b2b2d5e4b186b6fa89eef77d",
+        "output": "episodes/first-day-anime2/project/assets/masks/S23.png",
+        "outputSha256": "8b060b0350e60e53a36214d8b34e35b5c7729781be887f3fbbbc86d7c5320dd0",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          3.337860107421875e-06,
+          0.9999591112136841
+        ],
+        "elapsedSeconds": 0.958,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S23-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S23.png",
+        "cutoutSha256": "dd8a8d95ab04891daf108e9cb96d1296cad9cc7ee6e0064e5549e4f33119ce5e",
+        "foregroundPixelFraction": 0.6042660108024691,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S23-mask-native-dark.jpg"
+      }
+    },
+    "S24": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S24.png",
+        "sourceSha256": "23e5d32f257cc6073d9429a2ce9edb3d0b16e432438f31ad710ddba5f8320e93",
+        "output": "episodes/first-day-anime2/project/assets/depth/S24.png",
+        "outputSha256": "02f092233a1acd2e32a0dc359aac9edc3e6181ce9e9d42c5a952233492b28016",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          7.210225582122803
+        ],
+        "elapsedSeconds": 0.854,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S24-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S24.png",
+        "sourceSha256": "23e5d32f257cc6073d9429a2ce9edb3d0b16e432438f31ad710ddba5f8320e93",
+        "output": "episodes/first-day-anime2/project/assets/masks/S24.png",
+        "outputSha256": "54bc3c860327a33343ef871baa0072adea9a50fd3515c8a79d4fa9368b0dbad3",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          2.7418136596679688e-06,
+          0.9999081492424011
+        ],
+        "elapsedSeconds": 0.94,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S24-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S24.png",
+        "cutoutSha256": "be54b082ce770a4a85049485c77c3b6700210a0de7568c7433d0a034f09b67cb",
+        "foregroundPixelFraction": 0.3439578510802469,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S24-mask-native-dark.jpg"
+      }
+    },
+    "S26": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S26.png",
+        "sourceSha256": "5b8a17a19f2693500f78b6f9384c8a45721fcb38af09df3afffb84616da111fc",
+        "output": "episodes/first-day-anime2/project/assets/depth/S26.png",
+        "outputSha256": "b70d593066a9bfc1811d8a352436f3860c994a3d8beb7ca026cd8865190f597b",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          5.108327388763428
+        ],
+        "elapsedSeconds": 0.847,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S26-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S26.png",
+        "sourceSha256": "5b8a17a19f2693500f78b6f9384c8a45721fcb38af09df3afffb84616da111fc",
+        "output": "episodes/first-day-anime2/project/assets/masks/S26.png",
+        "outputSha256": "722afd0e0285634fec4d9ed908d15d0f010ecfb84b8f85be4358c618c9ab90d0",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          2.384185791015625e-06,
+          0.9999330043792725
+        ],
+        "elapsedSeconds": 0.942,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S26-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S26.png",
+        "cutoutSha256": "38b1b29cfae707eaf7c946225120b45d9603c4b4c2c7534accc9a5de919fdedd",
+        "foregroundPixelFraction": 0.21212818287037036,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S26-mask-native-dark.jpg"
+      }
+    },
+    "S27": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S27.png",
+        "sourceSha256": "f5449677771b8e964d6f99c0e040022c22ba2066246ec8d16abe8bcd507e33b2",
+        "output": "episodes/first-day-anime2/project/assets/depth/S27.png",
+        "outputSha256": "451389743835679a5443e5a655f8effe2dbd4b101ba9a10b4849dbb27db4b15e",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          3.7997183799743652
+        ],
+        "elapsedSeconds": 0.865,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S27-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S27.png",
+        "sourceSha256": "f5449677771b8e964d6f99c0e040022c22ba2066246ec8d16abe8bcd507e33b2",
+        "output": "episodes/first-day-anime2/project/assets/masks/S27.png",
+        "outputSha256": "128807ca57442e6570c09ea57fdd202dc1f41afdd67b2015d29729bdf8839e01",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          2.175569534301758e-06,
+          0.9999474287033081
+        ],
+        "elapsedSeconds": 0.935,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S27-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S27.png",
+        "cutoutSha256": "3c6a8c454fa24e81941de953c8165d10fc7198b5673012476c7b2da213e59b8f",
+        "foregroundPixelFraction": 0.15395302854938273,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S27-mask-native-dark.jpg"
+      }
+    },
+    "S28b-pose": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/depth-inputs/S28b-pose.png",
+        "sourceSha256": "c14ee886b9208d6131e601a3849adf58bf66e41ffae32f060b983619caee8fe9",
+        "output": "episodes/first-day-anime2/project/assets/depth/S28b-pose.png",
+        "outputSha256": "d6ef9287993a0f15c5da697353ae7b9ab38101ea30d65fe06dba8e831eb9523f",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          4.776542663574219
+        ],
+        "elapsedSeconds": 0.891,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S28b-pose-depth.jpg"
+      }
+    },
+    "S28c-clean": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S28c-clean.png",
+        "sourceSha256": "793baec3ad0f98fb65ce62fe0087e72bf907a2104ca2e8877ef45c205eb1b541",
+        "output": "episodes/first-day-anime2/project/assets/depth/S28c-clean.png",
+        "outputSha256": "3ae99c5fef17af16ac37902fc90941aa3107eeb7719f83cea5b2b75e3d61dc73",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          4.602583408355713
+        ],
+        "elapsedSeconds": 0.852,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S28c-clean-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S28c-clean.png",
+        "sourceSha256": "793baec3ad0f98fb65ce62fe0087e72bf907a2104ca2e8877ef45c205eb1b541",
+        "output": "episodes/first-day-anime2/project/assets/masks/S28c-clean.png",
+        "outputSha256": "78835f97757e53931fdc00de5de9c89b9db73b84263a31ca17936b049c4d626d",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          1.7583370208740234e-06,
+          0.9999306201934814
+        ],
+        "elapsedSeconds": 0.936,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S28c-clean-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S28c-clean.png",
+        "cutoutSha256": "ada750f44182193977531c3e8e7b5188bac161650e35ab296ea9b61166996da5",
+        "foregroundPixelFraction": 0.18214747299382716,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S28c-clean-mask-native-dark.jpg"
+      }
+    },
+    "S30": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S30.png",
+        "sourceSha256": "6d920cdce184b3270cbd80e142ad705e853f750de9e7c998be3bb17ddfaec7b2",
+        "output": "episodes/first-day-anime2/project/assets/depth/S30.png",
+        "outputSha256": "43a2acaaadcb3c49e1d998fc01f6ac9e58656261319cf6bc5cc8788d692bfe78",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          10.449742317199707
+        ],
+        "elapsedSeconds": 0.852,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S30-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S30.png",
+        "sourceSha256": "6d920cdce184b3270cbd80e142ad705e853f750de9e7c998be3bb17ddfaec7b2",
+        "output": "episodes/first-day-anime2/project/assets/masks/S30.png",
+        "outputSha256": "3f56a19b4260f572d63ce59b7088826d583441778e35bcbefe6f2f01797716ab",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          2.5033950805664062e-06,
+          0.9998021125793457
+        ],
+        "elapsedSeconds": 0.938,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S30-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S30.png",
+        "cutoutSha256": "0e8919d192b8fa2cb026d7a81791f7649c8fed63676f71750ff1f8d947c07334",
+        "foregroundPixelFraction": 0.3028226273148148,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S30-mask-native-dark.jpg"
+      }
+    },
+    "S31-hands": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S31-hands.png",
+        "sourceSha256": "69f3b9a5e96001263d7e405aa4401c40d20f33b6b89fe41b4cc0738c928b5d93",
+        "output": "episodes/first-day-anime2/project/assets/depth/S31-hands.png",
+        "outputSha256": "dcfe10311531287e1790d4f28f861b09734c7a491cd677053fc11e22505f52e9",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          5.886140823364258
+        ],
+        "elapsedSeconds": 0.848,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S31-hands-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S31-hands.png",
+        "sourceSha256": "69f3b9a5e96001263d7e405aa4401c40d20f33b6b89fe41b4cc0738c928b5d93",
+        "output": "episodes/first-day-anime2/project/assets/masks/S31-hands.png",
+        "outputSha256": "539b4a7506c2cb57828930a82978e55805cc9620e155f3771ea08d05e4a9624d",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          3.2782554626464844e-06,
+          0.9999479055404663
+        ],
+        "elapsedSeconds": 0.938,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S31-hands-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S31-hands.png",
+        "cutoutSha256": "76fc6a8b537cbb1d44060ac07e4e4348f341f2789a86dff289dbe84bc531adc4",
+        "foregroundPixelFraction": 0.24259886188271604,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S31-hands-mask-native-dark.jpg"
+      }
+    },
+    "S32": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S32.png",
+        "sourceSha256": "b49b6a2bb622f8c48707d8e6cae9e3c4b88f7613d83e3e085b99f6094a9aecf8",
+        "output": "episodes/first-day-anime2/project/assets/depth/S32.png",
+        "outputSha256": "8104334481642a95de4a8e5c91c06227a1ecc158d2b0e046e95566446ed54556",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          12.027246475219727
+        ],
+        "elapsedSeconds": 0.846,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S32-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S32.png",
+        "sourceSha256": "b49b6a2bb622f8c48707d8e6cae9e3c4b88f7613d83e3e085b99f6094a9aecf8",
+        "output": "episodes/first-day-anime2/project/assets/masks/S32.png",
+        "outputSha256": "8e2459e10fcba04e5f76c6aeb0d934e30b2431422d8615294b3001275c92a0b6",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          2.1457672119140625e-06,
+          0.9999338984489441
+        ],
+        "elapsedSeconds": 0.935,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S32-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S32.png",
+        "cutoutSha256": "970c4e90d45f68e5cff45aa3123c83c1d6a7705cfc81c96f7ebfd31834566bb3",
+        "foregroundPixelFraction": 0.5676099537037037,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S32-mask-native-dark.jpg"
+      }
+    },
+    "S33": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S33.png",
+        "sourceSha256": "bbff8df0b849e4eaf33c3adebe36d027c0eefc892efdd293e92cea56c19e5736",
+        "output": "episodes/first-day-anime2/project/assets/depth/S33.png",
+        "outputSha256": "4b1d452d2ca3a0f5f025abf228316a924e88d63fe59a7a4aabbdf732a757dfa4",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          4.315314769744873
+        ],
+        "elapsedSeconds": 0.854,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S33-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S33.png",
+        "sourceSha256": "bbff8df0b849e4eaf33c3adebe36d027c0eefc892efdd293e92cea56c19e5736",
+        "output": "episodes/first-day-anime2/project/assets/masks/S33.png",
+        "outputSha256": "4f783c294d081cace6dd920cfb89addb2d7f96b11206675656ba490b10702414",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          3.2186508178710938e-06,
+          0.9999337792396545
+        ],
+        "elapsedSeconds": 0.935,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S33-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S33.png",
+        "cutoutSha256": "c73d43db587bab6ca6ff27b81581bb19206d923770752ec76590c8effeedd3fc",
+        "foregroundPixelFraction": 0.37805796682098763,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S33-mask-native-dark.jpg"
+      }
+    },
+    "S34": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S34.png",
+        "sourceSha256": "63c7acea2db62ea9100f6d96065f696e7954831b2362a8d70b5e3b2c01b54b93",
+        "output": "episodes/first-day-anime2/project/assets/depth/S34.png",
+        "outputSha256": "21020fafa17ae8058f6fb0d6e9ea6358f0f41cd20ac01fbc7bd70698174a9647",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          8.145835876464844
+        ],
+        "elapsedSeconds": 0.85,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S34-depth.jpg"
+      }
+    },
+    "S35": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S35.png",
+        "sourceSha256": "3ffebd2568920c211a3e62d9b7098b993ccfe8cbef1c69b639896792932ac99b",
+        "output": "episodes/first-day-anime2/project/assets/depth/S35.png",
+        "outputSha256": "ca98295906ab936da8f9159b2d014f2c4a350bfa3d58d354cff96e00f382bbff",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          5.222701549530029
+        ],
+        "elapsedSeconds": 0.852,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S35-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S35.png",
+        "sourceSha256": "3ffebd2568920c211a3e62d9b7098b993ccfe8cbef1c69b639896792932ac99b",
+        "output": "episodes/first-day-anime2/project/assets/masks/S35.png",
+        "outputSha256": "c7c1e8155ef2477af50540906ef294e0fc6c14e2f431ec75cf07ce036727ce15",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          2.562999725341797e-06,
+          0.9999274015426636
+        ],
+        "elapsedSeconds": 0.935,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S35-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S35.png",
+        "cutoutSha256": "ab69c8b8f2e5fc24722c56cb8c63c2f64686ae8f111db80c1845847b933bc8e5",
+        "foregroundPixelFraction": 0.19094135802469137,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S35-mask-native-dark.jpg"
+      }
+    },
+    "S36a-start": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/depth-inputs/S36a-start.png",
+        "sourceSha256": "44df9cf2c65f05f7ec7954ab540c6673be388264bdb18c36e08e332694e3a0cf",
+        "output": "episodes/first-day-anime2/project/assets/depth/S36a-start.png",
+        "outputSha256": "13b73ea8938caaa76f266fd68fd74e911363c5f7c5341b61a2dc3d49afbe5f79",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          4.429843425750732
+        ],
+        "elapsedSeconds": 0.857,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S36a-start-depth.jpg"
+      }
+    },
+    "S36b-start": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/depth-inputs/S36b-start.png",
+        "sourceSha256": "07f53827326dcf8689f40dd296d2279fbdf757f2657805fab6fd7ca307109e12",
+        "output": "episodes/first-day-anime2/project/assets/depth/S36b-start.png",
+        "outputSha256": "c68dbcc3b32638c6ef9467eb4170bfe391b73fa1330f2f07922f6a41ade3c471",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          5.11496114730835
+        ],
+        "elapsedSeconds": 0.854,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S36b-start-depth.jpg"
+      }
+    },
+    "S36c-start-v2": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/depth-inputs/S36c-start-v2.png",
+        "sourceSha256": "9fbc4bd48936f26f91448f8ac7d447f4dfdccd44f5226f41498d1f83819300e7",
+        "output": "episodes/first-day-anime2/project/assets/depth/S36c-start-v2.png",
+        "outputSha256": "4e4e0090518f686fb2bc84262d342b789af78fcd131774851c8465ab5ef8cda2",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.06769788265228271,
+          4.63536262512207
+        ],
+        "elapsedSeconds": 0.857,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S36c-start-v2-depth.jpg"
+      }
+    },
+    "S36d-start-v2": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/depth-inputs/S36d-start-v2.png",
+        "sourceSha256": "984eb82493740148846e790c9b984bb0707a7f54ac58dc7920153e5fe18c6aa6",
+        "output": "episodes/first-day-anime2/project/assets/depth/S36d-start-v2.png",
+        "outputSha256": "155ea5c6db221e094dc3a1644d005181eb24cee74479a432d86046268395da46",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.46385395526885986,
+          5.292917728424072
+        ],
+        "elapsedSeconds": 0.858,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S36d-start-v2-depth.jpg"
+      }
+    },
+    "S36e-start-v2": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/depth-inputs/S36e-start-v2.png",
+        "sourceSha256": "aad3ff5e5f2f4b16760fbc5bc1d4e3d23a04f18f402fe19a5bfdfeb2b4e593ab",
+        "output": "episodes/first-day-anime2/project/assets/depth/S36e-start-v2.png",
+        "outputSha256": "71aa34482b72dc81ade0341ab0d07c94715375cfd8479eb5b60cd439bed36ad8",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.15405671298503876,
+          5.180783748626709
+        ],
+        "elapsedSeconds": 0.86,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S36e-start-v2-depth.jpg"
+      }
+    },
+    "S36f-start": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/depth-inputs/S36f-start.png",
+        "sourceSha256": "ca43c1210861cab4f01b11a503aa308e0e35f8032e3bc2bff161d748880f78b9",
+        "output": "episodes/first-day-anime2/project/assets/depth/S36f-start.png",
+        "outputSha256": "e5765f8445166b19b81146e0a70dde608254173469bd3a45ce80f8388e8d598c",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          4.539886951446533
+        ],
+        "elapsedSeconds": 0.861,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S36f-start-depth.jpg"
+      }
+    },
+    "S36g-start-v2": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/depth-inputs/S36g-start-v2.png",
+        "sourceSha256": "44fc337a3de11612b44c8838bb7b560baba121e59223518d9481464a741426b2",
+        "output": "episodes/first-day-anime2/project/assets/depth/S36g-start-v2.png",
+        "outputSha256": "308d68b81cc964d7a49da4d2f438802577b094294cc0b759717f6348bf87bb81",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.0,
+          3.5518693923950195
+        ],
+        "elapsedSeconds": 0.858,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S36g-start-v2-depth.jpg"
+      }
+    },
+    "S36h-start": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/depth-inputs/S36h-start.png",
+        "sourceSha256": "c7de34b69058b049dad0cf71f7f6f369a7bf607b106a7666f155455b1008b1e7",
+        "output": "episodes/first-day-anime2/project/assets/depth/S36h-start.png",
+        "outputSha256": "f0062668e209d26140950ed2f5e966f006005d2ad0b0ce7d5ce594bd7fd1db0e",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.3136087656021118,
+          4.738672733306885
+        ],
+        "elapsedSeconds": 0.859,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S36h-start-depth.jpg"
+      }
+    },
+    "S34-map": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S34-map.png",
+        "sourceSha256": "79bc3452315eca4b8b4391c6ac672effbb7cd45fff8e208a3053e1af831c7b28",
+        "output": "episodes/first-day-anime2/project/assets/depth/S34-map.png",
+        "outputSha256": "3aff7058edec21d8f5f81839d2083bf1ffd6c1833c47c50db7e8e16ca94b83f8",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          0.7565729022026062,
+          6.42000675201416
+        ],
+        "elapsedSeconds": 0.879,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S34-map-depth.jpg"
+      }
+    },
+    "S37-eye-v2": {
+      "depth": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S37-eye-v2.png",
+        "sourceSha256": "cebbb94cee8c0be3dd33785c8de8bd33fd8c6a45e009bc114a07bf07c5d1e75d",
+        "output": "episodes/first-day-anime2/project/assets/depth/S37-eye-v2.png",
+        "outputSha256": "837e516f0f64d405f9c06ca9ceeedc354fcb1225870e34cda781991b02f74dec",
+        "modelSha256": "afb6a5c28f3b6bf1618c6e43f02073ef9dfdc70e937502d51603e57b0a1df10c",
+        "inputDimensions": [
+          924,
+          518
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          2.5050408840179443,
+          4.977527618408203
+        ],
+        "elapsedSeconds": 0.878,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S37-eye-v2-depth.jpg"
+      },
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S37-eye-v2.png",
+        "sourceSha256": "cebbb94cee8c0be3dd33785c8de8bd33fd8c6a45e009bc114a07bf07c5d1e75d",
+        "output": "episodes/first-day-anime2/project/assets/masks/S37-eye-v2.png",
+        "outputSha256": "b096a51e076f8debe1e2cb06084255ce92a0a9636f447a9650774121417d71ff",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          2.562999725341797e-06,
+          0.057681381702423096
+        ],
+        "elapsedSeconds": 0.955,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S37-eye-v2-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S37-eye-v2.png",
+        "cutoutSha256": "96de302a9efe6e00d5c7e5b068085846404b885902ee3560efb3258163abb760",
+        "foregroundPixelFraction": 0.01595775462962963,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S37-eye-v2-mask-native-dark.jpg"
+      }
+    },
+    "S37-bust": {
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S37-bust.png",
+        "sourceSha256": "c444e6a36cb1cdfbafcc41bab0a98fde056ddd13b2af674d4a8a69887cf25aef",
+        "output": "episodes/first-day-anime2/project/assets/masks/S37-bust.png",
+        "outputSha256": "11f4787efc053364d3e4c31ffa6601566e720bd77cef9b8f33477069aecf16ed",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          1.7881393432617188e-06,
+          0.9999694228172302
+        ],
+        "elapsedSeconds": 0.953,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S37-bust-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S37-bust.png",
+        "cutoutSha256": "1e53a721c0c178ff1bdec65d571a4b2058084445faaf1c6b002418bf194e90c8",
+        "foregroundPixelFraction": 0.2681380208333333,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S37-bust-mask-native-dark.jpg"
+      }
+    },
+    "S37-wide": {
+      "mask": {
+        "source": "episodes/first-day-anime2/project/assets/normalized/S37-wide.png",
+        "sourceSha256": "fe57357898548cda2e4c5e8cf916085253040396dd1c46041a3a37e265e424e4",
+        "output": "episodes/first-day-anime2/project/assets/masks/S37-wide.png",
+        "outputSha256": "66ff3ec59f73e67e35b11af7ff398c6f8ff6a75dd6ae0d29d8e30073b4fd3432",
+        "modelSha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+        "inputDimensions": [
+          1024,
+          1024
+        ],
+        "sourceDimensions": [
+          1920,
+          1080
+        ],
+        "rawPredictionRange": [
+          1.519918441772461e-06,
+          0.9999347925186157
+        ],
+        "elapsedSeconds": 1.179,
+        "visualReview": "pending",
+        "qaPreview": "episodes/first-day-anime2/project/qa/depth/S37-wide-mask.jpg",
+        "cutout": "episodes/first-day-anime2/project/assets/cutouts/S37-wide.png",
+        "cutoutSha256": "384d36780a025df1b1018cbbf38b989973778e0b437f9ff3b5eca0fd4c94f0b8",
+        "foregroundPixelFraction": 0.05125385802469136,
+        "nativeDarkPreview": "episodes/first-day-anime2/project/qa/depth/S37-wide-mask-native-dark.jpg"
+      }
+    }
+  },
+  "status": "technical-inference-not-final-visual-qa",
+  "sourcePlatesModified": false,
+  "networkUsedByScript": false,
+  "threads": {
+    "intraOp": 4,
+    "interOp": 1,
+    "execution": "sequential",
+    "concurrentSessions": 1
+  }
+}

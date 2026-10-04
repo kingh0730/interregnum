@@ -1,0 +1,390 @@
+{
+  "schema_version": 1,
+  "plan_sha256": "8741ee5ef6ec006b760dba577ee7950927063ac07d389ea0306eaae5d63740d5",
+  "shots_sha256": "c3ab1620bb671f62c1fbf4ea7d19999769d1e7802cce3dad741546cb1469b6dd",
+  "shot_count": 52,
+  "required_generated_shot_count": 43,
+  "covered_required_generated_shot_count": 43,
+  "production_asset_count": 61,
+  "reference_dependency_count": 9,
+  "missing_generated_shots": [],
+  "source_verbatim_errors": [],
+  "source_verbatim_check": "PASS",
+  "coverage_check": "PASS",
+  "all_production_statuses_pending": true,
+  "s25_layers": [
+    "S25-sky",
+    "S25-mid",
+    "S25-towers-left",
+    "S25-towers-right",
+    "S25-character"
+  ],
+  "dance_first_last_poses": [
+    "S36a-start",
+    "S36a-end",
+    "S36b-start",
+    "S36b-end",
+    "S36c-start",
+    "S36c-end",
+    "S36d-start",
+    "S36d-end",
+    "S36e-start",
+    "S36e-end",
+    "S36f-start",
+    "S36f-end",
+    "S36g-start",
+    "S36g-end",
+    "S36h-start",
+    "S36h-end"
+  ],
+  "conditional_assets": [
+    "S28b-pose",
+    "S29-fallback"
+  ],
+  "shot_coverage": {
+    "S01": {
+      "assets": [
+        "S01"
+      ],
+      "reuse_or_code": []
+    },
+    "S02": {
+      "assets": [
+        "S02"
+      ],
+      "reuse_or_code": []
+    },
+    "S03": {
+      "assets": [
+        "S03"
+      ],
+      "reuse_or_code": []
+    },
+    "S04": {
+      "assets": [
+        "S04"
+      ],
+      "reuse_or_code": []
+    },
+    "S05": {
+      "assets": [
+        "S05",
+        "S05-face"
+      ],
+      "reuse_or_code": []
+    },
+    "S06": {
+      "assets": [],
+      "reuse_or_code": [
+        "char_opus"
+      ]
+    },
+    "S07": {
+      "assets": [
+        "S07"
+      ],
+      "reuse_or_code": []
+    },
+    "S08a": {
+      "assets": [
+        "S08a"
+      ],
+      "reuse_or_code": []
+    },
+    "S08b": {
+      "assets": [],
+      "reuse_or_code": []
+    },
+    "S08c": {
+      "assets": [
+        "S08c"
+      ],
+      "reuse_or_code": []
+    },
+    "S08d": {
+      "assets": [
+        "S08d"
+      ],
+      "reuse_or_code": []
+    },
+    "S09a": {
+      "assets": [
+        "S09a"
+      ],
+      "reuse_or_code": []
+    },
+    "S09b": {
+      "assets": [],
+      "reuse_or_code": []
+    },
+    "S10": {
+      "assets": [],
+      "reuse_or_code": [
+        "S09b final composite"
+      ]
+    },
+    "S11": {
+      "assets": [
+        "S11"
+      ],
+      "reuse_or_code": []
+    },
+    "S12": {
+      "assets": [
+        "S12"
+      ],
+      "reuse_or_code": []
+    },
+    "S13": {
+      "assets": [
+        "S13"
+      ],
+      "reuse_or_code": []
+    },
+    "S14": {
+      "assets": [
+        "S14"
+      ],
+      "reuse_or_code": []
+    },
+    "S15": {
+      "assets": [
+        "S15"
+      ],
+      "reuse_or_code": []
+    },
+    "S16": {
+      "assets": [
+        "S16"
+      ],
+      "reuse_or_code": []
+    },
+    "S17": {
+      "assets": [
+        "S17-contact"
+      ],
+      "reuse_or_code": []
+    },
+    "S18": {
+      "assets": [
+        "S18-opus",
+        "S18-hand"
+      ],
+      "reuse_or_code": []
+    },
+    "S19": {
+      "assets": [
+        "S19"
+      ],
+      "reuse_or_code": []
+    },
+    "S20": {
+      "assets": [
+        "S20"
+      ],
+      "reuse_or_code": []
+    },
+    "S21": {
+      "assets": [
+        "S21"
+      ],
+      "reuse_or_code": []
+    },
+    "S22": {
+      "assets": [
+        "S22"
+      ],
+      "reuse_or_code": []
+    },
+    "S23": {
+      "assets": [
+        "S23"
+      ],
+      "reuse_or_code": []
+    },
+    "S24": {
+      "assets": [
+        "S24"
+      ],
+      "reuse_or_code": []
+    },
+    "S25": {
+      "assets": [
+        "S25-sky",
+        "S25-mid",
+        "S25-towers-left",
+        "S25-towers-right",
+        "S25-character"
+      ],
+      "reuse_or_code": []
+    },
+    "S26": {
+      "assets": [
+        "S26"
+      ],
+      "reuse_or_code": []
+    },
+    "S27": {
+      "assets": [
+        "S27"
+      ],
+      "reuse_or_code": []
+    },
+    "S28a": {
+      "assets": [],
+      "reuse_or_code": [
+        "S27"
+      ]
+    },
+    "S28b": {
+      "assets": [
+        "S28b-pose"
+      ],
+      "reuse_or_code": [
+        "S28b-pose",
+        "S27"
+      ]
+    },
+    "S28c": {
+      "assets": [
+        "S28c"
+      ],
+      "reuse_or_code": []
+    },
+    "S29": {
+      "assets": [
+        "S29-fallback"
+      ],
+      "reuse_or_code": []
+    },
+    "S30": {
+      "assets": [
+        "S30"
+      ],
+      "reuse_or_code": []
+    },
+    "S31": {
+      "assets": [
+        "S31"
+      ],
+      "reuse_or_code": []
+    },
+    "S32": {
+      "assets": [
+        "S32"
+      ],
+      "reuse_or_code": []
+    },
+    "S33": {
+      "assets": [
+        "S33"
+      ],
+      "reuse_or_code": []
+    },
+    "S34": {
+      "assets": [
+        "S34"
+      ],
+      "reuse_or_code": []
+    },
+    "S35": {
+      "assets": [
+        "S35"
+      ],
+      "reuse_or_code": []
+    },
+    "S36a": {
+      "assets": [
+        "S36a-start",
+        "S36a-end"
+      ],
+      "reuse_or_code": []
+    },
+    "S36b": {
+      "assets": [
+        "S36b-start",
+        "S36b-end"
+      ],
+      "reuse_or_code": []
+    },
+    "S36c": {
+      "assets": [
+        "S36c-start",
+        "S36c-end"
+      ],
+      "reuse_or_code": []
+    },
+    "S36d": {
+      "assets": [
+        "S36d-start",
+        "S36d-end"
+      ],
+      "reuse_or_code": []
+    },
+    "S36e": {
+      "assets": [
+        "S36e-start",
+        "S36e-end"
+      ],
+      "reuse_or_code": []
+    },
+    "S36f": {
+      "assets": [
+        "S36f-start",
+        "S36f-end"
+      ],
+      "reuse_or_code": []
+    },
+    "S36g": {
+      "assets": [
+        "S36g-start",
+        "S36g-end"
+      ],
+      "reuse_or_code": []
+    },
+    "S36h": {
+      "assets": [
+        "S36h-start",
+        "S36h-end"
+      ],
+      "reuse_or_code": []
+    },
+    "S37": {
+      "assets": [
+        "S37-eye",
+        "S37-bust",
+        "S37-wide"
+      ],
+      "reuse_or_code": []
+    },
+    "S38": {
+      "assets": [],
+      "reuse_or_code": [
+        "S01–S37 rendered frames",
+        "world_void"
+      ]
+    },
+    "S39": {
+      "assets": [],
+      "reuse_or_code": [
+        "world_void"
+      ]
+    }
+  },
+  "notes": [
+    "The manifest audit proves extraction and source fidelity only; it does not prove generation, visual preservation, animation quality or G1/G2/G3 approval.",
+    "S37 supplies eye, bust and wide reveal support for the specified continuous macro-to-wide move.",
+    "S23 cape collar replaces nonexistent Opus hood to preserve locked costume.",
+    "S33 includes Sonnet open-palm and Haiku peace-sign echoes from section 9.",
+    "S16–S17 remain cropped at or below knee. Removed S17-reveal asset; hard-rule crop overrides exact preserved source prose requesting face reveal.",
+    "S28a/b/c use authoritative start frames 891, 901 and 911 as resolved in execution_decisions.json.",
+    "All nine clean character/world sources approved for reference by root visual review, with qa/lookdev_review.json as evidence. Final symbols, halo, facades and all 61 production assets remain unapproved and pending; no G3 approval inferred."
+  ],
+  "dependency_order_check": "PASS",
+  "dependency_errors": [],
+  "prompt_negative_check": "PASS",
+  "execution_decisions_incorporated": true,
+  "symbol_prompt_review": "PASS: no positive model instruction requests generated logos, exact sparks, Hanzi, text, numbers or UI; these are expressly code-only.",
+  "reference_approved_count": 9,
+  "production_approved_count": 0
+}

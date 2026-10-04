@@ -1,0 +1,80 @@
+{
+  "reviewer": "Codex",
+  "scope": "Still design references only. Does not approve motion, final composites, eye-symbol tracking or entire film.",
+  "assets": [
+    {
+      "path": "assets/sheets/opus-base.png",
+      "sha256": "9d6a5246b5fdef5a6b9d8ce16d2eae4aaf1bbd8f14947347d7d7d501848b0c32",
+      "approved_for_reference": true,
+      "production_shot_approval": false,
+      "finding": "Visually inspected all four views and six expressions: black/coral bob, ribbon side lock, cream cardigan, blouse, coral tie, staff hem, socks and cream/coral sneakers. Clean generator reference deliberately omits exact logos. Code-symbol finish in opus.png inspected separately; downstream eye/tie/hairpin attachment still must be reviewed per shot."
+    },
+    {
+      "path": "assets/sheets/opus.png",
+      "sha256": "04efd9955a2b56a23e44901041fca3453e78a4e6b33fd1f3031d199d7f6f18fe",
+      "approved_for_reference": true,
+      "production_shot_approval": false,
+      "finding": "Code SVG symbol-composited reference sheet; sampled full sheet and enlarged lower faces inspected after alignment corrections. Do not feed this logo-bearing version to plate generation."
+    },
+    {
+      "path": "assets/sheets/sonnet.png",
+      "sha256": "fce65ad3a4cb23ec7a6631d4f919f1b0b67afb161fe13071c0b31fbbf7ce7397",
+      "approved_for_reference": true,
+      "production_shot_approval": false,
+      "finding": "Four views and six expressions visually inspected: long wavy blue half-up hair, round glasses, slate blazer, ivory flowing ribbon; ribbon remains blank for code poem lines."
+    },
+    {
+      "path": "assets/sheets/haiku.png",
+      "sha256": "3b9265093d1f6a1fdd3c1bfd83aa71c95c37250298c6627453f896c5a8d5ee14",
+      "approved_for_reference": true,
+      "production_shot_approval": false,
+      "finding": "Four views and six expressions visually inspected: olive twin buns, leaf hoodie, shorts, cream sneakers, peace signs; scale her distinctly smaller than siblings in group shots."
+    },
+    {
+      "path": "assets/worlds/tomorrow.png",
+      "sha256": "ff57a3af5f61bc66b6800bb48d914fa09a0186581cdb1d0803988aa7d473b099",
+      "approved_for_reference": true,
+      "production_shot_approval": false,
+      "finding": "Blank billboard city with faceless paper figures and phone; foreground/middle/background separation clear. Clock numerals/lettering absent as required. Verse grade still required."
+    },
+    {
+      "path": "assets/worlds/egg.png",
+      "sha256": "cfeaed5fd0a5955b80895f53730f31aecca3f6fad78e2118162b756bb51461f9",
+      "approved_for_reference": true,
+      "production_shot_approval": false,
+      "finding": "Targeted clean edit compared to original: starburst hairpin removed, plain barrette and necktie; pose, curled clothing, luminous paper egg, staff-line currents retained. Code halo and symbols required in shot finish."
+    },
+    {
+      "path": "assets/worlds/scroll.png",
+      "sha256": "7a9b7eea71e6bb8b2f1cea356c6a1b592b7949c4166e985892bc2db971092b55",
+      "approved_for_reference": true,
+      "production_shot_approval": false,
+      "finding": "Giant curling paper landscape, branching ink river and lower coral sun read clearly; no writing. Approved environment style reference."
+    },
+    {
+      "path": "assets/worlds/canyon.png",
+      "sha256": "8094746abe219ea8b8b49f3f312986e4a01ffb8d3b84f9dd2d51ef2dcb3e6585",
+      "approved_for_reference": true,
+      "production_shot_approval": false,
+      "finding": "Replacement depicts manmade urban paper towers and blank facades from low wide view. Prior mountain-like candidate rejected. Hanzi geometry must still be authored in code."
+    },
+    {
+      "path": "assets/worlds/ocean.png",
+      "sha256": "9c08473d7bcb6f9b9621d867672d0438db9e3338d0fe985a4ca0a518c6936ee5",
+      "approved_for_reference": true,
+      "production_shot_approval": false,
+      "finding": "Calm ink water, paired reflections, three paper boats at different depths, low dawn camera; no characters or text."
+    },
+    {
+      "path": "assets/worlds/void.png",
+      "sha256": "952377863f64cc761ccc9c45e3ccc15ccfa02a6375e14f72b55bb1e97d27a93d",
+      "approved_for_reference": true,
+      "production_shot_approval": false,
+      "finding": "Empty ivory paper texture, no objects or generated symbols; approved final-void background."
+    }
+  ],
+  "rejected_candidates": {
+    "assets/worlds/egg-candidate.png": "Copied generated starburst ornament; replaced by cleaned egg.png.",
+    "assets/worlds/canyon-candidate.png": "Landscape cliffs instead of city towers; replaced by canyon.png."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "prompt": "Remove ONLY the small gray cloud above the girl's head, replacing it with the continuing pale dawn sky. Preserve every other pixel as closely as possible: exact girl's face, hair, clasped clapping hands, outfit, pose, scale, buildings, sky, lighting, composition and ink texture. Do not add anything. A separate animated cloud and its label will be built in code later. No text, no letters, no logos, no watermark.",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-5bae6a92-22e3-4475-9ed2-af2ef1cf2418.png",
+  "output": "assets/plates/S28c-clean.png",
+  "status": "pending_review",
+  "reason": "Gray cloud must be an animatable code layer, not remain baked after burst."
+}

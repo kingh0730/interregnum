@@ -1,0 +1,42 @@
+{
+  "video_sha256": "e9edb78e1299b558ed81ea0d58dc627fa39494cba0ab0c23e86c6d932869d191",
+  "samples": [
+    {
+      "frame": 158,
+      "label": "Bubble onset +1 frame"
+    },
+    {
+      "frame": 169,
+      "label": "Bubble readable"
+    },
+    {
+      "frame": 362,
+      "label": "Birth title after impact"
+    },
+    {
+      "frame": 576,
+      "label": "19.2 model pill"
+    },
+    {
+      "frame": 620,
+      "label": "Laptop model pill"
+    },
+    {
+      "frame": 689,
+      "label": "Second chorus title"
+    },
+    {
+      "frame": 1185,
+      "label": "Closing identity"
+    },
+    {
+      "frame": 1285,
+      "label": "Final title landed"
+    }
+  ],
+  "cue_resolutions": [
+    "Bubble spring begins157 with zero size, nonzero158 within1frame.",
+    "Full-white impact359/686 precedes readabletitle362/689.",
+    "Dolly endpoint1013 precedes next-shot whiteimpact1014."
+  ]
+}

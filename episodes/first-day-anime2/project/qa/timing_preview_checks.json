@@ -1,0 +1,9 @@
+{
+  "scope": "Timing preview only",
+  "audio_packet_identity": true,
+  "source_audio_packets": 1673,
+  "preview_audio_packets": 1673,
+  "stop_frames": 20,
+  "unique_decoded_stop_frames": 18,
+  "preview_sha256": "4498d957ba20dec82678f038a1d5719d45ea530c916fcbad65c0994837dd83d2"
+}

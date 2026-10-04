@@ -1,0 +1,82 @@
+{
+  "purpose": "Final corrected render source. First two chunks began before later-only S26/S28a/S35 camera preset edits; those presets are consumed only in chunks2/3. All runtime/graphics frozen before every chunk.",
+  "files": [
+    {
+      "path": "src/effect_preview.mjs",
+      "sha256": "03cba3b35b7b771a5f45d8958b5ab21e965d04f89190c2822d36f8457d1afcc1"
+    },
+    {
+      "path": "src/effects.mjs",
+      "sha256": "9d02789f93d6dce229964308a93ce70892b4198ae7fc0985eca5530f81a88249"
+    },
+    {
+      "path": "src/shot_details.mjs",
+      "sha256": "c1d72bc6b2ff7caf1a9d9bcf583a0c187121b0c6de287496c72945f661d70a84"
+    },
+    {
+      "path": "src/graphics.mjs",
+      "sha256": "3ef84e98820b51a2cdd7e90d5be18b40d0cf721a2c019d681ef7ca932fc4d37d",
+      "previous_sha256": "f9836b1e1ab0293b62d9b4b2edf621908045b8fc916e868e78960d6382264bbb"
+    },
+    {
+      "path": "src/title3d.mjs",
+      "sha256": "e118a61b989530d463cc7b436bf6ed6ee4317115e32a73061798f6199405dc94"
+    },
+    {
+      "path": "src/film_preview.mjs",
+      "sha256": "975434bd2c801debf77add050f8d54e68e333fa04c1fe793e2e89ac246450477"
+    },
+    {
+      "path": "src/film_runtime.mjs",
+      "sha256": "d1feee91dfe34a2bfaccd8f767731094f7ede6e685ea1207de85da6297e51b78"
+    },
+    {
+      "path": "src/parallax.mjs",
+      "sha256": "a1d635f8c6f86e296a98a3197c318d865329c2429e043cbf141150b3487b9a42"
+    },
+    {
+      "path": "src/camera/rig.mjs",
+      "sha256": "b76fa5491c7f6a905e572a74f47957ddd350354f7ff224cc215afcb8c41a5a1e"
+    },
+    {
+      "path": "src/TimingCards.tsx",
+      "sha256": "454ba05460e51e67dceb998b2e3b2c8fe661ebe4788529d099016ae9e4a5bdab"
+    },
+    {
+      "path": "src/Root.tsx",
+      "sha256": "24fccf1b1f9eeca1b301d6b935e024acc7ff776a1c9a9d91538eab1462d1fe19"
+    },
+    {
+      "path": "src/Film.tsx",
+      "sha256": "21cdfc90b987182db6fe582efe7ce6aa37c45ae5591b46f90f5df9dbc35da9ab"
+    },
+    {
+      "path": "helper/camera_paths.json",
+      "sha256": "a081685d006e56c0e86a3755eef9c696a0e3c6254a51264a55446d045f261385"
+    },
+    {
+      "path": "helper/asset_map.json",
+      "sha256": "65f21fbd3058b3510a2bd72682265915b62289b873359cb1918b9c3d05c36c89"
+    },
+    {
+      "path": "helper/shots.json",
+      "sha256": "c3ab1620bb671f62c1fbf4ea7d19999769d1e7802cce3dad741546cb1469b6dd"
+    },
+    {
+      "path": "helper/sync.json",
+      "sha256": "6efbe614eb80f6416272cfe4325198cad52e2bf85081bef816596c58028a3da3"
+    },
+    {
+      "path": "build/render.mjs",
+      "sha256": "f3af624d8c86331d6083b9235003464e4679792078c8052459a1cd9b44b5441e"
+    }
+  ],
+  "late_scoped_revision": {
+    "file": "src/graphics.mjs",
+    "affected_frames": [
+      1177,
+      1217
+    ],
+    "reason": "Ivory backing and fixed label entry preserve OPUS5.5 contrast over early dark hair; prefix0..1176 unchanged. Dependent S38 hero/atlas rebuilt."
+  }
+}

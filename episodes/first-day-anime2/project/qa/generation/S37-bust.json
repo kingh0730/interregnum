@@ -1,0 +1,24 @@
+{
+  "id": "S37-bust",
+  "tool": "Codex built-in image_gen",
+  "prompt": "Use case: identity-preserve. FIRST IMAGE is the approved MASTER FRAME of Opus for a single continuous pull-out. Produce only a closer BUST framing of precisely that same frozen pose and moment. SECOND IMAGE supports wardrobe identity only and must NOT supply a different expression or angle. Keep exact straight-front LEVEL head, level shoulders, eyes gazing directly toward camera, relaxed open almond eyelids and small calm CLOSED-MOUTH smile from image1. No head tilt, no 3/4 turn, no change of expression, no new gesture. Preserve whole facial structure and proportions, eye spacing and shape, nose/mouth placement, asymmetric hair silhouette/fringe and coral inner hair, plain barrette, cream ribbon bow and long side lock on her anatomicalLEFT/viewerRIGHT. Same cream slate-piped knit cardigan, white blouse and ordinary coral tie. Widescreen1920x1080 BUST composition showing all top of hair with10% ivory headroom, both shoulders and torso down to about waist; natural bottom crop, face near horizontal centre, leave ample ivory side margins. Ivory #FAF9F5 void exactly like master, no horizon/floor/shadow objects. Keep all details crisp and clean matching anime linework, not a different illustration style. Her unobstructed LEFT eye on VIEWER RIGHT is the planned next macro shot: keep its iris/eyelid geometry faithful to master. Plain dark pupils with no logos/starbursts/reflection mosaics, plain barrette/tie; exact spark/coral ring/numbers/text added in code. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no tiles, no halo/ring, no starbursts, no camera blur, no collage. One matched still only; change framing, not character pose.",
+  "references": [
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S37-wide.png",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/sheets/opus-base.png"
+  ],
+  "transparent_background": false,
+  "source_path": "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-11108bd4-ee50-433f-8619-1ff8ca926d5c.png",
+  "selected_path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S37-bust.png",
+  "status": "selected-matched-bust-review",
+  "original_codex_image_retained": true,
+  "sha256": "78bc22a7d5f87779960555207d72ba6b09f69f81dbb7eaa4ecf55e0a05445323",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "visualReview": [
+    "Same front-facing level head, direct gaze and calm closed-mouth smile as wide master.",
+    "Hair fringe, barrette, ribbon and long side lock retain the same side and configuration.",
+    "Closer rendering introduces detail; exact morph registration still requires composite review."
+  ]
+}

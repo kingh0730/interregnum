@@ -1,0 +1,17 @@
+{
+  "reference_gate": "Visually inspected references and official-vector placement; vector shape comparison passed",
+  "references": {
+    "opus": "assets/references/opus-v2.png",
+    "xiaoman": "assets/references/xiaoman-v1.png",
+    "environment": "assets/references/environment-v1.png"
+  },
+  "rejected": {
+    "assets/references/opus-v1.png": "Twin-tails stopped above floor",
+    "assets/references/opus-composite-v1.png": "Incorrect vector registration",
+    "assets/plates/opus-helix-turntable-v1.png": "Overlapping silhouettes and inconsistent view ordering; unsuitable for orbit rig"
+  },
+  "motion_submitted": true,
+  "final_export_ready": true,
+  "selected_media": "selected-media.json",
+  "manual_playback_verified": false
+}

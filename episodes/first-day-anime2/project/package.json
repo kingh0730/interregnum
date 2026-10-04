@@ -1,0 +1,24 @@
+{
+  "name": "opus55-first-day",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "timing": "remotion render src/index.ts TimingCards qa/remotion_timing_cards.mp4",
+    "studio": "remotion studio src/index.ts",
+    "render": "node build/render.mjs --mode=film --from=0 --frames=1311 --width=1920 --audio=1 --out=out/opus55_first_day_1080p30.mp4",
+    "preview": "node build/render.mjs --mode=film --from=0 --frames=1311 --width=960 --out=qa/full_preview.mp4"
+  },
+  "dependencies": {
+    "three": "0.170.0",
+    "playwright": "1.63.0"
+  },
+  "optionalDependencies": {
+    "@remotion/cli": "4.0.441",
+    "@remotion/three": "4.0.441",
+    "remotion": "4.0.441",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "@react-three/fiber": "9.1.2",
+    "@react-three/postprocessing": "3.0.4"
+  }
+}

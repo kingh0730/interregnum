@@ -1,0 +1,21 @@
+{
+ "endpoint": "fal-ai/image-preprocessors/depth-anything/v2",
+ "payload": {
+  "image_url": "<data uri>"
+ },
+ "payload_sha256": "e2a7f9ea5781d4d5c193ec3b50e42998785f3de5c752ed33e79a8d0b7d131bf2",
+ "request_id": "01a105b3-8be1-7550-8b00-1776cd2ed710",
+ "status_url": "https://queue.fal.run/fal-ai/image-preprocessors/requests/01a105b3-8be1-7550-8b00-1776cd2ed710/status",
+ "response_url": "https://queue.fal.run/fal-ai/image-preprocessors/requests/01a105b3-8be1-7550-8b00-1776cd2ed710",
+ "response": {
+  "image": {
+   "url": "https://v3b.fal.media/files/b/0aacff45/X8L_CMWALtXlUbdX31ugK_a8ea04a515804805a1d3249970c9fef6.png",
+   "content_type": "image/png",
+   "file_name": "a8ea04a515804805a1d3249970c9fef6.png",
+   "file_size": 157921,
+   "width": 1672,
+   "height": 941
+  }
+ },
+ "seconds": 7.3
+}

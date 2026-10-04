@@ -1,0 +1,35 @@
+{
+ "id": "S03_take2",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The tired developer remains slumped at her desk, exhales, then lifts her head only slightly toward the monitor. Very underplayed acting; a small shoulder movement. Rain runs slowly down glass. Room furniture stays perfectly still. Keep the performance especially restrained and the background stable.",
+  "image_url": "<data uri>",
+  "duration": 3,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026100032
+ },
+ "payload_sha256": "86512db5628c5b443e6db3a9f967f22f85c854899af2d0a5fa15ecb517e7ace2",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S03_take2.mp4",
+ "phase": "done",
+ "billable_s": 3.0,
+ "price": 0.09,
+ "request_id": "01a10609-3b65-7140-9fb4-fd39b5cee262",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-3b65-7140-9fb4-fd39b5cee262/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-3b65-7140-9fb4-fd39b5cee262",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-3b65-7140-9fb4-fd39b5cee262/cancel",
+ "submitted": 1791102630.899162,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad0177/gyEB9rmHrJluV8RMqNVYW_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "gyEB9rmHrJluV8RMqNVYW_minimax-h3.mp4",
+   "file_size": 7820486
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 1.6786860330030322
+  }
+ },
+ "done": 1791102642.321547
+}

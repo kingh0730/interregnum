@@ -1,0 +1,176 @@
+{
+  "shots": {
+    "S17": {
+      "assets": {
+        "plate": "assets/normalized/S17-contact.png",
+        "depth": "assets/depth/S17-contact.png",
+        "mask": "assets/masks/S17-contact.png",
+        "layers": [],
+        "poses": [],
+        "support": {},
+        "features": {
+          "status": "anchors_located_pending_composite_review",
+          "eyes": [],
+          "hairpin": null,
+          "tie": null,
+          "halo": null,
+          "eyes_state": "outside_crop",
+          "review_evidence": [
+            "qa/features/S17-contact-anchors.png",
+            "Raw source viewed individually; final action/composite review pending."
+          ],
+          "halo_requires_subject_occlusion": false,
+          "only_character": "Opus",
+          "contact": [
+            0.36363636,
+            0.84183945
+          ]
+        },
+        "status": "normalized_source_available",
+        "approval": false,
+        "mask_required": true,
+        "mask_status": "pending_inference",
+        "depth_status": "pending_inference",
+        "asset_id": "S17-contact"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [
+        {
+          "frame": 19.75,
+          "clamped": true,
+          "retainedMoveFraction": 0.19084548950195312,
+          "requestedProjectedTravelFraction": 0.09283981050646112,
+          "actualProjectedTravelFraction": 0.017585100090084682,
+          "coverageClamped": true,
+          "requestedCoverage": {
+            "safe": false,
+            "uvBounds": {
+              "minU": -0.0012663623081026198,
+              "maxU": 1.0012663623081026,
+              "minV": 0.20943200838597337,
+              "maxV": 1.1586955313959337
+            },
+            "insetU": 0.0010416666666666667,
+            "insetV": 0.001851851851851852,
+            "usesRepeatedEdgePixels": true
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.03091170114219599,
+              "maxU": 0.969088298857804,
+              "minV": 0.07138673318610217,
+              "maxV": 0.998147952523202
+            },
+            "insetU": 0.0010416666666666667,
+            "insetV": 0.001851851851851852,
+            "usesRepeatedEdgePixels": false
+          },
+          "requestedCameraPosition": [
+            0,
+            -2,
+            10
+          ],
+          "actualCameraPosition": [
+            0,
+            -2.0838477655279775,
+            10
+          ],
+          "requestedCameraQuaternion": [
+            0.07123362541605331,
+            0,
+            0,
+            0.9974596586379249
+          ],
+          "actualCameraQuaternion": [
+            0.013605719670075853,
+            0,
+            0,
+            0.9999074379122596
+          ],
+          "sourceCropReserve": 0.08,
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 20,
+          "clamped": true,
+          "retainedMoveFraction": 0.18694305419921875,
+          "requestedProjectedTravelFraction": 0.09477973228988137,
+          "actualProjectedTravelFraction": 0.017579703630342093,
+          "coverageClamped": true,
+          "requestedCoverage": {
+            "safe": false,
+            "uvBounds": {
+              "minU": -0.002299877574018394,
+              "maxU": 1.0022998775740184,
+              "minV": 0.2128319441042223,
+              "maxV": 1.1631545942616524
+            },
+            "insetU": 0.0010416666666666667,
+            "insetV": 0.001851851851851852,
+            "usesRepeatedEdgePixels": true
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.0309045179484842,
+              "maxU": 0.9690954820515159,
+              "minV": 0.07138478558265948,
+              "maxV": 0.9981478877814445
+            },
+            "insetU": 0.0010416666666666667,
+            "insetV": 0.001851851851851852,
+            "usesRepeatedEdgePixels": false
+          },
+          "requestedCameraPosition": [
+            0,
+            -2,
+            10
+          ],
+          "actualCameraPosition": [
+            0,
+            -2.0842521511873375,
+            10
+          ],
+          "requestedCameraQuaternion": [
+            0.07279974063468399,
+            0,
+            0,
+            0.9973465785590898
+          ],
+          "actualCameraQuaternion": [
+            0.013621034586548222,
+            0,
+            0,
+            0.9999072294052044
+          ],
+          "sourceCropReserve": 0.08,
+          "requiresVisualEdgeQA": true
+        }
+      ],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo",
+        "eyes_state",
+        "review_evidence",
+        "halo_requires_subject_occlusion",
+        "only_character",
+        "contact"
+      ],
+      "unverified": [
+        "Contact ripple/grass remain near annotated floor anchor; below-knee masking requires plate review."
+      ]
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    563
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}

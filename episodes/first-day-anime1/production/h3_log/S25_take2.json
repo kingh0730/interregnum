@@ -1,0 +1,36 @@
+{
+ "id": "S25_take2",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "A single uninterrupted cinematic anime BULLET-TIME camera orbit from the exact front reference to the exact rear reference. The two girls are FROZEN in the same mid-leap pose, holding hands, knees bent and hair suspended; they do not turn themselves. Only the camera travels in a smooth 180-degree arc around them at constant distance, revealing the sides and then their backs, with strong true parallax among nearby buildings and balcony. Preserve every face, outfit, hand clasp and limb exactly; no morphing or extra fingers. Rain beads and small blank paper scraps hang frozen in air. Feature-film cel anime characters and painterly luminous coral/blue dawn architecture remain consistent. No cuts, no transitions, no text, letters, logos or watermark. Finish in the supplied back view.",
+  "image_url": "<data uri>",
+  "end_image_url": "<data uri>",
+  "duration": 4,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026102502
+ },
+ "payload_sha256": "92eddaf339383f212b64c4ad1ef1418e6862c0bc1625f8a4f5fddc53780515e7",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S25_take2.mp4",
+ "phase": "done",
+ "billable_s": 4.0,
+ "price": 0.12,
+ "request_id": "01a10614-834b-7640-bc03-dbadc3932a74",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a10614-834b-7640-bc03-dbadc3932a74/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a10614-834b-7640-bc03-dbadc3932a74",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a10614-834b-7640-bc03-dbadc3932a74/cancel",
+ "submitted": 1791103370.217451,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad01c1/ifx_seEatUkiXcyFHRZrN_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "ifx_seEatUkiXcyFHRZrN_minimax-h3.mp4",
+   "file_size": 20949229
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 3.3963791499845684
+  }
+ },
+ "done": 1791103382.793875
+}

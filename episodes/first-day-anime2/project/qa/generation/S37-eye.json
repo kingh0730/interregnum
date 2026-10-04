@@ -1,0 +1,23 @@
+{
+  "id": "S37-eye",
+  "tool": "Codex built-in image_gen",
+  "prompt": "Use case: identity-preserve. FIRST image is approved matched bust master for a continuous pull-out; second image is wardrobe/identity support ONLY. Generate ONE EXTREME MACRO CLOSE-UP of her anatomical LEFT EYE, the eye on VIEWER RIGHT in the FIRST image. This is exactly the same frozen instant, head upright/front-facing, direct gaze and calm closed-mouth smile expression; do NOT rotate head or change eyelid openness, iris shape, gaze, lash count/silhouette or lighting. Reframe that specific viewer-right eye from the bust. Nose-bridge/inner-canthus side is image LEFT, hair/outer-canthus side image RIGHT. Preserve its exact gently almond eye shape, slight upper-lid curvature, outer corner/eyelashes, amber-coral iris with dark plain pupil and reference fine-thick anime linework. The entire eye from inner to outer corner is visible at extreme scale, occupies roughly70%width; iris large and crisp near frame centre, surrounding warm skin and some charcoal/coral hair strands/eyebrow at frame edges. Widescreen1920x1080. Background remains the same pale ivory cream void where any off-face background is visible, but the tight crop naturally contains mostly eye/skin/hair. Keep pupil/iris clear for CODE reflections: NO spark/starburst logos, NO tiled images, NO symbols, NO text/letters/numbers, NO halo/rings, NO watermark. Normal subtle shading only, no decorative catchlight shapes. No camera smear, no blur, no collage, no second eye panel. Match real bust geometry rather than inventing a new glamorous eye. One single production still.",
+  "references": [
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S37-bust.png",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/sheets/opus-base.png"
+  ],
+  "transparent_background": false,
+  "source_path": "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-ef6040c3-faf3-4efe-8353-6d86922b51e1.png",
+  "selected_path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S37-eye.png",
+  "status": "rejected-geometry-drift-candidate",
+  "original_codex_image_retained": true,
+  "sha256": "4e5fa8017b9c4bafe6b95208b5da1dcd19439fad358816d38caf141365024fe1",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "selectedReplacement": "assets/plates/S37-eye-v2.png",
+  "visualReview": [
+    "Iris too wide and lashes too flamboyant compared with authoritative bust; superseded by targeted correction."
+  ]
+}

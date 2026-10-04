@@ -1,0 +1,407 @@
+{
+  "shots": {
+    "S37": {
+      "assets": {
+        "plate": "assets/normalized/S37-eye-v2.png",
+        "depth": "assets/depth/S37-eye-v2.png",
+        "mask": "assets/masks/S37-eye-v2.png",
+        "layers": [],
+        "poses": [],
+        "support": {
+          "bust": {
+            "id": "S37-bust",
+            "source": "assets/plates/S37-bust.png",
+            "plate": "assets/normalized/S37-bust.png",
+            "depth": "assets/depth/S37-bust.png",
+            "mask": "assets/masks/S37-bust.png",
+            "expected_mask": "assets/masks/S37-bust.png",
+            "status": "normalized_source_available",
+            "depth_status": "pending_inference",
+            "mask_status": "pending_inference",
+            "features": {
+              "status": "anchors_located_pending_composite_review",
+              "eyes": [
+                [
+                  0.46351675,
+                  0.31233386,
+                  0.00598086
+                ],
+                [
+                  0.53528708,
+                  0.30489102,
+                  0.00598086
+                ]
+              ],
+              "hairpin": [
+                0.57177033,
+                0.20707071,
+                0.01794258
+              ],
+              "tie": [
+                0.50059809,
+                0.59835194,
+                0.02392344
+              ],
+              "halo": [
+                0.49940191,
+                0.28043594,
+                0.35885167,
+                0.5528974
+              ],
+              "eyes_state": "open",
+              "review_evidence": [
+                "qa/features/S37-bust-anchors.png",
+                "qa/features/final-sources-overlay-grid.jpg"
+              ],
+              "halo_requires_subject_occlusion": true,
+              "only_character": "Opus",
+              "iris": [
+                0.53588517,
+                0.3112706,
+                0.01196172
+              ]
+            },
+            "features_required": true,
+            "mask_required": true,
+            "approval": false,
+            "source_sha256": "78bc22a7d5f87779960555207d72ba6b09f69f81dbb7eaa4ecf55e0a05445323",
+            "output_sha256": "c444e6a36cb1cdfbafcc41bab0a98fde056ddd13b2af674d4a8a69887cf25aef",
+            "transform": {
+              "source_size": [
+                1672,
+                941
+              ],
+              "crop_box": [
+                0,
+                0.25,
+                1672,
+                940.75
+              ],
+              "target_size": [
+                1920,
+                1080
+              ],
+              "scale": 1.1483253588516746,
+              "method": "center_crop_lanczos_preserve_alpha"
+            },
+            "mode": "RGB",
+            "source_alpha_range": null,
+            "path": "assets/normalized/S37-bust.png",
+            "iris": [
+              0.53588517,
+              0.3112706,
+              0.01196172
+            ]
+          },
+          "wide": {
+            "id": "S37-wide",
+            "source": "assets/plates/S37-wide.png",
+            "plate": "assets/normalized/S37-wide.png",
+            "depth": "assets/depth/S37-wide.png",
+            "mask": "assets/masks/S37-wide.png",
+            "expected_mask": "assets/masks/S37-wide.png",
+            "status": "normalized_source_available",
+            "depth_status": "pending_inference",
+            "mask_status": "pending_inference",
+            "features": {
+              "status": "anchors_located_pending_composite_review",
+              "eyes": [
+                [
+                  0.48444976,
+                  0.23896863,
+                  0.00239234
+                ],
+                [
+                  0.50538278,
+                  0.23684211,
+                  0.00239234
+                ]
+              ],
+              "hairpin": [
+                0.51555024,
+                0.21132376,
+                0.00717703
+              ],
+              "tie": [
+                0.49641148,
+                0.32190324,
+                0.00897129
+              ],
+              "halo": [
+                0.49282297,
+                0.23684211,
+                0.10167464,
+                0.15417331
+              ],
+              "eyes_state": "open",
+              "review_evidence": [
+                "qa/features/S37-wide-anchors.png",
+                "qa/features/final-sources-overlay-grid.jpg"
+              ],
+              "halo_requires_subject_occlusion": true,
+              "only_character": "Opus",
+              "iris": [
+                0.50538278,
+                0.23896863,
+                0.00358852
+              ]
+            },
+            "features_required": true,
+            "mask_required": true,
+            "approval": false,
+            "source_sha256": "98ce8c36775ea02da657ce70f34cc98df95a8274c359f0c63a7e71297b23d900",
+            "output_sha256": "fe57357898548cda2e4c5e8cf916085253040396dd1c46041a3a37e265e424e4",
+            "transform": {
+              "source_size": [
+                1672,
+                941
+              ],
+              "crop_box": [
+                0,
+                0.25,
+                1672,
+                940.75
+              ],
+              "target_size": [
+                1920,
+                1080
+              ],
+              "scale": 1.1483253588516746,
+              "method": "center_crop_lanczos_preserve_alpha"
+            },
+            "mode": "RGB",
+            "source_alpha_range": null,
+            "path": "assets/normalized/S37-wide.png",
+            "iris": [
+              0.50538278,
+              0.23896863,
+              0.00358852
+            ]
+          }
+        },
+        "features": {
+          "status": "anchors_located_pending_composite_review",
+          "eyes": [
+            [
+              0.55322967,
+              0.51435407,
+              0.02990431
+            ]
+          ],
+          "hairpin": [
+            0.85645933,
+            0.04545455,
+            0.04186603
+          ],
+          "tie": null,
+          "halo": null,
+          "eyes_state": "open",
+          "review_evidence": [
+            "qa/features/S37-eye-v2-anchors.png",
+            "qa/features/final-sources-overlay-grid.jpg"
+          ],
+          "halo_requires_subject_occlusion": false,
+          "only_character": "Opus",
+          "iris": [
+            0.5562201,
+            0.54199894,
+            0.08253589
+          ]
+        },
+        "status": "normalized_source_available",
+        "approval": false,
+        "mask_required": true,
+        "mask_status": "pending_inference",
+        "depth_status": "pending_inference",
+        "asset_id": "S37-eye-v2",
+        "depth_input": "assets/normalized/S37-eye-v2.png"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [
+        {
+          "frame": 19.75,
+          "clamped": true,
+          "retainedMoveFraction": 0.00347900390625,
+          "requestedProjectedTravelFraction": 1.6249493268660127,
+          "actualProjectedTravelFraction": 0.07996642903392948,
+          "coverageClamped": true,
+          "requestedCoverage": {
+            "safe": false,
+            "uvBounds": {
+              "minU": -1.0145947672714584,
+              "maxU": 2.0145947672714586,
+              "minV": -1.0145947672714586,
+              "maxV": 2.0145947672714586
+            },
+            "insetU": 0.0013020833333333333,
+            "insetV": 0.0023148148148148147,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": true
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.0333784058819111,
+              "maxU": 0.9666215941180889,
+              "minV": 0.0333784058819111,
+              "maxV": 0.9666215941180889
+            },
+            "insetU": 0.0013020833333333333,
+            "insetV": 0.0023148148148148147,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false
+          },
+          "requestedCameraPosition": [
+            0,
+            0,
+            2.3740078752777434
+          ],
+          "actualCameraPosition": [
+            0,
+            0,
+            0.5065196807184346
+          ],
+          "requestedCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "actualCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "sourceCropReserve": 0.08,
+          "backgroundMode": "finite-source-plane",
+          "foregroundLayers": [],
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 20,
+          "clamped": true,
+          "retainedMoveFraction": 0.003345489501953125,
+          "requestedProjectedTravelFraction": 1.6268914874105807,
+          "actualProjectedTravelFraction": 0.07999372976760588,
+          "coverageClamped": true,
+          "requestedCoverage": {
+            "safe": false,
+            "uvBounds": {
+              "minU": -1.0569527148438174,
+              "maxU": 2.0569527148438174,
+              "minV": -1.0569527148438176,
+              "maxV": 2.056952714843818
+            },
+            "insetU": 0.0013020833333333333,
+            "insetV": 0.0023148148148148147,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": true
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.03337710580687542,
+              "maxU": 0.9666228941931245,
+              "minV": 0.03337710580687542,
+              "maxV": 0.9666228941931245
+            },
+            "insetU": 0.0013020833333333333,
+            "insetV": 0.0023148148148148147,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false
+          },
+          "requestedCameraPosition": [
+            0,
+            0,
+            2.4494897378516876
+          ],
+          "actualCameraPosition": [
+            0,
+            0,
+            0.5065219974521482
+          ],
+          "requestedCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "actualCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "sourceCropReserve": 0.08,
+          "backgroundMode": "finite-source-plane",
+          "foregroundLayers": [],
+          "requiresVisualEdgeQA": true
+        }
+      ],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo",
+        "eyes_state",
+        "review_evidence",
+        "halo_requires_subject_occlusion",
+        "only_character",
+        "iris"
+      ],
+      "unverified": [
+        "Iris portal is feathered, bounded inside outgoing source, shrinks inside iris by35%ofeachstage and disappears fully at stageend. Final wide registration is exactly source-full-frame; source-specific observed ornaments restored. Actual identity seam review still required."
+      ],
+      "matchZoom": {
+        "anchors": [
+          [
+            0.5562201,
+            0.54199894,
+            0.08253589
+          ],
+          [
+            0.53588517,
+            0.3112706,
+            0.01196172
+          ],
+          [
+            0.50538278,
+            0.23896863,
+            0.00358852
+          ]
+        ],
+        "method": "continuous exponential registered pullout with feathered iris-only disappearing portal",
+        "matteSources": [
+          "assets/masks/S37-eye-v2.png",
+          "assets/masks/S37-bust.png",
+          "assets/masks/S37-wide.png"
+        ],
+        "maskRegistration": "same radial alpha and transforms as RGB",
+        "finalWideTransform": {
+          "scale": 1,
+          "x": 0,
+          "y": 0
+        },
+        "actualSeamQA": "pending"
+      }
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    1197
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}

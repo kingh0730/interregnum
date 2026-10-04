@@ -1,0 +1,52 @@
+{
+  "module": "src/title3d.mjs",
+  "generator": "scripts/make_title_paths.py",
+  "generated": ["assets/brand/title-left.svg", "assets/brand/title-right.svg"],
+  "source": {
+    "font": "assets/fonts/Newsreader.ttf",
+    "instance": {"wght": 800, "opsz": 72},
+    "capHeightFontUnits": 1340,
+    "copyrightFromFontNameTable": "Copyright 2020 The Newsreader Project Authors (http://github.com/productiontype/Newsreader)",
+    "licenseFromFontNameTable": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+    "licenseNote": "Copied from actual embedded name table. No separate license file was located or invented. Generated SVG metadata retains notices and font SHA256."
+  },
+  "geometry": {
+    "method": "fontTools SVGPathPen outlines from an instanced variable font; caller SVGLoader shapes; Three ExtrudeGeometry",
+    "left": "OPUS 5",
+    "right": "5",
+    "decimal": "Exact supplied spark.svg path, separate extrusion with 0.13 cap-height spacing on each side",
+    "capHeightPixelsAt1080": 180,
+    "settledWidthFraction": 0.7043423507462686,
+    "depth": 0.35,
+    "faces": "ivory #FAF9F5",
+    "sides": "clay #D97757",
+    "bevel": "slate #191919, actual bevel triangles separately assigned by face normals"
+  },
+  "motion": {
+    "scale": "Damped spring starts at exactly 3; overshoots briefly; settles to exactly 1 at frame 5",
+    "shake": "Deterministic 14px decaying shake over 20 frames; descriptor exposes exact x/y offsets",
+    "shockRing": "Expanding true ring geometry with opacity decay over 12 frames",
+    "exit": "Small lateral/depth-rotation parallax late in shot"
+  },
+  "checks_passed": [
+    "Generated all 6 text glyph outlines (5 left, 1 right) with existing cached fontTools; no installs or network",
+    "Node syntax check",
+    "Synthetic Shape fixture: true extrusion returns nonzero face, side, and bevel triangles",
+    "Scale is exactly 3 at frame 0 and exactly 1 at frame 5",
+    "Nominal settled cap height is 180px at 1080p and width occupies 70.43% of 16:9 frame",
+    "Dispose removes root group"
+  ],
+  "pending": [
+    "Actual browser SVGLoader parsing and WebGL preview",
+    "Visual glyph spacing and exact spark-dot reading in final composition",
+    "Final subject occlusion/title placement and impact-frame integration",
+    "Normal-speed motion review; geometric checks are not aesthetic approval"
+  ],
+  "api": "createTitleSlam({THREE,scene,SVGLoader,svgPaths:{left:rawSVG,right:rawSVG},sparkSVG,camera,width,height,capHeight:2,fitCamera:true,position:[0,0,0]}) returns root,metadata,update(localFrame,durationFrames),dispose. titleSlamDescriptor(frame,duration) exported separately.",
+  "notes": [
+    "Caller supplies SVGLoader from its existing Three installation; module has no bare imports or runtime fetches.",
+    "Disable fitCamera when composing in an established camera rig; caller then owns projected cap height.",
+    "The standalone title uses basic materials to preserve exact palette independent of scene lighting; geometry has real depth and bevel surfaces.",
+    "Root compositor must handle S11 white/threshold impact frames and foreground Opus occlusion. No fake raster title fallback is included."
+  ]
+}

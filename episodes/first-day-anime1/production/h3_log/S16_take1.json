@@ -1,0 +1,35 @@
+{
+ "id": "S16_take1",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The anime girl floats in the ivory light column, shy awe on her face. Her two very long coral-to-cream twin-tails gently unfurl and drift, sash follows through. Body rises only slightly, bare feet relaxed. Floating blank papers and keycaps remain nearly frozen. Keep night outside.",
+  "image_url": "<data uri>",
+  "duration": 3,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026100161
+ },
+ "payload_sha256": "05355adc3f9673e4201cba1204cb462c568582f6591d64e4b9950731a1352c48",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S16_take1.mp4",
+ "phase": "done",
+ "billable_s": 3.0,
+ "price": 0.09,
+ "request_id": "01a10609-acc6-7f73-ac5e-721e3da546bc",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-acc6-7f73-ac5e-721e3da546bc/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-acc6-7f73-ac5e-721e3da546bc",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-acc6-7f73-ac5e-721e3da546bc/cancel",
+ "submitted": 1791102659.924858,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad017a/uEW-zwfG-zhwlJ4UtTIJ6_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "uEW-zwfG-zhwlJ4UtTIJ6_minimax-h3.mp4",
+   "file_size": 13370282
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 1.6794546151068062
+  }
+ },
+ "done": 1791102671.133554
+}

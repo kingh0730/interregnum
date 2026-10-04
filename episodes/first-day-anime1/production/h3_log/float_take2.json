@@ -1,0 +1,35 @@
+{
+ "id": "float_take2",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Quiet weightless floating, same two anime girls holding hands in exactly the same composition. Keep both bare feet and all anatomy clean. Tiny natural breath and hair/sash/hoodie drift only, tender underplayed expressions, calm and nearly still, no large gesture or pose change. Keep the long coral-to-cream twin-tails, black bob, round glasses and outfits identical. Camera completely fixed. Background stays perfectly flat uniform chroma green #00FF00 with no gradients, shadows, scenery or new objects. No text or logos. Clean cel anime linework and soft shading.",
+  "image_url": "<data uri>",
+  "duration": 3,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026103202
+ },
+ "payload_sha256": "cd0d61a3f37d1ba23dd0a3afce52f74b61fdf3265e653b644f2ba1ab9712a814",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/float_take2.mp4",
+ "phase": "done",
+ "billable_s": 3.0,
+ "price": 0.09,
+ "request_id": "01a106b9-e788-7370-ba15-c71babd39dae",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a106b9-e788-7370-ba15-c71babd39dae/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a106b9-e788-7370-ba15-c71babd39dae",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a106b9-e788-7370-ba15-c71babd39dae/cancel",
+ "submitted": 1791114209.284509,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad05fc/dnnrKC8jxNeGu_q-vQeDT_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "dnnrKC8jxNeGu_q-vQeDT_minimax-h3.mp4",
+   "file_size": 8434989
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 1.6505184210836887
+  }
+ },
+ "done": 1791114220.453973
+}

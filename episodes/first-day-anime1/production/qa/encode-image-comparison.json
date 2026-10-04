@@ -1,0 +1,17 @@
+[
+  {
+    "frame": 366,
+    "mean_absolute_RGB_error": 1.286788515946502,
+    "PSNR_dB": 41.12459760080232
+  },
+  {
+    "frame": 640,
+    "mean_absolute_RGB_error": 1.8780148855452674,
+    "PSNR_dB": 39.638606076061095
+  },
+  {
+    "frame": 1014,
+    "mean_absolute_RGB_error": 1.7765653935185186,
+    "PSNR_dB": 39.58664799250901
+  }
+]

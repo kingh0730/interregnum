@@ -1,0 +1,3845 @@
+{
+  "schemaVersion": 1,
+  "fps": 30,
+  "paths": {
+    "S01": {
+      "id": "S01",
+      "move": "MACRO-PUSH",
+      "sourceInstruction": "Locked macro; 3% push-in over the shot, ease-out. No shake.",
+      "sourceKind": "HYB",
+      "cameraOwner": "code",
+      "durationFrames": 32,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            9.70873786407767
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.16,
+        1,
+        0.3,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 235
+    },
+    "S02": {
+      "id": "S02",
+      "move": "DOLLY-IN-RAMP",
+      "sourceInstruction": "DOLLY-IN-RAMP straight down the central aisle through the crowd, 28 % travel, starts creeping then accelerates; roll 1° drifting.",
+      "sourceKind": "GEN-I25",
+      "cameraOwner": "code",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            7.2
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 1
+        }
+      ],
+      "ease": [
+        0.55,
+        0.055,
+        0.675,
+        0.19
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 236
+    },
+    "S03": {
+      "id": "S03",
+      "move": "ORBIT-45",
+      "sourceInstruction": "Slow ORBIT-45 around the egg, then settles; shallow DOF, floating particles in parallax.",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0.0,
+          "pos": [
+            -7.071067811865475,
+            0,
+            7.0710678118654755
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.125,
+          "pos": [
+            -6.343932841636455,
+            0,
+            7.73010453362737
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.25,
+          "pos": [
+            -5.555702330196022,
+            0,
+            8.314696123025453
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.375,
+          "pos": [
+            -4.7139673682599765,
+            0,
+            8.819212643483551
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.5,
+          "pos": [
+            -3.826834323650898,
+            0,
+            9.238795325112868
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.625,
+          "pos": [
+            -2.902846772544623,
+            0,
+            9.569403357322088
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.75,
+          "pos": [
+            -1.9509032201612824,
+            0,
+            9.807852804032304
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.875,
+          "pos": [
+            -0.980171403295606,
+            0,
+            9.95184726672197
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1.0,
+          "pos": [
+            0.0,
+            0,
+            10.0
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 237,
+      "generationCameraInstruction": "Slow ORBIT-45 around the egg, then settles; shallow DOF, floating particles in parallax.",
+      "globalEase": [
+        0.16,
+        1,
+        0.3,
+        1
+      ]
+    },
+    "S04": {
+      "id": "S04",
+      "move": "CRANE-UP",
+      "sourceInstruction": "CRANE-UP + slow tilt-down to keep her centred; handheld-breath noise 0.3 px.",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            1.8,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 238,
+      "generationCameraInstruction": "CRANE-UP + slow tilt-down to keep her centred; handheld-breath noise 0.3 px.",
+      "shake": {
+        "amplitudePx": 0.3,
+        "frequency": 8
+      }
+    },
+    "S05": {
+      "id": "S05",
+      "move": "SNAP-ZOOM",
+      "sourceInstruction": "SNAP-ZOOM: starts wide on her face, 6-frame whip-in to the eye exactly at 5.23, then slow creep.",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 40,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 60,
+          "roll": 0
+        },
+        {
+          "t": 0.15,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 24,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            9.7
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 24,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 239,
+      "generationCameraInstruction": "SNAP-ZOOM: starts wide on her face, 6-frame whip-in to the eye exactly at 5.23, then slow creep."
+    },
+    "S06": {
+      "id": "S06",
+      "move": "FORWARD",
+      "sourceInstruction": "Warp-speed FORWARD fly-through, FOV 55→95° ramp, tiny roll; speed ×3 at 7.19 (kick).",
+      "sourceKind": "CODE3D",
+      "cameraOwner": "code",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 55,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            2
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 95,
+          "roll": 2
+        }
+      ],
+      "ease": [
+        0.33,
+        0,
+        0.67,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 240,
+      "speedRamp": [
+        [
+          0,
+          1
+        ],
+        [
+          0.49,
+          1
+        ],
+        [
+          0.5,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    "S07": {
+      "id": "S07",
+      "move": "PULL-BACK",
+      "sourceInstruction": "PULL-BACK + slight rise, ends on wide hero silhouette; 2 % handheld.",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            8
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0.6,
+            12
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 241,
+      "generationCameraInstruction": "PULL-BACK + slight rise, ends on wide hero silhouette; 2 % handheld.",
+      "shake": {
+        "amplitudePx": 14,
+        "frequency": 8
+      }
+    },
+    "S08a": {
+      "id": "S08a",
+      "move": "PUSH-IN",
+      "sourceInstruction": "Fast PUSH-IN on hand, shutter-smear.",
+      "sourceKind": "HYB",
+      "cameraOwner": "code",
+      "durationFrames": 11,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            7
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 339,
+      "shutter": 180,
+      "shutterSamples": 8
+    },
+    "S08b": {
+      "id": "S08b",
+      "move": "ONE-POINT-DRIFT",
+      "sourceInstruction": "Locked-off wide, one-point perspective; the light wave IS the motion.",
+      "sourceKind": "HYB",
+      "cameraOwner": "code",
+      "durationFrames": 10,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            9.98
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 340,
+      "override": "Hard rule camera-never-static takes priority: minimal 0.2–0.5% drift preserves locked/macro composition."
+    },
+    "S08c": {
+      "id": "S08c",
+      "move": "TILT-UP",
+      "sourceInstruction": "Low-angle TILT-UP whip.",
+      "sourceKind": "HYB",
+      "cameraOwner": "code",
+      "durationFrames": 10,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            -2,
+            10
+          ],
+          "target": [
+            0,
+            -1,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            -2,
+            10
+          ],
+          "target": [
+            0,
+            2,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 341,
+      "shutter": 180,
+      "shutterSamples": 8
+    },
+    "S08d": {
+      "id": "S08d",
+      "move": "RISE",
+      "sourceInstruction": "RISE + slight dolly-forward.",
+      "sourceKind": "HYB",
+      "cameraOwner": "code",
+      "durationFrames": 10,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            -0.7,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0.7,
+            9
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 342
+    },
+    "S09a": {
+      "id": "S09a",
+      "move": "ZOOM-IN-4X",
+      "sourceInstruction": "Rapid ZOOM-IN 4×.",
+      "sourceKind": "GEN-I25",
+      "cameraOwner": "code",
+      "durationFrames": 10,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 60,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 16.426421403476375,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 340
+    },
+    "S09b": {
+      "id": "S09b",
+      "move": "SPARK-EXPANSION",
+      "sourceInstruction": "Scale 0.1→6.0 exponential ease-in, rotation +90°.",
+      "sourceKind": "CODE3D",
+      "cameraOwner": "code",
+      "durationFrames": 11,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            60
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            1
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 90
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 341
+    },
+    "S10": {
+      "id": "S10",
+      "move": "FREEZE",
+      "sourceInstruction": "ABSOLUTELY LOCKED. Only a 1 %-in-0.68 s linear scale creep. (Contrast with the previous 6 cuts matters.)",
+      "sourceKind": "CODE",
+      "cameraOwner": "code",
+      "durationFrames": 20,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 235,
+      "freeze": true,
+      "override": "Hard rule: full-frame freeze overrides contradictory 1% creep."
+    },
+    "S11": {
+      "id": "S11",
+      "move": "WHIP-IN",
+      "sourceInstruction": "WHIP-IN from the frozen spark to a hero low-angle; 12 f slow-mo (40 %) then snap back to 100 % at 12.31; camera shake 14 px decaying over 20 f.",
+      "sourceKind": "HYB",
+      "cameraOwner": "code",
+      "durationFrames": 21,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            -2,
+            16
+          ],
+          "target": [
+            0,
+            1,
+            0
+          ],
+          "fov": 70,
+          "roll": 0
+        },
+        {
+          "t": 0.25,
+          "pos": [
+            0,
+            -1,
+            8
+          ],
+          "target": [
+            0,
+            0.4,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            -0.8,
+            7.8
+          ],
+          "target": [
+            0,
+            0.4,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 236,
+      "speedRamp": [
+        [
+          0,
+          0.4
+        ],
+        [
+          0.5714285714285714,
+          0.4
+        ],
+        [
+          0.6190476190476191,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "shake": {
+        "amplitudePx": 14,
+        "frequency": 16,
+        "decayFrames": 20
+      },
+      "shutter": 180,
+      "shutterSamples": 8
+    },
+    "S12": {
+      "id": "S12",
+      "move": "ORBIT-120",
+      "sourceInstruction": "ORBIT-120 fast arc ending dead-on her face; 12 f ease-out into the last 2°.",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 20,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0.0,
+          "pos": [
+            -8.660254037844387,
+            0,
+            -4.999999999999998
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.125,
+          "pos": [
+            -9.659258262890683,
+            0,
+            -2.5881904510252083
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.25,
+          "pos": [
+            -10.0,
+            0,
+            6.123233995736766e-16
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.375,
+          "pos": [
+            -9.659258262890683,
+            0,
+            2.5881904510252074
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.5,
+          "pos": [
+            -8.660254037844386,
+            0,
+            5.000000000000001
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.625,
+          "pos": [
+            -7.071067811865475,
+            0,
+            7.0710678118654755
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.75,
+          "pos": [
+            -4.999999999999999,
+            0,
+            8.660254037844387
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.875,
+          "pos": [
+            -2.5881904510252074,
+            0,
+            9.659258262890683
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1.0,
+          "pos": [
+            0.0,
+            0,
+            10.0
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 237,
+      "generationCameraInstruction": "ORBIT-120 fast arc ending dead-on her face; 12 f ease-out into the last 2°.",
+      "globalEase": [
+        0.16,
+        1,
+        0.3,
+        1
+      ]
+    },
+    "S13": {
+      "id": "S13",
+      "move": "CRANE-UP",
+      "sourceInstruction": "CRANE-UP with 2° roll; lens flare passes on beat 3 (14.0).",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            -0.9,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0.9,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 2
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 238,
+      "generationCameraInstruction": "CRANE-UP with 2° roll; lens flare passes on beat 3 (14.0).",
+      "sourceCropReserve": 0.008,
+      "framingNote": "Tight source crown requires 0.8% rather than default 8% crop; source-coverage clamp preserves all available crown pixels."
+    },
+    "S14": {
+      "id": "S14",
+      "move": "AIRFLOW-TRACK",
+      "sourceInstruction": "50 % slow-mo, camera TRACKS the airflow by gliding INTO the stream; speed ramps to 100 % at 15.7.",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            -1,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            1,
+            0,
+            7
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 239,
+      "generationCameraInstruction": "50 % slow-mo, camera TRACKS the airflow by gliding INTO the stream; speed ramps to 100 % at 15.7.",
+      "speedRamp": [
+        [
+          0,
+          0.5
+        ],
+        [
+          0.73,
+          0.5
+        ],
+        [
+          0.8,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "S15": {
+      "id": "S15",
+      "move": "PULL-OUT",
+      "sourceInstruction": "PULL-OUT through the ring while a 360° tilt-shift sweep reveals the sky; speed ramp 70 → 120 %.",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0.0,
+          "pos": [
+            0,
+            0,
+            8.0
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0.0
+        },
+        {
+          "t": 0.125,
+          "pos": [
+            0,
+            0,
+            8.75
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 45.0
+        },
+        {
+          "t": 0.25,
+          "pos": [
+            0,
+            0,
+            9.5
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 90.0
+        },
+        {
+          "t": 0.375,
+          "pos": [
+            0,
+            0,
+            10.25
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 135.0
+        },
+        {
+          "t": 0.5,
+          "pos": [
+            0,
+            0,
+            11.0
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 180.0
+        },
+        {
+          "t": 0.625,
+          "pos": [
+            0,
+            0,
+            11.75
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 225.0
+        },
+        {
+          "t": 0.75,
+          "pos": [
+            0,
+            0,
+            12.5
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 270.0
+        },
+        {
+          "t": 0.875,
+          "pos": [
+            0,
+            0,
+            13.25
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 315.0
+        },
+        {
+          "t": 1.0,
+          "pos": [
+            0,
+            0,
+            14.0
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 360.0
+        }
+      ],
+      "ease": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 240,
+      "generationCameraInstruction": "PULL-OUT through the ring while a 360° tilt-shift sweep reveals the sky; speed ramp 70 → 120 %.",
+      "speedRamp": [
+        [
+          0,
+          0.7
+        ],
+        [
+          1,
+          1.2
+        ]
+      ]
+    },
+    "S16": {
+      "id": "S16",
+      "move": "FLOOR-DOLLY-BACK",
+      "sourceInstruction": "Locked low, floor-level; slight dolly-back.",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 20,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            -3,
+            8
+          ],
+          "target": [
+            0,
+            -3,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            -3,
+            8.5
+          ],
+          "target": [
+            0,
+            -3,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 241,
+      "generationCameraInstruction": "Locked low, floor-level; slight dolly-back."
+    },
+    "S17": {
+      "id": "S17",
+      "move": "TILT-UP",
+      "sourceInstruction": "TILT-UP reveal, 1.36 s, ease-in-out; ripple triggers a 2 f camera dip (−6 px).",
+      "sourceKind": "HYB",
+      "cameraOwner": "code",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            -2,
+            10
+          ],
+          "target": [
+            0,
+            -2,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            -2,
+            10
+          ],
+          "target": [
+            0,
+            1,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 242,
+      "dip": {
+        "frame": 0,
+        "frames": 2,
+        "pixels": -6
+      }
+    },
+    "S18": {
+      "id": "S18",
+      "move": "POV-PUSH",
+      "sourceInstruction": "POV push-in, gentle float; DOF rack from hand to her fingertip at 19.9.",
+      "sourceKind": "UI",
+      "cameraOwner": "code",
+      "durationFrames": 21,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0,
+          "focusDistance": 7
+        },
+        {
+          "t": 0.63,
+          "pos": [
+            0,
+            0,
+            9.6
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0,
+          "focusDistance": 10
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            9.4
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0,
+          "focusDistance": 10
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 243,
+      "shake": {
+        "amplitudePx": 0.5,
+        "frequency": 8
+      }
+    },
+    "S19": {
+      "id": "S19",
+      "move": "TRUCK",
+      "sourceInstruction": "Slow lateral TRUCK left→right + subtle dolly-in; focus pulls from screen to her face reflected.",
+      "sourceKind": "UI",
+      "cameraOwner": "code",
+      "durationFrames": 40,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            -0.6,
+            0,
+            10
+          ],
+          "target": [
+            -0.6,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0,
+          "focusDistance": 8
+        },
+        {
+          "t": 1,
+          "pos": [
+            0.6,
+            0,
+            9.6
+          ],
+          "target": [
+            0.6,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0,
+          "focusDistance": 10
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 244
+    },
+    "S20": {
+      "id": "S20",
+      "move": "PUSH-THROUGH",
+      "sourceInstruction": "PUSH-THROUGH at accelerating speed (dolly 1×→4×); FOV 40→80°.",
+      "sourceKind": "HYB",
+      "cameraOwner": "code",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 40,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            1
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 80,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.33,
+        0,
+        0.67,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 236,
+      "speedRamp": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    "S21": {
+      "id": "S21",
+      "move": "LOW-DOLLY-OUT",
+      "sourceInstruction": "EPIC LOW WIDE + fast DOLLY-OUT 15 %, anamorphic flare.",
+      "sourceKind": "GEN-I25",
+      "cameraOwner": "code",
+      "durationFrames": 21,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            -1.4,
+            10
+          ],
+          "target": [
+            0,
+            0.4,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            -1.4,
+            11.5
+          ],
+          "target": [
+            0,
+            0.4,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 237
+    },
+    "S22": {
+      "id": "S22",
+      "move": "DUTCH-PUSH",
+      "sourceInstruction": "Medium close, quick PUSH-IN + 3° Dutch.",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 20,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            8.5
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 3
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 238,
+      "generationCameraInstruction": "Medium close, quick PUSH-IN + 3° Dutch."
+    },
+    "S23": {
+      "id": "S23",
+      "move": "SNAP-FOCUS",
+      "sourceInstruction": "Snap-focus rack from Opus’s shoulder to Haiku.",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 21,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0,
+          "focusDistance": 7
+        },
+        {
+          "t": 0.3,
+          "pos": [
+            0,
+            0,
+            9.98
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0,
+          "focusDistance": 10
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            9.95
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0,
+          "focusDistance": 10
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 239,
+      "generationCameraInstruction": "Snap-focus rack from Opus’s shoulder to Haiku.",
+      "override": "Hard rule camera-never-static takes priority: minimal 0.2–0.5% drift preserves locked/macro composition."
+    },
+    "S24": {
+      "id": "S24",
+      "move": "WHIP",
+      "sourceInstruction": "Low WHIP-PAN left→right, ends on Opus.",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 20,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            -1,
+            10
+          ],
+          "target": [
+            -8,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.3,
+          "pos": [
+            0,
+            -1,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0.05,
+            -1,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 240,
+      "generationCameraInstruction": "Low WHIP-PAN left→right, ends on Opus.",
+      "shutter": 180,
+      "shutterSamples": 8
+    },
+    "S25": {
+      "id": "S25",
+      "move": "FOLLOW-CAM",
+      "sourceInstruction": "FOLLOW-CAM behind-and-below, fast, FOV 50→100°, banking roll ±12°.",
+      "sourceKind": "GEN-I25",
+      "cameraOwner": "code",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            -2,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.33,
+          "pos": [
+            0,
+            1,
+            8
+          ],
+          "target": [
+            0,
+            3,
+            0
+          ],
+          "fov": 65,
+          "roll": 12
+        },
+        {
+          "t": 0.66,
+          "pos": [
+            0,
+            5,
+            6
+          ],
+          "target": [
+            0,
+            7,
+            0
+          ],
+          "fov": 85,
+          "roll": -12
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            10,
+            4
+          ],
+          "target": [
+            0,
+            12,
+            0
+          ],
+          "fov": 100,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 241,
+      "followLagFrames": 6,
+      "layerRequirement": "five independent depth layers; animate subject six frames ahead of camera follow trajectory"
+    },
+    "S26": {
+      "id": "S26",
+      "move": "CRANE-UP",
+      "sourceInstruction": "Vertical CRANE-UP then tilt to horizon; lens flare sweeps.",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            -1,
+            10
+          ],
+          "target": [
+            0,
+            2,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.6,
+          "pos": [
+            0,
+            1,
+            10
+          ],
+          "target": [
+            0,
+            2,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            2,
+            10
+          ],
+          "target": [
+            0,
+            2,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 242,
+      "generationCameraInstruction": "Vertical CRANE-UP then tilt to horizon; lens flare sweeps.",
+      "sourceCropReserve": 0.008,
+      "framingNote": "Protect tight source crown with 0.8% crop reserve; retain genuine-source coverage clamp."
+    },
+    "S27": {
+      "id": "S27",
+      "move": "BULLET",
+      "sourceInstruction": "BULLET orbit 270° around her over 1.36 s, time near-frozen (3 % speed); ends front-on.",
+      "sourceKind": "CODE3D",
+      "cameraOwner": "code",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0.0,
+          "pos": [
+            -6.4278760968653925,
+            0,
+            7.66044443118978
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.125,
+          "pos": [
+            -5.7357643635104605,
+            0,
+            8.191520442889917
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.25,
+          "pos": [
+            -4.999999999999999,
+            0,
+            8.660254037844387
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.375,
+          "pos": [
+            -4.2261826174069945,
+            0,
+            9.063077870366499
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.5,
+          "pos": [
+            -3.420201433256687,
+            0,
+            9.396926207859085
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.625,
+          "pos": [
+            -2.5881904510252074,
+            0,
+            9.659258262890683
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.75,
+          "pos": [
+            -1.7364817766693033,
+            0,
+            9.84807753012208
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.875,
+          "pos": [
+            -0.8715574274765816,
+            0,
+            9.961946980917455
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1.0,
+          "pos": [
+            0.0,
+            0,
+            10.0
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 243,
+      "actionTimeScale": 0.03,
+      "fallback": "Plan option B: 40-degree depth-rig camera orbit plus a separate 360-degree particle-sphere rotation; 270-degree generated orbit remains preferred when available.",
+      "particleRotationDegrees": 360
+    },
+    "S28a": {
+      "id": "S28a",
+      "move": "PUNCH-IN",
+      "sourceInstruction": "Punch-in 1.3×, shake.",
+      "sourceKind": "UI",
+      "cameraOwner": "code",
+      "durationFrames": 10,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            1.04,
+            7.692307692307692
+          ],
+          "target": [
+            0,
+            1.04,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 341,
+      "shake": {
+        "amplitudePx": 9,
+        "frequency": 8
+      },
+      "sourceCropReserve": 0.008,
+      "framingNote": "Aim 1.3x punch-in toward upper body to retain eyes/crown and adjacent stamp; keep source coverage and depth movement limits."
+    },
+    "S28b": {
+      "id": "S28b",
+      "move": "ROLL",
+      "sourceInstruction": "Locked, slight roll.",
+      "sourceKind": "UI",
+      "cameraOwner": "code",
+      "durationFrames": 10,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 2
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 342
+    },
+    "S28c": {
+      "id": "S28c",
+      "move": "WHIP-TILT",
+      "sourceInstruction": "Whip-tilt up.",
+      "sourceKind": "HYB",
+      "cameraOwner": "code",
+      "durationFrames": 11,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            -2,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.6,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            3,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            3.05,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 343,
+      "shutter": 180,
+      "shutterSamples": 8
+    },
+    "S29": {
+      "id": "S29",
+      "move": "INK-DIVE",
+      "sourceInstruction": "Camera dives into the ink at 3× speed.",
+      "sourceKind": "CODE3D",
+      "cameraOwner": "code",
+      "durationFrames": 10,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            2,
+            10
+          ],
+          "target": [
+            0,
+            -2,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            -1,
+            2
+          ],
+          "target": [
+            0,
+            -2,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.33,
+        0,
+        0.67,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 245
+    },
+    "S30": {
+      "id": "S30",
+      "move": "LOW-TRACK",
+      "sourceInstruction": "Long, smooth LOW TRACKING SHOT alongside, 1.36 s, no cuts, slow drift; stillness contrast.",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            -0.5,
+            -2,
+            10
+          ],
+          "target": [
+            -0.5,
+            -2,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0.5,
+            -2,
+            10
+          ],
+          "target": [
+            0.5,
+            -2,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 237,
+      "generationCameraInstruction": "Long, smooth LOW TRACKING SHOT alongside, 1.36 s, no cuts, slow drift; stillness contrast."
+    },
+    "S31": {
+      "id": "S31",
+      "move": "DOLLY-ZOOM",
+      "sourceInstruction": "DOLLY-ZOOM (vertigo): dolly-in while zooming out so the background stretches; completes exactly on 33.789.",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "code",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            6
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 238,
+      "generationCameraInstruction": "Locked camera; character turns and extends her hand. No generated dolly or zoom.",
+      "dollyZoom": {
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "frustumHeight": 9.326153163099972
+      }
+    },
+    "S32": {
+      "id": "S32",
+      "move": "HANDHELD-PUSH",
+      "sourceInstruction": "Tight handheld push-in, 2 % shake.",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 20,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            9
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 239,
+      "generationCameraInstruction": "Tight handheld push-in, 2 % shake.",
+      "shake": {
+        "amplitudePx": 14,
+        "frequency": 8
+      }
+    },
+    "S33": {
+      "id": "S33",
+      "move": "TRUCK",
+      "sourceInstruction": "Lateral TRUCK 12 %, parallax.",
+      "sourceKind": "GEN-I25",
+      "cameraOwner": "code",
+      "durationFrames": 21,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            -0.995,
+            0,
+            10
+          ],
+          "target": [
+            -0.995,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0.995,
+            0,
+            10
+          ],
+          "target": [
+            0.995,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 240
+    },
+    "S34": {
+      "id": "S34",
+      "move": "SPIRAL-DOWN",
+      "sourceInstruction": "SPIRAL-DOWN 90° twist.",
+      "sourceKind": "GEN-I25",
+      "cameraOwner": "code",
+      "durationFrames": 20,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0.0,
+          "pos": [
+            0.35,
+            0.0,
+            10.0
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0.0
+        },
+        {
+          "t": 0.125,
+          "pos": [
+            0.34327484814113063,
+            0.06828161270564488,
+            9.625
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 11.25
+        },
+        {
+          "t": 0.25,
+          "pos": [
+            0.3233578363789503,
+            0.13393920132778142,
+            9.25
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 22.5
+        },
+        {
+          "t": 0.375,
+          "pos": [
+            0.29101436430589084,
+            0.19444958155686076,
+            8.875
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 33.75
+        },
+        {
+          "t": 0.5,
+          "pos": [
+            0.24748737341529164,
+            0.2474873734152916,
+            8.5
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 45.0
+        },
+        {
+          "t": 0.625,
+          "pos": [
+            0.1944495815568608,
+            0.29101436430589084,
+            8.125
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 56.25
+        },
+        {
+          "t": 0.75,
+          "pos": [
+            0.13393920132778142,
+            0.3233578363789503,
+            7.75
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 67.5
+        },
+        {
+          "t": 0.875,
+          "pos": [
+            0.06828161270564491,
+            0.34327484814113063,
+            7.375
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 78.75
+        },
+        {
+          "t": 1.0,
+          "pos": [
+            2.143131898507868e-17,
+            0.35,
+            7.0
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 90.0
+        }
+      ],
+      "ease": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 241
+    },
+    "S35": {
+      "id": "S35",
+      "move": "WHIP",
+      "sourceInstruction": "WHIP-PAN 180° (motion blur 180°).",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 20,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0.0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0.0,
+            0,
+            0.0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.25,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            7.071067811865475,
+            0,
+            2.9289321881345245
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.5,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            10.0,
+            0,
+            10.0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.75,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            7.0710678118654755,
+            0,
+            17.071067811865476
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1.0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            1.2246467991473533e-15,
+            0,
+            20.0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 242,
+      "generationCameraInstruction": "WHIP-PAN 180° (motion blur 180°).",
+      "shutter": 180,
+      "shutterSamples": 8,
+      "sourceCropReserve": 0.008,
+      "framingNote": "Minimize extra camera crop to 0.8%; original source already crops crown at top edge. No invented head extension."
+    },
+    "S36a": {
+      "id": "S36a",
+      "move": "POSE-IMPACT",
+      "sourceInstruction": "Static + 1 f shake",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 11,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            9.98
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 340,
+      "generationCameraInstruction": "Static + 1 f shake",
+      "shake": {
+        "amplitudePx": 8,
+        "frequency": 15,
+        "onlyFrames": 1
+      },
+      "override": "Hard rule camera-never-static takes priority: minimal 0.2–0.5% drift preserves locked/macro composition."
+    },
+    "S36b": {
+      "id": "S36b",
+      "move": "MACRO-DRIFT",
+      "sourceInstruction": "Macro lock",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 10,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            9.98
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 341,
+      "generationCameraInstruction": "Macro lock",
+      "override": "Hard rule camera-never-static takes priority: minimal 0.2–0.5% drift preserves locked/macro composition."
+    },
+    "S36c": {
+      "id": "S36c",
+      "move": "DUTCH-DRIFT",
+      "sourceInstruction": "Static, 4° dutch",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 10,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 4
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            9.98
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 4
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 342,
+      "generationCameraInstruction": "Static, 4° dutch",
+      "override": "Hard rule camera-never-static takes priority: minimal 0.2–0.5% drift preserves locked/macro composition."
+    },
+    "S36d": {
+      "id": "S36d",
+      "move": "TILT-UP",
+      "sourceInstruction": "Low tilt-up",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 10,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            -1,
+            10
+          ],
+          "target": [
+            0,
+            -1,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            -1,
+            10
+          ],
+          "target": [
+            0,
+            1,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 343,
+      "generationCameraInstruction": "Low tilt-up"
+    },
+    "S36e": {
+      "id": "S36e",
+      "move": "CRANE-DOWN",
+      "sourceInstruction": "High crane-down",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 11,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            2,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0.5,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 344,
+      "generationCameraInstruction": "High crane-down"
+    },
+    "S36f": {
+      "id": "S36f",
+      "move": "PULL-BACK",
+      "sourceInstruction": "Pull-back 25 %",
+      "sourceKind": "HYB",
+      "cameraOwner": "code",
+      "durationFrames": 10,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            12.5
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 345
+    },
+    "S36g": {
+      "id": "S36g",
+      "move": "ORBIT-60",
+      "sourceInstruction": "Orbit 60° at 3 % time",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 10,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0.0,
+          "pos": [
+            -8.660254037844386,
+            0,
+            5.000000000000001
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.125,
+          "pos": [
+            -7.933533402912351,
+            0,
+            6.087614290087206
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.25,
+          "pos": [
+            -7.071067811865475,
+            0,
+            7.0710678118654755
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.375,
+          "pos": [
+            -6.087614290087206,
+            0,
+            7.933533402912351
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.5,
+          "pos": [
+            -4.999999999999999,
+            0,
+            8.660254037844387
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.625,
+          "pos": [
+            -3.826834323650898,
+            0,
+            9.238795325112868
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.75,
+          "pos": [
+            -2.5881904510252074,
+            0,
+            9.659258262890683
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.875,
+          "pos": [
+            -1.3052619222005157,
+            0,
+            9.914448613738104
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1.0,
+          "pos": [
+            0.0,
+            0,
+            10.0
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 346,
+      "generationCameraInstruction": "Orbit 60° at 3 % time",
+      "actionTimeScale": 0.03
+    },
+    "S36h": {
+      "id": "S36h",
+      "move": "SNAP-ZOOM",
+      "sourceInstruction": "Snap zoom 1.5×",
+      "sourceKind": "GEN-V",
+      "cameraOwner": "generation",
+      "durationFrames": 10,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.6,
+          "pos": [
+            0,
+            1.48,
+            10
+          ],
+          "target": [
+            0,
+            1.48,
+            0
+          ],
+          "fov": 34.537989140896116,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            1.48,
+            9.98
+          ],
+          "target": [
+            0,
+            1.48,
+            0
+          ],
+          "fov": 34.537989140896116,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 347,
+      "generationCameraInstruction": "Snap zoom 1.5×",
+      "sourceCropReserve": 0.008,
+      "framingNote": "Keep the specified 1.5x snap while translating the framing toward the face and pointing hand; retain source-coverage clamp."
+    },
+    "S37": {
+      "id": "S37",
+      "move": "PULL-OUT",
+      "sourceInstruction": "PULL-OUT (macro to wide) over 1.36 s, ease-in-out, no cuts.",
+      "sourceKind": "HYB",
+      "cameraOwner": "code",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0.0,
+          "pos": [
+            0,
+            0,
+            0.5
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.125,
+          "pos": [
+            0,
+            0,
+            0.7438689130822451
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.25,
+          "pos": [
+            0,
+            0,
+            1.1066819197003215
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.375,
+          "pos": [
+            0,
+            0,
+            1.6464525534705015
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.5,
+          "pos": [
+            0,
+            0,
+            2.449489742783178
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.625,
+          "pos": [
+            0,
+            0,
+            3.644198545140462
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.75,
+          "pos": [
+            0,
+            0,
+            5.421612021659069
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.875,
+          "pos": [
+            0,
+            0,
+            8.065937283410332
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1.0,
+          "pos": [
+            0,
+            0,
+            12.0
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 244,
+      "globalEase": [
+        0.42,
+        0,
+        0.58,
+        1
+      ]
+    },
+    "S38": {
+      "id": "S38",
+      "move": "PULL-OUT",
+      "sourceInstruction": "CONTINUOUS PULL-OUT, exponential scale, 1.36 s; matches S37 motion vector.",
+      "sourceKind": "CODE3D",
+      "cameraOwner": "code",
+      "durationFrames": 41,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0.0,
+          "pos": [
+            0,
+            0,
+            12.0
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.125,
+          "pos": [
+            0,
+            0,
+            15.562074655812115
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.25,
+          "pos": [
+            0,
+            0,
+            20.18151396608915
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.375,
+          "pos": [
+            0,
+            0,
+            26.172185583966183
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.5,
+          "pos": [
+            0,
+            0,
+            33.941125496954285
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.625,
+          "pos": [
+            0,
+            0,
+            44.01619407382422
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.75,
+          "pos": [
+            0,
+            0,
+            57.08194152013061
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 0.875,
+          "pos": [
+            0,
+            0,
+            74.02611961958115
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1.0,
+          "pos": [
+            0,
+            0,
+            96.0
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 245
+    },
+    "S39": {
+      "id": "S39",
+      "move": "FINAL-PUSH-HOLD",
+      "sourceInstruction": "Slow 2 % push-in. Hold the last 12 frames perfectly still.",
+      "sourceKind": "CODE",
+      "cameraOwner": "code",
+      "durationFrames": 52,
+      "fps": 30,
+      "worldSpace": "shot-local",
+      "keyframes": [
+        {
+          "t": 0,
+          "pos": [
+            0,
+            0,
+            10
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        },
+        {
+          "t": 1,
+          "pos": [
+            0,
+            0,
+            9.803921568627452
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "fov": 50,
+          "roll": 0
+        }
+      ],
+      "ease": [
+        0.42,
+        0,
+        0.58,
+        1
+      ],
+      "filmstripQA": "pending-render",
+      "seed": 246,
+      "holdLastFrames": 12,
+      "override": "Full compositor must also freeze all animation, text, grain, and cursor over final 12 frames."
+    }
+  }
+}

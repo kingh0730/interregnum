@@ -1,0 +1,46 @@
+{
+  "definition": "SHA256 of each lossless PNG supplied directly to ffmpeg, in source frame order.",
+  "video_sha256": "64cc085ea9111d360d4f2dbe64725d4181a81deeec12977b3e5dc2b784756023",
+  "frames": [
+    {
+      "frame": 1167,
+      "sha256": "acbee290782fb374ee552b3d0690e612aa5359ad0b91f51de43d5b397f09efd5"
+    },
+    {
+      "frame": 1168,
+      "sha256": "381d81924f2f9fe4070e6750e45ef7e860977fa9579206ae8f365962e8da72a6"
+    },
+    {
+      "frame": 1169,
+      "sha256": "cfc2b8a2fe56a5fc7f661fa2ba55a197aa80cf109fd10f9e43ff2dfe75e990ed"
+    },
+    {
+      "frame": 1170,
+      "sha256": "faf9aea2498fe92a737403bb31cdd46b2495c1a34dbdd61b279ef646d519d9d5"
+    },
+    {
+      "frame": 1171,
+      "sha256": "42c920913dfd8e48bf4f126e401402763ee069f0faf04541d502b79495437336"
+    },
+    {
+      "frame": 1172,
+      "sha256": "4227ebd010d7bdfd7c630f364c83d4886f18b0bda83d60b22c2a14b9f81bcee9"
+    },
+    {
+      "frame": 1173,
+      "sha256": "10cbbefee8c3d385551ee6a7c4a4d55bf2ae574d1fa1ce4ad7c03aa70a3d9bc2"
+    },
+    {
+      "frame": 1174,
+      "sha256": "448f9b75b6179c52fcee90b5c7cabc7889a3975611c5b41e5fe6a6ac88c878f5"
+    },
+    {
+      "frame": 1175,
+      "sha256": "4c4aec0fb52423a67e652a625d86129f5b8ba64c6dbca30d5894028dc3effb88"
+    },
+    {
+      "frame": 1176,
+      "sha256": "baaca31a20f5505b61616ffba5d845f23688ca6f24c33378469e12fd4f357693"
+    }
+  ]
+}

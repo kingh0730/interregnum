@@ -1,0 +1,6 @@
+{
+  "stage": "production",
+  "production_ready": false,
+  "status": "exported_technical_qa_passed_manual_playback_pending",
+  "manual_playback_verified": false
+}

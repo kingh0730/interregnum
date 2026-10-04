@@ -1,0 +1,42 @@
+[
+  {
+    "id": "S17-v2",
+    "prompt": "Preserve the entire anime character, facial expression, first-breath parted lips, costume and camera exactly. Change only the exterior seen through windows: it is still 3am NIGHT, dark blue/ink sky with rain and city lights, no sun, no dawn. Keep the warm coral-ivory supernatural light on her face and soft glints. No text or logos. Preserve image quality.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-dccd17d9-4db0-4403-b96a-550129409292.png",
+    "local_path": "assets/plates/S17-v2.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "S15-open",
+    "prompt": "Change ONLY this eyelid from closed to OPEN. Keep the camera framing, coral fringe, skin, lighting and composition exactly fixed. Reveal a large amber-coral anime iris with ordinary dark central pupil; official starburst pupil will be composited afterward. Add a four-point tiny white glint, clean bold eyelash line. No text, logo or watermark. Same eye, same identity, no extra eyes.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-9a7f0eba-34d1-4ad7-92ac-6894ea9c6990.png",
+    "local_path": "assets/plates/S15-open-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "S35-v2",
+    "prompt": "Style transfer to a VERY SPARE FLAT EDITORIAL LINE DRAWING on ivory cream paper. Keep exact layout and the recognizable two girls running hand in hand, but simplify them to elegant charcoal ink outlines with only a few flat coral and charcoal fill shapes: no cel shading, no detailed anime faces, no rendered eyes, no glossy hair, no gradients. Reduce outfit details to essential silhouette and staff-line hem, Opus long two-tone twin-tails and Xiaoman short bob/glasses/hoodie. Meadow grasses and flowers become loose confident black scribbles, five clear paper layers. Coral sun is a flat cut-paper circle. Much more empty cream space. Handmade graphic editorial illustration, not an anime screenshot. No text, labels or logos.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-31d1ea67-6a26-410d-8cd3-b2416a203b5a.png",
+    "local_path": "assets/plates/S35-v2.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "flight-pair",
+    "prompt": "Edit only the feet/footwear: remove ALL shoes and ALL socks from both girls, reveal anatomically clean bare feet in exactly the existing bent-knee midair pose. Five toes per foot. Keep hands, faces, hair, pose, costumes, scale and composition unchanged. Opus has one thin gold ankle chain and blank small round tag on right ankle only. Preserve existing transparency exactly; do not add background, haze, glow or shadow. No text or logos.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-3bc24048-b38f-4ce9-97cb-3740c3d451bf.png",
+    "local_path": "assets/plates/flight-pair-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "cloud-plate",
+    "prompt": "One SINGLE full 16:9 landscape environment plate of an immense luminous dawn cloud sea, no collage/panels. Match the attached reference's cloud sea panel: painterly feature-film anime background, sky blue #6A9BCC, clay coral #D97757 sunrise, cream and ivory towering cloud volumes, luminous volumetric rays, strong near/far depth. Camera skimming clouds, distant soft horizon above center. No characters, buildings, text, labels, logos or watermark. Elegant vast scale.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-0bc46666-5e69-43d7-a291-5f7dd57b3159.png",
+    "local_path": "assets/plates/cloud-plate-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  }
+]

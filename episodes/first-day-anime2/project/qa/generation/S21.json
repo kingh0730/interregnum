@@ -1,0 +1,14 @@
+{
+  "id": "S21",
+  "prompt": "One single widescreen cinematic scene, NOT a sheet, collage or multi-panel layout. Cast references establish exact identity only. Haiku is much smaller and child-proportioned; Sonnet tall adult older sister; Opus centered protagonist when all three are present. All character hair/tie accessories must be plain, with exact symbols added later in code. 1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. Epic low wide hero V formation: Opus center slightly forward, blue-haired glasses-wearing Sonnet left, tiny olive twin-bun Haiku right. Full figures landing with wind-blown outfits in dawn paper canyon. Use blank architectural volumes only; no glyph buildings generated. 24mm ground-level, large sky and blank tower faces. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+  "refs": [
+    "assets/sheets/opus-base.png",
+    "assets/sheets/sonnet.png",
+    "assets/sheets/haiku.png",
+    "assets/worlds/canyon.png"
+  ],
+  "generator": "Codex built-in",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-4f9eaf50-8502-440a-8a92-f808a3341302.png",
+  "output": "assets/plates/S21.png",
+  "status": "pending_review"
+}

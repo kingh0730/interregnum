@@ -1,0 +1,35 @@
+{
+ "id": "S05_take1",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The developer gives one small warm laugh of disbelief at her blank computer screen, cheeks lift and eyes brighten behind glasses. Her hand stays by her cheek. Screen and hardware must stay fixed and blank.",
+  "image_url": "<data uri>",
+  "duration": 3,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026100051
+ },
+ "payload_sha256": "774f70bdda35b0ad297e8de6b82aac5517fc24c7168a2d554bb9b1998953834f",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S05_take1.mp4",
+ "phase": "done",
+ "billable_s": 3.0,
+ "price": 0.09,
+ "request_id": "01a10609-6e61-7993-a90b-18ad25961995",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-6e61-7993-a90b-18ad25961995/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-6e61-7993-a90b-18ad25961995",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-6e61-7993-a90b-18ad25961995/cancel",
+ "submitted": 1791102643.9431129,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad0178/TrutRmZi3_gZMpZCPlaPd_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "TrutRmZi3_gZMpZCPlaPd_minimax-h3.mp4",
+   "file_size": 5987188
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 1.6901148282922804
+  }
+ },
+ "done": 1791102655.4399092
+}

@@ -1,0 +1,15 @@
+{
+  "video_sha256": "e9edb78e1299b558ed81ea0d58dc627fa39494cba0ab0c23e86c6d932869d191",
+  "bridge_frames": [
+    1217,
+    1218
+  ],
+  "exact_source_PNG_hash_match": true,
+  "source_hashes": [
+    "765db5ced056b1f45f948b7e0b28e88a9c678d44e261d0dd630acd4bd512211e",
+    "765db5ced056b1f45f948b7e0b28e88a9c678d44e261d0dd630acd4bd512211e"
+  ],
+  "decoded_mean_absolute_channel_difference_0_255": 1.025855195473251,
+  "decoded_99th_percentile_difference": 7.0,
+  "scope": "Exact source match across S37/S38 entry; lossy decoded differences measured separately."
+}

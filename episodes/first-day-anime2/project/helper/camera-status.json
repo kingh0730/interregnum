@@ -1,0 +1,56 @@
+{
+  "status": "implemented-not-visually-validated",
+  "shotCount": 52,
+  "world": {
+    "units": "shot-local arbitrary units",
+    "axes": "+X right, +Y up, +Z toward viewer",
+    "neutralCamera": [
+      0,
+      0,
+      10
+    ],
+    "neutralVerticalFovDegrees": 50,
+    "neutralPlaneZ": 0,
+    "neutralViewHeight": 9.326153163099972,
+    "neutralViewWidth": 16.579827845511062,
+    "planeMapping": "At z=0, plate height 9.326153163 and width 16.579827845 fills 1920x1080 neutral view. Layered scenes must extend beyond frustum. Each shot uses local set origin at subject aim point. Ground-oriented art S34 is on local XY plane; local +Z corresponds to altitude.",
+    "shake": "Pixels converted to world units at target distance and actual vertical FOV; seeded continuous 2D simplex noise. 2% source shake is clamped to the section 8.3 maximum of 14 px."
+  },
+  "ownership": "GEN-V paths store intended camera keys but return neutral code camera by default. Renderers must use generation motion, or explicitly switch cameraOwner to code for still fallback; never both. S31 specifically requires locked generated camera and code dolly-zoom. HYB S20/S17 generation must be camera-locked when code owns movement.",
+  "geometryRequirements": {
+    "S25": "Five actual depth layers required; follow subject animation is 6 frames ahead of the camera trajectory.",
+    "S27": "Option B only: depth orbit 40 degrees plus 360-degree particle sphere. 270-degree generated orbit is preferred option A and must disable code rig.",
+    "parallax": "Single-depth plates require edge padding and per-shot visual travel clamp <= approximately 8% width. No safe clamp can be certified without actual depth/plates.",
+    "S37_S38": "S37 ends at z12 and S38 begins at z12, both +Z retreat. Mosaic scene must match outgoing ring framing; velocity continuity pending integration."
+  },
+  "shutter": "Rig exports 180-degree shutter and 8 subframe samples for whip shots; renderer must actually accumulate samples. Not implemented by changing camera alone.",
+  "focus": "focusDistance is exported for renderer DOF; perspective camera itself does not render depth of field.",
+  "freeze": "S10 sample is fully constant; S39 last 12 local frames share identical camera samples. Compositor must separately freeze texture, particles, grain, overlays, cursor.",
+  "validation": {
+    "math": {
+      "status": "PASS",
+      "engine": "Existing local Three.js 186",
+      "shotCount": 52,
+      "frameSamples": 1311,
+      "checks": [
+        "finite actual/intended samples across all 1311 frames",
+        "unit quaternions",
+        "repeat-call determinism",
+        "S10 strict camera freeze",
+        "S39 exact last 12 camera frames held",
+        "GEN-V neutral compositor camera",
+        "cubic-bezier linear identity",
+        "analytic integrated 1x to 4x speed ramp",
+        "S31 frustum height invariant"
+      ],
+      "maximumDollyZoomFrustumHeightError": 3.552713678800501e-15
+    },
+    "filmstrips": "pending: no image rendering performed by camera module task",
+    "edgeStretch": "pending: requires 100% visual inspection of rendered plates",
+    "movementDirection": "pending rendered start/mid/end filmstrips"
+  },
+  "limitations": [
+    "Authoring positions are scene-local until plates/depth layers integrated; large orbit angles need geometry or generation, not a single flat still.",
+    "No final-camera QA pass claimed."
+  ]
+}

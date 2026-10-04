@@ -1,0 +1,51 @@
+{
+  "id": "S36e-start-v2",
+  "tool": "Codex built-in image_gen",
+  "prompt": "Use case: precise-object-edit. FRAMING REPAIR ONLY of attached single transparent Opus pose. UPPER BODY: zoom out slightly and move the character down so there is at least90pixels of completely transparent headroom above all hair. Retain high-angle crossed-wrists-X pose and both five-finger open hands. Natural lower-body crop may continue below canvas; no cropped hair or fingers. Preserve the same face, hair, anatomy, outfit, exact pose, expression and anime cel rendering. Existing image has hair alpha touching the top border; fix by making the composition smaller, not by deleting/cutting hair. Surrounding canvas must be genuine transparent alpha, never a painted black/white/checkerboard backdrop. Single image, no collage, no shadow/floor. No text, no letters, no logos, no watermark, no numbers, no halo or starbursts.",
+  "references": [
+    "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-09e3f85b-8b49-499c-9434-c4b4673991e4.png"
+  ],
+  "transparent_background": true,
+  "source_path": "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-0f12c2a1-e7ed-4571-8758-1797e6f4ecb9.png",
+  "selected_path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S36e-start-v2.png",
+  "status": "selected-still-reviewed-render-pending",
+  "original_codex_image_retained": true,
+  "revision_reason": "Framing-only builtin edit removes source hair touching topedge; pose anatomy and clothing preserved.",
+  "sha256": "1fdff90d6af5c9b90c24e54e1507a6afe51b439012904bd273f2fbeaa484a5ab",
+  "alphaStatistics": {
+    "mode": "RGBA",
+    "dimensions": [
+      1671,
+      941
+    ],
+    "min": 0,
+    "max": 255,
+    "transparentFraction": 0.7584728165854856,
+    "nonzeroBounds": [
+      535,
+      125,
+      1470,
+      941
+    ],
+    "edgeNonzeroCounts": {
+      "top": 0,
+      "bottom": 239,
+      "left": 0,
+      "right": 0
+    },
+    "alphaAbove32Bounds": [
+      537,
+      127,
+      1166,
+      941
+    ]
+  },
+  "visualReview": [
+    "High-angle upper body: crossed wrists and forearms form a clear X over her chest.",
+    "Both open hands have five visible fingers; face remains unobscured.",
+    "Framing repair provides125px of transparent headroom; lower body crop is intentional."
+  ],
+  "motionReview": "Not reviewed: a generated still is not proof of dance performance.",
+  "referenceOriginalRetained": true,
+  "generatedSymbols": "No visible text, logos or starburst emblems; ordinary barrette and plain tie retained for code finishing."
+}

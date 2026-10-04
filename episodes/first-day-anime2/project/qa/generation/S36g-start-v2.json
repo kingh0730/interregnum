@@ -1,0 +1,52 @@
+{
+  "id": "S36g-start-v2",
+  "tool": "Codex built-in image_gen",
+  "prompt": "Use case: identity-preserve. First image is target jump pose, second is approved identity reference. Correct ONLY the jump configuration into a unmistakable TUCK JUMP: side profile facing VIEWER LEFT, BOTH KNEES LIFTED FORWARD AND UP toward her lower chest, thighs nearer horizontal, lower legs folded under thighs and both sneakers close beneath/behind tucked knees. Current pose merely kicks heels backward with thighs hanging vertically; change that so the knees are clearly UP in front of her body. Keep knees together and modest skirt fully covering hips and upper thighs, skirt hanging securely; no underwear or upskirt view. Camera level at waist/chest height, wholesome energetic dance. Preserve happy face, black/coral bob, cream ribbon/side lock, reference cardigan/blouse/plain coral tie/striped charcoal skirt/white socks/creamcoral sneakers. Hands naturally forward for balance, not covering face. Entire compact airborne figure, both shoes and hands, fully inside wide transparent margins, about70%canvasheight, clear headroom. Genuine transparent alpha, no floor/background/shadow/checkerboard, no collage, no text, no letters, no logos, no watermark, no starbursts or halo. One single still.",
+  "references": [
+    "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-b112cb20-4ef9-497c-bc15-571af5846a4b.png",
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/sheets/opus-base.png"
+  ],
+  "transparent_background": true,
+  "source_path": "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-7a856e16-8c25-4a80-8c43-701b3be9a68a.png",
+  "selected_path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S36g-start-v2.png",
+  "status": "selected-still-reviewed-render-pending",
+  "original_codex_image_retained": true,
+  "revision_reason": "Correct heels-back jump to explicit knees-forward/up compact tuck; preserve identity and modest clothing.",
+  "sha256": "fdd1f9f8037f70d730e8013a1674ad06671683a9788968daeed96bc8b806e8c1",
+  "alphaStatistics": {
+    "mode": "RGBA",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "min": 0,
+    "max": 255,
+    "transparentFraction": 0.8365604136900071,
+    "nonzeroBounds": [
+      473,
+      21,
+      1473,
+      884
+    ],
+    "edgeNonzeroCounts": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "alphaAbove32Bounds": [
+      565,
+      25,
+      1070,
+      847
+    ]
+  },
+  "visualReview": [
+    "Side-profile tuck jump facing left; both knees raised forward/up and lower legs folded.",
+    "Both sneakers visible, hair flares, and skirt covers hips and upper thighs.",
+    "All body parts remain inside transparent margins. Initial heels-back jump was rejected."
+  ],
+  "motionReview": "Not reviewed: a generated still is not proof of dance performance.",
+  "referenceOriginalRetained": true,
+  "generatedSymbols": "No visible text, logos or starburst emblems; ordinary barrette and plain tie retained for code finishing."
+}

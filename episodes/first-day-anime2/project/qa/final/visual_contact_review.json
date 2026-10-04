@@ -1,0 +1,43 @@
+{
+  "video": {
+    "path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/out/opus55_first_day_1080p30.mp4",
+    "sha256": "e9edb78e1299b558ed81ea0d58dc627fa39494cba0ab0c23e86c6d932869d191",
+    "bytes": 151683461
+  },
+  "reviewer": "Codex camera compositor",
+  "method": "Visual inspection of all four actual-final-video contact sheets, each containing 13 shots with 4 samples per shot; split into 12 readable panels for inspection. Earlier native first/last camera proofs checked at 1920x1080.",
+  "status": "CONTACT-SAMPLE-REVIEW-COMPLETE",
+  "findings": {
+    "shotPresence": "All 52 intended shot intervals have recognizable corresponding rendered content in the sampled frames.",
+    "composition": "No new material composition or identity defects observed in final contact samples. S13, S26, S28a, S36h framing fixes are present. S35 retains the source artwork crown crop; extra camera crop minimized.",
+    "lyrics": "Bottom lyric reading line appears unobstructed in sampled frames; decorative large type can be occluded intentionally. This is not a per-frame glyph proof.",
+    "closing": "S37 pulls from face toward full figure; S38 sampled frames show actual rendered-image mosaic resolving into spark; S39 final lockup is legible. Root owns seam and browser playback evidence.",
+    "knownLimits": [
+      "Single-depth camera travel is constrained to true source coverage and <=8% depth differential; prescribed large-angle moves are reduced.",
+      "Dance/body actions use the authorized still-and-2.5D fallback; do not classify as generated native video animation.",
+      "S35 crown already touches/crosses original artwork top boundary."
+    ]
+  },
+  "notEstablishedByThisReview": [
+    "Normal-speed audio perception or VLC playback",
+    "Every pixel/frame free of matte disocclusion",
+    "Full choreography and named-angle fidelity",
+    "All six memes verified from these sparse samples"
+  ],
+  "refresh": {
+    "reason": "S37 identity header ivory backing and dependent mosaic hero regenerated; prefix frames0–1176 unchanged.",
+    "method": "Native final frame1185 inspected; native seam frames1217/1218 visually compared; final contact sheet04 closing rows inspected. Earlier unchanged prefix review remains applicable.",
+    "header1185": "PASS: OPUS5.5 clear over dark hair with ivory backing.",
+    "seam1217to1218": {
+      "sourcePngHashesIdentical": true,
+      "decodedMeanAbs255": 1.025855195473251,
+      "decodedP99": 7,
+      "decodedMax": 67,
+      "visualResult": "Same framing/content; difference attributed to separate H264 chunk encoding because exact source PNG hashes match."
+    },
+    "technicalFailedChecks": [],
+    "technicalReviewChecks": [
+      "sceneDetectionCoverage"
+    ]
+  }
+}

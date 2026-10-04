@@ -1,0 +1,14 @@
+{
+  "id": "S33",
+  "prompt": "One single widescreen cinematic frame, not a sheet or collage. References establish identity/materials only. 1920x1080 landscape production plate. Cinematic anime cel shading with thin-thick ink contours, luminous painterly gouache sky where visible, matte surfaces, no glossy 3D. Warm ivory #FAF9F5, ivory-2 #F0EEE6, clay coral #D97757 and slate #191919; coral is the focal saturated accent. Keep background spare and composition cinematic. Preserve the clean character reference identities and outfits exactly. Opus has an asymmetric black bob with coral inner layer and tips, cream-ribbon long side lock, amber-coral eyes, cream cardigan-cape, white blouse, plain coral tie, charcoal pleated skirt with five thin parallel hem stripes, white ankle socks and cream sneakers with coral soles. Leave hairpin and tie mounting areas plain and pupil interiors clear: exact spark emblems and eye highlights are composited later from SVG. All characters fully clothed; no fanservice angles. The three sisters fly laterally in front of a giant plain sun disc. Opus leads, Sonnet echoes open palm beside cheek with smirk, Haiku does double peace sign. 35mm distant lateral wide, elegant readable silhouettes; ordinary cloud rays only, no starburst shapes. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no UI, no chart labels, no music-note glyphs, no brand symbols or starburst emblems. Leave every intended text or symbol surface blank for code compositing. No extra fingers, no face drift, no plastic 3D.",
+  "refs": [
+    "assets/sheets/opus-base.png",
+    "assets/sheets/sonnet.png",
+    "assets/sheets/haiku.png",
+    "assets/worlds/ocean.png"
+  ],
+  "generator": "Codex built-in",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-99edc674-cf0a-44c1-a976-563ca61ee0d8.png",
+  "output": "assets/plates/S33.png",
+  "status": "pending_review"
+}

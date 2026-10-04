@@ -1,0 +1,53 @@
+{
+ "endpoint": "fal-ai/sam2/image",
+ "payload": {
+  "image_url": "<data uri>",
+  "prompts": [
+   {
+    "x": 180,
+    "y": 180,
+    "label": 1
+   },
+   {
+    "x": 200,
+    "y": 700,
+    "label": 1
+   },
+   {
+    "x": 710,
+    "y": 650,
+    "label": 1
+   },
+   {
+    "x": 860,
+    "y": 100,
+    "label": 0
+   }
+  ],
+  "box_prompts": [
+   {
+    "x_min": 0,
+    "y_min": 0,
+    "x_max": 920,
+    "y_max": 941
+   }
+  ],
+  "apply_mask": true,
+  "output_format": "png"
+ },
+ "payload_sha256": "221531d48b6a02887e36517dee90a9399dc8ffadde40ba2dadc66fe140aba1f5",
+ "request_id": "01a10656-5b98-7403-a46b-6a75c89d3d09",
+ "status_url": "https://queue.fal.run/fal-ai/sam2/requests/01a10656-5b98-7403-a46b-6a75c89d3d09/status",
+ "response_url": "https://queue.fal.run/fal-ai/sam2/requests/01a10656-5b98-7403-a46b-6a75c89d3d09",
+ "response": {
+  "image": {
+   "url": "https://v3b.fal.media/files/b/0aad0370/cJbS2KEDkuLEfmZJNBtB1.png",
+   "content_type": "image/png",
+   "file_name": null,
+   "file_size": null,
+   "width": 1672,
+   "height": 941
+  }
+ },
+ "seconds": 1.9
+}

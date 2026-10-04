@@ -1,0 +1,36 @@
+{
+ "id": "S25_take1",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "A single uninterrupted cinematic anime BULLET-TIME camera orbit from the exact front reference to the exact rear reference. The two girls are FROZEN in the same mid-leap pose, holding hands, knees bent and hair suspended; they do not turn themselves. Only the camera travels in a smooth 180-degree arc around them at constant distance, revealing the sides and then their backs, with strong true parallax among nearby buildings and balcony. Preserve every face, outfit, hand clasp and limb exactly; no morphing or extra fingers. Rain beads and small blank paper scraps hang frozen in air. Feature-film cel anime characters and painterly luminous coral/blue dawn architecture remain consistent. No cuts, no transitions, no text, letters, logos or watermark. Finish in the supplied back view.",
+  "image_url": "<data uri>",
+  "end_image_url": "<data uri>",
+  "duration": 4,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026102501
+ },
+ "payload_sha256": "4087a24a07b8c94a15b779ef4b61c17add35664b7f42a90d391097f4abc4348d",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S25_take1.mp4",
+ "phase": "done",
+ "billable_s": 4.0,
+ "price": 0.12,
+ "request_id": "01a10614-82c6-7731-bd6c-2d0961467938",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a10614-82c6-7731-bd6c-2d0961467938/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a10614-82c6-7731-bd6c-2d0961467938",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a10614-82c6-7731-bd6c-2d0961467938/cancel",
+ "submitted": 1791103370.076124,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad01c1/6zdfQ2QfEwGDvEAgO3ya0_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "6zdfQ2QfEwGDvEAgO3ya0_minimax-h3.mp4",
+   "file_size": 20711832
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 3.0023288843221962
+  }
+ },
+ "done": 1791103382.50875
+}

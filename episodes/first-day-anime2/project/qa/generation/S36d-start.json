@@ -1,0 +1,37 @@
+{
+  "id": "S36d-start",
+  "tool": "Codex built-in image_gen",
+  "prompt": "Use case: illustration-story. Derive ONE single production anime character pose from approved character-sheet reference; reference is identity/clothing only, NOT a layout to reproduce. Genuine transparent RGBA alpha, no background, no floor, no cast shadow, no checkerboard, no collage. Landscape1920x1080. Preserve asymmetric black bob with warm brown undertone/clay-coral inner hair and tips; cream-ribbon long side lock and plain coral barrette on her anatomicalLEFT; amber-coral eyes, cream oversized knit cardigan-cape with slate piping, white blouse, plain coral tie, charcoal pleated skirt with five fine parallel hem stripes, white ankle socks, chunky cream sneakers with coral soles. Exact reference thin-thick anime linework and warm soft cel shading. Plain pupil/barrette/tie areas; code adds exact emblems later. No halo or starburst. Fully clothed, modest, wholesome. No text, no letters, no logos, no watermark, no numbers, no Hanzi, no extra fingers or limbs. Pose D: modest SMALL BOUNCE, full figure with knees softly bent and both heels slightly lifted, a buoyant body posture and a slight natural wave in skirt hem, five parallel hem stripes clearly visible. Both arms relaxed out beside body for balance, hands relaxed. Mild low camera around knee height but looking at clothed FRONT of skirt, NEVER beneath skirt; preserve full modest coverage. No exposed underwear or fanservice angle. Camera50mm, joyful face looking slightly down toward viewer. Entire body from highest hair to lowest shoes must be fully inside canvas with at least10% clear transparent margin above and below and generous side margins; both hands and all shoes complete. Single still pose, no trails, no duplicated legs, no motion blur.",
+  "references": [
+    "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/sheets/opus-base.png"
+  ],
+  "transparent_background": true,
+  "source_path": "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-37d02267-ba0d-4cb0-87ad-b3a0d7a49097.png",
+  "selected_path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S36d-start.png",
+  "status": "superseded-framing-candidate",
+  "original_codex_image_retained": true,
+  "sha256": "429479e806735d8b6040d859dbb44f1a8a28719c316eddec058831f8b2bd2742",
+  "alphaStatistics": {
+    "mode": "RGBA",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "min": 0,
+    "max": 255,
+    "transparentFraction": 0.8633115793541433,
+    "nonzeroBounds": [
+      548,
+      0,
+      1475,
+      930
+    ],
+    "edgeNonzeroCounts": {
+      "top": 11,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    }
+  },
+  "selectedReplacement": "assets/plates/S36d-start-v2.png"
+}

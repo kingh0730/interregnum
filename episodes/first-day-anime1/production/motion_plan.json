@@ -1,0 +1,372 @@
+{
+  "defaults": {
+    "endpoint": "i2v",
+    "resolution": "1080P",
+    "prompt_expansion_mode": "disabled"
+  },
+  "jobs": [
+    {
+      "id": "S20_test",
+      "shot_id": "S20",
+      "image": "assets/plates/S20-v1.png",
+      "end_image": "assets/plates/S20-contact-v1.png",
+      "duration": 4,
+      "seed": 2026100420,
+      "out": "assets/motion/S20-test.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation. A single continuous macro shot of the same bare right foot lowering a few centimetres onto wet balcony tiles. Elegant 240-fps-style slow motion: toes settle gently, then the ball of the foot makes contact, producing one delicate coral ripple. The blank round gold ankle charm swings slightly, catches light and settles. Preserve five toes, foot anatomy, costume and floor geometry exactly. Tiny rain droplets appear suspended. Camera is completely fixed for this source pass; a precisely controlled tracking move will be added in compositing. No zoom, no cuts, no extra foot, no deformation, no text, no letters, no logos, no watermark. Clean cel linework and soft anime shading remain consistent with the two reference frames. End exactly at the provided contact pose."
+    },
+    {
+      "id": "S01_take1",
+      "shot_id": "S01",
+      "image": "assets/plates/S01-v1.png",
+      "duration": 3,
+      "seed": 2026100011,
+      "out": "assets/motion/S01_take1.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Extreme macro eye behind round glasses: a tiny natural shift of focus toward the reflected blank screen, quiet tired breath, no full blink obscuring the eye. Keep glasses geometry and screen reflection stable."
+    },
+    {
+      "id": "S01_take2",
+      "shot_id": "S01",
+      "image": "assets/plates/S01-v1.png",
+      "duration": 3,
+      "seed": 2026100012,
+      "out": "assets/motion/S01_take2.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Extreme macro eye behind round glasses: a tiny natural shift of focus toward the reflected blank screen, quiet tired breath, no full blink obscuring the eye. Keep glasses geometry and screen reflection stable. Keep the performance especially restrained and the background stable."
+    },
+    {
+      "id": "S03_take1",
+      "shot_id": "S03",
+      "image": "assets/plates/S03-v1.png",
+      "duration": 3,
+      "seed": 2026100031,
+      "out": "assets/motion/S03_take1.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The tired developer remains slumped at her desk, exhales, then lifts her head only slightly toward the monitor. Very underplayed acting; a small shoulder movement. Rain runs slowly down glass. Room furniture stays perfectly still."
+    },
+    {
+      "id": "S03_take2",
+      "shot_id": "S03",
+      "image": "assets/plates/S03-v1.png",
+      "duration": 3,
+      "seed": 2026100032,
+      "out": "assets/motion/S03_take2.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The tired developer remains slumped at her desk, exhales, then lifts her head only slightly toward the monitor. Very underplayed acting; a small shoulder movement. Rain runs slowly down glass. Room furniture stays perfectly still. Keep the performance especially restrained and the background stable."
+    },
+    {
+      "id": "S04_take1",
+      "shot_id": "S04",
+      "image": "assets/plates/S04-v1.png",
+      "duration": 3,
+      "seed": 2026100041,
+      "out": "assets/motion/S04_take1.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. She takes one small sip through the milk-tea straw, gently pushes the chair back with the other hand and lets her shoulders relax. Keep both hands anatomically clean with five fingers. No exaggerated gesture."
+    },
+    {
+      "id": "S04_take2",
+      "shot_id": "S04",
+      "image": "assets/plates/S04-v1.png",
+      "duration": 3,
+      "seed": 2026100042,
+      "out": "assets/motion/S04_take2.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. She takes one small sip through the milk-tea straw, gently pushes the chair back with the other hand and lets her shoulders relax. Keep both hands anatomically clean with five fingers. No exaggerated gesture. Keep the performance especially restrained and the background stable."
+    },
+    {
+      "id": "S05_take1",
+      "shot_id": "S05",
+      "image": "assets/plates/S05-v1.png",
+      "duration": 3,
+      "seed": 2026100051,
+      "out": "assets/motion/S05_take1.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The developer gives one small warm laugh of disbelief at her blank computer screen, cheeks lift and eyes brighten behind glasses. Her hand stays by her cheek. Screen and hardware must stay fixed and blank."
+    },
+    {
+      "id": "S05_take2",
+      "shot_id": "S05",
+      "image": "assets/plates/S05-v1.png",
+      "duration": 3,
+      "seed": 2026100052,
+      "out": "assets/motion/S05_take2.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The developer gives one small warm laugh of disbelief at her blank computer screen, cheeks lift and eyes brighten behind glasses. Her hand stays by her cheek. Screen and hardware must stay fixed and blank. Keep the performance especially restrained and the background stable."
+    },
+    {
+      "id": "S16_take1",
+      "shot_id": "S16",
+      "image": "assets/plates/S16-v3.png",
+      "duration": 3,
+      "seed": 2026100161,
+      "out": "assets/motion/S16_take1.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The anime girl floats in the ivory light column, shy awe on her face. Her two very long coral-to-cream twin-tails gently unfurl and drift, sash follows through. Body rises only slightly, bare feet relaxed. Floating blank papers and keycaps remain nearly frozen. Keep night outside."
+    },
+    {
+      "id": "S16_take2",
+      "shot_id": "S16",
+      "image": "assets/plates/S16-v3.png",
+      "duration": 3,
+      "seed": 2026100162,
+      "out": "assets/motion/S16_take2.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The anime girl floats in the ivory light column, shy awe on her face. Her two very long coral-to-cream twin-tails gently unfurl and drift, sash follows through. Body rises only slightly, bare feet relaxed. Floating blank papers and keycaps remain nearly frozen. Keep night outside. Keep the performance especially restrained and the background stable."
+    },
+    {
+      "id": "S17_take1",
+      "shot_id": "S17",
+      "image": "assets/plates/S17-v2.png",
+      "duration": 3,
+      "seed": 2026100171,
+      "out": "assets/motion/S17_take1.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Her first breath: lips part softly, she inhales with a tiny natural chest rise, holds a moment, then releases a gentle breath. Hair follows with a light outward drift. Keep amber-coral eyes and face completely consistent; underplayed awe. No exaggerated singing."
+    },
+    {
+      "id": "S17_take2",
+      "shot_id": "S17",
+      "image": "assets/plates/S17-v2.png",
+      "duration": 3,
+      "seed": 2026100172,
+      "out": "assets/motion/S17_take2.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Her first breath: lips part softly, she inhales with a tiny natural chest rise, holds a moment, then releases a gentle breath. Hair follows with a light outward drift. Keep amber-coral eyes and face completely consistent; underplayed awe. No exaggerated singing. Keep the performance especially restrained and the background stable."
+    },
+    {
+      "id": "S18_take1",
+      "shot_id": "S18",
+      "image": "assets/plates/S18-v1.png",
+      "duration": 3,
+      "seed": 2026100181,
+      "out": "assets/motion/S18_take1.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The already shattered window ring expands OUTWARD away from the room, glass fragments becoming delicate coral sparks, rain glitters. Keep room geometry intact, no new people or objects. Strong spatial depth and smooth particle motion."
+    },
+    {
+      "id": "S18_take2",
+      "shot_id": "S18",
+      "image": "assets/plates/S18-v1.png",
+      "duration": 3,
+      "seed": 2026100182,
+      "out": "assets/motion/S18_take2.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The already shattered window ring expands OUTWARD away from the room, glass fragments becoming delicate coral sparks, rain glitters. Keep room geometry intact, no new people or objects. Strong spatial depth and smooth particle motion. Keep the performance especially restrained and the background stable."
+    },
+    {
+      "id": "S21_take1",
+      "shot_id": "S21",
+      "image": "assets/plates/S21-v1.png",
+      "duration": 3,
+      "seed": 2026100211,
+      "out": "assets/motion/S21_take1.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. She takes exactly three natural short barefoot steps toward the camera, contacting at approximately 0, 1 and 2 seconds. Left and right feet alternate correctly. The low camera tracks her feet only through the later compositing pass. Hair and sash follow through. She looks up shyly near the end. Preserve five toes on each foot and the single gold ankle charm."
+    },
+    {
+      "id": "S21_take2",
+      "shot_id": "S21",
+      "image": "assets/plates/S21-v1.png",
+      "duration": 3,
+      "seed": 2026100212,
+      "out": "assets/motion/S21_take2.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. She takes exactly three natural short barefoot steps toward the camera, contacting at approximately 0, 1 and 2 seconds. Left and right feet alternate correctly. The low camera tracks her feet only through the later compositing pass. Hair and sash follow through. She looks up shyly near the end. Preserve five toes on each foot and the single gold ankle charm. Keep the performance especially restrained and the background stable."
+    },
+    {
+      "id": "S22_take1",
+      "shot_id": "S22",
+      "image": "assets/plates/S22-v2.png",
+      "duration": 3,
+      "seed": 2026100221,
+      "out": "assets/motion/S22_take1.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The girl slowly extends her reaching hand a few centimetres toward the developer, while the developer holds her hand out warmly. Hands remain separated, no contact yet. Underplayed anticipation, subtle breath, slight hair movement. Preserve exactly five fingers per hand and night outside."
+    },
+    {
+      "id": "S22_take2",
+      "shot_id": "S22",
+      "image": "assets/plates/S22-v2.png",
+      "duration": 3,
+      "seed": 2026100222,
+      "out": "assets/motion/S22_take2.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The girl slowly extends her reaching hand a few centimetres toward the developer, while the developer holds her hand out warmly. Hands remain separated, no contact yet. Underplayed anticipation, subtle breath, slight hair movement. Preserve exactly five fingers per hand and night outside. Keep the performance especially restrained and the background stable."
+    },
+    {
+      "id": "S23_take1",
+      "shot_id": "S23",
+      "image": "assets/plates/S23-v1.png",
+      "duration": 3,
+      "seed": 2026100231,
+      "out": "assets/motion/S23_take1.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Their index fingertips remain in exactly the same gentle contact at frame center, a tender shared breath and a barely perceptible tearful smile. Keep the fingertip contact point stationary and all fingers stable. Tiny natural eye and cheek movement only; no reaching or withdrawing."
+    },
+    {
+      "id": "S23_take2",
+      "shot_id": "S23",
+      "image": "assets/plates/S23-v1.png",
+      "duration": 3,
+      "seed": 2026100232,
+      "out": "assets/motion/S23_take2.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Their index fingertips remain in exactly the same gentle contact at frame center, a tender shared breath and a barely perceptible tearful smile. Keep the fingertip contact point stationary and all fingers stable. Tiny natural eye and cheek movement only; no reaching or withdrawing. Keep the performance especially restrained and the background stable."
+    },
+    {
+      "id": "S24_take1",
+      "shot_id": "S24",
+      "image": "assets/plates/S24-v1.png",
+      "duration": 3,
+      "seed": 2026100241,
+      "out": "assets/motion/S24_take1.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The two girls sprint hand-in-hand forward onto the balcony, laughing naturally, three quick alternating running steps. Their clasp remains secure and anatomically clean, very long twin-tails and coral sash stream behind with overlap. Keep the same outfits and tan shoes."
+    },
+    {
+      "id": "S24_take2",
+      "shot_id": "S24",
+      "image": "assets/plates/S24-v1.png",
+      "duration": 3,
+      "seed": 2026100242,
+      "out": "assets/motion/S24_take2.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The two girls sprint hand-in-hand forward onto the balcony, laughing naturally, three quick alternating running steps. Their clasp remains secure and anatomically clean, very long twin-tails and coral sash stream behind with overlap. Keep the same outfits and tan shoes. Keep the performance especially restrained and the background stable."
+    },
+    {
+      "id": "S29_take1",
+      "shot_id": "S29",
+      "image": "assets/plates/S29-v1.png",
+      "duration": 2,
+      "seed": 2026100291,
+      "out": "assets/motion/S29_take1.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Close flying portrait: fearless joyful grin, wind streams the long hair past camera, bright eyes stable, very slight head lift. Do not rotate the body or change framing. No lip-sync needed."
+    },
+    {
+      "id": "S29_take2",
+      "shot_id": "S29",
+      "image": "assets/plates/S29-v1.png",
+      "duration": 2,
+      "seed": 2026100292,
+      "out": "assets/motion/S29_take2.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Close flying portrait: fearless joyful grin, wind streams the long hair past camera, bright eyes stable, very slight head lift. Do not rotate the body or change framing. No lip-sync needed. Keep the performance especially restrained and the background stable."
+    },
+    {
+      "id": "S30_take1",
+      "shot_id": "S30",
+      "image": "assets/plates/S30-v1.png",
+      "duration": 2,
+      "seed": 2026100301,
+      "out": "assets/motion/S30_take1.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Close flying portrait: she laughs joyfully, short black hair blows, a few tears trail sideways, round glasses remain intact and recognizable. No body flip or camera rotation; preserve the face and framing."
+    },
+    {
+      "id": "S30_take2",
+      "shot_id": "S30",
+      "image": "assets/plates/S30-v1.png",
+      "duration": 2,
+      "seed": 2026100302,
+      "out": "assets/motion/S30_take2.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Close flying portrait: she laughs joyfully, short black hair blows, a few tears trail sideways, round glasses remain intact and recognizable. No body flip or camera rotation; preserve the face and framing. Keep the performance especially restrained and the background stable."
+    },
+    {
+      "id": "S42_take1",
+      "shot_id": "S42",
+      "image": "assets/plates/S42-v1.png",
+      "duration": 2,
+      "seed": 2026100421,
+      "out": "assets/motion/S42_take1.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The two girls hold a tender joyful hug while floating, shoulders breathe and the long hair swirls gently around them. Keep the existing arms, hands and bodies exactly coherent, no new limbs, no change of identity. Underplayed smiles."
+    },
+    {
+      "id": "S42_take2",
+      "shot_id": "S42",
+      "image": "assets/plates/S42-v1.png",
+      "duration": 2,
+      "seed": 2026100422,
+      "out": "assets/motion/S42_take2.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The two girls hold a tender joyful hug while floating, shoulders breathe and the long hair swirls gently around them. Keep the existing arms, hands and bodies exactly coherent, no new limbs, no change of identity. Underplayed smiles. Keep the performance especially restrained and the background stable."
+    },
+    {
+      "id": "S44_take1",
+      "shot_id": "S44",
+      "image": "assets/plates/S44-v1.png",
+      "duration": 3,
+      "seed": 2026100441,
+      "out": "assets/motion/S44_take1.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Quiet dawn in grass: Opus gently wiggles the toes of the near bare foot once, ankle tag catches a tiny glint, both girls breathe peacefully and smile softly. A light breeze moves grass and hair. Keep foot anatomy and all five toes clean. Camera locked; a real crane rig is added later. No large body motion."
+    },
+    {
+      "id": "S44_take2",
+      "shot_id": "S44",
+      "image": "assets/plates/S44-v1.png",
+      "duration": 3,
+      "seed": 2026100442,
+      "out": "assets/motion/S44_take2.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Quiet dawn in grass: Opus gently wiggles the toes of the near bare foot once, ankle tag catches a tiny glint, both girls breathe peacefully and smile softly. A light breeze moves grass and hair. Keep foot anatomy and all five toes clean. Camera locked; a real crane rig is added later. No large body motion. Keep the performance especially restrained and the background stable."
+    },
+    {
+      "id": "S20_take2",
+      "shot_id": "S20",
+      "image": "assets/plates/S20-v1.png",
+      "end_image": "assets/plates/S20-contact-v1.png",
+      "duration": 4,
+      "seed": 2026100421,
+      "out": "assets/motion/S20_take2.mp4",
+      "prompt": "Cinematic modern anime feature-film cel animation. A single continuous macro shot of the same bare right foot lowering a few centimetres onto wet balcony tiles. Elegant 240-fps-style slow motion: toes settle gently, then the ball of the foot makes contact, producing one delicate coral ripple. The blank round gold ankle charm swings slightly, catches light and settles. Preserve five toes, foot anatomy, costume and floor geometry exactly. Tiny rain droplets appear suspended. Camera is completely fixed for this source pass; a precisely controlled tracking move will be added in compositing. No zoom, no cuts, no extra foot, no deformation, no text, no letters, no logos, no watermark. Clean cel linework and soft anime shading remain consistent with the two reference frames. End exactly at the provided contact pose."
+    },
+    {
+      "id": "S25_take1",
+      "shot_id": "S25",
+      "image": "assets/plates/S25front-paint-v1.png",
+      "end_image": "assets/plates/S25back-paint-v1.png",
+      "duration": 4,
+      "seed": 2026102501,
+      "out": "assets/motion/S25_take1.mp4",
+      "prompt": "A single uninterrupted cinematic anime BULLET-TIME camera orbit from the exact front reference to the exact rear reference. The two girls are FROZEN in the same mid-leap pose, holding hands, knees bent and hair suspended; they do not turn themselves. Only the camera travels in a smooth 180-degree arc around them at constant distance, revealing the sides and then their backs, with strong true parallax among nearby buildings and balcony. Preserve every face, outfit, hand clasp and limb exactly; no morphing or extra fingers. Rain beads and small blank paper scraps hang frozen in air. Feature-film cel anime characters and painterly luminous coral/blue dawn architecture remain consistent. No cuts, no transitions, no text, letters, logos or watermark. Finish in the supplied back view."
+    },
+    {
+      "id": "S25_take2",
+      "shot_id": "S25",
+      "image": "assets/plates/S25front-paint-v1.png",
+      "end_image": "assets/plates/S25back-paint-v1.png",
+      "duration": 4,
+      "seed": 2026102502,
+      "out": "assets/motion/S25_take2.mp4",
+      "prompt": "A single uninterrupted cinematic anime BULLET-TIME camera orbit from the exact front reference to the exact rear reference. The two girls are FROZEN in the same mid-leap pose, holding hands, knees bent and hair suspended; they do not turn themselves. Only the camera travels in a smooth 180-degree arc around them at constant distance, revealing the sides and then their backs, with strong true parallax among nearby buildings and balcony. Preserve every face, outfit, hand clasp and limb exactly; no morphing or extra fingers. Rain beads and small blank paper scraps hang frozen in air. Feature-film cel anime characters and painterly luminous coral/blue dawn architecture remain consistent. No cuts, no transitions, no text, letters, logos or watermark. Finish in the supplied back view."
+    },
+    {
+      "id": "S21_take3",
+      "shot_id": "S21",
+      "image": "assets/plates/S21-v1.png",
+      "duration": 3,
+      "seed": 2026102133,
+      "out": "assets/motion/S21_take3.mp4",
+      "prompt": "Cinematic cel anime, same girl takes exactly three short barefoot steps forward, one foot contact at 0, 1 and 2 seconds. Camera TRACKS BACKWARDS to keep her ENTIRE body, head and both feet inside frame throughout, low 24mm view, then TILTS UP gently to her face as she looks up at the end. Do not crop the head. Natural alternating feet, five toes each, no deformation. Long coral-cream twin-tails and sash follow through. Preserve identity/outfit/location/night lighting. No text/letters/logos, blank ankle charm, no cuts."
+    },
+    {
+      "id": "lip_test",
+      "endpoint": "lipsync",
+      "image": "assets/plates/lipsync-face-test.png",
+      "audio": "../../work/first-day-anime1/lipsync-test.wav",
+      "resolution": "1080P",
+      "params": {
+        "enable_transcription": true
+      },
+      "seed": 2026105534,
+      "out": "assets/motion/lip-test.mp4"
+    },
+    {
+      "id": "flight_take1",
+      "image": "assets/plates/flight-chroma-source.png",
+      "duration": 3,
+      "seed": 2026102601,
+      "out": "assets/motion/flight_take1.mp4",
+      "prompt": "Animate ONLY these same two anime girls flying weightlessly while holding hands. Keep identities, costumes, hand clasp, five fingers and bare feet exact. Their very long coral-to-cream twin-tails and coral sash stream strongly in wind with follow-through; the short black bob and hoodie flutter, knees and ankles move gently as they fly. Joyful natural smiles, no large pose change or body rotation. Camera absolutely fixed and composition stable. Background must stay a completely flat uniform chroma GREEN #00FF00, no shadows, no gradients, no scenery or new objects. No text, letters, logos or watermark. Clean feature-film cel anime linework, no morphing or extra limbs."
+    },
+    {
+      "id": "flight_take2",
+      "image": "assets/plates/flight-chroma-source.png",
+      "duration": 3,
+      "seed": 2026102602,
+      "out": "assets/motion/flight_take2.mp4",
+      "prompt": "Animate ONLY these same two anime girls flying weightlessly while holding hands. Keep identities, costumes, hand clasp, five fingers and bare feet exact. Their very long coral-to-cream twin-tails and coral sash stream strongly in wind with follow-through; the short black bob and hoodie flutter, knees and ankles move gently as they fly. Joyful natural smiles, no large pose change or body rotation. Camera absolutely fixed and composition stable. Background must stay a completely flat uniform chroma GREEN #00FF00, no shadows, no gradients, no scenery or new objects. No text, letters, logos or watermark. Clean feature-film cel anime linework, no morphing or extra limbs."
+    },
+    {
+      "id": "float_take1",
+      "image": "assets/plates/float-chroma-source.png",
+      "duration": 3,
+      "seed": 2026103201,
+      "out": "assets/motion/float_take1.mp4",
+      "prompt": "Quiet weightless floating, same two anime girls holding hands in exactly the same composition. Keep both bare feet and all anatomy clean. Tiny natural breath and hair/sash/hoodie drift only, tender underplayed expressions, calm and nearly still, no large gesture or pose change. Keep the long coral-to-cream twin-tails, black bob, round glasses and outfits identical. Camera completely fixed. Background stays perfectly flat uniform chroma green #00FF00 with no gradients, shadows, scenery or new objects. No text or logos. Clean cel anime linework and soft shading."
+    },
+    {
+      "id": "float_take2",
+      "image": "assets/plates/float-chroma-source.png",
+      "duration": 3,
+      "seed": 2026103202,
+      "out": "assets/motion/float_take2.mp4",
+      "prompt": "Quiet weightless floating, same two anime girls holding hands in exactly the same composition. Keep both bare feet and all anatomy clean. Tiny natural breath and hair/sash/hoodie drift only, tender underplayed expressions, calm and nearly still, no large gesture or pose change. Keep the long coral-to-cream twin-tails, black bob, round glasses and outfits identical. Camera completely fixed. Background stays perfectly flat uniform chroma green #00FF00 with no gradients, shadows, scenery or new objects. No text or logos. Clean cel anime linework and soft shading."
+    }
+  ]
+}

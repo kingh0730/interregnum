@@ -1,0 +1,35 @@
+{
+ "id": "S22_take2",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. The girl slowly extends her reaching hand a few centimetres toward the developer, while the developer holds her hand out warmly. Hands remain separated, no contact yet. Underplayed anticipation, subtle breath, slight hair movement. Preserve exactly five fingers per hand and night outside. Keep the performance especially restrained and the background stable.",
+  "image_url": "<data uri>",
+  "duration": 3,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026100222
+ },
+ "payload_sha256": "67c6ddbc193c955282696900bb9c742a9f9b2070095f1bef3dfa1d85c7f1787e",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S22_take2.mp4",
+ "phase": "done",
+ "billable_s": 3.0,
+ "price": 0.09,
+ "request_id": "01a1060a-6a14-7471-92dc-f33e7e188405",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060a-6a14-7471-92dc-f33e7e188405/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060a-6a14-7471-92dc-f33e7e188405",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060a-6a14-7471-92dc-f33e7e188405/cancel",
+ "submitted": 1791102708.391018,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad017e/rFYBnpfbfaXdTEe8a6Q7K_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "rFYBnpfbfaXdTEe8a6Q7K_minimax-h3.mp4",
+   "file_size": 8948457
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 1.6963889701291919
+  }
+ },
+ "done": 1791102720.387617
+}

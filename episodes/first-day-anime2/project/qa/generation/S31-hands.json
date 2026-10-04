@@ -1,0 +1,7 @@
+{
+  "prompt": "Correct ONLY the central black-and-coral-haired girl's arms. She must have EXACTLY TWO ARMS and TWO HANDS: her right arm extends down to her right side and holds the blue-haired sister's hand; her left arm extends down to her left side and holds the green-haired sister's hand. REMOVE the extra foreground hand reaching toward the camera and its extra sleeve/forearm completely. Reconstruct the normal cardigan torso where that extra arm was. Keep both side handholds clear and anatomically natural. Preserve all three faces, hair, clothing, positions, proportions, giant sun, water, boats, lighting and painterly anime style. The two side sisters remain unchanged. No extra limbs, no reaching hand toward camera. No text, no letters, no logos, no watermark.",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-77e2702a-e267-4f4d-8b26-03bf3d7de742.png",
+  "output": "assets/plates/S31-hands.png",
+  "status": "pending_review",
+  "reason": "Original combined reaching and two handholds into an extra arm; require exactly two central arms."
+}

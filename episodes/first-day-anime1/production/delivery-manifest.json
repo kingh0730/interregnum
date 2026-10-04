@@ -1,0 +1,30 @@
+{
+  "first-day_opus55_1080p30.mp4": {
+    "bytes": 93071308,
+    "sha256": "e6aad46483188ed47e50b9e7846ba4aa052d6dbbbe2730dd240868a83e8ca330"
+  },
+  "first-day_opus55_540p30.mp4": {
+    "bytes": 18700433,
+    "sha256": "eb2e66be4f8e2437e38e2a3131d9fb442d446abc6fa09e85bc83911e5087149b"
+  },
+  "animatic.mp4": {
+    "bytes": 7864205,
+    "sha256": "2d01186a435c2b398f1504c5ac43f1433b3c78bb6c9572eca4869607f4e10da4"
+  },
+  "first-day.mp3": {
+    "bytes": 1749203,
+    "sha256": "1a118d29b8ee750ab6a14673ab274ed0e090efafeb538a49c1a2c381ca338d1f"
+  },
+  "first-day.lrc": {
+    "bytes": 507,
+    "sha256": "3a052d369e5774034ccfe9a657324226973bd74e0f348089a58709b473f75376"
+  },
+  "shotlog.csv": {
+    "bytes": 26312,
+    "sha256": "239e7738488dcc1b19371547caf1143e00677041548446679d5d1dd0d3f1ffc4"
+  },
+  "timing.json": {
+    "bytes": 16690,
+    "sha256": "57e399a07f64ddf4ba79a08aec9ea1254103006ab1d7f746e1cf05bcfcc3724c"
+  }
+}

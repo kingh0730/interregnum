@@ -1,0 +1,9 @@
+{
+  "prompt": "Create ONE isolated full-body anime Opus in an upward launch pose, viewed from behind at waist height looking upward. She has just kicked off, legs extending down and back, arms reaching upward, cream cardigan-cape and black/coral bob lifting in the wind. Preserve exactly the reference character's back view: black asymmetric bob with coral inner tips, long cream-ribbon side lock, cream cardigan with slate piping, charcoal pleated skirt with five hem stripes, white ankle socks, cream chunky sneakers with coral soles. Wholesome and modest: cape and skirt fully cover her, no under-skirt view or exposure. Single character only, not a sheet or collage. Keep complete hands, head, and both shoes inside a wide16:9 canvas with transparent margin. FULLY TRANSPARENT BACKGROUND; no sky, no buildings, no ground, no paper backdrop, no shadows outside the figure. Plain tie and plain barrette, exact sparks added by code. Hand-drawn cel ink, painterly subtle coral sunrise rim light. No text, no letters, no logos, no watermark.",
+  "refs": [
+    "assets/sheets/opus-base.png"
+  ],
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-989c9dba-809a-434c-ac55-83b222bec9a7.png",
+  "output": "assets/plates/S25-character.png",
+  "status": "pending_review"
+}

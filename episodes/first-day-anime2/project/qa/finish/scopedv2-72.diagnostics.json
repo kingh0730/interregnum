@@ -1,0 +1,123 @@
+{
+  "shots": {
+    "S02": {
+      "assets": {
+        "plate": "assets/normalized/tomorrow.png",
+        "depth": "assets/depth/tomorrow.png",
+        "mask": null,
+        "layers": [],
+        "poses": [],
+        "support": {},
+        "features": {
+          "status": "not_required",
+          "eyes": [],
+          "hairpin": null,
+          "tie": null,
+          "halo": null
+        },
+        "status": "normalized_source_available",
+        "approval": false,
+        "mask_required": false,
+        "mask_status": "not_required",
+        "depth_status": "available_unreviewed",
+        "asset_id": "tomorrow",
+        "depth_input": "assets/normalized/tomorrow.png"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo"
+      ],
+      "unverified": [],
+      "billboards": {
+        "method": "observed source hardware corners; projective homography subdivided into depth-registered mesh",
+        "corners": [
+          [
+            [
+              309,
+              165
+            ],
+            [
+              565,
+              293
+            ],
+            [
+              565,
+              485
+            ],
+            [
+              303,
+              386
+            ]
+          ],
+          [
+            [
+              835,
+              184
+            ],
+            [
+              1087,
+              249
+            ],
+            [
+              1090,
+              532
+            ],
+            [
+              833,
+              499
+            ]
+          ],
+          [
+            [
+              1623,
+              269
+            ],
+            [
+              1752,
+              146
+            ],
+            [
+              1779,
+              396
+            ],
+            [
+              1628,
+              460
+            ]
+          ],
+          [
+            [
+              1310,
+              434
+            ],
+            [
+              1422,
+              365
+            ],
+            [
+              1428,
+              642
+            ],
+            [
+              1318,
+              680
+            ]
+          ]
+        ]
+      }
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    72
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}

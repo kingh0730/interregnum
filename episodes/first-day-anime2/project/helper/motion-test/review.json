@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "approved",
+  "reviewer": "Codex",
+  "scope": "Single-shot motion pilot source only, not whole-film continuity approval. Closed eyelid, black/coral hair, cream ribbon and coral lash pinpoint visually inspected. No generated letters or logo present. No transition to another shot reviewed yet.",
+  "story": {
+    "path": "helper/motion-test/story.json",
+    "sha256": "4282e1e58bafc177f0d6205031102adc8caeadb06e60f3f641409373fb7b6069"
+  },
+  "assets": {
+    "path": "helper/motion-test/assets.json",
+    "sha256": "502729ba897345c5b0b9b0ae9162be462e93524f63e02b544f96287588c6ddaf"
+  },
+  "additional_inputs": [
+    {
+      "path": "qa/lookdev_review.json",
+      "sha256": "e0c8ac7951043c8ba1a1da665941ff1fb107729075a9b386303710496ac9a321"
+    }
+  ],
+  "sources": [
+    {
+      "path": "assets/plates/S01.png",
+      "sha256": "ed925a20598839800cd35bce03537dd7739c74f4d6c41087552efe1c41a79941"
+    }
+  ],
+  "cuts": [],
+  "state_changes": []
+}

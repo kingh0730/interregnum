@@ -1,0 +1,340 @@
+{
+  "frame_count": 1311,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "intentional_uniform_frames": [
+    327,
+    328,
+    358,
+    359,
+    388,
+    439,
+    440,
+    681,
+    682,
+    755,
+    857,
+    858,
+    920,
+    1188,
+    1189,
+    1190,
+    1191,
+    1192,
+    1193,
+    1194,
+    1195,
+    1196,
+    1310
+  ],
+  "intentional_holds": "S13 and the specified final end-card hold; impact/whiteout frames are intentional.",
+  "cuts": [
+    {
+      "shot": "S02",
+      "expected_frame": 34,
+      "delta_at_boundary": 35.141,
+      "local_peak_frame": 34,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S03",
+      "expected_frame": 85,
+      "delta_at_boundary": 135.173,
+      "local_peak_frame": 85,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S04",
+      "expected_frame": 128,
+      "delta_at_boundary": 59.453,
+      "local_peak_frame": 128,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S05",
+      "expected_frame": 157,
+      "delta_at_boundary": 49.653,
+      "local_peak_frame": 157,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S06",
+      "expected_frame": 196,
+      "delta_at_boundary": 60.584,
+      "local_peak_frame": 196,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S07",
+      "expected_frame": 225,
+      "delta_at_boundary": 118.961,
+      "local_peak_frame": 225,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S08",
+      "expected_frame": 253,
+      "delta_at_boundary": 31.592,
+      "local_peak_frame": 253,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S09",
+      "expected_frame": 284,
+      "delta_at_boundary": 37.727,
+      "local_peak_frame": 284,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S10",
+      "expected_frame": 305,
+      "delta_at_boundary": 35.176,
+      "local_peak_frame": 305,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S11",
+      "expected_frame": 319,
+      "delta_at_boundary": 30.508,
+      "local_peak_frame": 319,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S12",
+      "expected_frame": 327,
+      "delta_at_boundary": 62.38,
+      "local_peak_frame": 327,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S13",
+      "expected_frame": 338,
+      "delta_at_boundary": 2.094,
+      "local_peak_frame": 335,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S14",
+      "expected_frame": 358,
+      "delta_at_boundary": 230.914,
+      "local_peak_frame": 358,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S15",
+      "expected_frame": 379,
+      "delta_at_boundary": 22.44,
+      "local_peak_frame": 379,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S16",
+      "expected_frame": 411,
+      "delta_at_boundary": 96.039,
+      "local_peak_frame": 411,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S17",
+      "expected_frame": 439,
+      "delta_at_boundary": 167.189,
+      "local_peak_frame": 439,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S18",
+      "expected_frame": 472,
+      "delta_at_boundary": 69.705,
+      "local_peak_frame": 472,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S19",
+      "expected_frame": 492,
+      "delta_at_boundary": 71.885,
+      "local_peak_frame": 492,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S20",
+      "expected_frame": 528,
+      "delta_at_boundary": 79.776,
+      "local_peak_frame": 528,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S21",
+      "expected_frame": 560,
+      "delta_at_boundary": 51.99,
+      "local_peak_frame": 560,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S22",
+      "expected_frame": 590,
+      "delta_at_boundary": 51.915,
+      "local_peak_frame": 590,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S23",
+      "expected_frame": 621,
+      "delta_at_boundary": 84.719,
+      "local_peak_frame": 621,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S24",
+      "expected_frame": 681,
+      "delta_at_boundary": 133.161,
+      "local_peak_frame": 681,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S25",
+      "expected_frame": 713,
+      "delta_at_boundary": 71.84,
+      "local_peak_frame": 713,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S26",
+      "expected_frame": 764,
+      "delta_at_boundary": 58.014,
+      "local_peak_frame": 764,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S27",
+      "expected_frame": 785,
+      "delta_at_boundary": 55.107,
+      "local_peak_frame": 785,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S28",
+      "expected_frame": 795,
+      "delta_at_boundary": 42.797,
+      "local_peak_frame": 792,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S29",
+      "expected_frame": 816,
+      "delta_at_boundary": 46.153,
+      "local_peak_frame": 816,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S30",
+      "expected_frame": 827,
+      "delta_at_boundary": 59.898,
+      "local_peak_frame": 827,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S31",
+      "expected_frame": 840,
+      "delta_at_boundary": 55.758,
+      "local_peak_frame": 840,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S32",
+      "expected_frame": 857,
+      "delta_at_boundary": 90.335,
+      "local_peak_frame": 859,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S33",
+      "expected_frame": 888,
+      "delta_at_boundary": 48.629,
+      "local_peak_frame": 888,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S34",
+      "expected_frame": 920,
+      "delta_at_boundary": 10.063,
+      "local_peak_frame": 921,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S35",
+      "expected_frame": 1026,
+      "delta_at_boundary": 67.722,
+      "local_peak_frame": 1026,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S36",
+      "expected_frame": 1112,
+      "delta_at_boundary": 65.033,
+      "local_peak_frame": 1112,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S37",
+      "expected_frame": 1123,
+      "delta_at_boundary": 49.912,
+      "local_peak_frame": 1123,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S38",
+      "expected_frame": 1132,
+      "delta_at_boundary": 77.264,
+      "local_peak_frame": 1132,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S39",
+      "expected_frame": 1143,
+      "delta_at_boundary": 48.77,
+      "local_peak_frame": 1143,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S40",
+      "expected_frame": 1153,
+      "delta_at_boundary": 26.823,
+      "local_peak_frame": 1153,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S41",
+      "expected_frame": 1164,
+      "delta_at_boundary": 37.612,
+      "local_peak_frame": 1164,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S42",
+      "expected_frame": 1173,
+      "delta_at_boundary": 52.68,
+      "local_peak_frame": 1173,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S43",
+      "expected_frame": 1188,
+      "delta_at_boundary": 85.235,
+      "local_peak_frame": 1188,
+      "visible_transition_or_explicit_match_cut": true
+    },
+    {
+      "shot": "S44",
+      "expected_frame": 1197,
+      "delta_at_boundary": 127.496,
+      "local_peak_frame": 1197,
+      "visible_transition_or_explicit_match_cut": true
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "scope": "Image sequence checks. Does not assert human audiovisual playback, phoneme accuracy, or semantic camera quality."
+}

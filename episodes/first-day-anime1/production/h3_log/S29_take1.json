@@ -1,0 +1,35 @@
+{
+ "id": "S29_take1",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Close flying portrait: fearless joyful grin, wind streams the long hair past camera, bright eyes stable, very slight head lift. Do not rotate the body or change framing. No lip-sync needed.",
+  "image_url": "<data uri>",
+  "duration": 2,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026100291
+ },
+ "payload_sha256": "b146706a1d36eeabc33ffdc4ede6504292f0867297d6c137491cab5ec359045e",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S29_take1.mp4",
+ "phase": "done",
+ "billable_s": 2.0,
+ "price": 0.06,
+ "request_id": "01a1060a-c4f7-79a2-bc1b-fe049a200a7f",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060a-c4f7-79a2-bc1b-fe049a200a7f/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060a-c4f7-79a2-bc1b-fe049a200a7f",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060a-c4f7-79a2-bc1b-fe049a200a7f/cancel",
+ "submitted": 1791102731.637992,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad0181/cKJAZ8wWzlBwIvqn4LmME_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "cKJAZ8wWzlBwIvqn4LmME_minimax-h3.mp4",
+   "file_size": 8356960
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 1.2239795029890956
+  }
+ },
+ "done": 1791102743.3803232
+}

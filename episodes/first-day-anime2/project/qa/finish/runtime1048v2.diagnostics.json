@@ -1,0 +1,218 @@
+{
+  "shots": {
+    "S33": {
+      "assets": {
+        "plate": "assets/normalized/S33.png",
+        "depth": "assets/depth/S33.png",
+        "mask": "assets/masks/S33.png",
+        "layers": [],
+        "poses": [],
+        "support": {},
+        "features": {
+          "status": "anchors_located_pending_composite_review",
+          "eyes": [
+            [
+              0.76196172,
+              0.27511962,
+              0.00538278
+            ],
+            [
+              0.80263158,
+              0.30063796,
+              0.00538278
+            ]
+          ],
+          "hairpin": [
+            0.7458134,
+            0.23577884,
+            0.01614833
+          ],
+          "tie": [
+            0.73086124,
+            0.45481127,
+            0.01555024
+          ],
+          "halo": [
+            0.77452153,
+            0.27618288,
+            0.23325359,
+            0.34024455
+          ],
+          "eyes_state": "open",
+          "review_evidence": [
+            "qa/features/S33-anchors.png",
+            "qa/features/final-sources-overlay-grid.jpg"
+          ],
+          "halo_requires_subject_occlusion": true,
+          "only_character": "Opus",
+          "sun": [
+            0.70155502,
+            0.4569378,
+            0.20334928
+          ]
+        },
+        "status": "normalized_source_available",
+        "approval": false,
+        "mask_required": true,
+        "mask_status": "available_unreviewed",
+        "depth_status": "available_unreviewed",
+        "asset_id": "S33",
+        "depth_input": "assets/normalized/S33.png"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [
+        {
+          "frame": 13.75,
+          "clamped": true,
+          "retainedMoveFraction": 0.4185142517089844,
+          "requestedProjectedTravelFraction": 0.09118435423432833,
+          "actualProjectedTravelFraction": 0.03816195177994688,
+          "coverageClamped": true,
+          "requestedCoverage": {
+            "safe": false,
+            "uvBounds": {
+              "minU": 0.11882204257856555,
+              "maxU": 1.0502146673832307,
+              "minV": 0.03703703703703776,
+              "maxV": 0.9629629629629622
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": true
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.07126522743226538,
+              "maxU": 0.999479044748744,
+              "minV": 0.03703703703703776,
+              "maxV": 0.9629629629629622
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false
+          },
+          "requestedCameraPosition": [
+            0.5242861663138529,
+            0,
+            10
+          ],
+          "actualCameraPosition": [
+            -0.35915708697334625,
+            0,
+            10
+          ],
+          "requestedCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "actualCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "sourceCropReserve": 0.08,
+          "backgroundMode": "finite-source-plane",
+          "foregroundLayers": [],
+          "requiresVisualEdgeQA": true
+        },
+        {
+          "frame": 14,
+          "clamped": true,
+          "retainedMoveFraction": 0.4075126647949219,
+          "requestedProjectedTravelFraction": 0.09364560036575333,
+          "actualProjectedTravelFraction": 0.03816176815136846,
+          "coverageClamped": true,
+          "requestedCoverage": {
+            "safe": false,
+            "uvBounds": {
+              "minU": 0.12102958169191275,
+              "maxU": 1.052569763515323,
+              "minV": 0.03703703703703776,
+              "maxV": 0.9629629629629622
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": true
+          },
+          "actualCoverage": {
+            "safe": true,
+            "uvBounds": {
+              "minU": 0.07126506273225258,
+              "maxU": 0.9994788690398015,
+              "minV": 0.03703703703703776,
+              "maxV": 0.9629629629629622
+            },
+            "insetU": 0.0005208333333333333,
+            "insetV": 0.000925925925925926,
+            "coverageLayer": "plate",
+            "foregroundCoverageRequired": false,
+            "foregroundOutsideUV": "transparent-discard",
+            "usesRepeatedEdgePixels": false
+          },
+          "requestedCameraPosition": [
+            0.5652947058902593,
+            0,
+            10
+          ],
+          "actualCameraPosition": [
+            -0.3591601465372515,
+            0,
+            10
+          ],
+          "requestedCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "actualCameraQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "sourceCropReserve": 0.08,
+          "backgroundMode": "finite-source-plane",
+          "foregroundLayers": [],
+          "requiresVisualEdgeQA": true
+        }
+      ],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo",
+        "eyes_state",
+        "review_evidence",
+        "halo_requires_subject_occlusion",
+        "only_character",
+        "sun"
+      ],
+      "unverified": [
+        "Exact SVG aperture dims outer sun sectors with warm code cloud mask; actual disc alignment and trio matte need frame review."
+      ]
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    1048
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}

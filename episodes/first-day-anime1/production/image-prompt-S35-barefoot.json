@@ -1,0 +1,7 @@
+{
+  "id": "S35-barefoot",
+  "prompt": "Precise continuity edit of this flat paper editorial illustration: remove ALL shoes and socks from BOTH girls and show simple clean BARE FEET in the same running poses, five toes when visible. Preserve everything else exactly: composition, faces, hair, clothes, hand clasp, linework, cream paper, coral sun, meadow, colours, graphic style. No extra details, no text or logos. The two girls are barefoot after their flight.",
+  "reference": "assets/plates/S35-v2.png",
+  "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-2b3e4910-77cf-441c-ae03-34e1de670389.png",
+  "tool": "Codex built-in image_gen"
+}

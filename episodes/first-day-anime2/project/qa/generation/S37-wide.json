@@ -1,0 +1,31 @@
+{
+  "id": "S37-wide",
+  "tool": "Codex built-in image_gen",
+  "prompt": "Use case: precise-object-edit. FRAMING ONLY: keep this exact single front-facing Opus pose, head angle, gaze, eye shape, calm closed-mouth smile, hands, clothing and rendering unchanged. Make the figure significantly smaller within the SAME widescreen ivory cream void: figure from highest hair to shoe sole must occupy only70%of canvas HEIGHT, with15%of canvas HEIGHT empty ivory above head and15%below shoes. Current target nearly fills height; genuinely zoom out about25%, do not just recrop the margins. Centre the complete figure horizontally and vertically. Keep all hands/shoes intact. Background remains smooth pale ivory #FAF9F5 void with no horizon/floor/shadows/environment. No new objects, halo/rings, text, letters, logos, numbers, symbols, starbursts, frame or collage. Preserve this exact identity/pose because two closer views will be matched to it.",
+  "references": [
+    "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-9dd64297-92e0-48d5-ac21-c7b336daa791.png"
+  ],
+  "transparent_background": false,
+  "source_path": "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-9b2ebcc3-675b-4108-bac6-df93ab0305ad.png",
+  "selected_path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S37-wide.png",
+  "status": "selected-wide-master-pose",
+  "original_codex_image_retained": true,
+  "previous_candidate": {
+    "prompt": "Use case: illustration-story. Create ONE widescreen full-figure closing shot of Opus, using attached approved character sheet ONLY for identity and clothes, never copy its multi-view layout. This is the master pose for matched bust and eye close-ups: precise straight FRONT view, head upright and LEVEL, shoulders level, gaze directly into camera, relaxed open almond-shaped eyes, a small CALM CLOSED-MOUTH SMILE. Keep this very specific head angle and gaze unambiguous. Select her LEFT eye (VIEWER RIGHT) as the unobstructed eye that later close-ups will enlarge. Reference identity exactly: asymmetric chin-length black bob with subtle warm-brown undertone, clay-coral inner layer and hair tips, long side lock tied with cream ribbon on her own LEFT/viewer-right side, plain coral barrette on same side; amber-coral eyes with PLAIN dark pupils and no bright emblem/catchlight shapes. Oversized cream knit cardigan-cape with slate piping, white blouse, plain coral necktie, charcoal pleated skirt with five fine parallel cream hem stripes, white ankle socks, chunky cream sneakers with coral soles. Arms hang naturally at sides with relaxed hands; feet close together; gentle upright posture. Single full character centred in a pale ivory #FAF9F5 CREAM VOID with no horizon, furniture, environment, shadows, or other objects. Wide1920x1080 composition; entire figure only70% of canvas height with generous ivory margins above hair, below shoes, and around hands. Every hand and shoe fully visible. Cinematic anime cel rendering with fine-thick ink, warm matte paper softness, consistent reference face and body proportions. Exact spark eye marks, hairpin/tie emblem, glowing ring,5.5 text and prior-frame reflections are CODE and must NOT be generated here. No halo/ring, no text, no letters, no logos, no watermark, no numbers, no Hanzi, no photo tiles, no starbursts, no motion blur. One still frame, no collage.",
+    "references": [
+      "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/sheets/opus-base.png"
+    ],
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-9dd64297-92e0-48d5-ac21-c7b336daa791.png",
+    "reason": "Good pose, insufficient ivory margins; reframed using builtin tool only."
+  },
+  "sha256": "98ce8c36775ea02da657ce70f34cc98df95a8274c359f0c63a7e71297b23d900",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "visualReview": [
+    "Front-facing level head and direct gaze; calm closed-mouth smile.",
+    "Single full figure, approximately70% canvas height, complete hands/shoes and generous ivory void margins.",
+    "Plain barrette/tie, no ring/text/tiles or generated starburst logos."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source_sheet": "assets/sheets/opus-base.png",
+  "crop": [
+    0,
+    0,
+    290,
+    980
+  ],
+  "segmentation": "IS-Net anime, technical mask from exact sheet crop",
+  "output": "assets/cutouts/opus-silhouette.png",
+  "sha256": "d2b0a39d5683a3eb4c089ea0e3d33fe35d44ee41176856d46cd93c00a0083eb0",
+  "review": "Inspected: complete front-view silhouette from approved sheet with distinct bob, cape, hem, legs and shoes. Alpha is suitable for token attraction; not approved as a final beauty cutout.",
+  "resize": {
+    "height": 1400,
+    "canvas": [
+      1280,
+      1536
+    ]
+  }
+}

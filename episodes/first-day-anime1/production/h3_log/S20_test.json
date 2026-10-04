@@ -1,0 +1,36 @@
+{
+ "id": "S20_test",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Cinematic modern anime feature-film cel animation. A single continuous macro shot of the same bare right foot lowering a few centimetres onto wet balcony tiles. Elegant 240-fps-style slow motion: toes settle gently, then the ball of the foot makes contact, producing one delicate coral ripple. The blank round gold ankle charm swings slightly, catches light and settles. Preserve five toes, foot anatomy, costume and floor geometry exactly. Tiny rain droplets appear suspended. Camera is completely fixed for this source pass; a precisely controlled tracking move will be added in compositing. No zoom, no cuts, no extra foot, no deformation, no text, no letters, no logos, no watermark. Clean cel linework and soft anime shading remain consistent with the two reference frames. End exactly at the provided contact pose.",
+  "image_url": "<data uri>",
+  "end_image_url": "<data uri>",
+  "duration": 4,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026100420
+ },
+ "payload_sha256": "14b0454f8d314e938d5883b46f593e638a62f7e00abdb34e1b545f3172dca7f5",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S20-test.mp4",
+ "phase": "done",
+ "billable_s": 4.0,
+ "price": 0.12,
+ "request_id": "01a105f5-7c8f-7533-aa26-0bc4e723eaf2",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a105f5-7c8f-7533-aa26-0bc4e723eaf2/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a105f5-7c8f-7533-aa26-0bc4e723eaf2",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a105f5-7c8f-7533-aa26-0bc4e723eaf2/cancel",
+ "submitted": 1791101336.846837,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad00f5/3fHCjc7loqAx08c69PO07_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "3fHCjc7loqAx08c69PO07_minimax-h3.mp4",
+   "file_size": 10323673
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 3.4741604959999677
+  }
+ },
+ "done": 1791101348.717561
+}

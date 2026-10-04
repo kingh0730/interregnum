@@ -1,0 +1,35 @@
+{
+ "id": "S04_take2",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. She takes one small sip through the milk-tea straw, gently pushes the chair back with the other hand and lets her shoulders relax. Keep both hands anatomically clean with five fingers. No exaggerated gesture. Keep the performance especially restrained and the background stable.",
+  "image_url": "<data uri>",
+  "duration": 3,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026100042
+ },
+ "payload_sha256": "1ae28ab3bba03d113ea8cd40e09cfaa4f55d8f6b1d9dcc4e16620f674478ef33",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S04_take2.mp4",
+ "phase": "done",
+ "billable_s": 3.0,
+ "price": 0.09,
+ "request_id": "01a10609-5633-7100-8830-d32302f5ee22",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-5633-7100-8830-d32302f5ee22/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-5633-7100-8830-d32302f5ee22",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a10609-5633-7100-8830-d32302f5ee22/cancel",
+ "submitted": 1791102637.75733,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad0178/J-ZI3osGM_I8H7oJVvAJS_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "J-ZI3osGM_I8H7oJVvAJS_minimax-h3.mp4",
+   "file_size": 7944962
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 1.7344465353526175
+  }
+ },
+ "done": 1791102656.7894862
+}

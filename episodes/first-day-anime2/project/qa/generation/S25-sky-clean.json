@@ -1,0 +1,12 @@
+{
+  "id": "S25-sky-clean",
+  "out": "assets/plates/S25-sky-clean.png",
+  "refs": [
+    "assets/worlds/canyon.png"
+  ],
+  "alpha": false,
+  "prompt": "REMOVE ALL BUILDINGS AND ARCHITECTURE from this image, replacing them entirely with the continuing sky. Deliver ONLY an uninterrupted full-frame luminous hand-painted anime dawn SKY: coral sunrise clouds and soft muted blue/ivory atmosphere. There must be no city, no tower, no wall, no bridge, no ground, no people, no objects anywhere, including all four edges. Preserve the existing sky's painterly gouache medium, warm coral light, cloud forms and paper texture, extend that sky across the entire image where buildings used to be. Single widescreen16:9 clean sky plate, no collage. No text, no letters, no logos, no numbers, no watermark.",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-617819e2-bcfe-4dd7-9428-8e9b5ab4aeb2.png",
+  "generator": "Codex built-in",
+  "status": "pending_review"
+}

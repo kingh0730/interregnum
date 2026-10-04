@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "sampleRate": 11025,
+  "sourceDecodedSamples": 481462,
+  "finalDecodedSamples": 481548,
+  "lagSamples": 0,
+  "lagSeconds": 0.0,
+  "lagFrames": 0.0,
+  "lagSign": "positive means final audio delayed relative to source",
+  "alignedCosineSimilarity": 0.9999999999999981,
+  "alignedRMSE": 9.283910522624773e-09,
+  "scope": "mono11025Hz decoded waveforms; maximum search lag±1s; allowed alignment±1frame, similarity>=.9999"
+}

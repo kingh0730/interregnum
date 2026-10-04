@@ -1,0 +1,35 @@
+{
+ "id": "S23_take2",
+ "endpoint": "minimax/h3-max/image-to-video",
+ "payload": {
+  "prompt": "Cinematic modern anime feature-film cel animation, clean confident linework, soft cel shading and painterly luminous backgrounds. Preserve exact identities, anatomy, costumes, objects, composition and lighting from the source. No text, letters, numbers, logos or watermarks; screens, brooches and tags stay blank. One continuous shot, no cuts, no face morphing, no extra limbs. Camera locked for this source pass; the authored camera move is added in compositing. Their index fingertips remain in exactly the same gentle contact at frame center, a tender shared breath and a barely perceptible tearful smile. Keep the fingertip contact point stationary and all fingers stable. Tiny natural eye and cheek movement only; no reaching or withdrawing. Keep the performance especially restrained and the background stable.",
+  "image_url": "<data uri>",
+  "duration": 3,
+  "resolution": "1080P",
+  "prompt_expansion_mode": "disabled",
+  "seed": 2026100232
+ },
+ "payload_sha256": "5c48c594ed6841608a687910e9d1c8ea9c70a67526a2c34efc736ea7f711236e",
+ "out": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/assets/motion/S23_take2.mp4",
+ "phase": "done",
+ "billable_s": 3.0,
+ "price": 0.09,
+ "request_id": "01a1060a-8616-7202-8642-5165d888c9aa",
+ "status_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060a-8616-7202-8642-5165d888c9aa/status",
+ "response_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060a-8616-7202-8642-5165d888c9aa",
+ "cancel_url": "https://queue.fal.run/minimax/h3-max/requests/01a1060a-8616-7202-8642-5165d888c9aa/cancel",
+ "submitted": 1791102715.555659,
+ "response": {
+  "video": {
+   "url": "https://v3b.fal.media/files/b/0aad017f/XqocXanVhILYxd-ybhLVj_minimax-h3.mp4",
+   "content_type": "video/mp4",
+   "file_name": "XqocXanVhILYxd-ybhLVj_minimax-h3.mp4",
+   "file_size": 11689478
+  },
+  "expanded_prompt": null,
+  "timings": {
+   "inference": 1.720488500985084
+  }
+ },
+ "done": 1791102729.540355
+}

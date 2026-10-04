@@ -1,0 +1,7 @@
+import * as THREE from 'three';
+const{clamp,lerp,easeInOutCubic,smoothstep}=window.RT;
+export const focalFov=f=>THREE.MathUtils.radToDeg(2*Math.atan(20.25/(2*f)));
+export function helixPath(u){u=clamp(u,0,1);let e=u*u*u*(u*(u*6-15)+10);let out=1-(1-u)**3;let theta=THREE.MathUtils.degToRad(450)*e;let radius=lerp(.8,14,out);return{position:[Math.sin(theta)*radius,lerp(1.7,5,e),Math.cos(theta)*radius],target:[lerp(0,-3,smoothstep(.5,1,u)),lerp(1.7,3,smoothstep(.5,1,u)),0],roll:THREE.MathUtils.degToRad(20)*Math.sin(Math.PI*u),theta,radius};}
+export function setCamera(camera,position,target,focal,roll=0){camera.position.set(...position);camera.fov=focalFov(focal);camera.up.set(Math.sin(roll),Math.cos(roll),0);camera.lookAt(new THREE.Vector3(...target));camera.updateProjectionMatrix();camera.updateMatrixWorld();}
+export function orbitPath(u,degrees,radius,height,target=[0,1,0]){let th=THREE.MathUtils.degToRad(degrees)*easeInOutCubic(clamp(u,0,1));return{position:[Math.sin(th)*radius,height,Math.cos(th)*radius],target,theta:th};}
+export function fpvPath(u,variant){let e=easeInOutCubic(clamp(u,0,1));const paths=[[[0,3,15],[2,2,6],[-1,1,0],[0,4,-12]],[[0,4,10],[-3,4,4],[2,5,-3],[0,4,-12]],[[0,2,14],[3,1,5],[-2,2,-2],[0,3,-15]],[[0,3,14],[1,4,6],[-1,7,-5],[0,14,-15]]];let p=paths[variant%4].map(v=>new THREE.Vector3(...v));let curve=new THREE.CatmullRomCurve3(p);let pos=curve.getPoint(e),tangent=curve.getTangent(e);return{position:pos.toArray(),target:pos.clone().add(tangent.multiplyScalar(8)).toArray(),roll:variant===1?Math.PI*2*e:Math.sin(e*Math.PI*2)*.17};}

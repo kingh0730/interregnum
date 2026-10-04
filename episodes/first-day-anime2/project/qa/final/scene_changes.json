@@ -1,0 +1,8619 @@
+{
+  "status": "EVIDENCE-REVIEW",
+  "fixedThresholds": [
+    0.03,
+    0.1,
+    0.3
+  ],
+  "thresholdPolicy": "Spectrum fixed before final render; no threshold chosen to force coverage. Grain/motion can create extra detections. Scores are transition evidence, separate from EDL/shot presence and manual review.",
+  "scores": [
+    {
+      "frame": 0,
+      "ptsTime": 0.0,
+      "score": 0.0
+    },
+    {
+      "frame": 1,
+      "ptsTime": 0.0333333,
+      "score": 1.0
+    },
+    {
+      "frame": 2,
+      "ptsTime": 0.0666667,
+      "score": 0.058063
+    },
+    {
+      "frame": 3,
+      "ptsTime": 0.1,
+      "score": 0.00569
+    },
+    {
+      "frame": 4,
+      "ptsTime": 0.133333,
+      "score": 0.002344
+    },
+    {
+      "frame": 5,
+      "ptsTime": 0.166667,
+      "score": 0.006218
+    },
+    {
+      "frame": 6,
+      "ptsTime": 0.2,
+      "score": 0.007453
+    },
+    {
+      "frame": 7,
+      "ptsTime": 0.233333,
+      "score": 0.001707
+    },
+    {
+      "frame": 8,
+      "ptsTime": 0.266667,
+      "score": 0.010417
+    },
+    {
+      "frame": 9,
+      "ptsTime": 0.3,
+      "score": 0.006545
+    },
+    {
+      "frame": 10,
+      "ptsTime": 0.333333,
+      "score": 0.004263
+    },
+    {
+      "frame": 11,
+      "ptsTime": 0.366667,
+      "score": 0.003347
+    },
+    {
+      "frame": 12,
+      "ptsTime": 0.4,
+      "score": 0.001826
+    },
+    {
+      "frame": 13,
+      "ptsTime": 0.433333,
+      "score": 0.000983
+    },
+    {
+      "frame": 14,
+      "ptsTime": 0.466667,
+      "score": 0.001365
+    },
+    {
+      "frame": 15,
+      "ptsTime": 0.5,
+      "score": 0.001623
+    },
+    {
+      "frame": 16,
+      "ptsTime": 0.533333,
+      "score": 0.003691
+    },
+    {
+      "frame": 17,
+      "ptsTime": 0.566667,
+      "score": 0.006008
+    },
+    {
+      "frame": 18,
+      "ptsTime": 0.6,
+      "score": 0.000813
+    },
+    {
+      "frame": 19,
+      "ptsTime": 0.633333,
+      "score": 0.000167
+    },
+    {
+      "frame": 20,
+      "ptsTime": 0.666667,
+      "score": 0.000903
+    },
+    {
+      "frame": 21,
+      "ptsTime": 0.7,
+      "score": 0.000587
+    },
+    {
+      "frame": 22,
+      "ptsTime": 0.733333,
+      "score": 0.00494
+    },
+    {
+      "frame": 23,
+      "ptsTime": 0.766667,
+      "score": 0.005912
+    },
+    {
+      "frame": 24,
+      "ptsTime": 0.8,
+      "score": 0.000649
+    },
+    {
+      "frame": 25,
+      "ptsTime": 0.833333,
+      "score": 0.000207
+    },
+    {
+      "frame": 26,
+      "ptsTime": 0.866667,
+      "score": 0.000316
+    },
+    {
+      "frame": 27,
+      "ptsTime": 0.9,
+      "score": 0.000558
+    },
+    {
+      "frame": 28,
+      "ptsTime": 0.933333,
+      "score": 0.000463
+    },
+    {
+      "frame": 29,
+      "ptsTime": 0.966667,
+      "score": 1.6e-05
+    },
+    {
+      "frame": 30,
+      "ptsTime": 1.0,
+      "score": 0.000372
+    },
+    {
+      "frame": 31,
+      "ptsTime": 1.033333,
+      "score": 7.1e-05
+    },
+    {
+      "frame": 32,
+      "ptsTime": 1.066667,
+      "score": 0.567481
+    },
+    {
+      "frame": 33,
+      "ptsTime": 1.1,
+      "score": 0.005586
+    },
+    {
+      "frame": 34,
+      "ptsTime": 1.133333,
+      "score": 0.000647
+    },
+    {
+      "frame": 35,
+      "ptsTime": 1.166667,
+      "score": 0.002508
+    },
+    {
+      "frame": 36,
+      "ptsTime": 1.2,
+      "score": 0.000137
+    },
+    {
+      "frame": 37,
+      "ptsTime": 1.233333,
+      "score": 0.00254
+    },
+    {
+      "frame": 38,
+      "ptsTime": 1.266667,
+      "score": 0.001
+    },
+    {
+      "frame": 39,
+      "ptsTime": 1.3,
+      "score": 0.001869
+    },
+    {
+      "frame": 40,
+      "ptsTime": 1.333333,
+      "score": 0.000644
+    },
+    {
+      "frame": 41,
+      "ptsTime": 1.366667,
+      "score": 0.004983
+    },
+    {
+      "frame": 42,
+      "ptsTime": 1.4,
+      "score": 0.004787
+    },
+    {
+      "frame": 43,
+      "ptsTime": 1.433333,
+      "score": 0.0022
+    },
+    {
+      "frame": 44,
+      "ptsTime": 1.466667,
+      "score": 0.00095
+    },
+    {
+      "frame": 45,
+      "ptsTime": 1.5,
+      "score": 0.003075
+    },
+    {
+      "frame": 46,
+      "ptsTime": 1.533333,
+      "score": 0.0023
+    },
+    {
+      "frame": 47,
+      "ptsTime": 1.566667,
+      "score": 0.009387
+    },
+    {
+      "frame": 48,
+      "ptsTime": 1.6,
+      "score": 0.002613
+    },
+    {
+      "frame": 49,
+      "ptsTime": 1.633333,
+      "score": 0.007967
+    },
+    {
+      "frame": 50,
+      "ptsTime": 1.666667,
+      "score": 0.005983
+    },
+    {
+      "frame": 51,
+      "ptsTime": 1.7,
+      "score": 0.008489
+    },
+    {
+      "frame": 52,
+      "ptsTime": 1.733333,
+      "score": 0.002378
+    },
+    {
+      "frame": 53,
+      "ptsTime": 1.766667,
+      "score": 0.006282
+    },
+    {
+      "frame": 54,
+      "ptsTime": 1.8,
+      "score": 0.008466
+    },
+    {
+      "frame": 55,
+      "ptsTime": 1.833333,
+      "score": 0.008383
+    },
+    {
+      "frame": 56,
+      "ptsTime": 1.866667,
+      "score": 0.01798
+    },
+    {
+      "frame": 57,
+      "ptsTime": 1.9,
+      "score": 0.000221
+    },
+    {
+      "frame": 58,
+      "ptsTime": 1.933333,
+      "score": 0.007651
+    },
+    {
+      "frame": 59,
+      "ptsTime": 1.966667,
+      "score": 0.008433
+    },
+    {
+      "frame": 60,
+      "ptsTime": 2.0,
+      "score": 0.008324
+    },
+    {
+      "frame": 61,
+      "ptsTime": 2.033333,
+      "score": 0.009013
+    },
+    {
+      "frame": 62,
+      "ptsTime": 2.066667,
+      "score": 0.00722
+    },
+    {
+      "frame": 63,
+      "ptsTime": 2.1,
+      "score": 0.006103
+    },
+    {
+      "frame": 64,
+      "ptsTime": 2.133333,
+      "score": 0.015738
+    },
+    {
+      "frame": 65,
+      "ptsTime": 2.166667,
+      "score": 0.001097
+    },
+    {
+      "frame": 66,
+      "ptsTime": 2.2,
+      "score": 0.007021
+    },
+    {
+      "frame": 67,
+      "ptsTime": 2.233333,
+      "score": 0.005633
+    },
+    {
+      "frame": 68,
+      "ptsTime": 2.266667,
+      "score": 0.003601
+    },
+    {
+      "frame": 69,
+      "ptsTime": 2.3,
+      "score": 0.003113
+    },
+    {
+      "frame": 70,
+      "ptsTime": 2.333333,
+      "score": 0.001538
+    },
+    {
+      "frame": 71,
+      "ptsTime": 2.366667,
+      "score": 0.001107
+    },
+    {
+      "frame": 72,
+      "ptsTime": 2.4,
+      "score": 0.005959
+    },
+    {
+      "frame": 73,
+      "ptsTime": 2.433333,
+      "score": 0.466891
+    },
+    {
+      "frame": 74,
+      "ptsTime": 2.466667,
+      "score": 0.216419
+    },
+    {
+      "frame": 75,
+      "ptsTime": 2.5,
+      "score": 0.07375
+    },
+    {
+      "frame": 76,
+      "ptsTime": 2.533333,
+      "score": 0.000146
+    },
+    {
+      "frame": 77,
+      "ptsTime": 2.566667,
+      "score": 0.002379
+    },
+    {
+      "frame": 78,
+      "ptsTime": 2.6,
+      "score": 0.003487
+    },
+    {
+      "frame": 79,
+      "ptsTime": 2.633333,
+      "score": 0.003003
+    },
+    {
+      "frame": 80,
+      "ptsTime": 2.666667,
+      "score": 0.004245
+    },
+    {
+      "frame": 81,
+      "ptsTime": 2.7,
+      "score": 0.006161
+    },
+    {
+      "frame": 82,
+      "ptsTime": 2.733333,
+      "score": 0.004567
+    },
+    {
+      "frame": 83,
+      "ptsTime": 2.766667,
+      "score": 0.004254
+    },
+    {
+      "frame": 84,
+      "ptsTime": 2.8,
+      "score": 0.003612
+    },
+    {
+      "frame": 85,
+      "ptsTime": 2.833333,
+      "score": 0.002217
+    },
+    {
+      "frame": 86,
+      "ptsTime": 2.866667,
+      "score": 4.7e-05
+    },
+    {
+      "frame": 87,
+      "ptsTime": 2.9,
+      "score": 0.003671
+    },
+    {
+      "frame": 88,
+      "ptsTime": 2.933333,
+      "score": 0.002617
+    },
+    {
+      "frame": 89,
+      "ptsTime": 2.966667,
+      "score": 0.002783
+    },
+    {
+      "frame": 90,
+      "ptsTime": 3.0,
+      "score": 0.00105
+    },
+    {
+      "frame": 91,
+      "ptsTime": 3.033333,
+      "score": 0.000833
+    },
+    {
+      "frame": 92,
+      "ptsTime": 3.066667,
+      "score": 0.004651
+    },
+    {
+      "frame": 93,
+      "ptsTime": 3.1,
+      "score": 0.002088
+    },
+    {
+      "frame": 94,
+      "ptsTime": 3.133333,
+      "score": 0.004861
+    },
+    {
+      "frame": 95,
+      "ptsTime": 3.166667,
+      "score": 0.001355
+    },
+    {
+      "frame": 96,
+      "ptsTime": 3.2,
+      "score": 0.000948
+    },
+    {
+      "frame": 97,
+      "ptsTime": 3.233333,
+      "score": 0.000615
+    },
+    {
+      "frame": 98,
+      "ptsTime": 3.266667,
+      "score": 0.001438
+    },
+    {
+      "frame": 99,
+      "ptsTime": 3.3,
+      "score": 0.000549
+    },
+    {
+      "frame": 100,
+      "ptsTime": 3.333333,
+      "score": 0.002663
+    },
+    {
+      "frame": 101,
+      "ptsTime": 3.366667,
+      "score": 0.004588
+    },
+    {
+      "frame": 102,
+      "ptsTime": 3.4,
+      "score": 0.001411
+    },
+    {
+      "frame": 103,
+      "ptsTime": 3.433333,
+      "score": 0.000701
+    },
+    {
+      "frame": 104,
+      "ptsTime": 3.466667,
+      "score": 0.000747
+    },
+    {
+      "frame": 105,
+      "ptsTime": 3.5,
+      "score": 0.000844
+    },
+    {
+      "frame": 106,
+      "ptsTime": 3.533333,
+      "score": 0.001223
+    },
+    {
+      "frame": 107,
+      "ptsTime": 3.566667,
+      "score": 0.00029
+    },
+    {
+      "frame": 108,
+      "ptsTime": 3.6,
+      "score": 0.001358
+    },
+    {
+      "frame": 109,
+      "ptsTime": 3.633333,
+      "score": 0.004479
+    },
+    {
+      "frame": 110,
+      "ptsTime": 3.666667,
+      "score": 0.004856
+    },
+    {
+      "frame": 111,
+      "ptsTime": 3.7,
+      "score": 0.000552
+    },
+    {
+      "frame": 112,
+      "ptsTime": 3.733333,
+      "score": 5e-06
+    },
+    {
+      "frame": 113,
+      "ptsTime": 3.766667,
+      "score": 0.006017
+    },
+    {
+      "frame": 114,
+      "ptsTime": 3.8,
+      "score": 0.619134
+    },
+    {
+      "frame": 115,
+      "ptsTime": 3.833333,
+      "score": 0.006651
+    },
+    {
+      "frame": 116,
+      "ptsTime": 3.866667,
+      "score": 0.016388
+    },
+    {
+      "frame": 117,
+      "ptsTime": 3.9,
+      "score": 0.016513
+    },
+    {
+      "frame": 118,
+      "ptsTime": 3.933333,
+      "score": 0.008655
+    },
+    {
+      "frame": 119,
+      "ptsTime": 3.966667,
+      "score": 0.003799
+    },
+    {
+      "frame": 120,
+      "ptsTime": 4.0,
+      "score": 0.009446
+    },
+    {
+      "frame": 121,
+      "ptsTime": 4.033333,
+      "score": 0.005884
+    },
+    {
+      "frame": 122,
+      "ptsTime": 4.066667,
+      "score": 0.003959
+    },
+    {
+      "frame": 123,
+      "ptsTime": 4.1,
+      "score": 0.000336
+    },
+    {
+      "frame": 124,
+      "ptsTime": 4.133333,
+      "score": 0.00305
+    },
+    {
+      "frame": 125,
+      "ptsTime": 4.166667,
+      "score": 0.002179
+    },
+    {
+      "frame": 126,
+      "ptsTime": 4.2,
+      "score": 0.002349
+    },
+    {
+      "frame": 127,
+      "ptsTime": 4.233333,
+      "score": 0.01106
+    },
+    {
+      "frame": 128,
+      "ptsTime": 4.266667,
+      "score": 0.005789
+    },
+    {
+      "frame": 129,
+      "ptsTime": 4.3,
+      "score": 0.021894
+    },
+    {
+      "frame": 130,
+      "ptsTime": 4.333333,
+      "score": 0.009473
+    },
+    {
+      "frame": 131,
+      "ptsTime": 4.366667,
+      "score": 0.00367
+    },
+    {
+      "frame": 132,
+      "ptsTime": 4.4,
+      "score": 0.004388
+    },
+    {
+      "frame": 133,
+      "ptsTime": 4.433333,
+      "score": 0.003248
+    },
+    {
+      "frame": 134,
+      "ptsTime": 4.466667,
+      "score": 0.001712
+    },
+    {
+      "frame": 135,
+      "ptsTime": 4.5,
+      "score": 0.003505
+    },
+    {
+      "frame": 136,
+      "ptsTime": 4.533333,
+      "score": 0.003159
+    },
+    {
+      "frame": 137,
+      "ptsTime": 4.566667,
+      "score": 0.002985
+    },
+    {
+      "frame": 138,
+      "ptsTime": 4.6,
+      "score": 0.001037
+    },
+    {
+      "frame": 139,
+      "ptsTime": 4.633333,
+      "score": 0.003259
+    },
+    {
+      "frame": 140,
+      "ptsTime": 4.666667,
+      "score": 0.00078
+    },
+    {
+      "frame": 141,
+      "ptsTime": 4.7,
+      "score": 0.001259
+    },
+    {
+      "frame": 142,
+      "ptsTime": 4.733333,
+      "score": 0.00889
+    },
+    {
+      "frame": 143,
+      "ptsTime": 4.766667,
+      "score": 0.005487
+    },
+    {
+      "frame": 144,
+      "ptsTime": 4.8,
+      "score": 0.00126
+    },
+    {
+      "frame": 145,
+      "ptsTime": 4.833333,
+      "score": 0.001626
+    },
+    {
+      "frame": 146,
+      "ptsTime": 4.866667,
+      "score": 0.011157
+    },
+    {
+      "frame": 147,
+      "ptsTime": 4.9,
+      "score": 0.006085
+    },
+    {
+      "frame": 148,
+      "ptsTime": 4.933333,
+      "score": 0.000327
+    },
+    {
+      "frame": 149,
+      "ptsTime": 4.966667,
+      "score": 0.002069
+    },
+    {
+      "frame": 150,
+      "ptsTime": 5.0,
+      "score": 0.003082
+    },
+    {
+      "frame": 151,
+      "ptsTime": 5.033333,
+      "score": 0.00135
+    },
+    {
+      "frame": 152,
+      "ptsTime": 5.066667,
+      "score": 0.000648
+    },
+    {
+      "frame": 153,
+      "ptsTime": 5.1,
+      "score": 0.001372
+    },
+    {
+      "frame": 154,
+      "ptsTime": 5.133333,
+      "score": 0.00059
+    },
+    {
+      "frame": 155,
+      "ptsTime": 5.166667,
+      "score": 0.542268
+    },
+    {
+      "frame": 156,
+      "ptsTime": 5.2,
+      "score": 0.137099
+    },
+    {
+      "frame": 157,
+      "ptsTime": 5.233333,
+      "score": 0.155515
+    },
+    {
+      "frame": 158,
+      "ptsTime": 5.266667,
+      "score": 0.13478
+    },
+    {
+      "frame": 159,
+      "ptsTime": 5.3,
+      "score": 0.042572
+    },
+    {
+      "frame": 160,
+      "ptsTime": 5.333333,
+      "score": 0.065929
+    },
+    {
+      "frame": 161,
+      "ptsTime": 5.366667,
+      "score": 0.10316
+    },
+    {
+      "frame": 162,
+      "ptsTime": 5.4,
+      "score": 0.028892
+    },
+    {
+      "frame": 163,
+      "ptsTime": 5.433333,
+      "score": 0.006845
+    },
+    {
+      "frame": 164,
+      "ptsTime": 5.466667,
+      "score": 0.006456
+    },
+    {
+      "frame": 165,
+      "ptsTime": 5.5,
+      "score": 0.000476
+    },
+    {
+      "frame": 166,
+      "ptsTime": 5.533333,
+      "score": 0.001266
+    },
+    {
+      "frame": 167,
+      "ptsTime": 5.566667,
+      "score": 0.002154
+    },
+    {
+      "frame": 168,
+      "ptsTime": 5.6,
+      "score": 0.00092
+    },
+    {
+      "frame": 169,
+      "ptsTime": 5.633333,
+      "score": 0.000554
+    },
+    {
+      "frame": 170,
+      "ptsTime": 5.666667,
+      "score": 0.000203
+    },
+    {
+      "frame": 171,
+      "ptsTime": 5.7,
+      "score": 1.3e-05
+    },
+    {
+      "frame": 172,
+      "ptsTime": 5.733333,
+      "score": 0.000979
+    },
+    {
+      "frame": 173,
+      "ptsTime": 5.766667,
+      "score": 0.001703
+    },
+    {
+      "frame": 174,
+      "ptsTime": 5.8,
+      "score": 0.001076
+    },
+    {
+      "frame": 175,
+      "ptsTime": 5.833333,
+      "score": 0.005826
+    },
+    {
+      "frame": 176,
+      "ptsTime": 5.866667,
+      "score": 0.004012
+    },
+    {
+      "frame": 177,
+      "ptsTime": 5.9,
+      "score": 0.000713
+    },
+    {
+      "frame": 178,
+      "ptsTime": 5.933333,
+      "score": 0.000894
+    },
+    {
+      "frame": 179,
+      "ptsTime": 5.966667,
+      "score": 0.0001
+    },
+    {
+      "frame": 180,
+      "ptsTime": 6.0,
+      "score": 0.001215
+    },
+    {
+      "frame": 181,
+      "ptsTime": 6.033333,
+      "score": 0.00038
+    },
+    {
+      "frame": 182,
+      "ptsTime": 6.066667,
+      "score": 0.005279
+    },
+    {
+      "frame": 183,
+      "ptsTime": 6.1,
+      "score": 0.006618
+    },
+    {
+      "frame": 184,
+      "ptsTime": 6.133333,
+      "score": 0.000205
+    },
+    {
+      "frame": 185,
+      "ptsTime": 6.166667,
+      "score": 0.001538
+    },
+    {
+      "frame": 186,
+      "ptsTime": 6.2,
+      "score": 0.002441
+    },
+    {
+      "frame": 187,
+      "ptsTime": 6.233333,
+      "score": 0.001485
+    },
+    {
+      "frame": 188,
+      "ptsTime": 6.266667,
+      "score": 0.001214
+    },
+    {
+      "frame": 189,
+      "ptsTime": 6.3,
+      "score": 0.000961
+    },
+    {
+      "frame": 190,
+      "ptsTime": 6.333333,
+      "score": 0.000453
+    },
+    {
+      "frame": 191,
+      "ptsTime": 6.366667,
+      "score": 0.005358
+    },
+    {
+      "frame": 192,
+      "ptsTime": 6.4,
+      "score": 0.008498
+    },
+    {
+      "frame": 193,
+      "ptsTime": 6.433333,
+      "score": 0.001085
+    },
+    {
+      "frame": 194,
+      "ptsTime": 6.466667,
+      "score": 3.7e-05
+    },
+    {
+      "frame": 195,
+      "ptsTime": 6.5,
+      "score": 1.0
+    },
+    {
+      "frame": 196,
+      "ptsTime": 6.533333,
+      "score": 0.124648
+    },
+    {
+      "frame": 197,
+      "ptsTime": 6.566667,
+      "score": 0.004447
+    },
+    {
+      "frame": 198,
+      "ptsTime": 6.6,
+      "score": 0.000414
+    },
+    {
+      "frame": 199,
+      "ptsTime": 6.633333,
+      "score": 0.000371
+    },
+    {
+      "frame": 200,
+      "ptsTime": 6.666667,
+      "score": 0.000533
+    },
+    {
+      "frame": 201,
+      "ptsTime": 6.7,
+      "score": 0.007465
+    },
+    {
+      "frame": 202,
+      "ptsTime": 6.733333,
+      "score": 0.006043
+    },
+    {
+      "frame": 203,
+      "ptsTime": 6.766667,
+      "score": 0.000322
+    },
+    {
+      "frame": 204,
+      "ptsTime": 6.8,
+      "score": 0.000142
+    },
+    {
+      "frame": 205,
+      "ptsTime": 6.833333,
+      "score": 4.8e-05
+    },
+    {
+      "frame": 206,
+      "ptsTime": 6.866667,
+      "score": 0.007044
+    },
+    {
+      "frame": 207,
+      "ptsTime": 6.9,
+      "score": 0.00689
+    },
+    {
+      "frame": 208,
+      "ptsTime": 6.933333,
+      "score": 0.000836
+    },
+    {
+      "frame": 209,
+      "ptsTime": 6.966667,
+      "score": 0.001432
+    },
+    {
+      "frame": 210,
+      "ptsTime": 7.0,
+      "score": 2.9e-05
+    },
+    {
+      "frame": 211,
+      "ptsTime": 7.033333,
+      "score": 0.001758
+    },
+    {
+      "frame": 212,
+      "ptsTime": 7.066667,
+      "score": 0.001177
+    },
+    {
+      "frame": 213,
+      "ptsTime": 7.1,
+      "score": 0.002985
+    },
+    {
+      "frame": 214,
+      "ptsTime": 7.133333,
+      "score": 0.001967
+    },
+    {
+      "frame": 215,
+      "ptsTime": 7.166667,
+      "score": 0.000291
+    },
+    {
+      "frame": 216,
+      "ptsTime": 7.2,
+      "score": 0.012389
+    },
+    {
+      "frame": 217,
+      "ptsTime": 7.233333,
+      "score": 0.00955
+    },
+    {
+      "frame": 218,
+      "ptsTime": 7.266667,
+      "score": 0.001236
+    },
+    {
+      "frame": 219,
+      "ptsTime": 7.3,
+      "score": 1.7e-05
+    },
+    {
+      "frame": 220,
+      "ptsTime": 7.333333,
+      "score": 8.3e-05
+    },
+    {
+      "frame": 221,
+      "ptsTime": 7.366667,
+      "score": 0.001543
+    },
+    {
+      "frame": 222,
+      "ptsTime": 7.4,
+      "score": 0.000512
+    },
+    {
+      "frame": 223,
+      "ptsTime": 7.433333,
+      "score": 0.001637
+    },
+    {
+      "frame": 224,
+      "ptsTime": 7.466667,
+      "score": 0.003407
+    },
+    {
+      "frame": 225,
+      "ptsTime": 7.5,
+      "score": 0.003304
+    },
+    {
+      "frame": 226,
+      "ptsTime": 7.533333,
+      "score": 0.005163
+    },
+    {
+      "frame": 227,
+      "ptsTime": 7.566667,
+      "score": 0.012169
+    },
+    {
+      "frame": 228,
+      "ptsTime": 7.6,
+      "score": 0.001588
+    },
+    {
+      "frame": 229,
+      "ptsTime": 7.633333,
+      "score": 0.000291
+    },
+    {
+      "frame": 230,
+      "ptsTime": 7.666667,
+      "score": 0.001082
+    },
+    {
+      "frame": 231,
+      "ptsTime": 7.7,
+      "score": 0.002016
+    },
+    {
+      "frame": 232,
+      "ptsTime": 7.733333,
+      "score": 0.002068
+    },
+    {
+      "frame": 233,
+      "ptsTime": 7.766667,
+      "score": 0.00771
+    },
+    {
+      "frame": 234,
+      "ptsTime": 7.8,
+      "score": 0.016136
+    },
+    {
+      "frame": 235,
+      "ptsTime": 7.833333,
+      "score": 0.003428
+    },
+    {
+      "frame": 236,
+      "ptsTime": 7.866667,
+      "score": 1.0
+    },
+    {
+      "frame": 237,
+      "ptsTime": 7.9,
+      "score": 0.204623
+    },
+    {
+      "frame": 238,
+      "ptsTime": 7.933333,
+      "score": 0.014545
+    },
+    {
+      "frame": 239,
+      "ptsTime": 7.966667,
+      "score": 0.010619
+    },
+    {
+      "frame": 240,
+      "ptsTime": 8.0,
+      "score": 0.047839
+    },
+    {
+      "frame": 241,
+      "ptsTime": 8.033333,
+      "score": 0.099828
+    },
+    {
+      "frame": 242,
+      "ptsTime": 8.066667,
+      "score": 0.049445
+    },
+    {
+      "frame": 243,
+      "ptsTime": 8.1,
+      "score": 0.074678
+    },
+    {
+      "frame": 244,
+      "ptsTime": 8.133333,
+      "score": 0.091803
+    },
+    {
+      "frame": 245,
+      "ptsTime": 8.166667,
+      "score": 0.002157
+    },
+    {
+      "frame": 246,
+      "ptsTime": 8.2,
+      "score": 0.002534
+    },
+    {
+      "frame": 247,
+      "ptsTime": 8.233333,
+      "score": 0.050228
+    },
+    {
+      "frame": 248,
+      "ptsTime": 8.266667,
+      "score": 0.073907
+    },
+    {
+      "frame": 249,
+      "ptsTime": 8.3,
+      "score": 0.068793
+    },
+    {
+      "frame": 250,
+      "ptsTime": 8.333333,
+      "score": 0.012838
+    },
+    {
+      "frame": 251,
+      "ptsTime": 8.366667,
+      "score": 0.030433
+    },
+    {
+      "frame": 252,
+      "ptsTime": 8.4,
+      "score": 0.058527
+    },
+    {
+      "frame": 253,
+      "ptsTime": 8.433333,
+      "score": 0.09057
+    },
+    {
+      "frame": 254,
+      "ptsTime": 8.466667,
+      "score": 0.056555
+    },
+    {
+      "frame": 255,
+      "ptsTime": 8.5,
+      "score": 0.003426
+    },
+    {
+      "frame": 256,
+      "ptsTime": 8.533333,
+      "score": 0.019627
+    },
+    {
+      "frame": 257,
+      "ptsTime": 8.566667,
+      "score": 0.014997
+    },
+    {
+      "frame": 258,
+      "ptsTime": 8.6,
+      "score": 0.029873
+    },
+    {
+      "frame": 259,
+      "ptsTime": 8.633333,
+      "score": 0.033119
+    },
+    {
+      "frame": 260,
+      "ptsTime": 8.666667,
+      "score": 0.017394
+    },
+    {
+      "frame": 261,
+      "ptsTime": 8.7,
+      "score": 0.022993
+    },
+    {
+      "frame": 262,
+      "ptsTime": 8.733333,
+      "score": 0.036483
+    },
+    {
+      "frame": 263,
+      "ptsTime": 8.766667,
+      "score": 0.096604
+    },
+    {
+      "frame": 264,
+      "ptsTime": 8.8,
+      "score": 0.064618
+    },
+    {
+      "frame": 265,
+      "ptsTime": 8.833333,
+      "score": 0.02813
+    },
+    {
+      "frame": 266,
+      "ptsTime": 8.866667,
+      "score": 0.002692
+    },
+    {
+      "frame": 267,
+      "ptsTime": 8.9,
+      "score": 0.022414
+    },
+    {
+      "frame": 268,
+      "ptsTime": 8.933333,
+      "score": 0.020166
+    },
+    {
+      "frame": 269,
+      "ptsTime": 8.966667,
+      "score": 0.048625
+    },
+    {
+      "frame": 270,
+      "ptsTime": 9.0,
+      "score": 0.045099
+    },
+    {
+      "frame": 271,
+      "ptsTime": 9.033333,
+      "score": 0.037055
+    },
+    {
+      "frame": 272,
+      "ptsTime": 9.066667,
+      "score": 0.008994
+    },
+    {
+      "frame": 273,
+      "ptsTime": 9.1,
+      "score": 0.01744
+    },
+    {
+      "frame": 274,
+      "ptsTime": 9.133333,
+      "score": 0.084421
+    },
+    {
+      "frame": 275,
+      "ptsTime": 9.166667,
+      "score": 0.008273
+    },
+    {
+      "frame": 276,
+      "ptsTime": 9.2,
+      "score": 0.027708
+    },
+    {
+      "frame": 277,
+      "ptsTime": 9.233333,
+      "score": 0.491233
+    },
+    {
+      "frame": 278,
+      "ptsTime": 9.266667,
+      "score": 0.018719
+    },
+    {
+      "frame": 279,
+      "ptsTime": 9.3,
+      "score": 0.010625
+    },
+    {
+      "frame": 280,
+      "ptsTime": 9.333333,
+      "score": 0.056079
+    },
+    {
+      "frame": 281,
+      "ptsTime": 9.366667,
+      "score": 0.0635
+    },
+    {
+      "frame": 282,
+      "ptsTime": 9.4,
+      "score": 0.043809
+    },
+    {
+      "frame": 283,
+      "ptsTime": 9.433333,
+      "score": 0.028108
+    },
+    {
+      "frame": 284,
+      "ptsTime": 9.466667,
+      "score": 0.001971
+    },
+    {
+      "frame": 285,
+      "ptsTime": 9.5,
+      "score": 0.023619
+    },
+    {
+      "frame": 286,
+      "ptsTime": 9.533333,
+      "score": 0.039409
+    },
+    {
+      "frame": 287,
+      "ptsTime": 9.566667,
+      "score": 0.064587
+    },
+    {
+      "frame": 288,
+      "ptsTime": 9.6,
+      "score": 1.0
+    },
+    {
+      "frame": 289,
+      "ptsTime": 9.633333,
+      "score": 0.095267
+    },
+    {
+      "frame": 290,
+      "ptsTime": 9.666667,
+      "score": 0.011685
+    },
+    {
+      "frame": 291,
+      "ptsTime": 9.7,
+      "score": 0.006415
+    },
+    {
+      "frame": 292,
+      "ptsTime": 9.733333,
+      "score": 0.00904
+    },
+    {
+      "frame": 293,
+      "ptsTime": 9.766667,
+      "score": 0.00405
+    },
+    {
+      "frame": 294,
+      "ptsTime": 9.8,
+      "score": 0.001402
+    },
+    {
+      "frame": 295,
+      "ptsTime": 9.833333,
+      "score": 0.002115
+    },
+    {
+      "frame": 296,
+      "ptsTime": 9.866667,
+      "score": 0.000133
+    },
+    {
+      "frame": 297,
+      "ptsTime": 9.9,
+      "score": 0.000169
+    },
+    {
+      "frame": 298,
+      "ptsTime": 9.933333,
+      "score": 0.975403
+    },
+    {
+      "frame": 299,
+      "ptsTime": 9.966667,
+      "score": 0.053061
+    },
+    {
+      "frame": 300,
+      "ptsTime": 10.0,
+      "score": 0.084287
+    },
+    {
+      "frame": 301,
+      "ptsTime": 10.033333,
+      "score": 0.057141
+    },
+    {
+      "frame": 302,
+      "ptsTime": 10.066667,
+      "score": 0.013328
+    },
+    {
+      "frame": 303,
+      "ptsTime": 10.1,
+      "score": 0.000564
+    },
+    {
+      "frame": 304,
+      "ptsTime": 10.133333,
+      "score": 0.001307
+    },
+    {
+      "frame": 305,
+      "ptsTime": 10.166667,
+      "score": 0.000465
+    },
+    {
+      "frame": 306,
+      "ptsTime": 10.2,
+      "score": 0.002583
+    },
+    {
+      "frame": 307,
+      "ptsTime": 10.233333,
+      "score": 0.001483
+    },
+    {
+      "frame": 308,
+      "ptsTime": 10.266667,
+      "score": 0.600709
+    },
+    {
+      "frame": 309,
+      "ptsTime": 10.3,
+      "score": 0.086272
+    },
+    {
+      "frame": 310,
+      "ptsTime": 10.333333,
+      "score": 0.097765
+    },
+    {
+      "frame": 311,
+      "ptsTime": 10.366667,
+      "score": 0.027741
+    },
+    {
+      "frame": 312,
+      "ptsTime": 10.4,
+      "score": 0.036374
+    },
+    {
+      "frame": 313,
+      "ptsTime": 10.433333,
+      "score": 0.007142
+    },
+    {
+      "frame": 314,
+      "ptsTime": 10.466667,
+      "score": 0.025999
+    },
+    {
+      "frame": 315,
+      "ptsTime": 10.5,
+      "score": 0.018353
+    },
+    {
+      "frame": 316,
+      "ptsTime": 10.533333,
+      "score": 0.060453
+    },
+    {
+      "frame": 317,
+      "ptsTime": 10.566667,
+      "score": 0.064522
+    },
+    {
+      "frame": 318,
+      "ptsTime": 10.6,
+      "score": 0.541039
+    },
+    {
+      "frame": 319,
+      "ptsTime": 10.633333,
+      "score": 0.108796
+    },
+    {
+      "frame": 320,
+      "ptsTime": 10.666667,
+      "score": 0.111512
+    },
+    {
+      "frame": 321,
+      "ptsTime": 10.7,
+      "score": 0.064921
+    },
+    {
+      "frame": 322,
+      "ptsTime": 10.733333,
+      "score": 0.063805
+    },
+    {
+      "frame": 323,
+      "ptsTime": 10.766667,
+      "score": 0.074014
+    },
+    {
+      "frame": 324,
+      "ptsTime": 10.8,
+      "score": 0.022096
+    },
+    {
+      "frame": 325,
+      "ptsTime": 10.833333,
+      "score": 0.047892
+    },
+    {
+      "frame": 326,
+      "ptsTime": 10.866667,
+      "score": 0.064502
+    },
+    {
+      "frame": 327,
+      "ptsTime": 10.9,
+      "score": 0.091645
+    },
+    {
+      "frame": 328,
+      "ptsTime": 10.933333,
+      "score": 0.63052
+    },
+    {
+      "frame": 329,
+      "ptsTime": 10.966667,
+      "score": 0.005813
+    },
+    {
+      "frame": 330,
+      "ptsTime": 11.0,
+      "score": 0.000608
+    },
+    {
+      "frame": 331,
+      "ptsTime": 11.033333,
+      "score": 8.4e-05
+    },
+    {
+      "frame": 332,
+      "ptsTime": 11.066667,
+      "score": 0.00042
+    },
+    {
+      "frame": 333,
+      "ptsTime": 11.1,
+      "score": 0.000474
+    },
+    {
+      "frame": 334,
+      "ptsTime": 11.133333,
+      "score": 0.001733
+    },
+    {
+      "frame": 335,
+      "ptsTime": 11.166667,
+      "score": 0.013786
+    },
+    {
+      "frame": 336,
+      "ptsTime": 11.2,
+      "score": 0.154728
+    },
+    {
+      "frame": 337,
+      "ptsTime": 11.233333,
+      "score": 0.315852
+    },
+    {
+      "frame": 338,
+      "ptsTime": 11.266667,
+      "score": 0.061741
+    },
+    {
+      "frame": 339,
+      "ptsTime": 11.3,
+      "score": 0.708813
+    },
+    {
+      "frame": 340,
+      "ptsTime": 11.333333,
+      "score": 5e-06
+    },
+    {
+      "frame": 341,
+      "ptsTime": 11.366667,
+      "score": 0.0
+    },
+    {
+      "frame": 342,
+      "ptsTime": 11.4,
+      "score": 2e-06
+    },
+    {
+      "frame": 343,
+      "ptsTime": 11.433333,
+      "score": 1e-06
+    },
+    {
+      "frame": 344,
+      "ptsTime": 11.466667,
+      "score": 4e-06
+    },
+    {
+      "frame": 345,
+      "ptsTime": 11.5,
+      "score": 1e-06
+    },
+    {
+      "frame": 346,
+      "ptsTime": 11.533333,
+      "score": 0.0
+    },
+    {
+      "frame": 347,
+      "ptsTime": 11.566667,
+      "score": 0.0
+    },
+    {
+      "frame": 348,
+      "ptsTime": 11.6,
+      "score": 0.0
+    },
+    {
+      "frame": 349,
+      "ptsTime": 11.633333,
+      "score": 0.0
+    },
+    {
+      "frame": 350,
+      "ptsTime": 11.666667,
+      "score": 1e-06
+    },
+    {
+      "frame": 351,
+      "ptsTime": 11.7,
+      "score": 0.0
+    },
+    {
+      "frame": 352,
+      "ptsTime": 11.733333,
+      "score": 0.0
+    },
+    {
+      "frame": 353,
+      "ptsTime": 11.766667,
+      "score": 0.0
+    },
+    {
+      "frame": 354,
+      "ptsTime": 11.8,
+      "score": 0.0
+    },
+    {
+      "frame": 355,
+      "ptsTime": 11.833333,
+      "score": 0.0
+    },
+    {
+      "frame": 356,
+      "ptsTime": 11.866667,
+      "score": 0.0
+    },
+    {
+      "frame": 357,
+      "ptsTime": 11.9,
+      "score": 0.0
+    },
+    {
+      "frame": 358,
+      "ptsTime": 11.933333,
+      "score": 0.0
+    },
+    {
+      "frame": 359,
+      "ptsTime": 11.966667,
+      "score": 0.232475
+    },
+    {
+      "frame": 360,
+      "ptsTime": 12.0,
+      "score": 0.111791
+    },
+    {
+      "frame": 361,
+      "ptsTime": 12.033333,
+      "score": 0.059699
+    },
+    {
+      "frame": 362,
+      "ptsTime": 12.066667,
+      "score": 0.320041
+    },
+    {
+      "frame": 363,
+      "ptsTime": 12.1,
+      "score": 0.177659
+    },
+    {
+      "frame": 364,
+      "ptsTime": 12.133333,
+      "score": 0.009343
+    },
+    {
+      "frame": 365,
+      "ptsTime": 12.166667,
+      "score": 0.000381
+    },
+    {
+      "frame": 366,
+      "ptsTime": 12.2,
+      "score": 0.002652
+    },
+    {
+      "frame": 367,
+      "ptsTime": 12.233333,
+      "score": 0.033347
+    },
+    {
+      "frame": 368,
+      "ptsTime": 12.266667,
+      "score": 0.019061
+    },
+    {
+      "frame": 369,
+      "ptsTime": 12.3,
+      "score": 0.012621
+    },
+    {
+      "frame": 370,
+      "ptsTime": 12.333333,
+      "score": 0.021522
+    },
+    {
+      "frame": 371,
+      "ptsTime": 12.366667,
+      "score": 0.018458
+    },
+    {
+      "frame": 372,
+      "ptsTime": 12.4,
+      "score": 0.004162
+    },
+    {
+      "frame": 373,
+      "ptsTime": 12.433333,
+      "score": 0.028528
+    },
+    {
+      "frame": 374,
+      "ptsTime": 12.466667,
+      "score": 0.000988
+    },
+    {
+      "frame": 375,
+      "ptsTime": 12.5,
+      "score": 0.000154
+    },
+    {
+      "frame": 376,
+      "ptsTime": 12.533333,
+      "score": 0.018815
+    },
+    {
+      "frame": 377,
+      "ptsTime": 12.566667,
+      "score": 0.005543
+    },
+    {
+      "frame": 378,
+      "ptsTime": 12.6,
+      "score": 0.003466
+    },
+    {
+      "frame": 379,
+      "ptsTime": 12.633333,
+      "score": 0.012194
+    },
+    {
+      "frame": 380,
+      "ptsTime": 12.666667,
+      "score": 0.38183
+    },
+    {
+      "frame": 381,
+      "ptsTime": 12.7,
+      "score": 0.187959
+    },
+    {
+      "frame": 382,
+      "ptsTime": 12.733333,
+      "score": 0.019712
+    },
+    {
+      "frame": 383,
+      "ptsTime": 12.766667,
+      "score": 0.005169
+    },
+    {
+      "frame": 384,
+      "ptsTime": 12.8,
+      "score": 0.029867
+    },
+    {
+      "frame": 385,
+      "ptsTime": 12.833333,
+      "score": 0.02925
+    },
+    {
+      "frame": 386,
+      "ptsTime": 12.866667,
+      "score": 0.033081
+    },
+    {
+      "frame": 387,
+      "ptsTime": 12.9,
+      "score": 0.020698
+    },
+    {
+      "frame": 388,
+      "ptsTime": 12.933333,
+      "score": 0.011322
+    },
+    {
+      "frame": 389,
+      "ptsTime": 12.966667,
+      "score": 0.009111
+    },
+    {
+      "frame": 390,
+      "ptsTime": 13.0,
+      "score": 0.006405
+    },
+    {
+      "frame": 391,
+      "ptsTime": 13.033333,
+      "score": 0.004829
+    },
+    {
+      "frame": 392,
+      "ptsTime": 13.066667,
+      "score": 0.003007
+    },
+    {
+      "frame": 393,
+      "ptsTime": 13.1,
+      "score": 0.000271
+    },
+    {
+      "frame": 394,
+      "ptsTime": 13.133333,
+      "score": 0.00123
+    },
+    {
+      "frame": 395,
+      "ptsTime": 13.166667,
+      "score": 0.001852
+    },
+    {
+      "frame": 396,
+      "ptsTime": 13.2,
+      "score": 0.030471
+    },
+    {
+      "frame": 397,
+      "ptsTime": 13.233333,
+      "score": 0.019364
+    },
+    {
+      "frame": 398,
+      "ptsTime": 13.266667,
+      "score": 0.006005
+    },
+    {
+      "frame": 399,
+      "ptsTime": 13.3,
+      "score": 0.000997
+    },
+    {
+      "frame": 400,
+      "ptsTime": 13.333333,
+      "score": 0.443136
+    },
+    {
+      "frame": 401,
+      "ptsTime": 13.366667,
+      "score": 0.01804
+    },
+    {
+      "frame": 402,
+      "ptsTime": 13.4,
+      "score": 0.013446
+    },
+    {
+      "frame": 403,
+      "ptsTime": 13.433333,
+      "score": 0.016593
+    },
+    {
+      "frame": 404,
+      "ptsTime": 13.466667,
+      "score": 0.022022
+    },
+    {
+      "frame": 405,
+      "ptsTime": 13.5,
+      "score": 0.012843
+    },
+    {
+      "frame": 406,
+      "ptsTime": 13.533333,
+      "score": 0.001323
+    },
+    {
+      "frame": 407,
+      "ptsTime": 13.566667,
+      "score": 0.001769
+    },
+    {
+      "frame": 408,
+      "ptsTime": 13.6,
+      "score": 0.00208
+    },
+    {
+      "frame": 409,
+      "ptsTime": 13.633333,
+      "score": 0.002938
+    },
+    {
+      "frame": 410,
+      "ptsTime": 13.666667,
+      "score": 0.005432
+    },
+    {
+      "frame": 411,
+      "ptsTime": 13.7,
+      "score": 0.001841
+    },
+    {
+      "frame": 412,
+      "ptsTime": 13.733333,
+      "score": 0.002411
+    },
+    {
+      "frame": 413,
+      "ptsTime": 13.766667,
+      "score": 0.000747
+    },
+    {
+      "frame": 414,
+      "ptsTime": 13.8,
+      "score": 0.001795
+    },
+    {
+      "frame": 415,
+      "ptsTime": 13.833333,
+      "score": 0.003003
+    },
+    {
+      "frame": 416,
+      "ptsTime": 13.866667,
+      "score": 0.0004
+    },
+    {
+      "frame": 417,
+      "ptsTime": 13.9,
+      "score": 0.003243
+    },
+    {
+      "frame": 418,
+      "ptsTime": 13.933333,
+      "score": 0.001837
+    },
+    {
+      "frame": 419,
+      "ptsTime": 13.966667,
+      "score": 0.000925
+    },
+    {
+      "frame": 420,
+      "ptsTime": 14.0,
+      "score": 0.012954
+    },
+    {
+      "frame": 421,
+      "ptsTime": 14.033333,
+      "score": 0.012063
+    },
+    {
+      "frame": 422,
+      "ptsTime": 14.066667,
+      "score": 0.000851
+    },
+    {
+      "frame": 423,
+      "ptsTime": 14.1,
+      "score": 0.002563
+    },
+    {
+      "frame": 424,
+      "ptsTime": 14.133333,
+      "score": 0.001639
+    },
+    {
+      "frame": 425,
+      "ptsTime": 14.166667,
+      "score": 0.001829
+    },
+    {
+      "frame": 426,
+      "ptsTime": 14.2,
+      "score": 0.00221
+    },
+    {
+      "frame": 427,
+      "ptsTime": 14.233333,
+      "score": 0.002821
+    },
+    {
+      "frame": 428,
+      "ptsTime": 14.266667,
+      "score": 0.000397
+    },
+    {
+      "frame": 429,
+      "ptsTime": 14.3,
+      "score": 0.002381
+    },
+    {
+      "frame": 430,
+      "ptsTime": 14.333333,
+      "score": 0.002236
+    },
+    {
+      "frame": 431,
+      "ptsTime": 14.366667,
+      "score": 0.002326
+    },
+    {
+      "frame": 432,
+      "ptsTime": 14.4,
+      "score": 0.002565
+    },
+    {
+      "frame": 433,
+      "ptsTime": 14.433333,
+      "score": 0.003
+    },
+    {
+      "frame": 434,
+      "ptsTime": 14.466667,
+      "score": 0.000136
+    },
+    {
+      "frame": 435,
+      "ptsTime": 14.5,
+      "score": 0.002704
+    },
+    {
+      "frame": 436,
+      "ptsTime": 14.533333,
+      "score": 0.002154
+    },
+    {
+      "frame": 437,
+      "ptsTime": 14.566667,
+      "score": 0.000966
+    },
+    {
+      "frame": 438,
+      "ptsTime": 14.6,
+      "score": 0.000675
+    },
+    {
+      "frame": 439,
+      "ptsTime": 14.633333,
+      "score": 0.000118
+    },
+    {
+      "frame": 440,
+      "ptsTime": 14.666667,
+      "score": 0.001875
+    },
+    {
+      "frame": 441,
+      "ptsTime": 14.7,
+      "score": 0.499047
+    },
+    {
+      "frame": 442,
+      "ptsTime": 14.733333,
+      "score": 0.027391
+    },
+    {
+      "frame": 443,
+      "ptsTime": 14.766667,
+      "score": 0.017587
+    },
+    {
+      "frame": 444,
+      "ptsTime": 14.8,
+      "score": 0.017094
+    },
+    {
+      "frame": 445,
+      "ptsTime": 14.833333,
+      "score": 0.014145
+    },
+    {
+      "frame": 446,
+      "ptsTime": 14.866667,
+      "score": 0.012606
+    },
+    {
+      "frame": 447,
+      "ptsTime": 14.9,
+      "score": 0.009593
+    },
+    {
+      "frame": 448,
+      "ptsTime": 14.933333,
+      "score": 0.008365
+    },
+    {
+      "frame": 449,
+      "ptsTime": 14.966667,
+      "score": 0.005687
+    },
+    {
+      "frame": 450,
+      "ptsTime": 15.0,
+      "score": 0.007264
+    },
+    {
+      "frame": 451,
+      "ptsTime": 15.033333,
+      "score": 0.010444
+    },
+    {
+      "frame": 452,
+      "ptsTime": 15.066667,
+      "score": 0.001275
+    },
+    {
+      "frame": 453,
+      "ptsTime": 15.1,
+      "score": 0.005001
+    },
+    {
+      "frame": 454,
+      "ptsTime": 15.133333,
+      "score": 0.000952
+    },
+    {
+      "frame": 455,
+      "ptsTime": 15.166667,
+      "score": 0.001259
+    },
+    {
+      "frame": 456,
+      "ptsTime": 15.2,
+      "score": 0.002232
+    },
+    {
+      "frame": 457,
+      "ptsTime": 15.233333,
+      "score": 0.004383
+    },
+    {
+      "frame": 458,
+      "ptsTime": 15.266667,
+      "score": 0.00491
+    },
+    {
+      "frame": 459,
+      "ptsTime": 15.3,
+      "score": 0.006512
+    },
+    {
+      "frame": 460,
+      "ptsTime": 15.333333,
+      "score": 0.003853
+    },
+    {
+      "frame": 461,
+      "ptsTime": 15.366667,
+      "score": 0.038465
+    },
+    {
+      "frame": 462,
+      "ptsTime": 15.4,
+      "score": 0.008934
+    },
+    {
+      "frame": 463,
+      "ptsTime": 15.433333,
+      "score": 0.014607
+    },
+    {
+      "frame": 464,
+      "ptsTime": 15.466667,
+      "score": 0.005761
+    },
+    {
+      "frame": 465,
+      "ptsTime": 15.5,
+      "score": 0.001328
+    },
+    {
+      "frame": 466,
+      "ptsTime": 15.533333,
+      "score": 5.8e-05
+    },
+    {
+      "frame": 467,
+      "ptsTime": 15.566667,
+      "score": 0.000946
+    },
+    {
+      "frame": 468,
+      "ptsTime": 15.6,
+      "score": 0.00042
+    },
+    {
+      "frame": 469,
+      "ptsTime": 15.633333,
+      "score": 0.000542
+    },
+    {
+      "frame": 470,
+      "ptsTime": 15.666667,
+      "score": 0.002392
+    },
+    {
+      "frame": 471,
+      "ptsTime": 15.7,
+      "score": 0.004886
+    },
+    {
+      "frame": 472,
+      "ptsTime": 15.733333,
+      "score": 0.018628
+    },
+    {
+      "frame": 473,
+      "ptsTime": 15.766667,
+      "score": 0.014846
+    },
+    {
+      "frame": 474,
+      "ptsTime": 15.8,
+      "score": 0.001843
+    },
+    {
+      "frame": 475,
+      "ptsTime": 15.833333,
+      "score": 0.015474
+    },
+    {
+      "frame": 476,
+      "ptsTime": 15.866667,
+      "score": 0.018378
+    },
+    {
+      "frame": 477,
+      "ptsTime": 15.9,
+      "score": 0.009124
+    },
+    {
+      "frame": 478,
+      "ptsTime": 15.933333,
+      "score": 0.045019
+    },
+    {
+      "frame": 479,
+      "ptsTime": 15.966667,
+      "score": 0.019849
+    },
+    {
+      "frame": 480,
+      "ptsTime": 16.0,
+      "score": 0.027436
+    },
+    {
+      "frame": 481,
+      "ptsTime": 16.033333,
+      "score": 0.028998
+    },
+    {
+      "frame": 482,
+      "ptsTime": 16.066667,
+      "score": 0.462192
+    },
+    {
+      "frame": 483,
+      "ptsTime": 16.1,
+      "score": 0.220605
+    },
+    {
+      "frame": 484,
+      "ptsTime": 16.133333,
+      "score": 0.015758
+    },
+    {
+      "frame": 485,
+      "ptsTime": 16.166667,
+      "score": 0.00024
+    },
+    {
+      "frame": 486,
+      "ptsTime": 16.2,
+      "score": 0.000528
+    },
+    {
+      "frame": 487,
+      "ptsTime": 16.233333,
+      "score": 0.001987
+    },
+    {
+      "frame": 488,
+      "ptsTime": 16.266667,
+      "score": 0.002968
+    },
+    {
+      "frame": 489,
+      "ptsTime": 16.3,
+      "score": 6.4e-05
+    },
+    {
+      "frame": 490,
+      "ptsTime": 16.333333,
+      "score": 0.000776
+    },
+    {
+      "frame": 491,
+      "ptsTime": 16.366667,
+      "score": 0.001779
+    },
+    {
+      "frame": 492,
+      "ptsTime": 16.4,
+      "score": 0.000232
+    },
+    {
+      "frame": 493,
+      "ptsTime": 16.433333,
+      "score": 0.002252
+    },
+    {
+      "frame": 494,
+      "ptsTime": 16.466667,
+      "score": 0.001438
+    },
+    {
+      "frame": 495,
+      "ptsTime": 16.5,
+      "score": 0.001218
+    },
+    {
+      "frame": 496,
+      "ptsTime": 16.533333,
+      "score": 0.002131
+    },
+    {
+      "frame": 497,
+      "ptsTime": 16.566667,
+      "score": 0.002893
+    },
+    {
+      "frame": 498,
+      "ptsTime": 16.6,
+      "score": 0.005741
+    },
+    {
+      "frame": 499,
+      "ptsTime": 16.633333,
+      "score": 0.002884
+    },
+    {
+      "frame": 500,
+      "ptsTime": 16.666667,
+      "score": 0.001945
+    },
+    {
+      "frame": 501,
+      "ptsTime": 16.7,
+      "score": 0.00084
+    },
+    {
+      "frame": 502,
+      "ptsTime": 16.733333,
+      "score": 0.008389
+    },
+    {
+      "frame": 503,
+      "ptsTime": 16.766667,
+      "score": 0.001558
+    },
+    {
+      "frame": 504,
+      "ptsTime": 16.8,
+      "score": 0.008678
+    },
+    {
+      "frame": 505,
+      "ptsTime": 16.833333,
+      "score": 0.240992
+    },
+    {
+      "frame": 506,
+      "ptsTime": 16.866667,
+      "score": 0.054702
+    },
+    {
+      "frame": 507,
+      "ptsTime": 16.9,
+      "score": 0.003178
+    },
+    {
+      "frame": 508,
+      "ptsTime": 16.933333,
+      "score": 0.003317
+    },
+    {
+      "frame": 509,
+      "ptsTime": 16.966667,
+      "score": 0.006904
+    },
+    {
+      "frame": 510,
+      "ptsTime": 17.0,
+      "score": 0.00374
+    },
+    {
+      "frame": 511,
+      "ptsTime": 17.033333,
+      "score": 0.001598
+    },
+    {
+      "frame": 512,
+      "ptsTime": 17.066667,
+      "score": 0.006674
+    },
+    {
+      "frame": 513,
+      "ptsTime": 17.1,
+      "score": 0.013927
+    },
+    {
+      "frame": 514,
+      "ptsTime": 17.133333,
+      "score": 0.001505
+    },
+    {
+      "frame": 515,
+      "ptsTime": 17.166667,
+      "score": 0.005481
+    },
+    {
+      "frame": 516,
+      "ptsTime": 17.2,
+      "score": 0.005959
+    },
+    {
+      "frame": 517,
+      "ptsTime": 17.233333,
+      "score": 0.00802
+    },
+    {
+      "frame": 518,
+      "ptsTime": 17.266667,
+      "score": 0.011495
+    },
+    {
+      "frame": 519,
+      "ptsTime": 17.3,
+      "score": 0.013551
+    },
+    {
+      "frame": 520,
+      "ptsTime": 17.333333,
+      "score": 0.016053
+    },
+    {
+      "frame": 521,
+      "ptsTime": 17.366667,
+      "score": 0.023702
+    },
+    {
+      "frame": 522,
+      "ptsTime": 17.4,
+      "score": 0.035354
+    },
+    {
+      "frame": 523,
+      "ptsTime": 17.433333,
+      "score": 0.364828
+    },
+    {
+      "frame": 524,
+      "ptsTime": 17.466667,
+      "score": 0.011597
+    },
+    {
+      "frame": 525,
+      "ptsTime": 17.5,
+      "score": 0.0017
+    },
+    {
+      "frame": 526,
+      "ptsTime": 17.533333,
+      "score": 0.002271
+    },
+    {
+      "frame": 527,
+      "ptsTime": 17.566667,
+      "score": 0.000925
+    },
+    {
+      "frame": 528,
+      "ptsTime": 17.6,
+      "score": 0.012397
+    },
+    {
+      "frame": 529,
+      "ptsTime": 17.633333,
+      "score": 0.007029
+    },
+    {
+      "frame": 530,
+      "ptsTime": 17.666667,
+      "score": 0.003484
+    },
+    {
+      "frame": 531,
+      "ptsTime": 17.7,
+      "score": 0.000541
+    },
+    {
+      "frame": 532,
+      "ptsTime": 17.733333,
+      "score": 0.000823
+    },
+    {
+      "frame": 533,
+      "ptsTime": 17.766667,
+      "score": 0.000427
+    },
+    {
+      "frame": 534,
+      "ptsTime": 17.8,
+      "score": 0.000588
+    },
+    {
+      "frame": 535,
+      "ptsTime": 17.833333,
+      "score": 0.0044
+    },
+    {
+      "frame": 536,
+      "ptsTime": 17.866667,
+      "score": 0.003002
+    },
+    {
+      "frame": 537,
+      "ptsTime": 17.9,
+      "score": 0.003029
+    },
+    {
+      "frame": 538,
+      "ptsTime": 17.933333,
+      "score": 0.009387
+    },
+    {
+      "frame": 539,
+      "ptsTime": 17.966667,
+      "score": 0.012712
+    },
+    {
+      "frame": 540,
+      "ptsTime": 18.0,
+      "score": 0.00021
+    },
+    {
+      "frame": 541,
+      "ptsTime": 18.033333,
+      "score": 0.002331
+    },
+    {
+      "frame": 542,
+      "ptsTime": 18.066667,
+      "score": 0.001841
+    },
+    {
+      "frame": 543,
+      "ptsTime": 18.1,
+      "score": 0.267844
+    },
+    {
+      "frame": 544,
+      "ptsTime": 18.133333,
+      "score": 0.018435
+    },
+    {
+      "frame": 545,
+      "ptsTime": 18.166667,
+      "score": 0.004416
+    },
+    {
+      "frame": 546,
+      "ptsTime": 18.2,
+      "score": 0.048046
+    },
+    {
+      "frame": 547,
+      "ptsTime": 18.233333,
+      "score": 0.029191
+    },
+    {
+      "frame": 548,
+      "ptsTime": 18.266667,
+      "score": 0.00659
+    },
+    {
+      "frame": 549,
+      "ptsTime": 18.3,
+      "score": 0.006467
+    },
+    {
+      "frame": 550,
+      "ptsTime": 18.333333,
+      "score": 0.005856
+    },
+    {
+      "frame": 551,
+      "ptsTime": 18.366667,
+      "score": 0.004357
+    },
+    {
+      "frame": 552,
+      "ptsTime": 18.4,
+      "score": 0.018967
+    },
+    {
+      "frame": 553,
+      "ptsTime": 18.433333,
+      "score": 0.014911
+    },
+    {
+      "frame": 554,
+      "ptsTime": 18.466667,
+      "score": 0.004403
+    },
+    {
+      "frame": 555,
+      "ptsTime": 18.5,
+      "score": 0.000496
+    },
+    {
+      "frame": 556,
+      "ptsTime": 18.533333,
+      "score": 0.001057
+    },
+    {
+      "frame": 557,
+      "ptsTime": 18.566667,
+      "score": 0.000756
+    },
+    {
+      "frame": 558,
+      "ptsTime": 18.6,
+      "score": 0.001871
+    },
+    {
+      "frame": 559,
+      "ptsTime": 18.633333,
+      "score": 0.017419
+    },
+    {
+      "frame": 560,
+      "ptsTime": 18.666667,
+      "score": 0.01134
+    },
+    {
+      "frame": 561,
+      "ptsTime": 18.7,
+      "score": 0.001936
+    },
+    {
+      "frame": 562,
+      "ptsTime": 18.733333,
+      "score": 0.001265
+    },
+    {
+      "frame": 563,
+      "ptsTime": 18.766667,
+      "score": 0.000733
+    },
+    {
+      "frame": 564,
+      "ptsTime": 18.8,
+      "score": 0.002059
+    },
+    {
+      "frame": 565,
+      "ptsTime": 18.833333,
+      "score": 0.000145
+    },
+    {
+      "frame": 566,
+      "ptsTime": 18.866667,
+      "score": 0.001809
+    },
+    {
+      "frame": 567,
+      "ptsTime": 18.9,
+      "score": 0.000875
+    },
+    {
+      "frame": 568,
+      "ptsTime": 18.933333,
+      "score": 0.009132
+    },
+    {
+      "frame": 569,
+      "ptsTime": 18.966667,
+      "score": 0.003047
+    },
+    {
+      "frame": 570,
+      "ptsTime": 19.0,
+      "score": 0.008594
+    },
+    {
+      "frame": 571,
+      "ptsTime": 19.033333,
+      "score": 0.003068
+    },
+    {
+      "frame": 572,
+      "ptsTime": 19.066667,
+      "score": 0.001048
+    },
+    {
+      "frame": 573,
+      "ptsTime": 19.1,
+      "score": 0.00184
+    },
+    {
+      "frame": 574,
+      "ptsTime": 19.133333,
+      "score": 0.001537
+    },
+    {
+      "frame": 575,
+      "ptsTime": 19.166667,
+      "score": 0.000596
+    },
+    {
+      "frame": 576,
+      "ptsTime": 19.2,
+      "score": 0.005229
+    },
+    {
+      "frame": 577,
+      "ptsTime": 19.233333,
+      "score": 0.002172
+    },
+    {
+      "frame": 578,
+      "ptsTime": 19.266667,
+      "score": 0.006699
+    },
+    {
+      "frame": 579,
+      "ptsTime": 19.3,
+      "score": 0.001357
+    },
+    {
+      "frame": 580,
+      "ptsTime": 19.333333,
+      "score": 0.000707
+    },
+    {
+      "frame": 581,
+      "ptsTime": 19.366667,
+      "score": 0.000396
+    },
+    {
+      "frame": 582,
+      "ptsTime": 19.4,
+      "score": 0.000222
+    },
+    {
+      "frame": 583,
+      "ptsTime": 19.433333,
+      "score": 0.000657
+    },
+    {
+      "frame": 584,
+      "ptsTime": 19.466667,
+      "score": 0.361632
+    },
+    {
+      "frame": 585,
+      "ptsTime": 19.5,
+      "score": 0.021394
+    },
+    {
+      "frame": 586,
+      "ptsTime": 19.533333,
+      "score": 0.002993
+    },
+    {
+      "frame": 587,
+      "ptsTime": 19.566667,
+      "score": 0.008293
+    },
+    {
+      "frame": 588,
+      "ptsTime": 19.6,
+      "score": 0.007692
+    },
+    {
+      "frame": 589,
+      "ptsTime": 19.633333,
+      "score": 0.006739
+    },
+    {
+      "frame": 590,
+      "ptsTime": 19.666667,
+      "score": 0.004164
+    },
+    {
+      "frame": 591,
+      "ptsTime": 19.7,
+      "score": 0.003366
+    },
+    {
+      "frame": 592,
+      "ptsTime": 19.733333,
+      "score": 0.001697
+    },
+    {
+      "frame": 593,
+      "ptsTime": 19.766667,
+      "score": 0.005198
+    },
+    {
+      "frame": 594,
+      "ptsTime": 19.8,
+      "score": 0.004064
+    },
+    {
+      "frame": 595,
+      "ptsTime": 19.833333,
+      "score": 0.006206
+    },
+    {
+      "frame": 596,
+      "ptsTime": 19.866667,
+      "score": 0.004984
+    },
+    {
+      "frame": 597,
+      "ptsTime": 19.9,
+      "score": 0.004731
+    },
+    {
+      "frame": 598,
+      "ptsTime": 19.933333,
+      "score": 0.000592
+    },
+    {
+      "frame": 599,
+      "ptsTime": 19.966667,
+      "score": 0.009219
+    },
+    {
+      "frame": 600,
+      "ptsTime": 20.0,
+      "score": 0.009938
+    },
+    {
+      "frame": 601,
+      "ptsTime": 20.033333,
+      "score": 0.003377
+    },
+    {
+      "frame": 602,
+      "ptsTime": 20.066667,
+      "score": 0.002745
+    },
+    {
+      "frame": 603,
+      "ptsTime": 20.1,
+      "score": 0.006064
+    },
+    {
+      "frame": 604,
+      "ptsTime": 20.133333,
+      "score": 0.013458
+    },
+    {
+      "frame": 605,
+      "ptsTime": 20.166667,
+      "score": 0.577614
+    },
+    {
+      "frame": 606,
+      "ptsTime": 20.2,
+      "score": 0.015646
+    },
+    {
+      "frame": 607,
+      "ptsTime": 20.233333,
+      "score": 0.000572
+    },
+    {
+      "frame": 608,
+      "ptsTime": 20.266667,
+      "score": 0.001173
+    },
+    {
+      "frame": 609,
+      "ptsTime": 20.3,
+      "score": 0.000459
+    },
+    {
+      "frame": 610,
+      "ptsTime": 20.333333,
+      "score": 0.011886
+    },
+    {
+      "frame": 611,
+      "ptsTime": 20.366667,
+      "score": 0.008185
+    },
+    {
+      "frame": 612,
+      "ptsTime": 20.4,
+      "score": 0.000783
+    },
+    {
+      "frame": 613,
+      "ptsTime": 20.433333,
+      "score": 0.000535
+    },
+    {
+      "frame": 614,
+      "ptsTime": 20.466667,
+      "score": 0.004213
+    },
+    {
+      "frame": 615,
+      "ptsTime": 20.5,
+      "score": 0.003333
+    },
+    {
+      "frame": 616,
+      "ptsTime": 20.533333,
+      "score": 0.003028
+    },
+    {
+      "frame": 617,
+      "ptsTime": 20.566667,
+      "score": 0.006507
+    },
+    {
+      "frame": 618,
+      "ptsTime": 20.6,
+      "score": 0.004532
+    },
+    {
+      "frame": 619,
+      "ptsTime": 20.633333,
+      "score": 0.003336
+    },
+    {
+      "frame": 620,
+      "ptsTime": 20.666667,
+      "score": 0.009426
+    },
+    {
+      "frame": 621,
+      "ptsTime": 20.7,
+      "score": 0.00041
+    },
+    {
+      "frame": 622,
+      "ptsTime": 20.733333,
+      "score": 0.003114
+    },
+    {
+      "frame": 623,
+      "ptsTime": 20.766667,
+      "score": 0.004829
+    },
+    {
+      "frame": 624,
+      "ptsTime": 20.8,
+      "score": 0.002912
+    },
+    {
+      "frame": 625,
+      "ptsTime": 20.833333,
+      "score": 0.005679
+    },
+    {
+      "frame": 626,
+      "ptsTime": 20.866667,
+      "score": 0.002947
+    },
+    {
+      "frame": 627,
+      "ptsTime": 20.9,
+      "score": 3.6e-05
+    },
+    {
+      "frame": 628,
+      "ptsTime": 20.933333,
+      "score": 0.000916
+    },
+    {
+      "frame": 629,
+      "ptsTime": 20.966667,
+      "score": 0.000115
+    },
+    {
+      "frame": 630,
+      "ptsTime": 21.0,
+      "score": 0.001829
+    },
+    {
+      "frame": 631,
+      "ptsTime": 21.033333,
+      "score": 0.003677
+    },
+    {
+      "frame": 632,
+      "ptsTime": 21.066667,
+      "score": 0.029993
+    },
+    {
+      "frame": 633,
+      "ptsTime": 21.1,
+      "score": 0.012448
+    },
+    {
+      "frame": 634,
+      "ptsTime": 21.133333,
+      "score": 0.004637
+    },
+    {
+      "frame": 635,
+      "ptsTime": 21.166667,
+      "score": 0.000157
+    },
+    {
+      "frame": 636,
+      "ptsTime": 21.2,
+      "score": 0.00025
+    },
+    {
+      "frame": 637,
+      "ptsTime": 21.233333,
+      "score": 0.000279
+    },
+    {
+      "frame": 638,
+      "ptsTime": 21.266667,
+      "score": 0.001352
+    },
+    {
+      "frame": 639,
+      "ptsTime": 21.3,
+      "score": 1.2e-05
+    },
+    {
+      "frame": 640,
+      "ptsTime": 21.333333,
+      "score": 0.001084
+    },
+    {
+      "frame": 641,
+      "ptsTime": 21.366667,
+      "score": 0.000119
+    },
+    {
+      "frame": 642,
+      "ptsTime": 21.4,
+      "score": 4.7e-05
+    },
+    {
+      "frame": 643,
+      "ptsTime": 21.433333,
+      "score": 0.000984
+    },
+    {
+      "frame": 644,
+      "ptsTime": 21.466667,
+      "score": 0.000337
+    },
+    {
+      "frame": 645,
+      "ptsTime": 21.5,
+      "score": 0.505434
+    },
+    {
+      "frame": 646,
+      "ptsTime": 21.533333,
+      "score": 0.022967
+    },
+    {
+      "frame": 647,
+      "ptsTime": 21.566667,
+      "score": 0.026243
+    },
+    {
+      "frame": 648,
+      "ptsTime": 21.6,
+      "score": 0.020098
+    },
+    {
+      "frame": 649,
+      "ptsTime": 21.633333,
+      "score": 0.009645
+    },
+    {
+      "frame": 650,
+      "ptsTime": 21.666667,
+      "score": 0.008827
+    },
+    {
+      "frame": 651,
+      "ptsTime": 21.7,
+      "score": 0.009378
+    },
+    {
+      "frame": 652,
+      "ptsTime": 21.733333,
+      "score": 0.007913
+    },
+    {
+      "frame": 653,
+      "ptsTime": 21.766667,
+      "score": 0.004368
+    },
+    {
+      "frame": 654,
+      "ptsTime": 21.8,
+      "score": 0.003746
+    },
+    {
+      "frame": 655,
+      "ptsTime": 21.833333,
+      "score": 0.005061
+    },
+    {
+      "frame": 656,
+      "ptsTime": 21.866667,
+      "score": 0.013038
+    },
+    {
+      "frame": 657,
+      "ptsTime": 21.9,
+      "score": 0.003025
+    },
+    {
+      "frame": 658,
+      "ptsTime": 21.933333,
+      "score": 0.035252
+    },
+    {
+      "frame": 659,
+      "ptsTime": 21.966667,
+      "score": 0.026255
+    },
+    {
+      "frame": 660,
+      "ptsTime": 22.0,
+      "score": 3.2e-05
+    },
+    {
+      "frame": 661,
+      "ptsTime": 22.033333,
+      "score": 0.000193
+    },
+    {
+      "frame": 662,
+      "ptsTime": 22.066667,
+      "score": 0.001768
+    },
+    {
+      "frame": 663,
+      "ptsTime": 22.1,
+      "score": 0.000305
+    },
+    {
+      "frame": 664,
+      "ptsTime": 22.133333,
+      "score": 0.001547
+    },
+    {
+      "frame": 665,
+      "ptsTime": 22.166667,
+      "score": 0.005544
+    },
+    {
+      "frame": 666,
+      "ptsTime": 22.2,
+      "score": 0.005457
+    },
+    {
+      "frame": 667,
+      "ptsTime": 22.233333,
+      "score": 0.00835
+    },
+    {
+      "frame": 668,
+      "ptsTime": 22.266667,
+      "score": 0.000782
+    },
+    {
+      "frame": 669,
+      "ptsTime": 22.3,
+      "score": 0.001375
+    },
+    {
+      "frame": 670,
+      "ptsTime": 22.333333,
+      "score": 0.005955
+    },
+    {
+      "frame": 671,
+      "ptsTime": 22.366667,
+      "score": 0.109838
+    },
+    {
+      "frame": 672,
+      "ptsTime": 22.4,
+      "score": 0.03278
+    },
+    {
+      "frame": 673,
+      "ptsTime": 22.433333,
+      "score": 0.026515
+    },
+    {
+      "frame": 674,
+      "ptsTime": 22.466667,
+      "score": 0.017382
+    },
+    {
+      "frame": 675,
+      "ptsTime": 22.5,
+      "score": 0.002189
+    },
+    {
+      "frame": 676,
+      "ptsTime": 22.533333,
+      "score": 0.015961
+    },
+    {
+      "frame": 677,
+      "ptsTime": 22.566667,
+      "score": 0.021833
+    },
+    {
+      "frame": 678,
+      "ptsTime": 22.6,
+      "score": 0.015905
+    },
+    {
+      "frame": 679,
+      "ptsTime": 22.633333,
+      "score": 0.061248
+    },
+    {
+      "frame": 680,
+      "ptsTime": 22.666667,
+      "score": 0.00956
+    },
+    {
+      "frame": 681,
+      "ptsTime": 22.7,
+      "score": 0.015916
+    },
+    {
+      "frame": 682,
+      "ptsTime": 22.733333,
+      "score": 0.006507
+    },
+    {
+      "frame": 683,
+      "ptsTime": 22.766667,
+      "score": 0.007165
+    },
+    {
+      "frame": 684,
+      "ptsTime": 22.8,
+      "score": 0.805049
+    },
+    {
+      "frame": 685,
+      "ptsTime": 22.833333,
+      "score": 0.0
+    },
+    {
+      "frame": 686,
+      "ptsTime": 22.866667,
+      "score": 0.0
+    },
+    {
+      "frame": 687,
+      "ptsTime": 22.9,
+      "score": 0.599794
+    },
+    {
+      "frame": 688,
+      "ptsTime": 22.933333,
+      "score": 0.014504
+    },
+    {
+      "frame": 689,
+      "ptsTime": 22.966667,
+      "score": 0.274958
+    },
+    {
+      "frame": 690,
+      "ptsTime": 23.0,
+      "score": 0.046415
+    },
+    {
+      "frame": 691,
+      "ptsTime": 23.033333,
+      "score": 0.017982
+    },
+    {
+      "frame": 692,
+      "ptsTime": 23.066667,
+      "score": 0.029788
+    },
+    {
+      "frame": 693,
+      "ptsTime": 23.1,
+      "score": 0.016206
+    },
+    {
+      "frame": 694,
+      "ptsTime": 23.133333,
+      "score": 0.018662
+    },
+    {
+      "frame": 695,
+      "ptsTime": 23.166667,
+      "score": 0.014182
+    },
+    {
+      "frame": 696,
+      "ptsTime": 23.2,
+      "score": 0.011641
+    },
+    {
+      "frame": 697,
+      "ptsTime": 23.233333,
+      "score": 0.003933
+    },
+    {
+      "frame": 698,
+      "ptsTime": 23.266667,
+      "score": 0.063431
+    },
+    {
+      "frame": 699,
+      "ptsTime": 23.3,
+      "score": 0.011539
+    },
+    {
+      "frame": 700,
+      "ptsTime": 23.333333,
+      "score": 0.019273
+    },
+    {
+      "frame": 701,
+      "ptsTime": 23.366667,
+      "score": 0.00972
+    },
+    {
+      "frame": 702,
+      "ptsTime": 23.4,
+      "score": 0.004423
+    },
+    {
+      "frame": 703,
+      "ptsTime": 23.433333,
+      "score": 0.005651
+    },
+    {
+      "frame": 704,
+      "ptsTime": 23.466667,
+      "score": 0.001102
+    },
+    {
+      "frame": 705,
+      "ptsTime": 23.5,
+      "score": 0.010445
+    },
+    {
+      "frame": 706,
+      "ptsTime": 23.533333,
+      "score": 0.007276
+    },
+    {
+      "frame": 707,
+      "ptsTime": 23.566667,
+      "score": 0.416389
+    },
+    {
+      "frame": 708,
+      "ptsTime": 23.6,
+      "score": 0.018216
+    },
+    {
+      "frame": 709,
+      "ptsTime": 23.633333,
+      "score": 0.007179
+    },
+    {
+      "frame": 710,
+      "ptsTime": 23.666667,
+      "score": 0.013312
+    },
+    {
+      "frame": 711,
+      "ptsTime": 23.7,
+      "score": 0.016958
+    },
+    {
+      "frame": 712,
+      "ptsTime": 23.733333,
+      "score": 0.019534
+    },
+    {
+      "frame": 713,
+      "ptsTime": 23.766667,
+      "score": 0.022351
+    },
+    {
+      "frame": 714,
+      "ptsTime": 23.8,
+      "score": 0.018756
+    },
+    {
+      "frame": 715,
+      "ptsTime": 23.833333,
+      "score": 0.013153
+    },
+    {
+      "frame": 716,
+      "ptsTime": 23.866667,
+      "score": 0.011897
+    },
+    {
+      "frame": 717,
+      "ptsTime": 23.9,
+      "score": 0.006993
+    },
+    {
+      "frame": 718,
+      "ptsTime": 23.933333,
+      "score": 0.007695
+    },
+    {
+      "frame": 719,
+      "ptsTime": 23.966667,
+      "score": 0.006045
+    },
+    {
+      "frame": 720,
+      "ptsTime": 24.0,
+      "score": 0.007475
+    },
+    {
+      "frame": 721,
+      "ptsTime": 24.033333,
+      "score": 0.009532
+    },
+    {
+      "frame": 722,
+      "ptsTime": 24.066667,
+      "score": 0.012594
+    },
+    {
+      "frame": 723,
+      "ptsTime": 24.1,
+      "score": 0.015743
+    },
+    {
+      "frame": 724,
+      "ptsTime": 24.133333,
+      "score": 0.016166
+    },
+    {
+      "frame": 725,
+      "ptsTime": 24.166667,
+      "score": 0.022082
+    },
+    {
+      "frame": 726,
+      "ptsTime": 24.2,
+      "score": 0.030118
+    },
+    {
+      "frame": 727,
+      "ptsTime": 24.233333,
+      "score": 0.434906
+    },
+    {
+      "frame": 728,
+      "ptsTime": 24.266667,
+      "score": 0.02475
+    },
+    {
+      "frame": 729,
+      "ptsTime": 24.3,
+      "score": 0.004638
+    },
+    {
+      "frame": 730,
+      "ptsTime": 24.333333,
+      "score": 0.001536
+    },
+    {
+      "frame": 731,
+      "ptsTime": 24.366667,
+      "score": 0.001126
+    },
+    {
+      "frame": 732,
+      "ptsTime": 24.4,
+      "score": 0.00532
+    },
+    {
+      "frame": 733,
+      "ptsTime": 24.433333,
+      "score": 0.006276
+    },
+    {
+      "frame": 734,
+      "ptsTime": 24.466667,
+      "score": 0.001328
+    },
+    {
+      "frame": 735,
+      "ptsTime": 24.5,
+      "score": 0.002671
+    },
+    {
+      "frame": 736,
+      "ptsTime": 24.533333,
+      "score": 0.000709
+    },
+    {
+      "frame": 737,
+      "ptsTime": 24.566667,
+      "score": 0.00075
+    },
+    {
+      "frame": 738,
+      "ptsTime": 24.6,
+      "score": 0.001106
+    },
+    {
+      "frame": 739,
+      "ptsTime": 24.633333,
+      "score": 0.001971
+    },
+    {
+      "frame": 740,
+      "ptsTime": 24.666667,
+      "score": 0.000361
+    },
+    {
+      "frame": 741,
+      "ptsTime": 24.7,
+      "score": 0.000985
+    },
+    {
+      "frame": 742,
+      "ptsTime": 24.733333,
+      "score": 0.001024
+    },
+    {
+      "frame": 743,
+      "ptsTime": 24.766667,
+      "score": 0.000613
+    },
+    {
+      "frame": 744,
+      "ptsTime": 24.8,
+      "score": 0.006139
+    },
+    {
+      "frame": 745,
+      "ptsTime": 24.833333,
+      "score": 0.006038
+    },
+    {
+      "frame": 746,
+      "ptsTime": 24.866667,
+      "score": 0.001238
+    },
+    {
+      "frame": 747,
+      "ptsTime": 24.9,
+      "score": 0.001192
+    },
+    {
+      "frame": 748,
+      "ptsTime": 24.933333,
+      "score": 0.445224
+    },
+    {
+      "frame": 749,
+      "ptsTime": 24.966667,
+      "score": 0.172287
+    },
+    {
+      "frame": 750,
+      "ptsTime": 25.0,
+      "score": 0.064938
+    },
+    {
+      "frame": 751,
+      "ptsTime": 25.033333,
+      "score": 0.013959
+    },
+    {
+      "frame": 752,
+      "ptsTime": 25.066667,
+      "score": 0.000771
+    },
+    {
+      "frame": 753,
+      "ptsTime": 25.1,
+      "score": 0.001486
+    },
+    {
+      "frame": 754,
+      "ptsTime": 25.133333,
+      "score": 0.000652
+    },
+    {
+      "frame": 755,
+      "ptsTime": 25.166667,
+      "score": 0.001227
+    },
+    {
+      "frame": 756,
+      "ptsTime": 25.2,
+      "score": 0.000478
+    },
+    {
+      "frame": 757,
+      "ptsTime": 25.233333,
+      "score": 0.000346
+    },
+    {
+      "frame": 758,
+      "ptsTime": 25.266667,
+      "score": 0.004654
+    },
+    {
+      "frame": 759,
+      "ptsTime": 25.3,
+      "score": 0.004596
+    },
+    {
+      "frame": 760,
+      "ptsTime": 25.333333,
+      "score": 0.001863
+    },
+    {
+      "frame": 761,
+      "ptsTime": 25.366667,
+      "score": 0.001002
+    },
+    {
+      "frame": 762,
+      "ptsTime": 25.4,
+      "score": 0.000295
+    },
+    {
+      "frame": 763,
+      "ptsTime": 25.433333,
+      "score": 0.000196
+    },
+    {
+      "frame": 764,
+      "ptsTime": 25.466667,
+      "score": 0.000703
+    },
+    {
+      "frame": 765,
+      "ptsTime": 25.5,
+      "score": 0.000315
+    },
+    {
+      "frame": 766,
+      "ptsTime": 25.533333,
+      "score": 0.000914
+    },
+    {
+      "frame": 767,
+      "ptsTime": 25.566667,
+      "score": 0.000361
+    },
+    {
+      "frame": 768,
+      "ptsTime": 25.6,
+      "score": 0.472393
+    },
+    {
+      "frame": 769,
+      "ptsTime": 25.633333,
+      "score": 0.111753
+    },
+    {
+      "frame": 770,
+      "ptsTime": 25.666667,
+      "score": 0.161425
+    },
+    {
+      "frame": 771,
+      "ptsTime": 25.7,
+      "score": 0.033914
+    },
+    {
+      "frame": 772,
+      "ptsTime": 25.733333,
+      "score": 0.099161
+    },
+    {
+      "frame": 773,
+      "ptsTime": 25.766667,
+      "score": 0.00106
+    },
+    {
+      "frame": 774,
+      "ptsTime": 25.8,
+      "score": 0.004971
+    },
+    {
+      "frame": 775,
+      "ptsTime": 25.833333,
+      "score": 0.002016
+    },
+    {
+      "frame": 776,
+      "ptsTime": 25.866667,
+      "score": 0.0171
+    },
+    {
+      "frame": 777,
+      "ptsTime": 25.9,
+      "score": 0.009866
+    },
+    {
+      "frame": 778,
+      "ptsTime": 25.933333,
+      "score": 0.0101
+    },
+    {
+      "frame": 779,
+      "ptsTime": 25.966667,
+      "score": 0.015817
+    },
+    {
+      "frame": 780,
+      "ptsTime": 26.0,
+      "score": 0.006439
+    },
+    {
+      "frame": 781,
+      "ptsTime": 26.033333,
+      "score": 0.026248
+    },
+    {
+      "frame": 782,
+      "ptsTime": 26.066667,
+      "score": 0.04431
+    },
+    {
+      "frame": 783,
+      "ptsTime": 26.1,
+      "score": 0.03575
+    },
+    {
+      "frame": 784,
+      "ptsTime": 26.133333,
+      "score": 0.019614
+    },
+    {
+      "frame": 785,
+      "ptsTime": 26.166667,
+      "score": 0.017115
+    },
+    {
+      "frame": 786,
+      "ptsTime": 26.2,
+      "score": 0.01363
+    },
+    {
+      "frame": 787,
+      "ptsTime": 26.233333,
+      "score": 0.010201
+    },
+    {
+      "frame": 788,
+      "ptsTime": 26.266667,
+      "score": 0.050414
+    },
+    {
+      "frame": 789,
+      "ptsTime": 26.3,
+      "score": 0.026159
+    },
+    {
+      "frame": 790,
+      "ptsTime": 26.333333,
+      "score": 0.011014
+    },
+    {
+      "frame": 791,
+      "ptsTime": 26.366667,
+      "score": 0.017436
+    },
+    {
+      "frame": 792,
+      "ptsTime": 26.4,
+      "score": 0.022225
+    },
+    {
+      "frame": 793,
+      "ptsTime": 26.433333,
+      "score": 0.009329
+    },
+    {
+      "frame": 794,
+      "ptsTime": 26.466667,
+      "score": 0.02322
+    },
+    {
+      "frame": 795,
+      "ptsTime": 26.5,
+      "score": 0.055865
+    },
+    {
+      "frame": 796,
+      "ptsTime": 26.533333,
+      "score": 0.03842
+    },
+    {
+      "frame": 797,
+      "ptsTime": 26.566667,
+      "score": 0.031374
+    },
+    {
+      "frame": 798,
+      "ptsTime": 26.6,
+      "score": 0.014809
+    },
+    {
+      "frame": 799,
+      "ptsTime": 26.633333,
+      "score": 0.069137
+    },
+    {
+      "frame": 800,
+      "ptsTime": 26.666667,
+      "score": 0.041501
+    },
+    {
+      "frame": 801,
+      "ptsTime": 26.7,
+      "score": 0.016378
+    },
+    {
+      "frame": 802,
+      "ptsTime": 26.733333,
+      "score": 0.00281
+    },
+    {
+      "frame": 803,
+      "ptsTime": 26.766667,
+      "score": 0.01757
+    },
+    {
+      "frame": 804,
+      "ptsTime": 26.8,
+      "score": 0.018649
+    },
+    {
+      "frame": 805,
+      "ptsTime": 26.833333,
+      "score": 0.03486
+    },
+    {
+      "frame": 806,
+      "ptsTime": 26.866667,
+      "score": 0.011114
+    },
+    {
+      "frame": 807,
+      "ptsTime": 26.9,
+      "score": 0.029914
+    },
+    {
+      "frame": 808,
+      "ptsTime": 26.933333,
+      "score": 0.049028
+    },
+    {
+      "frame": 809,
+      "ptsTime": 26.966667,
+      "score": 0.384099
+    },
+    {
+      "frame": 810,
+      "ptsTime": 27.0,
+      "score": 0.015219
+    },
+    {
+      "frame": 811,
+      "ptsTime": 27.033333,
+      "score": 0.004294
+    },
+    {
+      "frame": 812,
+      "ptsTime": 27.066667,
+      "score": 0.004956
+    },
+    {
+      "frame": 813,
+      "ptsTime": 27.1,
+      "score": 0.012516
+    },
+    {
+      "frame": 814,
+      "ptsTime": 27.133333,
+      "score": 0.001863
+    },
+    {
+      "frame": 815,
+      "ptsTime": 27.166667,
+      "score": 0.009903
+    },
+    {
+      "frame": 816,
+      "ptsTime": 27.2,
+      "score": 0.009029
+    },
+    {
+      "frame": 817,
+      "ptsTime": 27.233333,
+      "score": 0.014544
+    },
+    {
+      "frame": 818,
+      "ptsTime": 27.266667,
+      "score": 0.000684
+    },
+    {
+      "frame": 819,
+      "ptsTime": 27.3,
+      "score": 0.001686
+    },
+    {
+      "frame": 820,
+      "ptsTime": 27.333333,
+      "score": 0.00044
+    },
+    {
+      "frame": 821,
+      "ptsTime": 27.366667,
+      "score": 0.002277
+    },
+    {
+      "frame": 822,
+      "ptsTime": 27.4,
+      "score": 2.9e-05
+    },
+    {
+      "frame": 823,
+      "ptsTime": 27.433333,
+      "score": 0.00184
+    },
+    {
+      "frame": 824,
+      "ptsTime": 27.466667,
+      "score": 0.001383
+    },
+    {
+      "frame": 825,
+      "ptsTime": 27.5,
+      "score": 0.00265
+    },
+    {
+      "frame": 826,
+      "ptsTime": 27.533333,
+      "score": 0.007632
+    },
+    {
+      "frame": 827,
+      "ptsTime": 27.566667,
+      "score": 0.006104
+    },
+    {
+      "frame": 828,
+      "ptsTime": 27.6,
+      "score": 0.000494
+    },
+    {
+      "frame": 829,
+      "ptsTime": 27.633333,
+      "score": 0.003121
+    },
+    {
+      "frame": 830,
+      "ptsTime": 27.666667,
+      "score": 0.003774
+    },
+    {
+      "frame": 831,
+      "ptsTime": 27.7,
+      "score": 0.008987
+    },
+    {
+      "frame": 832,
+      "ptsTime": 27.733333,
+      "score": 0.000106
+    },
+    {
+      "frame": 833,
+      "ptsTime": 27.766667,
+      "score": 4.1e-05
+    },
+    {
+      "frame": 834,
+      "ptsTime": 27.8,
+      "score": 0.00129
+    },
+    {
+      "frame": 835,
+      "ptsTime": 27.833333,
+      "score": 0.000712
+    },
+    {
+      "frame": 836,
+      "ptsTime": 27.866667,
+      "score": 0.000523
+    },
+    {
+      "frame": 837,
+      "ptsTime": 27.9,
+      "score": 0.000103
+    },
+    {
+      "frame": 838,
+      "ptsTime": 27.933333,
+      "score": 0.000661
+    },
+    {
+      "frame": 839,
+      "ptsTime": 27.966667,
+      "score": 0.000207
+    },
+    {
+      "frame": 840,
+      "ptsTime": 28.0,
+      "score": 0.009244
+    },
+    {
+      "frame": 841,
+      "ptsTime": 28.033333,
+      "score": 0.008125
+    },
+    {
+      "frame": 842,
+      "ptsTime": 28.066667,
+      "score": 0.000908
+    },
+    {
+      "frame": 843,
+      "ptsTime": 28.1,
+      "score": 0.000247
+    },
+    {
+      "frame": 844,
+      "ptsTime": 28.133333,
+      "score": 0.00037
+    },
+    {
+      "frame": 845,
+      "ptsTime": 28.166667,
+      "score": 0.000334
+    },
+    {
+      "frame": 846,
+      "ptsTime": 28.2,
+      "score": 0.001417
+    },
+    {
+      "frame": 847,
+      "ptsTime": 28.233333,
+      "score": 0.001582
+    },
+    {
+      "frame": 848,
+      "ptsTime": 28.266667,
+      "score": 0.000741
+    },
+    {
+      "frame": 849,
+      "ptsTime": 28.3,
+      "score": 0.000717
+    },
+    {
+      "frame": 850,
+      "ptsTime": 28.333333,
+      "score": 0.400771
+    },
+    {
+      "frame": 851,
+      "ptsTime": 28.366667,
+      "score": 0.037811
+    },
+    {
+      "frame": 852,
+      "ptsTime": 28.4,
+      "score": 0.002424
+    },
+    {
+      "frame": 853,
+      "ptsTime": 28.433333,
+      "score": 0.000566
+    },
+    {
+      "frame": 854,
+      "ptsTime": 28.466667,
+      "score": 0.000313
+    },
+    {
+      "frame": 855,
+      "ptsTime": 28.5,
+      "score": 0.036366
+    },
+    {
+      "frame": 856,
+      "ptsTime": 28.533333,
+      "score": 0.027667
+    },
+    {
+      "frame": 857,
+      "ptsTime": 28.566667,
+      "score": 0.006799
+    },
+    {
+      "frame": 858,
+      "ptsTime": 28.6,
+      "score": 0.003581
+    },
+    {
+      "frame": 859,
+      "ptsTime": 28.633333,
+      "score": 0.00576
+    },
+    {
+      "frame": 860,
+      "ptsTime": 28.666667,
+      "score": 0.005253
+    },
+    {
+      "frame": 861,
+      "ptsTime": 28.7,
+      "score": 0.004039
+    },
+    {
+      "frame": 862,
+      "ptsTime": 28.733333,
+      "score": 0.003568
+    },
+    {
+      "frame": 863,
+      "ptsTime": 28.766667,
+      "score": 0.003843
+    },
+    {
+      "frame": 864,
+      "ptsTime": 28.8,
+      "score": 0.019832
+    },
+    {
+      "frame": 865,
+      "ptsTime": 28.833333,
+      "score": 0.013071
+    },
+    {
+      "frame": 866,
+      "ptsTime": 28.866667,
+      "score": 0.006469
+    },
+    {
+      "frame": 867,
+      "ptsTime": 28.9,
+      "score": 0.000885
+    },
+    {
+      "frame": 868,
+      "ptsTime": 28.933333,
+      "score": 0.001323
+    },
+    {
+      "frame": 869,
+      "ptsTime": 28.966667,
+      "score": 0.002874
+    },
+    {
+      "frame": 870,
+      "ptsTime": 29.0,
+      "score": 0.008371
+    },
+    {
+      "frame": 871,
+      "ptsTime": 29.033333,
+      "score": 0.012067
+    },
+    {
+      "frame": 872,
+      "ptsTime": 29.066667,
+      "score": 0.004715
+    },
+    {
+      "frame": 873,
+      "ptsTime": 29.1,
+      "score": 0.012283
+    },
+    {
+      "frame": 874,
+      "ptsTime": 29.133333,
+      "score": 0.004976
+    },
+    {
+      "frame": 875,
+      "ptsTime": 29.166667,
+      "score": 0.001326
+    },
+    {
+      "frame": 876,
+      "ptsTime": 29.2,
+      "score": 0.002748
+    },
+    {
+      "frame": 877,
+      "ptsTime": 29.233333,
+      "score": 0.003323
+    },
+    {
+      "frame": 878,
+      "ptsTime": 29.266667,
+      "score": 0.002432
+    },
+    {
+      "frame": 879,
+      "ptsTime": 29.3,
+      "score": 0.001576
+    },
+    {
+      "frame": 880,
+      "ptsTime": 29.333333,
+      "score": 0.000472
+    },
+    {
+      "frame": 881,
+      "ptsTime": 29.366667,
+      "score": 0.040732
+    },
+    {
+      "frame": 882,
+      "ptsTime": 29.4,
+      "score": 0.019159
+    },
+    {
+      "frame": 883,
+      "ptsTime": 29.433333,
+      "score": 0.011635
+    },
+    {
+      "frame": 884,
+      "ptsTime": 29.466667,
+      "score": 0.008952
+    },
+    {
+      "frame": 885,
+      "ptsTime": 29.5,
+      "score": 0.004476
+    },
+    {
+      "frame": 886,
+      "ptsTime": 29.533333,
+      "score": 0.004017
+    },
+    {
+      "frame": 887,
+      "ptsTime": 29.566667,
+      "score": 0.002848
+    },
+    {
+      "frame": 888,
+      "ptsTime": 29.6,
+      "score": 0.007041
+    },
+    {
+      "frame": 889,
+      "ptsTime": 29.633333,
+      "score": 0.004717
+    },
+    {
+      "frame": 890,
+      "ptsTime": 29.666667,
+      "score": 0.002793
+    },
+    {
+      "frame": 891,
+      "ptsTime": 29.7,
+      "score": 0.118476
+    },
+    {
+      "frame": 892,
+      "ptsTime": 29.733333,
+      "score": 0.052525
+    },
+    {
+      "frame": 893,
+      "ptsTime": 29.766667,
+      "score": 0.022454
+    },
+    {
+      "frame": 894,
+      "ptsTime": 29.8,
+      "score": 0.0201
+    },
+    {
+      "frame": 895,
+      "ptsTime": 29.833333,
+      "score": 0.0454
+    },
+    {
+      "frame": 896,
+      "ptsTime": 29.866667,
+      "score": 0.012147
+    },
+    {
+      "frame": 897,
+      "ptsTime": 29.9,
+      "score": 0.01965
+    },
+    {
+      "frame": 898,
+      "ptsTime": 29.933333,
+      "score": 0.013312
+    },
+    {
+      "frame": 899,
+      "ptsTime": 29.966667,
+      "score": 0.010989
+    },
+    {
+      "frame": 900,
+      "ptsTime": 30.0,
+      "score": 0.034393
+    },
+    {
+      "frame": 901,
+      "ptsTime": 30.033333,
+      "score": 0.155751
+    },
+    {
+      "frame": 902,
+      "ptsTime": 30.066667,
+      "score": 0.023497
+    },
+    {
+      "frame": 903,
+      "ptsTime": 30.1,
+      "score": 0.006828
+    },
+    {
+      "frame": 904,
+      "ptsTime": 30.133333,
+      "score": 0.000951
+    },
+    {
+      "frame": 905,
+      "ptsTime": 30.166667,
+      "score": 0.000148
+    },
+    {
+      "frame": 906,
+      "ptsTime": 30.2,
+      "score": 0.002592
+    },
+    {
+      "frame": 907,
+      "ptsTime": 30.233333,
+      "score": 0.002456
+    },
+    {
+      "frame": 908,
+      "ptsTime": 30.266667,
+      "score": 0.00391
+    },
+    {
+      "frame": 909,
+      "ptsTime": 30.3,
+      "score": 0.015588
+    },
+    {
+      "frame": 910,
+      "ptsTime": 30.333333,
+      "score": 0.006747
+    },
+    {
+      "frame": 911,
+      "ptsTime": 30.366667,
+      "score": 0.314599
+    },
+    {
+      "frame": 912,
+      "ptsTime": 30.4,
+      "score": 0.133339
+    },
+    {
+      "frame": 913,
+      "ptsTime": 30.433333,
+      "score": 0.047706
+    },
+    {
+      "frame": 914,
+      "ptsTime": 30.466667,
+      "score": 0.016153
+    },
+    {
+      "frame": 915,
+      "ptsTime": 30.5,
+      "score": 0.001075
+    },
+    {
+      "frame": 916,
+      "ptsTime": 30.533333,
+      "score": 0.001277
+    },
+    {
+      "frame": 917,
+      "ptsTime": 30.566667,
+      "score": 0.001209
+    },
+    {
+      "frame": 918,
+      "ptsTime": 30.6,
+      "score": 0.000221
+    },
+    {
+      "frame": 919,
+      "ptsTime": 30.633333,
+      "score": 0.0005
+    },
+    {
+      "frame": 920,
+      "ptsTime": 30.666667,
+      "score": 0.000766
+    },
+    {
+      "frame": 921,
+      "ptsTime": 30.7,
+      "score": 0.00077
+    },
+    {
+      "frame": 922,
+      "ptsTime": 30.733333,
+      "score": 0.370382
+    },
+    {
+      "frame": 923,
+      "ptsTime": 30.766667,
+      "score": 0.109583
+    },
+    {
+      "frame": 924,
+      "ptsTime": 30.8,
+      "score": 0.0943
+    },
+    {
+      "frame": 925,
+      "ptsTime": 30.833333,
+      "score": 0.034823
+    },
+    {
+      "frame": 926,
+      "ptsTime": 30.866667,
+      "score": 0.019698
+    },
+    {
+      "frame": 927,
+      "ptsTime": 30.9,
+      "score": 0.071688
+    },
+    {
+      "frame": 928,
+      "ptsTime": 30.933333,
+      "score": 0.065099
+    },
+    {
+      "frame": 929,
+      "ptsTime": 30.966667,
+      "score": 0.031184
+    },
+    {
+      "frame": 930,
+      "ptsTime": 31.0,
+      "score": 0.010743
+    },
+    {
+      "frame": 931,
+      "ptsTime": 31.033333,
+      "score": 0.781359
+    },
+    {
+      "frame": 932,
+      "ptsTime": 31.066667,
+      "score": 0.005897
+    },
+    {
+      "frame": 933,
+      "ptsTime": 31.1,
+      "score": 0.018274
+    },
+    {
+      "frame": 934,
+      "ptsTime": 31.133333,
+      "score": 0.002677
+    },
+    {
+      "frame": 935,
+      "ptsTime": 31.166667,
+      "score": 0.001261
+    },
+    {
+      "frame": 936,
+      "ptsTime": 31.2,
+      "score": 0.000292
+    },
+    {
+      "frame": 937,
+      "ptsTime": 31.233333,
+      "score": 0.004386
+    },
+    {
+      "frame": 938,
+      "ptsTime": 31.266667,
+      "score": 0.000211
+    },
+    {
+      "frame": 939,
+      "ptsTime": 31.3,
+      "score": 0.008888
+    },
+    {
+      "frame": 940,
+      "ptsTime": 31.333333,
+      "score": 0.002987
+    },
+    {
+      "frame": 941,
+      "ptsTime": 31.366667,
+      "score": 0.010386
+    },
+    {
+      "frame": 942,
+      "ptsTime": 31.4,
+      "score": 0.004127
+    },
+    {
+      "frame": 943,
+      "ptsTime": 31.433333,
+      "score": 0.007605
+    },
+    {
+      "frame": 944,
+      "ptsTime": 31.466667,
+      "score": 0.011722
+    },
+    {
+      "frame": 945,
+      "ptsTime": 31.5,
+      "score": 0.006754
+    },
+    {
+      "frame": 946,
+      "ptsTime": 31.533333,
+      "score": 0.006501
+    },
+    {
+      "frame": 947,
+      "ptsTime": 31.566667,
+      "score": 0.007862
+    },
+    {
+      "frame": 948,
+      "ptsTime": 31.6,
+      "score": 0.006412
+    },
+    {
+      "frame": 949,
+      "ptsTime": 31.633333,
+      "score": 0.010608
+    },
+    {
+      "frame": 950,
+      "ptsTime": 31.666667,
+      "score": 0.001932
+    },
+    {
+      "frame": 951,
+      "ptsTime": 31.7,
+      "score": 0.003753
+    },
+    {
+      "frame": 952,
+      "ptsTime": 31.733333,
+      "score": 0.001871
+    },
+    {
+      "frame": 953,
+      "ptsTime": 31.766667,
+      "score": 0.00193
+    },
+    {
+      "frame": 954,
+      "ptsTime": 31.8,
+      "score": 0.001108
+    },
+    {
+      "frame": 955,
+      "ptsTime": 31.833333,
+      "score": 0.000246
+    },
+    {
+      "frame": 956,
+      "ptsTime": 31.866667,
+      "score": 0.006665
+    },
+    {
+      "frame": 957,
+      "ptsTime": 31.9,
+      "score": 0.008107
+    },
+    {
+      "frame": 958,
+      "ptsTime": 31.933333,
+      "score": 0.045456
+    },
+    {
+      "frame": 959,
+      "ptsTime": 31.966667,
+      "score": 0.016675
+    },
+    {
+      "frame": 960,
+      "ptsTime": 32.0,
+      "score": 0.000575
+    },
+    {
+      "frame": 961,
+      "ptsTime": 32.033333,
+      "score": 0.000442
+    },
+    {
+      "frame": 962,
+      "ptsTime": 32.066667,
+      "score": 0.007885
+    },
+    {
+      "frame": 963,
+      "ptsTime": 32.1,
+      "score": 0.007001
+    },
+    {
+      "frame": 964,
+      "ptsTime": 32.133333,
+      "score": 0.001621
+    },
+    {
+      "frame": 965,
+      "ptsTime": 32.166667,
+      "score": 0.000272
+    },
+    {
+      "frame": 966,
+      "ptsTime": 32.2,
+      "score": 0.000502
+    },
+    {
+      "frame": 967,
+      "ptsTime": 32.233333,
+      "score": 0.000199
+    },
+    {
+      "frame": 968,
+      "ptsTime": 32.266667,
+      "score": 0.001375
+    },
+    {
+      "frame": 969,
+      "ptsTime": 32.3,
+      "score": 0.00032
+    },
+    {
+      "frame": 970,
+      "ptsTime": 32.333333,
+      "score": 0.005841
+    },
+    {
+      "frame": 971,
+      "ptsTime": 32.366667,
+      "score": 0.008265
+    },
+    {
+      "frame": 972,
+      "ptsTime": 32.4,
+      "score": 0.000558
+    },
+    {
+      "frame": 973,
+      "ptsTime": 32.433333,
+      "score": 0.400444
+    },
+    {
+      "frame": 974,
+      "ptsTime": 32.466667,
+      "score": 0.014047
+    },
+    {
+      "frame": 975,
+      "ptsTime": 32.5,
+      "score": 0.002017
+    },
+    {
+      "frame": 976,
+      "ptsTime": 32.533333,
+      "score": 6.9e-05
+    },
+    {
+      "frame": 977,
+      "ptsTime": 32.566667,
+      "score": 0.01016
+    },
+    {
+      "frame": 978,
+      "ptsTime": 32.6,
+      "score": 0.0004
+    },
+    {
+      "frame": 979,
+      "ptsTime": 32.633333,
+      "score": 0.006207
+    },
+    {
+      "frame": 980,
+      "ptsTime": 32.666667,
+      "score": 0.000316
+    },
+    {
+      "frame": 981,
+      "ptsTime": 32.7,
+      "score": 0.000401
+    },
+    {
+      "frame": 982,
+      "ptsTime": 32.733333,
+      "score": 0.002317
+    },
+    {
+      "frame": 983,
+      "ptsTime": 32.766667,
+      "score": 0.009441
+    },
+    {
+      "frame": 984,
+      "ptsTime": 32.8,
+      "score": 0.008561
+    },
+    {
+      "frame": 985,
+      "ptsTime": 32.833333,
+      "score": 0.000441
+    },
+    {
+      "frame": 986,
+      "ptsTime": 32.866667,
+      "score": 0.00015
+    },
+    {
+      "frame": 987,
+      "ptsTime": 32.9,
+      "score": 0.000889
+    },
+    {
+      "frame": 988,
+      "ptsTime": 32.933333,
+      "score": 0.00094
+    },
+    {
+      "frame": 989,
+      "ptsTime": 32.966667,
+      "score": 0.002311
+    },
+    {
+      "frame": 990,
+      "ptsTime": 33.0,
+      "score": 0.001025
+    },
+    {
+      "frame": 991,
+      "ptsTime": 33.033333,
+      "score": 0.000833
+    },
+    {
+      "frame": 992,
+      "ptsTime": 33.066667,
+      "score": 0.000739
+    },
+    {
+      "frame": 993,
+      "ptsTime": 33.1,
+      "score": 0.016502
+    },
+    {
+      "frame": 994,
+      "ptsTime": 33.133333,
+      "score": 0.013109
+    },
+    {
+      "frame": 995,
+      "ptsTime": 33.166667,
+      "score": 0.001255
+    },
+    {
+      "frame": 996,
+      "ptsTime": 33.2,
+      "score": 0.000768
+    },
+    {
+      "frame": 997,
+      "ptsTime": 33.233333,
+      "score": 0.001677
+    },
+    {
+      "frame": 998,
+      "ptsTime": 33.266667,
+      "score": 0.000397
+    },
+    {
+      "frame": 999,
+      "ptsTime": 33.3,
+      "score": 0.0003
+    },
+    {
+      "frame": 1000,
+      "ptsTime": 33.333333,
+      "score": 0.000411
+    },
+    {
+      "frame": 1001,
+      "ptsTime": 33.366667,
+      "score": 0.001728
+    },
+    {
+      "frame": 1002,
+      "ptsTime": 33.4,
+      "score": 0.000837
+    },
+    {
+      "frame": 1003,
+      "ptsTime": 33.433333,
+      "score": 0.002621
+    },
+    {
+      "frame": 1004,
+      "ptsTime": 33.466667,
+      "score": 0.000663
+    },
+    {
+      "frame": 1005,
+      "ptsTime": 33.5,
+      "score": 0.001423
+    },
+    {
+      "frame": 1006,
+      "ptsTime": 33.533333,
+      "score": 0.000516
+    },
+    {
+      "frame": 1007,
+      "ptsTime": 33.566667,
+      "score": 0.000316
+    },
+    {
+      "frame": 1008,
+      "ptsTime": 33.6,
+      "score": 0.001729
+    },
+    {
+      "frame": 1009,
+      "ptsTime": 33.633333,
+      "score": 0.001992
+    },
+    {
+      "frame": 1010,
+      "ptsTime": 33.666667,
+      "score": 0.000874
+    },
+    {
+      "frame": 1011,
+      "ptsTime": 33.7,
+      "score": 0.001839
+    },
+    {
+      "frame": 1012,
+      "ptsTime": 33.733333,
+      "score": 7.3e-05
+    },
+    {
+      "frame": 1013,
+      "ptsTime": 33.766667,
+      "score": 0.000958
+    },
+    {
+      "frame": 1014,
+      "ptsTime": 33.8,
+      "score": 0.891137
+    },
+    {
+      "frame": 1015,
+      "ptsTime": 33.833333,
+      "score": 0.40561
+    },
+    {
+      "frame": 1016,
+      "ptsTime": 33.866667,
+      "score": 0.07834
+    },
+    {
+      "frame": 1017,
+      "ptsTime": 33.9,
+      "score": 0.319859
+    },
+    {
+      "frame": 1018,
+      "ptsTime": 33.933333,
+      "score": 0.137861
+    },
+    {
+      "frame": 1019,
+      "ptsTime": 33.966667,
+      "score": 0.043876
+    },
+    {
+      "frame": 1020,
+      "ptsTime": 34.0,
+      "score": 0.079047
+    },
+    {
+      "frame": 1021,
+      "ptsTime": 34.033333,
+      "score": 0.032886
+    },
+    {
+      "frame": 1022,
+      "ptsTime": 34.066667,
+      "score": 0.042747
+    },
+    {
+      "frame": 1023,
+      "ptsTime": 34.1,
+      "score": 0.056623
+    },
+    {
+      "frame": 1024,
+      "ptsTime": 34.133333,
+      "score": 0.056269
+    },
+    {
+      "frame": 1025,
+      "ptsTime": 34.166667,
+      "score": 0.055025
+    },
+    {
+      "frame": 1026,
+      "ptsTime": 34.2,
+      "score": 0.082284
+    },
+    {
+      "frame": 1027,
+      "ptsTime": 34.233333,
+      "score": 0.089955
+    },
+    {
+      "frame": 1028,
+      "ptsTime": 34.266667,
+      "score": 0.005472
+    },
+    {
+      "frame": 1029,
+      "ptsTime": 34.3,
+      "score": 0.024745
+    },
+    {
+      "frame": 1030,
+      "ptsTime": 34.333333,
+      "score": 0.016481
+    },
+    {
+      "frame": 1031,
+      "ptsTime": 34.366667,
+      "score": 0.059402
+    },
+    {
+      "frame": 1032,
+      "ptsTime": 34.4,
+      "score": 0.010898
+    },
+    {
+      "frame": 1033,
+      "ptsTime": 34.433333,
+      "score": 0.043094
+    },
+    {
+      "frame": 1034,
+      "ptsTime": 34.466667,
+      "score": 0.311763
+    },
+    {
+      "frame": 1035,
+      "ptsTime": 34.5,
+      "score": 0.015257
+    },
+    {
+      "frame": 1036,
+      "ptsTime": 34.533333,
+      "score": 0.003007
+    },
+    {
+      "frame": 1037,
+      "ptsTime": 34.566667,
+      "score": 0.013897
+    },
+    {
+      "frame": 1038,
+      "ptsTime": 34.6,
+      "score": 0.033238
+    },
+    {
+      "frame": 1039,
+      "ptsTime": 34.633333,
+      "score": 0.038326
+    },
+    {
+      "frame": 1040,
+      "ptsTime": 34.666667,
+      "score": 0.038464
+    },
+    {
+      "frame": 1041,
+      "ptsTime": 34.7,
+      "score": 0.024712
+    },
+    {
+      "frame": 1042,
+      "ptsTime": 34.733333,
+      "score": 0.021085
+    },
+    {
+      "frame": 1043,
+      "ptsTime": 34.766667,
+      "score": 0.017072
+    },
+    {
+      "frame": 1044,
+      "ptsTime": 34.8,
+      "score": 0.012405
+    },
+    {
+      "frame": 1045,
+      "ptsTime": 34.833333,
+      "score": 0.013189
+    },
+    {
+      "frame": 1046,
+      "ptsTime": 34.866667,
+      "score": 0.000627
+    },
+    {
+      "frame": 1047,
+      "ptsTime": 34.9,
+      "score": 0.001017
+    },
+    {
+      "frame": 1048,
+      "ptsTime": 34.933333,
+      "score": 0.001123
+    },
+    {
+      "frame": 1049,
+      "ptsTime": 34.966667,
+      "score": 0.000446
+    },
+    {
+      "frame": 1050,
+      "ptsTime": 35.0,
+      "score": 0.009093
+    },
+    {
+      "frame": 1051,
+      "ptsTime": 35.033333,
+      "score": 0.005621
+    },
+    {
+      "frame": 1052,
+      "ptsTime": 35.066667,
+      "score": 0.002386
+    },
+    {
+      "frame": 1053,
+      "ptsTime": 35.1,
+      "score": 0.00041
+    },
+    {
+      "frame": 1054,
+      "ptsTime": 35.133333,
+      "score": 0.000585
+    },
+    {
+      "frame": 1055,
+      "ptsTime": 35.166667,
+      "score": 0.471461
+    },
+    {
+      "frame": 1056,
+      "ptsTime": 35.2,
+      "score": 0.220912
+    },
+    {
+      "frame": 1057,
+      "ptsTime": 35.233333,
+      "score": 0.015723
+    },
+    {
+      "frame": 1058,
+      "ptsTime": 35.266667,
+      "score": 0.006114
+    },
+    {
+      "frame": 1059,
+      "ptsTime": 35.3,
+      "score": 0.001768
+    },
+    {
+      "frame": 1060,
+      "ptsTime": 35.333333,
+      "score": 0.001236
+    },
+    {
+      "frame": 1061,
+      "ptsTime": 35.366667,
+      "score": 0.001195
+    },
+    {
+      "frame": 1062,
+      "ptsTime": 35.4,
+      "score": 0.000144
+    },
+    {
+      "frame": 1063,
+      "ptsTime": 35.433333,
+      "score": 0.001536
+    },
+    {
+      "frame": 1064,
+      "ptsTime": 35.466667,
+      "score": 0.002053
+    },
+    {
+      "frame": 1065,
+      "ptsTime": 35.5,
+      "score": 0.012816
+    },
+    {
+      "frame": 1066,
+      "ptsTime": 35.533333,
+      "score": 0.010332
+    },
+    {
+      "frame": 1067,
+      "ptsTime": 35.566667,
+      "score": 0.002098
+    },
+    {
+      "frame": 1068,
+      "ptsTime": 35.6,
+      "score": 0.000446
+    },
+    {
+      "frame": 1069,
+      "ptsTime": 35.633333,
+      "score": 0.000652
+    },
+    {
+      "frame": 1070,
+      "ptsTime": 35.666667,
+      "score": 0.001184
+    },
+    {
+      "frame": 1071,
+      "ptsTime": 35.7,
+      "score": 0.001243
+    },
+    {
+      "frame": 1072,
+      "ptsTime": 35.733333,
+      "score": 0.001116
+    },
+    {
+      "frame": 1073,
+      "ptsTime": 35.766667,
+      "score": 0.001137
+    },
+    {
+      "frame": 1074,
+      "ptsTime": 35.8,
+      "score": 0.000761
+    },
+    {
+      "frame": 1075,
+      "ptsTime": 35.833333,
+      "score": 0.433462
+    },
+    {
+      "frame": 1076,
+      "ptsTime": 35.866667,
+      "score": 0.058726
+    },
+    {
+      "frame": 1077,
+      "ptsTime": 35.9,
+      "score": 0.016452
+    },
+    {
+      "frame": 1078,
+      "ptsTime": 35.933333,
+      "score": 0.000687
+    },
+    {
+      "frame": 1079,
+      "ptsTime": 35.966667,
+      "score": 0.004447
+    },
+    {
+      "frame": 1080,
+      "ptsTime": 36.0,
+      "score": 0.005985
+    },
+    {
+      "frame": 1081,
+      "ptsTime": 36.033333,
+      "score": 0.005015
+    },
+    {
+      "frame": 1082,
+      "ptsTime": 36.066667,
+      "score": 0.000105
+    },
+    {
+      "frame": 1083,
+      "ptsTime": 36.1,
+      "score": 0.001298
+    },
+    {
+      "frame": 1084,
+      "ptsTime": 36.133333,
+      "score": 0.000811
+    },
+    {
+      "frame": 1085,
+      "ptsTime": 36.166667,
+      "score": 0.000394
+    },
+    {
+      "frame": 1086,
+      "ptsTime": 36.2,
+      "score": 0.000879
+    },
+    {
+      "frame": 1087,
+      "ptsTime": 36.233333,
+      "score": 0.001369
+    },
+    {
+      "frame": 1088,
+      "ptsTime": 36.266667,
+      "score": 0.000449
+    },
+    {
+      "frame": 1089,
+      "ptsTime": 36.3,
+      "score": 0.000866
+    },
+    {
+      "frame": 1090,
+      "ptsTime": 36.333333,
+      "score": 0.000954
+    },
+    {
+      "frame": 1091,
+      "ptsTime": 36.366667,
+      "score": 0.000185
+    },
+    {
+      "frame": 1092,
+      "ptsTime": 36.4,
+      "score": 0.00054
+    },
+    {
+      "frame": 1093,
+      "ptsTime": 36.433333,
+      "score": 0.00666
+    },
+    {
+      "frame": 1094,
+      "ptsTime": 36.466667,
+      "score": 0.000396
+    },
+    {
+      "frame": 1095,
+      "ptsTime": 36.5,
+      "score": 0.821669
+    },
+    {
+      "frame": 1096,
+      "ptsTime": 36.533333,
+      "score": 0.193723
+    },
+    {
+      "frame": 1097,
+      "ptsTime": 36.566667,
+      "score": 0.02786
+    },
+    {
+      "frame": 1098,
+      "ptsTime": 36.6,
+      "score": 0.223424
+    },
+    {
+      "frame": 1099,
+      "ptsTime": 36.633333,
+      "score": 0.010131
+    },
+    {
+      "frame": 1100,
+      "ptsTime": 36.666667,
+      "score": 0.000219
+    },
+    {
+      "frame": 1101,
+      "ptsTime": 36.7,
+      "score": 0.000429
+    },
+    {
+      "frame": 1102,
+      "ptsTime": 36.733333,
+      "score": 7.9e-05
+    },
+    {
+      "frame": 1103,
+      "ptsTime": 36.766667,
+      "score": 0.000295
+    },
+    {
+      "frame": 1104,
+      "ptsTime": 36.8,
+      "score": 0.000503
+    },
+    {
+      "frame": 1105,
+      "ptsTime": 36.833333,
+      "score": 9.2e-05
+    },
+    {
+      "frame": 1106,
+      "ptsTime": 36.866667,
+      "score": 0.268785
+    },
+    {
+      "frame": 1107,
+      "ptsTime": 36.9,
+      "score": 0.013881
+    },
+    {
+      "frame": 1108,
+      "ptsTime": 36.933333,
+      "score": 0.001948
+    },
+    {
+      "frame": 1109,
+      "ptsTime": 36.966667,
+      "score": 0.001642
+    },
+    {
+      "frame": 1110,
+      "ptsTime": 37.0,
+      "score": 0.002903
+    },
+    {
+      "frame": 1111,
+      "ptsTime": 37.033333,
+      "score": 0.000605
+    },
+    {
+      "frame": 1112,
+      "ptsTime": 37.066667,
+      "score": 0.037856
+    },
+    {
+      "frame": 1113,
+      "ptsTime": 37.1,
+      "score": 0.018119
+    },
+    {
+      "frame": 1114,
+      "ptsTime": 37.133333,
+      "score": 0.004701
+    },
+    {
+      "frame": 1115,
+      "ptsTime": 37.166667,
+      "score": 0.010916
+    },
+    {
+      "frame": 1116,
+      "ptsTime": 37.2,
+      "score": 0.224369
+    },
+    {
+      "frame": 1117,
+      "ptsTime": 37.233333,
+      "score": 0.030866
+    },
+    {
+      "frame": 1118,
+      "ptsTime": 37.266667,
+      "score": 0.008507
+    },
+    {
+      "frame": 1119,
+      "ptsTime": 37.3,
+      "score": 0.008078
+    },
+    {
+      "frame": 1120,
+      "ptsTime": 37.333333,
+      "score": 0.003178
+    },
+    {
+      "frame": 1121,
+      "ptsTime": 37.366667,
+      "score": 0.01271
+    },
+    {
+      "frame": 1122,
+      "ptsTime": 37.4,
+      "score": 0.008339
+    },
+    {
+      "frame": 1123,
+      "ptsTime": 37.433333,
+      "score": 0.002146
+    },
+    {
+      "frame": 1124,
+      "ptsTime": 37.466667,
+      "score": 0.002415
+    },
+    {
+      "frame": 1125,
+      "ptsTime": 37.5,
+      "score": 0.000498
+    },
+    {
+      "frame": 1126,
+      "ptsTime": 37.533333,
+      "score": 0.153103
+    },
+    {
+      "frame": 1127,
+      "ptsTime": 37.566667,
+      "score": 0.034395
+    },
+    {
+      "frame": 1128,
+      "ptsTime": 37.6,
+      "score": 0.016032
+    },
+    {
+      "frame": 1129,
+      "ptsTime": 37.633333,
+      "score": 5.4e-05
+    },
+    {
+      "frame": 1130,
+      "ptsTime": 37.666667,
+      "score": 0.013563
+    },
+    {
+      "frame": 1131,
+      "ptsTime": 37.7,
+      "score": 0.001411
+    },
+    {
+      "frame": 1132,
+      "ptsTime": 37.733333,
+      "score": 0.000998
+    },
+    {
+      "frame": 1133,
+      "ptsTime": 37.766667,
+      "score": 0.000117
+    },
+    {
+      "frame": 1134,
+      "ptsTime": 37.8,
+      "score": 0.000235
+    },
+    {
+      "frame": 1135,
+      "ptsTime": 37.833333,
+      "score": 9.7e-05
+    },
+    {
+      "frame": 1136,
+      "ptsTime": 37.866667,
+      "score": 0.175351
+    },
+    {
+      "frame": 1137,
+      "ptsTime": 37.9,
+      "score": 0.054493
+    },
+    {
+      "frame": 1138,
+      "ptsTime": 37.933333,
+      "score": 0.012881
+    },
+    {
+      "frame": 1139,
+      "ptsTime": 37.966667,
+      "score": 0.006922
+    },
+    {
+      "frame": 1140,
+      "ptsTime": 38.0,
+      "score": 0.012032
+    },
+    {
+      "frame": 1141,
+      "ptsTime": 38.033333,
+      "score": 0.029208
+    },
+    {
+      "frame": 1142,
+      "ptsTime": 38.066667,
+      "score": 0.023713
+    },
+    {
+      "frame": 1143,
+      "ptsTime": 38.1,
+      "score": 0.001783
+    },
+    {
+      "frame": 1144,
+      "ptsTime": 38.133333,
+      "score": 0.013943
+    },
+    {
+      "frame": 1145,
+      "ptsTime": 38.166667,
+      "score": 0.017564
+    },
+    {
+      "frame": 1146,
+      "ptsTime": 38.2,
+      "score": 0.010378
+    },
+    {
+      "frame": 1147,
+      "ptsTime": 38.233333,
+      "score": 0.20149
+    },
+    {
+      "frame": 1148,
+      "ptsTime": 38.266667,
+      "score": 0.020571
+    },
+    {
+      "frame": 1149,
+      "ptsTime": 38.3,
+      "score": 0.029266
+    },
+    {
+      "frame": 1150,
+      "ptsTime": 38.333333,
+      "score": 0.026639
+    },
+    {
+      "frame": 1151,
+      "ptsTime": 38.366667,
+      "score": 0.018985
+    },
+    {
+      "frame": 1152,
+      "ptsTime": 38.4,
+      "score": 0.012236
+    },
+    {
+      "frame": 1153,
+      "ptsTime": 38.433333,
+      "score": 0.02178
+    },
+    {
+      "frame": 1154,
+      "ptsTime": 38.466667,
+      "score": 0.007168
+    },
+    {
+      "frame": 1155,
+      "ptsTime": 38.5,
+      "score": 0.001604
+    },
+    {
+      "frame": 1156,
+      "ptsTime": 38.533333,
+      "score": 0.002666
+    },
+    {
+      "frame": 1157,
+      "ptsTime": 38.566667,
+      "score": 0.163567
+    },
+    {
+      "frame": 1158,
+      "ptsTime": 38.6,
+      "score": 0.039926
+    },
+    {
+      "frame": 1159,
+      "ptsTime": 38.633333,
+      "score": 0.014191
+    },
+    {
+      "frame": 1160,
+      "ptsTime": 38.666667,
+      "score": 0.000323
+    },
+    {
+      "frame": 1161,
+      "ptsTime": 38.7,
+      "score": 0.002633
+    },
+    {
+      "frame": 1162,
+      "ptsTime": 38.733333,
+      "score": 0.004005
+    },
+    {
+      "frame": 1163,
+      "ptsTime": 38.766667,
+      "score": 0.003265
+    },
+    {
+      "frame": 1164,
+      "ptsTime": 38.8,
+      "score": 0.001929
+    },
+    {
+      "frame": 1165,
+      "ptsTime": 38.833333,
+      "score": 0.041609
+    },
+    {
+      "frame": 1166,
+      "ptsTime": 38.866667,
+      "score": 0.024088
+    },
+    {
+      "frame": 1167,
+      "ptsTime": 38.9,
+      "score": 0.106899
+    },
+    {
+      "frame": 1168,
+      "ptsTime": 38.933333,
+      "score": 0.055105
+    },
+    {
+      "frame": 1169,
+      "ptsTime": 38.966667,
+      "score": 0.036108
+    },
+    {
+      "frame": 1170,
+      "ptsTime": 39.0,
+      "score": 0.004139
+    },
+    {
+      "frame": 1171,
+      "ptsTime": 39.033333,
+      "score": 0.034414
+    },
+    {
+      "frame": 1172,
+      "ptsTime": 39.066667,
+      "score": 0.039982
+    },
+    {
+      "frame": 1173,
+      "ptsTime": 39.1,
+      "score": 0.024802
+    },
+    {
+      "frame": 1174,
+      "ptsTime": 39.133333,
+      "score": 0.01121
+    },
+    {
+      "frame": 1175,
+      "ptsTime": 39.166667,
+      "score": 0.001937
+    },
+    {
+      "frame": 1176,
+      "ptsTime": 39.2,
+      "score": 0.000943
+    },
+    {
+      "frame": 1177,
+      "ptsTime": 39.233333,
+      "score": 0.331839
+    },
+    {
+      "frame": 1178,
+      "ptsTime": 39.266667,
+      "score": 0.136407
+    },
+    {
+      "frame": 1179,
+      "ptsTime": 39.3,
+      "score": 0.1309
+    },
+    {
+      "frame": 1180,
+      "ptsTime": 39.333333,
+      "score": 0.32758
+    },
+    {
+      "frame": 1181,
+      "ptsTime": 39.366667,
+      "score": 0.214346
+    },
+    {
+      "frame": 1182,
+      "ptsTime": 39.4,
+      "score": 0.003179
+    },
+    {
+      "frame": 1183,
+      "ptsTime": 39.433333,
+      "score": 0.003194
+    },
+    {
+      "frame": 1184,
+      "ptsTime": 39.466667,
+      "score": 0.010927
+    },
+    {
+      "frame": 1185,
+      "ptsTime": 39.5,
+      "score": 0.011396
+    },
+    {
+      "frame": 1186,
+      "ptsTime": 39.533333,
+      "score": 0.007265
+    },
+    {
+      "frame": 1187,
+      "ptsTime": 39.566667,
+      "score": 0.00686
+    },
+    {
+      "frame": 1188,
+      "ptsTime": 39.6,
+      "score": 0.000204
+    },
+    {
+      "frame": 1189,
+      "ptsTime": 39.633333,
+      "score": 0.005872
+    },
+    {
+      "frame": 1190,
+      "ptsTime": 39.666667,
+      "score": 0.015619
+    },
+    {
+      "frame": 1191,
+      "ptsTime": 39.7,
+      "score": 0.016331
+    },
+    {
+      "frame": 1192,
+      "ptsTime": 39.733333,
+      "score": 0.014521
+    },
+    {
+      "frame": 1193,
+      "ptsTime": 39.766667,
+      "score": 0.012059
+    },
+    {
+      "frame": 1194,
+      "ptsTime": 39.8,
+      "score": 0.012522
+    },
+    {
+      "frame": 1195,
+      "ptsTime": 39.833333,
+      "score": 0.012046
+    },
+    {
+      "frame": 1196,
+      "ptsTime": 39.866667,
+      "score": 0.010651
+    },
+    {
+      "frame": 1197,
+      "ptsTime": 39.9,
+      "score": 0.032548
+    },
+    {
+      "frame": 1198,
+      "ptsTime": 39.933333,
+      "score": 0.032275
+    },
+    {
+      "frame": 1199,
+      "ptsTime": 39.966667,
+      "score": 0.006009
+    },
+    {
+      "frame": 1200,
+      "ptsTime": 40.0,
+      "score": 0.010194
+    },
+    {
+      "frame": 1201,
+      "ptsTime": 40.033333,
+      "score": 0.006223
+    },
+    {
+      "frame": 1202,
+      "ptsTime": 40.066667,
+      "score": 0.004319
+    },
+    {
+      "frame": 1203,
+      "ptsTime": 40.1,
+      "score": 0.019501
+    },
+    {
+      "frame": 1204,
+      "ptsTime": 40.133333,
+      "score": 0.019495
+    },
+    {
+      "frame": 1205,
+      "ptsTime": 40.166667,
+      "score": 0.004188
+    },
+    {
+      "frame": 1206,
+      "ptsTime": 40.2,
+      "score": 0.011569
+    },
+    {
+      "frame": 1207,
+      "ptsTime": 40.233333,
+      "score": 0.007677
+    },
+    {
+      "frame": 1208,
+      "ptsTime": 40.266667,
+      "score": 0.005456
+    },
+    {
+      "frame": 1209,
+      "ptsTime": 40.3,
+      "score": 0.002221
+    },
+    {
+      "frame": 1210,
+      "ptsTime": 40.333333,
+      "score": 0.00977
+    },
+    {
+      "frame": 1211,
+      "ptsTime": 40.366667,
+      "score": 0.011225
+    },
+    {
+      "frame": 1212,
+      "ptsTime": 40.4,
+      "score": 0.009443
+    },
+    {
+      "frame": 1213,
+      "ptsTime": 40.433333,
+      "score": 0.011202
+    },
+    {
+      "frame": 1214,
+      "ptsTime": 40.466667,
+      "score": 0.020189
+    },
+    {
+      "frame": 1215,
+      "ptsTime": 40.5,
+      "score": 0.007347
+    },
+    {
+      "frame": 1216,
+      "ptsTime": 40.533333,
+      "score": 0.00338
+    },
+    {
+      "frame": 1217,
+      "ptsTime": 40.566667,
+      "score": 0.003915
+    },
+    {
+      "frame": 1218,
+      "ptsTime": 40.6,
+      "score": 0.007357
+    },
+    {
+      "frame": 1219,
+      "ptsTime": 40.633333,
+      "score": 0.088551
+    },
+    {
+      "frame": 1220,
+      "ptsTime": 40.666667,
+      "score": 0.021774
+    },
+    {
+      "frame": 1221,
+      "ptsTime": 40.7,
+      "score": 0.00147
+    },
+    {
+      "frame": 1222,
+      "ptsTime": 40.733333,
+      "score": 0.021372
+    },
+    {
+      "frame": 1223,
+      "ptsTime": 40.766667,
+      "score": 0.046532
+    },
+    {
+      "frame": 1224,
+      "ptsTime": 40.8,
+      "score": 0.027309
+    },
+    {
+      "frame": 1225,
+      "ptsTime": 40.833333,
+      "score": 0.053944
+    },
+    {
+      "frame": 1226,
+      "ptsTime": 40.866667,
+      "score": 0.037917
+    },
+    {
+      "frame": 1227,
+      "ptsTime": 40.9,
+      "score": 0.018721
+    },
+    {
+      "frame": 1228,
+      "ptsTime": 40.933333,
+      "score": 0.03267
+    },
+    {
+      "frame": 1229,
+      "ptsTime": 40.966667,
+      "score": 0.003473
+    },
+    {
+      "frame": 1230,
+      "ptsTime": 41.0,
+      "score": 0.025099
+    },
+    {
+      "frame": 1231,
+      "ptsTime": 41.033333,
+      "score": 0.017171
+    },
+    {
+      "frame": 1232,
+      "ptsTime": 41.066667,
+      "score": 0.001719
+    },
+    {
+      "frame": 1233,
+      "ptsTime": 41.1,
+      "score": 0.0055
+    },
+    {
+      "frame": 1234,
+      "ptsTime": 41.133333,
+      "score": 0.002199
+    },
+    {
+      "frame": 1235,
+      "ptsTime": 41.166667,
+      "score": 0.005614
+    },
+    {
+      "frame": 1236,
+      "ptsTime": 41.2,
+      "score": 0.002935
+    },
+    {
+      "frame": 1237,
+      "ptsTime": 41.233333,
+      "score": 0.003531
+    },
+    {
+      "frame": 1238,
+      "ptsTime": 41.266667,
+      "score": 0.017432
+    },
+    {
+      "frame": 1239,
+      "ptsTime": 41.3,
+      "score": 0.033354
+    },
+    {
+      "frame": 1240,
+      "ptsTime": 41.333333,
+      "score": 0.028764
+    },
+    {
+      "frame": 1241,
+      "ptsTime": 41.366667,
+      "score": 0.023942
+    },
+    {
+      "frame": 1242,
+      "ptsTime": 41.4,
+      "score": 0.0389
+    },
+    {
+      "frame": 1243,
+      "ptsTime": 41.433333,
+      "score": 0.038201
+    },
+    {
+      "frame": 1244,
+      "ptsTime": 41.466667,
+      "score": 0.03158
+    },
+    {
+      "frame": 1245,
+      "ptsTime": 41.5,
+      "score": 0.030379
+    },
+    {
+      "frame": 1246,
+      "ptsTime": 41.533333,
+      "score": 0.024595
+    },
+    {
+      "frame": 1247,
+      "ptsTime": 41.566667,
+      "score": 0.018049
+    },
+    {
+      "frame": 1248,
+      "ptsTime": 41.6,
+      "score": 0.013272
+    },
+    {
+      "frame": 1249,
+      "ptsTime": 41.633333,
+      "score": 0.009815
+    },
+    {
+      "frame": 1250,
+      "ptsTime": 41.666667,
+      "score": 0.007326
+    },
+    {
+      "frame": 1251,
+      "ptsTime": 41.7,
+      "score": 0.005277
+    },
+    {
+      "frame": 1252,
+      "ptsTime": 41.733333,
+      "score": 0.003859
+    },
+    {
+      "frame": 1253,
+      "ptsTime": 41.766667,
+      "score": 0.002842
+    },
+    {
+      "frame": 1254,
+      "ptsTime": 41.8,
+      "score": 0.002114
+    },
+    {
+      "frame": 1255,
+      "ptsTime": 41.833333,
+      "score": 0.001557
+    },
+    {
+      "frame": 1256,
+      "ptsTime": 41.866667,
+      "score": 0.001109
+    },
+    {
+      "frame": 1257,
+      "ptsTime": 41.9,
+      "score": 0.000813
+    },
+    {
+      "frame": 1258,
+      "ptsTime": 41.933333,
+      "score": 0.000607
+    },
+    {
+      "frame": 1259,
+      "ptsTime": 41.966667,
+      "score": 0.052591
+    },
+    {
+      "frame": 1260,
+      "ptsTime": 42.0,
+      "score": 0.017036
+    },
+    {
+      "frame": 1261,
+      "ptsTime": 42.033333,
+      "score": 0.000758
+    },
+    {
+      "frame": 1262,
+      "ptsTime": 42.066667,
+      "score": 5.3e-05
+    },
+    {
+      "frame": 1263,
+      "ptsTime": 42.1,
+      "score": 0.000862
+    },
+    {
+      "frame": 1264,
+      "ptsTime": 42.133333,
+      "score": 0.001181
+    },
+    {
+      "frame": 1265,
+      "ptsTime": 42.166667,
+      "score": 0.000752
+    },
+    {
+      "frame": 1266,
+      "ptsTime": 42.2,
+      "score": 0.000931
+    },
+    {
+      "frame": 1267,
+      "ptsTime": 42.233333,
+      "score": 0.000164
+    },
+    {
+      "frame": 1268,
+      "ptsTime": 42.266667,
+      "score": 0.001284
+    },
+    {
+      "frame": 1269,
+      "ptsTime": 42.3,
+      "score": 0.000369
+    },
+    {
+      "frame": 1270,
+      "ptsTime": 42.333333,
+      "score": 0.00067
+    },
+    {
+      "frame": 1271,
+      "ptsTime": 42.366667,
+      "score": 7.1e-05
+    },
+    {
+      "frame": 1272,
+      "ptsTime": 42.4,
+      "score": 0.000861
+    },
+    {
+      "frame": 1273,
+      "ptsTime": 42.433333,
+      "score": 0.001845
+    },
+    {
+      "frame": 1274,
+      "ptsTime": 42.466667,
+      "score": 0.000689
+    },
+    {
+      "frame": 1275,
+      "ptsTime": 42.5,
+      "score": 0.000865
+    },
+    {
+      "frame": 1276,
+      "ptsTime": 42.533333,
+      "score": 0.001032
+    },
+    {
+      "frame": 1277,
+      "ptsTime": 42.566667,
+      "score": 0.000248
+    },
+    {
+      "frame": 1278,
+      "ptsTime": 42.6,
+      "score": 0.000534
+    },
+    {
+      "frame": 1279,
+      "ptsTime": 42.633333,
+      "score": 0.000817
+    },
+    {
+      "frame": 1280,
+      "ptsTime": 42.666667,
+      "score": 0.032726
+    },
+    {
+      "frame": 1281,
+      "ptsTime": 42.7,
+      "score": 0.016538
+    },
+    {
+      "frame": 1282,
+      "ptsTime": 42.733333,
+      "score": 0.008196
+    },
+    {
+      "frame": 1283,
+      "ptsTime": 42.766667,
+      "score": 0.005914
+    },
+    {
+      "frame": 1284,
+      "ptsTime": 42.8,
+      "score": 0.000974
+    },
+    {
+      "frame": 1285,
+      "ptsTime": 42.833333,
+      "score": 0.000274
+    },
+    {
+      "frame": 1286,
+      "ptsTime": 42.866667,
+      "score": 0.000415
+    },
+    {
+      "frame": 1287,
+      "ptsTime": 42.9,
+      "score": 0.001051
+    },
+    {
+      "frame": 1288,
+      "ptsTime": 42.933333,
+      "score": 0.000194
+    },
+    {
+      "frame": 1289,
+      "ptsTime": 42.966667,
+      "score": 0.000604
+    },
+    {
+      "frame": 1290,
+      "ptsTime": 43.0,
+      "score": 0.00067
+    },
+    {
+      "frame": 1291,
+      "ptsTime": 43.033333,
+      "score": 0.000536
+    },
+    {
+      "frame": 1292,
+      "ptsTime": 43.066667,
+      "score": 0.000344
+    },
+    {
+      "frame": 1293,
+      "ptsTime": 43.1,
+      "score": 0.00075
+    },
+    {
+      "frame": 1294,
+      "ptsTime": 43.133333,
+      "score": 0.000382
+    },
+    {
+      "frame": 1295,
+      "ptsTime": 43.166667,
+      "score": 0.000415
+    },
+    {
+      "frame": 1296,
+      "ptsTime": 43.2,
+      "score": 0.000508
+    },
+    {
+      "frame": 1297,
+      "ptsTime": 43.233333,
+      "score": 3e-06
+    },
+    {
+      "frame": 1298,
+      "ptsTime": 43.266667,
+      "score": 0.000212
+    },
+    {
+      "frame": 1299,
+      "ptsTime": 43.3,
+      "score": 0.001848
+    },
+    {
+      "frame": 1300,
+      "ptsTime": 43.333333,
+      "score": 3e-06
+    },
+    {
+      "frame": 1301,
+      "ptsTime": 43.366667,
+      "score": 1.2e-05
+    },
+    {
+      "frame": 1302,
+      "ptsTime": 43.4,
+      "score": 1e-06
+    },
+    {
+      "frame": 1303,
+      "ptsTime": 43.433333,
+      "score": 0.0
+    },
+    {
+      "frame": 1304,
+      "ptsTime": 43.466667,
+      "score": 1.6e-05
+    },
+    {
+      "frame": 1305,
+      "ptsTime": 43.5,
+      "score": 0.0
+    },
+    {
+      "frame": 1306,
+      "ptsTime": 43.533333,
+      "score": 5e-06
+    },
+    {
+      "frame": 1307,
+      "ptsTime": 43.566667,
+      "score": 2e-06
+    },
+    {
+      "frame": 1308,
+      "ptsTime": 43.6,
+      "score": 1e-06
+    },
+    {
+      "frame": 1309,
+      "ptsTime": 43.633333,
+      "score": 6e-06
+    },
+    {
+      "frame": 1310,
+      "ptsTime": 43.666667,
+      "score": 1e-06
+    }
+  ],
+  "spectrum": [
+    {
+      "threshold": 0.03,
+      "detectedFrames": [
+        1,
+        2,
+        32,
+        73,
+        74,
+        75,
+        114,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        195,
+        196,
+        236,
+        237,
+        240,
+        241,
+        242,
+        243,
+        244,
+        247,
+        248,
+        249,
+        251,
+        252,
+        253,
+        254,
+        259,
+        262,
+        263,
+        264,
+        269,
+        270,
+        271,
+        274,
+        277,
+        280,
+        281,
+        282,
+        286,
+        287,
+        288,
+        289,
+        298,
+        299,
+        300,
+        301,
+        308,
+        309,
+        310,
+        312,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        325,
+        326,
+        327,
+        328,
+        336,
+        337,
+        338,
+        339,
+        359,
+        360,
+        361,
+        362,
+        363,
+        367,
+        380,
+        381,
+        386,
+        396,
+        400,
+        441,
+        461,
+        478,
+        482,
+        483,
+        505,
+        506,
+        522,
+        523,
+        543,
+        546,
+        584,
+        605,
+        645,
+        658,
+        671,
+        672,
+        679,
+        684,
+        687,
+        689,
+        690,
+        698,
+        707,
+        726,
+        727,
+        748,
+        749,
+        750,
+        768,
+        769,
+        770,
+        771,
+        772,
+        782,
+        783,
+        788,
+        795,
+        796,
+        797,
+        799,
+        800,
+        805,
+        808,
+        809,
+        850,
+        851,
+        855,
+        881,
+        891,
+        892,
+        895,
+        900,
+        901,
+        911,
+        912,
+        913,
+        922,
+        923,
+        924,
+        925,
+        927,
+        928,
+        929,
+        931,
+        958,
+        973,
+        1014,
+        1015,
+        1016,
+        1017,
+        1018,
+        1019,
+        1020,
+        1021,
+        1022,
+        1023,
+        1024,
+        1025,
+        1026,
+        1027,
+        1031,
+        1033,
+        1034,
+        1038,
+        1039,
+        1040,
+        1055,
+        1056,
+        1075,
+        1076,
+        1095,
+        1096,
+        1098,
+        1106,
+        1112,
+        1116,
+        1117,
+        1126,
+        1127,
+        1136,
+        1137,
+        1147,
+        1157,
+        1158,
+        1165,
+        1167,
+        1168,
+        1169,
+        1171,
+        1172,
+        1177,
+        1178,
+        1179,
+        1180,
+        1181,
+        1197,
+        1198,
+        1219,
+        1223,
+        1225,
+        1226,
+        1228,
+        1239,
+        1242,
+        1243,
+        1244,
+        1245,
+        1259,
+        1280
+      ],
+      "boundaries": [
+        {
+          "shot": "S02",
+          "expectedFrame": 32,
+          "nearestDetectedFrame": 32,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S03",
+          "expectedFrame": 73,
+          "nearestDetectedFrame": 73,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S04",
+          "expectedFrame": 114,
+          "nearestDetectedFrame": 114,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S05",
+          "expectedFrame": 155,
+          "nearestDetectedFrame": 155,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S06",
+          "expectedFrame": 195,
+          "nearestDetectedFrame": 195,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S07",
+          "expectedFrame": 236,
+          "nearestDetectedFrame": 236,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S08a",
+          "expectedFrame": 277,
+          "nearestDetectedFrame": 277,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S08b",
+          "expectedFrame": 288,
+          "nearestDetectedFrame": 288,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S08c",
+          "expectedFrame": 298,
+          "nearestDetectedFrame": 298,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S08d",
+          "expectedFrame": 308,
+          "nearestDetectedFrame": 308,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S09a",
+          "expectedFrame": 318,
+          "nearestDetectedFrame": 318,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S09b",
+          "expectedFrame": 328,
+          "nearestDetectedFrame": 328,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S10",
+          "expectedFrame": 339,
+          "nearestDetectedFrame": 339,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S11",
+          "expectedFrame": 359,
+          "nearestDetectedFrame": 359,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S12",
+          "expectedFrame": 380,
+          "nearestDetectedFrame": 380,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S13",
+          "expectedFrame": 400,
+          "nearestDetectedFrame": 400,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S14",
+          "expectedFrame": 441,
+          "nearestDetectedFrame": 441,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S15",
+          "expectedFrame": 482,
+          "nearestDetectedFrame": 482,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S16",
+          "expectedFrame": 523,
+          "nearestDetectedFrame": 523,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S17",
+          "expectedFrame": 543,
+          "nearestDetectedFrame": 543,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S18",
+          "expectedFrame": 584,
+          "nearestDetectedFrame": 584,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S19",
+          "expectedFrame": 605,
+          "nearestDetectedFrame": 605,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S20",
+          "expectedFrame": 645,
+          "nearestDetectedFrame": 645,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S21",
+          "expectedFrame": 686,
+          "nearestDetectedFrame": 687,
+          "lagFrames": 1,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": "S20-to-S21 white flash spans684–686; first visible postwhite687 is valid+1, no invented difference onwhite"
+        },
+        {
+          "shot": "S22",
+          "expectedFrame": 707,
+          "nearestDetectedFrame": 707,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S23",
+          "expectedFrame": 727,
+          "nearestDetectedFrame": 727,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S24",
+          "expectedFrame": 748,
+          "nearestDetectedFrame": 748,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S25",
+          "expectedFrame": 768,
+          "nearestDetectedFrame": 768,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S26",
+          "expectedFrame": 809,
+          "nearestDetectedFrame": 809,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S27",
+          "expectedFrame": 850,
+          "nearestDetectedFrame": 850,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S28a",
+          "expectedFrame": 891,
+          "nearestDetectedFrame": 891,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S28b",
+          "expectedFrame": 901,
+          "nearestDetectedFrame": 901,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S28c",
+          "expectedFrame": 911,
+          "nearestDetectedFrame": 911,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S29",
+          "expectedFrame": 922,
+          "nearestDetectedFrame": 922,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S30",
+          "expectedFrame": 932,
+          "nearestDetectedFrame": 931,
+          "lagFrames": -1,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S31",
+          "expectedFrame": 973,
+          "nearestDetectedFrame": 973,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S32",
+          "expectedFrame": 1014,
+          "nearestDetectedFrame": 1014,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S33",
+          "expectedFrame": 1034,
+          "nearestDetectedFrame": 1034,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S34",
+          "expectedFrame": 1055,
+          "nearestDetectedFrame": 1055,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S35",
+          "expectedFrame": 1075,
+          "nearestDetectedFrame": 1075,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36a",
+          "expectedFrame": 1095,
+          "nearestDetectedFrame": 1095,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36b",
+          "expectedFrame": 1106,
+          "nearestDetectedFrame": 1106,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36c",
+          "expectedFrame": 1116,
+          "nearestDetectedFrame": 1116,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36d",
+          "expectedFrame": 1126,
+          "nearestDetectedFrame": 1126,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36e",
+          "expectedFrame": 1136,
+          "nearestDetectedFrame": 1136,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36f",
+          "expectedFrame": 1147,
+          "nearestDetectedFrame": 1147,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36g",
+          "expectedFrame": 1157,
+          "nearestDetectedFrame": 1157,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36h",
+          "expectedFrame": 1167,
+          "nearestDetectedFrame": 1167,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S37",
+          "expectedFrame": 1177,
+          "nearestDetectedFrame": 1177,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S38",
+          "expectedFrame": 1218,
+          "nearestDetectedFrame": 1219,
+          "lagFrames": 1,
+          "withinOneFrame": true,
+          "exempt": true,
+          "exemption": "S37-to-S38 intentionally continuous pull-out",
+          "transitionNote": null
+        },
+        {
+          "shot": "S39",
+          "expectedFrame": 1259,
+          "nearestDetectedFrame": 1259,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        }
+      ],
+      "extraDetections": [
+        1,
+        2,
+        75,
+        157,
+        158,
+        159,
+        160,
+        161,
+        240,
+        241,
+        242,
+        243,
+        244,
+        247,
+        248,
+        249,
+        251,
+        252,
+        253,
+        254,
+        259,
+        262,
+        263,
+        264,
+        269,
+        270,
+        271,
+        274,
+        280,
+        281,
+        282,
+        286,
+        300,
+        301,
+        310,
+        312,
+        316,
+        320,
+        321,
+        322,
+        323,
+        325,
+        326,
+        336,
+        337,
+        361,
+        362,
+        363,
+        367,
+        386,
+        396,
+        461,
+        478,
+        505,
+        506,
+        546,
+        658,
+        671,
+        672,
+        679,
+        684,
+        689,
+        690,
+        698,
+        750,
+        770,
+        771,
+        772,
+        782,
+        783,
+        788,
+        795,
+        796,
+        797,
+        799,
+        800,
+        805,
+        855,
+        881,
+        895,
+        913,
+        924,
+        925,
+        927,
+        928,
+        929,
+        958,
+        1016,
+        1017,
+        1018,
+        1019,
+        1020,
+        1021,
+        1022,
+        1023,
+        1024,
+        1025,
+        1026,
+        1027,
+        1031,
+        1038,
+        1039,
+        1040,
+        1098,
+        1112,
+        1165,
+        1169,
+        1171,
+        1172,
+        1179,
+        1180,
+        1181,
+        1197,
+        1198,
+        1223,
+        1225,
+        1226,
+        1228,
+        1239,
+        1242,
+        1243,
+        1244,
+        1245,
+        1280
+      ],
+      "missedNonexempt": 0
+    },
+    {
+      "threshold": 0.1,
+      "detectedFrames": [
+        1,
+        32,
+        73,
+        74,
+        114,
+        155,
+        156,
+        157,
+        158,
+        161,
+        195,
+        196,
+        236,
+        237,
+        277,
+        288,
+        298,
+        308,
+        318,
+        319,
+        320,
+        328,
+        336,
+        337,
+        339,
+        359,
+        360,
+        362,
+        363,
+        380,
+        381,
+        400,
+        441,
+        482,
+        483,
+        505,
+        523,
+        543,
+        584,
+        605,
+        645,
+        671,
+        684,
+        687,
+        689,
+        707,
+        727,
+        748,
+        749,
+        768,
+        769,
+        770,
+        809,
+        850,
+        891,
+        901,
+        911,
+        912,
+        922,
+        923,
+        931,
+        973,
+        1014,
+        1015,
+        1017,
+        1018,
+        1034,
+        1055,
+        1056,
+        1075,
+        1095,
+        1096,
+        1098,
+        1106,
+        1116,
+        1126,
+        1136,
+        1147,
+        1157,
+        1167,
+        1177,
+        1178,
+        1179,
+        1180,
+        1181
+      ],
+      "boundaries": [
+        {
+          "shot": "S02",
+          "expectedFrame": 32,
+          "nearestDetectedFrame": 32,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S03",
+          "expectedFrame": 73,
+          "nearestDetectedFrame": 73,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S04",
+          "expectedFrame": 114,
+          "nearestDetectedFrame": 114,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S05",
+          "expectedFrame": 155,
+          "nearestDetectedFrame": 155,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S06",
+          "expectedFrame": 195,
+          "nearestDetectedFrame": 195,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S07",
+          "expectedFrame": 236,
+          "nearestDetectedFrame": 236,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S08a",
+          "expectedFrame": 277,
+          "nearestDetectedFrame": 277,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S08b",
+          "expectedFrame": 288,
+          "nearestDetectedFrame": 288,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S08c",
+          "expectedFrame": 298,
+          "nearestDetectedFrame": 298,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S08d",
+          "expectedFrame": 308,
+          "nearestDetectedFrame": 308,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S09a",
+          "expectedFrame": 318,
+          "nearestDetectedFrame": 318,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S09b",
+          "expectedFrame": 328,
+          "nearestDetectedFrame": 328,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S10",
+          "expectedFrame": 339,
+          "nearestDetectedFrame": 339,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S11",
+          "expectedFrame": 359,
+          "nearestDetectedFrame": 359,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S12",
+          "expectedFrame": 380,
+          "nearestDetectedFrame": 380,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S13",
+          "expectedFrame": 400,
+          "nearestDetectedFrame": 400,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S14",
+          "expectedFrame": 441,
+          "nearestDetectedFrame": 441,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S15",
+          "expectedFrame": 482,
+          "nearestDetectedFrame": 482,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S16",
+          "expectedFrame": 523,
+          "nearestDetectedFrame": 523,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S17",
+          "expectedFrame": 543,
+          "nearestDetectedFrame": 543,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S18",
+          "expectedFrame": 584,
+          "nearestDetectedFrame": 584,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S19",
+          "expectedFrame": 605,
+          "nearestDetectedFrame": 605,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S20",
+          "expectedFrame": 645,
+          "nearestDetectedFrame": 645,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S21",
+          "expectedFrame": 686,
+          "nearestDetectedFrame": 687,
+          "lagFrames": 1,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": "S20-to-S21 white flash spans684–686; first visible postwhite687 is valid+1, no invented difference onwhite"
+        },
+        {
+          "shot": "S22",
+          "expectedFrame": 707,
+          "nearestDetectedFrame": 707,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S23",
+          "expectedFrame": 727,
+          "nearestDetectedFrame": 727,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S24",
+          "expectedFrame": 748,
+          "nearestDetectedFrame": 748,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S25",
+          "expectedFrame": 768,
+          "nearestDetectedFrame": 768,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S26",
+          "expectedFrame": 809,
+          "nearestDetectedFrame": 809,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S27",
+          "expectedFrame": 850,
+          "nearestDetectedFrame": 850,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S28a",
+          "expectedFrame": 891,
+          "nearestDetectedFrame": 891,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S28b",
+          "expectedFrame": 901,
+          "nearestDetectedFrame": 901,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S28c",
+          "expectedFrame": 911,
+          "nearestDetectedFrame": 911,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S29",
+          "expectedFrame": 922,
+          "nearestDetectedFrame": 922,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S30",
+          "expectedFrame": 932,
+          "nearestDetectedFrame": 931,
+          "lagFrames": -1,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S31",
+          "expectedFrame": 973,
+          "nearestDetectedFrame": 973,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S32",
+          "expectedFrame": 1014,
+          "nearestDetectedFrame": 1014,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S33",
+          "expectedFrame": 1034,
+          "nearestDetectedFrame": 1034,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S34",
+          "expectedFrame": 1055,
+          "nearestDetectedFrame": 1055,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S35",
+          "expectedFrame": 1075,
+          "nearestDetectedFrame": 1075,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36a",
+          "expectedFrame": 1095,
+          "nearestDetectedFrame": 1095,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36b",
+          "expectedFrame": 1106,
+          "nearestDetectedFrame": 1106,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36c",
+          "expectedFrame": 1116,
+          "nearestDetectedFrame": 1116,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36d",
+          "expectedFrame": 1126,
+          "nearestDetectedFrame": 1126,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36e",
+          "expectedFrame": 1136,
+          "nearestDetectedFrame": 1136,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36f",
+          "expectedFrame": 1147,
+          "nearestDetectedFrame": 1147,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36g",
+          "expectedFrame": 1157,
+          "nearestDetectedFrame": 1157,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36h",
+          "expectedFrame": 1167,
+          "nearestDetectedFrame": 1167,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S37",
+          "expectedFrame": 1177,
+          "nearestDetectedFrame": 1177,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S38",
+          "expectedFrame": 1218,
+          "nearestDetectedFrame": 1181,
+          "lagFrames": -37,
+          "withinOneFrame": false,
+          "exempt": true,
+          "exemption": "S37-to-S38 intentionally continuous pull-out",
+          "transitionNote": null
+        },
+        {
+          "shot": "S39",
+          "expectedFrame": 1259,
+          "nearestDetectedFrame": 1181,
+          "lagFrames": -78,
+          "withinOneFrame": false,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        }
+      ],
+      "extraDetections": [
+        1,
+        157,
+        158,
+        161,
+        320,
+        336,
+        337,
+        362,
+        363,
+        505,
+        671,
+        684,
+        689,
+        770,
+        1017,
+        1018,
+        1098,
+        1179,
+        1180,
+        1181
+      ],
+      "missedNonexempt": 1
+    },
+    {
+      "threshold": 0.3,
+      "detectedFrames": [
+        1,
+        32,
+        73,
+        114,
+        155,
+        195,
+        236,
+        277,
+        288,
+        298,
+        308,
+        318,
+        328,
+        337,
+        339,
+        362,
+        380,
+        400,
+        441,
+        482,
+        523,
+        584,
+        605,
+        645,
+        684,
+        687,
+        707,
+        727,
+        748,
+        768,
+        809,
+        850,
+        911,
+        922,
+        931,
+        973,
+        1014,
+        1015,
+        1017,
+        1034,
+        1055,
+        1075,
+        1095,
+        1177,
+        1180
+      ],
+      "boundaries": [
+        {
+          "shot": "S02",
+          "expectedFrame": 32,
+          "nearestDetectedFrame": 32,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S03",
+          "expectedFrame": 73,
+          "nearestDetectedFrame": 73,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S04",
+          "expectedFrame": 114,
+          "nearestDetectedFrame": 114,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S05",
+          "expectedFrame": 155,
+          "nearestDetectedFrame": 155,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S06",
+          "expectedFrame": 195,
+          "nearestDetectedFrame": 195,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S07",
+          "expectedFrame": 236,
+          "nearestDetectedFrame": 236,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S08a",
+          "expectedFrame": 277,
+          "nearestDetectedFrame": 277,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S08b",
+          "expectedFrame": 288,
+          "nearestDetectedFrame": 288,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S08c",
+          "expectedFrame": 298,
+          "nearestDetectedFrame": 298,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S08d",
+          "expectedFrame": 308,
+          "nearestDetectedFrame": 308,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S09a",
+          "expectedFrame": 318,
+          "nearestDetectedFrame": 318,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S09b",
+          "expectedFrame": 328,
+          "nearestDetectedFrame": 328,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S10",
+          "expectedFrame": 339,
+          "nearestDetectedFrame": 339,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S11",
+          "expectedFrame": 359,
+          "nearestDetectedFrame": 362,
+          "lagFrames": 3,
+          "withinOneFrame": false,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S12",
+          "expectedFrame": 380,
+          "nearestDetectedFrame": 380,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S13",
+          "expectedFrame": 400,
+          "nearestDetectedFrame": 400,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S14",
+          "expectedFrame": 441,
+          "nearestDetectedFrame": 441,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S15",
+          "expectedFrame": 482,
+          "nearestDetectedFrame": 482,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S16",
+          "expectedFrame": 523,
+          "nearestDetectedFrame": 523,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S17",
+          "expectedFrame": 543,
+          "nearestDetectedFrame": 523,
+          "lagFrames": -20,
+          "withinOneFrame": false,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S18",
+          "expectedFrame": 584,
+          "nearestDetectedFrame": 584,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S19",
+          "expectedFrame": 605,
+          "nearestDetectedFrame": 605,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S20",
+          "expectedFrame": 645,
+          "nearestDetectedFrame": 645,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S21",
+          "expectedFrame": 686,
+          "nearestDetectedFrame": 687,
+          "lagFrames": 1,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": "S20-to-S21 white flash spans684–686; first visible postwhite687 is valid+1, no invented difference onwhite"
+        },
+        {
+          "shot": "S22",
+          "expectedFrame": 707,
+          "nearestDetectedFrame": 707,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S23",
+          "expectedFrame": 727,
+          "nearestDetectedFrame": 727,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S24",
+          "expectedFrame": 748,
+          "nearestDetectedFrame": 748,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S25",
+          "expectedFrame": 768,
+          "nearestDetectedFrame": 768,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S26",
+          "expectedFrame": 809,
+          "nearestDetectedFrame": 809,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S27",
+          "expectedFrame": 850,
+          "nearestDetectedFrame": 850,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S28a",
+          "expectedFrame": 891,
+          "nearestDetectedFrame": 911,
+          "lagFrames": 20,
+          "withinOneFrame": false,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S28b",
+          "expectedFrame": 901,
+          "nearestDetectedFrame": 911,
+          "lagFrames": 10,
+          "withinOneFrame": false,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S28c",
+          "expectedFrame": 911,
+          "nearestDetectedFrame": 911,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S29",
+          "expectedFrame": 922,
+          "nearestDetectedFrame": 922,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S30",
+          "expectedFrame": 932,
+          "nearestDetectedFrame": 931,
+          "lagFrames": -1,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S31",
+          "expectedFrame": 973,
+          "nearestDetectedFrame": 973,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S32",
+          "expectedFrame": 1014,
+          "nearestDetectedFrame": 1014,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S33",
+          "expectedFrame": 1034,
+          "nearestDetectedFrame": 1034,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S34",
+          "expectedFrame": 1055,
+          "nearestDetectedFrame": 1055,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S35",
+          "expectedFrame": 1075,
+          "nearestDetectedFrame": 1075,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36a",
+          "expectedFrame": 1095,
+          "nearestDetectedFrame": 1095,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36b",
+          "expectedFrame": 1106,
+          "nearestDetectedFrame": 1095,
+          "lagFrames": -11,
+          "withinOneFrame": false,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36c",
+          "expectedFrame": 1116,
+          "nearestDetectedFrame": 1095,
+          "lagFrames": -21,
+          "withinOneFrame": false,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36d",
+          "expectedFrame": 1126,
+          "nearestDetectedFrame": 1095,
+          "lagFrames": -31,
+          "withinOneFrame": false,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36e",
+          "expectedFrame": 1136,
+          "nearestDetectedFrame": 1095,
+          "lagFrames": -41,
+          "withinOneFrame": false,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36f",
+          "expectedFrame": 1147,
+          "nearestDetectedFrame": 1177,
+          "lagFrames": 30,
+          "withinOneFrame": false,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36g",
+          "expectedFrame": 1157,
+          "nearestDetectedFrame": 1177,
+          "lagFrames": 20,
+          "withinOneFrame": false,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S36h",
+          "expectedFrame": 1167,
+          "nearestDetectedFrame": 1177,
+          "lagFrames": 10,
+          "withinOneFrame": false,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S37",
+          "expectedFrame": 1177,
+          "nearestDetectedFrame": 1177,
+          "lagFrames": 0,
+          "withinOneFrame": true,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        },
+        {
+          "shot": "S38",
+          "expectedFrame": 1218,
+          "nearestDetectedFrame": 1180,
+          "lagFrames": -38,
+          "withinOneFrame": false,
+          "exempt": true,
+          "exemption": "S37-to-S38 intentionally continuous pull-out",
+          "transitionNote": null
+        },
+        {
+          "shot": "S39",
+          "expectedFrame": 1259,
+          "nearestDetectedFrame": 1180,
+          "lagFrames": -79,
+          "withinOneFrame": false,
+          "exempt": false,
+          "exemption": null,
+          "transitionNote": null
+        }
+      ],
+      "extraDetections": [
+        1,
+        337,
+        362,
+        684,
+        1017,
+        1180
+      ],
+      "missedNonexempt": 12
+    }
+  ]
+}

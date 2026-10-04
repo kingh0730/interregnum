@@ -1,0 +1,177 @@
+{
+  "shots": {
+    "S05": {
+      "assets": {
+        "plate": "assets/normalized/S05-face.png",
+        "depth": "assets/depth/S05-face.png",
+        "mask": "assets/masks/S05-face.png",
+        "layers": [],
+        "poses": [],
+        "support": {
+          "eye": {
+            "id": "S05-eye",
+            "source": "assets/plates/S05-eye.png",
+            "plate": "assets/normalized/S05-eye.png",
+            "depth": "assets/depth/S05-eye.png",
+            "mask": "assets/masks/S05-eye.png",
+            "expected_mask": "assets/masks/S05-eye.png",
+            "status": "normalized_source_available",
+            "depth_status": "available_unreviewed",
+            "mask_status": "pending_inference",
+            "features": {
+              "status": "anchors_located_pending_composite_review",
+              "eyes": [
+                [
+                  0.58268229,
+                  0.47916667,
+                  0.04427083
+                ]
+              ],
+              "hairpin": null,
+              "tie": null,
+              "halo": null,
+              "eyes_state": "open_macro",
+              "review_evidence": [
+                "qa/features/S05-eye-anchors.png",
+                "qa/features/first-batch-overlay-grid.jpg"
+              ],
+              "halo_requires_subject_occlusion": false,
+              "only_character": "Opus"
+            },
+            "features_required": true,
+            "mask_required": true,
+            "approval": false,
+            "source_sha256": "b9d27d45e98d62e046e9b2988ad63cfbb5704868e1f40a389f8d7966e4738bbb",
+            "output_sha256": "13a8a74c3ff334a6cbd3411fc10f3f2cf998b89daafdf2c6a2f569f5c1f749f2",
+            "transform": {
+              "source_size": [
+                1536,
+                1024
+              ],
+              "crop_box": [
+                0,
+                80,
+                1536,
+                944
+              ],
+              "target_size": [
+                1920,
+                1080
+              ],
+              "scale": 1.25,
+              "method": "center_crop_lanczos_preserve_alpha"
+            },
+            "mode": "RGB",
+            "source_alpha_range": null,
+            "path": "assets/normalized/S05-eye.png"
+          }
+        },
+        "features": {
+          "status": "anchors_located_pending_composite_review",
+          "eyes": [
+            [
+              0.41447368,
+              0.45481127,
+              0.01196172
+            ],
+            [
+              0.56160287,
+              0.3856991,
+              0.01196172
+            ]
+          ],
+          "hairpin": [
+            0.61543062,
+            0.17304625,
+            0.02751196
+          ],
+          "tie": [
+            0.53050239,
+            0.98112706,
+            0.02990431
+          ],
+          "halo": [
+            0.50837321,
+            0.41440723,
+            0.62799043,
+            0.85061138
+          ],
+          "eyes_state": "open",
+          "review_evidence": [
+            "qa/features/S05-face-anchors.png",
+            "qa/features/first-batch-overlay-grid.jpg"
+          ],
+          "halo_requires_subject_occlusion": true,
+          "only_character": "Opus"
+        },
+        "status": "normalized_source_available",
+        "approval": false,
+        "mask_required": true,
+        "mask_status": "pending_inference",
+        "depth_status": "available_unreviewed",
+        "asset_id": "S05-face"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo",
+        "eyes_state",
+        "review_evidence",
+        "halo_requires_subject_occlusion",
+        "only_character"
+      ],
+      "unverified": []
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}

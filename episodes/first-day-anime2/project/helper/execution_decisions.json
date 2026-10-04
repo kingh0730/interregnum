@@ -1,0 +1,67 @@
+{
+  "user_overrides": {
+    "image_generation": "Codex built-in image generation",
+    "luma": "forbidden",
+    "scope": "Full MV plan execution"
+  },
+  "authority": "Supplied shots.json for shot boundaries; plan hard rules precede contradictory per-shot prose.",
+  "conflicts_resolved": [
+    {
+      "issue": "AAC 320k and original MP3 muxed untouched are incompatible for a single audio stream",
+      "decision": "Preserve original MP3 stream; any AAC compatibility version must be separately labeled."
+    },
+    {
+      "issue": "S10 hard freeze conflicts with scale creep, cursor blink and 100% flip",
+      "decision": "Freeze every layer for all S10 frames 339 through 358."
+    },
+    {
+      "issue": "S28a/b/c prose cue timestamps precede their shots",
+      "decision": "Use authoritative shot starts at frames 891, 901 and 911."
+    },
+    {
+      "issue": "Ankle hard rule conflicts with S17 tilt to face",
+      "decision": "Keep S16 and S17 crops at or below the knee."
+    },
+    {
+      "issue": "52-shot list includes continuous S37-to-S38 pull-out",
+      "decision": "Retain two timeline segments and continuous motion; do not invent a perceptible cut solely to satisfy scene detector."
+    },
+    {
+      "issue": "600 unique stills every 0.25s exceed S01–S37 duration",
+      "decision": "Sample available frames every 0.25s and reuse in 600 mosaic tiles; log source frame for each tile."
+    },
+    {
+      "issue": "Character sheet requests generated exact spark logos but hard rule forbids model-rendered logos",
+      "decision": "Generate plain attachment regions and composite exact SVG symbols in code before approval."
+    },
+    {
+      "issue": "Titles at impact times conflict with full-white impact frame",
+      "decision": "Retain white frame on exact cut, title readable immediately after impact transition; disclose exact visibility frames in QA."
+    },
+    {
+      "issue": "Final lyric starts at frame 1197 but source character timing extends into S38, whose prose forbids text overlays. Centered type is also obscured by S37 foreground figure.",
+      "decision": "Preserve lyric start frame 1197; compress six character entrances to frames 1197, 1199, 1201, 1203, 1205, 1207 so the complete phrase settles before S37 ends at 1217. Use a safe left poster column in two lines 永远 / 那么灿烂; S38 adds no new text overlay, while its first tile naturally inherits the finished S37 frame."
+    },
+    {
+      "issue": "Large Style B lyrics behind foreground characters are substantially occluded, and phrase timing spans shots without their own poster layout.",
+      "decision": "Keep the large depth-occluded poster type, and add a foreground safe-bottom support line across S11 through S36h using unchanged sung-character timestamps and six-frame line crossfades. This continues through S13/S17/S24/S30/S31/S35 and S15 brush-write. Suppress it on S20/S29 terminal whiteouts; S10 freeze, S37 left poster, S38 mosaic and S39 lockup retain their independent designs."
+    }
+  ],
+  "status": "Rendered final film delivered; measured media checks pass. Full camera/choreography fidelity and native/perceptual playback remain qualified in qa/qa_report.md.",
+  "motion_method": {
+    "selected": "Plan §7/§12 still + 2.5D fallback",
+    "reason": "Two H3 pilot submissions failed before generation due active sandbox DNS restriction; escalation interrupted. No conclusion about model motion quality.",
+    "requirements": "Real depth/layer rigs, pose changes and smears; no blanket flat Ken Burns; final QA required."
+  },
+  "playback_verification": {
+    "native": "QuickTime CUA transport closed. VLC official ARM64 distribution checksum verified, but both hdiutil and diskutil could not mount it because DiskManagement/DiskArbitration unavailable. No native/VLC playback success claimed; see qa/vlc_distribution.json.",
+    "browser": "Automated Chromium real-time decoder test will be run on assembled movie; not perceptual audio review."
+  },
+  "delivery": {
+    "movie": "out/opus55_first_day_1080p30.mp4",
+    "sha256": "e9edb78e1299b558ed81ea0d58dc627fa39494cba0ab0c23e86c6d932869d191",
+    "qa": "qa/qa_report.md",
+    "browser_playback": "PASS-zero-dropped-frames",
+    "native_playback": "UNVERIFIED"
+  }
+}

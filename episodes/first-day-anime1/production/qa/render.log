@@ -1,0 +1,294 @@
+prepared S01 39 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 0/33  1s
+frame 10/33  13s
+frame 20/33  25s
+frame 30/33  34s
+finished S01 {'shot': 'S01', 'frames': 34, 'seconds': 39.915, 'png_bytes': 63577805}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 34/84  1s
+frame 44/84  8s
+frame 54/84  15s
+frame 64/84  23s
+frame 74/84  31s
+frame 84/84  38s
+finished S02 {'shot': 'S02', 'frames': 51, 'seconds': 39.87, 'png_bytes': 77649294}
+prepared S03 75 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 85/127  1s
+frame 95/127  12s
+frame 105/127  24s
+frame 115/127  35s
+frame 125/127  46s
+finished S03 {'shot': 'S03', 'frames': 43, 'seconds': 49.196, 'png_bytes': 102186358}
+prepared S04 75 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 128/156  1s
+frame 138/156  11s
+frame 148/156  21s
+finished S04 {'shot': 'S04', 'frames': 29, 'seconds': 30.348, 'png_bytes': 66258881}
+prepared S05 75 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 157/195  1s
+frame 167/195  10s
+frame 177/195  19s
+frame 187/195  29s
+finished S05 {'shot': 'S05', 'frames': 39, 'seconds': 37.0, 'png_bytes': 87127232}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 196/224  1s
+frame 206/224  10s
+frame 216/224  18s
+finished S06 {'shot': 'S06', 'frames': 29, 'seconds': 26.465, 'png_bytes': 47412635}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 225/252  1s
+frame 235/252  13s
+file:///Users/kingh0730/repos/interregnum/episodes/first-day-anime1/render_kit/render.mjs:40
+  if(scale===1){const py=path.resolve(import.meta.dirname,'../../../work/first-day-anime1/venv/bin/python');const result=spawnSync(py,[path.join(import.meta.dirname,'optimize_png.py')],{input:buf,maxBuffer:32*1024*1024});if(result.status!==0)throw new Error('PNG lossless compression failed: '+result.stderr.toString());buf=result.stdout;}
+                                                                                                                                                                                                                                                        ^
+
+Error: PNG lossless compression failed: 
+    at file:///Users/kingh0730/repos/interregnum/episodes/first-day-anime1/render_kit/render.mjs:40:249
+
+Node.js v22.23.1
+Traceback (most recent call last):
+  File "/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/production/render_final.py", line 25, in <module>
+    started=time.time();subprocess.run([str(NODE),str(KIT/'render.mjs'),f'--from={a}',f'--to={b}','--scale=1',f'--out={frames}','--workers=1','--angle=metal','--force'],cwd=KIT,check=True)
+                        ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kingh0730/.local/share/uv/python/cpython-3.13.7-macos-aarch64-none/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/Users/kingh0730/.nvm/versions/node/v22.23.1/bin/node', '/Users/kingh0730/repos/interregnum/episodes/first-day-anime1/render_kit/render.mjs', '--from=225', '--to=252', '--scale=1', '--out=/Users/kingh0730/repos/interregnum/work/first-day-anime1/frames', '--workers=1', '--angle=metal', '--force']' returned non-zero exit status 1.
+resume skip S01
+resume skip S02
+resume skip S03
+resume skip S04
+resume skip S05
+resume skip S06
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 225/252  1s
+frame 235/252  13s
+frame 245/252  24s
+finished S07 {'shot': 'S07', 'frames': 28, 'seconds': 33.901, 'png_bytes': 60916570}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 253/283  1s
+frame 263/283  16s
+frame 273/283  30s
+frame 283/283  43s
+finished S08 {'shot': 'S08', 'frames': 31, 'seconds': 44.82, 'png_bytes': 61170230}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 284/304  1s
+frame 294/304  14s
+frame 304/304  27s
+finished S09 {'shot': 'S09', 'frames': 21, 'seconds': 28.505, 'png_bytes': 44064468}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 305/318  1s
+frame 315/318  14s
+finished S10 {'shot': 'S10', 'frames': 14, 'seconds': 19.466, 'png_bytes': 28073439}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 319/326  1s
+finished S11 {'shot': 'S11', 'frames': 8, 'seconds': 12.366, 'png_bytes': 15180394}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 327/337  1s
+frame 337/337  17s
+finished S12 {'shot': 'S12', 'frames': 11, 'seconds': 18.202, 'png_bytes': 14834179}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 338/357  1s
+frame 348/357  12s
+finished S13 {'shot': 'S13', 'frames': 20, 'seconds': 22.34, 'png_bytes': 21838363}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 358/378  0s
+frame 368/378  10s
+frame 378/378  20s
+finished S14 {'shot': 'S14', 'frames': 21, 'seconds': 21.262, 'png_bytes': 34204513}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 379/410  1s
+frame 389/410  10s
+frame 399/410  21s
+frame 409/410  31s
+finished S15 {'shot': 'S15', 'frames': 32, 'seconds': 33.732, 'png_bytes': 74839999}
+prepared S16 81 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 411/438  1s
+frame 421/438  13s
+frame 431/438  24s
+finished S16 {'shot': 'S16', 'frames': 28, 'seconds': 33.954, 'png_bytes': 86083698}
+prepared S17 57 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 439/471  1s
+frame 449/471  10s
+frame 459/471  21s
+frame 469/471  31s
+finished S17 {'shot': 'S17', 'frames': 33, 'seconds': 34.474, 'png_bytes': 96911487}
+prepared S18 75 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 472/491  1s
+frame 482/491  13s
+finished S18 {'shot': 'S18', 'frames': 20, 'seconds': 24.683, 'png_bytes': 61599949}
+prepared S16 81 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 492/527  2s
+frame 502/527  16s
+frame 512/527  29s
+frame 522/527  40s
+finished S19 {'shot': 'S19', 'frames': 36, 'seconds': 46.796, 'png_bytes': 96062719}
+prepared S20 192 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 528/559  1s
+frame 538/559  14s
+frame 548/559  26s
+frame 558/559  39s
+finished S20 {'shot': 'S20', 'frames': 32, 'seconds': 41.393, 'png_bytes': 93567703}
+prepared S21 90 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 560/589  1s
+frame 570/589  13s
+frame 580/589  26s
+finished S21 {'shot': 'S21', 'frames': 30, 'seconds': 38.915, 'png_bytes': 86226915}
+prepared S22 72 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 590/620  1s
+frame 600/620  13s
+frame 610/620  26s
+frame 620/620  37s
+finished S22 {'shot': 'S22', 'frames': 31, 'seconds': 38.862, 'png_bytes': 85493265}
+prepared S23 81 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 621/680  1s
+frame 631/680  12s
+frame 641/680  24s
+frame 651/680  36s
+frame 661/680  47s
+frame 671/680  59s
+finished S23 {'shot': 'S23', 'frames': 60, 'seconds': 70.04, 'png_bytes': 159041067}
+prepared S24 48 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 681/712  1s
+frame 691/712  11s
+frame 701/712  22s
+frame 711/712  33s
+finished S24 {'shot': 'S24', 'frames': 32, 'seconds': 35.43, 'png_bytes': 88086705}
+prepared S25 129 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 713/763  1s
+frame 723/763  11s
+frame 733/763  24s
+frame 743/763  37s
+frame 753/763  48s
+frame 763/763  58s
+finished S25 {'shot': 'S25', 'frames': 51, 'seconds': 59.424, 'png_bytes': 153738212}
+prepared FLIGHT 60 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 764/784  1s
+frame 774/784  12s
+frame 784/784  24s
+finished S26 {'shot': 'S26', 'frames': 21, 'seconds': 25.445, 'png_bytes': 62928664}
+prepared FLIGHT 60 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 785/794  1s
+finished S27 {'shot': 'S27', 'frames': 10, 'seconds': 13.072, 'png_bytes': 28499673}
+prepared FLIGHT 60 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 795/815  1s
+frame 805/815  15s
+frame 815/815  28s
+finished S28 {'shot': 'S28', 'frames': 21, 'seconds': 28.895, 'png_bytes': 55125387}
+prepared S29 30 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 816/826  1s
+frame 826/826  11s
+finished S29 {'shot': 'S29', 'frames': 11, 'seconds': 12.403, 'png_bytes': 31982715}
+prepared S30 30 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 827/839  1s
+frame 837/839  11s
+finished S30 {'shot': 'S30', 'frames': 13, 'seconds': 14.673, 'png_bytes': 36887618}
+prepared FLIGHT 60 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 840/856  1s
+frame 850/856  14s
+finished S31 {'shot': 'S31', 'frames': 17, 'seconds': 23.492, 'png_bytes': 45447082}
+prepared FLOAT 60 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 857/887  1s
+frame 867/887  14s
+frame 877/887  28s
+frame 887/887  41s
+finished S32 {'shot': 'S32', 'frames': 31, 'seconds': 42.738, 'png_bytes': 75369708}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 888/919  1s
+frame 898/919  12s
+frame 908/919  24s
+frame 918/919  38s
+finished S33 {'shot': 'S33', 'frames': 32, 'seconds': 40.517, 'png_bytes': 78965017}
+prepared lip S34 36
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 920/1025  2s
+frame 930/1025  14s
+frame 940/1025  27s
+frame 950/1025  40s
+frame 960/1025  53s
+frame 970/1025  66s
+frame 980/1025  79s
+frame 990/1025  92s
+frame 1000/1025  105s
+frame 1010/1025  118s
+frame 1020/1025  131s
+finished S34 {'shot': 'S34', 'frames': 106, 'seconds': 138.512, 'png_bytes': 280602680}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 1026/1111  1s
+frame 1036/1111  8s
+frame 1046/1111  15s
+frame 1056/1111  23s
+frame 1066/1111  30s
+frame 1076/1111  37s
+frame 1086/1111  45s
+frame 1096/1111  52s
+frame 1106/1111  60s
+finished S35 {'shot': 'S35', 'frames': 86, 'seconds': 64.306, 'png_bytes': 206461805}
+prepared S29 30 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 1112/1122  1s
+frame 1122/1122  10s
+finished S36 {'shot': 'S36', 'frames': 11, 'seconds': 11.772, 'png_bytes': 32957689}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 1123/1131  1s
+finished S37 {'shot': 'S37', 'frames': 9, 'seconds': 10.431, 'png_bytes': 26779650}
+prepared FLIGHT 60 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 1132/1142  1s
+frame 1142/1142  11s
+finished S38 {'shot': 'S38', 'frames': 11, 'seconds': 12.727, 'png_bytes': 34783010}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 1143/1152  1s
+finished S39 {'shot': 'S39', 'frames': 10, 'seconds': 13.047, 'png_bytes': 26314793}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 1153/1163  1s
+frame 1163/1163  14s
+finished S40 {'shot': 'S40', 'frames': 11, 'seconds': 14.975, 'png_bytes': 28509689}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 1164/1172  1s
+finished S41 {'shot': 'S41', 'frames': 9, 'seconds': 8.656, 'png_bytes': 14793575}
+prepared S42 30 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 1173/1187  1s
+frame 1183/1187  10s
+finished S42 {'shot': 'S42', 'frames': 15, 'seconds': 14.767, 'png_bytes': 47551150}
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 1188/1196  1s
+finished S43 {'shot': 'S43', 'frames': 9, 'seconds': 6.073, 'png_bytes': 13712916}
+prepared S44 54 full
+[boot] 1920x1080 GL renderer: ANGLE (Apple, ANGLE Metal Renderer: Apple M3 Pro, Unspecified Version)
+frame 1197/1310  1s
+frame 1207/1310  12s
+frame 1217/1310  23s
+frame 1227/1310  34s
+frame 1237/1310  45s
+frame 1247/1310  56s
+frame 1257/1310  66s
+frame 1267/1310  77s
+frame 1277/1310  87s
+frame 1287/1310  95s
+frame 1297/1310  102s
+frame 1307/1310  110s
+finished S44 {'shot': 'S44', 'frames': 114, 'seconds': 114.161, 'png_bytes': 299320079}
+COMPLETE: 1311 lossless final-size PNGs retained for QA

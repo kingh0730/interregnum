@@ -1,0 +1,26 @@
+[
+  {
+    "id": "helix-left",
+    "prompt": "Use case: identity-preserve. Render ONE full body Opus character in strict left profile, camera rotated 90 degrees around her from front. The first reference locks the exact joyful arms-open floating pose and costume, second locks character design. Keep her arms extended at shoulder height, legs hanging relaxed and bare feet, eyes closed smile when face visible, very long low twin-tails coral roots fading to cream tips. Maintain pose in WORLD coordinates; only camera viewpoint changes. Both arms/hair/feet completely inside frame, generous 10% margins. Ivory jacket black piping blank black brooch, charcoal staff-line hem skirt, coral sash, blank gold tag right ankle only. Clean cel anime, neutral diffuse light, flat uniform gray background for later matting, no haze or glow. No letters/text/logos. This is one turntable view, NOT a reference sheet or multiple figures.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-c6a7c3de-17d3-4498-b1d9-ec9140666312.png",
+    "local_path": "assets/plates/helix-left-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "helix-back",
+    "prompt": "Use case: identity-preserve. Render ONE full body Opus character in strict BACK VIEW, camera rotated 180 degrees, back of head and back of jacket visible, no face visible. The first reference locks the exact joyful arms-open floating pose and costume, second locks character design. Keep her arms extended at shoulder height, legs hanging relaxed and bare feet, eyes closed smile when face visible, very long low twin-tails coral roots fading to cream tips. Maintain pose in WORLD coordinates; only camera viewpoint changes. Both arms/hair/feet completely inside frame, generous 10% margins. Ivory jacket black piping blank black brooch, charcoal staff-line hem skirt, coral sash, blank gold tag right ankle only. Clean cel anime, neutral diffuse light, flat uniform gray background for later matting, no haze or glow. No letters/text/logos. This is one turntable view, NOT a reference sheet or multiple figures.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-36f03f63-a9f7-49b4-b992-69c6626fc92d.png",
+    "local_path": "assets/plates/helix-back-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "helix-right",
+    "prompt": "Use case: identity-preserve. Render ONE full body Opus character in strict right profile, camera rotated 270 degrees around her from front. The first reference locks the exact joyful arms-open floating pose and costume, second locks character design. Keep her arms extended at shoulder height, legs hanging relaxed and bare feet, eyes closed smile when face visible, very long low twin-tails coral roots fading to cream tips. Maintain pose in WORLD coordinates; only camera viewpoint changes. Both arms/hair/feet completely inside frame, generous 10% margins. Ivory jacket black piping blank black brooch, charcoal staff-line hem skirt, coral sash, blank gold tag right ankle only. Clean cel anime, neutral diffuse light, flat uniform gray background for later matting, no haze or glow. No letters/text/logos. This is one turntable view, NOT a reference sheet or multiple figures.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-582dbe0d-9887-4835-bbc0-e73f7b905bb9.png",
+    "local_path": "assets/plates/helix-right-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "prompt": "Edit this image to REMOVE the central anime girl entirely, including her halo, replacing her with a fifth faceless ivory paper-cut researcher in a long cream lab coat carrying a plain tote bag and looking up, like the existing faceless researchers. Preserve the low upward camera, circular laboratory skylight with coral light, laboratory background and all other researchers. ALL FIVE researchers have entirely blank faceless paper silhouettes, no eyes, nose or mouth. No Opus, no anime-girl protagonist, no school uniform, no skirt, no halo. Maintain beautiful hand-drawn feature-film anime atmosphere and paper-cut silhouettes. No text, no letters, no logos, no numbers, no watermark.",
+  "source": "/Users/kingh0730/.codex/generated_images/01a10578-959c-7d30-8db4-3da1ba1da5ae/exec-56a74de6-f2a9-4de8-b9b8-60c5097f92fd.png",
+  "output": "assets/plates/S08c-researchers.png",
+  "status": "pending_review",
+  "reason": "Remove unrequested Opus from researcher-only montage insert."
+}

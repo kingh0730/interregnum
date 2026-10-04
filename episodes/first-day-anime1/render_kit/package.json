@@ -1,0 +1,21 @@
+{
+  "name": "opus55-render-kit",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bundle": "esbuild src/scene.js --bundle --format=iife --outfile=dist/scene.js --sourcemap",
+    "fonts": "node check_fonts.mjs --strings=text/all_strings.json --fonts=fonts/NotoSerifSC-Black.otf,fonts/NotoSerifSC-SemiBold.otf,fonts/NotoSansSC-Bold.otf,fonts/NotoSansSymbols2-Regular.ttf,fonts/NotoSansMath-Regular.ttf",
+    "selftest": "node selftest.mjs",
+    "preview": "node render.mjs --scale=0.25 --subframes=1 --out=frames_preview --workers=4",
+    "render": "node render.mjs --scale=1 --out=frames --workers=4",
+    "qa": "../../../work/first-day-anime1/venv/bin/python qa_frames.py frames"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0",
+    "three": "0.170.0",
+    "opentype.js": "^1.3.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}

@@ -1,0 +1,1167 @@
+{
+  "status": "implemented-not-visually-validated",
+  "module": "src/parallax.mjs",
+  "api": "createParallax({THREE,scene,plate,depth,mask,layers,width:1920,height:1080})",
+  "inputContract": {
+    "plate": "Image/canvas/Three.Texture or {image,worldHeight?,depthScale?,paddingFraction?,diagnosticFlat?}. Default worldHeight=9.326153; default depthScale=.65 world units; default padding=.10 each edge.",
+    "depth": "Readable Canvas/ImageData/image or {data,width,height,channels:1|3|4,normalized?:true,provenance?:string}. Raw Uint8Array must be wrapped with width/height. Red channel is grayscale; 0 far, 255 near, centered on 127.5. ImageData rows top-to-bottom. No inference is performed.",
+    "mask": "Grayscale image/canvas/Texture/ImageData. Three alphaMap reads green channel, so grayscale must encode desired opacity in RGB, not alpha alone.",
+    "layers": "Array of independent {id,image,z,rgba:true,mask?,depth?,depthScale?}. z is mandatory world depth. RGBA source alpha or grayscale mask supplies transparency; renderer must provide all five independent S25 layers. No segmentation or fake layer generation occurs.",
+    "camera": "Unparented perspective camera. Call setReferenceCamera once after applying frame0 rig pose. This faces and fits sourceGroup to that initial camera with8% crop reserve and far-depth compensation. Every frame: rig.update, constrainCamera, update(camera). Source ornaments must be parented to sourceGroup; separate mask geometry must copy sourceGroup.matrixWorld. sourcePoint(u,v,z) uses UV convention v0 bottom/v1 top."
+  },
+  "geometry": {
+    "segments": [
+      512,
+      288
+    ],
+    "verticesPerLayer": 148257,
+    "uv": "UV extends from -padding to 1+padding; ClampToEdge duplicates boundary colors/depth over expanded plane. This is edge padding, not generated disocclusion inpainting.",
+    "depthScale": "Default total displacement range .65 units at z0. Override in plate or layer descriptor.",
+    "clamp": "True source-UV coverage plus <=8% projected center/depth-differential travel. All4 viewport corner rays intersect both depth-extreme planes inside source UV1pixel inset.18-step pose bisection retains a continuous safe fraction; duplicated edge padding does not count as real source coverage. Returns actual/requested pose and coverage records.",
+    "initialFraming": "Initial camera aligned sourceGroup with8% crop reserve. Every depth vertex XY is perspective-compensated so sourceUV projects correctly at reference; no far-depth uniform overmagnification."
+  },
+  "validation": {
+    "math": {
+      "status": "PASS",
+      "threeRevision": "186",
+      "checks": [
+        "missing depth rejects without explicit diagnostic mode",
+        "512x288 subdivisions / 148257 vertices",
+        "finite displaced vertices",
+        "synthetic depth maps to [-.325,.325]",
+        "deterministic projected travel clamp <=8% width",
+        "five supplied RGBA layers instantiate independently",
+        "dispose removes owned scene geometry",
+        "diagnostic flat mode visibly flagged in returned warnings"
+      ],
+      "clampExample": {
+        "clamped": true,
+        "retainedMoveFraction": 0.125,
+        "requestedProjectedTravelFraction": 0.6031425713933136,
+        "actualProjectedTravelFraction": 0.0753928214241642,
+        "requiresVisualEdgeQA": true
+      }
+    },
+    "renderedImages": "S17 three960x540 preview frames inspected after true-UV coverage correction; full1311frame/final1080 QA pending",
+    "depthQuality": "pending supplied production maps",
+    "disocclusionAndStretch": "pending 100%-zoom image review",
+    "fiveLayerS25": "pending real independently supplied assets"
+  },
+  "limitations": [
+    "Edge duplication prevents empty UV samples but may visibly stretch image borders; only rendered inspection can approve it.",
+    "Large yaw/orbits cannot reveal unseen character sides from a still.",
+    "Depth Anything V2 has not been run by this module and no supplied source has been certified as its output.",
+    "No character/body/hair wind deformation is implemented; this module constructs scene geometry only.",
+    "All animation must freeze externally for S10/final12, including grain and overlays.",
+    "True-UV coverage guards continuous heightfield raster coverage at its depth extrema, but does not certify alpha-layer opacity, disocclusion fidelity, full authored move extent, or pose continuity."
+  ],
+  "coverageGuard": {
+    "status": "math-validated-S17-preview-edge-review-passed",
+    "sourceUVBounds": "1/outputWidth <= u <= 1-1/outputWidth; equivalent v bound using outputHeight; repeated padding excluded",
+    "method": "Frame-zero-facing source transform;8% crop reserve; all4 viewport rays at near/far local depth extrema must intersect inside true source rectangle.18-step bisection finds safe retained pose toward reference.",
+    "sampledFrames": 296,
+    "shots": {
+      "S03": {
+        "minimumRetainedMoveFraction": 0.13532257080078125,
+        "maximumProjectedTravelFraction": 0.004205932264000472,
+        "initial": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.03703703703704203,
+            "maxU": 0.9629629629629579,
+            "minV": 0.03703703703703898,
+            "maxV": 0.962962962962961
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        },
+        "last": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.0005215343469093803,
+            "maxU": 0.9081364489997876,
+            "minV": 0.008844853073772918,
+            "maxV": 0.9911551469262271
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        }
+      },
+      "S12": {
+        "minimumRetainedMoveFraction": 0.042278289794921875,
+        "maximumProjectedTravelFraction": 0.029865619647005945,
+        "initial": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.03703703703703343,
+            "maxU": 0.962962962962969,
+            "minV": 0.03703703703703631,
+            "maxV": 0.9629629629629637
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        },
+        "last": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.0005240988721186834,
+            "maxU": 0.8811984859452241,
+            "minV": 0.02910718429280551,
+            "maxV": 0.9708928157071945
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        }
+      },
+      "S17": {
+        "minimumRetainedMoveFraction": 0.09972000122070312,
+        "maximumProjectedTravelFraction": 0.018364588695606636,
+        "initial": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.03703703703703781,
+            "maxU": 0.9629629629629621,
+            "minV": 0.03703703703703659,
+            "maxV": 0.9629629629629635
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        },
+        "last": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.03047627795749608,
+            "maxU": 0.9695237220425039,
+            "minV": 0.07219396302858766,
+            "maxV": 0.9990728215503683
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        }
+      },
+      "S25": {
+        "minimumRetainedMoveFraction": 0.024456024169921875,
+        "maximumProjectedTravelFraction": 0.019024470887267154,
+        "initial": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.0370370370370362,
+            "maxU": 0.9629629629629638,
+            "minV": 0.03703703703704175,
+            "maxV": 0.9629629629629528
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        },
+        "last": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.03171293166306327,
+            "maxU": 0.9682870683369367,
+            "minV": 0.06539423533139932,
+            "maxV": 0.9990738311158315
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        }
+      },
+      "S27": {
+        "minimumRetainedMoveFraction": 0.14864349365234375,
+        "maximumProjectedTravelFraction": 0.003348694536866148,
+        "initial": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.037037037037043974,
+            "maxU": 0.9629629629629588,
+            "minV": 0.03703703703703909,
+            "maxV": 0.9629629629629609
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        },
+        "last": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.0005211967715630372,
+            "maxU": 0.911757963463772,
+            "minV": 0.00770760508063395,
+            "maxV": 0.992292394919366
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        }
+      },
+      "S31": {
+        "minimumRetainedMoveFraction": 1,
+        "maximumProjectedTravelFraction": 0.013201106444011956,
+        "initial": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.03703703703703776,
+            "maxU": 0.9629629629629622,
+            "minV": 0.03703703703703792,
+            "maxV": 0.9629629629629621
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        },
+        "last": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.027321914327564867,
+            "maxU": 0.9726780856724351,
+            "minV": 0.027321914327564756,
+            "maxV": 0.9726780856724353
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        }
+      },
+      "S34": {
+        "minimumRetainedMoveFraction": 0.030582427978515625,
+        "maximumProjectedTravelFraction": 0.0011523925507644223,
+        "initial": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.0370370370370352,
+            "maxU": 0.962962962962961,
+            "minV": 0.03703703703703509,
+            "maxV": 0.9629629629629649
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        },
+        "last": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.029016783740593632,
+            "maxU": 0.9704023808894818,
+            "minV": 0.0009267478293656928,
+            "maxV": 0.9958222652535895
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        }
+      },
+      "S36g": {
+        "minimumRetainedMoveFraction": 0.10638809204101562,
+        "maximumProjectedTravelFraction": 0.008688032718564772,
+        "initial": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.03703703703703137,
+            "maxU": 0.9629629629629668,
+            "minV": 0.03703703703703631,
+            "maxV": 0.9629629629629637
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        },
+        "last": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.0005209098662222744,
+            "maxU": 0.8974492764441009,
+            "minV": 0.012982764511343392,
+            "maxV": 0.9870172354886566
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        }
+      },
+      "S37": {
+        "minimumRetainedMoveFraction": 0.0005645751953125,
+        "maximumProjectedTravelFraction": 0.0799999782817431,
+        "initial": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.037037037037037146,
+            "maxU": 0.9629629629629628,
+            "minV": 0.037037037037037146,
+            "maxV": 0.9629629629629628
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        },
+        "last": {
+          "safe": true,
+          "uvBounds": {
+            "minU": 0.03339359441857831,
+            "maxU": 0.9666064055814216,
+            "minV": 0.033393594418578365,
+            "maxV": 0.9666064055814216
+          },
+          "insetU": 0.0005208333333333333,
+          "insetV": 0.000925925925925926,
+          "usesRepeatedEdgePixels": false
+        }
+      }
+    },
+    "limitations": [
+      "Reduced camera path retains direction but does not claim full authored angle/distance.",
+      "Continuous unmasked heightfield coverage guard does not prove separate RGBA layers contain opaque background.",
+      "Still-image hidden sides cannot be reconstructed by rotating a depth plane."
+    ],
+    "renderEvidence": {
+      "command": "node build/render.mjs --mode=film --from=543 --frames=41 --out=qa/film/S17.mp4",
+      "resolution": [
+        960,
+        540
+      ],
+      "framesRendered": 41,
+      "stillsInspected": [
+        "qa/film/S17-f543.png",
+        "qa/film/S17-f563.png",
+        "qa/film/S17-f583.png"
+      ],
+      "findings": [
+        "Previous bottom approximately80px repeated-edge columns are absent in all3 inspected stills. Ground texture continues to bottom edge.",
+        "Crop remains below knee; camera motion is reduced rather than falsely claiming full authored extent.",
+        "Grass/ripple contact overlay is displaced toward shoe laces after source transform change; runtime owner notified."
+      ],
+      "fullFinalResolutionQA": "pending",
+      "motionPlayback": "not judged",
+      "entireShotCameraQA": "not passed: named move extent substantially constrained and floor overlay alignment requires fix"
+    }
+  },
+  "layerRegistration": {
+    "implementation": "Each sourceLayer XY scale=(initialCameraDistance-layerZ)/initialCameraDistance. Group orientation/FOV fit and8%crop reserve shared. Individual z values remain unchanged.",
+    "coverage": "Only explicitly opaque/background layer or named sky must fill viewport. Transparent foreground fragments outside source UV0..1 discard; alpha opacity and border truncation require visual review.",
+    "travelLimit": "Single-depth plate keeps8% projected-width cap. Separate real layers have no8% cap by default, as plan exception permits; source-background coverage guard always applies. Descriptor.maximumProjectedTravelFraction can optionally set a cap.",
+    "api": "layerSourceGroup(id) accepts local anchor coordinates ((u-.5)*worldWidth,(v-.5)*worldHeight,layerZ+zOffset). layerSourcePoint(id,u,v,zOffset) returns corresponding world point. UV v0bottom/v1top.",
+    "validation": {
+      "status": "PASS-synthetic-only",
+      "maxRegistrationError": 4.440892098500626e-16,
+      "referenceDistance": 10,
+      "scales": [
+        {
+          "id": "S25-sky",
+          "z": -4,
+          "xyScale": 1.4
+        },
+        {
+          "id": "S25-mid",
+          "z": -1,
+          "xyScale": 1.1
+        },
+        {
+          "id": "S25-left",
+          "z": 0.6,
+          "xyScale": 0.9400000000000001
+        },
+        {
+          "id": "S25-right",
+          "z": 0.8,
+          "xyScale": 0.9199999999999999
+        },
+        {
+          "id": "S25-character",
+          "z": 1.5,
+          "xyScale": 0.85
+        }
+      ],
+      "trueParallaxScreenDeltasAtHalfUnitTruck": [
+        -0.04308161224237953,
+        -0.054831142853937594,
+        -0.0641641033397142,
+        -0.06555897515144712,
+        -0.07095794957568394
+      ],
+      "backgroundOnlyCoverage": {
+        "safe": true,
+        "uvBounds": {
+          "minU": 0.056982227889991244,
+          "maxU": 0.9829081538159165,
+          "minV": 0.03703703703703776,
+          "maxV": 0.9629629629629622
+        },
+        "insetU": 0.0005208333333333333,
+        "insetV": 0.000925925925925926,
+        "coverageLayer": "S25-sky",
+        "foregroundCoverageRequired": false,
+        "foregroundOutsideUV": "transparent-discard",
+        "usesRepeatedEdgePixels": false
+      },
+      "S25FramesChecked": 41,
+      "S25MinimumRetainedFraction": 0.0274505615234375,
+      "productionVisualQA": "pending actual independent assets and rendered frames"
+    }
+  },
+  "infiniteSkyMode": {
+    "implementation": "Explicit plate.layerMode='infinite-sky'. Designated sky texture becomes scene.background, using Three clip-space screen-filling UV0..1 pass. Sky finite mesh is hidden. Other4layers retain distinct finite z and registration; no motion cap or coverage clamp is applied to this mode.",
+    "safety": "No repeated edges: sky always fills screen from its real image; all foreground fragments outside source UV0..1 discard. Foreground opacity, objects leaving the viewport and visible alpha-canvas truncations are diagnostic/review concerns, not hidden by repeating pixels.",
+    "api": "Same layerSourcePoint/layerSourceGroup for finite foreground. Infinite sky has no world anchor and requests throw. constrainCamera.foregroundLayers gives projected source bounds/corners; request render runtime store representative diagnostics even when clamped=false.",
+    "validation": {
+      "status": "PASS-synthetic-math-only",
+      "frames": 41,
+      "requestedPosesPreservedExactly": true,
+      "retainedMoveFraction": 1,
+      "lastFov": 100,
+      "independentForegroundParallax": true,
+      "singleDepth8PercentGuardStillActive": true,
+      "backgroundRestoredOnDispose": true,
+      "representativeForegroundDiagnostics": [
+        {
+          "frame": 0,
+          "diagnostics": [
+            {
+              "id": "S25-mid",
+              "z": -1,
+              "registrationScale": 1.098058067569092,
+              "projectedSourceBounds": {
+                "minX": -1.08,
+                "maxX": 1.08,
+                "minY": -1.08,
+                "maxY": 1.0799999999999998
+              },
+              "allSourceCornersInFront": true,
+              "allSourceCornersInsideViewport": false,
+              "boundaryPolicy": "Fragments outside source UV0..1 discard to reveal background; alpha-cut content requires visual review.",
+              "projectedCorners": [
+                {
+                  "u": 0,
+                  "v": 0,
+                  "ndc": [
+                    -1.08,
+                    -1.08,
+                    0.9822388419863991
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 0,
+                  "v": 1,
+                  "ndc": [
+                    -1.08,
+                    1.0799999999999998,
+                    0.9822388419863991
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 0,
+                  "ndc": [
+                    1.08,
+                    -1.08,
+                    0.9822388419863991
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 1,
+                  "ndc": [
+                    1.08,
+                    1.0799999999999998,
+                    0.9822388419863991
+                  ],
+                  "inFront": true
+                }
+              ]
+            },
+            {
+              "id": "S25-left",
+              "z": 0.6,
+              "registrationScale": 0.9411651594585448,
+              "projectedSourceBounds": {
+                "minX": -1.08,
+                "maxX": 1.08,
+                "minY": -1.08,
+                "maxY": 1.0799999999999998
+              },
+              "allSourceCornersInFront": true,
+              "allSourceCornersInsideViewport": false,
+              "boundaryPolicy": "Fragments outside source UV0..1 discard to reveal background; alpha-cut content requires visual review.",
+              "projectedCorners": [
+                {
+                  "u": 0,
+                  "v": 0,
+                  "ndc": [
+                    -1.08,
+                    -1.08,
+                    0.979261373282509
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 0,
+                  "v": 1,
+                  "ndc": [
+                    -1.08,
+                    1.0799999999999998,
+                    0.979261373282509
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 0,
+                  "ndc": [
+                    1.08,
+                    -1.08,
+                    0.979261373282509
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 1,
+                  "ndc": [
+                    1.08,
+                    1.0799999999999998,
+                    0.979261373282509
+                  ],
+                  "inFront": true
+                }
+              ]
+            },
+            {
+              "id": "S25-right",
+              "z": 0.8,
+              "registrationScale": 0.9215535459447263,
+              "projectedSourceBounds": {
+                "minX": -1.0799999999999998,
+                "maxX": 1.0799999999999998,
+                "minY": -1.08,
+                "maxY": 1.0799999999999998
+              },
+              "allSourceCornersInFront": true,
+              "allSourceCornersInsideViewport": false,
+              "boundaryPolicy": "Fragments outside source UV0..1 discard to reveal background; alpha-cut content requires visual review.",
+              "projectedCorners": [
+                {
+                  "u": 0,
+                  "v": 0,
+                  "ndc": [
+                    -1.0799999999999998,
+                    -1.08,
+                    0.9788179056259593
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 0,
+                  "v": 1,
+                  "ndc": [
+                    -1.0799999999999996,
+                    1.0799999999999998,
+                    0.9788179056259592
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 0,
+                  "ndc": [
+                    1.0799999999999998,
+                    -1.08,
+                    0.9788179056259593
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 1,
+                  "ndc": [
+                    1.0799999999999996,
+                    1.0799999999999998,
+                    0.9788179056259592
+                  ],
+                  "inFront": true
+                }
+              ]
+            },
+            {
+              "id": "S25-character",
+              "z": 1.5,
+              "registrationScale": 0.852912898646362,
+              "projectedSourceBounds": {
+                "minX": -1.0799999999999998,
+                "maxX": 1.0799999999999998,
+                "minY": -1.08,
+                "maxY": 1.0799999999999998
+              },
+              "allSourceCornersInFront": true,
+              "allSourceCornersInsideViewport": false,
+              "boundaryPolicy": "Fragments outside source UV0..1 discard to reveal background; alpha-cut content requires visual review.",
+              "projectedCorners": [
+                {
+                  "u": 0,
+                  "v": 0,
+                  "ndc": [
+                    -1.0799999999999998,
+                    -1.08,
+                    0.9771051667528129
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 0,
+                  "v": 1,
+                  "ndc": [
+                    -1.0799999999999998,
+                    1.0799999999999998,
+                    0.9771051667528129
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 0,
+                  "ndc": [
+                    1.0799999999999998,
+                    -1.08,
+                    0.9771051667528129
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 1,
+                  "ndc": [
+                    1.0799999999999998,
+                    1.0799999999999998,
+                    0.9771051667528129
+                  ],
+                  "inFront": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 20,
+          "diagnostics": [
+            {
+              "id": "S25-mid",
+              "z": -1,
+              "registrationScale": 1.098058067569092,
+              "projectedSourceBounds": {
+                "minX": -1.1439661774174397,
+                "maxX": 1.1706298812428062,
+                "minY": -2.1896474914769013,
+                "maxY": 0.1390889180780078
+              },
+              "allSourceCornersInFront": true,
+              "allSourceCornersInsideViewport": false,
+              "boundaryPolicy": "Fragments outside source UV0..1 discard to reveal background; alpha-cut content requires visual review.",
+              "projectedCorners": [
+                {
+                  "u": 0,
+                  "v": 0,
+                  "ndc": [
+                    -1.1439661774174397,
+                    -2.1896474914769013,
+                    0.968305089452757
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 0,
+                  "v": 1,
+                  "ndc": [
+                    -1.0005350167897473,
+                    0.10021128313122613,
+                    0.9726321250950726
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 0,
+                  "ndc": [
+                    1.1706298812428062,
+                    -2.1446454336520375,
+                    0.968305089452757
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 1,
+                  "ndc": [
+                    0.9990628897783491,
+                    0.1390889180780078,
+                    0.9726321250950726
+                  ],
+                  "inFront": true
+                }
+              ]
+            },
+            {
+              "id": "S25-left",
+              "z": 0.6,
+              "registrationScale": 0.9411651594585448,
+              "projectedSourceBounds": {
+                "minX": -1.2927973902029333,
+                "maxX": 1.3248364840028637,
+                "minY": -2.629489125423702,
+                "maxY": 0.02454333654018073
+              },
+              "allSourceCornersInFront": true,
+              "allSourceCornersInsideViewport": false,
+              "boundaryPolicy": "Fragments outside source UV0..1 discard to reveal background; alpha-cut content requires visual review.",
+              "projectedCorners": [
+                {
+                  "u": 0,
+                  "v": 0,
+                  "ndc": [
+                    -1.2927973902029333,
+                    -2.629489125423702,
+                    0.9581481823664898
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 0,
+                  "v": 1,
+                  "ndc": [
+                    -1.1109215822901293,
+                    -0.01865464781218138,
+                    0.9644919501340818
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 0,
+                  "ndc": [
+                    1.3248364840028637,
+                    -2.5785951862715217,
+                    0.9581481823664898
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 1,
+                  "ndc": [
+                    1.1108853562539855,
+                    0.02454333654018073,
+                    0.9644919501340818
+                  ],
+                  "inFront": true
+                }
+              ]
+            },
+            {
+              "id": "S25-right",
+              "z": 0.8,
+              "registrationScale": 0.9215535459447263,
+              "projectedSourceBounds": {
+                "minX": -1.3183652806044264,
+                "maxX": 1.3513278190176385,
+                "minY": -2.70505004090837,
+                "maxY": 0.005267863280656666
+              },
+              "allSourceCornersInFront": true,
+              "allSourceCornersInsideViewport": false,
+              "boundaryPolicy": "Fragments outside source UV0..1 discard to reveal background; alpha-cut content requires visual review.",
+              "projectedCorners": [
+                {
+                  "u": 0,
+                  "v": 0,
+                  "ndc": [
+                    -1.3183652806044264,
+                    -2.70505004090837,
+                    0.9564033152627452
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 0,
+                  "v": 1,
+                  "ndc": [
+                    -1.1294971856695635,
+                    -0.03865713976872566,
+                    0.9631221397696671
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 0,
+                  "ndc": [
+                    1.3513278190176385,
+                    -2.6531439284814047,
+                    0.9564033152627452
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 1,
+                  "ndc": [
+                    1.1297025898253505,
+                    0.005267863280656666,
+                    0.9631221397696671
+                  ],
+                  "inFront": true
+                }
+              ]
+            },
+            {
+              "id": "S25-character",
+              "z": 1.5,
+              "registrationScale": 0.852912898646362,
+              "projectedSourceBounds": {
+                "minX": -1.4274554120463367,
+                "maxX": 1.4643579976304453,
+                "minY": -3.027444656680511,
+                "maxY": -0.07569219599352342
+              },
+              "allSourceCornersInFront": true,
+              "allSourceCornersInsideViewport": false,
+              "boundaryPolicy": "Fragments outside source UV0..1 discard to reveal background; alpha-cut content requires visual review.",
+              "projectedCorners": [
+                {
+                  "u": 0,
+                  "v": 0,
+                  "ndc": [
+                    -1.4274554120463367,
+                    -3.027444656680511,
+                    0.9489585171700151
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 0,
+                  "v": 1,
+                  "ndc": [
+                    -1.2075176799217386,
+                    -0.1226707934222355,
+                    0.9573687179571779
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 0,
+                  "ndc": [
+                    1.4643579976304453,
+                    -2.9712199198440037,
+                    0.9489585171700151
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 1,
+                  "ndc": [
+                    1.2087379693878777,
+                    -0.07569219599352342,
+                    0.9573687179571779
+                  ],
+                  "inFront": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 40,
+          "diagnostics": [
+            {
+              "id": "S25-mid",
+              "z": -1,
+              "registrationScale": 1.098058067569092,
+              "projectedSourceBounds": {
+                "minX": -3.3477586329031817,
+                "maxX": 3.3477586329031817,
+                "minY": -2.999401183021798,
+                "maxY": 9.757496826835823
+              },
+              "allSourceCornersInFront": false,
+              "allSourceCornersInsideViewport": false,
+              "boundaryPolicy": "Fragments outside source UV0..1 discard to reveal background; alpha-cut content requires visual review.",
+              "projectedCorners": [
+                {
+                  "u": 0,
+                  "v": 0,
+                  "ndc": [
+                    3.3477586329031817,
+                    9.757496826835823,
+                    1.1415992228317546
+                  ],
+                  "inFront": false
+                },
+                {
+                  "u": 0,
+                  "v": 1,
+                  "ndc": [
+                    -3.044743325114514,
+                    -2.999401183021798,
+                    0.8714082902610119
+                  ],
+                  "inFront": true
+                },
+                {
+                  "u": 1,
+                  "v": 0,
+                  "ndc": [
+                    -3.3477586329031817,
+                    9.757496826835823,
+                    1.1415992228317546
+                  ],
+                  "inFront": false
+                },
+                {
+                  "u": 1,
+                  "v": 1,
+                  "ndc": [
+                    3.044743325114514,
+                    -2.999401183021798,
+                    0.8714082902610119
+                  ],
+                  "inFront": true
+                }
+              ]
+            },
+            {
+              "id": "S25-left",
+              "z": 0.6,
+              "registrationScale": 0.9411651594585448,
+              "projectedSourceBounds": {
+                "minX": -20.13302405750176,
+                "maxX": 20.13302405750176,
+                "minY": 4.657994939823945,
+                "maxY": 24.62386816128644
+              },
+              "allSourceCornersInFront": false,
+              "allSourceCornersInsideViewport": false,
+              "boundaryPolicy": "Fragments outside source UV0..1 discard to reveal background; alpha-cut content requires visual review.",
+              "projectedCorners": [
+                {
+                  "u": 0,
+                  "v": 0,
+                  "ndc": [
+                    1.4775154700587403,
+                    4.657994939823945,
+                    1.0729603800746923
+                  ],
+                  "inFront": false
+                },
+                {
+                  "u": 0,
+                  "v": 1,
+                  "ndc": [
+                    20.13302405750176,
+                    24.62386816128644,
+                    1.992915115189269
+                  ],
+                  "inFront": false
+                },
+                {
+                  "u": 1,
+                  "v": 0,
+                  "ndc": [
+                    -1.4775154700587403,
+                    4.657994939823945,
+                    1.0729603800746923
+                  ],
+                  "inFront": false
+                },
+                {
+                  "u": 1,
+                  "v": 1,
+                  "ndc": [
+                    -20.13302405750176,
+                    24.62386816128644,
+                    1.992915115189269
+                  ],
+                  "inFront": false
+                }
+              ]
+            },
+            {
+              "id": "S25-right",
+              "z": 0.8,
+              "registrationScale": 0.9215535459447263,
+              "projectedSourceBounds": {
+                "minX": -9.435300225898393,
+                "maxX": 9.435300225898393,
+                "minY": 4.3485317246023545,
+                "maxY": 11.874318047454528
+              },
+              "allSourceCornersInFront": false,
+              "allSourceCornersInsideViewport": false,
+              "boundaryPolicy": "Fragments outside source UV0..1 discard to reveal background; alpha-cut content requires visual review.",
+              "projectedCorners": [
+                {
+                  "u": 0,
+                  "v": 0,
+                  "ndc": [
+                    1.3640197845498996,
+                    4.3485317246023545,
+                    1.0687950326663918
+                  ],
+                  "inFront": false
+                },
+                {
+                  "u": 0,
+                  "v": 1,
+                  "ndc": [
+                    9.435300225898393,
+                    11.874318047454528,
+                    1.4752824161339135
+                  ],
+                  "inFront": false
+                },
+                {
+                  "u": 1,
+                  "v": 0,
+                  "ndc": [
+                    -1.3640197845498996,
+                    4.3485317246023545,
+                    1.0687950326663918
+                  ],
+                  "inFront": false
+                },
+                {
+                  "u": 1,
+                  "v": 1,
+                  "ndc": [
+                    -9.435300225898393,
+                    11.874318047454528,
+                    1.4752824161339135
+                  ],
+                  "inFront": false
+                }
+              ]
+            },
+            {
+              "id": "S25-character",
+              "z": 1.5,
+              "registrationScale": 0.852912898646362,
+              "projectedSourceBounds": {
+                "minX": -3.091350072070355,
+                "maxX": 3.091350072070355,
+                "minY": 3.4975960206095342,
+                "maxY": 4.313596563232059
+              },
+              "allSourceCornersInFront": false,
+              "allSourceCornersInsideViewport": false,
+              "boundaryPolicy": "Fragments outside source UV0..1 discard to reveal background; alpha-cut content requires visual review.",
+              "projectedCorners": [
+                {
+                  "u": 0,
+                  "v": 0,
+                  "ndc": [
+                    1.051938973977766,
+                    3.4975960206095342,
+                    1.057341513621425
+                  ],
+                  "inFront": false
+                },
+                {
+                  "u": 0,
+                  "v": 1,
+                  "ndc": [
+                    3.091350072070355,
+                    4.313596563232059,
+                    1.1683165519472265
+                  ],
+                  "inFront": false
+                },
+                {
+                  "u": 1,
+                  "v": 0,
+                  "ndc": [
+                    -1.051938973977766,
+                    3.4975960206095342,
+                    1.057341513621425
+                  ],
+                  "inFront": false
+                },
+                {
+                  "u": 1,
+                  "v": 1,
+                  "ndc": [
+                    -3.091350072070355,
+                    4.313596563232059,
+                    1.1683165519472265
+                  ],
+                  "inFront": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "productionVisualQA": "pending actual S25 five-source render and alpha edge inspection"
+  },
+  "sourceProjectionCorrection": {
+    "status": "implemented-native-targeted-artifact-checks-passed",
+    "defect": "Raw depth extrusion changed source pixel projection at the initial camera pose, causing serrated/stretched hair and limb boundaries visible at S15f512 and S27f850.",
+    "fix": "Preserve every source UV at reference camera: per-vertex XY *= (referenceDistance-vertexZ)/(referenceDistance*layerRegistrationScale); keep original measured Z. This is projective depth geometry, not a flat-plane substitution. Coverage bounds updated to corresponding source frustum.",
+    "depthAmplitude": "Original .65world-unit range retained; no depth smoothing or amplitude reduction introduced.",
+    "mathEvidence": {
+      "verticesSampled": 9465,
+      "paths": [
+        "S15",
+        "S27",
+        "S05"
+      ],
+      "maximumSourceProjectionNdcError": 6.424169085583742e-08,
+      "sourceUvTarget": "NDC=(2*UV-1)*(1+cropReserve)",
+      "coverageSamples": "All camera frames of these3 paths passed updated true-source coverage guard."
+    },
+    "nativeVisualEvidence": [
+      {
+        "path": "qa/camera-prefix-review/projective-f512-f512.jpg",
+        "sha256": "ff92fa25872fca25a9c14117f1284adb6ddc36fdba9c6fdd6dd1aff47b15ef58",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "qa/camera-prefix-review/projective-f850-f850.jpg",
+        "sha256": "8e7f5ab09863338f704129775f15ccaa34fc2fbf1a69bc9da3edeab7da35518c",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "path": "qa/camera-prefix-review/projective-f890-f890.jpg",
+        "sha256": "6c455a16c08566cc5623428cf935719c8fff09e4169a10aeb809990475d91f9f",
+        "dimensions": [
+          1920,
+          1080
+        ]
+      }
+    ],
+    "visualFindings": [
+      "Large sawtooth/stretching defects on S15 hair atf512 removed.",
+      "Large sawtooth/stretching defects on S27 hair and legs atf850 removed.",
+      "Late S27f890 preserves clean silhouette without recurrence of the large artifact."
+    ],
+    "affectedRenders": "Every single-depth plate must be rerendered; pure-code scenes and flat separated S25 layer registration remain unchanged. Existing prefix encoded before fix is superseded for affected shots.",
+    "integration": "Runtime source-space anchors should use sourceLocalPoint(u,v,z), UVv0bottom. sourcePoint returns world; sourceScaleAtDepth(z) gives XY size compensation. Shared mask/foreground geometry updates automatically. Finite S25 anchors continue using layerSourcePoint/group.",
+    "limitations": [
+      "Tests inspect3native stills, not every frame or normal playback.",
+      "Correct reference geometry does not invent disoccluded content or approve full named orbit extents.",
+      "Typography/framing findings are separate from this repaired geometry artifact."
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "S23-90",
+    "prompt": "Reconstruct this EXACT fingertips-touching moment with camera moved 90 degrees around joined hands: camera now looks from behind Opus's coral hair/shoulder in foreground toward Xiaoman's tearful smiling face behind the same touching hands. Hands stay central macro foreground, exactly two hands each five fingers, same touch index fingertips at center, no pose change. 24mm close perspective. Same dawn apartment geography, warm light; no text/logos. 16:9 clean cinematic cel anime.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-79bb7ef3-39b4-4cab-8267-879f978b4188.png",
+    "local_path": "assets/plates/S23-90-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "S23-180",
+    "prompt": "Reconstruct EXACT fingertips-touching moment from camera 180 degrees around hands, reverse angle: Xiaoman now camera LEFT and Opus camera RIGHT, their same touching index fingertips central macro foreground. Same identities, poses, two anatomically correct hands, tearful tender smile. 24mm, same dawn apartment seen from reverse wall, cream hoodie/black bob glasses and ivory jacket/coral-cream twin tails, no text/logos. 16:9 cinematic clean cel anime.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-ff713418-722e-4595-a2f1-8c06f789257f.png",
+    "local_path": "assets/plates/S23-180-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "S23-270",
+    "prompt": "Reconstruct EXACT fingertips-touching moment with camera moved 270 degrees around hands: camera behind Xiaoman's black bob shoulder looking toward Opus's shy smiling face, the same touching index fingertips central macro foreground. Keep character identities, pose, outfits, five fingers per hand, same dawn apartment. 24mm, strong depth, no text/logos. 16:9 cinematic clean cel anime.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-f911684b-97fa-42eb-82ce-b510cf20eea0.png",
+    "local_path": "assets/plates/S23-270-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "S33-hands",
+    "prompt": "16:9 cinematic anime EXTREME MACRO of Opus's right hand and Xiaoman's left hand INTERTWINING FINGERS in a gentle secure hand clasp, just two hands, precisely five fingers each, clean joints and anatomy. Ivory structured black-piped cuff on Opus side, cream hoodie cuff on Xiaoman side. Dawn cloud sea blurred behind, coral-gold rim light, intimate 85mm close-up. Exact hands are the subject, no faces needed, no text/logo/watermark, elegant cel linework with soft shading.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-0e735ad7-093c-411a-9540-617c4a8217e9.png",
+    "local_path": "assets/plates/S33-hands-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  },
+  {
+    "id": "S37",
+    "prompt": "16:9 anime medium close shot Xiaoman raising BOTH hands above her head in fierce joyful delight, laughing bright eyes and round glasses, black messy bob/clawclip, cream hoodie coral zipper pull. Dawn cloud sky behind, wind hair, hands five fingers anatomically clean, energetic low24mm camera, frame includes both hands. Clean cinematic cel anime, palette ivory cream ink coral sky blue, no text/logos.",
+    "source_path": "/Users/kingh0730/.codex/generated_images/01a10577-fa78-7340-b2b4-7ffae09b9092/exec-5fcebdf4-5c47-4820-af82-642efe221f0c.png",
+    "local_path": "assets/plates/S37-v1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": null
+  }
+]

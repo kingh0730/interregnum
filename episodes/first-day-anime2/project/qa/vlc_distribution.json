@@ -1,0 +1,19 @@
+{
+  "source": "https://download.videolan.org/pub/videolan/vlc/3.0.24/macosx/vlc-3.0.24-arm64.dmg",
+  "sha256": "64a89d93cdd30b0e97131743e246373db82d6826ea882d265d46d74b136da2b7",
+  "official_checksum_match": true,
+  "scope": "Task-local playback verification only",
+  "playback_status": "UNAVAILABLE",
+  "mount_attempts": [
+    {
+      "tool": "hdiutil attach -readonly -nobrowse",
+      "error": "Device not configured"
+    },
+    {
+      "tool": "diskutil image attach --readOnly --mountOptions nobrowse",
+      "error": "Unable to use the DiskManagement framework; DiskArbitration unavailable"
+    }
+  ],
+  "installed_apps_modified": false,
+  "decoder_run": false
+}

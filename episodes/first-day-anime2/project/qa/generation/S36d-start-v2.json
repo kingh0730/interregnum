@@ -1,0 +1,51 @@
+{
+  "id": "S36d-start-v2",
+  "tool": "Codex built-in image_gen",
+  "prompt": "Use case: precise-object-edit. FRAMING REPAIR ONLY of attached single transparent Opus pose. FULL BODY: every hair, hand and shoe fully enclosed by a wide transparent margin on ALL sides. Make the entire figure occupy only75%of canvas height, centred vertically, with at least90pixels of fully transparent area both ABOVE every flyaway hair and BELOW both shoes. Do not change bent-knee small-bounce pose. Preserve the same face, hair, anatomy, outfit, exact pose, expression and anime cel rendering. Existing image has hair alpha touching the top border; fix by making the composition smaller, not by deleting/cutting hair. Surrounding canvas must be genuine transparent alpha, never a painted black/white/checkerboard backdrop. Single image, no collage, no shadow/floor. No text, no letters, no logos, no watermark, no numbers, no halo or starbursts.",
+  "references": [
+    "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-37d02267-ba0d-4cb0-87ad-b3a0d7a49097.png"
+  ],
+  "transparent_background": true,
+  "source_path": "/Users/kingh0730/.codex/generated_images/01a1058f-94d9-7fd0-9738-33a7739eb377/exec-c470c55b-3a62-49d3-a14d-64c8998ee302.png",
+  "selected_path": "/Users/kingh0730/repos/interregnum/episodes/first-day-anime2/project/assets/plates/S36d-start-v2.png",
+  "status": "selected-still-reviewed-render-pending",
+  "original_codex_image_retained": true,
+  "revision_reason": "Framing-only builtin edit removes source hair touching topedge; pose anatomy and clothing preserved.",
+  "sha256": "56df7ce65b12629cd4f0710292c168d61b07f5bfdf77077a86c133355a9f22a5",
+  "alphaStatistics": {
+    "mode": "RGBA",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "min": 0,
+    "max": 255,
+    "transparentFraction": 0.9004221560083185,
+    "nonzeroBounds": [
+      594,
+      108,
+      1471,
+      892
+    ],
+    "edgeNonzeroCounts": {
+      "top": 0,
+      "bottom": 0,
+      "left": 0,
+      "right": 0
+    },
+    "alphaAbove32Bounds": [
+      596,
+      110,
+      1084,
+      887
+    ]
+  },
+  "visualReview": [
+    "Full figure in a small-bounce pose with softly bent knees and relaxed balance hands.",
+    "Skirt hem and parallel stripes visible; modest coverage with no underwear/upskirt view.",
+    "Hair, hands and both shoes are enclosed by transparent margins after framing repair."
+  ],
+  "motionReview": "Not reviewed: a generated still is not proof of dance performance.",
+  "referenceOriginalRetained": true,
+  "generatedSymbols": "No visible text, logos or starburst emblems; ordinary barrette and plain tie retained for code finishing."
+}

@@ -1,0 +1,160 @@
+{
+  "shots": {
+    "S18": {
+      "assets": {
+        "plate": "assets/normalized/S18-opus-cutout.png",
+        "depth": "assets/depth/S18-opus-cutout.png",
+        "mask": "assets/masks/S18-opus-cutout.png",
+        "layers": [],
+        "poses": [],
+        "support": {
+          "hand": {
+            "id": "S18-hand",
+            "source": "assets/plates/S18-hand.png",
+            "plate": "assets/normalized/S18-hand.png",
+            "depth": "assets/depth/S18-hand.png",
+            "mask": null,
+            "expected_mask": "assets/masks/S18-hand.png",
+            "status": "normalized_source_available",
+            "depth_status": "pending_inference",
+            "mask_status": "not_required",
+            "features": {
+              "status": "anchors_located_pending_composite_review",
+              "eyes": [],
+              "hairpin": null,
+              "tie": null,
+              "halo": null,
+              "eyes_state": "outside_crop",
+              "review_evidence": [
+                "qa/features/S18-hand-anchors.png",
+                "qa/features/batch-through-S25-overlay-grid.jpg"
+              ],
+              "halo_requires_subject_occlusion": false,
+              "only_character": "anonymous user hand",
+              "tip": [
+                0.25119617,
+                0.05608719
+              ]
+            },
+            "features_required": false,
+            "mask_required": false,
+            "approval": false,
+            "source_sha256": "593d9b2cb0778202da1b58312a2ab449cb666a021f5d7387c6a1b7127bf3bff6",
+            "output_sha256": "f14d2b522fbbf7155e024b735182cace06a6c8046112d7feb47f890cf040e197",
+            "transform": {
+              "source_size": [
+                1672,
+                941
+              ],
+              "crop_box": [
+                0,
+                0.25,
+                1672,
+                940.75
+              ],
+              "target_size": [
+                1920,
+                1080
+              ],
+              "scale": 1.1483253588516746,
+              "method": "center_crop_lanczos_preserve_alpha"
+            },
+            "mode": "RGBA",
+            "source_alpha_range": [
+              0,
+              255
+            ],
+            "depth_input": "assets/depth-inputs/S18-hand.png",
+            "depth_preprocess": "Exact RGBA composited over ivory #FAF9F5 for inference only; original/normalized RGBA unchanged.",
+            "mask_provenance": {
+              "method": "normalized_source_alpha_channel",
+              "source_sha256": "593d9b2cb0778202da1b58312a2ab449cb666a021f5d7387c6a1b7127bf3bff6",
+              "alpha_sha256": "b8ff85c92a2d3eeaa2989434ccdac2889c9591c284834449d1027938382c3498",
+              "fully_transparent_pixel_fraction": 0.7683873456790123,
+              "approval": false
+            },
+            "path": "assets/normalized/S18-hand.png",
+            "tip": [
+              0.25119617,
+              0.05608719
+            ]
+          }
+        },
+        "features": {
+          "status": "anchors_located_pending_composite_review",
+          "eyes": [
+            [
+              0.50179426,
+              0.25704413,
+              0.00897129
+            ],
+            [
+              0.5992823,
+              0.29957469,
+              0.00897129
+            ]
+          ],
+          "hairpin": [
+            0.66626794,
+            0.18899522,
+            0.02212919
+          ],
+          "tie": [
+            0.50059809,
+            0.65364168,
+            0.02691388
+          ],
+          "halo": [
+            0.55203349,
+            0.25279107,
+            0.4784689,
+            0.6804891
+          ],
+          "eyes_state": "open",
+          "review_evidence": [
+            "qa/features/S18-opus-cutout-anchors.png",
+            "qa/features/batch-through-S25-overlay-grid.jpg"
+          ],
+          "halo_requires_subject_occlusion": true,
+          "only_character": "Opus",
+          "touch": [
+            0.41686603,
+            0.4271664
+          ]
+        },
+        "status": "normalized_source_available",
+        "approval": false,
+        "mask_required": true,
+        "mask_status": "exact_source_alpha",
+        "depth_status": "available_unreviewed",
+        "asset_id": "S18-opus-cutout",
+        "depth_input": "assets/depth-inputs/S18-opus-cutout.png"
+      },
+      "method": "depth-rig",
+      "cameraClamps": [],
+      "features": [
+        "status",
+        "eyes",
+        "hairpin",
+        "tie",
+        "halo",
+        "eyes_state",
+        "review_evidence",
+        "halo_requires_subject_occlusion",
+        "only_character",
+        "touch"
+      ],
+      "unverified": [
+        "Hand tip lands on annotated touch point at local last frame (global 604); visual fingertip continuity to frame605 remains unapproved."
+      ]
+    }
+  },
+  "warnings": [],
+  "missing": [],
+  "renderedFrames": [
+    604
+  ],
+  "cameraOwner": "code",
+  "renderMethod": "depth-mesh / separated-layer / authored-code",
+  "finalApproval": false
+}
