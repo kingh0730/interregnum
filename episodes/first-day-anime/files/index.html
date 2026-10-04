@@ -1,0 +1,25 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}</style>
+<canvas id="out"></canvas>
+<script src="runtime.js"></script>
+<script src="accum.js"></script>
+<script src="dist/scene.js"></script>
+<script>
+// Boot is awaited by the Node driver via window.__ready. ANY failure must be loud.
+window.__bootError = null;
+window.__boot = (async () => {
+  try {
+    if (!window.SCENE) throw new Error('window.SCENE missing: did `npm run bundle` run?');
+    const out = document.getElementById('out');
+    out.width = RT.W; out.height = RT.H;
+    await document.fonts.ready;
+    await window.SCENE.init({ W: RT.W, H: RT.H, FPS: RT.FPS });
+    window.__initAccum(out);
+    window.__ready = true;
+  } catch (e) {
+    window.__bootError = String(e && e.stack || e);
+    console.error('BOOT FAILED', window.__bootError);
+  }
+})();
+</script>
