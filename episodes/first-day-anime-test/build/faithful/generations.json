@@ -1,0 +1,114 @@
+[
+  {
+    "id": "faithful_hand_cutout",
+    "prompt": "Edit the supplied anime hand-contact frame into an isolated character performance plate on TRANSPARENT background. Keep BOTH women and their clasped hands exactly: black-bobbed woman with round glasses and cream hoodie on left, coral-to-cream twin-tailed heroine in ivory black-piped jacket on right. Preserve faces, hand grip, age, lighting and clothes. Remove all architecture, scenery and lighting fixtures. Extend the crop to show both complete bodies from head to feet: Xiaoman wears dark trousers and sneakers; heroine wears above-knee charcoal pleated skirt with cream musical staff hem, long coral bookmark sash, bare legs and feet, floor-length coral-to-cream low twin-tails. Keep their relative height and standing positions. Make collar brooch and coral hairclip BLANK for vectors in post, no drawn symbols or text. Warm 2D cel linework matching original. Both smiling quietly, gazing at each other, no other people. This is a paired figure cutout, not a sheet; no margin labels.",
+    "source": "/Users/kingh0730/.codex/generated_images/01a1027f-2eb0-7543-8eb9-3e6097ef34b9/exec-ace46594-6b5c-4b25-993d-a0e8d4451e60.png",
+    "tool": "Codex built-in image_gen",
+    "seed": "not exposed"
+  },
+  {
+    "id": "faithful_leap_cutout",
+    "prompt": "Edit this exact anime frame into a clean isolated transparent-background cutout of BOTH women only. Preserve the two faces, poses, complete limbs, joined hands, footwear, costumes, floor-length flowing coral-to-cream twin tails, and lighting exactly. Remove all buildings, sky, clouds, railings, loose paper and scenery. Keep blank black collar brooch and blank coral hairclip. The leaping woman at left has black knee socks and tan loafers; the short black-haired woman at right has round glasses, cream hoodie, dark trousers and sneakers. Both complete bodies and all hair ends must fit inside the canvas with a modest transparent margin. No floor, shadows, text, logos or other objects. Preserve the reference image's 2D cel anime linework, do not redesign.",
+    "source": "/Users/kingh0730/.codex/generated_images/01a1027f-2eb0-7543-8eb9-3e6097ef34b9/exec-ab91e8a8-0e46-4954-b644-0fbc95b02f67.png",
+    "tool": "Codex built-in image_gen",
+    "seed": "not exposed"
+  },
+  {
+    "id": "faithful_helix_cutout",
+    "prompt": "Edit this exact anime frame into a clean TRANSPARENT-background paired figure cutout. Keep BOTH women, exactly the same faces, complete bodies, barefoot poses, outstretched arms, flowing hair and clothing. Remove all sky, clouds, sun and scenery. Retain the coral-haired heroine in foreground, her floor-length coral-to-cream twin tails, ivory black-piped jacket, short charcoal staff-line skirt and coral sash; short black-bobbed glasses woman at her left in cream hoodie and dark trousers. Pins should be BLANK black collar brooch and BLANK coral hairclip, no lettering or symbols. Keep all hair and fingers inside frame with transparent margin. Preserve original hand-drawn cel anime style and warm lighting, no restaging or new design.",
+    "source": "/Users/kingh0730/.codex/generated_images/01a1027f-2eb0-7543-8eb9-3e6097ef34b9/exec-25b93ea7-227e-42ba-bbe2-d56de7291624.png",
+    "tool": "Codex built-in image_gen",
+    "seed": "not exposed"
+  },
+  {
+    "id": "faithful_room_panorama",
+    "prompt": "Create a seamless 360-degree equirectangular panorama of this EXACT empty apartment, for the interior surface of a 3D environment sphere. Extremely wide 2:1 panoramic composition, all four walls, ceiling at top and floor at bottom, matching left/right edges. Match the reference's small cramped high-rise office: desk with blank monitor and empty dark swivel chair on the LEFT side of the rainy rear window; open balcony sliding door to the RIGHT of the rear window. Other walls are cream plaster with plain small notes and shelving, simple apartment doorway opposite the rainy window, no new desk, no extra computer. Same furniture, same painted anime style, subdued ink/cream with early warm coral dawn from the windows. No people or body parts anywhere, no text, letters, logos, no panels or split-screen. The panorama must be a single continuous room, not a collage. Keep the desk, window and balcony door in their established relative arrangement.",
+    "source": "/Users/kingh0730/.codex/generated_images/01a1027f-2eb0-7543-8eb9-3e6097ef34b9/exec-1711aef3-bcd7-498a-8a7e-324439fd359d.png",
+    "tool": "Codex built-in image_gen",
+    "seed": "not exposed"
+  },
+  {
+    "id": "faithful_facades",
+    "prompt": "Texture atlas for the four sides of anime city buildings, four equal rectangular panels in a 2 by 2 grid, no margins or gutters. Each panel is a straight-on orthographic tall building facade filling the panel edge to edge, NO sky and NO ground. Same hand-painted feature-film anime art as reference. Dawn light, ink outlines, slate/cream architecture, reflected coral sunrise and muted sky blue glazing. Panel 1: elaborate glass curtain wall with narrow steel mullions, subtle coral reflections and staggered recessed floors. Panel 2: lived-in concrete residential tower with recessed balconies, railings, air conditioners and small plants. Panel 3: elegant slim steel and glass tower with vertical fins, mechanical louvers and deep shadowed recesses. Panel 4: dense older midrise facade, varied windows, subtle cables and roof ledges. Confident painterly details and dimensional material light, no generic flat repeating squares. No people, signage, writing, numbers, logos or labels. This is a material texture sheet, not a skyline or perspective scene.",
+    "source": "/Users/kingh0730/.codex/generated_images/01a1027f-2eb0-7543-8eb9-3e6097ef34b9/exec-ccf4109d-c471-401a-96b6-40c5e469bfca.png",
+    "tool": "Codex built-in image_gen",
+    "seed": "not exposed"
+  },
+  {
+    "id": "faithful_bare_leap",
+    "prompt": "Edit ONLY the footwear on this exact transparent paired anime cutout. Remove the coral-haired woman's tan loafers and black socks, revealing anatomically natural bare feet and bare lower legs in precisely the same airborne bent-leg pose. Remove the black-haired woman's sneakers too, revealing bare feet in the same pose, keeping her dark trouser cuffs unchanged. Preserve both faces, hands, hair, clothes, body positions, proportions, drawing style and transparency exactly. No other change. This is the end state of shoes dissolving into light; do not add the dissolving particles yourself. Keep no text or logos.",
+    "source": "/Users/kingh0730/.codex/generated_images/01a1027f-2eb0-7543-8eb9-3e6097ef34b9/exec-f833e6d8-2d53-479a-a2f1-5ad43f20a82e.png",
+    "tool": "Codex built-in image_gen",
+    "seed": "not exposed"
+  },
+  {
+    "id": "faithful_cloud_element",
+    "prompt": "Create one isolated broad luminous cloud formation on a TRANSPARENT background, matching the hand-painted anime cloud sea in the reference. A layered long bank of cumuliform cream clouds viewed from just above its top edge, dimensional overlapping billows, coral sunrise underneath, ivory upper edges and subtle muted sky-blue shadows. Beautiful painterly brushwork and delicate fading vapor at every edge. Entire cloud inside the canvas, no rectangular background or hard crop at any edge. No sun disk, no horizon, no sky fill, no people, no objects, no letters or logos. This is a transparent multiplane cloud element for a feature-film anime camera move.",
+    "source": "/Users/kingh0730/.codex/generated_images/01a1027f-2eb0-7543-8eb9-3e6097ef34b9/exec-66984f36-ac37-40ac-a100-edf87c5ba1d3.png",
+    "tool": "Codex built-in image_gen",
+    "seed": "not exposed"
+  },
+  {
+    "id": "faithful_meadow_empty",
+    "prompt": "Edit the exact supplied anime dawn meadow into a clean empty environment plate: remove BOTH women completely, including their hair, clothing, feet, hands, jewelry and shadows. Reconstruct continuous olive-green hillside grass and small wildflowers where they were sitting. Preserve the exact dawn lighting, painterly anime style, hill slope, cloud sea, distant landscape, sky and horizon. No people, no body-shaped impressions, no new objects, no text or logos. This background will be used behind the original actors in a 2.5D crane-away, so preserve the composition and extend natural grass across the removed areas.",
+    "source": "/Users/kingh0730/.codex/generated_images/01a1027f-2eb0-7543-8eb9-3e6097ef34b9/exec-28703006-1103-4f9d-816d-e37c5aef1472.png",
+    "tool": "Codex built-in image_gen",
+    "seed": "not exposed"
+  },
+  {
+    "id": "faithful_steps_wide",
+    "prompt": "Reframe this exact anime balcony shot wider by moving the low camera backward, not by adding borders. Preserve the same woman, face, lifted-foot starting pose, bare feet and ankle chain, floor-length coral-to-cream twin tails, ivory jacket, short charcoal musical-staff skirt and coral sash. Her complete body should occupy only about 60 percent of frame height, with generous space above her head and a broad stretch of wet tiled floor below her feet for three forward steps. Keep the established apartment wall and sliding doorway on the left, railing and the same city on the right, the same light and painterly cel anime style. Keep the existing plants and blank pins, no text, logos, extra characters or redesigned architecture. One widescreen 16:9 frame.",
+    "source": "/Users/kingh0730/.codex/generated_images/01a1027f-2eb0-7543-8eb9-3e6097ef34b9/exec-8d8ac963-4fd4-4efe-8f27-6d5657b73d69.png",
+    "tool": "Codex built-in image_gen",
+    "seed": "not exposed"
+  },
+  {
+    "id": "faithful_ceiling",
+    "prompt": "Fill ONLY the blank white strip along the top of this image. It is an outpainting margin: continue the apartment ceiling, wall tops, hanging plants, and the existing vertical warm ivory light beam naturally upward into that strip. Match the exact hand-painted anime style, perspective, light and colours. Keep the entire existing room below the strip unchanged. Do not add people, fixtures, objects, text or logos. Remove every trace of the white blank margin; this must be one continuous painted apartment background.",
+    "source": "/Users/kingh0730/.codex/generated_images/01a1027f-2eb0-7543-8eb9-3e6097ef34b9/exec-243ed3c7-fc89-4aff-9362-fbe909065e33.png",
+    "tool": "Codex built-in image_gen",
+    "seed": "not exposed"
+  },
+  {
+    "id": "faithful_unfurl_isolated",
+    "prompt": "Extract ONLY the floating coral-haired heroine from this frame as a high-resolution full-body isolated cutout on TRANSPARENT background. Preserve her exact open amber eyes, face, floating pose, hands, bare feet, ivory jacket, ink piping, short charcoal staff-line skirt, coral sash, ankle chain and blank black collar pin / blank coral hairclip. Her two very long twin tails are gathered in the same loose coils beside her hips and knees, ready to unfurl. Keep the exact design and the complete hair silhouette, with space around all hair and toes. Remove the room, every light beam, dust, sparkles, shadows, furniture and the other woman; these have separate scene layers. The skin and clothes must be solid opaque painted cel colours, never translucent. No text or logos. One large portrait-format character cutout, not a sheet.",
+    "source": "/Users/kingh0730/.codex/generated_images/01a1027f-2eb0-7543-8eb9-3e6097ef34b9/exec-fa22b3eb-f00c-421f-88be-f1cdabdecfd1.png",
+    "tool": "Codex built-in image_gen",
+    "seed": "not exposed"
+  },
+  {
+    "id": "faithful_unfurl_isolated_open",
+    "prompt": "Edit ONLY the two coiled twin tails in this transparent character cutout. Unwind their loose coils and let the full length of both tails hang in graceful waves all the way down to the floor beside her bare feet. Preserve the coral roots fading to pale cream tips; do not shorten the hair. All hair ends must fit inside the canvas, with clear transparent space around them. Keep her exact face, open amber eyes, floating body pose, hands, legs, outfit, sash, blank pins, lighting and framing unchanged. Do not move or resize her body. Solid opaque character skin and clothes, fully transparent background, no light beam or scenery, no new text or symbols.",
+    "source": "/Users/kingh0730/.codex/generated_images/01a1027f-2eb0-7543-8eb9-3e6097ef34b9/exec-5896ec05-6265-4c6a-be4c-abc0a65bebb9.png",
+    "tool": "Codex built-in image_gen",
+    "seed": "not exposed"
+  },
+  {
+    "id": "faithful_paper_empty",
+    "prompt": "Edit this exact flat paper meadow illustration into its empty background artwork. Remove BOTH running women and all of their hair, clothing, limbs and shadows. Continue the printed meadow, hills, grasses and wildflowers naturally through the removed regions. Preserve the cream paper grain, torn-paper character, muted olive/kraft layered hills, coral cut-out sun, sparse hand-scribbled stars, and the exact hand-inked editorial illustration style. Keep the whole landscape flat and printed, never a 3D render. Leave generous open cream sky. No people, no text, numbers or logos. The existing foreground grass and tiny flowers must remain rich and beautifully drawn; do not replace them with generic smooth bands.",
+    "source": "/Users/kingh0730/.codex/generated_images/01a1027f-2eb0-7543-8eb9-3e6097ef34b9/exec-852004ec-ccd7-4727-9664-f2857505e5a2.png",
+    "tool": "Codex built-in image_gen",
+    "seed": "not exposed"
+  },
+  {
+    "id": "faithful_closed",
+    "prompt": "Edit this exact anime close-up only to gently close both eyes with the same heavy lashes and close her lips into a calm tiny smile. Keep the identical face, age, pose, hair, clothing, lighting, camera, background, blank hairclip and blank collar pin. Do not redesign anything. This is the closed-eye starting keyframe before her eyes snap open. No text or logos.",
+    "source": "/Users/kingh0730/.codex/generated_images/01a1027f-2eb0-7543-8eb9-3e6097ef34b9/exec-3d76e005-cf0c-44c8-b26e-037262ee431a.png",
+    "tool": "Codex built-in image_gen",
+    "seed": "not exposed"
+  },
+  {
+    "id": "birth_open",
+    "prompt": "Edit only Opus's closed eyes in this exact frame: open them into warm amber-coral irises. Keep the same face and pose, floor-length hair, full-body framing, costume, room, Xiaoman and lighting unchanged. Pins remain blank. No new text or logos.",
+    "source": "/Users/kingh0730/.codex/generated_images/01a1027f-2eb0-7543-8eb9-3e6097ef34b9/exec-e0a29d23-706c-4a8e-b364-eca45bd6dea0.png",
+    "tool": "Codex built-in image_gen",
+    "seed": "not exposed"
+  },
+  {
+    "id": "birth_coiled",
+    "prompt": "Edit this exact frame for the beginning of the heroine's hair-unfurling action. Keep Opus's same identity, full-body floating pose, jacket, skirt and coral sash. Her two very long coral-to-cream low twin tails are temporarily gathered in loose floating coils beside her hips and knees, with their ends above the floor, ready to unroll downward. Keep their full length coiled, not cut short. Her eyes are open with warm amber-coral irises. Keep Xiaoman, the apartment, camera, lighting and framing exactly unchanged. Pins blank, no text or logos.",
+    "source": "/Users/kingh0730/.codex/generated_images/01a1027f-2eb0-7543-8eb9-3e6097ef34b9/exec-b1ce864f-21b1-4bd9-9a36-eecbec04b888.png",
+    "tool": "Codex built-in image_gen",
+    "seed": "not exposed"
+  }
+]

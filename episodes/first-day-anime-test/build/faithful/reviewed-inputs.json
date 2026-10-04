@@ -1,0 +1,414 @@
+[
+  {
+    "path": "work/first-day-anime-test/assets/anthropic-a.png",
+    "sha256": "48c4dca67767b81b43a3becad829f0a5eae0120ffa19027aa93c332253ce3d9c"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/birth-clean.png",
+    "sha256": "9c59102a4ddf252462841473976b76c5eb2b95c97a4e5765ab1b16ff0b094434"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/birth.png",
+    "sha256": "82a786b6a50557a64c5737ce1f763c07b57aab8dd9883ba9aeeb9a570d90003d"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/breath-clean.png",
+    "sha256": "fb1fa05482073e4709dc9a5c9308c180f7c1319277ca1f54354f4a07877dac85"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/breath.png",
+    "sha256": "54aeab230d18250edad1ef94c00ec17d5b4a8bde7ab3bdba61bf95b5d4644e76"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/city.png",
+    "sha256": "4d6823daaabda35170bdfacedf31ce41edd180f512aa2b6bd4b0a962f6d612e1"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/claude-spark.png",
+    "sha256": "06d1d401857b25320b2fed1c08fbf6fcdc2e9cf8b016f6d07722e7187d86655a"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/environment-reference.png",
+    "sha256": "fe00dc6f206a7b3d77a3a614ed0900e538b040e9aa6ddd47feffeea04d64e229"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/flight-clean.png",
+    "sha256": "6d17e211bde703dbbe9a9ed2c3e8cd1a6f05dc4794748fa7ab2f9a8d47c9a049"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/flight.png",
+    "sha256": "f6405575fc3553bcdd9df5755fb43955883bc9f4bdbbbde6472a028634ea4392"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/float-clean.png",
+    "sha256": "5b683ec207deb9d50f7d781a3c557ddc98e1225232621ada94b42a807cdc7517"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/float.png",
+    "sha256": "63285c7be86f82108311253ca9f90c3368a283936f36748f0fd4cfb194545cc6"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/helix-hero.png",
+    "sha256": "f435a2e87b4af3bde4b6646495e9063d74eeff5974f02cb19be1545580e67e8f"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/helix-sheet.png",
+    "sha256": "da98be67b13b6a87192b2af5e0a6df504e967ca07248b740c025ecb1d7f08370"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/helix-start-clean.png",
+    "sha256": "af0516317f2bcd14c97482abef05b662a9917f74c1ee4d0b12e0ccbf2ed170d4"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/helix-start.png",
+    "sha256": "33184d2a80f515c6c919f5ec23cdf222815b72b574d2f728e9aa260e22e878d1"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/helix-view-0.png",
+    "sha256": "f435a2e87b4af3bde4b6646495e9063d74eeff5974f02cb19be1545580e67e8f"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/helix-view-1.png",
+    "sha256": "5b8f1b65c4f26e01de2abe9c5174d0902c96c7a85ef0c0df39c9e44a48679c81"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/helix-view-2.png",
+    "sha256": "4da7f1e688343e44323dea7f08c586217dcaaf5c1bac1aca1599286d25870d44"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/helix-view-3.png",
+    "sha256": "16b0442960a4e1956e68573b04f0076f52902d3010c8b5d51d9cb7e88547e98e"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/helix-view-4.png",
+    "sha256": "0ac96a135bb27dca83a55e04bacee70db607fe6de58654d372fa4697396a862d"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/hug-clean.png",
+    "sha256": "00db84a9f4a35e8385a6b28cdc30326ae891108092aa5dd2d500bf77447aa69e"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/hug.png",
+    "sha256": "51468bac9364a3d6484eb8fde9a973dc2a7979025e8173e05bfe21c6ef3b7e81"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/leap-clean.png",
+    "sha256": "6fe6268c3ea627d17ef2cc8e13bb802a3d81faa3de1550114e91038c1cd8b2a2"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/leap-fixed-clean.png",
+    "sha256": "49961f4f8f574277f7d982831a2a4ade45350fd96149fad229d6b320e53c3bdd"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/leap.png",
+    "sha256": "222b8e0497229eac969f67b75f0feb07cc1bcb69aa6987bc41c66441d51870fe"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/opus-reference-v1.png",
+    "sha256": "13550c8e62172a8361a3b4a79403320f483c46b39b499e6ec02a976a10c4a575"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/opus-reference.png",
+    "sha256": "18eb608cabf57a6d5c6d16ad1dec5a6ea1520638c1b739010444058e21eae29d"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/outro-clean.png",
+    "sha256": "776a6ae92efe7d5681cdbc46def12fa09554b2cdcdd6f9ab741e70e1e58ab835"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/outro-fixed-clean.png",
+    "sha256": "3d0906ca273013d3847dd53d0ac3fb097be183d9fd24fb0867e5d36f7e171b8f"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/outro.png",
+    "sha256": "7eb6aa9aa5472b605616e4ab41c8d62c3cbd40c158296c083fc2a2822fa4bf16"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/paper.png",
+    "sha256": "1e6d2a19ea7ba68c6802e81f446f5757b52fabf9082f9f8c7535b1510794fce4"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/s01-glasses.png",
+    "sha256": "d6ef549e0ed85145365b91144647faaadc17ebb13250b95a3c755872b5422afd"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/s03-room.png",
+    "sha256": "a00bf0f1e2b3edbc8a80cbd534a5c97ca94d76c77fba5be846f195faa4d627cd"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/s04-tea.png",
+    "sha256": "22739fadd6422c3ec573f4fff646cc900bd3166b05b6ea23b605ab5b9d0ded9a"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/s05-screen-clean.png",
+    "sha256": "eb0222881316389d147d47d4703315faa5ab97af9a27b70c49a58cbb49d4dbcb"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/s20-ankle-clean.png",
+    "sha256": "79ff3b12c32d4dc77ecce663f2cd350a48a7390ba93e1360f5d090a483f56cd7"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/s20-ankle-start.png",
+    "sha256": "ba24cef82b87574c9f19530a2bd666830f2dd561082ead4e619b080ba60d4fac"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/s20-ankle.png",
+    "sha256": "ed07caa5499fe0f7f36c2de939544e08bc61f1f9eed605b81314682b373ad5fc"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/sky.png",
+    "sha256": "23bd9447245e3b05fe214b21c3fd894938fc0ecbf4dd7ae8ec92256c0d332edc"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/sprint-clean.png",
+    "sha256": "1dfbc846068a7ceae96ef13c71566bb1159a3789a53a3eae0e566cc89ea3f38c"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/sprint.png",
+    "sha256": "0bf763e1bcb6078e8ae60250e5ad8277b796dac3fb2b6860dc34510975d6642c"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/steps-clean.png",
+    "sha256": "94a4c96257c186ff7fec43e674945b4b338660f15a3b42700af3dd9fbe996a7b"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/steps-fixed-clean.png",
+    "sha256": "74af85faf8f22c9b2b4d636d311d86000cf346adca697548ab0fb6bf6b689669"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/steps.png",
+    "sha256": "310ecdd6d073752c6ce5af679ec7610898f7633eb9381e9f11b070f44f27fec7"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/touch-clasp.png",
+    "sha256": "2f2cf72ab3448832c57e4215aaf2962c5e8a027496d47dc8cb3c825d11b3c4f8"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/touch-clean.png",
+    "sha256": "bb1383c92ef4f003dd66d7ffc68198cbac1c430f883e9511943bc2157634ca23"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/touch.png",
+    "sha256": "9437bc656b836740c0b6f51ae3759ec5a1c765f991ecc7a6e78e23d38fd12373"
+  },
+  {
+    "path": "work/first-day-anime-test/assets/xiaoman-reference.png",
+    "sha256": "96c93c85ab7a7b5c56f07545dc3a8a5692975ad7dcc259ebb287e99c63a2e64c"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/birth-clean-actor.png",
+    "sha256": "19d8fd76be14f8dede73ab40f1f5ba8038f6b1a7347a3b24e95d9cbd9c4d2295"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/birth-coiled.png",
+    "sha256": "c527416b7e8518b4bf96629e8c7212c50572a610e3b3108117b702fe8c5d1e9f"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/birth-open.png",
+    "sha256": "d53db70519034684c5fb53c45ecebba07a969635fb27aa39eda45882fcd2bf97"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/birth-opus.png",
+    "sha256": "b617af76151fb0c8e092c183c9ed8966e7e00ae2047b69a4dfc62ee4d494f6ab"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/birth-room-bg.png",
+    "sha256": "d48ae35483851aa058de5f7584a1608baff512b3f8b11dd74364859d1625c61d"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/birth-room-clean.png",
+    "sha256": "d1e6eed3bb78e4a0423259bf9cad35b180c51f384f270ebae06c7337e70f8fed"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/birth-room-overscan.png",
+    "sha256": "1f843f2790487d24254e399783f0dc471715c8d5e75cc2bbcfebb4643059d456"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/birth-xiaoman.png",
+    "sha256": "869eb84f5c0e02603a294a38ef4c8b739059db9d4cef5f9ed0fd37256b2f7301"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/ceiling-guide.png",
+    "sha256": "98281384762937145c61d90a63db8a0f899857e5cf363c2bd604404c56247ae8"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/ceiling-painted.png",
+    "sha256": "a835e9ae512dcbcc3df50d8064e6137345ffd3d9dc4fb2ab3004929ced7ef686"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/cloud-element.png",
+    "sha256": "b44565b5bb9f7cae3088959c71a8a3f1ce36e2b6abff79027792a51cc05d283a"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/empty-room-reference.png",
+    "sha256": "6ecdf823677178e311a481230a65e6332fb12889513201ce42055dad38002a1b"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/eye-closed.png",
+    "sha256": "02a7161e415ccbffbb7de45a2770cf785769d3a8ff3fe4fdda32db545bd6af85"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/facades.png",
+    "sha256": "27961a9ad0907fc38c1c792b5b19e87230006468ae7265fb812a788233f6253c"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/flight-clean-actor.png",
+    "sha256": "5a0bf07665b6fe7e076f5844673f37112a5c427324e712d1b362730133652f44"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/float-clean-actor.png",
+    "sha256": "776aa423312af6b7dbc62b67ee21d0c23a6d1c26c0787ae3fd079e8e00c0fc77"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/hand-camera/hand-camera.mp4",
+    "sha256": "b24c17ca24445f5a68fd42747b791f7a73936466505da73eb0aa7c44100319a0"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/hand-camera-reverse/hand-camera-reverse.mp4",
+    "sha256": "7305353fca4efdf9fee0320215870d423a400e64f9305459c0b156d081bde27f"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/hand-pair-cutout.png",
+    "sha256": "1fc9774bccaf7f9707d5de27fc37a2a8372a78ab5a8e771ad9de24c773baa26b"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/hand-pair-white.png",
+    "sha256": "1057db59abdaa9de947961f1f03f01f83d10b53fd27c77fa3818b452a7d52841"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/helix-camera/helix-camera.mp4",
+    "sha256": "d8b11ba580e03280366a9ee6a956c201c6350dd91a614c530142f8844a3cd993"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/helix-front-registered.png",
+    "sha256": "8e71ecca7d9ae525a2dc1f2fd61a1d2e651cd18b7b21855d0bdd58d4e8c7455d"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/helix-pair-cutout.png",
+    "sha256": "a3b86075eaba6979d8b03bf93561cce9707d524e3361e1bdb6aeff910ad51323"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/helix-wide-general-test.png",
+    "sha256": "19156eb73fdece7b0ec2832da2dbbc7949d2c8b47f1feec005f09e9cca289b33"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/helix-wide-hybrid-test.png",
+    "sha256": "ac82d10e804c44bb7881bfbd24c46e6627b5a2d69e724128a871a151736c63c0"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/helix-wide-sam-best.png",
+    "sha256": "51be9b4fa1fabf72eb0e49334a585b446846b2c4b080d6168eb6cf34bd133f77"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/helix-wide-sam-repaired.png",
+    "sha256": "d710c880df221d8fb5360d8866275f0f4c0e6669a7faf5e1dbd9460a32d3fb8d"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/helix-wide-sam-test.png",
+    "sha256": "51be9b4fa1fabf72eb0e49334a585b446846b2c4b080d6168eb6cf34bd133f77"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/helix-xiaoman.png",
+    "sha256": "eb294f2ec4029e02bc75e3324fcb3d73a21fc1f106d3ab23ba262370eda3f59a"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/leap-bare-cutout.png",
+    "sha256": "0c8d7ad226cc0c879f51a6f0f19173c949e69e299d5b2ac30fbfb63d3bafc805"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/leap-bare-registered.png",
+    "sha256": "ea28ff46575143c0264bc120b5565ffbee4266723d6a8c6af1a8359a5cf47f61"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/leap-camera/leap-camera.mp4",
+    "sha256": "cf7bd2e93e52f245bb73f9efbfe7a461cac63858ce6610a911c91c2820e95fa3"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/leap-foot-regions.png",
+    "sha256": "b5a842a22f302ed48a8987a1825fdde515b2dcdab5aeb8004b8b06868fbcd632"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/leap-pair-cutout.png",
+    "sha256": "75f65a4fde5ea95539aeb8d662f2520de080e4cb26b4be46c683032ceba10470"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/lipsync-test/mandarin-line.mp4",
+    "sha256": "072b2cb2b0fbf3bf3af8c2fc02ae29cdf2c19803358fd4cc41ebda178c2762ee"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/meadow-empty.png",
+    "sha256": "1fddc94598201d307e9106c5b1f5ba30d5175e1f9ab5956437b6a89855158a7d"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/orbit-wide-general-test.png",
+    "sha256": "17d907bb3ad46bbee7ff65065a79be0b36e7ad4635ae0e94eced25be3591e306"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/orbit-wide-hybrid-test.png",
+    "sha256": "23bb4722a2dd19cc15330fa8a919efbe27805394f69a4ceeba3c70a702731309"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/orbit-wide-sam-best.png",
+    "sha256": "14546e216cbfd9805e19049c5b482c61e7497b5fe5cd48fd42fdb937897bb0fe"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/orbit-wide-sam-repaired.png",
+    "sha256": "9111c2892483666b0cab0612f75a5ce1cd3164ff5aa7e5a1b3cbc8b6a85511d5"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/orbit-wide-sam-test.png",
+    "sha256": "14546e216cbfd9805e19049c5b482c61e7497b5fe5cd48fd42fdb937897bb0fe"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/outro-fixed-clean-actor.png",
+    "sha256": "0b473101f0bd9252be986184f6adf5f693fe44e9483e8b3a29210d53d74f19d9"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/paper-actor.png",
+    "sha256": "fd39c76a934ae63425c0c5d163c756a9c3f660c253eddd309242712f1baf1907"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/paper-empty.png",
+    "sha256": "c675ecfc02abef0ed0c52028915b30249a567690e846ece700c8ebdb54102a68"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/reply-performance/reply-performance.mp4",
+    "sha256": "4564873f375b0f8567aa395eb7a3749de58e51a36f8df2cbe2225cc5421f26c8"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/room-panorama.png",
+    "sha256": "2a66d29637c97e69a5cfe308a1dc0f9848ef0ee342d7de408d96f5aca8329785"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/s03-room-actor.png",
+    "sha256": "0d673c0f2f27e620b12c009a3029ac6f3605b74e5a3653ba8de23a2039662374"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/steps-performance/steps-performance.mp4",
+    "sha256": "6e9d4c1f2c07cbda4457c195f26c33f9388b169460ca90c621de900614a0012e"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/steps-wide.png",
+    "sha256": "a5ca37cd71a26f00463c417b7870a04e78a5df19f600bbd0542b4462d03abfc1"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/unfurl/unfurl.mp4",
+    "sha256": "51fea44bfc338d754093818b7daec7e80bdf046dbdd09cfc55c6e298760b729b"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/unfurl-clean/unfurl-clean.mp4",
+    "sha256": "d4ab998e09bac23287ecda6476a2f67e184b798ad3ba640d126edce5aa742833"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/unfurl-isolated-coiled.png",
+    "sha256": "c80e4a0ce4e1bcc5f2fd1e113f7a4bc5c2e781aeaef791ae969d29d5c1b6099d"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/unfurl-isolated-open.png",
+    "sha256": "5aa10a1d4b2413d98ab8e1d9010ad056853a517647ee7dc77dd2fb0480cba429"
+  },
+  {
+    "path": "work/first-day-anime-test/faithful/waiting-room-bg.png",
+    "sha256": "e9cdd08f5c8f94ad0c4cbb31c548f7f9e5f9525c6e5261b02cd9880bfb350a7e"
+  }
+]

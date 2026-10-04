@@ -1,0 +1,13 @@
+{
+  "name": "first-day-faithful-compositor",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "scripts": {
+    "render": "bun render.ts",
+    "preview": "bun render.ts --preview",
+    "stills": "bun render.ts --stills"
+  }
+}

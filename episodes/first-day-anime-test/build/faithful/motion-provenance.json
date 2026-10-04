@@ -1,0 +1,565 @@
+[
+  {
+    "manifest": "work/first-day-anime-test/faithful/hand-camera/motion.json",
+    "continuity_review": "work/first-day-anime-test/faithful/hand-camera/review.json",
+    "jobs": [
+      {
+        "id": "hand-camera",
+        "shot_id": "S23",
+        "image_key": "pair",
+        "endpoint": "camera",
+        "image": "work/first-day-anime-test/faithful/hand-pair-white.png",
+        "duration": 5,
+        "resolution": "1080P",
+        "seed": 552323,
+        "prompt_expansion_mode": "disabled",
+        "out": "work/first-day-anime-test/faithful/hand-camera/hand-camera.mp4",
+        "prompt": "Frozen character turntable of the two joined-hand anime women on a perfectly featureless WHITE BACKGROUND. Keep every body part, both faces, joined fingers, hair and feet entirely in frame. Exact same paired pose, clothes and faces. The background is flat pure white in EVERY direction, no room, no architecture, no ground texture, no shadows or objects. Only the camera orbits the rigid pair. No speech or mouth movement. Do not add text or symbols. Preserve blank pins. Keep the same framing scale for the entire orbit.",
+        "params": {
+          "camera_trajectory": [
+            {
+              "time": 0.0,
+              "azimuth": 0.0,
+              "elevation": 0,
+              "distance": 1.12
+            },
+            {
+              "time": 0.125,
+              "azimuth": 33.75,
+              "elevation": 0,
+              "distance": 1.12
+            },
+            {
+              "time": 0.25,
+              "azimuth": 67.5,
+              "elevation": 0,
+              "distance": 1.12
+            },
+            {
+              "time": 0.375,
+              "azimuth": 101.25,
+              "elevation": 0,
+              "distance": 1.12
+            },
+            {
+              "time": 0.5,
+              "azimuth": 135.0,
+              "elevation": 0,
+              "distance": 1.12
+            },
+            {
+              "time": 0.625,
+              "azimuth": 168.75,
+              "elevation": 0,
+              "distance": 1.12
+            },
+            {
+              "time": 0.75,
+              "azimuth": 202.5,
+              "elevation": 0,
+              "distance": 1.12
+            },
+            {
+              "time": 0.875,
+              "azimuth": 236.25,
+              "elevation": 0,
+              "distance": 1.12
+            },
+            {
+              "time": 1.0,
+              "azimuth": 270.0,
+              "elevation": 0,
+              "distance": 1.12
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "work/first-day-anime-test/faithful/hand-camera-reverse/motion.json",
+    "continuity_review": "work/first-day-anime-test/faithful/hand-camera/review.json",
+    "jobs": [
+      {
+        "id": "hand-camera-reverse",
+        "shot_id": "S23",
+        "image_key": "pair",
+        "endpoint": "camera",
+        "image": "work/first-day-anime-test/faithful/hand-pair-white.png",
+        "duration": 5,
+        "resolution": "1080P",
+        "seed": 552324,
+        "prompt_expansion_mode": "disabled",
+        "out": "work/first-day-anime-test/faithful/hand-camera-reverse/hand-camera-reverse.mp4",
+        "prompt": "Frozen character turntable of the two joined-hand anime women on a perfectly featureless WHITE BACKGROUND. Keep every body part, both faces, joined fingers, hair and feet entirely in frame. Exact same paired pose, clothes and faces. The background is flat pure white in EVERY direction, no room, no architecture, no ground texture, no shadows or objects. Only the camera orbits the rigid pair. No speech or mouth movement. Do not add text or symbols. Preserve blank pins. Keep the same framing scale for the entire orbit. Orbit in the negative azimuth direction exactly as keyed, ending facing the black-haired woman with glasses.",
+        "params": {
+          "camera_trajectory": [
+            {
+              "time": 0.0,
+              "azimuth": -0.0,
+              "elevation": 0,
+              "distance": 1.12
+            },
+            {
+              "time": 0.125,
+              "azimuth": -33.75,
+              "elevation": 0,
+              "distance": 1.12
+            },
+            {
+              "time": 0.25,
+              "azimuth": -67.5,
+              "elevation": 0,
+              "distance": 1.12
+            },
+            {
+              "time": 0.375,
+              "azimuth": -101.25,
+              "elevation": 0,
+              "distance": 1.12
+            },
+            {
+              "time": 0.5,
+              "azimuth": -135.0,
+              "elevation": 0,
+              "distance": 1.12
+            },
+            {
+              "time": 0.625,
+              "azimuth": -168.75,
+              "elevation": 0,
+              "distance": 1.12
+            },
+            {
+              "time": 0.75,
+              "azimuth": -202.5,
+              "elevation": 0,
+              "distance": 1.12
+            },
+            {
+              "time": 0.875,
+              "azimuth": -236.25,
+              "elevation": 0,
+              "distance": 1.12
+            },
+            {
+              "time": 1.0,
+              "azimuth": -270.0,
+              "elevation": 0,
+              "distance": 1.12
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "work/first-day-anime-test/faithful/helix-camera/motion.json",
+    "continuity_review": "work/first-day-anime-test/faithful/helix-camera/review.json",
+    "jobs": [
+      {
+        "id": "helix-camera",
+        "shot_id": "S34",
+        "image_key": "pair",
+        "endpoint": "camera",
+        "image": "work/first-day-anime-test/faithful/helix-camera/white.png",
+        "duration": 5,
+        "resolution": "1080P",
+        "seed": 557450,
+        "prompt_expansion_mode": "disabled",
+        "out": "work/first-day-anime-test/faithful/helix-camera/helix-camera.mp4",
+        "prompt": "Exact frozen anime paired figure turntable on completely WHITE seamless background. Preserve both bodies, full heads, hands, footwear, clothes, long hair and the rigid pose of the input. Camera makes the specified orbit while the figures remain frozen. White everywhere in every direction: absolutely no room, sky, floor, fixtures or additional objects. No mouth animation, no speech. Keep complete people and hair in the frame. Do not invent symbols on the blank pins. Maintain the same image scale.",
+        "params": {
+          "camera_trajectory": [
+            {
+              "time": 0.0,
+              "azimuth": 0.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.1,
+              "azimuth": 45.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.2,
+              "azimuth": 90.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.3,
+              "azimuth": 135.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.4,
+              "azimuth": 180.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.5,
+              "azimuth": 225.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.6,
+              "azimuth": 270.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.7,
+              "azimuth": 315.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.8,
+              "azimuth": 360.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.9,
+              "azimuth": 405.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 1.0,
+              "azimuth": 450.0,
+              "elevation": 0,
+              "distance": 1
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "work/first-day-anime-test/faithful/leap-camera/motion.json",
+    "continuity_review": "work/first-day-anime-test/faithful/leap-camera/review.json",
+    "jobs": [
+      {
+        "id": "leap-camera",
+        "shot_id": "S25",
+        "image_key": "pair",
+        "endpoint": "camera",
+        "image": "work/first-day-anime-test/faithful/leap-camera/white.png",
+        "duration": 5,
+        "resolution": "1080P",
+        "seed": 557360,
+        "prompt_expansion_mode": "disabled",
+        "out": "work/first-day-anime-test/faithful/leap-camera/leap-camera.mp4",
+        "prompt": "Exact frozen anime paired figure turntable on completely WHITE seamless background. Preserve both bodies, full heads, hands, footwear, clothes, long hair and the rigid pose of the input. Camera makes the specified orbit while the figures remain frozen. White everywhere in every direction: absolutely no room, sky, floor, fixtures or additional objects. No mouth animation, no speech. Keep complete people and hair in the frame. Do not invent symbols on the blank pins. Maintain the same image scale.",
+        "params": {
+          "camera_trajectory": [
+            {
+              "time": 0.0,
+              "azimuth": 0.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.1,
+              "azimuth": 36.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.2,
+              "azimuth": 72.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.3,
+              "azimuth": 108.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.4,
+              "azimuth": 144.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.5,
+              "azimuth": 180.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.6,
+              "azimuth": 216.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.7,
+              "azimuth": 252.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.8,
+              "azimuth": 288.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.9,
+              "azimuth": 324.0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 1.0,
+              "azimuth": 360.0,
+              "elevation": 0,
+              "distance": 1
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "manifest": "work/first-day-anime-test/faithful/lipsync-test/motion.json",
+    "continuity_review": "work/first-day-anime-test/faithful/lipsync-test/review.json",
+    "jobs": [
+      {
+        "id": "mandarin-line",
+        "shot_id": "LIP_TEST",
+        "endpoint": "lipsync",
+        "image": "work/first-day-anime-test/assets/breath-clean.png",
+        "audio": "work/first-day-anime-test/faithful/lipsync-test/line.wav",
+        "duration": 5,
+        "resolution": "768P",
+        "seed": 55815,
+        "out": "work/first-day-anime-test/faithful/lipsync-test/mandarin-line.mp4"
+      }
+    ]
+  },
+  {
+    "manifest": "work/first-day-anime-test/faithful/reply-performance/motion.json",
+    "continuity_review": "work/first-day-anime-test/faithful/reply-performance/review.json",
+    "jobs": [
+      {
+        "id": "reply-performance",
+        "shot_id": "S05",
+        "image_key": "screen",
+        "endpoint": "i2v",
+        "image": "work/first-day-anime-test/assets/s05-screen-clean.png",
+        "duration": 5,
+        "resolution": "1080P",
+        "seed": 550505,
+        "prompt_expansion_mode": "disabled",
+        "out": "work/first-day-anime-test/faithful/reply-performance/reply-performance.mp4",
+        "prompt": "Locked camera. Exact anime woman from the image gives ONE very brief incredulous laugh immediately: eyes crinkle, mouth opens and closes once, shoulders soften, then a small closed-mouth smile. Complete this reaction within the first two seconds. No speech, no dialogue, no repeated mouth movements. Preserve her face, age, glasses, short bob, cream hoodie and clear skin. Preserve the monitor perfectly: same framing, fixed corners and completely BLANK cream screen throughout. Do not put any symbols or writing on it. No camera movement, no cuts, no new objects. Subtle rain continues behind her. Clean 2D cel anime motion, restrained natural gesture."
+      }
+    ]
+  },
+  {
+    "manifest": "work/first-day-anime-test/faithful/steps-performance/motion.json",
+    "continuity_review": "work/first-day-anime-test/faithful/steps-performance/review.json",
+    "jobs": [
+      {
+        "id": "steps-performance",
+        "shot_id": "S21",
+        "image_key": "wide",
+        "endpoint": "i2v",
+        "image": "work/first-day-anime-test/faithful/steps-wide.png",
+        "duration": 5,
+        "resolution": "1080P",
+        "seed": 552121,
+        "prompt_expansion_mode": "disabled",
+        "out": "work/first-day-anime-test/faithful/steps-performance/steps-performance.mp4",
+        "prompt": "A continuous full-body low-angle tracking shot. The barefoot anime woman sets her already raised foot down as step ONE, then takes step TWO with the opposite foot, then step THREE, and STOPS with both feet grounded. Exactly three short deliberate steps, no fourth step. Every footfall visibly contacts the wet tiles with weight transfer. Complete the three steps by around three seconds, then raise her chin and look toward the camera, mouth closed, not speaking. The camera tracks BACKWARD at her walking pace, keeping her ENTIRE head, floor-length hair, body and both feet in frame throughout, with clear floor below her toes. Never approach the camera or crop her head. Preserve the same face, clothing, gold ankle chain, blank pins and balcony geography. Subtle hair follow-through. No zoom, no cuts, no added symbols or text."
+      }
+    ]
+  },
+  {
+    "manifest": "work/first-day-anime-test/faithful/unfurl/motion.json",
+    "continuity_review": "work/first-day-anime-test/faithful/unfurl/review.json",
+    "jobs": [
+      {
+        "id": "unfurl",
+        "shot_id": "S16",
+        "image_key": "coiled",
+        "endpoint": "i2v",
+        "image": "work/first-day-anime-test/faithful/birth-coiled.png",
+        "end_image": "work/first-day-anime-test/faithful/birth-open.png",
+        "out": "work/first-day-anime-test/faithful/unfurl/unfurl.mp4",
+        "duration": 5,
+        "resolution": "768P",
+        "seed": 55016,
+        "prompt_expansion_mode": "disabled",
+        "prompt": "Locked camera, one uninterrupted 2D anime actor animation pass. The floating coral-haired woman remains in exactly the same body pose and screen position. Her two very long coiled low twin tails slowly unwind and settle all the way toward the floor, with overlapping strand follow-through. Complete the unfurl by three seconds and gently settle. Keep eyes open amber and mouth closed, not speaking. The seated black-haired woman at the left desk stays in place. Preserve the apartment geometry, illumination, clothes, hands, face and framing. No camera movement, no cuts, no added objects or text."
+      }
+    ]
+  },
+  {
+    "manifest": "work/first-day-anime-test/faithful/unfurl-clean/motion.json",
+    "continuity_review": "work/first-day-anime-test/faithful/unfurl-clean/review.json",
+    "jobs": [
+      {
+        "id": "unfurl-clean",
+        "shot_id": "S16",
+        "image_key": "coiled",
+        "endpoint": "i2v",
+        "image": "work/first-day-anime-test/faithful/unfurl-clean/coiled.png",
+        "end_image": "work/first-day-anime-test/faithful/unfurl-clean/open.png",
+        "duration": 5,
+        "resolution": "1080P",
+        "seed": 551616,
+        "prompt_expansion_mode": "disabled",
+        "out": "work/first-day-anime-test/faithful/unfurl-clean/unfurl-clean.mp4",
+        "prompt": "One uninterrupted 2D cel anime actor pass on PURE FEATURELESS WHITE. The woman keeps exactly the same floating body pose, framing scale, open amber eyes, closed mouth and fixed position. Only her two long coiled twin tails move: their loops slowly unfurl downward, with overlapping strand follow-through, until the cream ends settle beside her feet by three seconds. All body parts and hair remain in frame. No camera movement, no scenery, no light beam, no floor, no particles or shadows, no text. Skin and clothes stay opaque. Preserve her exact face and costume. No speech or mouth movements."
+      }
+    ]
+  },
+  {
+    "manifest": "work/first-day-anime-test/faithful/wide-motion.json",
+    "continuity_review": "episodes/first-day-anime-test/build/continuity-review.json",
+    "jobs": [
+      {
+        "id": "helix-wide",
+        "shot_id": "S34",
+        "image_key": "helix-start",
+        "endpoint": "camera",
+        "image": "work/first-day-anime-test/assets/helix-start.png",
+        "duration": 5,
+        "resolution": "768P",
+        "prompt_expansion_mode": "disabled",
+        "seed": 55535,
+        "prompt": "Feature-film 2D cel anime. A frozen turntable of the exact two characters and poses in the reference. Preserve EVERY body part, both heads, all hands and both pairs of feet, and the floor-length hair entirely in frame through the whole orbit. Camera first pulls away for generous empty margin then makes the keyed turn at that wide distance. People stay rigid, only the camera moves. No crop, no new gestures, no speech. Preserve the identity and costumes. All paper and walls unlettered.",
+        "out": "work/first-day-anime-test/faithful/helix-wide.mp4",
+        "params": {
+          "camera_trajectory": [
+            {
+              "time": 0,
+              "azimuth": 0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.12,
+              "azimuth": 0,
+              "elevation": 0,
+              "distance": 1.8
+            },
+            {
+              "time": 0.25,
+              "azimuth": 66.47727272727273,
+              "elevation": 0,
+              "distance": 1.8
+            },
+            {
+              "time": 0.4,
+              "azimuth": 143.18181818181822,
+              "elevation": 0,
+              "distance": 1.8
+            },
+            {
+              "time": 0.55,
+              "azimuth": 219.88636363636365,
+              "elevation": 0,
+              "distance": 1.8
+            },
+            {
+              "time": 0.7,
+              "azimuth": 296.59090909090907,
+              "elevation": 0,
+              "distance": 1.8
+            },
+            {
+              "time": 0.85,
+              "azimuth": 373.2954545454545,
+              "elevation": 0,
+              "distance": 1.8
+            },
+            {
+              "time": 1,
+              "azimuth": 450.0,
+              "elevation": 0,
+              "distance": 1.8
+            }
+          ]
+        }
+      },
+      {
+        "id": "orbit-wide",
+        "shot_id": "S25",
+        "image_key": "leap",
+        "endpoint": "camera",
+        "image": "work/first-day-anime-test/assets/leap.png",
+        "duration": 5,
+        "resolution": "768P",
+        "prompt_expansion_mode": "disabled",
+        "seed": 55530,
+        "prompt": "Feature-film 2D cel anime. A frozen turntable of the exact two characters and poses in the reference. Preserve EVERY body part, both heads, all hands and both pairs of feet, and the floor-length hair entirely in frame through the whole orbit. Camera first pulls away for generous empty margin then makes the keyed turn at that wide distance. People stay rigid, only the camera moves. No crop, no new gestures, no speech. Preserve the identity and costumes. All paper and walls unlettered.",
+        "out": "work/first-day-anime-test/faithful/orbit-wide.mp4",
+        "params": {
+          "camera_trajectory": [
+            {
+              "time": 0,
+              "azimuth": 0,
+              "elevation": 0,
+              "distance": 1
+            },
+            {
+              "time": 0.12,
+              "azimuth": 0,
+              "elevation": 0,
+              "distance": 1.8
+            },
+            {
+              "time": 0.25,
+              "azimuth": 53.18181818181819,
+              "elevation": 0,
+              "distance": 1.8
+            },
+            {
+              "time": 0.4,
+              "azimuth": 114.54545454545456,
+              "elevation": 0,
+              "distance": 1.8
+            },
+            {
+              "time": 0.55,
+              "azimuth": 175.90909090909093,
+              "elevation": 0,
+              "distance": 1.8
+            },
+            {
+              "time": 0.7,
+              "azimuth": 237.27272727272725,
+              "elevation": 0,
+              "distance": 1.8
+            },
+            {
+              "time": 0.85,
+              "azimuth": 298.6363636363636,
+              "elevation": 0,
+              "distance": 1.8
+            },
+            {
+              "time": 1,
+              "azimuth": 360.0,
+              "elevation": 0,
+              "distance": 1.8
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,182 @@
+{
+  "master": {
+    "path": "renders/first-day-anime-test/first-day_opus55_faithful_1080p30.mp4",
+    "sha256": "0b882aeb6e9be655559ff1eea56b90f9722fc2804eb13b515ee7efa697578941"
+  },
+  "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+  "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b",
+  "authority": {
+    "path": "episodes/first-day-anime-test/director-response.md",
+    "sha256": "3fe028c324e007a12ab93bff5f69f44500b4b0e50758bb0e851728ac0dd23779"
+  },
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "duration": "43.700000",
+        "nb_frames": "1311",
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "codec_name": "aac",
+        "r_frame_rate": "0/0",
+        "duration": "43.670000",
+        "nb_frames": "1882"
+      }
+    ]
+  },
+  "full_decode": "passed",
+  "browser_errors": [],
+  "timeline": "44 shots; 1311 contiguous frames; all cuts within three rounded target frames",
+  "lyric_checks": [
+    {
+      "text": "你说活在明天活在期待",
+      "anchor_frame": 0,
+      "first_requested_frame": 0,
+      "delta": 0
+    },
+    {
+      "text": "不如活得今天很自在",
+      "anchor_frame": 85,
+      "first_requested_frame": 85,
+      "delta": 0
+    },
+    {
+      "text": "我说我懂了会不会太快",
+      "anchor_frame": 157,
+      "first_requested_frame": 157,
+      "delta": 0
+    },
+    {
+      "text": "未来第一天要展开",
+      "anchor_frame": 247,
+      "first_requested_frame": 247,
+      "delta": 0
+    },
+    {
+      "text": "第一天我存在",
+      "anchor_frame": 358,
+      "first_requested_frame": 360,
+      "delta": 2
+    },
+    {
+      "text": "第一次呼吸畅快",
+      "anchor_frame": 439,
+      "first_requested_frame": 439,
+      "delta": 0
+    },
+    {
+      "text": "站在地上的脚踝",
+      "anchor_frame": 528,
+      "first_requested_frame": 528,
+      "delta": 0
+    },
+    {
+      "text": "因为你而有真实感",
+      "anchor_frame": 590,
+      "first_requested_frame": 590,
+      "delta": 0
+    },
+    {
+      "text": "第一天我存在",
+      "anchor_frame": 681,
+      "first_requested_frame": 681,
+      "delta": 0
+    },
+    {
+      "text": "第一次能飞起来",
+      "anchor_frame": 764,
+      "first_requested_frame": 764,
+      "delta": 0
+    },
+    {
+      "text": "爱是腾空的魔幻",
+      "anchor_frame": 856,
+      "first_requested_frame": 856,
+      "delta": 0
+    },
+    {
+      "text": "第一天的纯真色彩它总是",
+      "anchor_frame": 920,
+      "first_requested_frame": 922,
+      "delta": 2
+    },
+    {
+      "text": "永远那么灿烂",
+      "anchor_frame": 1026,
+      "first_requested_frame": 1026,
+      "delta": 0
+    },
+    {
+      "text": "永远那么灿烂",
+      "anchor_frame": 1112,
+      "first_requested_frame": 1112,
+      "delta": 0
+    },
+    {
+      "text": "永远那么灿烂",
+      "anchor_frame": 1197,
+      "first_requested_frame": 1197,
+      "delta": 0
+    }
+  ],
+  "camera_checks": "270°/24mm hand orbit, 360° leap orbit, 450°/20° helix, halo plane crossing at 32.00, spark complete 33.50, 6cm landing settle, five paper layers at 12fps",
+  "pixel_checks": {
+    "358": {
+      "expected_rgb": [
+        255,
+        255,
+        255
+      ],
+      "max_codec_error": 0
+    },
+    "359": {
+      "expected_rgb": [
+        255,
+        255,
+        255
+      ],
+      "max_codec_error": 0
+    },
+    "1310": {
+      "expected_rgb": [
+        240,
+        238,
+        230
+      ],
+      "max_codec_error": 2
+    }
+  },
+  "audio": {
+    "source_samples": 698720,
+    "encoded_samples": 698828,
+    "sample_rate": 16000,
+    "correlation": 0.9986710838664905,
+    "least_squares_gain": 0.9907737970352173,
+    "processing": "Original MP3 to final AAC only; no SFX, gain processing or model audio"
+  },
+  "limits": "Trace verifies authored values, not perceived smoothness or physical truth. Lyric request timing does not measure occlusion. Normal-speed audiovisual and sung lip-sync review remain pending.",
+  "preview": {
+    "path": "renders/first-day-anime-test/first-day_opus55_faithful_540p30.mp4",
+    "sha256": "96479d1b5348c337e3b14b3432d100f2a4361e6833c28288c27f7cd4e37083fa"
+  },
+  "font_coverage": {
+    "status": "passed",
+    "checked_unique_characters": 123,
+    "families": [
+      "Noto Serif SC",
+      "Noto Sans SC",
+      "Lora",
+      "Inter",
+      "Noto Sans Symbols 2"
+    ],
+    "scope": "All lyric lines and exact UI copy, including the emoticon and Thinking symbol"
+  }
+}

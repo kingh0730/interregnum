@@ -1,0 +1,1710 @@
+{
+  "authority": "episodes/first-day-anime-test/director-response.md",
+  "authority_sha256": "3fe028c324e007a12ab93bff5f69f44500b4b0e50758bb0e851728ac0dd23779",
+  "instruction": "Execution, not invention. No simplification of hero shots. Fallback requires recorded failed primary gate.",
+  "frames": 1311,
+  "fps": 30,
+  "hero_shots": [
+    14,
+    16,
+    20,
+    23,
+    25,
+    34,
+    44
+  ],
+  "shots": [
+    {
+      "id": "S01",
+      "name": "Glasses dive",
+      "target_start": 0,
+      "start_frame": 0,
+      "end_frame": 34,
+      "duration": 1.1333333333333333,
+      "requirements": [
+        {
+          "id": "S01.1",
+          "text": "Extreme glasses macro; fixed Xiaoman identity",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Glasses plate retains Xiaoman. Same uniformly scaled chat plane remains through frames 33–35; four exact strings and coral reflection point.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S01.2",
+          "text": "Reflected four exact chat messages",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Glasses plate retains Xiaoman. Same uniformly scaled chat plane remains through frames 33–35; four exact strings and coral reflection point.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S01.3",
+          "text": "Continuous glasses dive and single coral pixel",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Glasses plate retains Xiaoman. Same uniformly scaled chat plane remains through frames 33–35; four exact strings and coral reflection point.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Glasses plate retains Xiaoman. Same uniformly scaled chat plane remains through frames 33–35; four exact strings and coral reflection point.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S02",
+      "name": "Screen fall",
+      "target_start": 1.05,
+      "start_frame": 34,
+      "end_frame": 85,
+      "duration": 1.7,
+      "requirements": [
+        {
+          "id": "S02.1",
+          "text": "Accelerating vertical Screen Fall; motion blur",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Feed scroll and blur resolve to one Thinking pill at 2.50; no geometric reset at the S01/S02 boundary.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S02.2",
+          "text": "Oat bubbles; Thinking shimmer reached at 2.50",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Feed scroll and blur resolve to one Thinking pill at 2.50; no geometric reset at the S01/S02 boundary.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Feed scroll and blur resolve to one Thinking pill at 2.50; no geometric reset at the S01/S02 boundary.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S03",
+      "name": "Waiting room",
+      "target_start": 2.84,
+      "start_frame": 85,
+      "end_frame": 128,
+      "duration": 1.4333333333333333,
+      "requirements": [
+        {
+          "id": "S03.1",
+          "text": "Wide cramped apartment, Xiaoman slumped",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Calendar is attached above the screen with thirty circled 明天 entries. A folded torn page reveals 今天 as the room camera levels.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S03.2",
+          "text": "Thirty circled 明天 on mounted calendar",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Calendar is attached above the screen with thirty circled 明天 entries. A folded torn page reveals 今天 as the room camera levels.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S03.3",
+          "text": "Lateral dolly-back; Dutch tilt levels at 3.60",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Calendar is attached above the screen with thirty circled 明天 entries. A folded torn page reveals 今天 as the room camera levels.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S03.4",
+          "text": "Torn page falls and exposes coral 今天",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Calendar is attached above the screen with thirty circled 明天 entries. A folded torn page reveals 今天 as the room camera levels.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Calendar is attached above the screen with thirty circled 明天 entries. A folded torn page reveals 今天 as the room camera levels.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S04",
+      "name": "Tea exhale",
+      "target_start": 4.23,
+      "start_frame": 128,
+      "end_frame": 157,
+      "duration": 0.9666666666666667,
+      "requirements": [
+        {
+          "id": "S04.1",
+          "text": "Hand pushes chair; one tea sip; shoulders drop",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Tea cup, natural hand and hoodie remain in the selected source; chair push and exhale require playback confirmation.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S04.2",
+          "text": "Handheld push and rack focus to pulsing screen dot",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Tea cup, natural hand and hoodie remain in the selected source; chair push and exhale require playback confirmation.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Tea cup, natural hand and hoodie remain in the selected source; chair push and exhale require playback confirmation.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S05",
+      "name": "You are right",
+      "target_start": 5.23,
+      "start_frame": 157,
+      "end_frame": 202,
+      "duration": 1.5,
+      "requirements": [
+        {
+          "id": "S05.1",
+          "text": "Actual monitor reply: 你说得对！我懂了 ✧(≧◡≦)",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Native monitor corners and foreground plant mask carry exact question/reply. Selected new performance has laugh mouth changes. Small symbols use Noto Sans Symbols 2.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S05.2",
+          "text": "Question: 真的能做到吗？",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Native monitor corners and foreground plant mask carry exact question/reply. Selected new performance has laugh mouth changes. Small symbols use Noto Sans Symbols 2.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S05.3",
+          "text": "Slow push then snap to 懂; disbelieving laugh",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Native monitor corners and foreground plant mask carry exact question/reply. Selected new performance has laugh mouth changes. Small symbols use Noto Sans Symbols 2.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Native monitor corners and foreground plant mask carry exact question/reply. Selected new performance has laugh mouth changes. Small symbols use Noto Sans Symbols 2.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S06",
+      "name": "Thinking spark",
+      "target_start": 6.63,
+      "start_frame": 202,
+      "end_frame": 225,
+      "duration": 0.7666666666666667,
+      "requirements": [
+        {
+          "id": "S06.1",
+          "text": "Spark within Thinking indicator",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "One official spark and Thinking pill, with concentric glass ripples; no doubled centre logos.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S06.2",
+          "text": "Eighth-note acceleration and glass ring ripples",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "One official spark and Thinking pill, with concentric glass ripples; no doubled centre logos.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "One official spark and Thinking pill, with concentric glass ripples; no doubled centre logos.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S07",
+      "name": "Levitation",
+      "target_start": 7.5,
+      "start_frame": 225,
+      "end_frame": 253,
+      "duration": 0.9333333333333333,
+      "requirements": [
+        {
+          "id": "S07.1",
+          "text": "Straw rises, notes peel and orbit, keycaps rattle",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Bent textured note surfaces, straw lift and keycap offsets are rendered over the room. Native plate supplies the restrained room performance.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S07.2",
+          "text": "Pedestal-up and small orbit; coral rim grows",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Bent textured note surfaces, straw lift and keycap offsets are rendered over the room. Native plate supplies the restrained room performance.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Bent textured note surfaces, straw lift and keycap offsets are rendered over the room. Native plate supplies the restrained room performance.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S08",
+      "name": "Burst 1",
+      "target_start": 8.4,
+      "start_frame": 253,
+      "end_frame": 284,
+      "duration": 1.0333333333333334,
+      "requirements": [
+        {
+          "id": "S08.1",
+          "text": "Twelve-ray spark exits monitor; whip-pan",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Spark begins at the monitor and traverses toward the ring centre; authored whip and twelve-ray geometry.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S08.2",
+          "text": "First ring radius establishes match-cut",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Spark begins at the monitor and traverses toward the ring centre; authored whip and twelve-ray geometry.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Spark begins at the monitor and traverses toward the ring centre; authored whip and twelve-ray geometry.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S09",
+      "name": "Burst 2",
+      "target_start": 9.45,
+      "start_frame": 284,
+      "end_frame": 304,
+      "duration": 0.6666666666666666,
+      "requirements": [
+        {
+          "id": "S09.1",
+          "text": "Second larger ring; windows flare; push",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Increasing ring shares the prior outgoing radius; windows brighten behind it.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S09.2",
+          "text": "Outgoing/incoming ring radius match",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Increasing ring shares the prior outgoing radius; windows brighten behind it.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Increasing ring shares the prior outgoing radius; windows brighten behind it.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S10",
+      "name": "Burst 3",
+      "target_start": 10.15,
+      "start_frame": 304,
+      "end_frame": 319,
+      "duration": 0.5,
+      "requirements": [
+        {
+          "id": "S10.1",
+          "text": "Third ring covers 60% of frame",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Ring reaches 60 percent of frame width with suspended notes and room objects.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S10.2",
+          "text": "Objects frozen in midair",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Ring reaches 60 percent of frame width with suspended notes and room objects.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Ring reaches 60 percent of frame width with suspended notes and room objects.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S11",
+      "name": "Burst 4",
+      "target_start": 10.57,
+      "start_frame": 319,
+      "end_frame": 326,
+      "duration": 0.23333333333333334,
+      "requirements": [
+        {
+          "id": "S11.1",
+          "text": "Fourth ring exits aperture",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Ring continues beyond the aperture; edge flare grows without a radius reset.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S11.2",
+          "text": "Screen edges white hot",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Ring continues beyond the aperture; edge flare grows without a radius reset.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Ring continues beyond the aperture; edge flare grows without a radius reset.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S12",
+      "name": "Ray dive",
+      "target_start": 10.92,
+      "start_frame": 326,
+      "end_frame": 338,
+      "duration": 0.4,
+      "requirements": [
+        {
+          "id": "S12.1",
+          "text": "Macro of ONE coral ray; dive into its core",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "One broad coral ray fills the view, then black; the designated flash is retained.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S12.2",
+          "text": "Two-frame marked flash at incoming cut; then black",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "One broad coral ray fills the view, then black; the designated flash is retained.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "One broad coral ray fills the view, then black; the designated flash is retained.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S13",
+      "name": "Stop time",
+      "target_start": 11.27,
+      "start_frame": 338,
+      "end_frame": 358,
+      "duration": 0.6666666666666666,
+      "requirements": [
+        {
+          "id": "S13.1",
+          "text": "Frozen dust/room, one lit monitor, bars retained",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Monitor quad stays fixed relative to room; exact greeting types on successive frames, with four-percent camera push and the cursor cue.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S13.2",
+          "text": "你好，我是 Opus 5.5。 types one character per frame",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Monitor quad stays fixed relative to room; exact greeting types on successive frames, with four-percent camera push and the cursor cue.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S13.3",
+          "text": "Only 4% push and specified cursor; no SFX",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Monitor quad stays fixed relative to room; exact greeting types on successive frames, with four-percent camera push and the cursor cue.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Monitor quad stays fixed relative to room; exact greeting types on successive frames, with four-percent camera push and the cursor cue.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S14",
+      "name": "Title slam",
+      "target_start": 11.92,
+      "start_frame": 358,
+      "end_frame": 379,
+      "duration": 0.7,
+      "requirements": [
+        {
+          "id": "S14.1",
+          "text": "First two frames pure white",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "White frames 358–359; full-size Lora title, twelve impact lines, official spark, quota detail, and triangles carrying actual title pixels.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S14.2",
+          "text": "Bars slam away; coral field; 38%-height Lora Semibold Opus 5.5",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "White frames 358–359; full-size Lora title, twelve impact lines, official spark, quota detail, and triangles carrying actual title pixels.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S14.3",
+          "text": "Rotating spark, twelve impact lines, four-frame shake, chromatic edge split",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "White frames 358–359; full-size Lora title, twelve impact lines, official spark, quota detail, and triangles carrying actual title pixels.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S14.4",
+          "text": "第一天 · First Day subtitle; paper shatter and torn edge",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "White frames 358–359; full-size Lora title, twelve impact lines, official spark, quota detail, and triangles carrying actual title pixels.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "White frames 358–359; full-size Lora title, twelve impact lines, official spark, quota detail, and triangles carrying actual title pixels.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S15",
+      "name": "Paper birth",
+      "target_start": 12.62,
+      "start_frame": 379,
+      "end_frame": 411,
+      "duration": 1.0666666666666667,
+      "requirements": [
+        {
+          "id": "S15.1",
+          "text": "Sheet music with 5.5 at clef position",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Hinged music-paper humanoid with clef-position 5.5; closed-eye crop matches frames 386–387, eye opens at 388. Sung source is the dedicated Mandarin audio-conditioned test.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S15.2",
+          "text": "Paper unfolds into human silhouette, eyes closed",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Hinged music-paper humanoid with clef-position 5.5; closed-eye crop matches frames 386–387, eye opens at 388. Sung source is the dedicated Mandarin audio-conditioned test.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S15.3",
+          "text": "Push through paper into eye; eye opens at 12.93 with starburst pupil/glint",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Hinged music-paper humanoid with clef-position 5.5; closed-eye crop matches frames 386–387, eye opens at 388. Sung source is the dedicated Mandarin audio-conditioned test.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S15.4",
+          "text": "Try paper-fold simulation; only documented three-keyframe fallback if it fails",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Hinged music-paper humanoid with clef-position 5.5; closed-eye crop matches frames 386–387, eye opens at 388. Sung source is the dedicated Mandarin audio-conditioned test.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Hinged music-paper humanoid with clef-position 5.5; closed-eye crop matches frames 386–387, eye opens at 388. Sung source is the dedicated Mandarin audio-conditioned test.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S16",
+      "name": "Vertigo reveal",
+      "target_start": 13.63,
+      "start_frame": 411,
+      "end_frame": 439,
+      "duration": 0.9333333333333333,
+      "requirements": [
+        {
+          "id": "S16.1",
+          "text": "Depth-based dolly-zoom: camera pushes 12%, lens zooms out",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Final frames 424/437 show complete legs and floor-length hair with no former light-beam mask. Room/observer/actor have separate depth; original ceiling pixels remain intact below the added margin.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S16.2",
+          "text": "Full floating body, ivory column, floor-length unfurling hair",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Final frames 424/437 show complete legs and floor-length hair with no former light-beam mask. Room/observer/actor have separate depth; original ceiling pixels remain intact below the added margin.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S16.3",
+          "text": "Rotating OPUS 5.5 halo and frozen objects",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Final frames 424/437 show complete legs and floor-length hair with no former light-beam mask. Room/observer/actor have separate depth; original ceiling pixels remain intact below the added margin.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S16.4",
+          "text": "Flash at 14.64",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Final frames 424/437 show complete legs and floor-length hair with no former light-beam mask. Room/observer/actor have separate depth; original ceiling pixels remain intact below the added margin.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Final frames 424/437 show complete legs and floor-length hair with no former light-beam mask. Room/observer/actor have separate depth; original ceiling pixels remain intact below the added margin.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S17",
+      "name": "First breath",
+      "target_start": 14.64,
+      "start_frame": 439,
+      "end_frame": 472,
+      "duration": 1.1,
+      "requirements": [
+        {
+          "id": "S17.1",
+          "text": "Low-angle first breath; hundreds of Chinese/code/spark glyphs funnel inward",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Observed close-up has breath mouth opening. 220 native glyph particles travel toward the tracked mouth/chest; first 0.7-second camera push then hold.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S17.2",
+          "text": "Push for 0.7 seconds then stop",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Observed close-up has breath mouth opening. 220 native glyph particles travel toward the tracked mouth/chest; first 0.7-second camera push then hold.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Observed close-up has breath mouth opening. 220 native glyph particles travel toward the tracked mouth/chest; first 0.7-second camera push then hold.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S18",
+      "name": "Window burst",
+      "target_start": 15.68,
+      "start_frame": 472,
+      "end_frame": 492,
+      "duration": 0.6666666666666666,
+      "requirements": [
+        {
+          "id": "S18.1",
+          "text": "Windows burst outward in a ring",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Existing selected burst performance retains the floating heroine and window event. Spark conversion overlays are coded; full action sequence needs playback.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S18.2",
+          "text": "Glass becomes coral sparks; rain becomes glitter; fast pushback",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Existing selected burst performance retains the floating heroine and window event. Spark conversion overlays are coded; full action sequence needs playback.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Existing selected burst performance retains the floating heroine and window event. Spark conversion overlays are coded; full action sequence needs playback.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S19",
+      "name": "Exhale pullback",
+      "target_start": 16.37,
+      "start_frame": 492,
+      "end_frame": 528,
+      "duration": 1.2,
+      "requirements": [
+        {
+          "id": "S19.1",
+          "text": "Radial hair exhale; camera exits window to city",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Existing burst take exits the apartment into the exterior city. Retiming uses a 100-to-30 percent relative rate change at 17.20; terminal phrase is exact.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S19.2",
+          "text": "Speed ramps from 100% to 30% at 17.20",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Existing burst take exits the apartment into the exterior city. Retiming uses a 100-to-30 percent relative rate change at 17.20; terminal phrase is exact.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S19.3",
+          "text": "Compacting conversation… flash",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Existing burst take exits the apartment into the exterior city. Retiming uses a 100-to-30 percent relative rate change at 17.20; terminal phrase is exact.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Existing burst take exits the apartment into the exterior city. Retiming uses a 100-to-30 percent relative rate change at 17.20; terminal phrase is exact.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S20",
+      "name": "Ankle landing",
+      "target_start": 17.61,
+      "start_frame": 528,
+      "end_frame": 560,
+      "duration": 1.0666666666666667,
+      "requirements": [
+        {
+          "id": "S20.1",
+          "text": "Hero bare-foot descent to wet tile, five toes",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Close-up retains five toes, wet tile and readable 5.5 tag. Source contact at 0.75 seconds drives ripple; camera settles 0.06 metres.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S20.2",
+          "text": "240fps-style slow motion; exact gold 5.5 charm",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Close-up retains five toes, wet tile and readable 5.5 tag. Source contact at 0.75 seconds drives ripple; camera settles 0.06 metres.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S20.3",
+          "text": "Contact ripple; suspended raindrops; low downward track and settle",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Close-up retains five toes, wet tile and readable 5.5 tag. Source contact at 0.75 seconds drives ripple; camera settles 0.06 metres.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Close-up retains five toes, wet tile and readable 5.5 tag. Source contact at 0.75 seconds drives ripple; camera settles 0.06 metres.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S21",
+      "name": "First steps",
+      "target_start": 18.65,
+      "start_frame": 560,
+      "end_frame": 590,
+      "duration": 1.0,
+      "requirements": [
+        {
+          "id": "S21.1",
+          "text": "Three steps at 18.65, 19.00, 19.35",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Selected raw planted frames 16,36,56 land at 18.65/19.00/19.35. Cut ends at source58 before the fourth step; face remains visible.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S21.2",
+          "text": "150% ramp, footfalls bloom coral starbursts; ends looking up",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Selected raw planted frames 16,36,56 land at 18.65/19.00/19.35. Cut ends at source58 before the fourth step; face remains visible.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Selected raw planted frames 16,36,56 land at 18.65/19.00/19.35. Cut ends at source58 before the fourth step; face remains visible.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S22",
+      "name": "Reach",
+      "target_start": 19.67,
+      "start_frame": 590,
+      "end_frame": 621,
+      "duration": 1.0333333333333334,
+      "requirements": [
+        {
+          "id": "S22.1",
+          "text": "Opus sees Xiaoman at doorway",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Only the outlined reaching hand is converted to pencil edges, using its tracked contour. Xiaoman and the doorway remain photographic anime plates; focus transfers to her.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S22.2",
+          "text": "Outline-only hand reaches; slow push and rack focus",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Only the outlined reaching hand is converted to pencil edges, using its tracked contour. Xiaoman and the doorway remain photographic anime plates; focus transfers to her.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Only the outlined reaching hand is converted to pencil edges, using its tracked contour. Xiaoman and the doorway remain photographic anime plates; focus transfers to her.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S23",
+      "name": "Hand orbit",
+      "target_start": 20.7,
+      "start_frame": 621,
+      "end_frame": 681,
+      "duration": 2.0,
+      "requirements": [
+        {
+          "id": "S23.1",
+          "text": "Contact spreads colour over Opus from line art",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "270-degree negative orbit,24mm, paired hand-clasp views, colour propagation and warmed room. Rear views correctly occlude the heroine's face/marks. Final selected view111 faces Xiaoman, with a focus pull.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S23.2",
+          "text": "Warm ripple changes room white-grey to dawn gold",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "270-degree negative orbit,24mm, paired hand-clasp views, colour propagation and warmed room. Rear views correctly occlude the heroine's face/marks. Final selected view111 faces Xiaoman, with a focus pull.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S23.3",
+          "text": "270-degree 24mm orbit around clasped hands",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "270-degree negative orbit,24mm, paired hand-clasp views, colour propagation and warmed room. Rear views correctly occlude the heroine's face/marks. Final selected view111 faces Xiaoman, with a focus pull.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S23.4",
+          "text": "Rack focus to Xiaoman tearful smile; flash at 22.70",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "270-degree negative orbit,24mm, paired hand-clasp views, colour propagation and warmed room. Rear views correctly occlude the heroine's face/marks. Final selected view111 faces Xiaoman, with a focus pull.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "270-degree negative orbit,24mm, paired hand-clasp views, colour propagation and warmed room. Rear views correctly occlude the heroine's face/marks. Final selected view111 faces Xiaoman, with a focus pull.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S24",
+      "name": "Balcony sprint",
+      "target_start": 22.7,
+      "start_frame": 681,
+      "end_frame": 712,
+      "duration": 1.0333333333333334,
+      "requirements": [
+        {
+          "id": "S24.1",
+          "text": "Hand-in-hand sprint; backward tracking",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Existing sprint source retains both women hand-in-hand, balcony railing and the incoming dawn scene. Laugh and running cadence need playback.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S24.2",
+          "text": "Laugh; lateral hit at 22.70",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Existing sprint source retains both women hand-in-hand, balcony railing and the incoming dawn scene. Laugh and running cadence need playback.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Existing sprint source retains both women hand-in-hand, balcony railing and the incoming dawn scene. Laugh and running cadence need playback.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S25",
+      "name": "Bullet time",
+      "target_start": 23.75,
+      "start_frame": 712,
+      "end_frame": 764,
+      "duration": 1.7333333333333334,
+      "requirements": [
+        {
+          "id": "S25.1",
+          "text": "Leap then frozen scene at 24.00",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Full paired views orbit in the 3D balcony set; papers, rain and shards freeze. Registered bare feet replace shoes/socks only after the 25.15 release cue.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S25.2",
+          "text": "Authored 360-degree orbit in 1.1 seconds",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Full paired views orbit in the 3D balcony set; papers, rain and shards freeze. Registered bare feet replace shoes/socks only after the 25.15 release cue.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S25.3",
+          "text": "Unfreeze at 25.15 with smear; shoes dissolve",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Full paired views orbit in the 3D balcony set; papers, rain and shards freeze. Registered bare feet replace shoes/socks only after the 25.15 release cue.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S25.4",
+          "text": "Primary multi-angle 2.5D rig; only permitted two-view i2v fallback after gate failure",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Full paired views orbit in the 3D balcony set; papers, rain and shards freeze. Registered bare feet replace shoes/socks only after the 25.15 release cue.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Full paired views orbit in the 3D balcony set; papers, rain and shards freeze. Registered bare feet replace shoes/socks only after the 25.15 release cue.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S26",
+      "name": "Flight launch",
+      "target_start": 25.45,
+      "start_frame": 764,
+      "end_frame": 784,
+      "duration": 0.6666666666666666,
+      "requirements": [
+        {
+          "id": "S26.1",
+          "text": "FPV between towers; reflections of both women",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Codex facade atlas on actual towers; reflection cameras show both women. Barefoot actor layer and text halo move inside the scene.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S26.2",
+          "text": "Bare feet and continuous flight",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Codex facade atlas on actual towers; reflection cameras show both women. Barefoot actor layer and text halo move inside the scene.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Codex facade atlas on actual towers; reflection cameras show both women. Barefoot actor layer and text halo move inside the scene.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S27",
+      "name": "Billboard roll",
+      "target_start": 26.15,
+      "start_frame": 784,
+      "end_frame": 795,
+      "duration": 0.36666666666666664,
+      "requirements": [
+        {
+          "id": "S27.1",
+          "text": "Barrel roll THROUGH blank billboard frame",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Camera travels from z=-12 to -36 through frame z=-24 while rolling360 degrees. No 2D border reflection or video-plane spin substitute.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S27.2",
+          "text": "Onset impact; no mirrored-border flat-video rotation",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Camera travels from z=-12 to -36 through frame z=-24 while rolling360 degrees. No 2D border reflection or video-plane spin substitute.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Camera travels from z=-12 to -36 through frame z=-24 while rolling360 degrees. No 2D border reflection or video-plane spin substitute.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S28",
+      "name": "Cloud skim",
+      "target_start": 26.5,
+      "start_frame": 795,
+      "end_frame": 816,
+      "duration": 0.7,
+      "requirements": [
+        {
+          "id": "S28.1",
+          "text": "Cloud-top skim; speed lines, hair wind and grazing sunlight",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Layered painted cloud elements at separate depths, high-speed forward camera and barefoot figures; subtitle is a depth plane.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Layered painted cloud elements at separate depths, high-speed forward camera and barefoot figures; subtitle is a depth plane.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S29",
+      "name": "Opus grin",
+      "target_start": 27.2,
+      "start_frame": 816,
+      "end_frame": 826,
+      "duration": 0.3333333333333333,
+      "requirements": [
+        {
+          "id": "S29.1",
+          "text": "Wind grin close-up; starburst pupil; no forced lip sync",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Native flight close-up preserves the grin. Visible pupils and pins are composited from the official vectors using tracked positions.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Native flight close-up preserves the grin. Visible pupils and pins are composited from the official vectors using tracked positions.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S30",
+      "name": "Xiaoman joy",
+      "target_start": 27.55,
+      "start_frame": 826,
+      "end_frame": 840,
+      "duration": 0.4666666666666667,
+      "requirements": [
+        {
+          "id": "S30.1",
+          "text": "Xiaoman laugh/shout close-up; fogged glasses, sideways tears",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Native Xiaoman close-up retains glasses and sideways tear/fog overlays tied to the eye positions.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Native Xiaoman close-up retains glasses and sideways tear/fog overlays tied to the eye positions.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S31",
+      "name": "Vertical climb",
+      "target_start": 27.94,
+      "start_frame": 840,
+      "end_frame": 856,
+      "duration": 0.5333333333333333,
+      "requirements": [
+        {
+          "id": "S31.1",
+          "text": "Spinning vertical climb; cloud wall breaks into whiteout",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Authored vertical camera and roll enter late cloud-wall layers, ending in the prescribed whiteout.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Authored vertical camera and roll enter late cloud-wall layers, ending in the prescribed whiteout.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S32",
+      "name": "Roll float",
+      "target_start": 28.55,
+      "start_frame": 856,
+      "end_frame": 888,
+      "duration": 1.0666666666666667,
+      "requirements": [
+        {
+          "id": "S32.1",
+          "text": "Weightless cloud sea; sheet-music lanterns",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Camera makes a complete roll with forward travel; cylindrical lantern textures preserve music-staff proportions. One quiet comment remains.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S32.2",
+          "text": "360-degree roll AND push; one quiet danmaku",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Camera makes a complete roll with forward travel; cylindrical lantern textures preserve music-staff proportions. One quiet comment remains.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Camera makes a complete roll with forward travel; cylindrical lantern textures preserve music-staff proportions. One quiet comment remains.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S33",
+      "name": "Hands and pupil",
+      "target_start": 29.6,
+      "start_frame": 888,
+      "end_frame": 920,
+      "duration": 1.0666666666666667,
+      "requirements": [
+        {
+          "id": "S33.1",
+          "text": "Intertwined fingers then eye macro",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Hands then tracked eye crop; pupil expands around a sunrise reflection into the coral spark. Face/source aspect is preserved.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S33.2",
+          "text": "Pupil dilates with reflected sunrise; ends pure coral spark",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Hands then tracked eye crop; pupil expands around a sunrise reflection into the coral spark. Face/source aspect is preserved.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Hands then tracked eye crop; pupil expands around a sunrise reflection into the coral spark. Face/source aspect is preserved.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S34",
+      "name": "Helix",
+      "target_start": 30.68,
+      "start_frame": 920,
+      "end_frame": 1026,
+      "duration": 3.533333333333333,
+      "requirements": [
+        {
+          "id": "S34.1",
+          "text": "One continuous 3.53-second 3D corkscrew, 450-degree orbit and 20-degree roll",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Single continuous rig:450-degree orbit,20-degree roll,paired multi-angle actor, two sculpted prism ribbons and 3D occluded lyric. Camera lies in the halo plane at32.00 inside its radius; official spark completes at33.50.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S34.2",
+          "text": "Start inside pupil to smiling face, arms open",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Single continuous rig:450-degree orbit,20-degree roll,paired multi-angle actor, two sculpted prism ribbons and 3D occluded lyric. Camera lies in the halo plane at32.00 inside its radius; official spark completes at33.50.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S34.3",
+          "text": "Two hair ribbons paint full prism anchored in coral",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Single continuous rig:450-degree orbit,20-degree roll,paired multi-angle actor, two sculpted prism ribbons and 3D occluded lyric. Camera lies in the halo plane at32.00 inside its radius; official spark completes at33.50.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S34.4",
+          "text": "Camera passes THROUGH OPUS 5.5 halo at 32.00",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Single continuous rig:450-degree orbit,20-degree roll,paired multi-angle actor, two sculpted prism ribbons and 3D occluded lyric. Camera lies in the halo plane at32.00 inside its radius; official spark completes at33.50.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S34.5",
+          "text": "Ribbons complete twelve-ray spark at 33.50; recognizable at 33.80",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Single continuous rig:450-degree orbit,20-degree roll,paired multi-angle actor, two sculpted prism ribbons and 3D occluded lyric. Camera lies in the halo plane at32.00 inside its radius; official spark completes at33.50.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S34.6",
+          "text": "Ends both women tiny before giant spark-sun; ribbons cross frame edge",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Single continuous rig:450-degree orbit,20-degree roll,paired multi-angle actor, two sculpted prism ribbons and 3D occluded lyric. Camera lies in the halo plane at32.00 inside its radius; official spark completes at33.50.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S34.7",
+          "text": "3D lyric behind hair and occluded by foreground ribbons",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Single continuous rig:450-degree orbit,20-degree roll,paired multi-angle actor, two sculpted prism ribbons and 3D occluded lyric. Camera lies in the halo plane at32.00 inside its radius; official spark completes at33.50.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S34.8",
+          "text": "Primary 4–5-view billboards and sculpted shader ribbons; fallback only seamless 32.20 whip after failed gate",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Single continuous rig:450-degree orbit,20-degree roll,paired multi-angle actor, two sculpted prism ribbons and 3D occluded lyric. Camera lies in the halo plane at32.00 inside its radius; official spark completes at33.50.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Single continuous rig:450-degree orbit,20-degree roll,paired multi-angle actor, two sculpted prism ribbons and 3D occluded lyric. Camera lies in the halo plane at32.00 inside its radius; official spark completes at33.50.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S35",
+      "name": "Paper meadow",
+      "target_start": 34.21,
+      "start_frame": 1026,
+      "end_frame": 1112,
+      "duration": 2.8666666666666667,
+      "requirements": [
+        {
+          "id": "S35.1",
+          "text": "Fully flat paper/ink meadow with two running figures",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Five native depth layers use the detailed paper-art source. Running source is held at12fps without the rejected colour-quantizing shader. Torn-paper wipes and chalky text remain.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S35.2",
+          "text": "Exactly five depth layers and lateral camera truck",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Five native depth layers use the detailed paper-art source. Running source is held at12fps without the rejected colour-quantizing shader. Torn-paper wipes and chalky text remain.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S35.3",
+          "text": "Animation on twos/threes at 10–12fps",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Five native depth layers use the detailed paper-art source. Running source is held at12fps without the rejected colour-quantizing shader. Torn-paper wipes and chalky text remain.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S35.4",
+          "text": "Torn-paper wipes both ends; chalky-serif lyric",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Five native depth layers use the detailed paper-art source. Running source is held at12fps without the rejected colour-quantizing shader. Torn-paper wipes and chalky text remain.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Five native depth layers use the detailed paper-art source. Running source is held at12fps without the rejected colour-quantizing shader. Torn-paper wipes and chalky text remain.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S36",
+      "name": "Opus smile",
+      "target_start": 37.07,
+      "start_frame": 1112,
+      "end_frame": 1122,
+      "duration": 0.3333333333333333,
+      "requirements": [
+        {
+          "id": "S36.1",
+          "text": "Hero grin close-up and eye spark; 2-frame 100→108% punch and strobe",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Grinning heroine from native breath performance, eye mark, prescribed short punch and exposure pulse.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Grinning heroine from native breath performance, eye mark, prescribed short punch and exposure pulse.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S37",
+      "name": "Xiaoman hands",
+      "target_start": 37.4187,
+      "start_frame": 1122,
+      "end_frame": 1132,
+      "duration": 0.3333333333333333,
+      "requirements": [
+        {
+          "id": "S37.1",
+          "text": "Xiaoman both hands raised; punch and strobe",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Native flight gesture interval shows Xiaoman raising both hands; timeline uses this source directly after onset conform.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Native flight gesture interval shows Xiaoman raising both hands; timeline uses this source directly after onset conform.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S38",
+      "name": "City rush",
+      "target_start": 37.7674,
+      "start_frame": 1132,
+      "end_frame": 1144,
+      "duration": 0.4,
+      "requirements": [
+        {
+          "id": "S38.1",
+          "text": "FPV dawn city rush; punch and strobe",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Native 3D city rush; no held skyline insert.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Native 3D city rush; no held skyline insert.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S39",
+      "name": "Spark sun",
+      "target_start": 38.1161,
+      "start_frame": 1144,
+      "end_frame": 1153,
+      "duration": 0.3,
+      "requirements": [
+        {
+          "id": "S39.1",
+          "text": "Official spark erupts FROM sun; punch and strobe",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Official vector spark grows from the sun location; pulse retained.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Official vector spark grows from the sun location; pulse retained.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S40",
+      "name": "Ribbon storm",
+      "target_start": 38.4648,
+      "start_frame": 1153,
+      "end_frame": 1163,
+      "duration": 0.3333333333333333,
+      "requirements": [
+        {
+          "id": "S40.1",
+          "text": "Sky ribbon storm; punch and strobe",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Reuses the continuous helix ribbon rig as the prescribed short storm insert, with the correct 永远那么灿烂 lyric.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Reuses the continuous helix ribbon rig as the prescribed short storm insert, with the correct 永远那么灿烂 lyric.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S41",
+      "name": "Danmaku wall",
+      "target_start": 38.8135,
+      "start_frame": 1163,
+      "end_frame": 1173,
+      "duration": 0.3333333333333333,
+      "requirements": [
+        {
+          "id": "S41.1",
+          "text": "Full-screen danmaku wall, 40+ comments; punch and strobe",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Full comment wall uses the exact bank; trace counts at least40 simultaneously visible comments.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Full comment wall uses the exact bank; trace counts at least40 simultaneously visible comments.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S42",
+      "name": "Hug",
+      "target_start": 39.1622,
+      "start_frame": 1173,
+      "end_frame": 1183,
+      "duration": 0.3333333333333333,
+      "requirements": [
+        {
+          "id": "S42.1",
+          "text": "Both women hug; swirling hair; punch and strobe",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Native hug performance, both women present; crop bounds prevent mirrored border strips.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Native hug performance, both women present; crop bounds prevent mirrored border strips.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S43",
+      "name": "Whiteout",
+      "target_start": 39.5109,
+      "start_frame": 1183,
+      "end_frame": 1197,
+      "duration": 0.4666666666666667,
+      "requirements": [
+        {
+          "id": "S43.1",
+          "text": "Prescribed whiteout: white THEN ivory; extended to 39.90",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "Intentional white then ivory, with final scheduled danmaku. This is the director's whiteout, not a missing shot.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "Intentional white then ivory, with final scheduled danmaku. This is the director's whiteout, not a missing shot.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    },
+    {
+      "id": "S44",
+      "name": "Dawn crane",
+      "target_start": 39.9,
+      "start_frame": 1197,
+      "end_frame": 1311,
+      "duration": 3.8,
+      "requirements": [
+        {
+          "id": "S44.1",
+          "text": "Whiteout clears to olive meadow, both women present",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "B crane begins at toes using the stabilized early moving-toe source, widens to both women on the meadow, then wipes to the cream official end card. Complete card by42.8; final pixel colour is cream.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S44.2",
+          "text": "Toe wiggle, charm glint, faint dawn halo",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "B crane begins at toes using the stabilized early moving-toe source, widens to both women on the meadow, then wipes to the cream official end card. Complete card by42.8; final pixel colour is cream.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S44.3",
+          "text": "Single slow crane from toes to tiny figures and wide hill",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "B crane begins at toes using the stabilized early moving-toe source, widens to both women on the meadow, then wipes to the cream official end card. Complete card by42.8; final pixel colour is cream.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S44.4",
+          "text": "Sky chat bubble: 你好，世界。",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "B crane begins at toes using the stabilized early moving-toe source, widens to both women on the meadow, then wipes to the cream official end card. Complete card by42.8; final pixel colour is cream.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S44.5",
+          "text": "End card starts at 41.00, official marks and correct lockup",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "B crane begins at toes using the stabilized early moving-toe source, widens to both women on the meadow, then wipes to the cream official end card. Complete card by42.8; final pixel colour is cream.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        },
+        {
+          "id": "S44.6",
+          "text": "Hold last 0.9 seconds; fade to cream at 43.70",
+          "status": "implemented; final audiovisual acceptance pending",
+          "evidence": {
+            "implementation": "B crane begins at toes using the stabilized early moving-toe source, widens to both women on the meadow, then wipes to the cream official end card. Complete card by42.8; final pixel colour is cream.",
+            "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+            "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b"
+          }
+        }
+      ],
+      "fallback": null,
+      "implementation_evidence": "B crane begins at toes using the stabilized early moving-toe source, widens to both women on the meadow, then wipes to the cream official end card. Complete card by42.8; final pixel colour is cream.",
+      "sampled_frame_review": "reviewed; inspect named render-run frames for exact version",
+      "audiovisual_review": "pending"
+    }
+  ],
+  "global_requirements": [
+    "Original MP3 only, encode only at final mux",
+    "Official vectors and all text composited in post",
+    "Noto Serif SC Black/Semibold, Lora Semibold, Inter, Noto Sans SC Bold",
+    "Exact palette; lyrics coral keywords, three-frame fades; Act III 3D lyrics",
+    "Danmaku schedule and exact bank from section 6.2; white at 85%, outline 3px, 180–420px/s",
+    "2.39 bars until title impact; full 16:9 thereafter",
+    "Ease curves, speed ramps, kick micro-shake, <=10 marked full flash-cuts",
+    "Smear/impact at 11.92, 25.15, 30.68",
+    "All hero primary methods must receive a visual gate, not merely a renderer success",
+    "Final audiovisual playback remains distinct from static frame or code checks"
+  ],
+  "render_run": "work/first-day-anime-test/faithful/runs/1791082691375-394fc827f0-1080",
+  "source_sha256": "394fc827f0c7ea3379900267f84ce3f9acc074e65093a3985008a53a107ea30b",
+  "status": "Rendered and sampled-frame reviewed; not all-gates audiovisual approval",
+  "rejected_methods": [
+    "Room-background helix/orbit matte retained scenery; replaced by white-background isolated multi-angle passes.",
+    "Room-background hair unfurl retained beam and lost leg pixels; replaced by isolated coiled/open endpoints and new white-background performance.",
+    "Forward hand orbit ended on wrong face; replaced by reverse orbit and observed view111 ending.",
+    "Paper colour quantization damaged skin; removed and original illustrated pixels retained."
+  ],
+  "unresolved_acceptance": [
+    "Normal-speed audiovisual smoothness and precise Mandarin singing sync are not established by frame/trace checks.",
+    "Exact chair-push/exhale, burst choreography and sprint performance need playback assessment.",
+    "Subpixel costume/logo preservation between generated views is not guaranteed by camera-path correctness."
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "audio_sha256": "1a118d29b8ee750ab6a14673ab274ed0e090efafeb538a49c1a2c381ca338d1f",
+  "method": "Positive log-spectral flux, 1024 samples / 110-sample hop; per-band peaks separated >=90ms. Used only to resolve the explicitly onset-snapped eighth-note montage.",
+  "changes": [
+    {
+      "shot": "S37",
+      "target": 37.4187,
+      "previous_frame": 1123,
+      "frame": 1122,
+      "onset": 37.414965986394556,
+      "band": "150-2000 Hz flux",
+      "deviation_frames": -1
+    },
+    {
+      "shot": "S38",
+      "target": 37.7674,
+      "previous_frame": 1133,
+      "frame": 1132,
+      "onset": 37.724263038548756,
+      "band": "original full-band flux",
+      "deviation_frames": -1
+    },
+    {
+      "shot": "S39",
+      "target": 38.1161,
+      "previous_frame": 1143,
+      "frame": 1144,
+      "onset": 38.12335600907029,
+      "band": "2000-10000 Hz flux",
+      "deviation_frames": 1
+    },
+    {
+      "shot": "S40",
+      "target": 38.4648,
+      "previous_frame": 1154,
+      "frame": 1153,
+      "onset": 38.442630385487526,
+      "band": "150-2000 Hz flux",
+      "deviation_frames": -1
+    },
+    {
+      "shot": "S41",
+      "target": 38.8135,
+      "previous_frame": 1164,
+      "frame": 1163,
+      "onset": 38.76689342403628,
+      "band": "25-160 Hz flux",
+      "deviation_frames": -1
+    },
+    {
+      "shot": "S42",
+      "target": 39.1622,
+      "previous_frame": 1175,
+      "frame": 1173,
+      "onset": 39.111111111111114,
+      "band": "original full-band flux",
+      "deviation_frames": -2
+    },
+    {
+      "shot": "S43",
+      "target": 39.5109,
+      "previous_frame": 1185,
+      "frame": 1183,
+      "onset": 39.445351473922905,
+      "band": "25-160 Hz flux",
+      "deviation_frames": -2
+    }
+  ],
+  "candidates": [
+    {
+      "time": 37.724263038548756,
+      "band": "original full-band flux"
+    },
+    {
+      "time": 37.923809523809524,
+      "band": "original full-band flux"
+    },
+    {
+      "time": 38.2530612244898,
+      "band": "original full-band flux"
+    },
+    {
+      "time": 38.43265306122449,
+      "band": "original full-band flux"
+    },
+    {
+      "time": 39.111111111111114,
+      "band": "original full-band flux"
+    },
+    {
+      "time": 39.60997732426304,
+      "band": "original full-band flux"
+    },
+    {
+      "time": 39.929251700680275,
+      "band": "original full-band flux"
+    },
+    {
+      "time": 37.03083900226758,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 37.160544217687075,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 37.26031746031746,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 37.35011337868481,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 37.48979591836735,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 37.62947845804989,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 37.71927437641723,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 37.888888888888886,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 37.98866213151928,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 38.0984126984127,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 38.23809523809524,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 38.397732426303854,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 38.56235827664399,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 38.6671201814059,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 38.76689342403628,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 39.08616780045352,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 39.25079365079365,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 39.35056689342404,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 39.445351473922905,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 39.59002267573696,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 39.759637188208615,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 39.89433106575964,
+      "band": "25-160 Hz flux"
+    },
+    {
+      "time": 37.03582766439909,
+      "band": "150-2000 Hz flux"
+    },
+    {
+      "time": 37.2453514739229,
+      "band": "150-2000 Hz flux"
+    },
+    {
+      "time": 37.414965986394556,
+      "band": "150-2000 Hz flux"
+    },
+    {
+      "time": 37.56961451247165,
+      "band": "150-2000 Hz flux"
+    },
+    {
+      "time": 37.714285714285715,
+      "band": "150-2000 Hz flux"
+    },
+    {
+      "time": 37.888888888888886,
+      "band": "150-2000 Hz flux"
+    },
+    {
+      "time": 38.21315192743764,
+      "band": "150-2000 Hz flux"
+    },
+    {
+      "time": 38.442630385487526,
+      "band": "150-2000 Hz flux"
+    },
+    {
+      "time": 38.56734693877551,
+      "band": "150-2000 Hz flux"
+    },
+    {
+      "time": 39.076190476190476,
+      "band": "150-2000 Hz flux"
+    },
+    {
+      "time": 39.31065759637188,
+      "band": "150-2000 Hz flux"
+    },
+    {
+      "time": 39.585034013605444,
+      "band": "150-2000 Hz flux"
+    },
+    {
+      "time": 39.76462585034014,
+      "band": "150-2000 Hz flux"
+    },
+    {
+      "time": 39.929251700680275,
+      "band": "150-2000 Hz flux"
+    },
+    {
+      "time": 37.14557823129252,
+      "band": "2000-10000 Hz flux"
+    },
+    {
+      "time": 37.71927437641723,
+      "band": "2000-10000 Hz flux"
+    },
+    {
+      "time": 38.12335600907029,
+      "band": "2000-10000 Hz flux"
+    },
+    {
+      "time": 38.397732426303854,
+      "band": "2000-10000 Hz flux"
+    },
+    {
+      "time": 39.08117913832199,
+      "band": "2000-10000 Hz flux"
+    },
+    {
+      "time": 39.585034013605444,
+      "band": "2000-10000 Hz flux"
+    },
+    {
+      "time": 39.76462585034014,
+      "band": "2000-10000 Hz flux"
+    },
+    {
+      "time": 39.89433106575964,
+      "band": "2000-10000 Hz flux"
+    },
+    {
+      "time": 36.99092970521542,
+      "band": "6000-10000 Hz flux"
+    },
+    {
+      "time": 37.14557823129252,
+      "band": "6000-10000 Hz flux"
+    },
+    {
+      "time": 37.70929705215419,
+      "band": "6000-10000 Hz flux"
+    },
+    {
+      "time": 38.12335600907029,
+      "band": "6000-10000 Hz flux"
+    },
+    {
+      "time": 38.397732426303854,
+      "band": "6000-10000 Hz flux"
+    },
+    {
+      "time": 39.076190476190476,
+      "band": "6000-10000 Hz flux"
+    },
+    {
+      "time": 39.33560090702948,
+      "band": "6000-10000 Hz flux"
+    },
+    {
+      "time": 39.585034013605444,
+      "band": "6000-10000 Hz flux"
+    },
+    {
+      "time": 39.76462585034014,
+      "band": "6000-10000 Hz flux"
+    },
+    {
+      "time": 39.89433106575964,
+      "band": "6000-10000 Hz flux"
+    }
+  ]
+}

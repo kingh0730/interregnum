@@ -1,113 +1,88 @@
-# 第一天 / First Day — Opus 5.5
+# 第一天 / First Day — director-plan rebuild
 
-## Graphics revision — Bun / Canvas
+The current cut is `renders/first-day-anime-test/first-day_opus55_faithful_1080p30.mp4`.
+It is 43.70 seconds, 44 shots and 1,311 frames at 1920×1080/30 fps. The smaller copy is
+`renders/first-day-anime-test/first-day_opus55_faithful_540p30.mp4`.
 
-Latest revision: `renders/first-day-anime-test/first-day_opus55_graphics-v2_1080p30.mp4`
-(smaller copy: `renders/first-day-anime-test/first-day_opus55_graphics-v2_540p30.mp4`).
-The overlay system was rebuilt after playback feedback. See
-`episodes/first-day-anime-test/build/graphics-v2/README.md` for changes, checks and Bun rebuild commands.
-The original production record and export below are retained as v1.
+This rebuild follows the unchanged `episodes/first-day-anime-test/director-response.md` and replaces the
+previous graphics revision. The compositor is HTML/Canvas/WebGL, bundled and rendered with Bun.
+Codex built-in image generation supplies the illustrated assets; MiniMax H3 Max supplies performance and
+multi-angle passes. No Luma was used. The original MP3 is the sole soundtrack, encoded once to AAC at mux.
 
+## What changed
 
-Full-length production cut: **43.70 seconds, 44 timeline shots, 1,311 frames, 1920×1080 at 30 fps**.
-Codex built-in image generation supplied the artwork; MiniMax H3 Max supplied character and camera passes.
-**No Luma was used.** The original song is the only soundtrack, encoded to AAC at the final mux.
+- S01–S02 share one uniformly scaled feed surface, including the transition through the glasses. There is no
+  stretched-text version switching to an unrelated flat feed.
+- S03 uses a mounted, textured calendar with thirty circled 明天 entries and a falling torn page revealing 今天.
+  S05 projects real-font text onto the tracked monitor, preserving the plant's foreground occlusion.
+- S06 has one spark inside the Thinking indicator. S07 uses bent paper, rising straw and rattling keycaps.
+  S08–S11 share measured ring radii. S13 types on the stationary monitor with the prescribed four-percent push.
+- S14 has two pure-white impact frames, the departing bars, large Lora title and a shatter made from its actual
+  printed pixels. S15 uses a hinged music-paper humanoid and a matched closed-eye dive; the eye opens at 12.93.
+- S16 has a depth-separated room, persistent Xiaoman, isolated hair-unfurl performance, a twelve-percent camera
+  push and widening lens. Ceiling extension preserves every original room pixel.
+- S20 uses the observed foot contact and a six-centimetre camera settle. S21 selects exactly the first three
+  planted steps, conformed to 18.65, 19.00 and 19.35, retaining the face at the end.
+- S23, S25 and S34 use authored 3D camera paths with isolated multi-angle paired-character passes. The hand orbit
+  is 270° at 24 mm. The frozen leap orbits 360° in 1.1 seconds, then dissolves the actual shoes and socks into
+  a registered barefoot end state. The continuous helix orbits 450°, rolls 20°, crosses the text halo at 32.00
+  and completes the spark at 33.50.
+- S26–S27 travel through actual 3D towers and a billboard frame. Glass surfaces reflect both characters. The
+  barrel roll is a camera move through that space. S32 uses a true camera roll and cylindrical sheet-music lanterns.
+- S35 has five depth layers made from the detailed paper illustration, with running figures sampled at 12 fps.
+  S36–S43 retain the prescribed montage, including the white-then-ivory S43 shot. S44 cranes from the moving toes
+  to the meadow, then resolves to the official cream end card.
 
-## Watch
+## Evidence and review scope
 
-- Master: `renders/first-day-anime-test/first-day_opus55_1080p30.mp4`
-- Smaller preview: `renders/first-day-anime-test/first-day_opus55_540p30.mp4`
-- Full-film contact sheet: `renders/first-day-anime-test/first-day_opus55_1080p30-contact.jpg`
-- Earlier animatic: `renders/first-day-anime-test/animatic.mp4`
-- Original opening test: `renders/first-day-anime-test/opening-test_1080p30.mp4`
-- Audio timing plot: `renders/first-day-anime-test/timing.png`
+`episodes/first-day-anime-test/build/faithful/verification.json` records the encoded-file checks, frame counts,
+lyric request times, camera traces, pure-white/cream frames, and decoded original-song comparison.
+`episodes/first-day-anime-test/build/faithful/compliance.json` maps all 105 shot requirements to implementation
+and review evidence. A rendered camera value does not itself establish pleasing motion or physical correctness.
+Sampled frame review and normal-speed audiovisual review are separate; the latter, including precise Mandarin
+lip-sync, remains pending. No all-gates-passed claim is made.
 
-Generated media, fonts, logos, source takes, earlier takes and frame samples remain under the ignored
-`work/first-day-anime-test/` and `renders/first-day-anime-test/` directories. They are not committed.
-The character/environment references and official-vector sources are in
-`work/first-day-anime-test/assets/`; font licence texts are in its `fonts/` subdirectory.
+The full-resolution contact sheet is `renders/first-day-anime-test/first-day_opus55_faithful-contact.jpg`.
+Each render retains its exact bundle, requested-asset hashes, camera trace and diagnostic frames under the ignored
+`work/first-day-anime-test/faithful/runs/` directory. The current run is named in the verification report.
 
-## Execution
-
-The opening test was followed by the complete source package, full animatic, representative ankle/contact/helix
-motion tests, remaining motion passes, targeted retakes, and the final composite. All lyrics and UI copy are
-font-rendered. The screen reply is projected onto the monitor. The supplied official spark and A paths are
-composited into plates or graphics; the image model was asked for blank pins and labels.
-
-`episodes/first-day-anime-test/shotlog.csv` records every timeline shot, chosen take interval, seed, prompt and
-retry count. Exact submitted motion requests are in
-`episodes/first-day-anime-test/build/motion-plan-final.json`; the resumable request logs and estimated-cost
-ledger are in `work/first-day-anime-test/h3_log/`. **Estimated motion spend: $4.29**, including retakes
-(28 accepted requests, 143 generated seconds). This is the request ledger estimate, not an invoice.
-Codex image calls additionally used subscription quota.
-
-| Section | Implementation |
-| --- | --- |
-| S01–S02 | Codex face plate, projective reflection, authored feed animation; approved opening retained |
-| S03–S13 | Room/tea/levitation passes plus calendar, screen reply, bursts and frozen stop-time graphics |
-| S14 | Pure graphics: two white impact frames, departing bars, serif title, shake and chromatic edge split |
-| S15–S19 | Birth/breath/pullback passes, authored music-page folds, glyphs and coral particles |
-| S20–S23 | Conditioned ankle descent, three-step interval, observed fingertip contact, keyed hand orbit |
-| S24–S33 | Sprint, keyed leap orbit, flight, billboard-frame composite, face inserts, climb and rolled float |
-| S34 | Continuous two-person keyed camera pass with an authored 450° ribbon camera, text-ring pass, projected lyric and spark completion |
-| S35 | Paper running pass sampled on stepped timing, with independently moving foreground paper grasses |
-| S36–S43 | Short face/gesture/city/helix/embrace inserts, official spark, danmaku wall and whiteout |
-| S44 | Toe movement and crane-away take, sky bubble and halo, paper end-card wipe, fade to cream |
-
-Image prompts and provenance are in `episodes/first-day-anime-test/image-prompts.json`,
-`episodes/first-day-anime-test/build/generation-records.json` and
-`episodes/first-day-anime-test/build/resumed-image-prompts.json`.
-The city insert is a crop of the environment sheet: `(0, 537, 593, 887)` in its 1774×887 source.
-Exact mark placements and clean-source relationships are recorded by
-`episodes/first-day-anime-test/build/mark_plates.py`.
-
-## Repairs and method changes
-
-- Corrected Opus's initial hair/skirt proportions; removed an extra ankle chain, restored Xiaoman's bare feet
-  in the meadow, and erased invented lettering on the leap's paper sheets.
-- Made a genuine pre-contact ankle frame; selected the observed landing interval rather than the whole take.
-- Retook birth eye-colour drift, cropped walking feet, shortened flight hair and unwanted head sparkles.
-- The first contact take achieved the clasp but missed the requested orbit. Extracted its actual clasp frame
-  and used a keyed camera pass; retook unwanted release/background lettering.
-- The five-view helix sheet failed the rear-view test. The selected character pass instead uses H3 camera
-  keyframes for continuous intermediate views of both women, combined with local 3D ribbon geometry.
-- Paper folding uses authored polygons rather than a cloth simulation. The reveal uses a push/zoom composite
-  rather than a reconstructed room-depth rig. The shoe transition is carried by the impact, particle burst
-  and barefoot incoming flight frame. No dedicated sung lip-sync pass is included.
-- Meme wording was retained. `episodes/first-day-anime-test/build/assets-sources.md` records the searches,
-  their limits, official artwork sources and font licences; no unverified capability claims were added.
-
-## Verification and remaining review
-
-`episodes/first-day-anime-test/build/delivery-audit.json` records export dimensions, frame count, full decode,
-source hashes and costs. `episodes/first-day-anime-test/build/audio-integrity.json` records the decoded
-song/output comparison. Lyric anchors retain `round(t*30)` frame positions. The opening ends at frame 85
-(2.8333 seconds, nearest frame to 2.84). Onset data and the separately labelled provisional bar grid remain
-in `episodes/first-day-anime-test/timing.json`; the measured stop-time RMS reduction is 93.5%.
-
-Sampled source and rendered frames were inspected, with particular attention to identity, contact, feet,
-text and the helix. These are **not** a normal-speed audiovisual approval or proof that every prescribed
-camera angle and choreography detail was achieved exactly. `episodes/first-day-anime-test/build/continuity-review.json`
-is specifically a conditioning-source review; final moving cut states have a separate pending review record.
-The original plan's all-gates-passed status is not claimed.
-
-The weakest passage is the integration of generated camera motion with the authored helix ribbons and halo.
-Further polish should prioritize that integration, exact orbit/footfall timing, and fine costume/logo
-preservation through generated motion. Review the assembled film with its song, especially 20.7–25.5 and
-30.68–34.21 seconds. Normal-speed motion and audio judgment still need King's eyes and ears.
+The technically weakest part remains the transition between generated character views in the fastest orbits.
+The background camera paths are exact, but the performance sources are generated 2D views. Further production
+budget should go to coherent multi-view character animation and sung-mouth timing after playback feedback.
 
 ## Rebuild
 
-From the repository root:
+From the repository root, with the retained local assets:
 
 ```sh
-.venv/bin/python episodes/first-day-anime-test/build/render.py
-.venv/bin/python episodes/first-day-anime-test/build/package.py
-ffmpeg -y -i renders/first-day-anime-test/first-day_opus55_1080p30.mp4 -vf scale=960:540 -c:v libx264 -crf 20 -c:a copy -movflags +faststart renders/first-day-anime-test/first-day_opus55_540p30.mp4
+cd episodes/first-day-anime-test/build/faithful
+bun install --frozen-lockfile
+bun run render
 ```
 
-Use `--animatic --width 960` for the stills animatic or `--only 14` for an individual shot. The final renderer
-rejects missing plates or required motion takes. Existing accepted requests can be recovered with the saved
-`work/first-day-anime-test/motion-plan.json`; do not regenerate that manifest or use `--redo` merely to resume.
-Dependencies: Pillow, numpy, OpenCV, librosa, matplotlib, fontTools and ffmpeg. Exact fonts are retained locally;
-Arial Unicode supplies the two missing emoticon glyphs on this macOS machine.
+`bun run stills` renders diagnostic frames; `bun run preview` renders a 540p working movie. The renderer rejects
+browser/shader errors and media/source changes during a run. Final validation and the smaller delivery copy:
+
+```sh
+.venv/bin/python episodes/first-day-anime-test/build/faithful/verify.py
+ffmpeg -y -i renders/first-day-anime-test/first-day_opus55_faithful_1080p30.mp4 -vf scale=960:540 -c:v libx264 -crf 20 -c:a copy -movflags +faststart renders/first-day-anime-test/first-day_opus55_faithful_540p30.mp4
+```
+
+Bun 1.3.14, Three 0.186.1, Chrome 154 and ffmpeg were used. The existing repository Puppeteer installation is
+imported by the renderer. Python preparation uses Pillow, numpy, OpenCV, rembg/ONNX Runtime and librosa.
+Prepared media is retained, so rendering does not regenerate or purchase anything. Preparation scripts with
+source approvals are historical recipes guarded by fixed reviewed-input hashes; new sources need a fresh review.
+
+The original production and superseded graphics-v2 records are retained in
+`episodes/first-day-anime-test/build/faithful/legacy-production.md`.
+Exact correction prompts and motion manifests are in `build/faithful/generations.json` and
+`build/faithful/motion-provenance.json` relative to this episode. The correction motion ledger totals **$1.75**
+for eleven accepted requests; with the original $4.29, the recorded estimate is **$6.04**, not an invoice.
+Codex image generation also used subscription quota. Rejected masks/takes are retained and identified in the
+production notes; none of the failed room-background actor masks are used by the delivered reveal or hero orbits.
+
+Official Claude/Anthropic vector paths come from the official Claude site, as recorded in
+`episodes/first-day-anime-test/build/assets-sources.md`. Noto Serif SC, Noto Sans SC, Lora and Inter are retained
+with their SIL OFL licences; Noto Sans Symbols 2 supplies the missing emoticon symbols, also under SIL OFL.
+Font binaries and source artwork remain in ignored working assets. Meme wording remains the director's bank;
+search evidence and its limits are recorded in the existing asset-source note.
