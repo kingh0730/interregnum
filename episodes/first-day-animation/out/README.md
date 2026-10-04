@@ -24,7 +24,7 @@ This production uses **Codex built-in image generation** for both selected chara
 - The measured MP3 is 43.67 seconds, not the brief's 43.70. Picture lasts exactly 43.70; every encoded audio packet is retained unchanged. The final 30 ms of picture extends past the source audio.
 - The source examples reversed the crash zoom and color wipe. The implementation follows the written wide-to-close and line-to-color direction.
 - The six version values begin during S04a and finish in S04b, because they cannot each occupy a full beat within S04b alone. S13 retains the specified five shot intervals rather than adding unlisted cuts.
-- The 360° breath-camera take is conformed in full to its short slot; it does not also apply the contradictory literal 50% time stretch. S03a uses a 40%-speed source window with interpolation.
+- User revision: remove the spin around 0:15. S07a now uses upright take1 (source 0–2.2 seconds), with the same 439–471 frame slot and overlays. S03a uses a 40%-speed source window with interpolation.
 - V images retain their original source bytes for request reproducibility; video plates are conformed to 1920×1080. Generated P/H images are Lanczos-conformed where necessary.
 - Parallax is a single-view depth reconstruction, not unseen character geometry. A rear image layer covers disoccluded frame edges during the large authored moves.
 - Native cosmic shot uses 800,000 galaxy particles and 12,000 character-sheet silhouette instances. Native scene motion blur uses six deterministic subframes.
@@ -51,7 +51,7 @@ Review performed: character and keyframe inspection, depth-map inspection, both 
 | S05 | 336–358 | P/H | `assets/keyframes/S05.png + assets/depth/S05.png` | — |
 | S06a | 358–390 | V | `assets/clips/S06a_take1.mp4` | 5551 |
 | S06b | 390–439 | V | `assets/clips/S06b_take2.mp4` | 5562 |
-| S07a | 439–472 | V | `assets/clips/S07a_take3.mp4` | 8833 |
+| S07a | 439–472 | V | `assets/clips/S07a_take1.mp4` | 5571 |
 | S07b | 472–503 | P | `assets/keyframes/S07b.png + assets/depth/S07b.png` | — |
 | S07c | 503–528 | V | `assets/clips/S07c_take2.mp4` | 5582 |
 | S08 | 528–590 | V | `assets/clips/S08_take3.mp4` | 8870 |
@@ -88,3 +88,5 @@ Run from the repository root. Install the episode's pinned npm dependencies with
 Generation files and media remain local and are not committed. Do not regenerate paid requests merely to reproduce the final assembly.
 
 Final verification: 1,311 frames at 30/1 fps; video duration 43.700000 seconds; 1,673 MP3 packet payloads identical to source; no all-black frames. Six representative frame indices rendered identically after out-of-order rendering. See `qa/technical-report.json`, `qa/determinism.json`, `qa/visual-review.json`, `qa/contact-sheet.jpg` and `qa/luminance.png`.
+
+Revision: removed only the S07a spin around 0:15. All rendered frames outside 439–471 remain byte-identical to the prior version. Original audio and overall timing remain unchanged. See `qa/no-spin-revision.json`.

@@ -71,13 +71,13 @@
   },
   {
     "id": "S07a",
-    "take": 3,
-    "source": "assets/clips/S07a_take3.mp4",
+    "take": 1,
+    "source": "assets/clips/S07a_take1.mp4",
     "source_start": 0,
-    "source_duration": 5.0,
+    "source_duration": 2.2,
     "target_duration": 1.1,
     "frames": 33,
-    "review": "Take3 shows upright-side-inverted-side-upright roll; preserve whole roll, prioritize compound camera over literal 50% retime."
+    "review": "User revision: remove spin at 0:15; upright breath take with gentle push. All shot timing and overlays unchanged."
   },
   {
     "id": "S07c",
