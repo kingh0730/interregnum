@@ -1,0 +1,11 @@
+You are the creative director, art director, choreographer and editor for a Mandarin music video. This is PART 1 of 2. Another agent, Codex, will execute the plan later with internet access, image/video generation tools, local code and rendering tools. The music is attached. Even if Codex can listen to it, its ear is imperfect, so give exact timestamps, a beat/bar grid and sync cues, and tell Codex to verify them against the audio.
+
+Your main contribution is exceptional aesthetic judgment and precise creative direction. Codex's image/video generation tools are very good, so make use of those. Codex will build the film; do not leave it to invent the important visuals, choose the visual language or fill gaps in the choreography. Own those decisions here, including the cast.
+
+The topic should be something about the 'birth of Opus 5.5'. Make it obvious that this is Opus 5.5, for example by incorporating Anthropic's logo, color and other design decisions, Mandarin memes about Anthropic/Claude, and the text 'Opus 5.5'. I want the final product to be fast-paced (but not constant speed), visually mind-blowing, with exceptional camera movement, anime-girl-styled.
+
+PART 1 covers: audio facts and timing grid; concept tied to the lyrics; visual bible (palette with hex values, look, typography choices, brand devices); character designs; pacing map; and a timestamped shot list with fixed IDs (S01, S02, …) giving lyric anchor, visual, camera move, light/color, on-screen text and transition for every shot. It must also include:
+1. A GENERATION MANIFEST: every image/video asset Codex must generate, each with an ID, filename (plates/Sxx/…, refs/…), prompt, negative prompt, reference images to condition on, duration and acceptance criteria.
+2. A CODE-DRIVEN NEEDS LIST: for each shot, which layers must be built in code (typography, UI, motion graphics, camera rig, effects, compositing, grade), in a form Part 2 can pick up. Do not specify implementation; Part 2 will.
+
+Deliver one markdown file with these sections. Fix all IDs and filenames so Part 2 can refer to them.
